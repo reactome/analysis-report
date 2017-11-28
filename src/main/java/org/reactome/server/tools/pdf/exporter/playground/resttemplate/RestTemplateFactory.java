@@ -1,4 +1,4 @@
-package org.reactome.server.tools.pdf.exporter.playground.restTemplate;
+package org.reactome.server.tools.pdf.exporter.playground.resttemplate;
 
 import org.apache.http.client.HttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
@@ -14,6 +14,7 @@ public class RestTemplateFactory {
     public static RestTemplate getInstance() {
         final HttpClient httpClient = HttpClientBuilder.create().build();
         final HttpComponentsClientHttpRequestFactory httpComponentsClientHttpRequestFactory = new HttpComponentsClientHttpRequestFactory(httpClient);
+        httpComponentsClientHttpRequestFactory.setConnectTimeout(0);
         restTemplate = new RestTemplate(httpComponentsClientHttpRequestFactory);
         return restTemplate;
     }

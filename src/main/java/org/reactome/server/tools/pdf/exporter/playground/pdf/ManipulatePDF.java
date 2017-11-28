@@ -1,31 +1,29 @@
 package org.reactome.server.tools.pdf.exporter.playground.pdf;
 
 import com.itextpdf.io.font.FontConstants;
-import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.kernel.events.PdfDocumentEvent;
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.geom.PageSize;
-import com.itextpdf.kernel.pdf.ByteBufferOutputStream;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.border.Border;
-import com.itextpdf.layout.element.*;
+import com.itextpdf.layout.element.Cell;
+import com.itextpdf.layout.element.Link;
+import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.hyphenation.HyphenationConfig;
 import com.itextpdf.layout.property.Property;
 import com.itextpdf.layout.property.TextAlignment;
-import com.itextpdf.layout.property.UnitValue;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.tools.pdf.exporter.playground.constants.Introduction;
 import org.reactome.server.tools.pdf.exporter.playground.constants.URL;
 import org.reactome.server.tools.pdf.exporter.playground.domains.*;
-import org.reactome.server.tools.pdf.exporter.playground.restTemplate.RestTemplateFactory;
+import org.reactome.server.tools.pdf.exporter.playground.resttemplate.RestTemplateFactory;
 import org.springframework.web.client.RestTemplate;
 
-import java.io.BufferedOutputStream;
-import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -36,26 +34,16 @@ import java.util.Map;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class ManipulatePDF {
-    public static void manipulate(String token,PdfWriter pdfWriter){
-
-        String filePath = "src/main/resources/pdf/" + token + "@" + new Date().getTime() + ".pdf";
-//        String filePath = "C:\\Users\\Byron\\PDFs\\" + token + "@" + new Date().getTime() + ".pdf";
-//        String filePath = "C:\\Users\\Byron\\PDFs\\" + token + ".pdf";
-//        FileSystemResource fileSystemResource = new FileSystemResource(filePath);
-        BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new ByteBufferOutputStream());
-//        ByteBufferOutputStream byteBufferOutputStream = new ByteBufferOutputStream();
+    public static void manipulate(String token, PdfWriter pdfWriter) {
+        System.out.println(token);
         try {
-//            PdfDocument pdfDocument = new PdfDocument(new PdfReader("src/main/resources/pdf/template.pdf"), new PdfWriter("src/main/resources/pdf/test.pdf"));
-
-//            final RestTemplate restTemplate = new RestTemplate(new HttpComponentsClientHttpRequestFactory(HttpClientBuilder.create().build()));
             final RestTemplate restTemplate = RestTemplateFactory.getInstance();
-
-            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm dd/MM/yyyy");
-            String date = simpleDateFormat.format(new Date().getTime());
             final int numberOfPathwaysToShow = 50;
+            final int margin = 30;
+            final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm dd/MM/yyyy");
+            //prepare data
+            String date = simpleDateFormat.format(new Date().getTime());
             ResultAssociatedWithToken resultAssociatedWithToken = restTemplate.getForObject(URL.RESULTASSCIATEDWITHTOKEN, ResultAssociatedWithToken.class, token, numberOfPathwaysToShow);
-//            System.out.println(resultAssociatedWithToken.toString())
-
             Pathways[] pathways = resultAssociatedWithToken.getPathways();
             StringBuilder stIds = new StringBuilder();
             for (Pathways pathway : pathways) {
@@ -65,25 +53,20 @@ public class ManipulatePDF {
             Map<String, Identifier> identifiersWasFiltered = identifiersFilter(identifiersWasFounds);
             Identifier[] identifiersWasNotFounds = restTemplate.getForObject(URL.IDENTIFIERSWASNOTFOUND, Identifier[].class, token);
 
-//            PdfDocument pdfDocument = new PdfDocument(new PdfWriter(filePath));
+            //create document
             PdfDocument pdfDocument = new PdfDocument(pdfWriter);
             pdfDocument.addNewPage(PageSize.A4);
             PdfFont font = PdfFontFactory.createFont(FontConstants.HELVETICA);
-            pdfDocument.addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(font, 30));
-
-            Document document = new Document(pdfDocument, PageSize.A4, true);
+            pdfDocument.addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(font,margin));
+            Document document = new Document(pdfDocument, PageSize.Default, true);
             document.setTextAlignment(TextAlignment.JUSTIFIED)
                     .setHyphenation(new HyphenationConfig(3, 3));
             Paragraph paragraph = new Paragraph();
-            document.setMargins(30, 30, 30, 30);
+            document.setMargins(margin, margin, margin, margin);
 
-//            System.out.println(content);
-            Image logo;
-            logo = new Image(ImageDataFactory.create("src/main/resources/images/logo.png"));
-            logo.scale(0.3f, 0.3f);
-//            logo.setMarginLeft(10).setMarginTop(10);
-            logo.setFixedPosition(document.getLeftMargin() * 0.3f, pdfDocument.getDefaultPageSize().getHeight() - document.getTopMargin() * 0.3f - logo.getImageScaledHeight());
-            document.add(logo);
+            //add logo to first page
+            PDFUtils.addLogo(document, "src/main/resources/images/logo.png");
+
             document.add(new Paragraph("Report for Analysis tools Review").setFont(font).setFontSize(22).setTextAlignment(TextAlignment.CENTER));
             document.add(new Paragraph("Administrative").setFontSize(16));
 //            PdfLinkAnnotation annotation = new PdfLinkAnnotation(new Rectangle(0,0)).setAction();
@@ -136,53 +119,25 @@ public class ManipulatePDF {
                             .add("\tType:" + resultAssociatedWithToken.getSummary().getType())
                             .add("\tData:" + resultAssociatedWithToken.getSummary().getSampleName())
                             .add("\tIdentifiers not found:" + resultAssociatedWithToken.getIdentifiersNotFound()).setFontSize(10));
-//            Table table = new Table(UnitValue.createPercentArray(new float[]{4 / 19, 1 / 19, 1 / 19, 1 / 19, 3 / 19, 3 / 19, 1 / 19, 1 / 19, 1 / 19, 3 / 19}));
-            Table table = new Table(UnitValue.createPercentArray(new float[]{5, 1, 1, 1, 3, 3, 1, 1, 1, 2}));
-            table.setWidthPercent(100);
-            table.setFont(font).setFontSize(6).setTextAlignment(TextAlignment.CENTER).setVerticalAlignment(VerticalAlignment.MIDDLE);
 
-            table.addHeaderCell("Pathway name");
-            table.addHeaderCell("Entities found");
-            table.addHeaderCell("Entities Total");
-            table.addHeaderCell("Entities ratio");
-            table.addHeaderCell("Entities pValue");
-            table.addHeaderCell("Entities FDR");
-            table.addHeaderCell("Reactions found");
-            table.addHeaderCell("Reactions total");
-            table.addHeaderCell("Reactions ratio");
-            table.addHeaderCell("Species name");
-
-            NumberFormat numberFormat = NumberFormat.getNumberInstance();
-            numberFormat.setMaximumFractionDigits(4);
-            for (int i = 0; i < numberOfPathwaysToShow; i++) {
-                table.addCell(new Paragraph(new Link(pathways[i].getName(), PdfAction.createGoTo(pathways[i].getName()))));
-                table.addCell(pathways[i].getEntities().getFound() + "");
-                table.addCell(pathways[i].getEntities().getTotal() + "");
-                table.addCell(numberFormat.format(pathways[i].getEntities().getRatio()));
-                table.addCell(pathways[i].getEntities().getpValue() + "");
-                table.addCell(pathways[i].getEntities().getFdr() + "");
-                table.addCell(pathways[i].getReactions().getFound() + "");
-                table.addCell(pathways[i].getReactions().getTotal() + "");
-                table.addCell(numberFormat.format(pathways[i].getReactions().getRatio()));
-                table.addCell(pathways[i].getSpecies().getName());
-            }
-            document.add(table);
-
+            PDFUtils.addOverviewTable(document, font, pathways);
+            Table table = null;
             //craete pathways details
             document.add(new Paragraph("2. Pathway details.").setFontSize(16).setFirstLineIndent(30));
-
-            PathwayDetail pathwayDetail;
+            PathwayDetail pathwayDetail = null;
             for (int i = 0; i < numberOfPathwaysToShow; i++) {
+//            for (int i = 0; i < 2; i++) {
                 pathwayDetail = restTemplate.getForObject(URL.QUERYFORPATHWAYDETAIL, PathwayDetail.class, pathways[i].getStId());
                 paragraph = new Paragraph("2." + (i + 1) + ". " + pathways[i].getName())
                         .add(new Link(" (" + pathways[i].getStId() + ")", PdfAction.createURI(URL.QUERYFORPATHWAYDETAILS + pathways[i].getStId())))
                         .setFontSize(14)
                         .setFirstLineIndent(40);
                 paragraph.setProperty(Property.DESTINATION, pathways[i].getName());
-                logo = new Image(ImageDataFactory.create("src/main/resources/images/logo.png"));
-                logo.scale(0.3f, 0.3f);
-                paragraph.add(logo);
                 document.add(paragraph);
+//                diagram = new Image(ImageDataFactory.create(DiagramExporter.getBufferedImage("R-HSA-169911"), Color.WHITE)).setHorizontalAlignment(HorizontalAlignment.CENTER);
+
+//                PDFUtils.addImage(document, pathways[i].getStId());
+
                 document.add(new Paragraph("Summation")
                         .setFontSize(14)
                         .setFirstLineIndent(40))//correct intend
@@ -198,6 +153,7 @@ public class ManipulatePDF {
                         .setFontSize(14)
                         .setFirstLineIndent(40));
                 //add the table for identifiers was found at
+
                 table = new Table(6);
                 table.setMarginLeft(60).setFont(font).setFontSize(10).setTextAlignment(TextAlignment.LEFT);
                 for (Identifier identifier : identifiersWasFounds[i].getEntities()) {
@@ -318,18 +274,9 @@ public class ManipulatePDF {
                 }
             }
             document.add(table);
-//            document.flush();
-//            for (int i = 1; i <= pdfDocument.getNumberOfPages(); i++) {
-//                PdfCanvas canvas = new PdfCanvas(pdfDocument.getPage(i));
-//                canvas.beginText();
-//                canvas.newlineShowText("Reactome.org");
-//                canvas.endText();
-//                canvas.release();;
-//            }
             document.close();
             pdfDocument.close();
         } catch (Exception e) {
-//            System.exit(1);
             e.printStackTrace();
         }
     }
@@ -359,4 +306,5 @@ public class ManipulatePDF {
         }
         return filteredIdentifiers;
     }
+
 }

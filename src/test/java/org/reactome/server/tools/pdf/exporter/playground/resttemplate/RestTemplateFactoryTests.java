@@ -1,4 +1,4 @@
-package org.reactome.server.tools.pdf.exporter.playground.restTemplate;
+package org.reactome.server.tools.pdf.exporter.playground.resttemplate;
 
 import org.junit.Test;
 import org.reactome.server.tools.pdf.exporter.playground.domains.IdentifiersWasFound;

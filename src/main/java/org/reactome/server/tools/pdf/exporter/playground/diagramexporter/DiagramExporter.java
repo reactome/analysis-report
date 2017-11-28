@@ -16,30 +16,20 @@ import java.awt.image.BufferedImage;
 @Component
 public class DiagramExporter {
     private static final Logger logger = LoggerFactory.getLogger(DiagramExporter.class);
+
     // This path must contain "{stId}.json" and "{stId}.graph.json" files
-    private static final String diagramPath = "/home/byron/static";
+    private static final String diagramPath = "/home/byron/static/demo";
     private static final String ehldPath = "/home/byron/static";
 
     public static BufferedImage getBufferedImage(String stId) throws DiagramNotFoundException {
         try {
             final SimpleRasterArgs args = new SimpleRasterArgs(stId, "png");
-            args.setQuality(3);
+            args.setQuality(10);
             args.setProfiles(new ColorProfiles("standard", null, null));
-
-//            // If saving to a file
-//            final File file = new File(args.getStId() + "." + args.getFormat());
-//            ImageIO.write(image, args.getFormat(), file);
-//            // If sending through an URL
-//            URL url = new URL("...");
-//            HttpUrlConnection connection = (HttpUrlConnection) url.openConnection();
-//            connection.setDoOutput(true);  // your url must support writing
-//            ImageIO.write(image, args.getFormat(), connection.getOutputStream());
-
             return RasterExporter.export(args, diagramPath, ehldPath);
-
         } catch (Exception e) {
-            logger.error(String.format("Could not get diagram by pathway stId:%s", stId));
-            throw new DiagramNotFoundException(String.format("Could not get diagram by pathway stId:%s", stId));
+            logger.error(String.format("Diagram not found for pathway/reaction stId:%s", stId));
+            throw new DiagramNotFoundException(String.format("Diagram not found for pathway/reaction stId:%s", stId));
         }
     }
 }

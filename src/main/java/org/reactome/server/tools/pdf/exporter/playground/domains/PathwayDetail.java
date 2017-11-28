@@ -14,6 +14,7 @@ public class PathwayDetail {
     private String speciesName;
     private boolean isInDisease;
     private boolean isInferred;
+    private boolean hasDiagram;
     private Summation[] summation;
     @JsonProperty("created")
     private Curator authors;
@@ -25,9 +26,18 @@ public class PathwayDetail {
     private DisplayName[] compartment;
     private DisplayName[] disease;
     private DisplayName[] inferredFrom;
+    private Event[] hasEvent;
 
 
     public PathwayDetail() {
+    }
+
+    public boolean isHasDiagram() {
+        return hasDiagram;
+    }
+
+    public void setHasDiagram(boolean hasDiagram) {
+        this.hasDiagram = hasDiagram;
     }
 
     public String getSpeciesName() {
@@ -116,5 +126,13 @@ public class PathwayDetail {
 
     public void setInferredFrom(DisplayName[] inferredFrom) {
         this.inferredFrom = inferredFrom;
+    }
+
+    public Event[] getHasEvent() {
+        return hasEvent;
+    }
+
+    public void setHasEvent(Event[] hasEvent) {
+        this.hasEvent = hasEvent;
     }
 }
