@@ -1,4 +1,4 @@
-package org.reactome.server.tools.pdf.exporter.playground.pdf;
+package org.reactome.server.tools.pdf.exporter.playground.pdfexporter;
 
 import com.itextpdf.kernel.events.Event;
 import com.itextpdf.kernel.events.IEventHandler;
@@ -11,10 +11,10 @@ import com.itextpdf.kernel.pdf.canvas.PdfCanvas;
 /**
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
-public class FooterEventHandler implements IEventHandler {
+public class FooterEventHandler implements IEventHandler{
 
-    private static PdfFont font;
-    private static int margin;
+    private final PdfFont font;
+    private int margin;
 
     public FooterEventHandler(PdfFont font, int margin) {
         this.font = font;

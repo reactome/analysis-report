@@ -14,7 +14,7 @@ public class ResultAssociatedWithToken {
     private int identifiersNotFound;
     private int pathwaysFound;
 //    private List<Pathways> pathways;
-    private Pathways[] pathways;
+    private Pathway[] pathways;
     //    private List<ResourceSummary> resourceSummary;
     private ResourceSummary[] resourceSummary;
 
@@ -55,11 +55,11 @@ public class ResultAssociatedWithToken {
         this.pathwaysFound = pathwaysFound;
     }
 
-    public Pathways[] getPathways() {
+    public Pathway[] getPathways() {
         return pathways;
     }
 
-    public void setPathways(Pathways[] pathways) {
+    public void setPathways(Pathway[] pathways) {
         this.pathways = pathways;
     }
 

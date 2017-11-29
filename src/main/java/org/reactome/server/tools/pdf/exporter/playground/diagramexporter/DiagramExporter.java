@@ -4,8 +4,6 @@ import org.reactome.server.tools.diagram.exporter.raster.RasterExporter;
 import org.reactome.server.tools.diagram.exporter.raster.api.SimpleRasterArgs;
 import org.reactome.server.tools.diagram.exporter.raster.profiles.ColorProfiles;
 import org.reactome.server.tools.pdf.exporter.playground.exceptions.DiagramNotFoundException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.awt.image.BufferedImage;
@@ -15,7 +13,6 @@ import java.awt.image.BufferedImage;
  */
 @Component
 public class DiagramExporter {
-    private static final Logger logger = LoggerFactory.getLogger(DiagramExporter.class);
 
     // This path must contain "{stId}.json" and "{stId}.graph.json" files
     private static final String diagramPath = "/home/byron/static/demo";
@@ -28,7 +25,6 @@ public class DiagramExporter {
             args.setProfiles(new ColorProfiles("standard", null, null));
             return RasterExporter.export(args, diagramPath, ehldPath);
         } catch (Exception e) {
-            logger.error(String.format("Diagram not found for pathway/reaction stId:%s", stId));
             throw new DiagramNotFoundException(String.format("Diagram not found for pathway/reaction stId:%s", stId));
         }
     }

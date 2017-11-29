@@ -3,7 +3,7 @@ package org.reactome.server.tools.pdf.exporter.playground.constants;
 /**
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
-public class Introduction {
+public class Text {
     public static final String[] INTRODUCTION = {
             "Each reaction (pathway event) is represented here by a simple diagram. Input molecules are shown as labelled boxes (left side) connected by plain lines to a central square. Arrowed lines connect the central square to the output molecules (right side). If relevant, catalyst molecules are represented above the central square, connected to it by a red arrowed line. Input molecules that are also the catalyst (e.g. signaling or enzyme/substrate complexes) are shown on the left and joined to the central node by a red arrowed line. The names of reactions that precede/follow in the pathway are shown as text on the far left/far right respectively.",
             "Summary text may appear to be overlapping or redundant. Please remember that this document is extracted from multiple pages on the Reactome website, this redundancy is useful to provide context for users who might first arrive at a mid-point in the pathway. Suggestions for improvement are welcome.",

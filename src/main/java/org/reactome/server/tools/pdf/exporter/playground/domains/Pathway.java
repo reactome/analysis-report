@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Pathways {
+public class Pathway {
     private String stId;
     private int dbId;
     private String name;
@@ -17,7 +17,7 @@ public class Pathways {
     private Entities entities;
     private Reactions reactions;
 
-    public Pathways() {
+    public Pathway() {
     }
 
     public String getStId() {

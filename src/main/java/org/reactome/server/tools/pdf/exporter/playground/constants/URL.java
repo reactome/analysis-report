@@ -4,8 +4,10 @@ package org.reactome.server.tools.pdf.exporter.playground.constants;
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
 public class URL {
+    private static final String REACTOME = "https://rectome.org";
     public static final String IDENTIFIERSWASNOTFOUND = "https://reactome.org/AnalysisService/token/{token}/notFound";
     public static final String VERSION = "https://reactome.org/ContentService/data/database/version";
+    public static final String ANALYSIS = "https://reactome.org/PathwayBrowser/#/DTAB=AN&ANALYSIS=";
     public static final String IDENTIFIERSWASFOUND = "https://reactome.org/AnalysisService/token/{token}/found/all";
     public static final String QUERYFORPATHWAYDETAILS = "https://reactome.org/content/query?q=";
     public static final String QUERYFORPATHWAYDETAIL = "https://reactome.org/ContentService/data/query/enhanced/{stId}";
