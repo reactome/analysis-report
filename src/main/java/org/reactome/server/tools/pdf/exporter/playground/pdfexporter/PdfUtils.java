@@ -5,6 +5,7 @@ import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
 import org.reactome.server.tools.pdf.exporter.playground.constants.URL;
 import org.reactome.server.tools.pdf.exporter.playground.domains.*;
+import org.reactome.server.tools.pdf.exporter.playground.pdfelements.PdfProperties;
 import org.reactome.server.tools.pdf.exporter.playground.resttemplate.RestTemplateFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;

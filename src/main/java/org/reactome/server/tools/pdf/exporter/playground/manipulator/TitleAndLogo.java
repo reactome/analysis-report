@@ -1,7 +1,8 @@
 package org.reactome.server.tools.pdf.exporter.playground.manipulator;
 
 import org.reactome.server.tools.pdf.exporter.playground.domains.DataSet;
-import org.reactome.server.tools.pdf.exporter.playground.pdfexporter.PdfProperties;
+import org.reactome.server.tools.pdf.exporter.playground.pdfelements.AnalysisReport;
+import org.reactome.server.tools.pdf.exporter.playground.pdfelements.PdfProperties;
 
 import java.net.MalformedURLException;
 
@@ -13,7 +14,7 @@ public class TitleAndLogo implements Manipulator {
     private static final String title = "Report for Analysis tools Review";
 
     @Override
-    public void manipulatePDF(PdfReport report, PdfProperties properties, DataSet dataSet) throws MalformedURLException {
+    public void manipulatePDF(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws MalformedURLException {
         report.addLogo(logo)
                 .addTopTitle(title);
     }

@@ -5,7 +5,8 @@ import com.itextpdf.layout.element.Link;
 import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.tools.pdf.exporter.playground.constants.FontSize;
 import org.reactome.server.tools.pdf.exporter.playground.domains.DataSet;
-import org.reactome.server.tools.pdf.exporter.playground.pdfexporter.PdfProperties;
+import org.reactome.server.tools.pdf.exporter.playground.pdfelements.AnalysisReport;
+import org.reactome.server.tools.pdf.exporter.playground.pdfelements.PdfProperties;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
@@ -13,7 +14,7 @@ import org.reactome.server.tools.pdf.exporter.playground.pdfexporter.PdfProperti
 public class Summary implements Manipulator{
 
     @Override
-    public void manipulatePDF(PdfReport report, PdfProperties properties, DataSet dataSet) throws Exception {
+    public void manipulatePDF(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
         report.addNormalTitle("Summary")
                 .addNormalTitle(new Paragraph("1. " + dataSet.getIdentifiersWasFiltered().size() + " of " + (dataSet.getIdentifiersWasFiltered().size() + dataSet.getResultAssociatedWithToken().getIdentifiersNotFound()) + " identifiers you submitted was ")
                         .setFirstLineIndent(30)

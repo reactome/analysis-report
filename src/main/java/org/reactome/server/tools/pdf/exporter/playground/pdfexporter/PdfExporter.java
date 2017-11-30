@@ -3,6 +3,7 @@ package org.reactome.server.tools.pdf.exporter.playground.pdfexporter;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import org.reactome.server.tools.pdf.exporter.playground.exceptions.NullPdfDocumentException;
+import org.reactome.server.tools.pdf.exporter.playground.pdfelements.PdfProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

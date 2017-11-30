@@ -4,7 +4,8 @@ import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.tools.pdf.exporter.playground.constants.FontSize;
 import org.reactome.server.tools.pdf.exporter.playground.constants.Text;
 import org.reactome.server.tools.pdf.exporter.playground.domains.DataSet;
-import org.reactome.server.tools.pdf.exporter.playground.pdfexporter.PdfProperties;
+import org.reactome.server.tools.pdf.exporter.playground.pdfelements.AnalysisReport;
+import org.reactome.server.tools.pdf.exporter.playground.pdfelements.PdfProperties;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
@@ -12,7 +13,7 @@ import org.reactome.server.tools.pdf.exporter.playground.pdfexporter.PdfProperti
 public class Introduction implements Manipulator{
 
     @Override
-    public void manipulatePDF(PdfReport report, PdfProperties properties, DataSet dataSet) throws Exception {
+    public void manipulatePDF(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
         report.addNormalTitle("Introduction");
         for (String introduction : Text.INTRODUCTION) {
             report.add(new Paragraph(introduction).setFontSize(FontSize.H5).setMarginLeft(20).setFirstLineIndent(30));

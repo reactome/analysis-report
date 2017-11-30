@@ -1,4 +1,4 @@
-package org.reactome.server.tools.pdf.exporter.playground.pdfexporter;
+package org.reactome.server.tools.pdf.exporter.playground.pdfelements;
 
 import com.itextpdf.kernel.events.Event;
 import com.itextpdf.kernel.events.IEventHandler;

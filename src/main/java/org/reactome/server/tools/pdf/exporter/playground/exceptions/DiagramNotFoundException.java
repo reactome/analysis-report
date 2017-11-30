@@ -4,7 +4,4 @@ public class DiagramNotFoundException extends Exception {
     public DiagramNotFoundException(String message) {
         super(message);
     }
-
-    public DiagramNotFoundException() {
-    }
 }

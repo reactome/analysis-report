@@ -1,4 +1,4 @@
-package org.reactome.server.tools.pdf.exporter.playground.pdfexporter;
+package org.reactome.server.tools.pdf.exporter.playground.pdfelements;
 
 import com.itextpdf.io.font.FontConstants;
 import com.itextpdf.kernel.font.PdfFont;

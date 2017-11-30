@@ -1,6 +1,7 @@
 package org.reactome.server.tools.pdf.exporter.playground.pdfexporter;
 
 import org.junit.Test;
+import org.reactome.server.tools.pdf.exporter.playground.pdfelements.PdfProperties;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.File;
@@ -23,6 +24,6 @@ public class PDFReportExporterTests {
             PdfProperties properties = new PdfProperties(token);
             PdfExporter.export(properties,file);
             long end = System.currentTimeMillis();
-            System.out.println("create PdfReport file complete in:" + (end - start) + "ms");
+            System.out.println("create AnalysisReport file complete in:" + (end - start) + "ms");
     }
 }

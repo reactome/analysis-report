@@ -12,7 +12,7 @@ import java.io.File;
 public class tests {
     @Test
     public void test(){
-        File file = new File("src/main/recources/PdfReport/");
+        File file = new File("src/main/recources/AnalysisReport/");
         System.out.println(file.getName());
     }
 }
