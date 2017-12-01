@@ -1,4 +1,4 @@
-package org.reactome.server.tools.pdf.exporter.playground.manipulator;
+package org.reactome.server.tools.pdf.exporter.playground.pdfoperator;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Link;
@@ -19,7 +19,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class Details implements Manipulator {
+public class Details implements PdfOperator {
     private static TableFactory tableFactory;
 
     @Override
@@ -33,9 +33,9 @@ public class Details implements Manipulator {
         Paragraph paragraph = new Paragraph("3. Identifiers was found.").setFontSize(FontSize.H3).setFirstLineIndent(30);
         paragraph.setProperty(Property.DESTINATION, "IdentifiersWasFound");
         report.addNormalTitle(paragraph)
-                .add(tableFactory.getTable(TableType.IdentifiersWasFound));
+                .add((dataSet.getIdentifiersWasFounds()[0].getExpNames().length != 0) ? tableFactory.getTable(TableType.IdentifiersWasFound) : tableFactory.getTable(TableType.IdentifiersWasFoundNoEXP));
         report.addNormalTitle("4. Identifiers was not found.", FontSize.H3, 30)
-                .add(tableFactory.getTable(TableType.IdentifiersWasNotFound));
+                .add((dataSet.getResultAssociatedWithToken().getExpression().getColumnNames().length != 0) ? tableFactory.getTable(TableType.IdentifiersWasNotFound) : tableFactory.getTable(TableType.IdentifiersWasNotFoundNoEXP));
     }
 
 
@@ -54,8 +54,7 @@ public class Details implements Manipulator {
             paragraph.setProperty(Property.DESTINATION, pathways[i].getName());
             report.add(paragraph);
 
-            // TODO: 29/11/17 add the diagram;
-
+            // TODO: 29/11/17 add the correct diagram;
             report.addDiagram("R-HSA-169911")
                     .addNormalTitle("Summation", FontSize.H4, 40)
                     .add(new Paragraph("species name:" +

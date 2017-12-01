@@ -17,19 +17,24 @@ public class TableFactory {
         this.dataSet = dataSet;
     }
 
-    public Table getTable(TableType type) throws Exception{
+    public Table getTable(TableType type) throws Exception {
         switch (type) {
             case Overview:
                 return new OverviewTable(pdfProperties, dataSet);
             case IdentifiersWasFound:
                 return new IdentifiersWasFoundTable(dataSet);
+            case IdentifiersWasFoundNoEXP:
+                return new IdentifiersWasFoundTableNoEXP(dataSet);
             case IdentifiersWasNotFound:
                 return new IdentifiersWasNotFoundTable(dataSet);
+            case IdentifiersWasNotFoundNoEXP:
+                return new IdentifiersWasNotFoundTableNoEXP(dataSet);
             default:
-                throw new TableTypeNotFoundException(String.format("Could not find table type:",type));
+                throw new TableTypeNotFoundException("Could not find table type:" + type);
         }
     }
-    public Table getTable(Identifier[] identifiers){
+
+    public Table getTable(Identifier[] identifiers) {
         return new IdentifiersWasFoundInPathwayTable(identifiers);
     }
 }

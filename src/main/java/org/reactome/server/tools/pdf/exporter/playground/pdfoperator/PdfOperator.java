@@ -1,4 +1,4 @@
-package org.reactome.server.tools.pdf.exporter.playground.manipulator;
+package org.reactome.server.tools.pdf.exporter.playground.pdfoperator;
 
 import org.reactome.server.tools.pdf.exporter.playground.domains.DataSet;
 import org.reactome.server.tools.pdf.exporter.playground.pdfelements.AnalysisReport;
@@ -7,6 +7,6 @@ import org.reactome.server.tools.pdf.exporter.playground.pdfelements.PdfProperti
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public interface Manipulator {
+public interface PdfOperator {
     public void manipulatePDF(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception;
 }

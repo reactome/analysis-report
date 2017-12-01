@@ -1,4 +1,4 @@
-package org.reactome.server.tools.pdf.exporter.playground.manipulator;
+package org.reactome.server.tools.pdf.exporter.playground.pdfoperator;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Link;
@@ -14,7 +14,7 @@ import org.reactome.server.tools.pdf.exporter.playground.resttemplate.RestTempla
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class Administrative implements Manipulator{
+public class Administrative implements PdfOperator {
 
     @Override
     public void manipulatePDF(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {

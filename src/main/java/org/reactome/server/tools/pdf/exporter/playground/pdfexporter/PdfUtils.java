@@ -1,25 +1,22 @@
 package org.reactome.server.tools.pdf.exporter.playground.pdfexporter;
 
-import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
 import org.reactome.server.tools.pdf.exporter.playground.constants.URL;
 import org.reactome.server.tools.pdf.exporter.playground.domains.*;
 import org.reactome.server.tools.pdf.exporter.playground.pdfelements.PdfProperties;
 import org.reactome.server.tools.pdf.exporter.playground.resttemplate.RestTemplateFactory;
-import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import java.net.MalformedURLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-@Component
 public class PdfUtils {
     private static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("HH:mm dd/MM/yyyy");
 
@@ -33,14 +30,6 @@ public class PdfUtils {
             image.scale(scaling, scaling);
         }
         return image;
-    }
-
-
-    public static void addLogo(Document document, String LOGO) throws MalformedURLException {
-        Image logo = new Image(ImageDataFactory.create(LOGO));
-        logo.scale(0.3f, 0.3f);
-        logo.setFixedPosition(document.getLeftMargin() * 0.3f, document.getPdfDocument().getDefaultPageSize().getHeight() - document.getTopMargin() * 0.3f - logo.getImageScaledHeight());
-        document.add(logo);
     }
 
 
@@ -66,7 +55,7 @@ public class PdfUtils {
                 }
             }
         }
-        for (Map.Entry<String, Identifier> entry : filteredIdentifiers.entrySet()) {
+        for (Entry<String, Identifier> entry : filteredIdentifiers.entrySet()) {
             for (MapsTo mapsTo : entry.getValue().getMapsTo()) {
                 if (!entry.getValue().getResourceMapsToIds().containsKey(mapsTo.getResource())) {
                     entry.getValue().getResourceMapsToIds().put(mapsTo.getResource(), mapsTo.getIds().toString());

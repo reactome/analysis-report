@@ -4,7 +4,7 @@ package org.reactome.server.tools.pdf.exporter.playground.constants;
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
 public class URL {
-    private static final String REACTOME = "https://rectome.org";
+    public static final String REACTOME = "https://reactome.org";
     public static final String IDENTIFIERSWASNOTFOUND = "https://reactome.org/AnalysisService/token/{token}/notFound";
     public static final String VERSION = "https://reactome.org/ContentService/data/database/version";
     public static final String ANALYSIS = "https://reactome.org/PathwayBrowser/#/DTAB=AN&ANALYSIS=";

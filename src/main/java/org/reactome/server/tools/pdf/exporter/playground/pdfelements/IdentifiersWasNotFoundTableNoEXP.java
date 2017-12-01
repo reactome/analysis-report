@@ -11,22 +11,18 @@ import org.reactome.server.tools.pdf.exporter.playground.domains.Identifier;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class IdentifiersWasNotFoundTable extends Table {
-    public IdentifiersWasNotFoundTable(DataSet dataSet) {
-        super(dataSet.getIdentifiersWasNotFounds()[0].getExp().length + 1);
+public class IdentifiersWasNotFoundTableNoEXP extends Table {
+    public IdentifiersWasNotFoundTableNoEXP(DataSet dataSet) {
+        super(6);
 //            table.setWidthPercent(100);
         this.setMarginLeft(40).setFontSize(FontSize.H6).setTextAlignment(TextAlignment.CENTER).setVerticalAlignment(VerticalAlignment.MIDDLE);
-        this.addHeaderCell("Identifiers");
-        String[] header = dataSet.getResultAssociatedWithToken().getExpression().getColumnNames();
-        for (String head : header) {
-            this.addHeaderCell(head);
-        }
+
+        this.addHeaderCell(new Cell(1, 6).add("Identifiers"));
         for (Identifier identifier : dataSet.getIdentifiersWasNotFounds()) {
             this.addCell(new Cell().add(identifier.getId()));
-            for (Double exp : identifier.getExp()) {
-                this.addCell(exp.toString());
-            }
         }
-
+        for (int i = 0; i < 6 - dataSet.getIdentifiersWasNotFounds().length % 6; i++) {
+            this.addCell(new Cell());
+        }
     }
 }

@@ -1,4 +1,4 @@
-package org.reactome.server.tools.pdf.exporter.playground.manipulator;
+package org.reactome.server.tools.pdf.exporter.playground.pdfoperator;
 
 import org.reactome.server.tools.pdf.exporter.playground.domains.DataSet;
 import org.reactome.server.tools.pdf.exporter.playground.pdfelements.AnalysisReport;
@@ -11,16 +11,16 @@ import java.util.List;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class ManipulatorChain {
-    private List<Manipulator> manipulators = new ArrayList<Manipulator>();
+    private List<PdfOperator> pdfOperators = new ArrayList<PdfOperator>();
 
-    public ManipulatorChain addManipulator(Manipulator manipulator) {
-        manipulators.add(manipulator);
+    public ManipulatorChain addManipulator(PdfOperator pdfOperator) {
+        pdfOperators.add(pdfOperator);
         return this;
     }
 
     public void manipulate(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
-        for (Manipulator manipulator : manipulators) {
-            manipulator.manipulatePDF(report,properties, dataSet);
+        for (PdfOperator pdfOperator : pdfOperators) {
+            pdfOperator.manipulatePDF(report,properties, dataSet);
         }
     }
 }

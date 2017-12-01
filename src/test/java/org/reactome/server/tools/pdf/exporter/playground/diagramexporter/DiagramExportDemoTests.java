@@ -16,8 +16,8 @@ public class DiagramExportDemoTests {
     @Test
     public void test() throws Exception {
         String stId="R-HSA-169911";
-        BufferedImage BufferedImage = DiagramExporter.getBufferedImage(stId);
+        BufferedImage diagram = DiagramExporter.getDiagram(stId);
         final File file = new File("src/main/resources/diagrams/"+stId + ".png");
-        ImageIO.write(BufferedImage, "png", file);
+        ImageIO.write(diagram, "png", file);
     }
 }

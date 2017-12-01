@@ -1,7 +1,6 @@
 package org.reactome.server.tools.pdf.exporter.playground.domains;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +9,6 @@ import java.util.Map;
 /**
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
-@Component
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Identifier {
 

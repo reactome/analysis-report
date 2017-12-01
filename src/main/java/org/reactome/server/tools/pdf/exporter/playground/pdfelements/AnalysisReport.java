@@ -9,6 +9,7 @@ import com.itextpdf.layout.property.HorizontalAlignment;
 import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.tools.pdf.exporter.playground.constants.FontSize;
 import org.reactome.server.tools.pdf.exporter.playground.diagramexporter.DiagramExporter;
+import org.reactome.server.tools.pdf.exporter.playground.fireworksexporter.FireworksExporterFactory;
 import org.reactome.server.tools.pdf.exporter.playground.pdfexporter.PdfUtils;
 
 import java.awt.*;
@@ -33,7 +34,7 @@ public class AnalysisReport extends Document {
     }
 
     public AnalysisReport addLogo(URL url) {
-        Image image  = new Image(ImageDataFactory.create(url, false));
+        Image image = new Image(ImageDataFactory.create(url, false));
         final float scaling = 0.3f;
         image.scale(scaling, scaling);
         image.setFixedPosition(this.getLeftMargin() * scaling, this.getPdfDocument().getDefaultPageSize().getHeight() - this.getTopMargin() * scaling - image.getImageScaledHeight());
@@ -42,9 +43,20 @@ public class AnalysisReport extends Document {
     }
 
     public AnalysisReport addDiagram(String stId) throws Exception {
-        Image image = new Image(ImageDataFactory.create(DiagramExporter.getBufferedImage(stId), Color.WHITE));
+        Image image = new Image(ImageDataFactory.create(DiagramExporter.getDiagram(stId), Color.WHITE));
+//        image.setHorizontalAlignment(HorizontalAlignment.CENTER).setAutoScale(true);
         image.setHorizontalAlignment(HorizontalAlignment.CENTER);
         this.add(PdfUtils.ImageAutoScale(this, image));
+//        this.add(image);
+        return this;
+    }
+
+    public AnalysisReport addFireworks(String token) throws Exception {
+        Image image = new Image(ImageDataFactory.create(FireworksExporterFactory.getFireworks(token), Color.WHITE));
+//        image.setHorizontalAlignment(HorizontalAlignment.CENTER).setAutoScale(true);
+        image.setHorizontalAlignment(HorizontalAlignment.CENTER);
+        this.add(PdfUtils.ImageAutoScale(this, image));
+//        this.add(image);
         return this;
     }
 
@@ -80,8 +92,6 @@ public class AnalysisReport extends Document {
             this.add(paragraph);
         return this;
     }
-
-
 
 
 }

@@ -24,6 +24,6 @@ public class PDFReportExporterTests {
             PdfProperties properties = new PdfProperties(token);
             PdfExporter.export(properties,file);
             long end = System.currentTimeMillis();
-            System.out.println("create AnalysisReport file complete in:" + (end - start) + "ms");
+            System.out.println("create AnalysisReport file in:" + (end - start) + "ms");
     }
 }

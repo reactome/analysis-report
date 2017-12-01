@@ -1,4 +1,4 @@
-package org.reactome.server.tools.pdf.exporter.playground.manipulator;
+package org.reactome.server.tools.pdf.exporter.playground.pdfoperator;
 
 import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.tools.pdf.exporter.playground.constants.FontSize;
@@ -10,7 +10,7 @@ import org.reactome.server.tools.pdf.exporter.playground.pdfelements.PdfProperti
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class Introduction implements Manipulator{
+public class Introduction implements PdfOperator {
 
     @Override
     public void manipulatePDF(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {

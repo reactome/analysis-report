@@ -1,9 +1,9 @@
 package org.reactome.server.tools.pdf.exporter.playground.pdfexporter;
 
 import org.reactome.server.tools.pdf.exporter.playground.domains.DataSet;
-import org.reactome.server.tools.pdf.exporter.playground.manipulator.*;
 import org.reactome.server.tools.pdf.exporter.playground.pdfelements.AnalysisReport;
 import org.reactome.server.tools.pdf.exporter.playground.pdfelements.PdfProperties;
+import org.reactome.server.tools.pdf.exporter.playground.pdfoperator.*;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
