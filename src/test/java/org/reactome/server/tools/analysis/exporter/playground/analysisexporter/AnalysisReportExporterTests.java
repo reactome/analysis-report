@@ -5,15 +5,13 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfPro
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
 import java.util.Date;
 
 /**
  * Created by DengChuan on 2017/10/25.
  */
 //@RunWith(SpringRunner.class)
-//test hava file only so dont need to add the runner
+//test this file only so dont need to add the runner
 
 @SpringBootTest
 public class AnalysisReportExporterTests {
@@ -24,17 +22,16 @@ public class AnalysisReportExporterTests {
         String token = "MjAxNzExMTcwODEzMjBfNzU%253D";
         File file = new File("src/main/resources/pdfs/" + token + "@" + new Date().getTime() + ".pdf");
         PdfProperties properties = new PdfProperties(token);
-
+        AnalysisExporter.export(properties, file);
         /**
-         * to save as a local pdf file:
+         * or to save as a local pdf file by use outputstream:
          * <code>
-         *     AnalysisExporter.export(properties,file);
+         *FileOutputStream outputStream = new FileOutputStream(file);
+         *AnalysisExporter.export(properties, outputStream);
+         *OutputStreamWriter writer = new OutputStreamWriter(outputStream);
+         *writer.close();
          * </code>
          */
-        FileOutputStream outputStream = new FileOutputStream(file);
-        AnalysisExporter.export(properties, outputStream);
-        OutputStreamWriter writer = new OutputStreamWriter(outputStream);
-        writer.close();
         long end = System.currentTimeMillis();
         System.out.println("create AnalysisReport file in:" + (end - start) + "ms");
     }

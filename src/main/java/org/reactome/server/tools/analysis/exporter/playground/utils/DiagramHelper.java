@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.diagramexporter;
+package org.reactome.server.tools.analysis.exporter.playground.utils;
 
 import org.reactome.server.tools.analysis.exporter.playground.exceptions.FailToGetDiagramException;
 import org.reactome.server.tools.diagram.exporter.raster.RasterExporter;
@@ -10,7 +10,7 @@ import java.awt.image.BufferedImage;
 /**
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
-public class DiagramExporter {
+public class DiagramHelper {
 
     // This path must contain "{stId}.json" and "{stId}.graph.json" files
     private static final String diagramPath = "/home/byron/static/demo";
@@ -22,7 +22,7 @@ public class DiagramExporter {
      *
      * @param stId stable identifier
      * @return BufferedImage
-     * @throws FailToGetDiagramException
+     * @throws FailToGetDiagramException fail to get diagram by stId
      */
     public static BufferedImage getDiagram(String stId) throws FailToGetDiagramException {
         try {

@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.fireworksexporter;
+package org.reactome.server.tools.analysis.exporter.playground.utils;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>

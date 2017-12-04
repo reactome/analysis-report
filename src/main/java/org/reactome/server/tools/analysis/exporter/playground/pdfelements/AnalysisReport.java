@@ -2,17 +2,18 @@ package org.reactome.server.tools.analysis.exporter.playground.pdfelements;
 
 import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.io.util.UrlUtil;
+import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.HorizontalAlignment;
 import com.itextpdf.layout.property.TextAlignment;
-import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.PdfUtils;
 import org.reactome.server.tools.analysis.exporter.playground.constants.FontSize;
-import org.reactome.server.tools.analysis.exporter.playground.diagramexporter.DiagramExporter;
 import org.reactome.server.tools.analysis.exporter.playground.exceptions.FailToAddLogoException;
-import org.reactome.server.tools.analysis.exporter.playground.fireworksexporter.FireworksExporterFactory;
+import org.reactome.server.tools.analysis.exporter.playground.utils.DiagramHelper;
+import org.reactome.server.tools.analysis.exporter.playground.utils.FireworksHelper;
+import org.reactome.server.tools.analysis.exporter.playground.utils.PdfUtil;
 
 import java.awt.*;
 import java.net.MalformedURLException;
@@ -23,11 +24,12 @@ import java.net.URL;
  */
 public class AnalysisReport extends Document {
 
-    public AnalysisReport(PdfProperties properties) {
-        super(properties.getPdfDocument(), properties.getPageSize(), properties.isImmediateFlush());
+    private static final float logoScaling = 0.3f;
+
+    public AnalysisReport(PdfProperties properties, PdfDocument pdfDocument) {
+        super(pdfDocument, properties.getPageSize(), properties.isImmediateFlush());
         this.setFont(properties.getFont())
                 .setTextAlignment(TextAlignment.JUSTIFIED);
-//                .setHyphenation(new HyphenationConfig(3, 3));
         this.setMargins(properties.getMargin(), properties.getMargin(), properties.getMargin(), properties.getMargin());
     }
 
@@ -41,28 +43,23 @@ public class AnalysisReport extends Document {
 
     public AnalysisReport addLogo(URL url) {
         Image image = new Image(ImageDataFactory.create(url, false));
-        final float scaling = 0.3f;
-        image.scale(scaling, scaling);
-        image.setFixedPosition(this.getLeftMargin() * scaling, this.getPdfDocument().getDefaultPageSize().getHeight() - this.getTopMargin() * scaling - image.getImageScaledHeight());
+        image.scale(logoScaling, logoScaling);
+        image.setFixedPosition(this.getLeftMargin() * logoScaling, this.getPdfDocument().getDefaultPageSize().getHeight() - this.getTopMargin() * logoScaling - image.getImageScaledHeight());
         this.add(image);
         return this;
     }
 
     public AnalysisReport addDiagram(String stId) throws Exception {
-        Image image = new Image(ImageDataFactory.create(DiagramExporter.getDiagram(stId), Color.WHITE));
-//        image.setHorizontalAlignment(HorizontalAlignment.CENTER).setAutoScale(true);
+        Image image = new Image(ImageDataFactory.create(DiagramHelper.getDiagram(stId), Color.WHITE));
         image.setHorizontalAlignment(HorizontalAlignment.CENTER);
-        this.add(PdfUtils.ImageAutoScale(this, image));
-//        this.add(image);
+        this.add(PdfUtil.ImageAutoScale(this, image));
         return this;
     }
 
     public AnalysisReport addFireworks(String token) throws Exception {
-        Image image = new Image(ImageDataFactory.create(FireworksExporterFactory.getFireworks(token), Color.WHITE));
+        Image image = new Image(ImageDataFactory.create(FireworksHelper.getFireworks(token), Color.WHITE));
         image.setHorizontalAlignment(HorizontalAlignment.CENTER).setAutoScale(true);
-//        image.setHorizontalAlignment(HorizontalAlignment.CENTER);
-//        this.add(PdfUtils.ImageAutoScale(this, image));
-        this.add(image);
+        this.add(image.setBold());
         return this;
     }
 

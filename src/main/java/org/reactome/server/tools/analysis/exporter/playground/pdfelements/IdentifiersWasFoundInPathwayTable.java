@@ -5,19 +5,25 @@ import com.itextpdf.layout.border.Border;
 import com.itextpdf.layout.element.Cell;
 import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.TextAlignment;
-import org.reactome.server.tools.analysis.exporter.playground.domains.Identifier;
+import org.reactome.server.tools.analysis.exporter.playground.constants.FontSize;
+import org.reactome.server.tools.analysis.exporter.playground.models.Identifier;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class IdentifiersWasFoundInPathwayTable extends Table {
+
+    public static final int numColumns = 6;
+    public static final int leftMargin = 60;
+
+
     public IdentifiersWasFoundInPathwayTable(Identifier[] identifiers) {
-        super(6);
-        this.setMarginLeft(60).setFontSize(10).setTextAlignment(TextAlignment.LEFT);
+        super(numColumns);
+        this.setMarginLeft(leftMargin).setFontSize(FontSize.H6).setTextAlignment(TextAlignment.LEFT);
         for (Identifier identifier : identifiers) {
             this.addCell(new Cell().add(identifier.getId()).setAction(PdfAction.createGoTo(identifier.getId())).setBorder(Border.NO_BORDER));
         }
-        for (int j = 0; j < 6 - identifiers.length % 6; j++) {
+        for (int j = 0; j < numColumns - identifiers.length % numColumns; j++) {
             this.addCell(new Cell().setBorder(Border.NO_BORDER));
         }
     }

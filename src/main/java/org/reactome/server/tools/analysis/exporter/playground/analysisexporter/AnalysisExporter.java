@@ -1,8 +1,10 @@
 package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
-import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
-import org.reactome.server.tools.analysis.exporter.playground.exceptions.*;
+import org.reactome.server.tools.analysis.exporter.playground.exceptions.FailToAddLogoException;
+import org.reactome.server.tools.analysis.exporter.playground.exceptions.FailToGetDiagramException;
+import org.reactome.server.tools.analysis.exporter.playground.exceptions.FailToGetFireworksException;
+import org.reactome.server.tools.analysis.exporter.playground.exceptions.TableTypeNotFoundException;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,29 +21,21 @@ public class AnalysisExporter {
 
     private static final Logger logger = LoggerFactory.getLogger(AnalysisExporter.class);
 
-
     public static void export(PdfProperties properties, File dest) throws Exception {
-        properties.setPdfDocument(new PdfDocument(new PdfWriter(dest)));
-        export(properties);
+        export(properties, new PdfWriter(dest));
     }
 
     public static void export(PdfProperties properties, OutputStream outputStream) throws Exception {
-        properties.setPdfDocument(new PdfDocument(new PdfWriter(outputStream)));
-        export(properties);
+        export(properties, new PdfWriter(outputStream));
     }
 
     public static void export(PdfProperties properties, ByteArrayOutputStream byteArrayOutputStream) throws Exception {
-        properties.setPdfDocument(new PdfDocument(new PdfWriter(byteArrayOutputStream)));
-        export(properties);
+        export(properties, new PdfWriter(byteArrayOutputStream));
     }
 
-    public static void export(PdfProperties properties) throws Exception {
+    public static void export(PdfProperties properties, PdfWriter writer) throws Exception {
         try {
-            if (properties.getPdfDocument() == null) {
-                logger.error("No PdfDocument was set in PdfProperties");
-                throw new NullPdfDocumentException("No PdfDocument has been set in PdfProperties");
-            }
-            ManipulatePdf.manipulate(properties);
+            ManipulatePdf.manipulate(properties, writer);
         } catch (FailToAddLogoException e) {
             logger.error(e.getMessage());
             throw new Exception(e.getMessage(), e);

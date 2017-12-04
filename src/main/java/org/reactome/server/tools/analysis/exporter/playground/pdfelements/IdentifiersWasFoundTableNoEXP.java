@@ -6,8 +6,8 @@ import com.itextpdf.layout.property.Property;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.constants.FontSize;
-import org.reactome.server.tools.analysis.exporter.playground.domains.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.domains.Identifier;
+import org.reactome.server.tools.analysis.exporter.playground.models.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.models.Identifier;
 
 import java.util.Map.Entry;
 
@@ -15,10 +15,13 @@ import java.util.Map.Entry;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class IdentifiersWasFoundTableNoEXP extends Table {
+    public static final int numColumns = 6;
+    public static final int leftMargin = 40;
+
     public IdentifiersWasFoundTableNoEXP(DataSet dataSet) {
-        super(6);
+        super(numColumns);
 //        this.setWidthPercent(100);
-        this.setMarginLeft(40)
+        this.setMarginLeft(leftMargin)
                 .setFontSize(FontSize.H6)
                 .setTextAlignment(TextAlignment.CENTER);
         this.addHeaderCell("Identifiers")

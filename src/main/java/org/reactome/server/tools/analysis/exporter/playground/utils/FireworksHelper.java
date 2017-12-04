@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.fireworksexporter;
+package org.reactome.server.tools.analysis.exporter.playground.utils;
 
 import org.reactome.server.tools.analysis.exporter.playground.constants.URL;
 import org.reactome.server.tools.analysis.exporter.playground.exceptions.FailToGetFireworksException;
@@ -13,7 +13,7 @@ import java.awt.image.BufferedImage;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class FireworksExporterFactory {
+public class FireworksHelper {
     private static final String fireworksPath = "/home/byron/json";
     private static final String species = "Homo_sapiens";
     private static final String fireworksFormat = "png";
@@ -26,7 +26,7 @@ public class FireworksExporterFactory {
             FireworkArgs args = new FireworkArgs(species, fireworksFormat);
             args.setFactor(quality);
             args.setToken(token);
-            args.setProfile(FireworksColor.CalciumSalts.getColor());
+            args.setProfile(FireworksColor.CopperPlus.getColor());
             FireworksExporter exporter = new FireworksExporter(args, fireworksPath);
             return exporter.render();
         } catch (AnalysisException | AnalysisServerError pascual) {

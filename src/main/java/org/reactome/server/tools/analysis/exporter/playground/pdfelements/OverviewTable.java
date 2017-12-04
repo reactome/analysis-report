@@ -8,8 +8,9 @@ import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.UnitValue;
 import com.itextpdf.layout.property.VerticalAlignment;
-import org.reactome.server.tools.analysis.exporter.playground.domains.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.domains.Pathway;
+import org.reactome.server.tools.analysis.exporter.playground.constants.FontSize;
+import org.reactome.server.tools.analysis.exporter.playground.models.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.models.Pathway;
 
 import java.text.NumberFormat;
 
@@ -17,17 +18,20 @@ import java.text.NumberFormat;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class OverviewTable extends Table {
+    public static final int maximumFractionDigits = 4;
+    public static final float[] columnsRelativeWith = new float[]{5, 1, 1, 1, 3, 3, 1, 1, 1, 2};
+    public static final String[] headers = {"Pathway name", "Entities found", "Entities Total", "Entities ratio", "Entities pValue", "Entities FDR", "Reactions found", "Reactions total", "Reactions ratio", "Species name"};
+
+
     public OverviewTable(PdfProperties properties, DataSet dataSet) {
-        super(UnitValue.createPercentArray(new float[]{5, 1, 1, 1, 3, 3, 1, 1, 1, 2}), false);
-        this.setWidthPercent(100);
-        this.setFontSize(6)
+        super(UnitValue.createPercentArray(columnsRelativeWith), false);
+//        this.setWidthPercent(100);
+        this.setFontSize(FontSize.H8)
                 .setTextAlignment(TextAlignment.CENTER);
-//                .setVerticalAlignment(VerticalAlignment.MIDDLE);
-        String[] headers = {"Pathway name", "Entities found", "Entities Total", "Entities ratio", "Entities pValue", "Entities FDR", "Reactions found", "Reactions total", "Reactions ratio", "Species name"};
         for (String header : headers)
             this.addHeaderCell(header);
         NumberFormat numberFormat = NumberFormat.getNumberInstance();
-        numberFormat.setMaximumFractionDigits(4);
+        numberFormat.setMaximumFractionDigits(maximumFractionDigits);
         Pathway[] pathways = dataSet.getPathways();
         for (int i = 0; i < properties.getNumberOfPathwaysToShow(); i++) {
             this.addCell(new Cell().add(new Paragraph(new Link(pathways[i].getName(), PdfAction.createGoTo(pathways[i].getName())))).setVerticalAlignment(VerticalAlignment.MIDDLE));

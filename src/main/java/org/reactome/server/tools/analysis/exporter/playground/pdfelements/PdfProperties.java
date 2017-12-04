@@ -4,7 +4,6 @@ import com.itextpdf.io.font.FontConstants;
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.geom.PageSize;
-import com.itextpdf.kernel.pdf.PdfDocument;
 
 import java.io.IOException;
 
@@ -18,7 +17,6 @@ public class PdfProperties {
     private static String token;
     private static PdfFont font = null;
     private static PageSize pageSize = PageSize.A4;
-    private static PdfDocument pdfDocument = null;
 
     public PdfProperties(String token) {
         setToken(token);
@@ -82,18 +80,5 @@ public class PdfProperties {
     public PdfProperties setImmediateFlush(boolean immediateFlush) {
         this.immediateFlush = immediateFlush;
         return this;
-    }
-
-    public PdfDocument getPdfDocument() {
-        return pdfDocument;
-    }
-
-    public PdfProperties setPdfDocument(PdfDocument pdfDocument) {
-        this.pdfDocument = pdfDocument;
-        return this;
-    }
-
-    public void close() {
-        this.getPdfDocument().close();
     }
 }

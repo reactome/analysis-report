@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.domains;
+package org.reactome.server.tools.analysis.exporter.playground.models;
 
 import java.util.Map;
 

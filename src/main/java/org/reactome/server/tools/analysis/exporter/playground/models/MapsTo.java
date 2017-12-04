@@ -1,26 +1,19 @@
-package org.reactome.server.tools.analysis.exporter.playground.domains;
+package org.reactome.server.tools.analysis.exporter.playground.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import java.util.ArrayList;
 
 /**
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-
-public class Entity {
-    private String[] ids;
+public class MapsTo {
     private String resource;
+    private ArrayList<String> ids;
 
-    public Entity(){
+    public MapsTo() {
 
-    }
-
-    public String[] getIds() {
-        return ids;
-    }
-
-    public void setIds(String[] ids) {
-        this.ids = ids;
     }
 
     public String getResource() {
@@ -29,5 +22,13 @@ public class Entity {
 
     public void setResource(String resource) {
         this.resource = resource;
+    }
+
+    public ArrayList<String> getIds() {
+        return ids;
+    }
+
+    public void setIds(ArrayList<String> ids) {
+        this.ids = ids;
     }
 }

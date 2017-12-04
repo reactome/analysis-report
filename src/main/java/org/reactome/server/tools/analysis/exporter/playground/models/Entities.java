@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.domains;
+package org.reactome.server.tools.analysis.exporter.playground.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -6,13 +6,16 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Reactions {
+public class Entities {
     private String resource;
     private int total;
     private int found;
     private double ratio;
+    private double pValue;
+    private double fdr;
+    private String[] exp;
 
-    public Reactions() {
+    public Entities() {
     }
 
     public String getResource() {
@@ -45,5 +48,29 @@ public class Reactions {
 
     public void setRatio(double ratio) {
         this.ratio = ratio;
+    }
+
+    public double getpValue() {
+        return pValue;
+    }
+
+    public void setpValue(double pValue) {
+        this.pValue = pValue;
+    }
+
+    public double getFdr() {
+        return fdr;
+    }
+
+    public void setFdr(double fdr) {
+        this.fdr = fdr;
+    }
+
+    public String[] getExp() {
+        return exp;
+    }
+
+    public void setExp(String[] exp) {
+        this.exp = exp;
     }
 }

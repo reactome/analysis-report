@@ -12,10 +12,10 @@ import org.reactome.server.tools.analysis.exporter.playground.constants.FontSize
 /**
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
-public class FooterEventHandler implements IEventHandler{
+public class FooterEventHandler implements IEventHandler {
 
-    private final PdfFont font;
-    private int margin;
+    private static PdfFont font;
+    private static int margin;
 
     public FooterEventHandler(PdfFont font, int margin) {
         this.font = font;
@@ -33,7 +33,7 @@ public class FooterEventHandler implements IEventHandler{
                 .moveText(margin * 2 / 3, margin * 2 / 3)
                 .showText("Reactome.org")
                 .moveText(page.getPageSize().getWidth() / 2 - 35, 0)
-                .showText(String.format("- %s -",pdfDocument.getPageNumber(page)))
+                .showText(String.format("- %s -", pdfDocument.getPageNumber(page)))
                 .endText()
                 .release();
     }

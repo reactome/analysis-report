@@ -11,7 +11,7 @@ import java.io.File;
 @SpringBootTest
 public class cleaner {
     @Test
-    public void clean() {
+    public void clean() throws Exception {
         for (File file : new File("src/main/resources/pdfs").listFiles()) file.delete();
     }
 }

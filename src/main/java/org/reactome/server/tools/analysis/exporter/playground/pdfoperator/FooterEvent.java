@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfoperator;
 
 import com.itextpdf.kernel.events.PdfDocumentEvent;
-import org.reactome.server.tools.analysis.exporter.playground.domains.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.models.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.FooterEventHandler;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;

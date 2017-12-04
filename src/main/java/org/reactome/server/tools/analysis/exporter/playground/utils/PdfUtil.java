@@ -1,13 +1,12 @@
-package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
+package org.reactome.server.tools.analysis.exporter.playground.utils;
 
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.Property;
 import org.reactome.server.tools.analysis.exporter.playground.constants.URL;
-import org.reactome.server.tools.analysis.exporter.playground.domains.*;
+import org.reactome.server.tools.analysis.exporter.playground.models.*;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;
-import org.reactome.server.tools.analysis.exporter.playground.resttemplate.RestTemplateFactory;
 import org.springframework.web.client.RestTemplate;
 
 import java.text.SimpleDateFormat;
@@ -19,7 +18,7 @@ import java.util.Map.Entry;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class PdfUtils {
+public class PdfUtil {
     private static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("HH:mm dd/MM/yyyy");
 
     public static Image ImageAutoScale(Document document, Image image) {
@@ -38,8 +37,8 @@ public class PdfUtils {
         return SIMPLE_DATE_FORMAT.format(new Date());
     }
 
-    public static Paragraph setDestination(Paragraph paragraph,String destination){
-        paragraph.setProperty(Property.DESTINATION,destination);
+    public static Paragraph setDestination(Paragraph paragraph, String destination) {
+        paragraph.setProperty(Property.DESTINATION, destination);
         return paragraph;
     }
 
@@ -75,12 +74,12 @@ public class PdfUtils {
 
     public static DataSet getDataSet(PdfProperties properties) {
         DataSet dataSet = new DataSet();
-        RestTemplate restTemplate = RestTemplateFactory.getInstance();
+        RestTemplate restTemplate = RestTemplateHelper.getInstance();
         ResultAssociatedWithToken resultAssociatedWithToken = restTemplate.getForObject(URL.RESULTASSCIATEDWITHTOKEN, ResultAssociatedWithToken.class, properties.getToken(), properties.getNumberOfPathwaysToShow());
         Pathway[] pathways = resultAssociatedWithToken.getPathways();
-        StringBuilder stIds = PdfUtils.stIdConcat(pathways);
+        StringBuilder stIds = PdfUtil.stIdConcat(pathways);
         IdentifiersWasFound[] identifiersWasFounds = restTemplate.postForObject(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), IdentifiersWasFound[].class, properties.getToken());
-        Map<String, Identifier> identifiersWasFiltered = PdfUtils.identifiersFilter(identifiersWasFounds);
+        Map<String, Identifier> identifiersWasFiltered = PdfUtil.identifiersFilter(identifiersWasFounds);
         Identifier[] identifiersWasNotFounds = restTemplate.getForObject(URL.IDENTIFIERSWASNOTFOUND, Identifier[].class, properties.getToken());
         dataSet.setIdentifiersWasNotFounds(identifiersWasNotFounds);
         dataSet.setIdentifiersWasFounds(identifiersWasFounds);

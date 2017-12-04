@@ -1,9 +1,9 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelements;
 
 import com.itextpdf.layout.element.Table;
-import org.reactome.server.tools.analysis.exporter.playground.domains.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.domains.Identifier;
 import org.reactome.server.tools.analysis.exporter.playground.exceptions.TableTypeNotFoundException;
+import org.reactome.server.tools.analysis.exporter.playground.models.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.models.Identifier;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
