@@ -15,7 +15,8 @@ import java.util.Map.Entry;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class IdentifiersWasFoundTable extends Table {
-    public static final int leftMargin = 40;
+    private static final int leftMargin = 40;
+
     public IdentifiersWasFoundTable(DataSet dataSet) {
         super(dataSet.getIdentifiersWasFounds()[0].getExpNames().length + 3);
 //        this.setWidthPercent(100);
@@ -28,8 +29,9 @@ public class IdentifiersWasFoundTable extends Table {
         for (String header : dataSet.getResultAssociatedWithToken().getExpression().getColumnNames()) {
             this.addHeaderCell(header);
         }
+        Cell cell = null;
         for (Entry<String, Identifier> entry : dataSet.getIdentifiersWasFiltered().entrySet()) {
-            Cell cell = new Cell().add(entry.getKey()).setVerticalAlignment(VerticalAlignment.MIDDLE);
+            cell = new Cell().add(entry.getKey()).setVerticalAlignment(VerticalAlignment.MIDDLE);
             cell.setProperty(Property.DESTINATION, entry.getKey());
             this.addCell(cell);
             this.addCell(new Cell().add(entry.getValue().getResourceMapsToIds().get(entry.getValue().getMapsTo().get(0).getResource()).replaceAll("[\\[|\\]]", "")).setVerticalAlignment(VerticalAlignment.MIDDLE));

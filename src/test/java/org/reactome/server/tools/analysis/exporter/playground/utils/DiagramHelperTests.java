@@ -11,7 +11,7 @@ import java.io.File;
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
 @SpringBootTest
-public class DiagramExportDemoTests {
+public class DiagramHelperTests {
 
     @Test
     public void test() throws Exception {

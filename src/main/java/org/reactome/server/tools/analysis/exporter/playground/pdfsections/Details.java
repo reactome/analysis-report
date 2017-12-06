@@ -1,8 +1,9 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfoperator;
+package org.reactome.server.tools.analysis.exporter.playground.pdfsections;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Link;
 import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.renderer.DocumentRenderer;
 import org.reactome.server.tools.analysis.exporter.playground.constants.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constants.Indent;
 import org.reactome.server.tools.analysis.exporter.playground.constants.MarginLeft;
@@ -22,14 +23,15 @@ import org.springframework.web.client.RestTemplate;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class Details implements PdfOperator {
+public class Details extends DocumentRenderer {
     private static TableFactory tableFactory;
 
-    @Override
-    public void manipulatePDF(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
+
+    public Details(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
+        super(report, properties.isImmediateFlush());
         tableFactory = new TableFactory(properties, dataSet);
         report.addNormalTitle("Details")
-                .addNormalTitle("1. Top " + properties.getNumberOfPathwaysToShow() + " Overrepresentation pathways sorted by p-Value.", FontSize.H3, Indent.I2)
+                .addNormalTitle(String.format("1. Top %s Overrepresentation pathways sorted by p-Value.", properties.getNumberOfPathwaysToShow()), FontSize.H3, Indent.I2)
                 .addTable(tableFactory.getTable(TableType.Overview));
         report.addNormalTitle("2. Pathway details.", FontSize.H3, Indent.I2);
         addPathwaysDetails(report, properties, dataSet);
@@ -66,7 +68,7 @@ public class Details implements PdfOperator {
                     ).setFontSize(FontSize.H5).setFirstLineIndent(Indent.I4).setMarginLeft(MarginLeft.M3));
 
             report.addNormalTitle("List of identifiers was found at this pathway", FontSize.H4, Indent.I3)
-                    .add(tableFactory.getTable(identifiersWasFounds[i].getEntities()));
+                    .addTable(tableFactory.getTable(identifiersWasFounds[i].getEntities()));
             if (pathwayDetail.getAuthors() != null) {
                 report.addNormalTitle("Authors", FontSize.H4, Indent.I3)
                         .addParagraph(new Paragraph(pathwayDetail.getAuthors().getDisplayName()).setFontSize(FontSize.H5).setFirstLineIndent(Indent.I4));

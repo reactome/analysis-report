@@ -19,8 +19,7 @@ public class DiagramHelper {
     private static final int quality = 10;
 
     /**
-     *
-     * @param stId stable identifier
+     * @param stId      stable identifier of the diagram
      * @return BufferedImage
      * @throws FailToGetDiagramException fail to get diagram by stId
      */

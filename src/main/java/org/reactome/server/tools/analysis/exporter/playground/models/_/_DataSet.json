@@ -1,0 +1,106 @@
+{
+  "version": 62,
+  "identifiersFound": 1164,
+  "identifiersNotFound": 35,
+  "pathwaysFound": 1130,
+  "pathwaysTotal": 2000,
+  "expNames": [
+    "10h_control",
+    "10h",
+    "14h",
+    "18h",
+    "24h"
+  ],
+  "overview": [
+    {
+      "stId": "R-HSA-5663202",
+      "name": "Diseases of signal transduction",
+      "speciesName": "Homo sapiens",
+      "entities": {
+        "total": 466,
+        "found": 50,
+        "ratio": 0.034485310441796785,
+        "pValue": 1.1102230246251565e-16,
+        "fdr": 2.275957200481571e-14
+      },
+      "reactions": {
+        "total": 297,
+        "found": 225,
+        "ratio": 0.02674470959027465
+      }
+    }
+  ],
+  "details": [
+    {
+      "displayName": "RNA Pol II CTD phosphorylation and interaction with CE during HIV infection",
+      "stId": "R-HSA-167160",
+      "created": "Matthews, L, 2005-10-11 08:40:23",
+      "modified": "Shorser, Solomon, 2016-11-07",
+      "authored": "Matthews, L, Rice, AP, 2005-07-27 00:00:00",
+      "edited": "Matthews, L, 2005-07-26 23:29:22",
+      "releaseDate": "2006-01-23",
+      "speciesName": "Homo sapiens",
+      "compartment": "nucleoplasm",
+      "hasDiagram": false,
+      "summation": "To facilitate co-transcriptional capping, and thereby restrict the cap structure to RNAs made by RNA polymerase II, the capping enzymes bind directly to the RNA polymerase II.  The C-terminal domain of the largest Pol II subunit contains several phosphorylation sites on its heptapeptide repeats.  The capping enzyme guanylyltransferase and the methyltransferase bind  specifically to CTD phosphorylated at Serine 5 within the CTD.  Kinase subunit of TFIIH, Cdk7, catalyzes this phosphorylation event that occurs near the promoter.  In addition, it has been shown that binding of capping enzyme to the Serine-5 phosphorylated CTD stimulates guanylyltransferase activity in vitro.",
+      "isInDisease": true,
+      "disease": "Human immunodeficiency virus infectious disease",
+      "isInferred": true,
+      "inferredFrom": [
+        {
+          "displayName": "RNA Pol II CTD phosphorylation and interaction with CE",
+          "speciesName": "Homo sapiens",
+          "hasDiagram": false
+        }
+      ],
+      "literatureReference": [
+        {
+          "title": "The general transcription factors of RNA polymerase II.",
+          "journal": "Genes Dev",
+          "pages": "2657-83",
+          "pubMedIdentifier": 8946909,
+          "volume": 10,
+          "year": 1997,
+          "url": "http://www.ncbi.nlm.nih.gov/pubmed/8946909"
+        }
+      ]
+    }
+  ],
+  "foundAll": [
+    {
+      "pathway": "R-HSA-167160",
+      "entities": [
+        {
+          "id": "214263_x_at",
+          "exp": [
+            7.405372,
+            6.969381,
+            7.07684,
+            6.876814,
+            6.723067
+          ],
+          "mapsTo": [
+            {
+              "resource": "UNIPROT",
+              "ids": [
+                "P19387"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notFound": [
+    {
+      "id": "23432_at",
+      "exp": [
+        7.405372,
+        6.969381,
+        7.07684,
+        6.876814,
+        6.723067
+      ]
+    }
+  ]
+}

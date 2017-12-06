@@ -15,8 +15,9 @@ import java.util.Map.Entry;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class IdentifiersWasFoundTableNoEXP extends Table {
-    public static final int numColumns = 6;
-    public static final int leftMargin = 40;
+    private static final int numColumns = 6;
+    private static final int leftMargin = 40;
+    private static final String[] headers = {"Identifiers", "mapsTo", "Resource", "Identifiers", "mapsTo", "Resource"};
 
     public IdentifiersWasFoundTableNoEXP(DataSet dataSet) {
         super(numColumns);
@@ -24,14 +25,12 @@ public class IdentifiersWasFoundTableNoEXP extends Table {
         this.setMarginLeft(leftMargin)
                 .setFontSize(FontSize.H6)
                 .setTextAlignment(TextAlignment.CENTER);
-        this.addHeaderCell("Identifiers")
-                .addHeaderCell("mapsTo")
-                .addHeaderCell("Resource")
-                .addHeaderCell("Identifiers")
-                .addHeaderCell("mapsTo")
-                .addHeaderCell("Resource");
+        for (String header : headers) {
+            this.addHeaderCell(header);
+        }
+        Cell cell = null;
         for (Entry<String, Identifier> entry : dataSet.getIdentifiersWasFiltered().entrySet()) {
-            Cell cell = new Cell().add(entry.getKey()).setVerticalAlignment(VerticalAlignment.MIDDLE);
+            cell = new Cell().add(entry.getKey()).setVerticalAlignment(VerticalAlignment.MIDDLE);
             cell.setProperty(Property.DESTINATION, entry.getKey());
             this.addCell(cell);
             this.addCell(new Cell().add(entry.getValue().getResourceMapsToIds().get(entry.getValue().getMapsTo().get(0).getResource()).replaceAll("[\\[|\\]]", "")).setVerticalAlignment(VerticalAlignment.MIDDLE));

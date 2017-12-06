@@ -4,6 +4,7 @@ import com.itextpdf.io.font.FontConstants;
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.geom.PageSize;
+import org.reactome.server.tools.analysis.exporter.playground.exceptions.FailToCreateFontException;
 
 import java.io.IOException;
 
@@ -15,7 +16,8 @@ public class PdfProperties {
     private static int numberOfPathwaysToShow = 50;
     private static boolean immediateFlush = true;
     private static String token;
-    private static PdfFont font = null;
+    //PdfFont cant be static or may lead to some bug from itext
+    private PdfFont font = null;
     private static PageSize pageSize = PageSize.A4;
 
     public PdfProperties(String token) {
@@ -49,13 +51,15 @@ public class PdfProperties {
         return this;
     }
 
-    public PdfFont getFont() {
+    public PdfFont getFont() throws Exception {
 
-        if (font == null)
+        if (font == null) {
             try {
                 this.setFont(PdfFontFactory.createFont(FontConstants.HELVETICA));
             } catch (IOException e) {
+                throw new FailToCreateFontException("Fail to create PdfFont.", e);
             }
+        }
         return font;
     }
 

@@ -14,12 +14,19 @@ import java.awt.image.BufferedImage;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class FireworksHelper {
+
+    //this file must contain the *.json files,you down it from
     private static final String fireworksPath = "/home/byron/json";
     private static final String species = "Homo_sapiens";
     private static final String fireworksFormat = "png";
     private static final double quality = 5.0;
 
-
+    /**
+     *
+     * @param token     token is produced by the server when it complete the analysis with your data,pick it from the url
+     * @return BufferedImage
+     * @throws FailToGetFireworksException
+     */
     public static BufferedImage getFireworks(String token) throws FailToGetFireworksException {
         try {
             AnalysisClient.setServer(URL.REACTOME);

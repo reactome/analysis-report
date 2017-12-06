@@ -13,8 +13,8 @@ import org.reactome.server.tools.analysis.exporter.playground.models.Identifier;
  */
 public class IdentifiersWasNotFoundTableNoEXP extends Table {
 
-    public static final int numColmns = 6;
-    public static final int leftMargin = 40;
+    private static final int numColmns = 6;
+    private static final int leftMargin = 40;
 
     public IdentifiersWasNotFoundTableNoEXP(DataSet dataSet) {
         super(numColmns);

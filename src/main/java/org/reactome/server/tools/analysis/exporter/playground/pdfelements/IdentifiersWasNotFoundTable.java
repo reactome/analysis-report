@@ -12,7 +12,7 @@ import org.reactome.server.tools.analysis.exporter.playground.models.Identifier;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class IdentifiersWasNotFoundTable extends Table {
-    public static final int leftMargin = 40;
+    private static final int leftMargin = 40;
 
     public IdentifiersWasNotFoundTable(DataSet dataSet) {
         super(dataSet.getIdentifiersWasNotFounds()[0].getExp().length + 1);

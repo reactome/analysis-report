@@ -72,6 +72,7 @@ public class PdfUtil {
         return filteredIdentifiers;
     }
 
+    // TODO: 06/12/17 this method need may be deleted because of the correct dataset structure was confirm
     public static DataSet getDataSet(PdfProperties properties) {
         DataSet dataSet = new DataSet();
         RestTemplate restTemplate = RestTemplateHelper.getInstance();
@@ -84,7 +85,6 @@ public class PdfUtil {
         dataSet.setIdentifiersWasNotFounds(identifiersWasNotFounds);
         dataSet.setIdentifiersWasFounds(identifiersWasFounds);
         dataSet.setResultAssociatedWithToken(resultAssociatedWithToken);
-        dataSet.setToken(properties.getToken());
         dataSet.setIdentifiersWasFiltered(identifiersWasFiltered);
         dataSet.setPathways(pathways);
         return dataSet;

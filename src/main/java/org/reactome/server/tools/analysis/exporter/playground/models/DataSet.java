@@ -5,13 +5,13 @@ import java.util.Map;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
+// TODO: 06/12/17 this class need to refactor to fit the correct data from reactome server once another part was done
 public class DataSet {
     private int version;
-    private int numbetOfPathways;
+    private int totalPathways;
     private int identifiersWasFound;
     private int identifiersWasNotFound;
     private ResultAssociatedWithToken resultAssociatedWithToken;
-    private String token;
     private Identifier[] identifiersWasNotFounds;
     private Map<String, Identifier> identifiersWasFiltered;
     private Pathway[] pathways;
@@ -26,12 +26,12 @@ public class DataSet {
         this.version = version;
     }
 
-    public int getNumbetOfPathways() {
-        return numbetOfPathways;
+    public int getTotalPathways() {
+        return totalPathways;
     }
 
-    public void setNumbetOfPathways(int numbetOfPathways) {
-        this.numbetOfPathways = numbetOfPathways;
+    public void setTotalPathways(int totalPathways) {
+        this.totalPathways = totalPathways;
     }
 
     public int getIdentifiersWasFound() {
@@ -56,14 +56,6 @@ public class DataSet {
 
     public void setResultAssociatedWithToken(ResultAssociatedWithToken resultAssociatedWithToken) {
         this.resultAssociatedWithToken = resultAssociatedWithToken;
-    }
-
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String token) {
-        this.token = token;
     }
 
     public Identifier[] getIdentifiersWasNotFounds() {

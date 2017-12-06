@@ -25,9 +25,11 @@ import java.net.URL;
 public class AnalysisReport extends Document {
 
     private static final float logoScaling = 0.3f;
+//    private static PdfProperties properties;
 
-    public AnalysisReport(PdfProperties properties, PdfDocument pdfDocument) {
+    public AnalysisReport(PdfProperties properties, PdfDocument pdfDocument) throws Exception{
         super(pdfDocument, properties.getPageSize(), properties.isImmediateFlush());
+//        this.properties = properties;
         this.setFont(properties.getFont())
                 .setTextAlignment(TextAlignment.JUSTIFIED);
         this.setMargins(properties.getMargin(), properties.getMargin(), properties.getMargin(), properties.getMargin());
@@ -111,4 +113,7 @@ public class AnalysisReport extends Document {
         return this;
     }
 
+//    public PdfProperties getProperties() {
+//        return properties;
+//    }
 }
