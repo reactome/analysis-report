@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfelements;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelements.tables;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.border.Border;

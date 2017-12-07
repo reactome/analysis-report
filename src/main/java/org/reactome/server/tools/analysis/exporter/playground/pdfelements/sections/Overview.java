@@ -1,9 +1,8 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfsections;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelements.sections;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Link;
 import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.renderer.DocumentRenderer;
 import org.reactome.server.tools.analysis.exporter.playground.constants.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constants.Indent;
 import org.reactome.server.tools.analysis.exporter.playground.constants.MarginLeft;
@@ -15,7 +14,7 @@ import org.reactome.server.tools.analysis.exporter.playground.models.PathwayDeta
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.TableFactory;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelements.TableType;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelements.tables.TableType;
 import org.reactome.server.tools.analysis.exporter.playground.utils.PdfUtil;
 import org.reactome.server.tools.analysis.exporter.playground.utils.RestTemplateHelper;
 import org.springframework.web.client.RestTemplate;
@@ -23,16 +22,15 @@ import org.springframework.web.client.RestTemplate;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class Details extends DocumentRenderer {
+public class Overview implements Section{
     private static TableFactory tableFactory;
 
 
-    public Details(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
-        super(report, properties.isImmediateFlush());
+    public void render(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
         tableFactory = new TableFactory(properties, dataSet);
-        report.addNormalTitle("Details")
+        report.addNormalTitle("Overview")
                 .addNormalTitle(String.format("1. Top %s Overrepresentation pathways sorted by p-Value.", properties.getNumberOfPathwaysToShow()), FontSize.H3, Indent.I2)
-                .addTable(tableFactory.getTable(TableType.Overview));
+                .addTable(tableFactory.getTable(TableType.OverviewTable));
         report.addNormalTitle("2. Pathway details.", FontSize.H3, Indent.I2);
         addPathwaysDetails(report, properties, dataSet);
         report.addNormalTitle(PdfUtil.setDestination(new Paragraph("3. Identifiers was found.").setFontSize(FontSize.H3).setFirstLineIndent(Indent.I2), "IdentifiersWasFound"))

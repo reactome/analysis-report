@@ -24,7 +24,7 @@ public class AnalysisExporter {
 
     public static void export(PdfProperties properties, OutputStream outputStream) throws Exception {
         try {
-            ManipulatePdf.manipulate(properties, new PdfWriter(outputStream));
+             ReportRenderer.render(properties,new PdfWriter(outputStream));
         } catch (FailToAddLogoException e) {
             logger.error(e.getMessage());
             throw e;
@@ -38,6 +38,9 @@ public class AnalysisExporter {
             logger.error(e.getMessage());
             throw e;
         } catch (FailToCreateFontException e) {
+            logger.error(e.getMessage());
+            throw e;
+        } catch (FailToRenderReportException e) {
             logger.error(e.getMessage());
             throw e;
         } catch (Exception e) {

@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfelements;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelements.tables;
 
 import com.itextpdf.layout.element.Cell;
 import com.itextpdf.layout.element.Table;
@@ -14,19 +14,18 @@ import java.util.Map.Entry;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class IdentifiersWasFoundTable extends Table {
+public class IdentifiersWasFoundTableNoEXP extends Table {
+    private static final int numColumns = 6;
     private static final int leftMargin = 40;
+    private static final String[] headers = {"Identifiers", "mapsTo", "Resource", "Identifiers", "mapsTo", "Resource"};
 
-    public IdentifiersWasFoundTable(DataSet dataSet) {
-        super(dataSet.getIdentifiersWasFounds()[0].getExpNames().length + 3);
+    public IdentifiersWasFoundTableNoEXP(DataSet dataSet) {
+        super(numColumns);
 //        this.setWidthPercent(100);
         this.setMarginLeft(leftMargin)
                 .setFontSize(FontSize.H6)
                 .setTextAlignment(TextAlignment.CENTER);
-        this.addHeaderCell("Identifiers")
-                .addHeaderCell("mapsTo")
-                .addHeaderCell("Resource");
-        for (String header : dataSet.getResultAssociatedWithToken().getExpression().getColumnNames()) {
+        for (String header : headers) {
             this.addHeaderCell(header);
         }
         Cell cell = null;
@@ -36,10 +35,11 @@ public class IdentifiersWasFoundTable extends Table {
             this.addCell(cell);
             this.addCell(new Cell().add(entry.getValue().getResourceMapsToIds().get(entry.getValue().getMapsTo().get(0).getResource()).replaceAll("[\\[|\\]]", "")).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(entry.getValue().getMapsTo().get(0).getResource()).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            for (Double exp : entry.getValue().getExp()) {
-                this.addCell(new Cell().add(exp + "").setVerticalAlignment(VerticalAlignment.MIDDLE));
-            }
         }
-
+        if (dataSet.getIdentifiersWasFiltered().entrySet().size() % 2 == 1) {
+            this.addCell(new Cell());
+            this.addCell(new Cell());
+            this.addCell(new Cell());
+        }
     }
 }

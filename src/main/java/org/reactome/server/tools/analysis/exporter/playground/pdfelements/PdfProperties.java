@@ -14,7 +14,7 @@ import java.io.IOException;
 public class PdfProperties {
     private static int margin = 30;
     private static int numberOfPathwaysToShow = 50;
-    private static boolean immediateFlush = true;
+    private static boolean immediateFlush = false;
     private static String token;
     //PdfFont cant be static or may lead to some bug from itext
     private PdfFont font = null;

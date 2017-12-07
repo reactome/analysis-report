@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfelements;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelements.tables;
 
 import com.itextpdf.layout.element.Cell;
 import com.itextpdf.layout.element.Table;
@@ -11,21 +11,23 @@ import org.reactome.server.tools.analysis.exporter.playground.models.Identifier;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class IdentifiersWasNotFoundTableNoEXP extends Table {
-
-    private static final int numColmns = 6;
+public class IdentifiersWasNotFoundTable extends Table {
     private static final int leftMargin = 40;
 
-    public IdentifiersWasNotFoundTableNoEXP(DataSet dataSet) {
-        super(numColmns);
+    public IdentifiersWasNotFoundTable(DataSet dataSet) {
+        super(dataSet.getIdentifiersWasNotFounds()[0].getExp().length + 1);
         this.setMarginLeft(leftMargin).setFontSize(FontSize.H6).setTextAlignment(TextAlignment.CENTER).setVerticalAlignment(VerticalAlignment.MIDDLE);
-
-        this.addHeaderCell(new Cell(1, numColmns).add("Identifiers"));
+        this.addHeaderCell("Identifiers");
+        String[] header = dataSet.getResultAssociatedWithToken().getExpression().getColumnNames();
+        for (String head : header) {
+            this.addHeaderCell(head);
+        }
         for (Identifier identifier : dataSet.getIdentifiersWasNotFounds()) {
             this.addCell(new Cell().add(identifier.getId()));
+            for (Double exp : identifier.getExp()) {
+                this.addCell(exp.toString());
+            }
         }
-        for (int i = 0; i < numColmns - dataSet.getIdentifiersWasNotFounds().length % numColmns; i++) {
-            this.addCell(new Cell());
-        }
+
     }
 }

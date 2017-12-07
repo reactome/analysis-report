@@ -1,9 +1,8 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfsections;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelements.sections;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Link;
 import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.renderer.DocumentRenderer;
 import org.reactome.server.tools.analysis.exporter.playground.constants.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constants.Indent;
 import org.reactome.server.tools.analysis.exporter.playground.models.DataSet;
@@ -13,10 +12,9 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfPro
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class Summary extends DocumentRenderer {
+public class Summary implements Section{
 
-    public Summary(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
-        super(report, properties.isImmediateFlush());
+    public void render(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
         report.addNormalTitle("Summary")
                 .addNormalTitle(new Paragraph(String.format("1. %s of %s identifiers you submitted was ", dataSet.getIdentifiersWasFiltered().size(), (dataSet.getIdentifiersWasFiltered().size() + dataSet.getResultAssociatedWithToken().getIdentifiersNotFound())))
                         .setFirstLineIndent(Indent.I2)
@@ -28,5 +26,4 @@ public class Summary extends DocumentRenderer {
                 .addNormalTitle("4. The \"fireworks\" diagram for this pathway analysis:", FontSize.H4, Indent.I2)
                 .addFireworks(properties.getToken());
     }
-
 }

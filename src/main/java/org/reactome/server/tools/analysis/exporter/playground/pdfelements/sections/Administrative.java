@@ -1,9 +1,8 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfsections;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelements.sections;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Link;
 import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.renderer.DocumentRenderer;
 import org.reactome.server.tools.analysis.exporter.playground.constants.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constants.Indent;
 import org.reactome.server.tools.analysis.exporter.playground.constants.MarginLeft;
@@ -17,11 +16,11 @@ import org.reactome.server.tools.analysis.exporter.playground.utils.RestTemplate
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class Administrative extends DocumentRenderer {
+public class Administrative implements Section {
 
+    private static final int numOfIdentifiersToShow = 5;
 
-    public Administrative(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
-        super(report, properties.isImmediateFlush());
+    public void render(AnalysisReport report, PdfProperties properties, DataSet dataSet) {
         Paragraph paragraph = new Paragraph();
         report.addNormalTitle("Administrative");
         paragraph.setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M1).setFirstLineIndent(Indent.I2);
@@ -31,7 +30,7 @@ public class Administrative extends DocumentRenderer {
                 .add("and your input identifiers are :");
 
         //show some identifiers sample user submitted
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < numOfIdentifiersToShow; i++) {
             paragraph.add(dataSet.getIdentifiersWasNotFounds()[i].getId() + ",");
         }
 

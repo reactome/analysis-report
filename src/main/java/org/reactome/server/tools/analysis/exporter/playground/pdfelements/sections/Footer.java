@@ -1,7 +1,6 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfsections;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelements.sections;
 
 import com.itextpdf.kernel.events.PdfDocumentEvent;
-import com.itextpdf.layout.renderer.DocumentRenderer;
 import org.reactome.server.tools.analysis.exporter.playground.models.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.FooterEventHandler;
@@ -10,9 +9,8 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfPro
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class FooterEvent extends DocumentRenderer {
-    public FooterEvent(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
-        super(report,properties.isImmediateFlush());
+public class Footer implements Section{
+    public void render(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
         report.getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(properties.getFont(), properties.getMargin()));
     }
 }

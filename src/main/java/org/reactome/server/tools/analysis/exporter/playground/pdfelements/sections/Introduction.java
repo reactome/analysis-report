@@ -1,7 +1,6 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfsections;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelements.sections;
 
 import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.renderer.DocumentRenderer;
 import org.reactome.server.tools.analysis.exporter.playground.constants.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constants.Indent;
 import org.reactome.server.tools.analysis.exporter.playground.constants.MarginLeft;
@@ -13,10 +12,9 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfPro
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class Introduction extends DocumentRenderer {
+public class Introduction implements Section{
 
-    public Introduction(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
-        super(report, properties.isImmediateFlush());
+    public void render(AnalysisReport report, PdfProperties properties, DataSet dataSet) {
         report.addNormalTitle("Introduction");
         for (String introduction : Text.INTRODUCTION) {
             report.addParagraph(new Paragraph(introduction).setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M1).setFirstLineIndent(Indent.I2));

@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfelements;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelements.tables;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Cell;
@@ -11,6 +11,7 @@ import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.constants.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.models.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.models.Pathway;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;
 
 import java.text.NumberFormat;
 
@@ -19,7 +20,7 @@ import java.text.NumberFormat;
  */
 public class OverviewTable extends Table {
     private static final int maximumFractionDigits = 4;
-    private static final int widthpercent = 100;
+    private static final int widthPercent = 100;
     private static final float[] columnsRelativeWith = new float[]{5, 1, 1, 1, 3, 3, 1, 1, 1, 2};
     private static final String[] headers = {"Pathway name", "Entities found", "Entities Total", "Entities ratio", "Entities pValue", "Entities FDR", "Reactions found", "Reactions total", "Reactions ratio", "Species name"};
 
@@ -27,7 +28,7 @@ public class OverviewTable extends Table {
     public OverviewTable(PdfProperties properties, DataSet dataSet) {
         super(UnitValue.createPercentArray(columnsRelativeWith), false);
         this.setFontSize(FontSize.H8)
-                .setWidthPercent(100)
+                .setWidthPercent(widthPercent)
                 .setTextAlignment(TextAlignment.CENTER);
         for (String header : headers) {
             this.addHeaderCell(new Cell().add(header).setVerticalAlignment(VerticalAlignment.MIDDLE));

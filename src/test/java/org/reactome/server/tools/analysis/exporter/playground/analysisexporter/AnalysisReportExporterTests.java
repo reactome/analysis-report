@@ -11,13 +11,14 @@ import java.util.Date;
  * Created by DengChuan on 2017/10/25.
  */
 //@RunWith(SpringRunner.class)
-//test this file only so dont need to add the runner
+//test this file only so don't need to add the runner
 
 @SpringBootTest
 public class AnalysisReportExporterTests {
 
     @Test()
     public void test() throws Exception {
+//        for (int i = 0; i < 5; i++) {
         long start = System.currentTimeMillis();
 //        String token = "MjAxNzExMTcwODEzMjBfNzU%253D";
         String token = "MjAxNzExMTcwODUzNTRfOTU%253D";
@@ -36,4 +37,5 @@ public class AnalysisReportExporterTests {
         long end = System.currentTimeMillis();
         System.out.println("create AnalysisReport in:" + (end - start) + "ms");
     }
+//    }
 }
