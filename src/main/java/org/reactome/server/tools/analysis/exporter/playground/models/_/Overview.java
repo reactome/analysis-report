@@ -49,4 +49,15 @@ public class Overview {
     public void setReactions(Reactions reactions) {
         this.reactions = reactions;
     }
+
+    @Override
+    public String toString() {
+        return "Overview{" +
+                "stId='" + stId + '\'' +
+                ", name='" + name + '\'' +
+                ", speciesName='" + speciesName + '\'' +
+                ", entities=" + entities +
+                ", reactions=" + reactions +
+                '}';
+    }
 }

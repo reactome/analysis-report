@@ -31,4 +31,13 @@ public class InferredFrom {
     public void setHasDiagram(boolean hasDiagram) {
         this.hasDiagram = hasDiagram;
     }
+
+    @Override
+    public String toString() {
+        return "InferredFrom{" +
+                "displayName='" + displayName + '\'' +
+                ", speciesName='" + speciesName + '\'' +
+                ", hasDiagram=" + hasDiagram +
+                '}';
+    }
 }

@@ -1,5 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.models._;
 
+import java.util.Arrays;
+
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
@@ -148,5 +150,27 @@ public class Details {
 
     public void setLiteratureReference(LiteratureReference[] literatureReference) {
         this.literatureReference = literatureReference;
+    }
+
+    @Override
+    public String toString() {
+        return "Details{" +
+                "displayName='" + displayName + '\'' +
+                ", stId='" + stId + '\'' +
+                ", created='" + created + '\'' +
+                ", modified='" + modified + '\'' +
+                ", authored='" + authored + '\'' +
+                ", edited='" + edited + '\'' +
+                ", releaseDate='" + releaseDate + '\'' +
+                ", speciesName='" + speciesName + '\'' +
+                ", compartment='" + compartment + '\'' +
+                ", hasDiagram=" + hasDiagram +
+                ", summation='" + summation + '\'' +
+                ", isInDisease=" + isInDisease +
+                ", disease='" + disease + '\'' +
+                ", isInferred=" + isInferred +
+                ", inferredFrom=" + Arrays.toString(inferredFrom) +
+                ", literatureReference=" + Arrays.toString(literatureReference) +
+                '}';
     }
 }

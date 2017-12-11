@@ -7,7 +7,6 @@ import com.itextpdf.layout.property.Property;
 import org.reactome.server.tools.analysis.exporter.playground.constants.URL;
 import org.reactome.server.tools.analysis.exporter.playground.models.*;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;
-import org.springframework.web.client.RestTemplate;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -20,6 +19,9 @@ import java.util.Map.Entry;
  */
 public class PdfUtil {
     private static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("HH:mm dd/MM/yyyy");
+//    private static final ObjectMapper MAPPER = new ObjectMapper();
+//    private static final CloseableHttpClient CLIENT = HttpClients.createDefault();
+//    private static final HttpGet GET = new HttpGet("final data set url");
 
     public static Image ImageAutoScale(Document document, Image image) {
         float pageWidth = document.getPdfDocument().getDefaultPageSize().getWidth() - document.getLeftMargin() - document.getRightMargin();
@@ -73,15 +75,14 @@ public class PdfUtil {
     }
 
     // TODO: 06/12/17 this method need may be deleted because of the correct dataset structure was confirm
-    public static DataSet getDataSet(PdfProperties properties) {
+    public static DataSet getDataSet(PdfProperties properties) throws Exception{
         DataSet dataSet = new DataSet();
-        RestTemplate restTemplate = RestTemplateHelper.getInstance();
-        ResultAssociatedWithToken resultAssociatedWithToken = restTemplate.getForObject(URL.RESULTASSCIATEDWITHTOKEN, ResultAssociatedWithToken.class, properties.getToken(), properties.getNumberOfPathwaysToShow());
+        ResultAssociatedWithToken resultAssociatedWithToken =  HttpClientHelper.getForObject(URL.RESULTASSCIATEDWITHTOKEN, ResultAssociatedWithToken.class, properties.getToken());
         Pathway[] pathways = resultAssociatedWithToken.getPathways();
         StringBuilder stIds = PdfUtil.stIdConcat(pathways);
-        IdentifiersWasFound[] identifiersWasFounds = restTemplate.postForObject(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), IdentifiersWasFound[].class, properties.getToken());
+        IdentifiersWasFound[] identifiersWasFounds = HttpClientHelper.postForObject(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), IdentifiersWasFound[].class, properties.getToken());
         Map<String, Identifier> identifiersWasFiltered = PdfUtil.identifiersFilter(identifiersWasFounds);
-        Identifier[] identifiersWasNotFounds = restTemplate.getForObject(URL.IDENTIFIERSWASNOTFOUND, Identifier[].class, properties.getToken());
+        Identifier[] identifiersWasNotFounds = HttpClientHelper.getForObject(URL.IDENTIFIERSWASNOTFOUND, Identifier[].class, properties.getToken());
         dataSet.setIdentifiersWasNotFounds(identifiersWasNotFounds);
         dataSet.setIdentifiersWasFounds(identifiersWasFounds);
         dataSet.setResultAssociatedWithToken(resultAssociatedWithToken);
@@ -89,5 +90,9 @@ public class PdfUtil {
         dataSet.setPathways(pathways);
         return dataSet;
     }
+
+//    public _DataSet getDataSet(String token) throws Exception {
+//        return MAPPER.readValue(CLIENT.execute(GET).getEntity().getContent(),_DataSet.class);
+//    }
 
 }

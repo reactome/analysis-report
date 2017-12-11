@@ -1,5 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.models._;
 
+import java.util.Arrays;
+
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
@@ -21,5 +23,13 @@ public class Identifier {
 
     public void setExp(double[] exp) {
         this.exp = exp;
+    }
+
+    @Override
+    public String toString() {
+        return "Identifier{" +
+                "id='" + id + '\'' +
+                ", exp=" + Arrays.toString(exp) +
+                '}';
     }
 }

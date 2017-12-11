@@ -34,6 +34,7 @@ public class ReportRenderer {
         sections.add(new Introduction());
         sections.add(new Summary());
         sections.add(new Overview());
+
         try {
             for (Section section : sections) {
                 section.render(report, properties, dataSet);
@@ -41,6 +42,7 @@ public class ReportRenderer {
         } catch (Exception e) {
             throw new FailToRenderReportException("Fail to render report.", e);
         }
+
         report.close();
         document.close();
     }

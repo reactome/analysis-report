@@ -1,5 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.models._;
 
+import java.util.Arrays;
+
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
@@ -21,5 +23,13 @@ public class MapsTo {
 
     public void setIds(String[] ids) {
         this.ids = ids;
+    }
+
+    @Override
+    public String toString() {
+        return "MapsTo{" +
+                "resource='" + resource + '\'' +
+                ", ids=" + Arrays.toString(ids) +
+                '}';
     }
 }

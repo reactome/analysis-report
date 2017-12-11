@@ -49,4 +49,15 @@ public class Entities {
     public void setFdr(double fdr) {
         this.fdr = fdr;
     }
+
+    @Override
+    public String toString() {
+        return "Entities{" +
+                "total=" + total +
+                ", found=" + found +
+                ", ratio=" + ratio +
+                ", pValue=" + pValue +
+                ", fdr=" + fdr +
+                '}';
+    }
 }

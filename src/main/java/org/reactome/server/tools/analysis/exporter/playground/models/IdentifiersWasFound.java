@@ -2,6 +2,8 @@ package org.reactome.server.tools.analysis.exporter.playground.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.util.Arrays;
+
 /**
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
@@ -45,5 +47,15 @@ public class IdentifiersWasFound {
 
     public void setFoundEntities(int foundEntities) {
         this.foundEntities = foundEntities;
+    }
+
+    @Override
+    public String toString() {
+        return "IdentifiersWasFound{" +
+                "pathway='" + pathway + '\'' +
+                ", entities=" + Arrays.toString(entities) +
+                ", expNames=" + Arrays.toString(expNames) +
+                ", foundEntities=" + foundEntities +
+                '}';
     }
 }

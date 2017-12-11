@@ -15,9 +15,8 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelements.Analys
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.TableFactory;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.tables.TableType;
+import org.reactome.server.tools.analysis.exporter.playground.utils.HttpClientHelper;
 import org.reactome.server.tools.analysis.exporter.playground.utils.PdfUtil;
-import org.reactome.server.tools.analysis.exporter.playground.utils.RestTemplateHelper;
-import org.springframework.web.client.RestTemplate;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
@@ -42,12 +41,11 @@ public class Overview implements Section{
 
     public void addPathwaysDetails(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
         PathwayDetail pathwayDetail;
-        RestTemplate restTemplate = RestTemplateHelper.getInstance();
         Paragraph paragraph;
         Pathway[] pathways = dataSet.getPathways();
         IdentifiersWasFound[] identifiersWasFounds = dataSet.getIdentifiersWasFounds();
         for (int i = 0; i < properties.getNumberOfPathwaysToShow(); i++) {
-            pathwayDetail = restTemplate.getForObject(URL.QUERYFORPATHWAYDETAIL, PathwayDetail.class, pathways[i].getStId());
+            pathwayDetail = (PathwayDetail) HttpClientHelper.getForObject(URL.QUERYFORPATHWAYDETAIL, PathwayDetail.class, pathways[i].getStId());
             paragraph = new Paragraph("2." + (i + 1) + ". " + pathways[i].getName())
                     .setFontSize(FontSize.H3)
                     .setFirstLineIndent(Indent.I3)

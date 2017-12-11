@@ -3,8 +3,6 @@ package org.reactome.server.tools.analysis.exporter.playground.utils;
 import org.reactome.server.tools.analysis.exporter.playground.constants.URL;
 import org.reactome.server.tools.analysis.exporter.playground.exceptions.FailToGetFireworksException;
 import org.reactome.server.tools.fireworks.exporter.common.analysis.AnalysisClient;
-import org.reactome.server.tools.fireworks.exporter.common.analysis.exception.AnalysisException;
-import org.reactome.server.tools.fireworks.exporter.common.analysis.exception.AnalysisServerError;
 import org.reactome.server.tools.fireworks.exporter.common.api.FireworkArgs;
 import org.reactome.server.tools.fireworks.exporter.raster.FireworksExporter;
 
@@ -23,7 +21,7 @@ public class FireworksHelper {
 
     /**
      *
-     * @param token     token is produced by the server when it complete the analysis with your data,pick it from the url
+     * @param token token is produced by the server when it complete the analysis with your data,pick it from the url
      * @return BufferedImage
      * @throws FailToGetFireworksException
      */
@@ -36,7 +34,7 @@ public class FireworksHelper {
             args.setProfile(FireworksColor.CopperPlus.getColor());
             FireworksExporter exporter = new FireworksExporter(args, fireworksPath);
             return exporter.render();
-        } catch (AnalysisException | AnalysisServerError pascual) {
+        } catch (Exception pascual) {
             throw new FailToGetFireworksException("Failed to get fireworks for token:" + token, pascual);
         }
     }

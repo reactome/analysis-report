@@ -1,5 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.models._;
 
+import java.util.Arrays;
+
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
@@ -94,5 +96,21 @@ public class _DataSet {
 
     public void setNotFound(Identifier[] notFound) {
         this.notFound = notFound;
+    }
+
+    @Override
+    public String toString() {
+        return "_DataSet{" +
+                "version=" + version +
+                ", identifiersFound=" + identifiersFound +
+                ", identifiersNotFound=" + identifiersNotFound +
+                ", pathwaysFound=" + pathwaysFound +
+                ", pathwaysTotal=" + pathwaysTotal +
+                ", expNames=" + Arrays.toString(expNames) +
+                ", overview=" + Arrays.toString(overview) +
+                ", details=" + Arrays.toString(details) +
+                ", foundAll=" + Arrays.toString(foundAll) +
+                ", notFound=" + Arrays.toString(notFound) +
+                '}';
     }
 }

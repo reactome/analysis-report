@@ -7,7 +7,7 @@ public class LiteratureReference {
     private String title;
     private String journal;
     private String pages;
-    private int pubMedIdentifier;
+    private long pubMedIdentifier;
     private int volume;
     private int year;
     private String url;
@@ -36,11 +36,11 @@ public class LiteratureReference {
         this.pages = pages;
     }
 
-    public int getPubMedIdentifier() {
+    public long getPubMedIdentifier() {
         return pubMedIdentifier;
     }
 
-    public void setPubMedIdentifier(int pubMedIdentifier) {
+    public void setPubMedIdentifier(long pubMedIdentifier) {
         this.pubMedIdentifier = pubMedIdentifier;
     }
 
@@ -66,5 +66,18 @@ public class LiteratureReference {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    @Override
+    public String toString() {
+        return "LiteratureReference{" +
+                "title='" + title + '\'' +
+                ", journal='" + journal + '\'' +
+                ", pages='" + pages + '\'' +
+                ", pubMedIdentifier=" + pubMedIdentifier +
+                ", volume=" + volume +
+                ", year=" + year +
+                ", url='" + url + '\'' +
+                '}';
     }
 }

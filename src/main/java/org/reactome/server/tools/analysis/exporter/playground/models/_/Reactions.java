@@ -31,4 +31,13 @@ public class Reactions {
     public void setRatio(double ratio) {
         this.ratio = ratio;
     }
+
+    @Override
+    public String toString() {
+        return "Reactions{" +
+                "total=" + total +
+                ", found=" + found +
+                ", ratio=" + ratio +
+                '}';
+    }
 }

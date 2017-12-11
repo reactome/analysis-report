@@ -1,7 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.utils;
 
 import org.junit.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -10,7 +9,6 @@ import java.io.File;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-@SpringBootTest
 public class FireworksHelperTests {
     @Test
     public void test() throws Exception {

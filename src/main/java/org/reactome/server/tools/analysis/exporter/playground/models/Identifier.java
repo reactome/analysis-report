@@ -15,7 +15,7 @@ public class Identifier {
     private String id;
     private Double[] exp;
     private ArrayList<MapsTo> mapsTo;
-    private Map<String,String> resourceMapsToIds = new HashMap<>();
+    private Map<String, String> resourceMapsToIds = new HashMap<String, String>();
 
     public Identifier() {
     }
@@ -50,5 +50,10 @@ public class Identifier {
 
     public void setResourceMapsToIds(Map<String, String> resourceMapsToIds) {
         this.resourceMapsToIds = resourceMapsToIds;
+    }
+
+    @Override
+    public String toString() {
+        return id;
     }
 }
