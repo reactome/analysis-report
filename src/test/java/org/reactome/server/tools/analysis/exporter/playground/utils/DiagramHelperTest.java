@@ -9,7 +9,7 @@ import java.io.File;
 /**
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
-public class DiagramHelperTests {
+public class DiagramHelperTest {
 
     @Test
     public void test() throws Exception {

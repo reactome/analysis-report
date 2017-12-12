@@ -1,0 +1,12 @@
+target/
+src/main/resources/pdfs/
+src/main/resources/diagrams/
+src/main/resources/fireworks/
+src/test/java/org/reactome/server/tools/pdf/exporter/playground/test/
+!.mvn/wrapper/maven-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr

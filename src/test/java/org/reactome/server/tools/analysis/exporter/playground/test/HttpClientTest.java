@@ -15,7 +15,7 @@ import java.util.Arrays;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class HttpClientTests {
+public class HttpClientTest {
     @Test
     public void test() throws Exception {
         String token = "MjAxNzExMTcwODUzNTRfOTU%253D";

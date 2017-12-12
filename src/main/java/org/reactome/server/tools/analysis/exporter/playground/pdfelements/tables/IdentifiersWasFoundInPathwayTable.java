@@ -16,7 +16,6 @@ public class IdentifiersWasFoundInPathwayTable extends Table {
     public static final int numColumns = 6;
     public static final int leftMargin = 60;
 
-
     public IdentifiersWasFoundInPathwayTable(Identifier[] identifiers) {
         super(numColumns);
         this.setMarginLeft(leftMargin).setFontSize(FontSize.H6).setTextAlignment(TextAlignment.LEFT);

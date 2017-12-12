@@ -24,7 +24,6 @@ import org.reactome.server.tools.analysis.exporter.playground.utils.PdfUtil;
 public class Overview implements Section{
     private static TableFactory tableFactory;
 
-
     public void render(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
         tableFactory = new TableFactory(properties, dataSet);
         report.addNormalTitle("Overview")
@@ -38,14 +37,13 @@ public class Overview implements Section{
                 .addTable((dataSet.getResultAssociatedWithToken().getExpression().getColumnNames().length != 0) ? tableFactory.getTable(TableType.IdentifiersWasNotFound) : tableFactory.getTable(TableType.IdentifiersWasNotFoundNoEXP));
     }
 
-
-    public void addPathwaysDetails(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
+    private void addPathwaysDetails(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
         PathwayDetail pathwayDetail;
         Paragraph paragraph;
         Pathway[] pathways = dataSet.getPathways();
         IdentifiersWasFound[] identifiersWasFounds = dataSet.getIdentifiersWasFounds();
         for (int i = 0; i < properties.getNumberOfPathwaysToShow(); i++) {
-            pathwayDetail = (PathwayDetail) HttpClientHelper.getForObject(URL.QUERYFORPATHWAYDETAIL, PathwayDetail.class, pathways[i].getStId());
+            pathwayDetail = HttpClientHelper.getForObject(URL.QUERYFORPATHWAYDETAIL, PathwayDetail.class, pathways[i].getStId());
             paragraph = new Paragraph("2." + (i + 1) + ". " + pathways[i].getName())
                     .setFontSize(FontSize.H3)
                     .setFirstLineIndent(Indent.I3)
@@ -61,19 +59,17 @@ public class Overview implements Section{
                             (pathwayDetail.isInDisease() ? ",disease name:" + pathwayDetail.getDisease()[0].getDisplayName() : "") +
                             (pathwayDetail.isInferred() ? ",inferred from:" + pathwayDetail.getInferredFrom()[0].getDisplayName() : "") +
                             (pathwayDetail.getSummation() != null ? "," + pathwayDetail.getSummation()[0].getText().replaceAll("</?[a-zA-Z]{1,2}>", "") : "")
-                    ).setFontSize(FontSize.H5).setFirstLineIndent(Indent.I4).setMarginLeft(MarginLeft.M3));
+                    ).setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M4).setFirstLineIndent(Indent.I2));
 
             report.addNormalTitle("List of identifiers was found at this pathway", FontSize.H4, Indent.I3)
                     .addTable(tableFactory.getTable(identifiersWasFounds[i].getEntities()));
             if (pathwayDetail.getAuthors() != null) {
                 report.addNormalTitle("Authors", FontSize.H4, Indent.I3)
                         .addParagraph(new Paragraph(pathwayDetail.getAuthors().getDisplayName()).setFontSize(FontSize.H5).setFirstLineIndent(Indent.I4));
-
             }
             if (pathwayDetail.getEditors() != null) {
                 report.addNormalTitle("Editors", FontSize.H4, Indent.I3)
                         .addParagraph(new Paragraph(pathwayDetail.getEditors().getDisplayName()).setFontSize(FontSize.H5).setFirstLineIndent(Indent.I4));
-
             }
             if (pathwayDetail.getReviewers() != null) {
                 report.addNormalTitle("Reviewers", FontSize.H4, Indent.I3)

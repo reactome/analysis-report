@@ -13,13 +13,10 @@ import org.reactome.server.tools.analysis.exporter.playground.models.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.models.Pathway;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;
 
-import java.text.NumberFormat;
-
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class OverviewTable extends Table {
-    private static final int maximumFractionDigits = 4;
     private static final int widthPercent = 100;
     private static final float[] columnsRelativeWith = new float[]{5, 1, 1, 1, 3, 3, 1, 1, 1, 2};
     private static final String[] headers = {"Pathway name", "Entities found", "Entities Total", "Entities ratio", "Entities pValue", "Entities FDR", "Reactions found", "Reactions total", "Reactions ratio", "Species name"};
@@ -33,19 +30,17 @@ public class OverviewTable extends Table {
         for (String header : headers) {
             this.addHeaderCell(new Cell().add(header).setVerticalAlignment(VerticalAlignment.MIDDLE));
         }
-        NumberFormat numberFormat = NumberFormat.getNumberInstance();
-        numberFormat.setMaximumFractionDigits(maximumFractionDigits);
         Pathway[] pathways = dataSet.getPathways();
         for (int i = 0; i < properties.getNumberOfPathwaysToShow(); i++) {
             this.addCell(new Cell().add(new Paragraph(new Link(pathways[i].getName(), PdfAction.createGoTo(pathways[i].getName())))).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(String.valueOf(pathways[i].getEntities().getFound())).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(String.valueOf(pathways[i].getEntities().getTotal())).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            this.addCell(new Cell().add(String.valueOf(numberFormat.format(pathways[i].getEntities().getRatio()))).setVerticalAlignment(VerticalAlignment.MIDDLE));
+            this.addCell(new Cell().add(String.format("%.4f",pathways[i].getEntities().getRatio())).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(String.valueOf(pathways[i].getEntities().getpValue())).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(String.valueOf(pathways[i].getEntities().getFdr())).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(String.valueOf(pathways[i].getReactions().getFound())).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(String.valueOf(pathways[i].getReactions().getTotal())).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            this.addCell(new Cell().add(numberFormat.format(pathways[i].getReactions().getRatio())).setVerticalAlignment(VerticalAlignment.MIDDLE));
+            this.addCell(new Cell().add(String.format("%.4f",pathways[i].getReactions().getRatio())).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(pathways[i].getSpecies().getName()).setVerticalAlignment(VerticalAlignment.MIDDLE));
         }
     }

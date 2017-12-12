@@ -20,8 +20,10 @@ public class FireworksHelper {
     private static final double quality = 5.0;
 
     /**
-     *
-     * @param token token is produced by the server when it complete the analysis with your data,pick it from the url
+     *<P>
+     *     this method is to get the buffered image from fireworks exporter by give the token
+     *</P>
+     * @param token token produced by the server when it complete the analysis with your data,pick it from the URL
      * @return BufferedImage
      * @throws FailToGetFireworksException
      */

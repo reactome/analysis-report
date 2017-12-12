@@ -16,7 +16,7 @@ public class PdfProperties {
     private static int numberOfPathwaysToShow = 50;
     private static boolean immediateFlush = false;
     private static String token;
-    //PdfFont cant be static or may lead to some bug from itext
+    //PdfFont can't be static or may lead to some bug from itext
     private PdfFont font = null;
     private static PageSize pageSize = PageSize.A4;
 

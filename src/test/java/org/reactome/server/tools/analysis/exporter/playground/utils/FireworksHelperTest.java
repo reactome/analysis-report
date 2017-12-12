@@ -9,7 +9,7 @@ import java.io.File;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class FireworksHelperTests {
+public class FireworksHelperTest {
     @Test
     public void test() throws Exception {
         String token = "MjAxNzExMTcwODEzMjBfNzU%253D";

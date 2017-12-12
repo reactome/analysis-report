@@ -9,7 +9,7 @@ import java.io.File;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class _DataSetTests {
+public class _DataSetTest {
     @Test
     public void test() throws Exception{
         ObjectMapper mapper = new ObjectMapper();

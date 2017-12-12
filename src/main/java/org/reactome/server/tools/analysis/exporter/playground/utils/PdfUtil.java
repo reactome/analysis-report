@@ -62,6 +62,7 @@ public class PdfUtil {
                 }
             }
         }
+
         for (Entry<String, Identifier> entry : filteredIdentifiers.entrySet()) {
             for (MapsTo mapsTo : entry.getValue().getMapsTo()) {
                 if (!entry.getValue().getResourceMapsToIds().containsKey(mapsTo.getResource())) {
@@ -74,7 +75,7 @@ public class PdfUtil {
         return filteredIdentifiers;
     }
 
-    // TODO: 06/12/17 this method need may be deleted because of the correct dataset structure was confirm
+    // TODO: 06/12/17 this method may be deleted once the correct dataset structure was confirm
     public static DataSet getDataSet(PdfProperties properties) throws Exception{
         DataSet dataSet = new DataSet();
         ResultAssociatedWithToken resultAssociatedWithToken =  HttpClientHelper.getForObject(URL.RESULTASSCIATEDWITHTOKEN, ResultAssociatedWithToken.class, properties.getToken());
