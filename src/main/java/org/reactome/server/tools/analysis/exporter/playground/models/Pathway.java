@@ -8,10 +8,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Pathway {
     private String stId;
-    private int dbId;
     private String name;
     private Species species;
-    private boolean llp;
     private Entities entities;
     private Reactions reactions;
 
@@ -24,14 +22,6 @@ public class Pathway {
 
     public void setStId(String stId) {
         this.stId = stId;
-    }
-
-    public int getDbId() {
-        return dbId;
-    }
-
-    public void setDbId(int dbId) {
-        this.dbId = dbId;
     }
 
     public String getName() {
@@ -48,14 +38,6 @@ public class Pathway {
 
     public void setSpecies(Species species) {
         this.species = species;
-    }
-
-    public boolean isLlp() {
-        return llp;
-    }
-
-    public void setLlp(boolean llp) {
-        this.llp = llp;
     }
 
     public Entities getEntities() {

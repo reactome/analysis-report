@@ -12,7 +12,6 @@ public class IdentifiersWasFound {
     private String pathway;
     private Identifier[] entities;
     private String[] expNames;
-    private int foundEntities;
 
     public IdentifiersWasFound() {
     }
@@ -41,21 +40,12 @@ public class IdentifiersWasFound {
         this.expNames = expNames;
     }
 
-    public int getFoundEntities() {
-        return foundEntities;
-    }
-
-    public void setFoundEntities(int foundEntities) {
-        this.foundEntities = foundEntities;
-    }
-
     @Override
     public String toString() {
         return "IdentifiersWasFound{" +
                 "pathway='" + pathway + '\'' +
                 ", entities=" + Arrays.toString(entities) +
                 ", expNames=" + Arrays.toString(expNames) +
-                ", foundEntities=" + foundEntities +
                 '}';
     }
 }

@@ -7,19 +7,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Curator {
-    private int dbId;
     private String displayName;
-    private String dateTime;
 
     public Curator() {
-    }
-
-    public int getDbId() {
-        return dbId;
-    }
-
-    public void setDbId(int dbId) {
-        this.dbId = dbId;
     }
 
     public String getDisplayName() {
@@ -30,11 +20,4 @@ public class Curator {
         this.displayName = displayName;
     }
 
-    public String getDateTime() {
-        return dateTime;
-    }
-
-    public void setDateTime(String dateTime) {
-        this.dateTime = dateTime;
-    }
 }

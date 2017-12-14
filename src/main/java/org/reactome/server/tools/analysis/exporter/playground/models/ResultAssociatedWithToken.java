@@ -7,26 +7,12 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ResultAssociatedWithToken {
-    private Summary summary;
     private Expression expression;
     private int identifiersNotFound;
-    private int pathwaysFound;
-//    private List<Pathways> pathways;
     private Pathway[] pathways;
-    //    private List<ResourceSummary> resourceSummary;
     private ResourceSummary[] resourceSummary;
 
-    private String[] warnings;
-
     public ResultAssociatedWithToken() {
-    }
-
-    public Summary getSummary() {
-        return summary;
-    }
-
-    public void setSummary(Summary summary) {
-        this.summary = summary;
     }
 
     public Expression getExpression() {
@@ -45,14 +31,6 @@ public class ResultAssociatedWithToken {
         this.identifiersNotFound = identifiersNotFound;
     }
 
-    public int getPathwaysFound() {
-        return pathwaysFound;
-    }
-
-    public void setPathwaysFound(int pathwaysFound) {
-        this.pathwaysFound = pathwaysFound;
-    }
-
     public Pathway[] getPathways() {
         return pathways;
     }
@@ -69,11 +47,4 @@ public class ResultAssociatedWithToken {
         this.resourceSummary = resourceSummary;
     }
 
-    public String[] getWarnings() {
-        return warnings;
-    }
-
-    public void setWarnings(String[] warnings) {
-        this.warnings = warnings;
-    }
 }

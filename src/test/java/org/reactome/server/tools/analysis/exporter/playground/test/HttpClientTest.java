@@ -8,6 +8,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.junit.Test;
 import org.reactome.server.tools.analysis.exporter.playground.models.IdentifiersWasFound;
+import org.reactome.server.tools.analysis.exporter.playground.utils.HttpClientHelper;
 
 import java.io.InputStream;
 import java.util.Arrays;
@@ -35,6 +36,7 @@ public class HttpClientTest {
 //        }
         httpClient.close();
         long end = System.currentTimeMillis();
-        System.out.println(end - start);
+        System.out.println("complete in "+(end - start));
+        HttpClientHelper.test("","");
     }
 }

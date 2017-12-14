@@ -7,24 +7,14 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class LiteratureReference {
-    private int dbId;
     private String title;
     private String journal;
     private String pages;
-    private int pubMeIdentifier;
     private int volume;
     private int year;
     private String url;
 
     public LiteratureReference() {
-    }
-
-    public int getDbId() {
-        return dbId;
-    }
-
-    public void setDbId(int dbId) {
-        this.dbId = dbId;
     }
 
     public String getTitle() {
@@ -51,14 +41,6 @@ public class LiteratureReference {
         this.pages = pages;
     }
 
-    public int getPubMeIdentifier() {
-        return pubMeIdentifier;
-    }
-
-    public void setPubMeIdentifier(int pubMeIdentifier) {
-        this.pubMeIdentifier = pubMeIdentifier;
-    }
-
     public int getVolume() {
         return volume;
     }
@@ -81,5 +63,14 @@ public class LiteratureReference {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    @Override
+    public String toString() {
+        return "\"" + title + "\"," +
+                journal + ',' +
+                volume + ',' +
+                year + ',' +
+                pages + '.';
     }
 }

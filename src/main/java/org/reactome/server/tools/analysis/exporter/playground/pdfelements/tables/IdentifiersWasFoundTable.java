@@ -20,6 +20,7 @@ public class IdentifiersWasFoundTable extends Table {
     public IdentifiersWasFoundTable(DataSet dataSet) {
         super(dataSet.getIdentifiersWasFounds()[0].getExpNames().length + 3);
 //        this.setWidthPercent(100);
+
         this.setMarginLeft(leftMargin)
                 .setFontSize(FontSize.H6)
                 .setTextAlignment(TextAlignment.CENTER);

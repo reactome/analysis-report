@@ -13,17 +13,19 @@ import org.reactome.server.tools.analysis.exporter.playground.models.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.models.Pathway;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;
 
+import java.util.Arrays;
+
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class OverviewTable extends Table {
     private static final int widthPercent = 100;
-    private static final float[] columnsRelativeWith = new float[]{5, 1, 1, 1, 3, 3, 1, 1, 1, 2};
+    private static final float[] columnsRelativeWith = new float[]{5/20f, 1/20f, 1/20f, 1/20f, 3/20f, 3/20f, 1/20f, 1/20f, 1/20f, 2/20f};
     private static final String[] headers = {"Pathway name", "Entities found", "Entities Total", "Entities ratio", "Entities pValue", "Entities FDR", "Reactions found", "Reactions total", "Reactions ratio", "Species name"};
 
-
     public OverviewTable(PdfProperties properties, DataSet dataSet) {
-        super(UnitValue.createPercentArray(columnsRelativeWith), false);
+        super(UnitValue.createPercentArray(columnsRelativeWith), true);
+        Arrays.stream(new double[]{1,2,3,4,5}).sum();// TODO: 13/12/17 remove warning message about sum of table width greater than 100%
         this.setFontSize(FontSize.H8)
                 .setWidthPercent(widthPercent)
                 .setTextAlignment(TextAlignment.CENTER);

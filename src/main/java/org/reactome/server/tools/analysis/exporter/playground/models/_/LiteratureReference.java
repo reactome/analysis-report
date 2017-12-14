@@ -68,6 +68,7 @@ public class LiteratureReference {
         this.url = url;
     }
 
+    // TODO: 14/12/17 need to modify the string by correct reference format
     @Override
     public String toString() {
         return "LiteratureReference{" +

@@ -24,8 +24,6 @@ public class PathwayDetail {
     private DisplayName[] compartment;
     private DisplayName[] disease;
     private DisplayName[] inferredFrom;
-    private Event[] hasEvent;
-
 
     public PathwayDetail() {
     }
@@ -126,11 +124,4 @@ public class PathwayDetail {
         this.inferredFrom = inferredFrom;
     }
 
-    public Event[] getHasEvent() {
-        return hasEvent;
-    }
-
-    public void setHasEvent(Event[] hasEvent) {
-        this.hasEvent = hasEvent;
-    }
 }

@@ -7,23 +7,12 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Entities {
-    private String resource;
     private int total;
     private int found;
     private double ratio;
     private double pValue;
     private double fdr;
-    private String[] exp;
-
     public Entities() {
-    }
-
-    public String getResource() {
-        return resource;
-    }
-
-    public void setResource(String resource) {
-        this.resource = resource;
     }
 
     public int getTotal() {
@@ -66,11 +55,4 @@ public class Entities {
         this.fdr = fdr;
     }
 
-    public String[] getExp() {
-        return exp;
-    }
-
-    public void setExp(String[] exp) {
-        this.exp = exp;
-    }
 }

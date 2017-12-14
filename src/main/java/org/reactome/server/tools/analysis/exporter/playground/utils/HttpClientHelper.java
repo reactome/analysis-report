@@ -17,7 +17,6 @@ public class HttpClientHelper {
     private static final CloseableHttpClient CLIENT = HttpClients.custom().setConnectionManager(new PoolingHttpClientConnectionManager()).build();
 
     public static <T> T getForObject(String url, Class<T> valueType, String parameter) throws Exception {
-//        System.out.println(String.format(url, parameter));
         return MAPPER.readValue(CLIENT.execute(new HttpGet(String.format(url, parameter))).getEntity().getContent(), valueType);
     }
 
@@ -26,4 +25,5 @@ public class HttpClientHelper {
         post.setEntity(new StringEntity(postEntity));
         return MAPPER.readValue(CLIENT.execute(post).getEntity().getContent(), valueType);
     }
+
 }

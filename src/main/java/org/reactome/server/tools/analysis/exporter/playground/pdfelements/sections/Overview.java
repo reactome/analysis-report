@@ -30,13 +30,16 @@ public class Overview implements Section{
                 .addNormalTitle(String.format("1. Top %s Overrepresentation pathways sorted by p-Value.", properties.getNumberOfPathwaysToShow()), FontSize.H3, Indent.I2)
                 .addTable(tableFactory.getTable(TableType.OverviewTable));
         report.addNormalTitle("2. Pathway details.", FontSize.H3, Indent.I2);
+
         addPathwaysDetails(report, properties, dataSet);
+
         report.addNormalTitle(PdfUtil.setDestination(new Paragraph("3. Identifiers was found.").setFontSize(FontSize.H3).setFirstLineIndent(Indent.I2), "IdentifiersWasFound"))
                 .addTable((dataSet.getIdentifiersWasFounds()[0].getExpNames().length != 0) ? tableFactory.getTable(TableType.IdentifiersWasFound) : tableFactory.getTable(TableType.IdentifiersWasFoundNoEXP));
         report.addNormalTitle("4. Identifiers was not found.", FontSize.H3, Indent.I2)
                 .addTable((dataSet.getResultAssociatedWithToken().getExpression().getColumnNames().length != 0) ? tableFactory.getTable(TableType.IdentifiersWasNotFound) : tableFactory.getTable(TableType.IdentifiersWasNotFoundNoEXP));
     }
 
+    // TODO: 14/12/17 this method should be reduce once the correct data structure confirm
     private void addPathwaysDetails(AnalysisReport report, PdfProperties properties, DataSet dataSet) throws Exception {
         PathwayDetail pathwayDetail;
         Paragraph paragraph;
@@ -77,11 +80,7 @@ public class Overview implements Section{
             }
             if (pathwayDetail.getLiteratureReference() != null) {
                 report.addNormalTitle("References", FontSize.H4, Indent.I3)
-                        .addParagraph(new Paragraph("\"" + pathwayDetail.getLiteratureReference()[0].getTitle() + "\"," +
-                                pathwayDetail.getLiteratureReference()[0].getJournal() + "," +
-                                pathwayDetail.getLiteratureReference()[0].getVolume() + "," +
-                                pathwayDetail.getLiteratureReference()[0].getYear() + "," +
-                                pathwayDetail.getLiteratureReference()[0].getPages() + ".").setFontSize(FontSize.H5).setFirstLineIndent(Indent.I4));
+                        .addParagraph(new Paragraph(pathwayDetail.getLiteratureReference()[0].toString()).setFontSize(FontSize.H5).setFirstLineIndent(Indent.I4));
             }
         }
     }
