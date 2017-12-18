@@ -6,7 +6,8 @@ import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.constants.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.models.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.models.Identifier;
+
+import java.util.stream.Stream;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
@@ -22,12 +23,17 @@ public class IdentifiersWasNotFoundTable extends Table {
         for (String head : header) {
             this.addHeaderCell(head);
         }
-        for (Identifier identifier : dataSet.getIdentifiersWasNotFounds()) {
-            this.addCell(new Cell().add(identifier.getId()));
-            for (Double exp : identifier.getExp()) {
-                this.addCell(exp.toString());
-            }
-        }
+//        for (Identifier identifier : dataSet.getIdentifiersWasNotFounds()) {
+//            this.addCell(new Cell().add(identifier.getId()));
+//            for (Double exp : identifier.getExp()) {
+//                this.addCell(exp.toString());
+//            }
+//        }
 
+        Stream.of(dataSet.getIdentifiersWasNotFounds()).forEach(
+                identifier -> {
+                    this.addCell(new Cell().add(identifier.getId()));
+                    Stream.of(identifier.getExp()).forEach(exp -> this.addCell(exp.toString()));
+                });
     }
 }

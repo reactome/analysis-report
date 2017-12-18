@@ -13,37 +13,43 @@ import org.reactome.server.tools.analysis.exporter.playground.models.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.models.Pathway;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;
 
-import java.util.Arrays;
+import java.util.function.Consumer;
+import java.util.stream.Stream;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class OverviewTable extends Table {
     private static final int widthPercent = 100;
-    private static final float[] columnsRelativeWith = new float[]{5/20f, 1/20f, 1/20f, 1/20f, 3/20f, 3/20f, 1/20f, 1/20f, 1/20f, 2/20f};
+    private static final float[] columnsRelativeWith = new float[]{5 / 20f, 1 / 20f, 1 / 20f, 1 / 20f, 3 / 20f, 3 / 20f, 1 / 20f, 1 / 20f, 1 / 20f, 2 / 20f};
     private static final String[] headers = {"Pathway name", "Entities found", "Entities Total", "Entities ratio", "Entities pValue", "Entities FDR", "Reactions found", "Reactions total", "Reactions ratio", "Species name"};
 
     public OverviewTable(PdfProperties properties, DataSet dataSet) {
-        super(UnitValue.createPercentArray(columnsRelativeWith), true);
-        Arrays.stream(new double[]{1,2,3,4,5}).sum();// TODO: 13/12/17 remove warning message about sum of table width greater than 100%
+        super(UnitValue.createPercentArray(columnsRelativeWith));
         this.setFontSize(FontSize.H8)
                 .setWidthPercent(widthPercent)
                 .setTextAlignment(TextAlignment.CENTER);
-        for (String header : headers) {
-            this.addHeaderCell(new Cell().add(header).setVerticalAlignment(VerticalAlignment.MIDDLE));
-        }
-        Pathway[] pathways = dataSet.getPathways();
-        for (int i = 0; i < properties.getNumberOfPathwaysToShow(); i++) {
-            this.addCell(new Cell().add(new Paragraph(new Link(pathways[i].getName(), PdfAction.createGoTo(pathways[i].getName())))).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            this.addCell(new Cell().add(String.valueOf(pathways[i].getEntities().getFound())).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            this.addCell(new Cell().add(String.valueOf(pathways[i].getEntities().getTotal())).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            this.addCell(new Cell().add(String.format("%.4f",pathways[i].getEntities().getRatio())).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            this.addCell(new Cell().add(String.valueOf(pathways[i].getEntities().getpValue())).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            this.addCell(new Cell().add(String.valueOf(pathways[i].getEntities().getFdr())).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            this.addCell(new Cell().add(String.valueOf(pathways[i].getReactions().getFound())).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            this.addCell(new Cell().add(String.valueOf(pathways[i].getReactions().getTotal())).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            this.addCell(new Cell().add(String.format("%.4f",pathways[i].getReactions().getRatio())).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            this.addCell(new Cell().add(pathways[i].getSpecies().getName()).setVerticalAlignment(VerticalAlignment.MIDDLE));
-        }
+        Stream.of(headers)
+                .forEach(header -> this.addHeaderCell(new Cell().add(header).setVerticalAlignment(VerticalAlignment.MIDDLE)));
+
+        Stream.of(dataSet.getPathways())
+                .limit(properties.getNumberOfPathwaysToShow())
+                .forEach(processTable());
+
+    }
+
+    private Consumer<Pathway> processTable() {
+        return pathway -> {
+            this.addCell(new Cell().add(new Paragraph(new Link(pathway.getName(), PdfAction.createGoTo(pathway.getName())))).setVerticalAlignment(VerticalAlignment.MIDDLE));
+            this.addCell(new Cell().add(String.valueOf(pathway.getEntities().getFound())).setVerticalAlignment(VerticalAlignment.MIDDLE));
+            this.addCell(new Cell().add(String.valueOf(pathway.getEntities().getTotal())).setVerticalAlignment(VerticalAlignment.MIDDLE));
+            this.addCell(new Cell().add(String.format("%.4f", pathway.getEntities().getRatio())).setVerticalAlignment(VerticalAlignment.MIDDLE));
+            this.addCell(new Cell().add(String.valueOf(pathway.getEntities().getpValue())).setVerticalAlignment(VerticalAlignment.MIDDLE));
+            this.addCell(new Cell().add(String.valueOf(pathway.getEntities().getFdr())).setVerticalAlignment(VerticalAlignment.MIDDLE));
+            this.addCell(new Cell().add(String.valueOf(pathway.getReactions().getFound())).setVerticalAlignment(VerticalAlignment.MIDDLE));
+            this.addCell(new Cell().add(String.valueOf(pathway.getReactions().getTotal())).setVerticalAlignment(VerticalAlignment.MIDDLE));
+            this.addCell(new Cell().add(String.format("%.4f", pathway.getReactions().getRatio())).setVerticalAlignment(VerticalAlignment.MIDDLE));
+            this.addCell(new Cell().add(pathway.getSpecies().getName()).setVerticalAlignment(VerticalAlignment.MIDDLE));
+        };
     }
 }

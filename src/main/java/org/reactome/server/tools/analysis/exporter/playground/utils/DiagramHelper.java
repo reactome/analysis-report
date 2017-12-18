@@ -2,7 +2,7 @@ package org.reactome.server.tools.analysis.exporter.playground.utils;
 
 import org.reactome.server.tools.analysis.exporter.playground.exceptions.FailToGetDiagramException;
 import org.reactome.server.tools.diagram.exporter.raster.RasterExporter;
-import org.reactome.server.tools.diagram.exporter.raster.api.SimpleRasterArgs;
+import org.reactome.server.tools.diagram.exporter.raster.api.RasterArgs;
 import org.reactome.server.tools.diagram.exporter.raster.profiles.ColorProfiles;
 
 import java.awt.image.BufferedImage;
@@ -25,7 +25,7 @@ public class DiagramHelper {
      */
     public static BufferedImage getDiagram(String stId) throws FailToGetDiagramException {
         try {
-            final SimpleRasterArgs args = new SimpleRasterArgs(stId, diagramFormat);
+            final RasterArgs args = new RasterArgs(stId, diagramFormat);
             args.setQuality(quality);
             args.setProfiles(new ColorProfiles("standard", null, null));
             return RasterExporter.export(args, diagramPath, ehldPath);

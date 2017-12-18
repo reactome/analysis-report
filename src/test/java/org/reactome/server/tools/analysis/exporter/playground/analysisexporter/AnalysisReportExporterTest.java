@@ -13,11 +13,11 @@ public class AnalysisReportExporterTest {
 
     @Test
     public void test() throws Exception {
-        Logger logger = LoggerFactory.getLogger("Analysis-Report");
+        Logger logger = LoggerFactory.getLogger(AnalysisReportExporterTest.class);
 //        for (int i = 0; i < 5; i++) {
         long start = System.currentTimeMillis();
-        String token = "MjAxNzExMTcwODEzMjBfNzU%253D";
-//            String token = "MjAxNzExMTcwODUzNTRfOTU%253D";
+//        String token = "MjAxNzExMTcwODEzMjBfNzU%253D";
+            String token = "MjAxNzEyMTgwNjM0MDJfMjI%253D";
         File file = new File("src/main/resources/pdfs/" + token + "@" + new Date().getTime() + ".pdf");
         PdfProperties properties = new PdfProperties(token);
         AnalysisExporter.export(properties, file);

@@ -1,13 +1,13 @@
 package org.reactome.server.tools.analysis.exporter.playground.models._;
 
-import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class FoundAll {
     private String pathway;
-    private Entity[] entities;
+    private List<Entity> entities;
 
     public String getPathway() {
         return pathway;
@@ -17,11 +17,11 @@ public class FoundAll {
         this.pathway = pathway;
     }
 
-    public Entity[] getEntities() {
+    public List<Entity> getEntities() {
         return entities;
     }
 
-    public void setEntities(Entity[] entities) {
+    public void setEntities(List<Entity> entities) {
         this.entities = entities;
     }
 
@@ -29,7 +29,7 @@ public class FoundAll {
     public String toString() {
         return "FoundAll{" +
                 "pathway='" + pathway + '\'' +
-                ", entities=" + Arrays.toString(entities) +
+                ", entities=" + entities +
                 '}';
     }
 }

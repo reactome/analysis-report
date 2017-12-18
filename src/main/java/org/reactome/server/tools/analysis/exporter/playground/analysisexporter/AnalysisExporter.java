@@ -43,7 +43,10 @@ public class AnalysisExporter {
         } catch (FailToRenderReportException e) {
             logger.error(e.getMessage());
             throw e;
-        } catch (Exception e) {
+        } catch (FailToRequestDataException e) {
+            logger.error(e.getMessage());
+            throw e;
+        }  catch (Exception e) {
             logger.error("Failed to export pdf file for token:" + properties.getToken());
             throw new Exception("Failed to export pdf file for token:" + properties.getToken(), e);
         }

@@ -1,25 +1,25 @@
 package org.reactome.server.tools.analysis.exporter.playground.models._;
 
-import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class Entity extends Identifier {
-    private MapsTo[] mapsTo;
+    private List<MapsTo> mapsTo;
 
-    public MapsTo[] getMapsTo() {
+    public List<MapsTo> getMapsTo() {
         return mapsTo;
     }
 
-    public void setMapsTo(MapsTo[] mapsTo) {
+    public void setMapsTo(List<MapsTo> mapsTo) {
         this.mapsTo = mapsTo;
     }
 
     @Override
     public String toString() {
         return "Entity{" +
-                "mapsTo=" + Arrays.toString(mapsTo) +
+                "mapsTo=" + mapsTo +
                 '}';
     }
 }

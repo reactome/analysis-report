@@ -1,6 +1,8 @@
 package org.reactome.server.tools.analysis.exporter.playground.models._;
 
-import java.util.Arrays;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.List;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
@@ -18,11 +20,12 @@ public class Details {
     private boolean hasDiagram;
     // TODO: 06/12/17 need to add the parents' stId to get the diagram : private String parentStId;
     private String summation;
-    private boolean isInDisease;
+    @JsonProperty("isInDisease")
+    private boolean inDisease;
     private String disease;
     private boolean isInferred;
-    private InferredFrom[] inferredFrom;
-    private LiteratureReference[] literatureReference;
+    private List<InferredFrom> inferredFrom;
+    private List<LiteratureReference> literatureReference;
 
     public String getDisplayName() {
         return displayName;
@@ -113,11 +116,11 @@ public class Details {
     }
 
     public boolean isInDisease() {
-        return isInDisease;
+        return inDisease;
     }
 
-    public void setIsInDisease(boolean inDisease) {
-        isInDisease = inDisease;
+    public void setInDisease(boolean inDisease) {
+        this.inDisease = inDisease;
     }
 
     public String getDisease() {
@@ -132,23 +135,23 @@ public class Details {
         return isInferred;
     }
 
-    public void setIsInferred(boolean inferred) {
+    public void setInferred(boolean inferred) {
         isInferred = inferred;
     }
 
-    public InferredFrom[] getInferredFrom() {
+    public List<InferredFrom> getInferredFrom() {
         return inferredFrom;
     }
 
-    public void setInferredFrom(InferredFrom[] inferredFrom) {
+    public void setInferredFrom(List<InferredFrom> inferredFrom) {
         this.inferredFrom = inferredFrom;
     }
 
-    public LiteratureReference[] getLiteratureReference() {
+    public List<LiteratureReference> getLiteratureReference() {
         return literatureReference;
     }
 
-    public void setLiteratureReference(LiteratureReference[] literatureReference) {
+    public void setLiteratureReference(List<LiteratureReference> literatureReference) {
         this.literatureReference = literatureReference;
     }
 
@@ -166,11 +169,11 @@ public class Details {
                 ", compartment='" + compartment + '\'' +
                 ", hasDiagram=" + hasDiagram +
                 ", summation='" + summation + '\'' +
-                ", isInDisease=" + isInDisease +
+                ", isInDisease=" + inDisease +
                 ", disease='" + disease + '\'' +
                 ", isInferred=" + isInferred +
-                ", inferredFrom=" + Arrays.toString(inferredFrom) +
-                ", literatureReference=" + Arrays.toString(literatureReference) +
+                ", inferredFrom=" + inferredFrom +
+                ", literatureReference=" + literatureReference +
                 '}';
     }
 }

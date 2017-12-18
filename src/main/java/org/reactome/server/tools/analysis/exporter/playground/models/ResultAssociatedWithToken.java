@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class ResultAssociatedWithToken {
     private Expression expression;
     private int identifiersNotFound;
-    private Pathway[] pathways;
+    private Pathway[] pathways = null;
     private ResourceSummary[] resourceSummary;
 
     public ResultAssociatedWithToken() {

@@ -1,6 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.models._;
 
-import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
@@ -12,11 +12,18 @@ public class _DataSet {
     private int identifiersNotFound;
     private int pathwaysFound;
     private int pathwaysTotal;
-    private String[] expNames;
-    private Overview[] overview ;
-    private Details[] details;
-    private FoundAll[] foundAll;
-    private Identifier[] notFound;
+    // TODO: 15/12/17 change array to list to use stream filter by lambda expression(parallelStream().forEach())
+//    private String[] expNames;
+//    private Overview[] overview ;
+//    private Details[] details;
+//    private FoundAll[] foundAll;
+//    private Identifier[] notFound;
+    private List<String> expNames;
+    private List<Overview> overview ;
+    private List<Details> details;
+    private List<FoundAll> foundAll;
+    private List<Identifier> notFound;
+
 
     public int getVersion() {
         return version;
@@ -58,43 +65,43 @@ public class _DataSet {
         this.pathwaysTotal = pathwaysTotal;
     }
 
-    public String[] getExpNames() {
+    public List<String> getExpNames() {
         return expNames;
     }
 
-    public void setExpNames(String[] expNames) {
+    public void setExpNames(List<String> expNames) {
         this.expNames = expNames;
     }
 
-    public Overview[] getOverview() {
+    public List<Overview> getOverview() {
         return overview;
     }
 
-    public void setOverview(Overview[] overview) {
+    public void setOverview(List<Overview> overview) {
         this.overview = overview;
     }
 
-    public Details[] getDetails() {
+    public List<Details> getDetails() {
         return details;
     }
 
-    public void setDetails(Details[] details) {
+    public void setDetails(List<Details> details) {
         this.details = details;
     }
 
-    public FoundAll[] getFoundAll() {
+    public List<FoundAll> getFoundAll() {
         return foundAll;
     }
 
-    public void setFoundAll(FoundAll[] foundAll) {
+    public void setFoundAll(List<FoundAll> foundAll) {
         this.foundAll = foundAll;
     }
 
-    public Identifier[] getNotFound() {
+    public List<Identifier> getNotFound() {
         return notFound;
     }
 
-    public void setNotFound(Identifier[] notFound) {
+    public void setNotFound(List<Identifier> notFound) {
         this.notFound = notFound;
     }
 
@@ -106,11 +113,11 @@ public class _DataSet {
                 ", identifiersNotFound=" + identifiersNotFound +
                 ", pathwaysFound=" + pathwaysFound +
                 ", pathwaysTotal=" + pathwaysTotal +
-                ", expNames=" + Arrays.toString(expNames) +
-                ", overview=" + Arrays.toString(overview) +
-                ", details=" + Arrays.toString(details) +
-                ", foundAll=" + Arrays.toString(foundAll) +
-                ", notFound=" + Arrays.toString(notFound) +
+                ", expNames=" + expNames +
+                ", overview=" + overview +
+                ", details=" + details +
+                ", foundAll=" + foundAll +
+                ", notFound=" + notFound +
                 '}';
     }
 }

@@ -7,6 +7,7 @@ import org.reactome.server.tools.analysis.exporter.playground.models.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelements.sections.*;
+import org.reactome.server.tools.analysis.exporter.playground.utils.HttpClientHelper;
 import org.reactome.server.tools.analysis.exporter.playground.utils.PdfUtil;
 
 import java.util.ArrayList;
@@ -35,6 +36,8 @@ public class ReportRenderer {
         sections.add(new Summary());
         sections.add(new Overview());
 
+//        sections.stream().forEach(section -> section.render(report,properties,dataSet));
+
         try {
             for (Section section : sections) {
                 section.render(report, properties, dataSet);
@@ -45,5 +48,6 @@ public class ReportRenderer {
 
         report.close();
         document.close();
+        System.out.println(HttpClientHelper.total);
     }
 }

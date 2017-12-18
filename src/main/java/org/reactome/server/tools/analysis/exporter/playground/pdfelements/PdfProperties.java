@@ -52,13 +52,13 @@ public class PdfProperties {
     }
 
     public PdfFont getFont() throws Exception {
-        if (font == null) {
-            try {
+        try {
+            if (font == null) {
                 this.setFont(PdfFontFactory.createFont(FontConstants.HELVETICA));
 //                this.setFont(PdfFontFactory.createFont(FontProgramFactory.createFont(FontConstants.HELVETICA), PdfEncodings.WINANSI,false));
-            } catch (IOException e) {
-                throw new FailToCreateFontException("Fail to create PdfFont.", e);
             }
+        } catch (IOException e) {
+            throw new FailToCreateFontException("Fail to create PdfFont.", e);
         }
         return font;
     }
