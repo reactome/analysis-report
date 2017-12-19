@@ -1,8 +1,8 @@
 package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 import com.itextpdf.kernel.pdf.PdfWriter;
-import org.reactome.server.tools.analysis.exporter.playground.exceptions.*;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;
+import org.reactome.server.tools.analysis.exporter.playground.exception.*;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.PdfProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,7 +24,7 @@ public class AnalysisExporter {
 
     public static void export(PdfProperties properties, OutputStream outputStream) throws Exception {
         try {
-             ReportRenderer.render(properties,new PdfWriter(outputStream));
+            ReportRenderer.render(properties, new PdfWriter(outputStream));
         } catch (FailToAddLogoException e) {
             logger.error(e.getMessage());
             throw e;
@@ -46,7 +46,7 @@ public class AnalysisExporter {
         } catch (FailToRequestDataException e) {
             logger.error(e.getMessage());
             throw e;
-        }  catch (Exception e) {
+        } catch (Exception e) {
             logger.error("Failed to export pdf file for token:" + properties.getToken());
             throw new Exception("Failed to export pdf file for token:" + properties.getToken(), e);
         }

@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 import org.junit.Test;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.PdfProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,8 +16,8 @@ public class AnalysisReportExporterTest {
         Logger logger = LoggerFactory.getLogger(AnalysisReportExporterTest.class);
 //        for (int i = 0; i < 5; i++) {
         long start = System.currentTimeMillis();
-//        String token = "MjAxNzExMTcwODEzMjBfNzU%253D";
-            String token = "MjAxNzEyMTgwNjM0MDJfMjI%253D";
+//        String token = "MjAxNzEyMTgwOTI0NTJfODA%253D";
+        String token = "MjAxNzEyMTgwNjM0MDJfMjI%253D";
         File file = new File("src/main/resources/pdfs/" + token + "@" + new Date().getTime() + ".pdf");
         PdfProperties properties = new PdfProperties(token);
         AnalysisExporter.export(properties, file);

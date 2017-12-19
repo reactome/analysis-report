@@ -2,13 +2,12 @@ package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
-import org.reactome.server.tools.analysis.exporter.playground.exceptions.FailToRenderReportException;
-import org.reactome.server.tools.analysis.exporter.playground.models.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelements.AnalysisReport;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelements.PdfProperties;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelements.sections.*;
-import org.reactome.server.tools.analysis.exporter.playground.utils.HttpClientHelper;
-import org.reactome.server.tools.analysis.exporter.playground.utils.PdfUtil;
+import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRenderReportException;
+import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.PdfProperties;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.section.*;
+import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +22,7 @@ public class ReportRenderer {
     private static AnalysisReport report;
     private static List<Section> sections;
 
-    public static void render(PdfProperties properties, PdfWriter writer) throws Exception {
+    protected static void render(PdfProperties properties, PdfWriter writer) throws Exception {
         dataSet = PdfUtil.getDataSet(properties);
         document = new PdfDocument(writer);
         report = new AnalysisReport(properties, document);
@@ -48,6 +47,5 @@ public class ReportRenderer {
 
         report.close();
         document.close();
-        System.out.println(HttpClientHelper.total);
     }
 }
