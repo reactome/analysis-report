@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.time.Instant;
 import java.util.Date;
 
 
@@ -15,7 +16,7 @@ public class AnalysisReportExporterTest {
     public void test() throws Exception {
         Logger logger = LoggerFactory.getLogger(AnalysisReportExporterTest.class);
 //        for (int i = 0; i < 5; i++) {
-        long start = System.currentTimeMillis();
+        long start = Instant.now().toEpochMilli();
 //        String token = "MjAxNzEyMTgwOTI0NTJfODA%253D";
         String token = "MjAxNzEyMTgwNjM0MDJfMjI%253D";
         File file = new File("src/main/resources/pdfs/" + token + "@" + new Date().getTime() + ".pdf");
@@ -31,7 +32,8 @@ public class AnalysisReportExporterTest {
          *writer.close();
          * </code>
          */
-        long end = System.currentTimeMillis();
+        long end = Instant.now().toEpochMilli();
+        Instant.now();
         logger.info("create AnalysisReport in {} ms.", (end - start));
 //        }
     }

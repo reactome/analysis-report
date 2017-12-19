@@ -8,7 +8,7 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.PdfProp
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public interface Section {
-    /**
+    /**This method is to render the pdf document by give a exact {@see AnalysisReport}
      * @param report     AnalysisReport.
      * @param properties PdfProperties.
      * @param dataSet    DataSet.

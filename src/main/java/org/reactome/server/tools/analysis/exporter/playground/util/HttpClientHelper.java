@@ -20,16 +20,17 @@ public class HttpClientHelper {
     private static final CloseableHttpClient CLIENT = HttpClients.custom().setConnectionManager(new PoolingHttpClientConnectionManager()).build();
     public static long total;
 
-    private HttpClientHelper(){}
+    private HttpClientHelper() {
+    }
 
     // TODO: 18/12/17 method maybe change
     public static <T> T getForObject(String uri, Class<T> valueType, String parameter) throws Exception {
 //        long start = System.currentTimeMillis();
         String url = String.format(uri, parameter);
         CloseableHttpResponse response = CLIENT.execute(new HttpGet(url));
-        if (HttpStatus.SC_OK != response.getStatusLine().getStatusCode())
+        if (HttpStatus.SC_OK != response.getStatusLine().getStatusCode()) {
             throw new FailToRequestDataException(String.format("Fail to request DataSet through url:%s with status code:%s.", url, response.getStatusLine().getStatusCode()));
-
+        }
 //        long end = System.currentTimeMillis();
 //        total += end - start;
 //        System.out.println("spent:" + (end - start));
@@ -41,8 +42,9 @@ public class HttpClientHelper {
         HttpPost post = new HttpPost(String.format(url, parameter));
         post.setEntity(new StringEntity(postEntity));
         CloseableHttpResponse response = CLIENT.execute(post);
-        if (HttpStatus.SC_OK != response.getStatusLine().getStatusCode())
+        if (HttpStatus.SC_OK != response.getStatusLine().getStatusCode()) {
             throw new FailToRequestDataException(String.format("Fail to request DataSet through url:%s with status code:%s.", post.getURI(), response.getStatusLine().getStatusCode()));
+        }
 //        long end = System.currentTimeMillis();
 //        total += end - start;
 //        System.out.println("spent:" + (end - start));
