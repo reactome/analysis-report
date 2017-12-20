@@ -17,11 +17,15 @@ public class AnalysisReportExporterTest {
         Logger logger = LoggerFactory.getLogger(AnalysisReportExporterTest.class);
 //        for (int i = 0; i < 5; i++) {
         long start = Instant.now().toEpochMilli();
-//        String token = "MjAxNzEyMTgwOTI0NTJfODA%253D";
+//        String token = "MjAxNzEyMTgwOTI0NTJfODA%253D";z
         String token = "MjAxNzEyMTgwNjM0MDJfMjI%253D";
-        File file = new File("src/main/resources/pdfs/" + token + "@" + new Date().getTime() + ".pdf");
+        File file = new File("src/test/resources/pdfs/" + token + "@" + new Date().getTime() + ".pdf");
         PdfProperties properties = new PdfProperties(token);
         AnalysisExporter.export(properties, file);
+        assert file.exists();
+        assert file.isFile();
+        assert file.canRead();
+        assert file.canWrite();
         /**
          * or to save as a local pdf file by use outputstream:
          * <p> or use another class extends from outputstream;<br>

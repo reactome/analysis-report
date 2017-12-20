@@ -13,11 +13,11 @@ import java.io.IOException;
  */
 public class PdfProperties {
     private static int margin = 30;
-    private static int numberOfPathwaysToShow = 50;
+    private static int numberOfPathwaysToShow = 5;
     private static boolean immediateFlush = false;
     private static String token;
     private static PageSize pageSize = PageSize.A4;
-    //PdfFont can't be static or may lead to some bug from itext
+    // PdfFont can't be static or may lead to some bug from itext
     private PdfFont font = null;
 
     public PdfProperties(String token) {

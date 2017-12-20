@@ -13,14 +13,12 @@ import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.stream.Stream;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class PdfUtil {
-
-    private PdfUtil() {
-    }
+public abstract class PdfUtils {
 
     public static Image ImageAutoScale(Document document, Image image) {
         float pageWidth = document.getPdfDocument().getDefaultPageSize().getWidth() - document.getLeftMargin() - document.getRightMargin();
@@ -46,11 +44,11 @@ public class PdfUtil {
 
     public static StringBuilder stIdConcat(Pathway[] pathways) {
         StringBuilder stringBuilder = new StringBuilder();
-        for (Pathway pathway : pathways)
-            stringBuilder.append(pathway.getStId()).append(',');
+        Stream.of(pathways).forEach(pathway -> stringBuilder.append(pathway.getStId()).append(','));
         return stringBuilder;
     }
 
+    // to merge the different identifiers to a unique array
     public static Map<String, Identifier> identifiersFilter(IdentifiersWasFound[] identifiersWasFounds) {
         // initial capacity of hash map is about:identifiersWasFounds * 1.33 + 1
         Map<String, Identifier> filteredIdentifiers = new HashMap<>((int) (identifiersWasFounds.length / 0.75) + 1);
@@ -81,9 +79,9 @@ public class PdfUtil {
         DataSet dataSet = new DataSet();
         ResultAssociatedWithToken resultAssociatedWithToken = HttpClientHelper.getForObject(URL.RESULTASSCIATEDWITHTOKEN, ResultAssociatedWithToken.class, properties.getToken());
         Pathway[] pathways = resultAssociatedWithToken.getPathways();
-        StringBuilder stIds = PdfUtil.stIdConcat(pathways);
+        StringBuilder stIds = PdfUtils.stIdConcat(pathways);
         IdentifiersWasFound[] identifiersWasFounds = HttpClientHelper.postForObject(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), IdentifiersWasFound[].class, properties.getToken());
-        Map<String, Identifier> identifiersWasFiltered = PdfUtil.identifiersFilter(identifiersWasFounds);
+        Map<String, Identifier> identifiersWasFiltered = PdfUtils.identifiersFilter(identifiersWasFounds);
         Identifier[] identifiersWasNotFounds = HttpClientHelper.getForObject(URL.IDENTIFIERSWASNOTFOUND, Identifier[].class, properties.getToken());
         dataSet.setIdentifiersWasNotFounds(identifiersWasNotFounds);
         dataSet.setIdentifiersWasFounds(identifiersWasFounds);

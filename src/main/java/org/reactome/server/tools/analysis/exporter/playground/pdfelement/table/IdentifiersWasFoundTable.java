@@ -18,19 +18,20 @@ public class IdentifiersWasFoundTable extends Table {
     private static final int leftMargin = 40;
 
     public IdentifiersWasFoundTable(DataSet dataSet) {
-        super(dataSet.getIdentifiersWasFounds()[0].getExpNames().length + 3);
+        super(new float[dataSet.getIdentifiersWasFounds()[0].getExpNames().length + 3]);
 //        this.setWidthPercent(100);
 
         this.setMarginLeft(leftMargin)
                 .setFontSize(FontSize.H6)
-                .setTextAlignment(TextAlignment.CENTER);
-        this.addHeaderCell("Identifiers")
+                .setTextAlignment(TextAlignment.CENTER)
+                .addHeaderCell("Identifiers")
                 .addHeaderCell("mapsTo")
                 .addHeaderCell("Resource");
-        for (String header : dataSet.getResultAssociatedWithToken().getExpression().getColumnNames()) {
+        for (String header:dataSet.getResultAssociatedWithToken().getExpression().getColumnNames()){
             this.addHeaderCell(header);
         }
-        Cell cell = null;
+        
+        Cell cell;
         for (Entry<String, Identifier> entry : dataSet.getIdentifiersWasFiltered().entrySet()) {
             cell = new Cell().add(entry.getKey()).setVerticalAlignment(VerticalAlignment.MIDDLE);
             cell.setProperty(Property.DESTINATION, entry.getKey());

@@ -7,7 +7,7 @@ import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.PdfProperties;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.section.*;
-import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtil;
+import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ public class ReportRenderer {
     private static List<Section> sections;
 
     protected static void render(PdfProperties properties, PdfWriter writer) throws Exception {
-        dataSet = PdfUtil.getDataSet(properties);
+        dataSet = PdfUtils.getDataSet(properties);
         document = new PdfDocument(writer);
         report = new AnalysisReport(properties, document);
         sections = new ArrayList<>();

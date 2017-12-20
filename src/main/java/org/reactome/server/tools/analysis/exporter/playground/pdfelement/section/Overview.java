@@ -16,7 +16,7 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.PdfProp
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.TableFactory;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.TableTypeEnum;
 import org.reactome.server.tools.analysis.exporter.playground.util.HttpClientHelper;
-import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtil;
+import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
@@ -33,7 +33,7 @@ public class Overview implements Section {
 
         addPathwaysDetails(report, properties, dataSet);
 
-        report.addNormalTitle(PdfUtil.setDestination(new Paragraph("3. Identifiers was found.").setFontSize(FontSize.H3).setFirstLineIndent(Indent.I2), "IdentifiersWasFound"))
+        report.addNormalTitle(PdfUtils.setDestination(new Paragraph("3. Identifiers was found.").setFontSize(FontSize.H3).setFirstLineIndent(Indent.I2), "IdentifiersWasFound"))
                 .addTable((dataSet.getIdentifiersWasFounds()[0].getExpNames().length != 0) ? tableFactory.getTable(TableTypeEnum.IdentifiersWasFound) : tableFactory.getTable(TableTypeEnum.IDENTIFIERS_WAS_FOUND_NO_EXP));
         report.addNormalTitle("4. Identifiers was not found.", FontSize.H3, Indent.I2)
                 .addTable((dataSet.getResultAssociatedWithToken().getExpression().getColumnNames().length != 0) ? tableFactory.getTable(TableTypeEnum.IDENTIFIERS_WAS_NOT_FOUND) : tableFactory.getTable(TableTypeEnum.IDENTIFIERS_WAS_NOT_FOUND_NO_EXP));
@@ -51,7 +51,7 @@ public class Overview implements Section {
                     .setFontSize(FontSize.H3)
                     .setFirstLineIndent(Indent.I3)
                     .add(new Link(" (" + pathways[i].getStId() + ")", PdfAction.createURI(URL.QUERYFORPATHWAYDETAILS + pathways[i].getStId())));
-            report.addParagraph(PdfUtil.setDestination(paragraph, pathways[i].getName()));
+            report.addParagraph(PdfUtils.setDestination(paragraph, pathways[i].getName()));
 
             // TODO: 29/11/17 add the correct diagram;
             report.addDiagram("R-HSA-169911")
@@ -62,7 +62,10 @@ public class Overview implements Section {
                             (pathwayDetail.isInDisease() ? ",disease name:" + pathwayDetail.getDisease()[0].getDisplayName() : "") +
                             (pathwayDetail.isInferred() ? ",inferred from:" + pathwayDetail.getInferredFrom()[0].getDisplayName() : "") +
                             (pathwayDetail.getSummation() != null ? "," + pathwayDetail.getSummation()[0].getText().replaceAll("</?[a-zA-Z]{1,2}>", "") : "")
-                    ).setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M4).setFirstLineIndent(Indent.I2));
+                    ).setFontSize(FontSize.H5)
+                            .setMarginLeft(MarginLeft.M4)
+                            .setFirstLineIndent(Indent.I2)
+                            .setMultipliedLeading(1.0f));
 
             report.addNormalTitle("List of identifiers was found at this pathway", FontSize.H4, Indent.I3)
                     .addTable(tableFactory.getTable(identifiersWasFounds[i].getEntities()));

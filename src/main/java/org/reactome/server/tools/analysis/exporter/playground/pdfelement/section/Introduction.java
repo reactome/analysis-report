@@ -17,11 +17,11 @@ public class Introduction implements Section {
     public void render(AnalysisReport report, PdfProperties properties, DataSet dataSet) {
         report.addNormalTitle("Introduction");
         for (String introduction : Text.INTRODUCTION) {
-            report.addParagraph(new Paragraph(introduction).setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M1).setFirstLineIndent(Indent.I2));
+            report.addParagraph(new Paragraph(introduction).setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M1).setFirstLineIndent(Indent.I2).setMultipliedLeading(1.0f));
         }
 
         for (String literature : Text.REACTOME_LITERATRUE) {
-            report.addParagraph(new Paragraph(literature).setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M1));
+            report.addParagraph(new Paragraph(literature).setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M1).setMultipliedLeading(1.0f));
         }
     }
 }

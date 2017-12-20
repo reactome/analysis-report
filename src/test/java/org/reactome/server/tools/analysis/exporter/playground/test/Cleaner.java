@@ -10,6 +10,6 @@ import java.io.File;
 public class Cleaner {
     @Test
     public void clean() throws Exception {
-        for (File file : new File("src/main/resources/pdfs").listFiles()) file.delete();
+        for (File file : new File("src/test/resources/pdfs").listFiles()) file.delete();
     }
 }

@@ -23,8 +23,6 @@ import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRe
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
-import java.security.KeyManagementException;
-import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.util.Arrays;
@@ -36,11 +34,9 @@ public abstract class HttpClientHelper {
 
     private static final ObjectMapper MAPPER = new ObjectMapper();
     private static CloseableHttpClient CLIENT;
-    //            = HttpClients.custom().setConnectionManager(new PoolingHttpClientConnectionManager()).build();
     public static long total;
 
-
-    // to get the httpclient who don't check the CA
+    // to get the httpclient who don't check the CA_certificate
     static {
         try {
             // override the TrustManager to ignore the SSL
@@ -76,9 +72,7 @@ public abstract class HttpClientHelper {
 
             //create httpclient by use pooling manager
             CLIENT = HttpClients.custom().setConnectionManager(poolingHttpClientConnectionManager).setDefaultRequestConfig(defaultConfig).build();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        } catch (KeyManagementException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -96,6 +90,7 @@ public abstract class HttpClientHelper {
 //        System.out.println("spent:" + (end - start));
         return MAPPER.readValue(response.getEntity().getContent(), valueType);
     }
+
 
     public static <T> T postForObject(String url, String postEntity, Class<T> valueType, String parameter) throws Exception {
 //        long start = System.currentTimeMillis();

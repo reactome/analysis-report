@@ -25,7 +25,7 @@ public class FireworksHelperTest {
 
         String token = "MjAxNzEyMTgwNjM0MDJfMjI%253D";
         BufferedImage fireworks = FireworksHelper.getFireworks(token);
-        File file = new File("src/main/resources/fireworks/", "Homo_sapiens.png");
+        File file = new File("src/test/resources/fireworks/", "Homo_sapiens.png");
         ImageIO.write(fireworks, "png", file);
 
 //        FireworkArgs args = new FireworkArgs("Homo_sapiens", "gif");

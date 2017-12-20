@@ -11,7 +11,7 @@ import java.awt.image.BufferedImage;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public class FireworksHelper {
+public abstract class FireworksHelper {
 
     //this file must contain the *.json files,you down it from
     private static final String fireworksPath = "/home/byron/json";
@@ -19,7 +19,6 @@ public class FireworksHelper {
     private static final String fireworksFormat = "png";
     private static final double quality = 5.0;
 
-    private FireworksHelper(){}
 
     /**
      * <p>

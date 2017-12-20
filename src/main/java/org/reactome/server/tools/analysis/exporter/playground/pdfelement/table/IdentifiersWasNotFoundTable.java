@@ -16,9 +16,13 @@ public class IdentifiersWasNotFoundTable extends Table {
     private static final int leftMargin = 40;
 
     public IdentifiersWasNotFoundTable(DataSet dataSet) {
-        super(dataSet.getIdentifiersWasNotFounds()[0].getExp().length + 1);
-        this.setMarginLeft(leftMargin).setFontSize(FontSize.H6).setTextAlignment(TextAlignment.CENTER).setVerticalAlignment(VerticalAlignment.MIDDLE);
-        this.addHeaderCell("Identifiers");
+        super(new float[dataSet.getIdentifiersWasNotFounds()[0].getExp().length + 1]);
+        this.setWidthPercent(100)
+                .setMarginLeft(leftMargin)
+                .setFontSize(FontSize.H6)
+                .setTextAlignment(TextAlignment.CENTER)
+                .setVerticalAlignment(VerticalAlignment.MIDDLE)
+                .addHeaderCell("Identifiers");
         String[] header = dataSet.getResultAssociatedWithToken().getExpression().getColumnNames();
         for (String head : header) {
             this.addHeaderCell(head);

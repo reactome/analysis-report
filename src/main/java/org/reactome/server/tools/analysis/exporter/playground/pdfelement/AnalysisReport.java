@@ -13,7 +13,7 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
 import org.reactome.server.tools.analysis.exporter.playground.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.FireworksHelper;
-import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtil;
+import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 import java.awt.*;
 import java.net.MalformedURLException;
@@ -52,7 +52,7 @@ public class AnalysisReport extends Document {
     public AnalysisReport addDiagram(String stId) throws Exception {
         Image image = new Image(ImageDataFactory.create(DiagramHelper.getDiagram(stId), Color.WHITE));
         image.setHorizontalAlignment(HorizontalAlignment.CENTER);
-        this.add(PdfUtil.ImageAutoScale(this, image));
+        this.add(PdfUtils.ImageAutoScale(this, image));
         return this;
     }
 

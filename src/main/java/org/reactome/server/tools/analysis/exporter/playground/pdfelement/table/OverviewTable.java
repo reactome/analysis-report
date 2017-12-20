@@ -6,7 +6,6 @@ import com.itextpdf.layout.element.Link;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.TextAlignment;
-import com.itextpdf.layout.property.UnitValue;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
@@ -25,7 +24,8 @@ public class OverviewTable extends Table {
     private static final String[] headers = {"Pathway name", "Entities found", "Entities Total", "Entities ratio", "Entities pValue", "Entities FDR", "Reactions found", "Reactions total", "Reactions ratio", "Species name"};
 
     public OverviewTable(PdfProperties properties, DataSet dataSet) {
-        super(UnitValue.createPercentArray(columnsRelativeWith));
+//        super(UnitValue.createPercentArray(columnsRelativeWith));
+        super(new float[10]);
         this.setFontSize(FontSize.H8)
                 .setWidthPercent(widthPercent)
                 .setTextAlignment(TextAlignment.CENTER);
@@ -44,8 +44,8 @@ public class OverviewTable extends Table {
             this.addCell(new Cell().add(String.valueOf(pathway.getEntities().getFound())).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(String.valueOf(pathway.getEntities().getTotal())).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(String.format("%.4f", pathway.getEntities().getRatio())).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            this.addCell(new Cell().add(String.valueOf(pathway.getEntities().getpValue())).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            this.addCell(new Cell().add(String.valueOf(pathway.getEntities().getFdr())).setVerticalAlignment(VerticalAlignment.MIDDLE));
+            this.addCell(new Cell().add(String.format("%g",pathway.getEntities().getpValue())).setVerticalAlignment(VerticalAlignment.MIDDLE));
+            this.addCell(new Cell().add(String.format("%g",pathway.getEntities().getFdr())).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(String.valueOf(pathway.getReactions().getFound())).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(String.valueOf(pathway.getReactions().getTotal())).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(String.format("%.4f", pathway.getReactions().getRatio())).setVerticalAlignment(VerticalAlignment.MIDDLE));

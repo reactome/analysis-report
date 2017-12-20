@@ -10,16 +10,13 @@ import java.awt.image.BufferedImage;
 /**
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
-public class DiagramHelper {
+public abstract class DiagramHelper {
 
     // This path must contain "{stId}.json" and "{stId}.graph.json" files
     private static final String diagramPath = "/home/byron/static/demo";
     private static final String ehldPath = "/home/byron/static";
     private static final String diagramFormat = "png";
     private static final int quality = 10;
-
-    private DiagramHelper() {
-    }
 
     /**
      * @param stId stable identifier of the diagram

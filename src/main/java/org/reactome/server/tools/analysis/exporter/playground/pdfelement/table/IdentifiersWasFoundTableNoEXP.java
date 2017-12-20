@@ -10,6 +10,7 @@ import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.model.Identifier;
 
 import java.util.Map.Entry;
+import java.util.stream.Stream;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
@@ -21,14 +22,15 @@ public class IdentifiersWasFoundTableNoEXP extends Table {
 
     public IdentifiersWasFoundTableNoEXP(DataSet dataSet) {
         super(numColumns);
+//        super(new float[]{1,1,1,1,1,1});
+//        super(new UnitValue[numColumns]);
 //        this.setWidthPercent(100);
         this.setMarginLeft(leftMargin)
                 .setFontSize(FontSize.H6)
                 .setTextAlignment(TextAlignment.CENTER);
-        for (String header : headers) {
-            this.addHeaderCell(header);
-        }
-        Cell cell = null;
+        Stream.of(headers).forEach(this::addHeaderCell);
+
+        Cell cell;
         for (Entry<String, Identifier> entry : dataSet.getIdentifiersWasFiltered().entrySet()) {
             cell = new Cell().add(entry.getKey()).setVerticalAlignment(VerticalAlignment.MIDDLE);
             cell.setProperty(Property.DESTINATION, entry.getKey());
