@@ -21,6 +21,7 @@ import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRequestDataException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.InValidTokenException;
+import org.reactome.server.tools.analysis.exporter.playground.exception.NullTokenException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -136,6 +137,10 @@ public class HttpClientHelper {
 
     public static String checkToken(String token) throws Exception {
         init();
+        if (token == null || "".equals(token)) {
+            LOGGER.error("Token cant be null");
+            throw new NullTokenException("Token cant be null");
+        }
         if (HttpStatus.SC_OK != CLIENT.execute(new HttpGet(String.format(URL.CHECKTOKEN, token))).getStatusLine().getStatusCode()) {
             LOGGER.error("Invalid token:{}", token);
             throw new InValidTokenException(String.format("Invalid token:%s", token));

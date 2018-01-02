@@ -32,17 +32,17 @@ public class ReportRenderer {
     private static PdfDocument document;
     private static AnalysisReport report;
     private static List<Section> sections;
-    private static PdfProfile profile;
-    private static final String profilePath = "src/main/resources/profile.json";
-    private static final Logger logger = LoggerFactory.getLogger(ReportRenderer.class);
+    private static final PdfProfile PDF_PROFILE = new PdfProfile();
+    private static final String PROFILE_PATH = "src/main/resources/profile.json";
+    private static final Logger LOGGER = LoggerFactory.getLogger(ReportRenderer.class);
 
     static {
         //create a new thread to detect change of profile.json
         try {
-            loadPdfProfile(profilePath);
+            loadPdfProfile(PROFILE_PATH);
 //            new Thread(new profileWatcher()).run();
         } catch (Exception e) {
-            logger.error("Failed to init pdf profile from config json file:{}", profilePath);
+            LOGGER.error("Failed to init pdf profile from config json file:{}", PROFILE_PATH);
         }
     }
 
@@ -50,7 +50,7 @@ public class ReportRenderer {
         dataSet = PdfUtils.getDataSet("MjAxNzEyMTgwNjM0MDJfMjI%253D");
         dataSet.setReportArgs(reportArgs);
         document = new PdfDocument(writer);
-        report = new AnalysisReport(profile, document);
+        report = new AnalysisReport(PDF_PROFILE, document);
         sections = new ArrayList<>();
 
         sections.add(new Footer());
@@ -77,7 +77,6 @@ public class ReportRenderer {
 
     synchronized protected static void loadPdfProfile(String profilePath) throws Exception {
         try {
-            profile = new PdfProfile();
             JsonFactory jasonFactory = new JsonFactory();
             JsonParser jsonParser = jasonFactory.createParser(new File(profilePath));
             while (jsonParser.nextToken() != JsonToken.END_OBJECT) {
@@ -86,19 +85,19 @@ public class ReportRenderer {
                 //get the current token
                 if ("margin".equals(fieldname)) {
                     jsonParser.nextToken();
-                    profile.setMargin(jsonParser.getIntValue());
+                    PDF_PROFILE.setMargin(jsonParser.getIntValue());
                 }
                 if ("numberOfPathwaysToShow".equals(fieldname)) {
                     jsonParser.nextToken();
-                    profile.setNumberOfPathwaysToShow(jsonParser.getIntValue());
+                    PDF_PROFILE.setNumberOfPathwaysToShow(jsonParser.getIntValue());
                 }
                 if ("multipliedLeading".equals(fieldname)) {
                     jsonParser.nextToken();
-                    profile.setMultipliedLeading(jsonParser.getFloatValue());
+                    PDF_PROFILE.setMultipliedLeading(jsonParser.getFloatValue());
                 }
                 if ("font".equals(fieldname)) {
                     jsonParser.nextToken();
-                    profile.setFont(PdfFontFactory.createFont(jsonParser.getValueAsString()));
+                    PDF_PROFILE.setFont(PdfFontFactory.createFont(jsonParser.getValueAsString()));
                 }
                 if ("titleColor".equals(fieldname)) {
                     //move to [
@@ -108,7 +107,7 @@ public class ReportRenderer {
                     int index = 0;
                     while (jsonParser.nextToken() != JsonToken.END_ARRAY) {
                         colorValue[index++] = jsonParser.getFloatValue();
-                        profile.setTitleColor(new DeviceRgb(colorValue[0], colorValue[1], colorValue[2]));
+                        PDF_PROFILE.setTitleColor(new DeviceRgb(colorValue[0], colorValue[1], colorValue[2]));
                     }
                 }
                 if ("paragraphColor".equals(fieldname)) {
@@ -117,7 +116,7 @@ public class ReportRenderer {
                     int index = 0;
                     while (jsonParser.nextToken() != JsonToken.END_ARRAY) {
                         colorValue[index++] = jsonParser.getFloatValue();
-                        profile.setParagraphColor(new DeviceRgb(colorValue[0], colorValue[1], colorValue[2]));
+                        PDF_PROFILE.setParagraphColor(new DeviceRgb(colorValue[0], colorValue[1], colorValue[2]));
                     }
                 }
                 if ("tableColor".equals(fieldname)) {
@@ -126,11 +125,11 @@ public class ReportRenderer {
                     int index = 0;
                     while (jsonParser.nextToken() != JsonToken.END_ARRAY) {
                         colorValue[index++] = jsonParser.getFloatValue();
-                        profile.setTableColor(new DeviceRgb(colorValue[0], colorValue[1], colorValue[2]));
+                        PDF_PROFILE.setTableColor(new DeviceRgb(colorValue[0], colorValue[1], colorValue[2]));
                     }
                 }
             }
-            System.out.println(profile.toString());
+            System.out.println(PDF_PROFILE.toString());
         } catch (IOException e) {
             throw new FailToLoadProfileException(String.format("Fail to load profile file from:%s", profilePath), e);
         }
