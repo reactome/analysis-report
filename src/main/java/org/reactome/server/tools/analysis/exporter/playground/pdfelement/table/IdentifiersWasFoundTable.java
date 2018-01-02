@@ -27,10 +27,10 @@ public class IdentifiersWasFoundTable extends Table {
                 .addHeaderCell("Identifiers")
                 .addHeaderCell("mapsTo")
                 .addHeaderCell("Resource");
-        for (String header:dataSet.getResultAssociatedWithToken().getExpression().getColumnNames()){
+        for (String header : dataSet.getResultAssociatedWithToken().getExpression().getColumnNames()) {
             this.addHeaderCell(header);
         }
-        
+
         Cell cell;
         for (Entry<String, Identifier> entry : dataSet.getIdentifiersWasFiltered().entrySet()) {
             cell = new Cell().add(entry.getKey()).setVerticalAlignment(VerticalAlignment.MIDDLE);

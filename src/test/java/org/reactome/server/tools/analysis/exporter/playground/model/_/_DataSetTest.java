@@ -6,6 +6,9 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.stream.Stream;
 
 /**
@@ -25,10 +28,16 @@ public class _DataSetTest {
         Assert.assertEquals(true, dataSet.getDetails().get(0).isInferred());
         dataSet.getExpNames().stream().forEach(System.out::println);
         Stream.of(dataSet.getDetails()).forEach(System.out::println);
-        for (FoundAll foundAll:dataSet.getFoundAll()){
-            for (Entity entity:foundAll.getEntities()){
+        for (FoundAll foundAll : dataSet.getFoundAll()) {
+            for (Entity entity : foundAll.getEntities()) {
                 System.out.println(entity.getMapsTo().toString());
             }
         }
+
+        URL url = new URL(org.reactome.server.tools.analysis.exporter.playground.constant.URL.VERSION);
+        HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+        InputStream inputStream = httpURLConnection.getInputStream();
+        System.out.println(inputStream);
+        httpURLConnection.disconnect();
     }
 }

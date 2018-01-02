@@ -7,7 +7,7 @@ import java.util.Arrays;
  */
 public class Identifier {
     private String id;
-    private double[] exp;
+    private Double[] exp;
 
     public String getId() {
         return id;
@@ -17,11 +17,11 @@ public class Identifier {
         this.id = id;
     }
 
-    public double[] getExp() {
+    public Double[] getExp() {
         return exp;
     }
 
-    public void setExp(double[] exp) {
+    public void setExp(Double[] exp) {
         this.exp = exp;
     }
 

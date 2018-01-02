@@ -4,9 +4,9 @@ package org.reactome.server.tools.analysis.exporter.playground.model._;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class Reactions {
-    private int total;
-    private int found;
-    private double ratio;
+    private Integer total;
+    private Integer found;
+    private Double ratio;
 
     public int getTotal() {
         return total;

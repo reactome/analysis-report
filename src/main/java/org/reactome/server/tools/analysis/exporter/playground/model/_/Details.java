@@ -17,14 +17,14 @@ public class Details {
     private String releaseDate;
     private String speciesName;
     private String compartment;
-    private boolean hasDiagram;
+    private Boolean hasDiagram;
     // TODO: 06/12/17 need to add the parents' stId to get the diagram : private String parentStId;
     private String summation;
     @JsonProperty("isInDisease")
-    private boolean inDisease;
+    private Boolean inDisease;
     private String disease;
     @JsonProperty("isInferred")
-    private boolean inferred;
+    private Boolean inferred;
     private List<InferredFrom> inferredFrom;
     private List<LiteratureReference> literatureReference;
 

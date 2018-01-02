@@ -2,35 +2,89 @@ package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
 
 import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.io.util.UrlUtil;
+import com.itextpdf.kernel.color.Color;
+import com.itextpdf.kernel.font.PdfFont;
+import com.itextpdf.kernel.geom.PageSize;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
+import com.itextpdf.layout.element.Link;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.HorizontalAlignment;
+import com.itextpdf.layout.property.Property;
 import com.itextpdf.layout.property.TextAlignment;
+import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
 import org.reactome.server.tools.analysis.exporter.playground.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.FireworksHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
-import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.stream.IntStream;
 
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class AnalysisReport extends Document {
 
-    private static final float logoScaling = 0.3f;
+    private float logoScaling = 0.3f;
+    private Color titleColor;
+    private Color paragraphColor;
+    private Color tableColor;
+    private float multipliedLeading;
+    private PdfFont pdfFont;
+    private float margin;
+    private int numOfPathwaysToShow;
 
-    public AnalysisReport(PdfProperties properties, PdfDocument pdfDocument) throws Exception {
-        super(pdfDocument, properties.getPageSize(), properties.isImmediateFlush());
-        this.setFont(properties.getFont())
+    public AnalysisReport(PdfProfile profile, PdfDocument pdfDocument) throws Exception {
+        super(pdfDocument, PageSize.A4);
+        this.setFont(profile.getFont())
                 .setTextAlignment(TextAlignment.JUSTIFIED);
-        this.setMargins(properties.getMargin(), properties.getMargin(), properties.getMargin(), properties.getMargin());
+        this.setMargins(profile.getMargin(), profile.getMargin(), profile.getMargin(), profile.getMargin());
+        this.setPdfFont(profile.getFont());
+        this.setMargin(profile.getMargin());
+        this.setNumOfPathwaysToShow(profile.getNumberOfPathwaysToShow());
+        titleColor = profile.getTitleColor();
+        paragraphColor = profile.getParagraphColor();
+        tableColor = profile.getTableColor();
+        multipliedLeading = profile.getMultipliedLeading();
+    }
+
+    public PdfFont getPdfFont() {
+        return pdfFont;
+    }
+
+    public void setPdfFont(PdfFont pdfFont) {
+        this.pdfFont = pdfFont;
+    }
+
+    public float getMargin() {
+        return margin;
+    }
+
+    public void setMargin(float margin) {
+        this.margin = margin;
+    }
+
+    public int getNumOfPathwaysToShow() {
+        return numOfPathwaysToShow;
+    }
+
+    public void setNumOfPathwaysToShow(int numOfPathwaysToShow) {
+        this.numOfPathwaysToShow = numOfPathwaysToShow;
+    }
+
+    private AnalysisReport addImage(Image image) {
+        this.add(image);
+        return this;
+    }
+
+    private Image getImage(BufferedImage image) throws Exception {
+        return new Image(ImageDataFactory.create(image, java.awt.Color.WHITE));
     }
 
     public AnalysisReport addLogo(String logo) throws FailToAddLogoException {
@@ -42,42 +96,35 @@ public class AnalysisReport extends Document {
     }
 
     public AnalysisReport addLogo(URL url) {
-        Image image = new Image(ImageDataFactory.create(url, false));
-        image.scale(logoScaling, logoScaling);
+        Image image = new Image(ImageDataFactory.create(url, false))
+                .scale(logoScaling, logoScaling);
         image.setFixedPosition(this.getLeftMargin() * logoScaling, this.getPdfDocument().getDefaultPageSize().getHeight() - this.getTopMargin() * logoScaling - image.getImageScaledHeight());
-        this.add(image);
-        return this;
+        return this.addImage(image);
     }
 
-    public AnalysisReport addDiagram(String stId) throws Exception {
-        Image image = new Image(ImageDataFactory.create(DiagramHelper.getDiagram(stId), Color.WHITE));
-        image.setHorizontalAlignment(HorizontalAlignment.CENTER);
-        this.add(PdfUtils.ImageAutoScale(this, image));
-        return this;
+    public AnalysisReport addDiagram(String stId, ReportArgs reportArgs) throws Exception {
+        return this.addImage(PdfUtils.ImageAutoScale(this, getImage(DiagramHelper.getDiagram(stId, reportArgs))
+                .setHorizontalAlignment(HorizontalAlignment.CENTER)));
     }
 
-    public AnalysisReport addFireworks(String token) throws Exception {
-        Image image = new Image(ImageDataFactory.create(FireworksHelper.getFireworks(token), Color.WHITE));
-        image.setHorizontalAlignment(HorizontalAlignment.CENTER).setAutoScale(true);
-        this.add(image);
-        return this;
+    public AnalysisReport addFireworks(ReportArgs reportArgs) throws Exception {
+        return this.addImage(getImage(FireworksHelper.getFireworks(reportArgs))
+                .setHorizontalAlignment(HorizontalAlignment.CENTER)
+                .setAutoScale(true));
     }
 
     public AnalysisReport addTopTitle(String title) {
-        this.addTopTitle(title, FontSize.H0);
-        return this;
+        return this.addTopTitle(title, FontSize.H0);
     }
 
     public AnalysisReport addTopTitle(String title, int fontSize) {
-        this.add(new Paragraph(title).setFontSize(fontSize).setTextAlignment(TextAlignment.CENTER));
+        this.add(new Paragraph(title)
+                .setFontSize(fontSize)
+                .setTextAlignment(TextAlignment.CENTER)
+                .setFontColor(titleColor));
         return this;
     }
 
-
-    public AnalysisReport addNormalTitle(Paragraph paragraph) {
-        this.add(paragraph);
-        return this;
-    }
 
     public AnalysisReport addNormalTitle(String title) {
         return this.addNormalTitle(title, FontSize.H2, 0);
@@ -86,28 +133,56 @@ public class AnalysisReport extends Document {
     public AnalysisReport addNormalTitle(String title, int fontSize, int indent) {
         this.add(new Paragraph(title)
                 .setFontSize(fontSize)
-                .setFirstLineIndent(indent));
+                .setFirstLineIndent(indent)
+                .setFontColor(titleColor));
         return this;
     }
 
-    public AnalysisReport addParagraph(String paragraph) {
-        this.addParagraph(new Paragraph(paragraph));
-        return this;
-    }
-
-    public AnalysisReport addParagraph(Paragraph paragraph) {
+    public AnalysisReport addNormalTitle(String title, int fontSize, int indent, String destination) {
+        Paragraph paragraph = new Paragraph(title);
+        paragraph.setFontSize(fontSize)
+                .setFirstLineIndent(indent)
+                .setFontColor(titleColor)
+                .setProperty(Property.DESTINATION, destination);
         this.add(paragraph);
         return this;
     }
 
-    public AnalysisReport addParagraphs(Paragraph[] paragraphs) {
-        for (Paragraph paragraph : paragraphs)
-            this.add(paragraph);
+
+    public AnalysisReport addNormalTitle(String title, int fontSize, int indent, Link... link) {
+        return this.addNormalTitle(title, fontSize, indent, null, link);
+    }
+
+    public AnalysisReport addNormalTitle(String title, int fontSize, int indent, String destination, Link... link) {
+        Paragraph paragraph = new Paragraph();
+        String[] titles = title.split("\\{\\}");
+        IntStream.range(0, titles.length).limit(titles.length - 1).forEach(i -> paragraph.add(titles[i]).add(link[i]));
+        paragraph.add(titles[titles.length - 1])
+                .setFontSize(fontSize)
+                .setFirstLineIndent(indent)
+                .setFontColor(titleColor);
+        if (destination != null) {
+            paragraph.setProperty(Property.DESTINATION, destination);
+        }
+        this.add(paragraph);
+        return this;
+    }
+
+    public AnalysisReport addParagraph(String paragraph, int fontSize, int firstLineIndent, int marginLeft) {
+        return this.addParagraph(new Paragraph(paragraph)
+                .setFontSize(fontSize)
+                .setFirstLineIndent(firstLineIndent)
+                .setMarginLeft(marginLeft)
+                .setFontColor(paragraphColor));
+    }
+
+    public AnalysisReport addParagraph(Paragraph paragraph) {
+        this.add(paragraph.setFontColor(paragraphColor).setMultipliedLeading(multipliedLeading));
         return this;
     }
 
     public AnalysisReport addTable(Table table) {
-        this.add(table);
+        this.add(table.setFontColor(tableColor));
         return this;
     }
 }

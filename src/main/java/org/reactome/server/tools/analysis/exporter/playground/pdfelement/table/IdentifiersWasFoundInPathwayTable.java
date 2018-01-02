@@ -13,8 +13,8 @@ import org.reactome.server.tools.analysis.exporter.playground.model.Identifier;
  */
 public class IdentifiersWasFoundInPathwayTable extends Table {
 
-    private static final int numColumns = 6;
     public static final int leftMargin = 60;
+    private static final int numColumns = 6;
 
 
     public IdentifiersWasFoundInPathwayTable(Identifier[] identifiers) {

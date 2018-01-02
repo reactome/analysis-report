@@ -2,7 +2,6 @@ package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 import com.itextpdf.kernel.pdf.PdfWriter;
 import org.reactome.server.tools.analysis.exporter.playground.exception.*;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.PdfProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,13 +17,14 @@ public class AnalysisExporter {
 
     private static final Logger logger = LoggerFactory.getLogger(AnalysisExporter.class);
 
-    public static void export(PdfProperties properties, File dest) throws Exception {
-        export(properties, new FileOutputStream(dest));
+    // TODO: 02/01/18 use jsap to test class
+    public static void export(ReportArgs reportArgs, File dest) throws Exception {
+        export(reportArgs, new FileOutputStream(dest));
     }
 
-    public static void export(PdfProperties properties, OutputStream outputStream) throws Exception {
+    public static void export(ReportArgs reportArgs, OutputStream outputStream) throws Exception {
         try {
-            ReportRenderer.render(properties, new PdfWriter(outputStream));
+            ReportRenderer.render(reportArgs, new PdfWriter(outputStream));
         } catch (FailToAddLogoException e) {
             logger.error(e.getMessage());
             throw e;
@@ -47,8 +47,8 @@ public class AnalysisExporter {
             logger.error(e.getMessage());
             throw e;
         } catch (Exception e) {
-            logger.error("Failed to export pdf file for token:" + properties.getToken());
-            throw new Exception("Failed to export pdf file for token:" + properties.getToken(), e);
+            logger.error(String.format("Failed to export pdf file for token:%s", reportArgs.getToken()));
+            throw new Exception(String.format("Failed to export pdf file for token:%s", reportArgs.getToken()), e);
         }
     }
 }

@@ -7,9 +7,9 @@ public class LiteratureReference {
     private String title;
     private String journal;
     private String pages;
-    private long pubMedIdentifier;
-    private int volume;
-    private int year;
+    private Long pubMedIdentifier;
+    private Integer volume;
+    private Integer year;
     private String url;
 
     public String getTitle() {

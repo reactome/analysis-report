@@ -4,6 +4,7 @@ package org.reactome.server.tools.analysis.exporter.playground.constant;
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
 public class URL {
+    public static final String CHECKTOKEN = "https://reactome.org/AnalysisService/token/%s/resources";
     public static final String REACTOME = "https://reactome.org";
     public static final String IDENTIFIERSWASNOTFOUND = "https://reactome.org/AnalysisService/token/%s/notFound";
     public static final String VERSION = "https://reactome.org/ContentService/data/database/version";

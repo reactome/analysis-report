@@ -6,7 +6,7 @@ import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.Property;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.model.*;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.PdfProperties;
+import org.reactome.server.tools.analysis.exporter.playground.model._._DataSet;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -75,14 +75,14 @@ public abstract class PdfUtils {
     }
 
     // TODO: 06/12/17 this method may be deleted once the correct dataset structure was confirm
-    public static DataSet getDataSet(PdfProperties properties) throws Exception {
+    public static DataSet getDataSet(String token) throws Exception {
         DataSet dataSet = new DataSet();
-        ResultAssociatedWithToken resultAssociatedWithToken = HttpClientHelper.getForObject(URL.RESULTASSCIATEDWITHTOKEN, ResultAssociatedWithToken.class, properties.getToken());
+        ResultAssociatedWithToken resultAssociatedWithToken = HttpClientHelper.getForObject(URL.RESULTASSCIATEDWITHTOKEN, ResultAssociatedWithToken.class, token);
         Pathway[] pathways = resultAssociatedWithToken.getPathways();
         StringBuilder stIds = PdfUtils.stIdConcat(pathways);
-        IdentifiersWasFound[] identifiersWasFounds = HttpClientHelper.postForObject(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), IdentifiersWasFound[].class, properties.getToken());
+        IdentifiersWasFound[] identifiersWasFounds = HttpClientHelper.postForObject(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), IdentifiersWasFound[].class, token);
         Map<String, Identifier> identifiersWasFiltered = PdfUtils.identifiersFilter(identifiersWasFounds);
-        Identifier[] identifiersWasNotFounds = HttpClientHelper.getForObject(URL.IDENTIFIERSWASNOTFOUND, Identifier[].class, properties.getToken());
+        Identifier[] identifiersWasNotFounds = HttpClientHelper.getForObject(URL.IDENTIFIERSWASNOTFOUND, Identifier[].class, token);
         dataSet.setIdentifiersWasNotFounds(identifiersWasNotFounds);
         dataSet.setIdentifiersWasFounds(identifiersWasFounds);
         dataSet.setResultAssociatedWithToken(resultAssociatedWithToken);
@@ -94,5 +94,12 @@ public abstract class PdfUtils {
 //    public _DataSet getDataSet(String token) throws Exception {
 //        return MAPPER.readValue(CLIENT.execute(GET).getEntity().getContent(),_DataSet.class);
 //    }
+
+    public _DataSet getDataSet() {
+        // TODO: 21/12/17 connect server by httpurlconnection
+        return new _DataSet();
+    }
+
+
 
 }

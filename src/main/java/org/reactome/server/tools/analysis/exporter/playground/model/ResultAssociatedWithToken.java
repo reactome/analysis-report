@@ -7,12 +7,21 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ResultAssociatedWithToken {
+    private Summary summary;
     private Expression expression;
     private int identifiersNotFound;
     private Pathway[] pathways = null;
     private ResourceSummary[] resourceSummary;
 
     public ResultAssociatedWithToken() {
+    }
+
+    public Summary getSummary() {
+        return summary;
+    }
+
+    public void setSummary(Summary summary) {
+        this.summary = summary;
     }
 
     public Expression getExpression() {

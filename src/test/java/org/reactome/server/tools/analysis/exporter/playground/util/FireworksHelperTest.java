@@ -1,6 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
 import org.junit.Test;
+import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 
 import javax.imageio.ImageIO;
 import javax.net.ssl.*;
@@ -19,48 +20,28 @@ public class FireworksHelperTest {
 
     static TrustManager[] trustAllCerts;
 
-    @Test
-    public void test() throws Exception {
-        overrideCertificateCheck();
-
-        String token = "MjAxNzEyMTgwNjM0MDJfMjI%253D";
-        BufferedImage fireworks = FireworksHelper.getFireworks(token);
-        File file = new File("src/test/resources/fireworks/", "Homo_sapiens.png");
-        ImageIO.write(fireworks, "png", file);
-
-//        FireworkArgs args = new FireworkArgs("Homo_sapiens", "gif");
-//        args.setProfile("Copper plus");
-//        args.setFactor(3.0);
-//
-//        AnalysisClient.setServer("https://reactome.org");
-//        args.setToken("MjAxNzExMTcwODEzMjBfNzU%253D");
-//        FireworksExporter exporter = new FireworksExporter(args, "/home/byron/json");
-//
-//        File file = new File("src/main/resources/fireworks/", "Homo_sapiens.gif");
-//        FileOutputStream outputStream = new FileOutputStream(file);
-//        exporter.renderToGif(outputStream);
-    }
-
     /**
-     *  Overrides the check and accept an untrusted certificate
-     *
-     *  Fix for
-     *  Exception in thread "main" javax.net.ssl.SSLHandshakeException:
-     *  sun.security.validator.ValidatorException:
-     *           PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException:
-     *               unable to find valid certification path to requested target
+     * Overrides the check and accept an untrusted certificate
+     * <p>
+     * Fix for
+     * Exception in thread "main" javax.net.ssl.SSLHandshakeException:
+     * sun.security.validator.ValidatorException:
+     * PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException:
+     * unable to find valid certification path to requested target
      */
-    private static void overrideCertificateCheck(){
+    private static void overrideCertificateCheck() {
         try {
-            trustAllCerts = new TrustManager[] {
+            trustAllCerts = new TrustManager[]{
                     new X509TrustManager() {
                         public java.security.cert.X509Certificate[] getAcceptedIssuers() {
                             return null;
                         }
 
-                        public void checkClientTrusted(X509Certificate[] certs, String authType) {  }
+                        public void checkClientTrusted(X509Certificate[] certs, String authType) {
+                        }
 
-                        public void checkServerTrusted(X509Certificate[] certs, String authType) {  }
+                        public void checkServerTrusted(X509Certificate[] certs, String authType) {
+                        }
 
                     }
             };
@@ -83,5 +64,27 @@ public class FireworksHelperTest {
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void test() throws Exception {
+        overrideCertificateCheck();
+
+        String token = "MjAxNzEyMTgwNjM0MDJfMjI%253D";
+        BufferedImage fireworks = FireworksHelper.getFireworks(new ReportArgs(token, "/home/byron/static/demo", "/home/byron/static", "/home/byron/json"));
+        File file = new File("src/test/resources/fireworks/", "Homo_sapiens.png");
+        ImageIO.write(fireworks, "png", file);
+
+//        FireworkArgs args = new FireworkArgs("Homo_sapiens", "gif");
+//        args.setProfile("Copper plus");
+//        args.setFactor(3.0);
+//
+//        AnalysisClient.setServer("https://reactome.org");
+//        args.setToken("MjAxNzExMTcwODEzMjBfNzU%253D");
+//        FireworksExporter exporter = new FireworksExporter(args, "/home/byron/json");
+//
+//        File file = new File("src/main/resources/fireworks/", "Homo_sapiens.gif");
+//        FileOutputStream outputStream = new FileOutputStream(file);
+//        exporter.renderToGif(outputStream);
     }
 }

@@ -15,9 +15,9 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 public class FooterEventHandler implements IEventHandler {
 
     private static PdfFont font;
-    private static int margin;
+    private static float margin;
 
-    public FooterEventHandler(PdfFont font, int margin) {
+    public FooterEventHandler(PdfFont font, float margin) {
         this.font = font;
         this.margin = margin;
     }

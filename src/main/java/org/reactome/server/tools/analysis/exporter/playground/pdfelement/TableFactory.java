@@ -10,18 +10,18 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.*
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class TableFactory {
-    private static PdfProperties pdfProperties;
     private static DataSet dataSet;
+    private static int numOfPathwaysToShow;
 
-    public TableFactory(PdfProperties pdfProperties, DataSet dataSet) {
-        this.pdfProperties = pdfProperties;
+    public TableFactory(AnalysisReport report, DataSet dataSet) {
+        numOfPathwaysToShow = report.getNumOfPathwaysToShow();
         this.dataSet = dataSet;
     }
 
     public Table getTable(TableTypeEnum type) throws TableTypeNotFoundException {
         switch (type) {
             case OVERVIEW_TABLE:
-                return new OverviewTable(pdfProperties, dataSet);
+                return new OverviewTable(dataSet,numOfPathwaysToShow);
             case IdentifiersWasFound:
                 return new IdentifiersWasFoundTable(dataSet);
             case IDENTIFIERS_WAS_FOUND_NO_EXP:

@@ -1,5 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.model;
 
+import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
+
 import java.util.Map;
 
 /**
@@ -7,12 +9,13 @@ import java.util.Map;
  */
 // TODO: 06/12/17 this class need to refactor to fit the correct data from reactome server once another part was done
 public class DataSet {
-    IdentifiersWasFound[] identifiersWasFounds;
     private int version;
     private int totalPathways;
     private int identifiersWasFound;
     private int identifiersWasNotFound;
+    private ReportArgs reportArgs;
     private ResultAssociatedWithToken resultAssociatedWithToken;
+    private IdentifiersWasFound[] identifiersWasFounds;
     private Identifier[] identifiersWasNotFounds;
     private Map<String, Identifier> identifiersWasFiltered;
     private Pathway[] pathways;
@@ -47,6 +50,14 @@ public class DataSet {
 
     public void setIdentifiersWasNotFound(int identifiersWasNotFound) {
         this.identifiersWasNotFound = identifiersWasNotFound;
+    }
+
+    public ReportArgs getReportArgs() {
+        return reportArgs;
+    }
+
+    public void setReportArgs(ReportArgs reportArgs) {
+        this.reportArgs = reportArgs;
     }
 
     public ResultAssociatedWithToken getResultAssociatedWithToken() {

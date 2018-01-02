@@ -6,7 +6,7 @@ package org.reactome.server.tools.analysis.exporter.playground.model._;
 public class InferredFrom {
     private String displayName;
     private String speciesName;
-    private boolean hasDiagram;
+    private Boolean hasDiagram;
 
     public String getDisplayName() {
         return displayName;

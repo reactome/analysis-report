@@ -7,11 +7,12 @@ import java.util.List;
  */
 public class _DataSet {
 
-    private int version;
-    private int identifiersFound;
-    private int identifiersNotFound;
-    private int pathwaysFound;
-    private int pathwaysTotal;
+    private String token;
+    private Integer version;
+    private Integer identifiersFound;
+    private Integer identifiersNotFound;
+    private Integer pathwaysFound;
+    private Integer pathwaysTotal;
     // TODO: 15/12/17 change array to list to use stream filter by lambda expression(parallelStream().forEach())
 //    private String[] expNames;
 //    private Overview[] overview ;
@@ -24,6 +25,13 @@ public class _DataSet {
     private List<FoundAll> foundAll;
     private List<Identifier> notFound;
 
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
 
     public int getVersion() {
         return version;
