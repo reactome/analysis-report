@@ -12,12 +12,12 @@ import java.awt.image.BufferedImage;
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
-public abstract class FireworksHelper {
+public class FireworksHelper {
 
     //this file must contain the *.json files,you down it from
-    private static final String species = "Homo_sapiens";
-    private static final String fireworksFormat = "png";
-    private static final double quality = 5.0;
+    private static final String SPECIES = "Homo_sapiens";
+    private static final String FIREWORKS_FORMAT = "png";
+    private static final double QUALITY = 5.0;
 
 
     /**
@@ -32,14 +32,14 @@ public abstract class FireworksHelper {
     public static BufferedImage getFireworks(ReportArgs reportArgs) throws FailToGetFireworksException {
         try {
             AnalysisClient.setServer(URL.REACTOME);
-            FireworkArgs args = new FireworkArgs(species, fireworksFormat);
-            args.setFactor(quality);
+            FireworkArgs args = new FireworkArgs(SPECIES, FIREWORKS_FORMAT);
+            args.setFactor(QUALITY);
             args.setToken(reportArgs.getToken());
-            args.setProfile(FireworksColor.CopperPlus.getColor());
+            args.setProfile(FireworksColor.COPPER_PLUS.getColor());
             FireworksExporter exporter = new FireworksExporter(args, reportArgs.getFireworksPath());
             return exporter.render();
         } catch (Exception pascual) {
-            throw new FailToGetFireworksException("Failed to get fireworks for token:" + reportArgs.getToken(), pascual);
+            throw new FailToGetFireworksException(String.format("Failed to get fireworks for token : ", reportArgs.getToken()), pascual);
         }
     }
 }

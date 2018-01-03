@@ -10,11 +10,11 @@ import java.io.File;
  */
 public class PdfProfileTest {
     @Test
-    public void test() throws Exception{
+    public void test() throws Exception {
         ObjectMapper mapper = new ObjectMapper();
 //        mapper.disable(SerializationFeature.FAIL_ON_EMPTY_BEANS);
 //        mapper.writeValue(new File("src/test/resources/properties.json"),new PdfProfileTest());
         System.out.println(mapper.writeValueAsString(new PdfProfile()));
-        mapper.writeValue(new File("src/test/resources/properties.json"),new PdfProfile());
+        mapper.writeValue(new File("src/test/resources/properties.json"), new PdfProfile());
     }
 }

@@ -6,6 +6,7 @@ import com.itextpdf.layout.element.Link;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.TextAlignment;
+import com.itextpdf.layout.property.UnitValue;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
@@ -18,17 +19,17 @@ import java.util.stream.Stream;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class OverviewTable extends Table {
-    private static final int widthPercent = 100;
-    private static final float[] columnsRelativeWith = new float[]{5 / 20f, 1 / 20f, 1 / 20f, 1 / 20f, 3 / 20f, 3 / 20f, 1 / 20f, 1 / 20f, 1 / 20f, 2 / 20f};
-    private static final String[] headers = {"Pathway name", "Entities found", "Entities Total", "Entities ratio", "Entities pValue", "Entities FDR", "Reactions found", "Reactions total", "Reactions ratio", "Species name"};
+    private static final int WIDTH_PERCENT = 100;
+    private static final float[] COLUMNS_RELATIVE_WITH = new float[]{5 / 17f, 1 / 17f, 1 / 17f, 1 / 17f, 1.5f / 17f, 1.5f / 17f, 1 / 17f, 1 / 17f, 1 / 17f, 2 / 17f};
+    private static final String[] HEADERS = {"Pathway name", "Entities found", "Entities Total", "Entities ratio", "Entities pValue", "Entities FDR", "Reactions found", "Reactions total", "Reactions ratio", "Species name"};
 
-    public OverviewTable(DataSet dataSet,int numOfPathwaysToShow) {
-//        super(UnitValue.createPercentArray(columnsRelativeWith));
-        super(new float[10]);
+    public OverviewTable(DataSet dataSet, int numOfPathwaysToShow) {
+        super(UnitValue.createPercentArray(COLUMNS_RELATIVE_WITH));
+//        super(new float[10]);
         this.setFontSize(FontSize.H8)
-                .setWidthPercent(widthPercent)
+                .setWidthPercent(WIDTH_PERCENT)
                 .setTextAlignment(TextAlignment.CENTER);
-        Stream.of(headers)
+        Stream.of(HEADERS)
                 .forEach(header -> this.addHeaderCell(new Cell().add(header).setVerticalAlignment(VerticalAlignment.MIDDLE)));
 
         Stream.of(dataSet.getPathways())

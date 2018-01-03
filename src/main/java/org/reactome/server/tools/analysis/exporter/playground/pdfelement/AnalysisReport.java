@@ -4,7 +4,6 @@ import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.io.util.UrlUtil;
 import com.itextpdf.kernel.color.Color;
 import com.itextpdf.kernel.font.PdfFont;
-import com.itextpdf.kernel.geom.PageSize;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
@@ -40,8 +39,8 @@ public class AnalysisReport extends Document {
     private float margin;
     private int numOfPathwaysToShow;
 
-    public AnalysisReport(PdfProfile profile, PdfDocument pdfDocument) throws Exception {
-        super(pdfDocument, PageSize.A4);
+    public AnalysisReport(PdfProfile profile, PdfDocument pdfDocument) {
+        super(pdfDocument, profile.getPageSize());
         this.setFont(profile.getFont())
                 .setTextAlignment(TextAlignment.JUSTIFIED);
         this.setMargins(profile.getMargin(), profile.getMargin(), profile.getMargin(), profile.getMargin());

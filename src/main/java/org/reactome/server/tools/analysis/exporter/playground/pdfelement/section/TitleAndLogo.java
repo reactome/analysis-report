@@ -7,11 +7,11 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.Analysi
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class TitleAndLogo implements Section {
-    private static final String logo = "src/main/resources/images/logo.png";
-    private static final String title = "Report for Analysis tools Review";
+    private static final String LOGO = "src/main/resources/images/logo.png";
+    private static final String TITLE = "Report for Analysis tools Review";
 
     public void render(AnalysisReport report, DataSet dataSet) throws Exception {
-        report.addLogo(logo)
-                .addTopTitle(title);
+        report.addLogo(LOGO)
+                .addTopTitle(TITLE);
     }
 }

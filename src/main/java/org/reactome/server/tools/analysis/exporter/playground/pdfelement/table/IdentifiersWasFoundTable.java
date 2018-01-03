@@ -15,13 +15,13 @@ import java.util.Map.Entry;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class IdentifiersWasFoundTable extends Table {
-    private static final int leftMargin = 40;
+    private static final int LEFT_MARGIN = 40;
 
     public IdentifiersWasFoundTable(DataSet dataSet) {
         super(new float[dataSet.getIdentifiersWasFounds()[0].getExpNames().length + 3]);
 //        this.setWidthPercent(100);
 
-        this.setMarginLeft(leftMargin)
+        this.setMarginLeft(LEFT_MARGIN)
                 .setFontSize(FontSize.H6)
                 .setTextAlignment(TextAlignment.CENTER)
                 .addHeaderCell("Identifiers")

@@ -16,19 +16,18 @@ import java.util.stream.Stream;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class IdentifiersWasFoundTableNoEXP extends Table {
-    private static final int numColumns = 6;
-    private static final int leftMargin = 40;
-    private static final String[] headers = {"Identifiers", "mapsTo", "Resource", "Identifiers", "mapsTo", "Resource"};
+    private static final int NUM_COLUMNS = 6;
+    private static final int LEFT_MARGIN = 40;
+    private static final String[] HEADERS = {"Identifiers", "mapsTo", "Resource", "Identifiers", "mapsTo", "Resource"};
 
     public IdentifiersWasFoundTableNoEXP(DataSet dataSet) {
-        super(numColumns);
-//        super(new float[]{1,1,1,1,1,1});
-//        super(new UnitValue[numColumns]);
-//        this.setWidthPercent(100);
-        this.setMarginLeft(leftMargin)
+        super(NUM_COLUMNS);
+//        super(new float[NUM_COLUMNS]);
+//        super(new UnitValue[NUM_COLUMNS]);
+        this.setMarginLeft(LEFT_MARGIN)
                 .setFontSize(FontSize.H6)
                 .setTextAlignment(TextAlignment.CENTER);
-        Stream.of(headers).forEach(this::addHeaderCell);
+        Stream.of(HEADERS).forEach(this::addHeaderCell);
 
         Cell cell;
         for (Entry<String, Identifier> entry : dataSet.getIdentifiersWasFiltered().entrySet()) {

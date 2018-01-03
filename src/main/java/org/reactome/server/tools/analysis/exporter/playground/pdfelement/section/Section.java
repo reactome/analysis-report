@@ -10,8 +10,8 @@ public interface Section {
     /**
      * This method is to render the pdf document by give a exact {@see AnalysisReport}
      *
-     * @param report     AnalysisReport.
-     * @param dataSet    DataSet.
+     * @param report  AnalysisReport.
+     * @param dataSet DataSet.
      * @throws Exception may throe exception when some exact section to render the pdf document.
      */
     void render(AnalysisReport report, DataSet dataSet) throws Exception;

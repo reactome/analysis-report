@@ -13,20 +13,19 @@ import org.reactome.server.tools.analysis.exporter.playground.model.Identifier;
  */
 public class IdentifiersWasFoundInPathwayTable extends Table {
 
-    public static final int leftMargin = 60;
-    private static final int numColumns = 6;
-
+    public static final int LEFT_MARGIN = 60;
+    private static final int NUM_COLUMNS = 6;
 
     public IdentifiersWasFoundInPathwayTable(Identifier[] identifiers) {
-        super(new float[numColumns]);
+        super(new float[NUM_COLUMNS]);
         this.setWidthPercent(100)
-                .setMarginLeft(leftMargin)
+                .setMarginLeft(LEFT_MARGIN)
                 .setFontSize(FontSize.H6)
                 .setTextAlignment(TextAlignment.LEFT);
         for (Identifier identifier : identifiers) {
             this.addCell(new Cell().add(identifier.getId()).setAction(PdfAction.createGoTo(identifier.getId())).setBorder(Border.NO_BORDER));
         }
-        for (int j = 0; j < numColumns - identifiers.length % numColumns; j++) {
+        for (int j = 0; j < NUM_COLUMNS - identifiers.length % NUM_COLUMNS; j++) {
             this.addCell(new Cell().setBorder(Border.NO_BORDER));
         }
     }

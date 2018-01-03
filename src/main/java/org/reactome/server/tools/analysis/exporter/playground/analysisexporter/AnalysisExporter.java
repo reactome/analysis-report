@@ -47,8 +47,8 @@ public class AnalysisExporter {
             logger.error(e.getMessage());
             throw e;
         } catch (Exception e) {
-            logger.error(String.format("Failed to export pdf file for token:%s", reportArgs.getToken()));
-            throw new Exception(String.format("Failed to export pdf file for token:%s", reportArgs.getToken()), e);
+            logger.error("Failed to export pdf file for token : {}", reportArgs.getToken());
+            throw new Exception(String.format("Failed to export pdf file for token : %s", reportArgs.getToken()), e);
         }
     }
 }

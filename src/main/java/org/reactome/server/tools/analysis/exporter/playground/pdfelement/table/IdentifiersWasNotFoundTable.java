@@ -13,12 +13,12 @@ import java.util.stream.Stream;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class IdentifiersWasNotFoundTable extends Table {
-    private static final int leftMargin = 40;
+    private static final int LEFT_MARGIN = 40;
 
     public IdentifiersWasNotFoundTable(DataSet dataSet) {
         super(new float[dataSet.getIdentifiersWasNotFounds()[0].getExp().length + 1]);
         this.setWidthPercent(100)
-                .setMarginLeft(leftMargin)
+                .setMarginLeft(LEFT_MARGIN)
                 .setFontSize(FontSize.H6)
                 .setTextAlignment(TextAlignment.CENTER)
                 .setVerticalAlignment(VerticalAlignment.MIDDLE)

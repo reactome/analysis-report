@@ -11,11 +11,11 @@ import java.awt.image.BufferedImage;
 /**
  * @author Chuan Deng <cdeng@ebi.ac.uk>
  */
-public abstract class DiagramHelper {
+public class DiagramHelper {
 
     // This path must contain "{stId}.json" and "{stId}.graph.json" files
-    private static final String diagramFormat = "png";
-    private static final int quality = 10;
+    private static final String DIAGRAM_FORMAT = "png";
+    private static final int QUALITY = 10;
 
     /**
      * @param stId stable identifier of the diagram
@@ -24,8 +24,8 @@ public abstract class DiagramHelper {
      */
     public static BufferedImage getDiagram(String stId, ReportArgs reportArgs) throws FailToGetDiagramException {
         try {
-            final RasterArgs args = new RasterArgs(stId, diagramFormat);
-            args.setQuality(quality);
+            final RasterArgs args = new RasterArgs(stId, DIAGRAM_FORMAT);
+            args.setQuality(QUALITY);
             args.setProfiles(new ColorProfiles("standard", null, null));
             return RasterExporter.export(args, reportArgs.getDiagramPath(), reportArgs.getEhldPath());
         } catch (Exception pascual) {

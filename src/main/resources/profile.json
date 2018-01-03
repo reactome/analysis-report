@@ -3,19 +3,20 @@
   "numberOfPathwaysToShow": 1,
   "multipliedLeading": 1.0,
   "font": "Helvetica",
+  "pageSize": "A4",
   "titleColor": [
-    0,
-    0,
-    0
+    0.0,
+    0.0,
+    0.0
   ],
   "paragraphColor": [
-    0,
-    0,
-    0
+    0.0,
+    0.0,
+    0.0
   ],
   "tableColor": [
-    0,
-    0,
-    0
+    0.0,
+    0.0,
+    0.0
   ]
 }

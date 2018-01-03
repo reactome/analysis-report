@@ -25,7 +25,7 @@ public class Administrative implements Section {
         Paragraph paragraph = new Paragraph();
         report.addNormalTitle("Administrative");
         paragraph.setFontSize(FontSize.H5)
-                .setMarginLeft(MarginLeft.M1)
+                .setMarginLeft(MarginLeft.M2)
                 .setMultipliedLeading(1.0f)
                 .add("This report is intend for reviewer of the pathway analysis:")
                 .add(new Link(String.format("https://reactome.org/PathwayBrowser/#/DTAB=AN&ANALYSIS=%s", dataSet.getResultAssociatedWithToken().getSummary().getToken()), PdfAction.createURI(URL.ANALYSIS + dataSet.getResultAssociatedWithToken().getSummary().getToken())).setFontColor(Color.BLUE))

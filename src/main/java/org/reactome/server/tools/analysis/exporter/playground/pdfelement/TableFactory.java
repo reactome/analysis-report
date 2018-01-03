@@ -10,18 +10,18 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.*
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class TableFactory {
-    private static DataSet dataSet;
-    private static int numOfPathwaysToShow;
+    private DataSet dataSet;
+    private int numOfPathwaysToShow;
 
     public TableFactory(AnalysisReport report, DataSet dataSet) {
-        numOfPathwaysToShow = report.getNumOfPathwaysToShow();
+        numOfPathwaysToShow = report.getNumOfPathwaysToShow() <= dataSet.getPathways().length ? report.getNumOfPathwaysToShow() : dataSet.getPathways().length;
         this.dataSet = dataSet;
     }
 
     public Table getTable(TableTypeEnum type) throws TableTypeNotFoundException {
         switch (type) {
             case OVERVIEW_TABLE:
-                return new OverviewTable(dataSet,numOfPathwaysToShow);
+                return new OverviewTable(dataSet, numOfPathwaysToShow);
             case IdentifiersWasFound:
                 return new IdentifiersWasFoundTable(dataSet);
             case IDENTIFIERS_WAS_FOUND_NO_EXP:
@@ -31,7 +31,7 @@ public class TableFactory {
             case IDENTIFIERS_WAS_NOT_FOUND_NO_EXP:
                 return new IdentifiersWasNotFoundTableNoEXP(dataSet);
             default:
-                throw new TableTypeNotFoundException(String.format("No table type:%s was found", type));
+                throw new TableTypeNotFoundException(String.format("No table type : %s was found", type));
         }
     }
 

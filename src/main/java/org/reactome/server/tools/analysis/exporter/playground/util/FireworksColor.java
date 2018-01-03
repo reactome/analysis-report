@@ -4,7 +4,7 @@ package org.reactome.server.tools.analysis.exporter.playground.util;
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public enum FireworksColor {
-    Copper("Copper"), CopperPlus("Copper plus"), BariumLithium("Barium Lithium"), CalciumSalts("Calcium Salts");
+    COPPER("COPPER"), COPPER_PLUS("COPPER plus"), BARIUM_LITHIUM("Barium Lithium"), CALCIUM_SALTS("Calcium Salts");
     private String color;
 
     FireworksColor(String color) {

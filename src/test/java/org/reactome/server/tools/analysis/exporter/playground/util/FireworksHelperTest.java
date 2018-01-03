@@ -36,8 +36,10 @@ public class FireworksHelperTest {
                         public java.security.cert.X509Certificate[] getAcceptedIssuers() {
                             return null;
                         }
+
                         public void checkClientTrusted(X509Certificate[] certs, String authType) {
                         }
+
                         public void checkServerTrusted(X509Certificate[] certs, String authType) {
                         }
                     }
@@ -73,7 +75,7 @@ public class FireworksHelperTest {
         ImageIO.write(fireworks, "png", file);
 
 //        FireworkArgs args = new FireworkArgs("Homo_sapiens", "gif");
-//        args.setProfile("Copper plus");
+//        args.setProfile("COPPER plus");
 //        args.setFactor(3.0);
 //
 //        AnalysisClient.setServer("https://reactome.org");
