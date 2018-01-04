@@ -104,6 +104,8 @@ public class HttpClientHelper {
 
     private static void close() throws IOException {
         response.close();
+        response = null;
         client.close();
+        client = null;
     }
 }

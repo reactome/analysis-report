@@ -9,7 +9,7 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.FooterE
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class Footer implements Section {
-    public void render(AnalysisReport report, DataSet dataSet) throws Exception {
+    public void render(AnalysisReport report, DataSet dataSet) {
         report.getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(report.getPdfFont(), report.getMargin()));
     }
 }

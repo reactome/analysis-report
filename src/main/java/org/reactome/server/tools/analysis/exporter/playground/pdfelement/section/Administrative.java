@@ -33,8 +33,5 @@ public class Administrative implements Section {
                 .add(Arrays.toString(Arrays.copyOf(dataSet.getIdentifiersWasNotFounds(), numOfIdentifiersToShow)).replaceAll("[\\[\\]]", ""))
                 .add(String.format(".... It has been automatically generated in Reactome version %s at %s.", HttpClientHelper.getForObject(URL.VERSION, Integer.class, ""), PdfUtils.getCreatedTime()));
         report.addParagraph(paragraph);
-//        for (int i = 0; i < numOfIdentifiersToShow; i++) {
-//            paragraph.add(dataSet.getIdentifiersWasNotFounds()[i].getId() + ",");
-//        }
     }
 }

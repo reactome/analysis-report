@@ -44,7 +44,7 @@ public class PdfUtils {
     }
 
     public static StringBuilder stIdConcat(Pathway[] pathways) {
-        StringBuilder stringBuilder = new StringBuilder();
+        StringBuilder stringBuilder = new StringBuilder(2 * pathways.length + 1);
         Stream.of(pathways).forEach(pathway -> stringBuilder.append(pathway.getStId()).append(','));
         return stringBuilder;
     }
@@ -68,10 +68,11 @@ public class PdfUtils {
                 if (!entry.getValue().getResourceMapsToIds().containsKey(mapsTo.getResource())) {
                     entry.getValue().getResourceMapsToIds().put(mapsTo.getResource(), mapsTo.getIds().toString());
                 } else {
-                    entry.getValue().getResourceMapsToIds().get(mapsTo.getResource()).concat("," + mapsTo.getIds().toString());
+                    entry.getValue().getResourceMapsToIds().get(mapsTo.getResource()).concat(',' + mapsTo.getIds().toString());
                 }
             }
         }
+
         return filteredIdentifiers;
     }
 

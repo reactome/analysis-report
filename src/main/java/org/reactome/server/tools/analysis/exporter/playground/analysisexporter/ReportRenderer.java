@@ -42,7 +42,7 @@ public class ReportRenderer {
             ProfileWatcher watcher = new ProfileWatcher("profile watcher", PROFILE_PATH, PROFILE_NAME);
             watcher.start();
         } catch (Exception e) {
-            LOGGER.warn("Failed to init pdf profile correctly from : {}{}", PROFILE_PATH, PROFILE_NAME);
+            LOGGER.error("Failed to init pdf profile correctly from : {}{}", PROFILE_PATH, PROFILE_NAME);
         }
     }
 
@@ -72,10 +72,6 @@ public class ReportRenderer {
             // to avoid exception "Pdf indirect object belongs to other PDF document. Copy object to current pdf document."
             // must create new font for very new AnalysisReport object.
             PDF_PROFILE.setFont(PdfFontFactory.createFont(PDF_PROFILE.getFontName()));
-            dataSet = null;
-            document = null;
-            report = null;
-            sections = null;
         }
     }
 
@@ -145,7 +141,7 @@ public class ReportRenderer {
                 }
             }
         }
-        LOGGER.info(PDF_PROFILE.toString());
+        LOGGER.info("profile was load : {}", PDF_PROFILE.toString());
     }
 }
 
@@ -175,7 +171,7 @@ class ProfileWatcher implements Runnable {
             while (true) {
                 WatchKey watchKey = watchService.take();
                 if (watchKey != null) {
-                    watchKey.pollEvents().stream().filter(event -> ((Path) event.context()).toFile().getName().equals(profileName)).forEach(event ->
+                    watchKey.pollEvents().stream().filter(event -> ((Path) event.context()).endsWith(profileName)).forEach(event ->
                     {
                         LOGGER.info("Reload {}", profilePath + profileName);
                         try {

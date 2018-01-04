@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.time.Instant;
 
 
@@ -17,11 +18,12 @@ public class AnalysisReportExporterTest {
 
     @Test
     public void test() throws Exception {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 3; i++) {
             long start = Instant.now().toEpochMilli();
             File file = new File(String.format("src/test/resources/pdfs/%s@%s.pdf", token, start));
+            FileOutputStream outputStream = new FileOutputStream(file);
             ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath);
-            AnalysisExporter.export(reportArgs, file);
+            AnalysisExporter.export(reportArgs, outputStream);
             /**
              * or to save as a local pdf file by use outputstream:
              * <p> or use another classes extends from outputstream;<br>
@@ -33,6 +35,7 @@ public class AnalysisReportExporterTest {
              * </code>
              */
             long end = Instant.now().toEpochMilli();
+            outputStream.close();
             logger.info("create AnalysisReport in {} ms.", (end - start));
 //        return end - start;
         }

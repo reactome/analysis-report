@@ -15,13 +15,16 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.TableFa
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.TableTypeEnum;
 import org.reactome.server.tools.analysis.exporter.playground.util.HttpClientHelper;
 
+import java.time.Instant;
+
 /**
  * @author Chuan-Deng <dengchuanbio@gmail.com>
  */
 public class Overview implements Section {
-    private static TableFactory tableFactory;
+    private TableFactory tableFactory;
 
     public void render(AnalysisReport report, DataSet dataSet) throws Exception {
+        long start = Instant.now().toEpochMilli();
         tableFactory = new TableFactory(report, dataSet);
         report.addNormalTitle("Overview")
                 .addNormalTitle(String.format("1. Top %s Overrepresentation pathways sorted by p-Value.", report.getNumOfPathwaysToShow()), FontSize.H3, Indent.I3)
@@ -34,6 +37,8 @@ public class Overview implements Section {
                 .addTable((dataSet.getIdentifiersWasFounds()[0].getExpNames().length != 0) ? tableFactory.getTable(TableTypeEnum.IdentifiersWasFound) : tableFactory.getTable(TableTypeEnum.IDENTIFIERS_WAS_FOUND_NO_EXP))
                 .addNormalTitle("4. Identifiers was not found.", FontSize.H3, Indent.I3)
                 .addTable((dataSet.getResultAssociatedWithToken().getExpression().getColumnNames().length != 0) ? tableFactory.getTable(TableTypeEnum.IDENTIFIERS_WAS_NOT_FOUND) : tableFactory.getTable(TableTypeEnum.IDENTIFIERS_WAS_NOT_FOUND_NO_EXP));
+        long end = Instant.now().toEpochMilli();
+        System.out.println(String.format("spent : {}ms to create overview section.", (end - start)));
     }
 
     // TODO: 14/12/17 this method should be reduce once the correct data structure confirm
@@ -41,7 +46,8 @@ public class Overview implements Section {
         PathwayDetail pathwayDetail;
         Pathway[] pathways = dataSet.getPathways();
         IdentifiersWasFound[] identifiersWasFounds = dataSet.getIdentifiersWasFounds();
-        for (int i = 0; i < (report.getNumOfPathwaysToShow() <= dataSet.getPathways().length ? report.getNumOfPathwaysToShow() : dataSet.getPathways().length); i++) {
+        int length = report.getNumOfPathwaysToShow() <= dataSet.getPathways().length ? report.getNumOfPathwaysToShow() : dataSet.getPathways().length;
+        for (int i = 0; i < length; i++) {
             pathwayDetail = HttpClientHelper.getForObject(URL.QUERYFORPATHWAYDETAIL, PathwayDetail.class, pathways[i].getStId());
             report.addNormalTitle(String.format("2.%s. %s", i + 1, pathways[i].getName()), FontSize.H3, Indent.I4, pathways[i].getName(), new Link(String.format(" (%s)", pathways[i].getStId()), PdfAction.createURI(URL.QUERYFORPATHWAYDETAILS + pathways[i].getStId())));
 

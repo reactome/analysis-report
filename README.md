@@ -1,6 +1,6 @@
 ![reactome](https://reactome.org/templates/favourite/images/logo/logo.png)
 
-Analysis Report
+Analysis Exporter
 ---
 ###Usage
 * Pre-requirements  
