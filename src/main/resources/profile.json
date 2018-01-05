@@ -1,6 +1,6 @@
 {
   "margin": 30,
-  "numberOfPathwaysToShow": 50,
+  "numberOfPathwaysToShow": 1,
   "multipliedLeading": 1.0,
   "font": "Helvetica",
   "pageSize": "A4",

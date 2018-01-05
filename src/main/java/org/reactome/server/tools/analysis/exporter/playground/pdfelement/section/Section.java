@@ -1,5 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.section;
 
+import org.reactome.server.tools.analysis.exporter.playground.aspectj.Monitor;
 import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 
@@ -14,5 +15,6 @@ public interface Section {
      * @param dataSet DataSet.
      * @throws Exception may throe exception when some exact section to render the pdf document.
      */
+    @Monitor
     void render(AnalysisReport report, DataSet dataSet) throws Exception;
 }

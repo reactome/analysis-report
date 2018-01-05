@@ -1,6 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 import org.junit.Test;
+import org.reactome.server.tools.analysis.exporter.playground.aspectj.Monitor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,10 +18,10 @@ public class AnalysisReportExporterTest {
     static final String fireworksPath = "/home/byron/json";
 
     @Test
+    @Monitor
     public void test() throws Exception {
-        for (int i = 0; i < 3; i++) {
-            long start = Instant.now().toEpochMilli();
-            File file = new File(String.format("src/test/resources/pdfs/%s@%s.pdf", token, start));
+        for (int i = 0; i < 1; i++) {
+            File file = new File(String.format("src/test/resources/pdfs/%s@%s.pdf", token, Instant.now().toEpochMilli()));
             FileOutputStream outputStream = new FileOutputStream(file);
             ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath);
             AnalysisExporter.export(reportArgs, outputStream);
@@ -34,9 +35,7 @@ public class AnalysisReportExporterTest {
              *      writer.close();
              * </code>
              */
-            long end = Instant.now().toEpochMilli();
             outputStream.close();
-            logger.info("create AnalysisReport in {} ms.", (end - start));
 //        return end - start;
         }
     }

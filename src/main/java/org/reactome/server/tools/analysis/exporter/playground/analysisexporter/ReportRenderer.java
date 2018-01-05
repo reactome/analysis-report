@@ -141,7 +141,7 @@ public class ReportRenderer {
                 }
             }
         }
-        LOGGER.info("profile was load : {}", PDF_PROFILE.toString());
+        LOGGER.info("load profile : {}", PDF_PROFILE.toString());
     }
 }
 
