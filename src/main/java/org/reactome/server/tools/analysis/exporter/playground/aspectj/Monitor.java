@@ -6,9 +6,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
-@Retention(RetentionPolicy.RUNTIME)
+@Retention(RetentionPolicy.CLASS)
 @Target(ElementType.METHOD)
 public @interface Monitor {
 }

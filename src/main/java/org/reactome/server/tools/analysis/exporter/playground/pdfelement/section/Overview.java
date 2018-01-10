@@ -16,7 +16,7 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.T
 import org.reactome.server.tools.analysis.exporter.playground.util.HttpClientHelper;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class Overview implements Section {
     private TableFactory tableFactory;
@@ -44,7 +44,7 @@ public class Overview implements Section {
         int length = report.getNumOfPathwaysToShow() <= dataSet.getPathways().length ? report.getNumOfPathwaysToShow() : dataSet.getPathways().length;
         for (int i = 0; i < length; i++) {
             pathwayDetail = HttpClientHelper.getForObject(URL.QUERYFORPATHWAYDETAIL, PathwayDetail.class, pathways[i].getStId());
-            report.addNormalTitle(String.format("2.%s. %s", i + 1, pathways[i].getName()), FontSize.H3, Indent.I4, pathways[i].getName(), new Link(String.format(" (%s)", pathways[i].getStId()), PdfAction.createURI(URL.QUERYFORPATHWAYDETAILS + pathways[i].getStId())));
+            report.addNormalTitle(String.format("2.%s. %s ({})", i + 1, pathways[i].getName()), FontSize.H3, Indent.I4, pathways[i].getName(), new Link(pathways[i].getStId(), PdfAction.createURI(URL.QUERYFORPATHWAYDETAILS + pathways[i].getStId())));
 
             // TODO: 29/11/17 add the correct diagram;
             report.addDiagram("R-HSA-169911", dataSet.getReportArgs())
@@ -60,21 +60,59 @@ public class Overview implements Section {
             report.addNormalTitle("List of identifiers was found at this pathway", FontSize.H4, Indent.I4)
                     .addTable(tableFactory.getTable(identifiersWasFounds[i].getEntities()));
             if (pathwayDetail.getAuthors() != null) {
-                report.addNormalTitle("Authors", FontSize.H4, Indent.I4)
-                        .addParagraph(pathwayDetail.getAuthors().getDisplayName(), FontSize.H5, Indent.I5, MarginLeft.M0);
+                addCuratorDetail(report, "Authors", pathwayDetail.getAuthors().getDisplayName());
             }
             if (pathwayDetail.getEditors() != null) {
-                report.addNormalTitle("Editors", FontSize.H4, Indent.I4)
-                        .addParagraph(pathwayDetail.getEditors().getDisplayName(), FontSize.H5, Indent.I5, MarginLeft.M0);
+                addCuratorDetail(report, "Editors", pathwayDetail.getEditors().getDisplayName());
             }
             if (pathwayDetail.getReviewers() != null) {
-                report.addNormalTitle("Reviewers", FontSize.H4, Indent.I4)
-                        .addParagraph(pathwayDetail.getReviewers()[0].getDisplayName(), FontSize.H5, Indent.I5, MarginLeft.M0);
+                addCuratorDetail(report, "Reviewers", pathwayDetail.getReviewers()[0].getDisplayName());
             }
             if (pathwayDetail.getLiteratureReference() != null) {
-                report.addNormalTitle("References", FontSize.H4, Indent.I4)
-                        .addParagraph(pathwayDetail.getLiteratureReference()[0].toString(), FontSize.H5, Indent.I5, MarginLeft.M0);
+                addCuratorDetail(report, "References", pathwayDetail.getLiteratureReference()[0].toString());
             }
         }
+
+//    private void addPathwaysDetails(AnalysisReport report, DataSet dataSet) throws Exception {
+//        PathwayDetail[] pathwayDetail;
+//        Pathway[] pathways = dataSet.getPathways();
+//        StringBuilder stringBuilder = PdfUtils.stIdConcat(Arrays.copyOf(pathways, report.getNumOfPathwaysToShow()));
+//        pathwayDetail = HttpClientHelper.postForObject("https://reactome.org/ContentService/data/query/ids", stringBuilder.deleteCharAt(stringBuilder.length() - 1).toString(), PathwayDetail[].class, "");
+//        IdentifiersWasFound[] identifiersWasFounds = dataSet.getIdentifiersWasFounds();
+//        int length = report.getNumOfPathwaysToShow() <= dataSet.getPathways().length ? report.getNumOfPathwaysToShow() : dataSet.getPathways().length;
+//        for (int i = 0; i < length; i++) {
+//            report.addNormalTitle(String.format("2.%s. %s ({})", i + 1, pathways[i].getName()), FontSize.H3, Indent.I4, pathways[i].getName(), new Link(pathways[i].getStId(), PdfAction.createURI(URL.QUERYFORPATHWAYDETAILS + pathways[i].getStId())));
+//
+//            // TODO: 29/11/17 add the correct diagram;
+//            report.addDiagram("R-HSA-169911", dataSet.getReportArgs())
+//                    .addNormalTitle("Summation", FontSize.H4, Indent.I4)
+//                    .addParagraph("species name:" +
+//                                    pathwayDetail[i].getSpeciesName() +
+//                                    (pathwayDetail[i].getCompartment() != null ? ",compartment name:" + pathwayDetail[i].getCompartment()[0].getDisplayName() : "") +
+//                                    (pathwayDetail[i].isInDisease() ? ",disease name:" + pathwayDetail[i].getDisease()[0].getDisplayName() : "") +
+//                                    (pathwayDetail[i].isInferred() ? ",inferred from:" + pathwayDetail[i].getInferredFrom()[0].getDisplayName() : "") +
+//                                    (pathwayDetail[i].getSummation() != null ? "," + pathwayDetail[i].getSummation()[0].getText().replaceAll("</?[a-zA-Z]{1,2}>", "") : "")
+//                            , FontSize.H5, 0, MarginLeft.M5);
+//
+//            report.addNormalTitle("List of identifiers was found at this pathway", FontSize.H4, Indent.I4)
+//                    .addTable(tableFactory.getTable(identifiersWasFounds[i].getEntities()));
+//            if (pathwayDetail[i].getAuthors() != null) {
+//                addCuratorDetail(report, "Authors", pathwayDetail[i].getAuthors().getDisplayName());
+//            }
+//            if (pathwayDetail[i].getEditors() != null) {
+//                addCuratorDetail(report, "Editors", pathwayDetail[i].getEditors().getDisplayName());
+//            }
+//            if (pathwayDetail[i].getReviewers() != null) {
+//                addCuratorDetail(report, "Reviewers", pathwayDetail[i].getReviewers()[0].getDisplayName());
+//            }
+//            if (pathwayDetail[i].getLiteratureReference() != null) {
+//                addCuratorDetail(report, "References", pathwayDetail[i].getLiteratureReference()[0].toString());
+//            }
+//        }
+    }
+
+    private void addCuratorDetail(AnalysisReport report, String title, String content) {
+        report.addNormalTitle(title, FontSize.H4, Indent.I4)
+                .addParagraph(content, FontSize.H5, Indent.I5, MarginLeft.M0);
     }
 }

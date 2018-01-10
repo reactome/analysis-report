@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * @author Chuan Deng <cdeng@ebi.ac.uk>
+ * @author Chuan Deng dengchuanbio@gmail.com
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PathwayDetail {

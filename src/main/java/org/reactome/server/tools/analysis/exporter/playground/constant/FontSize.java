@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.constant;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class FontSize {
     public static final int H0 = 22;

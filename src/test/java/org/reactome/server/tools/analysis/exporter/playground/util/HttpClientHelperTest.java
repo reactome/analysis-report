@@ -4,7 +4,7 @@ import org.junit.Test;
 import org.reactome.server.tools.analysis.exporter.playground.exception.InValidTokenException;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class HttpClientHelperTest {
     @Test(expected = InValidTokenException.class)

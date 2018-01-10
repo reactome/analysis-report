@@ -2,43 +2,37 @@ package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 import org.junit.Test;
 import org.reactome.server.tools.analysis.exporter.playground.aspectj.Monitor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.time.Instant;
 
-
+/**
+ * @author Chuan-Deng dengchuanbio@gmail.com
+ */
 public class AnalysisReportExporterTest {
-    static final Logger logger = LoggerFactory.getLogger(AnalysisReportExporterTest.class);
     static final String token = "MjAxNzEyMTgwNjM0MDJfMjI%253D";
     static final String diagramPath = "/home/byron/static/demo";
     static final String ehldPath = "/home/byron/static";
     static final String fireworksPath = "/home/byron/json";
 
     @Test
-    @Monitor
     public void test() throws Exception {
         for (int i = 0; i < 1; i++) {
             File file = new File(String.format("src/test/resources/pdfs/%s@%s.pdf", token, Instant.now().toEpochMilli()));
             FileOutputStream outputStream = new FileOutputStream(file);
             ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath);
-            AnalysisExporter.export(reportArgs, outputStream);
-            /**
-             * or to save as a local pdf file by use outputstream:
-             * <p> or use another classes extends from outputstream;<br>
-             * <code>
-             *      FileOutputStream outputStream = new FileOutputStream(file);
-             *      AnalysisExporter.export(properties, outputStream);
-             *      OutputStreamWriter writer = new OutputStreamWriter(outputStream);
-             *      writer.close();
-             * </code>
-             */
+            export(reportArgs, outputStream);
             outputStream.close();
-//        return end - start;
         }
     }
+
+    @Monitor
+    public void export(ReportArgs args, OutputStream outputStream) throws Exception {
+        AnalysisExporter.export(args, outputStream);
+    }
+
 
 //    @Test
 //    public void timeAnalysis() throws Exception {

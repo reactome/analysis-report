@@ -13,7 +13,7 @@ import java.util.Map.Entry;
 import java.util.stream.Stream;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class IdentifiersWasFoundTableNoEXP extends Table {
     private static final int NUM_COLUMNS = 6;

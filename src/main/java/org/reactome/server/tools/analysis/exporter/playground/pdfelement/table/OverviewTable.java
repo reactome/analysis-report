@@ -16,7 +16,7 @@ import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class OverviewTable extends Table {
     private static final int WIDTH_PERCENT = 100;

@@ -9,7 +9,7 @@ import org.reactome.server.tools.diagram.exporter.raster.profiles.ColorProfiles;
 import java.awt.image.BufferedImage;
 
 /**
- * @author Chuan Deng <cdeng@ebi.ac.uk>
+ * @author Chuan Deng dengchuanbio@gmail.com
  */
 public class DiagramHelper {
 
@@ -18,9 +18,11 @@ public class DiagramHelper {
     private static final int QUALITY = 10;
 
     /**
-     * @param stId stable identifier of the diagram
-     * @return BufferedImage
-     * @throws FailToGetDiagramException fail to get diagram by stId
+     * create pathway's diagram.
+     * @param stId  stable identifier of the diagram.
+     * @param reportArgs    {@see ReportArgs}.
+     * @return {@see BufferedImage}.
+     * @throws FailToGetDiagramException
      */
     public static BufferedImage getDiagram(String stId, ReportArgs reportArgs) throws FailToGetDiagramException {
         try {

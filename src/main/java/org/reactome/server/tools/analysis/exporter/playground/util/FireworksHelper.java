@@ -10,7 +10,7 @@ import org.reactome.server.tools.fireworks.exporter.raster.FireworksExporter;
 import java.awt.image.BufferedImage;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class FireworksHelper {
 
@@ -19,14 +19,10 @@ public class FireworksHelper {
     private static final String FIREWORKS_FORMAT = "png";
     private static final double QUALITY = 5.0;
 
-
     /**
-     * <p>
-     * this method is to get the buffered image from fireworks exporter by give the token
-     * </P>
-     *
+     * get the buffered image from fireworks exporter by given token
      * @param reportArgs token produced by the server when it complete the analysis with your data,pick it from the URL
-     * @return BufferedImage
+     * @return {@see BufferedImage}.
      * @throws FailToGetFireworksException
      */
     public static BufferedImage getFireworks(ReportArgs reportArgs) throws FailToGetFireworksException {

@@ -9,7 +9,7 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.model.Identifier;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class IdentifiersWasFoundInPathwayTable extends Table {
 

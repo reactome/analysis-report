@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.constant;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class MarginLeft {
     public static final int M0 = 0;

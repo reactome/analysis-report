@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.constant;
 
 /**
- * @author Chuan Deng <cdeng@ebi.ac.uk>
+ * @author Chuan Deng dengchuanbio@gmail.com
  */
 public class Text {
     public static final String[] INTRODUCTION = {

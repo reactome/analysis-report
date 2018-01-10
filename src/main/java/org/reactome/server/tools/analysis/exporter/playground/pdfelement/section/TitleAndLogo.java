@@ -4,7 +4,7 @@ import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class TitleAndLogo implements Section {
     private static final String LOGO = "src/main/resources/images/logo.png";

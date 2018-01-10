@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.ArrayList;
 
 /**
- * @author Chuan Deng <cdeng@ebi.ac.uk>
+ * @author Chuan Deng dengchuanbio@gmail.com
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MapsTo {

@@ -12,7 +12,7 @@ import org.reactome.server.tools.analysis.exporter.playground.model.Identifier;
 import java.util.Map.Entry;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class IdentifiersWasFoundTable extends Table {
     private static final int LEFT_MARGIN = 40;

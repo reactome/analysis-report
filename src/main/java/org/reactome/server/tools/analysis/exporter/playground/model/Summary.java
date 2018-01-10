@@ -3,7 +3,7 @@ package org.reactome.server.tools.analysis.exporter.playground.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
- * @author Chuan Deng <cdeng@ebi.ac.uk>
+ * @author Chuan Deng dengchuanbio@gmail.com
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Summary {

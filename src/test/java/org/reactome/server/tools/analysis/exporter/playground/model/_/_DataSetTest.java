@@ -12,7 +12,7 @@ import java.net.URL;
 import java.util.stream.Stream;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class _DataSetTest {
     @Test

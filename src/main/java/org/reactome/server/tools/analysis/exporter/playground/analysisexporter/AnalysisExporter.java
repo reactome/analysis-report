@@ -9,9 +9,11 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 
-
 /**
- * Created by Byron on 2017/10/21.
+ * @author Chuan-Deng dengchuanbio@gmail.com
+ * <p>
+ * to export the analysis report(PDF format) according to the given token(produced by {@see <a href="https://reactome.org">Reactome</a>} analysis service).
+ * </p>
  */
 public class AnalysisExporter {
 
@@ -21,6 +23,20 @@ public class AnalysisExporter {
         export(reportArgs, new FileOutputStream(dest));
     }
 
+    /**
+     * to create an analysis report associated with token,receive parameters:{@see ReportArgs} and any class extend from {@see OutputStream}
+     * as the output destination.
+     * invoke this method by:
+     * <code>
+     * ReportArgs reportArgs = new ReportArgs("token", "diagramPath", "ehldPath", "fireworksPath");
+     * ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+     * AnalysisExporter.export(reportArgs, outputStream);
+     * <code/>
+     *
+     * @param reportArgs   report args contains arguments like token,the diagram json path etc.
+     * @param outputStream destination you want to save the produced PDF report document.
+     * @throws Exception
+     */
     public static void export(ReportArgs reportArgs, OutputStream outputStream) throws Exception {
         try {
             ReportRenderer.render(reportArgs, new PdfWriter(outputStream));
@@ -47,7 +63,7 @@ public class AnalysisExporter {
             throw e;
         } catch (Exception e) {
             LOGGER.error("Failed to export pdf file for token : {}", reportArgs.getToken());
-            throw new Exception(String.format("Failed to export pdf file for token : %s", reportArgs.getToken()), e);
+            throw new FailToExportAnalysisReportException(String.format("Failed to export pdf file for token : %s", reportArgs.getToken()), e);
         }
     }
 }

@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.constant;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class Indent {
     public static final int I0 = 0;

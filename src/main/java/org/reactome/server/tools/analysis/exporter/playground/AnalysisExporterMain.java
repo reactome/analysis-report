@@ -12,7 +12,9 @@ import java.io.File;
 import java.time.Instant;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
+ *
+ * use the JASP to test entire module.
  */
 public class AnalysisExporterMain {
     public static void main(String[] args) throws Exception {
@@ -57,9 +59,11 @@ public class AnalysisExporterMain {
         logger.info(jsap.getHelp());
         JSAPResult config = jsap.parse(args);
         ReportArgs reportArgs = new ReportArgs(config.getString("token"), config.getString("diagramPath"), config.getString("ehdlPath"), config.getString("fireworksPath"));
+
         long start = Instant.now().toEpochMilli();
         AnalysisExporter.export(reportArgs, new File(config.getString("output")));
         long end = Instant.now().toEpochMilli();
+
         logger.info("create pdf in {}ms", end - start);
         System.exit(0);
     }

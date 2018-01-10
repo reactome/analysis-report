@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.io.File;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class Cleaner {
     @Test

@@ -10,7 +10,7 @@ import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
 import java.util.stream.Stream;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class IdentifiersWasNotFoundTableNoEXP extends Table {
 

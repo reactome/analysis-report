@@ -10,7 +10,7 @@ import com.itextpdf.kernel.pdf.canvas.PdfCanvas;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 
 /**
- * @author Chuan Deng <cdeng@ebi.ac.uk>
+ * @author Chuan Deng dengchuanbio@gmail.com
  */
 public class FooterEventHandler implements IEventHandler {
 

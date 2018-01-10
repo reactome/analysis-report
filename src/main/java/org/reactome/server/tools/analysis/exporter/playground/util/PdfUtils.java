@@ -1,13 +1,12 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
 import com.itextpdf.kernel.geom.PageSize;
-import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.Property;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.model.*;
-import org.reactome.server.tools.analysis.exporter.playground.model._._DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -17,23 +16,29 @@ import java.util.Map.Entry;
 import java.util.stream.Stream;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class PdfUtils {
 
-    public static Image ImageAutoScale(Document document, Image image) {
-        float pageWidth = document.getPdfDocument().getDefaultPageSize().getWidth() - document.getLeftMargin() - document.getRightMargin();
+    /**
+     * scale image's size to fit the page size of analysis report.
+     * @param report
+     * @param image
+     * @return
+     */
+    public static Image ImageAutoScale(AnalysisReport report, Image image) {
+        float pageWidth = report.getPdfDocument().getDefaultPageSize().getWidth() - report.getLeftMargin() - report.getRightMargin();
         float stride = 0.01f;
         float scaling = 0.2f;
-        image.scale(scaling, scaling);
-        while (pageWidth < image.getImageScaledWidth()) {
-            scaling -= stride;
+        do {
             image.scale(scaling, scaling);
+            scaling -= stride;
         }
+        while (pageWidth < image.getImageScaledWidth());
         return image;
     }
 
-    public static String getCreatedTime() {
+    public static String getTimeStamp() {
         return LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy"));
     }
 
@@ -43,15 +48,25 @@ public class PdfUtils {
         return paragraph;
     }
 
+    /**
+     * concat all stId into a long String as the http post's parameter entities.
+     * @param pathways all pathways need to show.
+     * @return
+     */
     public static StringBuilder stIdConcat(Pathway[] pathways) {
         StringBuilder stringBuilder = new StringBuilder(2 * pathways.length + 1);
         Stream.of(pathways).forEach(pathway -> stringBuilder.append(pathway.getStId()).append(','));
         return stringBuilder;
     }
 
-    // to merge the different identifiers to a unique array
+    /**
+     * merge the identifiers from all different pathways into a unique array.
+     * @param identifiersWasFounds
+     * @return
+     */
+    // TODO: 09/01/18 this method need to optimize
     public static Map<String, Identifier> identifiersFilter(IdentifiersWasFound[] identifiersWasFounds) {
-        // initial capacity of hash map is about:identifiersWasFounds * 1.33 + 1
+        // initial capacity of hash map is about : identifiersWasFounds * 1.33 + 1
         Map<String, Identifier> filteredIdentifiers = new HashMap<>((int) (identifiersWasFounds.length / 0.75) + 1);
         for (IdentifiersWasFound identifiersWasFound : identifiersWasFounds) {
             for (Identifier identifier : identifiersWasFound.getEntities()) {
@@ -72,7 +87,6 @@ public class PdfUtils {
                 }
             }
         }
-
         return filteredIdentifiers;
     }
 
@@ -144,13 +158,13 @@ public class PdfUtils {
             case "B10":
                 return PageSize.B10;
             default:
-                throw new NoSuchFieldException(String.format("Cant recognize page size:%s", type));
+                throw new NoSuchFieldException(String.format("Cant recognize page size : %s", type));
         }
     }
 
-    public _DataSet getDataSet() {
-        // TODO: 21/12/17 connect server by httpurlconnection
-        return new _DataSet();
-    }
+//    public _DataSet getDataSet() {
+//        // TODO: 21/12/17 connect server by httpurlconnection
+//        return new _DataSet();
+//    }
 
 }

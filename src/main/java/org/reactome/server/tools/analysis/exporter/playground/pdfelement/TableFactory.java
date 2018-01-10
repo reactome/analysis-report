@@ -7,7 +7,7 @@ import org.reactome.server.tools.analysis.exporter.playground.model.Identifier;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.*;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class TableFactory {
     private DataSet dataSet;

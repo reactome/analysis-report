@@ -1,11 +1,12 @@
 package org.reactome.server.tools.analysis.exporter.playground.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 
 import java.util.Map;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 // TODO: 06/12/17 this class need to refactor to fit the correct data from reactome server once another part was done
 public class DataSet {
@@ -13,6 +14,7 @@ public class DataSet {
     private int totalPathways;
     private int identifiersWasFound;
     private int identifiersWasNotFound;
+    @JsonIgnore
     private ReportArgs reportArgs;
     private ResultAssociatedWithToken resultAssociatedWithToken;
     private IdentifiersWasFound[] identifiersWasFounds;

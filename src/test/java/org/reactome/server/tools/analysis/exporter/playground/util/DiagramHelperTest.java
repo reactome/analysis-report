@@ -8,7 +8,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 
 /**
- * @author Chuan Deng <cdeng@ebi.ac.uk>
+ * @author Chuan Deng dengchuanbio@gmail.com
  */
 public class DiagramHelperTest {
 

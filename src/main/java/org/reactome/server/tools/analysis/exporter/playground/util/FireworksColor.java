@@ -1,7 +1,9 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
+ *
+ * contains all color can be specified for fireworks color.
  */
 public enum FireworksColor {
     COPPER("COPPER"), COPPER_PLUS("COPPER plus"), BARIUM_LITHIUM("Barium Lithium"), CALCIUM_SALTS("Calcium Salts");

@@ -5,7 +5,7 @@ import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.geom.PageSize;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class PdfProfile {
 
@@ -97,11 +97,11 @@ public class PdfProfile {
                 "margin=" + margin +
                 ", numberOfPathwaysToShow=" + numberOfPathwaysToShow +
                 ", multipliedLeading=" + multipliedLeading +
-                ", titleColor=" + titleColor +
-                ", paragraphColor=" + paragraphColor +
-                ", tableColor=" + tableColor +
+//                ", titleColor=" + titleColor +
+//                ", paragraphColor=" + paragraphColor +
+//                ", tableColor=" + tableColor +
                 ", fontName='" + fontName + '\'' +
-                ", font=" + font +
+//                ", font=" + font +
                 '}';
     }
 }

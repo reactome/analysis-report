@@ -16,6 +16,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.ssl.SSLContexts;
+import org.reactome.server.tools.analysis.exporter.playground.aspectj.Monitor;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRequestDataException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.InValidTokenException;
@@ -27,7 +28,7 @@ import javax.net.ssl.SSLContext;
 import java.io.IOException;
 
 /**
- * Created by DengChuan on 2017/10/22.
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class HttpClientHelper {
 
@@ -44,7 +45,8 @@ public class HttpClientHelper {
 //            .setTargetPreferredAuthSchemes(Arrays.asList(AuthSchemes.NTLM, AuthSchemes.DIGEST))
 //            .setProxyPreferredAuthSchemes(Arrays.asList(AuthSchemes.BASIC)).build();
 
-    // TODO: 18/12/17 method maybe change
+    // TODO: 18/12/17 method maybe change by use HttpUrlConnection
+    @Monitor
     public static <T> T getForObject(String uri, Class<T> valueType, String parameter) throws Exception {
         try {
             String url = String.format(uri, parameter);
@@ -79,6 +81,12 @@ public class HttpClientHelper {
         }
     }
 
+    /**
+     * check if this given token is valid.
+     * @param token
+     * @return token
+     * @throws Exception
+     */
     public static String checkToken(String token) throws Exception {
         if (token == null || "".equals(token)) {
             LOGGER.error("Token cant be null");
@@ -94,6 +102,12 @@ public class HttpClientHelper {
         }
     }
 
+    /**
+     * create a new {@see CloseableHttpClient} to process new request.
+     * @param request
+     * @return
+     * @throws IOException
+     */
     private static CloseableHttpResponse execute(HttpUriRequest request) throws IOException {
         client = HttpClients.custom()
                 .setConnectionManager(new PoolingHttpClientConnectionManager(registry))

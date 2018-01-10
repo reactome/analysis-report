@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.constant;
 
 /**
- * @author Chuan Deng <cdeng@ebi.ac.uk>
+ * @author Chuan Deng dengchuanbio@gmail.com
  */
 public class URL {
     public static final String CHECKTOKEN = "https://reactome.org/AnalysisService/token/%s/resources";

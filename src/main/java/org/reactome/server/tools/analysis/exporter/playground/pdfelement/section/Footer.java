@@ -6,7 +6,7 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.Analysi
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.FooterEventHandler;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class Footer implements Section {
     public void render(AnalysisReport report, DataSet dataSet) {

@@ -18,7 +18,6 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
 import org.reactome.server.tools.analysis.exporter.playground.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.FireworksHelper;
-import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 import java.awt.image.BufferedImage;
 import java.net.MalformedURLException;
@@ -26,7 +25,7 @@ import java.net.URL;
 import java.util.stream.IntStream;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class AnalysisReport extends Document {
 
@@ -102,8 +101,11 @@ public class AnalysisReport extends Document {
     }
 
     public AnalysisReport addDiagram(String stId, ReportArgs reportArgs) throws Exception {
-        return this.addImage(PdfUtils.ImageAutoScale(this, getImage(DiagramHelper.getDiagram(stId, reportArgs))
-                .setHorizontalAlignment(HorizontalAlignment.CENTER)));
+        // use self-made auto scale method can keep diagram the same size(to fit the last rest space of one page so there wont be a lot blank content)
+//        return this.addImage(PdfUtils.ImageAutoScale(this, getImage(DiagramHelper.getDiagram(stId, reportArgs))
+        return this.addImage(getImage(DiagramHelper.getDiagram(stId, reportArgs))
+                .setHorizontalAlignment(HorizontalAlignment.CENTER)
+                .setAutoScale(true));
     }
 
     public AnalysisReport addFireworks(ReportArgs reportArgs) throws Exception {
@@ -152,6 +154,16 @@ public class AnalysisReport extends Document {
         return this.addNormalTitle(title, fontSize, indent, null, link);
     }
 
+    /**
+     * this method can add links into title at each placeholder '{}'.
+     *
+     * @param title       string title
+     * @param fontSize    font size
+     * @param indent      indent of this title
+     * @param destination another inner document link's destination.
+     * @param link        new link need to add.
+     * @return
+     */
     public AnalysisReport addNormalTitle(String title, int fontSize, int indent, String destination, Link... link) {
         Paragraph paragraph = new Paragraph();
         String[] titles = title.split("\\{\\}");

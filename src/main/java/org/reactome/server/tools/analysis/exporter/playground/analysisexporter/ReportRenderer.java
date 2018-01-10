@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class ReportRenderer {
 
@@ -36,6 +36,9 @@ public class ReportRenderer {
     private static AnalysisReport report = null;
     private static List<Section> sections = null;
 
+    /**
+     * to load the PDF profile configuration file before create the document.
+     */
     static {
         try {
             loadPdfProfile(PROFILE_PATH + PROFILE_NAME);
@@ -46,10 +49,20 @@ public class ReportRenderer {
         }
     }
 
+    /**
+     * this method is to render the report with data set.
+     *
+     * @param reportArgs {@see ReportArgs}
+     * @param writer     {@see PdfWriter}
+     * @throws Exception when fail to create the PDF document.
+     */
     protected static void render(ReportArgs reportArgs, PdfWriter writer) throws Exception {
         dataSet = PdfUtils.getDataSet(reportArgs.getToken());
-        dataSet.setReportArgs(reportArgs);
+//        ObjectMapper mapper = new ObjectMapper();
+//        dataSet = mapper.readValue(new File("./dataset.json"), DataSet.class);
         document = new PdfDocument(writer);
+
+        dataSet.setReportArgs(reportArgs);
         report = new AnalysisReport(PDF_PROFILE, document);
         sections = new ArrayList<>();
 
@@ -75,6 +88,12 @@ public class ReportRenderer {
         }
     }
 
+    /**
+     *  load the {@see PdfProfile} config information to control PDF layout.
+     *
+     * @param profilePath   path contains profile.json config file.
+     * @throws Exception
+     */
     protected static void loadPdfProfile(String profilePath) throws Exception {
         JsonFactory jasonFactory = new JsonFactory();
         JsonParser jsonParser = jasonFactory.createParser(new File(profilePath));
@@ -145,6 +164,10 @@ public class ReportRenderer {
     }
 }
 
+/**
+ * open a new thread and use {@see WatchService} to oversee the modification of config file.
+ * once it was changed, invoke {@see ReportRenderer#loadPdfProfile} reload config file.
+ */
 class ProfileWatcher implements Runnable {
     private static final Logger LOGGER = LoggerFactory.getLogger(ProfileWatcher.class);
     private String profilePath;

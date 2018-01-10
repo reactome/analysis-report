@@ -3,7 +3,7 @@ package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 import java.util.Arrays;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class Profile {
     float[] titleColor = new float[3];
