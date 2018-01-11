@@ -21,11 +21,15 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRequestDataException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.InValidTokenException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullTokenException;
+import org.reactome.server.tools.analysis.exporter.playground.model.Pathway;
+import org.reactome.server.tools.analysis.exporter.playground.model.PathwayDetail;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.net.ssl.SSLContext;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -39,11 +43,6 @@ public class HttpClientHelper {
             .register("https", new SSLConnectionSocketFactory(context, NoopHostnameVerifier.INSTANCE)).build();
     private static CloseableHttpResponse response = null;
     private static CloseableHttpClient client = null;
-//    private static final RequestConfig defaultConfig = RequestConfig.custom()
-//            .setCookieSpec(CookieSpecs.IGNORE_COOKIES)
-//            .setExpectContinueEnabled(false)
-//            .setTargetPreferredAuthSchemes(Arrays.asList(AuthSchemes.NTLM, AuthSchemes.DIGEST))
-//            .setProxyPreferredAuthSchemes(Arrays.asList(AuthSchemes.BASIC)).build();
 
     // TODO: 18/12/17 method maybe change by use HttpUrlConnection
     @Monitor
@@ -83,6 +82,7 @@ public class HttpClientHelper {
 
     /**
      * check if this given token is valid.
+     *
      * @param token
      * @return token
      * @throws Exception
@@ -104,6 +104,7 @@ public class HttpClientHelper {
 
     /**
      * create a new {@see CloseableHttpClient} to process new request.
+     *
      * @param request
      * @return
      * @throws IOException
@@ -111,15 +112,36 @@ public class HttpClientHelper {
     private static CloseableHttpResponse execute(HttpUriRequest request) throws IOException {
         client = HttpClients.custom()
                 .setConnectionManager(new PoolingHttpClientConnectionManager(registry))
+//                .setMaxConnTotal(1)
 //                .setDefaultRequestConfig(defaultConfig)
                 .build();
         return client.execute(request);
     }
 
     private static void close() throws IOException {
-        response.close();
+        if (response != null) response.close();
         response = null;
-        client.close();
+        if (client != null) client.close();
         client = null;
+    }
+
+    public static List<PathwayDetail> getPathwayDetails(Pathway[] pathways) throws Exception {
+        List<PathwayDetail> pathwayDetails = new ArrayList<>(pathways.length);
+        client = HttpClients.custom()
+                .setConnectionManager(new PoolingHttpClientConnectionManager(registry))
+//                .setMaxConnTotal(pathways.length)
+                .build();
+        String url;
+        for (Pathway pathway : pathways) {
+            url = String.format(URL.QUERYFORPATHWAYDETAIL, pathway.getStId());
+            response = client.execute(new HttpGet(url));
+            if (HttpStatus.SC_OK != response.getStatusLine().getStatusCode()) {
+                LOGGER.error("Fail to request DataSet through url : {} with status code : {}.", url, response.getStatusLine().getStatusCode());
+                throw new FailToRequestDataException(String.format("Fail to request DataSet through url : %s with status code : %s.", url, response.getStatusLine().getStatusCode()));
+            }
+            pathwayDetails.add(MAPPER.readValue(response.getEntity().getContent(), PathwayDetail.class));
+        }
+        close();
+        return pathwayDetails;
     }
 }

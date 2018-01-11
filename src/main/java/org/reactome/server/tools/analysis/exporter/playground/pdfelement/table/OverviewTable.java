@@ -23,7 +23,7 @@ public class OverviewTable extends Table {
     private static final float[] COLUMNS_RELATIVE_WITH = new float[]{5 / 17f, 1 / 17f, 1 / 17f, 1 / 17f, 1.5f / 17f, 1.5f / 17f, 1 / 17f, 1 / 17f, 1 / 17f, 2 / 17f};
     private static final String[] HEADERS = {"Pathway name", "Entities found", "Entities Total", "Entities ratio", "Entities pValue", "Entities FDR", "Reactions found", "Reactions total", "Reactions ratio", "Species name"};
 
-    public OverviewTable(DataSet dataSet, int numOfPathwaysToShow) {
+    public OverviewTable(DataSet dataSet) {
         super(UnitValue.createPercentArray(COLUMNS_RELATIVE_WITH));
 //        super(new float[10]);
         this.setFontSize(FontSize.H8)
@@ -32,10 +32,8 @@ public class OverviewTable extends Table {
         Stream.of(HEADERS)
                 .forEach(header -> this.addHeaderCell(new Cell().add(header).setVerticalAlignment(VerticalAlignment.MIDDLE)));
 
-        Stream.of(dataSet.getPathways())
-                .limit(numOfPathwaysToShow)
+        Stream.of(dataSet.getResultAssociatedWithToken().getPathways())
                 .forEach(processTable());
-
     }
 
     private Consumer<Pathway> processTable() {

@@ -10,6 +10,7 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.Analysi
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -21,7 +22,8 @@ import java.util.stream.Stream;
 public class PdfUtils {
 
     /**
-     * scale image's size to fit the page size of analysis report.
+     * scale image's size to fit the analysis report's page size.
+     *
      * @param report
      * @param image
      * @return
@@ -50,6 +52,7 @@ public class PdfUtils {
 
     /**
      * concat all stId into a long String as the http post's parameter entities.
+     *
      * @param pathways all pathways need to show.
      * @return
      */
@@ -61,6 +64,7 @@ public class PdfUtils {
 
     /**
      * merge the identifiers from all different pathways into a unique array.
+     *
      * @param identifiersWasFounds
      * @return
      */
@@ -91,19 +95,22 @@ public class PdfUtils {
     }
 
     // TODO: 06/12/17 this method may be deleted once the correct dataset structure was confirm
-    public static DataSet getDataSet(String token) throws Exception {
+    public static DataSet getDataSet(String token, int numOfPathwaysToShow) throws Exception {
         DataSet dataSet = new DataSet();
         ResultAssociatedWithToken resultAssociatedWithToken = HttpClientHelper.getForObject(URL.RESULTASSCIATEDWITHTOKEN, ResultAssociatedWithToken.class, token);
         Identifier[] identifiersWasNotFounds = HttpClientHelper.getForObject(URL.IDENTIFIERSWASNOTFOUND, Identifier[].class, token);
-        Pathway[] pathways = resultAssociatedWithToken.getPathways();
-        StringBuilder stIds = PdfUtils.stIdConcat(pathways);
-        IdentifiersWasFound[] identifiersWasFounds = HttpClientHelper.postForObject(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), IdentifiersWasFound[].class, token);
-        Map<String, Identifier> identifiersWasFiltered = PdfUtils.identifiersFilter(identifiersWasFounds);
         dataSet.setIdentifiersWasNotFounds(identifiersWasNotFounds);
+
+        StringBuilder stIds = PdfUtils.stIdConcat(resultAssociatedWithToken.getPathways());
+        IdentifiersWasFound[] identifiersWasFounds = HttpClientHelper.postForObject(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), IdentifiersWasFound[].class, token);
         dataSet.setIdentifiersWasFounds(identifiersWasFounds);
+        dataSet.setIdentifiersWasFiltered(PdfUtils.identifiersFilter(identifiersWasFounds));
+
+        //reduce the size of pathway array to save memory.
+        resultAssociatedWithToken.setPathways(Arrays.copyOf(resultAssociatedWithToken.getPathways(), numOfPathwaysToShow));
         dataSet.setResultAssociatedWithToken(resultAssociatedWithToken);
-        dataSet.setIdentifiersWasFiltered(identifiersWasFiltered);
-        dataSet.setPathways(pathways);
+        dataSet.setNumOfPathwaysToShow(numOfPathwaysToShow);
+        dataSet.setVersion(HttpClientHelper.getForObject(URL.VERSION, Integer.class, ""));
         return dataSet;
     }
 

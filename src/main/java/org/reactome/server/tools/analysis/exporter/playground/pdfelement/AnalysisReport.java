@@ -36,7 +36,6 @@ public class AnalysisReport extends Document {
     private float multipliedLeading;
     private PdfFont pdfFont;
     private float margin;
-    private int numOfPathwaysToShow;
 
     public AnalysisReport(PdfProfile profile, PdfDocument pdfDocument) {
         super(pdfDocument, profile.getPageSize());
@@ -45,7 +44,6 @@ public class AnalysisReport extends Document {
         this.setMargins(profile.getMargin(), profile.getMargin(), profile.getMargin(), profile.getMargin());
         this.setPdfFont(profile.getFont());
         this.setMargin(profile.getMargin());
-        this.setNumOfPathwaysToShow(profile.getNumberOfPathwaysToShow());
         titleColor = profile.getTitleColor();
         paragraphColor = profile.getParagraphColor();
         tableColor = profile.getTableColor();
@@ -66,14 +64,6 @@ public class AnalysisReport extends Document {
 
     public void setMargin(float margin) {
         this.margin = margin;
-    }
-
-    public int getNumOfPathwaysToShow() {
-        return numOfPathwaysToShow;
-    }
-
-    public void setNumOfPathwaysToShow(int numOfPathwaysToShow) {
-        this.numOfPathwaysToShow = numOfPathwaysToShow;
     }
 
     private AnalysisReport addImage(Image image) {

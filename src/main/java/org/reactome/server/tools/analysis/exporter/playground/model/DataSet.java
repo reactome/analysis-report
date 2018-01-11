@@ -11,16 +11,15 @@ import java.util.Map;
 // TODO: 06/12/17 this class need to refactor to fit the correct data from reactome server once another part was done
 public class DataSet {
     private int version;
+    // TODO: 11/01/18 need to get from server
     private int totalPathways;
-    private int identifiersWasFound;
-    private int identifiersWasNotFound;
+    private int numOfPathwaysToShow;
     @JsonIgnore
     private ReportArgs reportArgs;
     private ResultAssociatedWithToken resultAssociatedWithToken;
     private IdentifiersWasFound[] identifiersWasFounds;
     private Identifier[] identifiersWasNotFounds;
     private Map<String, Identifier> identifiersWasFiltered;
-    private Pathway[] pathways;
 
     public int getVersion() {
         return version;
@@ -38,20 +37,24 @@ public class DataSet {
         this.totalPathways = totalPathways;
     }
 
-    public int getIdentifiersWasFound() {
-        return identifiersWasFound;
+    public int getTotalIdentifiers() {
+        return getIdentifiersWasFound() + getIdentifiersWasNotFound();
     }
 
-    public void setIdentifiersWasFound(int identifiersWasFound) {
-        this.identifiersWasFound = identifiersWasFound;
+    public int getIdentifiersWasFound() {
+        return identifiersWasFiltered.size();
     }
 
     public int getIdentifiersWasNotFound() {
-        return identifiersWasNotFound;
+        return identifiersWasNotFounds.length;
     }
 
-    public void setIdentifiersWasNotFound(int identifiersWasNotFound) {
-        this.identifiersWasNotFound = identifiersWasNotFound;
+    public int getNumOfPathwaysToShow() {
+        return numOfPathwaysToShow;
+    }
+
+    public void setNumOfPathwaysToShow(int numOfPathwaysToShow) {
+        this.numOfPathwaysToShow = numOfPathwaysToShow <= resultAssociatedWithToken.getPathwaysFound() ? numOfPathwaysToShow : resultAssociatedWithToken.getPathwaysFound();
     }
 
     public ReportArgs getReportArgs() {
@@ -84,14 +87,6 @@ public class DataSet {
 
     public void setIdentifiersWasFiltered(Map<String, Identifier> identifiersWasFiltered) {
         this.identifiersWasFiltered = identifiersWasFiltered;
-    }
-
-    public Pathway[] getPathways() {
-        return pathways;
-    }
-
-    public void setPathways(Pathway[] pathways) {
-        this.pathways = pathways;
     }
 
     public IdentifiersWasFound[] getIdentifiersWasFounds() {

@@ -32,16 +32,35 @@ public class ReportArgs {
         return token;
     }
 
+    public ReportArgs setToken(String token) {
+        this.token = token;
+        return this;
+    }
+
     public String getDiagramPath() {
         return diagramPath;
+    }
+
+    public ReportArgs setDiagramPath(String diagramPath) {
+        this.diagramPath = diagramPath;
+        return this;
     }
 
     public String getEhldPath() {
         return ehldPath;
     }
 
+    public ReportArgs setEhldPath(String ehldPath) {
+        this.ehldPath = ehldPath;
+        return this;
+    }
+
     public String getFireworksPath() {
         return fireworksPath;
     }
 
+    public ReportArgs setFireworksPath(String fireworksPath) {
+        this.fireworksPath = fireworksPath;
+        return this;
+    }
 }

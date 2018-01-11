@@ -19,7 +19,7 @@ public class AnalysisReportExporterTest {
 
     @Test
     public void test() throws Exception {
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 3; i++) {
             File file = new File(String.format("src/test/resources/pdfs/%s@%s.pdf", token, Instant.now().toEpochMilli()));
             FileOutputStream outputStream = new FileOutputStream(file);
             ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath);

@@ -14,14 +14,14 @@ public class TableFactory {
     private int numOfPathwaysToShow;
 
     public TableFactory(AnalysisReport report, DataSet dataSet) {
-        numOfPathwaysToShow = report.getNumOfPathwaysToShow() <= dataSet.getPathways().length ? report.getNumOfPathwaysToShow() : dataSet.getPathways().length;
+        numOfPathwaysToShow = dataSet.getNumOfPathwaysToShow();
         this.dataSet = dataSet;
     }
 
     public Table getTable(TableTypeEnum type) throws TableTypeNotFoundException {
         switch (type) {
             case OVERVIEW_TABLE:
-                return new OverviewTable(dataSet, numOfPathwaysToShow);
+                return new OverviewTable(dataSet);
             case IdentifiersWasFound:
                 return new IdentifiersWasFoundTable(dataSet);
             case IDENTIFIERS_WAS_FOUND_NO_EXP:

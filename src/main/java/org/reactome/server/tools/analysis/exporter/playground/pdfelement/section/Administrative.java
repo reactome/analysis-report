@@ -9,7 +9,6 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.MarginLef
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
-import org.reactome.server.tools.analysis.exporter.playground.util.HttpClientHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 import java.util.Arrays;
@@ -29,6 +28,6 @@ public class Administrative implements Section {
                         .add(new Link(dataSet.getResultAssociatedWithToken().getSummary().getToken(), PdfAction.createURI(URL.ANALYSIS + dataSet.getResultAssociatedWithToken().getSummary().getToken())).setFontColor(Color.BLUE))
                         .add("(please note that this URL maybe out of date because of the token can expired at our server end) and your input identifiers are :")
                         .add(Arrays.toString(Arrays.copyOf(dataSet.getIdentifiersWasNotFounds(), numOfIdentifiersToShow)).replaceAll("[\\[\\]]", ""))
-                        .add(String.format(".... It has been automatically generated in Reactome version %s at %s.", HttpClientHelper.getForObject(URL.VERSION, Integer.class, ""), PdfUtils.getTimeStamp())));
+                        .add(String.format(".... It has been automatically generated in Reactome version %s at %s.", dataSet.getVersion(), PdfUtils.getTimeStamp())));
     }
 }

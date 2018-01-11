@@ -10,8 +10,8 @@ public class ResultAssociatedWithToken {
     private Summary summary;
     private Expression expression;
     private int identifiersNotFound;
+    private int pathwaysFound;
     private Pathway[] pathways = null;
-    private ResourceSummary[] resourceSummary;
 
     public ResultAssociatedWithToken() {
     }
@@ -40,6 +40,14 @@ public class ResultAssociatedWithToken {
         this.identifiersNotFound = identifiersNotFound;
     }
 
+    public int getPathwaysFound() {
+        return pathwaysFound;
+    }
+
+    public void setPathwaysFound(int pathwaysFound) {
+        this.pathwaysFound = pathwaysFound;
+    }
+
     public Pathway[] getPathways() {
         return pathways;
     }
@@ -47,13 +55,4 @@ public class ResultAssociatedWithToken {
     public void setPathways(Pathway[] pathways) {
         this.pathways = pathways;
     }
-
-    public ResourceSummary[] getResourceSummary() {
-        return resourceSummary;
-    }
-
-    public void setResourceSummary(ResourceSummary[] resourceSummary) {
-        this.resourceSummary = resourceSummary;
-    }
-
 }

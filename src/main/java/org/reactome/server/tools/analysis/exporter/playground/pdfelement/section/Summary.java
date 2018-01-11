@@ -14,10 +14,10 @@ public class Summary implements Section {
 
     public void render(AnalysisReport report, DataSet dataSet) throws Exception {
         report.addNormalTitle("Summary")
-                .addNormalTitle(String.format("1. %s of %s identifiers you submitted was {} in Reactome.", dataSet.getIdentifiersWasFiltered().size(), (dataSet.getIdentifiersWasFiltered().size() + dataSet.getResultAssociatedWithToken().getIdentifiersNotFound()))
+                .addNormalTitle(String.format("1. %s of %s identifiers you submitted was {} in Reactome.", dataSet.getIdentifiersWasFound(), dataSet.getTotalIdentifiers())
                         , FontSize.H4, Indent.I3, new Link("Found", PdfAction.createGoTo("IdentifiersWasFound")))
-                .addNormalTitle(String.format("2. %s pathways was hit in Reactome total {} pathways.", dataSet.getResultAssociatedWithToken().getResourceSummary()[1].getPathways()), FontSize.H4, Indent.I3)
-                .addNormalTitle(String.format("3. %s of top Enhanced/Overrepresented pathways was list based on p-Value.", report.getNumOfPathwaysToShow()), FontSize.H4, Indent.I3)
+                .addNormalTitle(String.format("2. %s pathways was hit in Reactome total ${totalPathway} pathways.", dataSet.getResultAssociatedWithToken().getPathwaysFound()), FontSize.H4, Indent.I3)
+                .addNormalTitle(String.format("3. %s of top Enhanced/Overrepresented pathways was list based on p-Value.", dataSet.getNumOfPathwaysToShow()), FontSize.H4, Indent.I3)
                 .addNormalTitle("4. The \"fireworks\" diagram for this pathway analysis:", FontSize.H4, Indent.I3)
                 .addFireworks(dataSet.getReportArgs());
     }

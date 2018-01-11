@@ -57,7 +57,7 @@ public class ReportRenderer {
      * @throws Exception when fail to create the PDF document.
      */
     protected static void render(ReportArgs reportArgs, PdfWriter writer) throws Exception {
-        dataSet = PdfUtils.getDataSet(reportArgs.getToken());
+        dataSet = PdfUtils.getDataSet(reportArgs.getToken(), PDF_PROFILE.getNumberOfPathwaysToShow());
 //        ObjectMapper mapper = new ObjectMapper();
 //        dataSet = mapper.readValue(new File("./dataset.json"), DataSet.class);
         document = new PdfDocument(writer);
@@ -89,9 +89,9 @@ public class ReportRenderer {
     }
 
     /**
-     *  load the {@see PdfProfile} config information to control PDF layout.
+     * load the {@see PdfProfile} config information to control PDF layout.
      *
-     * @param profilePath   path contains profile.json config file.
+     * @param profilePath path contains profile.json config file.
      * @throws Exception
      */
     protected static void loadPdfProfile(String profilePath) throws Exception {
