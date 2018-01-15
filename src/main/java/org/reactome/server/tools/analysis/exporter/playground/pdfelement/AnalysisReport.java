@@ -34,16 +34,19 @@ public class AnalysisReport extends Document {
     private Color paragraphColor;
     private Color tableColor;
     private float multipliedLeading;
+    /**
+     * can be named as 'font' since the {@see Document} have it own get/setFont methods to create font for the pdf.
+     */
     private PdfFont pdfFont;
     private float margin;
 
-    public AnalysisReport(PdfProfile profile, PdfDocument pdfDocument) {
+    public AnalysisReport(PdfProfile profile, PdfDocument pdfDocument) throws Exception {
         super(pdfDocument, profile.getPageSize());
         this.setFont(profile.getFont())
                 .setTextAlignment(TextAlignment.JUSTIFIED);
         this.setMargins(profile.getMargin(), profile.getMargin(), profile.getMargin(), profile.getMargin());
-        this.setPdfFont(profile.getFont());
-        this.setMargin(profile.getMargin());
+        pdfFont = profile.getFont();
+        margin = profile.getMargin();
         titleColor = profile.getTitleColor();
         paragraphColor = profile.getParagraphColor();
         tableColor = profile.getTableColor();
@@ -54,16 +57,8 @@ public class AnalysisReport extends Document {
         return pdfFont;
     }
 
-    public void setPdfFont(PdfFont pdfFont) {
-        this.pdfFont = pdfFont;
-    }
-
     public float getMargin() {
         return margin;
-    }
-
-    public void setMargin(float margin) {
-        this.margin = margin;
     }
 
     private AnalysisReport addImage(Image image) {

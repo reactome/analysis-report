@@ -19,16 +19,15 @@ import java.util.List;
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class Overview implements Section {
-    private TableFactory tableFactory;
 
     public void render(AnalysisReport report, DataSet dataSet) throws Exception {
-        tableFactory = new TableFactory(report, dataSet);
+        TableFactory tableFactory = new TableFactory(dataSet);
         report.addNormalTitle("Overview")
                 .addNormalTitle(String.format("1. Top %s Overrepresentation pathways sorted by p-Value.", dataSet.getNumOfPathwaysToShow()), FontSize.H3, Indent.I3)
                 .addTable(tableFactory.getTable(TableTypeEnum.OVERVIEW_TABLE))
                 .addNormalTitle("2. Pathway details.", FontSize.H3, Indent.I3);
 
-        addPathwaysDetails(report, dataSet);
+        addPathwaysDetails(report, dataSet, tableFactory);
 
         report.addNormalTitle("3. Identifiers was found.", FontSize.H3, Indent.I3, "IdentifiersWasFound")
                 .addTable((dataSet.getIdentifiersWasFounds()[0].getExpNames().length != 0) ? tableFactory.getTable(TableTypeEnum.IdentifiersWasFound) : tableFactory.getTable(TableTypeEnum.IDENTIFIERS_WAS_FOUND_NO_EXP))
@@ -37,7 +36,7 @@ public class Overview implements Section {
     }
 
     // TODO: 14/12/17 this method should be reduce once the correct data structure confirm
-    private void addPathwaysDetails(AnalysisReport report, DataSet dataSet) throws Exception {
+    private void addPathwaysDetails(AnalysisReport report, DataSet dataSet, TableFactory tableFactory) throws Exception {
         List<PathwayDetail> pathwayDetails = HttpClientHelper.getPathwayDetails(dataSet.getResultAssociatedWithToken().getPathways());
         for (int i = 0; i < dataSet.getNumOfPathwaysToShow(); i++) {
             report.addNormalTitle(String.format("2.%s. %s ({})", i + 1, dataSet.getResultAssociatedWithToken().getPathways()[i].getName()), FontSize.H3, Indent.I4, dataSet.getResultAssociatedWithToken().getPathways()[i].getName()

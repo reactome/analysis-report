@@ -11,10 +11,8 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.*
  */
 public class TableFactory {
     private DataSet dataSet;
-    private int numOfPathwaysToShow;
 
-    public TableFactory(AnalysisReport report, DataSet dataSet) {
-        numOfPathwaysToShow = dataSet.getNumOfPathwaysToShow();
+    public TableFactory(DataSet dataSet) {
         this.dataSet = dataSet;
     }
 

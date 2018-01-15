@@ -97,4 +97,12 @@ public class DataSet {
         this.identifiersWasFounds = identifiersWasFounds;
     }
 
+    public void release() {
+        reportArgs = null;
+        resultAssociatedWithToken = null;
+        identifiersWasFiltered = null;
+        identifiersWasFounds = null;
+        identifiersWasNotFounds = null;
+    }
+
 }

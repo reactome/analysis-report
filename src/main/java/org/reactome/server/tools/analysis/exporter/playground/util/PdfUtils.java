@@ -1,13 +1,22 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.itextpdf.kernel.color.Color;
+import com.itextpdf.kernel.color.DeviceRgb;
+import com.itextpdf.kernel.font.PdfFont;
+import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.geom.PageSize;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.Property;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
+import org.reactome.server.tools.analysis.exporter.playground.exception.NoSuchPageSizeException;
 import org.reactome.server.tools.analysis.exporter.playground.model.*;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
@@ -20,6 +29,8 @@ import java.util.stream.Stream;
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class PdfUtils {
+
+    private static final ObjectMapper MAPPER = new ObjectMapper();
 
     /**
      * scale image's size to fit the analysis report's page size.
@@ -118,7 +129,25 @@ public class PdfUtils {
 //        return MAPPER.readValue(CLIENT.execute(GET).getEntity().getContent(),_DataSet.class);
 //    }
 
-    public static PageSize createPageSize(String type) throws Exception {
+    public static PdfFont createFont(String fontName) throws IOException {
+        return PdfFontFactory.createFont(fontName);
+    }
+
+    public static Color createColor(String color) {
+        return new DeviceRgb(Integer.valueOf(color.substring(1, 3), 16)
+                , Integer.valueOf(color.substring(3, 5), 16)
+                , Integer.valueOf(color.substring(5, 7), 16));
+    }
+
+    public static <T> T readValue(File src, Class<T> type) throws IOException {
+        return MAPPER.readValue(src, type);
+    }
+
+    public static <T> T readValue(InputStream src, Class<T> type) throws IOException {
+        return MAPPER.readValue(src, type);
+    }
+
+    public static PageSize createPageSize(String type) throws NoSuchPageSizeException {
         switch (type) {
             case "A0":
                 return PageSize.A0;
@@ -165,7 +194,7 @@ public class PdfUtils {
             case "B10":
                 return PageSize.B10;
             default:
-                throw new NoSuchFieldException(String.format("Cant recognize page size : %s", type));
+                throw new NoSuchPageSizeException(String.format("Cant recognize page size : %s", type));
         }
     }
 

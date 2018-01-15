@@ -1,6 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -8,6 +8,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.config.Registry;
 import org.apache.http.config.RegistryBuilder;
+import org.apache.http.conn.ConnectionKeepAliveStrategy;
 import org.apache.http.conn.socket.ConnectionSocketFactory;
 import org.apache.http.conn.ssl.NoopHostnameVerifier;
 import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
@@ -15,6 +16,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
+import org.apache.http.protocol.HttpContext;
 import org.apache.http.ssl.SSLContexts;
 import org.reactome.server.tools.analysis.exporter.playground.aspectj.Monitor;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
@@ -26,7 +28,6 @@ import org.reactome.server.tools.analysis.exporter.playground.model.PathwayDetai
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.net.ssl.SSLContext;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,11 +37,9 @@ import java.util.List;
  */
 public class HttpClientHelper {
 
-    private static final ObjectMapper MAPPER = new ObjectMapper();
     private static final Logger LOGGER = LoggerFactory.getLogger(HttpClientHelper.class);
-    private static final SSLContext context = SSLContexts.createDefault();
     private static final Registry<ConnectionSocketFactory> registry = RegistryBuilder.<ConnectionSocketFactory>create()
-            .register("https", new SSLConnectionSocketFactory(context, NoopHostnameVerifier.INSTANCE)).build();
+            .register("https", new SSLConnectionSocketFactory(SSLContexts.createDefault(), NoopHostnameVerifier.INSTANCE)).build();
     private static CloseableHttpResponse response = null;
     private static CloseableHttpClient client = null;
 
@@ -56,7 +55,7 @@ public class HttpClientHelper {
                 LOGGER.error("Fail to request DataSet through url : {} with status code : {}.", url, response.getStatusLine().getStatusCode());
                 throw new FailToRequestDataException(String.format("Fail to request DataSet through url : %s with status code : %s.", url, response.getStatusLine().getStatusCode()));
             }
-            return MAPPER.readValue(response.getEntity().getContent(), valueType);
+            return PdfUtils.readValue(response.getEntity().getContent(), valueType);
         } finally {
             close();
         }
@@ -74,7 +73,7 @@ public class HttpClientHelper {
                 LOGGER.error("Fail to request DataSet through url : {} with status code : {}.", post.getURI(), response.getStatusLine().getStatusCode());
                 throw new FailToRequestDataException(String.format("Fail to request DataSet through url : %s with status code : %s.", post.getURI(), response.getStatusLine().getStatusCode()));
             }
-            return MAPPER.readValue(response.getEntity().getContent(), valueType);
+            return PdfUtils.readValue(response.getEntity().getContent(), valueType);
         } finally {
             close();
         }
@@ -112,6 +111,12 @@ public class HttpClientHelper {
     private static CloseableHttpResponse execute(HttpUriRequest request) throws IOException {
         client = HttpClients.custom()
                 .setConnectionManager(new PoolingHttpClientConnectionManager(registry))
+                .setKeepAliveStrategy(new ConnectionKeepAliveStrategy() {
+                    @Override
+                    public long getKeepAliveDuration(HttpResponse httpResponse, HttpContext httpContext) {
+                        return 0;
+                    }
+                })
 //                .setMaxConnTotal(1)
 //                .setDefaultRequestConfig(defaultConfig)
                 .build();
@@ -120,13 +125,11 @@ public class HttpClientHelper {
 
     private static void close() throws IOException {
         if (response != null) response.close();
-        response = null;
         if (client != null) client.close();
-        client = null;
     }
 
     public static List<PathwayDetail> getPathwayDetails(Pathway[] pathways) throws Exception {
-        List<PathwayDetail> pathwayDetails = new ArrayList<>(pathways.length);
+        List<PathwayDetail> pathwayDetails = new ArrayList<>(pathways.length + 1);
         client = HttpClients.custom()
                 .setConnectionManager(new PoolingHttpClientConnectionManager(registry))
 //                .setMaxConnTotal(pathways.length)
@@ -139,7 +142,7 @@ public class HttpClientHelper {
                 LOGGER.error("Fail to request DataSet through url : {} with status code : {}.", url, response.getStatusLine().getStatusCode());
                 throw new FailToRequestDataException(String.format("Fail to request DataSet through url : %s with status code : %s.", url, response.getStatusLine().getStatusCode()));
             }
-            pathwayDetails.add(MAPPER.readValue(response.getEntity().getContent(), PathwayDetail.class));
+            pathwayDetails.add(PdfUtils.readValue(response.getEntity().getContent(), PathwayDetail.class));
         }
         close();
         return pathwayDetails;
