@@ -29,8 +29,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.time.Instant;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -92,7 +91,7 @@ public class HttpClientHelper {
             throw new NullTokenException("Token cant be null");
         }
         response = execute(new HttpGet(String.format(URL.CHECKTOKEN, token)));
-        if (HttpStatus.SC_OK != response.getStatusLine().getStatusCode()) {
+        if (response.getStatusLine().getStatusCode() != 200) {
             LOGGER.error("Invalid token : {}", token);
             throw new InValidTokenException(String.format("Invalid token : %s", token));
         } else {
@@ -128,23 +127,25 @@ public class HttpClientHelper {
         if (client != null) client.close();
     }
 
-    public static List<PathwayDetail> getPathwayDetails(Pathway[] pathways) throws Exception {
-        List<PathwayDetail> pathwayDetails = new ArrayList<>(pathways.length + 1);
+    public static PathwayDetail[] getPathwayDetails(Pathway[] pathways) throws Exception {
+        long start = Instant.now().toEpochMilli();
+        PathwayDetail[] pathwayDetails = new PathwayDetail[pathways.length];
         client = HttpClients.custom()
                 .setConnectionManager(new PoolingHttpClientConnectionManager(registry))
 //                .setMaxConnTotal(pathways.length)
                 .build();
         String url;
-        for (Pathway pathway : pathways) {
-            url = String.format(URL.QUERYFORPATHWAYDETAIL, pathway.getStId());
+        for (int i = 0; i < pathways.length; i++) {
+            url = String.format(URL.QUERYFORPATHWAYDETAIL, pathways[i].getStId());
             response = client.execute(new HttpGet(url));
             if (HttpStatus.SC_OK != response.getStatusLine().getStatusCode()) {
                 LOGGER.error("Fail to request DataSet through url : {} with status code : {}.", url, response.getStatusLine().getStatusCode());
                 throw new FailToRequestDataException(String.format("Fail to request DataSet through url : %s with status code : %s.", url, response.getStatusLine().getStatusCode()));
             }
-            pathwayDetails.add(PdfUtils.readValue(response.getEntity().getContent(), PathwayDetail.class));
+            pathwayDetails[i] = PdfUtils.readValue(response.getEntity().getContent(), PathwayDetail.class);
         }
         close();
+        System.out.println("in " + (Instant.now().toEpochMilli() - start));
         return pathwayDetails;
     }
 }

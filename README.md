@@ -1,4 +1,4 @@
-![reactome](https://reactome.org/templates/favourite/images/logo/logo.png)
+![reactome](src/main/resources/images/logo.png)
 
 Analysis Exporter
 ---
@@ -18,8 +18,18 @@ git clone https://github.com/xxx
     -e <ehdlPath> static path contains the ehld raw information json file
     -f <fireworksPath> static path contains the fireworks raw information json file
    
-    String token = "MjAxNzExMTcwODEzMjBfNzU%253D";
-    File file = new File("dest/");
-    PdfProperties properties = new PdfProperties(token);
-    AnalysisExporter.export(properties, file);
+     String token = "MjAxODAxMDEwNzUwMjdfMTc%253D";
+     String diagramPath = "/home/byron/static/demo";
+     String ehldPath = "/home/byron/static";
+     String fireworksPath = "/home/byron/json";
+                
+     FileOutputStream outputStream = new FileOutputStream(new File("dest.pdf"));
+     ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath);
+     AnalysisExporter.export(reportArgs, outputStream);
+     ...
+     outputStream.close();
 ```
+###License
+This module used the [iText](https://itextpdf.com) library to create PDF documents,so it followed the `AGPL` license.  
+[![License](https://img.shields.io/badge/license-AGPL%203.0-blue.svg?style=plastic)](https://opensource.org/licenses/AGPL-3.0)  
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=plastic)](https://opensource.org/licenses/Apache-2.0)

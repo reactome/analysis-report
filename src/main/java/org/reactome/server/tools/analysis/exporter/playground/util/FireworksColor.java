@@ -2,7 +2,7 @@ package org.reactome.server.tools.analysis.exporter.playground.util;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
- *
+ * <p>
  * contains all color can be specified for fireworks color.
  */
 public enum FireworksColor {

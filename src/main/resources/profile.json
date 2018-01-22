@@ -1,10 +1,36 @@
 {
-  "margin": 30,
-  "numberOfPathwaysToShow": 1,
+  "topMargin": 30.0,
+  "rightMargin": 30.0,
+  "bottomMargin": 30.0,
+  "leftMargin": 30.0,
+  "numberOfPathwaysToShow": 50,
   "multipliedLeading": 1.0,
   "font": "Helvetica",
   "pageSize": "A4",
-  "titleColor": "#2F9EC2",
+  "titleColor": "#001F00",
   "paragraphColor": "#000000",
-  "tableColor": "#000000"
+  "tableColor": "#000000",
+  "topTitleMarginTop": 15.0,
+  "topTitleMarginRight": 15.0,
+  "topTitleMarginLeft": 15.0,
+  "topTitleMarginBottom": 15.0,
+  "topTitleFont": "Helvetica",
+  "topTitleFontSize": 8,
+  "topTitleFontColor": "#000000",
+  "mammalTitleMarginTop": 15.0,
+  "mammalTitleMarginRight": 15.0,
+  "mammalTitleMarginLeft": 15.0,
+  "mammalTitleMarginBottom": 15.0,
+  "mammalTitleFont": "FontName",
+  "mammalTitleFontSize": 10,
+  "mammalTitleFontColor": "#000000",
+  "tables": {
+    "overviewTable": {
+      "font": "Helvetica",
+      "fontSize": 10,
+      "color": "#000000"
+    },
+    "notFoundTable": {
+    }
+  }
 }

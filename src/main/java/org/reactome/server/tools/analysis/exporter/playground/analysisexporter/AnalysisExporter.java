@@ -1,12 +1,9 @@
 package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
-import com.itextpdf.kernel.pdf.PdfWriter;
 import org.reactome.server.tools.analysis.exporter.playground.exception.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.OutputStream;
 
 /**
@@ -19,10 +16,6 @@ public class AnalysisExporter {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AnalysisExporter.class);
 
-    public static void export(ReportArgs reportArgs, File dest) throws Exception {
-        export(reportArgs, new FileOutputStream(dest));
-    }
-
     /**
      * to create an analysis report associated with token,receive parameters:{@see ReportArgs} and any class extend from {@see OutputStream}
      * as the output destination.
@@ -33,13 +26,13 @@ public class AnalysisExporter {
      * AnalysisExporter.export(reportArgs, outputStream);
      * <code/>
      *
-     * @param reportArgs   report args contains arguments like token,the diagram json path etc.
-     * @param outputStream destination you want to save the produced PDF report document.
+     * @param reportArgs report args contains arguments like token,the diagram json path etc.
+     *                   //     * @param outputStream destination you want to save the produced PDF report document.
      * @throws Exception
      */
-    public static void export(ReportArgs reportArgs, OutputStream outputStream) throws Exception {
+    public static void export(ReportArgs reportArgs, OutputStream file) throws Exception {
         try {
-            ReportRenderer.render(reportArgs, new PdfWriter(outputStream));
+            ReportRenderer.render(reportArgs, file);
         } catch (FailToAddLogoException e) {
             LOGGER.error(e.getMessage());
             throw e;

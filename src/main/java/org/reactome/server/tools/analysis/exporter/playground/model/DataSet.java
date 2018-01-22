@@ -3,6 +3,7 @@ package org.reactome.server.tools.analysis.exporter.playground.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 
+import java.io.FileOutputStream;
 import java.util.Map;
 
 /**
@@ -20,6 +21,7 @@ public class DataSet {
     private IdentifiersWasFound[] identifiersWasFounds;
     private Identifier[] identifiersWasNotFounds;
     private Map<String, Identifier> identifiersWasFiltered;
+    private FileOutputStream file;
 
     public int getVersion() {
         return version;
@@ -97,12 +99,19 @@ public class DataSet {
         this.identifiersWasFounds = identifiersWasFounds;
     }
 
+    public FileOutputStream getFile() {
+        return file;
+    }
+
+    public void setFile(FileOutputStream file) {
+        this.file = file;
+    }
+
     public void release() {
         reportArgs = null;
         resultAssociatedWithToken = null;
-        identifiersWasFiltered = null;
         identifiersWasFounds = null;
         identifiersWasNotFounds = null;
+        identifiersWasFiltered = null;
     }
-
 }

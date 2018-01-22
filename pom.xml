@@ -85,12 +85,56 @@
             <groupId>org.reactome.server.tools</groupId>
             <artifactId>fireworks-exporter</artifactId>
             <version>${fireworks.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-classic</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.martiansoftware</groupId>
+                    <artifactId>jsap</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!-- diagrams -->
         <dependency>
             <groupId>org.reactome.server.tools</groupId>
             <artifactId>diagram-exporter</artifactId>
             <version>${diagram.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.reactome.server.tools</groupId>
+                    <artifactId>diagram-reader</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.xmlgraphics</groupId>
+                    <artifactId>batik-codec</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.aspose</groupId>
+                    <artifactId>aspose-slides</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-classic</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>commons-io</groupId>
+                    <artifactId>commons-io</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.martiansoftware</groupId>
+                    <artifactId>jsap</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->

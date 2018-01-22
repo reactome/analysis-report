@@ -10,6 +10,6 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.FooterE
  */
 public class Footer implements Section {
     public void render(AnalysisReport report, DataSet dataSet) {
-        report.getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(report.getPdfFont(), report.getMargin()));
+        report.getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(report.getPdfFont(), report.getMargin(), dataSet.getFile()));
     }
 }

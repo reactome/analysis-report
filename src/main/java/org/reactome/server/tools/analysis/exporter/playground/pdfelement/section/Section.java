@@ -6,7 +6,7 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.Analysi
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
- *
+ * <p>
  * whole pdf report will be split into servals sections.
  */
 public interface Section {

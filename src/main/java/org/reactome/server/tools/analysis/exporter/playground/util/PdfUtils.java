@@ -1,29 +1,32 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.kernel.color.Color;
 import com.itextpdf.kernel.color.DeviceRgb;
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.geom.PageSize;
+import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.Property;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
+import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NoSuchPageSizeException;
+import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
 import org.reactome.server.tools.analysis.exporter.playground.model.*;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.MalformedURLException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
-import java.util.stream.Stream;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -31,24 +34,43 @@ import java.util.stream.Stream;
 public class PdfUtils {
 
     private static final ObjectMapper MAPPER = new ObjectMapper();
+    private static final String LINKICON = "src/main/resources/images/link.png";
+
+    public static Image createImage(BufferedImage bufferedImage) throws Exception {
+        return new Image(ImageDataFactory.create(bufferedImage, java.awt.Color.WHITE));
+    }
+
+    public static Image createImage(String fileName) throws FailToAddLogoException {
+        try {
+            return new Image(ImageDataFactory.create(fileName));
+        } catch (MalformedURLException e) {
+            throw new FailToAddLogoException("Failed to add logo in pdf file", e);
+        }
+    }
+
+    public static Image createGoToLinkIcon(float width, String destination) throws FailToAddLogoException, NullLinkIconDestinationException {
+        if (destination == null)
+            throw new NullLinkIconDestinationException("Link icon's destination should not be null!");
+        return ImageAutoScale(createImage(LINKICON), width).setAction(PdfAction.createGoTo(destination));
+    }
+
+    public static Image createUrlLinkIcon(float width, String url) throws FailToAddLogoException, NullLinkIconDestinationException {
+        if (url == null) throw new NullLinkIconDestinationException("Link icon's url should not be null!");
+        return ImageAutoScale(createImage(LINKICON), width).setAction(PdfAction.createURI(url));
+    }
 
     /**
      * scale image's size to fit the analysis report's page size.
      *
-     * @param report
      * @param image
+     * @param width aim width you want to reach.
      * @return
      */
-    public static Image ImageAutoScale(AnalysisReport report, Image image) {
-        float pageWidth = report.getPdfDocument().getDefaultPageSize().getWidth() - report.getLeftMargin() - report.getRightMargin();
-        float stride = 0.01f;
-        float scaling = 0.2f;
-        do {
-            image.scale(scaling, scaling);
-            scaling -= stride;
-        }
-        while (pageWidth < image.getImageScaledWidth());
-        return image;
+    public static Image ImageAutoScale(Image image, float width) {
+        width *= 0.75;//the icon's size will be smaller than the font's size
+//        float pageWidth = report.getPdfDocument().getDefaultPageSize().getWidth() - report.getLeftMargin() - report.getRightMargin();
+        float scaling = image.getImageWidth() >= width ? width / image.getImageWidth() : image.getImageWidth() / width;
+        return image.scale(scaling, scaling);
     }
 
     public static String getTimeStamp() {
@@ -68,8 +90,10 @@ public class PdfUtils {
      * @return
      */
     public static StringBuilder stIdConcat(Pathway[] pathways) {
-        StringBuilder stringBuilder = new StringBuilder(2 * pathways.length + 1);
-        Stream.of(pathways).forEach(pathway -> stringBuilder.append(pathway.getStId()).append(','));
+        StringBuilder stringBuilder = new StringBuilder(15 * pathways.length);
+        for (Pathway pathway : pathways) {
+            stringBuilder.append(pathway.getStId()).append(',');
+        }
         return stringBuilder;
     }
 
@@ -81,8 +105,10 @@ public class PdfUtils {
      */
     // TODO: 09/01/18 this method need to optimize
     public static Map<String, Identifier> identifiersFilter(IdentifiersWasFound[] identifiersWasFounds) {
-        // initial capacity of hash map is about : identifiersWasFounds * 1.33 + 1
-        Map<String, Identifier> filteredIdentifiers = new HashMap<>((int) (identifiersWasFounds.length / 0.75) + 1);
+        /**
+         * in general there just about 1/4 of identifiers was unique(since there have a lot of redundancies)
+         */
+        Map<String, Identifier> filteredIdentifiers = new HashMap<>((int) (identifiersWasFounds.length * 0.25));
         for (IdentifiersWasFound identifiersWasFound : identifiersWasFounds) {
             for (Identifier identifier : identifiersWasFound.getEntities()) {
                 if (!filteredIdentifiers.containsKey(identifier.getId())) {
@@ -93,12 +119,12 @@ public class PdfUtils {
             }
         }
 
-        for (Entry<String, Identifier> entry : filteredIdentifiers.entrySet()) {
-            for (MapsTo mapsTo : entry.getValue().getMapsTo()) {
-                if (!entry.getValue().getResourceMapsToIds().containsKey(mapsTo.getResource())) {
-                    entry.getValue().getResourceMapsToIds().put(mapsTo.getResource(), mapsTo.getIds().toString());
+        for (Identifier identifier : filteredIdentifiers.values()) {
+            for (MapsTo mapsTo : identifier.getMapsTo()) {
+                if (!identifier.getResourceMapsToIds().containsKey(mapsTo.getResource())) {
+                    identifier.getResourceMapsToIds().put(mapsTo.getResource(), mapsTo.getIds().toString());
                 } else {
-                    entry.getValue().getResourceMapsToIds().get(mapsTo.getResource()).concat(',' + mapsTo.getIds().toString());
+                    identifier.getResourceMapsToIds().get(mapsTo.getResource()).concat(',' + mapsTo.getIds().toString());
                 }
             }
         }
@@ -109,8 +135,7 @@ public class PdfUtils {
     public static DataSet getDataSet(String token, int numOfPathwaysToShow) throws Exception {
         DataSet dataSet = new DataSet();
         ResultAssociatedWithToken resultAssociatedWithToken = HttpClientHelper.getForObject(URL.RESULTASSCIATEDWITHTOKEN, ResultAssociatedWithToken.class, token);
-        Identifier[] identifiersWasNotFounds = HttpClientHelper.getForObject(URL.IDENTIFIERSWASNOTFOUND, Identifier[].class, token);
-        dataSet.setIdentifiersWasNotFounds(identifiersWasNotFounds);
+        dataSet.setIdentifiersWasNotFounds(HttpClientHelper.getForObject(URL.IDENTIFIERSWASNOTFOUND, Identifier[].class, token));
 
         StringBuilder stIds = PdfUtils.stIdConcat(resultAssociatedWithToken.getPathways());
         IdentifiersWasFound[] identifiersWasFounds = HttpClientHelper.postForObject(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), IdentifiersWasFound[].class, token);

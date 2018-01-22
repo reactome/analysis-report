@@ -1,48 +1,40 @@
 package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 import org.junit.Test;
-import org.reactome.server.tools.analysis.exporter.playground.aspectj.Monitor;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.OutputStream;
 import java.time.Instant;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class AnalysisReportExporterTest {
-    static final String token = "123MjAxNzEyMTgwNjM0MDJfMjI%253D";
+    static final String token = "MjAxNzEyMTgwNjM0MDJfMjI%253D";
+    //    static final String token = "MjAxODAxMDEwNzUwMjdfMTc%253D";
     static final String diagramPath = "/home/byron/static/demo";
     static final String ehldPath = "/home/byron/static";
     static final String fireworksPath = "/home/byron/json";
 
     @Test
     public void test() throws Exception {
-        for (int i = 0; i < 1; i++) {
-            File file = new File(String.format("src/test/resources/pdfs/%s@%s.pdf", token, Instant.now().toEpochMilli()));
+        for (File file : new File("src/test/resources/pdfs").listFiles()) file.delete();
+        for (int i = 0; i < 5; i++) {
+            long start = Instant.now().toEpochMilli();
+            File file = new File(String.format("src/test/resources/pdfs/%s@%s.pdf", token, start));
+//            FileOutputStream outputStream = new FileOutputStream(file);
             FileOutputStream outputStream = new FileOutputStream(file);
             ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath);
-            export(reportArgs, outputStream);
+            AnalysisExporter.export(reportArgs, outputStream);
             outputStream.close();
+            long end = Instant.now().toEpochMilli();
+            System.out.println("complete in :" + (end - start));
         }
     }
 
-    @Monitor
-    public void export(ReportArgs args, OutputStream outputStream) throws Exception {
-        AnalysisExporter.export(args, outputStream);
-    }
-
-//    @Test
-//    public void colorChange() {
-//        String colorStr = "#2F9EC2";
-//        System.out.println(colorStr.substring(1, 3));
-//        System.out.println(colorStr.substring(3, 5));
-//        System.out.println(colorStr.substring(5, 7));
-//        int r = Integer.valueOf(colorStr.substring(1, 3), 16);
-//        int g = Integer.valueOf(colorStr.substring(3, 5), 16);
-//        int b = Integer.valueOf(colorStr.substring(5, 7), 16);
-//        System.out.println(r + " " + g + " " + b);
+//    @Monitor
+//    public void export(ReportArgs args, OutputStream file) throws Exception {
+//        AnalysisExporter.export(args, file);
 //    }
 
 

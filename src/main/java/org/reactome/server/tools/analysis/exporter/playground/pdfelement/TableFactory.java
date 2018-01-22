@@ -1,6 +1,8 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
 
 import com.itextpdf.layout.element.Table;
+import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
+import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.TableTypeNotFoundException;
 import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.model.Identifier;
@@ -16,7 +18,7 @@ public class TableFactory {
         this.dataSet = dataSet;
     }
 
-    public Table getTable(TableTypeEnum type) throws TableTypeNotFoundException {
+    public Table getTable(TableTypeEnum type) throws TableTypeNotFoundException, FailToAddLogoException, NullLinkIconDestinationException {
         switch (type) {
             case OVERVIEW_TABLE:
                 return new OverviewTable(dataSet);

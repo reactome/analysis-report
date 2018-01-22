@@ -9,11 +9,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.time.Instant;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
- *
+ * <p>
  * use the JASP to test entire module.
  */
 public class AnalysisExporterMain {
@@ -61,7 +62,7 @@ public class AnalysisExporterMain {
         ReportArgs reportArgs = new ReportArgs(config.getString("token"), config.getString("diagramPath"), config.getString("ehdlPath"), config.getString("fireworksPath"));
 
         long start = Instant.now().toEpochMilli();
-        AnalysisExporter.export(reportArgs, new File(config.getString("output")));
+        AnalysisExporter.export(reportArgs, new FileOutputStream(new File(config.getString("output"))));
         long end = Instant.now().toEpochMilli();
 
         logger.info("create pdf in {}ms", end - start);

@@ -67,7 +67,7 @@ public class LiteratureReference {
 
     @Override
     public String toString() {
-        return "\"" + title + "\"," +
+        return title + "," +
                 journal + ',' +
                 volume + ',' +
                 year + ',' +

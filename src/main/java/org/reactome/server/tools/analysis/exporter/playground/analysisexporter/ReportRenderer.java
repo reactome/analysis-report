@@ -2,6 +2,7 @@ package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
+import com.itextpdf.kernel.pdf.WriterProperties;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRenderReportException;
 import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
@@ -12,7 +13,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,15 +46,19 @@ class ReportRenderer {
      * this method is to render the report with data set.
      *
      * @param reportArgs {@see ReportArgs}
-     * @param writer     {@see PdfWriter}
+     * @param file       {@see PdfWriter}
      * @throws Exception when fail to create the PDF document.
      */
-    protected static void render(ReportArgs reportArgs, PdfWriter writer) throws Exception {
-        List<Section> sections = new ArrayList<>();
+    protected static void render(ReportArgs reportArgs, OutputStream file) throws Exception {
+        List<Section> sections = new ArrayList<>(6);
         DataSet dataSet = PdfUtils.getDataSet(reportArgs.getToken(), profile.getNumberOfPathwaysToShow());
+        // TODO: 19/01/18 use fileoutputstream
+        dataSet.setFile((FileOutputStream) file);
+        // TODO: 19/01/18 use smart model
+        PdfWriter writer = new PdfWriter(file, new WriterProperties().setFullCompressionMode(true)).setSmartMode(false);
         PdfDocument document = new PdfDocument(writer);
+        document.setFlushUnusedObjects(true);
         AnalysisReport report = new AnalysisReport(profile, document);
-
         dataSet.setReportArgs(reportArgs);
 
         sections.add(new Footer());
@@ -68,10 +75,13 @@ class ReportRenderer {
         } catch (Exception e) {
             throw new FailToRenderReportException("Fail to render report.", e);
         } finally {
+            sections = null;
             dataSet.release();
-            report.flush();
-            report.close();
-            document.close();
+            if (report != null) report.close();
+            if (document != null) document.close();
+            report = null;
+            document = null;
+            writer = null;
         }
     }
 

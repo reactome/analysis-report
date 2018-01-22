@@ -1,5 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.itextpdf.kernel.color.Color;
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.geom.PageSize;
@@ -9,9 +10,13 @@ import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class PdfProfile {
 
-    private Float margin = 30.0F;
+    private Float topMargin = 30.0F;
+    private Float rightMargin = 30.0F;
+    private Float bottomMargin = 30.0F;
+    private Float leftMargin = 30.0F;
     private Integer numberOfPathwaysToShow = 50;
     private Float multipliedLeading = 1.0F;
     private String titleColor = "#000000";
@@ -20,12 +25,38 @@ public class PdfProfile {
     private String pageSize = "A4";
     private String font = "Helvetica";
 
-    public Float getMargin() {
-        return margin;
+    // TODO: 22/01/18 extract another more properties to profile file
+
+    public Float getTopMargin() {
+        return topMargin;
     }
 
-    public void setMargin(Float margin) {
-        this.margin = margin;
+    public void setTopMargin(Float topMargin) {
+        this.topMargin = topMargin;
+    }
+
+    public Float getRightMargin() {
+        return rightMargin;
+    }
+
+    public void setRightMargin(Float rightMargin) {
+        this.rightMargin = rightMargin;
+    }
+
+    public Float getBottomMargin() {
+        return bottomMargin;
+    }
+
+    public void setBottomMargin(Float bottomMargin) {
+        this.bottomMargin = bottomMargin;
+    }
+
+    public Float getLeftMargin() {
+        return leftMargin;
+    }
+
+    public void setLeftMargin(Float leftMargin) {
+        this.leftMargin = leftMargin;
     }
 
     public Integer getNumberOfPathwaysToShow() {
@@ -87,7 +118,10 @@ public class PdfProfile {
     @Override
     public String toString() {
         return "PdfProfile{" +
-                "margin=" + margin +
+                "topMargin=" + topMargin +
+                ", rightMargin=" + rightMargin +
+                ", bottomMargin=" + bottomMargin +
+                ", leftMargin=" + leftMargin +
                 ", numberOfPathwaysToShow=" + numberOfPathwaysToShow +
                 ", multipliedLeading=" + multipliedLeading +
                 ", titleColor='" + titleColor + '\'' +

@@ -9,6 +9,10 @@ import com.itextpdf.kernel.pdf.PdfPage;
 import com.itextpdf.kernel.pdf.canvas.PdfCanvas;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+
 /**
  * @author Chuan Deng dengchuanbio@gmail.com
  */
@@ -16,10 +20,12 @@ public class FooterEventHandler implements IEventHandler {
 
     private PdfFont font;
     private float margin;
+    private FileOutputStream file;
 
-    public FooterEventHandler(PdfFont font, float margin) {
+    public FooterEventHandler(PdfFont font, float margin, OutputStream file) {
         this.font = font;
         this.margin = margin;
+        this.file = (FileOutputStream) file;
     }
 
     @Override
@@ -36,5 +42,11 @@ public class FooterEventHandler implements IEventHandler {
                 .showText(String.format("- %s -", pdfDocument.getPageNumber(page)))
                 .endText()
                 .release();
+        try {
+            pdfDocument.getWriter().flush();
+            file.getFD().sync();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
