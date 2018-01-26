@@ -1,12 +1,18 @@
-package org.reactome.server.tools.analysis.exporter.playground.model._;
+package org.reactome.server.tools.analysis.exporter.playground.domain.model;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan Deng dengchuanbio@gmail.com
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Reactions {
-    private Integer total;
-    private Integer found;
-    private Double ratio;
+    private int total;
+    private int found;
+    private double ratio;
+
+    public Reactions() {
+    }
 
     public int getTotal() {
         return total;
@@ -30,14 +36,5 @@ public class Reactions {
 
     public void setRatio(double ratio) {
         this.ratio = ratio;
-    }
-
-    @Override
-    public String toString() {
-        return "Reactions{" +
-                "total=" + total +
-                ", found=" + found +
-                ", ratio=" + ratio +
-                '}';
     }
 }

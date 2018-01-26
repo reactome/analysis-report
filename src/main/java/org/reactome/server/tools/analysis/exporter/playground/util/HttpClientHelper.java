@@ -1,14 +1,11 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.config.Registry;
 import org.apache.http.config.RegistryBuilder;
-import org.apache.http.conn.ConnectionKeepAliveStrategy;
 import org.apache.http.conn.socket.ConnectionSocketFactory;
 import org.apache.http.conn.ssl.NoopHostnameVerifier;
 import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
@@ -16,20 +13,16 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
-import org.apache.http.protocol.HttpContext;
 import org.apache.http.ssl.SSLContexts;
 import org.reactome.server.tools.analysis.exporter.playground.aspectj.Monitor;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRequestDataException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.InValidTokenException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullTokenException;
-import org.reactome.server.tools.analysis.exporter.playground.model.Pathway;
-import org.reactome.server.tools.analysis.exporter.playground.model.PathwayDetail;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.time.Instant;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -50,7 +43,7 @@ public class HttpClientHelper {
 //            System.out.println(url);
             response = execute(new HttpGet(url));
 //            System.out.println("complete to response");
-            if (HttpStatus.SC_OK != response.getStatusLine().getStatusCode()) {
+            if (response.getStatusLine().getStatusCode() != 200) {
                 LOGGER.error("Fail to request DataSet through url : {} with status code : {}.", url, response.getStatusLine().getStatusCode());
                 throw new FailToRequestDataException(String.format("Fail to request DataSet through url : %s with status code : %s.", url, response.getStatusLine().getStatusCode()));
             }
@@ -61,14 +54,14 @@ public class HttpClientHelper {
     }
 
 
-    public static <T> T postForObject(String url, String postEntity, Class<T> valueType, String parameter) throws Exception {
+    public static <T> T postForObject(String url, String postEntity, Class<T> valueType, String token) throws Exception {
         try {
-            HttpPost post = new HttpPost(String.format(url, parameter));
+            HttpPost post = new HttpPost(String.format(url, token));
 //            System.out.println(post.getURI());
             post.setEntity(new StringEntity(postEntity));
             response = execute(post);
 //            System.out.println("complete to response");
-            if (HttpStatus.SC_OK != response.getStatusLine().getStatusCode()) {
+            if (response.getStatusLine().getStatusCode() != 200) {
                 LOGGER.error("Fail to request DataSet through url : {} with status code : {}.", post.getURI(), response.getStatusLine().getStatusCode());
                 throw new FailToRequestDataException(String.format("Fail to request DataSet through url : %s with status code : %s.", post.getURI(), response.getStatusLine().getStatusCode()));
             }
@@ -110,12 +103,12 @@ public class HttpClientHelper {
     private static CloseableHttpResponse execute(HttpUriRequest request) throws IOException {
         client = HttpClients.custom()
                 .setConnectionManager(new PoolingHttpClientConnectionManager(registry))
-                .setKeepAliveStrategy(new ConnectionKeepAliveStrategy() {
-                    @Override
-                    public long getKeepAliveDuration(HttpResponse httpResponse, HttpContext httpContext) {
-                        return 0;
-                    }
-                })
+//                .setKeepAliveStrategy(new ConnectionKeepAliveStrategy() {
+//                    @Override
+//                    public long getKeepAliveDuration(HttpResponse httpResponse, HttpContext httpContext) {
+//                        return 0;
+//                    }
+//                })
 //                .setMaxConnTotal(1)
 //                .setDefaultRequestConfig(defaultConfig)
                 .build();
@@ -125,27 +118,5 @@ public class HttpClientHelper {
     private static void close() throws IOException {
         if (response != null) response.close();
         if (client != null) client.close();
-    }
-
-    public static PathwayDetail[] getPathwayDetails(Pathway[] pathways) throws Exception {
-        long start = Instant.now().toEpochMilli();
-        PathwayDetail[] pathwayDetails = new PathwayDetail[pathways.length];
-        client = HttpClients.custom()
-                .setConnectionManager(new PoolingHttpClientConnectionManager(registry))
-//                .setMaxConnTotal(pathways.length)
-                .build();
-        String url;
-        for (int i = 0; i < pathways.length; i++) {
-            url = String.format(URL.QUERYFORPATHWAYDETAIL, pathways[i].getStId());
-            response = client.execute(new HttpGet(url));
-            if (HttpStatus.SC_OK != response.getStatusLine().getStatusCode()) {
-                LOGGER.error("Fail to request DataSet through url : {} with status code : {}.", url, response.getStatusLine().getStatusCode());
-                throw new FailToRequestDataException(String.format("Fail to request DataSet through url : %s with status code : %s.", url, response.getStatusLine().getStatusCode()));
-            }
-            pathwayDetails[i] = PdfUtils.readValue(response.getEntity().getContent(), PathwayDetail.class);
-        }
-        close();
-        System.out.println("in " + (Instant.now().toEpochMilli() - start));
-        return pathwayDetails;
     }
 }

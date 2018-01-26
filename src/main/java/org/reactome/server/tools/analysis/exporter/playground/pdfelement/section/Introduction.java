@@ -5,9 +5,9 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constant.Indent;
 import org.reactome.server.tools.analysis.exporter.playground.constant.MarginLeft;
 import org.reactome.server.tools.analysis.exporter.playground.constant.Text;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
-import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 

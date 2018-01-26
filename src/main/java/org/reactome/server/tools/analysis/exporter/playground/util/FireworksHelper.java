@@ -29,7 +29,7 @@ public class FireworksHelper {
      * @return {@see BufferedImage}.
      * @throws FailToGetFireworksException
      */
-    public BufferedImage getFireworks(ReportArgs reportArgs) throws FailToGetFireworksException {
+    public static BufferedImage getFireworks(ReportArgs reportArgs) throws FailToGetFireworksException {
         FireworkArgs args = new FireworkArgs(SPECIES, "png");
         args.setFactor(QUALITY);
         args.setToken(reportArgs.getToken());

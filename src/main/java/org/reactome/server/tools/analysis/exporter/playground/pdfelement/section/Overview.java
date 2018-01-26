@@ -1,16 +1,18 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.section;
 
 import com.itextpdf.layout.element.Paragraph;
+import org.reactome.server.graph.domain.model.LiteratureReference;
+import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constant.Indent;
 import org.reactome.server.tools.analysis.exporter.playground.constant.MarginLeft;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
-import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.model.PathwayDetail;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.PathwayDetail;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.TableFactory;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.TableTypeEnum;
-import org.reactome.server.tools.analysis.exporter.playground.util.HttpClientHelper;
+import org.reactome.server.tools.analysis.exporter.playground.util.GraphCoreHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 /**
@@ -21,7 +23,7 @@ public class Overview implements Section {
     public void render(AnalysisReport report, DataSet dataSet) throws Exception {
         TableFactory tableFactory = new TableFactory(dataSet);
         report.addNormalTitle("Overview")
-                .addNormalTitle(String.format("1. Top %s Overrepresentation pathways sorted by p-Value.", dataSet.getNumOfPathwaysToShow()), FontSize.H3, Indent.I3)
+                .addNormalTitle(String.format("1. Top %s Overrepresentation pathways sorted by p-Value.", dataSet.getPathwaysToShow()), FontSize.H3, Indent.I3)
                 .addTable(tableFactory.getTable(TableTypeEnum.OVERVIEW_TABLE))
                 .addNormalTitle("2. Pathway details.", FontSize.H3, Indent.I3);
 
@@ -35,9 +37,12 @@ public class Overview implements Section {
 
     // TODO: 14/12/17 this method should be reduce once the correct data structure confirm
     private void addPathwaysDetails(AnalysisReport report, DataSet dataSet, TableFactory tableFactory) throws Exception {
-        PathwayDetail[] pathwayDetails = HttpClientHelper.getPathwayDetails(dataSet.getResultAssociatedWithToken().getPathways());
 
-        for (int i = 0; i < dataSet.getNumOfPathwaysToShow(); i++) {
+        Pathway[] pathways = GraphCoreHelper.getPathway(dataSet.getResultAssociatedWithToken().getPathways());
+        PathwayDetail pathwayDetail;
+        LiteratureReference literatureReference = null;
+        for (int i = 0; i < dataSet.getPathwaysToShow(); i++) {
+            pathwayDetail = new PathwayDetail(pathways[i]);
             report.addNormalTitle(new Paragraph(String.format("2.%s. %s (%s", i + 1, dataSet.getResultAssociatedWithToken().getPathways()[i].getName(), dataSet.getResultAssociatedWithToken().getPathways()[i].getStId()))
                             .add(PdfUtils.createUrlLinkIcon(FontSize.H3, URL.QUERYFORPATHWAYDETAILS + dataSet.getResultAssociatedWithToken().getPathways()[i].getStId()))
                             .add(")")
@@ -48,35 +53,43 @@ public class Overview implements Section {
 
             report.addNormalTitle("Summation", FontSize.H4, Indent.I4)
                     .addParagraph("species name:" +
-                                    pathwayDetails[i].getSpeciesName() +
-                                    (pathwayDetails[i].getCompartment() != null ? ",compartment name:" + pathwayDetails[i].getCompartment()[0].getDisplayName() : "") +
-                                    (pathwayDetails[i].isInDisease() ? ",disease name:" + pathwayDetails[i].getDisease()[0].getDisplayName() : "") +
-                                    (pathwayDetails[i].isInferred() ? ",inferred from:" + pathwayDetails[i].getInferredFrom()[0].getDisplayName() : "") +
-                                    (pathwayDetails[i].getSummation() != null ? "," + pathwayDetails[i].getSummation()[0].getText().replaceAll("</?[a-zA-Z]{1,2}>", "") : "")
+                                    pathways[i].getSpeciesName() +
+                                    (pathwayDetail.getCompartments() != null ? ",compartment name:" + pathwayDetail.getCompartments().get(0).getDisplayName() : "") +
+                                    (pathways[i].getIsInDisease() ? ",disease name:" + pathwayDetail.getDiseases().get(0).getDisplayName() : "") +
+                                    (pathways[i].getIsInferred() ? ",inferred from:" + pathwayDetail.getEvents().iterator().next().getDisplayName() : "") +
+                                    (pathwayDetail.getSummations() != null ? "," + pathwayDetail.getSummations().get(0).getText().replaceAll("</?[a-zA-Z]{1,2}>", "") : "")
                             , FontSize.H5, 0, MarginLeft.M5);
 
             report.addNormalTitle("List of identifiers was found at this pathway", FontSize.H4, Indent.I4)
                     .addTable(tableFactory.getTable(dataSet.getIdentifiersWasFounds()[i].getEntities()));
-            if (pathwayDetails[i].getAuthors() != null) {
-                addCuratorDetail(report, "Authors", pathwayDetails[i].getAuthors().getDisplayName());
+            if (pathwayDetail.getAuthored() != null) {// TODO: 25/01/18 add all curator info
+                addCuratorDetail(report, "Authors", PdfUtils.getInstanceEditNames(pathwayDetail.getAuthored()));
             }
-            if (pathwayDetails[i].getEditors() != null) {
-                addCuratorDetail(report, "Editors", pathwayDetails[i].getEditors().getDisplayName());
+            if (pathwayDetail.getEdited() != null) {
+                addCuratorDetail(report, "Editors", PdfUtils.getInstanceEditNames(pathwayDetail.getEdited()));
             }
-            if (pathwayDetails[i].getReviewers() != null) {
-                addCuratorDetail(report, "Reviewers", pathwayDetails[i].getReviewers()[0].getDisplayName());
+            if (pathwayDetail.getModified() != null) {
+                addCuratorDetail(report, "Reviewers", PdfUtils.getInstanceEditName(pathwayDetail.getModified()));
             }
-            if (pathwayDetails[i].getLiteratureReference() != null) {
+            if (pathwayDetail.getPublications() != null) {
                 report.addNormalTitle("References", FontSize.H4, Indent.I4);
-                int length = pathwayDetails[i].getLiteratureReference().length > 5 ? 5 : pathwayDetails[i].getLiteratureReference().length;
+                int length = pathwayDetail.getPublications().size() > 5 ? 5 : pathwayDetail.getPublications().size();
                 for (int j = 0; j < length; j++) {
-                    if (pathwayDetails[i].getLiteratureReference()[j].getUrl() == null) continue;
-                    report.addParagraph(new Paragraph(pathwayDetails[i].getLiteratureReference()[j].toString())
-                            .add(PdfUtils.createUrlLinkIcon(FontSize.H5, pathwayDetails[i].getLiteratureReference()[j].getUrl()))
-                            .setFontSize(FontSize.H5)
-                            .setFirstLineIndent(Indent.I5)
-                            .setMarginLeft(MarginLeft.M0)
-                    );
+                    if ("LiteratureReference".equals(pathwayDetail.getPublications().get(j).getSchemaClass())) {
+                        literatureReference = (LiteratureReference) pathwayDetail.getPublications().get(j);
+                        report.addParagraph(new Paragraph(String.format("%s \"%s\", %s, %s, %s, %s."
+                                , PdfUtils.getAuthorDisplayName(literatureReference.getAuthor())
+                                , literatureReference.getTitle()
+                                , literatureReference.getJournal()
+                                , literatureReference.getVolume()
+                                , literatureReference.getYear()
+                                , literatureReference.getPages()))
+                                .add(PdfUtils.createUrlLinkIcon(FontSize.H5, literatureReference.getUrl()))
+                                .setFontSize(FontSize.H5)
+                                .setFirstLineIndent(Indent.I5)
+                                .setMarginLeft(MarginLeft.M0)
+                        );
+                    }
                 }
             }
         }

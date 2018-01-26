@@ -5,9 +5,8 @@ import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
-import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
-
-import java.util.stream.Stream;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.Identifier;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -23,21 +22,15 @@ public class IdentifiersWasNotFoundTable extends Table {
                 .setTextAlignment(TextAlignment.CENTER)
                 .setVerticalAlignment(VerticalAlignment.MIDDLE)
                 .addHeaderCell("Identifiers");
-        String[] header = dataSet.getResultAssociatedWithToken().getExpression().getColumnNames();
-        for (String head : header) {
-            this.addHeaderCell(head);
+        for (String header : dataSet.getResultAssociatedWithToken().getExpression().getColumnNames()) {
+            this.addHeaderCell(header);
         }
-//        for (Identifier identifier : dataSet.getIdentifiersWasNotFounds()) {
-//            this.addCell(new Cell().add(identifier.getId()));
-//            for (Double exp : identifier.getExp()) {
-//                this.addCell(exp.toString());
-//            }
-//        }
 
-        Stream.of(dataSet.getIdentifiersWasNotFounds()).forEach(
-                identifier -> {
-                    this.addCell(new Cell().add(identifier.getId()));
-                    Stream.of(identifier.getExp()).forEach(exp -> this.addCell(exp.toString()));
-                });
+        for (Identifier identifier : dataSet.getIdentifiersWasNotFounds()) {
+            this.addCell(new Cell().add(identifier.getId()));
+            for (Double exp : identifier.getExp()) {
+                this.addCell(exp.toString());
+            }
+        }
     }
 }

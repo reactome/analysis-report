@@ -1,6 +1,8 @@
 package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -15,11 +17,12 @@ public class AnalysisReportExporterTest {
     static final String diagramPath = "/home/byron/static/demo";
     static final String ehldPath = "/home/byron/static";
     static final String fireworksPath = "/home/byron/json";
+    static final Logger LOGGER = LoggerFactory.getLogger(AnalysisReportExporterTest.class);
 
     @Test
     public void test() throws Exception {
         for (File file : new File("src/test/resources/pdfs").listFiles()) file.delete();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 10; i++) {
             long start = Instant.now().toEpochMilli();
             File file = new File(String.format("src/test/resources/pdfs/%s@%s.pdf", token, start));
 //            FileOutputStream outputStream = new FileOutputStream(file);
@@ -28,7 +31,7 @@ public class AnalysisReportExporterTest {
             AnalysisExporter.export(reportArgs, outputStream);
             outputStream.close();
             long end = Instant.now().toEpochMilli();
-            System.out.println("complete in :" + (end - start));
+            LOGGER.info("created pdf in :" + (end - start) + " ms");
         }
     }
 

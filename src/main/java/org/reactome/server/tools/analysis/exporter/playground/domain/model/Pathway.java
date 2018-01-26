@@ -1,14 +1,20 @@
-package org.reactome.server.tools.analysis.exporter.playground.model._;
+package org.reactome.server.tools.analysis.exporter.playground.domain.model;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 /**
- * @author Chuan-Deng <dengchuanbio@gmail.com>
+ * @author Chuan Deng dengchuanbio@gmail.com
  */
-public class Overview {
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Pathway {
     private String stId;
     private String name;
-    private String speciesName;
+    private Species species;
     private Entities entities;
     private Reactions reactions;
+
+    public Pathway() {
+    }
 
     public String getStId() {
         return stId;
@@ -26,12 +32,12 @@ public class Overview {
         this.name = name;
     }
 
-    public String getSpeciesName() {
-        return speciesName;
+    public Species getSpecies() {
+        return species;
     }
 
-    public void setSpeciesName(String speciesName) {
-        this.speciesName = speciesName;
+    public void setSpecies(Species species) {
+        this.species = species;
     }
 
     public Entities getEntities() {
@@ -48,16 +54,5 @@ public class Overview {
 
     public void setReactions(Reactions reactions) {
         this.reactions = reactions;
-    }
-
-    @Override
-    public String toString() {
-        return "Overview{" +
-                "stId='" + stId + '\'' +
-                ", name='" + name + '\'' +
-                ", speciesName='" + speciesName + '\'' +
-                ", entities=" + entities +
-                ", reactions=" + reactions +
-                '}';
     }
 }

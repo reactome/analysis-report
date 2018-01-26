@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.section;
 
 import org.reactome.server.tools.analysis.exporter.playground.aspectj.Monitor;
-import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 
 /**

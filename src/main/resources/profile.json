@@ -1,7 +1,23 @@
 {
+  "logoProfile": {
+    "logoScaling": 0.3,
+    "marginTop": 0,
+    "marginLeft": 0
+  },
+  "titleProfile": {
+    "marginTop": 15.0,
+    "marginBottom": 10.0,
+    "marginRight": 0,
+    "marginLeft": 0,
+    "color": "#000000"
+  },
+  "diagram": {
+    "quality": 5,
+    "format": "png"
+  },
   "topMargin": 30.0,
-  "rightMargin": 30.0,
   "bottomMargin": 30.0,
+  "rightMargin": 30.0,
   "leftMargin": 30.0,
   "numberOfPathwaysToShow": 50,
   "multipliedLeading": 1.0,

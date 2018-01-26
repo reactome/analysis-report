@@ -12,6 +12,7 @@ import com.itextpdf.layout.property.Property;
 import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
+import org.reactome.server.tools.analysis.exporter.playground.domain.profile.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.playground.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.FireworksHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
@@ -31,12 +32,14 @@ public class AnalysisReport extends Document {
      */
     private PdfFont pdfFont;
     private float margin;
+    private PdfProfile profile;
 
-    public AnalysisReport(PdfProfile profile, PdfDocument pdfDocument) throws Exception {
+    public AnalysisReport(PdfDocument pdfDocument, PdfProfile profile) throws Exception {
         /**
          * the default document setting is to flush content data every time
          */
         super(pdfDocument, profile.getPageSize());
+        this.profile = profile;
         this.setFont(profile.getFont())
                 .setTextAlignment(TextAlignment.JUSTIFIED);
         this.setMargins(profile.getTopMargin(), profile.getRightMargin(), profile.getBottomMargin(), profile.getLeftMargin());
@@ -63,21 +66,25 @@ public class AnalysisReport extends Document {
 
     public AnalysisReport addLogo(String logo) throws Exception {
         Image image = PdfUtils.createImage(logo)
-                .scale(logoScaling, logoScaling);
-        image.setFixedPosition(this.getLeftMargin() * logoScaling, this.getPdfDocument().getDefaultPageSize().getHeight() - this.getTopMargin() * logoScaling - image.getImageScaledHeight());
+                .scale(profile.getLogoProfile().getLogoScaling(), profile.getLogoProfile().getLogoScaling());
+        image.setFixedPosition(this.getLeftMargin() * profile.getLogoProfile().getLogoScaling() + profile.getLogoProfile().getMarginLeft()
+                , profile.getPageSize().getHeight() - this.getTopMargin() * profile.getLogoProfile().getLogoScaling() - image.getImageScaledHeight() - profile.getLogoProfile().getMarginTop());
         return this.addImage(image);
     }
 
     public AnalysisReport addDiagram(String stId, ReportArgs reportArgs) throws Exception {
         // use self-made auto scale method can keep diagram the same size(to fit the last rest space of one page so there wont be a lot blank content)
 //        return this.addImage(PdfUtils.ImageAutoScale(this, createImage(DiagramHelper.getDiagram(stId, reportArgs))
-        return this.addImage(PdfUtils.createImage(new DiagramHelper().getDiagram(stId, reportArgs))
-                .setHorizontalAlignment(HorizontalAlignment.CENTER)
-                .setAutoScale(true));
+        return this.addDiagram(PdfUtils.createImage(DiagramHelper.getDiagram(stId, reportArgs)));
+    }
+
+    public AnalysisReport addDiagram(Image image) {
+        this.addImage(image.setHorizontalAlignment(HorizontalAlignment.CENTER).setAutoScale(true));
+        return this;
     }
 
     public AnalysisReport addFireworks(ReportArgs reportArgs) throws Exception {
-        return this.addImage(PdfUtils.createImage(new FireworksHelper().getFireworks(reportArgs))
+        return this.addImage(PdfUtils.createImage(FireworksHelper.getFireworks(reportArgs))
                 .setHorizontalAlignment(HorizontalAlignment.CENTER)
                 .setAutoScale(true));
     }
@@ -87,7 +94,8 @@ public class AnalysisReport extends Document {
     }
 
     public AnalysisReport addTopTitle(String title, int fontSize) {
-        return this.addNormalTitle(new Paragraph(title).setTextAlignment(TextAlignment.CENTER).setMarginTop(15.0f), fontSize, 0);
+        return this.addNormalTitle(new Paragraph(title).setTextAlignment(TextAlignment.CENTER)
+                .setMarginTop(profile.getTitleProfile().getMarginTop()).setMarginBottom(profile.getTitleProfile().getMarginBottom()), fontSize, 0);
     }
 
 
@@ -96,7 +104,7 @@ public class AnalysisReport extends Document {
     }
 
     public AnalysisReport addNormalTitle(Paragraph title) {
-        this.add(title.setFontColor(titleColor));
+        this.add(title.setFontColor(titleColor).setMargin(0.1f));
         return this;
     }
 

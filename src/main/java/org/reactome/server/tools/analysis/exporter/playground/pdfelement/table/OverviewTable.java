@@ -7,10 +7,10 @@ import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.UnitValue;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.Pathway;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
-import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.model.Pathway;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 /**

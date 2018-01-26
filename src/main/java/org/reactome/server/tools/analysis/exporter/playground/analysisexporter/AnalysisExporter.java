@@ -4,7 +4,7 @@ import org.reactome.server.tools.analysis.exporter.playground.exception.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.OutputStream;
+import java.io.FileOutputStream;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -27,10 +27,10 @@ public class AnalysisExporter {
      * <code/>
      *
      * @param reportArgs report args contains arguments like token,the diagram json path etc.
-     *                   //     * @param outputStream destination you want to save the produced PDF report document.
+     * @param file destination you want to save the produced PDF report document.
      * @throws Exception
      */
-    public static void export(ReportArgs reportArgs, OutputStream file) throws Exception {
+    public static void export(ReportArgs reportArgs, FileOutputStream file) throws Exception {
         try {
             ReportRenderer.render(reportArgs, file);
         } catch (FailToAddLogoException e) {

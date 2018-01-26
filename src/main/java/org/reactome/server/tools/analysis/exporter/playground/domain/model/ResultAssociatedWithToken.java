@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.model;
+package org.reactome.server.tools.analysis.exporter.playground.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class ResultAssociatedWithToken {
     private Summary summary;
     private Expression expression;
+
     private int identifiersNotFound;
     private int pathwaysFound;
     private Pathway[] pathways = null;

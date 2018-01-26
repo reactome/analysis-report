@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.section;
 
 import com.itextpdf.kernel.events.PdfDocumentEvent;
-import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.FooterEventHandler;
 

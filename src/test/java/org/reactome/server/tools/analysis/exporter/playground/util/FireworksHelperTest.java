@@ -70,7 +70,7 @@ public class FireworksHelperTest {
         overrideCertificateCheck();
 
         String token = "MjAxNzEyMTgwNjM0MDJfMjI%253D";
-        BufferedImage fireworks = new FireworksHelper().getFireworks(new ReportArgs(token, "/home/byron/static/demo", "/home/byron/static", "/home/byron/json"));
+        BufferedImage fireworks = FireworksHelper.getFireworks(new ReportArgs(token, "/home/byron/static/demo", "/home/byron/static", "/home/byron/json"));
         File file = new File("src/test/resources/fireworks/", "Homo_sapiens.png");
         ImageIO.write(fireworks, "png", file);
     }

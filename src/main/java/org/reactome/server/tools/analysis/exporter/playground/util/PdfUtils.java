@@ -11,11 +11,15 @@ import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.Property;
+import org.apache.commons.lang3.text.StrBuilder;
+import org.reactome.server.graph.domain.model.InstanceEdit;
+import org.reactome.server.graph.domain.model.Person;
+import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.*;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NoSuchPageSizeException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
-import org.reactome.server.tools.analysis.exporter.playground.model.*;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -26,6 +30,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -132,27 +137,23 @@ public class PdfUtils {
     }
 
     // TODO: 06/12/17 this method may be deleted once the correct dataset structure was confirm
-    public static DataSet getDataSet(String token, int numOfPathwaysToShow) throws Exception {
-        DataSet dataSet = new DataSet();
-        ResultAssociatedWithToken resultAssociatedWithToken = HttpClientHelper.getForObject(URL.RESULTASSCIATEDWITHTOKEN, ResultAssociatedWithToken.class, token);
-        dataSet.setIdentifiersWasNotFounds(HttpClientHelper.getForObject(URL.IDENTIFIERSWASNOTFOUND, Identifier[].class, token));
+    public static DataSet getDataSet(ReportArgs reportArgs, int pathwaysToShow) throws Exception {
+        DataSet dataSet = new DataSet(reportArgs);
+        dataSet.setVersion(GraphCoreHelper.getDBVersion());
+        ResultAssociatedWithToken resultAssociatedWithToken = HttpClientHelper.getForObject(URL.RESULTASSCIATEDWITHTOKEN, ResultAssociatedWithToken.class, reportArgs.getToken());
+        dataSet.setIdentifiersWasNotFounds(HttpClientHelper.getForObject(URL.IDENTIFIERSWASNOTFOUND, Identifier[].class, reportArgs.getToken()));
 
         StringBuilder stIds = PdfUtils.stIdConcat(resultAssociatedWithToken.getPathways());
-        IdentifiersWasFound[] identifiersWasFounds = HttpClientHelper.postForObject(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), IdentifiersWasFound[].class, token);
-        dataSet.setIdentifiersWasFounds(identifiersWasFounds);
-        dataSet.setIdentifiersWasFiltered(PdfUtils.identifiersFilter(identifiersWasFounds));
+        dataSet.setIdentifiersWasFounds(HttpClientHelper.postForObject(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), IdentifiersWasFound[].class, reportArgs.getToken()));
+        dataSet.setIdentifiersWasFiltered(PdfUtils.identifiersFilter(dataSet.getIdentifiersWasFounds()));
 
         //reduce the size of pathway array to save memory.
-        resultAssociatedWithToken.setPathways(Arrays.copyOf(resultAssociatedWithToken.getPathways(), numOfPathwaysToShow));
+        resultAssociatedWithToken.setPathways(Arrays.copyOf(resultAssociatedWithToken.getPathways(), pathwaysToShow));
         dataSet.setResultAssociatedWithToken(resultAssociatedWithToken);
-        dataSet.setNumOfPathwaysToShow(numOfPathwaysToShow);
-        dataSet.setVersion(HttpClientHelper.getForObject(URL.VERSION, Integer.class, ""));
+        dataSet.setPathwaysToShow(pathwaysToShow);
+
         return dataSet;
     }
-
-//    public _DataSet getDataSet(String token) throws Exception {
-//        return MAPPER.readValue(CLIENT.execute(GET).getEntity().getContent(),_DataSet.class);
-//    }
 
     public static PdfFont createFont(String fontName) throws IOException {
         return PdfFontFactory.createFont(fontName);
@@ -170,6 +171,27 @@ public class PdfUtils {
 
     public static <T> T readValue(InputStream src, Class<T> type) throws IOException {
         return MAPPER.readValue(src, type);
+    }
+
+    public static String getInstanceEditName(InstanceEdit instanceEdit) {
+        List<Person> authors = instanceEdit.getAuthor();
+        StringBuilder stringBuilder = new StringBuilder();
+        authors.forEach(person -> stringBuilder.append(person.getSurname()).append(' ')
+                .append(person.getFirstname()).append(',')
+                .append(instanceEdit.getDateTime().substring(1, 10)));
+        return stringBuilder.toString();
+    }
+
+    public static String getAuthorDisplayName(List<Person> authors) {
+        StringBuilder stringBuilder = new StringBuilder();
+        authors.forEach(person -> stringBuilder.append(person.getDisplayName().replace(", ", " ")).append(','));
+        return stringBuilder.toString();
+    }
+
+    public static String getInstanceEditNames(List<InstanceEdit> curators) {
+        StrBuilder strBuilder = new StrBuilder();
+        curators.forEach(instanceEdit -> strBuilder.append(PdfUtils.getInstanceEditName(instanceEdit)).append("\n"));
+        return strBuilder.toString();
     }
 
     public static PageSize createPageSize(String type) throws NoSuchPageSizeException {
@@ -222,10 +244,4 @@ public class PdfUtils {
                 throw new NoSuchPageSizeException(String.format("Cant recognize page size : %s", type));
         }
     }
-
-//    public _DataSet getDataSet() {
-//        // TODO: 21/12/17 connect server by httpurlconnection
-//        return new _DataSet();
-//    }
-
 }

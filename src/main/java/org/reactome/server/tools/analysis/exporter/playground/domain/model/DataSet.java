@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.model;
+package org.reactome.server.tools.analysis.exporter.playground.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
@@ -14,14 +14,18 @@ public class DataSet {
     private int version;
     // TODO: 11/01/18 need to get from server
     private int totalPathways;
-    private int numOfPathwaysToShow;
+    private int pathwaysToShow;
     @JsonIgnore
     private ReportArgs reportArgs;
+    private FileOutputStream file;
     private ResultAssociatedWithToken resultAssociatedWithToken;
     private IdentifiersWasFound[] identifiersWasFounds;
     private Identifier[] identifiersWasNotFounds;
     private Map<String, Identifier> identifiersWasFiltered;
-    private FileOutputStream file;
+
+    public DataSet(ReportArgs reportArgs) {
+        this.reportArgs = reportArgs;
+    }
 
     public int getVersion() {
         return version;
@@ -51,12 +55,12 @@ public class DataSet {
         return identifiersWasNotFounds.length;
     }
 
-    public int getNumOfPathwaysToShow() {
-        return numOfPathwaysToShow;
+    public int getPathwaysToShow() {
+        return pathwaysToShow;
     }
 
-    public void setNumOfPathwaysToShow(int numOfPathwaysToShow) {
-        this.numOfPathwaysToShow = numOfPathwaysToShow <= resultAssociatedWithToken.getPathwaysFound() ? numOfPathwaysToShow : resultAssociatedWithToken.getPathwaysFound();
+    public void setPathwaysToShow(int pathwaysToShow) {
+        this.pathwaysToShow = pathwaysToShow <= resultAssociatedWithToken.getPathwaysFound() ? pathwaysToShow : resultAssociatedWithToken.getPathwaysFound();
     }
 
     public ReportArgs getReportArgs() {

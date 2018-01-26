@@ -7,7 +7,7 @@ import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constant.MarginLeft;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
-import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 

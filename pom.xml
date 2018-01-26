@@ -21,7 +21,11 @@
         <itext.version>7.0.4</itext.version>
         <fireworks.version>1.0.0</fireworks.version>
         <diagram.version>1.2.0</diagram.version>
-        <aspectj.version>1.8.13</aspectj.version>
+        <graph.core.version>1.1.5</graph.core.version>
+        <!--<neo4j.user>neo4j</neo4j.user>-->
+        <!--<neo4j.password>reactome</neo4j.password>-->
+        <!--<neo4j.host>localhost</neo4j.host>-->
+        <!--<neo4j.port>7474</neo4j.port>-->
     </properties>
 
     <dependencies>
@@ -137,13 +141,12 @@
             </exclusions>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
+        <!-- http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-release/org/reactome/server/graph/graph-core/ for updates -->
         <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjrt</artifactId>
-            <version>${aspectj.version}</version>
+            <groupId>org.reactome.server.graph</groupId>
+            <artifactId>graph-core</artifactId>
+            <version>${graph.core.version}</version>
         </dependency>
-
     </dependencies>
 
     <repositories>
@@ -154,6 +157,7 @@
             <url>http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-release</url>
         </repository>
 
+        <!-- EBI repo -->
         <repository>
             <id>nexus-ebi-repo-release</id>
             <name>The EBI internal repository</name>
@@ -172,25 +176,25 @@
                 </configuration>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.20.1</version>
-                <configuration>
-                    <argLine>
-                        -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
-                    </argLine>
-                    <skipTests>true</skipTests>
-                    <test>*Test.java</test>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-surefire-plugin</artifactId>-->
+                <!--<version>2.20.1</version>-->
+                <!--<configuration>-->
+                    <!--<argLine>-->
+                        <!-- -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar-->
+                    <!--</argLine>-->
+                    <!--<skipTests>true</skipTests>-->
+                    <!--<test>*Test.java</test>-->
+                <!--</configuration>-->
+                <!--<dependencies>-->
+                    <!--<dependency>-->
+                        <!--<groupId>org.aspectj</groupId>-->
+                        <!--<artifactId>aspectjweaver</artifactId>-->
+                        <!--<version>${aspectj.version}</version>-->
+                    <!--</dependency>-->
+                <!--</dependencies>-->
+            <!--</plugin>-->
 
             <!--<plugin>-->
             <!--<groupId>org.codehaus.mojo</groupId>-->

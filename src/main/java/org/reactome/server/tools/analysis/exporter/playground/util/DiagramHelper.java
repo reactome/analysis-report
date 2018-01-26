@@ -29,7 +29,7 @@ public class DiagramHelper {
      * @return {@see BufferedImage}.
      * @throws FailToGetDiagramException
      */
-    public BufferedImage getDiagram(String stId, ReportArgs reportArgs) throws FailToGetDiagramException {
+    public static BufferedImage getDiagram(String stId, ReportArgs reportArgs) throws FailToGetDiagramException {
         RasterArgs args = new RasterArgs(stId, "png");
         args.setQuality(QUALITY);
         // TODO: 22/01/18 add analysis info on diagram

@@ -5,9 +5,8 @@ import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
-import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
-
-import java.util.stream.Stream;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.Identifier;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -25,7 +24,10 @@ public class IdentifiersWasNotFoundTableNoEXP extends Table {
                 .setTextAlignment(TextAlignment.CENTER)
                 .setVerticalAlignment(VerticalAlignment.MIDDLE)
                 .addHeaderCell(new Cell(1, NUM_COLUMNS).add("Identifiers"));
-        Stream.of(dataSet.getIdentifiersWasNotFounds()).forEach(identifier -> this.addCell(new Cell().add(identifier.getId())));
+
+        for (Identifier identifier : dataSet.getIdentifiersWasNotFounds()) {
+            this.addCell(new Cell().add(identifier.getId()));
+        }
 
         for (int i = 0; i < NUM_COLUMNS - dataSet.getIdentifiersWasNotFounds().length % NUM_COLUMNS; i++) {
             this.addCell(new Cell());

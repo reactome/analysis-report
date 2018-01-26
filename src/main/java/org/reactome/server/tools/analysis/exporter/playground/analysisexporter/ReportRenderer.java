@@ -3,10 +3,10 @@ package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.kernel.pdf.WriterProperties;
+import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.domain.profile.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRenderReportException;
-import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.section.*;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 import org.slf4j.Logger;
@@ -51,15 +51,14 @@ class ReportRenderer {
      */
     protected static void render(ReportArgs reportArgs, OutputStream file) throws Exception {
         List<Section> sections = new ArrayList<>(6);
-        DataSet dataSet = PdfUtils.getDataSet(reportArgs.getToken(), profile.getNumberOfPathwaysToShow());
+        DataSet dataSet = PdfUtils.getDataSet(reportArgs, profile.getNumberOfPathwaysToShow());
         // TODO: 19/01/18 use fileoutputstream
         dataSet.setFile((FileOutputStream) file);
         // TODO: 19/01/18 use smart model
         PdfWriter writer = new PdfWriter(file, new WriterProperties().setFullCompressionMode(true)).setSmartMode(false);
         PdfDocument document = new PdfDocument(writer);
         document.setFlushUnusedObjects(true);
-        AnalysisReport report = new AnalysisReport(profile, document);
-        dataSet.setReportArgs(reportArgs);
+        AnalysisReport report = new AnalysisReport(document, profile);
 
         sections.add(new Footer());
         sections.add(new TitleAndLogo());
