@@ -1,5 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
@@ -14,15 +15,20 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.ssl.SSLContexts;
-import org.reactome.server.tools.analysis.exporter.playground.aspectj.Monitor;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRequestDataException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.InValidTokenException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullTokenException;
+import org.reactome.server.tools.analysis.exporter.playground.model.AnalysisResult;
+import org.reactome.server.tools.analysis.exporter.playground.model.Identifier;
+import org.reactome.server.tools.analysis.exporter.playground.model.IdentifierFound;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.net.URLDecoder;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -30,14 +36,14 @@ import java.io.IOException;
 public class HttpClientHelper {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(HttpClientHelper.class);
+    private static final ObjectMapper MAPPER = new ObjectMapper();
     private static final Registry<ConnectionSocketFactory> registry = RegistryBuilder.<ConnectionSocketFactory>create()
             .register("https", new SSLConnectionSocketFactory(SSLContexts.createDefault(), NoopHostnameVerifier.INSTANCE)).build();
     private static CloseableHttpResponse response = null;
     private static CloseableHttpClient client = null;
 
     // TODO: 18/12/17 method maybe change by use HttpUrlConnection
-    @Monitor
-    public static <T> T getForObject(String uri, Class<T> valueType, String parameter) throws Exception {
+    public static AnalysisResult getResultAssociatedWithToken(String uri, String parameter) throws Exception {
         try {
             String url = String.format(uri, parameter);
 //            System.out.println(url);
@@ -47,14 +53,30 @@ public class HttpClientHelper {
                 LOGGER.error("Fail to request DataSet through url : {} with status code : {}.", url, response.getStatusLine().getStatusCode());
                 throw new FailToRequestDataException(String.format("Fail to request DataSet through url : %s with status code : %s.", url, response.getStatusLine().getStatusCode()));
             }
-            return PdfUtils.readValue(response.getEntity().getContent(), valueType);
+            return MAPPER.readValue(response.getEntity().getContent(), AnalysisResult.class);
+        } finally {
+            close();
+        }
+    }
+
+    public static List<Identifier> getIdentifiersWasNotFound(String uri, String parameter) throws Exception {
+        try {
+            String url = String.format(uri, parameter);
+//            System.out.println(url);
+            response = execute(new HttpGet(url));
+//            System.out.println("complete to response");
+            if (response.getStatusLine().getStatusCode() != 200) {
+                LOGGER.error("Fail to request DataSet through url : {} with status code : {}.", url, response.getStatusLine().getStatusCode());
+                throw new FailToRequestDataException(String.format("Fail to request DataSet through url : %s with status code : %s.", url, response.getStatusLine().getStatusCode()));
+            }
+            return MAPPER.readValue(response.getEntity().getContent(), new ObjectMapper().getTypeFactory().constructCollectionType(ArrayList.class, Identifier.class));
         } finally {
             close();
         }
     }
 
 
-    public static <T> T postForObject(String url, String postEntity, Class<T> valueType, String token) throws Exception {
+    public static List<IdentifierFound> getIdentifierWasFound(String url, String postEntity, String token) throws Exception {
         try {
             HttpPost post = new HttpPost(String.format(url, token));
 //            System.out.println(post.getURI());
@@ -65,7 +87,7 @@ public class HttpClientHelper {
                 LOGGER.error("Fail to request DataSet through url : {} with status code : {}.", post.getURI(), response.getStatusLine().getStatusCode());
                 throw new FailToRequestDataException(String.format("Fail to request DataSet through url : %s with status code : %s.", post.getURI(), response.getStatusLine().getStatusCode()));
             }
-            return PdfUtils.readValue(response.getEntity().getContent(), valueType);
+            return MAPPER.readValue(response.getEntity().getContent(), new ObjectMapper().getTypeFactory().constructCollectionType(ArrayList.class, IdentifierFound.class));
         } finally {
             close();
         }
@@ -83,6 +105,7 @@ public class HttpClientHelper {
             LOGGER.error("Token cant be null");
             throw new NullTokenException("Token cant be null");
         }
+        token = URLDecoder.decode(token, "UTF-8");
         response = execute(new HttpGet(String.format(URL.CHECKTOKEN, token)));
         if (response.getStatusLine().getStatusCode() != 200) {
             LOGGER.error("Invalid token : {}", token);

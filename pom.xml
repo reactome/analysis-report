@@ -22,6 +22,7 @@
         <fireworks.version>1.0.0</fireworks.version>
         <diagram.version>1.2.0</diagram.version>
         <graph.core.version>1.1.5</graph.core.version>
+        <aspectj.version>1.8.13</aspectj.version>
         <!--<neo4j.user>neo4j</neo4j.user>-->
         <!--<neo4j.password>reactome</neo4j.password>-->
         <!--<neo4j.host>localhost</neo4j.host>-->
@@ -147,6 +148,20 @@
             <artifactId>graph-core</artifactId>
             <version>${graph.core.version}</version>
         </dependency>
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.aspectj/aspectjweaver &ndash;&gt;-->
+        <!--<dependency>-->
+        <!--<groupId>org.aspectj</groupId>-->
+        <!--<artifactId>aspectjweaver</artifactId>-->
+        <!--<version>${aspectj.version}</version>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.aspectj/aspectjweaver &ndash;&gt;-->
+        <!--<dependency>-->
+        <!--<groupId>org.aspectj</groupId>-->
+        <!--<artifactId>aspectjrt</artifactId>-->
+        <!--<version>${aspectj.version}</version>-->
+        <!--</dependency>-->
     </dependencies>
 
     <repositories>
@@ -176,25 +191,25 @@
                 </configuration>
             </plugin>
 
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-surefire-plugin</artifactId>-->
-                <!--<version>2.20.1</version>-->
-                <!--<configuration>-->
-                    <!--<argLine>-->
-                        <!-- -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar-->
-                    <!--</argLine>-->
-                    <!--<skipTests>true</skipTests>-->
-                    <!--<test>*Test.java</test>-->
-                <!--</configuration>-->
-                <!--<dependencies>-->
-                    <!--<dependency>-->
-                        <!--<groupId>org.aspectj</groupId>-->
-                        <!--<artifactId>aspectjweaver</artifactId>-->
-                        <!--<version>${aspectj.version}</version>-->
-                    <!--</dependency>-->
-                <!--</dependencies>-->
-            <!--</plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20.1</version>
+                <configuration>
+                    <argLine>
+                        -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+                    </argLine>
+                    <skipTests>true</skipTests>
+                    <test>*Test.java</test>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>${aspectj.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
 
             <!--<plugin>-->
             <!--<groupId>org.codehaus.mojo</groupId>-->

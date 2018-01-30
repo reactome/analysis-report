@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -23,21 +22,31 @@ public class GraphCoreHelper {
 
     static {
         // Instanciate our services
+        // TODO: 30/01/18 write neo4j config detail into xml file
         ReactomeGraphCore.initialise("localhost", "7474", "neo4j", "reactome", GraphCoreConfig.class);
 
         genericService = ReactomeGraphCore.getService(GeneralService.class);
         databaseObjectService = ReactomeGraphCore.getService(DatabaseObjectService.class);
     }
 
-    public static Pathway[] getPathway(org.reactome.server.tools.analysis.exporter.playground.domain.model.Pathway[] pathways) {
+    /**
+     * get pathways detail information from neo4j database by given the target pathway identifiers array.
+     * @param pathways {@see org.reactome.server.tools.analysis.exporter.playground.model.Pathway}
+     * @return
+     */
+//    public static List<Pathway> getPathway(List<org.reactome.server.tools.analysis.exporter.playground.model.Pathway> pathways) {
+    public static Pathway[] getPathway(List<org.reactome.server.tools.analysis.exporter.playground.model.Pathway> pathways) {
         long start = Instant.now().toEpochMilli();
         List<Object> identifiers = new ArrayList<>();
-        Stream.of(pathways).forEach(pathway -> identifiers.add(pathway.getStId()));
-        Pathway[] pathways1 = databaseObjectService.findByIdsNoRelations(identifiers).toArray(new Pathway[identifiers.size()]);
+        pathways.forEach(pathway -> identifiers.add(pathway.getStId()));
+        Pathway[] pathway = databaseObjectService.findByIdsNoRelations(identifiers).toArray(new Pathway[identifiers.size()]);
         logger.info("retrieve finish in :" + (Instant.now().toEpochMilli() - start) + " ms");
-        return pathways1;
+        return pathway;
     }
 
+    /**
+     * @return Reactome's current database version.
+     */
     public static int getDBVersion() {
         return genericService.getDBVersion();
     }

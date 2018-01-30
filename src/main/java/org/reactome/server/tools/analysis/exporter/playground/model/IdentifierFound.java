@@ -1,19 +1,19 @@
-package org.reactome.server.tools.analysis.exporter.playground.domain.model;
+package org.reactome.server.tools.analysis.exporter.playground.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author Chuan Deng dengchuanbio@gmail.com
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class IdentifiersWasFound {
+public class IdentifierFound {
     private String pathway;
-    private Identifier[] entities;
-    private String[] expNames;
+    private List<Identifier> entities;
+    private List<String> expNames;
 
-    public IdentifiersWasFound() {
+    public IdentifierFound() {
     }
 
     public String getPathway() {
@@ -24,28 +24,28 @@ public class IdentifiersWasFound {
         this.pathway = pathway;
     }
 
-    public Identifier[] getEntities() {
+    public List<Identifier> getEntities() {
         return entities;
     }
 
-    public void setEntities(Identifier[] entities) {
+    public void setEntities(List<Identifier> entities) {
         this.entities = entities;
     }
 
-    public String[] getExpNames() {
+    public List<String> getExpNames() {
         return expNames;
     }
 
-    public void setExpNames(String[] expNames) {
+    public void setExpNames(List<String> expNames) {
         this.expNames = expNames;
     }
 
     @Override
     public String toString() {
-        return "IdentifiersWasFound{" +
+        return "IdentifierFound{" +
                 "pathway='" + pathway + '\'' +
-                ", entities=" + Arrays.toString(entities) +
-                ", expNames=" + Arrays.toString(expNames) +
+                ", entities=" + entities +
+                ", expNames=" + expNames +
                 '}';
     }
 }

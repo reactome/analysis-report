@@ -2,6 +2,8 @@ package org.reactome.server.tools.analysis.exporter.playground.util;
 
 import org.junit.Test;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.imageio.ImageIO;
 import javax.net.ssl.*;
@@ -18,6 +20,11 @@ import java.security.cert.X509Certificate;
 
 public class FireworksHelperTest {
 
+    static final String token = "MjAxODAxMDEwNzUwMjdfMTc%253D";
+    static final String diagramPath = "/home/byron/static/demo";
+    static final String ehldPath = "/home/byron/static";
+    static final String fireworksPath = "/home/byron/json";
+    static final Logger LOGGER = LoggerFactory.getLogger(GraphCoreHelperTest.class);
     static TrustManager[] trustAllCerts;
 
     /**
@@ -69,9 +76,9 @@ public class FireworksHelperTest {
     public void test() throws Exception {
         overrideCertificateCheck();
 
-        String token = "MjAxNzEyMTgwNjM0MDJfMjI%253D";
-        BufferedImage fireworks = FireworksHelper.getFireworks(new ReportArgs(token, "/home/byron/static/demo", "/home/byron/static", "/home/byron/json"));
+        BufferedImage fireworks = FireworksHelper.getFireworks(new ReportArgs(token, diagramPath, ehldPath, fireworksPath));
         File file = new File("src/test/resources/fireworks/", "Homo_sapiens.png");
         ImageIO.write(fireworks, "png", file);
+        LOGGER.info("");
     }
 }

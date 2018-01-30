@@ -3,6 +3,7 @@ package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
 import com.itextpdf.kernel.color.Color;
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.pdf.PdfDocument;
+import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
@@ -12,7 +13,9 @@ import com.itextpdf.layout.property.Property;
 import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
-import org.reactome.server.tools.analysis.exporter.playground.domain.profile.PdfProfile;
+import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
+import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.model.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.playground.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.FireworksHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
@@ -23,6 +26,7 @@ import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 public class AnalysisReport extends Document {
 
     private float logoScaling = 0.3f;
+    private DataSet dataSet;
     private Color titleColor;
     private Color paragraphColor;
     private Color tableColor;
@@ -34,11 +38,12 @@ public class AnalysisReport extends Document {
     private float margin;
     private PdfProfile profile;
 
-    public AnalysisReport(PdfDocument pdfDocument, PdfProfile profile) throws Exception {
+    public AnalysisReport(PdfDocument pdfDocument, PdfProfile profile, DataSet dataSet) throws Exception {
         /**
          * the default document setting is to flush content data every time
          */
         super(pdfDocument, profile.getPageSize());
+        this.dataSet = dataSet;
         this.profile = profile;
         this.setFont(profile.getFont())
                 .setTextAlignment(TextAlignment.JUSTIFIED);
@@ -49,6 +54,10 @@ public class AnalysisReport extends Document {
         paragraphColor = profile.getParagraphColor();
         tableColor = profile.getTableColor();
         multipliedLeading = profile.getMultipliedLeading();
+    }
+
+    public DataSet getDataSet() {
+        return dataSet;
     }
 
     public PdfFont getPdfFont() {
@@ -69,6 +78,7 @@ public class AnalysisReport extends Document {
                 .scale(profile.getLogoProfile().getLogoScaling(), profile.getLogoProfile().getLogoScaling());
         image.setFixedPosition(this.getLeftMargin() * profile.getLogoProfile().getLogoScaling() + profile.getLogoProfile().getMarginLeft()
                 , profile.getPageSize().getHeight() - this.getTopMargin() * profile.getLogoProfile().getLogoScaling() - image.getImageScaledHeight() - profile.getLogoProfile().getMarginTop());
+        image.setAction(PdfAction.createURI(URL.REACTOME));
         return this.addImage(image);
     }
 

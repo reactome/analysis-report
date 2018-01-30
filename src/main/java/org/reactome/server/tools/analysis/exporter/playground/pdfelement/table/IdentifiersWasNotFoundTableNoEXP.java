@@ -5,8 +5,8 @@ import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
-import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.domain.model.Identifier;
+import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.model.Identifier;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -29,7 +29,7 @@ public class IdentifiersWasNotFoundTableNoEXP extends Table {
             this.addCell(new Cell().add(identifier.getId()));
         }
 
-        for (int i = 0; i < NUM_COLUMNS - dataSet.getIdentifiersWasNotFounds().length % NUM_COLUMNS; i++) {
+        for (int i = 0; i < NUM_COLUMNS - dataSet.getIdentifiersWasNotFounds().size() % NUM_COLUMNS; i++) {
             this.addCell(new Cell());
         }
     }

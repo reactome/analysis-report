@@ -16,7 +16,7 @@ public class FireworksHelper {
 
     //this file must contain the *.json files,you down it from
     private static final String SPECIES = "Homo_sapiens";
-    private static final double QUALITY = 3.0;
+    private static final double QUALITY = 2.5;
 
     static {
         AnalysisClient.setServer(URL.REACTOME);
@@ -36,6 +36,7 @@ public class FireworksHelper {
         args.setProfile(FireworksColor.COPPER_PLUS.getColor());
         /**
          * looks add flags will result in a lot of time consumption for to request info
+         * about 28s to request for resources data to render image
          */
 //        ContentServiceClient.setHost("https://reactome.org/");
 //        args.setFlags(Arrays.asList("CTP"));

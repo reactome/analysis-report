@@ -1,7 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.section;
 
 import com.itextpdf.kernel.events.PdfDocumentEvent;
-import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.FooterEventHandler;
 
@@ -9,7 +8,7 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.FooterE
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class Footer implements Section {
-    public void render(AnalysisReport report, DataSet dataSet) {
-        report.getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(report.getPdfFont(), report.getMargin(), dataSet.getFile()));
+    public void render(AnalysisReport report) {
+        report.getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(report.getPdfFont(), report.getMargin(), report.getDataSet().getFile()));
     }
 }

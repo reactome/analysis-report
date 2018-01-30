@@ -1,9 +1,9 @@
-package org.reactome.server.tools.analysis.exporter.playground.domain.model;
+package org.reactome.server.tools.analysis.exporter.playground.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -13,8 +13,8 @@ import java.util.Map;
 public class Identifier {
 
     private String id;
-    private Double[] exp;
-    private ArrayList<MapsTo> mapsTo;
+    private List<Float> exp;
+    private List<MapsTo> mapsTo;
     private Map<String, String> resourceMapsToIds = new HashMap<String, String>();
 
     public Identifier() {
@@ -28,19 +28,19 @@ public class Identifier {
         this.id = id;
     }
 
-    public Double[] getExp() {
+    public List<Float> getExp() {
         return exp;
     }
 
-    public void setExp(Double[] exp) {
+    public void setExp(List<Float> exp) {
         this.exp = exp;
     }
 
-    public ArrayList<MapsTo> getMapsTo() {
+    public List<MapsTo> getMapsTo() {
         return mapsTo;
     }
 
-    public void setMapsTo(ArrayList<MapsTo> mapsTo) {
+    public void setMapsTo(List<MapsTo> mapsTo) {
         this.mapsTo = mapsTo;
     }
 

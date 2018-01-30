@@ -1,6 +1,5 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.kernel.color.Color;
 import com.itextpdf.kernel.color.DeviceRgb;
@@ -11,34 +10,30 @@ import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.Property;
-import org.apache.commons.lang3.text.StrBuilder;
 import org.reactome.server.graph.domain.model.InstanceEdit;
 import org.reactome.server.graph.domain.model.Person;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
-import org.reactome.server.tools.analysis.exporter.playground.domain.model.*;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NoSuchPageSizeException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
+import org.reactome.server.tools.analysis.exporter.playground.model.*;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class PdfUtils {
 
-    private static final ObjectMapper MAPPER = new ObjectMapper();
     private static final String LINKICON = "src/main/resources/images/link.png";
 
     public static Image createImage(BufferedImage bufferedImage) throws Exception {
@@ -49,19 +44,19 @@ public class PdfUtils {
         try {
             return new Image(ImageDataFactory.create(fileName));
         } catch (MalformedURLException e) {
-            throw new FailToAddLogoException("Failed to add logo in pdf file", e);
+            throw new FailToAddLogoException("Failed to add image in pdf file", e);
         }
     }
 
-    public static Image createGoToLinkIcon(float width, String destination) throws FailToAddLogoException, NullLinkIconDestinationException {
+    public static Image createGoToLinkIcon(Image icon,float width, String destination) throws NullLinkIconDestinationException {
         if (destination == null)
             throw new NullLinkIconDestinationException("Link icon's destination should not be null!");
-        return ImageAutoScale(createImage(LINKICON), width).setAction(PdfAction.createGoTo(destination));
+        return ImageAutoScale(icon, width).setAction(PdfAction.createGoTo(destination));
     }
 
-    public static Image createUrlLinkIcon(float width, String url) throws FailToAddLogoException, NullLinkIconDestinationException {
+    public static Image createUrlLinkIcon(Image icon,float width, String url) throws NullLinkIconDestinationException {
         if (url == null) throw new NullLinkIconDestinationException("Link icon's url should not be null!");
-        return ImageAutoScale(createImage(LINKICON), width).setAction(PdfAction.createURI(url));
+        return ImageAutoScale(icon, width).setAction(PdfAction.createURI(url));
     }
 
     /**
@@ -94,64 +89,60 @@ public class PdfUtils {
      * @param pathways all pathways need to show.
      * @return
      */
-    public static StringBuilder stIdConcat(Pathway[] pathways) {
-        StringBuilder stringBuilder = new StringBuilder(15 * pathways.length);
-        for (Pathway pathway : pathways) {
-            stringBuilder.append(pathway.getStId()).append(',');
-        }
+    public static StringBuilder stIdConcat(List<Pathway> pathways) {
+        StringBuilder stringBuilder = new StringBuilder(15 * pathways.size());
+        pathways.forEach(pathway -> stringBuilder.append(pathway.getStId()).append(','));
         return stringBuilder;
     }
 
     /**
      * merge the identifiers from all different pathways into a unique array.
      *
-     * @param identifiersWasFounds
+     * @param identifierFounds
      * @return
      */
-    // TODO: 09/01/18 this method need to optimize
-    public static Map<String, Identifier> identifiersFilter(IdentifiersWasFound[] identifiersWasFounds) {
+    public static Map<String, Identifier> identifiersFilter(List<IdentifierFound> identifierFounds) {
         /**
          * in general there just about 1/4 of identifiers was unique(since there have a lot of redundancies)
          */
-        Map<String, Identifier> filteredIdentifiers = new HashMap<>((int) (identifiersWasFounds.length * 0.25));
-        for (IdentifiersWasFound identifiersWasFound : identifiersWasFounds) {
-            for (Identifier identifier : identifiersWasFound.getEntities()) {
-                if (!filteredIdentifiers.containsKey(identifier.getId())) {
-                    filteredIdentifiers.put(identifier.getId(), identifier);
-                } else {
-                    filteredIdentifiers.get(identifier.getId()).getMapsTo().addAll(identifier.getMapsTo());
-                }
-            }
-        }
+        Map<String, Identifier> filteredIdentifiers = new HashMap<>((int) (identifierFounds.size() * 0.25));
+        identifierFounds.forEach(identifierFound ->
+                identifierFound.getEntities().forEach(identifier ->
+                        {
+                            if (!filteredIdentifiers.containsKey(identifier.getId())) {
+                                filteredIdentifiers.put(identifier.getId(), identifier);
+                            } else {
+                                filteredIdentifiers.get(identifier.getId()).getMapsTo().addAll(identifier.getMapsTo());
+                            }
+                        }
+                ));
 
-        for (Identifier identifier : filteredIdentifiers.values()) {
-            for (MapsTo mapsTo : identifier.getMapsTo()) {
-                if (!identifier.getResourceMapsToIds().containsKey(mapsTo.getResource())) {
-                    identifier.getResourceMapsToIds().put(mapsTo.getResource(), mapsTo.getIds().toString());
-                } else {
-                    identifier.getResourceMapsToIds().get(mapsTo.getResource()).concat(',' + mapsTo.getIds().toString());
-                }
+        filteredIdentifiers.forEach((k, identifier) -> identifier.getMapsTo().forEach(mapsTo -> {
+            if (!identifier.getResourceMapsToIds().containsKey(mapsTo.getResource())) {
+                identifier.getResourceMapsToIds().put(mapsTo.getResource(), mapsTo.getIds().toString());
+            } else {
+                identifier.getResourceMapsToIds().get(mapsTo.getResource()).concat(',' + mapsTo.getIds().toString());
             }
-        }
+        }));
+
         return filteredIdentifiers;
     }
 
-    // TODO: 06/12/17 this method may be deleted once the correct dataset structure was confirm
     public static DataSet getDataSet(ReportArgs reportArgs, int pathwaysToShow) throws Exception {
         DataSet dataSet = new DataSet(reportArgs);
-        dataSet.setVersion(GraphCoreHelper.getDBVersion());
-        ResultAssociatedWithToken resultAssociatedWithToken = HttpClientHelper.getForObject(URL.RESULTASSCIATEDWITHTOKEN, ResultAssociatedWithToken.class, reportArgs.getToken());
-        dataSet.setIdentifiersWasNotFounds(HttpClientHelper.getForObject(URL.IDENTIFIERSWASNOTFOUND, Identifier[].class, reportArgs.getToken()));
+        dataSet.setIcon(createImage(LINKICON));
+        dataSet.setDBVersion(GraphCoreHelper.getDBVersion());
+        AnalysisResult analysisResult = HttpClientHelper.getResultAssociatedWithToken(URL.RESULTASSCIATEDWITHTOKEN, reportArgs.getToken());
+        dataSet.setIdentifiersWasNotFounds(HttpClientHelper.getIdentifiersWasNotFound(URL.IDENTIFIERSWASNOTFOUND, reportArgs.getToken()));
 
-        StringBuilder stIds = PdfUtils.stIdConcat(resultAssociatedWithToken.getPathways());
-        dataSet.setIdentifiersWasFounds(HttpClientHelper.postForObject(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), IdentifiersWasFound[].class, reportArgs.getToken()));
-        dataSet.setIdentifiersWasFiltered(PdfUtils.identifiersFilter(dataSet.getIdentifiersWasFounds()));
+        StringBuilder stIds = PdfUtils.stIdConcat(analysisResult.getPathways());
+        dataSet.setIdentifierFounds(HttpClientHelper.getIdentifierWasFound(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), reportArgs.getToken()));
+        dataSet.setIdentifiersWasFiltered(PdfUtils.identifiersFilter(dataSet.getIdentifierFounds()));
 
         //reduce the size of pathway array to save memory.
-        resultAssociatedWithToken.setPathways(Arrays.copyOf(resultAssociatedWithToken.getPathways(), pathwaysToShow));
-        dataSet.setResultAssociatedWithToken(resultAssociatedWithToken);
+        analysisResult.setPathways(analysisResult.getPathways().stream().limit(pathwaysToShow).collect(Collectors.toList()));
+        dataSet.setAnalysisResult(analysisResult);
         dataSet.setPathwaysToShow(pathwaysToShow);
-
         return dataSet;
     }
 
@@ -159,39 +150,34 @@ public class PdfUtils {
         return PdfFontFactory.createFont(fontName);
     }
 
-    public static Color createColor(String color) {
-        return new DeviceRgb(Integer.valueOf(color.substring(1, 3), 16)
-                , Integer.valueOf(color.substring(3, 5), 16)
-                , Integer.valueOf(color.substring(5, 7), 16));
+    public static Color createColor(String color, int radix) {
+        return new DeviceRgb(Integer.valueOf(color.substring(1, 3), radix)
+                , Integer.valueOf(color.substring(3, 5), radix)
+                , Integer.valueOf(color.substring(5, 7), radix));
     }
 
-    public static <T> T readValue(File src, Class<T> type) throws IOException {
-        return MAPPER.readValue(src, type);
-    }
-
-    public static <T> T readValue(InputStream src, Class<T> type) throws IOException {
-        return MAPPER.readValue(src, type);
-    }
 
     public static String getInstanceEditName(InstanceEdit instanceEdit) {
         List<Person> authors = instanceEdit.getAuthor();
-        StringBuilder stringBuilder = new StringBuilder();
-        authors.forEach(person -> stringBuilder.append(person.getSurname()).append(' ')
+        StringBuilder name = new StringBuilder();
+        authors.forEach(person -> name.append(person.getSurname())
+                .append(' ')
                 .append(person.getFirstname()).append(',')
-                .append(instanceEdit.getDateTime().substring(1, 10)));
-        return stringBuilder.toString();
+                .append(instanceEdit.getDateTime().substring(0, 10))
+                .append("\r\n"));
+        return name.toString();
     }
 
     public static String getAuthorDisplayName(List<Person> authors) {
-        StringBuilder stringBuilder = new StringBuilder();
-        authors.forEach(person -> stringBuilder.append(person.getDisplayName().replace(", ", " ")).append(','));
-        return stringBuilder.toString();
+        StringBuilder name = new StringBuilder();
+        authors.forEach(person -> name.append(person.getDisplayName().replace(", ", " ")).append(','));
+        return name.toString();
     }
 
     public static String getInstanceEditNames(List<InstanceEdit> curators) {
-        StrBuilder strBuilder = new StrBuilder();
-        curators.forEach(instanceEdit -> strBuilder.append(PdfUtils.getInstanceEditName(instanceEdit)).append("\n"));
-        return strBuilder.toString();
+        StringBuilder names = new StringBuilder();
+        curators.forEach(instanceEdit -> names.append(PdfUtils.getInstanceEditName(instanceEdit)));
+        return names.toString();
     }
 
     public static PageSize createPageSize(String type) throws NoSuchPageSizeException {

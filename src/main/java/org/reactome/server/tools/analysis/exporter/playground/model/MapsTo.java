@@ -1,8 +1,8 @@
-package org.reactome.server.tools.analysis.exporter.playground.domain.model;
+package org.reactome.server.tools.analysis.exporter.playground.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Chuan Deng dengchuanbio@gmail.com
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MapsTo {
     private String resource;
-    private ArrayList<String> ids;
+    private List<String> ids;
 
     public MapsTo() {
 
@@ -24,11 +24,19 @@ public class MapsTo {
         this.resource = resource;
     }
 
-    public ArrayList<String> getIds() {
+    public List<String> getIds() {
         return ids;
     }
 
-    public void setIds(ArrayList<String> ids) {
+    public void setIds(List<String> ids) {
         this.ids = ids;
+    }
+
+    @Override
+    public String toString() {
+        return "MapsTo{" +
+                "resource='" + resource + '\'' +
+                ", ids=" + ids +
+                '}';
     }
 }

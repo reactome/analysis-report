@@ -1,12 +1,14 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
 
 import com.itextpdf.layout.element.Table;
-import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.domain.model.Identifier;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.TableTypeNotFoundException;
+import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.model.Identifier;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.*;
+
+import java.util.List;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -35,7 +37,7 @@ public class TableFactory {
         }
     }
 
-    public Table getTable(Identifier[] identifiers) {
+    public Table getTable(List<Identifier> identifiers) {
         return new IdentifiersWasFoundInPathwayTable(identifiers);
     }
 }

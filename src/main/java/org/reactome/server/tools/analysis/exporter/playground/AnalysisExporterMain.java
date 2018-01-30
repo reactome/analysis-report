@@ -8,8 +8,6 @@ import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.R
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.time.Instant;
 
 /**
@@ -62,7 +60,7 @@ public class AnalysisExporterMain {
         ReportArgs reportArgs = new ReportArgs(config.getString("token"), config.getString("diagramPath"), config.getString("ehdlPath"), config.getString("fireworksPath"));
 
         long start = Instant.now().toEpochMilli();
-        AnalysisExporter.export(reportArgs, new FileOutputStream(new File(config.getString("output"))));
+        AnalysisExporter.export(reportArgs, config.getString("output"));
         long end = Instant.now().toEpochMilli();
 
         logger.info("create pdf in {}ms", end - start);

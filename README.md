@@ -6,6 +6,7 @@ Analysis Exporter
 * Pre-requirements  
     * Maven 3.+  
     * Java 8  
+    * [Reactome Graph Database](https://reactome.org/dev/graph-database)
 * Install
 ```git
 git clone https://github.com/xxx

@@ -4,6 +4,7 @@ import org.reactome.server.tools.analysis.exporter.playground.exception.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.io.FileOutputStream;
 
 /**
@@ -26,13 +27,13 @@ public class AnalysisExporter {
      * AnalysisExporter.export(reportArgs, outputStream);
      * <code/>
      *
-     * @param reportArgs report args contains arguments like token,the diagram json path etc.
-     * @param file destination you want to save the produced PDF report document.
+     * @param reportArgs  report args contains arguments like token,the diagram json path etc.
+     * @param destination destination you want to save the produced PDF report document.
      * @throws Exception
      */
-    public static void export(ReportArgs reportArgs, FileOutputStream file) throws Exception {
+    public static void export(ReportArgs reportArgs, FileOutputStream destination) throws Exception {
         try {
-            ReportRenderer.render(reportArgs, file);
+            ReportRenderer.render(reportArgs, destination);
         } catch (FailToAddLogoException e) {
             LOGGER.error(e.getMessage());
             throw e;
@@ -55,8 +56,12 @@ public class AnalysisExporter {
             LOGGER.error(e.getMessage());
             throw e;
         } catch (Exception e) {
-            LOGGER.error("Failed to export pdf file for token : {}", reportArgs.getToken());
-            throw new FailToExportAnalysisReportException(String.format("Failed to export pdf file for token : %s", reportArgs.getToken()), e);
+            LOGGER.error("Failed to export pdf destination for token : {}", reportArgs.getToken());
+            throw new FailToExportAnalysisReportException(String.format("Failed to export pdf destination for token : %s", reportArgs.getToken()), e);
         }
+    }
+
+    public static void export(ReportArgs reportArgs, String destination) throws Exception {
+        export(reportArgs, new FileOutputStream(new File(destination)));
     }
 }

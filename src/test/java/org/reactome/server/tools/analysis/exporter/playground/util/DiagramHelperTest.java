@@ -12,11 +12,16 @@ import java.io.File;
  */
 public class DiagramHelperTest {
 
+    static final String token = "MjAxODAxMDEwNzUwMjdfMTc%253D";
+    static final String diagramPath = "/home/byron/static/demo";
+    static final String ehldPath = "/home/byron/static";
+    static final String fireworksPath = "/home/byron/json";
+
     @Test
     public void test() throws Exception {
-        String stId = "R-HSA-169911";
-        BufferedImage diagram =  DiagramHelper.getDiagram(stId, new ReportArgs("MjAxNzEyMTgwNjM0MDJfMjI%253D", "/home/byron/static/demo", "/home/byron/static", "/home/byron/json"));
-        File file = new File("src/test/resources/diagrams/" + stId + ".jpg");
-        ImageIO.write(diagram, "jpg", file);
+        String stId = "R-HSA-163685";
+        BufferedImage diagram = DiagramHelper.getDiagram(stId, new ReportArgs(token, diagramPath, ehldPath, fireworksPath));
+        File file = new File("src/test/resources/diagrams/" + stId + ".png");
+        ImageIO.write(diagram, "png", file);
     }
 }

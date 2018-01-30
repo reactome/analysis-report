@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.domain.model;
+package org.reactome.server.tools.analysis.exporter.playground.model;
 
 import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.graph.domain.model.Pathway;
@@ -60,5 +60,19 @@ public class PathwayDetail {
 
     public List<Publication> getPublications() {
         return publications;
+    }
+
+    @Override
+    public String toString() {
+        return "PathwayDetail{" +
+                "summations=" + summations +
+                ", compartments=" + compartments +
+                ", diseases=" + diseases +
+                ", events=" + events +
+                ", edited=" + edited +
+                ", modified=" + modified +
+                ", authored=" + authored +
+                ", publications=" + publications +
+                '}';
     }
 }

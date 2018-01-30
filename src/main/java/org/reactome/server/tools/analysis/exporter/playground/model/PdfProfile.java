@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.domain.profile;
+package org.reactome.server.tools.analysis.exporter.playground.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.itextpdf.kernel.color.Color;
@@ -95,7 +95,7 @@ public class PdfProfile {
     }
 
     public Color getTitleColor() {
-        return PdfUtils.createColor(titleColor);
+        return PdfUtils.createColor(titleColor, 16);
     }
 
     public void setTitleColor(String titleColor) {
@@ -103,7 +103,7 @@ public class PdfProfile {
     }
 
     public Color getParagraphColor() {
-        return PdfUtils.createColor(paragraphColor);
+        return PdfUtils.createColor(paragraphColor, 16);
     }
 
     public void setParagraphColor(String paragraphColor) {
@@ -111,7 +111,7 @@ public class PdfProfile {
     }
 
     public Color getTableColor() {
-        return PdfUtils.createColor(tableColor);
+        return PdfUtils.createColor(tableColor, 16);
     }
 
     public void setTableColor(String tableColor) {

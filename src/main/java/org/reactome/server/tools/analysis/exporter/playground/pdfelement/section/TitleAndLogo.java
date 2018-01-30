@@ -1,6 +1,5 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.section;
 
-import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 
 /**
@@ -10,7 +9,7 @@ public class TitleAndLogo implements Section {
     private static final String LOGO = "src/main/resources/images/logo.png";
     private static final String TITLE = "Report for Analysis tools Review";
 
-    public void render(AnalysisReport report, DataSet dataSet) throws Exception {
+    public void render(AnalysisReport report) throws Exception {
         report.addLogo(LOGO)
                 .addTopTitle(TITLE);
     }

@@ -6,8 +6,8 @@ import com.itextpdf.layout.property.Property;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
-import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.domain.model.Identifier;
+import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.model.Identifier;
 
 import java.util.Map.Entry;
 import java.util.stream.Stream;

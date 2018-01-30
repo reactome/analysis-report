@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.domain.profile;
+package org.reactome.server.tools.analysis.exporter.playground.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

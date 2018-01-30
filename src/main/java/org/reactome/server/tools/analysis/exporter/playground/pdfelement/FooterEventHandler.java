@@ -11,7 +11,6 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
 
 /**
  * @author Chuan Deng dengchuanbio@gmail.com
@@ -22,10 +21,10 @@ public class FooterEventHandler implements IEventHandler {
     private float margin;
     private FileOutputStream file;
 
-    public FooterEventHandler(PdfFont font, float margin, OutputStream file) {
+    public FooterEventHandler(PdfFont font, float margin, FileOutputStream file) {
         this.font = font;
         this.margin = margin;
-        this.file = (FileOutputStream) file;
+        this.file = file;
     }
 
     @Override
@@ -42,8 +41,13 @@ public class FooterEventHandler implements IEventHandler {
                 .showText(String.format("- %s -", pdfDocument.getPageNumber(page)))
                 .endText()
                 .release();
+        /**
+         * force to flush data into disk after every page been completed
+         */
         try {
-            pdfDocument.getWriter().flush();
+//            pdfDocument.getWriter().flush();
+//            pdfDocument.getWriter().getOutputStream().flush();
+            file.flush();
             file.getFD().sync();
         } catch (IOException e) {
             e.printStackTrace();

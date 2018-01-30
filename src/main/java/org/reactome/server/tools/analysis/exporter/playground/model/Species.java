@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.domain.model;
+package org.reactome.server.tools.analysis.exporter.playground.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -18,5 +18,12 @@ public class Species {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Species{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

@@ -6,8 +6,8 @@ import com.itextpdf.layout.property.Property;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
-import org.reactome.server.tools.analysis.exporter.playground.domain.model.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.domain.model.Identifier;
+import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
+import org.reactome.server.tools.analysis.exporter.playground.model.Identifier;
 
 import java.util.Map.Entry;
 
@@ -18,7 +18,7 @@ public class IdentifiersWasFoundTable extends Table {
     private static final int LEFT_MARGIN = 40;
 
     public IdentifiersWasFoundTable(DataSet dataSet) {
-        super(new float[dataSet.getIdentifiersWasFounds()[0].getExpNames().length + 3]);
+        super(new float[dataSet.getIdentifierFounds().get(0).getExpNames().size() + 3]);
 //        this.setWidthPercent(100);
 
         this.setMarginLeft(LEFT_MARGIN)
@@ -27,18 +27,18 @@ public class IdentifiersWasFoundTable extends Table {
                 .addHeaderCell("Identifiers")
                 .addHeaderCell("mapsTo")
                 .addHeaderCell("Resource");
-        for (String header : dataSet.getResultAssociatedWithToken().getExpression().getColumnNames()) {
+        for (String header : dataSet.getAnalysisResult().getExpression().getColumnNames()) {
             this.addHeaderCell(header);
         }
 
         Cell cell;
-        for (Entry<String, Identifier> entry : dataSet.getIdentifiersWasFiltered().entrySet()) {
+        for (Entry<String, Identifier> entry :dataSet.getIdentifiersWasFiltered().entrySet()) {
             cell = new Cell().add(entry.getKey()).setVerticalAlignment(VerticalAlignment.MIDDLE);
             cell.setProperty(Property.DESTINATION, entry.getKey());
             this.addCell(cell);
             this.addCell(new Cell().add(entry.getValue().getResourceMapsToIds().get(entry.getValue().getMapsTo().get(0).getResource()).replaceAll("[\\[|\\]]", "")).setVerticalAlignment(VerticalAlignment.MIDDLE));
             this.addCell(new Cell().add(entry.getValue().getMapsTo().get(0).getResource()).setVerticalAlignment(VerticalAlignment.MIDDLE));
-            for (Double exp : entry.getValue().getExp()) {
+            for (Float exp : entry.getValue().getExp()) {
                 this.addCell(new Cell().add(exp + "").setVerticalAlignment(VerticalAlignment.MIDDLE));
             }
         }

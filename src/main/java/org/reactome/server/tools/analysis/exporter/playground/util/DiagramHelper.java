@@ -15,7 +15,7 @@ import java.awt.image.BufferedImage;
 public class DiagramHelper {
 
     // This path must contain "{stId}.json" and "{stId}.graph.json" files
-    private static final int QUALITY = 5;
+    private static final int QUALITY = 3;
 
     static {
         AnalysisClient.setServer(URL.REACTOME);

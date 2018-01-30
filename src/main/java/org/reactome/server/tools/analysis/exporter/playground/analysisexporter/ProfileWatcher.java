@@ -42,11 +42,7 @@ class ProfileWatcher implements Runnable {
                     watchKey.pollEvents().stream().filter(event -> ((Path) event.context()).endsWith(profileName)).forEach(event ->
                     {
                         LOGGER.info("Reload {}", profilePath + profileName);
-                        try {
-                            ReportRenderer.loadPdfProfile(profilePath + profileName);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
+                        ReportRenderer.loadPdfProfile(profilePath + profileName);
                     });
                 }
                 watchKey.reset();
