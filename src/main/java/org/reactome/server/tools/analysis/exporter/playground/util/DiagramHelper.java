@@ -8,6 +8,7 @@ import org.reactome.server.tools.diagram.exporter.raster.api.RasterArgs;
 import org.reactome.server.tools.fireworks.exporter.common.analysis.AnalysisClient;
 
 import java.awt.image.BufferedImage;
+import java.time.Instant;
 
 /**
  * @author Chuan Deng dengchuanbio@gmail.com
@@ -15,7 +16,9 @@ import java.awt.image.BufferedImage;
 public class DiagramHelper {
 
     // This path must contain "{stId}.json" and "{stId}.graph.json" files
-    private static final int QUALITY = 3;
+    private static final int QUALITY = 5;
+    private static long total;
+    private static int count;
 
     static {
         AnalysisClient.setServer(URL.REACTOME);
@@ -29,7 +32,9 @@ public class DiagramHelper {
      * @return {@see BufferedImage}.
      * @throws FailToGetDiagramException
      */
+//    @Monitor(name = "getDiagram")
     public static BufferedImage getDiagram(String stId, ReportArgs reportArgs) throws FailToGetDiagramException {
+        long start = Instant.now().toEpochMilli();
         RasterArgs args = new RasterArgs(stId, "png");
         args.setQuality(QUALITY);
         // TODO: 22/01/18 add analysis info on diagram
@@ -37,9 +42,25 @@ public class DiagramHelper {
 //        args.setFlags(Arrays.asList("PTEN"));
 //        args.setProfiles(new ColorProfiles("standard", "modern", "modern"));
         try {
-            return RasterExporter.export(args, reportArgs.getDiagramPath(), reportArgs.getEhldPath());
+            BufferedImage diagram = RasterExporter.export(args, reportArgs.getDiagramPath(), reportArgs.getEhldPath());
+            total += (Instant.now().toEpochMilli() - start);
+            count++;
+            return diagram;
         } catch (Exception pascual) {
             throw new FailToGetDiagramException("Failed to get diagram stId:" + stId, pascual);
         }
+    }
+
+    public static long getTotal() {
+        return total;
+    }
+
+    public static int getCount() {
+        return count;
+    }
+
+    public static void reSet() {
+        DiagramHelper.total = 0;
+        DiagramHelper.count = 0;
     }
 }

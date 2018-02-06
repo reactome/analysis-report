@@ -42,7 +42,8 @@ public class FireworksHelper {
 //        args.setFlags(Arrays.asList("CTP"));
 
         try {
-            return new FireworksExporter(args, reportArgs.getFireworksPath()).render();
+            BufferedImage fireworks = new FireworksExporter(args, reportArgs.getFireworksPath()).render();
+            return fireworks;
         } catch (Exception pascual) {
             throw new FailToGetFireworksException(String.format("Failed to get fireworks for token : ", reportArgs.getToken()), pascual);
         }

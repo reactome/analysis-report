@@ -19,8 +19,9 @@ public class DiagramHelperTest {
 
     @Test
     public void test() throws Exception {
-        String stId = "R-HSA-163685";
+        String stId = "R-HSA-15869";
         BufferedImage diagram = DiagramHelper.getDiagram(stId, new ReportArgs(token, diagramPath, ehldPath, fireworksPath));
+
         File file = new File("src/test/resources/diagrams/" + stId + ".png");
         ImageIO.write(diagram, "png", file);
     }

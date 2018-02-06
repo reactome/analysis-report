@@ -10,13 +10,12 @@ import java.util.Map;
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
-// TODO: 06/12/17 this class need to refactor to fit the correct data from reactome server once another part was done
 public class DataSet {
     private Integer DBVersion;
     // TODO: 11/01/18 need to get from server
     private Integer totalPathways;
     private Integer pathwaysToShow;
-    private Image icon;
+    private Image linkIcon;
     private ReportArgs reportArgs;
     private FileOutputStream file;
     private AnalysisResult analysisResult;
@@ -64,12 +63,12 @@ public class DataSet {
         this.pathwaysToShow = pathwaysToShow <= analysisResult.getPathwaysFound() ? pathwaysToShow : analysisResult.getPathwaysFound();
     }
 
-    public Image getIcon() {
-        return icon;
+    public Image getLinkIcon() {
+        return linkIcon;
     }
 
-    public void setIcon(Image icon) {
-        this.icon = icon;
+    public void setLinkIcon(Image linkIcon) {
+        this.linkIcon = linkIcon;
     }
 
     public ReportArgs getReportArgs() {

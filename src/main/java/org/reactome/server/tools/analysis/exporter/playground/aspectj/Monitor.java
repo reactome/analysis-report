@@ -8,7 +8,8 @@ import java.lang.annotation.Target;
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
-@Retention(RetentionPolicy.CLASS)
+@Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface Monitor {
+    String name();
 }

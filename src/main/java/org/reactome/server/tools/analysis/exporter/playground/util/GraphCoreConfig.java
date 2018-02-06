@@ -26,8 +26,14 @@ public class GraphCoreConfig extends Neo4jConfig {
     @Bean
     public Configuration getConfiguration() {
         Configuration config = new Configuration();
+//        System.out.println(System.getProperty("neo4j.host"));
+//        System.out.println(System.getProperty("neo4j.port"));
+//        System.out.println(System.getProperty("neo4j.user"));
+//        System.out.println(System.getProperty("neo4j.password"));
         config.driverConfiguration()
-                .setDriverClassName("org.neo4j.ogm.drivers.http.driver.HttpDriver")
+//                .setDriverClassName(System.getProperty("driver"))
+//                .setURI(System.getProperty("URI"))
+                .setDriverClassName("org.neo4j.ogm.drivers.http.driver.HttpDriver")//in the context should have the neo4j properties.
                 .setURI("http://".concat(System.getProperty("neo4j.host")).concat(":").concat(System.getProperty("neo4j.port")))
                 .setCredentials(System.getProperty("neo4j.user"), System.getProperty("neo4j.password"));
         return config;

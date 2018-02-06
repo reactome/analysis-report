@@ -1,6 +1,5 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.section;
 
-import org.reactome.server.tools.analysis.exporter.playground.aspectj.Monitor;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 
 /**
@@ -13,9 +12,7 @@ public interface Section {
      * This method is to render the pdf document by give a exact {@see AnalysisReport} and {@see DataSet}.
      *
      * @param report  {@see AnalysisReport}.
-     * @param report.getDataSet() data set contains all the information needed to create the analysis report.
      * @throws Exception when failed to manipulate with analysis report.
      */
-    @Monitor
     void render(AnalysisReport report) throws Exception;
 }

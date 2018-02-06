@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfelement.table;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com

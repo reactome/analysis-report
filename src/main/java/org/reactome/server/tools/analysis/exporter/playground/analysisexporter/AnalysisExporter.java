@@ -29,31 +29,18 @@ public class AnalysisExporter {
      *
      * @param reportArgs  report args contains arguments like token,the diagram json path etc.
      * @param destination destination you want to save the produced PDF report document.
-     * @throws Exception
+     * @throws Exception  throw
      */
     public static void export(ReportArgs reportArgs, FileOutputStream destination) throws Exception {
         try {
             ReportRenderer.render(reportArgs, destination);
-        } catch (FailToAddLogoException e) {
+        } catch (FailToAddLogoException | TableTypeNotFoundException
+                | FailToGetDiagramException | FailToCreateFontException
+                | FailToGetFireworksException | FailToRenderReportException | FailToRequestDataException e) {
             LOGGER.error(e.getMessage());
             throw e;
-        } catch (TableTypeNotFoundException e) {
-            LOGGER.error(e.getMessage());
-            throw e;
-        } catch (FailToGetDiagramException e) {
-            LOGGER.error(e.getMessage());
-            throw e;
-        } catch (FailToGetFireworksException e) {
-            LOGGER.error(e.getMessage());
-            throw e;
-        } catch (FailToCreateFontException e) {
-            LOGGER.error(e.getMessage());
-            throw e;
-        } catch (FailToRenderReportException e) {
-            LOGGER.error(e.getMessage());
-            throw e;
-        } catch (FailToRequestDataException e) {
-            LOGGER.error(e.getMessage());
+        } catch (ExceptionInInitializerError e) {
+            LOGGER.error("Failed to retrieve data from Graph-Core.");
             throw e;
         } catch (Exception e) {
             LOGGER.error("Failed to export pdf destination for token : {}", reportArgs.getToken());

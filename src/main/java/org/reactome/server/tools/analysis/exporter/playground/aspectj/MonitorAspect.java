@@ -21,19 +21,19 @@ public class MonitorAspect {
     /**
      * to set the point cut annotation class {@see Monitor}
      */
-    @Pointcut("@annotation(org.reactome.server.tools.analysis.exporter.playground.aspectj.Monitor)")
-    public void monitor() {
+    @Pointcut("@annotation(monitor)")
+    public void callAt(Monitor monitor) {
     }
 
     /**
-     * this method is to monitor the performance of method that to render the report.
+     * this method is to callAt the performance of method that to render the report.
      *
      * @param joinPoint join point get from context can perform the target method.
      * @return return result will be ignore.
      * @throws Throwable
      */
-    @Around("monitor()")
-    public Object weaveJoinPoint(ProceedingJoinPoint joinPoint) throws Throwable {
+    @Around("callAt(monitor)")
+    public Object around(ProceedingJoinPoint joinPoint, Monitor monitor) throws Throwable {
         if (currentObject == null) {
             currentObject = joinPoint.getTarget();
         }
@@ -43,7 +43,7 @@ public class MonitorAspect {
         long end = Instant.now().toEpochMilli();
 
         if (joinPoint.getTarget() != null && !currentObject.equals(joinPoint.getTarget())) {
-            LOGGER.info("finish [{}] in [{}]ms", joinPoint.getTarget().getClass().getSimpleName(), end - start);
+            LOGGER.info("Finish [{}] in [{}]ms", monitor.name(), end - start);
             currentObject = joinPoint.getTarget();
         }
         return result;

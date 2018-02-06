@@ -24,9 +24,9 @@ public class PathwayDetail {
         this.compartments = pathway.getCompartment();
         this.diseases = pathway.getDisease();
         this.events = pathway.getInferredFrom();
-        this.edited = pathway.getEdited() != null ? pathway.getEdited() : null;
-        this.modified = pathway.getModified() != null ? pathway.getModified() : null;
-        this.authored = pathway.getAuthored() != null ? pathway.getAuthored() : null;
+        this.edited = pathway.getEdited();
+        this.modified = pathway.getModified();
+        this.authored = pathway.getAuthored();
         this.publications = pathway.getLiteratureReference();
     }
 

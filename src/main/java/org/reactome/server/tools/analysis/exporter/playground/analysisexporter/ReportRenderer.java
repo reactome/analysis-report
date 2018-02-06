@@ -1,13 +1,17 @@
 package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.itextpdf.kernel.events.PdfDocumentEvent;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
+import com.itextpdf.kernel.pdf.WriterProperties;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRenderReportException;
 import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.model.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.FooterEventHandler;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.section.*;
+import org.reactome.server.tools.analysis.exporter.playground.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,9 +33,6 @@ class ReportRenderer {
     private static final Logger LOGGER = LoggerFactory.getLogger(ReportRenderer.class);
     private static PdfProfile profile = new PdfProfile();
 
-    /**
-     * to load the PDF profile configuration file before create the document.
-     */
     static {
         try {
             loadPdfProfile(PROFILE_PATH + PROFILE_NAME);
@@ -52,16 +53,16 @@ class ReportRenderer {
     protected static void render(ReportArgs reportArgs, FileOutputStream destination) throws Exception {
         List<Section> sections = new ArrayList<>(6);
         DataSet dataSet = PdfUtils.getDataSet(reportArgs, profile.getNumberOfPathwaysToShow());
-        // TODO: 19/01/18 use FileOutputStream
+        destination.getChannel().force(true);
         dataSet.setFile(destination);
-        // TODO: 19/01/18 switch off smart model
-//        PdfWriter writer = new PdfWriter(destination, new WriterProperties().setFullCompressionMode(true)).setSmartMode(false);
-        PdfWriter writer = new PdfWriter(destination).setSmartMode(false);
+//        destination.getChannel().force(true);
+//        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        PdfWriter writer = new PdfWriter(destination, new WriterProperties().setFullCompressionMode(true)).setSmartMode(true);
         PdfDocument document = new PdfDocument(writer);
         document.setFlushUnusedObjects(true);
         AnalysisReport report = new AnalysisReport(document, profile, dataSet);
-
-        sections.add(new Footer());
+        FooterEventHandler event = new FooterEventHandler(report.getPdfFont(), report.getMargin(), report);
+        document.addEventHandler(PdfDocumentEvent.START_PAGE, event);
         sections.add(new TitleAndLogo());
         sections.add(new Administrative());
         sections.add(new Introduction());
@@ -78,7 +79,14 @@ class ReportRenderer {
             report.getDataSet().release();
             report.close();
             document.close();
-            writer.close();
+            LOGGER.info("spent {}ms to create {} diagrams.", DiagramHelper.getTotal(), DiagramHelper.getCount());
+            LOGGER.info("spent {}ms to scale link icon.", PdfUtils.linkIconScaleTime);
+            LOGGER.info("spent {}ms to filter identifiers from pathway detail.", PdfUtils.indentifierFilteredTime);
+            PdfUtils.indentifierFilteredTime = 0;
+            PdfUtils.linkIconScaleTime = 10;
+            DiagramHelper.reSet();
+//            byteArrayOutputStream.flush();
+//            byteArrayOutputStream.close();
         }
     }
 
@@ -86,7 +94,6 @@ class ReportRenderer {
      * load the {@see PdfProfile} config information to control PDF layout.
      *
      * @param profilePath path contains profile.json config file.
-     * @throws IOException
      */
     protected static void loadPdfProfile(String profilePath) {
         synchronized (profile) {

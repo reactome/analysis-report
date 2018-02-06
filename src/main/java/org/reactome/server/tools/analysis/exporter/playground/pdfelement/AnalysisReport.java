@@ -1,6 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
 
-import com.itextpdf.kernel.color.Color;
+import com.itextpdf.kernel.colors.Color;
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.action.PdfAction;
@@ -25,7 +25,6 @@ import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
  */
 public class AnalysisReport extends Document {
 
-    private float logoScaling = 0.3f;
     private DataSet dataSet;
     private Color titleColor;
     private Color paragraphColor;
@@ -114,37 +113,37 @@ public class AnalysisReport extends Document {
     }
 
     public AnalysisReport addNormalTitle(Paragraph title) {
-        this.add(title.setFontColor(titleColor).setMargin(0.1f));
+        this.add(title.setFontColor(titleColor).setMultipliedLeading(0.5f));
+//        this.add(title.setFontColor(titleColor));
         return this;
     }
 
-    public AnalysisReport addNormalTitle(String title, int fontSize, int indent) {
-        return this.addNormalTitle(new Paragraph(title), fontSize, indent);
+    public AnalysisReport addNormalTitle(String title, int fontSize, int marginLeft) {
+        return this.addNormalTitle(new Paragraph(title), fontSize, marginLeft);
     }
 
-    public AnalysisReport addNormalTitle(Paragraph title, int fontSize, int indent) {
-        this.add(title.setFontSize(fontSize).setFirstLineIndent(indent).setFontColor(titleColor));
+    public AnalysisReport addNormalTitle(Paragraph title, int fontSize, int marginLeft) {
+        this.addNormalTitle(title.setFontSize(fontSize).setMarginLeft(marginLeft).setFontColor(titleColor));
         return this;
     }
 
-    public AnalysisReport addNormalTitle(String title, int fontSize, int indent, String destination) {
-        return this.addNormalTitle(new Paragraph(title), fontSize, indent, destination);
+    public AnalysisReport addNormalTitle(String title, int fontSize, int marginLeft, String destination) {
+        return this.addNormalTitle(new Paragraph(title), fontSize, marginLeft, destination);
     }
 
-    public AnalysisReport addNormalTitle(Paragraph title, int fontSize, int indent, String destination) {
+    public AnalysisReport addNormalTitle(Paragraph title, int fontSize, int marginLeft, String destination) {
         title.setProperty(Property.DESTINATION, destination);
-        return this.addNormalTitle(title, fontSize, indent);
+        return this.addNormalTitle(title, fontSize, marginLeft);
     }
 
     public AnalysisReport addParagraph(Paragraph paragraph) {
-        this.add(paragraph.setFontColor(paragraphColor).setMultipliedLeading(multipliedLeading));
+        this.add(paragraph.setFontColor(paragraphColor).setMultipliedLeading(multipliedLeading).setMarginTop(2.5f).setMarginBottom(2.5f));
         return this;
     }
 
-    public AnalysisReport addParagraph(String paragraph, int fontSize, int firstLineIndent, int marginLeft) {
+    public AnalysisReport addParagraph(String paragraph, int fontSize, int marginLeft) {
         return this.addParagraph(new Paragraph(paragraph)
                 .setFontSize(fontSize)
-                .setFirstLineIndent(firstLineIndent)
                 .setMarginLeft(marginLeft));
     }
 

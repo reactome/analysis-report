@@ -18,15 +18,15 @@
         <logback.version>1.2.3</logback.version>
         <httpclient.version>4.5.4</httpclient.version>
         <jackson.version>2.9.2</jackson.version>
-        <itext.version>7.0.4</itext.version>
+        <itext.version>7.1.1</itext.version>
         <fireworks.version>1.0.0</fireworks.version>
         <diagram.version>1.2.0</diagram.version>
         <graph.core.version>1.1.5</graph.core.version>
         <aspectj.version>1.8.13</aspectj.version>
-        <!--<neo4j.user>neo4j</neo4j.user>-->
-        <!--<neo4j.password>reactome</neo4j.password>-->
-        <!--<neo4j.host>localhost</neo4j.host>-->
-        <!--<neo4j.port>7474</neo4j.port>-->
+        <neo4j.host>localhost</neo4j.host>
+        <neo4j.port>7474</neo4j.port>
+        <neo4j.user>neo4j</neo4j.user>
+        <neo4j.password>reactome</neo4j.password>
     </properties>
 
     <dependencies>
@@ -154,13 +154,20 @@
         <!--<groupId>org.aspectj</groupId>-->
         <!--<artifactId>aspectjweaver</artifactId>-->
         <!--<version>${aspectj.version}</version>-->
-
         <!--</dependency>-->
         <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.aspectj/aspectjweaver &ndash;&gt;-->
         <!--<dependency>-->
         <!--<groupId>org.aspectj</groupId>-->
         <!--<artifactId>aspectjrt</artifactId>-->
         <!--<version>${aspectj.version}</version>-->
+        <!--</dependency>-->
+
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.codehaus.mojo/properties-maven-plugin &ndash;&gt;-->
+        <!--<dependency>-->
+        <!--<groupId>org.codehaus.mojo</groupId>-->
+        <!--<artifactId>properties-maven-plugin</artifactId>-->
+        <!--<version>1.0.0</version>-->
         <!--</dependency>-->
     </dependencies>
 
@@ -199,8 +206,16 @@
                     <argLine>
                         -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
                     </argLine>
+                    <useSystemClassLoader>true</useSystemClassLoader>
+                    <forkMode>always</forkMode>
                     <skipTests>true</skipTests>
                     <test>*Test.java</test>
+                    <systemPropertyVariables>
+                        <neo4j.host>localhost</neo4j.host>
+                        <neo4j.port>7474</neo4j.port>
+                        <neo4j.user>neo4j</neo4j.user>
+                        <neo4j.password>reactome</neo4j.password>
+                    </systemPropertyVariables>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -210,17 +225,6 @@
                     </dependency>
                 </dependencies>
             </plugin>
-
-            <!--<plugin>-->
-            <!--<groupId>org.codehaus.mojo</groupId>-->
-            <!--<artifactId>aspectj-maven-plugin</artifactId>-->
-            <!--<version>1.8</version>-->
-            <!--<configuration>-->
-            <!--<complianceLevel>1.8</complianceLevel>-->
-            <!--<source>1.8</source>-->
-            <!--<target>1.8</target>-->
-            <!--</configuration>-->
-            <!--</plugin>-->
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -246,6 +250,39 @@
                         <goals>
                             <goal>single</goal>
                         </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <version>1.0-alpha-2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>set-system-properties</goal>
+                        </goals>
+                        <configuration>
+                            <properties>
+                                <property>
+                                    <name>neo4j.host</name>
+                                    <value>localhost</value>
+                                </property>
+                                <property>
+                                    <name>neo4j.port</name>
+                                    <value>7474</value>
+                                </property>
+                                <property>
+                                    <name>neo4j.user</name>
+                                    <value>neo4j</value>
+                                </property>
+                                <property>
+                                    <name>neo4j.password</name>
+                                    <value>reactome</value>
+                                </property>
+                            </properties>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>

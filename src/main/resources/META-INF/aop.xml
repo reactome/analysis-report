@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aspectj>
+    <aspects>
+        <aspect name="org.reactome.server.graph.aop.LazyFetchAspect"/>
+        <aspect name="org.reactome.server.graph.aop.LoggingAspect"/>
+        <aspect name="org.reactome.server.graph.aop.SortingAspect"/>
+        <!--<aspect name="org.reactome.server.tools.analysis.exporter.playground.aspectj.MonitorAspect"/>-->
+
+        <!--&lt;!&ndash;<weaver options="-verbose">&ndash;&gt;-->
+        <weaver>
+            <include within="org.reactome.server.tools.analysis.exporter.playground..*"/>
+            <include within="org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils"/>
+            <exclude within="org.reactome.server.tools.analysis.exporter.playground.util.GraphCoreConfig"/>
+        </weaver>
+    </aspects>
+</aspectj>
