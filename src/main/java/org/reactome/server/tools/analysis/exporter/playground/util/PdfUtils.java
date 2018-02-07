@@ -11,7 +11,6 @@ import com.itextpdf.layout.element.Image;
 import org.reactome.server.graph.domain.model.InstanceEdit;
 import org.reactome.server.graph.domain.model.Person;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
-import org.reactome.server.tools.analysis.exporter.playground.aspectj.Monitor;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NoSuchPageSizeException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
@@ -39,8 +38,6 @@ public class PdfUtils {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PdfUtils.class);
     private static final String LINKICON = "src/main/resources/images/link.png";
-    //    private static final String LINKICON = "https://image.flaticon.com/icons/svg/684/684816.svg";
-    public static Map<Float, Image> icons = new HashMap<>();
     public static long linkIconScaleTime;
     public static long indentifierFilteredTime;
 
@@ -90,7 +87,7 @@ public class PdfUtils {
 //        return image;
 //    }
     //in this way it will spent total about 11ms.
-    public static Image ImageAutoScale(Image image, float width) {
+    private static Image ImageAutoScale(Image image, float width) {
         long start = Instant.now().toEpochMilli();
         width *= 0.75;//the icon's size will be slightly smaller than the font's size
         float scaling = image.getImageWidth() >= width ? width / image.getImageWidth() : image.getImageWidth() / width;
@@ -107,7 +104,7 @@ public class PdfUtils {
      * concat all stId into a long String as the http post's parameter entities.
      *
      * @param pathways all pathways need to show.
-     * @return
+     * @return StringBuilder contains stId.
      */
     public static StringBuilder stIdConcat(List<Pathway> pathways) {
         StringBuilder stringBuilder = new StringBuilder(15 * pathways.size());
@@ -122,7 +119,7 @@ public class PdfUtils {
      * @return
      */
 //    @Monitor(name = "filter identifier")
-    public static Map<String, Identifier> identifiersFilter(List<IdentifierFound> identifierFounds) {
+    private static Map<String, Identifier> identifiersFilter(List<IdentifierFound> identifierFounds) {
         /**
          * in general there just about 1/4 of identifiers was unique(since there have a lot of redundancies)
          */
@@ -150,7 +147,6 @@ public class PdfUtils {
         return filteredIdentifiers;
     }
 
-    @Monitor(name = "getdata")
     public static DataSet getDataSet(ReportArgs reportArgs, int pathwaysToShow) throws Exception {
         DataSet dataSet = new DataSet(reportArgs);
         dataSet.setLinkIcon(createImage(LINKICON));
@@ -164,7 +160,7 @@ public class PdfUtils {
 //        StringBuilder stIds = PdfUtils.stIdConcat(analysisResult.getPathways());
 //        dataSet.setIdentifierFounds(HttpClientHelper.getIdentifierWasFound(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), reportArgs.getToken()));
 //        LOGGER.info("spent {}ms to request resources from analysis service", Instant.now().toEpochMilli() - start);
-
+//
         HttpClientHelper.fillDataSet(reportArgs, dataSet);
 //
         dataSet.setIdentifiersWasFiltered(PdfUtils.identifiersFilter(dataSet.getIdentifierFounds()));

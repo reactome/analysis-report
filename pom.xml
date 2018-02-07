@@ -148,27 +148,6 @@
             <artifactId>graph-core</artifactId>
             <version>${graph.core.version}</version>
         </dependency>
-
-        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.aspectj/aspectjweaver &ndash;&gt;-->
-        <!--<dependency>-->
-        <!--<groupId>org.aspectj</groupId>-->
-        <!--<artifactId>aspectjweaver</artifactId>-->
-        <!--<version>${aspectj.version}</version>-->
-        <!--</dependency>-->
-        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.aspectj/aspectjweaver &ndash;&gt;-->
-        <!--<dependency>-->
-        <!--<groupId>org.aspectj</groupId>-->
-        <!--<artifactId>aspectjrt</artifactId>-->
-        <!--<version>${aspectj.version}</version>-->
-        <!--</dependency>-->
-
-
-        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.codehaus.mojo/properties-maven-plugin &ndash;&gt;-->
-        <!--<dependency>-->
-        <!--<groupId>org.codehaus.mojo</groupId>-->
-        <!--<artifactId>properties-maven-plugin</artifactId>-->
-        <!--<version>1.0.0</version>-->
-        <!--</dependency>-->
     </dependencies>
 
     <repositories>

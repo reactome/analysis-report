@@ -20,12 +20,12 @@ import java.security.cert.X509Certificate;
 
 public class FireworksHelperTest {
 
-    static final String token = "MjAxODAxMDEwNzUwMjdfMTc%253D";
-    static final String diagramPath = "/home/byron/static/demo";
-    static final String ehldPath = "/home/byron/static";
-    static final String fireworksPath = "/home/byron/json";
-    static final Logger LOGGER = LoggerFactory.getLogger(GraphCoreHelperTest.class);
-    static TrustManager[] trustAllCerts;
+    private static final String token = "MjAxODAxMDEwNzUwMjdfMTc%253D";
+    private static final String diagramPath = "/home/byron/static/demo";
+    private static final String ehldPath = "/home/byron/static";
+    private static final String fireworksPath = "/home/byron/json";
+    private static final Logger LOGGER = LoggerFactory.getLogger(GraphCoreHelperTest.class);
+    private static TrustManager[] trustAllCerts;
 
     /**
      * Overrides the check and accept an untrusted certificate
@@ -57,17 +57,11 @@ public class FireworksHelperTest {
             HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
 
             // Create all-trusting host name verifier
-            HostnameVerifier allHostsValid = new HostnameVerifier() {
-                public boolean verify(String hostname, SSLSession session) {
-                    return true;
-                }
-            };
+            HostnameVerifier allHostsValid = (hostname, session) -> true;
             // Install the all-trusting host verifier
             HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
 
-        } catch (KeyManagementException e) {
-            e.printStackTrace();
-        } catch (NoSuchAlgorithmException e) {
+        } catch (KeyManagementException | NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
     }

@@ -17,7 +17,7 @@ public class DiagramHelper {
 
     // This path must contain "{stId}.json" and "{stId}.graph.json" files
     private static final int QUALITY = 5;
-    private static long total;
+    private static long total = 0;
     private static int count;
 
     static {
@@ -60,7 +60,7 @@ public class DiagramHelper {
     }
 
     public static void reSet() {
-        DiagramHelper.total = 0;
-        DiagramHelper.count = 0;
+        total = 0;
+        count = 0;
     }
 }

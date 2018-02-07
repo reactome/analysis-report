@@ -29,7 +29,6 @@ public class PdfProfile {
 
     // TODO: 22/01/18 extract another more properties to profile file
 
-
     public LogoProfile getLogoProfile() {
         return logoProfile;
     }

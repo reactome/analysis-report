@@ -37,7 +37,7 @@ public class FooterEventHandler implements IEventHandler {
         PdfCanvas canvas = new PdfCanvas(page);
         canvas.beginText()
                 .setFontAndSize(font, FontSize.H6)
-                .moveText(margin * 2 / 3, margin * 2 / 5)
+                .moveText(margin * 2 / 3, margin * 2 / 3)
                 .showText("Reactome.org")
                 .moveText(page.getPageSize().getWidth() / 2 - 35, 0)
                 .showText(String.format("- %s -", document.getPageNumber(page)))

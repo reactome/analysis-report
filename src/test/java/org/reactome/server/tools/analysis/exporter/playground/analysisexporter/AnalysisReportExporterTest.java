@@ -22,12 +22,14 @@ public class AnalysisReportExporterTest {
     private static final String fireworksPath = "/home/byron/json";
     private static final Logger LOGGER = LoggerFactory.getLogger(AnalysisReportExporterTest.class);
 
-    @Test
+//    @Test
 //    public void testTest() throws Exception {
 //        for (int i = 0; i < 5; i++) {
 //            test();
 //        }
 //    }
+
+    @Test
     public void test() throws Exception {
         int count = 1;
 //        CyclicBarrier cyclicBarrier = new CyclicBarrier(count);
@@ -35,6 +37,7 @@ public class AnalysisReportExporterTest {
         for (File file : Objects.requireNonNull(new File("src/test/resources/pdfs").listFiles())) file.delete();
         for (int i = 0; i < count; i++) {
 //            executorService.execute(new ExporterThread(token, diagramPath, ehldPath, fireworksPath, "ExporterThread#" + i));
+
             long start = Instant.now().toEpochMilli();
             ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath);
             AnalysisExporter.export(reportArgs, String.format("src/test/resources/pdfs/%s@%s.pdf", token, start));
@@ -54,13 +57,14 @@ public class AnalysisReportExporterTest {
 
 class ExporterThread implements Runnable {
     private static final Logger LOGGER = LoggerFactory.getLogger(AnalysisReportExporterTest.class);
+    private static final String dest = "src/test/resources/pdfs/%s@%s.pdf";
     private String name;
     private String token;
     private String diagramPath;
     private String ehldPath;
     private String fireworksPath;
 
-    public ExporterThread(String token, String diagramPath, String ehldPath, String fireworksPath, String name) {
+    ExporterThread(String token, String diagramPath, String ehldPath, String fireworksPath, String name) {
         this.name = name;
         this.token = token;
         this.diagramPath = diagramPath;
@@ -73,7 +77,7 @@ class ExporterThread implements Runnable {
         try {
             long start = Instant.now().toEpochMilli();
             ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath);
-            AnalysisExporter.export(reportArgs, String.format("src/test/resources/pdfs/%s@%s.pdf", token, start));
+            AnalysisExporter.export(reportArgs, String.format(dest, token, start));
             long end = Instant.now().toEpochMilli();
             LOGGER.info(name + " created pdf in :" + (end - start) + " ms");
         } catch (Exception e) {

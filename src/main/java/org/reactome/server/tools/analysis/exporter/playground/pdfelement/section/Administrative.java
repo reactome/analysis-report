@@ -1,7 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.section;
 
 import com.itextpdf.layout.element.Paragraph;
-import org.reactome.server.tools.analysis.exporter.playground.aspectj.Monitor;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constant.MarginLeft;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
@@ -17,7 +16,6 @@ public class Administrative implements Section {
 
     private static final int numOfIdentifiersToShow = 5;
 
-    @Monitor(name = "Administrative")
     public void render(AnalysisReport report) throws Exception {
         report.addNormalTitle("Administrative")
                 .addParagraph(new Paragraph().setFontSize(FontSize.H5)

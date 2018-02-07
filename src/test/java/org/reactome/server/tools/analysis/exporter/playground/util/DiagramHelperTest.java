@@ -12,10 +12,10 @@ import java.io.File;
  */
 public class DiagramHelperTest {
 
-    static final String token = "MjAxODAxMDEwNzUwMjdfMTc%253D";
-    static final String diagramPath = "/home/byron/static/demo";
-    static final String ehldPath = "/home/byron/static";
-    static final String fireworksPath = "/home/byron/json";
+    private static final String token = "MjAxODAxMDEwNzUwMjdfMTc%253D";
+    private static final String diagramPath = "/home/byron/static/demo";
+    private static final String ehldPath = "/home/byron/static";
+    private static final String fireworksPath = "/home/byron/json";
 
     @Test
     public void test() throws Exception {

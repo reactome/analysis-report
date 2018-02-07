@@ -1,7 +1,5 @@
 package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
-import org.reactome.server.tools.analysis.exporter.playground.util.HttpClientHelper;
-
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  * <p>
@@ -19,10 +17,9 @@ public class ReportArgs {
      * @param diagramPath   the diagram raw json file path to export the pathway diagram image.
      * @param ehldPath      the EHLD raw json file path to export the pathway diagram image.
      * @param fireworksPath the fireworks raw json file path to export the analysis fireworks image.
-     * @throws Exception when input token been checked to be invalid.
      */
-    public ReportArgs(String token, String diagramPath, String ehldPath, String fireworksPath) throws Exception {
-        this.token = HttpClientHelper.checkToken(token);
+    public ReportArgs(String token, String diagramPath, String ehldPath, String fireworksPath) {
+        this.token = token;
         this.diagramPath = diagramPath;
         this.ehldPath = ehldPath;
         this.fireworksPath = fireworksPath;
@@ -41,26 +38,12 @@ public class ReportArgs {
         return diagramPath;
     }
 
-    public ReportArgs setDiagramPath(String diagramPath) {
-        this.diagramPath = diagramPath;
-        return this;
-    }
-
     public String getEhldPath() {
         return ehldPath;
-    }
-
-    public ReportArgs setEhldPath(String ehldPath) {
-        this.ehldPath = ehldPath;
-        return this;
     }
 
     public String getFireworksPath() {
         return fireworksPath;
     }
 
-    public ReportArgs setFireworksPath(String fireworksPath) {
-        this.fireworksPath = fireworksPath;
-        return this;
-    }
 }

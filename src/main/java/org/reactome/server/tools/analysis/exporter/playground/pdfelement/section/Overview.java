@@ -61,7 +61,6 @@ public class Overview implements Section {
         }
     }
 
-    // TODO: 14/12/17 this method need to be optimize
     private void addPathwaysDetail(AnalysisReport report, TableRender tableRender) throws Exception {
 
 //        List<Pathway> pathways = GraphCoreHelper.getPathway(report.getDataSet().getAnalysisResult().getPathways());
@@ -79,7 +78,8 @@ public class Overview implements Section {
                                     (pathways[i].getIsInDisease() ? ",Disease name:" + pathwayDetail.getDiseases().get(0).getDisplayName() : "") +
                                     (pathways[i].getIsInferred() ? ",Inferred from:" + pathwayDetail.getEvents().iterator().next().getDisplayName() : "") +
 //                                    (pathwayDetail.getSummations() != null ? "," + pathwayDetail.getSummations().get(0).getText().replaceAll("</?[a-zA-Z]{1,2}>", "") : "").trim()
-                                    (pathwayDetail.getSummations() != null ? "," + pathwayDetail.getSummations().get(0).getText() : "").trim()
+                                    (pathwayDetail.getSummations() != null ? "," + pathwayDetail.getSummations().get(0).getText().replaceAll("(<br>)+", "\r\n") : "").trim()
+//                                    (pathwayDetail.getSummations() != null ? "," + pathwayDetail.getSummations().get(0).getText() : "").trim()
                             , FontSize.H5, MarginLeft.M4);
 
             report.addNormalTitle("List of identifiers was found at this pathway", FontSize.H4, MarginLeft.M4);
@@ -104,7 +104,7 @@ public class Overview implements Section {
                 , FontSize.H3, MarginLeft.M4, pathway.getName());
 
         // TODO: 29/11/17 add the correct diagram;
-//        report.addDiagram("R-HSA-15869", report.getDataSet().getReportArgs());
+        report.addDiagram("R-HSA-15869", report.getDataSet().getReportArgs());
 //        report.add(new Image(ImageDataFactory.create("src/test/resources/diagrams/test.png"))
 //                .setHorizontalAlignment(HorizontalAlignment.CENTER)
 //                .setAutoScale(true));

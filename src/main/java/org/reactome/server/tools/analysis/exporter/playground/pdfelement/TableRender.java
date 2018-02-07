@@ -26,6 +26,11 @@ import java.util.Map;
 public class TableRender {
     private static final float multipliedLeading = 1.0f;
     private DataSet dataSet;
+    private static final int NUM_COLUMNS = 8;
+    private static final float[] OVERVIEW_VALUES = new float[]{5 / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2f / 20f, 2f / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2 / 20f};
+    private static final String[] OVERVIEW_HEADERS = {"Pathway name", "Entity found", "Entity Total", "Entity ratio", "Entity pValue", "Entity FDR", "Reaction found", "Reaction total", "Reaction ratio", "Species name"};
+    private static final String[] IDENTIFIERS_FOUND_NO_EXP_HEADERS = {"Identifiers", "mapsTo", "Resource", "Identifiers", "mapsTo", "Resource"};
+
 
     public TableRender(DataSet dataSet) {
         this.dataSet = dataSet;
@@ -59,13 +64,10 @@ public class TableRender {
 
 
     private void overviewTable(AnalysisReport report) throws NullLinkIconDestinationException {
-        float[] COLUMNS_RELATIVE_WIDTH = new float[]{5 / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2f / 20f, 2f / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2 / 20f};
-        String[] headers = {"Pathway name", "Entity found", "Entity Total", "Entity ratio", "Entity pValue", "Entity FDR", "Reaction found", "Reaction total", "Reaction ratio", "Species name"};
-
-        Table table = new Table(UnitValue.createPercentArray(COLUMNS_RELATIVE_WIDTH), true);
+        Table table = new Table(UnitValue.createPercentArray(OVERVIEW_VALUES), true);
         report.addTable(table);
 
-        for (String header : headers) {
+        for (String header : OVERVIEW_HEADERS) {
             table.addHeaderCell(textCell(header, FontSize.H6));
         }
         int count = 0;
@@ -100,7 +102,7 @@ public class TableRender {
             widths[i] = 1f / column;
         }
         Table table = new Table(UnitValue.createPercentArray(widths), true);
-        // TODO: 06/02/18 table maybe calliope when it arrival at the end of edge
+        // TODO: 06/02/18 table maybe collapse when it arrival at the end of page
         report.addTable(table.setMarginLeft(40));
 
         table.addHeaderCell(textCell("Identifiers", FontSize.H5));
@@ -132,17 +134,21 @@ public class TableRender {
     }
 
     private void identifiersWasFoundTableNoEXP(AnalysisReport report) {
-        String[] headers = {"Identifiers", "mapsTo", "Resource", "Identifiers", "mapsTo", "Resource"};
-        Table table = new Table(new UnitValue[headers.length], true);
+        Table table = new Table(new UnitValue[IDENTIFIERS_FOUND_NO_EXP_HEADERS.length], true);
         report.addTable(table.setMarginLeft(40));
 
-        for (String header : headers) {
+        for (String header : IDENTIFIERS_FOUND_NO_EXP_HEADERS) {
             table.addHeaderCell(textCell(header, FontSize.H5));
         }
         Cell cell;
         int count = 0;
         for (Map.Entry<String, Identifier> entry : dataSet.getIdentifiersWasFiltered().entrySet()) {
+            if (count++ % 5 == 0) {
+                table.flushContent();
+                table.flush();
+            }
             cell = new Cell().add(new Paragraph(entry.getKey())
+                    .setFontSize(FontSize.H6)
                     .setMultipliedLeading(multipliedLeading))
                     .setVerticalAlignment(VerticalAlignment.MIDDLE)
                     .setTextAlignment(TextAlignment.CENTER);
@@ -150,9 +156,6 @@ public class TableRender {
             table.addCell(cell);
             table.addCell(textCell(entry.getValue().getResourceMapsToIds().get(entry.getValue().getMapsTo().get(0).getResource()).replaceAll("[\\[|\\]]", ""), FontSize.H6));
             table.addCell(textCell(entry.getValue().getMapsTo().get(0).getResource(), FontSize.H6));
-            if (count++ % 5 == 0) {
-                table.flush();
-            }
         }
         if (dataSet.getIdentifiersWasFiltered().entrySet().size() % 2 == 1) {
             table.addCell(new Cell());
@@ -186,7 +189,6 @@ public class TableRender {
 
 
     private void identifiersWasNotFoundTableNoEXP(AnalysisReport report) {
-        int NUM_COLUMNS = 8;
         Table table = new Table(new UnitValue[NUM_COLUMNS], true);
         report.addTable(table.setMarginLeft(40));
 
@@ -207,7 +209,6 @@ public class TableRender {
 
 
     private void identifiersWasFoundInPathwayTable(AnalysisReport report, List<Identifier> identifiers) {
-        int NUM_COLUMNS = 8;
         Table table = new Table(new UnitValue[NUM_COLUMNS], true);
         table.setMarginLeft(20)
                 .setFontSize(FontSize.H6)
