@@ -3,9 +3,11 @@ package org.reactome.server.tools.analysis.exporter.playground.util;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToGetDiagramException;
+import org.reactome.server.tools.diagram.exporter.common.analysis.AnalysisClient;
 import org.reactome.server.tools.diagram.exporter.raster.RasterExporter;
 import org.reactome.server.tools.diagram.exporter.raster.api.RasterArgs;
-import org.reactome.server.tools.fireworks.exporter.common.analysis.AnalysisClient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.awt.image.BufferedImage;
 import java.time.Instant;
@@ -15,7 +17,7 @@ import java.time.Instant;
  */
 public class DiagramHelper {
 
-    // This path must contain "{stId}.json" and "{stId}.graph.json" files
+    private static final Logger LOGGER = LoggerFactory.getLogger(DiagramHelper.class);
     private static final int QUALITY = 5;
     private static long total = 0;
     private static int count;
@@ -33,11 +35,11 @@ public class DiagramHelper {
      * @throws FailToGetDiagramException
      */
 //    @Monitor(name = "getDiagram")
-    public static BufferedImage getDiagram(String stId, ReportArgs reportArgs) throws FailToGetDiagramException {
+    public static BufferedImage getDiagram(String stId, ReportArgs reportArgs) {
         long start = Instant.now().toEpochMilli();
         RasterArgs args = new RasterArgs(stId, "png");
         args.setQuality(QUALITY);
-        // TODO: 22/01/18 add analysis info on diagram
+        args.setWriteTitle(false);
 //        args.setToken(reportArgs.getToken());
 //        args.setFlags(Arrays.asList("PTEN"));
 //        args.setProfiles(new ColorProfiles("standard", "modern", "modern"));
@@ -47,7 +49,9 @@ public class DiagramHelper {
             count++;
             return diagram;
         } catch (Exception pascual) {
-            throw new FailToGetDiagramException("Failed to get diagram stId:" + stId, pascual);
+//            throw new FailToGetDiagramException("Failed to get diagram stId:" + stId, pascual);
+//            LOGGER.warn("Failed to create image for stId {}.",stId);
+            return null;
         }
     }
 

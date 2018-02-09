@@ -11,7 +11,6 @@ import java.util.List;
 public class AnalysisResult {
     private Summary summary;
     private Expression expression;
-    private Integer identifiersNotFound;
     private Integer pathwaysFound;
     private List<Pathway> pathways = null;
 
@@ -34,14 +33,6 @@ public class AnalysisResult {
         this.expression = expression;
     }
 
-    public Integer getIdentifiersNotFound() {
-        return identifiersNotFound;
-    }
-
-    public void setIdentifiersNotFound(Integer identifiersNotFound) {
-        this.identifiersNotFound = identifiersNotFound;
-    }
-
     public Integer getPathwaysFound() {
         return pathwaysFound;
     }
@@ -61,9 +52,7 @@ public class AnalysisResult {
     @Override
     public String toString() {
         return "AnalysisResult{" +
-                "summary=" + summary +
                 ", expression=" + expression +
-                ", identifiersNotFound=" + identifiersNotFound +
                 ", pathwaysFound=" + pathwaysFound +
                 ", pathways=" + pathways +
                 '}';

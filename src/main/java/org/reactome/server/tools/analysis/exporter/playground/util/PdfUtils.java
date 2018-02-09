@@ -8,23 +8,21 @@ import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.geom.PageSize;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Image;
+import org.apache.commons.io.IOUtils;
 import org.reactome.server.graph.domain.model.InstanceEdit;
 import org.reactome.server.graph.domain.model.Person;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NoSuchPageSizeException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
-import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.model.Identifier;
-import org.reactome.server.tools.analysis.exporter.playground.model.IdentifierFound;
-import org.reactome.server.tools.analysis.exporter.playground.model.Pathway;
+import org.reactome.server.tools.analysis.exporter.playground.model.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.awt.image.BufferedImage;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
@@ -38,9 +36,6 @@ public class PdfUtils {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PdfUtils.class);
     private static final String LINKICON = "src/main/resources/images/link.png";
-    public static long linkIconScaleTime;
-    public static long indentifierFilteredTime;
-
 
     public static Image createImage(BufferedImage bufferedImage) throws Exception {
         return new Image(ImageDataFactory.create(bufferedImage, java.awt.Color.WHITE));
@@ -68,31 +63,14 @@ public class PdfUtils {
     /**
      * scale image's size to fit the analysis report's page size.
      *
-     * @param image
+     * @param image link icon.
      * @param width aim width you want to reach.
-     * @return
+     * @return scaled image.
      */
-//in this way it will spent about 10ms
-//    public static Image ImageAutoScale(Image image, float width) {
-//        long start = Instant.now().toEpochMilli();
-//        width *= 0.75;//the icon's size will be slightly smaller than the font's size
-//        if (icons.containsKey(width)) {
-//            return icons.get(width);
-//        } else {
-//            float scaling = image.getImageWidth() >= width ? width / image.getImageWidth() : image.getImageWidth() / width;
-//            image = image.scale(scaling, scaling);
-//            icons.put(width, image);
-//        }
-//        linkIconScaleTime += (Instant.now().toEpochMilli() - start);
-//        return image;
-//    }
-    //in this way it will spent total about 11ms.
     private static Image ImageAutoScale(Image image, float width) {
-        long start = Instant.now().toEpochMilli();
         width *= 0.75;//the icon's size will be slightly smaller than the font's size
         float scaling = image.getImageWidth() >= width ? width / image.getImageWidth() : image.getImageWidth() / width;
         image = image.scale(scaling, scaling);
-        linkIconScaleTime += (Instant.now().toEpochMilli() - start);
         return image;
     }
 
@@ -123,52 +101,35 @@ public class PdfUtils {
         /**
          * in general there just about 1/4 of identifiers was unique(since there have a lot of redundancies)
          */
-        long start = Instant.now().toEpochMilli();
         Map<String, Identifier> filteredIdentifiers = new HashMap<>((int) (identifierFounds.size() * 0.25));
-        identifierFounds.forEach(identifierFound ->
-                identifierFound.getEntities().forEach(identifier ->
-                        {
-                            if (!filteredIdentifiers.containsKey(identifier.getId())) {
-                                filteredIdentifiers.put(identifier.getId(), identifier);
-                            } else {
-                                filteredIdentifiers.get(identifier.getId()).getMapsTo().addAll(identifier.getMapsTo());
+//        long start = Instant.now().toEpochMilli();
+        for (IdentifierFound identifierFound : identifierFounds) {
+            for (Identifier identifier : identifierFound.getEntities()) {
+                if (!filteredIdentifiers.containsKey(identifier.getId())) {
+                    filteredIdentifiers.put(identifier.getId(), identifier);
+                } else {
+                    for (MapsTo mapsToOld : filteredIdentifiers.get(identifier.getId()).getMapsTo()) {
+                        for (MapsTo mapsToNew : identifier.getMapsTo()) {
+                            if (mapsToOld.getResource().equals(mapsToNew.getResource())) {
+                                mapsToOld.getIds().addAll(mapsToNew.getIds());
                             }
                         }
-                ));
-
-        filteredIdentifiers.forEach((k, identifier) -> identifier.getMapsTo().forEach(mapsTo -> {
-            if (!identifier.getResourceMapsToIds().containsKey(mapsTo.getResource())) {
-                identifier.getResourceMapsToIds().put(mapsTo.getResource(), mapsTo.getIds().toString());
-            } else {
-                identifier.getResourceMapsToIds().get(mapsTo.getResource()).concat(',' + mapsTo.getIds().toString());
+                    }
+                }
             }
-        }));
-        indentifierFilteredTime += (Instant.now().toEpochMilli() - start);
+        }
+//        System.out.println(Instant.now().toEpochMilli()-start);
         return filteredIdentifiers;
     }
 
     public static DataSet getDataSet(ReportArgs reportArgs, int pathwaysToShow) throws Exception {
         DataSet dataSet = new DataSet(reportArgs);
+        dataSet.setPathwaysToShow(pathwaysToShow);
         dataSet.setLinkIcon(createImage(LINKICON));
         dataSet.setDBVersion(GraphCoreHelper.getDBVersion());
 
-
-//        long start = Instant.now().toEpochMilli();
-//        AnalysisResult analysisResult = HttpClientHelper.getResultAssociatedWithToken(URL.RESULTASSCIATEDWITHTOKEN, reportArgs.getToken());
-//        dataSet.setIdentifiersWasNotFounds(HttpClientHelper.getIdentifiersWasNotFound(URL.IDENTIFIERSWASNOTFOUND, reportArgs.getToken()));
-//
-//        StringBuilder stIds = PdfUtils.stIdConcat(analysisResult.getPathways());
-//        dataSet.setIdentifierFounds(HttpClientHelper.getIdentifierWasFound(URL.IDENTIFIERSWASFOUND, stIds.deleteCharAt(stIds.length() - 1).toString(), reportArgs.getToken()));
-//        LOGGER.info("spent {}ms to request resources from analysis service", Instant.now().toEpochMilli() - start);
-//
         HttpClientHelper.fillDataSet(reportArgs, dataSet);
-//
-        dataSet.setIdentifiersWasFiltered(PdfUtils.identifiersFilter(dataSet.getIdentifierFounds()));
-
-        //reduce the size of pathway array to save memory.
-//        analysisResult.setPathways(analysisResult.getPathways().stream().limit(pathwaysToShow).collect(Collectors.toList()));
-//        dataSet.setAnalysisResult(analysisResult);
-        dataSet.setPathwaysToShow(pathwaysToShow);
+        dataSet.setIdentifierFiltered(PdfUtils.identifiersFilter(dataSet.getIdentifierFounds()));
         return dataSet;
     }
 
@@ -184,14 +145,17 @@ public class PdfUtils {
 
 
     public static String getInstanceEditName(InstanceEdit instanceEdit) {
-        List<Person> authors = instanceEdit.getAuthor();
         StringBuilder name = new StringBuilder();
-        authors.forEach(person -> name.append(person.getSurname())
+//        if (instanceEdit.getAuthor() != null) {
+        instanceEdit.getAuthor().forEach(person -> name.append(person.getSurname())
                 .append(' ')
                 .append(person.getFirstname()).append(',')
                 .append(instanceEdit.getDateTime().substring(0, 10))
                 .append("\r\n"));
         return name.toString();
+//        } else {
+//            return null;
+//        }
     }
 
     public static String getAuthorDisplayName(List<Person> authors) {
@@ -204,6 +168,16 @@ public class PdfUtils {
         StringBuilder names = new StringBuilder();
         curators.forEach(instanceEdit -> names.append(PdfUtils.getInstanceEditName(instanceEdit)));
         return names.toString();
+    }
+
+    public static String[] getText(String destination) {
+        String[] texts = null;
+        try {
+            texts = IOUtils.toString(new FileReader(destination)).split(IOUtils.LINE_SEPARATOR_UNIX);
+        } catch (IOException e) {
+            LOGGER.error("Failed to read text from dictionary : {}", destination);
+        }
+        return texts;
     }
 
     public static PageSize createPageSize(String type) throws NoSuchPageSizeException {

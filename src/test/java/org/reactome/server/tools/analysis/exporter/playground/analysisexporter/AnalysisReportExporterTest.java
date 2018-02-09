@@ -6,52 +6,71 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.time.Instant;
+import java.util.HashMap;
 import java.util.Objects;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class AnalysisReportExporterTest {
-    private static final String token = "MjAxNzEyMTgwNjM0MDJfMjI%253D";
-    //this token has exp data
-//    static final String token = "MjAxODAxMDEwNzUwMjdfMTc%253D";
-    private static final String diagramPath = "/home/byron/static/demo";
-    private static final String ehldPath = "/home/byron/static";
-    private static final String fireworksPath = "/home/byron/json";
+
+    private static final HashMap<String, String> tokens = new HashMap<String, String>() {
+        {
+//            put("UniProt_accession_list", "MjAxODAyMDcxNDA1MTRfMTc%253D");
+            put("Gene_names_list", "MjAxODAyMDkwNTE3MjNfMTk%253D");
+//            put("Gene_NCBI", "MjAxODAyMDkwNTIzNTdfMjE%253D");
+//            put("KEGG", "MjAxODAyMDkwNTI0NDhfMjI%253D");
+//            put("Microarray_data", "MjAxODAyMDkwNTE5NDlfMjA%253D");
+//            put("Metabolomics_data", "MjAxODAyMDkwNTI2MTNfMjM%253D");
+//            put("COSMIC", "MjAxODAyMDkwNTI2NTZfMjQ%253D");
+        }
+    };
+
+    private static final String diagramPath = "/home/byron/reactome/diagram";
+    private static final String ehldPath = "/home/byron/reactome/ehld";
+    private static final String fireworksPath = "/home/byron/reactome/fireworks";
+    private static final String pdfPath = "src/test/resources/pdfs";
     private static final Logger LOGGER = LoggerFactory.getLogger(AnalysisReportExporterTest.class);
 
-//    @Test
-//    public void testTest() throws Exception {
-//        for (int i = 0; i < 5; i++) {
-//            test();
-//        }
-//    }
-
     @Test
-    public void test() throws Exception {
-        int count = 1;
+    public void test() {
+        for (File file : Objects.requireNonNull(new File(pdfPath).listFiles())) file.delete();
+        tokens.forEach((type, token) -> {
+            int count = 1;
 //        CyclicBarrier cyclicBarrier = new CyclicBarrier(count);
-        ExecutorService executorService = Executors.newFixedThreadPool(count);
-        for (File file : Objects.requireNonNull(new File("src/test/resources/pdfs").listFiles())) file.delete();
-        for (int i = 0; i < count; i++) {
-//            executorService.execute(new ExporterThread(token, diagramPath, ehldPath, fireworksPath, "ExporterThread#" + i));
-
-            long start = Instant.now().toEpochMilli();
+//        ExecutorService executorService = Executors.newFixedThreadPool(count);
             ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath);
-            AnalysisExporter.export(reportArgs, String.format("src/test/resources/pdfs/%s@%s.pdf", token, start));
-            long end = Instant.now().toEpochMilli();
-            LOGGER.info(" created pdf in :" + (end - start) + " ms");
-        }
-        executorService.shutdown();
-        while (!executorService.isTerminated()) {
             try {
-                Thread.sleep(10);
-            } catch (InterruptedException e) {
+                AnalysisExporter.export(reportArgs, String.format("%s/%s@%s.pdf", pdfPath, token, 0));
+            } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
+            long st = System.currentTimeMillis();
+            for (int i = 0; i < count; i++) {
+//            executorService.execute(new ExporterThread(token, diagramPath, ehldPath, fireworksPath, "ExporterThread#" + i));
+
+                long start = Instant.now().toEpochMilli();
+                reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath);
+                try {
+                    AnalysisExporter.export(reportArgs, String.format("%s/%s@%s.pdf", pdfPath, token, start));
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                long end = Instant.now().toEpochMilli();
+                LOGGER.info(" created pdf in :" + (end - start) + " ms");
+            }
+            long total = System.currentTimeMillis() - st;
+//        System.out.println("average: " + total / count);
+            LOGGER.info("[Spent average: {}ms to create {} for type: {}]", total / count, count, type);
+        });
+//        executorService.shutdown();
+//        while (!executorService.isTerminated()) {
+//            try {
+//                Thread.sleep(10);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
     }
 }
 

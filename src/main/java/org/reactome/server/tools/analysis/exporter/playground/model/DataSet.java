@@ -3,7 +3,6 @@ package org.reactome.server.tools.analysis.exporter.playground.model;
 import com.itextpdf.layout.element.Image;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 
-import java.io.FileOutputStream;
 import java.util.List;
 import java.util.Map;
 
@@ -17,11 +16,10 @@ public class DataSet {
     private Integer pathwaysToShow;
     private Image linkIcon;
     private ReportArgs reportArgs;
-    private FileOutputStream file;
     private AnalysisResult analysisResult;
     private List<IdentifierFound> identifierFounds;
-    private List<Identifier> identifiersWasNotFounds;
-    private Map<String, Identifier> identifiersWasFiltered;
+    private List<Identifier> identifierNotFounds;
+    private Map<String, Identifier> identifierFiltered;
 
     public DataSet(ReportArgs reportArgs) {
         this.reportArgs = reportArgs;
@@ -44,15 +42,15 @@ public class DataSet {
     }
 
     public int getTotalIdentifiers() {
-        return getIdentifiersWasFound() + getIdentifiersWasNotFound();
+        return getIdentifierFound() + getIdentifierNotFound();
     }
 
-    public int getIdentifiersWasFound() {
-        return identifiersWasFiltered.size();
+    public int getIdentifierFound() {
+        return identifierFiltered.size();
     }
 
-    public int getIdentifiersWasNotFound() {
-        return identifiersWasNotFounds.size();
+    public int getIdentifierNotFound() {
+        return identifierNotFounds.size();
     }
 
     public Integer getPathwaysToShow() {
@@ -60,7 +58,7 @@ public class DataSet {
     }
 
     public void setPathwaysToShow(Integer pathwaysToShow) {
-        this.pathwaysToShow = pathwaysToShow <= analysisResult.getPathwaysFound() ? pathwaysToShow : analysisResult.getPathwaysFound();
+        this.pathwaysToShow = pathwaysToShow;
     }
 
     public Image getLinkIcon() {
@@ -75,10 +73,6 @@ public class DataSet {
         return reportArgs;
     }
 
-    public void setReportArgs(ReportArgs reportArgs) {
-        this.reportArgs = reportArgs;
-    }
-
     public AnalysisResult getAnalysisResult() {
         return analysisResult;
     }
@@ -88,19 +82,19 @@ public class DataSet {
     }
 
     public List<Identifier> getIdentifiersWasNotFounds() {
-        return identifiersWasNotFounds;
+        return identifierNotFounds;
     }
 
     public void setIdentifiersWasNotFounds(List<Identifier> identifiersWasNotFounds) {
-        this.identifiersWasNotFounds = identifiersWasNotFounds;
+        this.identifierNotFounds = identifiersWasNotFounds;
     }
 
-    public Map<String, Identifier> getIdentifiersWasFiltered() {
-        return identifiersWasFiltered;
+    public Map<String, Identifier> getIdentifierFiltered() {
+        return identifierFiltered;
     }
 
-    public void setIdentifiersWasFiltered(Map<String, Identifier> identifiersWasFiltered) {
-        this.identifiersWasFiltered = identifiersWasFiltered;
+    public void setIdentifierFiltered(Map<String, Identifier> identifiersWasFiltered) {
+        this.identifierFiltered = identifiersWasFiltered;
     }
 
     public List<IdentifierFound> getIdentifierFounds() {
@@ -111,20 +105,12 @@ public class DataSet {
         this.identifierFounds = identifierFounds;
     }
 
-    public FileOutputStream getFile() {
-        return file;
-    }
-
-    public void setFile(FileOutputStream file) {
-        this.file = file;
-    }
-
     public void release() {
         reportArgs = null;
         analysisResult = null;
         identifierFounds = null;
-        identifiersWasNotFounds = null;
-        identifiersWasFiltered = null;
+        identifierNotFounds = null;
+        identifierFiltered = null;
     }
 
     @Override
@@ -134,11 +120,10 @@ public class DataSet {
                 ", totalPathways=" + totalPathways +
                 ", pathwaysToShow=" + pathwaysToShow +
                 ", reportArgs=" + reportArgs +
-                ", file=" + file +
                 ", analysisResult=" + analysisResult +
                 ", identifierFounds=" + identifierFounds +
-                ", identifiersWasNotFounds=" + identifiersWasNotFounds +
-                ", identifiersWasFiltered=" + identifiersWasFiltered +
+                ", identifiersWasNotFounds=" + identifierNotFounds +
+                ", identifiersWasFiltered=" + identifierFiltered +
                 '}';
     }
 }

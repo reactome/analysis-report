@@ -29,14 +29,15 @@ public class AnalysisExporter {
      *
      * @param reportArgs  report args contains arguments like token,the diagram json path etc.
      * @param destination destination you want to save the produced PDF report document.
-     * @throws Exception  throw
+     * @throws Exception throw
      */
     public static void export(ReportArgs reportArgs, FileOutputStream destination) throws Exception {
         try {
             ReportRenderer.render(reportArgs, destination);
         } catch (FailToAddLogoException | TableTypeNotFoundException
                 | FailToGetDiagramException | FailToCreateFontException
-                | FailToGetFireworksException | FailToRenderReportException | FailToRequestDataException e) {
+                | FailToGetFireworksException | FailToRenderReportException
+                | FailToRequestDataException e) {
             LOGGER.error(e.getMessage());
             throw e;
         } catch (ExceptionInInitializerError e) {

@@ -1,6 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.section;
 
 import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.property.Property;
 import org.reactome.server.graph.domain.model.LiteratureReference;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
@@ -26,9 +27,10 @@ public class Overview implements Section {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Overview.class);
 
-    //    @Monitor(name = "Overview")
     public void render(AnalysisReport report) throws Exception {
         TableRender tableRender = new TableRender(report.getDataSet());
+
+        tableRender.createTable(report, TableTypeEnum.SUMMARY);
 
         addOverviewTable(report, tableRender);
 
@@ -40,24 +42,27 @@ public class Overview implements Section {
     }
 
     private void addOverviewTable(AnalysisReport report, TableRender tableRender) throws NullLinkIconDestinationException, TableTypeNotFoundException {
-        report.addNormalTitle("Overview")
-                .addNormalTitle(String.format("1. Top %s Overrepresentation pathways sorted by p-Value.", report.getDataSet().getPathwaysToShow()), FontSize.H3, MarginLeft.M3);
+        report.addNormalTitle("Overview", FontSize.H2, 0)
+                .addNormalTitle(String.format("1. Top %s Over/representation pathways sorted by p-Value.", report.getDataSet().getPathwaysToShow()), FontSize.H3, MarginLeft.M3);
         tableRender.createTable(report, TableTypeEnum.OVERVIEW_TABLE);
+
         report.addNormalTitle("2. Pathway details.", FontSize.H3, MarginLeft.M3);
     }
 
     private void addIdentifierTable(AnalysisReport report, TableRender tableRender) throws NullLinkIconDestinationException, TableTypeNotFoundException {
-        report.addNormalTitle("3. Identifiers was found.", FontSize.H3, MarginLeft.M3, "IdentifierFound");
+        Paragraph identifierFound = new Paragraph("3. Identifier found.");
+        identifierFound.setProperty(Property.DESTINATION, "identifierFound");
+        report.addNormalTitle(identifierFound, FontSize.H3, MarginLeft.M3);
         if (report.getDataSet().getIdentifierFounds().get(0).getExpNames().size() != 0) {
-            tableRender.createTable(report, TableTypeEnum.IdentifiersWasFound);
+            tableRender.createTable(report, TableTypeEnum.IdentifierFound);
         } else {
-            tableRender.createTable(report, TableTypeEnum.IDENTIFIERS_WAS_FOUND_NO_EXP);
+            tableRender.createTable(report, TableTypeEnum.IDENTIFIER_FOUND_NO_EXP);
         }
-        report.addNormalTitle("4. Identifiers was not found.", FontSize.H3, MarginLeft.M3);
+        report.addNormalTitle("4. Identifier not found.", FontSize.H3, MarginLeft.M3);
         if (report.getDataSet().getAnalysisResult().getExpression().getColumnNames().size() != 0) {
-            tableRender.createTable(report, TableTypeEnum.IDENTIFIERS_WAS_NOT_FOUND);
+            tableRender.createTable(report, TableTypeEnum.IDENTIFIER_NOT_FOUND);
         } else {
-            tableRender.createTable(report, TableTypeEnum.IDENTIFIERS_WAS_NOT_FOUND_NO_EXP);
+            tableRender.createTable(report, TableTypeEnum.IDENTIFIER_NOT_FOUND_NO_EXP);
         }
     }
 
@@ -87,37 +92,37 @@ public class Overview implements Section {
 
             addCuratorDetail(report, pathwayDetail);
             addLiteratureReference(report, pathwayDetail);
-            pathways[i] = null;
             report.getDataSet().getAnalysisResult().getPathways().remove(0);
-            //enforce flush data into disk after every pathway detail been complete.
-//            report.getDataSet().getFile().getChannel().force(true);
-            report.getPdfDocument().getWriter().flush();
-            report.getDataSet().getFile().getFD().sync();
+            pathways[i] = null;
         }
         report.getDataSet().getAnalysisResult().setPathways(null);
     }
 
     private void addTitleAndDiagram(AnalysisReport report, org.reactome.server.tools.analysis.exporter.playground.model.Pathway pathway, int order) throws Exception {
-        report.addNormalTitle(new Paragraph(String.format("2.%s. %s (%s", order + 1, pathway.getName(), pathway.getStId()))
-                        .add(PdfUtils.createUrlLinkIcon(report.getDataSet().getLinkIcon(), FontSize.H3, URL.QUERYFORPATHWAYDETAILS + pathway.getStId()))
-                        .add(")")
-                , FontSize.H3, MarginLeft.M4, pathway.getName());
+        Paragraph identifierFound = new Paragraph(String.format("2.%s. %s (%s", order + 1, pathway.getName(), pathway.getStId()));
+        identifierFound.add(PdfUtils.createUrlLinkIcon(report.getDataSet().getLinkIcon(), FontSize.H3, URL.QUERYFORPATHWAYDETAILS + pathway.getStId())).add(")");
+        identifierFound.setProperty(Property.DESTINATION, pathway.getStId());
+        report.addNormalTitle(identifierFound, FontSize.H3, MarginLeft.M4);
 
-        // TODO: 29/11/17 add the correct diagram;
-        report.addDiagram("R-HSA-15869", report.getDataSet().getReportArgs());
-//        report.add(new Image(ImageDataFactory.create("src/test/resources/diagrams/test.png"))
-//                .setHorizontalAlignment(HorizontalAlignment.CENTER)
-//                .setAutoScale(true));
+        // add diagram to report.
+//        BufferedImage image = DiagramHelper.getDiagram(pathway.getStId(), report.getDataSet().getReportArgs());
+//        if (image != null) {
+//            Image diagram = PdfUtils.createImage(image);
+//            diagram.setHorizontalAlignment(HorizontalAlignment.CENTER);
+//            float width = Math.min(diagram.getImageWidth(), report.getCurrentPageArea().getWidth());
+//            float height = Math.min(diagram.getImageHeight(), report.getCurrentPageArea().getHeight());
+//            report.addImage(diagram.scaleToFit(width, height));
+//        }
     }
 
     private void addCuratorDetail(AnalysisReport report, PathwayDetail pathwayDetail) {
-        if (pathwayDetail.getAuthored() != null) {
+        if (pathwayDetail.getAuthored() != null && pathwayDetail.getAuthored().get(0).getAuthor() != null) {
             addCurator(report, "Authors", PdfUtils.getInstanceEditNames(pathwayDetail.getAuthored()));
         }
-        if (pathwayDetail.getEdited() != null) {
+        if (pathwayDetail.getEdited() != null && pathwayDetail.getEdited().get(0).getAuthor() != null) {
             addCurator(report, "Editors", PdfUtils.getInstanceEditNames(pathwayDetail.getEdited()));
         }
-        if (pathwayDetail.getModified() != null) {
+        if (pathwayDetail.getModified().getAuthor() != null) {
             addCurator(report, "Reviewers", PdfUtils.getInstanceEditName(pathwayDetail.getModified()));
         }
 
@@ -126,10 +131,14 @@ public class Overview implements Section {
     private void addLiteratureReference(AnalysisReport report, PathwayDetail pathwayDetail) throws NullLinkIconDestinationException {
         LiteratureReference literatureReference;
         if (pathwayDetail.getPublications() != null) {
-            report.addNormalTitle("References", FontSize.H4, MarginLeft.M4);
             int length = pathwayDetail.getPublications().size() > 5 ? 5 : pathwayDetail.getPublications().size();
+            boolean hasReferences = false;
             for (int j = 0; j < length; j++) {
                 if ("LiteratureReference".equals(pathwayDetail.getPublications().get(j).getSchemaClass())) {
+                    if (!hasReferences) {
+                        report.addNormalTitle("References", FontSize.H4, MarginLeft.M4);
+                        hasReferences = true;
+                    }
                     literatureReference = (LiteratureReference) pathwayDetail.getPublications().get(j);
                     report.addParagraph(new Paragraph(String.format("%s \"%s\", %s, %s, %s, %s."
                             , PdfUtils.getAuthorDisplayName(literatureReference.getAuthor())
@@ -148,7 +157,7 @@ public class Overview implements Section {
     }
 
     private void addCurator(AnalysisReport report, String title, String content) {
-        report.addNormalTitle(title, FontSize.H4, MarginLeft.M4)
+        report.addNormalTitle(new Paragraph(title), FontSize.H4, MarginLeft.M4)
                 .addParagraph(content, FontSize.H5, MarginLeft.M5);
     }
 }

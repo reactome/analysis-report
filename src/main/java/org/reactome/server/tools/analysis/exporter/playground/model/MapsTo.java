@@ -2,7 +2,7 @@ package org.reactome.server.tools.analysis.exporter.playground.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import java.util.List;
+import java.util.Set;
 
 /**
  * @author Chuan Deng dengchuanbio@gmail.com
@@ -10,7 +10,7 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MapsTo {
     private String resource;
-    private List<String> ids;
+    private Set<String> ids;
 
     public MapsTo() {
 
@@ -24,11 +24,11 @@ public class MapsTo {
         this.resource = resource;
     }
 
-    public List<String> getIds() {
+    public Set<String> getIds() {
         return ids;
     }
 
-    public void setIds(List<String> ids) {
+    public void setIds(Set<String> ids) {
         this.ids = ids;
     }
 

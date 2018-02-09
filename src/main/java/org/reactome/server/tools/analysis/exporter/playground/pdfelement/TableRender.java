@@ -5,10 +5,7 @@ import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.element.Cell;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Table;
-import com.itextpdf.layout.property.Property;
-import com.itextpdf.layout.property.TextAlignment;
-import com.itextpdf.layout.property.UnitValue;
-import com.itextpdf.layout.property.VerticalAlignment;
+import com.itextpdf.layout.property.*;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.TableTypeNotFoundException;
@@ -24,13 +21,12 @@ import java.util.Map;
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class TableRender {
-    private static final float multipliedLeading = 1.0f;
     private DataSet dataSet;
     private static final int NUM_COLUMNS = 8;
+    private static final float multipliedLeading = 1.0f;
     private static final float[] OVERVIEW_VALUES = new float[]{5 / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2f / 20f, 2f / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2 / 20f};
     private static final String[] OVERVIEW_HEADERS = {"Pathway name", "Entity found", "Entity Total", "Entity ratio", "Entity pValue", "Entity FDR", "Reaction found", "Reaction total", "Reaction ratio", "Species name"};
     private static final String[] IDENTIFIERS_FOUND_NO_EXP_HEADERS = {"Identifiers", "mapsTo", "Resource", "Identifiers", "mapsTo", "Resource"};
-
 
     public TableRender(DataSet dataSet) {
         this.dataSet = dataSet;
@@ -38,20 +34,23 @@ public class TableRender {
 
     public void createTable(AnalysisReport report, TableTypeEnum type) throws TableTypeNotFoundException, NullLinkIconDestinationException {
         switch (type) {
+            case SUMMARY:
+                summaryTable(report);
+                break;
             case OVERVIEW_TABLE:
                 overviewTable(report);
                 break;
-            case IdentifiersWasFound:
-                identifiersWasFoundTable(report);
+            case IdentifierFound:
+                identifierFoundTable(report);
                 break;
-            case IDENTIFIERS_WAS_FOUND_NO_EXP:
-                identifiersWasFoundTableNoEXP(report);
+            case IDENTIFIER_FOUND_NO_EXP:
+                identifierFoundTableNoEXP(report);
                 break;
-            case IDENTIFIERS_WAS_NOT_FOUND:
-                identifiersWasNotFoundTable(report);
+            case IDENTIFIER_NOT_FOUND:
+                identifierNotFoundTable(report);
                 break;
-            case IDENTIFIERS_WAS_NOT_FOUND_NO_EXP:
-                identifiersWasNotFoundTableNoEXP(report);
+            case IDENTIFIER_NOT_FOUND_NO_EXP:
+                identifierNotFoundTableNoEXP(report);
                 break;
             default:
                 throw new TableTypeNotFoundException(String.format("No table type : %s was found", type));
@@ -59,7 +58,7 @@ public class TableRender {
     }
 
     public void createTable(AnalysisReport report, List<Identifier> identifiers) {
-        identifiersWasFoundInPathwayTable(report, identifiers);
+        identifierFoundInPathwayTable(report, identifiers);
     }
 
 
@@ -73,7 +72,7 @@ public class TableRender {
         int count = 0;
         for (Pathway pathway : dataSet.getAnalysisResult().getPathways()) {
             table.addCell(new Cell().add(new Paragraph(pathway.getName()).setFontSize(FontSize.H8)
-                    .add(PdfUtils.createGoToLinkIcon(dataSet.getLinkIcon(), FontSize.H8, pathway.getName())).
+                    .add(PdfUtils.createGoToLinkIcon(dataSet.getLinkIcon(), FontSize.H8, pathway.getStId())).
                             setMultipliedLeading(multipliedLeading))
                     .setVerticalAlignment(VerticalAlignment.MIDDLE));
             table.addCell(textCell(String.valueOf(pathway.getEntity().getFound()), FontSize.H8));
@@ -94,16 +93,20 @@ public class TableRender {
     }
 
 
-    private void identifiersWasFoundTable(AnalysisReport report) {
-        int column = dataSet.getIdentifierFounds().get(0).getExpNames().size() + 3;
+    private void identifierFoundTable(AnalysisReport report) {
+        int column = dataSet.getAnalysisResult().getExpression().getColumnNames().size() + 3;
         float[] widths = new float[column];
-        widths[0] = 1.5f / ++column;
-        for (int i = 1; i < column - 1; i++) {
-            widths[i] = 1f / column;
+        for (int i = 0; i < column; i++) {
+            if (i == 1) {
+                // give more space for 'mapsTo' column since one identifier can map more than one identifiers.
+                widths[i] = 1.5f / column;
+            } else {
+                widths[i] = 1f / column;
+            }
         }
         Table table = new Table(UnitValue.createPercentArray(widths), true);
         // TODO: 06/02/18 table maybe collapse when it arrival at the end of page
-        report.addTable(table.setMarginLeft(40));
+        report.addTable(table);
 
         table.addHeaderCell(textCell("Identifiers", FontSize.H5));
         table.addHeaderCell(textCell("mapsTo", FontSize.H5));
@@ -114,17 +117,18 @@ public class TableRender {
 
         Cell cell;
         int count = 0;
-        for (Map.Entry<String, Identifier> entry : dataSet.getIdentifiersWasFiltered().entrySet()) {
+        for (Map.Entry<String, Identifier> entry : dataSet.getIdentifierFiltered().entrySet()) {
             if (count++ % 5 == 0) {
                 table.flush();
             }
             cell = new Cell().add(new Paragraph(entry.getKey())
+                    .setFontSize(FontSize.H6)
                     .setMultipliedLeading(multipliedLeading))
                     .setVerticalAlignment(VerticalAlignment.MIDDLE)
                     .setTextAlignment(TextAlignment.LEFT);
             cell.setProperty(Property.DESTINATION, entry.getKey());
             table.addCell(cell);
-            table.addCell(textCell(entry.getValue().getResourceMapsToIds().get(entry.getValue().getMapsTo().get(0).getResource()).replaceAll("[\\[|\\]]", ""), FontSize.H6));
+            table.addCell(textCell(entry.getValue().getMapsTo().get(0).getIds().toString().replaceAll("\\[|\\]", ""), FontSize.H6));
             table.addCell(textCell(entry.getValue().getMapsTo().get(0).getResource(), FontSize.H6));
             for (Float exp : entry.getValue().getExp()) {
                 table.addCell(textCell(String.valueOf(exp), FontSize.H6));
@@ -133,18 +137,17 @@ public class TableRender {
         table.complete();
     }
 
-    private void identifiersWasFoundTableNoEXP(AnalysisReport report) {
+    private void identifierFoundTableNoEXP(AnalysisReport report) {
         Table table = new Table(new UnitValue[IDENTIFIERS_FOUND_NO_EXP_HEADERS.length], true);
-        report.addTable(table.setMarginLeft(40));
+        report.addTable(table);
 
         for (String header : IDENTIFIERS_FOUND_NO_EXP_HEADERS) {
             table.addHeaderCell(textCell(header, FontSize.H5));
         }
         Cell cell;
         int count = 0;
-        for (Map.Entry<String, Identifier> entry : dataSet.getIdentifiersWasFiltered().entrySet()) {
+        for (Map.Entry<String, Identifier> entry : dataSet.getIdentifierFiltered().entrySet()) {
             if (count++ % 5 == 0) {
-                table.flushContent();
                 table.flush();
             }
             cell = new Cell().add(new Paragraph(entry.getKey())
@@ -154,10 +157,10 @@ public class TableRender {
                     .setTextAlignment(TextAlignment.CENTER);
             cell.setProperty(Property.DESTINATION, entry.getKey());
             table.addCell(cell);
-            table.addCell(textCell(entry.getValue().getResourceMapsToIds().get(entry.getValue().getMapsTo().get(0).getResource()).replaceAll("[\\[|\\]]", ""), FontSize.H6));
+            table.addCell(textCell(entry.getValue().getMapsTo().get(0).getIds().toString().replaceAll("\\[|\\]", ""), FontSize.H6));
             table.addCell(textCell(entry.getValue().getMapsTo().get(0).getResource(), FontSize.H6));
         }
-        if (dataSet.getIdentifiersWasFiltered().entrySet().size() % 2 == 1) {
+        if (dataSet.getIdentifierFiltered().entrySet().size() % 2 == 1) {
             table.addCell(new Cell());
             table.addCell(new Cell());
             table.addCell(new Cell());
@@ -166,9 +169,9 @@ public class TableRender {
     }
 
 
-    private void identifiersWasNotFoundTable(AnalysisReport report) {
+    private void identifierNotFoundTable(AnalysisReport report) {
         Table table = new Table(new UnitValue[dataSet.getAnalysisResult().getExpression().getColumnNames().size() + 1], true);
-        report.addTable(table.setMarginLeft(40));
+        report.addTable(table);
 
         table.addHeaderCell(textCell("Identifiers", FontSize.H5));
         for (String header : dataSet.getAnalysisResult().getExpression().getColumnNames()) {
@@ -188,9 +191,9 @@ public class TableRender {
     }
 
 
-    private void identifiersWasNotFoundTableNoEXP(AnalysisReport report) {
+    private void identifierNotFoundTableNoEXP(AnalysisReport report) {
         Table table = new Table(new UnitValue[NUM_COLUMNS], true);
-        report.addTable(table.setMarginLeft(40));
+        report.addTable(table);
 
         table.addHeaderCell(new Cell(1, NUM_COLUMNS).add(new Paragraph("Identifiers").setFontSize(FontSize.H5)).setTextAlignment(TextAlignment.CENTER));
         int count = 0;
@@ -208,7 +211,7 @@ public class TableRender {
     }
 
 
-    private void identifiersWasFoundInPathwayTable(AnalysisReport report, List<Identifier> identifiers) {
+    private void identifierFoundInPathwayTable(AnalysisReport report, List<Identifier> identifiers) {
         Table table = new Table(new UnitValue[NUM_COLUMNS], true);
         table.setMarginLeft(20)
                 .setFontSize(FontSize.H6)
@@ -222,6 +225,20 @@ public class TableRender {
         for (int j = 0; j < NUM_COLUMNS - identifiers.size() % NUM_COLUMNS; j++) {
             table.addCell(new Cell().setBorder(Border.NO_BORDER));
         }
+        report.addTable(table);
+    }
+
+    private void summaryTable(AnalysisReport report) {
+        Table table = new Table(new UnitValue[2]);
+        table.setHorizontalAlignment(HorizontalAlignment.CENTER);
+        table.addCell(textCell("Analysis name", FontSize.H6));
+        table.addCell(textCell(report.getDataSet().getAnalysisResult().getSummary().getSampleName(), FontSize.H6));
+        table.addCell(textCell("token", FontSize.H6));
+        table.addCell(textCell(report.getDataSet().getAnalysisResult().getSummary().getToken(), FontSize.H6));
+        table.addCell(textCell("type", FontSize.H6));
+        table.addCell(textCell(report.getDataSet().getAnalysisResult().getSummary().getType(), FontSize.H6));
+        table.addCell(textCell("interactors", FontSize.H6));
+        table.addCell(textCell(report.getDataSet().getAnalysisResult().getSummary().getInteractors().toString(), FontSize.H6));
         report.addTable(table);
     }
 

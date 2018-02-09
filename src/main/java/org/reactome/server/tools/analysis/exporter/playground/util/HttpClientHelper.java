@@ -86,7 +86,6 @@ public class HttpClientHelper {
             LOGGER.error("Token cant be null");
             throw new NullTokenException("Token cant be null");
         }
-//        token = URLDecoder.decode(token, "UTF-8");
         if (execute(new HttpGet(String.format(URL.CHECKTOKEN, token))) != 200) {
             LOGGER.error("Invalid token : {}", token);
             throw new InValidTokenException(String.format("Invalid token : %s", token));
@@ -102,9 +101,9 @@ public class HttpClientHelper {
         post.setEntity(new StringEntity(stIds.deleteCharAt(stIds.length() - 1).toString()));
         dataSet.setIdentifierFounds(execute(post, new ObjectMapper().getTypeFactory().constructCollectionType(ArrayList.class, IdentifierFound.class)));
 
-        System.out.println("spent " + (Instant.now().toEpochMilli() - start) + "ms in request resources");
+        LOGGER.info("spent {}ms in request resources", Instant.now().toEpochMilli() - start);
 
-        analysisResult.setPathways(analysisResult.getPathways().stream().limit(50).collect(Collectors.toList()));
+        analysisResult.setPathways(analysisResult.getPathways().stream().limit(dataSet.getPathwaysToShow()).collect(Collectors.toList()));
         dataSet.setAnalysisResult(analysisResult);
     }
 

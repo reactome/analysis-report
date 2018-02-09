@@ -15,16 +15,17 @@ import java.util.Arrays;
 public class Administrative implements Section {
 
     private static final int numOfIdentifiersToShow = 5;
+    private static final String[] ADMINISTRATIVE = PdfUtils.getText("src/main/resources/texts/administrative.txt");
 
     public void render(AnalysisReport report) throws Exception {
-        report.addNormalTitle("Administrative")
+        report.addNormalTitle("Administrative", FontSize.H2, 0)
                 .addParagraph(new Paragraph().setFontSize(FontSize.H5)
                         .setMarginLeft(MarginLeft.M2)
-                        .add("This report is intend for reviewer of the pathway analysis : ")
-                        .add(report.getDataSet().getAnalysisResult().getSummary().getToken().toLowerCase())
-                        .add(PdfUtils.createUrlLinkIcon(report.getDataSet().getLinkIcon(), FontSize.H5, URL.ANALYSIS + report.getDataSet().getAnalysisResult().getSummary().getToken()))
-                        .add("(please note that this URL maybe out of date because of the token can expired at our server end) and your input identifiers are :")
-                        .add(Arrays.toString(report.getDataSet().getIdentifiersWasNotFounds().stream().limit(numOfIdentifiersToShow).toArray()).replaceAll("[\\[\\]]", ""))
-                        .add(String.format(".... It has been automatically generated in Reactome version %s at %s.", report.getDataSet().getDBVersion(), PdfUtils.getTimeStamp())));
+                        .add(String.format(ADMINISTRATIVE[0], report.getDataSet().getReportArgs().getToken().toLowerCase()))
+                        .add(PdfUtils.createUrlLinkIcon(report.getDataSet().getLinkIcon(), FontSize.H5, URL.ANALYSIS + report.getDataSet().getReportArgs().getToken()))
+                        .add(String.format(ADMINISTRATIVE[1]
+                                , Arrays.toString(report.getDataSet().getIdentifiersWasNotFounds().stream().limit(numOfIdentifiersToShow).toArray()).replaceAll("[\\[\\]]", "")
+                                , report.getDataSet().getDBVersion()
+                                , PdfUtils.getTimeStamp())));
     }
 }

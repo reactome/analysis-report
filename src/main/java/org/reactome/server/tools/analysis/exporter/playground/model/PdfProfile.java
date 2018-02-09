@@ -7,6 +7,8 @@ import com.itextpdf.kernel.geom.PageSize;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NoSuchPageSizeException;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
+import java.io.IOException;
+
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
@@ -25,7 +27,7 @@ public class PdfProfile {
     private String paragraphColor = "#000000";
     private String tableColor = "#000000";
     private String pageSize = "A4";
-    private String font = "Helvetica";
+    private PdfFont font;
 
     // TODO: 22/01/18 extract another more properties to profile file
 
@@ -125,12 +127,12 @@ public class PdfProfile {
         this.pageSize = pageSize;
     }
 
-    public PdfFont getFont() throws Exception {
-        return PdfUtils.createFont(font);
+    public PdfFont getFont() {
+        return font;
     }
 
-    public void setFont(String font) {
-        this.font = font;
+    public void setFont(String font) throws IOException {
+        this.font = PdfUtils.createFont(font);
     }
 
     @Override

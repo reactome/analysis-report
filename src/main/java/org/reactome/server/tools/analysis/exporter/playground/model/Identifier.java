@@ -2,9 +2,7 @@ package org.reactome.server.tools.analysis.exporter.playground.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * @author Chuan Deng dengchuanbio@gmail.com
@@ -15,7 +13,6 @@ public class Identifier {
     private String id;
     private List<Float> exp;
     private List<MapsTo> mapsTo;
-    private Map<String, String> resourceMapsToIds = new HashMap<String, String>();
 
     public Identifier() {
     }
@@ -44,16 +41,8 @@ public class Identifier {
         this.mapsTo = mapsTo;
     }
 
-    public Map<String, String> getResourceMapsToIds() {
-        return resourceMapsToIds;
-    }
-
-    public void setResourceMapsToIds(Map<String, String> resourceMapsToIds) {
-        this.resourceMapsToIds = resourceMapsToIds;
-    }
-
     @Override
     public String toString() {
-        return id;
+        return id + ',';
     }
 }
