@@ -43,6 +43,6 @@ public class Identifier {
 
     @Override
     public String toString() {
-        return id + ',';
+        return id;
     }
 }

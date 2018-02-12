@@ -93,7 +93,7 @@ public class HttpClientHelper {
 
         AnalysisResult analysisResult = execute(
                 new HttpGet(String.format(URL.RESULTASSCIATEDWITHTOKEN, token)), AnalysisResult.class);
-        dataSet.setIdentifiersWasNotFounds(execute(new HttpGet(String.format(URL.IDENTIFIERSWASNOTFOUND, token))
+        dataSet.setIdentifierNotFounds(execute(new HttpGet(String.format(URL.IDENTIFIERSWASNOTFOUND, token))
                 , new ObjectMapper().getTypeFactory().constructCollectionType(ArrayList.class, Identifier.class)));
 
         StringBuilder stIds = PdfUtils.stIdConcat(analysisResult.getPathways());

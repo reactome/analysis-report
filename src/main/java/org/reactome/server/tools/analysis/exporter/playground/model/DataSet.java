@@ -81,11 +81,11 @@ public class DataSet {
         this.analysisResult = analysisResult;
     }
 
-    public List<Identifier> getIdentifiersWasNotFounds() {
+    public List<Identifier> getIdentifierNotFounds() {
         return identifierNotFounds;
     }
 
-    public void setIdentifiersWasNotFounds(List<Identifier> identifiersWasNotFounds) {
+    public void setIdentifierNotFounds(List<Identifier> identifiersWasNotFounds) {
         this.identifierNotFounds = identifiersWasNotFounds;
     }
 

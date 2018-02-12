@@ -17,9 +17,9 @@ public class AnalysisReportExporterTest {
     private static final HashMap<String, String> tokens = new HashMap<String, String>() {
         {
 //            put("UniProt_accession_list", "MjAxODAyMDcxNDA1MTRfMTc%253D");
-            put("Gene_names_list", "MjAxODAyMDkwNTE3MjNfMTk%253D");
+//            put("Gene_names_list", "MjAxODAyMDkwNTE3MjNfMTk%253D");
 //            put("Gene_NCBI", "MjAxODAyMDkwNTIzNTdfMjE%253D");
-//            put("KEGG", "MjAxODAyMDkwNTI0NDhfMjI%253D");
+            put("KEGG", "MjAxODAyMDkwNTI0NDhfMjI%253D");
 //            put("Microarray_data", "MjAxODAyMDkwNTE5NDlfMjA%253D");
 //            put("Metabolomics_data", "MjAxODAyMDkwNTI2MTNfMjM%253D");
 //            put("COSMIC", "MjAxODAyMDkwNTI2NTZfMjQ%253D");
@@ -41,7 +41,7 @@ public class AnalysisReportExporterTest {
 //        ExecutorService executorService = Executors.newFixedThreadPool(count);
             ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath);
             try {
-                AnalysisExporter.export(reportArgs, String.format("%s/%s@%s.pdf", pdfPath, token, 0));
+                AnalysisExporter.export(reportArgs, String.format("%s/%s@%s.pdf", pdfPath, token, Instant.now().toEpochMilli()));
             } catch (Exception e) {
                 e.printStackTrace();
             }

@@ -23,7 +23,7 @@ public class TitleAndLogo implements Section {
         image.setFixedPosition(report.getProfile().getLeftMargin() * report.getProfile().getLogoProfile().getLogoScaling() + report.getProfile().getLogoProfile().getMarginLeft()
                 , report.getProfile().getPageSize().getHeight() - report.getProfile().getTopMargin() * report.getProfile().getLogoProfile().getLogoScaling() - image.getImageScaledHeight() - report.getProfile().getLogoProfile().getMarginTop());
         image.setAction(PdfAction.createURI(URL.REACTOME));
-        report.addImage(image);
+        report.add(image);
 
         // add report title
         report.addNormalTitle(new Paragraph(TITLE).setTextAlignment(TextAlignment.CENTER)

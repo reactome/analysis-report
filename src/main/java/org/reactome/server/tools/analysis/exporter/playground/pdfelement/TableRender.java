@@ -21,6 +21,7 @@ import java.util.Map;
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class TableRender {
+    // TODO: 12/02/18 use large table once it been fixed by iText team
     private DataSet dataSet;
     private static final int NUM_COLUMNS = 8;
     private static final float multipliedLeading = 1.0f;
@@ -61,15 +62,11 @@ public class TableRender {
         identifierFoundInPathwayTable(report, identifiers);
     }
 
-
     private void overviewTable(AnalysisReport report) throws NullLinkIconDestinationException {
-        Table table = new Table(UnitValue.createPercentArray(OVERVIEW_VALUES), true);
-        report.addTable(table);
-
+        Table table = new Table(UnitValue.createPercentArray(OVERVIEW_VALUES));
         for (String header : OVERVIEW_HEADERS) {
             table.addHeaderCell(textCell(header, FontSize.H6));
         }
-        int count = 0;
         for (Pathway pathway : dataSet.getAnalysisResult().getPathways()) {
             table.addCell(new Cell().add(new Paragraph(pathway.getName()).setFontSize(FontSize.H8)
                     .add(PdfUtils.createGoToLinkIcon(dataSet.getLinkIcon(), FontSize.H8, pathway.getStId())).
@@ -84,12 +81,8 @@ public class TableRender {
             table.addCell(textCell(String.valueOf(pathway.getReaction().getTotal()), FontSize.H8));
             table.addCell(textCell(String.format("%.4f", pathway.getReaction().getRatio()), FontSize.H8));
             table.addCell(textCell(pathway.getSpecies().getName(), FontSize.H8));
-
-            if (count++ % 5 == 0) {
-                table.flush();
-            }
         }
-        table.complete();
+        report.add(table);
     }
 
 
@@ -104,10 +97,8 @@ public class TableRender {
                 widths[i] = 1f / column;
             }
         }
-        Table table = new Table(UnitValue.createPercentArray(widths), true);
-        // TODO: 06/02/18 table maybe collapse when it arrival at the end of page
-        report.addTable(table);
 
+        Table table = new Table(UnitValue.createPercentArray(widths));
         table.addHeaderCell(textCell("Identifiers", FontSize.H5));
         table.addHeaderCell(textCell("mapsTo", FontSize.H5));
         table.addHeaderCell(textCell("Resource", FontSize.H5));
@@ -116,40 +107,31 @@ public class TableRender {
         }
 
         Cell cell;
-        int count = 0;
         for (Map.Entry<String, Identifier> entry : dataSet.getIdentifierFiltered().entrySet()) {
-            if (count++ % 5 == 0) {
-                table.flush();
-            }
-            cell = new Cell().add(new Paragraph(entry.getKey())
+            cell = new Cell().add(new Paragraph(entry.getKey()).setMargins(0, 0, 0, 0)
                     .setFontSize(FontSize.H6)
                     .setMultipliedLeading(multipliedLeading))
                     .setVerticalAlignment(VerticalAlignment.MIDDLE)
                     .setTextAlignment(TextAlignment.LEFT);
             cell.setProperty(Property.DESTINATION, entry.getKey());
             table.addCell(cell);
-            table.addCell(textCell(entry.getValue().getMapsTo().get(0).getIds().toString().replaceAll("\\[|\\]", ""), FontSize.H6));
+            table.addCell(textCell(entry.getValue().getMapsTo().get(0).getIds().toString().replaceAll("[\\[\\]]", ""), FontSize.H6));
             table.addCell(textCell(entry.getValue().getMapsTo().get(0).getResource(), FontSize.H6));
             for (Float exp : entry.getValue().getExp()) {
                 table.addCell(textCell(String.valueOf(exp), FontSize.H6));
             }
         }
-        table.complete();
+        report.add(table);
     }
 
     private void identifierFoundTableNoEXP(AnalysisReport report) {
-        Table table = new Table(new UnitValue[IDENTIFIERS_FOUND_NO_EXP_HEADERS.length], true);
-        report.addTable(table);
-
+        Table table = new Table(new UnitValue[IDENTIFIERS_FOUND_NO_EXP_HEADERS.length]);
+        table.setWidth(UnitValue.createPercentValue(100));
         for (String header : IDENTIFIERS_FOUND_NO_EXP_HEADERS) {
             table.addHeaderCell(textCell(header, FontSize.H5));
         }
         Cell cell;
-        int count = 0;
         for (Map.Entry<String, Identifier> entry : dataSet.getIdentifierFiltered().entrySet()) {
-            if (count++ % 5 == 0) {
-                table.flush();
-            }
             cell = new Cell().add(new Paragraph(entry.getKey())
                     .setFontSize(FontSize.H6)
                     .setMultipliedLeading(multipliedLeading))
@@ -157,7 +139,7 @@ public class TableRender {
                     .setTextAlignment(TextAlignment.CENTER);
             cell.setProperty(Property.DESTINATION, entry.getKey());
             table.addCell(cell);
-            table.addCell(textCell(entry.getValue().getMapsTo().get(0).getIds().toString().replaceAll("\\[|\\]", ""), FontSize.H6));
+            table.addCell(textCell(entry.getValue().getMapsTo().get(0).getIds().toString().replaceAll("[\\[\\]]", ""), FontSize.H6));
             table.addCell(textCell(entry.getValue().getMapsTo().get(0).getResource(), FontSize.H6));
         }
         if (dataSet.getIdentifierFiltered().entrySet().size() % 2 == 1) {
@@ -165,57 +147,47 @@ public class TableRender {
             table.addCell(new Cell());
             table.addCell(new Cell());
         }
-        table.complete();
+        report.add(table);
     }
 
-
     private void identifierNotFoundTable(AnalysisReport report) {
-        Table table = new Table(new UnitValue[dataSet.getAnalysisResult().getExpression().getColumnNames().size() + 1], true);
-        report.addTable(table);
-
+        Table table = new Table(new UnitValue[dataSet.getAnalysisResult().getExpression().getColumnNames().size() + 1]);
+        table.setWidth(UnitValue.createPercentValue(100));
         table.addHeaderCell(textCell("Identifiers", FontSize.H5));
         for (String header : dataSet.getAnalysisResult().getExpression().getColumnNames()) {
             table.addHeaderCell(textCell(header, FontSize.H5));
         }
-        int count = 0;
-        for (Identifier identifier : dataSet.getIdentifiersWasNotFounds()) {
+        for (Identifier identifier : dataSet.getIdentifierNotFounds()) {
             table.addCell(textCell(identifier.getId(), FontSize.H6));
             for (Float exp : identifier.getExp()) {
                 table.addCell(textCell(String.valueOf(exp), FontSize.H6));
             }
-            if (count++ % 5 == 0) {
-                table.flush();
-            }
         }
-        table.complete();
+        report.add(table);
     }
 
 
     private void identifierNotFoundTableNoEXP(AnalysisReport report) {
-        Table table = new Table(new UnitValue[NUM_COLUMNS], true);
-        report.addTable(table);
-
+        Table table = new Table(new UnitValue[NUM_COLUMNS]);
+        table.setWidth(UnitValue.createPercentValue(100));
         table.addHeaderCell(new Cell(1, NUM_COLUMNS).add(new Paragraph("Identifiers").setFontSize(FontSize.H5)).setTextAlignment(TextAlignment.CENTER));
-        int count = 0;
-        for (Identifier identifier : dataSet.getIdentifiersWasNotFounds()) {
+        for (Identifier identifier : dataSet.getIdentifierNotFounds()) {
             table.addCell(textCell(identifier.getId(), FontSize.H6));
-            if (count++ % 5 == 0) {
-                table.flush();
-            }
         }
 
-        for (int i = 0; i < NUM_COLUMNS - dataSet.getIdentifiersWasNotFounds().size() % NUM_COLUMNS; i++) {
+        for (int i = 0; i < NUM_COLUMNS - dataSet.getIdentifierNotFounds().size() % NUM_COLUMNS; i++) {
             table.addCell(new Cell());
         }
-        table.complete();
+        report.add(table);
     }
 
 
     private void identifierFoundInPathwayTable(AnalysisReport report, List<Identifier> identifiers) {
-        Table table = new Table(new UnitValue[NUM_COLUMNS], true);
+        Table table = new Table(new UnitValue[NUM_COLUMNS]);
         table.setMarginLeft(20)
                 .setFontSize(FontSize.H6)
-                .setTextAlignment(TextAlignment.LEFT);
+                .setTextAlignment(TextAlignment.LEFT)
+                .setWidth(UnitValue.createPercentValue(100));
         identifiers.forEach(identifier -> table.addCell(
                 new Cell().add(new Paragraph(identifier.getId())
                         .setFontColor(PdfUtils.createColor("#2F9EC2", 16))
@@ -225,7 +197,7 @@ public class TableRender {
         for (int j = 0; j < NUM_COLUMNS - identifiers.size() % NUM_COLUMNS; j++) {
             table.addCell(new Cell().setBorder(Border.NO_BORDER));
         }
-        report.addTable(table);
+        report.add(table);
     }
 
     private void summaryTable(AnalysisReport report) {
@@ -239,14 +211,13 @@ public class TableRender {
         table.addCell(textCell(report.getDataSet().getAnalysisResult().getSummary().getType(), FontSize.H6));
         table.addCell(textCell("interactors", FontSize.H6));
         table.addCell(textCell(report.getDataSet().getAnalysisResult().getSummary().getInteractors().toString(), FontSize.H6));
-        report.addTable(table);
+        report.add(table);
     }
 
     private Cell textCell(String text, float fontSize) {
-        return new Cell().setKeepTogether(true)
-                .add(new Paragraph(text)
-                        .setFontSize(fontSize)
-                        .setMultipliedLeading(multipliedLeading))
+        return new Cell().add(new Paragraph(text)
+                .setFontSize(fontSize)
+                .setMultipliedLeading(multipliedLeading))
                 .setVerticalAlignment(VerticalAlignment.MIDDLE)
                 .setTextAlignment(TextAlignment.CENTER);
     }

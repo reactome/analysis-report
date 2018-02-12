@@ -24,7 +24,7 @@ public class Administrative implements Section {
                         .add(String.format(ADMINISTRATIVE[0], report.getDataSet().getReportArgs().getToken().toLowerCase()))
                         .add(PdfUtils.createUrlLinkIcon(report.getDataSet().getLinkIcon(), FontSize.H5, URL.ANALYSIS + report.getDataSet().getReportArgs().getToken()))
                         .add(String.format(ADMINISTRATIVE[1]
-                                , Arrays.toString(report.getDataSet().getIdentifiersWasNotFounds().stream().limit(numOfIdentifiersToShow).toArray()).replaceAll("[\\[\\]]", "")
+                                , Arrays.toString(report.getDataSet().getIdentifierNotFounds().stream().limit(numOfIdentifiersToShow).toArray()).replaceAll("[\\[\\]]", "")
                                 , report.getDataSet().getDBVersion()
                                 , PdfUtils.getTimeStamp())));
     }

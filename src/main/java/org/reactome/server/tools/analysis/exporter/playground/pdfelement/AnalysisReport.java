@@ -8,7 +8,6 @@ import com.itextpdf.kernel.pdf.WriterProperties;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
 import org.reactome.server.tools.analysis.exporter.playground.model.PdfProfile;
@@ -27,10 +26,7 @@ public class AnalysisReport extends Document {
     private FileOutputStream destination;
 
     public AnalysisReport(PdfProfile profile, DataSet dataSet, FileOutputStream destination) throws Exception {
-        /**
-         * the default document setting is to flush content data every time
-         */
-        super(new PdfDocument(new PdfWriter(destination, new WriterProperties().setFullCompressionMode(true)).setSmartMode(true)), profile.getPageSize());
+        super(new PdfDocument(new PdfWriter(destination, new WriterProperties().setFullCompressionMode(true))), profile.getPageSize());
         destination.getChannel().force(true);
         this.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(this));
         this.destination = destination;
@@ -51,9 +47,8 @@ public class AnalysisReport extends Document {
         return dataSet;
     }
 
-    public AnalysisReport addImage(Image image) {
+    public void addImage(Image image) {
         this.add(image);
-        return this;
     }
 
     public AnalysisReport addNormalTitle(Paragraph title) {
@@ -71,20 +66,8 @@ public class AnalysisReport extends Document {
         return this;
     }
 
-    public AnalysisReport addParagraph(Paragraph paragraph) {
+    public void addParagraph(Paragraph paragraph) {
         this.add(paragraph.setFontColor(profile.getParagraphColor()).setMultipliedLeading(profile.getMultipliedLeading()).setMarginTop(2.5f).setMarginBottom(2.5f));
-        return this;
-    }
-
-    public AnalysisReport addParagraph(String paragraph, int fontSize, int marginLeft) {
-        return this.addParagraph(new Paragraph(paragraph)
-                .setFontSize(fontSize)
-                .setMarginLeft(marginLeft));
-    }
-
-    public AnalysisReport addTable(Table table) {
-        this.add(table.setFontColor(profile.getTableColor()));
-        return this;
     }
 
     public PdfProfile getProfile() {

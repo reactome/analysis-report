@@ -77,15 +77,15 @@ public class Overview implements Section {
             addTitleAndDiagram(report, report.getDataSet().getAnalysisResult().getPathways().get(0), i);
 
             report.addNormalTitle("Summation", FontSize.H4, MarginLeft.M4)
-                    .addParagraph("Species name:" +
-                                    pathways[i].getSpeciesName() +
-                                    (pathwayDetail.getCompartments() != null ? ",Compartment name:" + pathwayDetail.getCompartments().get(0).getDisplayName() : "") +
-                                    (pathways[i].getIsInDisease() ? ",Disease name:" + pathwayDetail.getDiseases().get(0).getDisplayName() : "") +
-                                    (pathways[i].getIsInferred() ? ",Inferred from:" + pathwayDetail.getEvents().iterator().next().getDisplayName() : "") +
+                    .addParagraph(new Paragraph("Species name:" +
+                            pathways[i].getSpeciesName() +
+                            (pathwayDetail.getCompartments() != null ? ",Compartment name:" + pathwayDetail.getCompartments().get(0).getDisplayName() : "") +
+                            (pathways[i].getIsInDisease() ? ",Disease name:" + pathwayDetail.getDiseases().get(0).getDisplayName() : "") +
+                            (pathways[i].getIsInferred() ? ",Inferred from:" + pathwayDetail.getEvents().iterator().next().getDisplayName() : "") +
 //                                    (pathwayDetail.getSummations() != null ? "," + pathwayDetail.getSummations().get(0).getText().replaceAll("</?[a-zA-Z]{1,2}>", "") : "").trim()
-                                    (pathwayDetail.getSummations() != null ? "," + pathwayDetail.getSummations().get(0).getText().replaceAll("(<br>)+", "\r\n") : "").trim()
+                            (pathwayDetail.getSummations() != null ? "," + pathwayDetail.getSummations().get(0).getText().replaceAll("(<br>)+", "\r\n") : "").trim()
 //                                    (pathwayDetail.getSummations() != null ? "," + pathwayDetail.getSummations().get(0).getText() : "").trim()
-                            , FontSize.H5, MarginLeft.M4);
+                    ).setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M4));
 
             report.addNormalTitle("List of identifiers was found at this pathway", FontSize.H4, MarginLeft.M4);
             tableRender.createTable(report, report.getDataSet().getIdentifierFounds().get(i).getEntities());
@@ -104,6 +104,8 @@ public class Overview implements Section {
         identifierFound.setProperty(Property.DESTINATION, pathway.getStId());
         report.addNormalTitle(identifierFound, FontSize.H3, MarginLeft.M4);
 
+//        System.out.println("original:" + report.getProfile().getPageSize().getHeight());
+//        System.out.println("height:" + report.getPageEffectiveArea(report.getProfile().getPageSize()).getHeight());
         // add diagram to report.
 //        BufferedImage image = DiagramHelper.getDiagram(pathway.getStId(), report.getDataSet().getReportArgs());
 //        if (image != null) {
@@ -112,6 +114,8 @@ public class Overview implements Section {
 //            float width = Math.min(diagram.getImageWidth(), report.getCurrentPageArea().getWidth());
 //            float height = Math.min(diagram.getImageHeight(), report.getCurrentPageArea().getHeight());
 //            report.addImage(diagram.scaleToFit(width, height));
+//        } else {
+//            LOGGER.warn("No diagram found for pathway : {}({}).", pathway.getName(), pathway.getStId());
 //        }
     }
 
@@ -158,6 +162,6 @@ public class Overview implements Section {
 
     private void addCurator(AnalysisReport report, String title, String content) {
         report.addNormalTitle(new Paragraph(title), FontSize.H4, MarginLeft.M4)
-                .addParagraph(content, FontSize.H5, MarginLeft.M5);
+                .addParagraph(new Paragraph(content).setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M5));
     }
 }

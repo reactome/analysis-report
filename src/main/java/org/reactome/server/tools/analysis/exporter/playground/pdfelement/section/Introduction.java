@@ -18,7 +18,7 @@ public class Introduction implements Section {
     public void render(AnalysisReport report) throws NullLinkIconDestinationException {
         report.addNormalTitle("Introduction", FontSize.H2, 0);
         for (String introduction : INTRODUCTION) {
-            report.addParagraph(introduction, FontSize.H5, MarginLeft.M2);
+            report.addParagraph(new Paragraph(introduction).setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M2));
         }
 
         for (int i = 0; i < LITERATURE.length; i++) {
