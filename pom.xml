@@ -19,8 +19,8 @@
         <httpclient.version>4.5.4</httpclient.version>
         <jackson.version>2.9.2</jackson.version>
         <itext.version>7.1.1</itext.version>
-        <fireworks.version>1.0.0</fireworks.version>
-        <diagram.version>1.2.0</diagram.version>
+        <fireworks.version>1.1.0</fireworks.version>
+        <diagram.version>1.3.2</diagram.version>
         <graph.core.version>1.1.5</graph.core.version>
         <aspectj.version>1.8.13</aspectj.version>
         <neo4j.host>localhost</neo4j.host>
@@ -90,56 +90,12 @@
             <groupId>org.reactome.server.tools</groupId>
             <artifactId>fireworks-exporter</artifactId>
             <version>${fireworks.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>junit</groupId>
-                    <artifactId>junit</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>ch.qos.logback</groupId>
-                    <artifactId>logback-classic</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.martiansoftware</groupId>
-                    <artifactId>jsap</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <!-- diagrams -->
         <dependency>
             <groupId>org.reactome.server.tools</groupId>
             <artifactId>diagram-exporter</artifactId>
             <version>${diagram.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.reactome.server.tools</groupId>
-                    <artifactId>diagram-reader</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.apache.xmlgraphics</groupId>
-                    <artifactId>batik-codec</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.aspose</groupId>
-                    <artifactId>aspose-slides</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>junit</groupId>
-                    <artifactId>junit</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>ch.qos.logback</groupId>
-                    <artifactId>logback-classic</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>commons-io</groupId>
-                    <artifactId>commons-io</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.martiansoftware</groupId>
-                    <artifactId>jsap</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
 
         <!-- http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-release/org/reactome/server/graph/graph-core/ for updates -->
@@ -151,18 +107,28 @@
     </dependencies>
 
     <repositories>
-        <!-- EBI repo -->
         <repository>
-            <id>pst-release</id>
-            <name>EBI Nexus Repository</name>
-            <url>http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-release</url>
-        </repository>
-
-        <!-- EBI repo -->
-        <repository>
-            <id>nexus-ebi-repo-release</id>
+            <id>nexus-ebi-repo</id>
             <name>The EBI internal repository</name>
             <url>http://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-repo/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <!-- EBI SNAPSHOT repo -->
+        <repository>
+            <id>nexus-ebi-snapshot-repo</id>
+            <name>The EBI internal snapshot repository</name>
+            <url>http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </repositories>
     <build>

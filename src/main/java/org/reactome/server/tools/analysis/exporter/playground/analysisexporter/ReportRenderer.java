@@ -1,12 +1,14 @@
 package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.reactome.server.analysis.core.result.AnalysisStoredResult;
+import org.reactome.server.analysis.core.result.utils.TokenUtils;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRenderReportException;
-import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.model.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.profile.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.section.*;
 import org.reactome.server.tools.analysis.exporter.playground.util.DiagramHelper;
+import org.reactome.server.tools.analysis.exporter.playground.util.FireworksHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +16,6 @@ import org.slf4j.LoggerFactory;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,10 +24,12 @@ import java.util.List;
  */
 class ReportRenderer {
 
-    private static final String PROFILE_PATH = "src/main/resources/";
-    private static final String PROFILE_NAME = "profile.json";
+    private static final String PROFILE = "src/main/resources/profile.json";
+    private static final String LINKICON = "src/main/resources/images/link.png";
+    private static final String pathDirectory = "src/test/resources/analysis";
     private static final ObjectMapper MAPPER = new ObjectMapper();
     private static final Logger LOGGER = LoggerFactory.getLogger(ReportRenderer.class);
+    private static final TokenUtils tokenUtils = new TokenUtils(pathDirectory);
     private static PdfProfile profile = new PdfProfile();
 
     /**
@@ -37,12 +40,14 @@ class ReportRenderer {
      * @throws Exception when fail to create the PDF document.
      */
     protected static void render(ReportArgs reportArgs, FileOutputStream destination) throws Exception {
+        DiagramHelper.setPaths(reportArgs.getDiagramPath(), reportArgs.getEhldPath(), reportArgs.getAnalysisPath());
+        FireworksHelper.setPaths(reportArgs.getFireworksPath(), reportArgs.getAnalysisPath());
 
-        String svgSummary = Paths.get(reportArgs.getEhldPath(), "svgSummary.txt").toFile().getAbsolutePath();
-//        RasterExporter.initialise(svgSummary);
-        loadPdfProfile(PROFILE_PATH + PROFILE_NAME);
-        DataSet dataSet = PdfUtils.getDataSet(reportArgs, profile.getNumberOfPathwaysToShow());
-        AnalysisReport report = new AnalysisReport(profile, dataSet, destination);
+        AnalysisStoredResult result = tokenUtils.getFromToken(reportArgs.getToken());
+        loadPdfProfile(PROFILE);
+
+        AnalysisReport report = new AnalysisReport(profile, destination);
+        report.setLinkIcon(PdfUtils.createImage(LINKICON));
         List<Section> sections = new ArrayList<>(6);
         sections.add(new TitleAndLogo());
         sections.add(new Administrative());
@@ -52,16 +57,13 @@ class ReportRenderer {
 
         try {
             for (Section section : sections) {
-                section.render(report);
+                section.render(report, result);
             }
         } catch (Exception e) {
             throw new FailToRenderReportException("Fail to render report.", e);
         } finally {
-            report.getDataSet().release();
             report.close();
             report.getPdfDocument().close();
-            LOGGER.info("spent {}ms to create {} diagrams.", DiagramHelper.getTotal(), DiagramHelper.getCount());
-            DiagramHelper.reSet();
         }
     }
 

@@ -1,14 +1,10 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
 import org.junit.Test;
-import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.imageio.ImageIO;
 import javax.net.ssl.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.X509Certificate;
@@ -21,9 +17,10 @@ import java.security.cert.X509Certificate;
 public class FireworksHelperTest {
 
     private static final String token = "MjAxODAxMDEwNzUwMjdfMTc%253D";
-    private static final String diagramPath = "/home/byron/static/demo";
+    private static final String diagramPath = "/home/byron/static/exportTest";
     private static final String ehldPath = "/home/byron/static";
     private static final String fireworksPath = "/home/byron/json";
+    private static final String analysisPath = "/src/test/resources/analysis";
     private static final Logger LOGGER = LoggerFactory.getLogger(GraphCoreHelperTest.class);
     private static TrustManager[] trustAllCerts;
 
@@ -68,11 +65,11 @@ public class FireworksHelperTest {
 
     @Test
     public void test() throws Exception {
-        overrideCertificateCheck();
-
-        BufferedImage fireworks = FireworksHelper.getFireworks(new ReportArgs(token, diagramPath, ehldPath, fireworksPath));
-        File file = new File("src/test/resources/fireworks/", "Homo_sapiens.png");
-        ImageIO.write(fireworks, "png", file);
-        LOGGER.info("");
+//        overrideCertificateCheck();
+//
+//        BufferedImage fireworks = FireworksHelper.getFireworks(result);
+//        File file = new File("src/exportTest/resources/fireworks/", "Homo_sapiens.png");
+//        ImageIO.write(fireworks, "png", file);
+//        LOGGER.info("");
     }
 }

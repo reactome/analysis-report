@@ -9,17 +9,17 @@ import com.itextpdf.kernel.geom.PageSize;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Image;
 import org.apache.commons.io.IOUtils;
+import org.reactome.server.analysis.core.model.identifier.Identifier;
+import org.reactome.server.analysis.core.model.identifier.MainIdentifier;
+import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.graph.domain.model.InstanceEdit;
 import org.reactome.server.graph.domain.model.Person;
-import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NoSuchPageSizeException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
-import org.reactome.server.tools.analysis.exporter.playground.model.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.awt.image.BufferedImage;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -28,6 +28,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -35,11 +36,6 @@ import java.util.Map;
 public class PdfUtils {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PdfUtils.class);
-    private static final String LINKICON = "src/main/resources/images/link.png";
-
-    public static Image createImage(BufferedImage bufferedImage) throws Exception {
-        return new Image(ImageDataFactory.create(bufferedImage, java.awt.Color.WHITE));
-    }
 
     public static Image createImage(String fileName) throws FailToAddLogoException {
         try {
@@ -50,13 +46,13 @@ public class PdfUtils {
     }
 
     public static Image createGoToLinkIcon(Image icon, float width, String destination) throws NullLinkIconDestinationException {
-        if (destination == null)
+        if (null == destination)
             throw new NullLinkIconDestinationException("Link icon's destination should not be null!");
         return ImageAutoScale(icon, width).setAction(PdfAction.createGoTo(destination));
     }
 
     public static Image createUrlLinkIcon(Image icon, float width, String url) throws NullLinkIconDestinationException {
-        if (url == null) throw new NullLinkIconDestinationException("Link icon's url should not be null!");
+        if (null == url) throw new NullLinkIconDestinationException("Link icon's url should not be null!");
         return ImageAutoScale(icon, width).setAction(PdfAction.createURI(url));
     }
 
@@ -79,68 +75,38 @@ public class PdfUtils {
     }
 
     /**
-     * concat all stId into a long String as the http post's parameter entities.
-     *
-     * @param pathways all pathways need to show.
-     * @return StringBuilder contains stId.
-     */
-    public static StringBuilder stIdConcat(List<Pathway> pathways) {
-        StringBuilder stringBuilder = new StringBuilder(15 * pathways.size());
-        pathways.forEach(pathway -> stringBuilder.append(pathway.getStId()).append(','));
-        return stringBuilder;
-    }
-
-    /**
      * merge the identifiers from all different pathways into a unique array.
+     * <p>
+     * //     * @param identifierFounds
      *
-     * @param identifierFounds
      * @return
      */
-//    @Monitor(name = "filter identifier")
-    private static Map<String, Identifier> identifiersFilter(List<IdentifierFound> identifierFounds) {
-        /**
-         * in general there just about 1/4 of identifiers was unique(since there have a lot of redundancies)
+    public static Map<Identifier, Set<MainIdentifier>> getFilteredIdentifiers(List<PathwayNodeSummary> pathways) {
+        /*
+          in general there just about 1/4 of identifiers was unique(since there have a lot of redundancies)
          */
-        Map<String, Identifier> filteredIdentifiers = new HashMap<>((int) (identifierFounds.size() * 0.25));
-//        long start = Instant.now().toEpochMilli();
-        for (IdentifierFound identifierFound : identifierFounds) {
-            for (Identifier identifier : identifierFound.getEntities()) {
-                if (!filteredIdentifiers.containsKey(identifier.getId())) {
-                    filteredIdentifiers.put(identifier.getId(), identifier);
+        Map<Identifier, Set<MainIdentifier>> filteredIdentifiers = new HashMap<>((int) (pathways.size() * 0.25));
+
+        for (PathwayNodeSummary pathway : pathways) {
+            for (Identifier identifier : pathway.getData().getIdentifierMap().keySet()) {
+                if (!filteredIdentifiers.containsKey(identifier)) {
+                    filteredIdentifiers.put(identifier, pathway.getData().getIdentifierMap().getElements(identifier));
                 } else {
-                    for (MapsTo mapsToOld : filteredIdentifiers.get(identifier.getId()).getMapsTo()) {
-                        for (MapsTo mapsToNew : identifier.getMapsTo()) {
-                            if (mapsToOld.getResource().equals(mapsToNew.getResource())) {
-                                mapsToOld.getIds().addAll(mapsToNew.getIds());
-                            }
-                        }
-                    }
+                    filteredIdentifiers.get(identifier).addAll(pathway.getData().getIdentifierMap().getElements(identifier));
                 }
             }
         }
-//        System.out.println(Instant.now().toEpochMilli()-start);
         return filteredIdentifiers;
-    }
-
-    public static DataSet getDataSet(ReportArgs reportArgs, int pathwaysToShow) throws Exception {
-        DataSet dataSet = new DataSet(reportArgs);
-        dataSet.setPathwaysToShow(pathwaysToShow);
-        dataSet.setLinkIcon(createImage(LINKICON));
-        dataSet.setDBVersion(GraphCoreHelper.getDBVersion());
-
-        HttpClientHelper.fillDataSet(reportArgs, dataSet);
-        dataSet.setIdentifierFiltered(PdfUtils.identifiersFilter(dataSet.getIdentifierFounds()));
-        return dataSet;
     }
 
     public static PdfFont createFont(String fontName) throws IOException {
         return PdfFontFactory.createFont(fontName, "", false, false);
     }
 
-    public static Color createColor(String color, int radix) {
-        return new DeviceRgb(Integer.valueOf(color.substring(1, 3), radix)
-                , Integer.valueOf(color.substring(3, 5), radix)
-                , Integer.valueOf(color.substring(5, 7), radix));
+    public static Color createColor(String color) {
+        return new DeviceRgb(Integer.valueOf(color.substring(1, 3), 16)
+                , Integer.valueOf(color.substring(3, 5), 16)
+                , Integer.valueOf(color.substring(5, 7), 16));
     }
 
 

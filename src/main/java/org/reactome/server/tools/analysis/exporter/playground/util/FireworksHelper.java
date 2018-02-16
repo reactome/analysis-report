@@ -1,11 +1,9 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
-import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
-import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
+import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToGetFireworksException;
-import org.reactome.server.tools.fireworks.exporter.common.analysis.AnalysisClient;
+import org.reactome.server.tools.fireworks.exporter.FireworksExporter;
 import org.reactome.server.tools.fireworks.exporter.common.api.FireworkArgs;
-import org.reactome.server.tools.fireworks.exporter.raster.FireworksExporter;
 
 import java.awt.image.BufferedImage;
 
@@ -18,21 +16,19 @@ public class FireworksHelper {
     private static final String SPECIES = "Homo_sapiens";
     private static final double QUALITY = 2.5;
 
-    static {
-        AnalysisClient.setServer(URL.REACTOME);
-    }
+
+    private static FireworksExporter exporter;
 
     /**
      * get the buffered image from fireworks exporter by given token
      *
-     * @param reportArgs token produced by the server when it complete the analysis with your data,pick it from the URL
+     * @param result
      * @return {@see BufferedImage}.
      * @throws FailToGetFireworksException
      */
-    public static BufferedImage getFireworks(ReportArgs reportArgs) throws FailToGetFireworksException {
+    public static BufferedImage getFireworks(AnalysisStoredResult result) throws FailToGetFireworksException {
         FireworkArgs args = new FireworkArgs(SPECIES, "png");
         args.setFactor(QUALITY);
-        args.setToken(reportArgs.getToken());
         args.setProfile(FireworksColor.COPPER_PLUS.getColor());
         /**
          * looks add flags will result in a lot of time consumption for to request info
@@ -42,10 +38,13 @@ public class FireworksHelper {
 //        args.setFlags(Arrays.asList("CTP"));
 
         try {
-            BufferedImage fireworks = new FireworksExporter(args, reportArgs.getFireworksPath()).render();
-            return fireworks;
+            return exporter.renderRaster(args, result);
         } catch (Exception pascual) {
-            throw new FailToGetFireworksException(String.format("Failed to get fireworks for token : ", reportArgs.getToken()), pascual);
+            throw new FailToGetFireworksException("Failed to get fireworks for token : ", pascual);
         }
+    }
+
+    public static void setPaths(String fireworksPath, String analysisPath) {
+        exporter = new FireworksExporter(fireworksPath, analysisPath);
     }
 }

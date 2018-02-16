@@ -11,6 +11,7 @@ public class ReportArgs {
     private String diagramPath;
     private String ehldPath;
     private String fireworksPath;
+    private String analysisPath;
 
     /**
      * @param token         token produced by the {@see <a href="https://reactome.org">Reactome</a>} server end once the user submitted the data set to perform the analysis service.
@@ -18,11 +19,12 @@ public class ReportArgs {
      * @param ehldPath      the EHLD raw json file path to export the pathway diagram image.
      * @param fireworksPath the fireworks raw json file path to export the analysis fireworks image.
      */
-    public ReportArgs(String token, String diagramPath, String ehldPath, String fireworksPath) {
+    public ReportArgs(String token, String diagramPath, String ehldPath, String fireworksPath, String analysisPath) {
         this.token = token;
         this.diagramPath = diagramPath;
         this.ehldPath = ehldPath;
         this.fireworksPath = fireworksPath;
+        this.analysisPath = analysisPath;
     }
 
     public String getToken() {
@@ -46,4 +48,7 @@ public class ReportArgs {
         return fireworksPath;
     }
 
+    public String getAnalysisPath() {
+        return analysisPath;
+    }
 }

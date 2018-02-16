@@ -1,5 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
 
+import com.itextpdf.kernel.colors.Color;
 import com.itextpdf.kernel.events.PdfDocumentEvent;
 import com.itextpdf.kernel.geom.Rectangle;
 import com.itextpdf.kernel.pdf.PdfDocument;
@@ -9,8 +10,8 @@ import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.TextAlignment;
-import org.reactome.server.tools.analysis.exporter.playground.model.DataSet;
-import org.reactome.server.tools.analysis.exporter.playground.model.PdfProfile;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.profile.PdfProfile;
+import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -20,31 +21,46 @@ import java.io.IOException;
  */
 public class AnalysisReport extends Document {
 
-    private DataSet dataSet;
+    private Image linkIcon;
+    private Color reactomeColor;
     private PdfProfile profile;
     private Rectangle currentPageArea;
     private FileOutputStream destination;
 
-    public AnalysisReport(PdfProfile profile, DataSet dataSet, FileOutputStream destination) throws Exception {
-        super(new PdfDocument(new PdfWriter(destination, new WriterProperties().setFullCompressionMode(true))), profile.getPageSize());
+    public AnalysisReport(PdfProfile profile, FileOutputStream destination) throws Exception {
+        super(new PdfDocument(new PdfWriter(destination, new WriterProperties()
+                .setFullCompressionMode(false))), profile.getPageSize());
         destination.getChannel().force(true);
+
         this.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(this));
         this.destination = destination;
-        this.dataSet = dataSet;
         this.profile = profile;
         this.setFont(profile.getFont())
                 .setTextAlignment(TextAlignment.JUSTIFIED);
         this.setMargins(profile.getTopMargin(), profile.getRightMargin(), profile.getBottomMargin(), profile.getLeftMargin());
         currentPageArea = getPageEffectiveArea(profile.getPageSize());
+        reactomeColor = PdfUtils.createColor("#2F9EC2");
 
+    }
+
+    public Image getLinkIcon() {
+        return linkIcon;
+    }
+
+    public void setLinkIcon(Image linkIcon) {
+        this.linkIcon = linkIcon;
+    }
+
+    public Color getReactomeColor() {
+        return reactomeColor;
+    }
+
+    public PdfProfile getProfile() {
+        return profile;
     }
 
     public Rectangle getCurrentPageArea() {
         return currentPageArea;
-    }
-
-    public DataSet getDataSet() {
-        return dataSet;
     }
 
     public void addImage(Image image) {
@@ -52,7 +68,7 @@ public class AnalysisReport extends Document {
     }
 
     public AnalysisReport addNormalTitle(Paragraph title) {
-        this.add(title.setFontColor(profile.getTitleColor()).setMultipliedLeading(0.5f));
+        this.add(title.setFontColor(profile.getTitleColor()).setMultipliedLeading(0.85f));
 //        this.add(title.setFontColor(titleColor));
         return this;
     }
@@ -70,9 +86,6 @@ public class AnalysisReport extends Document {
         this.add(paragraph.setFontColor(profile.getParagraphColor()).setMultipliedLeading(profile.getMultipliedLeading()).setMarginTop(2.5f).setMarginBottom(2.5f));
     }
 
-    public PdfProfile getProfile() {
-        return profile;
-    }
 
     @Override
     public void flush() {

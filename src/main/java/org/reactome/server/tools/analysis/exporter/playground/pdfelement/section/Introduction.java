@@ -1,6 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.section;
 
 import com.itextpdf.layout.element.Paragraph;
+import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constant.MarginLeft;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
@@ -15,7 +16,7 @@ public class Introduction implements Section {
     private static final String[] INTRODUCTION = PdfUtils.getText("src/main/resources/texts/introduction.txt");
     private static final String[] LITERATURE = PdfUtils.getText("src/main/resources/texts/references.txt");
 
-    public void render(AnalysisReport report) throws NullLinkIconDestinationException {
+    public void render(AnalysisReport report, AnalysisStoredResult result) throws NullLinkIconDestinationException {
         report.addNormalTitle("Introduction", FontSize.H2, 0);
         for (String introduction : INTRODUCTION) {
             report.addParagraph(new Paragraph(introduction).setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M2));
@@ -24,7 +25,7 @@ public class Introduction implements Section {
         for (int i = 0; i < LITERATURE.length; i++) {
             report.addParagraph(new Paragraph(LITERATURE[i])
                     .setFontSize(FontSize.H5)
-                    .setMarginLeft(MarginLeft.M2).add(PdfUtils.createUrlLinkIcon(report.getDataSet().getLinkIcon(), FontSize.H5, LITERATURE[++i])));
+                    .setMarginLeft(MarginLeft.M2).add(PdfUtils.createUrlLinkIcon(report.getLinkIcon(), FontSize.H5, LITERATURE[++i])));
         }
     }
 }

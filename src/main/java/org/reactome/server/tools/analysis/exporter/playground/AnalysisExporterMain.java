@@ -3,12 +3,9 @@ package org.reactome.server.tools.analysis.exporter.playground;
 import com.martiansoftware.jsap.FlaggedOption;
 import com.martiansoftware.jsap.JSAP;
 import com.martiansoftware.jsap.JSAPResult;
-import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.AnalysisExporter;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.time.Instant;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -54,17 +51,23 @@ public class AnalysisExporterMain {
                 .setShortFlag('f')
                 .setHelp("static path contains the fireworks raw information json file");
         jsap.registerParameter(fireworksPath);
+        FlaggedOption analysisPath = new FlaggedOption("analysisPath");
+        fireworksPath.setStringParser(JSAP.STRING_PARSER)
+                .setRequired(true)
+                .setShortFlag('f')
+                .setHelp("static path contains the analysis raw information binary file");
+        jsap.registerParameter(analysisPath);
 
         logger.info(jsap.getHelp());
         JSAPResult config = jsap.parse(args);
-        ReportArgs reportArgs = new ReportArgs(config.getString("token"), config.getString("diagramPath"), config.getString("ehdlPath"), config.getString("fireworksPath"));
+        ReportArgs reportArgs = new ReportArgs(config.getString("token"), config.getString("diagramPath"), config.getString("ehdlPath"), config.getString("fireworksPath"), config.getString("analysisPath"));
 
-        for (int i = 0; i < 2; i++) {
-            long start = Instant.now().toEpochMilli();
-            AnalysisExporter.export(reportArgs, config.getString("output"));
-            long end = Instant.now().toEpochMilli();
-            logger.info("create pdf in {}ms", end - start);
-        }
+//        for (int i = 0; i < 2; i++) {
+//            long start = Instant.now().toEpochMilli();
+//            AnalysisExporter.export(reportArgs, result, config.getString("output"));
+//            long end = Instant.now().toEpochMilli();
+//            logger.info("create pdf in {}ms", end - start);
+//        }
         System.exit(0);
     }
 }

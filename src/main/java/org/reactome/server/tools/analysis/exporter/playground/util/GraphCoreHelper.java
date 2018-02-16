@@ -1,5 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
+import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.service.DatabaseObjectService;
 import org.reactome.server.graph.service.GeneralService;
@@ -30,10 +31,10 @@ public class GraphCoreHelper {
      * @param pathways {@see org.reactome.server.tools.analysis.exporter.playground.model.Pathway}
      * @return
      */
-    public static Pathway[] getPathway(List<org.reactome.server.tools.analysis.exporter.playground.model.Pathway> pathways) {
-        List<Object> identifiers = new ArrayList<>();
-        pathways.forEach(pathway -> identifiers.add(pathway.getStId()));
-        return databaseObjectService.findByIdsNoRelations(identifiers).toArray(new Pathway[identifiers.size()]);
+    public static Pathway[] getPathway(List<PathwayNodeSummary> pathways) {
+        List<Object> StIds = new ArrayList<>();
+        pathways.forEach(pathway -> StIds.add(pathway.getStId()));
+        return databaseObjectService.findByIdsNoRelations(StIds).toArray(new Pathway[StIds.size()]);
     }
 
     /**

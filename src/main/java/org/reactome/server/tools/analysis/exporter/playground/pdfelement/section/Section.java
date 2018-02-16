@@ -1,5 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.section;
 
+import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 
 /**
@@ -11,8 +12,9 @@ public interface Section {
     /**
      * This method is to render the pdf document by give a exact {@see AnalysisReport} and {@see DataSet}.
      *
-     * @param report  {@see AnalysisReport}.
+     * @param report {@see AnalysisReport}.
+     * @param result
      * @throws Exception when failed to manipulate with analysis report.
      */
-    void render(AnalysisReport report) throws Exception;
+    void render(AnalysisReport report, AnalysisStoredResult result) throws Exception;
 }
