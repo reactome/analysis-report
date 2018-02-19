@@ -13,7 +13,7 @@ public interface Section {
      * This method is to render the pdf document by give a exact {@see AnalysisReport} and {@see DataSet}.
      *
      * @param report {@see AnalysisReport}.
-     * @param result
+     * @param result {@see AnalysisStoredResult}.
      * @throws Exception when failed to manipulate with analysis report.
      */
     void render(AnalysisReport report, AnalysisStoredResult result) throws Exception;

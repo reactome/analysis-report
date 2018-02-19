@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
-import org.reactome.server.tools.analysis.exporter.playground.exception.FailToGetFireworksException;
+import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 import org.reactome.server.tools.fireworks.exporter.FireworksExporter;
 import org.reactome.server.tools.fireworks.exporter.common.api.FireworkArgs;
 
@@ -22,29 +22,22 @@ public class FireworksHelper {
     /**
      * get the buffered image from fireworks exporter by given token
      *
-     * @param result
+     * @param result {@see AnalysisStoredResult}.
      * @return {@see BufferedImage}.
-     * @throws FailToGetFireworksException
      */
-    public static BufferedImage getFireworks(AnalysisStoredResult result) throws FailToGetFireworksException {
+    public static BufferedImage getFireworks(AnalysisStoredResult result) {
         FireworkArgs args = new FireworkArgs(SPECIES, "png");
         args.setFactor(QUALITY);
         args.setProfile(FireworksColor.COPPER_PLUS.getColor());
-        /**
-         * looks add flags will result in a lot of time consumption for to request info
-         * about 28s to request for resources data to render image
-         */
-//        ContentServiceClient.setHost("https://reactome.org/");
-//        args.setFlags(Arrays.asList("CTP"));
 
         try {
             return exporter.renderRaster(args, result);
         } catch (Exception pascual) {
-            throw new FailToGetFireworksException("Failed to get fireworks for token : ", pascual);
+            return null;
         }
     }
 
-    public static void setPaths(String fireworksPath, String analysisPath) {
-        exporter = new FireworksExporter(fireworksPath, analysisPath);
+    public static void setPaths(ReportArgs reportArgs) {
+        exporter = new FireworksExporter(reportArgs.getFireworksPath(), reportArgs.getAnalysisPath());
     }
 }

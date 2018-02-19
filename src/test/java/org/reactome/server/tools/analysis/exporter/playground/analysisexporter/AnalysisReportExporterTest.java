@@ -27,19 +27,25 @@ public class AnalysisReportExporterTest {
 
 //            from new analysis snapshot
             put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
-            put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
-            put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
-            put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
-            put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
+//            put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
+//            put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
+//            put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
+//            put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
         }
     };
 
     private static final String diagramPath = "/home/byron/reactome/diagram";
     private static final String ehldPath = "/home/byron/reactome/ehld";
+    private static final String svgSummary = "/home/byron/reactome/ehld/svgSummary.txt";
     private static final String fireworksPath = "/home/byron/reactome/fireworks";
     private static final String pdfPath = "src/test/resources/pdfs";
     private static final String analysisPath = "/src/test/resources/analysis";
     private static final Logger LOGGER = LoggerFactory.getLogger(AnalysisReportExporterTest.class);
+
+//    @BeforeClass
+//    public static void setUp() {
+//        ReactomeGraphCore.initialise(System.getProperty("neo4j.host"), System.getProperty("neo4j.port"), System.getProperty("neo4j.user"), System.getProperty("neo4j.password"), GraphCoreConfig.class);
+//    }
 
     @Test
     public void exportTest() {
@@ -48,7 +54,7 @@ public class AnalysisReportExporterTest {
             int count = 1;
 //        CyclicBarrier cyclicBarrier = new CyclicBarrier(count);
 //        ExecutorService executorService = Executors.newFixedThreadPool(count);
-            ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath, analysisPath);
+            ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath, analysisPath, svgSummary);
 
             try {
                 AnalysisExporter.export(reportArgs, String.format("%s/%s@%s.pdf", pdfPath, token, Instant.now().toEpochMilli()));
@@ -60,7 +66,7 @@ public class AnalysisReportExporterTest {
 //            executorService.execute(new ExporterThread(token, diagramPath, ehldPath, fireworksPath, "ExporterThread#" + i));
 
                 long start = Instant.now().toEpochMilli();
-                reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath, analysisPath);
+                reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath, analysisPath, svgSummary);
                 try {
                     AnalysisExporter.export(reportArgs, String.format("%s/%s@%s.pdf", pdfPath, token, start));
                 } catch (Exception e) {

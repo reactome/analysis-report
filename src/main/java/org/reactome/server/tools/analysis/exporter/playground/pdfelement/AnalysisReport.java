@@ -22,24 +22,24 @@ import java.io.IOException;
 public class AnalysisReport extends Document {
 
     private Image linkIcon;
-    private Color reactomeColor;
+    private Color linkColor;
     private PdfProfile profile;
     private Rectangle currentPageArea;
     private FileOutputStream destination;
 
     public AnalysisReport(PdfProfile profile, FileOutputStream destination) throws Exception {
         super(new PdfDocument(new PdfWriter(destination, new WriterProperties()
-                .setFullCompressionMode(false))), profile.getPageSize());
+                .setFullCompressionMode(true))));
         destination.getChannel().force(true);
 
         this.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(this));
         this.destination = destination;
         this.profile = profile;
-        this.setFont(profile.getFont())
+        this.setFont(profile.getPdfFont())
                 .setTextAlignment(TextAlignment.JUSTIFIED);
-        this.setMargins(profile.getTopMargin(), profile.getRightMargin(), profile.getBottomMargin(), profile.getLeftMargin());
-        currentPageArea = getPageEffectiveArea(profile.getPageSize());
-        reactomeColor = PdfUtils.createColor("#2F9EC2");
+        this.setMargins(profile.getMargin().getTop(), profile.getMargin().getRight(), profile.getMargin().getBottom(), profile.getMargin().getLeft());
+        currentPageArea = getPageEffectiveArea(this.getPdfDocument().getDefaultPageSize());
+        linkColor = PdfUtils.createColor("#2F9EC2");
 
     }
 
@@ -51,8 +51,8 @@ public class AnalysisReport extends Document {
         this.linkIcon = linkIcon;
     }
 
-    public Color getReactomeColor() {
-        return reactomeColor;
+    public Color getLinkColor() {
+        return linkColor;
     }
 
     public PdfProfile getProfile() {
@@ -68,7 +68,7 @@ public class AnalysisReport extends Document {
     }
 
     public AnalysisReport addNormalTitle(Paragraph title) {
-        this.add(title.setFontColor(profile.getTitleColor()).setMultipliedLeading(0.85f));
+        this.add(title.setMultipliedLeading(0.85f));
 //        this.add(title.setFontColor(titleColor));
         return this;
     }
@@ -78,12 +78,12 @@ public class AnalysisReport extends Document {
     }
 
     public AnalysisReport addNormalTitle(Paragraph title, int fontSize, int marginLeft) {
-        this.addNormalTitle(title.setFontSize(fontSize).setMarginLeft(marginLeft).setFontColor(profile.getTitleColor()));
+        this.addNormalTitle(title.setFontSize(fontSize).setMarginLeft(marginLeft));
         return this;
     }
 
     public void addParagraph(Paragraph paragraph) {
-        this.add(paragraph.setFontColor(profile.getParagraphColor()).setMultipliedLeading(profile.getMultipliedLeading()).setMarginTop(2.5f).setMarginBottom(2.5f));
+        this.add(paragraph.setMultipliedLeading(1).setMarginTop(2.5f).setMarginBottom(2.5f));
     }
 
 

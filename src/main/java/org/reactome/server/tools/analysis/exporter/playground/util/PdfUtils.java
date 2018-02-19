@@ -5,17 +5,21 @@ import com.itextpdf.kernel.colors.Color;
 import com.itextpdf.kernel.colors.DeviceRgb;
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;
-import com.itextpdf.kernel.geom.PageSize;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Image;
+import com.itextpdf.layout.element.Paragraph;
 import org.apache.commons.io.IOUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.reactome.server.analysis.core.model.identifier.Identifier;
 import org.reactome.server.analysis.core.model.identifier.MainIdentifier;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.graph.domain.model.InstanceEdit;
 import org.reactome.server.graph.domain.model.Person;
+import org.reactome.server.graph.domain.model.Summation;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
-import org.reactome.server.tools.analysis.exporter.playground.exception.NoSuchPageSizeException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -139,61 +143,24 @@ public class PdfUtils {
     public static String[] getText(String destination) {
         String[] texts = null;
         try {
-            texts = IOUtils.toString(new FileReader(destination)).split(IOUtils.LINE_SEPARATOR_UNIX);
+            texts = IOUtils.toString(new FileReader(destination)).split(System.getProperty("line.separator"));
         } catch (IOException e) {
             LOGGER.error("Failed to read text from dictionary : {}", destination);
         }
         return texts;
     }
 
-    public static PageSize createPageSize(String type) throws NoSuchPageSizeException {
-        switch (type) {
-            case "A0":
-                return PageSize.A0;
-            case "A1":
-                return PageSize.A1;
-            case "A2":
-                return PageSize.A2;
-            case "A3":
-                return PageSize.A3;
-            case "A4":
-                return PageSize.A4;
-            case "A5":
-                return PageSize.A5;
-            case "A6":
-                return PageSize.A6;
-            case "A7":
-                return PageSize.A7;
-            case "A8":
-                return PageSize.A8;
-            case "A9":
-                return PageSize.A9;
-            case "A10":
-                return PageSize.A10;
-            case "B0":
-                return PageSize.B0;
-            case "B1":
-                return PageSize.B1;
-            case "B2":
-                return PageSize.B2;
-            case "B3":
-                return PageSize.B3;
-            case "B4":
-                return PageSize.B4;
-            case "B5":
-                return PageSize.B5;
-            case "B6":
-                return PageSize.B6;
-            case "B7":
-                return PageSize.B7;
-            case "B8":
-                return PageSize.B8;
-            case "B9":
-                return PageSize.B9;
-            case "B10":
-                return PageSize.B10;
-            default:
-                throw new NoSuchPageSizeException(String.format("Cant recognize page size : %s", type));
+    public static Paragraph getSummation(List<Summation> summations) {
+        Paragraph paragraph = new Paragraph();
+        for (Summation summation : summations) {
+            Document html = Jsoup.parseBodyFragment(summation.getText());
+            Element body = html.body();
+
+            Elements elements = html.getAllElements();
+            for (Element element : elements) {
+                paragraph.add(element.text());
+            }
         }
+        return paragraph;
     }
 }

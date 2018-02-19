@@ -32,7 +32,7 @@ public class CellTextRenderer extends CellRenderer {
                 .setMultipliedLeading(1.0f);
 //                .setHyphenation(hyphenation);
         for (MainIdentifier identifier : identifiers) {
-            content.add(new Text(identifier.getValue().getId().concat(","))
+            content.add(new Text(identifier.getValue().getId().concat(" "))
                     .setFontSize(fontSize)
                     .setDestination(identifier.getValue().getId()));
         }

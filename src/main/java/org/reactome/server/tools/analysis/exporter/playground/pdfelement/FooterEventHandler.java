@@ -26,7 +26,7 @@ public class FooterEventHandler implements IEventHandler {
         PdfPage page = pdfDocumentEvent.getPage();
         PdfCanvas canvas = new PdfCanvas(page);
         canvas.beginText()
-                .setFontAndSize(report.getProfile().getFont(), FontSize.H6)
+                .setFontAndSize(report.getProfile().getPdfFont(), FontSize.H6)
                 .moveText(report.getBottomMargin() * 2 / 3, report.getBottomMargin() * 2 / 3)
                 .showText("Reactome.org")
                 .moveText(page.getPageSize().getWidth() / 2 - 35, 0)

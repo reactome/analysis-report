@@ -57,10 +57,22 @@ public class AnalysisExporterMain {
                 .setShortFlag('f')
                 .setHelp("static path contains the analysis raw information binary file");
         jsap.registerParameter(analysisPath);
+        jsap.registerParameter(fireworksPath);
+        FlaggedOption svgSummary = new FlaggedOption("svgSummary");
+        fireworksPath.setStringParser(JSAP.STRING_PARSER)
+                .setRequired(true)
+                .setShortFlag('f')
+                .setHelp("static path contains the svgSummary raw information txt file");
+        jsap.registerParameter(analysisPath);
 
         logger.info(jsap.getHelp());
         JSAPResult config = jsap.parse(args);
-        ReportArgs reportArgs = new ReportArgs(config.getString("token"), config.getString("diagramPath"), config.getString("ehdlPath"), config.getString("fireworksPath"), config.getString("analysisPath"));
+        ReportArgs reportArgs = new ReportArgs(config.getString("token")
+                , config.getString("diagramPath")
+                , config.getString("ehdlPath")
+                , config.getString("fireworksPath")
+                , config.getString("analysisPath")
+                , config.getString("svgSummary"));
 
 //        for (int i = 0; i < 2; i++) {
 //            long start = Instant.now().toEpochMilli();

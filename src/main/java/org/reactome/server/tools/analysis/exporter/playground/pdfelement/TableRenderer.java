@@ -5,7 +5,6 @@ import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.element.Cell;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Table;
-import com.itextpdf.layout.hyphenation.HyphenationConfig;
 import com.itextpdf.layout.property.*;
 import org.reactome.server.analysis.core.model.AnalysisIdentifier;
 import org.reactome.server.analysis.core.model.identifier.Identifier;
@@ -22,7 +21,7 @@ import java.util.Set;
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
-public class TableRender {
+public class TableRenderer {
 
     private static final int NUM_COLUMNS = 8;
     private static final float multipliedLeading = 1.0f;
@@ -32,7 +31,7 @@ public class TableRender {
     // TODO: 12/02/18 use large table once it been fixed by iText team
     private AnalysisStoredResult result;
 
-    public TableRender(AnalysisStoredResult result) {
+    public TableRenderer(AnalysisStoredResult result) {
         this.result = result;
     }
 
@@ -57,7 +56,7 @@ public class TableRender {
                 identifierNotFoundTableNoEXP(report);
                 break;
             default:
-                throw new TableTypeNotFoundException(String.format("No table type : %s was found", type));
+                throw new TableTypeNotFoundException(String.format("No table type : %s found", type));
         }
     }
 
@@ -73,7 +72,7 @@ public class TableRender {
         for (PathwayNodeSummary pathway : result.getPathways().subList(0, report.getProfile().getPathwaysToShow())) {
             table.addCell(new Cell().add(new Paragraph(pathway.getName())
                     .setFontSize(FontSize.H8)
-                    .setFontColor(report.getReactomeColor())
+                    .setFontColor(report.getLinkColor())
                     .setAction(PdfAction.createGoTo(pathway.getStId()))
                     .setKeepTogether(true)
 //                    .add(PdfUtils.createGoToLinkIcon(report.getLinkIcon(), FontSize.H8, pathway.getStId()))
@@ -95,16 +94,6 @@ public class TableRender {
 
     private void identifierFoundTable(AnalysisReport report) {
         int column = result.getExpressionSummary().getColumnNames().size() + 3;
-//        float[] widths = new float[column];
-//        for (int i = 0; i < column; i++) {
-//            if (i == 2) {
-//                // give more space for 'mapsTo' column since one identifier can map more than one identifiers.
-//                widths[i] = 1.5f / column;
-//            } else {
-//                widths[i] = 1f / column;
-//            }
-//        }
-//        Table table = new Table(UnitValue.createPercentArray(widths));
         Table table = new Table(new UnitValue[column]);
         table.setWidth(UnitValue.createPercentValue(100));
         table.addHeaderCell(textCell("Identifier", FontSize.H5));
@@ -145,7 +134,6 @@ public class TableRender {
     }
 
     private void identifierFoundTableNoEXP(AnalysisReport report) {
-//        Table table = new Table(new UnitValue[IDENTIFIERS_FOUND_NO_EXP_HEADERS.length]);
         Table table = new Table(UnitValue.createPercentArray(new float[]{1 / 8f, 1 / 8f, 2 / 8f, 1 / 8f, 1 / 8f, 2 / 8f,}));
         table.setWidth(UnitValue.createPercentValue(100));
         for (String header : IDENTIFIERS_FOUND_NO_EXP_HEADERS) {
@@ -162,34 +150,11 @@ public class TableRender {
             cell.setProperty(Property.DESTINATION, entry.getKey().getValue().getId());
             table.addCell(cell);
             table.addCell(textCell(entry.getKey().getResource().getName().replaceAll("#", ""), FontSize.H6));
-//            StringBuilder mapsTo = new StringBuilder();
             cell = new Cell();
             cell.setNextRenderer(new CellTextRenderer(cell, entry.getValue(), FontSize.H6));
             cell.setKeepTogether(true).setVerticalAlignment(VerticalAlignment.MIDDLE).setTextAlignment(TextAlignment.CENTER);
-//            for (MainIdentifier mainIdentifier : entry.getValue()) {
-//                cell.add(new Paragraph(mainIdentifier.getValue().getId()).add(","))
-//                        .setFontSize(FontSize.H6)
-//                        .setDestination(mainIdentifier.getResource().getName().concat(mainIdentifier.getValue().getId()));
-//            }
-            HyphenationConfig hyphenation = new HyphenationConfig(3, 3);
-            hyphenation.setHyphenSymbol('\u0000');
-            cell.setHyphenation(hyphenation);
             table.addCell(cell);
         }
-//            if (mapsTo.length() < 25) {
-//                cell = new Cell();
-//                cell.setKeepTogether(true).setVerticalAlignment(VerticalAlignment.MIDDLE).setTextAlignment(TextAlignment.CENTER);
-//                for (String identifier : mapsTo.toString().split(",")) {
-//                    cell.add(new Paragraph(identifier).add(",")).setFontSize(FontSize.H6).setDestination();
-//                }
-//                table.addCell(cell);
-//            } else {
-//                cell = new Cell();
-//                cell.setNextRenderer(new CellTextRenderer(cell, mapsTo.deleteCharAt(mapsTo.lastIndexOf(",")).toString(), FontSize.H6));
-//                cell.setKeepTogether(true).setVerticalAlignment(VerticalAlignment.MIDDLE).setTextAlignment(TextAlignment.CENTER);
-//                table.addCell(cell);
-//            }
-//    }
 
         if (filteredIdentifiers.size() % 2 == 1) {
             table.addCell(new Cell());
@@ -239,7 +204,7 @@ public class TableRender {
                 .setWidth(UnitValue.createPercentValue(100));
         pathway.getData().getFoundEntities().forEach(analysisIdentifier -> table.addCell(
                 new Cell().add(new Paragraph(analysisIdentifier.getId())
-                        .setFontColor(report.getReactomeColor())
+                        .setFontColor(report.getLinkColor())
                         .setMultipliedLeading(multipliedLeading))
                         .setAction(PdfAction.createGoTo(analysisIdentifier.getId()))
                         .setBorder(Border.NO_BORDER)

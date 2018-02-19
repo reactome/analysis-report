@@ -15,12 +15,11 @@ import java.util.List;
  */
 public class GraphCoreHelper {
 
-    private static ApplicationContext context;
     private static GeneralService genericService;
     private static DatabaseObjectService databaseObjectService;
 
     static {
-        context = new AnnotationConfigApplicationContext(GraphCoreConfig.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(GraphCoreConfig.class);
         genericService = context.getBean(GeneralService.class);
         databaseObjectService = context.getBean(DatabaseObjectService.class);
     }
@@ -29,7 +28,7 @@ public class GraphCoreHelper {
      * get pathways detail information from neo4j database by given the target pathway identifiers array.
      *
      * @param pathways {@see org.reactome.server.tools.analysis.exporter.playground.model.Pathway}
-     * @return
+     * @return {@code Pathway[]} array contains the pathway detail information.
      */
     public static Pathway[] getPathway(List<PathwayNodeSummary> pathways) {
         List<Object> StIds = new ArrayList<>();

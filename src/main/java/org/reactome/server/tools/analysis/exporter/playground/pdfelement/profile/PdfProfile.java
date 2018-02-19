@@ -1,10 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.profile;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.itextpdf.kernel.colors.Color;
 import com.itextpdf.kernel.font.PdfFont;
-import com.itextpdf.kernel.geom.PageSize;
-import org.reactome.server.tools.analysis.exporter.playground.exception.NoSuchPageSizeException;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 import java.io.IOException;
@@ -12,71 +8,38 @@ import java.io.IOException;
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class PdfProfile {
 
-    private LogoProfile logoProfile;
-    private TitleProfile titleProfile;
-    private Float topMargin = 30.0F;
-    private Float rightMargin = 30.0F;
-    private Float bottomMargin = 30.0F;
-    private Float leftMargin = 30.0F;
-    private Integer pathwaysToShow = 50;
-    private Float multipliedLeading = 1.0F;
-    private String titleColor = "#000000";
-    private String paragraphColor = "#000000";
-    private String tableColor = "#000000";
-    private String pageSize = "A4";
-    private PdfFont font;
+    private String font;
+    private PdfFont pdfFont;
+    private Integer fontSize;
+    private Integer pathwaysToShow;
+    private MarginProfile margin;
+    private ParagraphProfile paragraph;
 
-    // TODO: 22/01/18 extract another more properties to profile file
-
-    public LogoProfile getLogoProfile() {
-        return logoProfile;
+    public String getFont() {
+        return font;
     }
 
-    public void setLogoProfile(LogoProfile logoProfile) {
-        this.logoProfile = logoProfile;
+    public void setFont(String font) {
+        this.font = font;
     }
 
-    public TitleProfile getTitleProfile() {
-        return titleProfile;
+    public PdfFont getPdfFont() {
+        try {
+            pdfFont = PdfUtils.createFont(getFont());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return pdfFont;
     }
 
-    public void setTitleProfile(TitleProfile titleProfile) {
-        this.titleProfile = titleProfile;
+    public Integer getFontSize() {
+        return fontSize;
     }
 
-    public Float getTopMargin() {
-        return topMargin;
-    }
-
-    public void setTopMargin(Float topMargin) {
-        this.topMargin = topMargin;
-    }
-
-    public Float getRightMargin() {
-        return rightMargin;
-    }
-
-    public void setRightMargin(Float rightMargin) {
-        this.rightMargin = rightMargin;
-    }
-
-    public Float getBottomMargin() {
-        return bottomMargin;
-    }
-
-    public void setBottomMargin(Float bottomMargin) {
-        this.bottomMargin = bottomMargin;
-    }
-
-    public Float getLeftMargin() {
-        return leftMargin;
-    }
-
-    public void setLeftMargin(Float leftMargin) {
-        this.leftMargin = leftMargin;
+    public void setFontSize(Integer fontSize) {
+        this.fontSize = fontSize;
     }
 
     public Integer getPathwaysToShow() {
@@ -87,70 +50,30 @@ public class PdfProfile {
         this.pathwaysToShow = pathwaysToShow;
     }
 
-    public Float getMultipliedLeading() {
-        return multipliedLeading;
+    public MarginProfile getMargin() {
+        return margin;
     }
 
-    public void setMultipliedLeading(Float multipliedLeading) {
-        this.multipliedLeading = multipliedLeading;
+    public void setMargin(MarginProfile margin) {
+        this.margin = margin;
     }
 
-    public Color getTitleColor() {
-        return PdfUtils.createColor(titleColor);
+    public ParagraphProfile getParagraph() {
+        return paragraph;
     }
 
-    public void setTitleColor(String titleColor) {
-        this.titleColor = titleColor;
-    }
-
-    public Color getParagraphColor() {
-        return PdfUtils.createColor(paragraphColor);
-    }
-
-    public void setParagraphColor(String paragraphColor) {
-        this.paragraphColor = paragraphColor;
-    }
-
-    public Color getTableColor() {
-        return PdfUtils.createColor(tableColor);
-    }
-
-    public void setTableColor(String tableColor) {
-        this.tableColor = tableColor;
-    }
-
-    public PageSize getPageSize() throws NoSuchPageSizeException {
-        return PdfUtils.createPageSize(pageSize);
-    }
-
-    public void setPageSize(String pageSize) {
-        this.pageSize = pageSize;
-    }
-
-    public PdfFont getFont() {
-        return font;
-    }
-
-    public void setFont(String font) throws IOException {
-        this.font = PdfUtils.createFont(font);
+    public void setParagraph(ParagraphProfile paragraph) {
+        this.paragraph = paragraph;
     }
 
     @Override
     public String toString() {
         return "PdfProfile{" +
-                "logoProfile=" + logoProfile +
-                ", titleProfile=" + titleProfile +
-                ", topMargin=" + topMargin +
-                ", rightMargin=" + rightMargin +
-                ", bottomMargin=" + bottomMargin +
-                ", leftMargin=" + leftMargin +
+                "font='" + font + '\'' +
+                ", fontSize=" + fontSize +
                 ", pathwaysToShow=" + pathwaysToShow +
-                ", multipliedLeading=" + multipliedLeading +
-                ", titleColor='" + titleColor + '\'' +
-                ", paragraphColor='" + paragraphColor + '\'' +
-                ", tableColor='" + tableColor + '\'' +
-                ", pageSize='" + pageSize + '\'' +
-                ", font='" + font + '\'' +
+                ", margin=" + margin +
+                ", paragraph=" + paragraph +
                 '}';
     }
 }

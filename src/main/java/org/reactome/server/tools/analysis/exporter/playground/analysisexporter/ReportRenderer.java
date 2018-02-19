@@ -3,6 +3,7 @@ package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.utils.TokenUtils;
+import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRenderReportException;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.profile.PdfProfile;
@@ -24,7 +25,7 @@ import java.util.List;
  */
 class ReportRenderer {
 
-    private static final String PROFILE = "src/main/resources/profile.json";
+    private static final String PROFILE = "src/main/resources/profile_compact.json";
     private static final String LINKICON = "src/main/resources/images/link.png";
     private static final String pathDirectory = "src/test/resources/analysis";
     private static final ObjectMapper MAPPER = new ObjectMapper();
@@ -40,14 +41,15 @@ class ReportRenderer {
      * @throws Exception when fail to create the PDF document.
      */
     protected static void render(ReportArgs reportArgs, FileOutputStream destination) throws Exception {
-        DiagramHelper.setPaths(reportArgs.getDiagramPath(), reportArgs.getEhldPath(), reportArgs.getAnalysisPath());
-        FireworksHelper.setPaths(reportArgs.getFireworksPath(), reportArgs.getAnalysisPath());
+        DiagramHelper.setPaths(reportArgs);
+        FireworksHelper.setPaths(reportArgs);
 
         AnalysisStoredResult result = tokenUtils.getFromToken(reportArgs.getToken());
         loadPdfProfile(PROFILE);
-
         AnalysisReport report = new AnalysisReport(profile, destination);
+//        System.out.println("content:" + report.getCurrentPageArea().getWidth() + "x" + report.getCurrentPageArea().getHeight());
         report.setLinkIcon(PdfUtils.createImage(LINKICON));
+        FontSize.setUp(report.getProfile().getFontSize());
         List<Section> sections = new ArrayList<>(6);
         sections.add(new TitleAndLogo());
         sections.add(new Administrative());

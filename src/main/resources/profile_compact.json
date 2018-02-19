@@ -1,0 +1,16 @@
+{
+  "margin": {
+    "top": 30,
+    "bottom": 30,
+    "left": 30,
+    "right": 30
+  },
+  "fontSize": 6,
+  "pathwaysToShow": 50,
+  "paragraph": {
+    "lineSpacing": 1.0,
+    "topLeading": 2.5,
+    "bottomLeading": 2.5
+  },
+  "font": "Helvetica"
+}

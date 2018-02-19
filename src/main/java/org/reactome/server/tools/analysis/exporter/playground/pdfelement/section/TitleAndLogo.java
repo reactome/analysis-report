@@ -20,14 +20,14 @@ public class TitleAndLogo implements Section {
     public void render(AnalysisReport report, AnalysisStoredResult result) throws Exception {
         // add Reactome logo
         Image image = PdfUtils.createImage(LOGO)
-                .scale(report.getProfile().getLogoProfile().getLogoScaling(), report.getProfile().getLogoProfile().getLogoScaling());
-        image.setFixedPosition(report.getProfile().getLeftMargin() * report.getProfile().getLogoProfile().getLogoScaling() + report.getProfile().getLogoProfile().getMarginLeft()
-                , report.getProfile().getPageSize().getHeight() - report.getProfile().getTopMargin() * report.getProfile().getLogoProfile().getLogoScaling() - image.getImageScaledHeight() - report.getProfile().getLogoProfile().getMarginTop());
+                .scale(0.3f, 0.3f);
+        image.setFixedPosition((float) (report.getProfile().getMargin().getLeft() * 0.3 + 0)
+                , (float) (report.getPdfDocument().getDefaultPageSize().getHeight() - report.getProfile().getMargin().getBottom() * 0.3 - image.getImageScaledHeight() - 0));
         image.setAction(PdfAction.createURI(URL.REACTOME));
         report.add(image);
 
         // add report title
         report.addNormalTitle(new Paragraph(TITLE).setTextAlignment(TextAlignment.CENTER)
-                .setMarginTop(report.getProfile().getTitleProfile().getMarginTop()).setMarginBottom(report.getProfile().getTitleProfile().getMarginBottom()), FontSize.H0, 0);
+                .setMarginTop(15).setMarginBottom(10), FontSize.H0, 0);
     }
 }
