@@ -26,13 +26,27 @@ public class FooterEventHandler implements IEventHandler {
         PdfPage page = pdfDocumentEvent.getPage();
         PdfCanvas canvas = new PdfCanvas(page);
         canvas.beginText()
-                .setFontAndSize(report.getProfile().getPdfFont(), FontSize.H6)
-                .moveText(report.getBottomMargin() * 2 / 3, report.getBottomMargin() * 2 / 3)
-                .showText("Reactome.org")
+                .setFontAndSize(AnalysisFont.REGULAR, FontSize.H6)
+                .moveText(report.getLeftMargin(), report.getBottomMargin() * 2 / 3)
+                .showText("reactome.org")
                 .moveText(page.getPageSize().getWidth() / 2 - 35, 0)
                 .showText(String.format("- %s -", document.getPageNumber(page)))
                 .endText()
                 .release();
         report.flush();
     }
+
+    /*
+    String text = String.format("- %s -", document.getPageNumber(page));
+        float width = AnalysisFont.REGULAR.getWidth(text, FontSize.H6);
+        canvas
+                .setFontAndSize(AnalysisFont.REGULAR, FontSize.H6)
+                .moveTo(report.getLeftMargin(), report.getBottomMargin() * .5f)
+                .showText("reactome.org")
+        ;
+        canvas
+                .moveTo((page.getPageSize().getWidth() - width) * .5f, report.getBottomMargin() * .5f)
+                .showText(text);
+        report.flush();
+     */
 }

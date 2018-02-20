@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements;
 
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.TextAlignment;
@@ -11,6 +11,6 @@ public class Title extends Paragraph {
     public Title(String title) {
         super(title);
         setTextAlignment(TextAlignment.CENTER);
-        setFontSize(FontSize.H0);
+        setFontSize(FontSize.TITLE);
     }
 }

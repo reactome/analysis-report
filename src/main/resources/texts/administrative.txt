@@ -1,2 +1,2 @@
 This report is intend for reviewer of the pathway analysis:
-(please note that this URL maybe out of date because of the token can expired at our server end) and your input identifiers are :%s...It has been automatically generated in Reactome version %s at %s.
+(please note that this URL maybe out of date because of the token can expired at our server end),It has been automatically generated in Reactome version %s at %s.

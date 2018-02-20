@@ -25,8 +25,10 @@ public class TableRenderer {
 
     private static final int NUM_COLUMNS = 8;
     private static final float multipliedLeading = 1.0f;
-    private static final float[] OVERVIEW_VALUES = new float[]{5 / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2f / 20f, 2f / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2 / 20f};
-    private static final String[] OVERVIEW_HEADERS = {"Pathway name", "Entity found", "Entity Total", "Entity ratio", "Entity pValue", "Entity FDR", "Reaction found", "Reaction total", "Reaction ratio", "Species name"};
+    //    private static final float[] OVERVIEW_VALUES = new float[]{5 / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2f / 20f, 2f / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2 / 20f};
+    private static final float[] OVERVIEW_VALUES = new float[]{5 / 21f, 2 / 21f, 2 / 21f, 2 / 21f, 2f / 21f, 2f / 21f, 2 / 21f, 2 / 21f, 2 / 21f};
+    //    private static final String[] OVERVIEW_HEADERS = {"Pathway name", "Entity found", "Entity Total", "Entity ratio", "Entity pValue", "Entity FDR", "Reaction found", "Reaction total", "Reaction ratio", "Species name"};
+    private static final String[] OVERVIEW_HEADERS = {"Pathway name", "Entity found", "Entity Total", "Entity ratio", "Entity pValue", "Entity FDR", "Reaction found", "Reaction total", "Reaction ratio"};
     private static final String[] IDENTIFIERS_FOUND_NO_EXP_HEADERS = {"Identifier", "Resource", "mapsTo", "Identifier", "Resource", "mapsTo"};
     // TODO: 12/02/18 use large table once it been fixed by iText team
     private AnalysisStoredResult result;
@@ -71,22 +73,22 @@ public class TableRenderer {
         }
         for (PathwayNodeSummary pathway : result.getPathways().subList(0, report.getProfile().getPathwaysToShow())) {
             table.addCell(new Cell().add(new Paragraph(pathway.getName())
-                    .setFontSize(FontSize.H8)
+                    .setFontSize(FontSize.TABLE)
                     .setFontColor(report.getLinkColor())
                     .setAction(PdfAction.createGoTo(pathway.getStId()))
                     .setKeepTogether(true)
 //                    .add(PdfUtils.createGoToLinkIcon(report.getLinkIcon(), FontSize.H8, pathway.getStId()))
                     .setMultipliedLeading(multipliedLeading))
                     .setVerticalAlignment(VerticalAlignment.MIDDLE));
-            table.addCell(textCell(String.valueOf(pathway.getData().getEntitiesFound()), FontSize.H8));
-            table.addCell(textCell(String.valueOf(pathway.getData().getEntitiesCount()), FontSize.H8));
-            table.addCell(textCell(String.format("%.4f", pathway.getData().getEntitiesRatio()), FontSize.H8));
-            table.addCell(textCell(String.format("%g", pathway.getData().getEntitiesPValue()), FontSize.H8));
-            table.addCell(textCell(String.format("%g", pathway.getData().getEntitiesFDR()), FontSize.H8));
-            table.addCell(textCell(String.valueOf(pathway.getData().getReactionsFound()), FontSize.H8));
-            table.addCell(textCell(String.valueOf(pathway.getData().getReactionsCount()), FontSize.H8));
-            table.addCell(textCell(String.format("%.4f", pathway.getData().getReactionsRatio()), FontSize.H8));
-            table.addCell(textCell(pathway.getSpecies().getName(), FontSize.H8));
+            table.addCell(textCell(String.valueOf(pathway.getData().getEntitiesFound()), FontSize.TABLE));
+            table.addCell(textCell(String.valueOf(pathway.getData().getEntitiesCount()), FontSize.TABLE));
+            table.addCell(textCell(String.format("%.4f", pathway.getData().getEntitiesRatio()), FontSize.TABLE));
+            table.addCell(textCell(String.format("%g", pathway.getData().getEntitiesPValue()), FontSize.TABLE));
+            table.addCell(textCell(String.format("%g", pathway.getData().getEntitiesFDR()), FontSize.TABLE));
+            table.addCell(textCell(String.valueOf(pathway.getData().getReactionsFound()), FontSize.TABLE));
+            table.addCell(textCell(String.valueOf(pathway.getData().getReactionsCount()), FontSize.TABLE));
+            table.addCell(textCell(String.format("%.4f", pathway.getData().getReactionsRatio()), FontSize.TABLE));
+//            table.addCell(textCell(pathway.getSpecies().getName(), FontSize.TABLE));
         }
         report.add(table);
     }
@@ -199,7 +201,7 @@ public class TableRenderer {
     private void identifierFoundInPathwayTable(AnalysisReport report, PathwayNodeSummary pathway) {
         Table table = new Table(new UnitValue[NUM_COLUMNS]);
         table.setMarginLeft(20)
-                .setFontSize(FontSize.H6)
+                .setFontSize(FontSize.P)
                 .setTextAlignment(TextAlignment.LEFT)
                 .setWidth(UnitValue.createPercentValue(100));
         pathway.getData().getFoundEntities().forEach(analysisIdentifier -> table.addCell(

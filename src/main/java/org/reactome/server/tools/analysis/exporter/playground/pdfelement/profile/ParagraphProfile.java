@@ -4,9 +4,9 @@ package org.reactome.server.tools.analysis.exporter.playground.pdfelement.profil
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class ParagraphProfile {
-    private Float lineSpacing;
-    private Float topLeading;
-    private Float bottomLeading;
+    private Float lineSpacing = 1.5f;
+    private Float topLeading = 2.5f;
+    private Float bottomLeading = 2.5f;
 
     public Float getLineSpacing() {
         return lineSpacing;

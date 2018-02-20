@@ -7,7 +7,10 @@ package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
  * and it will be an argument passed to {@see AnalysisExporter#export}
  */
 public class ReportArgs {
+
     private String token;
+    private String resource;
+    private String species;
     private String diagramPath;
     private String ehldPath;
     private String fireworksPath;
@@ -51,5 +54,21 @@ public class ReportArgs {
 
     public String getSvgSummary() {
         return svgSummary;
+    }
+
+    public String getResource() {
+        return resource;
+    }
+
+    public void setResource(String resource) {
+        this.resource = resource;
+    }
+
+    public String getSpecies() {
+        return species;
+    }
+
+    public void setSpecies(String species) {
+        this.species = species;
     }
 }

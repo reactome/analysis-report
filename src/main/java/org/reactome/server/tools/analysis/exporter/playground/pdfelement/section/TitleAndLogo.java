@@ -5,7 +5,7 @@ import com.itextpdf.layout.element.Image;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.Title;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.Title;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 /**

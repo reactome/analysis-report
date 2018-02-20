@@ -50,7 +50,7 @@ public class DiagramHelperTest {
         FireworksHelper.setPaths(reportArgs);
 
         AnalysisStoredResult result = new TokenUtils("src/test/resources/analysis").getFromToken(reportArgs.getToken());
-        ImageIO.write(DiagramHelper.getPNGDiagram("R-HSA-1226099", result, 500f, 400f), "png"
+        ImageIO.write(DiagramHelper.getPNGDiagram("R-HSA-1226099", result, "total"), "png"
                 , new File("src/test/resources/diagrams/7.png"));
 
     }

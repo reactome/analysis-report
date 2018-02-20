@@ -4,10 +4,10 @@ package org.reactome.server.tools.analysis.exporter.playground.pdfelement.profil
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class MarginProfile {
-    private Float top;
-    private Float bottom;
-    private Float left;
-    private Float right;
+    private Float top = 30f;
+    private Float bottom = 30f;
+    private Float left = 30f;
+    private Float right = 30f;
 
     public Float getTop() {
         return top;

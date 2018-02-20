@@ -44,9 +44,10 @@ class ReportRenderer {
         DiagramHelper.setPaths(reportArgs);
         FireworksHelper.setPaths(reportArgs);
 
+//        AnalysisResult result = tokenUtils.getFromToken(reportArgs.getToken()).getResultSummary(reportArgs.getResource());
         AnalysisStoredResult result = tokenUtils.getFromToken(reportArgs.getToken());
         loadPdfProfile(PROFILE);
-        AnalysisReport report = new AnalysisReport(profile, destination);
+        AnalysisReport report = new AnalysisReport(profile, reportArgs, destination);
 //        System.out.println("content:" + report.getCurrentPageArea().getWidth() + "x" + report.getCurrentPageArea().getHeight());
         report.setLinkIcon(PdfUtils.createImage(LINKICON));
         FontSize.setUp(report.getProfile().getFontSize());

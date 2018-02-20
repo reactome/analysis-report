@@ -48,6 +48,7 @@ public class AnalysisReportExporterTest {
         for (File file : Objects.requireNonNull(new File(SAVE_TO).listFiles())) file.delete();
         tokens.forEach((type, token) -> {
             ReportArgs reportArgs = new ReportArgs(token, DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, svgSummary);
+            export(reportArgs, type);
             long start = Instant.now().toEpochMilli();
             export(reportArgs, type);
             long end = Instant.now().toEpochMilli();

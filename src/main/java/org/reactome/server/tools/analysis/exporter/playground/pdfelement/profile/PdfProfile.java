@@ -10,10 +10,10 @@ import java.io.IOException;
  */
 public class PdfProfile {
 
-    private String font;
+    private String font = "Helvetica";
     private PdfFont pdfFont;
-    private Integer fontSize;
-    private Integer pathwaysToShow;
+    private Integer fontSize = 6;
+    private Integer pathwaysToShow = 25;
     private MarginProfile margin;
     private ParagraphProfile paragraph;
 

@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements;
 
 import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
@@ -10,6 +10,6 @@ public class Header extends Paragraph {
     public Header(String text, int fontSize) {
         super(text);
         setFontSize(fontSize);
-        setMultipliedLeading(2 * fontSize / FontSize.H0);
+        setMultipliedLeading(2 * fontSize / FontSize.TITLE);
     }
 }

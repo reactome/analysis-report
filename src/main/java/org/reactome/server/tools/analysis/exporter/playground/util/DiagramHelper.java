@@ -35,7 +35,7 @@ public class DiagramHelper {
      * @param result {@see AnalysisStoredResult}.
      * @return {@see BufferedImage}.
      */
-    public static BufferedImage getPNGDiagram(String stId, AnalysisStoredResult result, float width, float height) {
+    public static BufferedImage getPNGDiagram(String stId, AnalysisStoredResult result, String resource) {
         DiagramResult diagramResult = DIAGRAM_SERVICE.getDiagramResult(stId);
         RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "png");
 //        float factor = 1;
@@ -65,6 +65,7 @@ public class DiagramHelper {
 //        }
         args.setSelected(diagramResult.getEvents());
         args.setWriteTitle(false);
+        args.setResource(resource);
         try {
             //            System.out.println("after : " + diagram.getWidth() + "x" + diagram.getHeight());
             return exporter.export(args, result);

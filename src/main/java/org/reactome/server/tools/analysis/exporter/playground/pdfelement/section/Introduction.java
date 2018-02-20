@@ -1,12 +1,16 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.section;
 
-import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.Header;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.Header;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.ListParagraph;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.P;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -19,12 +23,15 @@ public class Introduction implements Section {
     public void render(AnalysisReport report, AnalysisStoredResult result) throws NullLinkIconDestinationException {
         report.add(new Header("Introduction", FontSize.H2));
         for (String introduction : INTRODUCTION) {
-            report.add(new Paragraph(introduction).setFontSize(FontSize.H5));
+            report.add(new P(introduction));
         }
 
+        List<ListParagraph> list = new ArrayList<>();
         for (int i = 0; i < LITERATURE.length; i++) {
-            report.add(new Paragraph(LITERATURE[i])
-                    .setFontSize(FontSize.H5).add(PdfUtils.createUrlLinkIcon(report.getLinkIcon(), FontSize.H5, LITERATURE[++i])));
+            list.add((ListParagraph) new ListParagraph(LITERATURE[i])
+                    .setFontSize(FontSize.H5)
+                    .add(PdfUtils.createUrlLinkIcon(report.getLinkIcon(), FontSize.P, LITERATURE[++i])));
         }
+        report.addAsList(list);
     }
 }

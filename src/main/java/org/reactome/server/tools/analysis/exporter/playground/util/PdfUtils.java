@@ -83,7 +83,7 @@ public class PdfUtils {
      * <p>
      * //     * @param identifierFounds
      *
-     * @return
+     * @return {@code Map<Identifier, Set<MainIdentifier>>}
      */
     public static Map<Identifier, Set<MainIdentifier>> getFilteredIdentifiers(List<PathwayNodeSummary> pathways) {
         /*
@@ -118,8 +118,7 @@ public class PdfUtils {
         StringBuilder name = new StringBuilder();
 //        if (instanceEdit.getAuthor() != null) {
         instanceEdit.getAuthor().forEach(person -> name.append(person.getSurname())
-                .append(' ')
-                .append(person.getFirstname()).append(',')
+                .append(person.getFirstname() != null ? " ".concat(person.getFirstname()) : "").append(',')
                 .append(instanceEdit.getDateTime().substring(0, 10))
                 .append("\r\n"));
         return name.toString();
