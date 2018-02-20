@@ -4,8 +4,7 @@ import org.reactome.server.tools.analysis.exporter.playground.exception.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.FileOutputStream;
+import java.io.OutputStream;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -31,7 +30,7 @@ public class AnalysisExporter {
      * @param destination destination you want to save the produced PDF report document.
      * @throws Exception throw
      */
-    public static void export(ReportArgs reportArgs, FileOutputStream destination) throws Exception {
+    public static void export(ReportArgs reportArgs, OutputStream destination) throws Exception {
         try {
             ReportRenderer.render(reportArgs, destination);
         } catch (FailToAddLogoException | TableTypeNotFoundException
@@ -47,9 +46,5 @@ public class AnalysisExporter {
             LOGGER.error("Failed to export pdf destination for token : {}", reportArgs.getToken());
             throw new FailToExportAnalysisReportException(String.format("Failed to export pdf destination for token : %s", reportArgs.getToken()), e);
         }
-    }
-
-    public static void export(ReportArgs reportArgs, String destination) throws Exception {
-        export(reportArgs, new FileOutputStream(new File(destination)));
     }
 }

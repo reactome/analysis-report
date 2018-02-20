@@ -17,11 +17,11 @@ import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.graph.domain.model.LiteratureReference;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
-import org.reactome.server.tools.analysis.exporter.playground.constant.MarginLeft;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
 import org.reactome.server.tools.analysis.exporter.playground.exception.TableTypeNotFoundException;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.Header;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.TableRenderer;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.TableTypeEnum;
 import org.reactome.server.tools.analysis.exporter.playground.util.DiagramHelper;
@@ -45,30 +45,30 @@ public class Overview implements Section {
 
     public void render(AnalysisReport report, AnalysisStoredResult result) throws Exception {
         TableRenderer tableRenderer = new TableRenderer(result);
-//        tableRenderer.createTable(report, TableTypeEnum.SUMMARY);
         addOverviewTable(report, tableRenderer);
         addPathwaysDetail(report, tableRenderer, result);
         addIdentifierTable(report, tableRenderer, result);
     }
 
     private void addOverviewTable(AnalysisReport report, TableRenderer tableRenderer) throws TableTypeNotFoundException {
-        report.addNormalTitle("Overview", FontSize.H2, 0)
-                .addNormalTitle(String.format("1. Top %s Over/representation pathways sorted by p-Value.", report.getProfile().getPathwaysToShow()), FontSize.H3, MarginLeft.M3);
+        report.add(new Header("Overview", FontSize.H2))
+                .add(new Header(String.format("\u20221. Top %s Over/representation pathways sorted by p-Value.", report.getProfile().getPathwaysToShow()), FontSize.H3));
         tableRenderer.createTable(report, TableTypeEnum.OVERVIEW_TABLE);
 
-        report.addNormalTitle("2. Pathway details.", FontSize.H3, MarginLeft.M3);
+        report.add(new Header("\u20222. Pathway details.", FontSize.H3));
     }
 
     private void addIdentifierTable(AnalysisReport report, TableRenderer tableRenderer, AnalysisStoredResult result) throws TableTypeNotFoundException {
-        Paragraph identifierFound = new Paragraph("3. Identifier found.");
+        Paragraph identifierFound = new Paragraph("\u20023. Identifier found.");
         identifierFound.setProperty(Property.DESTINATION, "identifierFound");
-        report.addNormalTitle(identifierFound, FontSize.H3, MarginLeft.M3);
+        identifierFound.setFontSize(FontSize.H3);
+        report.add(identifierFound);
         if (result.getExpressionSummary().getColumnNames().size() != 0) {
             tableRenderer.createTable(report, TableTypeEnum.IdentifierFound);
         } else {
             tableRenderer.createTable(report, TableTypeEnum.IDENTIFIER_FOUND_NO_EXP);
         }
-        report.addNormalTitle("4. Identifier not found.", FontSize.H3, MarginLeft.M3);
+        report.add(new Header("\u20224. Identifier not found.", FontSize.H3));
         if (result.getExpressionSummary().getColumnNames().size() != 0) {
             tableRenderer.createTable(report, TableTypeEnum.IDENTIFIER_NOT_FOUND);
         } else {
@@ -86,8 +86,8 @@ public class Overview implements Section {
 //             add diagram to report.
 //            addAsSVG(report, result, i);
             addAsPNG(report, result, i);
-            report.addNormalTitle("Summation", FontSize.H4, MarginLeft.M4)
-                    .addParagraph(new Paragraph("Species name:" +
+            report.add(new Header("Summation", FontSize.H4))
+                    .add(new Paragraph("Species name:" +
                             pathways[i].getSpeciesName() +
                             (pathways[i].getCompartment() != null ? ",Compartment name:" + pathways[i].getCompartment().get(0).getDisplayName() : "") +
                             (pathways[i].getIsInDisease() ? ",Disease name:" + pathways[i].getDisease().get(0).getDisplayName() : "") +
@@ -96,10 +96,10 @@ public class Overview implements Section {
 //                            (pathways[i].getSummation() != null ? "," + pathways[i].getSummation().get(0).getText().replaceAll("(<br>)+", "\r\n") : "").trim()
                             (pathways[i].getSummation() != null ? "," + Jsoup.parseBodyFragment(pathways[i].getSummation().get(0).getText()).body().text() : "").trim()
 //                                    (pathways[i].getSummation() != null ? "," + pathways[i].getSummation().get(0).getText() : "").trim()
-                    ).setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M4));
+                    ).setFontSize(FontSize.H5).setMarginLeft(report.getLeftMargin()));
 
 //            System.out.println(Jsoup.parseBodyFragment(pathways[i].getSummation().get(0).getText()).body().text());
-            report.addNormalTitle("List of identifiers found at this pathway", FontSize.H4, MarginLeft.M4);
+            report.add(new Header("List of identifiers found at this pathway", FontSize.H4));
             tableRenderer.createTable(report, result.getPathways().get(i));
 
             addCuratorDetail(report, pathways[i]);
@@ -112,7 +112,7 @@ public class Overview implements Section {
         BufferedImage image = DiagramHelper.getPNGDiagram(result.getPathways().get(i).getStId(), result, report.getCurrentPageArea().getWidth(), report.getCurrentPageArea().getHeight());
         if (image != null) {
             Image diagram = new Image(ImageDataFactory.create(image, Color.WHITE));
-            report.addImage(diagram.scaleToFit(report.getCurrentPageArea().getWidth() * 0.8f, report.getCurrentPageArea().getHeight() * 0.8f).setHorizontalAlignment(HorizontalAlignment.CENTER));
+            report.add(diagram.scaleToFit(report.getCurrentPageArea().getWidth() * 0.8f, report.getCurrentPageArea().getHeight() * 0.8f).setHorizontalAlignment(HorizontalAlignment.CENTER));
         } else {
             LOGGER.warn("No diagram found for pathway : {}({}).", result.getPathways().get(i).getName(), result.getPathways().get(i).getStId());
         }
@@ -131,22 +131,21 @@ public class Overview implements Section {
             float width = Math.min(diagram.getImageWidth(), report.getCurrentPageArea().getWidth());
             float height = Math.min(diagram.getImageHeight(), report.getCurrentPageArea().getHeight());
             diagram.setHorizontalAlignment(HorizontalAlignment.CENTER);
-            report.addImage(diagram.scaleToFit(width, height));
-
-//                diagram.scaleToFit(width, height);
-            report.addImage(diagram);
+            report.add(diagram.scaleToFit(width, height));
         } else {
             LOGGER.warn("No diagram found for pathway : {}({}).", result.getPathways().get(i).getName(), result.getPathways().get(i).getStId());
         }
     }
 
-    private void addTitleAndDiagram(AnalysisReport report, PathwayNodeSummary pathway, int index) throws Exception {
+    private void addTitleAndDiagram(AnalysisReport report, PathwayNodeSummary pathway, int index) {
 //        Paragraph identifierFound = new Paragraph(String.format("2.%s. %s (%s", index + 1, pathway.getName(), pathway.getStId()));
         Paragraph identifierFound = new Paragraph(String.format("2.%s. %s (", index + 1, pathway.getName()));
         identifierFound.setDestination(pathway.getStId());
+        identifierFound.setFontSize(FontSize.H3);
 //        identifierFound.add(PdfUtils.createUrlLinkIcon(report.getLinkIcon(), FontSize.H3, URL.QUERYFORPATHWAYDETAILS.concat(pathway.getStId()))).add(")");
         identifierFound.add(new Text(pathway.getStId()).setFontColor(report.getLinkColor()).setAction(PdfAction.createURI(URL.QUERYFORPATHWAYDETAILS.concat(pathway.getStId())))).add(")");
-        report.addNormalTitle(identifierFound, FontSize.H3, MarginLeft.M4);
+
+        report.add(identifierFound);
     }
 
     private void addCuratorDetail(AnalysisReport report, Pathway pathway) {
@@ -166,15 +165,15 @@ public class Overview implements Section {
         LiteratureReference literatureReference;
         if (pathway.getLiteratureReference() != null) {
             int length = pathway.getLiteratureReference().size() > 5 ? 5 : pathway.getLiteratureReference().size();
-            boolean hasReferences = false;
+            boolean hasReference = false;
             for (int j = 0; j < length; j++) {
                 if ("LiteratureReference".equals(pathway.getLiteratureReference().get(j).getSchemaClass())) {
-                    if (!hasReferences) {
-                        report.addNormalTitle("References", FontSize.H4, MarginLeft.M4);
-                        hasReferences = true;
+                    if (!hasReference) {
+                        report.add(new Header("References", FontSize.H4));
+                        hasReference = true;
                     }
                     literatureReference = (LiteratureReference) pathway.getLiteratureReference().get(j);
-                    report.addParagraph(new Paragraph(String.format("%s \"%s\", %s, %s, %s, %s."
+                    report.add(new Paragraph("\u2002 ").add(String.format("%s \"%s\", %s, %s, %s, %s."
                             , PdfUtils.getAuthorDisplayName(literatureReference.getAuthor())
                             , literatureReference.getTitle()
                             , literatureReference.getJournal()
@@ -183,7 +182,7 @@ public class Overview implements Section {
                             , literatureReference.getPages()))
                             .add(PdfUtils.createUrlLinkIcon(report.getLinkIcon(), FontSize.H5, literatureReference.getUrl()))
                             .setFontSize(FontSize.H5)
-                            .setMarginLeft(MarginLeft.M5)
+                            .setMarginLeft(report.getLeftMargin())
                     );
                 }
             }
@@ -191,8 +190,8 @@ public class Overview implements Section {
     }
 
     private void addCurator(AnalysisReport report, String title, String content) {
-        report.addNormalTitle(new Paragraph(title), FontSize.H4, MarginLeft.M4)
-                .addParagraph(new Paragraph(content).setFontSize(FontSize.H5).setMarginLeft(MarginLeft.M5));
+        report.add(new Header(title, FontSize.H4))
+                .add(new Paragraph(content).setFontSize(FontSize.H5).setMarginLeft(report.getLeftMargin()));
     }
 
     private static class BufferedImageTranscoder extends ImageTranscoder {

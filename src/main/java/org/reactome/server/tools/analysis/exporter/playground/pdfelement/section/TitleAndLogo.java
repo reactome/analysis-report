@@ -2,12 +2,10 @@ package org.reactome.server.tools.analysis.exporter.playground.pdfelement.sectio
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Image;
-import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
-import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.Title;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 /**
@@ -19,15 +17,14 @@ public class TitleAndLogo implements Section {
 
     public void render(AnalysisReport report, AnalysisStoredResult result) throws Exception {
         // add Reactome logo
-        Image image = PdfUtils.createImage(LOGO)
-                .scale(0.3f, 0.3f);
-        image.setFixedPosition((float) (report.getProfile().getMargin().getLeft() * 0.3 + 0)
-                , (float) (report.getPdfDocument().getDefaultPageSize().getHeight() - report.getProfile().getMargin().getBottom() * 0.3 - image.getImageScaledHeight() - 0));
+        Image image = PdfUtils.createImage(LOGO);
+        image.scaleToFit((report.getCurrentPageArea().getWidth() + report.getLeftMargin() + report.getRightMargin()) / 3, report.getTopMargin());
+        image.setFixedPosition(5, report.getCurrentPageArea().getHeight() + report.getBottomMargin() - 5);
         image.setAction(PdfAction.createURI(URL.REACTOME));
         report.add(image);
 
         // add report title
-        report.addNormalTitle(new Paragraph(TITLE).setTextAlignment(TextAlignment.CENTER)
-                .setMarginTop(15).setMarginBottom(10), FontSize.H0, 0);
+        report.add(new Title(TITLE));
     }
+
 }

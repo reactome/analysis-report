@@ -5,6 +5,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.Objects;
@@ -33,91 +35,32 @@ public class AnalysisReportExporterTest {
 //            put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
         }
     };
-
-    private static final String diagramPath = "/home/byron/reactome/diagram";
-    private static final String ehldPath = "/home/byron/reactome/ehld";
+    private static final String SAVE_TO = "src/test/resources/pdfs";
+    private static final String DIAGRAM_PATH = "/home/byron/reactome/diagram";
+    private static final String EHLD_PATH = "/home/byron/reactome/ehld";
     private static final String svgSummary = "/home/byron/reactome/ehld/svgSummary.txt";
-    private static final String fireworksPath = "/home/byron/reactome/fireworks";
-    private static final String pdfPath = "src/test/resources/pdfs";
-    private static final String analysisPath = "/src/test/resources/analysis";
+    private static final String FIREWORKS_PATH = "/home/byron/reactome/fireworks";
+    private static final String ANALYSIS_PATH = "/src/test/resources/analysis";
     private static final Logger LOGGER = LoggerFactory.getLogger(AnalysisReportExporterTest.class);
-
-//    @BeforeClass
-//    public static void setUp() {
-//        ReactomeGraphCore.initialise(System.getProperty("neo4j.host"), System.getProperty("neo4j.port"), System.getProperty("neo4j.user"), System.getProperty("neo4j.password"), GraphCoreConfig.class);
-//    }
 
     @Test
     public void exportTest() {
-        for (File file : Objects.requireNonNull(new File(pdfPath).listFiles())) file.delete();
+        for (File file : Objects.requireNonNull(new File(SAVE_TO).listFiles())) file.delete();
         tokens.forEach((type, token) -> {
-            int count = 1;
-//        CyclicBarrier cyclicBarrier = new CyclicBarrier(count);
-//        ExecutorService executorService = Executors.newFixedThreadPool(count);
-            ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath, analysisPath, svgSummary);
-
-            try {
-                AnalysisExporter.export(reportArgs, String.format("%s/%s@%s.pdf", pdfPath, token, Instant.now().toEpochMilli()));
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            long st = System.currentTimeMillis();
-            for (int i = 0; i < count; i++) {
-//            executorService.execute(new ExporterThread(token, diagramPath, ehldPath, fireworksPath, "ExporterThread#" + i));
-
-                long start = Instant.now().toEpochMilli();
-                reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath, analysisPath, svgSummary);
-                try {
-                    AnalysisExporter.export(reportArgs, String.format("%s/%s@%s.pdf", pdfPath, token, start));
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                long end = Instant.now().toEpochMilli();
-                LOGGER.info(" created pdf in :" + (end - start) + " ms");
-            }
-            long total = System.currentTimeMillis() - st;
-//        System.out.println("average: " + total / count);
-            LOGGER.info("[Spent average: {}ms to create {} for type: {}]", total / count, count, type);
+            ReportArgs reportArgs = new ReportArgs(token, DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, svgSummary);
+            long start = Instant.now().toEpochMilli();
+            export(reportArgs, type);
+            long end = Instant.now().toEpochMilli();
+            LOGGER.info(" created pdf in :" + (end - start) + " ms");
         });
-//        executorService.shutdown();
-//        while (!executorService.isTerminated()) {
-//            try {
-//                Thread.sleep(10);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//        }
+    }
+
+    private void export(ReportArgs reportArgs, String type) {
+        try {
+            OutputStream outputStream = new FileOutputStream(new File(String.format("%s/%s_%tL.pdf", SAVE_TO, type, Instant.now().toEpochMilli())));
+            AnalysisExporter.export(reportArgs, outputStream);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
-
-//class ExporterThread implements Runnable {
-//    private static final Logger LOGGER = LoggerFactory.getLogger(AnalysisReportExporterTest.class);
-//    private static final String dest = "src/exportTest/resources/pdfs/%s@%s.pdf";
-//    private String name;
-//    private String token;
-//    private String diagramPath;
-//    private String ehldPath;
-//    private String fireworksPath;
-//
-//    ExporterThread(String token, String diagramPath, String ehldPath, String fireworksPath, String name) {
-//        this.name = name;
-//        this.token = token;
-//        this.diagramPath = diagramPath;
-//        this.ehldPath = ehldPath;
-//        this.fireworksPath = fireworksPath;
-//    }
-//
-//    @Override
-//    public void run() {
-//        try {
-//            long start = Instant.now().toEpochMilli();
-//            ReportArgs reportArgs = new ReportArgs(token, diagramPath, ehldPath, fireworksPath);
-//            AnalysisExporter.export(reportArgs, result, String.format(dest, token, start));
-//            long end = Instant.now().toEpochMilli();
-//            LOGGER.info(name + " created pdf in :" + (end - start) + " ms");
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
-//}
-

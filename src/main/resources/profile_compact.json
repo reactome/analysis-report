@@ -6,7 +6,7 @@
     "right": 30
   },
   "fontSize": 6,
-  "pathwaysToShow": 50,
+  "pathwaysToShow": 25,
   "paragraph": {
     "lineSpacing": 1.0,
     "topLeading": 2.5,

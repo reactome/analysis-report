@@ -5,9 +5,9 @@ import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Text;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
-import org.reactome.server.tools.analysis.exporter.playground.constant.MarginLeft;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.Header;
 import org.reactome.server.tools.analysis.exporter.playground.util.GraphCoreHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
@@ -22,9 +22,8 @@ public class Administrative implements Section {
     public void render(AnalysisReport report, AnalysisStoredResult result) throws Exception {
         StringBuilder identifiers = new StringBuilder();
         result.getAnalysisIdentifiers().stream().limit(numOfIdentifiersToShow).forEach(analysisIdentifier -> identifiers.append(analysisIdentifier.getId()).append(","));
-        report.addNormalTitle("Administrative", FontSize.H2, 0)
-                .addParagraph(new Paragraph().setFontSize(FontSize.H5)
-                        .setMarginLeft(MarginLeft.M2)
+        report.add(new Header("Administrative", FontSize.H2))
+                .add(new Paragraph().setFontSize(FontSize.H5)
                         .add(ADMINISTRATIVE[0])
                         .add(new Text(result.getSummary().getToken()).setFontColor(report.getLinkColor()).setAction(PdfAction.createURI(URL.ANALYSIS.concat(result.getSummary().getToken()))))
 //                        .add(String.format(ADMINISTRATIVE[0], result.getSummary().getToken().toLowerCase()))
