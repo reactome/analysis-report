@@ -3,6 +3,7 @@ package org.reactome.server.tools.analysis.exporter.playground.pdfelement.sectio
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Text;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
+import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
@@ -18,10 +19,18 @@ public class Administrative implements Section {
 
     private static final String[] ADMINISTRATIVE = PdfUtils.getText("src/main/resources/texts/administrative.txt");
 
-    public void render(AnalysisReport report, AnalysisStoredResult result) {
+    public void render(AnalysisReport report, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult) {
+        Text text = new Text(analysisStoredResult.getSummary().getSampleName() != null ?
+                analysisStoredResult.getSummary().getSampleName().concat(". ")
+                : "User Sample. ")
+                .setFontColor(report.getLinkColor())
+                .setAction(PdfAction.createURI(URL.ANALYSIS.concat(analysisStoredResult.getSummary().getToken())));
         report.add(new Header("Administrative", FontSize.H2))
                 .add(new P(ADMINISTRATIVE[0])
-                        .add(new Text(result.getSummary().getSampleName()).setFontColor(report.getLinkColor()).setAction(PdfAction.createURI(URL.ANALYSIS.concat(result.getSummary().getToken()))))
-                        .add(String.format(ADMINISTRATIVE[1], GraphCoreHelper.getDBVersion(), PdfUtils.getTimeStamp())));
+                        .add(text)
+                        .add(String.format(ADMINISTRATIVE[1], GraphCoreHelper.getDBVersion(), PdfUtils.getTimeStamp()))
+                        .add(analysisStoredResult.getSummary().getSpecies() != null ? String.format(" and results presented in this report refer to %s ", GraphCoreHelper.getSpeciesName(analysisStoredResult.getSummary().getSpecies())) : "")
+                        .add(!report.getReportArgs().getResource().equals("TOTAL") ? String.format(" using %s identifiers for the mapping. ", report.getReportArgs().getResource()) : ". "))
+                .add(new P(ADMINISTRATIVE[2]));
     }
 }

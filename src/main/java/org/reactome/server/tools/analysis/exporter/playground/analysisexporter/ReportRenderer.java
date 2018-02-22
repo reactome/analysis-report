@@ -2,6 +2,8 @@ package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
+import org.reactome.server.analysis.core.result.model.ResourceSummary;
+import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.analysis.core.result.utils.TokenUtils;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRenderReportException;
@@ -10,7 +12,6 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.profile
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.section.*;
 import org.reactome.server.tools.analysis.exporter.playground.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.FireworksHelper;
-import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,7 +27,6 @@ import java.util.List;
 class ReportRenderer {
 
     private static final String PROFILE = "src/main/resources/profile_compact.json";
-    private static final String LINKICON = "src/main/resources/images/link.png";
     private static final String pathDirectory = "src/test/resources/analysis";
     private static final ObjectMapper MAPPER = new ObjectMapper();
     private static final Logger LOGGER = LoggerFactory.getLogger(ReportRenderer.class);
@@ -44,12 +44,25 @@ class ReportRenderer {
         DiagramHelper.setPaths(reportArgs);
         FireworksHelper.setPaths(reportArgs);
 
-//        AnalysisResult result = tokenUtils.getFromToken(reportArgs.getToken()).getResultSummary(reportArgs.getResource());
-        AnalysisStoredResult result = tokenUtils.getFromToken(reportArgs.getToken());
+        AnalysisStoredResult analysisStoredResult = tokenUtils.getFromToken(reportArgs.getToken());
+
+        if (!analysisStoredResult.getResourceSummary().contains(new ResourceSummary(reportArgs.getResource(), null))) {
+            for (ResourceSummary resourceSummary : analysisStoredResult.getResourceSummary()) {
+                if (!resourceSummary.getResource().equals("TOTAL")) {
+                    reportArgs.setResource(resourceSummary.getResource());
+                    LOGGER.warn("No such resource:{} in this analysis result,use {} instead.", reportArgs.getResource(), resourceSummary.getResource());
+                    break;
+                }
+            }
+        }
+
+        SpeciesFilteredResult speciesFilteredResult = analysisStoredResult.filterBySpecies(reportArgs.getSpecies(), reportArgs.getResource());
+
+        checkReportArgs(analysisStoredResult, speciesFilteredResult, reportArgs, profile);
         loadPdfProfile(PROFILE);
         AnalysisReport report = new AnalysisReport(profile, reportArgs, destination);
+
 //        System.out.println("content:" + report.getCurrentPageArea().getWidth() + "x" + report.getCurrentPageArea().getHeight());
-        report.setLinkIcon(PdfUtils.createImage(LINKICON));
         FontSize.setUp(report.getProfile().getFontSize());
         List<Section> sections = new ArrayList<>(6);
         sections.add(new TitleAndLogo());
@@ -60,7 +73,7 @@ class ReportRenderer {
 
         try {
             for (Section section : sections) {
-                section.render(report, result);
+                section.render(report, analysisStoredResult, speciesFilteredResult);
             }
         } catch (Exception e) {
             throw new FailToRenderReportException("Fail to render report.", e);
@@ -75,7 +88,7 @@ class ReportRenderer {
      *
      * @param profilePath path contains profile.json config file.
      */
-    protected static void loadPdfProfile(String profilePath) {
+    private static void loadPdfProfile(String profilePath) {
         synchronized (profile) {
             try {
                 profile = MAPPER.readValue(new File(profilePath), PdfProfile.class);
@@ -84,5 +97,35 @@ class ReportRenderer {
             }
         }
 //        LOGGER.info(profile.toString());
+    }
+
+    private static void checkReportArgs(AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult, ReportArgs reportArgs, PdfProfile profile) {
+
+
+        if (reportArgs.getResource().equals("TOTAL")) {
+            if (profile.getPathwaysToShow() > analysisStoredResult.getPathways().size()) {
+                profile.setPathwaysToShow(analysisStoredResult.getPathways().size());
+                LOGGER.warn("There just have {} in your analysis result.", analysisStoredResult.getPathways().size());
+            }
+            if (reportArgs.getPagination() > analysisStoredResult.getPathways().size() - 1) {
+                reportArgs.setPagination(0);
+                LOGGER.warn("Pagination must less than pathwaysToShow.");
+            }
+            if (reportArgs.getPagination() + profile.getPathwaysToShow() > analysisStoredResult.getPathways().size()) {
+                profile.setPathwaysToShow(analysisStoredResult.getPathways().size() - reportArgs.getPagination());
+            }
+        } else {
+            if (profile.getPathwaysToShow() > speciesFilteredResult.getPathways().size()) {
+                profile.setPathwaysToShow(speciesFilteredResult.getPathways().size());
+                LOGGER.warn("There just have {} in your analysis result.", speciesFilteredResult.getPathways().size());
+            }
+            if (reportArgs.getPagination() > speciesFilteredResult.getPathways().size() - 1) {
+                reportArgs.setPagination(0);
+                LOGGER.warn("Pagination must less than pathwaysToShow.");
+            }
+            if (reportArgs.getPagination() + profile.getPathwaysToShow() > speciesFilteredResult.getPathways().size()) {
+                profile.setPathwaysToShow(speciesFilteredResult.getPathways().size() - reportArgs.getPagination());
+            }
+        }
     }
 }

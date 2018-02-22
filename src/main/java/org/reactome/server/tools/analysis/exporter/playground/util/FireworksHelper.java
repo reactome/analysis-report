@@ -22,16 +22,16 @@ public class FireworksHelper {
     /**
      * get the buffered image from fireworks exporter by given token
      *
-     * @param result {@see AnalysisStoredResult}.
+     * @param analysisStoredResult {@see AnalysisStoredResult}.
      * @return {@see BufferedImage}.
      */
-    public static BufferedImage getFireworks(AnalysisStoredResult result) {
+    public static BufferedImage getFireworks(AnalysisStoredResult analysisStoredResult) {
         FireworkArgs args = new FireworkArgs(SPECIES, "png");
         args.setFactor(QUALITY);
         args.setProfile(FireworksColor.COPPER_PLUS.getColor());
 
         try {
-            return exporter.renderRaster(args, result);
+            return exporter.renderRaster(args, analysisStoredResult);
         } catch (Exception pascual) {
             return null;
         }

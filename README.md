@@ -1,4 +1,4 @@
-![reactome](src/main/resources/images/logo.png)
+![reactome](src/main/resources/org/reactome/server/tools/analysis/exporter/playground/images/logo.png)
 
 Analysis Exporter
 ---

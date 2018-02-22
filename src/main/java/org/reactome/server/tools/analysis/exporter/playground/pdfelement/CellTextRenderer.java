@@ -31,10 +31,11 @@ public class CellTextRenderer extends CellRenderer {
                 .setFontSize(fontSize)
                 .setMultipliedLeading(1.0f);
 //                .setHyphenation(hyphenation);
-        for (MainIdentifier identifier : identifiers) {
-            content.add(new Text(identifier.getValue().getId().concat(" "))
+        MainIdentifier[] identifier = this.identifiers.toArray(new MainIdentifier[this.identifiers.size()]);
+        for (int i = 0; i < identifier.length; i++) {
+            content.add(new Text(identifier[i].getValue().getId().concat(i == identifier.length - 1 ? " " : ", "))
                     .setFontSize(fontSize)
-                    .setDestination(identifier.getValue().getId()));
+                    .setDestination(identifier[i].getValue().getId()));
         }
         this.childRenderers.add(content.createRendererSubTree().setParent(this));
         return super.layout(layoutContext);

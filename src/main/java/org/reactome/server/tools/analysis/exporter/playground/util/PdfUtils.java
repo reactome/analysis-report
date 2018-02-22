@@ -1,5 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
+import com.itextpdf.io.image.ImageData;
 import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.kernel.colors.Color;
 import com.itextpdf.kernel.colors.DeviceRgb;
@@ -15,18 +16,19 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.reactome.server.analysis.core.model.identifier.Identifier;
 import org.reactome.server.analysis.core.model.identifier.MainIdentifier;
+import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
-import org.reactome.server.graph.domain.model.InstanceEdit;
+import org.reactome.server.analysis.core.result.model.PathwayBase;
+import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.graph.domain.model.Person;
 import org.reactome.server.graph.domain.model.Summation;
-import org.reactome.server.tools.analysis.exporter.playground.exception.FailToAddLogoException;
-import org.reactome.server.tools.analysis.exporter.playground.exception.NullLinkIconDestinationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
@@ -40,24 +42,36 @@ import java.util.Set;
 public class PdfUtils {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PdfUtils.class);
+    private static ImageData logo;
+    private static ImageData linkIcon;
+    private static final String LOGO = "../images/logo.png";
+    private static final String LINKICON = "../images/link.png";
 
-    public static Image createImage(String fileName) throws FailToAddLogoException {
+    static {
+        URL resource = PdfUtils.class.getResource(LINKICON);
+        String path = PdfUtils.class.getResource(LOGO).getPath();
         try {
-            return new Image(ImageDataFactory.create(fileName));
+            logo = ImageDataFactory.create(path);
         } catch (MalformedURLException e) {
-            throw new FailToAddLogoException("Failed to add image in pdf file", e);
+            e.printStackTrace();
         }
+        linkIcon = ImageDataFactory.create(resource);
     }
 
-    public static Image createGoToLinkIcon(Image icon, float width, String destination) throws NullLinkIconDestinationException {
-        if (null == destination)
-            throw new NullLinkIconDestinationException("Link icon's destination should not be null!");
-        return ImageAutoScale(icon, width).setAction(PdfAction.createGoTo(destination));
+    public static Image getLogo() {
+        return new Image(logo);
     }
 
-    public static Image createUrlLinkIcon(Image icon, float width, String url) throws NullLinkIconDestinationException {
-        if (null == url) throw new NullLinkIconDestinationException("Link icon's url should not be null!");
-        return ImageAutoScale(icon, width).setAction(PdfAction.createURI(url));
+    public static Image getLinkIcon(String url) {
+        return new Image(linkIcon)
+                .scaleToFit(10, 10)
+                .setAction(PdfAction.createURI(url));
+    }
+
+    public static Image getGotoIcon(String destination) {
+        return new Image(linkIcon)
+                .scaleToFit(10, 10)
+                .setAction(PdfAction.createGoTo(destination));
     }
 
     /**
@@ -75,7 +89,7 @@ public class PdfUtils {
     }
 
     public static String getTimeStamp() {
-        return LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm dd-MM-yyyy"));
+        return LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm"));
     }
 
     /**
@@ -85,18 +99,23 @@ public class PdfUtils {
      *
      * @return {@code Map<Identifier, Set<MainIdentifier>>}
      */
-    public static Map<Identifier, Set<MainIdentifier>> getFilteredIdentifiers(List<PathwayNodeSummary> pathways) {
+    public static Map<Identifier, Set<MainIdentifier>> getFilteredIdentifiers(AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult, String resource) {
         /*
           in general there just about 1/4 of identifiers was unique(since there have a lot of redundancies)
          */
-        Map<Identifier, Set<MainIdentifier>> filteredIdentifiers = new HashMap<>((int) (pathways.size() * 0.25));
+        Map<Identifier, Set<MainIdentifier>> filteredIdentifiers = new HashMap<>((int) (speciesFilteredResult.getPathways().size() * 0.25));
 
-        for (PathwayNodeSummary pathway : pathways) {
-            for (Identifier identifier : pathway.getData().getIdentifierMap().keySet()) {
+        PathwayNodeSummary pathwayNodeSummary;
+        for (PathwayBase pathway : speciesFilteredResult.getPathways()) {
+            pathwayNodeSummary = analysisStoredResult.getPathway(pathway.getStId());
+            for (Identifier identifier : pathwayNodeSummary.getData().getIdentifierMap().keySet()) {
+                if (!identifier.getResource().getName().equals(resource)) {
+                    break;
+                }
                 if (!filteredIdentifiers.containsKey(identifier)) {
-                    filteredIdentifiers.put(identifier, pathway.getData().getIdentifierMap().getElements(identifier));
+                    filteredIdentifiers.put(identifier, pathwayNodeSummary.getData().getIdentifierMap().getElements(identifier));
                 } else {
-                    filteredIdentifiers.get(identifier).addAll(pathway.getData().getIdentifierMap().getElements(identifier));
+                    filteredIdentifiers.get(identifier).addAll(pathwayNodeSummary.getData().getIdentifierMap().getElements(identifier));
                 }
             }
         }
@@ -113,30 +132,14 @@ public class PdfUtils {
                 , Integer.valueOf(color.substring(5, 7), 16));
     }
 
-
-    public static String getInstanceEditName(InstanceEdit instanceEdit) {
-        StringBuilder name = new StringBuilder();
-//        if (instanceEdit.getAuthor() != null) {
-        instanceEdit.getAuthor().forEach(person -> name.append(person.getSurname())
-                .append(person.getFirstname() != null ? " ".concat(person.getFirstname()) : "").append(',')
-                .append(instanceEdit.getDateTime().substring(0, 10))
-                .append("\r\n"));
-        return name.toString();
-//        } else {
-//            return null;
-//        }
-    }
-
     public static String getAuthorDisplayName(List<Person> authors) {
         StringBuilder name = new StringBuilder();
-        authors.forEach(person -> name.append(person.getDisplayName().replace(", ", " ")).append(','));
+        int length = authors.size() > 5 ? 5 : authors.size();
+        for (int i = 0; i < length; i++) {
+            name.append(authors.get(i).getDisplayName().replace(", ", " ")).append(", ");
+        }
+        if (length == 5) name.append("et al.");
         return name.toString();
-    }
-
-    public static String getInstanceEditNames(List<InstanceEdit> curators) {
-        StringBuilder names = new StringBuilder();
-        curators.forEach(instanceEdit -> names.append(PdfUtils.getInstanceEditName(instanceEdit)));
-        return names.toString();
     }
 
     public static String[] getText(String destination) {

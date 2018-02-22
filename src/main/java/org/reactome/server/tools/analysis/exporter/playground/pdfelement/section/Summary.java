@@ -2,11 +2,13 @@ package org.reactome.server.tools.analysis.exporter.playground.pdfelement.sectio
 
 import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.kernel.pdf.action.PdfAction;
+import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Text;
 import com.itextpdf.layout.property.HorizontalAlignment;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
+import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.Header;
@@ -27,25 +29,31 @@ import java.util.List;
 public class Summary implements Section {
     private static final Logger LOGGER = LoggerFactory.getLogger(Summary.class);
 
-    public void render(AnalysisReport report, AnalysisStoredResult result) {
+    public void render(AnalysisReport report, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult) throws IOException {
+        report.add(new AreaBreak());
         report.add(new Header("Summary", FontSize.H2));
 
         List<Paragraph> list = new ArrayList<>();
-        list.add(new ListParagraph(String.format("%s of %s identifiers you submitted was ", result.getAnalysisIdentifiers().size(), (result.getNotFoundIdentifiers().size() + result.getAnalysisIdentifiers().size())))
-                .add(new Text("found").setFontColor(report.getLinkColor()).setAction(PdfAction.createGoTo("identifierFound")))
+        list.add(new ListParagraph("Interactors: ".concat(analysisStoredResult.getSummary().isInteractors() ? "interactors included" : "interactors not included")));
+        list.add(new ListParagraph("Type: ".concat(analysisStoredResult.getSummary().getType())));
+        list.add(new ListParagraph("Token: ".concat(analysisStoredResult.getSummary().getToken())));
+        list.add(new ListParagraph(
+                String.format("%s of %s identifiers submitted were "
+                        , analysisStoredResult.getAnalysisIdentifiers().size()
+                        , (analysisStoredResult.getNotFoundIdentifiers().size() + analysisStoredResult.getAnalysisIdentifiers().size())))
+                .add(new Text("found").setFontColor(report.getLinkColor()).setAction(PdfAction.createGoTo("identifiersFound")))
                 .add(" in Reactome."));
-        list.add(new ListParagraph(String.format("%s pathways was hit in Reactome total ${totalPathway} pathways.", result.getPathways().size())));
-        list.add(new ListParagraph(String.format("%s of top Enhanced/Overrepresented pathways was list based on p-Value.", report.getProfile().getPathwaysToShow())));
-        list.add(new ListParagraph("The Pathway Overview diagram for this analysis:"));
+        list.add(new ListParagraph(String.format("%s pathways were hit in Reactome.", analysisStoredResult.getPathways().size())));
+        list.add(new ListParagraph(String.format("%s of top Enhanced/Overrepresented pathways are listed based on their p-Value.", report.getProfile().getPathwaysToShow())));
+        list.add(new ListParagraph("The Pathway Overview diagram for this analysis is presented below: "));
         report.addAsList(list);
 
         // add fireworks to report
-//        addFireworks(report, result);
-
+        addFireworks(report, analysisStoredResult);
     }
 
-    private void addFireworks(AnalysisReport report, AnalysisStoredResult result) throws IOException {
-        BufferedImage image = FireworksHelper.getFireworks(result);
+    private void addFireworks(AnalysisReport report, AnalysisStoredResult analysisStoredResult) throws IOException {
+        BufferedImage image = FireworksHelper.getFireworks(analysisStoredResult);
 
         if (image != null) {
             Image fireworks = new Image(ImageDataFactory.create(image, Color.WHITE));
@@ -54,7 +62,7 @@ public class Summary implements Section {
             float height = Math.min(fireworks.getImageHeight(), report.getCurrentPageArea().getHeight());
             report.add(fireworks.scaleToFit(width, height));
         } else {
-            LOGGER.warn("No fireworks found for analysis {}.", result.getSummary().getToken());
+            LOGGER.warn("No fireworks found for analysis {}.", analysisStoredResult.getSummary().getToken());
         }
     }
 }

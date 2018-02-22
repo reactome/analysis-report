@@ -1,6 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.section;
 
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
+import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 
 /**
@@ -12,9 +13,10 @@ public interface Section {
     /**
      * This method is to render the pdf document by give a exact {@see AnalysisReport} and {@see DataSet}.
      *
-     * @param report {@see AnalysisReport}.
-     * @param result {@see AnalysisStoredResult}.
+     * @param report                {@see AnalysisReport}.
+     * @param result                {@see AnalysisStoredResult}.
+     * @param speciesFilteredResult filtered result by species and resource.
      * @throws Exception when failed to manipulate with analysis report.
      */
-    void render(AnalysisReport report, AnalysisStoredResult result) throws Exception;
+    void render(AnalysisReport report, AnalysisStoredResult result, SpeciesFilteredResult speciesFilteredResult) throws Exception;
 }

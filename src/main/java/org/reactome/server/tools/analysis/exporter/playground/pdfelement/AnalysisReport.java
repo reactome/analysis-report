@@ -7,7 +7,6 @@ import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.kernel.pdf.WriterProperties;
 import com.itextpdf.layout.Document;
-import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.List;
 import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Paragraph;
@@ -23,7 +22,6 @@ import java.io.OutputStream;
  */
 public class AnalysisReport extends Document {
 
-    private Image linkIcon;
     private Color linkColor;
     private PdfProfile profile;
     private ReportArgs reportArgs;
@@ -31,7 +29,7 @@ public class AnalysisReport extends Document {
 
     public AnalysisReport(PdfProfile profile, ReportArgs reportArgs, OutputStream destination) {
         super(new PdfDocument(new PdfWriter(destination, new WriterProperties()
-                .setFullCompressionMode(true))));
+                .setFullCompressionMode(false))));
         this.profile = profile;
         this.reportArgs = reportArgs;
         getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(this));
@@ -45,14 +43,6 @@ public class AnalysisReport extends Document {
                 , profile.getMargin().getLeft());
         currentPageArea = getPageEffectiveArea(this.getPdfDocument().getDefaultPageSize());
         linkColor = PdfUtils.createColor("#2F9EC2");
-    }
-
-    public Image getLinkIcon() {
-        return linkIcon;
-    }
-
-    public void setLinkIcon(Image linkIcon) {
-        this.linkIcon = linkIcon;
     }
 
     public Color getLinkColor() {
@@ -69,13 +59,6 @@ public class AnalysisReport extends Document {
 
     public Rectangle getCurrentPageArea() {
         return currentPageArea;
-    }
-
-    public List createList(float indent) {
-        List list = new List();
-        list.setListSymbol("\u2022");
-        list.setSymbolIndent(indent);
-        return list;
     }
 
     public void addAsList(java.util.List<? extends Paragraph> paragraphList) {

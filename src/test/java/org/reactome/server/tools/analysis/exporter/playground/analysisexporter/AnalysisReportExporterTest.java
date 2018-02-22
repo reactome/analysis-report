@@ -29,10 +29,10 @@ public class AnalysisReportExporterTest {
 
 //            from new analysis snapshot
             put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
-//            put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
-//            put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
-//            put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
-//            put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
+            put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
+            put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
+            put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
+            put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
         }
     };
     private static final String SAVE_TO = "src/test/resources/pdfs";
@@ -48,7 +48,7 @@ public class AnalysisReportExporterTest {
         for (File file : Objects.requireNonNull(new File(SAVE_TO).listFiles())) file.delete();
         tokens.forEach((type, token) -> {
             ReportArgs reportArgs = new ReportArgs(token, DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, svgSummary);
-            export(reportArgs, type);
+//            export(reportArgs, type);
             long start = Instant.now().toEpochMilli();
             export(reportArgs, type);
             long end = Instant.now().toEpochMilli();
