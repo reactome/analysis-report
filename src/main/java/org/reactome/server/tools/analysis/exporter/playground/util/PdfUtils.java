@@ -8,12 +8,7 @@ import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Image;
-import com.itextpdf.layout.element.Paragraph;
 import org.apache.commons.io.IOUtils;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import org.reactome.server.analysis.core.model.identifier.Identifier;
 import org.reactome.server.analysis.core.model.identifier.MainIdentifier;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
@@ -21,7 +16,6 @@ import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.analysis.core.result.model.PathwayBase;
 import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.graph.domain.model.Person;
-import org.reactome.server.graph.domain.model.Summation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -109,9 +103,11 @@ public class PdfUtils {
         for (PathwayBase pathway : speciesFilteredResult.getPathways()) {
             pathwayNodeSummary = analysisStoredResult.getPathway(pathway.getStId());
             for (Identifier identifier : pathwayNodeSummary.getData().getIdentifierMap().keySet()) {
-                if (!identifier.getResource().getName().equals(resource)) {
-                    break;
-                }
+//                System.out.println(identifier.getResource().getName()+" "+resource);
+                // TODO: 22/02/18 filter identifiers correct
+//                if (!identifier.getResource().getName().equals(resource)) {
+//                    break;
+//                }
                 if (!filteredIdentifiers.containsKey(identifier)) {
                     filteredIdentifiers.put(identifier, pathwayNodeSummary.getData().getIdentifierMap().getElements(identifier));
                 } else {
@@ -152,17 +148,17 @@ public class PdfUtils {
         return texts;
     }
 
-    public static Paragraph getSummation(List<Summation> summations) {
-        Paragraph paragraph = new Paragraph();
-        for (Summation summation : summations) {
-            Document html = Jsoup.parseBodyFragment(summation.getText());
-            Element body = html.body();
-
-            Elements elements = html.getAllElements();
-            for (Element element : elements) {
-                paragraph.add(element.text());
-            }
-        }
-        return paragraph;
-    }
+//    public static Paragraph getSummation(List<Summation> summations) {
+//        Paragraph paragraph = new Paragraph();
+//        for (Summation summation : summations) {
+//            Document html = Jsoup.parseBodyFragment(summation.getText());
+//            Element body = html.body();
+//
+//            Elements elements = html.getAllElements();
+//            for (Element element : elements) {
+//                paragraph.add(element.text());
+//            }
+//        }
+//        return paragraph;
+//    }
 }

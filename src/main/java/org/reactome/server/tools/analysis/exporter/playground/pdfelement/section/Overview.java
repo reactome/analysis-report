@@ -50,8 +50,8 @@ public class Overview implements Section {
     }
 
     private void addOverviewTable(AnalysisReport report, TableRenderer tableRendererT) throws TableTypeNotFoundException {
-        report.add(new AreaBreak()).add(new Header("Overview", FontSize.H2))
-                .add(new Header(String.format("1. Top %s Over/representation pathways sorted by p-Value.", report.getProfile().getPathwaysToShow()), FontSize.H3));
+        report.add(new AreaBreak())
+                .add(new Header(String.format("3: Top %s over-representation pathways sorted by p-Value.", report.getProfile().getPathwaysToShow()), FontSize.H3));
         tableRendererT.createTable(report, TableTypeEnum.OVERVIEW_TABLE);
     }
 
@@ -115,7 +115,7 @@ public class Overview implements Section {
                 }
 //                pathway.getSummation().forEach(summation -> report.add(new P(Jsoup.parseBodyFragment(summation.getText().replaceAll("(?i)<p>+|<br>+", "\r\n")).body().text())));
             }
-            report.add(new Header("List of identifiers found at this pathway", FontSize.H4));
+            report.add(new Header("List of identifiers found in this pathway", FontSize.H4));
             tableRenderer.createTable(report, pathwayNodeSummary);
 
             addCuratorDetail(report, pathway);
@@ -124,7 +124,7 @@ public class Overview implements Section {
     }
 
     private void addAsPNG(AnalysisReport report, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult, int i) throws Exception {
-        BufferedImage image = DiagramHelper.getPNGDiagram(speciesFilteredResult.getPathways().get(i).getStId(), analysisStoredResult, report.getReportArgs().getResource());
+        BufferedImage image = DiagramHelper.getPNGDiagram(speciesFilteredResult.getPathways().get(i).getStId(), analysisStoredResult, report.getReportArgs().getResource().getName());
         if (image != null) {
             Image diagram = new Image(ImageDataFactory.create(image, Color.WHITE));
             float scale = Math.min(report.getCurrentPageArea().getWidth() / diagram.getImageWidth(), 0.75f);
@@ -137,7 +137,7 @@ public class Overview implements Section {
 
     private void addTitleAndDiagram(AnalysisReport report, PathwayNodeSummary pathway, int index) {
 //        Paragraph identifierFound = new Paragraph(String.format("2.%s. %s (%s", index + 1, pathway.getName(), pathway.getStId()));
-        Header identifierFound = new Header(String.format("2.%s. %s (", index + 1, pathway.getName()), FontSize.H3);
+        Header identifierFound = new Header(String.format("3.%s. %s (", index + 1, pathway.getName()), FontSize.H3);
         identifierFound.setDestination(pathway.getStId());
 //        identifierFound.add(PdfUtils.createUrlLinkIcon(report.getLinkIcon(), FontSize.H3, URL.QUERYFORPATHWAYDETAILS.concat(pathway.getStId()))).add(")");
         identifierFound.add(new Text(pathway.getStId()).setFontColor(report.getLinkColor()).setAction(PdfAction.createURI(URL.QUERYFORPATHWAYDETAILS.concat(pathway.getStId())))).add(")");

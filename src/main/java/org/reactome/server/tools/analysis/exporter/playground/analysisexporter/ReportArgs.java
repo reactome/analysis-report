@@ -9,8 +9,9 @@ package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 public class ReportArgs {
 
     private String token;
-    private String resource = "UNIPROT";
-    //    private String resource = "CHEBI";
+    private Resource resource = new Resource("UNIPROT");
+    //    private Resource resource = new Resource("CHEBI");
+//        private String resource = "CHEBI";
 //    private String resource = "TOTAL";
     private Long species = 48887L;
     private Integer pagination = 0;
@@ -59,12 +60,12 @@ public class ReportArgs {
         return svgSummary;
     }
 
-    public String getResource() {
+    public Resource getResource() {
         return resource;
     }
 
     public void setResource(String resource) {
-        this.resource = resource.toUpperCase();
+        this.resource = new Resource(resource.toUpperCase());
     }
 
     public Long getSpecies() {

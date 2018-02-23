@@ -45,20 +45,16 @@ class ReportRenderer {
         FireworksHelper.setPaths(reportArgs);
 
         AnalysisStoredResult analysisStoredResult = tokenUtils.getFromToken(reportArgs.getToken());
+        SpeciesFilteredResult speciesFilteredResult = analysisStoredResult.filterBySpecies(reportArgs.getSpecies(), reportArgs.getResource().getName());
 
-        if (!analysisStoredResult.getResourceSummary().contains(new ResourceSummary(reportArgs.getResource(), null))) {
-            for (ResourceSummary resourceSummary : analysisStoredResult.getResourceSummary()) {
-                if (!resourceSummary.getResource().equals("TOTAL")) {
-                    reportArgs.setResource(resourceSummary.getResource());
-                    LOGGER.warn("No such resource:{} in this analysis result,use {} instead.", reportArgs.getResource(), resourceSummary.getResource());
-                    break;
-                }
-            }
+        if (!analysisStoredResult.getResourceSummary().contains(new ResourceSummary(reportArgs.getResource().getName(), null))) {
+            String resource = getDefaultResource(analysisStoredResult);
+            LOGGER.warn("No such resource:{} in this analysis result,use {} instead.", reportArgs.getResource().getName(), resource);
+            reportArgs.setResource(resource);
         }
 
-        SpeciesFilteredResult speciesFilteredResult = analysisStoredResult.filterBySpecies(reportArgs.getSpecies(), reportArgs.getResource());
 
-        checkReportArgs(analysisStoredResult, speciesFilteredResult, reportArgs, profile);
+        checkReportArgs(speciesFilteredResult, reportArgs, profile);
         loadPdfProfile(PROFILE);
         AnalysisReport report = new AnalysisReport(profile, reportArgs, destination);
 
@@ -99,33 +95,24 @@ class ReportRenderer {
 //        LOGGER.info(profile.toString());
     }
 
-    private static void checkReportArgs(AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult, ReportArgs reportArgs, PdfProfile profile) {
-
-
-        if (reportArgs.getResource().equals("TOTAL")) {
-            if (profile.getPathwaysToShow() > analysisStoredResult.getPathways().size()) {
-                profile.setPathwaysToShow(analysisStoredResult.getPathways().size());
-                LOGGER.warn("There just have {} in your analysis result.", analysisStoredResult.getPathways().size());
-            }
-            if (reportArgs.getPagination() > analysisStoredResult.getPathways().size() - 1) {
-                reportArgs.setPagination(0);
-                LOGGER.warn("Pagination must less than pathwaysToShow.");
-            }
-            if (reportArgs.getPagination() + profile.getPathwaysToShow() > analysisStoredResult.getPathways().size()) {
-                profile.setPathwaysToShow(analysisStoredResult.getPathways().size() - reportArgs.getPagination());
-            }
-        } else {
-            if (profile.getPathwaysToShow() > speciesFilteredResult.getPathways().size()) {
-                profile.setPathwaysToShow(speciesFilteredResult.getPathways().size());
-                LOGGER.warn("There just have {} in your analysis result.", speciesFilteredResult.getPathways().size());
-            }
-            if (reportArgs.getPagination() > speciesFilteredResult.getPathways().size() - 1) {
-                reportArgs.setPagination(0);
-                LOGGER.warn("Pagination must less than pathwaysToShow.");
-            }
-            if (reportArgs.getPagination() + profile.getPathwaysToShow() > speciesFilteredResult.getPathways().size()) {
-                profile.setPathwaysToShow(speciesFilteredResult.getPathways().size() - reportArgs.getPagination());
-            }
+    private static void checkReportArgs(SpeciesFilteredResult speciesFilteredResult, ReportArgs reportArgs, PdfProfile profile) {
+        if (profile.getPathwaysToShow() > speciesFilteredResult.getPathways().size()) {
+            profile.setPathwaysToShow(speciesFilteredResult.getPathways().size());
+            LOGGER.warn("There just have {} in your analysis result.", speciesFilteredResult.getPathways().size());
         }
+        if (reportArgs.getPagination() > speciesFilteredResult.getPathways().size() - 1) {
+            reportArgs.setPagination(0);
+            LOGGER.warn("Pagination must less than pathwaysToShow.");
+        }
+        if (reportArgs.getPagination() + profile.getPathwaysToShow() > speciesFilteredResult.getPathways().size()) {
+            profile.setPathwaysToShow(speciesFilteredResult.getPathways().size() - reportArgs.getPagination());
+        }
+    }
+
+    private static String getDefaultResource(AnalysisStoredResult result) {
+        final List<ResourceSummary> summary = result.getResourceSummary();
+        if (summary.size() == 2)
+            return summary.get(1).getResource();
+        else return summary.get(0).getResource();
     }
 }

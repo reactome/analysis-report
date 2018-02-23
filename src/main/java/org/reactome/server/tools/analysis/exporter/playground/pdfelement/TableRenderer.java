@@ -112,7 +112,7 @@ public class TableRenderer {
             table.addHeaderCell(headerCell(header, FontSize.H5));
         }
         Cell cell;
-        for (Map.Entry<Identifier, Set<MainIdentifier>> entry : PdfUtils.getFilteredIdentifiers(asr, sfr, report.getReportArgs().getResource()).entrySet()) {
+        for (Map.Entry<Identifier, Set<MainIdentifier>> entry : PdfUtils.getFilteredIdentifiers(asr, sfr, report.getReportArgs().getResource().getName()).entrySet()) {
             cell = new Cell().add(new Paragraph(entry.getKey().getValue().getId())
                     .setFontSize(FontSize.H6)
                     .setMultipliedLeading(multipliedLeading))
@@ -148,7 +148,7 @@ public class TableRenderer {
         for (String header : IDENTIFIERS_FOUND_NO_EXP_HEADERS) {
             table.addHeaderCell(headerCell(header, FontSize.H5));
         }
-        Map<Identifier, Set<MainIdentifier>> filteredIdentifiers = PdfUtils.getFilteredIdentifiers(asr, sfr, report.getReportArgs().getResource());
+        Map<Identifier, Set<MainIdentifier>> filteredIdentifiers = PdfUtils.getFilteredIdentifiers(asr, sfr, report.getReportArgs().getResource().getName());
         Cell cell;
         for (Map.Entry<Identifier, Set<MainIdentifier>> entry : filteredIdentifiers.entrySet()) {
             cell = new Cell().add(new Paragraph(entry.getKey().getValue().getId())
@@ -204,7 +204,6 @@ public class TableRenderer {
         report.add(table);
     }
 
-
     private void identifierFoundInPathwayTable(AnalysisReport report, PathwayNodeSummary summary) {
         Table table = new Table(new UnitValue[NUM_COLUMNS]);
         table.setMarginLeft(20)
@@ -212,7 +211,7 @@ public class TableRenderer {
                 .setTextAlignment(TextAlignment.LEFT)
                 .setWidth(UnitValue.createPercentValue(100));
         PathwayNodeSummary nodeSummary = asr.getPathway(summary.getStId());
-        nodeSummary.getData().getFoundEntities().forEach(analysisIdentifier -> table.addCell(
+        nodeSummary.getData().getFoundEntities(report.getReportArgs().getResource()).forEach(analysisIdentifier -> table.addCell(
                 new Cell().add(new Paragraph(analysisIdentifier.getId())
                         .setFontColor(report.getLinkColor())
                         .setMultipliedLeading(multipliedLeading))

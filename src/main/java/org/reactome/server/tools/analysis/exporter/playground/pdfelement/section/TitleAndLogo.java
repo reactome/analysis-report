@@ -13,7 +13,7 @@ import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class TitleAndLogo implements Section {
-    private static final String TITLE = "Report for Analysis tools Review";
+    private static final String TITLE = "Pathway Analysis Report";
 
     public void render(AnalysisReport report, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult) {
         // add Reactome logo

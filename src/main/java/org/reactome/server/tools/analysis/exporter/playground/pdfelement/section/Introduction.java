@@ -22,7 +22,7 @@ public class Introduction implements Section {
     private static final String[] LITERATURE = PdfUtils.getText("src/main/resources/texts/references.txt");
 
     public void render(AnalysisReport report, AnalysisStoredResult result, SpeciesFilteredResult speciesFilteredResult) {
-        report.add(new Header("Introduction", FontSize.H2));
+        report.add(new Header("1: Introduction", FontSize.H2));
         for (String introduction : INTRODUCTION) {
             report.add(new P(introduction));
         }
