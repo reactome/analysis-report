@@ -141,7 +141,7 @@ public class PdfUtils {
     public static String[] getText(String destination) {
         String[] texts = null;
         try {
-            texts = IOUtils.toString(new FileReader(destination)).split(System.getProperty("line.separator"));
+            texts = IOUtils.toString(new FileReader((PdfUtils.class.getResource(destination)).getPath())).split(System.getProperty("line.separator"));
         } catch (IOException e) {
             LOGGER.error("Failed to read text from dictionary : {}", destination);
         }

@@ -26,12 +26,10 @@ import java.util.List;
  */
 class ReportRenderer {
 
-    private static final String PROFILE = "src/main/resources/profile_compact.json";
-    private static final String pathDirectory = "src/test/resources/analysis";
+    private static final String PROFILE = "../profiles/compact.json";
     private static final ObjectMapper MAPPER = new ObjectMapper();
     private static final Logger LOGGER = LoggerFactory.getLogger(ReportRenderer.class);
-    private static final TokenUtils tokenUtils = new TokenUtils(pathDirectory);
-    private static PdfProfile profile = new PdfProfile();
+    private static final PdfProfile profile = loadPdfProfile();
 
     /**
      * this method is to render the report with data set.
@@ -44,18 +42,10 @@ class ReportRenderer {
         DiagramHelper.setPaths(reportArgs);
         FireworksHelper.setPaths(reportArgs);
 
-        AnalysisStoredResult analysisStoredResult = tokenUtils.getFromToken(reportArgs.getToken());
+        AnalysisStoredResult analysisStoredResult = new TokenUtils(reportArgs.getAnalysisPath()).getFromToken(reportArgs.getToken());
         SpeciesFilteredResult speciesFilteredResult = analysisStoredResult.filterBySpecies(reportArgs.getSpecies(), reportArgs.getResource().getName());
 
-        if (!analysisStoredResult.getResourceSummary().contains(new ResourceSummary(reportArgs.getResource().getName(), null))) {
-            String resource = getDefaultResource(analysisStoredResult);
-            LOGGER.warn("No such resource:{} in this analysis result,use {} instead.", reportArgs.getResource().getName(), resource);
-            reportArgs.setResource(resource);
-        }
-
-
-        checkReportArgs(speciesFilteredResult, reportArgs, profile);
-        loadPdfProfile(PROFILE);
+        checkReportArgs(analysisStoredResult, speciesFilteredResult, reportArgs, profile);
         AnalysisReport report = new AnalysisReport(profile, reportArgs, destination);
 
 //        System.out.println("content:" + report.getCurrentPageArea().getWidth() + "x" + report.getCurrentPageArea().getHeight());
@@ -81,21 +71,25 @@ class ReportRenderer {
 
     /**
      * load the {@see PdfProfile} config information to control PDF layout.
-     *
-     * @param profilePath path contains profile.json config file.
      */
-    private static void loadPdfProfile(String profilePath) {
-        synchronized (profile) {
-            try {
-                profile = MAPPER.readValue(new File(profilePath), PdfProfile.class);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+    private static PdfProfile loadPdfProfile() {
+        try {
+            System.out.println();
+            String path = ReportRenderer.class.getResource(PROFILE).getPath();
+            return MAPPER.readValue(new File(path), PdfProfile.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new PdfProfile();
         }
-//        LOGGER.info(profile.toString());
     }
 
-    private static void checkReportArgs(SpeciesFilteredResult speciesFilteredResult, ReportArgs reportArgs, PdfProfile profile) {
+    private static void checkReportArgs(AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult, ReportArgs reportArgs, PdfProfile profile) {
+
+        if (!analysisStoredResult.getResourceSummary().contains(new ResourceSummary(reportArgs.getResource().getName(), null))) {
+            String resource = getDefaultResource(analysisStoredResult);
+            LOGGER.warn("No such resource:{} in this analysis result,use {} instead.", reportArgs.getResource().getName(), resource);
+            reportArgs.setResource(resource);
+        }
         if (profile.getPathwaysToShow() > speciesFilteredResult.getPathways().size()) {
             profile.setPathwaysToShow(speciesFilteredResult.getPathways().size());
             LOGGER.warn("There just have {} in your analysis result.", speciesFilteredResult.getPathways().size());

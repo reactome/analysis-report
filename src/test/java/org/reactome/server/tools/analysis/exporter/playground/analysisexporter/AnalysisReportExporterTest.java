@@ -1,8 +1,8 @@
 package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -15,6 +15,8 @@ import java.util.Objects;
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class AnalysisReportExporterTest {
+
+    private static boolean debug = true;
 
     private static final HashMap<String, String> tokens = new HashMap<String, String>() {
         {
@@ -40,20 +42,30 @@ public class AnalysisReportExporterTest {
     private static final String EHLD_PATH = "/home/byron/reactome/ehld";
     private static final String svgSummary = "/home/byron/reactome/ehld/svgSummary.txt";
     private static final String FIREWORKS_PATH = "/home/byron/reactome/fireworks";
-    private static final String ANALYSIS_PATH = "/src/test/resources/analysis";
-    private static final Logger LOGGER = LoggerFactory.getLogger(AnalysisReportExporterTest.class);
+    private static final String ANALYSIS_PATH = "src/test/resources/analysis";
+
+    @BeforeClass
+    public static void beforeClass() {
+        if (debug && !new File(SAVE_TO).exists()) {
+            new File(SAVE_TO).mkdir();
+        }
+    }
 
     @Test
     public void exportTest() {
         for (File file : Objects.requireNonNull(new File(SAVE_TO).listFiles())) file.delete();
         tokens.forEach((type, token) -> {
             ReportArgs reportArgs = new ReportArgs(token, DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, svgSummary);
-//            export(reportArgs, type);
-            long start = Instant.now().toEpochMilli();
             export(reportArgs, type);
-            long end = Instant.now().toEpochMilli();
-            LOGGER.info(" created pdf in :" + (end - start) + " ms");
         });
+    }
+
+    @AfterClass
+    public static void afterClass() {
+        if (!debug) {
+            for (File file : Objects.requireNonNull(new File(SAVE_TO).listFiles())) file.delete();
+            new File(SAVE_TO).delete();
+        }
     }
 
     private void export(ReportArgs reportArgs, String type) {
@@ -64,4 +76,5 @@ public class AnalysisReportExporterTest {
             e.printStackTrace();
         }
     }
+
 }

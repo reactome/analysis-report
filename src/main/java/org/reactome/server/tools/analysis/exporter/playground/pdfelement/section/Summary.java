@@ -15,6 +15,7 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.element
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.ListParagraph;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.P;
 import org.reactome.server.tools.analysis.exporter.playground.util.FireworksHelper;
+import org.reactome.server.tools.analysis.exporter.playground.util.GraphCoreHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,7 +31,7 @@ import java.util.List;
  */
 public class Summary implements Section {
     private static final Logger LOGGER = LoggerFactory.getLogger(Summary.class);
-    private static final String[] DESCRIPTION = PdfUtils.getText("src/main/resources/texts/description.txt");
+    private static final String[] DESCRIPTION = PdfUtils.getText("../texts/description.txt");
 
 
     public void render(AnalysisReport report, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult) throws IOException {
@@ -39,6 +40,7 @@ public class Summary implements Section {
 //        analysisStoredResult.getFoundEntities("").filter("total").getIdentifiers().get(0).get
 
         List<Paragraph> list = new ArrayList<>();
+        list.add(new ListParagraph("Species: ".concat(GraphCoreHelper.getSpeciesName(analysisStoredResult.getSummary().getSpecies()) != null ? "interactors included" : "interactors not included")));
         list.add(new ListParagraph("Interactors: ".concat(analysisStoredResult.getSummary().isInteractors() ? "interactors included" : "interactors not included")));
         list.add(new ListParagraph("Type: ".concat(analysisStoredResult.getSummary().getType())));
         list.add(new ListParagraph("Unique ID for Analysis: ".concat(analysisStoredResult.getSummary().getToken())));

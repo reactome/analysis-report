@@ -18,7 +18,7 @@ import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
  */
 public class Administrative implements Section {
 
-    private static final String[] ADMINISTRATIVE = PdfUtils.getText("src/main/resources/texts/administrative.txt");
+    private static final String[] ADMINISTRATIVE = PdfUtils.getText("../texts/administrative.txt");
 
     public void render(AnalysisReport report, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult) {
         AnalysisType type = AnalysisType.getType(analysisStoredResult.getSummary().getType());

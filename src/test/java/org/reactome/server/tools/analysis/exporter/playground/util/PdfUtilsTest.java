@@ -25,7 +25,7 @@ public class PdfUtilsTest {
 
     @Test
     public void getText() throws IOException {
-//        String[] LITERATURE = PdfUtils.getText("src/main/resources/texts/references.txt");
+//        String[] LITERATURE = PdfUtils.getText("src/main/resources/org.reactome.server.tools.analysis.exporter.playground.texts/references.txt");
 //        for (String string : LITERATURE) {
 //            System.out.println(string);
 //            System.out.println(string.split("\t").length);

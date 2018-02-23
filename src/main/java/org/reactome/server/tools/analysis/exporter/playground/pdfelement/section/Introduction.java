@@ -18,8 +18,8 @@ import java.util.List;
  */
 public class Introduction implements Section {
 
-    private static final String[] INTRODUCTION = PdfUtils.getText("src/main/resources/texts/introduction.txt");
-    private static final String[] LITERATURE = PdfUtils.getText("src/main/resources/texts/references.txt");
+    private static final String[] INTRODUCTION = PdfUtils.getText("../texts/introduction.txt");
+    private static final String[] LITERATURE = PdfUtils.getText("../texts/references.txt");
 
     public void render(AnalysisReport report, AnalysisStoredResult result, SpeciesFilteredResult speciesFilteredResult) {
         report.add(new Header("1: Introduction", FontSize.H2));
