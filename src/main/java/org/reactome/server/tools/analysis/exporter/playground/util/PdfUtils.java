@@ -19,10 +19,10 @@ import org.reactome.server.graph.domain.model.Person;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.FileReader;
 import java.io.IOException;
-import java.net.MalformedURLException;
+import java.io.InputStream;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
@@ -38,18 +38,15 @@ public class PdfUtils {
     private static final Logger LOGGER = LoggerFactory.getLogger(PdfUtils.class);
     private static ImageData logo;
     private static ImageData linkIcon;
-    private static final String LOGO = "../images/logo.png";
-    private static final String LINKICON = "../images/link.png";
+    private static final String LOGO = "images/logo.png";
+    private static final String LINKICON = "images/link.png";
 
     static {
-        URL resource = PdfUtils.class.getResource(LINKICON);
-        String path = PdfUtils.class.getResource(LOGO).getPath();
-        try {
-            logo = ImageDataFactory.create(path);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-        linkIcon = ImageDataFactory.create(resource);
+        URL resource = PdfUtils.class.getResource(LOGO);
+        logo = ImageDataFactory.create(resource);
+
+        URL linkResource = PdfUtils.class.getResource(LINKICON);
+        linkIcon = ImageDataFactory.create(linkResource);
     }
 
     public static Image getLogo() {
@@ -138,14 +135,15 @@ public class PdfUtils {
         return name.toString();
     }
 
-    public static String[] getText(String destination) {
-        String[] texts = null;
+    public static List<String> getText(String destination) {
+        List<String> text = null;
         try {
-            texts = IOUtils.toString(new FileReader((PdfUtils.class.getResource(destination)).getPath())).split(System.getProperty("line.separator"));
+            InputStream resource = PdfUtils.class.getResourceAsStream(destination);
+            text = IOUtils.readLines(resource, Charset.defaultCharset());
         } catch (IOException e) {
             LOGGER.error("Failed to read text from dictionary : {}", destination);
         }
-        return texts;
+        return text;
     }
 
 //    public static Paragraph getSummation(List<Summation> summations) {

@@ -18,7 +18,7 @@ public class AnalysisFont {
     private void updateFonts() {
         // Every PDF must load the fonts again, as they are hold by one, and only one document
         try {
-            final String resource = getClass().getResource("../fonts/Open_Sans").getFile();
+            final String resource = getClass().getResource("fonts/Open_Sans").getFile();
             PdfFontFactory.registerDirectory(resource);
             LIGHT = PdfFontFactory.createRegisteredFont("open sans light");
             REGULAR = PdfFontFactory.createRegisteredFont("open sans");

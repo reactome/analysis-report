@@ -16,7 +16,7 @@ import java.util.Objects;
  */
 public class AnalysisReportExporterTest {
 
-    private static boolean debug = true;
+    private static boolean debug = false;
 
     private static final HashMap<String, String> tokens = new HashMap<String, String>() {
         {
@@ -30,7 +30,7 @@ public class AnalysisReportExporterTest {
 //            put("COSMIC", "MjAxODAyMDkwNTI2NTZfMjQ%253D");
 
 //            from new analysis snapshot
-            put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
+//            put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
 //            put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
 //            put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
 //            put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
@@ -76,5 +76,4 @@ public class AnalysisReportExporterTest {
             e.printStackTrace();
         }
     }
-
 }

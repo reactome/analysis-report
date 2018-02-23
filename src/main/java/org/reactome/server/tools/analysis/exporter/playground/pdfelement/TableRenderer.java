@@ -211,7 +211,9 @@ public class TableRenderer {
                 .setTextAlignment(TextAlignment.LEFT)
                 .setWidth(UnitValue.createPercentValue(100));
         PathwayNodeSummary nodeSummary = asr.getPathway(summary.getStId());
-        nodeSummary.getData().getFoundEntities(report.getReportArgs().getResource()).forEach(analysisIdentifier -> table.addCell(
+
+//        nodeSummary.getData().getFoundEntities(report.getReportArgs().getResource()).forEach(analysisIdentifier -> table.addCell(
+        nodeSummary.getData().getFoundEntities().forEach(analysisIdentifier -> table.addCell(
                 new Cell().add(new Paragraph(analysisIdentifier.getId())
                         .setFontColor(report.getLinkColor())
                         .setMultipliedLeading(multipliedLeading))

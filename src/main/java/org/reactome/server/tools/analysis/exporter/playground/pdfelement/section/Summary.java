@@ -31,16 +31,16 @@ import java.util.List;
  */
 public class Summary implements Section {
     private static final Logger LOGGER = LoggerFactory.getLogger(Summary.class);
-    private static final String[] DESCRIPTION = PdfUtils.getText("../texts/description.txt");
+    private static final List<String> DESCRIPTION = PdfUtils.getText("texts/description.txt");
 
 
     public void render(AnalysisReport report, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult) throws IOException {
         report.add(new AreaBreak());
         report.add(new Header("2: Summary of Parameters and Results", FontSize.H2));
-//        analysisStoredResult.getFoundEntities("").filter("total").getIdentifiers().get(0).get
 
         List<Paragraph> list = new ArrayList<>();
-        list.add(new ListParagraph("Species: ".concat(GraphCoreHelper.getSpeciesName(analysisStoredResult.getSummary().getSpecies()) != null ? "interactors included" : "interactors not included")));
+
+        list.add(new ListParagraph("Species: ".concat(GraphCoreHelper.getSpeciesName(report.getReportArgs().getSpecies()))));
         list.add(new ListParagraph("Interactors: ".concat(analysisStoredResult.getSummary().isInteractors() ? "interactors included" : "interactors not included")));
         list.add(new ListParagraph("Type: ".concat(analysisStoredResult.getSummary().getType())));
         list.add(new ListParagraph("Unique ID for Analysis: ".concat(analysisStoredResult.getSummary().getToken())));

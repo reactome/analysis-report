@@ -18,8 +18,8 @@ import java.util.List;
  */
 public class Introduction implements Section {
 
-    private static final String[] INTRODUCTION = PdfUtils.getText("../texts/introduction.txt");
-    private static final String[] LITERATURE = PdfUtils.getText("../texts/references.txt");
+    private static final List<String> INTRODUCTION = PdfUtils.getText("texts/introduction.txt");
+    private static final List<String> PUBLICATINOS = PdfUtils.getText("texts/references.txt");
 
     public void render(AnalysisReport report, AnalysisStoredResult result, SpeciesFilteredResult speciesFilteredResult) {
         report.add(new Header("1: Introduction", FontSize.H2));
@@ -28,10 +28,11 @@ public class Introduction implements Section {
         }
 
         List<Paragraph> list = new ArrayList<>();
-        for (int i = 0; i < LITERATURE.length; i++) {
-            list.add(new ListParagraph(LITERATURE[i])
+        for (String publication : PUBLICATINOS) {
+            String[] text = publication.split("-");
+            list.add(new ListParagraph(text[0])
                     .setFontSize(FontSize.H5)
-                    .add(PdfUtils.getLinkIcon(LITERATURE[++i])));
+                    .add(PdfUtils.getLinkIcon(text[1])));
         }
         report.addAsList(list);
     }

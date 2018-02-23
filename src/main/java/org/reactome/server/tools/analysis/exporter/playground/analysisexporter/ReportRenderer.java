@@ -15,8 +15,8 @@ import org.reactome.server.tools.analysis.exporter.playground.util.FireworksHelp
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,7 @@ import java.util.List;
  */
 class ReportRenderer {
 
-    private static final String PROFILE = "../profiles/compact.json";
+    private static final String PROFILE = "profiles/compact.json";
     private static final ObjectMapper MAPPER = new ObjectMapper();
     private static final Logger LOGGER = LoggerFactory.getLogger(ReportRenderer.class);
     private static final PdfProfile profile = loadPdfProfile();
@@ -74,9 +74,8 @@ class ReportRenderer {
      */
     private static PdfProfile loadPdfProfile() {
         try {
-            System.out.println();
-            String path = ReportRenderer.class.getResource(PROFILE).getPath();
-            return MAPPER.readValue(new File(path), PdfProfile.class);
+            InputStream resource = ReportRenderer.class.getResourceAsStream(PROFILE);
+            return MAPPER.readValue(resource, PdfProfile.class);
         } catch (IOException e) {
             e.printStackTrace();
             return new PdfProfile();

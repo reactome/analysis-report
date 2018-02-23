@@ -1,3 +1,1 @@
-This report contains the pathway analysis results for the submitted sample:
-Analysis was performed against Reactome version %s at %s
 Please keep in mind that analysis results are temporarily stored on our server. The storage period depends on usage of the service but is at least 7 days. As a result, please note that this URL is only valid for a limited time period and it might have expired.

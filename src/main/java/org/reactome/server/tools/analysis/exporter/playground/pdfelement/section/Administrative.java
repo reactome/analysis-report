@@ -13,12 +13,14 @@ import org.reactome.server.tools.analysis.exporter.playground.pdfelement.element
 import org.reactome.server.tools.analysis.exporter.playground.util.GraphCoreHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
+import java.util.List;
+
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class Administrative implements Section {
 
-    private static final String[] ADMINISTRATIVE = PdfUtils.getText("../texts/administrative.txt");
+    private static final List<String> ADMINISTRATIVE = PdfUtils.getText("texts/administrative.txt");
 
     public void render(AnalysisReport report, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult) {
         AnalysisType type = AnalysisType.getType(analysisStoredResult.getSummary().getType());
@@ -26,17 +28,17 @@ public class Administrative implements Section {
                 ? GraphCoreHelper.getSpeciesName(analysisStoredResult.getSummary().getSpecies())
                 : analysisStoredResult.getSummary().getSampleName();
         report.add(new Header("Administrative", FontSize.H2))
-                .add(new P(ADMINISTRATIVE[0])
-                        .add(" ".concat(name).concat(". "))
-                        .add(String.format(ADMINISTRATIVE[1], GraphCoreHelper.getDBVersion(), PdfUtils.getTimeStamp()))
+                .add(new P("This report contains the pathway analysis results for the submitted sample: ")
+                        .add(name.concat(". "))
+                        .add(String.format("Analysis was performed against Reactome version %s at %s", GraphCoreHelper.getDBVersion(), PdfUtils.getTimeStamp()))
                         .add(!report.getReportArgs().getResource().getName().equals("TOTAL")
                                 ? String.format(" using %s identifiers for the mapping. The web link to these results is [", convertResource(report.getReportArgs().getResource().getName())) : ". ")
                         .add(new Text(URL.ANALYSIS.concat(analysisStoredResult.getSummary().getToken()))
                                 .setFontColor(report.getLinkColor())
                                 .setAction(PdfAction.createURI(URL.ANALYSIS.concat(analysisStoredResult.getSummary().getToken()))))
-                        .add("]."))
-                .add(new P(ADMINISTRATIVE[2]));
+                        .add("]."));
 
+        ADMINISTRATIVE.forEach(p -> report.add(new P(p)));
 
     }
 

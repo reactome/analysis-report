@@ -5,7 +5,7 @@
     "left": 30,
     "right": 30
   },
-  "fontSize": 8,
+  "fontSize": 6,
   "pathwaysToShow": 25,
   "paragraph": {
     "lineSpacing": 1.0,
