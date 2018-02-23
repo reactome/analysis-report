@@ -1,6 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
 
 import com.itextpdf.kernel.colors.Color;
+import com.itextpdf.kernel.colors.DeviceRgb;
 import com.itextpdf.kernel.events.PdfDocumentEvent;
 import com.itextpdf.kernel.geom.Rectangle;
 import com.itextpdf.kernel.pdf.PdfDocument;
@@ -13,7 +14,6 @@ import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.profile.PdfProfile;
-import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 import java.io.OutputStream;
 
@@ -22,7 +22,7 @@ import java.io.OutputStream;
  */
 public class AnalysisReport extends Document {
 
-    private Color linkColor;
+    private static final Color linkColor = new DeviceRgb(47, 158, 194);
     private PdfProfile profile;
     private ReportArgs reportArgs;
     private Rectangle currentPageArea;
@@ -42,7 +42,6 @@ public class AnalysisReport extends Document {
                 , profile.getMargin().getBottom()
                 , profile.getMargin().getLeft());
         currentPageArea = getPageEffectiveArea(this.getPdfDocument().getDefaultPageSize());
-        linkColor = PdfUtils.createColor("#2F9EC2");
     }
 
     public Color getLinkColor() {

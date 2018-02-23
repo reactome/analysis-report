@@ -26,6 +26,7 @@ import java.util.List;
  */
 class ReportRenderer {
 
+    private static final Long DEFAULT_SPECIES = 48887L;
     private static final String PROFILE = "profiles/compact.json";
     private static final ObjectMapper MAPPER = new ObjectMapper();
     private static final Logger LOGGER = LoggerFactory.getLogger(ReportRenderer.class);
@@ -43,7 +44,19 @@ class ReportRenderer {
         FireworksHelper.setPaths(reportArgs);
 
         AnalysisStoredResult analysisStoredResult = new TokenUtils(reportArgs.getAnalysisPath()).getFromToken(reportArgs.getToken());
-        SpeciesFilteredResult speciesFilteredResult = analysisStoredResult.filterBySpecies(reportArgs.getSpecies(), reportArgs.getResource().getName());
+
+        if (reportArgs.getSpecies() == null) {
+            reportArgs.setSpecies(DEFAULT_SPECIES);
+            LOGGER.warn("use default species.");
+        }
+
+        if (!analysisStoredResult.getResourceSummary().contains(new ResourceSummary(reportArgs.getResource(), null))) {
+            String resource = getDefaultResource(analysisStoredResult);
+            LOGGER.warn("No such resource:{} in this analysis result,use {} instead.", reportArgs.getResource(), resource);
+            reportArgs.setResource(resource);
+        }
+
+        SpeciesFilteredResult speciesFilteredResult = analysisStoredResult.filterBySpecies(reportArgs.getSpecies(), reportArgs.getResource());
 
         checkReportArgs(analysisStoredResult, speciesFilteredResult, reportArgs, profile);
         AnalysisReport report = new AnalysisReport(profile, reportArgs, destination);
@@ -83,12 +96,6 @@ class ReportRenderer {
     }
 
     private static void checkReportArgs(AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult, ReportArgs reportArgs, PdfProfile profile) {
-
-        if (!analysisStoredResult.getResourceSummary().contains(new ResourceSummary(reportArgs.getResource().getName(), null))) {
-            String resource = getDefaultResource(analysisStoredResult);
-            LOGGER.warn("No such resource:{} in this analysis result,use {} instead.", reportArgs.getResource().getName(), resource);
-            reportArgs.setResource(resource);
-        }
         if (profile.getPathwaysToShow() > speciesFilteredResult.getPathways().size()) {
             profile.setPathwaysToShow(speciesFilteredResult.getPathways().size());
             LOGGER.warn("There just have {} in your analysis result.", speciesFilteredResult.getPathways().size());

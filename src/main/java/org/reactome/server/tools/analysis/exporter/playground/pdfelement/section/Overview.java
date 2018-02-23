@@ -7,7 +7,6 @@ import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Text;
 import com.itextpdf.layout.property.HorizontalAlignment;
-import com.itextpdf.layout.property.Property;
 import org.jsoup.Jsoup;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
@@ -56,8 +55,8 @@ public class Overview implements Section {
     }
 
     private void addIdentifierTable(AnalysisReport report, TableRenderer tableRenderer, SpeciesFilteredResult speciesFilteredResult) throws TableTypeNotFoundException {
-        Paragraph identifierFound = new Paragraph("3. Identifiers found.");
-        identifierFound.setProperty(Property.DESTINATION, "identifiersFound");
+        Paragraph identifierFound = new Paragraph("5. Summary of identifiers found.");
+        identifierFound.setDestination("identifiersFound");
         identifierFound.setFontSize(FontSize.H3);
         report.add(identifierFound);
         if (speciesFilteredResult.getExpressionSummary().getColumnNames().size() != 0) {
@@ -65,7 +64,7 @@ public class Overview implements Section {
         } else {
             tableRenderer.createTable(report, TableTypeEnum.IDENTIFIER_FOUND_NO_EXP);
         }
-        report.add(new Header("4. Identifiers not found.", FontSize.H3));
+        report.add(new Header("6. Summary of identifiers not found.", FontSize.H3).setDestination("identitiferNotFound"));
         if (speciesFilteredResult.getExpressionSummary().getColumnNames().size() != 0) {
             tableRenderer.createTable(report, TableTypeEnum.IDENTIFIER_NOT_FOUND);
         } else {
@@ -80,7 +79,7 @@ public class Overview implements Section {
         for (int i = report.getReportArgs().getPagination(); i < report.getReportArgs().getPagination() + report.getProfile().getPathwaysToShow(); i++) {
 
             pathwayNodeSummary = analysisStoredResult.getPathway(speciesFilteredResult.getPathways().get(i).getStId());
-            report.add(new AreaBreak());
+            report.add(new AreaBreak()).add(new Header("4. Pathway details", FontSize.H3).setDestination("pathwayDetails"));
             addTitleAndDiagram(report, pathwayNodeSummary, i);
 
 //             add diagram to report.
@@ -116,7 +115,7 @@ public class Overview implements Section {
 //                pathway.getSummation().forEach(summation -> report.add(new P(Jsoup.parseBodyFragment(summation.getText().replaceAll("(?i)<p>+|<br>+", "\r\n")).body().text())));
             }
             report.add(new Header("List of identifiers found in this pathway", FontSize.H4));
-            tableRenderer.createTable(report, pathwayNodeSummary);
+            tableRenderer.createTable(report, pathwayNodeSummary.getStId());
 
             addCuratorDetail(report, pathway);
             addLiteratureReference(report, pathway);
@@ -124,7 +123,7 @@ public class Overview implements Section {
     }
 
     private void addAsPNG(AnalysisReport report, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult, int i) throws Exception {
-        BufferedImage image = DiagramHelper.getPNGDiagram(speciesFilteredResult.getPathways().get(i).getStId(), analysisStoredResult, report.getReportArgs().getResource().getName());
+        BufferedImage image = DiagramHelper.getPNGDiagram(speciesFilteredResult.getPathways().get(i).getStId(), analysisStoredResult, report.getReportArgs().getResource());
         if (image != null) {
             Image diagram = new Image(ImageDataFactory.create(image, Color.WHITE));
             float scale = Math.min(report.getCurrentPageArea().getWidth() / diagram.getImageWidth(), 0.75f);
@@ -137,7 +136,7 @@ public class Overview implements Section {
 
     private void addTitleAndDiagram(AnalysisReport report, PathwayNodeSummary pathway, int index) {
 //        Paragraph identifierFound = new Paragraph(String.format("2.%s. %s (%s", index + 1, pathway.getName(), pathway.getStId()));
-        Header identifierFound = new Header(String.format("3.%s. %s (", index + 1, pathway.getName()), FontSize.H3);
+        Header identifierFound = new Header(String.format("4.%s. %s (", index + 1, pathway.getName()), FontSize.H3);
         identifierFound.setDestination(pathway.getStId());
 //        identifierFound.add(PdfUtils.createUrlLinkIcon(report.getLinkIcon(), FontSize.H3, URL.QUERYFORPATHWAYDETAILS.concat(pathway.getStId()))).add(")");
         identifierFound.add(new Text(pathway.getStId()).setFontColor(report.getLinkColor()).setAction(PdfAction.createURI(URL.QUERYFORPATHWAYDETAILS.concat(pathway.getStId())))).add(")");

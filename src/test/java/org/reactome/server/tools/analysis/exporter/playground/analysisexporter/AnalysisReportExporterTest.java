@@ -31,10 +31,10 @@ public class AnalysisReportExporterTest {
 
 //            from new analysis snapshot
             put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
-//            put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
-//            put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
-//            put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
-//            put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
+            put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
+            put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
+            put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
+            put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
         }
     };
     private static final String SAVE_TO = "src/test/resources/pdfs";

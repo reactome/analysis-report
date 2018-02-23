@@ -6,18 +6,17 @@ import com.itextpdf.layout.element.Text;
 import com.itextpdf.layout.layout.LayoutContext;
 import com.itextpdf.layout.layout.LayoutResult;
 import com.itextpdf.layout.renderer.CellRenderer;
-import org.reactome.server.analysis.core.model.identifier.MainIdentifier;
 
-import java.util.Set;
+import java.util.List;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class CellTextRenderer extends CellRenderer {
     private float fontSize;
-    private Set<MainIdentifier> identifiers;
+    private List<String> identifiers;
 
-    CellTextRenderer(Cell cell, Set<MainIdentifier> identifiers, float fontSize) {
+    CellTextRenderer(Cell cell, List<String> identifiers, float fontSize) {
         super(cell);
         this.identifiers = identifiers;
         this.fontSize = fontSize;
@@ -31,11 +30,10 @@ public class CellTextRenderer extends CellRenderer {
                 .setFontSize(fontSize)
                 .setMultipliedLeading(1.0f);
 //                .setHyphenation(hyphenation);
-        MainIdentifier[] identifier = this.identifiers.toArray(new MainIdentifier[this.identifiers.size()]);
+        String[] identifier = this.identifiers.toArray(new String[identifiers.size()]);
         for (int i = 0; i < identifier.length; i++) {
-            content.add(new Text(identifier[i].getValue().getId().concat(i == identifier.length - 1 ? " " : ", "))
-                    .setFontSize(fontSize)
-                    .setDestination(identifier[i].getValue().getId()));
+            content.add(new Text(identifier[i].concat(i == identifier.length - 1 ? " " : ", "))
+                    .setFontSize(fontSize));
         }
         this.childRenderers.add(content.createRendererSubTree().setParent(this));
         return super.layout(layoutContext);
