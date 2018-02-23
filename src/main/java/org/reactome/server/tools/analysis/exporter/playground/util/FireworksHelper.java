@@ -12,7 +12,6 @@ import java.awt.image.BufferedImage;
  */
 public class FireworksHelper {
 
-    //this file must contain the *.json files,you down it from
     private static final String SPECIES = "Homo_sapiens";
     private static final double QUALITY = 2.5;
 

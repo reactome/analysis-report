@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelement.table;
 
 import com.itextpdf.kernel.colors.Color;
 import com.itextpdf.kernel.colors.DeviceRgb;
@@ -19,6 +19,7 @@ import org.reactome.server.analysis.core.result.model.PathwayBase;
 import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.exception.TableTypeNotFoundException;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 
 import java.util.Comparator;
 import java.util.List;
@@ -34,9 +35,7 @@ public class TableRenderer {
     private static final Color HEADER_BACKGROUND_COLOR = new DeviceRgb(185, 185, 185);
     private static final int NUM_COLUMNS = 8;
     private static final float multipliedLeading = 1.0f;
-    //    private static final float[] OVERVIEW_VALUES = new float[]{5 / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2f / 20f, 2f / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2 / 20f};
     private static final float[] OVERVIEW_VALUES = new float[]{5 / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2f / 20f, 2f / 20f, 2 / 20f, 2 / 20f, 2 / 20f};
-    //    private static final String[] OVERVIEW_HEADERS = {"Pathway name", "Entity found", "Entity Total", "Entity ratio", "Entity pValue", "Entity FDR", "Reaction found", "Reaction total", "Reaction ratio", "Species name"};
     private static final String[] OVERVIEW_HEADERS = {"Pathway name", "Entity found", "Entity Total", "Entity ratio", "Entity pValue", "Entity FDR", "Reaction found", "Reaction total", "Reaction ratio"};
     private static final String[] IDENTIFIERS_FOUND_NO_EXP_HEADERS = {"Identifier", "mapsTo", "Identifier", "mapsTo", "Identifier", "mapsTo"};
     // TODO: 12/02/18 use large table once it been fixed by iText team
@@ -214,18 +213,24 @@ public class TableRenderer {
 
     private void identifierFoundInPathwayTable(AnalysisReport report, String stId) {
         Table table = new Table(new UnitValue[NUM_COLUMNS]);
-        table.setMarginLeft(20)
-                .setFontSize(FontSize.P)
-                .setTextAlignment(TextAlignment.LEFT)
+        table.setTextAlignment(TextAlignment.LEFT)
                 .setWidth(UnitValue.createPercentValue(100));
         List<FoundEntity> foundEntities = asr.getFoundEntities(stId).filter(report.getReportArgs().getResource()).getIdentifiers();
 
-        foundEntities.forEach(foundEntity -> table.addCell(
-                new Cell().add(new Paragraph(foundEntity.getId())
-                        .setFontColor(report.getLinkColor())
-                        .setMultipliedLeading(multipliedLeading))
-                        .setAction(PdfAction.createGoTo(foundEntity.getId()))
-                        .setBorder(Border.NO_BORDER)));
+//        foundEntities.forEach(foundEntity -> table.addCell(
+//                new Cell().add(new Paragraph(foundEntity.getId())
+//                        .setFontColor(report.getLinkColor())
+//                        .setMultipliedLeading(multipliedLeading))
+//                        .setAction(PdfAction.createGoTo(foundEntity.getId()))
+//                        .setBorder(Border.NO_BORDER)));
+        Cell cell;
+        for (FoundEntity foundEntity : foundEntities) {
+            cell = new Cell().setFontColor(report.getLinkColor())
+                    .setAction(PdfAction.createGoTo(foundEntity.getId()))
+                    .setBorder(Border.NO_BORDER);
+            cell.setNextRenderer(new FitTextRenderer(cell, foundEntity.getId()));
+            table.addCell(cell);
+        }
 
         for (int j = 0; j < NUM_COLUMNS - foundEntities.size() % NUM_COLUMNS; j++) {
             table.addCell(new Cell().setBorder(Border.NO_BORDER));

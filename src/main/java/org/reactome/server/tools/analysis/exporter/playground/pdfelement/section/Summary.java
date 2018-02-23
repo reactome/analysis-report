@@ -36,7 +36,7 @@ public class Summary implements Section {
 
     public void render(AnalysisReport report, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult) throws IOException {
         report.add(new AreaBreak());
-        report.add(new Header("2: Summary of Parameters and Results", FontSize.H2));
+        report.add(new Header("2: Summary of Parameters and Results", FontSize.H2).setDestination("parametersAnaResults"));
 
         List<Paragraph> list = new ArrayList<>();
 

@@ -1,38 +1,14 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.profile;
 
-import com.itextpdf.kernel.font.PdfFont;
-import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
-
-import java.io.IOException;
-
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class PdfProfile {
 
-    private String font = "Helvetica";
-    private PdfFont pdfFont;
     private Integer fontSize = 6;
     private Integer pathwaysToShow = 25;
     private MarginProfile margin;
     private ParagraphProfile paragraph;
-
-    public String getFont() {
-        return font;
-    }
-
-    public void setFont(String font) {
-        this.font = font;
-    }
-
-    public PdfFont getPdfFont() {
-        try {
-            pdfFont = PdfUtils.createFont(getFont());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return pdfFont;
-    }
 
     public Integer getFontSize() {
         return fontSize;
@@ -69,7 +45,6 @@ public class PdfProfile {
     @Override
     public String toString() {
         return "PdfProfile{" +
-                "font='" + font + '\'' +
                 ", fontSize=" + fontSize +
                 ", pathwaysToShow=" + pathwaysToShow +
                 ", margin=" + margin +

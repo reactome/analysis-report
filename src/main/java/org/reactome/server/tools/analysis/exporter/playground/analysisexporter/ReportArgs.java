@@ -76,11 +76,11 @@ public class ReportArgs {
         this.species = species;
     }
 
-    public void setPagination(Integer pagination) {
-        this.pagination = pagination;
-    }
-
     public int getPagination() {
         return pagination;
+    }
+
+    public void setPagination(Integer pagination) {
+        this.pagination = pagination;
     }
 }

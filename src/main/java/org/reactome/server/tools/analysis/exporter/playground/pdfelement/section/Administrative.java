@@ -37,14 +37,15 @@ public class Administrative implements Section {
                         .add(new Text(URL.ANALYSIS.concat(analysisStoredResult.getSummary().getToken()))
                                 .setFontColor(report.getLinkColor())
                                 .setAction(PdfAction.createURI(URL.ANALYSIS.concat(analysisStoredResult.getSummary().getToken()))))
+                        .add(".")
                 );
 
         ADMINISTRATIVE.forEach(p -> report.add(new P(p)));
 
-        report.add(new Header("Content", FontSize.H2).setHorizontalAlignment(HorizontalAlignment.CENTER))
+        report.add(new Header("Content", FontSize.H3).setHorizontalAlignment(HorizontalAlignment.CENTER))
                 .add(new P("1: Introduction"))
-                .add(new P("2: Summary of Parameters and Results"))
-                .add(new P("3: Top 25 pathways"))
+                .add(new P("2: Summary of Parameters and Results").setAction(PdfAction.createGoTo("parametersAnaResults")))
+                .add(new P("3: Top 25 pathways").setAction(PdfAction.createGoTo("topPathways")))
                 .add(new P("4: Pathway details").setAction(PdfAction.createGoTo("pathwayDetails")))
                 .add(new P("5: Summary of identifiers found").setAction(PdfAction.createGoTo("identifiersFound")))
                 .add(new P("6: Summary of identifiers not found").setAction(PdfAction.createGoTo("identitiferNotFound")));

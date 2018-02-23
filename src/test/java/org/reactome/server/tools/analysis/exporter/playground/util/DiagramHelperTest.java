@@ -29,12 +29,10 @@ public class DiagramHelperTest {
     private static final String fireworksPath = "/home/byron/reactome/fireworks";
     private static final String pdfPath = "src/test/resources/pdfs";
     private static final String analysisPath = "src/test/resources/analysis";
-
+    public static final RasterExporter EXPORTER = new RasterExporter(diagramPath, ehldPath, analysisPath, svgSummary);
     private static final String TOKEN_OVER01 = "MjAxODAyMTIxMTI5MzdfMQ==";
     private static final TokenUtils TOKEN_UTILS = new TokenUtils(analysisPath);
     private static DiagramService DIAGRAM_SERVICE;
-
-    public static final RasterExporter EXPORTER = new RasterExporter(diagramPath, ehldPath, analysisPath, svgSummary);
 
     @BeforeClass
     public static void setUp() {

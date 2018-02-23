@@ -16,20 +16,8 @@ import java.util.Objects;
  */
 public class AnalysisReportExporterTest {
 
-    private static boolean debug = true;
-
     private static final HashMap<String, String> tokens = new HashMap<String, String>() {
         {
-//            from reactome dev site
-//            put("UniProt_accession_list", "MjAxODAyMDcxNDA1MTRfMTc%253D");
-//            put("Gene_names_list", "MjAxODAyMDkwNTE3MjNfMTk%253D");
-//            put("Gene_NCBI", "MjAxODAyMDkwNTIzNTdfMjE%253D");
-//            put("KEGG", "MjAxODAyMDkwNTI0NDhfMjI%253D");
-//            put("Microarray_data", "MjAxODAyMDkwNTE5NDlfMjA%253D");
-//            put("Metabolomics_data", "MjAxODAyMDkwNTI2MTNfMjM%253D");
-//            put("COSMIC", "MjAxODAyMDkwNTI2NTZfMjQ%253D");
-
-//            from new analysis snapshot
             put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
             put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
             put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
@@ -38,11 +26,12 @@ public class AnalysisReportExporterTest {
         }
     };
     private static final String SAVE_TO = "src/test/resources/pdfs";
+    private static final String ANALYSIS_PATH = "src/test/resources/analysis";
     private static final String DIAGRAM_PATH = "/home/byron/reactome/diagram";
     private static final String EHLD_PATH = "/home/byron/reactome/ehld";
     private static final String svgSummary = "/home/byron/reactome/ehld/svgSummary.txt";
     private static final String FIREWORKS_PATH = "/home/byron/reactome/fireworks";
-    private static final String ANALYSIS_PATH = "src/test/resources/analysis";
+    private static boolean debug = true;
 
     @BeforeClass
     public static void beforeClass() {

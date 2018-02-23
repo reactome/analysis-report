@@ -29,7 +29,7 @@ public class Introduction implements Section {
 
         List<Paragraph> list = new ArrayList<>();
         for (String publication : PUBLICATINOS) {
-            String[] text = publication.split("-");
+            String[] text = publication.split("<>");
             list.add(new ListParagraph(text[0])
                     .setFontSize(FontSize.H5)
                     .add(PdfUtils.getLinkIcon(text[1])));

@@ -196,38 +196,38 @@
             <!--</executions>-->
             <!--</plugin>-->
 
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>properties-maven-plugin</artifactId>
-                <version>1.0-alpha-2</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>set-system-properties</goal>
-                        </goals>
-                        <configuration>
-                            <properties>
-                                <property>
-                                    <name>neo4j.host</name>
-                                    <value>localhost</value>
-                                </property>
-                                <property>
-                                    <name>neo4j.port</name>
-                                    <value>7474</value>
-                                </property>
-                                <property>
-                                    <name>neo4j.user</name>
-                                    <value>neo4j</value>
-                                </property>
-                                <property>
-                                    <name>neo4j.password</name>
-                                    <value>reactome</value>
-                                </property>
-                            </properties>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--<plugin>-->
+            <!--<groupId>org.codehaus.mojo</groupId>-->
+            <!--<artifactId>properties-maven-plugin</artifactId>-->
+            <!--<version>1.0-alpha-2</version>-->
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<goals>-->
+            <!--<goal>set-system-properties</goal>-->
+            <!--</goals>-->
+            <!--<configuration>-->
+            <!--<properties>-->
+            <!--<property>-->
+            <!--<name>neo4j.host</name>-->
+            <!--<value>localhost</value>-->
+            <!--</property>-->
+            <!--<property>-->
+            <!--<name>neo4j.port</name>-->
+            <!--<value>7474</value>-->
+            <!--</property>-->
+            <!--<property>-->
+            <!--<name>neo4j.user</name>-->
+            <!--<value>neo4j</value>-->
+            <!--</property>-->
+            <!--<property>-->
+            <!--<name>neo4j.password</name>-->
+            <!--<value>reactome</value>-->
+            <!--</property>-->
+            <!--</properties>-->
+            <!--</configuration>-->
+            <!--</execution>-->
+            <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 </project>

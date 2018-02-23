@@ -16,11 +16,11 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.exception.TableTypeNotFoundException;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.TableRenderer;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.TableTypeEnum;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.Header;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.ListParagraph;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.P;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.TableRenderer;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.TableTypeEnum;
 import org.reactome.server.tools.analysis.exporter.playground.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.GraphCoreHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
@@ -50,7 +50,7 @@ public class Overview implements Section {
 
     private void addOverviewTable(AnalysisReport report, TableRenderer tableRendererT) throws TableTypeNotFoundException {
         report.add(new AreaBreak())
-                .add(new Header(String.format("3: Top %s over-representation pathways sorted by p-Value.", report.getProfile().getPathwaysToShow()), FontSize.H3));
+                .add(new Header(String.format("3: Top %s over-representation pathways sorted by p-Value.", report.getProfile().getPathwaysToShow()), FontSize.H3).setDestination("topPathways"));
         tableRendererT.createTable(report, TableTypeEnum.OVERVIEW_TABLE);
     }
 

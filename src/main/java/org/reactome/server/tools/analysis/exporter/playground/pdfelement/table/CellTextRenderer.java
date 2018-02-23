@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelement.table;
 
 import com.itextpdf.layout.element.Cell;
 import com.itextpdf.layout.element.Paragraph;
@@ -24,12 +24,9 @@ public class CellTextRenderer extends CellRenderer {
 
     @Override
     public LayoutResult layout(LayoutContext layoutContext) {
-//        HyphenationConfig hyphenation = new HyphenationConfig(3, 3);
-//        hyphenation.setHyphenSymbol('\uff0c');
         Paragraph content = new Paragraph()
                 .setFontSize(fontSize)
                 .setMultipliedLeading(1.0f);
-//                .setHyphenation(hyphenation);
         String[] identifier = this.identifiers.toArray(new String[identifiers.size()]);
         for (int i = 0; i < identifier.length; i++) {
             content.add(new Text(identifier[i].concat(i == identifier.length - 1 ? " " : ", "))

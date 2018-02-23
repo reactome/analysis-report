@@ -58,7 +58,7 @@ class ReportRenderer {
 
         SpeciesFilteredResult speciesFilteredResult = analysisStoredResult.filterBySpecies(reportArgs.getSpecies(), reportArgs.getResource());
 
-        checkReportArgs(analysisStoredResult, speciesFilteredResult, reportArgs, profile);
+        checkReportArgs(speciesFilteredResult, reportArgs, profile);
         AnalysisReport report = new AnalysisReport(profile, reportArgs, destination);
 
 //        System.out.println("content:" + report.getCurrentPageArea().getWidth() + "x" + report.getCurrentPageArea().getHeight());
@@ -95,7 +95,7 @@ class ReportRenderer {
         }
     }
 
-    private static void checkReportArgs(AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult, ReportArgs reportArgs, PdfProfile profile) {
+    private static void checkReportArgs(SpeciesFilteredResult speciesFilteredResult, ReportArgs reportArgs, PdfProfile profile) {
         if (profile.getPathwaysToShow() > speciesFilteredResult.getPathways().size()) {
             profile.setPathwaysToShow(speciesFilteredResult.getPathways().size());
             LOGGER.warn("There just have {} in your analysis result.", speciesFilteredResult.getPathways().size());

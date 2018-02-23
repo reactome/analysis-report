@@ -2,8 +2,6 @@ package org.reactome.server.tools.analysis.exporter.playground.util;
 
 import com.itextpdf.io.image.ImageData;
 import com.itextpdf.io.image.ImageDataFactory;
-import com.itextpdf.kernel.font.PdfFont;
-import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Image;
 import org.apache.commons.io.IOUtils;
@@ -25,10 +23,10 @@ import java.util.List;
 public class PdfUtils {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PdfUtils.class);
-    private static ImageData logo;
-    private static ImageData linkIcon;
     private static final String LOGO = "images/logo.png";
     private static final String LINKICON = "images/link.png";
+    private static ImageData logo;
+    private static ImageData linkIcon;
 
     static {
         URL resource = PdfUtils.class.getResource(LOGO);
@@ -48,32 +46,14 @@ public class PdfUtils {
                 .setAction(PdfAction.createURI(url));
     }
 
-    public static Image getGotoIcon(String destination) {
-        return new Image(linkIcon)
-                .scaleToFit(10, 10)
-                .setAction(PdfAction.createGoTo(destination));
-    }
-
-    /**
-     * scale image's size to fit the analysis report's page size.
-     *
-     * @param image link icon.
-     * @param width aim width you want to reach.
-     * @return scaled image.
-     */
-    private static Image ImageAutoScale(Image image, float width) {
-        width *= 0.75;//the icon's size will be slightly smaller than the font's size
-        float scaling = image.getImageWidth() >= width ? width / image.getImageWidth() : image.getImageWidth() / width;
-        image = image.scale(scaling, scaling);
-        return image;
-    }
+//    public static Image getGotoIcon(String destination) {
+//        return new Image(linkIcon)
+//                .scaleToFit(10, 10)
+//                .setAction(PdfAction.createGoTo(destination));
+//    }
 
     public static String getTimeStamp() {
         return LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm"));
-    }
-
-    public static PdfFont createFont(String fontName) throws IOException {
-        return PdfFontFactory.createFont(fontName, "", false, false);
     }
 
     public static String getAuthorDisplayName(List<Person> authors) {
