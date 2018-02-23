@@ -2,6 +2,7 @@ package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
 
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;
+import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;
 
@@ -18,12 +19,12 @@ public class AnalysisFont {
     private void updateFonts() {
         // Every PDF must load the fonts again, as they are hold by one, and only one document
         try {
-            final String resource = getClass().getResource("fonts/Open_Sans").getFile();
-            PdfFontFactory.registerDirectory(resource);
-            LIGHT = PdfFontFactory.createRegisteredFont("open sans light");
-            REGULAR = PdfFontFactory.createRegisteredFont("open sans");
-            BOLD = PdfFontFactory.createRegisteredFont("open sans bold");
-            Helvetica = PdfFontFactory.createFont("Helvetica");
+            byte[] bytes = IOUtils.toByteArray(AnalysisFont.class.getResourceAsStream("fonts/Open_Sans/OpenSans-Regular.ttf"));
+            REGULAR = PdfFontFactory.createFont(bytes, "");
+            bytes = IOUtils.toByteArray(AnalysisFont.class.getResourceAsStream("fonts/Open_Sans/OpenSans-Bold.ttf"));
+            BOLD = PdfFontFactory.createFont(bytes, "");
+            bytes = IOUtils.toByteArray(AnalysisFont.class.getResourceAsStream("fonts/Open_Sans/OpenSans-Light.ttf"));
+            LIGHT = PdfFontFactory.createFont(bytes, "");
         } catch (IOException e) {
             e.printStackTrace();
         }
