@@ -7,6 +7,7 @@ import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfPage;
 import com.itextpdf.kernel.pdf.canvas.PdfCanvas;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
+import org.reactome.server.tools.analysis.exporter.playground.constant.Fonts;
 
 /**
  * @author Chuan Deng dengchuanbio@gmail.com
@@ -25,28 +26,17 @@ public class FooterEventHandler implements IEventHandler {
         PdfDocument document = pdfDocumentEvent.getDocument();
         PdfPage page = pdfDocumentEvent.getPage();
         PdfCanvas canvas = new PdfCanvas(page);
+        String reactome = "reactome.org";
+        String pageNum = String.format("- %s -", document.getPageNumber(page));
         canvas.beginText()
-                .setFontAndSize(AnalysisFont.REGULAR, FontSize.H6)
+//                .setColor(Colors.GRAY, false)
+                .setFontAndSize(Fonts.REGULAR, FontSize.P)
                 .moveText(report.getLeftMargin(), report.getBottomMargin() * 2 / 3)
-                .showText("reactome.org")
-                .moveText(page.getPageSize().getWidth() / 2 - 35, 0)
-                .showText(String.format("- %s -", document.getPageNumber(page)))
+                .showText(reactome)
+                .moveText((page.getPageSize().getWidth() - Fonts.REGULAR.getWidth(pageNum.concat(reactome), FontSize.P)) * 0.5, 0)
+                .showText(pageNum)
                 .endText()
                 .release();
         report.flush();
     }
-
-    /*
-    String text = String.format("- %s -", document.getPageNumber(page));
-        float width = AnalysisFont.REGULAR.getWidth(text, FontSize.H6);
-        canvas
-                .setFontAndSize(AnalysisFont.REGULAR, FontSize.H6)
-                .moveTo(report.getLeftMargin(), report.getBottomMargin() * .5f)
-                .showText("reactome.org")
-        ;
-        canvas
-                .moveTo((page.getPageSize().getWidth() - width) * .5f, report.getBottomMargin() * .5f)
-                .showText(text);
-        report.flush();
-     */
 }

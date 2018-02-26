@@ -6,7 +6,7 @@ import com.itextpdf.layout.layout.LayoutContext;
 import com.itextpdf.layout.layout.LayoutResult;
 import com.itextpdf.layout.renderer.CellRenderer;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisFont;
+import org.reactome.server.tools.analysis.exporter.playground.constant.Fonts;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.P;
 
 /**
@@ -27,7 +27,7 @@ public class FitTextRenderer extends CellRenderer {
 
     @Override
     public LayoutResult layout(LayoutContext layoutContext) {
-        PdfFont font = AnalysisFont.REGULAR;
+        PdfFont font = Fonts.REGULAR;
         int fontSize = FontSize.P;
         int length = text.length();
         float cellWidth = layoutContext.getArea().getBBox().getWidth();

@@ -1,18 +1,15 @@
 package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 /**
- * @author Chuan-Deng dengchuanbio@gmail.com
- * <p>
- * This class packaged the essential parameters to produce the analysis report.
+ * Essential parameters to perform the analysis report.
  * and it will be an argument passed to {@see AnalysisExporter#export}
+ *
+ * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class ReportArgs {
 
     private String token;
     private String resource = null;
-    //    private Resource resource = new Resource("CHEBI");
-//        private String resource = "CHEBI";
-//    private String resource = "TOTAL";
     private Long species = null;
     private Integer pagination = 0;
     private String diagramPath;
@@ -22,10 +19,12 @@ public class ReportArgs {
     private String svgSummary;
 
     /**
-     * @param token         token produced by the {@see <a href="https://reactome.org">Reactome</a>} server end once the user submitted the data set to perform the analysis service.
-     * @param diagramPath   the diagram raw json file path to export the pathway diagram image.
-     * @param ehldPath      the EHLD raw json file path to export the pathway diagram image.
-     * @param fireworksPath the fireworks raw json file path to export the analysis fireworks image.
+     * @param token         token produced by the <a href="https://reactome.org/PathwayBrowser/#TOOL=AT">Analysis tools</a>server end.
+     * @param diagramPath   path contains the diagram json data file.
+     * @param ehldPath      path contains the ehld json data file.
+     * @param fireworksPath path contains the fireworks json data file.
+     * @param analysisPath  path contains the binary file produced by analysis tool.
+     * @param svgSummary    file contains the information that if a pathway has the ehld image.
      */
     public ReportArgs(String token, String diagramPath, String ehldPath, String fireworksPath, String analysisPath, String svgSummary) {
         this.token = token;

@@ -1,14 +1,15 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.profile;
 
 /**
+ * profile contains the report outlook setting.
+ *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class PdfProfile {
 
-    private Integer fontSize = 6;
+    private Integer fontSize = 10;// font size of paragraph in report,another font size like 'Title','Table','H1' are relative to this value.
     private Integer pathwaysToShow = 25;
     private MarginProfile margin;
-    private ParagraphProfile paragraph;
 
     public Integer getFontSize() {
         return fontSize;
@@ -34,21 +35,12 @@ public class PdfProfile {
         this.margin = margin;
     }
 
-    public ParagraphProfile getParagraph() {
-        return paragraph;
-    }
-
-    public void setParagraph(ParagraphProfile paragraph) {
-        this.paragraph = paragraph;
-    }
-
     @Override
     public String toString() {
         return "PdfProfile{" +
                 ", fontSize=" + fontSize +
                 ", pathwaysToShow=" + pathwaysToShow +
                 ", margin=" + margin +
-                ", paragraph=" + paragraph +
                 '}';
     }
 }

@@ -2,6 +2,9 @@
 
 Analysis Exporter
 ---
+AnalysisExporter is a tool to export the analysis result performed by Reactome [Analysis tools](https://reactome.org/PathwayBrowser/#TOOL=AT) to a PDF document so you can review it after the online analysis. 
+This PDF contains the fireworks overview image and diagram image for each pathway hit in analysis. 
+ 
 ###Usage
 * Pre-requirements  
     * Maven 3.+  

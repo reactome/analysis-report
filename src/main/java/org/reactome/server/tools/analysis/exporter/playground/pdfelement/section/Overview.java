@@ -12,6 +12,7 @@ import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.graph.domain.model.*;
+import org.reactome.server.tools.analysis.exporter.playground.constant.Colors;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.exception.TableTypeNotFoundException;
@@ -27,7 +28,6 @@ import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -41,51 +41,49 @@ public class Overview implements Section {
     private static final Logger LOGGER = LoggerFactory.getLogger(Overview.class);
 
 
-    public void render(AnalysisReport report, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult) throws Exception {
-        TableRenderer tableRenderer = new TableRenderer(analysisStoredResult, speciesFilteredResult);
+    public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) throws Exception {
+        TableRenderer tableRenderer = new TableRenderer(asr, sfr);
         addOverviewTable(report, tableRenderer);
-        addPathwaysDetail(report, tableRenderer, analysisStoredResult, speciesFilteredResult);
-        addIdentifierTable(report, tableRenderer, speciesFilteredResult);
+        addPathwaysDetail(report, tableRenderer, asr, sfr);
+        addIdentifierTable(report, tableRenderer, sfr);
     }
 
     private void addOverviewTable(AnalysisReport report, TableRenderer tableRendererT) throws TableTypeNotFoundException {
         report.add(new AreaBreak())
-                .add(new Header(String.format("3: Top %s over-representation pathways sorted by p-Value.", report.getProfile().getPathwaysToShow()), FontSize.H3).setDestination("topPathways"));
+                .add(new Header(String.format("3: Top %s over-representation pathways sorted by p-Value.", report.getProfile().getPathwaysToShow()), FontSize.H1).setDestination("topPathways"));
         tableRendererT.createTable(report, TableTypeEnum.OVERVIEW_TABLE);
     }
 
-    private void addIdentifierTable(AnalysisReport report, TableRenderer tableRenderer, SpeciesFilteredResult speciesFilteredResult) throws TableTypeNotFoundException {
-        Paragraph identifierFound = new Paragraph("5. Summary of identifiers found.");
+    private void addIdentifierTable(AnalysisReport report, TableRenderer tableRenderer, SpeciesFilteredResult sfr) throws TableTypeNotFoundException {
+        Paragraph identifierFound = new Header("5. Summary of identifiers found.", FontSize.H1);
         identifierFound.setDestination("identifiersFound");
-        identifierFound.setFontSize(FontSize.H3);
         report.add(identifierFound);
-        if (speciesFilteredResult.getExpressionSummary().getColumnNames().size() != 0) {
+        if (sfr.getExpressionSummary().getColumnNames().size() != 0) {
             tableRenderer.createTable(report, TableTypeEnum.IdentifierFound);
         } else {
             tableRenderer.createTable(report, TableTypeEnum.IDENTIFIER_FOUND_NO_EXP);
         }
-        report.add(new Header("6. Summary of identifiers not found.", FontSize.H3).setDestination("identitiferNotFound"));
-        if (speciesFilteredResult.getExpressionSummary().getColumnNames().size() != 0) {
+        report.add(new Header("6. Summary of identifiers not found.", FontSize.H1).setDestination("identitiferNotFound"));
+        if (sfr.getExpressionSummary().getColumnNames().size() != 0) {
             tableRenderer.createTable(report, TableTypeEnum.IDENTIFIER_NOT_FOUND);
         } else {
             tableRenderer.createTable(report, TableTypeEnum.IDENTIFIER_NOT_FOUND_NO_EXP);
         }
     }
 
-    private void addPathwaysDetail(AnalysisReport report, TableRenderer tableRenderer, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult) throws Exception {
+    private void addPathwaysDetail(AnalysisReport report, TableRenderer tableRenderer, AnalysisStoredResult asr, SpeciesFilteredResult sfr) throws Exception {
 
-        PathwayNodeSummary pathwayNodeSummary;
         Pathway pathway;
+        PathwayNodeSummary pathwayNodeSummary;
+        report.add(new Header("4. Pathway details", FontSize.H1).setDestination("pathwayDetails"));
         for (int i = report.getReportArgs().getPagination(); i < report.getReportArgs().getPagination() + report.getProfile().getPathwaysToShow(); i++) {
-
-            pathwayNodeSummary = analysisStoredResult.getPathway(speciesFilteredResult.getPathways().get(i).getStId());
-            report.add(new AreaBreak()).add(new Header("4. Pathway details", FontSize.H3).setDestination("pathwayDetails"));
+            report.add(new AreaBreak());
+            pathwayNodeSummary = asr.getPathway(sfr.getPathways().get(i).getStId());
             addTitleAndDiagram(report, pathwayNodeSummary, i);
 
-//             add diagram to report.
-//            addAsSVG(report, result, i);
-            addAsPNG(report, analysisStoredResult, speciesFilteredResult, i);
-            pathway = GraphCoreHelper.getPathway(speciesFilteredResult.getPathways().get(i).getStId());
+            // add diagram to report.
+            addAsPNG(report, asr, sfr, i);
+            pathway = GraphCoreHelper.getPathway(sfr.getPathways().get(i).getStId());
             if (pathway.getCompartment() != null) {
                 P p = new P(new Text("Compartment: ").setBold());
                 StringBuilder names = new StringBuilder();
@@ -95,8 +93,14 @@ public class Overview implements Section {
             if (pathway.getIsInDisease()) {
                 P p = new P(new Text("Appears in the following disease(s): ").setBold());
                 StringBuilder names = new StringBuilder();
-                pathway.getDisease().forEach(disease -> names.append(disease.getDisplayName()).append(", "));
-                report.add(p.add(names.substring(0, names.length() - 2)));
+                for (Disease disease : pathway.getDisease()) {
+                    if (!disease.getDisplayName().equals("disease")) {
+                        names.append(disease.getDisplayName()).append(", ");
+                    }
+                }
+                if (names.length() != 0) {
+                    report.add(p.add(names.substring(0, names.length() - 2)));
+                }
             }
             if (pathway.getIsInferred()) {
                 P p = new P(new Text("Inferred: ").setBold());
@@ -106,15 +110,12 @@ public class Overview implements Section {
             }
 
             if (pathway.getSummation() != null) {
-                // br, p replace("<br>|<p>", "\n")
-//                pathway.getSummation().forEach(summation -> report.add(new P(summation.getText())));
                 for (Summation summation : pathway.getSummation()) {
                     String[] paragraph = summation.getText().replaceAll("(?i)<br>+", "\r\n").split("<p>+");
                     Arrays.stream(paragraph).forEach(text -> report.add(new P(Jsoup.parseBodyFragment(text).body().text())));
                 }
-//                pathway.getSummation().forEach(summation -> report.add(new P(Jsoup.parseBodyFragment(summation.getText().replaceAll("(?i)<p>+|<br>+", "\r\n")).body().text())));
             }
-            report.add(new Header("List of identifiers found in this pathway", FontSize.H4));
+            report.add(new Header("List of identifiers found in this pathway", FontSize.H3));
             tableRenderer.createTable(report, pathwayNodeSummary.getStId());
 
             addCuratorDetail(report, pathway);
@@ -122,24 +123,22 @@ public class Overview implements Section {
         }
     }
 
-    private void addAsPNG(AnalysisReport report, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult, int i) throws Exception {
-        BufferedImage image = DiagramHelper.getPNGDiagram(speciesFilteredResult.getPathways().get(i).getStId(), analysisStoredResult, report.getReportArgs().getResource());
+    private void addAsPNG(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr, int i) throws Exception {
+        BufferedImage image = DiagramHelper.getPNGDiagram(sfr.getPathways().get(i).getStId(), asr, report.getReportArgs().getResource());
         if (image != null) {
-            Image diagram = new Image(ImageDataFactory.create(image, Color.WHITE));
+            Image diagram = new Image(ImageDataFactory.create(image, java.awt.Color.WHITE));
             float scale = Math.min(report.getCurrentPageArea().getWidth() / diagram.getImageWidth(), 0.75f);
             diagram.scale(scale, scale).setHorizontalAlignment(HorizontalAlignment.CENTER);
             report.add(diagram);
         } else {
-            LOGGER.warn("No diagram found for pathway : {}.", speciesFilteredResult.getPathways().get(i).getStId());
+            LOGGER.warn("No diagram found for pathway : {}.", sfr.getPathways().get(i).getStId());
         }
     }
 
     private void addTitleAndDiagram(AnalysisReport report, PathwayNodeSummary pathway, int index) {
-//        Paragraph identifierFound = new Paragraph(String.format("2.%s. %s (%s", index + 1, pathway.getName(), pathway.getStId()));
-        Header identifierFound = new Header(String.format("4.%s. %s (", index + 1, pathway.getName()), FontSize.H3);
+        Header identifierFound = new Header(String.format("4.%s. %s (", index + 1, pathway.getName()), FontSize.H2);
         identifierFound.setDestination(pathway.getStId());
-//        identifierFound.add(PdfUtils.createUrlLinkIcon(report.getLinkIcon(), FontSize.H3, URL.QUERYFORPATHWAYDETAILS.concat(pathway.getStId()))).add(")");
-        identifierFound.add(new Text(pathway.getStId()).setFontColor(report.getLinkColor()).setAction(PdfAction.createURI(URL.QUERYFORPATHWAYDETAILS.concat(pathway.getStId())))).add(")");
+        identifierFound.add(new Text(pathway.getStId()).setFontColor(Colors.REACTOME_COLOR).setAction(PdfAction.createURI(URL.QUERYFORPATHWAYDETAILS.concat(pathway.getStId())))).add(")");
 
         report.add(identifierFound);
     }
@@ -205,21 +204,21 @@ public class Overview implements Section {
                 }
             }
             if (references.size() != 0) {
-                report.add(new Header("References", FontSize.H4));
+                report.add(new Header("References", FontSize.H3));
                 report.addAsList(references);
             }
         }
     }
 
     private void addCurator(AnalysisReport report, String title, List<InstanceEdit> curators) {
-        report.add(new Header(title, FontSize.H4));
+        report.add(new Header(title, FontSize.H3));
         List<Paragraph> list = new ArrayList<>();
         curators.forEach(instanceEdit -> instanceEdit.getAuthor().forEach(person -> list.add(createListParagraph(instanceEdit, person))));
         report.addAsList(list);
     }
 
     private void addCurator(AnalysisReport report, String title, InstanceEdit instanceEdit) {
-        report.add(new Header(title, FontSize.H4));
+        report.add(new Header(title, FontSize.H3));
         List<Paragraph> list = new ArrayList<>();
         instanceEdit.getAuthor().forEach(person -> list.add(createListParagraph(instanceEdit, person)));
         report.addAsList(list);

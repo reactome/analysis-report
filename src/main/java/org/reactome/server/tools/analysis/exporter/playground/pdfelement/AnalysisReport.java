@@ -1,7 +1,5 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement;
 
-import com.itextpdf.kernel.colors.Color;
-import com.itextpdf.kernel.colors.DeviceRgb;
 import com.itextpdf.kernel.events.PdfDocumentEvent;
 import com.itextpdf.kernel.geom.Rectangle;
 import com.itextpdf.kernel.pdf.PdfDocument;
@@ -13,16 +11,17 @@ import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
+import org.reactome.server.tools.analysis.exporter.playground.constant.Fonts;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.profile.PdfProfile;
 
 import java.io.OutputStream;
 
 /**
+ *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class AnalysisReport extends Document {
 
-    private static final Color linkColor = new DeviceRgb(47, 158, 194);
     private PdfProfile profile;
     private ReportArgs reportArgs;
     private Rectangle currentPageArea;
@@ -33,19 +32,14 @@ public class AnalysisReport extends Document {
         this.profile = profile;
         this.reportArgs = reportArgs;
         getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(this));
-        AnalysisFont.setUp();
-//        setFont(profile.getPdfFont())
-        setFont(AnalysisFont.REGULAR)
+        Fonts.setUp();
+        setFont(Fonts.REGULAR)
                 .setTextAlignment(TextAlignment.JUSTIFIED);
         setMargins(profile.getMargin().getTop()
                 , profile.getMargin().getRight()
                 , profile.getMargin().getBottom()
                 , profile.getMargin().getLeft());
         currentPageArea = getPageEffectiveArea(this.getPdfDocument().getDefaultPageSize());
-    }
-
-    public Color getLinkColor() {
-        return linkColor;
     }
 
     public PdfProfile getProfile() {

@@ -22,18 +22,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Create the report by using iText library.
+ *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 class ReportRenderer {
 
-    private static final Long DEFAULT_SPECIES = 48887L;
+    private static final Long DEFAULT_SPECIES = 48887L; // Homo Species.
     private static final String PROFILE = "profiles/compact.json";
     private static final ObjectMapper MAPPER = new ObjectMapper();
     private static final Logger LOGGER = LoggerFactory.getLogger(ReportRenderer.class);
     private static final PdfProfile profile = loadPdfProfile();
 
     /**
-     * this method is to render the report with data set.
+     * render the report with data set.
      *
      * @param reportArgs  {@see ReportArgs}
      * @param destination {@see PdfWriter}
@@ -42,27 +44,26 @@ class ReportRenderer {
     protected static void render(ReportArgs reportArgs, OutputStream destination) throws Exception {
         DiagramHelper.setPaths(reportArgs);
         FireworksHelper.setPaths(reportArgs);
-
-        AnalysisStoredResult analysisStoredResult = new TokenUtils(reportArgs.getAnalysisPath()).getFromToken(reportArgs.getToken());
+        AnalysisStoredResult asr = new TokenUtils(reportArgs.getAnalysisPath()).getFromToken(reportArgs.getToken());
 
         if (reportArgs.getSpecies() == null) {
             reportArgs.setSpecies(DEFAULT_SPECIES);
-            LOGGER.warn("use default species.");
+            LOGGER.warn("Use default species.");
         }
 
-        if (!analysisStoredResult.getResourceSummary().contains(new ResourceSummary(reportArgs.getResource(), null))) {
-            String resource = getDefaultResource(analysisStoredResult);
+        // if the analysis result not contains the given resource, use the first resource in this analysis.
+        if (!asr.getResourceSummary().contains(new ResourceSummary(reportArgs.getResource(), null))) {
+            String resource = getDefaultResource(asr);
             LOGGER.warn("No such resource:{} in this analysis result,use {} instead.", reportArgs.getResource(), resource);
             reportArgs.setResource(resource);
         }
 
-        SpeciesFilteredResult speciesFilteredResult = analysisStoredResult.filterBySpecies(reportArgs.getSpecies(), reportArgs.getResource());
+        SpeciesFilteredResult sfr = asr.filterBySpecies(reportArgs.getSpecies(), reportArgs.getResource());
+        checkReportArgs(sfr, reportArgs, profile);
 
-        checkReportArgs(speciesFilteredResult, reportArgs, profile);
         AnalysisReport report = new AnalysisReport(profile, reportArgs, destination);
-
-//        System.out.println("content:" + report.getCurrentPageArea().getWidth() + "x" + report.getCurrentPageArea().getHeight());
         FontSize.setUp(report.getProfile().getFontSize());
+
         List<Section> sections = new ArrayList<>(6);
         sections.add(new TitleAndLogo());
         sections.add(new Administrative());
@@ -72,7 +73,7 @@ class ReportRenderer {
 
         try {
             for (Section section : sections) {
-                section.render(report, analysisStoredResult, speciesFilteredResult);
+                section.render(report, asr, sfr);
             }
         } catch (Exception e) {
             throw new FailToRenderReportException("Fail to render report.", e);
@@ -95,24 +96,27 @@ class ReportRenderer {
         }
     }
 
-    private static void checkReportArgs(SpeciesFilteredResult speciesFilteredResult, ReportArgs reportArgs, PdfProfile profile) {
-        if (profile.getPathwaysToShow() > speciesFilteredResult.getPathways().size()) {
-            profile.setPathwaysToShow(speciesFilteredResult.getPathways().size());
-            LOGGER.warn("There just have {} in your analysis result.", speciesFilteredResult.getPathways().size());
+    // check args pagination and pathwayToShow is illegal.
+    private static void checkReportArgs(SpeciesFilteredResult sfr, ReportArgs reportArgs, PdfProfile profile) {
+        if (profile.getPathwaysToShow() > sfr.getPathways().size()) {
+            profile.setPathwaysToShow(sfr.getPathways().size());
+            LOGGER.warn("There just have {} in your analysis result.", sfr.getPathways().size());
         }
-        if (reportArgs.getPagination() > speciesFilteredResult.getPathways().size() - 1) {
+        if (reportArgs.getPagination() > sfr.getPathways().size() - 1) {
             reportArgs.setPagination(0);
             LOGGER.warn("Pagination must less than pathwaysToShow.");
         }
-        if (reportArgs.getPagination() + profile.getPathwaysToShow() > speciesFilteredResult.getPathways().size()) {
-            profile.setPathwaysToShow(speciesFilteredResult.getPathways().size() - reportArgs.getPagination());
+        if (reportArgs.getPagination() + profile.getPathwaysToShow() > sfr.getPathways().size()) {
+            profile.setPathwaysToShow(sfr.getPathways().size() - reportArgs.getPagination());
         }
     }
 
     private static String getDefaultResource(AnalysisStoredResult result) {
         final List<ResourceSummary> summary = result.getResourceSummary();
-        if (summary.size() == 2)
-            return summary.get(1).getResource();
-        else return summary.get(0).getResource();
+        if (summary.size() == 2) {
+            return summary.get(1).getResource(); // Select the second one since first one always "TOTAL" .
+        } else {
+            return summary.get(0).getResource();
+        }
     }
 }

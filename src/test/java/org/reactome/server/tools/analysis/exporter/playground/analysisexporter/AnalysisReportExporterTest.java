@@ -19,10 +19,10 @@ public class AnalysisReportExporterTest {
     private static final HashMap<String, String> tokens = new HashMap<String, String>() {
         {
             put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
-            put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
-            put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
-            put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
-            put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
+//            put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
+//            put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
+//            put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
+//            put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
         }
     };
     private static final String SAVE_TO = "src/test/resources/pdfs";
@@ -40,6 +40,14 @@ public class AnalysisReportExporterTest {
         }
     }
 
+    @AfterClass
+    public static void afterClass() {
+        if (!debug) {
+            for (File file : Objects.requireNonNull(new File(SAVE_TO).listFiles())) file.delete();
+            new File(SAVE_TO).delete();
+        }
+    }
+
     @Test
     public void exportTest() {
         for (File file : Objects.requireNonNull(new File(SAVE_TO).listFiles())) file.delete();
@@ -47,14 +55,6 @@ public class AnalysisReportExporterTest {
             ReportArgs reportArgs = new ReportArgs(token, DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, svgSummary);
             export(reportArgs, type);
         });
-    }
-
-    @AfterClass
-    public static void afterClass() {
-        if (!debug) {
-            for (File file : Objects.requireNonNull(new File(SAVE_TO).listFiles())) file.delete();
-            new File(SAVE_TO).delete();
-        }
     }
 
     private void export(ReportArgs reportArgs, String type) {

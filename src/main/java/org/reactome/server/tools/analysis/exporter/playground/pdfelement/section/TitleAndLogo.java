@@ -15,7 +15,7 @@ import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 public class TitleAndLogo implements Section {
     private static final String TITLE = "Pathway Analysis Report";
 
-    public void render(AnalysisReport report, AnalysisStoredResult analysisStoredResult, SpeciesFilteredResult speciesFilteredResult) {
+    public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) {
         // add Reactome logo
         Image image = PdfUtils.getLogo();
         image.scaleToFit((report.getCurrentPageArea().getWidth() + report.getLeftMargin() + report.getRightMargin()) / 3, report.getTopMargin());

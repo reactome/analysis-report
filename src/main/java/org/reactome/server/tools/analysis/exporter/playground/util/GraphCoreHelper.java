@@ -1,5 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.playground.util;
 
+import org.reactome.server.graph.domain.model.DatabaseObject;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.model.Species;
 import org.reactome.server.graph.service.DatabaseObjectService;
@@ -46,4 +47,12 @@ public class GraphCoreHelper {
         }
     }
 
+    public static String getFoundEntityName(String stId) {
+        DatabaseObject result = databaseObjectService.findById(stId);
+        if (result != null) {
+            return result.getDisplayName();
+        } else {
+            return stId;
+        }
+    }
 }

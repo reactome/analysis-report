@@ -7,28 +7,29 @@ import org.slf4j.LoggerFactory;
 import java.io.OutputStream;
 
 /**
- * @author Chuan-Deng dengchuanbio@gmail.com
- * <p>
- * to export the analysis report(PDF format) according to the given token(produced by {@see <a href="https://reactome.org">Reactome</a>} analysis service).
+ * Analysis exporter to export the user's analysis result performance by Reactome to
+ * to export the analysis report(PDF format) according to the given token(produced by <a href="https://reactome.org">Reactome</a> analysis service).
  * </p>
+ *
+ * @author Chuan-Deng dengchuanbio@gmail.com
+ * @see ReportRenderer
  */
 public class AnalysisExporter {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AnalysisExporter.class);
 
     /**
-     * to create an analysis report associated with token,receive parameters:{@see ReportArgs} and any class extend from {@see OutputStream}
-     * as the output destination.
-     * invoke this method by:
+     * to create an analysis report associated with token,receive parameters: {@link ReportArgs} and any class extend from {@link OutputStream} as the output destination.
+     * invoke this method by:<br><br>
      * <code>
-     * ReportArgs reportArgs = new ReportArgs("token", "diagramPath", "ehldPath", "fireworksPath");
-     * ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+     * ReportArgs reportArgs = new ReportArgs("Token", "diagram_path", "ehld_path", "fireworks_path", "analysis_path", "svgSummary.txt");
+     * OutputStream outputStream = new FileOutputStream(new File("saveDirectory/fileName.pdf"));
      * AnalysisExporter.export(reportArgs, outputStream);
      * <code/>
+     * <p>PDF document can be transport by http by using the OutputStream, or just save as a local file by using the FileOutputStream.</p>
      *
-     * @param reportArgs  report args contains arguments like token,the diagram json path etc.
-     * @param destination destination you want to save the produced PDF report document.
-     * @throws Exception throw
+     * @param reportArgs  report args contains arguments include all need info to create the report.{@see ReportArgs}
+     * @param destination destination you want to save the produced PDF report document, it can be any stream extends from OutputStream.
      */
     public static void export(ReportArgs reportArgs, OutputStream destination) throws Exception {
         try {
