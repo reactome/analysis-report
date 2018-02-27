@@ -10,6 +10,8 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constant.Fonts;
 
 /**
+ * Event handler to add the footer text and page number.
+ *
  * @author Chuan Deng dengchuanbio@gmail.com
  */
 public class FooterEventHandler implements IEventHandler {
@@ -26,17 +28,18 @@ public class FooterEventHandler implements IEventHandler {
         PdfDocument document = pdfDocumentEvent.getDocument();
         PdfPage page = pdfDocumentEvent.getPage();
         PdfCanvas canvas = new PdfCanvas(page);
-        String reactome = "reactome.org";
+        String site = "reactome.org";
         String pageNum = String.format("- %s -", document.getPageNumber(page));
         canvas.beginText()
-//                .setColor(Colors.GRAY, false)
                 .setFontAndSize(Fonts.REGULAR, FontSize.P)
                 .moveText(report.getLeftMargin(), report.getBottomMargin() * 2 / 3)
-                .showText(reactome)
-                .moveText((page.getPageSize().getWidth() - Fonts.REGULAR.getWidth(pageNum.concat(reactome), FontSize.P)) * 0.5, 0)
+                .showText(site)
+                .moveText((page.getPageSize().getWidth() - Fonts.REGULAR.getWidth(pageNum.concat(site), FontSize.P)) * 0.5, 0)
                 .showText(pageNum)
                 .endText()
                 .release();
+
+        // Flush every page once it been finished.
         report.flush();
     }
 }

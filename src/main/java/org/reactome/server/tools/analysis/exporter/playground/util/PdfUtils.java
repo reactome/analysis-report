@@ -28,6 +28,9 @@ public class PdfUtils {
     private static ImageData logo;
     private static ImageData linkIcon;
 
+    /*
+        Hold the image in memory and avoid iText bug in fail to set goto action in same image.
+     */
     static {
         URL resource = PdfUtils.class.getResource(LOGO);
         logo = ImageDataFactory.create(resource);
@@ -45,12 +48,6 @@ public class PdfUtils {
                 .scaleToFit(10, 10)
                 .setAction(PdfAction.createURI(url));
     }
-
-//    public static Image getGotoIcon(String destination) {
-//        return new Image(linkIcon)
-//                .scaleToFit(10, 10)
-//                .setAction(PdfAction.createGoTo(destination));
-//    }
 
     public static String getTimeStamp() {
         return LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm"));
@@ -76,18 +73,4 @@ public class PdfUtils {
         }
         return text;
     }
-
-//    public static Paragraph getSummation(List<Summation> summations) {
-//        Paragraph paragraph = new Paragraph();
-//        for (Summation summation : summations) {
-//            Document html = Jsoup.parseBodyFragment(summation.getText());
-//            Element body = html.body();
-//
-//            Elements elements = html.getAllElements();
-//            for (Element element : elements) {
-//                paragraph.add(element.text());
-//            }
-//        }
-//        return paragraph;
-//    }
 }

@@ -1,6 +1,8 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.table;
 
 /**
+ * Table type.
+ *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public enum TableTypeEnum {

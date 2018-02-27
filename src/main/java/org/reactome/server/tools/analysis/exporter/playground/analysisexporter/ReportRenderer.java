@@ -28,7 +28,7 @@ import java.util.List;
  */
 class ReportRenderer {
 
-    private static final Long DEFAULT_SPECIES = 48887L; // Homo Species.
+    private static final Long DEFAULT_SPECIES = 48887L; // Homo Sapiens.
     private static final String PROFILE = "profiles/compact.json";
     private static final ObjectMapper MAPPER = new ObjectMapper();
     private static final Logger LOGGER = LoggerFactory.getLogger(ReportRenderer.class);
@@ -37,8 +37,7 @@ class ReportRenderer {
     /**
      * render the report with data set.
      *
-     * @param reportArgs  {@see ReportArgs}
-     * @param destination {@see PdfWriter}
+     * @param reportArgs  args contains json folder path in {@link ReportArgs}.
      * @throws Exception when fail to create the PDF document.
      */
     protected static void render(ReportArgs reportArgs, OutputStream destination) throws Exception {
@@ -48,16 +47,17 @@ class ReportRenderer {
 
         if (reportArgs.getSpecies() == null) {
             reportArgs.setSpecies(DEFAULT_SPECIES);
-            LOGGER.warn("Use default species.");
+            LOGGER.warn("Use default species");
         }
 
         // if the analysis result not contains the given resource, use the first resource in this analysis.
         if (!asr.getResourceSummary().contains(new ResourceSummary(reportArgs.getResource(), null))) {
             String resource = getDefaultResource(asr);
-            LOGGER.warn("No such resource:{} in this analysis result,use {} instead.", reportArgs.getResource(), resource);
+            LOGGER.warn("Resource: '{}' not exist, use '{}' instead", reportArgs.getResource(), resource);
             reportArgs.setResource(resource);
         }
 
+        // filter analysis result from whole result by specific species and resource,
         SpeciesFilteredResult sfr = asr.filterBySpecies(reportArgs.getSpecies(), reportArgs.getResource());
         checkReportArgs(sfr, reportArgs, profile);
 
@@ -76,10 +76,9 @@ class ReportRenderer {
                 section.render(report, asr, sfr);
             }
         } catch (Exception e) {
-            throw new FailToRenderReportException("Fail to render report.", e);
+            throw new FailToRenderReportException("Fail to render report", e);
         } finally {
             report.close();
-            report.getPdfDocument().close();
         }
     }
 
@@ -100,11 +99,11 @@ class ReportRenderer {
     private static void checkReportArgs(SpeciesFilteredResult sfr, ReportArgs reportArgs, PdfProfile profile) {
         if (profile.getPathwaysToShow() > sfr.getPathways().size()) {
             profile.setPathwaysToShow(sfr.getPathways().size());
-            LOGGER.warn("There just have {} in your analysis result.", sfr.getPathways().size());
+            LOGGER.warn("There just have {} in your analysis result", sfr.getPathways().size());
         }
         if (reportArgs.getPagination() > sfr.getPathways().size() - 1) {
             reportArgs.setPagination(0);
-            LOGGER.warn("Pagination must less than pathwaysToShow.");
+            LOGGER.warn("Pagination must less than pathwaysToShow");
         }
         if (reportArgs.getPagination() + profile.getPathwaysToShow() > sfr.getPathways().size()) {
             profile.setPathwaysToShow(sfr.getPathways().size() - reportArgs.getPagination());
@@ -114,7 +113,8 @@ class ReportRenderer {
     private static String getDefaultResource(AnalysisStoredResult result) {
         final List<ResourceSummary> summary = result.getResourceSummary();
         if (summary.size() == 2) {
-            return summary.get(1).getResource(); // Select the second one since first one always "TOTAL" .
+            // Select the second one since first one always "TOTAL" .
+            return summary.get(1).getResource();
         } else {
             return summary.get(0).getResource();
         }

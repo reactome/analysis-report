@@ -12,9 +12,9 @@ import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.tools.analysis.exporter.playground.constant.Colors;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.Header;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.ListParagraph;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.P;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.element.Header;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.element.ListParagraph;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.element.P;
 import org.reactome.server.tools.analysis.exporter.playground.util.FireworksHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.GraphCoreHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
@@ -27,6 +27,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Section Summary contains analysis parameter in the analysis result, fireworks for this analysis.
+ *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class Summary implements Section {
@@ -72,7 +74,7 @@ public class Summary implements Section {
             float height = Math.min(fireworks.getImageHeight(), report.getCurrentPageArea().getHeight());
             report.add(fireworks.scaleToFit(width, height));
         } else {
-            LOGGER.warn("No fireworks found for analysis {}.", asr.getSummary().getToken());
+            LOGGER.error("No fireworks found for analysis {}.", asr.getSummary().getToken());
         }
     }
 }

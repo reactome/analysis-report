@@ -12,6 +12,8 @@ import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
+ * Config the neo4j graph data base.
+ *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 @org.springframework.context.annotation.Configuration
@@ -27,7 +29,8 @@ public class GraphCoreConfig extends Neo4jConfig {
     public Configuration getConfiguration() {
         Configuration config = new Configuration();
         config.driverConfiguration()
-                .setDriverClassName(System.getProperty("neo4j.driver"))
+//                .setDriverClassName(System.getProperty("neo4j.driver")) // <neo4j.driver>org.neo4j.ogm.drivers.http.driver.HttpDriver</neo4j.driver>
+                .setDriverClassName("org.neo4j.ogm.drivers.http.driver.HttpDriver")
                 .setURI("http://".concat(System.getProperty("neo4j.host")).concat(":").concat(System.getProperty("neo4j.port")))
                 .setCredentials(System.getProperty("neo4j.user"), System.getProperty("neo4j.password"));
         return config;

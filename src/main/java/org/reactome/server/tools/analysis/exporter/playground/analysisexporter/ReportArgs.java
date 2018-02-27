@@ -2,7 +2,7 @@ package org.reactome.server.tools.analysis.exporter.playground.analysisexporter;
 
 /**
  * Essential parameters to perform the analysis report.
- * and it will be an argument passed to {@see AnalysisExporter#export}
+ * and it will be an argument passed to {@link AnalysisExporter#export}
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
@@ -19,7 +19,7 @@ public class ReportArgs {
     private String svgSummary;
 
     /**
-     * @param token         token produced by the <a href="https://reactome.org/PathwayBrowser/#TOOL=AT">Analysis tools</a>server end.
+     * @param token         token produced by the <a href="https://reactome.org/PathwayBrowser/#TOOL=AT">Analysis Tool</a>server end.
      * @param diagramPath   path contains the diagram json data file.
      * @param ehldPath      path contains the ehld json data file.
      * @param fireworksPath path contains the fireworks json data file.

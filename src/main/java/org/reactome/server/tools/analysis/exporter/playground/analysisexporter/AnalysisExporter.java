@@ -8,7 +8,7 @@ import java.io.OutputStream;
 
 /**
  * Analysis exporter to export the user's analysis result performance by Reactome to
- * to export the analysis report(PDF format) according to the given token(produced by <a href="https://reactome.org">Reactome</a> analysis service).
+ * to export the analysis report(PDF format) according to the given token(produced by Reactome <a href="https://reactome.org/PathwayBrowser/#TOOL=AT">Analysis Tool</a>).
  * </p>
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -28,8 +28,9 @@ public class AnalysisExporter {
      * <code/>
      * <p>PDF document can be transport by http by using the OutputStream, or just save as a local file by using the FileOutputStream.</p>
      *
-     * @param reportArgs  report args contains arguments include all need info to create the report.{@see ReportArgs}
+     * @param reportArgs  report args contains arguments include all need info to create the report.
      * @param destination destination you want to save the produced PDF report document, it can be any stream extends from OutputStream.
+     * @see ReportArgs
      */
     public static void export(ReportArgs reportArgs, OutputStream destination) throws Exception {
         try {
@@ -41,7 +42,7 @@ public class AnalysisExporter {
             LOGGER.error(e.getMessage());
             throw e;
         } catch (ExceptionInInitializerError e) {
-            LOGGER.error("Failed to retrieve data from Graph-Core.");
+            LOGGER.error("Failed to initialise graph-core helper");
             throw e;
         } catch (Exception e) {
             LOGGER.error("Failed to export pdf destination for token : {}", reportArgs.getToken());

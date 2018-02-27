@@ -2,69 +2,55 @@ package org.reactome.server.tools.analysis.exporter.playground.util;
 
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.graph.domain.result.DiagramResult;
-import org.reactome.server.graph.service.DiagramService;
-import org.reactome.server.graph.utils.ReactomeGraphCore;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
+import org.reactome.server.tools.diagram.exporter.common.analysis.AnalysisException;
+import org.reactome.server.tools.diagram.exporter.common.profiles.factory.DiagramJsonDeserializationException;
+import org.reactome.server.tools.diagram.exporter.common.profiles.factory.DiagramJsonNotFoundException;
 import org.reactome.server.tools.diagram.exporter.raster.RasterExporter;
 import org.reactome.server.tools.diagram.exporter.raster.api.RasterArgs;
+import org.reactome.server.tools.diagram.exporter.raster.ehld.exception.EHLDException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.awt.image.BufferedImage;
 
 /**
+ * Help to create the diagram image by invoking the Reactome RasterExporter{@see RasterExporter}.
+ *
  * @author Chuan Deng dengchuanbio@gmail.com
  */
 public class DiagramHelper {
     private static RasterExporter exporter;
-    private static DiagramService DIAGRAM_SERVICE;
-
-    static {
-        ReactomeGraphCore.initialise(System.getProperty("neo4j.host"), System.getProperty("neo4j.port"), System.getProperty("neo4j.user"), System.getProperty("neo4j.password"), GraphCoreConfig.class);
-        DIAGRAM_SERVICE = ReactomeGraphCore.getService(DiagramService.class);
-    }
+    private static final Logger LOGGER = LoggerFactory.getLogger(DiagramHelper.class);
 
     /**
-     * create pathway's diagram.
+     * create diagram image by using the RasterExporter{@see RasterExporter}.
      *
-     * @param stId   stable identifier of the diagram.
-     * @param result {@see AnalysisStoredResult}.
-     * @return {@see BufferedImage}.
+     * @param stId stable identifier of the diagram.
+     * @param asr  {@see AnalysisStoredResult} contains the diagram analysis overlay information.
+     * @return diagram.
      */
-    public static BufferedImage getPNGDiagram(String stId, AnalysisStoredResult result, String resource) {
-        DiagramResult diagramResult = DIAGRAM_SERVICE.getDiagramResult(stId);
+    public static BufferedImage getPNGDiagram(String stId, AnalysisStoredResult asr, String resource) {
+        DiagramResult diagramResult = GraphCoreHelper.getDiagramResult(stId);
         RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "png");
         args.setSelected(diagramResult.getEvents());
         args.setWriteTitle(false);
         args.setResource(resource);
         try {
-            return exporter.export(args, result);
-        } catch (Exception pascual) {
+            return exporter.export(args, asr);
+        } catch (DiagramJsonNotFoundException | AnalysisException | EHLDException | DiagramJsonDeserializationException e) {
+            e.printStackTrace();
+            LOGGER.error("Failed to create diagram for token: {}.", asr.getSummary().getToken());
             return null;
         }
     }
 
-
-//    public static SVGDocument getSVGDiagram(String stId, AnalysisStoredResult result) {
-//        DiagramResult diagramResult = DIAGRAM_SERVICE.getDiagramResult(stId);
-//        RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "png");
-//        args.setSelected(diagramResult.getEvents());
-//        args.setWriteTitle(false);
-//        try {
-//            return exporter.exportToSvg(args, result);
-//        } catch (Exception pascual) {
-//            return null;
-//        }
-//    }
-
+    /**
+     * Set the necessary file before use it.
+     *
+     * @param reportArgs args contains the diagram/ehld/analysis path and svg summary file.
+     */
     public static void setPaths(ReportArgs reportArgs) {
         exporter = new RasterExporter(reportArgs.getDiagramPath(), reportArgs.getEhldPath(), reportArgs.getAnalysisPath(), reportArgs.getSvgSummary());
     }
-
-//    private static int getQuality(float factor) {
-////        factor = factor > MAX_FACTOR ? MAX_FACTOR : factor;
-//        if (factor < 1) {
-//            return (int) Math.ceil(4 * (factor - 0.1) / 0.9 + 1);
-//        } else {
-//            return (int) (5 * (factor - 1) / 2 + 5);
-//        }
-//    }
 }

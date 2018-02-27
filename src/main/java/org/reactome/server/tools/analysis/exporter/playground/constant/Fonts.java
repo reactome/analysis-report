@@ -2,15 +2,17 @@ package org.reactome.server.tools.analysis.exporter.playground.constant;
 
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;
+import com.itextpdf.layout.Document;
 import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;
 
 /**
- * One font just only can be used in one specific PDF document{@see Document}.
+ * One font just only can be used in one specific PDF document,
  * so fonts need to be re-initialise before use it.
  *
  * @author Pascual/Chuan-Deng dengchuanbio@gmail.com
+ * @see Document
  */
 public class Fonts {
 

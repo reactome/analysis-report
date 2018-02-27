@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.profile;
 
 /**
- * Profile model for the profile setting.
+ * Margin profile model for the {@link PdfProfile}.
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */

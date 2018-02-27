@@ -40,21 +40,23 @@ public class AnalysisReportExporterTest {
         }
     }
 
+    @Test
+    public void exportTest() {
+        for (File file : Objects.requireNonNull(new File(SAVE_TO).listFiles())) file.delete();
+        tokens.forEach((type, token) -> {
+            ReportArgs reportArgs = new ReportArgs(token, DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, svgSummary);
+            reportArgs.setSpecies(48887L);
+            reportArgs.setResource("UNIPROT");
+            export(reportArgs, type);
+        });
+    }
+
     @AfterClass
     public static void afterClass() {
         if (!debug) {
             for (File file : Objects.requireNonNull(new File(SAVE_TO).listFiles())) file.delete();
             new File(SAVE_TO).delete();
         }
-    }
-
-    @Test
-    public void exportTest() {
-        for (File file : Objects.requireNonNull(new File(SAVE_TO).listFiles())) file.delete();
-        tokens.forEach((type, token) -> {
-            ReportArgs reportArgs = new ReportArgs(token, DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, svgSummary);
-            export(reportArgs, type);
-        });
     }
 
     private void export(ReportArgs reportArgs, String type) {

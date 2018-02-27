@@ -11,6 +11,8 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import java.util.List;
 
 /**
+ * Renderer use by specifying the paragraph to make the text can be good hyphen in cell space.
+ *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class CellTextRenderer extends CellRenderer {
@@ -26,6 +28,7 @@ public class CellTextRenderer extends CellRenderer {
         Paragraph content = new Paragraph()
                 .setFontSize(FontSize.TABLE)
                 .setMultipliedLeading(1.0f);
+
         String[] identifier = this.identifiers.toArray(new String[identifiers.size()]);
         for (int i = 0; i < identifier.length; i++) {
             content.add(new Text(identifier[i].concat(i == identifier.length - 1 ? " " : ", "))

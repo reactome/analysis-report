@@ -6,7 +6,7 @@ import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.Title;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.element.Title;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 /**
@@ -16,6 +16,7 @@ public class TitleAndLogo implements Section {
     private static final String TITLE = "Pathway Analysis Report";
 
     public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) {
+
         // add Reactome logo
         Image image = PdfUtils.getLogo();
         image.scaleToFit((report.getCurrentPageArea().getWidth() + report.getLeftMargin() + report.getRightMargin()) / 3, report.getTopMargin());

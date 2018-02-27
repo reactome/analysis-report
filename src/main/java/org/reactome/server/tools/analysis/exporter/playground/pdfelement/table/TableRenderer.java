@@ -19,7 +19,7 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.Colors;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.exception.TableTypeNotFoundException;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.P;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.element.P;
 import org.reactome.server.tools.analysis.exporter.playground.util.GraphCoreHelper;
 
 import java.util.Comparator;
@@ -29,14 +29,16 @@ import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 /**
+ * Render the analysis result data into different type tables.
+ *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class TableRenderer {
 
     private static final int NUM_COLUMNS = 8;
     private static final float MULTIPLIED_LEADING = 1.0f;
-    //    private static final float[] OVERVIEW_VALUES = new float[]{5 / 20f, 2 / 20f, 2 / 20f, 2 / 20f, 2f / 20f, 2f / 20f, 2 / 20f, 2 / 20f, 2 / 20f};
-    private static final float[] OVERVIEW_VALUES = new float[]{8 / 20f, 2 / 20f, 2 / 20f, 2f / 20f, 2f / 20f, 2 / 20f, 2 / 20f};
+    private static final UnitValue[] OVERVIEW_VALUES = UnitValue.createPercentArray(new float[]{8 / 20f, 2 / 20f, 2 / 20f, 2f / 20f, 2f / 20f, 2 / 20f, 2 / 20f});
+    private static final UnitValue[] IDENTIFIERS_FOUND_NO_EXP_VALUES = UnitValue.createPercentArray(new float[]{1 / 10f, 2 / 10f, 1 / 10f, 2 / 10f, 1 / 10f, 2 / 10f});
     private static final String[] OVERVIEW_HEADERS = {"Pathway name", "Entity found", "Entity ratio", "Entity pValue", "Entity FDR", "Reaction found", "Reaction ratio"};
     private static final String[] IDENTIFIERS_FOUND_NO_EXP_HEADERS = {"Identifier", "mapsTo", "Identifier", "mapsTo", "Identifier", "mapsTo"};
     // TODO: 12/02/18 use large table once it been fixed by iText team
@@ -66,16 +68,19 @@ public class TableRenderer {
                 identifierNotFoundTableNoEXP(report);
                 break;
             default:
-                throw new TableTypeNotFoundException(String.format("No table type : %s found", type));
+                throw new TableTypeNotFoundException(String.format("No table type: %s found", type));
         }
     }
 
     public void createTable(AnalysisReport report, String stId) {
-        identifierFoundInPathwayTable(report, stId);
+        entitiesFoundInPathwayTable(report, stId);
     }
 
+    /**
+     * overview table show the top pathway overview info in this analysis, info include statistics value performed by analysis service.
+     */
     private void overviewTable(AnalysisReport report) {
-        Table table = new Table(UnitValue.createPercentArray(OVERVIEW_VALUES));
+        Table table = new Table(OVERVIEW_VALUES);
         for (String header : OVERVIEW_HEADERS) {
             table.addHeaderCell(headerCell(header));
         }
@@ -91,12 +96,10 @@ public class TableRenderer {
                     .setBorder(Border.NO_BORDER)
                     .setVerticalAlignment(VerticalAlignment.MIDDLE));
             table.addCell(textCell(String.format("%s / %s", pathwayNodeSummary.getData().getEntitiesFound(), pathwayNodeSummary.getData().getEntitiesCount())));
-//            table.addCell(textCell(String.valueOf(pathwayNodeSummary.getData().getEntitiesCount()), FontSize.TABLE));
             table.addCell(textCell(String.format("%.4f", pathwayNodeSummary.getData().getEntitiesRatio())));
             table.addCell(textCell(String.format("%g", pathwayNodeSummary.getData().getEntitiesPValue())));
             table.addCell(textCell(String.format("%g", pathwayNodeSummary.getData().getEntitiesFDR())));
             table.addCell(textCell(String.format("%s / %s", pathwayNodeSummary.getData().getReactionsFound(), pathwayNodeSummary.getData().getReactionsCount())));
-//            table.addCell(textCell(String.valueOf(pathwayNodeSummary.getData().getReactionsCount()), FontSize.TABLE));
             table.addCell(textCell(String.format("%.4f", pathwayNodeSummary.getData().getReactionsRatio())));
         }
         table.setNextRenderer(new BackgroundColorRenderer(table));
@@ -104,6 +107,9 @@ public class TableRenderer {
     }
 
 
+    /**
+     * table show all the mapped identifiers the user submitted.
+     */
     private void identifierFoundTable(AnalysisReport report) {
         Table table = new Table(new UnitValue[sfr.getExpressionSummary().getColumnNames().size() + 2]);
         table.addHeaderCell(headerCell("Identifier"));
@@ -143,7 +149,7 @@ public class TableRenderer {
     }
 
     private void identifierFoundTableNoEXP(AnalysisReport report) {
-        Table table = new Table(UnitValue.createPercentArray(new float[]{1 / 10f, 2 / 10f, 1 / 10f, 2 / 10f, 1 / 10f, 2 / 10f,}));
+        Table table = new Table(IDENTIFIERS_FOUND_NO_EXP_VALUES);
         for (String header : IDENTIFIERS_FOUND_NO_EXP_HEADERS) {
             table.addHeaderCell(headerCell(header));
         }
@@ -173,6 +179,7 @@ public class TableRenderer {
             table.addCell(cell);
         }
 
+        // add blank cell to avoid the table collapse.
         if (foundEntities.size() % 3 != 0) {
             for (int i = 0; i < 3 - foundEntities.size() % 3; i++) {
                 table.addCell(new Cell().setBorder(Border.NO_BORDER));
@@ -183,6 +190,9 @@ public class TableRenderer {
         report.add(table);
     }
 
+    /**
+     * table show the identifiers not found any mapping in Reactome.
+     */
     private void identifierNotFoundTable(AnalysisReport report) {
         Table table = new Table(new UnitValue[asr.getExpressionSummary().getColumnNames().size() + 1]);
         table.addHeaderCell(headerCell("Identifiers"));
@@ -203,11 +213,23 @@ public class TableRenderer {
 
     private void identifierNotFoundTableNoEXP(AnalysisReport report) {
         Table table = new Table(new UnitValue[NUM_COLUMNS]);
-        table.addHeaderCell(new Cell(1, NUM_COLUMNS).add(new P("Identifiers").setFontColor(Colors.WHITE)).setBold().setBackgroundColor(Colors.REACTOME_COLOR).setTextAlignment(TextAlignment.CENTER));
+        table.addHeaderCell(new Cell(1, NUM_COLUMNS)
+                .add(new P("Identifiers").setFontColor(Colors.WHITE))
+                .setBold()
+                .setBorder(Border.NO_BORDER)
+                .setBackgroundColor(Colors.REACTOME_COLOR)
+                .setTextAlignment(TextAlignment.CENTER));
+        Cell cell;
         for (AnalysisIdentifier identifier : asr.getNotFound()) {
-            table.addCell(textCell(identifier.getId()));
+            cell = new Cell().setFontSize(FontSize.TABLE)
+                    .setVerticalAlignment(VerticalAlignment.MIDDLE)
+                    .setTextAlignment(TextAlignment.CENTER)
+                    .setBorder(Border.NO_BORDER);
+            cell.setNextRenderer(new FitTextRenderer(cell, identifier.getId()));
+            table.addCell(cell);
         }
 
+        // add blank cell to avoid the table collapse.
         for (int i = 0; i < NUM_COLUMNS - asr.getNotFound().size() % NUM_COLUMNS; i++) {
             table.addCell(new Cell().setBorder(Border.NO_BORDER));
         }
@@ -215,7 +237,10 @@ public class TableRenderer {
         report.add(table);
     }
 
-    private void identifierFoundInPathwayTable(AnalysisReport report, String stId) {
+    /**
+     * Table of entities found in specific pathway.
+     */
+    private void entitiesFoundInPathwayTable(AnalysisReport report, String stId) {
         Table table = new Table(new UnitValue[NUM_COLUMNS]);
         table.setTextAlignment(TextAlignment.LEFT)
                 .setWidth(UnitValue.createPercentValue(100));
@@ -230,6 +255,7 @@ public class TableRenderer {
             table.addCell(cell);
         }
 
+        // add blank cell to avoid the table collapse.
         for (int j = 0; j < NUM_COLUMNS - foundEntities.size() % NUM_COLUMNS; j++) {
             table.addCell(new Cell().setBorder(Border.NO_BORDER));
         }
@@ -251,8 +277,8 @@ public class TableRenderer {
                 .setFontColor(Colors.WHITE)
                 .setMultipliedLeading(MULTIPLIED_LEADING))
                 .setBold()
-                .setBackgroundColor(Colors.REACTOME_COLOR)
                 .setVerticalAlignment(VerticalAlignment.MIDDLE)
+                .setBackgroundColor(Colors.REACTOME_COLOR)
                 .setTextAlignment(TextAlignment.CENTER)
                 .setBorder(Border.NO_BORDER);
     }

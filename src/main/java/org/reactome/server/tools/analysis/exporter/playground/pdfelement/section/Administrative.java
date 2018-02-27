@@ -10,15 +10,15 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.Colors;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.Header;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements.P;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.element.Header;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.element.P;
 import org.reactome.server.tools.analysis.exporter.playground.util.GraphCoreHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
 
 import java.util.List;
 
 /**
- * Section contains administrative content.
+ * Section Administrative contains basic administrative info and table of content.
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
@@ -27,14 +27,19 @@ public class Administrative implements Section {
     private static final List<String> ADMINISTRATIVE = PdfUtils.getText("texts/administrative.txt");
 
     public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) {
+
+        // for 'Species Comparison' it dose not contains the sample.
         AnalysisType type = AnalysisType.getType(asr.getSummary().getType());
         String name = type == AnalysisType.SPECIES_COMPARISON
                 ? GraphCoreHelper.getSpeciesName(asr.getSummary().getSpecies())
                 : asr.getSummary().getSampleName();
+
         report.add(new Header("Administrative", FontSize.H1))
                 .add(new P("This report contains the pathway analysis results for the submitted sample: ")
                         .add(name.concat(". "))
                         .add(String.format("Analysis was performed against Reactome version %s at %s", GraphCoreHelper.getDBVersion(), PdfUtils.getTimeStamp()))
+
+                        // for those resource not 'total',show the resource name.
                         .add(!report.getReportArgs().getResource().equals("TOTAL")
                                 ? String.format(" using %s identifiers for the mapping. The web link to these results is: ", convertResource(report.getReportArgs().getResource())) : ". ")
                         .add(new Text(URL.ANALYSIS.concat(asr.getSummary().getToken()))
@@ -55,6 +60,9 @@ public class Administrative implements Section {
                 .add(new P("6: Summary of identifiers not found").setAction(PdfAction.createGoTo("identitiferNotFound")));
     }
 
+    /**
+     * change resource name to lowercase.
+     */
     private String convertResource(String resource) {
         switch (resource) {
             case "UNIPROT":

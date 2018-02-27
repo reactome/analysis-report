@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.playground.pdfelement.profile;
 
 /**
- * profile contains the report outlook setting.
+ * Profile model contains the report outlook setting.
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */

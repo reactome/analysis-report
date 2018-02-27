@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.playground.pdfelement.elements;
+package org.reactome.server.tools.analysis.exporter.playground.pdfelement.element;
 
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Text;
@@ -10,7 +10,7 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
  */
 public class P extends Paragraph {
 
-    public static final HyphenationConfig HYPHENATION_CONFIG = new HyphenationConfig("en", "uk", 2, 2);
+    private static final HyphenationConfig HYPHENATION_CONFIG = new HyphenationConfig("en", "uk", 2, 2);
 
     public P(String text) {
         this(new Text(text));

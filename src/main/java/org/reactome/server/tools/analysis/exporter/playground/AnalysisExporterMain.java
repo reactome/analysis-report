@@ -3,16 +3,20 @@ package org.reactome.server.tools.analysis.exporter.playground;
 import com.martiansoftware.jsap.FlaggedOption;
 import com.martiansoftware.jsap.JSAP;
 import com.martiansoftware.jsap.JSAPResult;
+import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.AnalysisExporter;
 import org.reactome.server.tools.analysis.exporter.playground.analysisexporter.ReportArgs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.time.Instant;
+
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
- * <p>
- * use the JASP to test entire module.
  */
 public class AnalysisExporterMain {
+
     public static void main(String[] args) throws Exception {
         Logger logger = LoggerFactory.getLogger(AnalysisExporterMain.class);
         JSAP jsap = new JSAP();
@@ -51,21 +55,21 @@ public class AnalysisExporterMain {
                 .setShortFlag('f')
                 .setHelp("static path contains the fireworks raw information json file");
         jsap.registerParameter(fireworksPath);
+
         FlaggedOption analysisPath = new FlaggedOption("analysisPath");
-        fireworksPath.setStringParser(JSAP.STRING_PARSER)
+        analysisPath.setStringParser(JSAP.STRING_PARSER)
                 .setRequired(true)
-                .setShortFlag('f')
+                .setShortFlag('a')
                 .setHelp("static path contains the analysis raw information binary file");
         jsap.registerParameter(analysisPath);
-        jsap.registerParameter(fireworksPath);
-        FlaggedOption svgSummary = new FlaggedOption("svgSummary");
-        fireworksPath.setStringParser(JSAP.STRING_PARSER)
-                .setRequired(true)
-                .setShortFlag('f')
-                .setHelp("static path contains the svgSummary raw information txt file");
-        jsap.registerParameter(analysisPath);
 
-        logger.info(jsap.getHelp());
+        FlaggedOption svgSummary = new FlaggedOption("svgSummary");
+        svgSummary.setStringParser(JSAP.STRING_PARSER)
+                .setRequired(true)
+                .setShortFlag('s')
+                .setHelp("static path contains the svgSummary raw information txt file");
+        jsap.registerParameter(svgSummary);
+
         JSAPResult config = jsap.parse(args);
         ReportArgs reportArgs = new ReportArgs(config.getString("token")
                 , config.getString("diagramPath")
@@ -74,12 +78,14 @@ public class AnalysisExporterMain {
                 , config.getString("analysisPath")
                 , config.getString("svgSummary"));
 
-//        for (int i = 0; i < 2; i++) {
-//            long start = Instant.now().toEpochMilli();
-//            AnalysisExporter.export(reportArgs, result, config.getString("output"));
-//            long end = Instant.now().toEpochMilli();
-//            logger.info("create pdf in {}ms", end - start);
-//        }
+        AnalysisExporter.export(reportArgs, new FileOutputStream(new File(config.getString("output"))));
+        reportArgs.setSpecies(48887L);
+        reportArgs.setResource("UNIPROT");
+
+        long start = Instant.now().toEpochMilli();
+        AnalysisExporter.export(reportArgs, new FileOutputStream(new File(config.getString("output"))));
+        long end = Instant.now().toEpochMilli();
+        logger.info("Create PDF file in {}ms", end - start);
         System.exit(0);
     }
 }

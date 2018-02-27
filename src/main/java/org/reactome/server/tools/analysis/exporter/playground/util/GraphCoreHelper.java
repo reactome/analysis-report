@@ -3,22 +3,30 @@ package org.reactome.server.tools.analysis.exporter.playground.util;
 import org.reactome.server.graph.domain.model.DatabaseObject;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.model.Species;
+import org.reactome.server.graph.domain.result.DiagramResult;
 import org.reactome.server.graph.service.DatabaseObjectService;
+import org.reactome.server.graph.service.DiagramService;
 import org.reactome.server.graph.service.GeneralService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
+ * Help to retrieve information from Reactome GraphCore.
+ *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class GraphCoreHelper {
 
+    private static ApplicationContext context;
     private static GeneralService genericService;
+    private static DiagramService diagramService;
+
     private static DatabaseObjectService databaseObjectService;
 
     static {
-        final ApplicationContext context = new AnnotationConfigApplicationContext(GraphCoreConfig.class);
+        context = new AnnotationConfigApplicationContext(GraphCoreConfig.class);
         genericService = context.getBean(GeneralService.class);
+        diagramService = context.getBean(DiagramService.class);
         databaseObjectService = context.getBean(DatabaseObjectService.class);
     }
 
@@ -30,21 +38,17 @@ public class GraphCoreHelper {
     }
 
     /**
-     * get pathways detail information from neo4j database by given the target pathway identifiers array.
+     * retrieve pathway's detail information from the graph core.
      *
-     * @return {@code Pathway} contains the pathway detail information.
+     * @param stId pathway's stable identifier.
      */
     public static Pathway getPathway(String stId) {
         return databaseObjectService.findByIdNoRelations(stId);
     }
 
     public static String getSpeciesName(Long id) {
-        if (null == id) {
-            return null;
-        } else {
-            final Species species = databaseObjectService.findByIdNoRelations(id);
-            return species.getName().get(0);
-        }
+        Species species = databaseObjectService.findByIdNoRelations(id);
+        return species.getName().get(0);
     }
 
     public static String getFoundEntityName(String stId) {
@@ -54,5 +58,9 @@ public class GraphCoreHelper {
         } else {
             return stId;
         }
+    }
+
+    public static DiagramResult getDiagramResult(String stId) {
+        return diagramService.getDiagramResult(stId);
     }
 }
