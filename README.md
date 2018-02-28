@@ -16,8 +16,8 @@ cd analysis-report
 mvn clean package
 ```
 
-Since this module will retrieve Reactome Pathway data from the [Reactome Graph Database](https://reactome.org/dev/graph-database) , you should install that in your local environment, if you dno't have that yet or never earpiece, we strongly recommend that you have a look on it.
-to do the good practice, the Neo4j's Java system property name should be: "neo4j.host", "noe4j.port", "neo4j.user", "neo4j.password".this will be access by `System.getProperty("neo4j.xxxx")`.
+Since this module will retrieve Reactome Pathway data from the [Reactome Graph Database](https://reactome.org/dev/graph-database) , you should install that in your local environment, if you don't have that yet or never experience on that, we strongly recommend that you have a look on it.
+To follow the good practice, the Neo4j's Java system property name should be: "neo4j.host", "noe4j.port", "neo4j.user" and "neo4j.password", those will be access by `System.getProperty("neo4j.xxxx")`.
 
 Add Analysis Exporter as maven dependency in your project
 
@@ -25,7 +25,7 @@ Add Analysis Exporter as maven dependency in your project
 <dependency>
     <groupId>org.reactome.server.tools</groupId>
     <artifactId>analysis-exporter</artifactId>
-    <version>1.x.x</version>
+    <version>1.0.0-SNAPSHOT</version>
 </dependency>
 
 <!-- EBI repo -->
@@ -71,5 +71,5 @@ Use AnalysisExporter to export DPF document
 
 
 ###License
-This module use the [iText](https://itextpdf.com) library to create PDF document, so it naturally followed the [![License](https://img.shields.io/badge/license-AGPL%203.0-blue.svg?style=plastic)](https://opensource.org/licenses/AGPL-3.0), 
-you can use this module freely by also comply with that license.
+This module use the [iText](https://itextpdf.com) library to create PDF document, so it naturally adopted the [![License](https://img.shields.io/badge/license-AGPL%203.0-blue.svg?style=plastic)](https://opensource.org/licenses/AGPL-3.0), 
+you can use this module freely on condition that also comply with this license.
