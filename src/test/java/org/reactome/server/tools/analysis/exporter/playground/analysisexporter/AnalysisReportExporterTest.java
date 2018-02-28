@@ -19,10 +19,10 @@ public class AnalysisReportExporterTest {
     private static final HashMap<String, String> tokens = new HashMap<String, String>() {
         {
             put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
-            put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
-            put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
-            put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
-            put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
+//            put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
+//            put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
+//            put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
+//            put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
         }
     };
     private static final String SAVE_TO = "src/test/resources/pdfs";
@@ -31,7 +31,7 @@ public class AnalysisReportExporterTest {
     private static final String EHLD_PATH = "/home/byron/reactome/ehld";
     private static final String svgSummary = "/home/byron/reactome/ehld/svgSummary.txt";
     private static final String FIREWORKS_PATH = "/home/byron/reactome/fireworks";
-    private static boolean debug = false;
+    private static boolean debug = true;
 
     @BeforeClass
     public static void beforeClass() {
