@@ -20,7 +20,6 @@ import java.io.IOException;
  * @author Chuan Deng dengchuanbio@gmail.com
  */
 public class DiagramHelperTest {
-    private static DiagramService DIAGRAM_SERVICE;
     private static final String TOKEN_OVER01 = "MjAxODAyMTIxMTI5MzdfMQ==";
     private static final String diagramPath = "/home/byron/reactome/diagram";
     private static final String ehldPath = "/home/byron/reactome/ehld";
@@ -29,6 +28,7 @@ public class DiagramHelperTest {
     private static final String analysisPath = "src/test/resources/analysis";
     private static final TokenUtils TOKEN_UTILS = new TokenUtils(analysisPath);
     private static final RasterExporter EXPORTER = new RasterExporter(diagramPath, ehldPath, analysisPath, svgSummary);
+    private static DiagramService DIAGRAM_SERVICE;
 
     @BeforeClass
     public static void setUp() {
@@ -46,7 +46,7 @@ public class DiagramHelperTest {
         ReportArgs reportArgs = new ReportArgs("MjAxODAyMTIxMTI5MzdfMQ==", diagramPath, ehldPath, fireworksPath, analysisPath, svgSummary);
         DiagramHelper.setPaths(reportArgs);
         AnalysisStoredResult result = new TokenUtils("src/test/resources/analysis").getFromToken(reportArgs.getToken());
-        BufferedImage diagram = DiagramHelper.getPNGDiagram("R-HSA-1226099", result, "total");
+        BufferedImage diagram = DiagramHelper.getDiagram("R-HSA-1226099", result, "total");
         if (diagram != null) {
             ImageIO.write(diagram, "png", new File("src/test/resources/diagrams/R-HSA-1226099.png"));
         }

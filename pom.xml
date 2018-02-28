@@ -19,8 +19,8 @@
         <httpclient.version>4.5.4</httpclient.version>
         <jackson.version>2.9.2</jackson.version>
         <itext.version>7.1.1</itext.version>
-        <fireworks.version>1.1.1-SNAPSHOT</fireworks.version>
-        <diagram.version>1.3.2</diagram.version>
+        <fireworks.version>1.1.0-SNAPSHOT</fireworks.version>
+        <diagram.version>1.3.6-SNAPSHOT</diagram.version>
         <graph.core.version>1.1.6</graph.core.version>
         <jsoup.version>1.11.2</jsoup.version>
         <neo4j.host>localhost</neo4j.host>
@@ -143,19 +143,19 @@
 
     <!--Configures the distribution to nexus repository -->
     <distributionManagement>
-        <!--&lt;!&ndash; EBI repo &ndash;&gt;-->
-        <!--<repository>-->
-        <!--<id>pst-release</id>-->
-        <!--<name>EBI Nexus Repository</name>-->
-        <!--<url>http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-release</url>-->
-        <!--</repository>-->
-        <!--&lt;!&ndash; EBI SNAPSHOT repo &ndash;&gt;-->
-        <!--<snapshotRepository>-->
-        <!--<uniqueVersion>false</uniqueVersion>-->
-        <!--<id>pst-snapshots</id>-->
-        <!--<name>EBI Nexus Snapshots Repository</name>-->
-        <!--<url>http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-snapshots</url>-->
-        <!--</snapshotRepository>-->
+        <!-- EBI repo -->
+        <repository>
+            <id>pst-release</id>
+            <name>EBI Nexus Repository</name>
+            <url>http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-release</url>
+        </repository>
+        <!-- EBI SNAPSHOT repo -->
+        <snapshotRepository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>pst-snapshots</id>
+            <name>EBI Nexus Snapshots Repository</name>
+            <url>http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <build>

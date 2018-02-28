@@ -10,6 +10,7 @@ import org.reactome.server.tools.analysis.exporter.playground.exception.FailToRe
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.profile.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.section.*;
+import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.TableRenderer;
 import org.reactome.server.tools.analysis.exporter.playground.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.FireworksHelper;
 import org.slf4j.Logger;
@@ -37,7 +38,7 @@ class ReportRenderer {
     /**
      * render the report with data set.
      *
-     * @param reportArgs  args contains json folder path in {@link ReportArgs}.
+     * @param reportArgs args contains json folder path in {@link ReportArgs}.
      * @throws Exception when fail to create the PDF document.
      */
     protected static void render(ReportArgs reportArgs, OutputStream destination) throws Exception {
@@ -62,14 +63,19 @@ class ReportRenderer {
         checkReportArgs(sfr, reportArgs, profile);
 
         AnalysisReport report = new AnalysisReport(profile, reportArgs, destination);
-        FontSize.setUp(report.getProfile().getFontSize());
+        FontSize.setFontSize(report.getProfile().getFontSize());
+        TableRenderer.setResultData(asr, sfr);
 
         List<Section> sections = new ArrayList<>(6);
         sections.add(new TitleAndLogo());
         sections.add(new Administrative());
+        sections.add(new TableOfContent());
         sections.add(new Introduction());
-        sections.add(new Summary());
-        sections.add(new Overview());
+        sections.add(new ParameterAndResultSummary());
+        sections.add(new TopPathwayTable());
+        sections.add(new PathwayDetail());
+        sections.add(new IdentifierFoundSummary());
+        sections.add(new IdentifierNotFoundSummary());
 
         try {
             for (Section section : sections) {

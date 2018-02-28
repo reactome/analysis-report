@@ -15,7 +15,7 @@ public class FontSize {
     public static int TABLE;
     public static int TITLE;
 
-    public static void setUp(int fontSize) {
+    public static void setFontSize(int fontSize) {
         P = fontSize;
         TABLE = P - 2;
         TITLE = P + 12;

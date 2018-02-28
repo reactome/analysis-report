@@ -32,6 +32,7 @@ public class Introduction implements Section {
         for (String publication : PUBLICATIONS) {
 
             // Use '<>' symbol to split the publication text into literal one and the link url,
+            // change this symbol in code, also need change it in text.txt file.
             String[] text = publication.split("<>");
             list.add(new P(text[0])
                     .add(PdfUtils.getLinkIcon(text[1])));

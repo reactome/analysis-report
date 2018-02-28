@@ -14,7 +14,7 @@ import org.reactome.server.tools.analysis.exporter.playground.constant.Fonts;
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
-public class FitTextRenderer extends CellRenderer {
+public class TruncateTextRenderer extends CellRenderer {
     private String text;
 
     /**
@@ -22,7 +22,7 @@ public class FitTextRenderer extends CellRenderer {
      *
      * @param cell the {@link Cell} which this object should manage
      */
-    FitTextRenderer(Cell cell, String text) {
+    TruncateTextRenderer(Cell cell, String text) {
         super(cell);
         this.text = text;
     }

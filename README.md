@@ -2,8 +2,30 @@
 
 Analysis Exporter
 ---
-AnalysisExporter is a tool to export the analysis result (performed by Reactome [Analysis tools](https://reactome.org/PathwayBrowser/#TOOL=AT)) to a PDF document (PDF-1.7). 
+AnalysisExporter is a tool to export the analysis result to a PDF document (PDF-1.7). Click here to know more about [Analysis Service](https://reactome.org/dev/analysis).
  
+### Structure of the PDF
+
+* __Administrative:__   a brief explanation of what you are going to see
+* __Content:__  table of content
+* __Introduction:__ introduction of Reactome database and latest publications
+* __Summary of Parameters and Results:__    parameters used in analysis service and overview of analysis result   
+    also include a genome-wide overview image with description:   
+    ![fireworks](src/main/resources/readme/fireworks.png)
+
+* __Top over-representation pathways sorted by p-Value:__   table contains the top pathways sorted by p-value with each statistics data  
+    ![table_of_top_pathways](src/main/resources/readme/table_of_top_pathways.png)
+    
+* __Pathway details:__  detailed information for each pathway as listed afore, include compartment, curators and disease info, also include references, summation and table of list identifiers found in this pathway  
+    ![diagram](src/main/resources/readme/diagram.png)
+    
+* __Summary of identifiers found:__ all identifiers found in this analysis   
+    ![identifiers_found](src/main/resources/readme/identifiers_found.png)
+    
+* __Summary of identifiers not found:__ all identifiers not found in this analysis   
+    ![identifiers_not_found](src/main/resources/readme/identifiers_not_found.png)
+    
+
 ###Usage
 * Pre-requirements  
     * Maven 3.+ 
@@ -16,37 +38,81 @@ cd analysis-report
 mvn clean package
 ```
 
-Since this module will retrieve Reactome Pathway data from the [Reactome Graph Database](https://reactome.org/dev/graph-database) , you should install that in your local environment, if you dno't have that yet or never earpiece, we strongly recommend that you have a look on it.
-to do the good practice, the Neo4j's Java system property name should be: "neo4j.host", "noe4j.port", "neo4j.user", "neo4j.password".this will be access by `System.getProperty("neo4j.xxxx")`.
+Since this module will retrieve Reactome Pathway data from the [Reactome Graph Database](https://reactome.org/dev/graph-database), You should install that in your local environment, if you don't have that yet or never experience on that, we strongly recommend that you have a look on it.
+To [configure reactome database](https://github.com/reactome/graph-core) and provide properties programmatically, we use `GraphCoreConfig` extends `Neo4jConfig` inside this module like:
+ 
+```java
+@org.springframework.context.annotation.Configuration
+@ComponentScan(basePackages = {"org.reactome.server.graph"})
+@EnableTransactionManagement
+@EnableNeo4jRepositories(basePackages = {"org.reactome.server.graph.repository"})
+@EnableSpringConfigured
+public class GraphCoreConfig extends Neo4jConfig {
+    private SessionFactory sessionFactory;
+    private Logger logger = LoggerFactory.getLogger(GraphCoreConfig.class);
 
-Add Analysis Exporter as maven dependency in your project
+    @Bean
+    public Configuration getConfiguration() {
+        Configuration config = new Configuration();
+        config.driverConfiguration()
+                .setDriverClassName("org.neo4j.ogm.drivers.http.driver.HttpDriver")
+                .setURI("http://".concat(System.getProperty("neo4j.host")).concat(":").concat(System.getProperty("neo4j.port")))
+                .setCredentials(System.getProperty("neo4j.user"), System.getProperty("neo4j.password"));
+        return config;
+    }
+
+    @Override
+    @Bean
+    public SessionFactory getSessionFactory() {
+        if (sessionFactory == null) {
+            logger.info("Creating a Neo4j SessionFactory");
+            sessionFactory = new SessionFactory(getConfiguration(), "org.reactome.server.graph.domain");
+        }
+        return sessionFactory;
+    }
+}
+```
+
+So you need to initialise the graph-core before every thing like: 
 
 ```
-<dependency>
-    <groupId>org.reactome.server.tools</groupId>
-    <artifactId>analysis-exporter</artifactId>
-    <version>1.x.x</version>
-</dependency>
+    public static void initialise(String host, String port, String user, String password){
+            System.setProperty("neo4j.host", host);
+            System.setProperty("neo4j.port", port);
+            System.setProperty("neo4j.user", user);
+            System.setProperty("neo4j.password", password);
+    }
+```
 
-<!-- EBI repo -->
-<repository>
-    <id>pst-release</id>
-    <name>EBI Nexus Repository</name>
-    <url>http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-release</url>
-</repository>
+Add AnalysisExporter as Maven dependency in your project: 
 
 ```
-Use AnalysisExporter to export DPF document
+    <dependency>
+        <groupId>org.reactome.server.tools</groupId>
+        <artifactId>analysis-exporter</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </dependency>
+    
+    <!-- EBI repo -->
+    <repository>
+        <id>pst-release</id>
+        <name>EBI Nexus Repository</name>
+        <url>http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-release</url>
+    </repository>
 ```
-    // This path must contain the layout and graph json files.
+
+Use AnalysisExporter to export DPF document: 
+
+```
+    // This path must contains the layout and graph json files (eg: R-HSA-12345.json and R-HSA-12345.graph.json).
     // You can download them from https://reactome.org/download/current/diagram/
     String DIAGRAM_PATH = "diagram/path";
     
-    // This path must contain the EHLD svg file
+    // This path must contains the EHLD svg file
     // You can download them from https://reactome.org/download/current/ehld/
     String EHLD_PATH = "ehld/path";
     
-    // This path contasins ths svgSummary file.
+    // This path contains ths svgSummary file.
     // You will also find a file containing a list of available EHLD: https://reactome.org/download/current/ehld/svgsummary.txt
     String svgSummary = "directory/svgSummary.txt";
 
@@ -54,7 +120,7 @@ Use AnalysisExporter to export DPF document
     // You can download the file from https://reactome.org/download/current/fireworks/
     String FIREWORKS_PATH = "fireworks/path";
     
-    // This path contains the Reactome analysis binary files.
+    // This path contains the Reactome analysis binary files (eg: res_301812345_1.bin).
     String ANALYSIS_PATH = "analysis/path";
     
     ReportArgs reportArgs = new ReportArgs("MjAxODAyMTIxMTI5MzdfMQ==", DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, svgSummary);
@@ -69,7 +135,6 @@ Use AnalysisExporter to export DPF document
     ...
 ```
 
-
 ###License
-This module use the [iText](https://itextpdf.com) library to create PDF document, so it naturally followed the [![License](https://img.shields.io/badge/license-AGPL%203.0-blue.svg?style=plastic)](https://opensource.org/licenses/AGPL-3.0), 
-you can use this module freely by also comply with that license.
+This module use the [iText](https://itextpdf.com) library to create PDF document, so it naturally adopt the [![License](https://img.shields.io/badge/license-AGPL%203.0-blue.svg?style=plastic)](https://opensource.org/licenses/AGPL-3.0), 
+you can use this module freely on condition that also comply with this license.

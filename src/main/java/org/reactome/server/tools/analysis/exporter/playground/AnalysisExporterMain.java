@@ -17,6 +17,13 @@ import java.time.Instant;
  */
 public class AnalysisExporterMain {
 
+    /**
+     * to run this main test class, you need to set the Java system property for Neo4j configuration manually in the VM-options like:
+     * -Dneo4j.host=your_host
+     * -Dneo4j.port=your_port
+     * -Dneo4j.user=your_user
+     * -Dneo4j.password=your_password
+     */
     public static void main(String[] args) throws Exception {
         Logger logger = LoggerFactory.getLogger(AnalysisExporterMain.class);
         JSAP jsap = new JSAP();
@@ -78,7 +85,6 @@ public class AnalysisExporterMain {
                 , config.getString("analysisPath")
                 , config.getString("svgSummary"));
 
-        AnalysisExporter.export(reportArgs, new FileOutputStream(new File(config.getString("output"))));
         reportArgs.setSpecies(48887L);
         reportArgs.setResource("UNIPROT");
 

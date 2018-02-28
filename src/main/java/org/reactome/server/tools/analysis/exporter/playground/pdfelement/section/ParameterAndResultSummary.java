@@ -27,12 +27,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Section Summary contains analysis parameter in the analysis result, fireworks for this analysis.
+ * Section ParameterAndResultSummary contains analysis parameter in the analysis result, fireworks for this analysis.
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
-public class Summary implements Section {
-    private static final Logger LOGGER = LoggerFactory.getLogger(Summary.class);
+public class ParameterAndResultSummary implements Section {
+    private static final Logger LOGGER = LoggerFactory.getLogger(ParameterAndResultSummary.class);
     private static final List<String> DESCRIPTION = PdfUtils.getText("texts/description.txt");
 
 

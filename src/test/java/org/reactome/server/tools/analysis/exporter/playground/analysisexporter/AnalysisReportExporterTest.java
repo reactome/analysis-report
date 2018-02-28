@@ -19,10 +19,10 @@ public class AnalysisReportExporterTest {
     private static final HashMap<String, String> tokens = new HashMap<String, String>() {
         {
             put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
-//            put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
-//            put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
-//            put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
-//            put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
+            put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
+            put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
+            put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
+            put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
         }
     };
     private static final String SAVE_TO = "src/test/resources/pdfs";
@@ -31,12 +31,20 @@ public class AnalysisReportExporterTest {
     private static final String EHLD_PATH = "/home/byron/reactome/ehld";
     private static final String svgSummary = "/home/byron/reactome/ehld/svgSummary.txt";
     private static final String FIREWORKS_PATH = "/home/byron/reactome/fireworks";
-    private static boolean debug = true;
+    private static boolean debug = false;
 
     @BeforeClass
     public static void beforeClass() {
         if (debug && !new File(SAVE_TO).exists()) {
             new File(SAVE_TO).mkdir();
+        }
+    }
+
+    @AfterClass
+    public static void afterClass() {
+        if (!debug) {
+            for (File file : Objects.requireNonNull(new File(SAVE_TO).listFiles())) file.delete();
+            new File(SAVE_TO).delete();
         }
     }
 
@@ -49,14 +57,6 @@ public class AnalysisReportExporterTest {
             reportArgs.setResource("UNIPROT");
             export(reportArgs, type);
         });
-    }
-
-    @AfterClass
-    public static void afterClass() {
-        if (!debug) {
-            for (File file : Objects.requireNonNull(new File(SAVE_TO).listFiles())) file.delete();
-            new File(SAVE_TO).delete();
-        }
     }
 
     private void export(ReportArgs reportArgs, String type) {

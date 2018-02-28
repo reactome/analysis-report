@@ -5,6 +5,7 @@ import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.element.Cell;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Table;
+import com.itextpdf.layout.property.HorizontalAlignment;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.UnitValue;
 import com.itextpdf.layout.property.VerticalAlignment;
@@ -42,15 +43,15 @@ public class TableRenderer {
     private static final String[] OVERVIEW_HEADERS = {"Pathway name", "Entity found", "Entity ratio", "Entity pValue", "Entity FDR", "Reaction found", "Reaction ratio"};
     private static final String[] IDENTIFIERS_FOUND_NO_EXP_HEADERS = {"Identifier", "mapsTo", "Identifier", "mapsTo", "Identifier", "mapsTo"};
     // TODO: 12/02/18 use large table once it been fixed by iText team
-    private AnalysisStoredResult asr;
-    private SpeciesFilteredResult sfr;
+    private static AnalysisStoredResult asr;
+    private static SpeciesFilteredResult sfr;
 
-    public TableRenderer(AnalysisStoredResult asr, SpeciesFilteredResult sfr) {
-        this.asr = asr;
-        this.sfr = sfr;
+    public static void setResultData(AnalysisStoredResult asr, SpeciesFilteredResult sfr) {
+        TableRenderer.asr = asr;
+        TableRenderer.sfr = sfr;
     }
 
-    public void createTable(AnalysisReport report, TableTypeEnum type) throws TableTypeNotFoundException {
+    public static void createTable(AnalysisReport report, TableTypeEnum type) throws TableTypeNotFoundException {
         switch (type) {
             case OVERVIEW_TABLE:
                 overviewTable(report);
@@ -72,14 +73,14 @@ public class TableRenderer {
         }
     }
 
-    public void createTable(AnalysisReport report, String stId) {
+    public static void createTable(AnalysisReport report, String stId) {
         entitiesFoundInPathwayTable(report, stId);
     }
 
     /**
      * overview table show the top pathway overview info in this analysis, info include statistics value performed by analysis service.
      */
-    private void overviewTable(AnalysisReport report) {
+    private static void overviewTable(AnalysisReport report) {
         Table table = new Table(OVERVIEW_VALUES);
         for (String header : OVERVIEW_HEADERS) {
             table.addHeaderCell(headerCell(header));
@@ -110,7 +111,7 @@ public class TableRenderer {
     /**
      * table show all the mapped identifiers the user submitted.
      */
-    private void identifierFoundTable(AnalysisReport report) {
+    private static void identifierFoundTable(AnalysisReport report) {
         Table table = new Table(new UnitValue[sfr.getExpressionSummary().getColumnNames().size() + 2]);
         table.addHeaderCell(headerCell("Identifier"));
         table.addHeaderCell(headerCell("mapsTo"));
@@ -137,7 +138,7 @@ public class TableRenderer {
                     .flatMap(identifierMap -> identifierMap.getIds().stream())
                     .collect(Collectors.toList());
             cell = new Cell();
-            cell.setNextRenderer(new CellTextRenderer(cell, mapsTo));
+            cell.setNextRenderer(new ClipTextRenderer(cell, mapsTo));
             cell.setBorder(Border.NO_BORDER).setKeepTogether(true).setVerticalAlignment(VerticalAlignment.MIDDLE).setTextAlignment(TextAlignment.CENTER);
             table.addCell(cell);
             for (double exp : foundEntity.getExp()) {
@@ -148,7 +149,7 @@ public class TableRenderer {
         report.add(table);
     }
 
-    private void identifierFoundTableNoEXP(AnalysisReport report) {
+    private static void identifierFoundTableNoEXP(AnalysisReport report) {
         Table table = new Table(IDENTIFIERS_FOUND_NO_EXP_VALUES);
         for (String header : IDENTIFIERS_FOUND_NO_EXP_HEADERS) {
             table.addHeaderCell(headerCell(header));
@@ -174,7 +175,7 @@ public class TableRenderer {
                     .flatMap(identifierMap -> identifierMap.getIds().stream())
                     .collect(Collectors.toList());
             cell = new Cell();
-            cell.setNextRenderer(new CellTextRenderer(cell, mapsTo));
+            cell.setNextRenderer(new ClipTextRenderer(cell, mapsTo));
             cell.setBorder(Border.NO_BORDER).setKeepTogether(true).setVerticalAlignment(VerticalAlignment.MIDDLE).setTextAlignment(TextAlignment.CENTER);
             table.addCell(cell);
         }
@@ -193,7 +194,7 @@ public class TableRenderer {
     /**
      * table show the identifiers not found any mapping in Reactome.
      */
-    private void identifierNotFoundTable(AnalysisReport report) {
+    private static void identifierNotFoundTable(AnalysisReport report) {
         Table table = new Table(new UnitValue[asr.getExpressionSummary().getColumnNames().size() + 1]);
         table.addHeaderCell(headerCell("Identifiers"));
         for (String header : asr.getExpressionSummary().getColumnNames()) {
@@ -201,7 +202,7 @@ public class TableRenderer {
         }
         for (AnalysisIdentifier identifier : asr.getNotFound()) {
 
-            table.addCell(textCell(identifier.getId()));
+            table.addCell(textCell(identifier.getId()).setHorizontalAlignment(HorizontalAlignment.LEFT));
             for (double exp : identifier.getExp()) {
                 table.addCell(textCell(String.valueOf(exp)));
             }
@@ -211,7 +212,7 @@ public class TableRenderer {
     }
 
 
-    private void identifierNotFoundTableNoEXP(AnalysisReport report) {
+    private static void identifierNotFoundTableNoEXP(AnalysisReport report) {
         Table table = new Table(new UnitValue[NUM_COLUMNS]);
         table.addHeaderCell(new Cell(1, NUM_COLUMNS)
                 .add(new P("Identifiers").setFontColor(Colors.WHITE))
@@ -225,7 +226,7 @@ public class TableRenderer {
                     .setVerticalAlignment(VerticalAlignment.MIDDLE)
                     .setTextAlignment(TextAlignment.CENTER)
                     .setBorder(Border.NO_BORDER);
-            cell.setNextRenderer(new FitTextRenderer(cell, identifier.getId()));
+            cell.setNextRenderer(new TruncateTextRenderer(cell, identifier.getId()));
             table.addCell(cell);
         }
 
@@ -240,7 +241,7 @@ public class TableRenderer {
     /**
      * Table of entities found in specific pathway.
      */
-    private void entitiesFoundInPathwayTable(AnalysisReport report, String stId) {
+    private static void entitiesFoundInPathwayTable(AnalysisReport report, String stId) {
         Table table = new Table(new UnitValue[NUM_COLUMNS]);
         table.setTextAlignment(TextAlignment.LEFT)
                 .setWidth(UnitValue.createPercentValue(100));
@@ -251,7 +252,7 @@ public class TableRenderer {
             cell = new Cell().setFontColor(Colors.REACTOME_COLOR)
                     .setAction(PdfAction.createGoTo(foundEntity.getId()))
                     .setBorder(Border.NO_BORDER);
-            cell.setNextRenderer(new FitTextRenderer(cell, GraphCoreHelper.getFoundEntityName(foundEntity.getId())));
+            cell.setNextRenderer(new TruncateTextRenderer(cell, GraphCoreHelper.getFoundEntityName(foundEntity.getId())));
             table.addCell(cell);
         }
 
@@ -262,7 +263,7 @@ public class TableRenderer {
         report.add(table);
     }
 
-    private Cell textCell(String text) {
+    private static Cell textCell(String text) {
         return new Cell().add(new Paragraph(text)
                 .setFontSize(FontSize.TABLE)
                 .setMultipliedLeading(MULTIPLIED_LEADING))
@@ -271,7 +272,7 @@ public class TableRenderer {
                 .setBorder(Border.NO_BORDER);
     }
 
-    private Cell headerCell(String text) {
+    private static Cell headerCell(String text) {
         return new Cell().add(new P(text)
                 .setFontSize(FontSize.P)
                 .setFontColor(Colors.WHITE)

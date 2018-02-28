@@ -16,9 +16,9 @@ import java.io.IOException;
  */
 public class Fonts {
 
-    public static PdfFont LIGHT;
     public static PdfFont REGULAR;
-    public static PdfFont BOLD;
+//    public static PdfFont BOLD;
+//    public static PdfFont LIGHT;
 
     public static void setUp() {
         new Fonts().updateFonts();
@@ -29,10 +29,10 @@ public class Fonts {
         try {
             byte[] bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("fonts/Open_Sans/OpenSans-Regular.ttf"));
             REGULAR = PdfFontFactory.createFont(bytes, "");
-            bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("fonts/Open_Sans/OpenSans-Bold.ttf"));
-            BOLD = PdfFontFactory.createFont(bytes, "");
-            bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("fonts/Open_Sans/OpenSans-Light.ttf"));
-            LIGHT = PdfFontFactory.createFont(bytes, "");
+//            bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("fonts/Open_Sans/OpenSans-Bold.ttf"));
+//            BOLD = PdfFontFactory.createFont(bytes, "");
+//            bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("fonts/Open_Sans/OpenSans-Light.ttf"));
+//            LIGHT = PdfFontFactory.createFont(bytes, "");
         } catch (IOException e) {
             e.printStackTrace();
         }

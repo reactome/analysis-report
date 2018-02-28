@@ -15,10 +15,10 @@ import java.util.List;
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
-public class CellTextRenderer extends CellRenderer {
+public class ClipTextRenderer extends CellRenderer {
     private List<String> identifiers;
 
-    CellTextRenderer(Cell cell, List<String> identifiers) {
+    ClipTextRenderer(Cell cell, List<String> identifiers) {
         super(cell);
         this.identifiers = identifiers;
     }

@@ -15,13 +15,11 @@ import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.analysis.exporter.playground.constant.Colors;
 import org.reactome.server.tools.analysis.exporter.playground.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.playground.constant.URL;
-import org.reactome.server.tools.analysis.exporter.playground.exception.TableTypeNotFoundException;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.element.Header;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.element.ListParagraph;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.element.P;
 import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.TableRenderer;
-import org.reactome.server.tools.analysis.exporter.playground.pdfelement.table.TableTypeEnum;
 import org.reactome.server.tools.analysis.exporter.playground.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.GraphCoreHelper;
 import org.reactome.server.tools.analysis.exporter.playground.util.PdfUtils;
@@ -34,34 +32,21 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Section Overview contains the detail info for top hit pathways(sorted by p-value),
+ * Section PathwayDetail contains the detail info for top hit pathways(sorted by p-value),
  * include the overlay diagram image, entities mapped and description for each pathway.
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
-public class Overview implements Section {
+public class PathwayDetail implements Section {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(Overview.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(PathwayDetail.class);
 
 
     public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) throws Exception {
-        TableRenderer tableRenderer = new TableRenderer(asr, sfr);
-        addOverviewTable(report, tableRenderer);
-        addPathwaysDetail(report, tableRenderer, asr, sfr);
-        addIdentifierTable(report, tableRenderer, sfr);
-    }
-
-    private void addOverviewTable(AnalysisReport report, TableRenderer tableRendererT) throws TableTypeNotFoundException {
-        report.add(new AreaBreak())
-                .add(new Header(String.format("3: Top %s over-representation pathways sorted by p-Value.", report.getProfile().getPathwaysToShow()), FontSize.H1).setDestination("topPathways"));
-        tableRendererT.createTable(report, TableTypeEnum.OVERVIEW_TABLE);
-    }
-
-    private void addPathwaysDetail(AnalysisReport report, TableRenderer tableRenderer, AnalysisStoredResult asr, SpeciesFilteredResult sfr) throws Exception {
-
         Pathway pathway;
         PathwayNodeSummary pathwayNodeSummary;
         report.add(new Header("4. Pathway details", FontSize.H1).setDestination("pathwayDetails"));
+        // add pathway detail (pathway description, curators information, entities mapping information) to each pathway.
         for (int i = report.getReportArgs().getPagination(); i < report.getReportArgs().getPagination() + report.getProfile().getPathwaysToShow(); i++) {
             report.add(new AreaBreak());
             pathwayNodeSummary = asr.getPathway(sfr.getPathways().get(i).getStId());
@@ -107,7 +92,7 @@ public class Overview implements Section {
                 }
             }
             report.add(new Header("List of identifiers found in this pathway", FontSize.H3));
-            tableRenderer.createTable(report, pathwayNodeSummary.getStId());
+            TableRenderer.createTable(report, pathwayNodeSummary.getStId());
 
             addCuratorDetail(report, pathway);
             addLiteratureReference(report, pathway);
@@ -115,7 +100,7 @@ public class Overview implements Section {
     }
 
     private void addDiagram(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr, int i) throws Exception {
-        BufferedImage image = DiagramHelper.getPNGDiagram(sfr.getPathways().get(i).getStId(), asr, report.getReportArgs().getResource());
+        BufferedImage image = DiagramHelper.getDiagram(sfr.getPathways().get(i).getStId(), asr, report.getReportArgs().getResource());
         if (image != null) {
             Image diagram = new Image(ImageDataFactory.create(image, java.awt.Color.WHITE));
 
@@ -131,8 +116,7 @@ public class Overview implements Section {
     private void addTitle(AnalysisReport report, PathwayNodeSummary pathway, int index) {
         Header identifierFound = new Header(String.format("4.%s. %s (", index + 1, pathway.getName()), FontSize.H2);
         identifierFound.setDestination(pathway.getStId());
-        identifierFound.add(new Text(pathway.getStId()).setFontColor(Colors.REACTOME_COLOR).setAction(PdfAction.createURI(URL.QUERYFORPATHWAYDETAILS.concat(pathway.getStId())))).add(")");
-
+        identifierFound.add(new Text(pathway.getStId()).setFontColor(Colors.REACTOME_COLOR).setAction(PdfAction.createURI(URL.PATHWAY_DETAIL.concat(pathway.getStId())))).add(")");
         report.add(identifierFound);
     }
 
@@ -159,9 +143,9 @@ public class Overview implements Section {
     }
 
     private void addLiteratureReference(AnalysisReport report, Pathway pathway) {
-        org.reactome.server.graph.domain.model.URL url;
         Book book;
         LiteratureReference literatureReference;
+        org.reactome.server.graph.domain.model.URL url;
         if (pathway.getLiteratureReference() != null) {
             // only show the first 5 references(include literature,book and url) for each pathway.
             int length = pathway.getLiteratureReference().size() > 5 ? 5 : pathway.getLiteratureReference().size();
@@ -201,25 +185,6 @@ public class Overview implements Section {
                 report.add(new Header("References", FontSize.H3));
                 report.addAsList(references);
             }
-        }
-    }
-
-    // add identifiers found table and identifiers not found table.
-    private void addIdentifierTable(AnalysisReport report, TableRenderer tableRenderer, SpeciesFilteredResult sfr) throws TableTypeNotFoundException {
-        Paragraph identifierFound = new Header("5. Summary of identifiers found.", FontSize.H1);
-        identifierFound.setDestination("identifiersFound");
-        report.add(identifierFound);
-        if (sfr.getExpressionSummary().getColumnNames().size() != 0) {
-            tableRenderer.createTable(report, TableTypeEnum.IdentifierFound);
-        } else {
-            tableRenderer.createTable(report, TableTypeEnum.IDENTIFIER_FOUND_NO_EXP);
-        }
-
-        report.add(new Header("6. Summary of identifiers not found.", FontSize.H1).setDestination("identitiferNotFound"));
-        if (sfr.getExpressionSummary().getColumnNames().size() != 0) {
-            tableRenderer.createTable(report, TableTypeEnum.IDENTIFIER_NOT_FOUND);
-        } else {
-            tableRenderer.createTable(report, TableTypeEnum.IDENTIFIER_NOT_FOUND_NO_EXP);
         }
     }
 

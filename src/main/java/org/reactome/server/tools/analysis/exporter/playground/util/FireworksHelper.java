@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 import java.awt.image.BufferedImage;
 
 /**
- * Help to create the fireworks image by invoking the Reactome FireworksExporter{@see FireworksExporter}.
+ * Help to create the fireworks image by invoking the Reactome {@link FireworksExporter}.
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
@@ -18,8 +18,8 @@ public class FireworksHelper {
 
     private static final String SPECIES = "Homo_sapiens";
     private static final double QUALITY = 2.5;
-    private static FireworksExporter exporter;
     private static final Logger LOGGER = LoggerFactory.getLogger(FireworksHelper.class);
+    private static FireworksExporter exporter;
 
     /**
      * get the fireworks image from {@link FireworksExporter} by given analysis token.
