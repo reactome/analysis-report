@@ -85,8 +85,8 @@ public class PathwayDetail implements Section {
 
             if (pathway.getSummation() != null) {
                 for (Summation summation : pathway.getSummation()) {
+                    // replace "<br>" tag with "\r\n" so iText can break paragraph correct.
                     String[] paragraph = summation.getText().replaceAll("(?i)<br>+", "\r\n").split("<p>+");
-
                     // use jSoup to get rid of the html tags.
                     Arrays.stream(paragraph).forEach(text -> report.add(new P(Jsoup.parseBodyFragment(text).body().text())));
                 }

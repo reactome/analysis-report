@@ -7,22 +7,21 @@ AnalysisExporter is a tool to export the analysis result to a PDF document (PDF-
 ### Structure of the PDF
 
 * __Administrative:__   a brief explanation of what you are going to see
-* __Content:__  table of content
-* __Introduction:__ introduction of Reactome database and latest publications
-* __Summary of Parameters and Results:__    parameters used in analysis service and overview of analysis result   
-    also include a genome-wide overview image with description:   
+* __Content:__  table of navigation list
+* __Introduction:__ explanation of [Reactome](https://reactome.org) database and latest publications
+* __Summary of Parameters and Results:__    parameters used in analysis service and a genome-wide overview image:      
     ![fireworks](src/main/resources/readme/fireworks.png)
 
 * __Top over-representation pathways sorted by p-Value:__   table contains the top pathways sorted by p-value with each statistics data  
     ![table_of_top_pathways](src/main/resources/readme/table_of_top_pathways.png)
     
-* __Pathway details:__  detailed information for each pathway as listed afore, include compartment, curators and disease info, also include references, summation and table of list identifiers found in this pathway  
+* __Pathway details:__  detailed information for each pathway as listed afore and table of list identifiers found in that pathway  
     ![diagram](src/main/resources/readme/diagram.png)
     
 * __Summary of identifiers found:__ all identifiers found in this analysis   
     ![identifiers_found](src/main/resources/readme/identifiers_found.png)
     
-* __Summary of identifiers not found:__ all identifiers not found in this analysis   
+* __Summary of identifiers not found:__ all identifiers not found in this analysis　   
     ![identifiers_not_found](src/main/resources/readme/identifiers_not_found.png)
     
 
@@ -38,7 +37,7 @@ cd analysis-report
 mvn clean package
 ```
 
-Since this module will retrieve Reactome Pathway data from the [Reactome Graph Database](https://reactome.org/dev/graph-database), You should install that in your local environment, if you don't have that yet or never experience on that, we strongly recommend that you have a look on it.
+Since this module will retrieve Reactome Pathway data from the [Reactome Graph Database](https://reactome.org/dev/graph-database), You should install that in your local environment, if you don't have that yet or never experience on that, we strongly recommend you have a look on it.
 To [configure reactome database](https://github.com/reactome/graph-core) and provide properties programmatically, we use `GraphCoreConfig` extends `Neo4jConfig` inside this module like:
  
 ```java

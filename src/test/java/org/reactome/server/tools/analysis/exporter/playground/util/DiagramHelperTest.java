@@ -31,7 +31,7 @@ public class DiagramHelperTest {
     private static DiagramService DIAGRAM_SERVICE;
 
     @BeforeClass
-    public static void setUp() {
+    public static void Neo4jConfig() {
         ReactomeGraphCore.initialise(
                 System.getProperty("neo4j.host")
                 , System.getProperty("neo4j.port")
@@ -42,7 +42,7 @@ public class DiagramHelperTest {
     }
 
     @Test
-    public void export() throws IOException {
+    public void getDiagramTest() throws IOException {
         ReportArgs reportArgs = new ReportArgs("MjAxODAyMTIxMTI5MzdfMQ==", diagramPath, ehldPath, fireworksPath, analysisPath, svgSummary);
         DiagramHelper.setPaths(reportArgs);
         AnalysisStoredResult result = new TokenUtils("src/test/resources/analysis").getFromToken(reportArgs.getToken());
@@ -53,7 +53,7 @@ public class DiagramHelperTest {
     }
 
     @Test
-    public void testMeasureTime() {
+    public void TimeMeasureTest() {
         final AnalysisStoredResult result = TOKEN_UTILS.getFromToken(TOKEN_OVER01);
         long start = System.nanoTime();
         result.getPathways().stream()

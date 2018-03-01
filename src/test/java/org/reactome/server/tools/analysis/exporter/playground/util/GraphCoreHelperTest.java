@@ -9,7 +9,7 @@ import org.junit.Test;
 public class GraphCoreHelperTest {
 
     @Test
-    public void test() {
+    public void getSpeciesNameTest() {
         Assert.assertEquals("Homo sapiens", GraphCoreHelper.getSpeciesName(48887L));
     }
 }

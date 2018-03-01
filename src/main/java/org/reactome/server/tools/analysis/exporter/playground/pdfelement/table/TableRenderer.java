@@ -252,6 +252,8 @@ public class TableRenderer {
             cell = new Cell().setFontColor(Colors.REACTOME_COLOR)
                     .setAction(PdfAction.createGoTo(foundEntity.getId()))
                     .setBorder(Border.NO_BORDER);
+
+            // use truncate renderer to truncate long name into "XXX...XXX" short model.
             cell.setNextRenderer(new TruncateTextRenderer(cell, GraphCoreHelper.getFoundEntityName(foundEntity.getId())));
             table.addCell(cell);
         }

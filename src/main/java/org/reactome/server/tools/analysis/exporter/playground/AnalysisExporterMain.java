@@ -18,7 +18,7 @@ import java.time.Instant;
 public class AnalysisExporterMain {
 
     /**
-     * to run this main test class, you need to set the Java system property for Neo4j configuration manually in the VM-options like:
+     * to run this main test class, you need to set the Java system property for Neo4j configuration manually in the IDE VM-options like:
      * -Dneo4j.host=your_host
      * -Dneo4j.port=your_port
      * -Dneo4j.user=your_user
@@ -32,14 +32,14 @@ public class AnalysisExporterMain {
         output.setStringParser(JSAP.STRING_PARSER)
                 .setRequired(true)
                 .setShortFlag('o')
-                .setHelp("output folder to save created pdf file");
+                .setHelp("output folder to save created PDF document");
         jsap.registerParameter(output);
 
         FlaggedOption token = new FlaggedOption("token");
         token.setStringParser(JSAP.STRING_PARSER)
                 .setRequired(true)
                 .setShortFlag('t')
-                .setHelp("analysis token from reactome analysis service with your data set");
+                .setHelp("analysis token from Reactome Analysis Service with your data set");
         jsap.registerParameter(token);
 
         FlaggedOption diagramPath = new FlaggedOption("diagramPath");

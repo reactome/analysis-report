@@ -23,7 +23,7 @@ public class FireworksHelperTest {
     private static final String analysisPath = "src/test/resources/analysis";
 
     @Test
-    public void export() throws Exception {
+    public void getFireworksTest() throws Exception {
         ReportArgs reportArgs = new ReportArgs("MjAxODAyMTIxMTI5MzdfMQ==", diagramPath, ehldPath, fireworksPath, analysisPath, svgSummary);
         AnalysisStoredResult analysisStoredResult = new TokenUtils("src/test/resources/analysis").getFromToken(reportArgs.getToken());
         FireworksHelper.setPaths(reportArgs);
