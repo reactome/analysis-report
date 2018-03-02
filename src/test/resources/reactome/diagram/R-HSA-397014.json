@@ -1,0 +1,91 @@
+{
+  "dbId" : 397014,
+  "stableId" : "R-HSA-397014",
+  "displayName" : "Muscle contraction",
+  "nodes" : [ {
+    "id" : 97,
+    "reactomeId" : 390522,
+    "displayName" : "Striated Muscle Contraction",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 248,
+      "y" : 55
+    },
+    "minX" : 177,
+    "maxX" : 320,
+    "minY" : 27,
+    "maxY" : 84,
+    "prop" : {
+      "x" : 177,
+      "y" : 27,
+      "width" : 143,
+      "height" : 57
+    },
+    "textPosition" : {
+      "x" : 195,
+      "y" : 34
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 98,
+    "reactomeId" : 445355,
+    "displayName" : "Smooth Muscle Contraction",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 85,
+      "y" : 53
+    },
+    "minX" : 18,
+    "maxX" : 153,
+    "minY" : 21,
+    "maxY" : 85,
+    "prop" : {
+      "x" : 18,
+      "y" : 21,
+      "width" : 135,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 33,
+      "y" : 31
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 151,
+    "reactomeId" : 5576891,
+    "displayName" : "Cardiac conduction",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 398,
+      "y" : 52
+    },
+    "minX" : 343,
+    "maxX" : 453,
+    "minY" : 25,
+    "maxY" : 80,
+    "prop" : {
+      "x" : 343,
+      "y" : 25,
+      "width" : 110,
+      "height" : 55
+    },
+    "textPosition" : {
+      "x" : 359,
+      "y" : 31
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 18,
+  "maxX" : 453,
+  "minY" : 21,
+  "maxY" : 85,
+  "disease" : false
+}

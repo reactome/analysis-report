@@ -1,0 +1,20 @@
+{
+  "dbId" : 9006925,
+  "stId" : "R-HSA-9006925",
+  "nodes" : [ {
+    "dbId" : 1489509,
+    "stId" : "R-HSA-1489509",
+    "displayName" : "DAG and IP3 signaling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ]
+  }, {
+    "dbId" : 1257604,
+    "stId" : "R-HSA-1257604",
+    "displayName" : "PIP3 activates AKT signaling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 10 ]
+  } ],
+  "edges" : [ ]
+}

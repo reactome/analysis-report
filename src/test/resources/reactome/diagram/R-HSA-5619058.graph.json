@@ -1,0 +1,63 @@
+{
+  "dbId" : 5619058,
+  "stId" : "R-HSA-5619058",
+  "nodes" : [ {
+    "dbId" : 194115,
+    "stId" : "R-HSA-194115",
+    "displayName" : "ALB [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 587 ],
+    "identifier" : "P02768",
+    "geneNames" : [ "ALB", "GIG20", "GIG42", "PRO0903", "PRO1708", "PRO2044", "PRO2619", "PRO2675", "UNQ696/PRO1341" ],
+    "parents" : [ 2168871, 264677, 194104, 194125, 194165, 194110 ]
+  }, {
+    "dbId" : 192464,
+    "stId" : "R-ALL-192464",
+    "displayName" : "GCCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17687",
+    "parents" : [ 194117, 193479, 194092, 192483 ]
+  }, {
+    "dbId" : 194117,
+    "stId" : "R-ALL-194117",
+    "displayName" : "GCCA, TCCA [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "parents" : [ 9593917, 9376641, 9227557, 9650395, 9454851, 9298271, 9531713, 194104, 9147434 ],
+    "children" : [ 192421, 192464 ]
+  }, {
+    "dbId" : 192421,
+    "stId" : "R-ALL-192421",
+    "displayName" : "TCCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28865",
+    "parents" : [ 194117, 193479, 194092, 192483 ]
+  }, {
+    "dbId" : 5661201,
+    "stId" : "R-HSA-5661201",
+    "displayName" : "SLCO1B3 I562* [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 153018 ],
+    "identifier" : "Q9NPD5",
+    "geneNames" : [ "SLCO1B3", "LST2", "OATP1B3", "OATP8", "SLC21A8" ]
+  }, {
+    "dbId" : 194104,
+    "stId" : "R-HSA-194104",
+    "displayName" : "ALB:(GCCA, TCCA) [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 613 ],
+    "children" : [ 194117, 194115 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 5661198,
+    "stId" : "R-HSA-5661198",
+    "displayName" : "Defective SLCO1B3 does not transport ALB:(GCCA, TCCA) from extracellular region to cytosol",
+    "schemaClass" : "FailedReaction",
+    "inputs" : [ 194104 ],
+    "efs" : [ 5661201 ],
+    "diagramIds" : [ 153017 ],
+    "entityFunctionalStatus" : [ 5661201 ]
+  } ]
+}

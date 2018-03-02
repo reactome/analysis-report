@@ -1,0 +1,20 @@
+{
+  "dbId" : 5684996,
+  "stId" : "R-HSA-5684996",
+  "nodes" : [ {
+    "dbId" : 112409,
+    "stId" : "R-HSA-112409",
+    "displayName" : "RAF-independent MAPK1/3 activation",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 51 ]
+  }, {
+    "dbId" : 5673001,
+    "stId" : "R-HSA-5673001",
+    "displayName" : "RAF/MAP kinase cascade",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 52 ]
+  } ],
+  "edges" : [ ]
+}

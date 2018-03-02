@@ -1,0 +1,62 @@
+{
+  "dbId" : 1643685,
+  "stId" : "R-HSA-1643685",
+  "nodes" : [ {
+    "dbId" : 3781865,
+    "stId" : "R-HSA-3781865",
+    "displayName" : "Diseases of glycosylation",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 76 ]
+  }, {
+    "dbId" : 5663205,
+    "stId" : "R-HSA-5663205",
+    "displayName" : "Infectious disease",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 95 ]
+  }, {
+    "dbId" : 5668914,
+    "stId" : "R-HSA-5668914",
+    "displayName" : "Diseases of metabolism",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 96 ]
+  }, {
+    "dbId" : 5663202,
+    "stId" : "R-HSA-5663202",
+    "displayName" : "Diseases of signal transduction",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 94 ]
+  }, {
+    "dbId" : 8863678,
+    "stId" : "R-HSA-8863678",
+    "displayName" : "Neurodegenerative Diseases",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 97 ]
+  }, {
+    "dbId" : 5423599,
+    "stId" : "R-HSA-5423599",
+    "displayName" : "Diseases of Mismatch Repair (MMR)",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 88 ]
+  }, {
+    "dbId" : 5619115,
+    "stId" : "R-HSA-5619115",
+    "displayName" : "Disorders of transmembrane transporters",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 86 ]
+  }, {
+    "dbId" : 5260271,
+    "stId" : "R-HSA-5260271",
+    "displayName" : "Diseases of Immune System",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 85 ]
+  } ],
+  "edges" : [ ]
+}

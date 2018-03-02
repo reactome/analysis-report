@@ -1,0 +1,8871 @@
+{
+  "dbId" : 453276,
+  "stableId" : "R-HSA-453276",
+  "displayName" : "Regulation of mitotic cell cycle",
+  "nodes" : [ {
+    "id" : 2,
+    "reactomeId" : 187952,
+    "displayName" : "CCNA:p-T160-CDK2",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 128,
+      "y" : 217
+    },
+    "minX" : 71,
+    "maxX" : 218,
+    "minY" : 192,
+    "maxY" : 242,
+    "prop" : {
+      "x" : 71,
+      "y" : 192,
+      "width" : 114,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 78,
+      "y" : 207
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 188,
+          "y" : 216
+        },
+        "to" : {
+          "x" : 218,
+          "y" : 216
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 174250,
+    "displayName" : "Cdh1:phospho-APC/C complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 221,
+      "y" : 163
+    },
+    "minX" : 169,
+    "maxX" : 273,
+    "minY" : 145,
+    "maxY" : 216,
+    "prop" : {
+      "x" : 169,
+      "y" : 145,
+      "width" : 104,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 171,
+      "y" : 146
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 219,
+          "y" : 184
+        },
+        "to" : {
+          "x" : 218,
+          "y" : 216
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 188374,
+    "displayName" : "Cyclin A:phospho-Cdk(Thr 160):Cdh1:phosho-APC/C complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 343,
+      "y" : 216
+    },
+    "minX" : 282,
+    "maxX" : 461,
+    "minY" : 184,
+    "maxY" : 248,
+    "prop" : {
+      "x" : 282,
+      "y" : 184,
+      "width" : 123,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 286,
+      "y" : 185
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 22,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 408,
+          "y" : 204
+        },
+        "to" : {
+          "x" : 431,
+          "y" : 200
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 22,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 408,
+          "y" : 224
+        },
+        "to" : {
+          "x" : 457,
+          "y" : 231
+        }
+      }, {
+        "from" : {
+          "x" : 457,
+          "y" : 231
+        },
+        "to" : {
+          "x" : 457,
+          "y" : 217
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 457,
+          "y" : 213
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 1797,
+    "reactomeId" : 188192,
+    "displayName" : "multiubiquitinated Skp2:phospho-APC/C:Cdh1 complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 273,
+      "y" : 933
+    },
+    "minX" : 208,
+    "maxX" : 338,
+    "minY" : 901,
+    "maxY" : 966,
+    "prop" : {
+      "x" : 208,
+      "y" : 901,
+      "width" : 130,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 215,
+      "y" : 903
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1796,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 778,
+    "reactomeId" : 174191,
+    "displayName" : "phosphorylated anaphase promoting complex (APC/C)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 543,
+      "y" : 1306
+    },
+    "minX" : 88,
+    "maxX" : 1441,
+    "minY" : 1011,
+    "maxY" : 1564,
+    "prop" : {
+      "x" : 473,
+      "y" : 1280,
+      "width" : 141,
+      "height" : 53
+    },
+    "textPosition" : {
+      "x" : 478,
+      "y" : 1284
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 777,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 617,
+          "y" : 1302
+        },
+        "to" : {
+          "x" : 635,
+          "y" : 1301
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1579,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 470,
+          "y" : 1305
+        },
+        "to" : {
+          "x" : 88,
+          "y" : 1305
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1533,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 554,
+          "y" : 1336
+        },
+        "to" : {
+          "x" : 651,
+          "y" : 1564
+        }
+      }, {
+        "from" : {
+          "x" : 651,
+          "y" : 1564
+        },
+        "to" : {
+          "x" : 1299,
+          "y" : 1560
+        }
+      }, {
+        "from" : {
+          "x" : 1299,
+          "y" : 1560
+        },
+        "to" : {
+          "x" : 1441,
+          "y" : 1011
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 560,
+          "y" : 1341
+        },
+        "b" : {
+          "x" : 554,
+          "y" : 1336
+        },
+        "c" : {
+          "x" : 553,
+          "y" : 1344
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 779,
+    "reactomeId" : 141410,
+    "displayName" : "MCC:APC/C complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 789,
+      "y" : 1298
+    },
+    "minX" : 716,
+    "maxX" : 925,
+    "minY" : 1190,
+    "maxY" : 1394,
+    "prop" : {
+      "x" : 716,
+      "y" : 1286,
+      "width" : 147,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 725,
+      "y" : 1290
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 777,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1370,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 804,
+          "y" : 1314
+        },
+        "to" : {
+          "x" : 905,
+          "y" : 1394
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 812,
+          "y" : 1315
+        },
+        "b" : {
+          "x" : 804,
+          "y" : 1314
+        },
+        "c" : {
+          "x" : 807,
+          "y" : 1321
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 799,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 819,
+          "y" : 1314
+        },
+        "to" : {
+          "x" : 925,
+          "y" : 1354
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 802,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 797,
+          "y" : 1283
+        },
+        "to" : {
+          "x" : 812,
+          "y" : 1265
+        }
+      }, {
+        "from" : {
+          "x" : 812,
+          "y" : 1265
+        },
+        "to" : {
+          "x" : 813,
+          "y" : 1253
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 813,
+          "y" : 1249
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 804,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 787,
+          "y" : 1283
+        },
+        "to" : {
+          "x" : 774,
+          "y" : 1190
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 782,
+          "y" : 1277
+        },
+        "b" : {
+          "x" : 787,
+          "y" : 1283
+        },
+        "c" : {
+          "x" : 790,
+          "y" : 1276
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 1776,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 821,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 778,
+          "y" : 1314
+        },
+        "to" : {
+          "x" : 753,
+          "y" : 1339
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 781,
+    "reactomeId" : 174091,
+    "displayName" : "anaphase promoting complex (APC/C)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 127,
+      "y" : 308
+    },
+    "minX" : 64,
+    "maxX" : 190,
+    "minY" : 285,
+    "maxY" : 331,
+    "prop" : {
+      "x" : 64,
+      "y" : 285,
+      "width" : 126,
+      "height" : 46
+    },
+    "textPosition" : {
+      "x" : 65,
+      "y" : 282
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 780,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 797,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1677,
+    "reactomeId" : 113595,
+    "displayName" : "Ub",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 368,
+      "y" : 1279
+    },
+    "minX" : 330,
+    "maxX" : 406,
+    "minY" : 1218,
+    "maxY" : 1290,
+    "prop" : {
+      "x" : 330,
+      "y" : 1268,
+      "width" : 76,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 356,
+      "y" : 1268
+    },
+    "connectors" : [ {
+      "edgeId" : 1659,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 367,
+          "y" : 1262
+        },
+        "to" : {
+          "x" : 366,
+          "y" : 1218
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 360,
+            "y" : 1234
+          },
+          "b" : {
+            "x" : 372,
+            "y" : 1246
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 23,
+    "reactomeId" : 29358,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 382,
+      "y" : 156
+    },
+    "minX" : 363,
+    "maxX" : 431,
+    "minY" : 140,
+    "maxY" : 200,
+    "prop" : {
+      "x" : 363,
+      "y" : 141,
+      "width" : 38,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 366,
+      "y" : 145
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 396,
+          "y" : 146
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 22,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 398,
+          "y" : 174
+        },
+        "to" : {
+          "x" : 431,
+          "y" : 200
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 24,
+    "reactomeId" : 113582,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 515,
+      "y" : 152
+    },
+    "minX" : 486,
+    "maxX" : 536,
+    "minY" : 136,
+    "maxY" : 202,
+    "prop" : {
+      "x" : 496,
+      "y" : 137,
+      "width" : 39,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 499,
+      "y" : 141
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 530,
+          "y" : 142
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 22,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 506,
+          "y" : 170
+        },
+        "to" : {
+          "x" : 486,
+          "y" : 202
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 506,
+          "y" : 178
+        },
+        "b" : {
+          "x" : 506,
+          "y" : 170
+        },
+        "c" : {
+          "x" : 499,
+          "y" : 174
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 25,
+    "reactomeId" : 188387,
+    "displayName" : "Cyclin A:phospho-Cdk2(Thr 160):phospho-Cdh1:phospho-APC/C complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 585,
+      "y" : 218
+    },
+    "minX" : 486,
+    "maxX" : 662,
+    "minY" : 183,
+    "maxY" : 253,
+    "prop" : {
+      "x" : 509,
+      "y" : 183,
+      "width" : 153,
+      "height" : 70
+    },
+    "textPosition" : {
+      "x" : 513,
+      "y" : 190
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 22,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 506,
+          "y" : 205
+        },
+        "to" : {
+          "x" : 486,
+          "y" : 202
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 499,
+          "y" : 208
+        },
+        "b" : {
+          "x" : 506,
+          "y" : 205
+        },
+        "c" : {
+          "x" : 500,
+          "y" : 200
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 1434,
+    "reactomeId" : 157456,
+    "displayName" : "CCNB1:p-T161-CDK1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1335,
+      "y" : 1045
+    },
+    "minX" : 1254,
+    "maxX" : 1416,
+    "minY" : 1027,
+    "maxY" : 1091,
+    "prop" : {
+      "x" : 1254,
+      "y" : 1027,
+      "width" : 162,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1265,
+      "y" : 1042
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1433,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1322,
+          "y" : 1066
+        },
+        "to" : {
+          "x" : 1303,
+          "y" : 1091
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1435,
+    "reactomeId" : 174081,
+    "displayName" : "CDC20:p-APC/C",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1165,
+      "y" : 998
+    },
+    "minX" : 768,
+    "maxX" : 1303,
+    "minY" : 869,
+    "maxY" : 1296,
+    "prop" : {
+      "x" : 1114,
+      "y" : 980,
+      "width" : 103,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1131,
+      "y" : 981
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1474,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1175,
+          "y" : 977
+        },
+        "to" : {
+          "x" : 1191,
+          "y" : 953
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1477,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1111,
+          "y" : 981
+        },
+        "to" : {
+          "x" : 897,
+          "y" : 914
+        }
+      }, {
+        "from" : {
+          "x" : 897,
+          "y" : 914
+        },
+        "to" : {
+          "x" : 898,
+          "y" : 877
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 898,
+          "y" : 873
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 1496,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1111,
+          "y" : 997
+        },
+        "to" : {
+          "x" : 768,
+          "y" : 995
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1104,
+          "y" : 1001
+        },
+        "b" : {
+          "x" : 1111,
+          "y" : 997
+        },
+        "c" : {
+          "x" : 1104,
+          "y" : 993
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 1433,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1191,
+          "y" : 1019
+        },
+        "to" : {
+          "x" : 1303,
+          "y" : 1091
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1437,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1162,
+          "y" : 1019
+        },
+        "to" : {
+          "x" : 1151,
+          "y" : 1103
+        }
+      }, {
+        "from" : {
+          "x" : 1151,
+          "y" : 1103
+        },
+        "to" : {
+          "x" : 1153,
+          "y" : 1198
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1153,
+          "y" : 1202
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 1456,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1142,
+          "y" : 1019
+        },
+        "to" : {
+          "x" : 1035,
+          "y" : 1104
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1139,
+          "y" : 1026
+        },
+        "b" : {
+          "x" : 1142,
+          "y" : 1019
+        },
+        "c" : {
+          "x" : 1134,
+          "y" : 1020
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 1776,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1165,
+          "y" : 1019
+        },
+        "to" : {
+          "x" : 1167,
+          "y" : 1261
+        }
+      }, {
+        "from" : {
+          "x" : 1167,
+          "y" : 1261
+        },
+        "to" : {
+          "x" : 1168,
+          "y" : 1296
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1169,
+          "y" : 1026
+        },
+        "b" : {
+          "x" : 1165,
+          "y" : 1019
+        },
+        "c" : {
+          "x" : 1161,
+          "y" : 1026
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 1533,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 27,
+    "reactomeId" : 174167,
+    "displayName" : "phospho-Cdh1:phospho-APC/C complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 828,
+      "y" : 317
+    },
+    "minX" : 775,
+    "maxX" : 936,
+    "minY" : 292,
+    "maxY" : 367,
+    "prop" : {
+      "x" : 775,
+      "y" : 292,
+      "width" : 106,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 775,
+      "y" : 293
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1696,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 884,
+          "y" : 341
+        },
+        "to" : {
+          "x" : 936,
+          "y" : 367
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1696,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 884,
+          "y" : 316
+        },
+        "to" : {
+          "x" : 920,
+          "y" : 315
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 924,
+          "y" : 315
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 1436,
+    "reactomeId" : 174095,
+    "displayName" : "Cdc20:phospho-APC/C:Cyclin B:Cdc2 complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1303,
+      "y" : 1214
+    },
+    "minX" : 1186,
+    "maxX" : 1369,
+    "minY" : 1189,
+    "maxY" : 1239,
+    "prop" : {
+      "x" : 1238,
+      "y" : 1189,
+      "width" : 131,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1238,
+      "y" : 1190
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1433,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1437,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1235,
+          "y" : 1214
+        },
+        "to" : {
+          "x" : 1186,
+          "y" : 1215
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 28,
+    "reactomeId" : 174109,
+    "displayName" : "phosphorylated anaphase promoting complex (APC/C)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 352,
+      "y" : 306
+    },
+    "minX" : 300,
+    "maxX" : 759,
+    "minY" : 248,
+    "maxY" : 344,
+    "prop" : {
+      "x" : 300,
+      "y" : 269,
+      "width" : 104,
+      "height" : 75
+    },
+    "textPosition" : {
+      "x" : 301,
+      "y" : 267
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 780,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 26,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 407,
+          "y" : 307
+        },
+        "to" : {
+          "x" : 683,
+          "y" : 317
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 414,
+          "y" : 303
+        },
+        "b" : {
+          "x" : 407,
+          "y" : 307
+        },
+        "c" : {
+          "x" : 414,
+          "y" : 311
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 797,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1714,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 407,
+          "y" : 298
+        },
+        "to" : {
+          "x" : 759,
+          "y" : 248
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 413,
+          "y" : 293
+        },
+        "b" : {
+          "x" : 407,
+          "y" : 298
+        },
+        "c" : {
+          "x" : 414,
+          "y" : 301
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 29,
+    "reactomeId" : 174257,
+    "displayName" : "p-FZR1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 645,
+      "y" : 351
+    },
+    "minX" : 564,
+    "maxX" : 705,
+    "minY" : 317,
+    "maxY" : 387,
+    "prop" : {
+      "x" : 591,
+      "y" : 340,
+      "width" : 108,
+      "height" : 22
+    },
+    "innerProp" : {
+      "x" : 591,
+      "y" : 346,
+      "width" : 108,
+      "height" : 16
+    },
+    "textPosition" : {
+      "x" : 619,
+      "y" : 340
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 168397,
+      "label" : "P",
+      "description" : "phosphorylated residue at unknown position",
+      "shape" : {
+        "a" : {
+          "x" : 601,
+          "y" : 334
+        },
+        "b" : {
+          "x" : 613,
+          "y" : 346
+        },
+        "s" : "P",
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 699,
+          "y" : 340
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 657,
+          "y" : 337
+        },
+        "to" : {
+          "x" : 683,
+          "y" : 317
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 660,
+          "y" : 330
+        },
+        "b" : {
+          "x" : 657,
+          "y" : 337
+        },
+        "c" : {
+          "x" : 665,
+          "y" : 336
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 628,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 620,
+          "y" : 365
+        },
+        "to" : {
+          "x" : 564,
+          "y" : 387
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 615,
+          "y" : 371
+        },
+        "b" : {
+          "x" : 620,
+          "y" : 365
+        },
+        "c" : {
+          "x" : 612,
+          "y" : 364
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 1438,
+    "reactomeId" : 174131,
+    "displayName" : "multiubiquitinated Cyclin B:Cdc2:Cdc20:phospho-APC/C complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1040,
+      "y" : 1216
+    },
+    "minX" : 975,
+    "maxX" : 1105,
+    "minY" : 1184,
+    "maxY" : 1248,
+    "prop" : {
+      "x" : 975,
+      "y" : 1184,
+      "width" : 130,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 982,
+      "y" : 1185
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1437,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1456,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 31,
+    "reactomeId" : 176429,
+    "displayName" : "Cdh1",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 688,
+      "y" : 481
+    },
+    "minX" : 658,
+    "maxX" : 750,
+    "minY" : 470,
+    "maxY" : 492,
+    "prop" : {
+      "x" : 658,
+      "y" : 470,
+      "width" : 60,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 668,
+      "y" : 470
+    },
+    "connectors" : [ {
+      "edgeId" : 30,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 724,
+          "y" : 481
+        },
+        "to" : {
+          "x" : 750,
+          "y" : 481
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1695,
+    "reactomeId" : 113595,
+    "displayName" : "Ub",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 233,
+      "y" : 1080
+    },
+    "minX" : 178,
+    "maxX" : 266,
+    "minY" : 1034,
+    "maxY" : 1136,
+    "prop" : {
+      "x" : 201,
+      "y" : 1070,
+      "width" : 65,
+      "height" : 20
+    },
+    "textPosition" : {
+      "x" : 221,
+      "y" : 1070
+    },
+    "connectors" : [ {
+      "edgeId" : 1796,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 221,
+          "y" : 1064
+        },
+        "to" : {
+          "x" : 178,
+          "y" : 1034
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 193,
+            "y" : 1043
+          },
+          "b" : {
+            "x" : 205,
+            "y" : 1055
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 213,
+          "y" : 1063
+        },
+        "b" : {
+          "x" : 221,
+          "y" : 1064
+        },
+        "c" : {
+          "x" : 218,
+          "y" : 1057
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 1678,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 235,
+          "y" : 1096
+        },
+        "to" : {
+          "x" : 247,
+          "y" : 1136
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 235,
+            "y" : 1110
+          },
+          "b" : {
+            "x" : 247,
+            "y" : 1122
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 241,
+          "y" : 1101
+        },
+        "b" : {
+          "x" : 235,
+          "y" : 1096
+        },
+        "c" : {
+          "x" : 233,
+          "y" : 1104
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 800,
+    "reactomeId" : 174232,
+    "displayName" : "Cyclin A:phospho-Cdc2(Thr 161) complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1070,
+      "y" : 1422
+    },
+    "minX" : 925,
+    "maxX" : 1130,
+    "minY" : 1354,
+    "maxY" : 1447,
+    "prop" : {
+      "x" : 1011,
+      "y" : 1397,
+      "width" : 119,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1013,
+      "y" : 1398
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 799,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1016,
+          "y" : 1394
+        },
+        "to" : {
+          "x" : 925,
+          "y" : 1354
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1440,
+    "reactomeId" : 113595,
+    "displayName" : "Ub",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1274,
+      "y" : 1280
+    },
+    "minX" : 1186,
+    "maxX" : 1312,
+    "minY" : 1215,
+    "maxY" : 1291,
+    "prop" : {
+      "x" : 1237,
+      "y" : 1269,
+      "width" : 75,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1262,
+      "y" : 1269
+    },
+    "connectors" : [ {
+      "edgeId" : 1437,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1259,
+          "y" : 1263
+        },
+        "to" : {
+          "x" : 1186,
+          "y" : 1215
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 1216,
+            "y" : 1233
+          },
+          "b" : {
+            "x" : 1228,
+            "y" : 1245
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 32,
+    "reactomeId" : 174060,
+    "displayName" : "FBXO5",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 733,
+      "y" : 523
+    },
+    "minX" : 709,
+    "maxX" : 825,
+    "minY" : 481,
+    "maxY" : 574,
+    "prop" : {
+      "x" : 709,
+      "y" : 512,
+      "width" : 48,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 710,
+      "y" : 512
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 757,
+          "y" : 512
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 30,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 737,
+          "y" : 509
+        },
+        "to" : {
+          "x" : 750,
+          "y" : 481
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 34,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 752,
+          "y" : 537
+        },
+        "to" : {
+          "x" : 825,
+          "y" : 574
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 33,
+    "reactomeId" : 174247,
+    "displayName" : "Emi1:Cdh1 complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 916,
+      "y" : 481
+    },
+    "minX" : 847,
+    "maxX" : 986,
+    "minY" : 470,
+    "maxY" : 492,
+    "prop" : {
+      "x" : 847,
+      "y" : 470,
+      "width" : 139,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 854,
+      "y" : 471
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 30,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1697,
+    "reactomeId" : 68524,
+    "displayName" : "Ub",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 937,
+      "y" : 409
+    },
+    "minX" : 905,
+    "maxX" : 969,
+    "minY" : 367,
+    "maxY" : 420,
+    "prop" : {
+      "x" : 905,
+      "y" : 398,
+      "width" : 64,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 925,
+      "y" : 398
+    },
+    "connectors" : [ {
+      "edgeId" : 1696,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 936,
+          "y" : 392
+        },
+        "to" : {
+          "x" : 936,
+          "y" : 367
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 3,
+        "shape" : {
+          "a" : {
+            "x" : 930,
+            "y" : 373
+          },
+          "b" : {
+            "x" : 942,
+            "y" : 385
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 801,
+    "reactomeId" : 174140,
+    "displayName" : "Cdc2:Cyclin A:MCC:APC/C complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1061,
+      "y" : 1352
+    },
+    "minX" : 845,
+    "maxX" : 1124,
+    "minY" : 1217,
+    "maxY" : 1370,
+    "prop" : {
+      "x" : 999,
+      "y" : 1334,
+      "width" : 125,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1001,
+      "y" : 1335
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 799,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 802,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1032,
+          "y" : 1331
+        },
+        "to" : {
+          "x" : 845,
+          "y" : 1217
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1698,
+    "reactomeId" : 174068,
+    "displayName" : "multiubiquitinated Cdh1 associated with APC/C",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 937,
+      "y" : 250
+    },
+    "minX" : 872,
+    "maxX" : 1002,
+    "minY" : 225,
+    "maxY" : 275,
+    "prop" : {
+      "x" : 872,
+      "y" : 225,
+      "width" : 130,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 879,
+      "y" : 226
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1696,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1714,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 803,
+    "reactomeId" : 174222,
+    "displayName" : "multiubiquitinated Cyclin A associated with MCC:APC/C complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 614,
+      "y" : 1193
+    },
+    "minX" : 522,
+    "maxX" : 707,
+    "minY" : 1167,
+    "maxY" : 1219,
+    "prop" : {
+      "x" : 522,
+      "y" : 1167,
+      "width" : 185,
+      "height" : 52
+    },
+    "textPosition" : {
+      "x" : 529,
+      "y" : 1170
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 802,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 804,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 35,
+    "reactomeId" : 174112,
+    "displayName" : "CDC20",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 882,
+      "y" : 525
+    },
+    "minX" : 825,
+    "maxX" : 913,
+    "minY" : 508,
+    "maxY" : 574,
+    "prop" : {
+      "x" : 858,
+      "y" : 514,
+      "width" : 49,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 858,
+      "y" : 514
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 907,
+          "y" : 514
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 34,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 869,
+          "y" : 539
+        },
+        "to" : {
+          "x" : 825,
+          "y" : 574
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 36,
+    "reactomeId" : 174186,
+    "displayName" : "Emi1:Cdc20 complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 825,
+      "y" : 654
+    },
+    "minX" : 778,
+    "maxX" : 873,
+    "minY" : 638,
+    "maxY" : 671,
+    "prop" : {
+      "x" : 778,
+      "y" : 638,
+      "width" : 95,
+      "height" : 33
+    },
+    "textPosition" : {
+      "x" : 784,
+      "y" : 636
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 34,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 805,
+    "reactomeId" : 157415,
+    "displayName" : "p-T161-CDK1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 818,
+      "y" : 1124
+    },
+    "minX" : 768,
+    "maxX" : 1035,
+    "minY" : 1104,
+    "maxY" : 1190,
+    "prop" : {
+      "x" : 768,
+      "y" : 1113,
+      "width" : 101,
+      "height" : 22
+    },
+    "innerProp" : {
+      "x" : 768,
+      "y" : 1119,
+      "width" : 101,
+      "height" : 16
+    },
+    "textPosition" : {
+      "x" : 771,
+      "y" : 1113
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 170054,
+      "label" : "P",
+      "description" : "O-phospho-L-threonine at 161",
+      "shape" : {
+        "a" : {
+          "x" : 778,
+          "y" : 1107
+        },
+        "b" : {
+          "x" : 790,
+          "y" : 1119
+        },
+        "s" : "P",
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 869,
+          "y" : 1113
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 804,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 810,
+          "y" : 1138
+        },
+        "to" : {
+          "x" : 774,
+          "y" : 1190
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 809,
+          "y" : 1146
+        },
+        "b" : {
+          "x" : 810,
+          "y" : 1138
+        },
+        "c" : {
+          "x" : 803,
+          "y" : 1141
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 1456,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 872,
+          "y" : 1119
+        },
+        "to" : {
+          "x" : 1035,
+          "y" : 1104
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 879,
+          "y" : 1114
+        },
+        "b" : {
+          "x" : 872,
+          "y" : 1119
+        },
+        "c" : {
+          "x" : 879,
+          "y" : 1122
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 38,
+    "reactomeId" : 29358,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 240,
+      "y" : 503
+    },
+    "minX" : 221,
+    "maxX" : 309,
+    "minY" : 487,
+    "maxY" : 526,
+    "prop" : {
+      "x" : 221,
+      "y" : 488,
+      "width" : 38,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 224,
+      "y" : 492
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 254,
+          "y" : 493
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 37,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 262,
+          "y" : 509
+        },
+        "to" : {
+          "x" : 309,
+          "y" : 526
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 39,
+    "reactomeId" : 188679,
+    "displayName" : "Emi1:Cdc20/Cdh1 complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 245,
+      "y" : 569
+    },
+    "minX" : 176,
+    "maxX" : 315,
+    "minY" : 526,
+    "maxY" : 614,
+    "prop" : {
+      "x" : 176,
+      "y" : 551,
+      "width" : 139,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 185,
+      "y" : 553
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 37,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 272,
+          "y" : 548
+        },
+        "to" : {
+          "x" : 309,
+          "y" : 526
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 43,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 272,
+          "y" : 591
+        },
+        "to" : {
+          "x" : 313,
+          "y" : 614
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 40,
+    "reactomeId" : 186975,
+    "displayName" : "Phospho-Emi1(Ser 182):Cdc20/Cdh1 complexes",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 512,
+      "y" : 536
+    },
+    "minX" : 365,
+    "maxX" : 591,
+    "minY" : 511,
+    "maxY" : 561,
+    "prop" : {
+      "x" : 433,
+      "y" : 511,
+      "width" : 158,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 436,
+      "y" : 526
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 37,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 430,
+          "y" : 530
+        },
+        "to" : {
+          "x" : 365,
+          "y" : 526
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 423,
+          "y" : 534
+        },
+        "b" : {
+          "x" : 430,
+          "y" : 530
+        },
+        "c" : {
+          "x" : 423,
+          "y" : 526
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 41,
+    "reactomeId" : 113582,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 448,
+      "y" : 468
+    },
+    "minX" : 365,
+    "maxX" : 469,
+    "minY" : 452,
+    "maxY" : 526,
+    "prop" : {
+      "x" : 429,
+      "y" : 453,
+      "width" : 39,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 432,
+      "y" : 457
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 463,
+          "y" : 458
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 37,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 426,
+          "y" : 481
+        },
+        "to" : {
+          "x" : 365,
+          "y" : 526
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 423,
+          "y" : 488
+        },
+        "b" : {
+          "x" : 426,
+          "y" : 481
+        },
+        "c" : {
+          "x" : 418,
+          "y" : 482
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 42,
+    "reactomeId" : 170160,
+    "displayName" : "CCNB1:p-T161-CDK1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 341,
+      "y" : 417
+    },
+    "minX" : 255,
+    "maxX" : 555,
+    "minY" : 307,
+    "maxY" : 518,
+    "prop" : {
+      "x" : 269,
+      "y" : 401,
+      "width" : 145,
+      "height" : 33
+    },
+    "textPosition" : {
+      "x" : 272,
+      "y" : 413
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 797,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 328,
+          "y" : 398
+        },
+        "to" : {
+          "x" : 261,
+          "y" : 314
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 259,
+          "y" : 311
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 37,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 340,
+          "y" : 437
+        },
+        "to" : {
+          "x" : 338,
+          "y" : 510
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 337,
+          "y" : 514
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 628,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 417,
+          "y" : 416
+        },
+        "to" : {
+          "x" : 547,
+          "y" : 414
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 551,
+          "y" : 414
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 44,
+    "reactomeId" : 29358,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 230,
+      "y" : 633
+    },
+    "minX" : 211,
+    "maxX" : 313,
+    "minY" : 614,
+    "maxY" : 648,
+    "prop" : {
+      "x" : 211,
+      "y" : 618,
+      "width" : 38,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 214,
+      "y" : 622
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 244,
+          "y" : 623
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 43,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 252,
+          "y" : 628
+        },
+        "to" : {
+          "x" : 313,
+          "y" : 614
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 276,
+            "y" : 615
+          },
+          "b" : {
+            "x" : 288,
+            "y" : 627
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 1580,
+    "reactomeId" : 174181,
+    "displayName" : "phospho-APC/C:Cdh1 complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 135,
+      "y" : 1141
+    },
+    "minX" : 81,
+    "maxX" : 247,
+    "minY" : 1034,
+    "maxY" : 1216,
+    "prop" : {
+      "x" : 81,
+      "y" : 1123,
+      "width" : 108,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 82,
+      "y" : 1124
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1796,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 142,
+          "y" : 1120
+        },
+        "to" : {
+          "x" : 178,
+          "y" : 1034
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 141,
+          "y" : 1112
+        },
+        "b" : {
+          "x" : 142,
+          "y" : 1120
+        },
+        "c" : {
+          "x" : 148,
+          "y" : 1115
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 1678,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 192,
+          "y" : 1138
+        },
+        "to" : {
+          "x" : 247,
+          "y" : 1136
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 199,
+          "y" : 1134
+        },
+        "b" : {
+          "x" : 192,
+          "y" : 1138
+        },
+        "c" : {
+          "x" : 199,
+          "y" : 1142
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 1641,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 143,
+          "y" : 1162
+        },
+        "to" : {
+          "x" : 172,
+          "y" : 1216
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1579,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 45,
+    "reactomeId" : 113582,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 438,
+      "y" : 670
+    },
+    "minX" : 386,
+    "maxX" : 459,
+    "minY" : 614,
+    "maxY" : 685,
+    "prop" : {
+      "x" : 419,
+      "y" : 655,
+      "width" : 39,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 422,
+      "y" : 659
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 453,
+          "y" : 660
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 43,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 424,
+          "y" : 652
+        },
+        "to" : {
+          "x" : 386,
+          "y" : 614
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 399,
+            "y" : 627
+          },
+          "b" : {
+            "x" : 411,
+            "y" : 639
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 416,
+          "y" : 650
+        },
+        "b" : {
+          "x" : 424,
+          "y" : 652
+        },
+        "c" : {
+          "x" : 422,
+          "y" : 644
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 46,
+    "reactomeId" : 176446,
+    "displayName" : "phospho-Emi1(Ser 145, Ser 149):Cdc20/Cdh1 complexes",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 510,
+      "y" : 593
+    },
+    "minX" : 386,
+    "maxX" : 594,
+    "minY" : 568,
+    "maxY" : 619,
+    "prop" : {
+      "x" : 426,
+      "y" : 568,
+      "width" : 168,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 434,
+      "y" : 570
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 43,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 423,
+          "y" : 607
+        },
+        "to" : {
+          "x" : 386,
+          "y" : 614
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 417,
+          "y" : 612
+        },
+        "b" : {
+          "x" : 423,
+          "y" : 607
+        },
+        "c" : {
+          "x" : 415,
+          "y" : 604
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 1458,
+    "reactomeId" : 113595,
+    "displayName" : "Ub",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 769,
+      "y" : 1058
+    },
+    "minX" : 729,
+    "maxX" : 1035,
+    "minY" : 995,
+    "maxY" : 1104,
+    "prop" : {
+      "x" : 729,
+      "y" : 1047,
+      "width" : 81,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 757,
+      "y" : 1047
+    },
+    "connectors" : [ {
+      "edgeId" : 1496,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 768,
+          "y" : 1041
+        },
+        "to" : {
+          "x" : 768,
+          "y" : 995
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 762,
+            "y" : 1012
+          },
+          "b" : {
+            "x" : 774,
+            "y" : 1024
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 764,
+          "y" : 1034
+        },
+        "b" : {
+          "x" : 768,
+          "y" : 1041
+        },
+        "c" : {
+          "x" : 772,
+          "y" : 1034
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 1456,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 816,
+          "y" : 1065
+        },
+        "to" : {
+          "x" : 1035,
+          "y" : 1104
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 919,
+            "y" : 1078
+          },
+          "b" : {
+            "x" : 931,
+            "y" : 1090
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 824,
+          "y" : 1062
+        },
+        "b" : {
+          "x" : 816,
+          "y" : 1065
+        },
+        "c" : {
+          "x" : 822,
+          "y" : 1070
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 1715,
+    "reactomeId" : 177750,
+    "displayName" : "26S proteasome",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 799,
+      "y" : 183
+    },
+    "minX" : 743,
+    "maxX" : 856,
+    "minY" : 172,
+    "maxY" : 239,
+    "prop" : {
+      "x" : 743,
+      "y" : 172,
+      "width" : 113,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 748,
+      "y" : 173
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1714,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 799,
+          "y" : 197
+        },
+        "to" : {
+          "x" : 801,
+          "y" : 231
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 801,
+          "y" : 235
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 1717,
+    "reactomeId" : 68524,
+    "displayName" : "Ub",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 718,
+      "y" : 214
+    },
+    "minX" : 685,
+    "maxX" : 759,
+    "minY" : 203,
+    "maxY" : 248,
+    "prop" : {
+      "x" : 685,
+      "y" : 203,
+      "width" : 67,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 706,
+      "y" : 203
+    },
+    "connectors" : [ {
+      "edgeId" : 1714,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 731,
+          "y" : 231
+        },
+        "to" : {
+          "x" : 759,
+          "y" : 248
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 3,
+        "shape" : {
+          "a" : {
+            "x" : 739,
+            "y" : 233
+          },
+          "b" : {
+            "x" : 751,
+            "y" : 245
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 739,
+          "y" : 231
+        },
+        "b" : {
+          "x" : 731,
+          "y" : 231
+        },
+        "c" : {
+          "x" : 735,
+          "y" : 238
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 822,
+    "reactomeId" : 177329,
+    "displayName" : "NEK2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 701,
+      "y" : 1335
+    },
+    "minX" : 674,
+    "maxX" : 753,
+    "minY" : 1319,
+    "maxY" : 1345,
+    "prop" : {
+      "x" : 674,
+      "y" : 1325,
+      "width" : 55,
+      "height" : 20
+    },
+    "textPosition" : {
+      "x" : 681,
+      "y" : 1325
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 729,
+          "y" : 1325
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 821,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 732,
+          "y" : 1337
+        },
+        "to" : {
+          "x" : 753,
+          "y" : 1339
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1719,
+    "reactomeId" : 113595,
+    "displayName" : "Ub",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 836,
+      "y" : 1428
+    },
+    "minX" : 801,
+    "maxX" : 905,
+    "minY" : 1394,
+    "maxY" : 1500,
+    "prop" : {
+      "x" : 801,
+      "y" : 1417,
+      "width" : 70,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 824,
+      "y" : 1417
+    },
+    "connectors" : [ {
+      "edgeId" : 1370,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 858,
+          "y" : 1411
+        },
+        "to" : {
+          "x" : 905,
+          "y" : 1394
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 3,
+        "shape" : {
+          "a" : {
+            "x" : 875,
+            "y" : 1396
+          },
+          "b" : {
+            "x" : 887,
+            "y" : 1408
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 863,
+          "y" : 1405
+        },
+        "b" : {
+          "x" : 858,
+          "y" : 1411
+        },
+        "c" : {
+          "x" : 866,
+          "y" : 1412
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 824,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 839,
+          "y" : 1445
+        },
+        "to" : {
+          "x" : 861,
+          "y" : 1500
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 3,
+        "shape" : {
+          "a" : {
+            "x" : 844,
+            "y" : 1466
+          },
+          "b" : {
+            "x" : 856,
+            "y" : 1478
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 823,
+    "reactomeId" : 179413,
+    "displayName" : "Nek2A:MCC:APC/C complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 753,
+      "y" : 1499
+    },
+    "minX" : 705,
+    "maxX" : 914,
+    "minY" : 1473,
+    "maxY" : 1531,
+    "prop" : {
+      "x" : 705,
+      "y" : 1473,
+      "width" : 97,
+      "height" : 53
+    },
+    "textPosition" : {
+      "x" : 713,
+      "y" : 1477
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 821,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 824,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 805,
+          "y" : 1499
+        },
+        "to" : {
+          "x" : 861,
+          "y" : 1500
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 824,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 805,
+          "y" : 1508
+        },
+        "to" : {
+          "x" : 910,
+          "y" : 1531
+        }
+      }, {
+        "from" : {
+          "x" : 910,
+          "y" : 1531
+        },
+        "to" : {
+          "x" : 910,
+          "y" : 1515
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 910,
+          "y" : 1511
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 825,
+    "reactomeId" : 179414,
+    "displayName" : "Multiubiquitinated Nek2A",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1013,
+      "y" : 1503
+    },
+    "minX" : 958,
+    "maxX" : 1069,
+    "minY" : 1485,
+    "maxY" : 1521,
+    "prop" : {
+      "x" : 958,
+      "y" : 1485,
+      "width" : 111,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 956,
+      "y" : 1486
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1370,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 824,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1339,
+    "reactomeId" : 113595,
+    "displayName" : "Ub",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 913,
+      "y" : 1191
+    },
+    "minX" : 774,
+    "maxX" : 949,
+    "minY" : 1180,
+    "maxY" : 1218,
+    "prop" : {
+      "x" : 877,
+      "y" : 1180,
+      "width" : 72,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 901,
+      "y" : 1180
+    },
+    "connectors" : [ {
+      "edgeId" : 802,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 884,
+          "y" : 1208
+        },
+        "to" : {
+          "x" : 845,
+          "y" : 1217
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 858,
+            "y" : 1206
+          },
+          "b" : {
+            "x" : 870,
+            "y" : 1218
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    }, {
+      "edgeId" : 804,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 871,
+          "y" : 1190
+        },
+        "to" : {
+          "x" : 774,
+          "y" : 1190
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 816,
+            "y" : 1184
+          },
+          "b" : {
+            "x" : 828,
+            "y" : 1196
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 864,
+          "y" : 1194
+        },
+        "b" : {
+          "x" : 871,
+          "y" : 1190
+        },
+        "c" : {
+          "x" : 864,
+          "y" : 1186
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 64,
+    "reactomeId" : 174155,
+    "displayName" : "BTRC:CUL1:SKP1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 464,
+      "y" : 916
+    },
+    "minX" : 413,
+    "maxX" : 563,
+    "minY" : 766,
+    "maxY" : 982,
+    "prop" : {
+      "x" : 413,
+      "y" : 898,
+      "width" : 103,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 426,
+      "y" : 899
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 607,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 464,
+          "y" : 895
+        },
+        "to" : {
+          "x" : 465,
+          "y" : 774
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 465,
+          "y" : 770
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 610,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 464,
+          "y" : 937
+        },
+        "to" : {
+          "x" : 465,
+          "y" : 982
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 468,
+          "y" : 944
+        },
+        "b" : {
+          "x" : 464,
+          "y" : 937
+        },
+        "c" : {
+          "x" : 460,
+          "y" : 944
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 63,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 519,
+          "y" : 913
+        },
+        "to" : {
+          "x" : 563,
+          "y" : 911
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 65,
+    "reactomeId" : 177332,
+    "displayName" : "phospho-Emi1:Cdc20/Cdh1 complexes",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 654,
+      "y" : 918
+    },
+    "minX" : 563,
+    "maxX" : 709,
+    "minY" : 895,
+    "maxY" : 942,
+    "prop" : {
+      "x" : 600,
+      "y" : 895,
+      "width" : 109,
+      "height" : 47
+    },
+    "textPosition" : {
+      "x" : 605,
+      "y" : 894
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 63,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 594,
+          "y" : 913
+        },
+        "to" : {
+          "x" : 563,
+          "y" : 911
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 66,
+    "reactomeId" : 174138,
+    "displayName" : "SCF-beta-TrCP:phospho-Emi1 complexes",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 563,
+      "y" : 824
+    },
+    "minX" : 513,
+    "maxX" : 614,
+    "minY" : 758,
+    "maxY" : 852,
+    "prop" : {
+      "x" : 513,
+      "y" : 797,
+      "width" : 101,
+      "height" : 55
+    },
+    "textPosition" : {
+      "x" : 513,
+      "y" : 803
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 607,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 563,
+          "y" : 794
+        },
+        "to" : {
+          "x" : 563,
+          "y" : 758
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 63,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1475,
+    "reactomeId" : 174190,
+    "displayName" : "PTTG1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1271,
+      "y" : 968
+    },
+    "minX" : 1191,
+    "maxX" : 1304,
+    "minY" : 951,
+    "maxY" : 979,
+    "prop" : {
+      "x" : 1244,
+      "y" : 957,
+      "width" : 54,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1247,
+      "y" : 957
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1298,
+          "y" : 957
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 1474,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1241,
+          "y" : 962
+        },
+        "to" : {
+          "x" : 1191,
+          "y" : 953
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1476,
+    "reactomeId" : 174212,
+    "displayName" : "CDC20:p-APC/C:PTTG1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1189,
+      "y" : 857
+    },
+    "minX" : 937,
+    "maxX" : 1244,
+    "minY" : 832,
+    "maxY" : 882,
+    "prop" : {
+      "x" : 1135,
+      "y" : 832,
+      "width" : 109,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1135,
+      "y" : 847
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1474,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1477,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1132,
+          "y" : 853
+        },
+        "to" : {
+          "x" : 937,
+          "y" : 840
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1866,
+    "reactomeId" : 113595,
+    "displayName" : "Ub",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 564,
+      "y" : 963
+    },
+    "minX" : 465,
+    "maxX" : 605,
+    "minY" : 952,
+    "maxY" : 982,
+    "prop" : {
+      "x" : 524,
+      "y" : 952,
+      "width" : 81,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 552,
+      "y" : 952
+    },
+    "connectors" : [ {
+      "edgeId" : 610,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 518,
+          "y" : 970
+        },
+        "to" : {
+          "x" : 465,
+          "y" : 982
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 485,
+            "y" : 970
+          },
+          "b" : {
+            "x" : 497,
+            "y" : 982
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 512,
+          "y" : 975
+        },
+        "b" : {
+          "x" : 518,
+          "y" : 970
+        },
+        "c" : {
+          "x" : 510,
+          "y" : 968
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 1868,
+    "reactomeId" : 3095944,
+    "displayName" : "CDC20:pAPC/C:K11polyUb-PTTG1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 767,
+      "y" : 862
+    },
+    "minX" : 727,
+    "maxX" : 807,
+    "minY" : 830,
+    "maxY" : 894,
+    "prop" : {
+      "x" : 727,
+      "y" : 830,
+      "width" : 80,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 727,
+      "y" : 831
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1477,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1496,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1869,
+    "reactomeId" : 3002800,
+    "displayName" : "p-T210-PLK1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 206,
+      "y" : 439
+    },
+    "minX" : 160,
+    "maxX" : 343,
+    "minY" : 335,
+    "maxY" : 606,
+    "prop" : {
+      "x" : 160,
+      "y" : 428,
+      "width" : 92,
+      "height" : 22
+    },
+    "innerProp" : {
+      "x" : 160,
+      "y" : 428,
+      "width" : 92,
+      "height" : 16
+    },
+    "textPosition" : {
+      "x" : 160,
+      "y" : 428
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 3000316,
+      "label" : "P",
+      "description" : "O-phospho-L-threonine at 210",
+      "shape" : {
+        "a" : {
+          "x" : 245,
+          "y" : 444
+        },
+        "b" : {
+          "x" : 257,
+          "y" : 456
+        },
+        "s" : "P",
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 252,
+          "y" : 428
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 780,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 207,
+          "y" : 425
+        },
+        "to" : {
+          "x" : 220,
+          "y" : 343
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 221,
+          "y" : 339
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 43,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 235,
+          "y" : 453
+        },
+        "to" : {
+          "x" : 309,
+          "y" : 477
+        }
+      }, {
+        "from" : {
+          "x" : 309,
+          "y" : 477
+        },
+        "to" : {
+          "x" : 338,
+          "y" : 598
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 339,
+          "y" : 602
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 608,
+    "reactomeId" : 113595,
+    "displayName" : "Ub",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 681,
+      "y" : 759
+    },
+    "minX" : 563,
+    "maxX" : 937,
+    "minY" : 748,
+    "maxY" : 840,
+    "prop" : {
+      "x" : 645,
+      "y" : 748,
+      "width" : 73,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 669,
+      "y" : 748
+    },
+    "connectors" : [ {
+      "edgeId" : 1477,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 715,
+          "y" : 776
+        },
+        "to" : {
+          "x" : 937,
+          "y" : 840
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 3,
+        "shape" : {
+          "a" : {
+            "x" : 820,
+            "y" : 802
+          },
+          "b" : {
+            "x" : 832,
+            "y" : 814
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    }, {
+      "edgeId" : 607,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 639,
+          "y" : 758
+        },
+        "to" : {
+          "x" : 563,
+          "y" : 758
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 3,
+        "shape" : {
+          "a" : {
+            "x" : 595,
+            "y" : 752
+          },
+          "b" : {
+            "x" : 607,
+            "y" : 764
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 609,
+    "reactomeId" : 174061,
+    "displayName" : "SCF-associated multiubiquitinated Emi1complexes",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 362,
+      "y" : 758
+    },
+    "minX" : 299,
+    "maxX" : 425,
+    "minY" : 733,
+    "maxY" : 783,
+    "prop" : {
+      "x" : 299,
+      "y" : 733,
+      "width" : 126,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 304,
+      "y" : 734
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 607,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 610,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 611,
+    "reactomeId" : 177320,
+    "displayName" : "Cdc20/Cdh1",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 417,
+      "y" : 1345
+    },
+    "minX" : 370,
+    "maxX" : 465,
+    "minY" : 982,
+    "maxY" : 1355,
+    "prop" : {
+      "x" : 370,
+      "y" : 1336,
+      "width" : 95,
+      "height" : 19
+    },
+    "textPosition" : {
+      "x" : 376,
+      "y" : 1335
+    },
+    "connectors" : [ {
+      "edgeId" : 610,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 418,
+          "y" : 1330
+        },
+        "to" : {
+          "x" : 465,
+          "y" : 982
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 415,
+          "y" : 1323
+        },
+        "b" : {
+          "x" : 418,
+          "y" : 1330
+        },
+        "c" : {
+          "x" : 423,
+          "y" : 1324
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 612,
+    "reactomeId" : 68819,
+    "displayName" : "26S proteasome",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 364,
+      "y" : 1059
+    },
+    "minX" : 199,
+    "maxX" : 760,
+    "minY" : 966,
+    "maxY" : 1183,
+    "prop" : {
+      "x" : 308,
+      "y" : 1048,
+      "width" : 113,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 313,
+      "y" : 1049
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1796,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 328,
+          "y" : 1045
+        },
+        "to" : {
+          "x" : 206,
+          "y" : 1009
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 203,
+          "y" : 1008
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 1678,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 340,
+          "y" : 1073
+        },
+        "to" : {
+          "x" : 274,
+          "y" : 1102
+        }
+      }, {
+        "from" : {
+          "x" : 274,
+          "y" : 1102
+        },
+        "to" : {
+          "x" : 275,
+          "y" : 1121
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 275,
+          "y" : 1125
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 1496,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 412,
+          "y" : 1045
+        },
+        "to" : {
+          "x" : 752,
+          "y" : 970
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 756,
+          "y" : 970
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 610,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 364,
+          "y" : 1045
+        },
+        "to" : {
+          "x" : 365,
+          "y" : 998
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 365,
+          "y" : 994
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 804,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 405,
+          "y" : 1073
+        },
+        "to" : {
+          "x" : 744,
+          "y" : 1159
+        }
+      }, {
+        "from" : {
+          "x" : 744,
+          "y" : 1159
+        },
+        "to" : {
+          "x" : 745,
+          "y" : 1175
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 745,
+          "y" : 1179
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 740,
+    "reactomeId" : 141412,
+    "displayName" : "CDC20",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 508,
+      "y" : 1389
+    },
+    "minX" : 441,
+    "maxX" : 1441,
+    "minY" : 1011,
+    "maxY" : 1586,
+    "prop" : {
+      "x" : 483,
+      "y" : 1378,
+      "width" : 51,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 484,
+      "y" : 1378
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 534,
+          "y" : 1378
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 739,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 488,
+          "y" : 1403
+        },
+        "to" : {
+          "x" : 441,
+          "y" : 1427
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 743,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 508,
+          "y" : 1403
+        },
+        "to" : {
+          "x" : 509,
+          "y" : 1505
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1533,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 515,
+          "y" : 1403
+        },
+        "to" : {
+          "x" : 634,
+          "y" : 1586
+        }
+      }, {
+        "from" : {
+          "x" : 634,
+          "y" : 1586
+        },
+        "to" : {
+          "x" : 1328,
+          "y" : 1580
+        }
+      }, {
+        "from" : {
+          "x" : 1328,
+          "y" : 1580
+        },
+        "to" : {
+          "x" : 1441,
+          "y" : 1011
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 522,
+          "y" : 1407
+        },
+        "b" : {
+          "x" : 515,
+          "y" : 1403
+        },
+        "c" : {
+          "x" : 515,
+          "y" : 1411
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 741,
+    "reactomeId" : 141447,
+    "displayName" : "Activated MAD2L1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 455,
+      "y" : 1466
+    },
+    "minX" : 422,
+    "maxX" : 509,
+    "minY" : 1427,
+    "maxY" : 1505,
+    "prop" : {
+      "x" : 422,
+      "y" : 1448,
+      "width" : 66,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 422,
+      "y" : 1449
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 488,
+          "y" : 1448
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 739,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 448,
+          "y" : 1445
+        },
+        "to" : {
+          "x" : 441,
+          "y" : 1427
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 743,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 480,
+          "y" : 1488
+        },
+        "to" : {
+          "x" : 509,
+          "y" : 1505
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 742,
+    "reactomeId" : 141408,
+    "displayName" : "MAD2*CDC20 complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 334,
+      "y" : 1432
+    },
+    "minX" : 288,
+    "maxX" : 381,
+    "minY" : 1414,
+    "maxY" : 1450,
+    "prop" : {
+      "x" : 288,
+      "y" : 1414,
+      "width" : 93,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 288,
+      "y" : 1415
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 739,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 744,
+    "reactomeId" : 141416,
+    "displayName" : "BUB3",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 425,
+      "y" : 1564
+    },
+    "minX" : 368,
+    "maxX" : 509,
+    "minY" : 1505,
+    "maxY" : 1582,
+    "prop" : {
+      "x" : 368,
+      "y" : 1546,
+      "width" : 114,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 406,
+      "y" : 1553
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 482,
+          "y" : 1546
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 743,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 450,
+          "y" : 1543
+        },
+        "to" : {
+          "x" : 509,
+          "y" : 1505
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 745,
+    "reactomeId" : 141436,
+    "displayName" : "BUB1B",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 544,
+      "y" : 1561
+    },
+    "minX" : 509,
+    "maxX" : 577,
+    "minY" : 1505,
+    "maxY" : 1572,
+    "prop" : {
+      "x" : 518,
+      "y" : 1550,
+      "width" : 53,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 522,
+      "y" : 1550
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 571,
+          "y" : 1550
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 743,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 537,
+          "y" : 1547
+        },
+        "to" : {
+          "x" : 509,
+          "y" : 1505
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 746,
+    "reactomeId" : 141440,
+    "displayName" : "hBUBR1:hBUB3:MAD2*:CDC20 complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 656,
+      "y" : 1397
+    },
+    "minX" : 603,
+    "maxX" : 710,
+    "minY" : 1301,
+    "maxY" : 1422,
+    "prop" : {
+      "x" : 603,
+      "y" : 1372,
+      "width" : 107,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 607,
+      "y" : 1373
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 777,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 650,
+          "y" : 1369
+        },
+        "to" : {
+          "x" : 635,
+          "y" : 1301
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 743,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1642,
+    "reactomeId" : 174056,
+    "displayName" : "(APC/C:Cdh1)-targeted cell cycle proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 200,
+      "y" : 1351
+    },
+    "minX" : 146,
+    "maxX" : 255,
+    "minY" : 1216,
+    "maxY" : 1376,
+    "prop" : {
+      "x" : 146,
+      "y" : 1326,
+      "width" : 109,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 153,
+      "y" : 1326
+    },
+    "connectors" : [ {
+      "edgeId" : 1641,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 194,
+          "y" : 1320
+        },
+        "to" : {
+          "x" : 172,
+          "y" : 1216
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1643,
+    "reactomeId" : 174107,
+    "displayName" : "cell cycle proteins:phospho-APC/C:Cdh1 complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 269,
+      "y" : 1218
+    },
+    "minX" : 221,
+    "maxX" : 366,
+    "minY" : 1181,
+    "maxY" : 1255,
+    "prop" : {
+      "x" : 221,
+      "y" : 1181,
+      "width" : 96,
+      "height" : 74
+    },
+    "textPosition" : {
+      "x" : 227,
+      "y" : 1178
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1641,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1659,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 320,
+          "y" : 1218
+        },
+        "to" : {
+          "x" : 366,
+          "y" : 1218
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1659,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 320,
+          "y" : 1199
+        },
+        "to" : {
+          "x" : 335,
+          "y" : 1193
+        }
+      }, {
+        "from" : {
+          "x" : 335,
+          "y" : 1193
+        },
+        "to" : {
+          "x" : 350,
+          "y" : 1193
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 354,
+          "y" : 1193
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 1777,
+    "reactomeId" : 174196,
+    "displayName" : "hBUBR1:hBUB3:MAD2* complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1232,
+      "y" : 1360
+    },
+    "minX" : 1168,
+    "maxX" : 1296,
+    "minY" : 1296,
+    "maxY" : 1378,
+    "prop" : {
+      "x" : 1168,
+      "y" : 1342,
+      "width" : 128,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1181,
+      "y" : 1343
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1776,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1214,
+          "y" : 1339
+        },
+        "to" : {
+          "x" : 1168,
+          "y" : 1296
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1206,
+          "y" : 1337
+        },
+        "b" : {
+          "x" : 1214,
+          "y" : 1339
+        },
+        "c" : {
+          "x" : 1212,
+          "y" : 1331
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 629,
+    "reactomeId" : 174099,
+    "displayName" : "FZR1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 597,
+      "y" : 462
+    },
+    "minX" : 563,
+    "maxX" : 625,
+    "minY" : 440,
+    "maxY" : 472,
+    "prop" : {
+      "x" : 576,
+      "y" : 452,
+      "width" : 43,
+      "height" : 20
+    },
+    "textPosition" : {
+      "x" : 579,
+      "y" : 452
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 619,
+          "y" : 452
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 628,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 581,
+          "y" : 449
+        },
+        "to" : {
+          "x" : 563,
+          "y" : 440
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 630,
+    "reactomeId" : 29358,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 529,
+      "y" : 463
+    },
+    "minX" : 510,
+    "maxX" : 563,
+    "minY" : 440,
+    "maxY" : 478,
+    "prop" : {
+      "x" : 510,
+      "y" : 448,
+      "width" : 38,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 513,
+      "y" : 452
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 543,
+          "y" : 453
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 628,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 551,
+          "y" : 450
+        },
+        "to" : {
+          "x" : 563,
+          "y" : 440
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 631,
+    "reactomeId" : 113582,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 518,
+      "y" : 357
+    },
+    "minX" : 499,
+    "maxX" : 564,
+    "minY" : 341,
+    "maxY" : 387,
+    "prop" : {
+      "x" : 499,
+      "y" : 342,
+      "width" : 39,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 502,
+      "y" : 346
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 533,
+          "y" : 347
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 628,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 541,
+          "y" : 369
+        },
+        "to" : {
+          "x" : 564,
+          "y" : 387
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 549,
+          "y" : 370
+        },
+        "b" : {
+          "x" : 541,
+          "y" : 369
+        },
+        "c" : {
+          "x" : 544,
+          "y" : 376
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 1528,
+    "reactomeId" : 174193,
+    "displayName" : "p-FZR1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 143,
+      "y" : 1610
+    },
+    "minX" : 91,
+    "maxX" : 190,
+    "minY" : 1563,
+    "maxY" : 1627,
+    "prop" : {
+      "x" : 103,
+      "y" : 1593,
+      "width" : 81,
+      "height" : 34
+    },
+    "innerProp" : {
+      "x" : 103,
+      "y" : 1599,
+      "width" : 81,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 117,
+      "y" : 1599
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 174179,
+      "label" : "P",
+      "description" : "phosphorylated residue at unknown position",
+      "shape" : {
+        "a" : {
+          "x" : 113,
+          "y" : 1587
+        },
+        "b" : {
+          "x" : 125,
+          "y" : 1599
+        },
+        "s" : "P",
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 184,
+          "y" : 1593
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 1527,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 124,
+          "y" : 1590
+        },
+        "to" : {
+          "x" : 91,
+          "y" : 1563
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1529,
+    "reactomeId" : 29356,
+    "displayName" : "H2O",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 64,
+      "y" : 1610
+    },
+    "minX" : 44,
+    "maxX" : 91,
+    "minY" : 1563,
+    "maxY" : 1625,
+    "prop" : {
+      "x" : 44,
+      "y" : 1595,
+      "width" : 41,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 47,
+      "y" : 1599
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 80,
+          "y" : 1600
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 1527,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 72,
+          "y" : 1592
+        },
+        "to" : {
+          "x" : 91,
+          "y" : 1563
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1530,
+    "reactomeId" : 111294,
+    "displayName" : "PPi",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 57,
+      "y" : 1469
+    },
+    "minX" : 42,
+    "maxX" : 92,
+    "minY" : 1453,
+    "maxY" : 1496,
+    "prop" : {
+      "x" : 42,
+      "y" : 1454,
+      "width" : 31,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 45,
+      "y" : 1458
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 68,
+          "y" : 1459
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 1527,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 76,
+          "y" : 1480
+        },
+        "to" : {
+          "x" : 92,
+          "y" : 1496
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 84,
+          "y" : 1482
+        },
+        "b" : {
+          "x" : 76,
+          "y" : 1480
+        },
+        "c" : {
+          "x" : 78,
+          "y" : 1488
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 1531,
+    "reactomeId" : 174249,
+    "displayName" : "FZR1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 170,
+      "y" : 1465
+    },
+    "minX" : 88,
+    "maxX" : 198,
+    "minY" : 1305,
+    "maxY" : 1496,
+    "prop" : {
+      "x" : 148,
+      "y" : 1454,
+      "width" : 44,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 151,
+      "y" : 1454
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 192,
+          "y" : 1454
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 1579,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 164,
+          "y" : 1451
+        },
+        "to" : {
+          "x" : 88,
+          "y" : 1305
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1527,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 145,
+          "y" : 1473
+        },
+        "to" : {
+          "x" : 92,
+          "y" : 1496
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 140,
+          "y" : 1479
+        },
+        "b" : {
+          "x" : 145,
+          "y" : 1473
+        },
+        "c" : {
+          "x" : 137,
+          "y" : 1472
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 1660,
+    "reactomeId" : 174248,
+    "displayName" : "multiubiquitinated cell cycle protein:APC/C:Cdh1 complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 366,
+      "y" : 1137
+    },
+    "minX" : 300,
+    "maxX" : 433,
+    "minY" : 1105,
+    "maxY" : 1169,
+    "prop" : {
+      "x" : 300,
+      "y" : 1105,
+      "width" : 133,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 300,
+      "y" : 1120
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1678,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1659,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1532,
+    "reactomeId" : 174146,
+    "displayName" : "phospho-Cdh1 phosphatase",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 174,
+      "y" : 1534
+    },
+    "minX" : 100,
+    "maxX" : 224,
+    "minY" : 1516,
+    "maxY" : 1552,
+    "prop" : {
+      "x" : 125,
+      "y" : 1516,
+      "width" : 99,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 125,
+      "y" : 1516
+    },
+    "connectors" : [ {
+      "edgeId" : 1527,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 119,
+          "y" : 1534
+        },
+        "to" : {
+          "x" : 108,
+          "y" : 1534
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 104,
+          "y" : 1534
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 1,
+    "reactomeId" : 188371,
+    "displayName" : "Association of Cyclin A:Cdk2 with Cdh1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 239,
+      "y" : 217
+    },
+    "minX" : 218,
+    "maxX" : 279,
+    "minY" : 211,
+    "maxY" : 223,
+    "segments" : [ {
+      "from" : {
+        "x" : 218,
+        "y" : 216
+      },
+      "to" : {
+        "x" : 239,
+        "y" : 217
+      }
+    }, {
+      "from" : {
+        "x" : 239,
+        "y" : 217
+      },
+      "to" : {
+        "x" : 279,
+        "y" : 216
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 272,
+        "y" : 220
+      },
+      "b" : {
+        "x" : 279,
+        "y" : 216
+      },
+      "c" : {
+        "x" : 272,
+        "y" : 212
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 233,
+        "y" : 211
+      },
+      "b" : {
+        "x" : 245,
+        "y" : 223
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2,
+      "points" : [ {
+        "x" : 188,
+        "y" : 216
+      } ]
+    }, {
+      "id" : 3,
+      "points" : [ {
+        "x" : 219,
+        "y" : 184
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 4
+    } ]
+  }, {
+    "id" : 1474,
+    "reactomeId" : 174121,
+    "displayName" : "Association of Securin with Cdc20:APC/C complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1190,
+      "y" : 932
+    },
+    "minX" : 1184,
+    "maxX" : 1196,
+    "minY" : 885,
+    "maxY" : 953,
+    "segments" : [ {
+      "from" : {
+        "x" : 1191,
+        "y" : 953
+      },
+      "to" : {
+        "x" : 1190,
+        "y" : 932
+      }
+    }, {
+      "from" : {
+        "x" : 1190,
+        "y" : 932
+      },
+      "to" : {
+        "x" : 1189,
+        "y" : 885
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1193,
+        "y" : 892
+      },
+      "b" : {
+        "x" : 1189,
+        "y" : 885
+      },
+      "c" : {
+        "x" : 1185,
+        "y" : 892
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1184,
+        "y" : 926
+      },
+      "b" : {
+        "x" : 1196,
+        "y" : 938
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1475,
+      "points" : [ {
+        "x" : 1241,
+        "y" : 962
+      } ]
+    }, {
+      "id" : 1435,
+      "points" : [ {
+        "x" : 1175,
+        "y" : 977
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 1476
+    } ]
+  }, {
+    "id" : 1796,
+    "reactomeId" : 188191,
+    "displayName" : "APC/C:Cdh1-mediated degradation of Skp2",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 191,
+      "y" : 1005
+    },
+    "minX" : 178,
+    "maxX" : 235,
+    "minY" : 969,
+    "maxY" : 1034,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 235,
+        "y" : 969
+      },
+      "to" : {
+        "x" : 191,
+        "y" : 1005
+      }
+    }, {
+      "from" : {
+        "x" : 191,
+        "y" : 1005
+      },
+      "to" : {
+        "x" : 178,
+        "y" : 1034
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 185,
+        "y" : 999
+      },
+      "b" : {
+        "x" : 197,
+        "y" : 1011
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1797
+    } ],
+    "outputs" : [ {
+      "id" : 1580,
+      "points" : [ {
+        "x" : 142,
+        "y" : 1120
+      } ]
+    }, {
+      "id" : 1695,
+      "points" : [ {
+        "x" : 221,
+        "y" : 1064
+      } ],
+      "stoichiometry" : 4
+    } ],
+    "catalysts" : [ {
+      "id" : 612,
+      "points" : [ {
+        "x" : 328,
+        "y" : 1045
+      } ]
+    } ]
+  }, {
+    "id" : 1477,
+    "reactomeId" : 174144,
+    "displayName" : "Ubiquitination of Securin by phospho-APC/C:Cdc20 complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 898,
+      "y" : 861
+    },
+    "minX" : 810,
+    "maxX" : 937,
+    "minY" : 840,
+    "maxY" : 867,
+    "segments" : [ {
+      "from" : {
+        "x" : 937,
+        "y" : 840
+      },
+      "to" : {
+        "x" : 898,
+        "y" : 861
+      }
+    }, {
+      "from" : {
+        "x" : 898,
+        "y" : 861
+      },
+      "to" : {
+        "x" : 810,
+        "y" : 861
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 817,
+        "y" : 857
+      },
+      "b" : {
+        "x" : 810,
+        "y" : 861
+      },
+      "c" : {
+        "x" : 817,
+        "y" : 865
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 892,
+        "y" : 855
+      },
+      "b" : {
+        "x" : 904,
+        "y" : 867
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 608,
+      "points" : [ {
+        "x" : 715,
+        "y" : 776
+      } ],
+      "stoichiometry" : 3
+    }, {
+      "id" : 1476,
+      "points" : [ {
+        "x" : 1132,
+        "y" : 853
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 1868
+    } ],
+    "catalysts" : [ {
+      "id" : 1435,
+      "points" : [ {
+        "x" : 1111,
+        "y" : 981
+      }, {
+        "x" : 897,
+        "y" : 914
+      } ]
+    } ]
+  }, {
+    "id" : 777,
+    "reactomeId" : 141423,
+    "displayName" : "Binding of the MCC complex to the APC/C complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 674,
+      "y" : 1300
+    },
+    "minX" : 635,
+    "maxX" : 713,
+    "minY" : 1294,
+    "maxY" : 1306,
+    "segments" : [ {
+      "from" : {
+        "x" : 635,
+        "y" : 1301
+      },
+      "to" : {
+        "x" : 674,
+        "y" : 1300
+      }
+    }, {
+      "from" : {
+        "x" : 674,
+        "y" : 1300
+      },
+      "to" : {
+        "x" : 713,
+        "y" : 1299
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 706,
+        "y" : 1303
+      },
+      "b" : {
+        "x" : 713,
+        "y" : 1299
+      },
+      "c" : {
+        "x" : 706,
+        "y" : 1295
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 668,
+        "y" : 1294
+      },
+      "b" : {
+        "x" : 680,
+        "y" : 1306
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 746,
+      "points" : [ {
+        "x" : 650,
+        "y" : 1369
+      } ]
+    }, {
+      "id" : 778,
+      "points" : [ {
+        "x" : 617,
+        "y" : 1302
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 779
+    } ]
+  }, {
+    "id" : 780,
+    "reactomeId" : 174119,
+    "displayName" : "Free APC/C phosphorylated by Plk1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 223,
+      "y" : 327
+    },
+    "minX" : 193,
+    "maxX" : 297,
+    "minY" : 314,
+    "maxY" : 333,
+    "segments" : [ {
+      "from" : {
+        "x" : 193,
+        "y" : 320
+      },
+      "to" : {
+        "x" : 223,
+        "y" : 327
+      }
+    }, {
+      "from" : {
+        "x" : 223,
+        "y" : 327
+      },
+      "to" : {
+        "x" : 297,
+        "y" : 314
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 291,
+        "y" : 319
+      },
+      "b" : {
+        "x" : 297,
+        "y" : 314
+      },
+      "c" : {
+        "x" : 289,
+        "y" : 311
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 217,
+        "y" : 321
+      },
+      "b" : {
+        "x" : 229,
+        "y" : 333
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 781
+    } ],
+    "outputs" : [ {
+      "id" : 28
+    } ],
+    "catalysts" : [ {
+      "id" : 1869,
+      "points" : [ {
+        "x" : 207,
+        "y" : 425
+      } ]
+    } ]
+  }, {
+    "id" : 1678,
+    "reactomeId" : 174105,
+    "displayName" : "Degradation of multiubiquitinated cell cycle proteins",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 275,
+      "y" : 1137
+    },
+    "minX" : 247,
+    "maxX" : 297,
+    "minY" : 1131,
+    "maxY" : 1143,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 297,
+        "y" : 1137
+      },
+      "to" : {
+        "x" : 275,
+        "y" : 1137
+      }
+    }, {
+      "from" : {
+        "x" : 275,
+        "y" : 1137
+      },
+      "to" : {
+        "x" : 247,
+        "y" : 1136
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 269,
+        "y" : 1131
+      },
+      "b" : {
+        "x" : 281,
+        "y" : 1143
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1660
+    } ],
+    "outputs" : [ {
+      "id" : 1580,
+      "points" : [ {
+        "x" : 192,
+        "y" : 1138
+      } ]
+    }, {
+      "id" : 1695,
+      "points" : [ {
+        "x" : 235,
+        "y" : 1096
+      } ],
+      "stoichiometry" : 4
+    } ],
+    "catalysts" : [ {
+      "id" : 612,
+      "points" : [ {
+        "x" : 340,
+        "y" : 1073
+      }, {
+        "x" : 274,
+        "y" : 1102
+      } ]
+    } ]
+  }, {
+    "id" : 22,
+    "reactomeId" : 174079,
+    "displayName" : "Phosphorylation of Cdh1 by Cyclin A:Cdk2",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 457,
+      "y" : 201
+    },
+    "minX" : 431,
+    "maxX" : 486,
+    "minY" : 195,
+    "maxY" : 207,
+    "segments" : [ {
+      "from" : {
+        "x" : 431,
+        "y" : 200
+      },
+      "to" : {
+        "x" : 457,
+        "y" : 201
+      }
+    }, {
+      "from" : {
+        "x" : 457,
+        "y" : 201
+      },
+      "to" : {
+        "x" : 486,
+        "y" : 202
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 451,
+        "y" : 195
+      },
+      "b" : {
+        "x" : 463,
+        "y" : 207
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 4,
+      "points" : [ {
+        "x" : 408,
+        "y" : 204
+      } ]
+    }, {
+      "id" : 23,
+      "points" : [ {
+        "x" : 398,
+        "y" : 174
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 506,
+        "y" : 170
+      } ]
+    }, {
+      "id" : 25,
+      "points" : [ {
+        "x" : 506,
+        "y" : 205
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 4,
+      "points" : [ {
+        "x" : 408,
+        "y" : 224
+      }, {
+        "x" : 457,
+        "y" : 231
+      } ]
+    } ]
+  }, {
+    "id" : 1496,
+    "reactomeId" : 174202,
+    "displayName" : "Degradation of multiubiquitinated Securin",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 768,
+      "y" : 967
+    },
+    "minX" : 762,
+    "maxX" : 774,
+    "minY" : 897,
+    "maxY" : 995,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 767,
+        "y" : 897
+      },
+      "to" : {
+        "x" : 768,
+        "y" : 967
+      }
+    }, {
+      "from" : {
+        "x" : 768,
+        "y" : 967
+      },
+      "to" : {
+        "x" : 768,
+        "y" : 995
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 762,
+        "y" : 961
+      },
+      "b" : {
+        "x" : 774,
+        "y" : 973
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1868
+    } ],
+    "outputs" : [ {
+      "id" : 1435,
+      "points" : [ {
+        "x" : 1111,
+        "y" : 997
+      } ]
+    }, {
+      "id" : 1458,
+      "points" : [ {
+        "x" : 768,
+        "y" : 1041
+      } ],
+      "stoichiometry" : 4
+    } ],
+    "catalysts" : [ {
+      "id" : 612,
+      "points" : [ {
+        "x" : 412,
+        "y" : 1045
+      } ]
+    } ]
+  }, {
+    "id" : 1433,
+    "reactomeId" : 174120,
+    "displayName" : "Association of Cyclin B:Cdc2 with Cdc20:APC/C complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1302,
+      "y" : 1140
+    },
+    "minX" : 1296,
+    "maxX" : 1308,
+    "minY" : 1091,
+    "maxY" : 1186,
+    "segments" : [ {
+      "from" : {
+        "x" : 1303,
+        "y" : 1091
+      },
+      "to" : {
+        "x" : 1302,
+        "y" : 1140
+      }
+    }, {
+      "from" : {
+        "x" : 1302,
+        "y" : 1140
+      },
+      "to" : {
+        "x" : 1302,
+        "y" : 1186
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1298,
+        "y" : 1179
+      },
+      "b" : {
+        "x" : 1302,
+        "y" : 1186
+      },
+      "c" : {
+        "x" : 1306,
+        "y" : 1179
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1296,
+        "y" : 1134
+      },
+      "b" : {
+        "x" : 1308,
+        "y" : 1146
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1434,
+      "points" : [ {
+        "x" : 1322,
+        "y" : 1066
+      } ]
+    }, {
+      "id" : 1435,
+      "points" : [ {
+        "x" : 1191,
+        "y" : 1019
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 1436
+    } ]
+  }, {
+    "id" : 1370,
+    "reactomeId" : 179421,
+    "displayName" : "Degradation of multiubiquitinated Nek2A",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 939,
+      "y" : 1422
+    },
+    "minX" : 905,
+    "maxX" : 996,
+    "minY" : 1394,
+    "maxY" : 1482,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 996,
+        "y" : 1482
+      },
+      "to" : {
+        "x" : 939,
+        "y" : 1422
+      }
+    }, {
+      "from" : {
+        "x" : 939,
+        "y" : 1422
+      },
+      "to" : {
+        "x" : 905,
+        "y" : 1394
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 933,
+        "y" : 1416
+      },
+      "b" : {
+        "x" : 945,
+        "y" : 1428
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 825
+    } ],
+    "outputs" : [ {
+      "id" : 779,
+      "points" : [ {
+        "x" : 804,
+        "y" : 1314
+      } ]
+    }, {
+      "id" : 1719,
+      "points" : [ {
+        "x" : 858,
+        "y" : 1411
+      } ],
+      "stoichiometry" : 3
+    } ]
+  }, {
+    "id" : 26,
+    "reactomeId" : 174139,
+    "displayName" : "Dissociation of phospho-Cdh1 from the APC/C complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 727,
+      "y" : 316
+    },
+    "minX" : 683,
+    "maxX" : 772,
+    "minY" : 310,
+    "maxY" : 322,
+    "segments" : [ {
+      "from" : {
+        "x" : 772,
+        "y" : 316
+      },
+      "to" : {
+        "x" : 727,
+        "y" : 316
+      }
+    }, {
+      "from" : {
+        "x" : 727,
+        "y" : 316
+      },
+      "to" : {
+        "x" : 683,
+        "y" : 317
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 721,
+        "y" : 310
+      },
+      "b" : {
+        "x" : 733,
+        "y" : 322
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 27
+    } ],
+    "outputs" : [ {
+      "id" : 28,
+      "points" : [ {
+        "x" : 407,
+        "y" : 307
+      } ]
+    }, {
+      "id" : 29,
+      "points" : [ {
+        "x" : 657,
+        "y" : 337
+      } ]
+    } ]
+  }, {
+    "id" : 1437,
+    "reactomeId" : 174227,
+    "displayName" : "Ubiquitination of Cyclin B by phospho-APC/C:Cdc20 complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1153,
+      "y" : 1214
+    },
+    "minX" : 1108,
+    "maxX" : 1186,
+    "minY" : 1208,
+    "maxY" : 1220,
+    "segments" : [ {
+      "from" : {
+        "x" : 1186,
+        "y" : 1215
+      },
+      "to" : {
+        "x" : 1153,
+        "y" : 1214
+      }
+    }, {
+      "from" : {
+        "x" : 1153,
+        "y" : 1214
+      },
+      "to" : {
+        "x" : 1108,
+        "y" : 1214
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1115,
+        "y" : 1210
+      },
+      "b" : {
+        "x" : 1108,
+        "y" : 1214
+      },
+      "c" : {
+        "x" : 1115,
+        "y" : 1218
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1147,
+        "y" : 1208
+      },
+      "b" : {
+        "x" : 1159,
+        "y" : 1220
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1436,
+      "points" : [ {
+        "x" : 1235,
+        "y" : 1214
+      } ]
+    }, {
+      "id" : 1440,
+      "points" : [ {
+        "x" : 1259,
+        "y" : 1263
+      } ],
+      "stoichiometry" : 4
+    } ],
+    "outputs" : [ {
+      "id" : 1438
+    } ],
+    "catalysts" : [ {
+      "id" : 1435,
+      "points" : [ {
+        "x" : 1162,
+        "y" : 1019
+      }, {
+        "x" : 1151,
+        "y" : 1103
+      } ]
+    } ]
+  }, {
+    "id" : 797,
+    "reactomeId" : 174132,
+    "displayName" : "Free APC/C phosphorylated by Cyclin B:Cdc2",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 251,
+      "y" : 302
+    },
+    "minX" : 193,
+    "maxX" : 297,
+    "minY" : 296,
+    "maxY" : 308,
+    "segments" : [ {
+      "from" : {
+        "x" : 193,
+        "y" : 304
+      },
+      "to" : {
+        "x" : 251,
+        "y" : 302
+      }
+    }, {
+      "from" : {
+        "x" : 251,
+        "y" : 302
+      },
+      "to" : {
+        "x" : 297,
+        "y" : 303
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 290,
+        "y" : 307
+      },
+      "b" : {
+        "x" : 297,
+        "y" : 303
+      },
+      "c" : {
+        "x" : 290,
+        "y" : 299
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 245,
+        "y" : 296
+      },
+      "b" : {
+        "x" : 257,
+        "y" : 308
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 781
+    } ],
+    "outputs" : [ {
+      "id" : 28
+    } ],
+    "catalysts" : [ {
+      "id" : 42,
+      "points" : [ {
+        "x" : 328,
+        "y" : 398
+      } ]
+    } ]
+  }, {
+    "id" : 30,
+    "reactomeId" : 174097,
+    "displayName" : "Association of Emi1 with Cdh1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 814,
+      "y" : 481
+    },
+    "minX" : 750,
+    "maxX" : 844,
+    "minY" : 475,
+    "maxY" : 487,
+    "segments" : [ {
+      "from" : {
+        "x" : 750,
+        "y" : 481
+      },
+      "to" : {
+        "x" : 814,
+        "y" : 481
+      }
+    }, {
+      "from" : {
+        "x" : 814,
+        "y" : 481
+      },
+      "to" : {
+        "x" : 844,
+        "y" : 481
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 837,
+        "y" : 485
+      },
+      "b" : {
+        "x" : 844,
+        "y" : 481
+      },
+      "c" : {
+        "x" : 837,
+        "y" : 477
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 808,
+        "y" : 475
+      },
+      "b" : {
+        "x" : 820,
+        "y" : 487
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 31,
+      "points" : [ {
+        "x" : 724,
+        "y" : 481
+      } ]
+    }, {
+      "id" : 32,
+      "points" : [ {
+        "x" : 737,
+        "y" : 509
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 33
+    } ]
+  }, {
+    "id" : 607,
+    "reactomeId" : 174159,
+    "displayName" : "Ubiquitination of Emi1 by SCF-beta-TrCP",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 465,
+      "y" : 758
+    },
+    "minX" : 428,
+    "maxX" : 563,
+    "minY" : 752,
+    "maxY" : 764,
+    "segments" : [ {
+      "from" : {
+        "x" : 563,
+        "y" : 758
+      },
+      "to" : {
+        "x" : 465,
+        "y" : 758
+      }
+    }, {
+      "from" : {
+        "x" : 465,
+        "y" : 758
+      },
+      "to" : {
+        "x" : 428,
+        "y" : 758
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 435,
+        "y" : 754
+      },
+      "b" : {
+        "x" : 428,
+        "y" : 758
+      },
+      "c" : {
+        "x" : 435,
+        "y" : 762
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 459,
+        "y" : 752
+      },
+      "b" : {
+        "x" : 471,
+        "y" : 764
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 608,
+      "points" : [ {
+        "x" : 639,
+        "y" : 758
+      } ],
+      "stoichiometry" : 3
+    }, {
+      "id" : 66,
+      "points" : [ {
+        "x" : 563,
+        "y" : 794
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 609
+    } ],
+    "catalysts" : [ {
+      "id" : 64,
+      "points" : [ {
+        "x" : 464,
+        "y" : 895
+      } ]
+    } ]
+  }, {
+    "id" : 799,
+    "reactomeId" : 174171,
+    "displayName" : "Association of Cyclin A with the APC/C",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 963,
+      "y" : 1353
+    },
+    "minX" : 925,
+    "maxX" : 996,
+    "minY" : 1347,
+    "maxY" : 1359,
+    "segments" : [ {
+      "from" : {
+        "x" : 925,
+        "y" : 1354
+      },
+      "to" : {
+        "x" : 963,
+        "y" : 1353
+      }
+    }, {
+      "from" : {
+        "x" : 963,
+        "y" : 1353
+      },
+      "to" : {
+        "x" : 996,
+        "y" : 1352
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 989,
+        "y" : 1356
+      },
+      "b" : {
+        "x" : 996,
+        "y" : 1352
+      },
+      "c" : {
+        "x" : 989,
+        "y" : 1348
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 957,
+        "y" : 1347
+      },
+      "b" : {
+        "x" : 969,
+        "y" : 1359
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 800,
+      "points" : [ {
+        "x" : 1016,
+        "y" : 1394
+      } ]
+    }, {
+      "id" : 779,
+      "points" : [ {
+        "x" : 819,
+        "y" : 1314
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 801
+    } ]
+  }, {
+    "id" : 1696,
+    "reactomeId" : 174057,
+    "displayName" : "Multiubiquitination of APC/C-associated Cdh1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 936,
+      "y" : 315
+    },
+    "minX" : 930,
+    "maxX" : 942,
+    "minY" : 278,
+    "maxY" : 367,
+    "segments" : [ {
+      "from" : {
+        "x" : 936,
+        "y" : 367
+      },
+      "to" : {
+        "x" : 936,
+        "y" : 315
+      }
+    }, {
+      "from" : {
+        "x" : 936,
+        "y" : 315
+      },
+      "to" : {
+        "x" : 936,
+        "y" : 278
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 940,
+        "y" : 285
+      },
+      "b" : {
+        "x" : 936,
+        "y" : 278
+      },
+      "c" : {
+        "x" : 932,
+        "y" : 285
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 930,
+        "y" : 309
+      },
+      "b" : {
+        "x" : 942,
+        "y" : 321
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1697,
+      "points" : [ {
+        "x" : 936,
+        "y" : 392
+      } ],
+      "stoichiometry" : 3
+    }, {
+      "id" : 27,
+      "points" : [ {
+        "x" : 884,
+        "y" : 341
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 1698
+    } ],
+    "catalysts" : [ {
+      "id" : 27,
+      "points" : [ {
+        "x" : 884,
+        "y" : 316
+      } ]
+    } ]
+  }, {
+    "id" : 34,
+    "reactomeId" : 174235,
+    "displayName" : "Association of Emi1 with Cdc20",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 825,
+      "y" : 602
+    },
+    "minX" : 819,
+    "maxX" : 831,
+    "minY" : 574,
+    "maxY" : 635,
+    "segments" : [ {
+      "from" : {
+        "x" : 825,
+        "y" : 574
+      },
+      "to" : {
+        "x" : 825,
+        "y" : 602
+      }
+    }, {
+      "from" : {
+        "x" : 825,
+        "y" : 602
+      },
+      "to" : {
+        "x" : 825,
+        "y" : 635
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 821,
+        "y" : 628
+      },
+      "b" : {
+        "x" : 825,
+        "y" : 635
+      },
+      "c" : {
+        "x" : 829,
+        "y" : 628
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 819,
+        "y" : 596
+      },
+      "b" : {
+        "x" : 831,
+        "y" : 608
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 35,
+      "points" : [ {
+        "x" : 869,
+        "y" : 539
+      } ]
+    }, {
+      "id" : 32,
+      "points" : [ {
+        "x" : 752,
+        "y" : 537
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 36
+    } ]
+  }, {
+    "id" : 802,
+    "reactomeId" : 174104,
+    "displayName" : "Ubiquitination of Cyclin A by APC/C:Cdc20 complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 814,
+      "y" : 1237
+    },
+    "minX" : 710,
+    "maxX" : 845,
+    "minY" : 1213,
+    "maxY" : 1243,
+    "segments" : [ {
+      "from" : {
+        "x" : 845,
+        "y" : 1217
+      },
+      "to" : {
+        "x" : 814,
+        "y" : 1237
+      }
+    }, {
+      "from" : {
+        "x" : 814,
+        "y" : 1237
+      },
+      "to" : {
+        "x" : 710,
+        "y" : 1213
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 718,
+        "y" : 1211
+      },
+      "b" : {
+        "x" : 710,
+        "y" : 1213
+      },
+      "c" : {
+        "x" : 716,
+        "y" : 1218
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 808,
+        "y" : 1231
+      },
+      "b" : {
+        "x" : 820,
+        "y" : 1243
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 801,
+      "points" : [ {
+        "x" : 1032,
+        "y" : 1331
+      } ]
+    }, {
+      "id" : 1339,
+      "points" : [ {
+        "x" : 884,
+        "y" : 1208
+      } ],
+      "stoichiometry" : 4
+    } ],
+    "outputs" : [ {
+      "id" : 803
+    } ],
+    "catalysts" : [ {
+      "id" : 779,
+      "points" : [ {
+        "x" : 797,
+        "y" : 1283
+      }, {
+        "x" : 812,
+        "y" : 1265
+      } ]
+    } ]
+  }, {
+    "id" : 610,
+    "reactomeId" : 174203,
+    "displayName" : "SCF-mediated degradation of Emi1",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 365,
+      "y" : 982
+    },
+    "minX" : 359,
+    "maxX" : 465,
+    "minY" : 786,
+    "maxY" : 988,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 362,
+        "y" : 786
+      },
+      "to" : {
+        "x" : 365,
+        "y" : 982
+      }
+    }, {
+      "from" : {
+        "x" : 365,
+        "y" : 982
+      },
+      "to" : {
+        "x" : 465,
+        "y" : 982
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 359,
+        "y" : 976
+      },
+      "b" : {
+        "x" : 371,
+        "y" : 988
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 609
+    } ],
+    "outputs" : [ {
+      "id" : 611,
+      "points" : [ {
+        "x" : 418,
+        "y" : 1330
+      } ]
+    }, {
+      "id" : 64,
+      "points" : [ {
+        "x" : 464,
+        "y" : 937
+      } ]
+    }, {
+      "id" : 1866,
+      "points" : [ {
+        "x" : 518,
+        "y" : 970
+      } ],
+      "stoichiometry" : 4
+    } ],
+    "catalysts" : [ {
+      "id" : 612,
+      "points" : [ {
+        "x" : 364,
+        "y" : 1045
+      } ]
+    } ]
+  }, {
+    "id" : 739,
+    "reactomeId" : 141429,
+    "displayName" : "Inactivation of APC/C via CDC20 sequestration",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 408,
+      "y" : 1428
+    },
+    "minX" : 384,
+    "maxX" : 441,
+    "minY" : 1422,
+    "maxY" : 1434,
+    "segments" : [ {
+      "from" : {
+        "x" : 441,
+        "y" : 1427
+      },
+      "to" : {
+        "x" : 408,
+        "y" : 1428
+      }
+    }, {
+      "from" : {
+        "x" : 408,
+        "y" : 1428
+      },
+      "to" : {
+        "x" : 384,
+        "y" : 1429
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 391,
+        "y" : 1425
+      },
+      "b" : {
+        "x" : 384,
+        "y" : 1429
+      },
+      "c" : {
+        "x" : 391,
+        "y" : 1433
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 402,
+        "y" : 1422
+      },
+      "b" : {
+        "x" : 414,
+        "y" : 1434
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 740,
+      "points" : [ {
+        "x" : 488,
+        "y" : 1403
+      } ]
+    }, {
+      "id" : 741,
+      "points" : [ {
+        "x" : 448,
+        "y" : 1445
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 742
+    } ]
+  }, {
+    "id" : 804,
+    "reactomeId" : 174255,
+    "displayName" : "Degradation multiubiquitinated Cyclin A",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 745,
+      "y" : 1191
+    },
+    "minX" : 710,
+    "maxX" : 774,
+    "minY" : 1185,
+    "maxY" : 1197,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 710,
+        "y" : 1191
+      },
+      "to" : {
+        "x" : 745,
+        "y" : 1191
+      }
+    }, {
+      "from" : {
+        "x" : 745,
+        "y" : 1191
+      },
+      "to" : {
+        "x" : 774,
+        "y" : 1190
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 739,
+        "y" : 1185
+      },
+      "b" : {
+        "x" : 751,
+        "y" : 1197
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 803
+    } ],
+    "outputs" : [ {
+      "id" : 805,
+      "points" : [ {
+        "x" : 810,
+        "y" : 1138
+      } ]
+    }, {
+      "id" : 779,
+      "points" : [ {
+        "x" : 787,
+        "y" : 1283
+      } ]
+    }, {
+      "id" : 1339,
+      "points" : [ {
+        "x" : 871,
+        "y" : 1190
+      } ],
+      "stoichiometry" : 4
+    } ],
+    "catalysts" : [ {
+      "id" : 612,
+      "points" : [ {
+        "x" : 405,
+        "y" : 1073
+      }, {
+        "x" : 744,
+        "y" : 1159
+      } ]
+    } ]
+  }, {
+    "id" : 37,
+    "reactomeId" : 174122,
+    "displayName" : "Phosphorylation of the Emi1 DSGxxS degron by Cyclin B:Cdc2",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 337,
+      "y" : 526
+    },
+    "minX" : 309,
+    "maxX" : 365,
+    "minY" : 520,
+    "maxY" : 532,
+    "segments" : [ {
+      "from" : {
+        "x" : 309,
+        "y" : 526
+      },
+      "to" : {
+        "x" : 337,
+        "y" : 526
+      }
+    }, {
+      "from" : {
+        "x" : 337,
+        "y" : 526
+      },
+      "to" : {
+        "x" : 365,
+        "y" : 526
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 331,
+        "y" : 520
+      },
+      "b" : {
+        "x" : 343,
+        "y" : 532
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 38,
+      "points" : [ {
+        "x" : 262,
+        "y" : 509
+      } ]
+    }, {
+      "id" : 39,
+      "points" : [ {
+        "x" : 272,
+        "y" : 548
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 40,
+      "points" : [ {
+        "x" : 430,
+        "y" : 530
+      } ]
+    }, {
+      "id" : 41,
+      "points" : [ {
+        "x" : 426,
+        "y" : 481
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 42,
+      "points" : [ {
+        "x" : 340,
+        "y" : 437
+      } ]
+    } ]
+  }, {
+    "id" : 743,
+    "reactomeId" : 141437,
+    "displayName" : "Formation of the MCC complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 547,
+      "y" : 1503
+    },
+    "minX" : 509,
+    "maxX" : 630,
+    "minY" : 1425,
+    "maxY" : 1509,
+    "segments" : [ {
+      "from" : {
+        "x" : 509,
+        "y" : 1505
+      },
+      "to" : {
+        "x" : 547,
+        "y" : 1503
+      }
+    }, {
+      "from" : {
+        "x" : 547,
+        "y" : 1503
+      },
+      "to" : {
+        "x" : 630,
+        "y" : 1425
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 628,
+        "y" : 1433
+      },
+      "b" : {
+        "x" : 630,
+        "y" : 1425
+      },
+      "c" : {
+        "x" : 622,
+        "y" : 1427
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 541,
+        "y" : 1497
+      },
+      "b" : {
+        "x" : 553,
+        "y" : 1509
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 740,
+      "points" : [ {
+        "x" : 508,
+        "y" : 1403
+      } ]
+    }, {
+      "id" : 741,
+      "points" : [ {
+        "x" : 480,
+        "y" : 1488
+      } ]
+    }, {
+      "id" : 744,
+      "points" : [ {
+        "x" : 450,
+        "y" : 1543
+      } ]
+    }, {
+      "id" : 745,
+      "points" : [ {
+        "x" : 537,
+        "y" : 1547
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 746
+    } ]
+  }, {
+    "id" : 1641,
+    "reactomeId" : 174088,
+    "displayName" : "Association of cell cycle proteins with the APC/C:Cdh1 complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 196,
+      "y" : 1217
+    },
+    "minX" : 172,
+    "maxX" : 218,
+    "minY" : 1211,
+    "maxY" : 1223,
+    "segments" : [ {
+      "from" : {
+        "x" : 172,
+        "y" : 1216
+      },
+      "to" : {
+        "x" : 196,
+        "y" : 1217
+      }
+    }, {
+      "from" : {
+        "x" : 196,
+        "y" : 1217
+      },
+      "to" : {
+        "x" : 218,
+        "y" : 1217
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 211,
+        "y" : 1221
+      },
+      "b" : {
+        "x" : 218,
+        "y" : 1217
+      },
+      "c" : {
+        "x" : 211,
+        "y" : 1213
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 190,
+        "y" : 1211
+      },
+      "b" : {
+        "x" : 202,
+        "y" : 1223
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1580,
+      "points" : [ {
+        "x" : 143,
+        "y" : 1162
+      } ]
+    }, {
+      "id" : 1642,
+      "points" : [ {
+        "x" : 194,
+        "y" : 1320
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 1643
+    } ]
+  }, {
+    "id" : 43,
+    "reactomeId" : 174174,
+    "displayName" : "Phosphorylation of the Emi1 DSGxxS degron by Plk1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 342,
+      "y" : 614
+    },
+    "minX" : 313,
+    "maxX" : 386,
+    "minY" : 608,
+    "maxY" : 620,
+    "segments" : [ {
+      "from" : {
+        "x" : 313,
+        "y" : 614
+      },
+      "to" : {
+        "x" : 342,
+        "y" : 614
+      }
+    }, {
+      "from" : {
+        "x" : 342,
+        "y" : 614
+      },
+      "to" : {
+        "x" : 386,
+        "y" : 614
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 336,
+        "y" : 608
+      },
+      "b" : {
+        "x" : 348,
+        "y" : 620
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 44,
+      "points" : [ {
+        "x" : 252,
+        "y" : 628
+      } ],
+      "stoichiometry" : 2
+    }, {
+      "id" : 39,
+      "points" : [ {
+        "x" : 272,
+        "y" : 591
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 45,
+      "points" : [ {
+        "x" : 424,
+        "y" : 652
+      } ],
+      "stoichiometry" : 2
+    }, {
+      "id" : 46,
+      "points" : [ {
+        "x" : 423,
+        "y" : 607
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 1869,
+      "points" : [ {
+        "x" : 235,
+        "y" : 453
+      }, {
+        "x" : 309,
+        "y" : 477
+      } ]
+    } ]
+  }, {
+    "id" : 1579,
+    "reactomeId" : 174070,
+    "displayName" : "Association of Cdh1 with the APC/C",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 89,
+      "y" : 1210
+    },
+    "minX" : 83,
+    "maxX" : 123,
+    "minY" : 1162,
+    "maxY" : 1305,
+    "segments" : [ {
+      "from" : {
+        "x" : 88,
+        "y" : 1305
+      },
+      "to" : {
+        "x" : 89,
+        "y" : 1210
+      }
+    }, {
+      "from" : {
+        "x" : 89,
+        "y" : 1210
+      },
+      "to" : {
+        "x" : 123,
+        "y" : 1162
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 122,
+        "y" : 1170
+      },
+      "b" : {
+        "x" : 123,
+        "y" : 1162
+      },
+      "c" : {
+        "x" : 116,
+        "y" : 1165
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 83,
+        "y" : 1204
+      },
+      "b" : {
+        "x" : 95,
+        "y" : 1216
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 778,
+      "points" : [ {
+        "x" : 470,
+        "y" : 1305
+      } ]
+    }, {
+      "id" : 1531,
+      "points" : [ {
+        "x" : 164,
+        "y" : 1451
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 1580
+    } ]
+  }, {
+    "id" : 1456,
+    "reactomeId" : 174157,
+    "displayName" : "Degradation of multiubiquitinated Cyclin B",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1037,
+      "y" : 1143
+    },
+    "minX" : 1031,
+    "maxX" : 1043,
+    "minY" : 1104,
+    "maxY" : 1181,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1038,
+        "y" : 1181
+      },
+      "to" : {
+        "x" : 1037,
+        "y" : 1143
+      }
+    }, {
+      "from" : {
+        "x" : 1037,
+        "y" : 1143
+      },
+      "to" : {
+        "x" : 1035,
+        "y" : 1104
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1031,
+        "y" : 1137
+      },
+      "b" : {
+        "x" : 1043,
+        "y" : 1149
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1438
+    } ],
+    "outputs" : [ {
+      "id" : 1435,
+      "points" : [ {
+        "x" : 1142,
+        "y" : 1019
+      } ]
+    }, {
+      "id" : 1458,
+      "points" : [ {
+        "x" : 816,
+        "y" : 1065
+      } ],
+      "stoichiometry" : 4
+    }, {
+      "id" : 805,
+      "points" : [ {
+        "x" : 872,
+        "y" : 1119
+      } ]
+    } ]
+  }, {
+    "id" : 1776,
+    "reactomeId" : 174238,
+    "displayName" : "Activation of APC/C:Cdc20 by dissociation of Cdc20:phospho-APC/C from Cdc20:phospho-APC/C:Mad2:Bub3:BubR1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1122,
+      "y" : 1295
+    },
+    "minX" : 866,
+    "maxX" : 1168,
+    "minY" : 1289,
+    "maxY" : 1301,
+    "segments" : [ {
+      "from" : {
+        "x" : 866,
+        "y" : 1297
+      },
+      "to" : {
+        "x" : 1122,
+        "y" : 1295
+      }
+    }, {
+      "from" : {
+        "x" : 1122,
+        "y" : 1295
+      },
+      "to" : {
+        "x" : 1168,
+        "y" : 1296
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1116,
+        "y" : 1289
+      },
+      "b" : {
+        "x" : 1128,
+        "y" : 1301
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 779
+    } ],
+    "outputs" : [ {
+      "id" : 1777,
+      "points" : [ {
+        "x" : 1214,
+        "y" : 1339
+      } ]
+    }, {
+      "id" : 1435,
+      "points" : [ {
+        "x" : 1165,
+        "y" : 1019
+      }, {
+        "x" : 1167,
+        "y" : 1261
+      } ]
+    } ]
+  }, {
+    "id" : 1714,
+    "reactomeId" : 174058,
+    "displayName" : "Degradation of multiubiquitinated Cdh1",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 802,
+      "y" : 247
+    },
+    "minX" : 759,
+    "maxX" : 869,
+    "minY" : 241,
+    "maxY" : 253,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 869,
+        "y" : 248
+      },
+      "to" : {
+        "x" : 802,
+        "y" : 247
+      }
+    }, {
+      "from" : {
+        "x" : 802,
+        "y" : 247
+      },
+      "to" : {
+        "x" : 759,
+        "y" : 248
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 796,
+        "y" : 241
+      },
+      "b" : {
+        "x" : 808,
+        "y" : 253
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1698
+    } ],
+    "outputs" : [ {
+      "id" : 28,
+      "points" : [ {
+        "x" : 407,
+        "y" : 298
+      } ]
+    }, {
+      "id" : 1717,
+      "points" : [ {
+        "x" : 731,
+        "y" : 231
+      } ],
+      "stoichiometry" : 3
+    } ],
+    "catalysts" : [ {
+      "id" : 1715,
+      "points" : [ {
+        "x" : 799,
+        "y" : 197
+      } ]
+    } ]
+  }, {
+    "id" : 628,
+    "reactomeId" : 174251,
+    "displayName" : "Phosphorylation of Cdh1 by Cyclin B1:Cdc2",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 563,
+      "y" : 414
+    },
+    "minX" : 557,
+    "maxX" : 569,
+    "minY" : 387,
+    "maxY" : 440,
+    "segments" : [ {
+      "from" : {
+        "x" : 563,
+        "y" : 440
+      },
+      "to" : {
+        "x" : 563,
+        "y" : 414
+      }
+    }, {
+      "from" : {
+        "x" : 563,
+        "y" : 414
+      },
+      "to" : {
+        "x" : 564,
+        "y" : 387
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 557,
+        "y" : 408
+      },
+      "b" : {
+        "x" : 569,
+        "y" : 420
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 629,
+      "points" : [ {
+        "x" : 581,
+        "y" : 449
+      } ]
+    }, {
+      "id" : 630,
+      "points" : [ {
+        "x" : 551,
+        "y" : 450
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 631,
+      "points" : [ {
+        "x" : 541,
+        "y" : 369
+      } ]
+    }, {
+      "id" : 29,
+      "points" : [ {
+        "x" : 620,
+        "y" : 365
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 42,
+      "points" : [ {
+        "x" : 417,
+        "y" : 416
+      } ]
+    } ]
+  }, {
+    "id" : 821,
+    "reactomeId" : 179410,
+    "displayName" : "Association of Nek2A with MCC:APC/C",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 754,
+      "y" : 1394
+    },
+    "minX" : 748,
+    "maxX" : 760,
+    "minY" : 1339,
+    "maxY" : 1470,
+    "segments" : [ {
+      "from" : {
+        "x" : 753,
+        "y" : 1339
+      },
+      "to" : {
+        "x" : 754,
+        "y" : 1394
+      }
+    }, {
+      "from" : {
+        "x" : 754,
+        "y" : 1394
+      },
+      "to" : {
+        "x" : 753,
+        "y" : 1470
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 749,
+        "y" : 1463
+      },
+      "b" : {
+        "x" : 753,
+        "y" : 1470
+      },
+      "c" : {
+        "x" : 757,
+        "y" : 1463
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 748,
+        "y" : 1388
+      },
+      "b" : {
+        "x" : 760,
+        "y" : 1400
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 779,
+      "points" : [ {
+        "x" : 778,
+        "y" : 1314
+      } ]
+    }, {
+      "id" : 822,
+      "points" : [ {
+        "x" : 732,
+        "y" : 1337
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 823
+    } ]
+  }, {
+    "id" : 1527,
+    "reactomeId" : 174124,
+    "displayName" : "Dephosphorylation of phospho-Cdh1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 92,
+      "y" : 1534
+    },
+    "minX" : 86,
+    "maxX" : 98,
+    "minY" : 1496,
+    "maxY" : 1563,
+    "segments" : [ {
+      "from" : {
+        "x" : 91,
+        "y" : 1563
+      },
+      "to" : {
+        "x" : 92,
+        "y" : 1534
+      }
+    }, {
+      "from" : {
+        "x" : 92,
+        "y" : 1534
+      },
+      "to" : {
+        "x" : 92,
+        "y" : 1496
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 86,
+        "y" : 1528
+      },
+      "b" : {
+        "x" : 98,
+        "y" : 1540
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1528,
+      "points" : [ {
+        "x" : 124,
+        "y" : 1590
+      } ]
+    }, {
+      "id" : 1529,
+      "points" : [ {
+        "x" : 72,
+        "y" : 1592
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 1530,
+      "points" : [ {
+        "x" : 76,
+        "y" : 1480
+      } ]
+    }, {
+      "id" : 1531,
+      "points" : [ {
+        "x" : 145,
+        "y" : 1473
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 1532,
+      "points" : [ {
+        "x" : 119,
+        "y" : 1534
+      } ]
+    } ]
+  }, {
+    "id" : 824,
+    "reactomeId" : 179417,
+    "displayName" : "Multiubiquitination of Nek2A",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 910,
+      "y" : 1499
+    },
+    "minX" : 861,
+    "maxX" : 955,
+    "minY" : 1493,
+    "maxY" : 1505,
+    "segments" : [ {
+      "from" : {
+        "x" : 861,
+        "y" : 1500
+      },
+      "to" : {
+        "x" : 910,
+        "y" : 1499
+      }
+    }, {
+      "from" : {
+        "x" : 910,
+        "y" : 1499
+      },
+      "to" : {
+        "x" : 955,
+        "y" : 1500
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 948,
+        "y" : 1504
+      },
+      "b" : {
+        "x" : 955,
+        "y" : 1500
+      },
+      "c" : {
+        "x" : 948,
+        "y" : 1496
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 904,
+        "y" : 1493
+      },
+      "b" : {
+        "x" : 916,
+        "y" : 1505
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 823,
+      "points" : [ {
+        "x" : 805,
+        "y" : 1499
+      } ]
+    }, {
+      "id" : 1719,
+      "points" : [ {
+        "x" : 839,
+        "y" : 1445
+      } ],
+      "stoichiometry" : 3
+    } ],
+    "outputs" : [ {
+      "id" : 825
+    } ],
+    "catalysts" : [ {
+      "id" : 823,
+      "points" : [ {
+        "x" : 805,
+        "y" : 1508
+      }, {
+        "x" : 910,
+        "y" : 1531
+      } ]
+    } ]
+  }, {
+    "id" : 1659,
+    "reactomeId" : 174195,
+    "displayName" : "Ubiquitination of cell cycle proteins targeted by the APC/C:Cdh1complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 366,
+      "y" : 1193
+    },
+    "minX" : 360,
+    "maxX" : 372,
+    "minY" : 1172,
+    "maxY" : 1218,
+    "segments" : [ {
+      "from" : {
+        "x" : 366,
+        "y" : 1218
+      },
+      "to" : {
+        "x" : 366,
+        "y" : 1193
+      }
+    }, {
+      "from" : {
+        "x" : 366,
+        "y" : 1193
+      },
+      "to" : {
+        "x" : 366,
+        "y" : 1172
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 370,
+        "y" : 1179
+      },
+      "b" : {
+        "x" : 366,
+        "y" : 1172
+      },
+      "c" : {
+        "x" : 362,
+        "y" : 1179
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 360,
+        "y" : 1187
+      },
+      "b" : {
+        "x" : 372,
+        "y" : 1199
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1643,
+      "points" : [ {
+        "x" : 320,
+        "y" : 1218
+      } ]
+    }, {
+      "id" : 1677,
+      "points" : [ {
+        "x" : 367,
+        "y" : 1262
+      } ],
+      "stoichiometry" : 4
+    } ],
+    "outputs" : [ {
+      "id" : 1660
+    } ],
+    "catalysts" : [ {
+      "id" : 1643,
+      "points" : [ {
+        "x" : 320,
+        "y" : 1199
+      }, {
+        "x" : 335,
+        "y" : 1193
+      } ]
+    } ]
+  }, {
+    "id" : 1533,
+    "reactomeId" : 174224,
+    "displayName" : "Dissociation of Cdc20 from APC/C complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1246,
+      "y" : 1011
+    },
+    "minX" : 1220,
+    "maxX" : 1441,
+    "minY" : 1005,
+    "maxY" : 1017,
+    "segments" : [ {
+      "from" : {
+        "x" : 1220,
+        "y" : 1006
+      },
+      "to" : {
+        "x" : 1246,
+        "y" : 1011
+      }
+    }, {
+      "from" : {
+        "x" : 1246,
+        "y" : 1011
+      },
+      "to" : {
+        "x" : 1441,
+        "y" : 1011
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1240,
+        "y" : 1005
+      },
+      "b" : {
+        "x" : 1252,
+        "y" : 1017
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1435
+    } ],
+    "outputs" : [ {
+      "id" : 740,
+      "points" : [ {
+        "x" : 515,
+        "y" : 1403
+      }, {
+        "x" : 634,
+        "y" : 1586
+      }, {
+        "x" : 1328,
+        "y" : 1580
+      } ]
+    }, {
+      "id" : 778,
+      "points" : [ {
+        "x" : 554,
+        "y" : 1336
+      }, {
+        "x" : 651,
+        "y" : 1564
+      }, {
+        "x" : 1299,
+        "y" : 1560
+      } ]
+    } ]
+  }, {
+    "id" : 63,
+    "reactomeId" : 174209,
+    "displayName" : "Phosphorylated Emi1 binds the beta-TrCP in the SCF complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 562,
+      "y" : 885
+    },
+    "minX" : 556,
+    "maxX" : 568,
+    "minY" : 855,
+    "maxY" : 911,
+    "segments" : [ {
+      "from" : {
+        "x" : 563,
+        "y" : 911
+      },
+      "to" : {
+        "x" : 562,
+        "y" : 885
+      }
+    }, {
+      "from" : {
+        "x" : 562,
+        "y" : 885
+      },
+      "to" : {
+        "x" : 562,
+        "y" : 855
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 566,
+        "y" : 862
+      },
+      "b" : {
+        "x" : 562,
+        "y" : 855
+      },
+      "c" : {
+        "x" : 558,
+        "y" : 862
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 556,
+        "y" : 879
+      },
+      "b" : {
+        "x" : 568,
+        "y" : 891
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 64,
+      "points" : [ {
+        "x" : 519,
+        "y" : 913
+      } ]
+    }, {
+      "id" : 65,
+      "points" : [ {
+        "x" : 594,
+        "y" : 913
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 66
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 5,
+    "reactomeId" : 7660,
+    "displayName" : "nucleoplasm",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 539,
+      "y" : 400
+    },
+    "minX" : 38,
+    "maxX" : 1040,
+    "minY" : 93,
+    "maxY" : 708,
+    "prop" : {
+      "x" : 38,
+      "y" : 93,
+      "width" : 1002,
+      "height" : 615
+    },
+    "textPosition" : {
+      "x" : 914,
+      "y" : 659
+    },
+    "insets" : {
+      "x" : 48,
+      "y" : 103,
+      "width" : 975,
+      "height" : 592
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 1, 2, 3, 4, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 36, 35, 37, 38, 39, 40, 41, 42, 43, 44, 46, 628, 629, 630, 631, 780, 781, 797, 1696, 1697, 1698, 1714, 1715, 1717, 45, 1801, 1800, 1869 ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 771,
+      "y" : 863
+    },
+    "minX" : 8,
+    "maxX" : 1534,
+    "minY" : 65,
+    "maxY" : 1661,
+    "prop" : {
+      "x" : 8,
+      "y" : 65,
+      "width" : 1526,
+      "height" : 1596
+    },
+    "textPosition" : {
+      "x" : 1424,
+      "y" : 1603
+    },
+    "insets" : {
+      "x" : 19,
+      "y" : 75,
+      "width" : 1497,
+      "height" : 1569
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 5, 739, 741, 742, 743, 744, 745, 746, 740, 777, 778, 779, 799, 800, 801, 821, 822, 823, 824, 825, 1370, 1440, 1527, 1528, 1529, 1530, 1531, 1532, 1579, 1580, 1641, 1642, 1643, 1659, 1660, 1677, 1695, 63, 64, 65, 66, 607, 608, 609, 610, 611, 612, 802, 803, 804, 805, 1339, 1433, 1434, 1435, 1436, 1437, 1438, 1456, 1458, 1474, 1475, 1476, 1533, 1678, 1477, 1480, 1496, 1719, 1777, 1776, 1796, 1797, 1803, 1804, 1805, 1802, 1866, 1868 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ {
+    "id" : 1800,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 666,
+      "y" : 414
+    },
+    "minX" : 648,
+    "maxX" : 684,
+    "minY" : 365,
+    "maxY" : 464,
+    "segments" : [ {
+      "from" : {
+        "x" : 648,
+        "y" : 365
+      },
+      "to" : {
+        "x" : 684,
+        "y" : 464
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 660,
+        "y" : 408
+      },
+      "b" : {
+        "x" : 672,
+        "y" : 420
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 29
+    } ],
+    "outputs" : [ {
+      "id" : 31
+    } ]
+  }, {
+    "id" : 1801,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 637,
+      "y" : 470
+    },
+    "minX" : 622,
+    "maxX" : 652,
+    "minY" : 464,
+    "maxY" : 476,
+    "segments" : [ {
+      "from" : {
+        "x" : 622,
+        "y" : 466
+      },
+      "to" : {
+        "x" : 652,
+        "y" : 474
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 631,
+        "y" : 464
+      },
+      "b" : {
+        "x" : 643,
+        "y" : 476
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 629
+    } ],
+    "outputs" : [ {
+      "id" : 31
+    } ]
+  }, {
+    "id" : 1802,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 370,
+      "y" : 1371
+    },
+    "minX" : 261,
+    "maxX" : 480,
+    "minY" : 1357,
+    "maxY" : 1385,
+    "segments" : [ {
+      "from" : {
+        "x" : 480,
+        "y" : 1385
+      },
+      "to" : {
+        "x" : 261,
+        "y" : 1357
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 364,
+        "y" : 1365
+      },
+      "b" : {
+        "x" : 376,
+        "y" : 1377
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 740
+    } ],
+    "outputs" : [ {
+      "id" : 1642
+    } ]
+  }, {
+    "id" : 1803,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 1352,
+      "y" : 1610
+    },
+    "minX" : 208,
+    "maxX" : 1487,
+    "minY" : 968,
+    "maxY" : 1617,
+    "segments" : [ {
+      "from" : {
+        "x" : 1301,
+        "y" : 968
+      },
+      "to" : {
+        "x" : 1487,
+        "y" : 968
+      }
+    }, {
+      "from" : {
+        "x" : 1487,
+        "y" : 968
+      },
+      "to" : {
+        "x" : 1352,
+        "y" : 1610
+      }
+    }, {
+      "from" : {
+        "x" : 1352,
+        "y" : 1610
+      },
+      "to" : {
+        "x" : 292,
+        "y" : 1617
+      }
+    }, {
+      "from" : {
+        "x" : 292,
+        "y" : 1617
+      },
+      "to" : {
+        "x" : 208,
+        "y" : 1382
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1346,
+        "y" : 1604
+      },
+      "b" : {
+        "x" : 1358,
+        "y" : 1616
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1475
+    } ],
+    "outputs" : [ {
+      "id" : 1642
+    } ]
+  }, {
+    "id" : 1867,
+    "renderableClass" : "EntitySetAndEntitySetLink",
+    "position" : {
+      "x" : 312,
+      "y" : 1347
+    },
+    "minX" : 261,
+    "maxX" : 364,
+    "minY" : 1341,
+    "maxY" : 1353,
+    "segments" : [ {
+      "from" : {
+        "x" : 261,
+        "y" : 1349
+      },
+      "to" : {
+        "x" : 364,
+        "y" : 1346
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 306,
+        "y" : 1341
+      },
+      "b" : {
+        "x" : 318,
+        "y" : 1353
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1642
+    } ],
+    "outputs" : [ {
+      "id" : 611
+    } ]
+  }, {
+    "id" : 1804,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 457,
+      "y" : 1370
+    },
+    "minX" : 434,
+    "maxX" : 480,
+    "minY" : 1361,
+    "maxY" : 1379,
+    "segments" : [ {
+      "from" : {
+        "x" : 480,
+        "y" : 1379
+      },
+      "to" : {
+        "x" : 434,
+        "y" : 1361
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 451,
+        "y" : 1364
+      },
+      "b" : {
+        "x" : 463,
+        "y" : 1376
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 740
+    } ],
+    "outputs" : [ {
+      "id" : 611
+    } ]
+  }, {
+    "id" : 1805,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 296,
+      "y" : 1407
+    },
+    "minX" : 195,
+    "maxX" : 397,
+    "minY" : 1361,
+    "maxY" : 1454,
+    "segments" : [ {
+      "from" : {
+        "x" : 195,
+        "y" : 1454
+      },
+      "to" : {
+        "x" : 397,
+        "y" : 1361
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 290,
+        "y" : 1401
+      },
+      "b" : {
+        "x" : 302,
+        "y" : 1413
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 1531
+    } ],
+    "outputs" : [ {
+      "id" : 611
+    } ]
+  } ],
+  "shadows" : [ {
+    "id" : 1870,
+    "reactomeId" : 174143,
+    "displayName" : "APC/C-mediated degradation of cell cycle proteins",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 741,
+      "y" : 882
+    },
+    "minX" : 32,
+    "maxX" : 1451,
+    "minY" : 127,
+    "maxY" : 1637,
+    "prop" : {
+      "x" : 32,
+      "y" : 127,
+      "width" : 1419,
+      "height" : 1510
+    },
+    "points" : [ {
+      "x" : 32,
+      "y" : 127
+    }, {
+      "x" : 1451,
+      "y" : 127
+    }, {
+      "x" : 1451,
+      "y" : 1637
+    }, {
+      "x" : 32,
+      "y" : 1637
+    } ],
+    "colour" : "#4684ee"
+  } ],
+  "minX" : 8,
+  "maxX" : 1534,
+  "minY" : 65,
+  "maxY" : 1661,
+  "disease" : false
+}

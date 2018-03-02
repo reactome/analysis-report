@@ -1,0 +1,1662 @@
+{
+  "dbId" : 451927,
+  "stId" : "R-HSA-451927",
+  "nodes" : [ {
+    "dbId" : 8983432,
+    "stId" : "R-HSA-8983432",
+    "displayName" : "Interleukin-15 signaling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3053 ]
+  }, {
+    "dbId" : 450048,
+    "stId" : "R-HSA-450048",
+    "displayName" : "IL3:IL3RA [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 914065, 914167, 912319, 450064, 879968, 893527, 912308 ],
+    "children" : [ 879938, 450059 ]
+  }, {
+    "dbId" : 507919,
+    "stId" : "R-HSA-507919",
+    "displayName" : "p-STAT5 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 856 ],
+    "children" : [ 8983121 ]
+  }, {
+    "dbId" : 913412,
+    "stId" : "R-HSA-913412",
+    "displayName" : "IL3:IL3R active complex, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 913439 ],
+    "children" : [ 912321, 912317 ]
+  }, {
+    "dbId" : 162568,
+    "stId" : "R-HSA-162568",
+    "displayName" : "p-Y-SHC1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29353",
+    "geneNames" : [ "SHC1", "SHC", "SHCA" ],
+    "parents" : [ 8983306, 167016, 453099 ]
+  }, {
+    "dbId" : 1469978,
+    "stId" : "R-HSA-1469978",
+    "displayName" : "p-STAT5 [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 508012 ],
+    "children" : [ 507995, 508016 ]
+  }, {
+    "dbId" : 450059,
+    "stId" : "R-HSA-450059",
+    "displayName" : "IL3 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08700",
+    "geneNames" : [ "IL3" ],
+    "parents" : [ 450048 ]
+  }, {
+    "dbId" : 452107,
+    "stId" : "R-HSA-452107",
+    "displayName" : "IL2:IL2R trimer p-(Y338,392,510) beta subunit:p-JAK1:JAK3:STAT5 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 43 ],
+    "children" : [ 452094, 452119 ]
+  }, {
+    "dbId" : 450056,
+    "stId" : "R-HSA-450056",
+    "displayName" : "IL5 homodimer:IL5RA [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 914069, 914169, 913363, 913423, 913357 ],
+    "children" : [ 450072, 913383 ]
+  }, {
+    "dbId" : 452104,
+    "stId" : "R-HSA-452104",
+    "displayName" : "IL2:IL2R trimer p-(Y338,392,510) beta subunit:p-JAK1:JAK3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 453099 ],
+    "children" : [ 447099, 452093, 450046, 451921, 451911 ]
+  }, {
+    "dbId" : 913411,
+    "stId" : "R-HSA-913411",
+    "displayName" : "Interleukin receptor complexes with activated SHC1:SHIP:GRB2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 200 ],
+    "children" : [ 74686, 913378 ]
+  }, {
+    "dbId" : 9005977,
+    "stId" : "R-HSA-9005977",
+    "displayName" : "IL21:IL21R:JAK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2948 ],
+    "parents" : [ 9006846 ],
+    "children" : [ 448458, 9006858 ]
+  }, {
+    "dbId" : 452119,
+    "stId" : "R-HSA-452119",
+    "displayName" : "IL2:IL2R trimer p-(Y338,392,510) beta subunit:p-JAK1:JAK3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 28 ],
+    "parents" : [ 452107, 507943, 452095 ],
+    "children" : [ 447099, 452093, 450046, 451921, 451911 ]
+  }, {
+    "dbId" : 390932,
+    "stId" : "R-HSA-390932",
+    "displayName" : "PTK2B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 424 ],
+    "identifier" : "Q14289",
+    "geneNames" : [ "PTK2B", "FAK2", "PYK2", "RAFTK" ],
+    "parents" : [ 391113, 508512, 5218787 ]
+  }, {
+    "dbId" : 508438,
+    "stId" : "R-HSA-508438",
+    "displayName" : "IL2:IL2R trimer:p-JAK1:JAK3:p-SYK [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 417 ],
+    "children" : [ 429432, 451920 ]
+  }, {
+    "dbId" : 913439,
+    "stId" : "R-HSA-913439",
+    "displayName" : "High affinity binding complex dimers of cytokine receptors using Bc, inactive JAK2, p-(Y593,628)-Bc:p(427,349,350)-SHC1 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 912534 ],
+    "children" : [ 913366, 913428, 913412 ]
+  }, {
+    "dbId" : 450065,
+    "stId" : "R-HSA-450065",
+    "displayName" : "IL2:IL2RA:IL2RB:JAK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 18 ],
+    "parents" : [ 450080 ],
+    "children" : [ 538993, 451905 ]
+  }, {
+    "dbId" : 913428,
+    "stId" : "R-HSA-913428",
+    "displayName" : "High affinity GM-CSF receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 914021, 926770, 913439 ],
+    "children" : [ 912321, 913384 ]
+  }, {
+    "dbId" : 9005970,
+    "stId" : "R-HSA-9005970",
+    "displayName" : "IL21R [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HBE5",
+    "geneNames" : [ "IL21R", "NILR", "UNQ3121/PRO10273" ],
+    "parents" : [ 9006858, 9006860 ]
+  }, {
+    "dbId" : 507929,
+    "stId" : "R-HSA-507929",
+    "displayName" : "p-STAT5A, p-STAT5B [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 267 ],
+    "parents" : [ 2671835, 1168901, 507943, 913409, 912305, 913365, 8982988, 1671696 ],
+    "children" : [ 507936, 507939 ]
+  }, {
+    "dbId" : 450072,
+    "stId" : "R-HSA-450072",
+    "displayName" : "IL5RA [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01344",
+    "geneNames" : [ "IL5RA", "IL5R" ],
+    "parents" : [ 450056 ]
+  }, {
+    "dbId" : 507943,
+    "stId" : "R-HSA-507943",
+    "displayName" : "IL2:IL2R trimer p-(Y338,Y392, Y510) beta subunit:p-JAK1:JAK3:p-STAT5 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 212 ],
+    "children" : [ 507929, 452119 ]
+  }, {
+    "dbId" : 74787,
+    "stId" : "R-HSA-74787",
+    "displayName" : "PIK3CA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42336",
+    "geneNames" : [ "PIK3CA" ],
+    "parents" : [ 74689, 2399558, 5637693, 1226013, 5655267, 5655337, 5655294, 8853237, 5655217, 1839055, 1839051, 3080565, 5654331, 1806270, 1806218, 1806182, 1306961, 5654197, 5654195, 5654192, 198379, 5654205, 179791, 1250373, 5654190, 5654188, 5654187, 1250508 ]
+  }, {
+    "dbId" : 74789,
+    "stId" : "R-HSA-74789",
+    "displayName" : "PIK3R1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P27986",
+    "geneNames" : [ "PIK3R1", "GRB1" ],
+    "parents" : [ 6790032, 443399, 1839052, 1839048, 1295511, 391342, 179864, 1806213, 1806184, 1806218, 74688 ]
+  }, {
+    "dbId" : 507939,
+    "stId" : "R-HSA-507939",
+    "displayName" : "p-Y699-STAT5B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51692",
+    "geneNames" : [ "STAT5B" ],
+    "parents" : [ 1295524, 507929, 1433413 ]
+  }, {
+    "dbId" : 74788,
+    "stId" : "R-HSA-74788",
+    "displayName" : "PIK3CB [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42338",
+    "geneNames" : [ "PIK3CB", "PIK3C1" ],
+    "parents" : [ 3080558, 437110, 1806272, 1806184, 1806237, 74689 ]
+  }, {
+    "dbId" : 450080,
+    "stId" : "R-HSA-450080",
+    "displayName" : "IL2:IL2R trimer:JAK1:JAK3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 20 ],
+    "children" : [ 450065, 451911 ]
+  }, {
+    "dbId" : 74791,
+    "stId" : "R-HSA-74791",
+    "displayName" : "PIK3R2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00459",
+    "geneNames" : [ "PIK3R2" ],
+    "parents" : [ 194904, 1295511, 391342, 1806272, 1806210, 1806270, 74688 ]
+  }, {
+    "dbId" : 508449,
+    "stId" : "R-HSA-508449",
+    "displayName" : "IL2:IL2R trimer:p-JAK1:JAK3:SYK [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 415 ],
+    "children" : [ 58268, 451920 ]
+  }, {
+    "dbId" : 507936,
+    "stId" : "R-HSA-507936",
+    "displayName" : "p-Y694-STAT5A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42229",
+    "geneNames" : [ "STAT5A", "STAT5" ],
+    "parents" : [ 1295524, 507929, 507927, 1433413 ]
+  }, {
+    "dbId" : 197938,
+    "stId" : "R-HSA-197938",
+    "displayName" : "PTPN6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29350",
+    "geneNames" : [ "PTPN6", "HCP", "PTP1C" ],
+    "parents" : [ 1169239, 1169243, 997298, 210221, 913378, 205181, 389744, 5690677 ]
+  }, {
+    "dbId" : 451893,
+    "stId" : "R-HSA-451893",
+    "displayName" : "JAK3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7 ],
+    "identifier" : "P52333",
+    "geneNames" : [ "JAK3" ],
+    "parents" : [ 8987151, 6786057, 508510, 508512, 451911 ]
+  }, {
+    "dbId" : 913467,
+    "stId" : "R-HSA-913467",
+    "displayName" : "SHIP1,2 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 189 ],
+    "parents" : [ 913393 ],
+    "children" : [ 913354, 197940 ]
+  }, {
+    "dbId" : 926776,
+    "stId" : "R-HSA-926776",
+    "displayName" : "High affinity binding complex dimers of cytokine receptors using Bc, inactive JAK2, p(Y593,628)- Bc:p(427,349,350)-SHC1:GRB2:p(Y)-GAB2:p85-containing Class 1A PI3Ks [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 912535 ],
+    "children" : [ 926773, 912532, 926774 ]
+  }, {
+    "dbId" : 197940,
+    "stId" : "R-HSA-197940",
+    "displayName" : "INPP5D [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92835",
+    "geneNames" : [ "INPP5D", "SHIP", "SHIP1" ],
+    "parents" : [ 210218, 913467, 2023888, 1806186 ]
+  }, {
+    "dbId" : 926774,
+    "stId" : "R-HSA-926774",
+    "displayName" : "High affinity IL-5 receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1:GRB2:p(Y)-GAB2:p85-containing Class 1A PI3Ks [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 926776 ],
+    "children" : [ 508248, 926769 ]
+  }, {
+    "dbId" : 926773,
+    "stId" : "R-HSA-926773",
+    "displayName" : "High affinity GM-CSF receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1:GRB2:p(Y)-GAB2:p85-containing Class 1A PI3Ks [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 926776 ],
+    "children" : [ 508248, 926770 ]
+  }, {
+    "dbId" : 926770,
+    "stId" : "R-HSA-926770",
+    "displayName" : "High affinity GM-CSF receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1:GRB2:p(Y)-GAB2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 926773, 926768 ],
+    "children" : [ 912528, 913428 ]
+  }, {
+    "dbId" : 451898,
+    "stId" : "R-HSA-451898",
+    "displayName" : "JAK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3 ],
+    "identifier" : "P23458",
+    "geneNames" : [ "JAK1", "JAK1A", "JAK1B" ],
+    "parents" : [ 1067656, 1169379, 8950571, 8950163, 8983439, 8983748, 1295512, 1264843, 918193, 451905, 8985962, 9006858, 873803, 6783816, 8987071, 6786090, 6786783, 6786093, 8987216, 8987233 ]
+  }, {
+    "dbId" : 926768,
+    "stId" : "R-HSA-926768",
+    "displayName" : "High affinity binding complex dimers of cytokine receptors using Bc, inactive JAK2, p(Y593,628)- Bc:p(427,349,350)-SHC1:GRB2:p(Y)-GAB2 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 912533 ],
+    "children" : [ 926769, 926770, 912540 ]
+  }, {
+    "dbId" : 8980151,
+    "stId" : "R-HSA-8980151",
+    "displayName" : "p-STAT5A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42229",
+    "geneNames" : [ "STAT5A", "STAT5" ],
+    "parents" : [ 8983121 ]
+  }, {
+    "dbId" : 926769,
+    "stId" : "R-HSA-926769",
+    "displayName" : "High affinity IL-5 receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1:GRB2:p(Y)-GAB2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 926774, 926768 ],
+    "children" : [ 912528, 913366 ]
+  }, {
+    "dbId" : 451911,
+    "stId" : "R-HSA-451911",
+    "displayName" : "IL2RG:JAK3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "parents" : [ 6786078, 9006846, 449785, 451920, 450080, 8983134, 449120, 449967, 452119, 452104 ],
+    "children" : [ 449139, 451893 ]
+  }, {
+    "dbId" : 380737,
+    "stId" : "R-HSA-380737",
+    "displayName" : "STAT5B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51692",
+    "geneNames" : [ "STAT5B" ],
+    "parents" : [ 1295523, 380756, 452094, 1433551 ]
+  }, {
+    "dbId" : 451905,
+    "stId" : "R-HSA-451905",
+    "displayName" : "IL2RB:JAK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ],
+    "parents" : [ 450065, 8983134, 449120 ],
+    "children" : [ 451898, 197876 ]
+  }, {
+    "dbId" : 508239,
+    "stId" : "R-HSA-508239",
+    "displayName" : "GAB2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UQC2",
+    "geneNames" : [ "GAB2", "KIAA0571" ],
+    "parents" : [ 8855092, 8983327, 912522, 2685701, 1433545 ]
+  }, {
+    "dbId" : 451918,
+    "stId" : "R-HSA-451918",
+    "displayName" : "IL2RA:IL2RB:p-JAK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 451939 ],
+    "children" : [ 450046, 451943 ]
+  }, {
+    "dbId" : 508238,
+    "stId" : "R-HSA-508238",
+    "displayName" : "IL2:IL2R trimer p(Y338) beta subunit:p-SHC:GRB2:GAB2:p85-containing Class 1A PI3Ks [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 912535 ],
+    "children" : [ 508248, 912523 ]
+  }, {
+    "dbId" : 873799,
+    "stId" : "R-HSA-873799",
+    "displayName" : "p-Y1007-JAK2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60674",
+    "geneNames" : [ "JAK2" ],
+    "parents" : [ 6786753, 6788568, 1169228, 1168892, 873819, 912306, 1168869, 1364053, 1369079, 893554, 1112596, 1470000, 1469999, 1433527, 1433552 ]
+  }, {
+    "dbId" : 921157,
+    "stId" : "R-HSA-921157",
+    "displayName" : "Interleukin receptor complexes with activated SHC1:GRB2:SOS1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 733 ],
+    "parents" : [ 5672601 ],
+    "children" : [ 912534, 109797 ]
+  }, {
+    "dbId" : 380747,
+    "stId" : "R-HSA-380747",
+    "displayName" : "STAT5A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42229",
+    "geneNames" : [ "STAT5A", "STAT5" ],
+    "parents" : [ 1295523, 380756, 452094, 1433551 ]
+  }, {
+    "dbId" : 64847,
+    "stId" : "R-HSA-64847",
+    "displayName" : "SOS1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q07889",
+    "geneNames" : [ "SOS1" ],
+    "parents" : [ 167215, 194849, 354168, 983692, 109797, 8851860, 210970, 392044, 9009718 ]
+  }, {
+    "dbId" : 879938,
+    "stId" : "R-HSA-879938",
+    "displayName" : "IL3RA [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P26951",
+    "geneNames" : [ "IL3RA", "IL3R" ],
+    "parents" : [ 450048 ]
+  }, {
+    "dbId" : 508246,
+    "stId" : "R-HSA-508246",
+    "displayName" : "IL2:IL2R trimer p(Y338,392,510) beta subunit:p-SHC:GRB2:GAB2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 912537 ],
+    "children" : [ 453099, 912522 ]
+  }, {
+    "dbId" : 451920,
+    "stId" : "R-HSA-451920",
+    "displayName" : "IL2:IL2R trimer:p-JAK1:JAK3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 23 ],
+    "parents" : [ 508438, 508449 ],
+    "children" : [ 451939, 451911 ]
+  }, {
+    "dbId" : 508241,
+    "stId" : "R-HSA-508241",
+    "displayName" : "PI3K delta [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 508248 ],
+    "children" : [ 391342, 392274 ]
+  }, {
+    "dbId" : 451921,
+    "stId" : "R-HSA-451921",
+    "displayName" : "p-Y-JAK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P23458",
+    "geneNames" : [ "JAK1", "JAK1A", "JAK1B" ],
+    "parents" : [ 6786061, 6784367, 6784811, 873807, 873805, 9006860, 451943, 9009701, 909715, 452119, 453105, 452104 ]
+  }, {
+    "dbId" : 392274,
+    "stId" : "R-HSA-392274",
+    "displayName" : "PIK3CD [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00329",
+    "geneNames" : [ "PIK3CD" ],
+    "parents" : [ 3080567, 508241, 1045152 ]
+  }, {
+    "dbId" : 508510,
+    "stId" : "R-HSA-508510",
+    "displayName" : "JAK3:p-PYK2 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 434 ],
+    "children" : [ 508515, 451893 ]
+  }, {
+    "dbId" : 507995,
+    "stId" : "R-HSA-507995",
+    "displayName" : "p-Y694-STAT5A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42229",
+    "geneNames" : [ "STAT5A", "STAT5" ],
+    "parents" : [ 1469978, 507996, 1469979 ]
+  }, {
+    "dbId" : 508248,
+    "stId" : "R-HSA-508248",
+    "displayName" : "p85-containing Class 1A PI3Ks [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 53 ],
+    "parents" : [ 8855523, 914177, 508238, 926773, 912532, 926774, 912647, 912623 ],
+    "children" : [ 198379, 508241, 437110 ]
+  }, {
+    "dbId" : 451943,
+    "stId" : "R-HSA-451943",
+    "displayName" : "IL2RB:p-JAK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 451918 ],
+    "children" : [ 451921, 197876 ]
+  }, {
+    "dbId" : 508515,
+    "stId" : "R-HSA-508515",
+    "displayName" : "p-Y-PTK2B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14289",
+    "geneNames" : [ "PTK2B", "FAK2", "PYK2", "RAFTK" ],
+    "parents" : [ 508510 ]
+  }, {
+    "dbId" : 451939,
+    "stId" : "R-HSA-451939",
+    "displayName" : "IL2RA:IL2RB:p-JAK1:IL2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 451920 ],
+    "children" : [ 447099, 451918 ]
+  }, {
+    "dbId" : 508512,
+    "stId" : "R-HSA-508512",
+    "displayName" : "JAK3:PYK2 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 425 ],
+    "children" : [ 451893, 390932 ]
+  }, {
+    "dbId" : 914021,
+    "stId" : "R-HSA-914021",
+    "displayName" : "High affinity GM-CSF receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1:GRB2:GAB2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 914052 ],
+    "children" : [ 913428, 912522 ]
+  }, {
+    "dbId" : 508012,
+    "stId" : "R-HSA-508012",
+    "displayName" : "p-STAT5 dimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 858 ],
+    "parents" : [ 9012668, 8865622 ],
+    "children" : [ 1469978 ]
+  }, {
+    "dbId" : 437110,
+    "stId" : "R-HSA-437110",
+    "displayName" : "PI3K beta [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 508248, 437157 ],
+    "children" : [ 391342, 74788 ]
+  }, {
+    "dbId" : 3132766,
+    "stId" : "R-HSA-3132766",
+    "displayName" : "p-Y701-STAT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42224",
+    "geneNames" : [ "STAT1" ],
+    "parents" : [ 1112571, 9006876, 1888197, 1169218, 6788625, 8980551, 1112555, 6788620, 8952746 ]
+  }, {
+    "dbId" : 914047,
+    "stId" : "R-HSA-914047",
+    "displayName" : "High affinity IL-5 receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1:GRB2:GAB2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 914052 ],
+    "children" : [ 913366, 912522 ]
+  }, {
+    "dbId" : 449139,
+    "stId" : "R-HSA-449139",
+    "displayName" : "IL2RG [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "identifier" : "P31785",
+    "geneNames" : [ "IL2RG" ],
+    "parents" : [ 9006853, 8982912, 451911 ]
+  }, {
+    "dbId" : 9006846,
+    "stId" : "R-HSA-9006846",
+    "displayName" : "IL21:IL21R:JAK1:IL2RG:JAK3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2976 ],
+    "children" : [ 451911, 9005977 ]
+  }, {
+    "dbId" : 508016,
+    "stId" : "R-HSA-508016",
+    "displayName" : "p-Y699-STAT5B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51692",
+    "geneNames" : [ "STAT5B" ],
+    "parents" : [ 1469978, 1469979 ]
+  }, {
+    "dbId" : 538993,
+    "stId" : "R-HSA-538993",
+    "displayName" : "IL2:IL2RA [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 16 ],
+    "parents" : [ 450065 ],
+    "children" : [ 447099, 450046 ]
+  }, {
+    "dbId" : 447099,
+    "stId" : "R-HSA-447099",
+    "displayName" : "IL2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 14 ],
+    "identifier" : "P60568",
+    "geneNames" : [ "IL2" ],
+    "parents" : [ 451939, 538993, 452119, 452104 ]
+  }, {
+    "dbId" : 429432,
+    "stId" : "R-HSA-429432",
+    "displayName" : "p-Y-SYK [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P43405",
+    "geneNames" : [ "SYK" ],
+    "parents" : [ 429434, 508438 ]
+  }, {
+    "dbId" : 5673001,
+    "stId" : "R-HSA-5673001",
+    "displayName" : "RAF/MAP kinase cascade",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 867 ]
+  }, {
+    "dbId" : 629622,
+    "stId" : "R-HSA-629622",
+    "displayName" : "STAT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42224",
+    "geneNames" : [ "STAT1" ],
+    "parents" : [ 9009216, 6790032, 6788573, 1433551, 1112559, 380756, 9006868, 1888196, 1169379, 8983842, 8952787, 8983998, 8950267, 9008005 ]
+  }, {
+    "dbId" : 9006856,
+    "stId" : "R-HSA-9006856",
+    "displayName" : "IL21:IL21R:p-Y-JAK1:IL2RG:p-Y-JAK3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2979 ],
+    "parents" : [ 9006869, 9006875 ],
+    "children" : [ 9006855, 9006853 ]
+  }, {
+    "dbId" : 9006858,
+    "stId" : "R-HSA-9006858",
+    "displayName" : "IL21R:JAK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2947 ],
+    "parents" : [ 9005977 ],
+    "children" : [ 451898, 9005970 ]
+  }, {
+    "dbId" : 9006860,
+    "stId" : "R-HSA-9006860",
+    "displayName" : "IL21R:p-Y-JAK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9006855 ],
+    "children" : [ 9005970, 451921 ]
+  }, {
+    "dbId" : 912523,
+    "stId" : "R-HSA-912523",
+    "displayName" : "IL2:IL2R trimer p(Y338,392,510) beta subunit:p-SHC:GRB2:p(Y)-GAB2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 508238, 912533 ],
+    "children" : [ 453099, 912528 ]
+  }, {
+    "dbId" : 912522,
+    "stId" : "R-HSA-912522",
+    "displayName" : "GRB2:GAB2 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 732 ],
+    "parents" : [ 1839045, 914021, 912538, 914047, 508246 ],
+    "children" : [ 74686, 508239 ]
+  }, {
+    "dbId" : 914052,
+    "stId" : "R-HSA-914052",
+    "displayName" : "High affinity binding complex dimers of cytokine receptors using Bc, inactive JAK2, p(Y593,628)- Bc:p(427,349,350)-SHC1:GRB2:GAB2 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 912537 ],
+    "children" : [ 914021, 912538, 914047 ]
+  }, {
+    "dbId" : 9006853,
+    "stId" : "R-HSA-9006853",
+    "displayName" : "IL2RG:p-Y-JAK3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9006856 ],
+    "children" : [ 9006854, 449139 ]
+  }, {
+    "dbId" : 914048,
+    "stId" : "R-HSA-914048",
+    "displayName" : "p-Y705-STAT3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P40763",
+    "geneNames" : [ "STAT3", "APRF" ],
+    "parents" : [ 8952748, 8950427, 8980551, 8952746, 8987122, 6788625, 6786065, 8982168, 6784779, 1169218, 1888197, 9006876, 2671874, 1112526, 1112555, 1112571, 1433413 ]
+  }, {
+    "dbId" : 9006855,
+    "stId" : "R-HSA-9006855",
+    "displayName" : "IL21:IL21R:p-Y-JAK1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 9006856 ],
+    "children" : [ 448458, 9006860 ]
+  }, {
+    "dbId" : 9006854,
+    "stId" : "R-HSA-9006854",
+    "displayName" : "p-Y-JAK3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52333",
+    "geneNames" : [ "JAK3" ],
+    "parents" : [ 9006853, 9009701 ]
+  }, {
+    "dbId" : 912540,
+    "stId" : "R-HSA-912540",
+    "displayName" : "IL3:IL3R active complex, phosphorylated Bc:p(Y427,349,350)-SHC1:GRB2:p(Y)-GAB2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 912532, 926768 ],
+    "children" : [ 912528, 912313 ]
+  }, {
+    "dbId" : 9006875,
+    "stId" : "R-HSA-9006875",
+    "displayName" : "IL21:IL21R:p-Y-JAK1:IL2RG:p-Y-JAK3:STAT1,STAT3,STAT4,STAT5 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2988 ],
+    "children" : [ 9006868, 9006856 ]
+  }, {
+    "dbId" : 912537,
+    "stId" : "R-HSA-912537",
+    "displayName" : "Interleukin receptor compexes with activated Shc:GRB2:GAB2 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 49 ],
+    "children" : [ 914052, 508246 ]
+  }, {
+    "dbId" : 9006876,
+    "stId" : "R-HSA-9006876",
+    "displayName" : "p-Y701-STAT1, p-Y705-STAT3,p-Y693-STAT4,(p-Y694-STAT5A,p-Y699-STAT5B) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 9006869 ],
+    "children" : [ 8950343, 914048, 1295524, 3132766 ]
+  }, {
+    "dbId" : 912538,
+    "stId" : "R-HSA-912538",
+    "displayName" : "IL3:IL3R active complex, phosphorylated Bc:p(Y427,349,350)-SHC1:GRB2:GAB2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 914052 ],
+    "children" : [ 912522, 912313 ]
+  }, {
+    "dbId" : 912533,
+    "stId" : "R-HSA-912533",
+    "displayName" : "Interleukin receptor complexes with activated Shc:GRB2:p-GAB2 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 51 ],
+    "children" : [ 926768, 912523 ]
+  }, {
+    "dbId" : 912532,
+    "stId" : "R-HSA-912532",
+    "displayName" : "IL3:IL3R active complex, phosphorylated Bc:p(Y427,349,350)-SHC1:GRB2:p(Y)-GAB2:p85-containing Class 1A PI3Ks [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 926776 ],
+    "children" : [ 508248, 912540 ]
+  }, {
+    "dbId" : 912535,
+    "stId" : "R-HSA-912535",
+    "displayName" : "Interleukin receptor complexes with activated Shc:GRB2:p-GAB2:p85-containing Class 1 PI3Ks [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 54 ],
+    "children" : [ 508238, 926776 ]
+  }, {
+    "dbId" : 912534,
+    "stId" : "R-HSA-912534",
+    "displayName" : "Interleukin receptor complexes with activated SHC1 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 48 ],
+    "parents" : [ 913378, 913393, 921157 ],
+    "children" : [ 453099, 913439 ]
+  }, {
+    "dbId" : 912529,
+    "stId" : "R-HSA-912529",
+    "displayName" : "p-Y-GAB2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UQC2",
+    "geneNames" : [ "GAB2", "KIAA0571" ],
+    "parents" : [ 8983333, 912528, 1562561, 1562560 ]
+  }, {
+    "dbId" : 58268,
+    "stId" : "R-HSA-58268",
+    "displayName" : "SYK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 414 ],
+    "identifier" : "P43405",
+    "geneNames" : [ "SYK" ],
+    "parents" : [ 434838, 434911, 5684799, 2029129, 2454243, 5607685, 5607692, 210250, 5621149, 508449, 429424, 912625 ]
+  }, {
+    "dbId" : 9006869,
+    "stId" : "R-HSA-9006869",
+    "displayName" : "IL21:IL21R:p-Y-JAK1:IL2RG:p-Y-JAK3:p-Y701-STAT1,p-Y705-STAT3,p-Y693-STAT4,(p-Y694-STAT5A,p-Y699-STAT5B) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3016 ],
+    "children" : [ 9006876, 9006856 ]
+  }, {
+    "dbId" : 9006868,
+    "stId" : "R-HSA-9006868",
+    "displayName" : "STAT1,STAT3,STAT4,STAT5 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2986 ],
+    "parents" : [ 9006875 ],
+    "children" : [ 629622, 539044, 8950606, 1295523 ]
+  }, {
+    "dbId" : 912528,
+    "stId" : "R-HSA-912528",
+    "displayName" : "GRB2:pY-GAB2 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1839047, 926769, 926770, 912540, 912523 ],
+    "children" : [ 74686, 912529 ]
+  }, {
+    "dbId" : 205223,
+    "stId" : "R-HSA-205223",
+    "displayName" : "PIK3R3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92569",
+    "geneNames" : [ "PIK3R3" ],
+    "parents" : [ 1295511, 391342, 1806182, 1806256, 1806237 ]
+  }, {
+    "dbId" : 5340408,
+    "stId" : "R-HSA-5340408",
+    "displayName" : "HAVCR2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 860 ],
+    "identifier" : "Q8TDQ0",
+    "geneNames" : [ "HAVCR2", "TIM3", "TIMD3" ],
+    "parents" : [ 5340393 ]
+  }, {
+    "dbId" : 391342,
+    "stId" : "R-HSA-391342",
+    "displayName" : "PI3K-regulatory subunits [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 508241, 437110, 198379 ],
+    "children" : [ 74789, 74791, 205223 ]
+  }, {
+    "dbId" : 539044,
+    "stId" : "R-HSA-539044",
+    "displayName" : "STAT3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P40763",
+    "geneNames" : [ "STAT3", "APRF" ],
+    "parents" : [ 1433551, 1112559, 380756, 9007142, 9006868, 1888196, 6786055, 6788573, 9009216, 8950547, 8983998, 8950267, 2671864, 8848084, 8875815, 9007112, 8982893, 6784795, 8982170, 8987123, 8987032, 8987189 ]
+  }, {
+    "dbId" : 1295523,
+    "stId" : "R-HSA-1295523",
+    "displayName" : "STAT5 [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 9009216, 9006868, 9007142, 9007112 ],
+    "children" : [ 380747, 380737 ]
+  }, {
+    "dbId" : 912317,
+    "stId" : "R-HSA-912317",
+    "displayName" : "IL3:IL3R active complex, JAK2:p-Y593,Y629-IL3RB [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 912320, 913422, 913358, 913412 ],
+    "children" : [ 912308 ]
+  }, {
+    "dbId" : 447159,
+    "stId" : "R-HSA-447159",
+    "displayName" : "IL5 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05113",
+    "geneNames" : [ "IL5" ],
+    "parents" : [ 913383 ]
+  }, {
+    "dbId" : 912316,
+    "stId" : "R-HSA-912316",
+    "displayName" : "pY593,Y628-IL3RB:JAK2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 913357, 913355, 912308 ],
+    "children" : [ 210620, 912312 ]
+  }, {
+    "dbId" : 912319,
+    "stId" : "R-HSA-912319",
+    "displayName" : "IL3RA:IL3:p(Y593)-IL3RB:Activated JAK2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 912314 ],
+    "children" : [ 912306, 450048 ]
+  }, {
+    "dbId" : 912313,
+    "stId" : "R-HSA-912313",
+    "displayName" : "IL3:IL3R active complex, phosphorylated Bc:p(Y427,349,350)-SHC1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 912538, 912540 ],
+    "children" : [ 912320, 912321 ]
+  }, {
+    "dbId" : 912312,
+    "stId" : "R-HSA-912312",
+    "displayName" : "p-Y593,Y628-CSF2RB [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P32927",
+    "geneNames" : [ "CSF2RB", "IL3RB", "IL5RB" ],
+    "parents" : [ 912306, 912316 ]
+  }, {
+    "dbId" : 912314,
+    "stId" : "R-HSA-912314",
+    "displayName" : "IL3:IL3R active complex, activated JAK2, phosphorylated Bc [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 912320 ],
+    "children" : [ 912319 ]
+  }, {
+    "dbId" : 1295524,
+    "stId" : "R-HSA-1295524",
+    "displayName" : "(p-Y694-STAT5A,p-Y699-STAT5B) [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 9006876 ],
+    "children" : [ 507936, 507939 ]
+  }, {
+    "dbId" : 5340393,
+    "stId" : "R-HSA-5340393",
+    "displayName" : "HAVCR2:LGALS9 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 862 ],
+    "children" : [ 5340408, 5215932 ]
+  }, {
+    "dbId" : 912308,
+    "stId" : "R-HSA-912308",
+    "displayName" : "IL3:IL3RA:p-Y593,Y628-IL3RB:JAK2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 912317 ],
+    "children" : [ 450048, 912316 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 22, 502, 487, 2984, 3017, 26, 447 ],
+    "identifier" : "15422",
+    "parents" : [ 170037, 2263468, 9206355, 9630847, 9576623, 9432018, 9511146, 9353588, 9697690, 9795133, 6814649, 9276451, 9600652, 9736131, 9237675, 9388153, 9466546, 9658146, 9539600, 9308766, 390580, 9160108, 9542621, 9391763, 9163921, 9831775, 9603243, 9741155, 9312345, 9240824, 9661271, 9470131, 445789, 390446, 391390, 994134, 9794890, 9510958, 9046292, 9128311, 9431829, 9056083, 9997775, 9070329, 9353374, 9697532, 9206146, 9576446, 9871996, 9630682, 9276265, 9926229, 390474, 9087795, 443623, 9779593, 9419766, 9193599, 9686115, 9859450, 9265606, 9341444, 9981023, 9622036, 9498806, 9083944, 9912343, 9566577, 8948980, 9054223, 9859337, 9621997, 9341426, 9912333, 9265588, 9498788, 9083934, 9054206, 9981013, 9779576, 9566525, 9419748, 9193545, 9686096, 8948970, 9978087, 9065526, 9681832, 9188087, 9910208, 9493702, 9082788, 9414658, 9772921, 9853938, 9117897, 9040616, 5618079, 9053631, 9977478, 9562442, 9414581, 9909743, 9117821, 9681761, 9082712, 9772764, 9065453, 9188008, 9053614, 9493619, 9853846, 3371563, 9040519, 9566510, 9041623, 9083927, 9054199, 9859330, 9779553, 9193528, 9912326, 9120378, 9981000, 9066266, 9341411, 9621982, 9686105, 9265573, 9419721, 9498773, 5618088, 5251947, 9777034, 9119601, 9083581, 9684291, 9053991, 9979698, 9911581, 9191365, 9066018, 9417800, 9041326, 9857395, 9496755, 6792614, 9417808, 9777049, 9041333, 9496763, 9684299, 9191373, 5252045, 5252011, 9684317, 9083606, 9054006, 9066033, 9911618, 9857426, 9119631, 9041355, 9979768, 9777077, 5252104, 9496767, 9191377, 9119606, 9083591, 9684303, 9417812, 9777053, 5252040, 9119637, 9066039, 9911629, 9041361, 9979790, 9083612, 9054012, 5251940, 9083600, 9496777, 9911599, 9777069, 9979727, 9417822, 9857414, 9191393, 9119623, 9684313, 9041345, 9053998, 9066025, 5252036, 9777059, 9191386, 9496773, 9417818, 9041340, 9066020, 9979700, 9857402, 9119618, 9911583, 9684309, 9053993, 9083595, 5252100, 9041331, 9496759, 9191369, 9684295, 9417804, 9777045, 5251938, 9083607, 9054007, 9562506, 9119632, 9356215, 9066034, 9700130, 9632615, 9911619, 9417829, 9191403, 9857427, 9041356, 9279049, 9777078, 9979769, 9496784, 5251937, 9857400, 9119616, 9417816, 9777057, 9191384, 9496771, 9083593, 9041338, 9684307, 5251968, 9496783, 9083604, 9979747, 9857422, 9054002, 9911610, 9041349, 9417828, 9684315, 9066029, 9777075, 9191402, 9119629, 5252063, 9777058, 9417817, 9191385, 9496772, 9041339, 9857401, 9979699, 9119617, 9911582, 9066019, 9684308, 9053992, 9083594, 5252093, 9496781, 9417826, 9857420, 9054000, 9041347, 9083602, 9979740, 9777073, 9191400, 9911605, 9119625, 9066027, 5252028, 9394048, 9663305, 9605109, 9544724, 9166591, 9314781, 9243007, 9472545, 879207, 168906, 918190, 9370000, 9291920, 9644136, 9815167, 9140562, 9526393, 9715010, 9589796, 9448549, 114255, 9221701, 9973634, 9081650, 9064690, 9612356, 9177018, 9252472, 9672800, 9843545, 9757658, 9325507, 9039298, 9907039, 9483640, 9554385, 9405327, 9112971, 201854, 9081655, 9064695, 9973636, 9405331, 9112976, 9612360, 9672804, 9907044, 9177022, 9252476, 9039303, 9483644, 9325511, 9843550, 9757660, 9554389, 201855, 433729, 9948680, 9596076, 9727337, 9230161, 9061970, 9034769, 9150780, 9051869, 9379707, 9077784, 9893446, 9534367, 9458077, 9112940, 9652725, 9301198, 9843510, 201857 ]
+  }, {
+    "dbId" : 74680,
+    "stId" : "R-HSA-74680",
+    "displayName" : "SHC1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 34 ],
+    "identifier" : "P29353",
+    "geneNames" : [ "SHC1", "SHC", "SHCA" ],
+    "parents" : [ 167023, 432098, 1248746, 8854400, 452095, 913358, 913433, 913387, 1250359, 180301, 74681, 204857, 8983310, 1225858, 5637701 ]
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 512, 449, 2983, 24, 489, 3018, 27 ],
+    "identifier" : "16761",
+    "parents" : [ 6788782, 170037, 500087, 9697693, 9511149, 9432021, 9206358, 9353591, 9795136, 9630850, 9576626, 6814647, 9276454, 9308768, 9600654, 9658148, 9160110, 9466548, 9388155, 9539602, 9736133, 9237677, 390582, 9741227, 9240850, 9831931, 9542652, 9470172, 9661300, 9312377, 9603268, 9391818, 445800, 9163954, 391405, 6790050, 9736232, 9160241, 9056082, 9952449, 9658213, 9895747, 9103166, 9827450, 9078597, 9388323, 9466651, 9035776, 9539705, 9600757, 9308939, 9070319, 390455, 9237786, 445015, 445018, 9977479, 9562443, 9414582, 9117822, 9082713, 9681762, 9772765, 9909744, 9188009, 9493620, 9065454, 9853847, 9040520, 3371441, 9053615, 9681804, 9772846, 9977954, 9910080, 9040575, 9414618, 9117855, 9053626, 9265602, 9341440, 9493660, 9065507, 9853904, 9188045, 9082763, 5618090, 6792616, 9684367, 9041363, 9417878, 9911631, 9496840, 9083614, 9054014, 9857497, 9777150, 9066083, 9979792, 9191465, 9119694, 5252087, 9041366, 9857498, 9496844, 9119696, 9083616, 9777154, 9417882, 9191469, 9684371, 5252111, 9496843, 9417881, 9083615, 9777153, 9119695, 9684370, 9191468, 5252110, 9191474, 9119701, 9777159, 9041371, 9417887, 9083621, 9979797, 9857503, 9054019, 9684375, 9911636, 9066088, 9496849, 5252012, 9496846, 9119698, 9417884, 9777156, 9041368, 9066085, 9979794, 9857500, 9054016, 9083618, 9911633, 9684373, 9191471, 5251980, 9496847, 9191472, 9119699, 9417885, 9777157, 9041369, 9066086, 9979795, 9857501, 9054017, 9083619, 9911634, 9684374, 5252038, 9054022, 9041374, 9119704, 9083624, 9066091, 9979800, 9911639, 5252097, 5252129, 9119700, 9083620, 9191473, 9066087, 9979796, 9857502, 9054018, 9911635, 9777158, 9041370, 9417886, 9496848, 5252096, 9041367, 9496845, 9119697, 9777155, 9054015, 9417883, 9066084, 9857499, 9083617, 9979793, 9911632, 9684372, 9191470, 5255423, 9041364, 9777151, 9496841, 9417879, 9191466, 9684368, 5251966, 9562478, 9191475, 9777161, 9119703, 9857505, 9041373, 9979799, 9417888, 9054021, 9083623, 9496850, 9911638, 9066090, 5251932, 9041365, 9496842, 9417880, 9191467, 9777152, 9684369, 5252090, 9979798, 9054020, 9777160, 9119702, 9083622, 9684376, 9857504, 9041372, 9066089, 9911637, 5251953, 9831368, 9660936, 9391412, 9036464, 9312027, 9105375, 9240526, 9740533, 9469808, 1063687, 9163554, 9764250, 9614553, 9676171, 9408585, 9487301, 9181673, 9255598, 2029139, 9181649, 9081751, 9907168, 9764195, 9974123, 9614529, 9408572, 9847332, 9329756, 9255581, 9676153, 9064771, 9557586, 9114122, 9487280, 202994, 9039435, 9325521, 9554399, 9757673, 9843562, 9081664, 9252484, 9039312, 9672820, 9177035, 9483654, 9612368, 9405341, 1861625 ]
+  }, {
+    "dbId" : 167609,
+    "stId" : "R-HSA-167609",
+    "displayName" : "LCK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P06239",
+    "geneNames" : [ "LCK" ],
+    "parents" : [ 434838, 167529, 200922, 2396556, 2395419, 389743, 453105, 211064, 202157, 389329 ]
+  }, {
+    "dbId" : 517562,
+    "stId" : "R-HSA-517562",
+    "displayName" : "CSF2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04141",
+    "geneNames" : [ "CSF2", "GMCSF" ],
+    "parents" : [ 6784987, 913362 ]
+  }, {
+    "dbId" : 912306,
+    "stId" : "R-HSA-912306",
+    "displayName" : "p(Y593)-IL3RB:Activated JAK2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 912319 ],
+    "children" : [ 873799, 912312 ]
+  }, {
+    "dbId" : 210620,
+    "stId" : "R-HSA-210620",
+    "displayName" : "JAK2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60674",
+    "geneNames" : [ "JAK2" ],
+    "parents" : [ 8950151, 8950039, 8987151, 6785800, 6786120, 1169223, 873808, 914033, 914173, 1370506, 1302663, 982774, 1977936, 1168397, 879945, 2586523, 912316, 5672734, 1067656, 1433493 ]
+  }, {
+    "dbId" : 74686,
+    "stId" : "R-HSA-74686",
+    "displayName" : "GRB2-1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 198 ],
+    "identifier" : "P62993-1",
+    "geneNames" : [ "GRB2", "ASH" ],
+    "parents" : [ 2197679, 8935905, 8867037, 354113, 8854978, 8854983, 391112, 1295625, 8876351, 182964, 182948, 182946, 180511, 180304, 109801, 389921, 914028, 913411, 182910, 179849, 8851942, 983692, 1433549, 109797, 204865, 392044, 392043, 8851921, 1250499, 388786, 190399, 912623, 912647, 912799, 912528, 912522 ]
+  }, {
+    "dbId" : 913357,
+    "stId" : "R-HSA-913357",
+    "displayName" : "IL5 homodimer:IL5RA:p(Y593, 628)-Bc:JAK2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 913359 ],
+    "children" : [ 450056, 912316 ]
+  }, {
+    "dbId" : 913359,
+    "stId" : "R-HSA-913359",
+    "displayName" : "High affinity IL-5 receptor complex dimer, inactive JAK2, p(Y593, 628)-Bc [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 913422, 913387, 913366 ],
+    "children" : [ 913357 ]
+  }, {
+    "dbId" : 8950606,
+    "stId" : "R-HSA-8950606",
+    "displayName" : "STAT4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14765",
+    "geneNames" : [ "STAT4" ],
+    "parents" : [ 8952752, 8952783, 8983881, 8950379, 9009216, 9006868 ]
+  }, {
+    "dbId" : 913355,
+    "stId" : "R-HSA-913355",
+    "displayName" : "GM-CSF:GM-CSF receptor alpha subunit:p(Y593, 628)-Bc:JAK2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 913384 ],
+    "children" : [ 913362, 912316 ]
+  }, {
+    "dbId" : 913354,
+    "stId" : "R-HSA-913354",
+    "displayName" : "INPPL1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15357",
+    "geneNames" : [ "INPPL1", "SHIP2" ],
+    "parents" : [ 913467, 2023888, 1806186 ]
+  }, {
+    "dbId" : 448458,
+    "stId" : "R-HSA-448458",
+    "displayName" : "IL21 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2946 ],
+    "identifier" : "Q9HBE4",
+    "geneNames" : [ "IL21" ],
+    "parents" : [ 9005977, 9006855 ]
+  }, {
+    "dbId" : 912321,
+    "stId" : "R-HSA-912321",
+    "displayName" : "p-Y349,Y350,Y427-SHC1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29353",
+    "geneNames" : [ "SHC1", "SHC", "SHCA" ],
+    "parents" : [ 912313, 8854980, 913366, 913428, 913412 ]
+  }, {
+    "dbId" : 912320,
+    "stId" : "R-HSA-912320",
+    "displayName" : "IL3:IL3R active complex, phosphorylated Bc [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 912313 ],
+    "children" : [ 912314, 912317 ]
+  }, {
+    "dbId" : 8950343,
+    "stId" : "R-HSA-8950343",
+    "displayName" : "p-Y693-STAT4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14765",
+    "geneNames" : [ "STAT4" ],
+    "parents" : [ 8952748, 8950427, 8952795, 8950602, 9006876 ]
+  }, {
+    "dbId" : 8985947,
+    "stId" : "R-HSA-8985947",
+    "displayName" : "Interleukin-9 signaling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3020 ]
+  }, {
+    "dbId" : 8983121,
+    "stId" : "R-HSA-8983121",
+    "displayName" : "p-STAT5A, p-STAT5B [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 9007110, 8983180, 507919 ],
+    "children" : [ 8983127, 8980151 ]
+  }, {
+    "dbId" : 913366,
+    "stId" : "R-HSA-913366",
+    "displayName" : "High affinity IL-5 receptor complex dimer, inactive JAK2, phosphorylated Bc:p(Y427,349,350)-SHC1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 914047, 926769, 913439 ],
+    "children" : [ 912321, 913359 ]
+  }, {
+    "dbId" : 913361,
+    "stId" : "R-HSA-913361",
+    "displayName" : "CSF2RA [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P15509",
+    "geneNames" : [ "CSF2RA", "CSF2R", "CSF2RY" ],
+    "parents" : [ 5688870, 5686355, 913362 ]
+  }, {
+    "dbId" : 8983127,
+    "stId" : "R-HSA-8983127",
+    "displayName" : "p-STAT5B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51692",
+    "geneNames" : [ "STAT5B" ],
+    "parents" : [ 8983121 ]
+  }, {
+    "dbId" : 913362,
+    "stId" : "R-HSA-913362",
+    "displayName" : "GM-CSF:GM-CSF receptor alpha subunit [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 914077, 914178, 913443, 913389, 913355 ],
+    "children" : [ 517562, 913361 ]
+  }, {
+    "dbId" : 109797,
+    "stId" : "R-HSA-109797",
+    "displayName" : "GRB2-1:SOS1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 56 ],
+    "parents" : [ 5637697, 5637704, 1225856, 1225859, 5655342, 5655345, 5655307, 8853233, 5655328, 5686070, 205202, 2685672, 186827, 921157, 5654296, 1306947, 5654343, 5654275, 8851807, 5654287, 1250505, 1250382, 5654327, 5685367, 109798, 109800, 180331, 5654264, 179820, 2179409, 8854903, 5654308, 8854399, 5654316, 1250479, 8851897 ],
+    "children" : [ 74686, 64847 ]
+  }, {
+    "dbId" : 913384,
+    "stId" : "R-HSA-913384",
+    "displayName" : "High affinity GM-CSF receptor complex dimer, inactive JAK2, p(Y593, 628)- Bc [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 913422, 913433, 913428 ],
+    "children" : [ 913355 ]
+  }, {
+    "dbId" : 198379,
+    "stId" : "R-HSA-198379",
+    "displayName" : "PI3K alpha [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 416356, 508248, 1562561, 114540, 437157, 9021654, 205177, 388785, 388783 ],
+    "children" : [ 391342, 74787 ]
+  }, {
+    "dbId" : 913383,
+    "stId" : "R-HSA-913383",
+    "displayName" : "IL5 homodimer [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 450056 ],
+    "children" : [ 447159 ]
+  }, {
+    "dbId" : 453099,
+    "stId" : "R-HSA-453099",
+    "displayName" : "IL2:IL2R trimer p-(Y338,392,510)-beta subunit:p-JAK1:JAK3:p-SHC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 45 ],
+    "parents" : [ 508246, 912523, 912534 ],
+    "children" : [ 452104, 162568 ]
+  }, {
+    "dbId" : 913378,
+    "stId" : "R-HSA-913378",
+    "displayName" : "Interleukin receptor complexes with activated SHC1:SHIP1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 199 ],
+    "parents" : [ 913411 ],
+    "children" : [ 912534, 197938 ]
+  }, {
+    "dbId" : 5215932,
+    "stId" : "R-HSA-5215932",
+    "displayName" : "LGALS9 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 861 ],
+    "identifier" : "O00182",
+    "geneNames" : [ "LGALS9" ],
+    "parents" : [ 5340393 ]
+  }, {
+    "dbId" : 197876,
+    "stId" : "R-HSA-197876",
+    "displayName" : "IL2RB [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ],
+    "identifier" : "P14784",
+    "geneNames" : [ "IL2RB", "IL15RB" ],
+    "parents" : [ 451943, 8983125, 451905 ]
+  }, {
+    "dbId" : 453105,
+    "stId" : "R-HSA-453105",
+    "displayName" : "SHC kinases in IL2 signaling [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 46 ],
+    "children" : [ 167609, 451921 ]
+  }, {
+    "dbId" : 452094,
+    "stId" : "R-HSA-452094",
+    "displayName" : "STAT5A,STAT5B [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 42 ],
+    "parents" : [ 2671867, 1168902, 452107, 913386, 913407, 912301, 9025978, 1369095 ],
+    "children" : [ 380747, 380737 ]
+  }, {
+    "dbId" : 450046,
+    "stId" : "R-HSA-450046",
+    "displayName" : "IL2RA [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "identifier" : "P01589",
+    "geneNames" : [ "IL2RA" ],
+    "parents" : [ 451918, 538993, 452119, 452104 ]
+  }, {
+    "dbId" : 452095,
+    "stId" : "R-HSA-452095",
+    "displayName" : "IL2:IL2R trimer p-(Y338,392,510)-beta subunit:p-JAK1:JAK3:SHC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 35 ],
+    "children" : [ 74680, 452119 ]
+  }, {
+    "dbId" : 452093,
+    "stId" : "R-HSA-452093",
+    "displayName" : "p-Y364,Y418,Y536-IL2RB [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14784",
+    "geneNames" : [ "IL2RB", "IL15RB" ],
+    "parents" : [ 452119, 452104 ]
+  }, {
+    "dbId" : 913393,
+    "stId" : "R-HSA-913393",
+    "displayName" : "Interleukin receptor complexes with activated SHC1:SHIP1,2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 190 ],
+    "children" : [ 912534, 913467 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 452102,
+    "stId" : "R-HSA-452102",
+    "displayName" : "p-STAT5 dimerizes",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6785165 ],
+    "following" : [ 507937 ],
+    "inputs" : [ 507929 ],
+    "outputs" : [ 507919 ],
+    "efs" : [ ],
+    "diagramIds" : [ 266 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 450054,
+    "stId" : "R-HSA-450054",
+    "displayName" : "Interleukin-2 receptor alpha binds interleukin-2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 447099, 450046 ],
+    "outputs" : [ 538993 ],
+    "efs" : [ ],
+    "diagramIds" : [ 13 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 452100,
+    "stId" : "R-HSA-452100",
+    "displayName" : "SHC1 bound to IL2 receptor is phosphorylated",
+    "schemaClass" : "Reaction",
+    "following" : [ 453104, 453111 ],
+    "inputs" : [ 113592, 452095 ],
+    "outputs" : [ 453099, 29370 ],
+    "catalysts" : [ 453105 ],
+    "efs" : [ ],
+    "diagramIds" : [ 44 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 912527,
+    "stId" : "R-HSA-912527",
+    "displayName" : "SHC1 mediates cytokine-induced phosphorylation of GAB2",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 453104 ],
+    "following" : [ 508247 ],
+    "inputs" : [ 113592, 912537 ],
+    "outputs" : [ 29370, 912533 ],
+    "efs" : [ ],
+    "diagramIds" : [ 50 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 508292,
+    "stId" : "R-HSA-508292",
+    "displayName" : "SYK binds IL2RB",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 58268, 451920 ],
+    "outputs" : [ 508449 ],
+    "efs" : [ ],
+    "diagramIds" : [ 413 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 452097,
+    "stId" : "R-HSA-452097",
+    "displayName" : "Recruited STAT5 is phosphorylated",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 452107, 113592 ],
+    "outputs" : [ 29370, 507943 ],
+    "catalysts" : [ 452107 ],
+    "efs" : [ ],
+    "diagramIds" : [ 211 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 450063,
+    "stId" : "R-HSA-450063",
+    "displayName" : "Interleukin-2: IL2 receptor alpha:beta binds IL2 receptor gamma subunit",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 450065, 451911 ],
+    "outputs" : [ 450080 ],
+    "efs" : [ ],
+    "diagramIds" : [ 19 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 452108,
+    "stId" : "R-HSA-452108",
+    "displayName" : "Phosphorylation of IL2RB Y338, Y392 or Y510 enables STAT recruitment",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 452094, 452119 ],
+    "outputs" : [ 452107 ],
+    "efs" : [ ],
+    "diagramIds" : [ 41 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9006850,
+    "stId" : "R-HSA-9006850",
+    "displayName" : "IL21 receptor JAK phosphorylation",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 113592, 9006846 ],
+    "outputs" : [ 29370, 9006856 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2977 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9006873,
+    "stId" : "R-HSA-9006873",
+    "displayName" : "IL21 receptor STAT binding",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 9006868, 9006856 ],
+    "outputs" : [ 9006875 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2985 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 508247,
+    "stId" : "R-HSA-508247",
+    "displayName" : "Gab2 binds the p85 subunit of Class 1A PI3 kinases",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 912527 ],
+    "inputs" : [ 508248, 912533 ],
+    "outputs" : [ 912535 ],
+    "efs" : [ ],
+    "diagramIds" : [ 52 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 913374,
+    "stId" : "R-HSA-913374",
+    "displayName" : "Phosphorylated SHC1 recruits SHIP",
+    "schemaClass" : "Reaction",
+    "following" : [ 913424 ],
+    "inputs" : [ 912534, 913467 ],
+    "outputs" : [ 913393 ],
+    "efs" : [ ],
+    "diagramIds" : [ 188 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9005980,
+    "stId" : "R-HSA-9005980",
+    "displayName" : "IL21 binds IL21R:JAK1",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 448458, 9006858 ],
+    "outputs" : [ 9005977 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2945 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 452122,
+    "stId" : "R-HSA-452122",
+    "displayName" : "JAK1 phosphorylates Y338, Y392 and Y510 of IL2RB",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113592, 451920 ],
+    "outputs" : [ 29370, 452119 ],
+    "catalysts" : [ 451920 ],
+    "efs" : [ ],
+    "diagramIds" : [ 25 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 913424,
+    "stId" : "R-HSA-913424",
+    "displayName" : "The SHC1:SHIP1 complex is stabilized by GRB2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 913374 ],
+    "inputs" : [ 74686, 913378 ],
+    "outputs" : [ 913411 ],
+    "efs" : [ ],
+    "diagramIds" : [ 197 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9006870,
+    "stId" : "R-HSA-9006870",
+    "displayName" : "IL21 receptor STAT phosphorylation",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 113592, 9006875 ],
+    "outputs" : [ 9006869, 29370 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3015 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 451942,
+    "stId" : "R-HSA-451942",
+    "displayName" : "Within the IL-2R complex JAK3 phosphorylates JAK1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113592, 450080 ],
+    "outputs" : [ 29370, 451920 ],
+    "catalysts" : [ 450080 ],
+    "efs" : [ ],
+    "diagramIds" : [ 21 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 919404,
+    "stId" : "R-HSA-919404",
+    "displayName" : "Phosphorylated STAT5 is released",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 507943 ],
+    "outputs" : [ 507929, 452119 ],
+    "efs" : [ ],
+    "diagramIds" : [ 404 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 508451,
+    "stId" : "R-HSA-508451",
+    "displayName" : "PTK2B is phosphorylated",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 508512 ],
+    "outputs" : [ 508510 ],
+    "efs" : [ ],
+    "diagramIds" : [ 433 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 507937,
+    "stId" : "R-HSA-507937",
+    "displayName" : "STAT5 dimers translocate to the nucleus",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 452102 ],
+    "inputs" : [ 507919 ],
+    "outputs" : [ 508012 ],
+    "efs" : [ ],
+    "diagramIds" : [ 405 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 508513,
+    "stId" : "R-HSA-508513",
+    "displayName" : "PTK2B binds JAK3",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 451893, 390932 ],
+    "outputs" : [ 508512 ],
+    "efs" : [ ],
+    "diagramIds" : [ 423 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 450027,
+    "stId" : "R-HSA-450027",
+    "displayName" : "Interleukin-2 receptor alpha:IL2 binds Interleukin-2 receptor beta",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 538993, 451905 ],
+    "outputs" : [ 450065 ],
+    "efs" : [ ],
+    "diagramIds" : [ 17 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5340385,
+    "stId" : "R-HSA-5340385",
+    "displayName" : "HAVCR2 binds LGALS9",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5340408, 5215932 ],
+    "outputs" : [ 5340393 ],
+    "efs" : [ ],
+    "diagramIds" : [ 859 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 453111,
+    "stId" : "R-HSA-453111",
+    "displayName" : "Phosphorylated SHC recruits GRB2:SOS1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 879925, 109813, 452100 ],
+    "following" : [ 5672965, 109817 ],
+    "inputs" : [ 912534, 109797 ],
+    "outputs" : [ 921157 ],
+    "efs" : [ ],
+    "diagramIds" : [ 55 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 451895,
+    "stId" : "R-HSA-451895",
+    "displayName" : "IL2RG binds JAK3",
+    "schemaClass" : "Reaction",
+    "following" : [ 6786092, 8963734, 449115, 449958 ],
+    "inputs" : [ 449139, 451893 ],
+    "outputs" : [ 451911 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9006844,
+    "stId" : "R-HSA-9006844",
+    "displayName" : "IL21:IL21R:JAK1 binds IL2RG:JAK3",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 451911, 9005977 ],
+    "outputs" : [ 9006846 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2975 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 453104,
+    "stId" : "R-HSA-453104",
+    "displayName" : "Phosphorylated SHC1 recruits GRB2:GAB2",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 183052, 879925, 452100 ],
+    "following" : [ 912527 ],
+    "inputs" : [ 912534, 912522 ],
+    "outputs" : [ 912537 ],
+    "efs" : [ ],
+    "diagramIds" : [ 47 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 451900,
+    "stId" : "R-HSA-451900",
+    "displayName" : "IL2RB binds JAK1",
+    "schemaClass" : "Reaction",
+    "following" : [ 449115 ],
+    "inputs" : [ 451898, 197876 ],
+    "outputs" : [ 451905 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 452091,
+    "stId" : "R-HSA-452091",
+    "displayName" : "Phosphorylation of IL2RB Y338 enables SHC recruitment",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 74680, 452119 ],
+    "outputs" : [ 452095 ],
+    "efs" : [ ],
+    "diagramIds" : [ 33 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 508282,
+    "stId" : "R-HSA-508282",
+    "displayName" : "SYK is a substrate for JAK1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 508449 ],
+    "outputs" : [ 508438 ],
+    "catalysts" : [ 508449 ],
+    "efs" : [ ],
+    "diagramIds" : [ 416 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 912526,
+    "stId" : "R-HSA-912526",
+    "displayName" : "Interleukin receptor SHC signaling",
+    "events" : [ 508247, 453111, 912527, 913374, 453104, 913424 ]
+  }, {
+    "dbId" : 9020958,
+    "stId" : "R-HSA-9020958",
+    "displayName" : "Interleukin-21 signaling",
+    "events" : [ 9006873, 9005980, 9006844, 9006850, 9006870 ]
+  }, {
+    "dbId" : 9020558,
+    "stId" : "R-HSA-9020558",
+    "displayName" : "Interleukin-2 signaling",
+    "events" : [ 450054, 451942, 452102, 452100, 919404, 508292, 508451, 507937, 508513, 452097, 450063, 452108, 450027, 451895, 451900, 452122, 452091, 508282 ]
+  } ]
+}

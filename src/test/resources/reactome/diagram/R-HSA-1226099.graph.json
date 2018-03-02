@@ -1,0 +1,34 @@
+{
+  "dbId" : 1226099,
+  "stId" : "R-HSA-1226099",
+  "nodes" : [ {
+    "dbId" : 5655302,
+    "stId" : "R-HSA-5655302",
+    "displayName" : "Signaling by FGFR1 in disease",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1 ]
+  }, {
+    "dbId" : 5655332,
+    "stId" : "R-HSA-5655332",
+    "displayName" : "Signaling by FGFR3 in disease",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3 ]
+  }, {
+    "dbId" : 5655253,
+    "stId" : "R-HSA-5655253",
+    "displayName" : "Signaling by FGFR2 in disease",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2 ]
+  }, {
+    "dbId" : 5655291,
+    "stId" : "R-HSA-5655291",
+    "displayName" : "Signaling by FGFR4 in disease",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ]
+  } ],
+  "edges" : [ ]
+}

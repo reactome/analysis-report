@@ -1,0 +1,4238 @@
+{
+  "dbId" : 381426,
+  "stableId" : "R-HSA-381426",
+  "displayName" : "Regulation of Insulin-like Growth Factor (IGF) transport and uptake by Insulin-like Growth Factor Binding Proteins (IGFBPs)",
+  "nodes" : [ {
+    "id" : 64,
+    "reactomeId" : 2990872,
+    "displayName" : "Prostate Specific Antigen",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1088,
+      "y" : 556
+    },
+    "minX" : 1031,
+    "maxX" : 1145,
+    "minY" : 538,
+    "maxY" : 605,
+    "prop" : {
+      "x" : 1031,
+      "y" : 538,
+      "width" : 114,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1035,
+      "y" : 538
+    },
+    "connectors" : [ {
+      "edgeId" : 53,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1068,
+          "y" : 580
+        },
+        "to" : {
+          "x" : 1044,
+          "y" : 598
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1041,
+          "y" : 601
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 381513,
+    "displayName" : "IGFBP1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 161,
+      "y" : 161
+    },
+    "minX" : 136,
+    "maxX" : 207,
+    "minY" : 144,
+    "maxY" : 260,
+    "prop" : {
+      "x" : 136,
+      "y" : 150,
+      "width" : 50,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 137,
+      "y" : 150
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 186,
+          "y" : 150
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 177,
+          "y" : 175
+        },
+        "to" : {
+          "x" : 207,
+          "y" : 192
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 160,
+          "y" : 175
+        },
+        "to" : {
+          "x" : 159,
+          "y" : 257
+        }
+      }, {
+        "from" : {
+          "x" : 159,
+          "y" : 257
+        },
+        "to" : {
+          "x" : 189,
+          "y" : 256
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 193,
+          "y" : 256
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 381451,
+    "displayName" : "IGF1,2",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 645,
+      "y" : 45
+    },
+    "minX" : 207,
+    "maxX" : 1608,
+    "minY" : 34,
+    "maxY" : 392,
+    "prop" : {
+      "x" : 622,
+      "y" : 34,
+      "width" : 46,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 622,
+      "y" : 34
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 616,
+          "y" : 52
+        },
+        "to" : {
+          "x" : 207,
+          "y" : 192
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 627,
+          "y" : 62
+        },
+        "to" : {
+          "x" : 328,
+          "y" : 244
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 674,
+          "y" : 52
+        },
+        "to" : {
+          "x" : 1608,
+          "y" : 343
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 13,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 674,
+          "y" : 54
+        },
+        "to" : {
+          "x" : 1425,
+          "y" : 366
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 16,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 635,
+          "y" : 62
+        },
+        "to" : {
+          "x" : 453,
+          "y" : 262
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 20,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 663,
+          "y" : 62
+        },
+        "to" : {
+          "x" : 1219,
+          "y" : 392
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 381539,
+    "displayName" : "IGF:IGFBP1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 205,
+      "y" : 323
+    },
+    "minX" : 169,
+    "maxX" : 241,
+    "minY" : 312,
+    "maxY" : 334,
+    "prop" : {
+      "x" : 169,
+      "y" : 312,
+      "width" : 72,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 170,
+      "y" : 313
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 381402,
+    "displayName" : "IGFBP2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 281,
+      "y" : 219
+    },
+    "minX" : 256,
+    "maxX" : 328,
+    "minY" : 202,
+    "maxY" : 304,
+    "prop" : {
+      "x" : 256,
+      "y" : 208,
+      "width" : 50,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 257,
+      "y" : 208
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 306,
+          "y" : 208
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 301,
+          "y" : 233
+        },
+        "to" : {
+          "x" : 328,
+          "y" : 244
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 7,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 281,
+          "y" : 233
+        },
+        "to" : {
+          "x" : 283,
+          "y" : 299
+        }
+      }, {
+        "from" : {
+          "x" : 283,
+          "y" : 299
+        },
+        "to" : {
+          "x" : 311,
+          "y" : 300
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 315,
+          "y" : 300
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 9,
+    "reactomeId" : 381473,
+    "displayName" : "IGF:IGFBP2",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 325,
+      "y" : 363
+    },
+    "minX" : 289,
+    "maxX" : 361,
+    "minY" : 352,
+    "maxY" : 374,
+    "prop" : {
+      "x" : 289,
+      "y" : 352,
+      "width" : 72,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 290,
+      "y" : 353
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 11,
+    "reactomeId" : 381475,
+    "displayName" : "IGFBP6",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1665,
+      "y" : 316
+    },
+    "minX" : 1608,
+    "maxX" : 1696,
+    "minY" : 299,
+    "maxY" : 449,
+    "prop" : {
+      "x" : 1640,
+      "y" : 305,
+      "width" : 50,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1641,
+      "y" : 305
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1690,
+          "y" : 305
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1641,
+          "y" : 330
+        },
+        "to" : {
+          "x" : 1608,
+          "y" : 343
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 10,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1663,
+          "y" : 330
+        },
+        "to" : {
+          "x" : 1653,
+          "y" : 445
+        }
+      }, {
+        "from" : {
+          "x" : 1653,
+          "y" : 445
+        },
+        "to" : {
+          "x" : 1625,
+          "y" : 445
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1621,
+          "y" : 445
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 12,
+    "reactomeId" : 381482,
+    "displayName" : "IGF:IGFBP6",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1612,
+      "y" : 512
+    },
+    "minX" : 1576,
+    "maxX" : 1648,
+    "minY" : 501,
+    "maxY" : 523,
+    "prop" : {
+      "x" : 1576,
+      "y" : 501,
+      "width" : 72,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1577,
+      "y" : 502
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 14,
+    "reactomeId" : 381421,
+    "displayName" : "IGFBP4",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1472,
+      "y" : 326
+    },
+    "minX" : 1425,
+    "maxX" : 1503,
+    "minY" : 309,
+    "maxY" : 451,
+    "prop" : {
+      "x" : 1447,
+      "y" : 315,
+      "width" : 50,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1448,
+      "y" : 315
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1497,
+          "y" : 315
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 13,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1459,
+          "y" : 340
+        },
+        "to" : {
+          "x" : 1425,
+          "y" : 366
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 13,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1471,
+          "y" : 340
+        },
+        "to" : {
+          "x" : 1469,
+          "y" : 446
+        }
+      }, {
+        "from" : {
+          "x" : 1469,
+          "y" : 446
+        },
+        "to" : {
+          "x" : 1443,
+          "y" : 447
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1439,
+          "y" : 447
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 15,
+    "reactomeId" : 381509,
+    "displayName" : "IGF:IGFBP4",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1430,
+      "y" : 530
+    },
+    "minX" : 1394,
+    "maxX" : 1466,
+    "minY" : 519,
+    "maxY" : 541,
+    "prop" : {
+      "x" : 1394,
+      "y" : 519,
+      "width" : 72,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1395,
+      "y" : 520
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 13,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 24,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 79,
+    "reactomeId" : 8952321,
+    "displayName" : "FAM20C:FAM20C substrates",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 629,
+      "y" : 374
+    },
+    "minX" : 566,
+    "maxX" : 741,
+    "minY" : 342,
+    "maxY" : 406,
+    "prop" : {
+      "x" : 566,
+      "y" : 342,
+      "width" : 127,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 573,
+      "y" : 371
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 65,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 65,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 696,
+          "y" : 354
+        },
+        "to" : {
+          "x" : 735,
+          "y" : 342
+        }
+      }, {
+        "from" : {
+          "x" : 735,
+          "y" : 342
+        },
+        "to" : {
+          "x" : 736,
+          "y" : 356
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 737,
+          "y" : 360
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 17,
+    "reactomeId" : 381512,
+    "displayName" : "IGFBP3",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 409,
+      "y" : 241
+    },
+    "minX" : 384,
+    "maxX" : 453,
+    "minY" : 224,
+    "maxY" : 329,
+    "prop" : {
+      "x" : 384,
+      "y" : 230,
+      "width" : 50,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 385,
+      "y" : 230
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 434,
+          "y" : 230
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 16,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 432,
+          "y" : 255
+        },
+        "to" : {
+          "x" : 453,
+          "y" : 262
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 16,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 408,
+          "y" : 255
+        },
+        "to" : {
+          "x" : 408,
+          "y" : 324
+        }
+      }, {
+        "from" : {
+          "x" : 408,
+          "y" : 324
+        },
+        "to" : {
+          "x" : 436,
+          "y" : 325
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 440,
+          "y" : 325
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 381498,
+    "displayName" : "IGFALS",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 568,
+      "y" : 227
+    },
+    "minX" : 453,
+    "maxX" : 1219,
+    "minY" : 210,
+    "maxY" : 392,
+    "prop" : {
+      "x" : 544,
+      "y" : 216,
+      "width" : 49,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 545,
+      "y" : 216
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 593,
+          "y" : 216
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 16,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 541,
+          "y" : 234
+        },
+        "to" : {
+          "x" : 453,
+          "y" : 262
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 20,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 596,
+          "y" : 233
+        },
+        "to" : {
+          "x" : 1219,
+          "y" : 392
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 83,
+    "reactomeId" : 8952335,
+    "displayName" : "FAM20C:Phosphorylated FAM20C substrates",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 833,
+      "y" : 373
+    },
+    "minX" : 771,
+    "maxX" : 896,
+    "minY" : 334,
+    "maxY" : 412,
+    "prop" : {
+      "x" : 771,
+      "y" : 334,
+      "width" : 125,
+      "height" : 78
+    },
+    "textPosition" : {
+      "x" : 773,
+      "y" : 363
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 65,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 19,
+    "reactomeId" : 381536,
+    "displayName" : "IGF:IGFBP3:ALS",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 454,
+      "y" : 419
+    },
+    "minX" : 406,
+    "maxX" : 503,
+    "minY" : 408,
+    "maxY" : 430,
+    "prop" : {
+      "x" : 406,
+      "y" : 408,
+      "width" : 97,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 407,
+      "y" : 409
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 36,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 41,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 46,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 16,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 53,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 57,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 21,
+    "reactomeId" : 381414,
+    "displayName" : "IGFBP5",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1259,
+      "y" : 363
+    },
+    "minX" : 1219,
+    "maxX" : 1290,
+    "minY" : 346,
+    "maxY" : 471,
+    "prop" : {
+      "x" : 1234,
+      "y" : 352,
+      "width" : 50,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1235,
+      "y" : 352
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1284,
+          "y" : 352
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 20,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1243,
+          "y" : 377
+        },
+        "to" : {
+          "x" : 1219,
+          "y" : 392
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 20,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1259,
+          "y" : 377
+        },
+        "to" : {
+          "x" : 1260,
+          "y" : 467
+        }
+      }, {
+        "from" : {
+          "x" : 1260,
+          "y" : 467
+        },
+        "to" : {
+          "x" : 1237,
+          "y" : 467
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1233,
+          "y" : 467
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 22,
+    "reactomeId" : 381423,
+    "displayName" : "IGF:IGFBP5:ALS",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1222,
+      "y" : 588
+    },
+    "minX" : 1174,
+    "maxX" : 1271,
+    "minY" : 577,
+    "maxY" : 599,
+    "prop" : {
+      "x" : 1174,
+      "y" : 577,
+      "width" : 97,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1175,
+      "y" : 578
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 32,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 20,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 25,
+    "reactomeId" : 381516,
+    "displayName" : "IGFBP4(22-156)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1505,
+      "y" : 913
+    },
+    "minX" : 1431,
+    "maxX" : 1571,
+    "minY" : 859,
+    "maxY" : 924,
+    "prop" : {
+      "x" : 1445,
+      "y" : 902,
+      "width" : 120,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1453,
+      "y" : 902
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1565,
+          "y" : 902
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 24,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1489,
+          "y" : 899
+        },
+        "to" : {
+          "x" : 1431,
+          "y" : 859
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1481,
+          "y" : 898
+        },
+        "b" : {
+          "x" : 1489,
+          "y" : 899
+        },
+        "c" : {
+          "x" : 1486,
+          "y" : 892
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 26,
+    "reactomeId" : 381510,
+    "displayName" : "IGFBP4(157-237)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1541,
+      "y" : 864
+    },
+    "minX" : 1431,
+    "maxX" : 1610,
+    "minY" : 847,
+    "maxY" : 875,
+    "prop" : {
+      "x" : 1478,
+      "y" : 853,
+      "width" : 126,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1485,
+      "y" : 853
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1604,
+          "y" : 853
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 24,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1475,
+          "y" : 861
+        },
+        "to" : {
+          "x" : 1431,
+          "y" : 859
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1468,
+          "y" : 865
+        },
+        "b" : {
+          "x" : 1475,
+          "y" : 861
+        },
+        "c" : {
+          "x" : 1468,
+          "y" : 857
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 30,
+    "reactomeId" : 381451,
+    "displayName" : "IGF1,2",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 443,
+      "y" : 1230
+    },
+    "minX" : 166,
+    "maxX" : 1431,
+    "minY" : 749,
+    "maxY" : 1241,
+    "prop" : {
+      "x" : 420,
+      "y" : 1219,
+      "width" : 46,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 420,
+      "y" : 1219
+    },
+    "connectors" : [ {
+      "edgeId" : 32,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 472,
+          "y" : 1223
+        },
+        "to" : {
+          "x" : 1146,
+          "y" : 1045
+        }
+      }, {
+        "from" : {
+          "x" : 1146,
+          "y" : 1045
+        },
+        "to" : {
+          "x" : 1224,
+          "y" : 805
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 478,
+          "y" : 1217
+        },
+        "b" : {
+          "x" : 472,
+          "y" : 1223
+        },
+        "c" : {
+          "x" : 480,
+          "y" : 1225
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 36,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 433,
+          "y" : 1213
+        },
+        "to" : {
+          "x" : 166,
+          "y" : 901
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 425,
+          "y" : 1210
+        },
+        "b" : {
+          "x" : 433,
+          "y" : 1213
+        },
+        "c" : {
+          "x" : 432,
+          "y" : 1205
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 41,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 441,
+          "y" : 1213
+        },
+        "to" : {
+          "x" : 401,
+          "y" : 775
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 436,
+          "y" : 1206
+        },
+        "b" : {
+          "x" : 441,
+          "y" : 1213
+        },
+        "c" : {
+          "x" : 444,
+          "y" : 1206
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 46,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 443,
+          "y" : 1213
+        },
+        "to" : {
+          "x" : 484,
+          "y" : 760
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 440,
+          "y" : 1206
+        },
+        "b" : {
+          "x" : 443,
+          "y" : 1213
+        },
+        "c" : {
+          "x" : 448,
+          "y" : 1206
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 53,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 472,
+          "y" : 1222
+        },
+        "to" : {
+          "x" : 913,
+          "y" : 1069
+        }
+      }, {
+        "from" : {
+          "x" : 913,
+          "y" : 1069
+        },
+        "to" : {
+          "x" : 1020,
+          "y" : 749
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 477,
+          "y" : 1216
+        },
+        "b" : {
+          "x" : 472,
+          "y" : 1222
+        },
+        "c" : {
+          "x" : 480,
+          "y" : 1224
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 24,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 472,
+          "y" : 1225
+        },
+        "to" : {
+          "x" : 1361,
+          "y" : 1033
+        }
+      }, {
+        "from" : {
+          "x" : 1361,
+          "y" : 1033
+        },
+        "to" : {
+          "x" : 1431,
+          "y" : 859
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 478,
+          "y" : 1220
+        },
+        "b" : {
+          "x" : 472,
+          "y" : 1225
+        },
+        "c" : {
+          "x" : 480,
+          "y" : 1227
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 57,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 450,
+          "y" : 1213
+        },
+        "to" : {
+          "x" : 760,
+          "y" : 767
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 451,
+          "y" : 1205
+        },
+        "b" : {
+          "x" : 450,
+          "y" : 1213
+        },
+        "c" : {
+          "x" : 457,
+          "y" : 1210
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 31,
+    "reactomeId" : 381498,
+    "displayName" : "IGFALS",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 710,
+      "y" : 1091
+    },
+    "minX" : 166,
+    "maxX" : 1224,
+    "minY" : 749,
+    "maxY" : 1102,
+    "prop" : {
+      "x" : 686,
+      "y" : 1080,
+      "width" : 49,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 687,
+      "y" : 1080
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 735,
+          "y" : 1080
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 32,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 729,
+          "y" : 1077
+        },
+        "to" : {
+          "x" : 1224,
+          "y" : 805
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 733,
+          "y" : 1070
+        },
+        "b" : {
+          "x" : 729,
+          "y" : 1077
+        },
+        "c" : {
+          "x" : 737,
+          "y" : 1077
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 36,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 683,
+          "y" : 1082
+        },
+        "to" : {
+          "x" : 166,
+          "y" : 901
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 675,
+          "y" : 1083
+        },
+        "b" : {
+          "x" : 683,
+          "y" : 1082
+        },
+        "c" : {
+          "x" : 678,
+          "y" : 1076
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 41,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 699,
+          "y" : 1077
+        },
+        "to" : {
+          "x" : 401,
+          "y" : 775
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 691,
+          "y" : 1075
+        },
+        "b" : {
+          "x" : 699,
+          "y" : 1077
+        },
+        "c" : {
+          "x" : 697,
+          "y" : 1069
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 46,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 702,
+          "y" : 1077
+        },
+        "to" : {
+          "x" : 484,
+          "y" : 760
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 695,
+          "y" : 1074
+        },
+        "b" : {
+          "x" : 702,
+          "y" : 1077
+        },
+        "c" : {
+          "x" : 701,
+          "y" : 1069
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 53,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 719,
+          "y" : 1077
+        },
+        "to" : {
+          "x" : 1020,
+          "y" : 749
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 721,
+          "y" : 1069
+        },
+        "b" : {
+          "x" : 719,
+          "y" : 1077
+        },
+        "c" : {
+          "x" : 727,
+          "y" : 1075
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 57,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 711,
+          "y" : 1077
+        },
+        "to" : {
+          "x" : 760,
+          "y" : 767
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 708,
+          "y" : 1070
+        },
+        "b" : {
+          "x" : 711,
+          "y" : 1077
+        },
+        "c" : {
+          "x" : 716,
+          "y" : 1071
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 33,
+    "reactomeId" : 381415,
+    "displayName" : "IGFBP5(21-163)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1323,
+      "y" : 808
+    },
+    "minX" : 1224,
+    "maxX" : 1393,
+    "minY" : 790,
+    "maxY" : 820,
+    "prop" : {
+      "x" : 1260,
+      "y" : 796,
+      "width" : 127,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 1272,
+      "y" : 797
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1387,
+          "y" : 796
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 32,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1257,
+          "y" : 806
+        },
+        "to" : {
+          "x" : 1224,
+          "y" : 805
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1250,
+          "y" : 810
+        },
+        "b" : {
+          "x" : 1257,
+          "y" : 806
+        },
+        "c" : {
+          "x" : 1250,
+          "y" : 802
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 34,
+    "reactomeId" : 381478,
+    "displayName" : "IGFBP5(164-272)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1283,
+      "y" : 861
+    },
+    "minX" : 1223,
+    "maxX" : 1349,
+    "minY" : 805,
+    "maxY" : 872,
+    "prop" : {
+      "x" : 1223,
+      "y" : 850,
+      "width" : 120,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1227,
+      "y" : 850
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1343,
+          "y" : 850
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 32,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1271,
+          "y" : 847
+        },
+        "to" : {
+          "x" : 1224,
+          "y" : 805
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1263,
+          "y" : 845
+        },
+        "b" : {
+          "x" : 1271,
+          "y" : 847
+        },
+        "c" : {
+          "x" : 1268,
+          "y" : 839
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 35,
+    "reactomeId" : 381483,
+    "displayName" : "PAPPA,PAPPA2",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1332,
+      "y" : 734
+    },
+    "minX" : 1231,
+    "maxX" : 1422,
+    "minY" : 723,
+    "maxY" : 745,
+    "prop" : {
+      "x" : 1282,
+      "y" : 723,
+      "width" : 100,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1285,
+      "y" : 723
+    },
+    "connectors" : [ {
+      "edgeId" : 32,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1276,
+          "y" : 733
+        },
+        "to" : {
+          "x" : 1239,
+          "y" : 732
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1235,
+          "y" : 732
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 24,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1388,
+          "y" : 733
+        },
+        "to" : {
+          "x" : 1414,
+          "y" : 733
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1418,
+          "y" : 733
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 37,
+    "reactomeId" : 538718,
+    "displayName" : "IGFBP3(227-291)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 75,
+      "y" : 903
+    },
+    "minX" : 16,
+    "maxX" : 166,
+    "minY" : 882,
+    "maxY" : 919,
+    "prop" : {
+      "x" : 16,
+      "y" : 888,
+      "width" : 118,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 19,
+      "y" : 893
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 134,
+          "y" : 888
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 36,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 137,
+          "y" : 901
+        },
+        "to" : {
+          "x" : 166,
+          "y" : 901
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 144,
+          "y" : 897
+        },
+        "b" : {
+          "x" : 137,
+          "y" : 901
+        },
+        "c" : {
+          "x" : 144,
+          "y" : 905
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 38,
+    "reactomeId" : 381489,
+    "displayName" : "IGFBP3(28-168)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 108,
+      "y" : 993
+    },
+    "minX" : 47,
+    "maxX" : 175,
+    "minY" : 901,
+    "maxY" : 1007,
+    "prop" : {
+      "x" : 47,
+      "y" : 979,
+      "width" : 122,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 56,
+      "y" : 982
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 169,
+          "y" : 979
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 36,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 116,
+          "y" : 976
+        },
+        "to" : {
+          "x" : 166,
+          "y" : 901
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 117,
+          "y" : 968
+        },
+        "b" : {
+          "x" : 116,
+          "y" : 976
+        },
+        "c" : {
+          "x" : 123,
+          "y" : 972
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 39,
+    "reactomeId" : 381499,
+    "displayName" : "IGFBP3(169-226)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 190,
+      "y" : 1051
+    },
+    "minX" : 123,
+    "maxX" : 264,
+    "minY" : 901,
+    "maxY" : 1062,
+    "prop" : {
+      "x" : 123,
+      "y" : 1040,
+      "width" : 135,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 135,
+      "y" : 1040
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 258,
+          "y" : 1040
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 36,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 188,
+          "y" : 1037
+        },
+        "to" : {
+          "x" : 166,
+          "y" : 901
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 183,
+          "y" : 1031
+        },
+        "b" : {
+          "x" : 188,
+          "y" : 1037
+        },
+        "c" : {
+          "x" : 191,
+          "y" : 1030
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 42,
+    "reactomeId" : 381534,
+    "displayName" : "IGFBP3(28-126)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 302,
+      "y" : 864
+    },
+    "minX" : 241,
+    "maxX" : 401,
+    "minY" : 775,
+    "maxY" : 876,
+    "prop" : {
+      "x" : 241,
+      "y" : 853,
+      "width" : 122,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 250,
+      "y" : 854
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 363,
+          "y" : 853
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 41,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 314,
+          "y" : 850
+        },
+        "to" : {
+          "x" : 401,
+          "y" : 775
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 317,
+          "y" : 842
+        },
+        "b" : {
+          "x" : 314,
+          "y" : 850
+        },
+        "c" : {
+          "x" : 322,
+          "y" : 849
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 43,
+    "reactomeId" : 381455,
+    "displayName" : "IGFBP3(127-291)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 255,
+      "y" : 794
+    },
+    "minX" : 191,
+    "maxX" : 401,
+    "minY" : 775,
+    "maxY" : 805,
+    "prop" : {
+      "x" : 191,
+      "y" : 783,
+      "width" : 128,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 199,
+      "y" : 783
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 319,
+          "y" : 783
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 41,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 322,
+          "y" : 785
+        },
+        "to" : {
+          "x" : 401,
+          "y" : 775
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 328,
+          "y" : 780
+        },
+        "b" : {
+          "x" : 322,
+          "y" : 785
+        },
+        "c" : {
+          "x" : 329,
+          "y" : 788
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 44,
+    "reactomeId" : 381470,
+    "displayName" : "MMP1,2",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 291,
+      "y" : 669
+    },
+    "minX" : 263,
+    "maxX" : 388,
+    "minY" : 658,
+    "maxY" : 691,
+    "prop" : {
+      "x" : 263,
+      "y" : 658,
+      "width" : 57,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 264,
+      "y" : 658
+    },
+    "connectors" : [ {
+      "edgeId" : 41,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 326,
+          "y" : 674
+        },
+        "to" : {
+          "x" : 380,
+          "y" : 686
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 384,
+          "y" : 687
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 47,
+    "reactomeId" : 381507,
+    "displayName" : "IGFBP3(125-187)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 604,
+      "y" : 860
+    },
+    "minX" : 484,
+    "maxX" : 673,
+    "minY" : 760,
+    "maxY" : 871,
+    "prop" : {
+      "x" : 542,
+      "y" : 849,
+      "width" : 125,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 549,
+      "y" : 849
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 667,
+          "y" : 849
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 46,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 590,
+          "y" : 846
+        },
+        "to" : {
+          "x" : 484,
+          "y" : 760
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 582,
+          "y" : 845
+        },
+        "b" : {
+          "x" : 590,
+          "y" : 846
+        },
+        "c" : {
+          "x" : 587,
+          "y" : 839
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 48,
+    "reactomeId" : 381547,
+    "displayName" : "IGFBP3(28-124)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 603,
+      "y" : 759
+    },
+    "minX" : 484,
+    "maxX" : 760,
+    "minY" : 742,
+    "maxY" : 770,
+    "prop" : {
+      "x" : 544,
+      "y" : 748,
+      "width" : 118,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 551,
+      "y" : 748
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 662,
+          "y" : 748
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 46,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 541,
+          "y" : 759
+        },
+        "to" : {
+          "x" : 484,
+          "y" : 760
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 534,
+          "y" : 763
+        },
+        "b" : {
+          "x" : 541,
+          "y" : 759
+        },
+        "c" : {
+          "x" : 534,
+          "y" : 755
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 57,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 665,
+          "y" : 762
+        },
+        "to" : {
+          "x" : 760,
+          "y" : 767
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 672,
+          "y" : 758
+        },
+        "b" : {
+          "x" : 665,
+          "y" : 762
+        },
+        "c" : {
+          "x" : 672,
+          "y" : 766
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 49,
+    "reactomeId" : 381471,
+    "displayName" : "IGFBP3(188-291)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 625,
+      "y" : 810
+    },
+    "minX" : 484,
+    "maxX" : 695,
+    "minY" : 760,
+    "maxY" : 822,
+    "prop" : {
+      "x" : 562,
+      "y" : 799,
+      "width" : 127,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 570,
+      "y" : 800
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 689,
+          "y" : 799
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 46,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 592,
+          "y" : 796
+        },
+        "to" : {
+          "x" : 484,
+          "y" : 760
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 584,
+          "y" : 798
+        },
+        "b" : {
+          "x" : 592,
+          "y" : 796
+        },
+        "c" : {
+          "x" : 587,
+          "y" : 790
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 50,
+    "reactomeId" : 158770,
+    "displayName" : "Plasmin",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 566,
+      "y" : 676
+    },
+    "minX" : 488,
+    "maxX" : 594,
+    "minY" : 665,
+    "maxY" : 693,
+    "prop" : {
+      "x" : 538,
+      "y" : 665,
+      "width" : 56,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 540,
+      "y" : 666
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 46,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 535,
+          "y" : 680
+        },
+        "to" : {
+          "x" : 496,
+          "y" : 688
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 492,
+          "y" : 689
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 54,
+    "reactomeId" : 381454,
+    "displayName" : "IGFBP3(28-186)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1110,
+      "y" : 796
+    },
+    "minX" : 1020,
+    "maxX" : 1174,
+    "minY" : 749,
+    "maxY" : 806,
+    "prop" : {
+      "x" : 1053,
+      "y" : 786,
+      "width" : 115,
+      "height" : 20
+    },
+    "textPosition" : {
+      "x" : 1059,
+      "y" : 786
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1168,
+          "y" : 786
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 53,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1090,
+          "y" : 783
+        },
+        "to" : {
+          "x" : 1020,
+          "y" : 749
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1082,
+          "y" : 784
+        },
+        "b" : {
+          "x" : 1090,
+          "y" : 783
+        },
+        "c" : {
+          "x" : 1086,
+          "y" : 776
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 55,
+    "reactomeId" : 381410,
+    "displayName" : "IGFBP3(291-187)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1128,
+      "y" : 750
+    },
+    "minX" : 1020,
+    "maxX" : 1197,
+    "minY" : 733,
+    "maxY" : 761,
+    "prop" : {
+      "x" : 1066,
+      "y" : 739,
+      "width" : 125,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1073,
+      "y" : 739
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1191,
+          "y" : 739
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 53,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1063,
+          "y" : 749
+        },
+        "to" : {
+          "x" : 1020,
+          "y" : 749
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1056,
+          "y" : 753
+        },
+        "b" : {
+          "x" : 1063,
+          "y" : 749
+        },
+        "c" : {
+          "x" : 1056,
+          "y" : 745
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 58,
+    "reactomeId" : 381546,
+    "displayName" : "IGFBP3(234-291)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 863,
+      "y" : 765
+    },
+    "minX" : 760,
+    "maxX" : 931,
+    "minY" : 748,
+    "maxY" : 776,
+    "prop" : {
+      "x" : 802,
+      "y" : 754,
+      "width" : 123,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 808,
+      "y" : 754
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 925,
+          "y" : 754
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 57,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 799,
+          "y" : 766
+        },
+        "to" : {
+          "x" : 760,
+          "y" : 767
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 792,
+          "y" : 770
+        },
+        "b" : {
+          "x" : 799,
+          "y" : 766
+        },
+        "c" : {
+          "x" : 792,
+          "y" : 762
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 59,
+    "reactomeId" : 381465,
+    "displayName" : "IGFBP3(125-233)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 832,
+      "y" : 815
+    },
+    "minX" : 760,
+    "maxX" : 901,
+    "minY" : 767,
+    "maxY" : 826,
+    "prop" : {
+      "x" : 770,
+      "y" : 804,
+      "width" : 125,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 777,
+      "y" : 804
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 895,
+          "y" : 804
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 57,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 815,
+          "y" : 801
+        },
+        "to" : {
+          "x" : 760,
+          "y" : 767
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 807,
+          "y" : 801
+        },
+        "b" : {
+          "x" : 815,
+          "y" : 801
+        },
+        "c" : {
+          "x" : 811,
+          "y" : 794
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 60,
+    "reactomeId" : 156786,
+    "displayName" : "activated thrombin (factor IIa)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 815,
+      "y" : 633
+    },
+    "minX" : 752,
+    "maxX" : 879,
+    "minY" : 615,
+    "maxY" : 683,
+    "prop" : {
+      "x" : 752,
+      "y" : 615,
+      "width" : 127,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 755,
+      "y" : 616
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 57,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 797,
+          "y" : 654
+        },
+        "to" : {
+          "x" : 773,
+          "y" : 676
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 770,
+          "y" : 679
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 62,
+    "reactomeId" : 2990877,
+    "displayName" : "Cathepsin G",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 84,
+      "y" : 658
+    },
+    "minX" : 43,
+    "maxX" : 159,
+    "minY" : 647,
+    "maxY" : 707,
+    "prop" : {
+      "x" : 43,
+      "y" : 647,
+      "width" : 82,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 45,
+      "y" : 647
+    },
+    "connectors" : [ {
+      "edgeId" : 36,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 102,
+          "y" : 675
+        },
+        "to" : {
+          "x" : 152,
+          "y" : 701
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 155,
+          "y" : 703
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 32,
+    "reactomeId" : 381537,
+    "displayName" : "PAPP-A2 proteolyzes IGF:IGFBP5:ALS",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1223,
+      "y" : 732
+    },
+    "minX" : 1217,
+    "maxX" : 1229,
+    "minY" : 602,
+    "maxY" : 805,
+    "segments" : [ {
+      "from" : {
+        "x" : 1222,
+        "y" : 602
+      },
+      "to" : {
+        "x" : 1223,
+        "y" : 732
+      }
+    }, {
+      "from" : {
+        "x" : 1223,
+        "y" : 732
+      },
+      "to" : {
+        "x" : 1224,
+        "y" : 805
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1217,
+        "y" : 726
+      },
+      "b" : {
+        "x" : 1229,
+        "y" : 738
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 22
+    } ],
+    "outputs" : [ {
+      "id" : 33,
+      "points" : [ {
+        "x" : 1257,
+        "y" : 806
+      } ]
+    }, {
+      "id" : 34,
+      "points" : [ {
+        "x" : 1271,
+        "y" : 847
+      } ]
+    }, {
+      "id" : 30,
+      "points" : [ {
+        "x" : 472,
+        "y" : 1223
+      }, {
+        "x" : 1146,
+        "y" : 1045
+      } ]
+    }, {
+      "id" : 31,
+      "points" : [ {
+        "x" : 729,
+        "y" : 1077
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 35,
+      "points" : [ {
+        "x" : 1276,
+        "y" : 733
+      } ]
+    } ]
+  }, {
+    "id" : 65,
+    "reactomeId" : 8952289,
+    "displayName" : "FAM20C phosphorylates FAM20C substrates",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 738,
+      "y" : 372
+    },
+    "minX" : 696,
+    "maxX" : 768,
+    "minY" : 366,
+    "maxY" : 378,
+    "segments" : [ {
+      "from" : {
+        "x" : 696,
+        "y" : 372
+      },
+      "to" : {
+        "x" : 738,
+        "y" : 372
+      }
+    }, {
+      "from" : {
+        "x" : 738,
+        "y" : 372
+      },
+      "to" : {
+        "x" : 768,
+        "y" : 372
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 761,
+        "y" : 376
+      },
+      "b" : {
+        "x" : 768,
+        "y" : 372
+      },
+      "c" : {
+        "x" : 761,
+        "y" : 368
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 732,
+        "y" : 366
+      },
+      "b" : {
+        "x" : 744,
+        "y" : 378
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 79
+    } ],
+    "outputs" : [ {
+      "id" : 83
+    } ],
+    "catalysts" : [ {
+      "id" : 79,
+      "points" : [ {
+        "x" : 696,
+        "y" : 354
+      }, {
+        "x" : 735,
+        "y" : 342
+      } ]
+    } ]
+  }, {
+    "id" : 1,
+    "reactomeId" : 381487,
+    "displayName" : "IGFBP1 binds IGF forming IGF:IGFBP1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 205,
+      "y" : 256
+    },
+    "minX" : 199,
+    "maxX" : 211,
+    "minY" : 192,
+    "maxY" : 309,
+    "segments" : [ {
+      "from" : {
+        "x" : 207,
+        "y" : 192
+      },
+      "to" : {
+        "x" : 205,
+        "y" : 256
+      }
+    }, {
+      "from" : {
+        "x" : 205,
+        "y" : 256
+      },
+      "to" : {
+        "x" : 205,
+        "y" : 309
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 201,
+        "y" : 302
+      },
+      "b" : {
+        "x" : 205,
+        "y" : 309
+      },
+      "c" : {
+        "x" : 209,
+        "y" : 302
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 199,
+        "y" : 250
+      },
+      "b" : {
+        "x" : 211,
+        "y" : 262
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2,
+      "points" : [ {
+        "x" : 177,
+        "y" : 175
+      } ]
+    }, {
+      "id" : 3,
+      "points" : [ {
+        "x" : 616,
+        "y" : 52
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 4
+    } ],
+    "catalysts" : [ {
+      "id" : 2,
+      "points" : [ {
+        "x" : 160,
+        "y" : 175
+      }, {
+        "x" : 159,
+        "y" : 257
+      } ]
+    } ]
+  }, {
+    "id" : 36,
+    "reactomeId" : 381500,
+    "displayName" : "Cathepsin G proteolyzes IGF:IGFBP3:ALS",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 166,
+      "y" : 708
+    },
+    "minX" : 160,
+    "maxX" : 443,
+    "minY" : 433,
+    "maxY" : 901,
+    "segments" : [ {
+      "from" : {
+        "x" : 443,
+        "y" : 433
+      },
+      "to" : {
+        "x" : 166,
+        "y" : 708
+      }
+    }, {
+      "from" : {
+        "x" : 166,
+        "y" : 708
+      },
+      "to" : {
+        "x" : 166,
+        "y" : 901
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 160,
+        "y" : 702
+      },
+      "b" : {
+        "x" : 172,
+        "y" : 714
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 19
+    } ],
+    "outputs" : [ {
+      "id" : 37,
+      "points" : [ {
+        "x" : 137,
+        "y" : 901
+      } ]
+    }, {
+      "id" : 38,
+      "points" : [ {
+        "x" : 116,
+        "y" : 976
+      } ]
+    }, {
+      "id" : 39,
+      "points" : [ {
+        "x" : 188,
+        "y" : 1037
+      } ]
+    }, {
+      "id" : 31,
+      "points" : [ {
+        "x" : 683,
+        "y" : 1082
+      } ]
+    }, {
+      "id" : 30,
+      "points" : [ {
+        "x" : 433,
+        "y" : 1213
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 62,
+      "points" : [ {
+        "x" : 102,
+        "y" : 675
+      } ]
+    } ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 381412,
+    "displayName" : "IGFBP2 binds IGF forming IGF:IGFBP2",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 327,
+      "y" : 301
+    },
+    "minX" : 321,
+    "maxX" : 333,
+    "minY" : 244,
+    "maxY" : 349,
+    "segments" : [ {
+      "from" : {
+        "x" : 328,
+        "y" : 244
+      },
+      "to" : {
+        "x" : 327,
+        "y" : 301
+      }
+    }, {
+      "from" : {
+        "x" : 327,
+        "y" : 301
+      },
+      "to" : {
+        "x" : 325,
+        "y" : 349
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 321,
+        "y" : 342
+      },
+      "b" : {
+        "x" : 325,
+        "y" : 349
+      },
+      "c" : {
+        "x" : 329,
+        "y" : 342
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 321,
+        "y" : 295
+      },
+      "b" : {
+        "x" : 333,
+        "y" : 307
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 8,
+      "points" : [ {
+        "x" : 301,
+        "y" : 233
+      } ]
+    }, {
+      "id" : 3,
+      "points" : [ {
+        "x" : 627,
+        "y" : 62
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 9
+    } ],
+    "catalysts" : [ {
+      "id" : 8,
+      "points" : [ {
+        "x" : 281,
+        "y" : 233
+      }, {
+        "x" : 283,
+        "y" : 299
+      } ]
+    } ]
+  }, {
+    "id" : 41,
+    "reactomeId" : 381435,
+    "displayName" : "Matrix metalloproteinase proteolyzes IGF:IGFBP3:ALS",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 396,
+      "y" : 690
+    },
+    "minX" : 390,
+    "maxX" : 451,
+    "minY" : 433,
+    "maxY" : 775,
+    "segments" : [ {
+      "from" : {
+        "x" : 451,
+        "y" : 433
+      },
+      "to" : {
+        "x" : 396,
+        "y" : 690
+      }
+    }, {
+      "from" : {
+        "x" : 396,
+        "y" : 690
+      },
+      "to" : {
+        "x" : 401,
+        "y" : 775
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 390,
+        "y" : 684
+      },
+      "b" : {
+        "x" : 402,
+        "y" : 696
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 19
+    } ],
+    "outputs" : [ {
+      "id" : 42,
+      "points" : [ {
+        "x" : 314,
+        "y" : 850
+      } ]
+    }, {
+      "id" : 43,
+      "points" : [ {
+        "x" : 322,
+        "y" : 785
+      } ]
+    }, {
+      "id" : 31,
+      "points" : [ {
+        "x" : 699,
+        "y" : 1077
+      } ]
+    }, {
+      "id" : 30,
+      "points" : [ {
+        "x" : 441,
+        "y" : 1213
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 44,
+      "points" : [ {
+        "x" : 326,
+        "y" : 674
+      } ]
+    } ]
+  }, {
+    "id" : 10,
+    "reactomeId" : 381503,
+    "displayName" : "IGFBP6 binds IGF forming IGF:IGFBP6",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1609,
+      "y" : 445
+    },
+    "minX" : 1603,
+    "maxX" : 1615,
+    "minY" : 343,
+    "maxY" : 498,
+    "segments" : [ {
+      "from" : {
+        "x" : 1608,
+        "y" : 343
+      },
+      "to" : {
+        "x" : 1609,
+        "y" : 445
+      }
+    }, {
+      "from" : {
+        "x" : 1609,
+        "y" : 445
+      },
+      "to" : {
+        "x" : 1611,
+        "y" : 498
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1607,
+        "y" : 491
+      },
+      "b" : {
+        "x" : 1611,
+        "y" : 498
+      },
+      "c" : {
+        "x" : 1615,
+        "y" : 491
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1603,
+        "y" : 439
+      },
+      "b" : {
+        "x" : 1615,
+        "y" : 451
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 3,
+      "points" : [ {
+        "x" : 674,
+        "y" : 52
+      } ]
+    }, {
+      "id" : 11,
+      "points" : [ {
+        "x" : 1641,
+        "y" : 330
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 12
+    } ],
+    "catalysts" : [ {
+      "id" : 11,
+      "points" : [ {
+        "x" : 1663,
+        "y" : 330
+      }, {
+        "x" : 1653,
+        "y" : 445
+      } ]
+    } ]
+  }, {
+    "id" : 13,
+    "reactomeId" : 381543,
+    "displayName" : "IGFBP4 binds IGF forming IGF:IGFBP4",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1427,
+      "y" : 448
+    },
+    "minX" : 1421,
+    "maxX" : 1433,
+    "minY" : 366,
+    "maxY" : 516,
+    "segments" : [ {
+      "from" : {
+        "x" : 1425,
+        "y" : 366
+      },
+      "to" : {
+        "x" : 1427,
+        "y" : 448
+      }
+    }, {
+      "from" : {
+        "x" : 1427,
+        "y" : 448
+      },
+      "to" : {
+        "x" : 1429,
+        "y" : 516
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1425,
+        "y" : 509
+      },
+      "b" : {
+        "x" : 1429,
+        "y" : 516
+      },
+      "c" : {
+        "x" : 1433,
+        "y" : 509
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1421,
+        "y" : 442
+      },
+      "b" : {
+        "x" : 1433,
+        "y" : 454
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 3,
+      "points" : [ {
+        "x" : 674,
+        "y" : 54
+      } ]
+    }, {
+      "id" : 14,
+      "points" : [ {
+        "x" : 1459,
+        "y" : 340
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 15
+    } ],
+    "catalysts" : [ {
+      "id" : 14,
+      "points" : [ {
+        "x" : 1471,
+        "y" : 340
+      }, {
+        "x" : 1469,
+        "y" : 446
+      } ]
+    } ]
+  }, {
+    "id" : 46,
+    "reactomeId" : 381461,
+    "displayName" : "Plasmin proteolyzes IGF:IGFBP-3:ALS",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 480,
+      "y" : 691
+    },
+    "minX" : 455,
+    "maxX" : 486,
+    "minY" : 433,
+    "maxY" : 760,
+    "segments" : [ {
+      "from" : {
+        "x" : 455,
+        "y" : 433
+      },
+      "to" : {
+        "x" : 480,
+        "y" : 691
+      }
+    }, {
+      "from" : {
+        "x" : 480,
+        "y" : 691
+      },
+      "to" : {
+        "x" : 484,
+        "y" : 760
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 474,
+        "y" : 685
+      },
+      "b" : {
+        "x" : 486,
+        "y" : 697
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 19
+    } ],
+    "outputs" : [ {
+      "id" : 47,
+      "points" : [ {
+        "x" : 590,
+        "y" : 846
+      } ]
+    }, {
+      "id" : 48,
+      "points" : [ {
+        "x" : 541,
+        "y" : 759
+      } ]
+    }, {
+      "id" : 49,
+      "points" : [ {
+        "x" : 592,
+        "y" : 796
+      } ]
+    }, {
+      "id" : 31,
+      "points" : [ {
+        "x" : 702,
+        "y" : 1077
+      } ]
+    }, {
+      "id" : 30,
+      "points" : [ {
+        "x" : 443,
+        "y" : 1213
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 50,
+      "points" : [ {
+        "x" : 535,
+        "y" : 680
+      } ]
+    } ]
+  }, {
+    "id" : 16,
+    "reactomeId" : 381496,
+    "displayName" : "Formation of the IGF:IGFBP3:ALS complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 452,
+      "y" : 326
+    },
+    "minX" : 446,
+    "maxX" : 458,
+    "minY" : 262,
+    "maxY" : 405,
+    "segments" : [ {
+      "from" : {
+        "x" : 453,
+        "y" : 262
+      },
+      "to" : {
+        "x" : 452,
+        "y" : 326
+      }
+    }, {
+      "from" : {
+        "x" : 452,
+        "y" : 326
+      },
+      "to" : {
+        "x" : 453,
+        "y" : 405
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 449,
+        "y" : 398
+      },
+      "b" : {
+        "x" : 453,
+        "y" : 405
+      },
+      "c" : {
+        "x" : 457,
+        "y" : 398
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 446,
+        "y" : 320
+      },
+      "b" : {
+        "x" : 458,
+        "y" : 332
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 3,
+      "points" : [ {
+        "x" : 635,
+        "y" : 62
+      } ]
+    }, {
+      "id" : 17,
+      "points" : [ {
+        "x" : 432,
+        "y" : 255
+      } ]
+    }, {
+      "id" : 18,
+      "points" : [ {
+        "x" : 541,
+        "y" : 234
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 19
+    } ],
+    "catalysts" : [ {
+      "id" : 17,
+      "points" : [ {
+        "x" : 408,
+        "y" : 255
+      }, {
+        "x" : 408,
+        "y" : 324
+      } ]
+    } ]
+  }, {
+    "id" : 20,
+    "reactomeId" : 381545,
+    "displayName" : "Formation of the IGF:IGFBP5:ALS complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1221,
+      "y" : 467
+    },
+    "minX" : 1215,
+    "maxX" : 1227,
+    "minY" : 392,
+    "maxY" : 574,
+    "segments" : [ {
+      "from" : {
+        "x" : 1219,
+        "y" : 392
+      },
+      "to" : {
+        "x" : 1221,
+        "y" : 467
+      }
+    }, {
+      "from" : {
+        "x" : 1221,
+        "y" : 467
+      },
+      "to" : {
+        "x" : 1221,
+        "y" : 574
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1217,
+        "y" : 567
+      },
+      "b" : {
+        "x" : 1221,
+        "y" : 574
+      },
+      "c" : {
+        "x" : 1225,
+        "y" : 567
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1215,
+        "y" : 461
+      },
+      "b" : {
+        "x" : 1227,
+        "y" : 473
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 21,
+      "points" : [ {
+        "x" : 1243,
+        "y" : 377
+      } ]
+    }, {
+      "id" : 3,
+      "points" : [ {
+        "x" : 663,
+        "y" : 62
+      } ]
+    }, {
+      "id" : 18,
+      "points" : [ {
+        "x" : 596,
+        "y" : 233
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 22
+    } ],
+    "catalysts" : [ {
+      "id" : 21,
+      "points" : [ {
+        "x" : 1259,
+        "y" : 377
+      }, {
+        "x" : 1260,
+        "y" : 467
+      } ]
+    } ]
+  }, {
+    "id" : 53,
+    "reactomeId" : 381466,
+    "displayName" : "Prostate-specific Antigen proteolyzes IGF:IGFBP3:ALS",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1031,
+      "y" : 608
+    },
+    "minX" : 487,
+    "maxX" : 1037,
+    "minY" : 433,
+    "maxY" : 749,
+    "segments" : [ {
+      "from" : {
+        "x" : 487,
+        "y" : 433
+      },
+      "to" : {
+        "x" : 1031,
+        "y" : 608
+      }
+    }, {
+      "from" : {
+        "x" : 1031,
+        "y" : 608
+      },
+      "to" : {
+        "x" : 1020,
+        "y" : 749
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1025,
+        "y" : 602
+      },
+      "b" : {
+        "x" : 1037,
+        "y" : 614
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 19
+    } ],
+    "outputs" : [ {
+      "id" : 54,
+      "points" : [ {
+        "x" : 1090,
+        "y" : 783
+      } ]
+    }, {
+      "id" : 55,
+      "points" : [ {
+        "x" : 1063,
+        "y" : 749
+      } ]
+    }, {
+      "id" : 31,
+      "points" : [ {
+        "x" : 719,
+        "y" : 1077
+      } ]
+    }, {
+      "id" : 30,
+      "points" : [ {
+        "x" : 472,
+        "y" : 1222
+      }, {
+        "x" : 913,
+        "y" : 1069
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 64,
+      "points" : [ {
+        "x" : 1068,
+        "y" : 580
+      } ]
+    } ]
+  }, {
+    "id" : 24,
+    "reactomeId" : 381518,
+    "displayName" : "PAAP-A proteolyzes IGF:IGFBP4",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1430,
+      "y" : 733
+    },
+    "minX" : 1424,
+    "maxX" : 1436,
+    "minY" : 544,
+    "maxY" : 859,
+    "segments" : [ {
+      "from" : {
+        "x" : 1430,
+        "y" : 544
+      },
+      "to" : {
+        "x" : 1430,
+        "y" : 733
+      }
+    }, {
+      "from" : {
+        "x" : 1430,
+        "y" : 733
+      },
+      "to" : {
+        "x" : 1431,
+        "y" : 859
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1424,
+        "y" : 727
+      },
+      "b" : {
+        "x" : 1436,
+        "y" : 739
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 15
+    } ],
+    "outputs" : [ {
+      "id" : 25,
+      "points" : [ {
+        "x" : 1489,
+        "y" : 899
+      } ]
+    }, {
+      "id" : 26,
+      "points" : [ {
+        "x" : 1475,
+        "y" : 861
+      } ]
+    }, {
+      "id" : 30,
+      "points" : [ {
+        "x" : 472,
+        "y" : 1225
+      }, {
+        "x" : 1361,
+        "y" : 1033
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 35,
+      "points" : [ {
+        "x" : 1388,
+        "y" : 733
+      } ]
+    } ]
+  }, {
+    "id" : 57,
+    "reactomeId" : 381446,
+    "displayName" : "Thrombin proteolyzes IGF:IGFBP3:ALS",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 761,
+      "y" : 687
+    },
+    "minX" : 466,
+    "maxX" : 767,
+    "minY" : 433,
+    "maxY" : 767,
+    "segments" : [ {
+      "from" : {
+        "x" : 466,
+        "y" : 433
+      },
+      "to" : {
+        "x" : 761,
+        "y" : 687
+      }
+    }, {
+      "from" : {
+        "x" : 761,
+        "y" : 687
+      },
+      "to" : {
+        "x" : 760,
+        "y" : 767
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 755,
+        "y" : 681
+      },
+      "b" : {
+        "x" : 767,
+        "y" : 693
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 19
+    } ],
+    "outputs" : [ {
+      "id" : 58,
+      "points" : [ {
+        "x" : 799,
+        "y" : 766
+      } ]
+    }, {
+      "id" : 59,
+      "points" : [ {
+        "x" : 815,
+        "y" : 801
+      } ]
+    }, {
+      "id" : 48,
+      "points" : [ {
+        "x" : 665,
+        "y" : 762
+      } ]
+    }, {
+      "id" : 31,
+      "points" : [ {
+        "x" : 711,
+        "y" : 1077
+      } ]
+    }, {
+      "id" : 30,
+      "points" : [ {
+        "x" : 450,
+        "y" : 1213
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 60,
+      "points" : [ {
+        "x" : 797,
+        "y" : 654
+      } ]
+    } ]
+  } ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 16,
+  "maxX" : 1696,
+  "minY" : 34,
+  "maxY" : 1241,
+  "disease" : false
+}

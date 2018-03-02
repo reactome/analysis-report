@@ -1,0 +1,914 @@
+{
+  "dbId" : 189445,
+  "stId" : "R-HSA-189445",
+  "nodes" : [ {
+    "dbId" : 189443,
+    "stId" : "R-HSA-189443",
+    "displayName" : "ALAS2 homodimer (pyridoxal phosphate cofactor) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 189429 ],
+    "children" : [ 1022083 ]
+  }, {
+    "dbId" : 189441,
+    "stId" : "R-HSA-189441",
+    "displayName" : "FECH [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22830",
+    "geneNames" : [ "FECH" ],
+    "parents" : [ 189402 ]
+  }, {
+    "dbId" : 189446,
+    "stId" : "R-HSA-189446",
+    "displayName" : "ALAS1 homodimer (pyridoxal phosphate cofactor) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 189429 ],
+    "children" : [ 1022086 ]
+  }, {
+    "dbId" : 189447,
+    "stId" : "R-ALL-189447",
+    "displayName" : "DIPY [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "36319",
+    "parents" : [ 421458, 9593293, 9226640, 9146418, 9033776, 9945760, 9722243, 9297307, 9076569, 9375615, 9061242, 9891664, 9649462, 9051566, 9530771, 9453938, 9819125, 189426 ]
+  }, {
+    "dbId" : 189444,
+    "stId" : "R-ALL-189444",
+    "displayName" : "heme [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 37 ],
+    "identifier" : "17627"
+  }, {
+    "dbId" : 158602,
+    "stId" : "R-ALL-158602",
+    "displayName" : "UDP [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 96 ],
+    "identifier" : "17659"
+  }, {
+    "dbId" : 1022086,
+    "stId" : "R-HSA-1022086",
+    "displayName" : "PXLP-ALAS1 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13196",
+    "geneNames" : [ "ALAS1", "ALAS3", "ALASH", "OK/SW-cl.121" ],
+    "parents" : [ 189446 ]
+  }, {
+    "dbId" : 189448,
+    "stId" : "R-HSA-189448",
+    "displayName" : "CPOX(132-454) [mitochondrial intermembrane space]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36551",
+    "geneNames" : [ "CPOX", "CPO", "CPX" ],
+    "parents" : [ 189485 ]
+  }, {
+    "dbId" : 189449,
+    "stId" : "R-ALL-189449",
+    "displayName" : "HMBL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 31 ],
+    "identifier" : "16645"
+  }, {
+    "dbId" : 189454,
+    "stId" : "R-HSA-189454",
+    "displayName" : "2xUROD [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 32 ],
+    "children" : [ 189427 ]
+  }, {
+    "dbId" : 1022083,
+    "stId" : "R-HSA-1022083",
+    "displayName" : "PXLP-ALAS2 [mitochondrial matrix]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22557",
+    "geneNames" : [ "ALAS2", "ALASE", "ASB" ],
+    "parents" : [ 189443 ]
+  }, {
+    "dbId" : 189455,
+    "stId" : "R-ALL-189455",
+    "displayName" : "COPRO3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 22 ],
+    "identifier" : "15439"
+  }, {
+    "dbId" : 189453,
+    "stId" : "R-HSA-189453",
+    "displayName" : "ALAD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13716",
+    "geneNames" : [ "ALAD" ],
+    "parents" : [ 190145, 189400 ]
+  }, {
+    "dbId" : 71185,
+    "stId" : "R-ALL-71185",
+    "displayName" : "heme [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 9 ],
+    "identifier" : "17627",
+    "parents" : [ 9360659, 9283078, 9635770, 9804416, 9439301, 9704071, 9582528, 9518432, 8981612, 9704072, 9360660, 9283079, 9635771, 9439302, 9804417, 9582529, 9518433, 8981605, 9439307, 9518443, 9704077, 9582534, 9804422, 9635776, 9360668, 9283084, 9213660, 8981620, 9518444, 9439308, 9704078, 9582535, 9360669, 9804423, 9635777, 9213661, 9283085, 8981609, 9339186, 9263670, 9564683, 9776626, 9190971, 9417401, 9683991, 9496369, 9620226, 5218783, 9750255, 9668504, 9478984, 9608737, 9400445, 9550241, 9319806, 9248061, 1237317, 9668524, 9400453, 9750275, 9608741, 9248075, 9550276, 9478995, 9319820, 1237318, 9750250, 9608732, 9550236, 9478972, 9319794, 9400440, 9248056, 9668499, 1237037, 9319793, 9750249, 9478971, 9550235, 9248055, 9608731, 9400439, 9668498, 1237036, 9172142, 9172143, 9172163, 9172155, 9264256, 9684671, 9418147, 9777518, 9620632, 9339832, 9565138, 9191759, 9497138, 8981623, 9077724, 9457604, 9150264, 9034712, 9229699, 9595804, 9379201, 9100358, 9726749, 9534102, 9300683, 9652400, 203564, 9822289, 9458143, 9230231, 9652793, 9379765, 9301271, 9150856, 203808, 9822550, 9652412, 9822299, 9077734, 9300699, 9229711, 9379213, 9457616, 203969, 9457614, 9077732, 9822297, 9300695, 9652410, 9379211, 9229709, 203619, 9150280, 9150276, 9301264, 9230224, 9150849, 9727372, 9458136, 9652784, 9379758, 535006, 9726729, 9229681, 9100342, 9300662, 9595787, 9150236, 9534080, 9077708, 9034700, 9652369, 9457585, 9379182, 203639, 9822545, 9822276, 1222294, 1562633, 1222385, 5359026, 9315137, 9472894, 9166982, 9744878, 9080096, 9545049, 9605381, 9663589, 9394414, 9243324, 888612, 9091861, 9286832, 9217233, 9442939, 9030403, 9639338, 9134732, 9585601, 9522018, 1222510, 9608435, 9668018, 9247560, 9549300, 9477895, 9399575, 9749725, 9171553, 9319361, 1614610, 9324043, 9482166, 9842239, 9175526, 9251238, 9403908, 9755551, 9671589, 9611306, 9553160, 9112273, 9081270, 9038743, 198580, 9148666, 9377819, 9455975, 9077267, 9228514, 9299442, 71186, 9708052, 9808420, 9364284 ]
+  }, {
+    "dbId" : 189463,
+    "stId" : "R-ALL-189463",
+    "displayName" : "PRIN9 [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 24 ],
+    "identifier" : "15430"
+  }, {
+    "dbId" : 189461,
+    "stId" : "R-ALL-189461",
+    "displayName" : "O2 [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 50, 105 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 189466,
+    "stId" : "R-ALL-189466",
+    "displayName" : "dALA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 53 ],
+    "identifier" : "17549"
+  }, {
+    "dbId" : 189464,
+    "stId" : "R-ALL-189464",
+    "displayName" : "PBG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 34 ],
+    "identifier" : "17381"
+  }, {
+    "dbId" : 71067,
+    "stId" : "R-ALL-71067",
+    "displayName" : "Fe2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 12 ],
+    "identifier" : "18248",
+    "parents" : [ 445829, 6786518, 9380306, 9301841, 9949228, 9151410, 9077971, 9051923, 9458696, 9062143, 9893698, 9653185, 9034905, 9230688, 9534872, 204627, 9488543, 9409668, 9256807, 9766317, 9039585, 9615429, 9677349, 9974635, 9331085, 9907702, 9558673, 2142822, 9182921, 9488574, 9677375, 9409699, 9615448, 9331126, 9558695, 9766368, 9039594, 9974857, 9182957, 9907815, 2142760, 9256848, 9907803, 9039589, 9182950, 9256837, 9974815, 9488566, 9409691, 9766359, 9331118, 2142744, 9122165, 9782984, 9917166, 9568715, 9624033, 9344129, 9501470, 9042405, 9422404, 9196391, 9688441, 9268103, 9984464, 9862066, 5678326, 9227155, 9147092, 9531359, 9650014, 9376243, 9297910, 9454468, 9593729, 9722966, 9076712, 9098122, 192180, 9721549, 9145900, 180029, 9907688, 9488494, 9256771, 9409622, 9974591, 9766275, 9331051, 9039577, 2142793, 9956874, 9390482, 9162594, 9897647, 9660068, 9739330, 9602342, 9311130, 9468866, 9036187, 9541569, 265277, 9390480, 9468862, 9541565, 9162592, 9956800, 9897633, 9311128, 9739328, 9660066, 9036184, 9602338, 2237880, 9239709, 9239707, 9746575, 9903213, 9474471, 9966366, 9546468, 9606673, 9316828, 9245071, 9168777, 9396206, 975642, 9108901, 1222672, 9808490, 9708123, 9091927, 9639384, 9073329, 9442985, 9522070, 9286878, 9585648, 9134793, 9364334, 9217276, 71107, 9808394, 9134709, 9585583, 9091831, 9442921, 9286811, 9217215, 9639320, 9708019, 9030382, 9364266, 9883605, 9522000, 9933943, 71076, 9708010, 9030375, 9585577, 9521994, 9364260, 9091824, 9286805, 9808387, 9217209, 9134703, 9442915, 9639314, 71161, 9134678, 9639289, 9521963, 9442890, 9585547, 9091795, 9808355, 9364235, 9707973, 9286780, 9217180, 71068, 9030346, 9217251, 9073300, 9442957, 9639359, 9364309, 9091889, 9708077, 9522041, 9286853, 9134755, 9585623, 9030424, 71086, 9064151, 9608713, 9172113, 9550217, 9319766, 9080850, 9969006, 9038271, 9839076, 9904870, 9478943, 9668477, 9400420, 9248036, 9110339, 9750231, 1237173, 9697548, 9206162, 9576462, 9128336, 9431845, 9926254, 9997888, 9872014, 9794913, 9276281, 9046312, 9353390, 6814156, 9755611, 9175571, 9553199, 9251280, 9671631, 9324082, 9112359, 9038787, 9482216, 9842289, 9611333, 9403945, 1614609, 9728232, 9823470, 9458969, 9230948, 9535126, 9100909, 9380569, 9596791, 9653463, 9302110, 9034986, 976249, 9151733, 9458959, 9653453, 9034980, 9302097, 9596777, 9535113, 9230938, 9100895, 9728213, 9823461, 9380559, 209926, 9151727, 9073367, 9058327, 9585675, 9708163, 9286906, 9217304, 9934085, 9443010, 9050011, 9808510, 9364363, 9639415, 9522101, 9883732, 9134825, 9091947, 8957330, 9934088, 9708168, 9059509, 73790, 9587377, 9288874, 9939760, 9050754, 9523865, 9031424, 9218949, 9641375, 9811513, 9366368, 9074554, 9093980, 9137136, 9887565, 9711080, 9445326, 9030444, 9030447, 8957212, 9364366, 9091950, 9134830, 9522104, 9639418, 9883741, 9058330, 9073370, 9286909, 9050014, 9808513, 9217307, 9443015, 9585678 ]
+  }, {
+    "dbId" : 189469,
+    "stId" : "R-HSA-189469",
+    "displayName" : "2xPPOX:FAD [mitochondrial intermembrane space]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 44 ],
+    "children" : [ 189484, 189434 ]
+  }, {
+    "dbId" : 189478,
+    "stId" : "R-ALL-189478",
+    "displayName" : "PPGEN9 [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 41 ],
+    "identifier" : "15435"
+  }, {
+    "dbId" : 2995338,
+    "stId" : "R-HSA-2995338",
+    "displayName" : "COX10(?-443) [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 113 ],
+    "identifier" : "Q12887",
+    "geneNames" : [ "COX10" ]
+  }, {
+    "dbId" : 5604991,
+    "stId" : "R-HSA-5604991",
+    "displayName" : "UGT1A1 tetramer,UGT1A4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 121 ],
+    "children" : [ 159157, 159191 ]
+  }, {
+    "dbId" : 189480,
+    "stId" : "R-ALL-189480",
+    "displayName" : "CO2 [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 52 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 189481,
+    "stId" : "R-ALL-189481",
+    "displayName" : "H2O2 [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 55, 107 ],
+    "identifier" : "16240"
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 82, 84, 7, 89, 91 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 189487,
+    "stId" : "R-ALL-189487",
+    "displayName" : "PRIN9 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 21 ],
+    "identifier" : "15430"
+  }, {
+    "dbId" : 159151,
+    "stId" : "R-ALL-159151",
+    "displayName" : "BIL [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 14 ],
+    "identifier" : "16990",
+    "parents" : [ 5605000 ]
+  }, {
+    "dbId" : 2995328,
+    "stId" : "R-ALL-2995328",
+    "displayName" : "heme O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 112 ],
+    "identifier" : "24480"
+  }, {
+    "dbId" : 189484,
+    "stId" : "R-ALL-189484",
+    "displayName" : "FAD [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16238",
+    "parents" : [ 421479, 9722255, 9033790, 9891683, 9819142, 9649474, 9226652, 9453950, 9076583, 9146433, 9297322, 9375627, 9945780, 9061256, 189469 ]
+  }, {
+    "dbId" : 189485,
+    "stId" : "R-HSA-189485",
+    "displayName" : "2xCPO [mitochondrial intermembrane space]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 47 ],
+    "children" : [ 189448 ]
+  }, {
+    "dbId" : 159149,
+    "stId" : "R-ALL-159149",
+    "displayName" : "BDG [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 103 ],
+    "identifier" : "18392"
+  }, {
+    "dbId" : 70958,
+    "stId" : "R-ALL-70958",
+    "displayName" : "SUCC-CoA [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 20 ],
+    "identifier" : "15380"
+  }, {
+    "dbId" : 174384,
+    "stId" : "R-ALL-174384",
+    "displayName" : "UDP-GlcA [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 95 ],
+    "identifier" : "17200"
+  }, {
+    "dbId" : 190128,
+    "stId" : "R-ALL-190128",
+    "displayName" : "COPRO1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 29 ],
+    "identifier" : "28607"
+  }, {
+    "dbId" : 189489,
+    "stId" : "R-ALL-189489",
+    "displayName" : "dALA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 40 ],
+    "identifier" : "17549"
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4 ],
+    "identifier" : "16474",
+    "parents" : [ 428206, 9638895, 9521581, 9286369, 9442520, 9216836, 9363853, 9585203, 6810877, 9134274 ]
+  }, {
+    "dbId" : 159156,
+    "stId" : "R-HSA-159156",
+    "displayName" : "UGT1A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22309",
+    "geneNames" : [ "UGT1A1", "GNT1", "UGT1" ],
+    "parents" : [ 159191, 5605002, 174920 ]
+  }, {
+    "dbId" : 29366,
+    "stId" : "R-ALL-29366",
+    "displayName" : "NADP+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6 ],
+    "identifier" : "18009",
+    "parents" : [ 428218, 9807594, 9932554, 9072849, 9363671, 9442311, 9286168, 9707227, 9091140, 9057860, 9882812, 9638710, 9134094, 9216653, 9029893, 9029892, 70373, 9216652, 9049769, 9134093, 9638709, 9057859, 9091139, 9882811, 9707226, 9442310, 9363670, 9072848, 9286167, 9807593, 9932553, 70375, 9049770 ]
+  }, {
+    "dbId" : 159157,
+    "stId" : "R-HSA-159157",
+    "displayName" : "UGT1A4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22310",
+    "geneNames" : [ "UGT1A4", "GNT1", "UGT1" ],
+    "parents" : [ 5604991, 5605002, 174917, 174920 ]
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 15 ],
+    "identifier" : "15379",
+    "parents" : [ 9704072, 9360660, 9283079, 9635771, 9439302, 9804417, 9582529, 9518433, 8981605, 9518444, 9439308, 9704078, 9582535, 9360669, 9804423, 9635777, 9213661, 9283085, 8981609, 9750250, 9608732, 9550236, 9478972, 9319794, 9400440, 9248056, 9668499, 1237037, 9319793, 9750249, 9478971, 9550235, 9248055, 9608731, 9400439, 9668498, 1237036, 9172142, 9172143, 9264258, 9191761, 9418149, 9620634, 9777520, 9565140, 9497140, 9339834, 9684673, 5340212 ]
+  }, {
+    "dbId" : 2995348,
+    "stId" : "R-ALL-2995348",
+    "displayName" : "heme A [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 117 ],
+    "identifier" : "24479"
+  }, {
+    "dbId" : 159160,
+    "stId" : "R-ALL-159160",
+    "displayName" : "BMG [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 97 ],
+    "identifier" : "16427",
+    "parents" : [ 5605000 ]
+  }, {
+    "dbId" : 2995350,
+    "stId" : "R-HSA-2995350",
+    "displayName" : "COX15 [mitochondrial inner membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 118 ],
+    "identifier" : "Q7KZN9",
+    "geneNames" : [ "COX15" ]
+  }, {
+    "dbId" : 29374,
+    "stId" : "R-ALL-29374",
+    "displayName" : "CoA-SH [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 19 ],
+    "identifier" : "15346"
+  }, {
+    "dbId" : 159549,
+    "stId" : "R-ALL-159549",
+    "displayName" : "Gly [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 27 ],
+    "identifier" : "57305"
+  }, {
+    "dbId" : 29376,
+    "stId" : "R-ALL-29376",
+    "displayName" : "CO2 [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 54 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 189378,
+    "stId" : "R-HSA-189378",
+    "displayName" : "Biliverdin reductase A:Zn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 189387 ],
+    "children" : [ 189390, 29426 ]
+  }, {
+    "dbId" : 190145,
+    "stId" : "R-HSA-190145",
+    "displayName" : "8xALAD:Pb2+:Zn2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 49 ],
+    "children" : [ 189453, 190173, 29426 ]
+  }, {
+    "dbId" : 189382,
+    "stId" : "R-HSA-189382",
+    "displayName" : "HMOX1,2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ],
+    "children" : [ 189391, 189395 ]
+  }, {
+    "dbId" : 391232,
+    "stId" : "R-ALL-391232",
+    "displayName" : "Pb2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 45 ],
+    "identifier" : "27889"
+  }, {
+    "dbId" : 29382,
+    "stId" : "R-ALL-29382",
+    "displayName" : "NH3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 43 ],
+    "identifier" : "16134"
+  }, {
+    "dbId" : 189386,
+    "stId" : "R-ALL-189386",
+    "displayName" : "BIL [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 11 ],
+    "identifier" : "16990"
+  }, {
+    "dbId" : 189387,
+    "stId" : "R-HSA-189387",
+    "displayName" : "Biliverdin reductase [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "children" : [ 189388, 189378 ]
+  }, {
+    "dbId" : 189385,
+    "stId" : "R-ALL-189385",
+    "displayName" : "CO [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 10 ],
+    "identifier" : "17245"
+  }, {
+    "dbId" : 189390,
+    "stId" : "R-HSA-189390",
+    "displayName" : "BLVRA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P53004",
+    "geneNames" : [ "BLVRA", "BLVR", "BVR" ],
+    "parents" : [ 189378 ]
+  }, {
+    "dbId" : 189391,
+    "stId" : "R-HSA-189391",
+    "displayName" : "HMOX2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30519",
+    "geneNames" : [ "HMOX2", "HO2" ],
+    "parents" : [ 189382 ]
+  }, {
+    "dbId" : 189388,
+    "stId" : "R-HSA-189388",
+    "displayName" : "BLVRB [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30043",
+    "geneNames" : [ "BLVRB", "FLR" ],
+    "parents" : [ 189387 ]
+  }, {
+    "dbId" : 190157,
+    "stId" : "R-ALL-190157",
+    "displayName" : "URO1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 26 ],
+    "identifier" : "28766"
+  }, {
+    "dbId" : 189395,
+    "stId" : "R-HSA-189395",
+    "displayName" : "HMOX1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09601",
+    "geneNames" : [ "HMOX1", "HO", "HO1" ],
+    "parents" : [ 189382 ]
+  }, {
+    "dbId" : 159191,
+    "stId" : "R-HSA-159191",
+    "displayName" : "UGT1A1 tetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5604991 ],
+    "children" : [ 159156 ]
+  }, {
+    "dbId" : 189396,
+    "stId" : "R-ALL-189396",
+    "displayName" : "BV [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 13 ],
+    "identifier" : "17033"
+  }, {
+    "dbId" : 159450,
+    "stId" : "R-ALL-159450",
+    "displayName" : "PPi [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 111 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 189402,
+    "stId" : "R-HSA-189402",
+    "displayName" : "2x(FECH:2Fe-2S cluster) [mitochondrial matrix]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 28 ],
+    "children" : [ 189441, 189408 ]
+  }, {
+    "dbId" : 189400,
+    "stId" : "R-HSA-189400",
+    "displayName" : "8x(ALAD:Zn2+) [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 48 ],
+    "children" : [ 189453, 29426 ]
+  }, {
+    "dbId" : 189407,
+    "stId" : "R-ALL-189407",
+    "displayName" : "URO3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 23 ],
+    "identifier" : "15437"
+  }, {
+    "dbId" : 190173,
+    "stId" : "R-ALL-190173",
+    "displayName" : "Pb2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 46 ],
+    "identifier" : "27889",
+    "parents" : [ 9146485, 9453996, 9945869, 9375669, 9297364, 9061299, 9076626, 9819202, 9051610, 9593342, 9226694, 9033827, 9722301, 9530839, 9649520, 9891735, 190145 ]
+  }, {
+    "dbId" : 5605002,
+    "stId" : "R-HSA-5605002",
+    "displayName" : "UGT1A1,4 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 119 ],
+    "children" : [ 159157, 159156 ]
+  }, {
+    "dbId" : 189411,
+    "stId" : "R-ALL-189411",
+    "displayName" : "COPRO3 [mitochondrial intermembrane space]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 35 ],
+    "identifier" : "15439"
+  }, {
+    "dbId" : 189408,
+    "stId" : "R-ALL-189408",
+    "displayName" : "2Iron-2Sulfur Cluster [mitochondrial matrix]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 421503, 9945865, 9530829, 9819181, 9033823, 9649510, 9453986, 9226684, 9722291, 9593333, 9297354, 9891731, 9375659, 9146472, 9061289, 9076616, 189402, 9051606 ]
+  }, {
+    "dbId" : 3004609,
+    "stId" : "R-HSA-3004609",
+    "displayName" : "HMBS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08397",
+    "geneNames" : [ "HMBS", "PBGD", "UPS" ],
+    "parents" : [ 189426 ]
+  }, {
+    "dbId" : 189426,
+    "stId" : "R-HSA-189426",
+    "displayName" : "HMBS:DIPY [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 51 ],
+    "children" : [ 3004609, 189447 ]
+  }, {
+    "dbId" : 113521,
+    "stId" : "R-ALL-113521",
+    "displayName" : "H2O [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 110 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 2162257,
+    "stId" : "R-ALL-2162257",
+    "displayName" : "FPP [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 109 ],
+    "identifier" : "17407"
+  }, {
+    "dbId" : 189427,
+    "stId" : "R-HSA-189427",
+    "displayName" : "UROD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P06132",
+    "geneNames" : [ "UROD" ],
+    "parents" : [ 189454 ]
+  }, {
+    "dbId" : 29426,
+    "stId" : "R-ALL-29426",
+    "displayName" : "Zn2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 25 ],
+    "identifier" : "29105",
+    "parents" : [ 445829, 421456, 879241, 879258, 879260, 936637, 9698511, 9631481, 9432996, 9354502, 9512165, 9277417, 9207343, 9577283, 8852197, 9146485, 9453996, 9945869, 9375669, 9297364, 9061299, 9076626, 9819202, 9051610, 9593342, 9226694, 9033827, 9722301, 9530839, 9649520, 9891735, 190145, 9076597, 9649486, 9945803, 9061270, 9297334, 9453962, 9375639, 9593315, 9722267, 9891707, 9051587, 9146445, 9530804, 9226664, 9819156, 189400, 9033804, 9670284, 9322257, 9841032, 9753514, 9174166, 9402291, 9249719, 9551977, 9480983, 9610119, 9905283, 9969944, 1237309, 9841034, 9480987, 9322261, 9969986, 9905293, 9753518, 9610123, 9402295, 9670288, 9249726, 9174170, 1237321, 9249715, 9670280, 9174157, 9551973, 9322250, 9480979, 9610115, 9402287, 1237315, 9480975, 9905273, 9551965, 9610105, 9322246, 9670276, 9969902, 9402283, 9753510, 9249711, 9841030, 1237310, 9670269, 9969860, 9322242, 9480971, 9905263, 9402279, 9753506, 9249707, 9841028, 1237322, 9174149, 9174153, 9824442, 9152980, 9536175, 9062215, 9460203, 9730236, 9654619, 9303349, 9232052, 9381755, 9597747, 2142831, 9460207, 9654623, 9597751, 9730240, 9232056, 9824454, 9303358, 9152984, 9536179, 9062219, 9381759, 266059, 9381763, 9597753, 9824466, 9152988, 9730242, 9062223, 9536181, 9460211, 9654625, 9232060, 5490228, 9418899, 9497895, 9685350, 9778433, 5433069, 9083863, 9120183, 9912065, 9497891, 9685346, 9621282, 9041540, 9778425, 9980604, 9192616, 9565779, 9264847, 9858807, 9340559, 9418895, 5433068, 201775, 375187, 201762, 201779, 9894766, 9035121, 9232088, 9101406, 9062265, 9654658, 9381791, 9303395, 9536218, 9597781, 9460247, 9730321, 9078095, 9950932, 9824598, 9051947, 266038, 9153024, 9085308, 9986733, 9918819, 9625281, 9690561, 9785092, 9067867, 9570460, 9424258, 9198496, 9123072, 9269767, 9346183, 9043168, 9863760, 9503316, 5692218, 9522287, 9030583, 9092247, 9073559, 9287158, 9808973, 9935233, 9708546, 9443235, 9364575, 9639644, 9585850, 9884209, 9217512, 9058442, 71754, 71703, 9092245, 9073557, 9808971, 9030581, 9522282, 9884207, 9135109, 9217505, 9058438, 9935229, 9585848, 9639642, 9708540, 71748, 71701, 71698, 71696, 9013304, 9013301, 3149527, 9746158, 9168443, 9546204, 9836442, 9965971, 9474170, 9244775, 9902964, 9316492, 9665171, 9395919, 9037545, 947568, 9108578, 9108533, 9965894, 9546178, 9474140, 9395875, 9836412, 9168417, 9080355, 9316457, 9244746, 9665142, 9037515, 9902934, 9063787, 9052619, 9746100, 947584, 9746094, 9965888, 9108530, 9168414, 9836409, 9395872, 9546175, 9244743, 9080352, 9474137, 9316454, 9902931, 9063784, 9052616, 9037512, 9665139, 947543, 9746250, 9168501, 9665231, 9606473, 9903009, 9108633, 9244831, 9836551, 9474240, 9966033, 9080387, 9063811, 9316555, 9546258, 9037608, 9395983, 965005, 190016, 190032, 190038, 190018, 190017, 5228371, 190042, 190047, 5211351, 8876991, 5662652, 5662640, 5662583, 6798589, 5662577, 5662579, 5662585, 5662570, 5662578, 9500491, 9195332, 9267179, 9421435, 9343101, 5662563, 9195330, 9500489, 9343097, 9421433, 9267177, 5662573, 5662591, 9343058, 9421399, 9267141, 9195291, 9500453, 5661213, 5662567, 9609996, 9321984, 9402162, 9753208, 9841021, 9551818, 9111138, 9173987, 9480823, 9249613, 1475058, 9038479, 9077724, 9457604, 9150264, 9034712, 9229699, 9595804, 9379201, 9100358, 9726749, 9534102, 9300683, 9652400, 203564, 9822289, 9458143, 9230231, 9652793, 9379765, 9301271, 9150856, 203808, 9822550, 9652412, 9822299, 9077734, 9300699, 9229711, 9379213, 9457616, 203969, 9457614, 9077732, 9822297, 9300695, 9652410, 9379211, 9229709, 203619, 9150280, 9150276, 9301264, 9230224, 9150849, 9727372, 9458136, 9652784, 9379758, 535006, 9726729, 9229681, 9100342, 9300662, 9595787, 9150236, 9534080, 9077708, 9034700, 9652369, 9457585, 9379182, 203639, 9822545, 9822276, 1222283, 9148372, 9947594, 9077136, 9455753, 9377626, 9299199, 9724773, 9228323, 9532636, 9594712, 9892767, 9820669, 9061698, 9034347, 9651186, 197222, 9570446, 9346162, 9424244, 9503302, 9198475, 9785075, 9269753, 9690544, 9625267, 5692246, 1237184, 1237083, 9403952, 9482222, 9251286, 9611339, 9671637, 9324088, 9755617, 9553205, 9175580, 6798210, 9786427, 9425314, 9347155, 9199540, 9571345, 9270670, 9504387, 9626099, 9691635, 5696843, 9695421, 9429170, 9574890, 9351017, 9069789, 9791923, 9274025, 9045305, 9508435, 9203614, 9087192, 9629219, 6799546, 189854, 189845, 169877, 170966, 182087, 182104, 9558574, 9677263, 9064822, 9182806, 9907619, 9488420, 9114872, 9256703, 9974441, 9848508, 9766237, 9039566, 9409547, 9615344, 2161178, 9330979, 9074421, 9288631, 9811267, 9059391, 9366010, 9523611, 9136737, 9031310, 9710576, 9587062, 9218600, 9444944, 73462, 9093861, 9811211, 9587018, 9444904, 9093821, 9710530, 9640992, 9074393, 9136698, 9939482, 9218564, 9288584, 9887317, 9523571, 9365966, 73468, 9031289, 9710539, 9444910, 9365972, 9640998, 9939491, 9093828, 9136704, 9887324, 9031296, 9523577, 9218570, 9587024, 9811221, 9059370, 73465, 9288593, 9059665, 9811788, 9137427, 9711427, 9366649, 9074719, 9524095, 9587579, 9445593, 9940415, 9219204, 9641620, 9289162, 74253, 9031645, 9082487, 9909324, 9681323, 9260821, 9853344, 9772224, 9335906, 9187527, 9618168, 9977008, 9493200, 9414191, 3299713, 9082485, 9493198, 9260819, 9909322, 9681321, 9977006, 9335904, 9772222, 9187525, 9853342, 9618166, 9414189, 3299732, 9260818, 9909321, 9082484, 9493197, 9681320, 9977005, 9335903, 9853341, 9772221, 9187524, 9618165, 9414188, 3299751, 9040404, 9040402, 9040401, 9618157, 9976997, 9335891, 9772206, 9909312, 9187512, 9853316, 9493185, 9681308, 9562143, 9260806, 9414181, 9117519, 9082478, 9040392, 3299681, 9065349, 2025973, 9255187, 9181104, 9675684, 9053151, 9763616, 9064737, 9557211, 9113953, 9039331, 9486807, 9081708, 9334219, 9846292, 9614192, 9408111, 2025949, 9194738, 9780908, 9266613, 9860448, 9342522, 9066430, 9913220, 9622813, 9420864, 9567421, 9687061, 9499889, 9121258, 9983608, 5662476, 9084218, 9571917, 9271058, 9200019, 9786891, 9068724, 9504812, 9124054, 9055223, 9988836, 9626505, 9043760, 9920537, 9347680, 9086055, 9425700, 9865215, 9692091, 6783206, 9919048, 9690927, 9570824, 9270135, 9625573, 9346520, 9198906, 9067961, 9085464, 9055096, 9503743, 9043298, 9987099, 9785556, 9424654, 9864022, 5694123, 9453919, 9593278, 9722205, 9649435, 9297291, 9530756, 9146399, 9226621, 9375599, 189378, 9413297, 9680510, 9771001, 9561594, 9617643, 9260069, 9040172, 9492308, 9335002, 9186639, 3204327, 9116953, 9033574, 9592444, 9452766, 9374371, 9096902, 9296165, 9720483, 9225562, 9529796, 9648241, 9145161, 3149497, 9374369, 9296163, 9096900, 9033572, 9648239, 9452764, 9145159, 9592442, 9720481, 9225560, 9529794, 3149506, 9884202, 9073555, 9073552, 9073553, 71714, 9217501, 9287151, 9708534, 9364571, 9058434, 9092243, 9030579, 9135105, 9884205, 9808969, 9935225, 71705, 9935221, 9585846, 9708528, 9287147, 9639640, 9443231, 9808967, 9058430, 9522277, 9217497, 9135101, 9030577, 9364567, 9092241, 9884203, 71693, 9935220, 9639639, 9287146, 9585845, 9443230, 9808966, 9217496, 9522276, 9058429, 9135100, 9364566, 9030576, 9092240, 9708527 ]
+  }, {
+    "dbId" : 189430,
+    "stId" : "R-HSA-189430",
+    "displayName" : "UROS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 30 ],
+    "identifier" : "P10746",
+    "geneNames" : [ "UROS" ]
+  }, {
+    "dbId" : 189429,
+    "stId" : "R-HSA-189429",
+    "displayName" : "ALAS1,2 [mitochondrial matrix]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 42 ],
+    "children" : [ 189446, 189443 ]
+  }, {
+    "dbId" : 113529,
+    "stId" : "R-ALL-113529",
+    "displayName" : "H+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 39 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 189434,
+    "stId" : "R-HSA-189434",
+    "displayName" : "PPOX [mitochondrial intermembrane space]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50336",
+    "geneNames" : [ "PPOX" ],
+    "parents" : [ 189469 ]
+  }, {
+    "dbId" : 113528,
+    "stId" : "R-ALL-113528",
+    "displayName" : "CO2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 36 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 113531,
+    "stId" : "R-ALL-113531",
+    "displayName" : "Fe2+ [mitochondrial matrix]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 38 ],
+    "identifier" : "18248",
+    "parents" : [ 9401200, 9064208, 9550952, 9839982, 9110941, 9904962, 9172926, 9751462, 9080923, 9320519, 9479672, 9038319, 9969181, 9609328, 9248749, 1362402, 9073307, 71098, 9091896, 9134761, 9442963, 9217257, 9364315, 9286859, 9639365, 9708083, 9808440, 9522047, 9585629, 5164400, 9683459, 9978922, 9263033, 9338490, 9856338, 9619748, 9190235, 9495703, 9911216, 9416598, 9564157, 9775771 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 189442,
+    "stId" : "R-HSA-189442",
+    "displayName" : "ALAS condenses SUCC-CoA and Gly to form dALA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 71249 ],
+    "following" : [ 189456 ],
+    "inputs" : [ 159549, 70958 ],
+    "outputs" : [ 29374, 189466, 29376 ],
+    "catalysts" : [ 189429 ],
+    "efs" : [ ],
+    "inhibitors" : [ 189444 ],
+    "diagramIds" : [ 62 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 190182,
+    "stId" : "R-HSA-190182",
+    "displayName" : "UROD decarboxylates URO1 to COPRO1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 190168 ],
+    "inputs" : [ 190157 ],
+    "outputs" : [ 113528, 190128 ],
+    "catalysts" : [ 189454 ],
+    "efs" : [ ],
+    "diagramIds" : [ 64 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189381,
+    "stId" : "R-HSA-189381",
+    "displayName" : "Bilirubin translocates from the cytosol to the ER lumen",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189384 ],
+    "following" : [ 159194 ],
+    "inputs" : [ 189386 ],
+    "outputs" : [ 159151 ],
+    "efs" : [ ],
+    "diagramIds" : [ 16 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 159179,
+    "stId" : "R-HSA-159179",
+    "displayName" : "UGT1A1 tetramer, UGT1A4 transfer GlcA from UDP-GlcA to BMG to form BDG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 159194, 174368 ],
+    "inputs" : [ 159160, 174384 ],
+    "outputs" : [ 159149, 158602 ],
+    "catalysts" : [ 5604991 ],
+    "efs" : [ ],
+    "diagramIds" : [ 102 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189384,
+    "stId" : "R-HSA-189384",
+    "displayName" : "Biliverdin is reduced to bilirubin",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189398 ],
+    "following" : [ 189381 ],
+    "inputs" : [ 189396, 29364 ],
+    "outputs" : [ 189386, 29366 ],
+    "catalysts" : [ 189387 ],
+    "efs" : [ ],
+    "diagramIds" : [ 18 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2995334,
+    "stId" : "R-HSA-2995334",
+    "displayName" : "COX15 transforms heme O to heme A",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2995330 ],
+    "inputs" : [ 2995328 ],
+    "outputs" : [ 2995348 ],
+    "catalysts" : [ 2995350 ],
+    "efs" : [ ],
+    "diagramIds" : [ 116 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189423,
+    "stId" : "R-HSA-189423",
+    "displayName" : "PPO oxidises PPGEN9 to PRIN9",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189421 ],
+    "following" : [ 189457 ],
+    "inputs" : [ 189461, 189478 ],
+    "outputs" : [ 189481, 189463 ],
+    "catalysts" : [ 189469 ],
+    "efs" : [ ],
+    "diagramIds" : [ 56 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189421,
+    "stId" : "R-HSA-189421",
+    "displayName" : "CPO transforms COPRO3 to PPGEN9",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189467 ],
+    "following" : [ 189423 ],
+    "inputs" : [ 189461, 189411 ],
+    "outputs" : [ 189481, 189480, 189478 ],
+    "catalysts" : [ 189485 ],
+    "efs" : [ ],
+    "diagramIds" : [ 69 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2995330,
+    "stId" : "R-HSA-2995330",
+    "displayName" : "COX10 transforms heme to heme O",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189465 ],
+    "following" : [ 2995334 ],
+    "inputs" : [ 189444, 2162257, 113521 ],
+    "outputs" : [ 2995328, 159450 ],
+    "catalysts" : [ 2995338 ],
+    "efs" : [ ],
+    "diagramIds" : [ 108 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189456,
+    "stId" : "R-HSA-189456",
+    "displayName" : "Mitochondrial dALA translocates to cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189442 ],
+    "following" : [ 189439 ],
+    "inputs" : [ 189466 ],
+    "outputs" : [ 189489 ],
+    "efs" : [ ],
+    "diagramIds" : [ 60 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189488,
+    "stId" : "R-HSA-189488",
+    "displayName" : "UROS transforms HMB to URO3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189406 ],
+    "following" : [ 189425 ],
+    "inputs" : [ 189449 ],
+    "outputs" : [ 189407, 29356 ],
+    "catalysts" : [ 189430 ],
+    "efs" : [ ],
+    "diagramIds" : [ 65 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189425,
+    "stId" : "R-HSA-189425",
+    "displayName" : "UROD decarboxylates URO3 to COPRO3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189488 ],
+    "following" : [ 189467 ],
+    "inputs" : [ 189407 ],
+    "outputs" : [ 189455, 113528 ],
+    "catalysts" : [ 189454 ],
+    "efs" : [ ],
+    "diagramIds" : [ 58 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189457,
+    "stId" : "R-HSA-189457",
+    "displayName" : "Mitochondrial intermembrane PRIN9 translocates to mitochondrial matrix",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189423 ],
+    "following" : [ 189465 ],
+    "inputs" : [ 189463 ],
+    "outputs" : [ 189487 ],
+    "efs" : [ ],
+    "diagramIds" : [ 68 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189398,
+    "stId" : "R-HSA-189398",
+    "displayName" : "HMOX1,2 cleave heme",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 917870 ],
+    "following" : [ 189384 ],
+    "inputs" : [ 29368, 29364, 71185 ],
+    "outputs" : [ 29356, 189385, 71067, 189396, 29366 ],
+    "catalysts" : [ 189382 ],
+    "efs" : [ ],
+    "diagramIds" : [ 17 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 159194,
+    "stId" : "R-HSA-159194",
+    "displayName" : "UGT1A1,4 transfer GlcA from UDP-GlcA to BIL to form BMG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189381, 174368 ],
+    "following" : [ 159179 ],
+    "inputs" : [ 159151, 174384 ],
+    "outputs" : [ 159160, 158602 ],
+    "catalysts" : [ 5605002 ],
+    "efs" : [ ],
+    "diagramIds" : [ 94 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189467,
+    "stId" : "R-HSA-189467",
+    "displayName" : "Cytosolic COPRO3 translocates to mitochondrial intermembrane space",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189425 ],
+    "following" : [ 189421 ],
+    "inputs" : [ 189455 ],
+    "outputs" : [ 189411 ],
+    "efs" : [ ],
+    "diagramIds" : [ 63 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 190168,
+    "stId" : "R-HSA-190168",
+    "displayName" : "HMBL spontaneously transforms to URO1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189406 ],
+    "following" : [ 190182 ],
+    "inputs" : [ 189449 ],
+    "outputs" : [ 190157, 29356 ],
+    "efs" : [ ],
+    "diagramIds" : [ 57 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189465,
+    "stId" : "R-HSA-189465",
+    "displayName" : "FECH binds Fe2+ to PRIN9 to form heme",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189457 ],
+    "following" : [ 2995330 ],
+    "inputs" : [ 189487, 113531 ],
+    "outputs" : [ 113529, 189444 ],
+    "catalysts" : [ 189402 ],
+    "efs" : [ ],
+    "inhibitors" : [ 391232 ],
+    "diagramIds" : [ 59 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189406,
+    "stId" : "R-HSA-189406",
+    "displayName" : "4 PBGs bind to form HMB",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189439 ],
+    "following" : [ 189488, 190168 ],
+    "inputs" : [ 29356, 189464 ],
+    "outputs" : [ 189449, 29382 ],
+    "catalysts" : [ 189426 ],
+    "efs" : [ ],
+    "diagramIds" : [ 61 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 189439,
+    "stId" : "R-HSA-189439",
+    "displayName" : "ALAD condenses 2 dALAs to form PBG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 189456 ],
+    "following" : [ 189406 ],
+    "inputs" : [ 189489 ],
+    "outputs" : [ 29356, 189464 ],
+    "catalysts" : [ 189400 ],
+    "efs" : [ ],
+    "diagramIds" : [ 67 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 190141,
+    "stId" : "R-HSA-190141",
+    "displayName" : "ALAD binds to Pb2+",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 190173, 189400 ],
+    "outputs" : [ 190145, 29426 ],
+    "efs" : [ ],
+    "diagramIds" : [ 66 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 189483,
+    "stId" : "R-HSA-189483",
+    "displayName" : "Heme degradation",
+    "events" : [ 189398, 189381, 159194, 159179, 189384 ]
+  }, {
+    "dbId" : 189451,
+    "stId" : "R-HSA-189451",
+    "displayName" : "Heme biosynthesis",
+    "events" : [ 189442, 190182, 2995334, 189423, 189421, 2995330, 189456, 189488, 189425, 189457, 189467, 190168, 189465, 189406, 189439, 190141 ]
+  } ]
+}

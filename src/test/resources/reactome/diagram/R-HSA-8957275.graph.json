@@ -1,0 +1,1980 @@
+{
+  "dbId" : 8957275,
+  "stId" : "R-HSA-8957275",
+  "nodes" : [ {
+    "dbId" : 8957064,
+    "stId" : "R-HSA-8957064",
+    "displayName" : "p-MIA3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5JRA6",
+    "geneNames" : [ "MIA3", "KIAA0268", "TANGO", "TANGO1", "UNQ6077/PRO20088" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957066,
+    "stId" : "R-HSA-8957066",
+    "displayName" : "p-BPIFB2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N4F0",
+    "geneNames" : [ "BPIFB2", "BPIL1", "C20orf184", "LPLUNC2", "UNQ2489/PRO5776" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957067,
+    "stId" : "R-HSA-8957067",
+    "displayName" : "p-PROC [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04070",
+    "geneNames" : [ "PROC" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957068,
+    "stId" : "R-HSA-8957068",
+    "displayName" : "p-APOB(28-4563) [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04114",
+    "geneNames" : [ "APOB" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957069,
+    "stId" : "R-HSA-8957069",
+    "displayName" : "p-SERPINC1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01008",
+    "geneNames" : [ "SERPINC1", "AT3", "PRO0309" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957070,
+    "stId" : "R-HSA-8957070",
+    "displayName" : "p-MELTF [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08582",
+    "geneNames" : [ "MELTF", "MAP97", "MFI2" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957056,
+    "stId" : "R-HSA-8957056",
+    "displayName" : "p-C3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01024",
+    "geneNames" : [ "C3", "CPAMD1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957059,
+    "stId" : "R-HSA-8957059",
+    "displayName" : "p-SPARCL1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14515",
+    "geneNames" : [ "SPARCL1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957062,
+    "stId" : "R-HSA-8957062",
+    "displayName" : "p-SERPINA1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01009",
+    "geneNames" : [ "SERPINA1", "AAT", "PI", "PRO0684", "PRO2209" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957080,
+    "stId" : "R-HSA-8957080",
+    "displayName" : "p-SCG2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13521",
+    "geneNames" : [ "SCG2", "CHGC" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957081,
+    "stId" : "R-HSA-8957081",
+    "displayName" : "p-APOA1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02647",
+    "geneNames" : [ "APOA1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957082,
+    "stId" : "R-HSA-8957082",
+    "displayName" : "p-TIMP1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01033",
+    "geneNames" : [ "TIMP1", "CLGI", "TIMP" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957076,
+    "stId" : "R-HSA-8957076",
+    "displayName" : "p-HRC [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P23327",
+    "geneNames" : [ "HRC", "HCP" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957077,
+    "stId" : "R-HSA-8957077",
+    "displayName" : "p-FGF23 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9GZV9",
+    "geneNames" : [ "FGF23", "HYPF", "UNQ3027/PRO9828" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957078,
+    "stId" : "R-HSA-8957078",
+    "displayName" : "p-STC2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O76061",
+    "geneNames" : [ "STC2" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 981545,
+    "stId" : "R-HSA-981545",
+    "displayName" : "HSP90B1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14625",
+    "geneNames" : [ "HSP90B1", "GRP94", "TRA1" ],
+    "parents" : [ 8956956, 1678941, 1679076 ]
+  }, {
+    "dbId" : 8957088,
+    "stId" : "R-HSA-8957088",
+    "displayName" : "p-MSLN [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13421",
+    "geneNames" : [ "MSLN", "MPF" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957089,
+    "stId" : "R-HSA-8957089",
+    "displayName" : "p-FSTL1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12841",
+    "geneNames" : [ "FSTL1", "FRP" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 5689447,
+    "stId" : "R-HSA-5689447",
+    "displayName" : "Factor V precursor [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12259",
+    "geneNames" : [ "F5" ],
+    "parents" : [ 8956956, 5694189 ]
+  }, {
+    "dbId" : 3009049,
+    "stId" : "R-HSA-3009049",
+    "displayName" : "PDIA6 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15084",
+    "geneNames" : [ "PDIA6", "ERP5", "P5", "TXNDC7" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 174692,
+    "stId" : "R-HSA-174692",
+    "displayName" : "P4HB [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P07237",
+    "geneNames" : [ "P4HB", "ERBA2L", "PDI", "PDIA1", "PO4DB" ],
+    "parents" : [ 2022076, 2022120, 1650765, 174681, 5490380, 8956956 ]
+  }, {
+    "dbId" : 8956937,
+    "stId" : "R-HSA-8956937",
+    "displayName" : "p-FN1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02751",
+    "geneNames" : [ "FN1", "FN" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956938,
+    "stId" : "R-HSA-8956938",
+    "displayName" : "p-GOLM1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NBJ4",
+    "geneNames" : [ "GOLM1", "C9orf155", "GOLPH2", "PSEC0242", "UNQ686/PRO1326" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956939,
+    "stId" : "R-HSA-8956939",
+    "displayName" : "p-KNG1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01042",
+    "geneNames" : [ "KNG1", "BDK", "KNG" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956943,
+    "stId" : "R-HSA-8956943",
+    "displayName" : "p-PCSK9 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NBP7",
+    "geneNames" : [ "PCSK9", "NARC1", "PSEC0052" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8952335,
+    "stId" : "R-HSA-8952335",
+    "displayName" : "FAM20C:Phosphorylated FAM20C substrates [endoplasmic reticulum lumen]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ],
+    "children" : [ 8956996, 8952276 ]
+  }, {
+    "dbId" : 8956928,
+    "stId" : "R-HSA-8956928",
+    "displayName" : "p-CHGB [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05060",
+    "geneNames" : [ "CHGB", "SCG1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8952321,
+    "stId" : "R-HSA-8952321",
+    "displayName" : "FAM20C:FAM20C substrates [endoplasmic reticulum lumen]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ],
+    "children" : [ 8952276, 8956956 ]
+  }, {
+    "dbId" : 8956930,
+    "stId" : "R-HSA-8956930",
+    "displayName" : "p-ALB [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02768",
+    "geneNames" : [ "ALB", "GIG20", "GIG42", "PRO0903", "PRO1708", "PRO2044", "PRO2619", "PRO2675", "UNQ696/PRO1341" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956931,
+    "stId" : "R-HSA-8956931",
+    "displayName" : "p-CALU [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43852",
+    "geneNames" : [ "CALU" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956932,
+    "stId" : "R-HSA-8956932",
+    "displayName" : "p-C4A [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0C0L4",
+    "geneNames" : [ "C4A", "CO4", "CPAMD2" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956934,
+    "stId" : "R-HSA-8956934",
+    "displayName" : "p-CHRDL1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BU40",
+    "geneNames" : [ "CHRDL1", "NRLN1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956935,
+    "stId" : "R-HSA-8956935",
+    "displayName" : "p-EVA1A [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H8M9",
+    "geneNames" : [ "EVA1A", "FAM176A", "TMEM166", "SP24" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956956,
+    "stId" : "R-HSA-8956956",
+    "displayName" : "FAM20C substrates [endoplasmic reticulum lumen]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 8952321 ],
+    "children" : [ 8956785, 8956784, 8956775, 8956774, 8956773, 8956772, 8956771, 6784908, 8956770, 8956769, 8956768, 8956783, 8956782, 8956781, 8956780, 8956779, 8956778, 350695, 8956777, 8956776, 8956759, 8956758, 8956757, 8956756, 8956755, 8956754, 8956753, 8956752, 8956767, 8956765, 8956764, 8956763, 8956762, 8956761, 8956760, 8956743, 448201, 8956742, 8956741, 8956740, 8956739, 8956738, 8956737, 8956736, 8956751, 8956750, 8956749, 8956748, 8956747, 8956746, 8956745, 8956744, 8956727, 8956726, 8956725, 6784882, 981545, 5689447, 3009049, 174692, 8956696, 8956697, 8956698, 8956699, 8956700, 8956701, 8956702, 8956703, 8956690, 8956691, 8956692, 8956693, 8956694, 5173201, 8956695, 8956712, 8956713, 8956714, 8956715, 8956716, 8956717, 8956718, 8956719, 8956704, 8956705, 8956706, 8956707, 8956708, 8956709, 8956710, 8956711, 8956728, 8956729, 8956730, 532666, 8956731, 8956732, 8956733, 8956734, 8956735, 8956720, 8956721, 8956722, 8956723, 8956724 ]
+  }, {
+    "dbId" : 8956958,
+    "stId" : "R-HSA-8956958",
+    "displayName" : "p-AFP [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02771",
+    "geneNames" : [ "AFP", "HPAFP" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956944,
+    "stId" : "R-HSA-8956944",
+    "displayName" : "p-BMP4 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12644",
+    "geneNames" : [ "BMP4", "BMP2B", "DVR4" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956945,
+    "stId" : "R-HSA-8956945",
+    "displayName" : "p-SDC2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P34741",
+    "geneNames" : [ "SDC2", "HSPG1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956951,
+    "stId" : "R-HSA-8956951",
+    "displayName" : "p-VWA1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6PCB0",
+    "geneNames" : [ "VWA1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956968,
+    "stId" : "R-HSA-8956968",
+    "displayName" : "p-KTN1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86UP2",
+    "geneNames" : [ "KTN1", "CG1", "KIAA0004" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956971,
+    "stId" : "R-HSA-8956971",
+    "displayName" : "p-SCG3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WXD2",
+    "geneNames" : [ "SCG3", "UNQ2502/PRO5990" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8931884,
+    "stId" : "R-ALL-8931884",
+    "displayName" : "ADP [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 327 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 8931885,
+    "stId" : "R-ALL-8931885",
+    "displayName" : "ATP [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 174 ],
+    "identifier" : "15422"
+  }, {
+    "dbId" : 8956974,
+    "stId" : "R-HSA-8956974",
+    "displayName" : "p-ITIH2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19823",
+    "geneNames" : [ "ITIH2", "IGHEP2" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956975,
+    "stId" : "R-HSA-8956975",
+    "displayName" : "p-DNAJC3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13217",
+    "geneNames" : [ "DNAJC3", "P58IPK", "PRKRI" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956960,
+    "stId" : "R-HSA-8956960",
+    "displayName" : "p-Factor V precursor [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12259",
+    "geneNames" : [ "F5" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956963,
+    "stId" : "R-HSA-8956963",
+    "displayName" : "p-IGFBP3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P17936",
+    "geneNames" : [ "IGFBP3", "IBP3" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 532666,
+    "stId" : "R-HSA-532666",
+    "displayName" : "PRKCSH [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14314",
+    "geneNames" : [ "PRKCSH", "G19P1" ],
+    "parents" : [ 8956956, 532671 ]
+  }, {
+    "dbId" : 8956987,
+    "stId" : "R-HSA-8956987",
+    "displayName" : "p-SHISA5 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N114",
+    "geneNames" : [ "SHISA5", "SCOTIN", "PSEC0133" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956988,
+    "stId" : "R-HSA-8956988",
+    "displayName" : "p-IGFBP5 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P24593",
+    "geneNames" : [ "IGFBP5", "IBP5" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956989,
+    "stId" : "R-HSA-8956989",
+    "displayName" : "p-RCN1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15293",
+    "geneNames" : [ "RCN1", "RCN" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956990,
+    "stId" : "R-HSA-8956990",
+    "displayName" : "p-SERPINA10 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UK55",
+    "geneNames" : [ "SERPINA10", "ZPI", "UNQ707/PRO1358" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956976,
+    "stId" : "R-HSA-8956976",
+    "displayName" : "p-AMBN [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NP70",
+    "geneNames" : [ "AMBN" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956977,
+    "stId" : "R-HSA-8956977",
+    "displayName" : "p-APLP2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q06481",
+    "geneNames" : [ "APLP2", "APPL2" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956978,
+    "stId" : "R-HSA-8956978",
+    "displayName" : "p-IGFBP7 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16270",
+    "geneNames" : [ "IGFBP7", "MAC25", "PSF" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956979,
+    "stId" : "R-HSA-8956979",
+    "displayName" : "p-APOA5 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6Q788",
+    "geneNames" : [ "APOA5", "RAP3", "UNQ411/PRO773" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956980,
+    "stId" : "R-HSA-8956980",
+    "displayName" : "p-APOE [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02649",
+    "geneNames" : [ "APOE" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956982,
+    "stId" : "R-HSA-8956982",
+    "displayName" : "p-SERPIND1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05546",
+    "geneNames" : [ "SERPIND1", "HCF2" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957001,
+    "stId" : "R-HSA-8957001",
+    "displayName" : "p-TF [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02787",
+    "geneNames" : [ "TF", "PRO1400" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957002,
+    "stId" : "R-HSA-8957002",
+    "displayName" : "p-BMP15 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95972",
+    "geneNames" : [ "BMP15", "GDF9B" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957003,
+    "stId" : "R-HSA-8957003",
+    "displayName" : "p-LGALS1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09382",
+    "geneNames" : [ "LGALS1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957005,
+    "stId" : "R-HSA-8957005",
+    "displayName" : "p-FUCA2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BTY2",
+    "geneNames" : [ "FUCA2", "PSEC0151", "UNQ227/PRO260" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957007,
+    "stId" : "R-HSA-8957007",
+    "displayName" : "p-SPP2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13103",
+    "geneNames" : [ "SPP2", "SPP24" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956993,
+    "stId" : "R-HSA-8956993",
+    "displayName" : "p-FGG [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02679",
+    "geneNames" : [ "FGG", "PRO2061" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956994,
+    "stId" : "R-HSA-8956994",
+    "displayName" : "p-AMTN [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6UX39",
+    "geneNames" : [ "AMTN", "UNQ689/PRO1329" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956995,
+    "stId" : "R-HSA-8956995",
+    "displayName" : "p-VCAN [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13611",
+    "geneNames" : [ "VCAN", "CSPG2" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956996,
+    "stId" : "R-HSA-8956996",
+    "displayName" : "FAM20C products [endoplasmic reticulum lumen]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 8952335 ],
+    "children" : [ 8957045, 8957044, 8957043, 8957040, 8957053, 8957050, 8957031, 8957029, 8957028, 8957027, 8957026, 8957038, 8957037, 8957014, 8957012, 8957010, 8957022, 8957021, 8957019, 8957017, 8957016, 8956999, 8956998, 8956995, 8956994, 8956993, 8957007, 8957005, 8957003, 8957002, 8957001, 8956982, 8956980, 8956979, 8956978, 8956977, 8956976, 8956990, 8956989, 8956988, 8956987, 8956963, 8956960, 8956975, 8956974, 8956971, 8956968, 8956951, 8956945, 8956944, 8956958, 8956935, 8956934, 8956932, 8956931, 8957064, 8957066, 8957067, 8957068, 8957069, 8957070, 8957056, 8957059, 8957062, 8957080, 8957081, 8957082, 8957076, 8957077, 8957078, 8957088, 8957089, 8956889, 8956890, 8956894, 8956895, 8956881, 8956882, 8956883, 8956886, 8956904, 8956905, 8956908, 8956909, 8956911, 8956897, 8956898, 8956899, 8956900, 8956901, 8956902, 8956920, 8956921, 8956923, 8956924, 8956926, 8956912, 8956915, 8956919, 8956937, 8956938, 8956939, 8956943, 8956928, 8956930 ]
+  }, {
+    "dbId" : 8956998,
+    "stId" : "R-HSA-8956998",
+    "displayName" : "p-WFS1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O76024",
+    "geneNames" : [ "WFS1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 448201,
+    "stId" : "R-HSA-448201",
+    "displayName" : "DNAJC3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13217",
+    "geneNames" : [ "DNAJC3", "P58IPK", "PRKRI" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956999,
+    "stId" : "R-HSA-8956999",
+    "displayName" : "p-ADAM10 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14672",
+    "geneNames" : [ "ADAM10", "KUZ", "MADM" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957016,
+    "stId" : "R-HSA-8957016",
+    "displayName" : "p-HSP90B1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14625",
+    "geneNames" : [ "HSP90B1", "GRP94", "TRA1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957017,
+    "stId" : "R-HSA-8957017",
+    "displayName" : "p-MFGE8 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q08431",
+    "geneNames" : [ "MFGE8" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957019,
+    "stId" : "R-HSA-8957019",
+    "displayName" : "p-AHSG [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02765",
+    "geneNames" : [ "AHSG", "FETUA", "PRO2743" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957021,
+    "stId" : "R-HSA-8957021",
+    "displayName" : "p-PENK [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01210",
+    "geneNames" : [ "PENK" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957022,
+    "stId" : "R-HSA-8957022",
+    "displayName" : "p-MGAT4A [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UM21",
+    "geneNames" : [ "MGAT4A" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957010,
+    "stId" : "R-HSA-8957010",
+    "displayName" : "p-MXRA8 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BRK3",
+    "geneNames" : [ "MXRA8" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957012,
+    "stId" : "R-HSA-8957012",
+    "displayName" : "p-APP [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05067",
+    "geneNames" : [ "APP", "A4", "AD1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957014,
+    "stId" : "R-HSA-8957014",
+    "displayName" : "p-APOA2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02652",
+    "geneNames" : [ "APOA2" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957037,
+    "stId" : "R-HSA-8957037",
+    "displayName" : "p-AMELX [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99217",
+    "geneNames" : [ "AMELX", "AMG", "AMGX" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957038,
+    "stId" : "R-HSA-8957038",
+    "displayName" : "p-IGFBP4 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22692",
+    "geneNames" : [ "IGFBP4", "IBP4" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957026,
+    "stId" : "R-HSA-8957026",
+    "displayName" : "p-MATN3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15232",
+    "geneNames" : [ "MATN3" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957027,
+    "stId" : "R-HSA-8957027",
+    "displayName" : "p-NUCB1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q02818",
+    "geneNames" : [ "NUCB1", "NUC" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957028,
+    "stId" : "R-HSA-8957028",
+    "displayName" : "p-CP [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00450",
+    "geneNames" : [ "CP" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957029,
+    "stId" : "R-HSA-8957029",
+    "displayName" : "p-IGFBP1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08833",
+    "geneNames" : [ "IGFBP1", "IBP1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957031,
+    "stId" : "R-HSA-8957031",
+    "displayName" : "p-PDIA6 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15084",
+    "geneNames" : [ "PDIA6", "ERP5", "P5", "TXNDC7" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957050,
+    "stId" : "R-HSA-8957050",
+    "displayName" : "p-LTBP1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14766",
+    "geneNames" : [ "LTBP1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957053,
+    "stId" : "R-HSA-8957053",
+    "displayName" : "p-LAMB2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P55268",
+    "geneNames" : [ "LAMB2", "LAMS" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957040,
+    "stId" : "R-HSA-8957040",
+    "displayName" : "p-ENAM [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NRM1",
+    "geneNames" : [ "ENAM" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957043,
+    "stId" : "R-HSA-8957043",
+    "displayName" : "p-FGA [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02671",
+    "geneNames" : [ "FGA" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957044,
+    "stId" : "R-HSA-8957044",
+    "displayName" : "p-IL6 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05231",
+    "geneNames" : [ "IL6", "IFNB2" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957045,
+    "stId" : "R-HSA-8957045",
+    "displayName" : "p-MEPE [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NQ76",
+    "geneNames" : [ "MEPE" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8957337,
+    "stId" : "R-HSA-8957337",
+    "displayName" : "FAM20A [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96MK3",
+    "geneNames" : [ "FAM20A", "UNQ9388/PRO34279" ],
+    "parents" : [ 8957338 ]
+  }, {
+    "dbId" : 8957338,
+    "stId" : "R-HSA-8957338",
+    "displayName" : "FAM20C:FAM20A [endoplasmic reticulum lumen]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1063 ],
+    "children" : [ 8952276, 8957337 ]
+  }, {
+    "dbId" : 6784882,
+    "stId" : "R-HSA-6784882",
+    "displayName" : "APOB(28-4563) [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04114",
+    "geneNames" : [ "APOB" ],
+    "parents" : [ 6784871, 8956956 ]
+  }, {
+    "dbId" : 8956889,
+    "stId" : "R-HSA-8956889",
+    "displayName" : "p-LAMB1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P07942",
+    "geneNames" : [ "LAMB1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956890,
+    "stId" : "R-HSA-8956890",
+    "displayName" : "p-PRKCSH [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14314",
+    "geneNames" : [ "PRKCSH", "G19P1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956894,
+    "stId" : "R-HSA-8956894",
+    "displayName" : "p-GPC3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51654",
+    "geneNames" : [ "GPC3", "OCI5" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956895,
+    "stId" : "R-HSA-8956895",
+    "displayName" : "p-QSOX1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00391",
+    "geneNames" : [ "QSOX1", "QSCN6", "UNQ2520/PRO6013" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956881,
+    "stId" : "R-HSA-8956881",
+    "displayName" : "p-CSF1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09603",
+    "geneNames" : [ "CSF1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956882,
+    "stId" : "R-HSA-8956882",
+    "displayName" : "p-TMEM132A [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q24JP5",
+    "geneNames" : [ "TMEM132A", "HSPA5BP1", "KIAA1583" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956883,
+    "stId" : "R-HSA-8956883",
+    "displayName" : "p-SPP1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10451",
+    "geneNames" : [ "SPP1", "BNSP", "OPN", "PSEC0156" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8952276,
+    "stId" : "R-HSA-8952276",
+    "displayName" : "FAM20C [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IXL6",
+    "geneNames" : [ "FAM20C", "DMP4" ],
+    "parents" : [ 8957338, 8952335, 8952321 ]
+  }, {
+    "dbId" : 8956886,
+    "stId" : "R-HSA-8956886",
+    "displayName" : "p-TGOLN2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43493",
+    "geneNames" : [ "TGOLN2", "TGN46", "TGN51" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956904,
+    "stId" : "R-HSA-8956904",
+    "displayName" : "p-NOTUM [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6P988",
+    "geneNames" : [ "NOTUM", "OK/SW-CL.30" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956905,
+    "stId" : "R-HSA-8956905",
+    "displayName" : "p-GAS6 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14393",
+    "geneNames" : [ "GAS6", "AXLLG" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956908,
+    "stId" : "R-HSA-8956908",
+    "displayName" : "p-PRSS23 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95084",
+    "geneNames" : [ "PRSS23", "ZSIG13", "UNQ270/PRO307" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956909,
+    "stId" : "R-HSA-8956909",
+    "displayName" : "p-ANO8 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HCE9",
+    "geneNames" : [ "ANO8", "KIAA1623", "TMEM16H" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956911,
+    "stId" : "R-HSA-8956911",
+    "displayName" : "p-CST3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01034",
+    "geneNames" : [ "CST3" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956897,
+    "stId" : "R-HSA-8956897",
+    "displayName" : "p-VGF [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15240",
+    "geneNames" : [ "VGF" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956898,
+    "stId" : "R-HSA-8956898",
+    "displayName" : "p-APOL1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14791",
+    "geneNames" : [ "APOL1", "APOL" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956899,
+    "stId" : "R-HSA-8956899",
+    "displayName" : "p-CDH2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19022",
+    "geneNames" : [ "CDH2", "CDHN", "NCAD" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956900,
+    "stId" : "R-HSA-8956900",
+    "displayName" : "p-FBN1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35555",
+    "geneNames" : [ "FBN1", "FBN" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956901,
+    "stId" : "R-HSA-8956901",
+    "displayName" : "p-MEN1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00255",
+    "geneNames" : [ "MEN1", "SCG2" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956902,
+    "stId" : "R-HSA-8956902",
+    "displayName" : "p-P4HB [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P07237",
+    "geneNames" : [ "P4HB", "ERBA2L", "PDI", "PDIA1", "PO4DB" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956920,
+    "stId" : "R-HSA-8956920",
+    "displayName" : "p-DMP1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13316",
+    "geneNames" : [ "DMP1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956921,
+    "stId" : "R-HSA-8956921",
+    "displayName" : "p-LAMC1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11047",
+    "geneNames" : [ "LAMC1", "LAMB2" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956923,
+    "stId" : "R-HSA-8956923",
+    "displayName" : "p-PNPLA2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96AD5",
+    "geneNames" : [ "PNPLA2", "ATGL", "FP17548" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956924,
+    "stId" : "R-HSA-8956924",
+    "displayName" : "p-MBTPS1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14703",
+    "geneNames" : [ "MBTPS1", "KIAA0091", "S1P", "SKI1" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956926,
+    "stId" : "R-HSA-8956926",
+    "displayName" : "p-CKAP4 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q07065",
+    "geneNames" : [ "CKAP4" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956912,
+    "stId" : "R-HSA-8956912",
+    "displayName" : "p-TNC [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P24821",
+    "geneNames" : [ "TNC", "HXB" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956915,
+    "stId" : "R-HSA-8956915",
+    "displayName" : "p-FSTL3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95633",
+    "geneNames" : [ "FSTL3", "FLRG", "UNQ674/PRO1308" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956919,
+    "stId" : "R-HSA-8956919",
+    "displayName" : "p-CYR61 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00622",
+    "geneNames" : [ "CYR61", "CCN1", "GIG1", "IGFBP10" ],
+    "parents" : [ 8956996 ]
+  }, {
+    "dbId" : 8956696,
+    "stId" : "R-HSA-8956696",
+    "displayName" : "APP [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05067",
+    "geneNames" : [ "APP", "A4", "AD1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956697,
+    "stId" : "R-HSA-8956697",
+    "displayName" : "FGF23 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9GZV9",
+    "geneNames" : [ "FGF23", "HYPF", "UNQ3027/PRO9828" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956698,
+    "stId" : "R-HSA-8956698",
+    "displayName" : "DMP1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13316",
+    "geneNames" : [ "DMP1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956699,
+    "stId" : "R-HSA-8956699",
+    "displayName" : "IGFBP1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08833",
+    "geneNames" : [ "IGFBP1", "IBP1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956700,
+    "stId" : "R-HSA-8956700",
+    "displayName" : "MSLN [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13421",
+    "geneNames" : [ "MSLN", "MPF" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956701,
+    "stId" : "R-HSA-8956701",
+    "displayName" : "MELTF [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08582",
+    "geneNames" : [ "MELTF", "MAP97", "MFI2" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956702,
+    "stId" : "R-HSA-8956702",
+    "displayName" : "TGOLN2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43493",
+    "geneNames" : [ "TGOLN2", "TGN46", "TGN51" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956703,
+    "stId" : "R-HSA-8956703",
+    "displayName" : "FSTL3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95633",
+    "geneNames" : [ "FSTL3", "FLRG", "UNQ674/PRO1308" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956690,
+    "stId" : "R-HSA-8956690",
+    "displayName" : "ALB [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02768",
+    "geneNames" : [ "ALB", "GIG20", "GIG42", "PRO0903", "PRO1708", "PRO2044", "PRO2619", "PRO2675", "UNQ696/PRO1341" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956691,
+    "stId" : "R-HSA-8956691",
+    "displayName" : "TIMP1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01033",
+    "geneNames" : [ "TIMP1", "CLGI", "TIMP" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956692,
+    "stId" : "R-HSA-8956692",
+    "displayName" : "FGG [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02679",
+    "geneNames" : [ "FGG", "PRO2061" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956693,
+    "stId" : "R-HSA-8956693",
+    "displayName" : "MXRA8 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BRK3",
+    "geneNames" : [ "MXRA8" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956694,
+    "stId" : "R-HSA-8956694",
+    "displayName" : "KTN1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86UP2",
+    "geneNames" : [ "KTN1", "CG1", "KIAA0004" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 5173201,
+    "stId" : "R-HSA-5173201",
+    "displayName" : "CYR61 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00622",
+    "geneNames" : [ "CYR61", "CCN1", "GIG1", "IGFBP10" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956695,
+    "stId" : "R-HSA-8956695",
+    "displayName" : "SCG3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WXD2",
+    "geneNames" : [ "SCG3", "UNQ2502/PRO5990" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956712,
+    "stId" : "R-HSA-8956712",
+    "displayName" : "LAMC1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11047",
+    "geneNames" : [ "LAMC1", "LAMB2" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956713,
+    "stId" : "R-HSA-8956713",
+    "displayName" : "SPP1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10451",
+    "geneNames" : [ "SPP1", "BNSP", "OPN", "PSEC0156" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956714,
+    "stId" : "R-HSA-8956714",
+    "displayName" : "FGA [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02671",
+    "geneNames" : [ "FGA" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956715,
+    "stId" : "R-HSA-8956715",
+    "displayName" : "MFGE8 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q08431",
+    "geneNames" : [ "MFGE8" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956716,
+    "stId" : "R-HSA-8956716",
+    "displayName" : "APOA5 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6Q788",
+    "geneNames" : [ "APOA5", "RAP3", "UNQ411/PRO773" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956717,
+    "stId" : "R-HSA-8956717",
+    "displayName" : "C4A [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0C0L4",
+    "geneNames" : [ "C4A", "CO4", "CPAMD2" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956718,
+    "stId" : "R-HSA-8956718",
+    "displayName" : "AMELX [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99217",
+    "geneNames" : [ "AMELX", "AMG", "AMGX" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956719,
+    "stId" : "R-HSA-8956719",
+    "displayName" : "MATN3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15232",
+    "geneNames" : [ "MATN3" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956704,
+    "stId" : "R-HSA-8956704",
+    "displayName" : "AMBN [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NP70",
+    "geneNames" : [ "AMBN" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956705,
+    "stId" : "R-HSA-8956705",
+    "displayName" : "STC2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O76061",
+    "geneNames" : [ "STC2" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956706,
+    "stId" : "R-HSA-8956706",
+    "displayName" : "LAMB1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P07942",
+    "geneNames" : [ "LAMB1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956707,
+    "stId" : "R-HSA-8956707",
+    "displayName" : "APOL1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14791",
+    "geneNames" : [ "APOL1", "APOL" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956708,
+    "stId" : "R-HSA-8956708",
+    "displayName" : "FN1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02751",
+    "geneNames" : [ "FN1", "FN" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956709,
+    "stId" : "R-HSA-8956709",
+    "displayName" : "SERPINA1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01009",
+    "geneNames" : [ "SERPINA1", "AAT", "PI", "PRO0684", "PRO2209" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956710,
+    "stId" : "R-HSA-8956710",
+    "displayName" : "GOLM1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NBJ4",
+    "geneNames" : [ "GOLM1", "C9orf155", "GOLPH2", "PSEC0242", "UNQ686/PRO1326" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956711,
+    "stId" : "R-HSA-8956711",
+    "displayName" : "LGALS1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09382",
+    "geneNames" : [ "LGALS1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956728,
+    "stId" : "R-HSA-8956728",
+    "displayName" : "SCG2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13521",
+    "geneNames" : [ "SCG2", "CHGC" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956729,
+    "stId" : "R-HSA-8956729",
+    "displayName" : "BMP15 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95972",
+    "geneNames" : [ "BMP15", "GDF9B" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956730,
+    "stId" : "R-HSA-8956730",
+    "displayName" : "IGFBP7 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16270",
+    "geneNames" : [ "IGFBP7", "MAC25", "PSF" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956731,
+    "stId" : "R-HSA-8956731",
+    "displayName" : "SERPIND1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05546",
+    "geneNames" : [ "SERPIND1", "HCF2" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956732,
+    "stId" : "R-HSA-8956732",
+    "displayName" : "TMEM132A [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q24JP5",
+    "geneNames" : [ "TMEM132A", "HSPA5BP1", "KIAA1583" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956733,
+    "stId" : "R-HSA-8956733",
+    "displayName" : "MBTPS1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14703",
+    "geneNames" : [ "MBTPS1", "KIAA0091", "S1P", "SKI1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956734,
+    "stId" : "R-HSA-8956734",
+    "displayName" : "CHGB [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05060",
+    "geneNames" : [ "CHGB", "SCG1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956735,
+    "stId" : "R-HSA-8956735",
+    "displayName" : "GPC3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51654",
+    "geneNames" : [ "GPC3", "OCI5" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956720,
+    "stId" : "R-HSA-8956720",
+    "displayName" : "GAS6 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14393",
+    "geneNames" : [ "GAS6", "AXLLG" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956721,
+    "stId" : "R-HSA-8956721",
+    "displayName" : "SPP2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13103",
+    "geneNames" : [ "SPP2", "SPP24" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956722,
+    "stId" : "R-HSA-8956722",
+    "displayName" : "TNC [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P24821",
+    "geneNames" : [ "TNC", "HXB" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956723,
+    "stId" : "R-HSA-8956723",
+    "displayName" : "VCAN [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13611",
+    "geneNames" : [ "VCAN", "CSPG2" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956724,
+    "stId" : "R-HSA-8956724",
+    "displayName" : "APOA1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02647",
+    "geneNames" : [ "APOA1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956725,
+    "stId" : "R-HSA-8956725",
+    "displayName" : "PENK [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01210",
+    "geneNames" : [ "PENK" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956726,
+    "stId" : "R-HSA-8956726",
+    "displayName" : "FBN1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35555",
+    "geneNames" : [ "FBN1", "FBN" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956727,
+    "stId" : "R-HSA-8956727",
+    "displayName" : "FUCA2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BTY2",
+    "geneNames" : [ "FUCA2", "PSEC0151", "UNQ227/PRO260" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956744,
+    "stId" : "R-HSA-8956744",
+    "displayName" : "MEPE [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NQ76",
+    "geneNames" : [ "MEPE" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956745,
+    "stId" : "R-HSA-8956745",
+    "displayName" : "PCSK9 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NBP7",
+    "geneNames" : [ "PCSK9", "NARC1", "PSEC0052" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956746,
+    "stId" : "R-HSA-8956746",
+    "displayName" : "NOTUM [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6P988",
+    "geneNames" : [ "NOTUM", "OK/SW-CL.30" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956747,
+    "stId" : "R-HSA-8956747",
+    "displayName" : "WFS1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O76024",
+    "geneNames" : [ "WFS1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956748,
+    "stId" : "R-HSA-8956748",
+    "displayName" : "IGFBP3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P17936",
+    "geneNames" : [ "IGFBP3", "IBP3" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956749,
+    "stId" : "R-HSA-8956749",
+    "displayName" : "FSTL1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12841",
+    "geneNames" : [ "FSTL1", "FRP" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956750,
+    "stId" : "R-HSA-8956750",
+    "displayName" : "HRC [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P23327",
+    "geneNames" : [ "HRC", "HCP" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956751,
+    "stId" : "R-HSA-8956751",
+    "displayName" : "NUCB1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q02818",
+    "geneNames" : [ "NUCB1", "NUC" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956736,
+    "stId" : "R-HSA-8956736",
+    "displayName" : "CP [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P00450",
+    "geneNames" : [ "CP" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956737,
+    "stId" : "R-HSA-8956737",
+    "displayName" : "CKAP4 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q07065",
+    "geneNames" : [ "CKAP4" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956738,
+    "stId" : "R-HSA-8956738",
+    "displayName" : "IGFBP5 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P24593",
+    "geneNames" : [ "IGFBP5", "IBP5" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956739,
+    "stId" : "R-HSA-8956739",
+    "displayName" : "SERPINA10 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UK55",
+    "geneNames" : [ "SERPINA10", "ZPI", "UNQ707/PRO1358" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956740,
+    "stId" : "R-HSA-8956740",
+    "displayName" : "CST3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01034",
+    "geneNames" : [ "CST3" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956741,
+    "stId" : "R-HSA-8956741",
+    "displayName" : "SDC2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P34741",
+    "geneNames" : [ "SDC2", "HSPG1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956742,
+    "stId" : "R-HSA-8956742",
+    "displayName" : "ANO8 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HCE9",
+    "geneNames" : [ "ANO8", "KIAA1623", "TMEM16H" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956743,
+    "stId" : "R-HSA-8956743",
+    "displayName" : "MIA3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5JRA6",
+    "geneNames" : [ "MIA3", "KIAA0268", "TANGO", "TANGO1", "UNQ6077/PRO20088" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956760,
+    "stId" : "R-HSA-8956760",
+    "displayName" : "PRSS23 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95084",
+    "geneNames" : [ "PRSS23", "ZSIG13", "UNQ270/PRO307" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956761,
+    "stId" : "R-HSA-8956761",
+    "displayName" : "CDH2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19022",
+    "geneNames" : [ "CDH2", "CDHN", "NCAD" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956762,
+    "stId" : "R-HSA-8956762",
+    "displayName" : "AHSG [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02765",
+    "geneNames" : [ "AHSG", "FETUA", "PRO2743" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956763,
+    "stId" : "R-HSA-8956763",
+    "displayName" : "TF [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02787",
+    "geneNames" : [ "TF", "PRO1400" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956764,
+    "stId" : "R-HSA-8956764",
+    "displayName" : "IL6 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05231",
+    "geneNames" : [ "IL6", "IFNB2" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956765,
+    "stId" : "R-HSA-8956765",
+    "displayName" : "QSOX1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00391",
+    "geneNames" : [ "QSOX1", "QSCN6", "UNQ2520/PRO6013" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956767,
+    "stId" : "R-HSA-8956767",
+    "displayName" : "KNG1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01042",
+    "geneNames" : [ "KNG1", "BDK", "KNG" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956752,
+    "stId" : "R-HSA-8956752",
+    "displayName" : "LAMB2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P55268",
+    "geneNames" : [ "LAMB2", "LAMS" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956753,
+    "stId" : "R-HSA-8956753",
+    "displayName" : "VWA1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6PCB0",
+    "geneNames" : [ "VWA1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956754,
+    "stId" : "R-HSA-8956754",
+    "displayName" : "IGFBP4 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22692",
+    "geneNames" : [ "IGFBP4", "IBP4" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956755,
+    "stId" : "R-HSA-8956755",
+    "displayName" : "BPIFB2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N4F0",
+    "geneNames" : [ "BPIFB2", "BPIL1", "C20orf184", "LPLUNC2", "UNQ2489/PRO5776" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956756,
+    "stId" : "R-HSA-8956756",
+    "displayName" : "CHRDL1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BU40",
+    "geneNames" : [ "CHRDL1", "NRLN1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956757,
+    "stId" : "R-HSA-8956757",
+    "displayName" : "SPARCL1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14515",
+    "geneNames" : [ "SPARCL1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956758,
+    "stId" : "R-HSA-8956758",
+    "displayName" : "RCN1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15293",
+    "geneNames" : [ "RCN1", "RCN" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956759,
+    "stId" : "R-HSA-8956759",
+    "displayName" : "AFP [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02771",
+    "geneNames" : [ "AFP", "HPAFP" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956776,
+    "stId" : "R-HSA-8956776",
+    "displayName" : "PNPLA2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96AD5",
+    "geneNames" : [ "PNPLA2", "ATGL", "FP17548" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956777,
+    "stId" : "R-HSA-8956777",
+    "displayName" : "ENAM [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NRM1",
+    "geneNames" : [ "ENAM" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 350695,
+    "stId" : "R-HSA-350695",
+    "displayName" : "CALU [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43852",
+    "geneNames" : [ "CALU" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956778,
+    "stId" : "R-HSA-8956778",
+    "displayName" : "CSF1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09603",
+    "geneNames" : [ "CSF1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956779,
+    "stId" : "R-HSA-8956779",
+    "displayName" : "AMTN [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6UX39",
+    "geneNames" : [ "AMTN", "UNQ689/PRO1329" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956780,
+    "stId" : "R-HSA-8956780",
+    "displayName" : "APOA2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02652",
+    "geneNames" : [ "APOA2" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956781,
+    "stId" : "R-HSA-8956781",
+    "displayName" : "MGAT4A [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UM21",
+    "geneNames" : [ "MGAT4A" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956782,
+    "stId" : "R-HSA-8956782",
+    "displayName" : "SHISA5 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N114",
+    "geneNames" : [ "SHISA5", "SCOTIN", "PSEC0133" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956783,
+    "stId" : "R-HSA-8956783",
+    "displayName" : "ITIH2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19823",
+    "geneNames" : [ "ITIH2", "IGHEP2" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956768,
+    "stId" : "R-HSA-8956768",
+    "displayName" : "ADAM10 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14672",
+    "geneNames" : [ "ADAM10", "KUZ", "MADM" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956769,
+    "stId" : "R-HSA-8956769",
+    "displayName" : "VGF [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15240",
+    "geneNames" : [ "VGF" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956770,
+    "stId" : "R-HSA-8956770",
+    "displayName" : "LTBP1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14766",
+    "geneNames" : [ "LTBP1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 6784908,
+    "stId" : "R-HSA-6784908",
+    "displayName" : "APOE [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02649",
+    "geneNames" : [ "APOE" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956771,
+    "stId" : "R-HSA-8956771",
+    "displayName" : "EVA1A [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H8M9",
+    "geneNames" : [ "EVA1A", "FAM176A", "TMEM166", "SP24" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956772,
+    "stId" : "R-HSA-8956772",
+    "displayName" : "PROC [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04070",
+    "geneNames" : [ "PROC" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956773,
+    "stId" : "R-HSA-8956773",
+    "displayName" : "SERPINC1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01008",
+    "geneNames" : [ "SERPINC1", "AT3", "PRO0309" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956774,
+    "stId" : "R-HSA-8956774",
+    "displayName" : "C3 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01024",
+    "geneNames" : [ "C3", "CPAMD1" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956775,
+    "stId" : "R-HSA-8956775",
+    "displayName" : "BMP4 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12644",
+    "geneNames" : [ "BMP4", "BMP2B", "DVR4" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956784,
+    "stId" : "R-HSA-8956784",
+    "displayName" : "APLP2 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q06481",
+    "geneNames" : [ "APLP2", "APPL2" ],
+    "parents" : [ 8956956 ]
+  }, {
+    "dbId" : 8956785,
+    "stId" : "R-HSA-8956785",
+    "displayName" : "MEN1 [endoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00255",
+    "geneNames" : [ "MEN1", "SCG2" ],
+    "parents" : [ 8956956 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 8952289,
+    "stId" : "R-HSA-8952289",
+    "displayName" : "FAM20C phosphorylates FAM20C substrates",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8952321, 8931885 ],
+    "outputs" : [ 8952335, 8931884 ],
+    "catalysts" : [ 8952321 ],
+    "efs" : [ ],
+    "activators" : [ 8957338 ],
+    "diagramIds" : [ 3 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

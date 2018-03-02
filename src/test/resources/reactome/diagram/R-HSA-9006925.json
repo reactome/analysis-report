@@ -1,0 +1,66 @@
+{
+  "dbId" : 9006925,
+  "stableId" : "R-HSA-9006925",
+  "displayName" : "Intracellular signaling by second messengers",
+  "nodes" : [ {
+    "id" : 9,
+    "reactomeId" : 1489509,
+    "displayName" : "DAG and IP3 signaling",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 198,
+      "y" : 166
+    },
+    "minX" : 120,
+    "maxX" : 276,
+    "minY" : 131,
+    "maxY" : 201,
+    "prop" : {
+      "x" : 120,
+      "y" : 131,
+      "width" : 156,
+      "height" : 70
+    },
+    "textPosition" : {
+      "x" : 126,
+      "y" : 151
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 10,
+    "reactomeId" : 1257604,
+    "displayName" : "PIP3 activates AKT signaling",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 200,
+      "y" : 68
+    },
+    "minX" : 117,
+    "maxX" : 283,
+    "minY" : 34,
+    "maxY" : 103,
+    "prop" : {
+      "x" : 117,
+      "y" : 34,
+      "width" : 166,
+      "height" : 69
+    },
+    "textPosition" : {
+      "x" : 136,
+      "y" : 47
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 117,
+  "maxX" : 283,
+  "minY" : 34,
+  "maxY" : 201,
+  "disease" : false
+}

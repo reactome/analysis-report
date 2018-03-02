@@ -1,0 +1,91 @@
+{
+  "dbId" : 8978934,
+  "stableId" : "R-HSA-8978934",
+  "displayName" : "Metabolism of cofactors",
+  "nodes" : [ {
+    "id" : 1,
+    "reactomeId" : 2142789,
+    "displayName" : "Ubiquinol biosynthesis",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 92,
+      "y" : 57
+    },
+    "minX" : 34,
+    "maxX" : 151,
+    "minY" : 27,
+    "maxY" : 87,
+    "prop" : {
+      "x" : 34,
+      "y" : 27,
+      "width" : 117,
+      "height" : 60
+    },
+    "textPosition" : {
+      "x" : 49,
+      "y" : 35
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 389542,
+    "displayName" : "NADPH regeneration",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 222,
+      "y" : 57
+    },
+    "minX" : 163,
+    "maxX" : 281,
+    "minY" : 29,
+    "maxY" : 86,
+    "prop" : {
+      "x" : 163,
+      "y" : 29,
+      "width" : 118,
+      "height" : 57
+    },
+    "textPosition" : {
+      "x" : 177,
+      "y" : 36
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 1474151,
+    "displayName" : "Tetrahydrobiopterin (BH4) synthesis, recycling, salvage and regulation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 159,
+      "y" : 145
+    },
+    "minX" : 35,
+    "maxX" : 283,
+    "minY" : 110,
+    "maxY" : 180,
+    "prop" : {
+      "x" : 35,
+      "y" : 110,
+      "width" : 248,
+      "height" : 70
+    },
+    "textPosition" : {
+      "x" : 43,
+      "y" : 123
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 34,
+  "maxX" : 283,
+  "minY" : 27,
+  "maxY" : 180,
+  "disease" : false
+}

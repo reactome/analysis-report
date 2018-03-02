@@ -1,0 +1,527 @@
+{
+  "dbId" : 432030,
+  "stableId" : "R-HSA-432030",
+  "displayName" : "Transport of glycerol from adipocytes to the liver by Aquaporins",
+  "nodes" : [ {
+    "id" : 5,
+    "reactomeId" : 76116,
+    "displayName" : "Glycerol",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 336,
+      "y" : 125
+    },
+    "minX" : 278,
+    "maxX" : 395,
+    "minY" : 109,
+    "maxY" : 141,
+    "prop" : {
+      "x" : 278,
+      "y" : 110,
+      "width" : 116,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 309,
+      "y" : 115
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 389,
+          "y" : 115
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 4,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 192438,
+    "displayName" : "glycerol",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 522,
+      "y" : 367
+    },
+    "minX" : 421,
+    "maxX" : 624,
+    "minY" : 341,
+    "maxY" : 393,
+    "prop" : {
+      "x" : 421,
+      "y" : 342,
+      "width" : 202,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 496,
+      "y" : 357
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 618,
+          "y" : 347
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 4,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 8,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 432243,
+    "displayName" : "AQP7 tetramer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 266,
+      "y" : 263
+    },
+    "minX" : 212,
+    "maxX" : 358,
+    "minY" : 236,
+    "maxY" : 290,
+    "prop" : {
+      "x" : 212,
+      "y" : 236,
+      "width" : 108,
+      "height" : 54
+    },
+    "textPosition" : {
+      "x" : 219,
+      "y" : 269
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 4,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 323,
+          "y" : 263
+        },
+        "to" : {
+          "x" : 350,
+          "y" : 263
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 354,
+          "y" : 263
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 9,
+    "reactomeId" : 432249,
+    "displayName" : "AQP9 tetramer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 777,
+      "y" : 263
+    },
+    "minX" : 684,
+    "maxX" : 831,
+    "minY" : 236,
+    "maxY" : 290,
+    "prop" : {
+      "x" : 723,
+      "y" : 236,
+      "width" : 108,
+      "height" : 54
+    },
+    "textPosition" : {
+      "x" : 730,
+      "y" : 269
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 8,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 720,
+          "y" : 262
+        },
+        "to" : {
+          "x" : 692,
+          "y" : 262
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 688,
+          "y" : 262
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 14,
+    "reactomeId" : 76116,
+    "displayName" : "Glycerol",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 704,
+      "y" : 132
+    },
+    "minX" : 649,
+    "maxX" : 760,
+    "minY" : 116,
+    "maxY" : 147,
+    "prop" : {
+      "x" : 649,
+      "y" : 117,
+      "width" : 110,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 677,
+      "y" : 121
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 754,
+          "y" : 122
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 8,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 4,
+    "reactomeId" : 432074,
+    "displayName" : "Aquaporin-7 passively transports glycerol out of cell",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 366,
+      "y" : 263
+    },
+    "minX" : 339,
+    "maxX" : 483,
+    "minY" : 144,
+    "maxY" : 339,
+    "segments" : [ {
+      "from" : {
+        "x" : 339,
+        "y" : 144
+      },
+      "to" : {
+        "x" : 366,
+        "y" : 263
+      }
+    }, {
+      "from" : {
+        "x" : 366,
+        "y" : 263
+      },
+      "to" : {
+        "x" : 483,
+        "y" : 339
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 475,
+        "y" : 339
+      },
+      "b" : {
+        "x" : 483,
+        "y" : 339
+      },
+      "c" : {
+        "x" : 479,
+        "y" : 332
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 360,
+        "y" : 257
+      },
+      "b" : {
+        "x" : 372,
+        "y" : 269
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 5
+    } ],
+    "outputs" : [ {
+      "id" : 6
+    } ],
+    "catalysts" : [ {
+      "id" : 7,
+      "points" : [ {
+        "x" : 323,
+        "y" : 263
+      } ]
+    } ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 432049,
+    "displayName" : "Aquaporin-9 passively transports glycerol into cell",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 676,
+      "y" : 262
+    },
+    "minX" : 559,
+    "maxX" : 700,
+    "minY" : 150,
+    "maxY" : 339,
+    "segments" : [ {
+      "from" : {
+        "x" : 559,
+        "y" : 339
+      },
+      "to" : {
+        "x" : 676,
+        "y" : 262
+      }
+    }, {
+      "from" : {
+        "x" : 676,
+        "y" : 262
+      },
+      "to" : {
+        "x" : 700,
+        "y" : 150
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 702,
+        "y" : 158
+      },
+      "b" : {
+        "x" : 700,
+        "y" : 150
+      },
+      "c" : {
+        "x" : 695,
+        "y" : 156
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 670,
+        "y" : 256
+      },
+      "b" : {
+        "x" : 682,
+        "y" : 268
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 6
+    } ],
+    "outputs" : [ {
+      "id" : 14
+    } ],
+    "catalysts" : [ {
+      "id" : 9,
+      "points" : [ {
+        "x" : 720,
+        "y" : 262
+      } ]
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 2,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 292,
+      "y" : 155
+    },
+    "minX" : 102,
+    "maxX" : 482,
+    "minY" : 42,
+    "maxY" : 268,
+    "prop" : {
+      "x" : 102,
+      "y" : 42,
+      "width" : 380,
+      "height" : 226
+    },
+    "textPosition" : {
+      "x" : 117,
+      "y" : 211
+    },
+    "insets" : {
+      "x" : 112,
+      "y" : 52,
+      "width" : 360,
+      "height" : 206
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 4, 5, 7, 12 ]
+  }, {
+    "id" : 15,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 750,
+      "y" : 153
+    },
+    "minX" : 568,
+    "maxX" : 932,
+    "minY" : 39,
+    "maxY" : 267,
+    "prop" : {
+      "x" : 568,
+      "y" : 39,
+      "width" : 364,
+      "height" : 228
+    },
+    "textPosition" : {
+      "x" : 849,
+      "y" : 214
+    },
+    "insets" : {
+      "x" : 578,
+      "y" : 49,
+      "width" : 344,
+      "height" : 208
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 8, 9, 14, 13 ]
+  } ],
+  "notes" : [ {
+    "id" : 12,
+    "displayName" : "adipocyte",
+    "renderableClass" : "Note",
+    "position" : {
+      "x" : 202,
+      "y" : 98
+    },
+    "minX" : 131,
+    "maxX" : 273,
+    "minY" : 81,
+    "maxY" : 115,
+    "prop" : {
+      "x" : 131,
+      "y" : 81,
+      "width" : 142,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 170,
+      "y" : 87
+    }
+  }, {
+    "id" : 13,
+    "displayName" : "hepatocyte",
+    "renderableClass" : "Note",
+    "position" : {
+      "x" : 828,
+      "y" : 98
+    },
+    "minX" : 777,
+    "maxX" : 880,
+    "minY" : 82,
+    "maxY" : 115,
+    "prop" : {
+      "x" : 777,
+      "y" : 82,
+      "width" : 103,
+      "height" : 33
+    },
+    "textPosition" : {
+      "x" : 793,
+      "y" : 88
+    }
+  } ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 102,
+  "maxX" : 932,
+  "minY" : 39,
+  "maxY" : 393,
+  "disease" : false
+}

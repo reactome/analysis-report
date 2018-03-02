@@ -1,0 +1,4161 @@
+{
+  "dbId" : 157858,
+  "stableId" : "R-HSA-157858",
+  "displayName" : "Gap junction trafficking and regulation",
+  "nodes" : [ {
+    "id" : 3,
+    "reactomeId" : 158053,
+    "displayName" : "Connexin 43  hemi-channel",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1131,
+      "y" : 1253
+    },
+    "minX" : 1046,
+    "maxX" : 1208,
+    "minY" : 1191,
+    "maxY" : 1270,
+    "prop" : {
+      "x" : 1055,
+      "y" : 1236,
+      "width" : 153,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 1069,
+      "y" : 1235
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 38,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1107,
+          "y" : 1233
+        },
+        "to" : {
+          "x" : 1046,
+          "y" : 1191
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1099,
+          "y" : 1232
+        },
+        "b" : {
+          "x" : 1107,
+          "y" : 1233
+        },
+        "c" : {
+          "x" : 1104,
+          "y" : 1226
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 5,
+    "reactomeId" : 190703,
+    "displayName" : "Monomeric connexin protein",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 495,
+      "y" : 163
+    },
+    "minX" : 441,
+    "maxX" : 550,
+    "minY" : 142,
+    "maxY" : 184,
+    "prop" : {
+      "x" : 441,
+      "y" : 142,
+      "width" : 109,
+      "height" : 42
+    },
+    "textPosition" : {
+      "x" : 443,
+      "y" : 145
+    },
+    "connectors" : [ {
+      "edgeId" : 37,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 191068,
+    "displayName" : "Junctional channel",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1376,
+      "y" : 1244
+    },
+    "minX" : 1335,
+    "maxX" : 1418,
+    "minY" : 1195,
+    "maxY" : 1262,
+    "prop" : {
+      "x" : 1335,
+      "y" : 1227,
+      "width" : 83,
+      "height" : 35
+    },
+    "textPosition" : {
+      "x" : 1343,
+      "y" : 1227
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 36,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 39,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 10,
+        "shape" : {
+          "a" : {
+            "x" : 1348,
+            "y" : 1195
+          },
+          "b" : {
+            "x" : 1360,
+            "y" : 1207
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 71,
+    "reactomeId" : 1629779,
+    "displayName" : "GJB2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 247,
+      "y" : 175
+    },
+    "minX" : 207,
+    "maxX" : 293,
+    "minY" : 158,
+    "maxY" : 186,
+    "prop" : {
+      "x" : 207,
+      "y" : 164,
+      "width" : 80,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 229,
+      "y" : 164
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 287,
+          "y" : 164
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 191070,
+    "displayName" : "Hemi-channels",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1266,
+      "y" : 1256
+    },
+    "minX" : 1231,
+    "maxX" : 1301,
+    "minY" : 1214,
+    "maxY" : 1275,
+    "prop" : {
+      "x" : 1231,
+      "y" : 1238,
+      "width" : 70,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 1237,
+      "y" : 1239
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 36,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 1289,
+            "y" : 1214
+          },
+          "b" : {
+            "x" : 1301,
+            "y" : 1226
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 194780,
+    "displayName" : "Docked Cx43-containing transport vesicles",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 922,
+      "y" : 1251
+    },
+    "minX" : 865,
+    "maxX" : 979,
+    "minY" : 1225,
+    "maxY" : 1277,
+    "prop" : {
+      "x" : 865,
+      "y" : 1225,
+      "width" : 114,
+      "height" : 52
+    },
+    "textPosition" : {
+      "x" : 867,
+      "y" : 1228
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 35,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 38,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 9,
+    "reactomeId" : 190556,
+    "displayName" : "connexons in Golgi transport vesicle docked to microtubules",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 917,
+      "y" : 1022
+    },
+    "minX" : 854,
+    "maxX" : 981,
+    "minY" : 989,
+    "maxY" : 1056,
+    "prop" : {
+      "x" : 854,
+      "y" : 989,
+      "width" : 127,
+      "height" : 67
+    },
+    "textPosition" : {
+      "x" : 857,
+      "y" : 993
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 35,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 46,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 10,
+    "reactomeId" : 191660,
+    "displayName" : "gap junction plaque",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1375,
+      "y" : 1136
+    },
+    "minX" : 1329,
+    "maxX" : 1421,
+    "minY" : 1118,
+    "maxY" : 1155,
+    "prop" : {
+      "x" : 1329,
+      "y" : 1118,
+      "width" : 92,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 1333,
+      "y" : 1120
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 39,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 12,
+    "reactomeId" : 190649,
+    "displayName" : "GJA1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 710,
+      "y" : 444
+    },
+    "minX" : 662,
+    "maxX" : 764,
+    "minY" : 423,
+    "maxY" : 512,
+    "prop" : {
+      "x" : 662,
+      "y" : 429,
+      "width" : 96,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 691,
+      "y" : 434
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 758,
+          "y" : 429
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 40,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 6,
+        "shape" : {
+          "a" : {
+            "x" : 704,
+            "y" : 500
+          },
+          "b" : {
+            "x" : 716,
+            "y" : 512
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    }, {
+      "edgeId" : 43,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 13,
+    "reactomeId" : 190652,
+    "displayName" : "Connexin 43 connexon",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 711,
+      "y" : 601
+    },
+    "minX" : 662,
+    "maxX" : 760,
+    "minY" : 582,
+    "maxY" : 620,
+    "prop" : {
+      "x" : 662,
+      "y" : 582,
+      "width" : 98,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 668,
+      "y" : 585
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 40,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 45,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 14,
+    "reactomeId" : 190614,
+    "displayName" : "GJB2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 209,
+      "y" : 399
+    },
+    "minX" : 160,
+    "maxX" : 359,
+    "minY" : 382,
+    "maxY" : 451,
+    "prop" : {
+      "x" : 160,
+      "y" : 388,
+      "width" : 98,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 191,
+      "y" : 389
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 258,
+          "y" : 388
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 42,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 242,
+          "y" : 414
+        },
+        "to" : {
+          "x" : 359,
+          "y" : 451
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 3,
+        "shape" : {
+          "a" : {
+            "x" : 294,
+            "y" : 426
+          },
+          "b" : {
+            "x" : 306,
+            "y" : 438
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 15,
+    "reactomeId" : 190636,
+    "displayName" : "GJB1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 459,
+      "y" : 398
+    },
+    "minX" : 359,
+    "maxX" : 514,
+    "minY" : 381,
+    "maxY" : 451,
+    "prop" : {
+      "x" : 410,
+      "y" : 387,
+      "width" : 98,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 441,
+      "y" : 388
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 508,
+          "y" : 387
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 42,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 437,
+          "y" : 413
+        },
+        "to" : {
+          "x" : 359,
+          "y" : 451
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 3,
+        "shape" : {
+          "a" : {
+            "x" : 392,
+            "y" : 426
+          },
+          "b" : {
+            "x" : 404,
+            "y" : 438
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 80,
+    "reactomeId" : 3006691,
+    "displayName" : "MYO6",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1385,
+      "y" : 425
+    },
+    "minX" : 1252,
+    "maxX" : 1419,
+    "minY" : 406,
+    "maxY" : 467,
+    "prop" : {
+      "x" : 1357,
+      "y" : 412,
+      "width" : 56,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 1364,
+      "y" : 415
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1413,
+          "y" : 412
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 47,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1354,
+          "y" : 433
+        },
+        "to" : {
+          "x" : 1252,
+          "y" : 467
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 16,
+    "reactomeId" : 190632,
+    "displayName" : "Connexin 26:Connexin 32 connexon",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 358,
+      "y" : 572
+    },
+    "minX" : 309,
+    "maxX" : 407,
+    "minY" : 546,
+    "maxY" : 599,
+    "prop" : {
+      "x" : 309,
+      "y" : 546,
+      "width" : 98,
+      "height" : 53
+    },
+    "textPosition" : {
+      "x" : 315,
+      "y" : 550
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 42,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 17,
+    "reactomeId" : 190656,
+    "displayName" : "GJB1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 443,
+      "y" : 300
+    },
+    "minX" : 407,
+    "maxX" : 520,
+    "minY" : 256,
+    "maxY" : 312,
+    "prop" : {
+      "x" : 407,
+      "y" : 289,
+      "width" : 72,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 425,
+      "y" : 290
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 479,
+          "y" : 289
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 69,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 41,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 6,
+        "shape" : {
+          "a" : {
+            "x" : 466,
+            "y" : 256
+          },
+          "b" : {
+            "x" : 478,
+            "y" : 268
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    }, {
+      "edgeId" : 41,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 459,
+          "y" : 286
+        },
+        "to" : {
+          "x" : 489,
+          "y" : 268
+        }
+      }, {
+        "from" : {
+          "x" : 489,
+          "y" : 268
+        },
+        "to" : {
+          "x" : 514,
+          "y" : 292
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 516,
+          "y" : 295
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 81,
+    "reactomeId" : 2980808,
+    "displayName" : "DAB2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1387,
+      "y" : 997
+    },
+    "minX" : 1339,
+    "maxX" : 1413,
+    "minY" : 970,
+    "maxY" : 1008,
+    "prop" : {
+      "x" : 1367,
+      "y" : 986,
+      "width" : 40,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1367,
+      "y" : 986
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1407,
+          "y" : 986
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 50,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1367,
+          "y" : 983
+        },
+        "to" : {
+          "x" : 1339,
+          "y" : 970
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 190647,
+    "displayName" : "Connexin 32 connexon",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 609,
+      "y" : 302
+    },
+    "minX" : 560,
+    "maxX" : 658,
+    "minY" : 283,
+    "maxY" : 321,
+    "prop" : {
+      "x" : 560,
+      "y" : 283,
+      "width" : 98,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 566,
+      "y" : 286
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 41,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 82,
+    "reactomeId" : 532659,
+    "displayName" : "TJP1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 971,
+      "y" : 617
+    },
+    "minX" : 952,
+    "maxX" : 997,
+    "minY" : 600,
+    "maxY" : 702,
+    "prop" : {
+      "x" : 952,
+      "y" : 606,
+      "width" : 39,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 954,
+      "y" : 606
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 991,
+          "y" : 606
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 64,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 972,
+          "y" : 631
+        },
+        "to" : {
+          "x" : 984,
+          "y" : 702
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 19,
+    "reactomeId" : 191076,
+    "displayName" : "Cx26/Cx32",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 331,
+      "y" : 299
+    },
+    "minX" : 285,
+    "maxX" : 378,
+    "minY" : 286,
+    "maxY" : 313,
+    "prop" : {
+      "x" : 285,
+      "y" : 286,
+      "width" : 93,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 293,
+      "y" : 289
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 84,
+    "reactomeId" : 190599,
+    "displayName" : "Microtubule",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1044,
+      "y" : 945
+    },
+    "minX" : 919,
+    "maxX" : 1086,
+    "minY" : 838,
+    "maxY" : 1191,
+    "prop" : {
+      "x" : 1002,
+      "y" : 935,
+      "width" : 84,
+      "height" : 20
+    },
+    "textPosition" : {
+      "x" : 1006,
+      "y" : 934
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 38,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1044,
+          "y" : 958
+        },
+        "to" : {
+          "x" : 1046,
+          "y" : 1191
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1048,
+          "y" : 965
+        },
+        "b" : {
+          "x" : 1044,
+          "y" : 958
+        },
+        "c" : {
+          "x" : 1040,
+          "y" : 965
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 46,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1032,
+          "y" : 932
+        },
+        "to" : {
+          "x" : 919,
+          "y" : 838
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 20,
+    "reactomeId" : 191080,
+    "displayName" : "Cx26/Cx32",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 353,
+      "y" : 401
+    },
+    "minX" : 311,
+    "maxX" : 396,
+    "minY" : 392,
+    "maxY" : 410,
+    "prop" : {
+      "x" : 311,
+      "y" : 392,
+      "width" : 85,
+      "height" : 18
+    },
+    "textPosition" : {
+      "x" : 315,
+      "y" : 391
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 21,
+    "reactomeId" : 190654,
+    "displayName" : "GJA1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 710,
+      "y" : 303
+    },
+    "minX" : 677,
+    "maxX" : 749,
+    "minY" : 283,
+    "maxY" : 318,
+    "prop" : {
+      "x" : 677,
+      "y" : 289,
+      "width" : 66,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 691,
+      "y" : 293
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 743,
+          "y" : 289
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 70,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 43,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 22,
+    "reactomeId" : 190583,
+    "displayName" : "Connexin 43 connexon in Golgi transport vesicle",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 916,
+      "y" : 742
+    },
+    "minX" : 856,
+    "maxX" : 984,
+    "minY" : 702,
+    "maxY" : 838,
+    "prop" : {
+      "x" : 856,
+      "y" : 716,
+      "width" : 121,
+      "height" : 52
+    },
+    "textPosition" : {
+      "x" : 859,
+      "y" : 719
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 64,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 960,
+          "y" : 713
+        },
+        "to" : {
+          "x" : 984,
+          "y" : 702
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 45,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 46,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 916,
+          "y" : 771
+        },
+        "to" : {
+          "x" : 919,
+          "y" : 838
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 24,
+    "reactomeId" : 196145,
+    "displayName" : "Invaginating gap junction plaques",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1150,
+      "y" : 349
+    },
+    "minX" : 1090,
+    "maxX" : 1210,
+    "minY" : 317,
+    "maxY" : 381,
+    "prop" : {
+      "x" : 1090,
+      "y" : 317,
+      "width" : 120,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 1097,
+      "y" : 346
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 47,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 48,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 25,
+    "reactomeId" : 196018,
+    "displayName" : "Planar gap junction plaques associated with Dab2 and Dynamin",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1387,
+      "y" : 598
+    },
+    "minX" : 1252,
+    "maxX" : 1449,
+    "minY" : 467,
+    "maxY" : 631,
+    "prop" : {
+      "x" : 1325,
+      "y" : 565,
+      "width" : 124,
+      "height" : 66
+    },
+    "textPosition" : {
+      "x" : 1325,
+      "y" : 568
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 47,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1352,
+          "y" : 562
+        },
+        "to" : {
+          "x" : 1252,
+          "y" : 467
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 51,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 27,
+    "reactomeId" : 196042,
+    "displayName" : "Dynamin",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1389,
+      "y" : 785
+    },
+    "minX" : 1320,
+    "maxX" : 1424,
+    "minY" : 737,
+    "maxY" : 798,
+    "prop" : {
+      "x" : 1355,
+      "y" : 773,
+      "width" : 69,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 1360,
+      "y" : 775
+    },
+    "connectors" : [ {
+      "edgeId" : 51,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1371,
+          "y" : 767
+        },
+        "to" : {
+          "x" : 1320,
+          "y" : 737
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 28,
+    "reactomeId" : 196033,
+    "displayName" : "planar gap junction plaques associated with Dab2",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1386,
+      "y" : 878
+    },
+    "minX" : 1320,
+    "maxX" : 1450,
+    "minY" : 737,
+    "maxY" : 904,
+    "prop" : {
+      "x" : 1322,
+      "y" : 853,
+      "width" : 128,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 1324,
+      "y" : 855
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 50,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 51,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1374,
+          "y" : 850
+        },
+        "to" : {
+          "x" : 1320,
+          "y" : 737
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 29,
+    "reactomeId" : 196020,
+    "displayName" : "planar gap junction plaques",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1378,
+      "y" : 1069
+    },
+    "minX" : 1315,
+    "maxX" : 1442,
+    "minY" : 970,
+    "maxY" : 1089,
+    "prop" : {
+      "x" : 1315,
+      "y" : 1050,
+      "width" : 127,
+      "height" : 39
+    },
+    "textPosition" : {
+      "x" : 1316,
+      "y" : 1054
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 50,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1370,
+          "y" : 1047
+        },
+        "to" : {
+          "x" : 1339,
+          "y" : 970
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 33,
+    "reactomeId" : 190641,
+    "displayName" : "Connexin 26 Connexon",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 274,
+      "y" : 488
+    },
+    "minX" : 210,
+    "maxX" : 338,
+    "minY" : 468,
+    "maxY" : 509,
+    "prop" : {
+      "x" : 210,
+      "y" : 468,
+      "width" : 128,
+      "height" : 41
+    },
+    "textPosition" : {
+      "x" : 231,
+      "y" : 474
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 52,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 34,
+    "reactomeId" : 112301,
+    "displayName" : "Connexon 26",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 65,
+      "y" : 490
+    },
+    "minX" : 4,
+    "maxX" : 126,
+    "minY" : 471,
+    "maxY" : 509,
+    "prop" : {
+      "x" : 4,
+      "y" : 471,
+      "width" : 122,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 22,
+      "y" : 488
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 52,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 53,
+    "reactomeId" : 191635,
+    "displayName" : "c-src-associated Cx43 junctional channel",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 318,
+      "y" : 1238
+    },
+    "minX" : 255,
+    "maxX" : 381,
+    "minY" : 1215,
+    "maxY" : 1261,
+    "prop" : {
+      "x" : 255,
+      "y" : 1215,
+      "width" : 126,
+      "height" : 46
+    },
+    "textPosition" : {
+      "x" : 263,
+      "y" : 1212
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 63,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 54,
+    "reactomeId" : 191648,
+    "displayName" : "SRC-2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 803,
+      "y" : 1115
+    },
+    "minX" : 776,
+    "maxX" : 837,
+    "minY" : 1098,
+    "maxY" : 1184,
+    "prop" : {
+      "x" : 776,
+      "y" : 1104,
+      "width" : 55,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 781,
+      "y" : 1105
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 831,
+          "y" : 1104
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 65,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 802,
+          "y" : 1130
+        },
+        "to" : {
+          "x" : 799,
+          "y" : 1184
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 12,
+        "shape" : {
+          "a" : {
+            "x" : 794,
+            "y" : 1151
+          },
+          "b" : {
+            "x" : 806,
+            "y" : 1163
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 56,
+    "reactomeId" : 191645,
+    "displayName" : "phospho-Y265 Cx43:ZO-1 gap junction",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 478,
+      "y" : 1237
+    },
+    "minX" : 421,
+    "maxX" : 535,
+    "minY" : 1169,
+    "maxY" : 1261,
+    "prop" : {
+      "x" : 421,
+      "y" : 1214,
+      "width" : 114,
+      "height" : 47
+    },
+    "textPosition" : {
+      "x" : 426,
+      "y" : 1212
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 66,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 477,
+          "y" : 1211
+        },
+        "to" : {
+          "x" : 476,
+          "y" : 1169
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 473,
+          "y" : 1204
+        },
+        "b" : {
+          "x" : 477,
+          "y" : 1211
+        },
+        "c" : {
+          "x" : 481,
+          "y" : 1204
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 57,
+    "reactomeId" : 191653,
+    "displayName" : "Cx43:ZO-1:c-src gap junction",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 620,
+      "y" : 1247
+    },
+    "minX" : 554,
+    "maxX" : 681,
+    "minY" : 1169,
+    "maxY" : 1266,
+    "prop" : {
+      "x" : 559,
+      "y" : 1228,
+      "width" : 122,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 564,
+      "y" : 1231
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 65,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 66,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 620,
+          "y" : 1225
+        },
+        "to" : {
+          "x" : 620,
+          "y" : 1169
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 66,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 602,
+          "y" : 1225
+        },
+        "to" : {
+          "x" : 561,
+          "y" : 1181
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 558,
+          "y" : 1178
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 58,
+    "reactomeId" : 113592,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 620,
+      "y" : 1122
+    },
+    "minX" : 600,
+    "maxX" : 641,
+    "minY" : 1106,
+    "maxY" : 1169,
+    "prop" : {
+      "x" : 600,
+      "y" : 1107,
+      "width" : 40,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 604,
+      "y" : 1112
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 635,
+          "y" : 1112
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 66,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 620,
+          "y" : 1141
+        },
+        "to" : {
+          "x" : 620,
+          "y" : 1169
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 12,
+        "shape" : {
+          "a" : {
+            "x" : 614,
+            "y" : 1149
+          },
+          "b" : {
+            "x" : 626,
+            "y" : 1161
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 59,
+    "reactomeId" : 191637,
+    "displayName" : "closed Cx43 junctional channel",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 96,
+      "y" : 1243
+    },
+    "minX" : 34,
+    "maxX" : 158,
+    "minY" : 1224,
+    "maxY" : 1262,
+    "prop" : {
+      "x" : 34,
+      "y" : 1224,
+      "width" : 124,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 40,
+      "y" : 1227
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 63,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 60,
+    "reactomeId" : 191615,
+    "displayName" : "Cx43:TJP1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1076,
+      "y" : 737
+    },
+    "minX" : 1029,
+    "maxX" : 1124,
+    "minY" : 717,
+    "maxY" : 757,
+    "prop" : {
+      "x" : 1029,
+      "y" : 717,
+      "width" : 95,
+      "height" : 40
+    },
+    "textPosition" : {
+      "x" : 1041,
+      "y" : 736
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 64,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 61,
+    "reactomeId" : 191652,
+    "displayName" : "Cx43 :ZO-1 gap junction",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 800,
+      "y" : 1253
+    },
+    "minX" : 752,
+    "maxX" : 848,
+    "minY" : 1184,
+    "maxY" : 1272,
+    "prop" : {
+      "x" : 752,
+      "y" : 1234,
+      "width" : 96,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 759,
+      "y" : 1237
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 65,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 799,
+          "y" : 1231
+        },
+        "to" : {
+          "x" : 799,
+          "y" : 1184
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 62,
+    "reactomeId" : 29370,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 409,
+      "y" : 1169
+    },
+    "minX" : 389,
+    "maxX" : 476,
+    "minY" : 1153,
+    "maxY" : 1185,
+    "prop" : {
+      "x" : 389,
+      "y" : 1154,
+      "width" : 40,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 393,
+      "y" : 1159
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 424,
+          "y" : 1159
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 66,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 432,
+          "y" : 1169
+        },
+        "to" : {
+          "x" : 476,
+          "y" : 1169
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 12,
+        "shape" : {
+          "a" : {
+            "x" : 448,
+            "y" : 1163
+          },
+          "b" : {
+            "x" : 460,
+            "y" : 1175
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 439,
+          "y" : 1165
+        },
+        "b" : {
+          "x" : 432,
+          "y" : 1169
+        },
+        "c" : {
+          "x" : 439,
+          "y" : 1173
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 64,
+    "reactomeId" : 190541,
+    "displayName" : "Association of Cx43  with TJP1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1018,
+      "y" : 692
+    },
+    "minX" : 984,
+    "maxX" : 1050,
+    "minY" : 687,
+    "maxY" : 714,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 984,
+        "y" : 702
+      },
+      "to" : {
+        "x" : 1018,
+        "y" : 692
+      }
+    }, {
+      "from" : {
+        "x" : 1018,
+        "y" : 692
+      },
+      "to" : {
+        "x" : 1050,
+        "y" : 714
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1042,
+        "y" : 713
+      },
+      "b" : {
+        "x" : 1050,
+        "y" : 714
+      },
+      "c" : {
+        "x" : 1047,
+        "y" : 707
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1018,
+        "y" : 692
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 22,
+      "points" : [ {
+        "x" : 960,
+        "y" : 713
+      } ]
+    }, {
+      "id" : 82,
+      "points" : [ {
+        "x" : 972,
+        "y" : 631
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 60
+    } ]
+  }, {
+    "id" : 65,
+    "reactomeId" : 191654,
+    "displayName" : "c-src associates with Cx43 in gap junctions",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 725,
+      "y" : 1250
+    },
+    "minX" : 637,
+    "maxX" : 799,
+    "minY" : 1184,
+    "maxY" : 1255,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 799,
+        "y" : 1184
+      },
+      "to" : {
+        "x" : 725,
+        "y" : 1250
+      }
+    }, {
+      "from" : {
+        "x" : 725,
+        "y" : 1250
+      },
+      "to" : {
+        "x" : 673,
+        "y" : 1191
+      }
+    }, {
+      "from" : {
+        "x" : 673,
+        "y" : 1191
+      },
+      "to" : {
+        "x" : 637,
+        "y" : 1225
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 639,
+        "y" : 1217
+      },
+      "b" : {
+        "x" : 637,
+        "y" : 1225
+      },
+      "c" : {
+        "x" : 645,
+        "y" : 1223
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 725,
+        "y" : 1250
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 54,
+      "points" : [ {
+        "x" : 802,
+        "y" : 1130
+      } ],
+      "stoichiometry" : 12
+    }, {
+      "id" : 61,
+      "points" : [ {
+        "x" : 799,
+        "y" : 1231
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 57
+    } ]
+  }, {
+    "id" : 66,
+    "reactomeId" : 191636,
+    "displayName" : "Phosphorylation of Cx43 by c-src",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 550,
+      "y" : 1169
+    },
+    "minX" : 476,
+    "maxX" : 620,
+    "minY" : 1163,
+    "maxY" : 1175,
+    "segments" : [ {
+      "from" : {
+        "x" : 620,
+        "y" : 1169
+      },
+      "to" : {
+        "x" : 550,
+        "y" : 1169
+      }
+    }, {
+      "from" : {
+        "x" : 550,
+        "y" : 1169
+      },
+      "to" : {
+        "x" : 476,
+        "y" : 1169
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 544,
+        "y" : 1163
+      },
+      "b" : {
+        "x" : 556,
+        "y" : 1175
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 57,
+      "points" : [ {
+        "x" : 620,
+        "y" : 1225
+      } ]
+    }, {
+      "id" : 58,
+      "points" : [ {
+        "x" : 620,
+        "y" : 1141
+      } ],
+      "stoichiometry" : 12
+    } ],
+    "outputs" : [ {
+      "id" : 62,
+      "points" : [ {
+        "x" : 432,
+        "y" : 1169
+      } ],
+      "stoichiometry" : 12
+    }, {
+      "id" : 56,
+      "points" : [ {
+        "x" : 477,
+        "y" : 1211
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 57,
+      "points" : [ {
+        "x" : 602,
+        "y" : 1225
+      } ]
+    } ]
+  }, {
+    "id" : 35,
+    "reactomeId" : 191737,
+    "displayName" : "Docking of connexons into junctional, double-membrane spanning channels",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 917,
+      "y" : 1095
+    },
+    "minX" : 911,
+    "maxX" : 923,
+    "minY" : 1059,
+    "maxY" : 1222,
+    "segments" : [ {
+      "from" : {
+        "x" : 917,
+        "y" : 1059
+      },
+      "to" : {
+        "x" : 917,
+        "y" : 1095
+      }
+    }, {
+      "from" : {
+        "x" : 917,
+        "y" : 1095
+      },
+      "to" : {
+        "x" : 921,
+        "y" : 1222
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 917,
+        "y" : 1215
+      },
+      "b" : {
+        "x" : 921,
+        "y" : 1222
+      },
+      "c" : {
+        "x" : 925,
+        "y" : 1215
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 911,
+        "y" : 1089
+      },
+      "b" : {
+        "x" : 923,
+        "y" : 1101
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 9
+    } ],
+    "outputs" : [ {
+      "id" : 8
+    } ]
+  }, {
+    "id" : 36,
+    "reactomeId" : 190788,
+    "displayName" : "Formation of junctional channels",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1308,
+      "y" : 1208
+    },
+    "minX" : 1282,
+    "maxX" : 1342,
+    "minY" : 1203,
+    "maxY" : 1232,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1282,
+        "y" : 1232
+      },
+      "to" : {
+        "x" : 1308,
+        "y" : 1208
+      }
+    }, {
+      "from" : {
+        "x" : 1308,
+        "y" : 1208
+      },
+      "to" : {
+        "x" : 1342,
+        "y" : 1224
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1334,
+        "y" : 1225
+      },
+      "b" : {
+        "x" : 1342,
+        "y" : 1224
+      },
+      "c" : {
+        "x" : 1337,
+        "y" : 1217
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1308,
+        "y" : 1208
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 7,
+      "stoichiometry" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 6
+    } ]
+  }, {
+    "id" : 69,
+    "reactomeId" : 190693,
+    "displayName" : "Synthesis of Cx32",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 387,
+      "y" : 252
+    },
+    "minX" : 354,
+    "maxX" : 429,
+    "minY" : 213,
+    "maxY" : 286,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 354,
+        "y" : 213
+      },
+      "to" : {
+        "x" : 387,
+        "y" : 252
+      }
+    }, {
+      "from" : {
+        "x" : 387,
+        "y" : 252
+      },
+      "to" : {
+        "x" : 429,
+        "y" : 286
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 421,
+        "y" : 285
+      },
+      "b" : {
+        "x" : 429,
+        "y" : 286
+      },
+      "c" : {
+        "x" : 426,
+        "y" : 279
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 381,
+        "y" : 246
+      },
+      "b" : {
+        "x" : 393,
+        "y" : 258
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "outputs" : [ {
+      "id" : 17
+    } ]
+  }, {
+    "id" : 37,
+    "reactomeId" : 190682,
+    "displayName" : "Connexin synthesis (generic)",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 398,
+      "y" : 46
+    },
+    "minX" : 392,
+    "maxX" : 485,
+    "minY" : 40,
+    "maxY" : 136,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 398,
+        "y" : 46
+      },
+      "to" : {
+        "x" : 456,
+        "y" : 77
+      }
+    }, {
+      "from" : {
+        "x" : 456,
+        "y" : 77
+      },
+      "to" : {
+        "x" : 485,
+        "y" : 136
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 478,
+        "y" : 132
+      },
+      "b" : {
+        "x" : 485,
+        "y" : 136
+      },
+      "c" : {
+        "x" : 486,
+        "y" : 128
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 392,
+        "y" : 40
+      },
+      "b" : {
+        "x" : 404,
+        "y" : 52
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "outputs" : [ {
+      "id" : 5
+    } ]
+  }, {
+    "id" : 70,
+    "reactomeId" : 191072,
+    "displayName" : "Synthesis of Cx43",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 794,
+      "y" : 303
+    },
+    "minX" : 746,
+    "maxX" : 841,
+    "minY" : 297,
+    "maxY" : 324,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 841,
+        "y" : 324
+      },
+      "to" : {
+        "x" : 794,
+        "y" : 303
+      }
+    }, {
+      "from" : {
+        "x" : 794,
+        "y" : 303
+      },
+      "to" : {
+        "x" : 746,
+        "y" : 303
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 753,
+        "y" : 299
+      },
+      "b" : {
+        "x" : 746,
+        "y" : 303
+      },
+      "c" : {
+        "x" : 753,
+        "y" : 307
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 788,
+        "y" : 297
+      },
+      "b" : {
+        "x" : 800,
+        "y" : 309
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "outputs" : [ {
+      "id" : 21
+    } ]
+  }, {
+    "id" : 38,
+    "reactomeId" : 190877,
+    "displayName" : "Insertion of connexons into the plasma membrane resulting in the formation of hemi-channels",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1008,
+      "y" : 1249
+    },
+    "minX" : 949,
+    "maxX" : 1046,
+    "minY" : 1191,
+    "maxY" : 1254,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 949,
+        "y" : 1222
+      },
+      "to" : {
+        "x" : 979,
+        "y" : 1197
+      }
+    }, {
+      "from" : {
+        "x" : 979,
+        "y" : 1197
+      },
+      "to" : {
+        "x" : 1008,
+        "y" : 1249
+      }
+    }, {
+      "from" : {
+        "x" : 1008,
+        "y" : 1249
+      },
+      "to" : {
+        "x" : 1046,
+        "y" : 1191
+      }
+    } ],
+    "reactionShape" : {
+      "c" : {
+        "x" : 1008,
+        "y" : 1249
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 8
+    } ],
+    "outputs" : [ {
+      "id" : 3,
+      "points" : [ {
+        "x" : 1107,
+        "y" : 1233
+      } ]
+    }, {
+      "id" : 84,
+      "points" : [ {
+        "x" : 1044,
+        "y" : 958
+      } ]
+    } ]
+  }, {
+    "id" : 39,
+    "reactomeId" : 190790,
+    "displayName" : "Assembly of gap junction plaques",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1342,
+      "y" : 1179
+    },
+    "minX" : 1337,
+    "maxX" : 1366,
+    "minY" : 1158,
+    "maxY" : 1224,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1366,
+        "y" : 1224
+      },
+      "to" : {
+        "x" : 1342,
+        "y" : 1179
+      }
+    }, {
+      "from" : {
+        "x" : 1342,
+        "y" : 1179
+      },
+      "to" : {
+        "x" : 1360,
+        "y" : 1158
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1359,
+        "y" : 1166
+      },
+      "b" : {
+        "x" : 1360,
+        "y" : 1158
+      },
+      "c" : {
+        "x" : 1352,
+        "y" : 1161
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1342,
+        "y" : 1179
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 6,
+      "stoichiometry" : 10
+    } ],
+    "outputs" : [ {
+      "id" : 10
+    } ]
+  }, {
+    "id" : 40,
+    "reactomeId" : 190662,
+    "displayName" : "Connexin oligomerization in Trans-Golgi Network (TGN)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 710,
+      "y" : 550
+    },
+    "minX" : 705,
+    "maxX" : 715,
+    "minY" : 463,
+    "maxY" : 579,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 710,
+        "y" : 463
+      },
+      "to" : {
+        "x" : 710,
+        "y" : 550
+      }
+    }, {
+      "from" : {
+        "x" : 710,
+        "y" : 550
+      },
+      "to" : {
+        "x" : 710,
+        "y" : 579
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 706,
+        "y" : 572
+      },
+      "b" : {
+        "x" : 710,
+        "y" : 579
+      },
+      "c" : {
+        "x" : 714,
+        "y" : 572
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 710,
+        "y" : 550
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 12,
+      "stoichiometry" : 6
+    } ],
+    "outputs" : [ {
+      "id" : 13
+    } ]
+  }, {
+    "id" : 73,
+    "reactomeId" : 1629787,
+    "displayName" : "Synthesis of Cx26",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 264,
+      "y" : 103
+    },
+    "minX" : 247,
+    "maxX" : 270,
+    "minY" : 64,
+    "maxY" : 161,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 247,
+        "y" : 64
+      },
+      "to" : {
+        "x" : 264,
+        "y" : 103
+      }
+    }, {
+      "from" : {
+        "x" : 264,
+        "y" : 103
+      },
+      "to" : {
+        "x" : 249,
+        "y" : 161
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 247,
+        "y" : 153
+      },
+      "b" : {
+        "x" : 249,
+        "y" : 161
+      },
+      "c" : {
+        "x" : 255,
+        "y" : 155
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 258,
+        "y" : 97
+      },
+      "b" : {
+        "x" : 270,
+        "y" : 109
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "outputs" : [ {
+      "id" : 71
+    } ]
+  }, {
+    "id" : 41,
+    "reactomeId" : 190681,
+    "displayName" : "Connexin oligomerization in endoplasmic reticulum membrane",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 525,
+      "y" : 303
+    },
+    "minX" : 452,
+    "maxX" : 557,
+    "minY" : 238,
+    "maxY" : 308,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 452,
+        "y" : 286
+      },
+      "to" : {
+        "x" : 492,
+        "y" : 238
+      }
+    }, {
+      "from" : {
+        "x" : 492,
+        "y" : 238
+      },
+      "to" : {
+        "x" : 525,
+        "y" : 303
+      }
+    }, {
+      "from" : {
+        "x" : 525,
+        "y" : 303
+      },
+      "to" : {
+        "x" : 557,
+        "y" : 302
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 550,
+        "y" : 306
+      },
+      "b" : {
+        "x" : 557,
+        "y" : 302
+      },
+      "c" : {
+        "x" : 550,
+        "y" : 298
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 525,
+        "y" : 303
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 17,
+      "stoichiometry" : 6
+    } ],
+    "outputs" : [ {
+      "id" : 18
+    } ],
+    "catalysts" : [ {
+      "id" : 17,
+      "points" : [ {
+        "x" : 459,
+        "y" : 286
+      }, {
+        "x" : 489,
+        "y" : 268
+      } ]
+    } ]
+  }, {
+    "id" : 42,
+    "reactomeId" : 190687,
+    "displayName" : "Connexin oligomerization in  ER-Golgi-Intermediate Compartment",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 359,
+      "y" : 491
+    },
+    "minX" : 354,
+    "maxX" : 364,
+    "minY" : 451,
+    "maxY" : 543,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 359,
+        "y" : 451
+      },
+      "to" : {
+        "x" : 359,
+        "y" : 491
+      }
+    }, {
+      "from" : {
+        "x" : 359,
+        "y" : 491
+      },
+      "to" : {
+        "x" : 358,
+        "y" : 543
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 354,
+        "y" : 536
+      },
+      "b" : {
+        "x" : 358,
+        "y" : 543
+      },
+      "c" : {
+        "x" : 362,
+        "y" : 536
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 359,
+        "y" : 491
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 14,
+      "points" : [ {
+        "x" : 242,
+        "y" : 414
+      } ],
+      "stoichiometry" : 3
+    }, {
+      "id" : 15,
+      "points" : [ {
+        "x" : 437,
+        "y" : 413
+      } ],
+      "stoichiometry" : 3
+    } ],
+    "outputs" : [ {
+      "id" : 16
+    } ]
+  }, {
+    "id" : 43,
+    "reactomeId" : 190686,
+    "displayName" : "Transport of connexins to the Trans-Golgi Network (TGN)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 710,
+      "y" : 367
+    },
+    "minX" : 704,
+    "maxX" : 716,
+    "minY" : 321,
+    "maxY" : 426,
+    "segments" : [ {
+      "from" : {
+        "x" : 710,
+        "y" : 321
+      },
+      "to" : {
+        "x" : 710,
+        "y" : 367
+      }
+    }, {
+      "from" : {
+        "x" : 710,
+        "y" : 367
+      },
+      "to" : {
+        "x" : 710,
+        "y" : 426
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 706,
+        "y" : 419
+      },
+      "b" : {
+        "x" : 710,
+        "y" : 426
+      },
+      "c" : {
+        "x" : 714,
+        "y" : 419
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 704,
+        "y" : 361
+      },
+      "b" : {
+        "x" : 716,
+        "y" : 373
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 21
+    } ],
+    "outputs" : [ {
+      "id" : 12
+    } ]
+  }, {
+    "id" : 44,
+    "reactomeId" : 190698,
+    "displayName" : "Transport of connexins to the ER-Golgi intermediate compartment",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 353,
+      "y" : 363
+    },
+    "minX" : 335,
+    "maxX" : 359,
+    "minY" : 319,
+    "maxY" : 386,
+    "segments" : [ {
+      "from" : {
+        "x" : 335,
+        "y" : 319
+      },
+      "to" : {
+        "x" : 353,
+        "y" : 363
+      }
+    }, {
+      "from" : {
+        "x" : 353,
+        "y" : 363
+      },
+      "to" : {
+        "x" : 353,
+        "y" : 386
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 349,
+        "y" : 379
+      },
+      "b" : {
+        "x" : 353,
+        "y" : 386
+      },
+      "c" : {
+        "x" : 357,
+        "y" : 379
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 347,
+        "y" : 357
+      },
+      "b" : {
+        "x" : 359,
+        "y" : 369
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 19
+    } ],
+    "outputs" : [ {
+      "id" : 20
+    } ]
+  }, {
+    "id" : 45,
+    "reactomeId" : 190782,
+    "displayName" : "Budding of connexon-containing transport vesicles from the Golgi",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 710,
+      "y" : 673
+    },
+    "minX" : 704,
+    "maxX" : 915,
+    "minY" : 623,
+    "maxY" : 713,
+    "segments" : [ {
+      "from" : {
+        "x" : 710,
+        "y" : 623
+      },
+      "to" : {
+        "x" : 710,
+        "y" : 673
+      }
+    }, {
+      "from" : {
+        "x" : 710,
+        "y" : 673
+      },
+      "to" : {
+        "x" : 710,
+        "y" : 697
+      }
+    }, {
+      "from" : {
+        "x" : 710,
+        "y" : 697
+      },
+      "to" : {
+        "x" : 915,
+        "y" : 697
+      }
+    }, {
+      "from" : {
+        "x" : 915,
+        "y" : 697
+      },
+      "to" : {
+        "x" : 915,
+        "y" : 713
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 911,
+        "y" : 706
+      },
+      "b" : {
+        "x" : 915,
+        "y" : 713
+      },
+      "c" : {
+        "x" : 919,
+        "y" : 706
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 704,
+        "y" : 667
+      },
+      "b" : {
+        "x" : 716,
+        "y" : 679
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 13
+    } ],
+    "outputs" : [ {
+      "id" : 22
+    } ]
+  }, {
+    "id" : 46,
+    "reactomeId" : 190520,
+    "displayName" : "Association of Golgi  transport vesicles with microtubules",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 916,
+      "y" : 949
+    },
+    "minX" : 911,
+    "maxX" : 921,
+    "minY" : 838,
+    "maxY" : 986,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 919,
+        "y" : 838
+      },
+      "to" : {
+        "x" : 916,
+        "y" : 949
+      }
+    }, {
+      "from" : {
+        "x" : 916,
+        "y" : 949
+      },
+      "to" : {
+        "x" : 916,
+        "y" : 986
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 912,
+        "y" : 979
+      },
+      "b" : {
+        "x" : 916,
+        "y" : 986
+      },
+      "c" : {
+        "x" : 920,
+        "y" : 979
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 916,
+        "y" : 949
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 22,
+      "points" : [ {
+        "x" : 916,
+        "y" : 771
+      } ]
+    }, {
+      "id" : 84,
+      "points" : [ {
+        "x" : 1032,
+        "y" : 932
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 9
+    } ]
+  }, {
+    "id" : 47,
+    "reactomeId" : 190519,
+    "displayName" : "Internalization of gap junction plaques",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1166,
+      "y" : 406
+    },
+    "minX" : 1158,
+    "maxX" : 1252,
+    "minY" : 384,
+    "maxY" : 467,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1252,
+        "y" : 467
+      },
+      "to" : {
+        "x" : 1166,
+        "y" : 406
+      }
+    }, {
+      "from" : {
+        "x" : 1166,
+        "y" : 406
+      },
+      "to" : {
+        "x" : 1158,
+        "y" : 384
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1164,
+        "y" : 389
+      },
+      "b" : {
+        "x" : 1158,
+        "y" : 384
+      },
+      "c" : {
+        "x" : 1157,
+        "y" : 392
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1166,
+        "y" : 406
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 25,
+      "points" : [ {
+        "x" : 1352,
+        "y" : 562
+      } ]
+    }, {
+      "id" : 80,
+      "points" : [ {
+        "x" : 1354,
+        "y" : 433
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 24
+    } ]
+  }, {
+    "id" : 48,
+    "reactomeId" : 190829,
+    "displayName" : "Lysosomal degradation of gap junction plaques",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1043,
+      "y" : 351
+    },
+    "minX" : 1037,
+    "maxX" : 1087,
+    "minY" : 300,
+    "maxY" : 357,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1087,
+        "y" : 350
+      },
+      "to" : {
+        "x" : 1043,
+        "y" : 351
+      }
+    }, {
+      "from" : {
+        "x" : 1043,
+        "y" : 351
+      },
+      "to" : {
+        "x" : 1058,
+        "y" : 300
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1037,
+        "y" : 345
+      },
+      "b" : {
+        "x" : 1049,
+        "y" : 357
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 24
+    } ]
+  }, {
+    "id" : 50,
+    "reactomeId" : 196026,
+    "displayName" : "Dab2 is recruited to the junctional plaques",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1325,
+      "y" : 948
+    },
+    "minX" : 1320,
+    "maxX" : 1363,
+    "minY" : 907,
+    "maxY" : 970,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1339,
+        "y" : 970
+      },
+      "to" : {
+        "x" : 1325,
+        "y" : 948
+      }
+    }, {
+      "from" : {
+        "x" : 1325,
+        "y" : 948
+      },
+      "to" : {
+        "x" : 1363,
+        "y" : 907
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1361,
+        "y" : 915
+      },
+      "b" : {
+        "x" : 1363,
+        "y" : 907
+      },
+      "c" : {
+        "x" : 1355,
+        "y" : 909
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1325,
+        "y" : 948
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 29,
+      "points" : [ {
+        "x" : 1370,
+        "y" : 1047
+      } ]
+    }, {
+      "id" : 81,
+      "points" : [ {
+        "x" : 1367,
+        "y" : 983
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 28
+    } ]
+  }, {
+    "id" : 51,
+    "reactomeId" : 196017,
+    "displayName" : "Dynamin is recruited to the gap junction plaque",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1318,
+      "y" : 698
+    },
+    "minX" : 1313,
+    "maxX" : 1344,
+    "minY" : 634,
+    "maxY" : 737,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1320,
+        "y" : 737
+      },
+      "to" : {
+        "x" : 1318,
+        "y" : 698
+      }
+    }, {
+      "from" : {
+        "x" : 1318,
+        "y" : 698
+      },
+      "to" : {
+        "x" : 1318,
+        "y" : 652
+      }
+    }, {
+      "from" : {
+        "x" : 1318,
+        "y" : 652
+      },
+      "to" : {
+        "x" : 1344,
+        "y" : 634
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1341,
+        "y" : 641
+      },
+      "b" : {
+        "x" : 1344,
+        "y" : 634
+      },
+      "c" : {
+        "x" : 1336,
+        "y" : 635
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1318,
+        "y" : 698
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 27,
+      "points" : [ {
+        "x" : 1371,
+        "y" : 767
+      } ]
+    }, {
+      "id" : 28,
+      "points" : [ {
+        "x" : 1374,
+        "y" : 850
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 25
+    } ]
+  }, {
+    "id" : 52,
+    "reactomeId" : 451056,
+    "displayName" : "Microtubule-independent trafficking of connexons to the plasma membrane",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 149,
+      "y" : 488
+    },
+    "minX" : 129,
+    "maxX" : 207,
+    "minY" : 482,
+    "maxY" : 494,
+    "segments" : [ {
+      "from" : {
+        "x" : 207,
+        "y" : 488
+      },
+      "to" : {
+        "x" : 149,
+        "y" : 488
+      }
+    }, {
+      "from" : {
+        "x" : 149,
+        "y" : 488
+      },
+      "to" : {
+        "x" : 129,
+        "y" : 488
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 136,
+        "y" : 484
+      },
+      "b" : {
+        "x" : 129,
+        "y" : 488
+      },
+      "c" : {
+        "x" : 136,
+        "y" : 492
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 143,
+        "y" : 482
+      },
+      "b" : {
+        "x" : 155,
+        "y" : 494
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 33
+    } ],
+    "outputs" : [ {
+      "id" : 34
+    } ]
+  }, {
+    "id" : 63,
+    "reactomeId" : 191656,
+    "displayName" : "Closure of gap junction",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 195,
+      "y" : 1246
+    },
+    "minX" : 114,
+    "maxX" : 284,
+    "minY" : 1189,
+    "maxY" : 1252,
+    "segments" : [ {
+      "from" : {
+        "x" : 284,
+        "y" : 1212
+      },
+      "to" : {
+        "x" : 247,
+        "y" : 1189
+      }
+    }, {
+      "from" : {
+        "x" : 247,
+        "y" : 1189
+      },
+      "to" : {
+        "x" : 195,
+        "y" : 1246
+      }
+    }, {
+      "from" : {
+        "x" : 195,
+        "y" : 1246
+      },
+      "to" : {
+        "x" : 145,
+        "y" : 1193
+      }
+    }, {
+      "from" : {
+        "x" : 145,
+        "y" : 1193
+      },
+      "to" : {
+        "x" : 114,
+        "y" : 1221
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 116,
+        "y" : 1213
+      },
+      "b" : {
+        "x" : 114,
+        "y" : 1221
+      },
+      "c" : {
+        "x" : 122,
+        "y" : 1219
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 189,
+        "y" : 1240
+      },
+      "b" : {
+        "x" : 201,
+        "y" : 1252
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 53
+    } ],
+    "outputs" : [ {
+      "id" : 59
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 32,
+    "reactomeId" : 17963,
+    "displayName" : "Golgi lumen",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 772,
+      "y" : 527
+    },
+    "minX" : 624,
+    "maxX" : 920,
+    "minY" : 441,
+    "maxY" : 613,
+    "prop" : {
+      "x" : 624,
+      "y" : 441,
+      "width" : 296,
+      "height" : 172
+    },
+    "textPosition" : {
+      "x" : 803,
+      "y" : 570
+    },
+    "insets" : {
+      "x" : 634,
+      "y" : 451,
+      "width" : 276,
+      "height" : 152
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 12, 40, 13 ]
+  }, {
+    "id" : 1,
+    "reactomeId" : 17957,
+    "displayName" : "endoplasmic reticulum lumen",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 560,
+      "y" : 182
+    },
+    "minX" : 259,
+    "maxX" : 862,
+    "minY" : 57,
+    "maxY" : 308,
+    "prop" : {
+      "x" : 259,
+      "y" : 57,
+      "width" : 603,
+      "height" : 251
+    },
+    "textPosition" : {
+      "x" : 636,
+      "y" : 76
+    },
+    "insets" : {
+      "x" : 269,
+      "y" : 67,
+      "width" : 583,
+      "height" : 231
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 19, 5, 17, 18, 41, 21, 69, 70, 71, 73 ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 190626,
+    "displayName" : "endoplasmic reticulum-Golgi intermediate compartment",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 392,
+      "y" : 490
+    },
+    "minX" : 185,
+    "maxX" : 600,
+    "minY" : 366,
+    "maxY" : 614,
+    "prop" : {
+      "x" : 185,
+      "y" : 366,
+      "width" : 415,
+      "height" : 248
+    },
+    "textPosition" : {
+      "x" : 379,
+      "y" : 478
+    },
+    "insets" : {
+      "x" : 195,
+      "y" : 376,
+      "width" : 395,
+      "height" : 228
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 16, 42, 15, 20, 14, 44, 33, 52, 76 ]
+  }, {
+    "id" : 75,
+    "reactomeId" : 17938,
+    "displayName" : "lysosomal membrane",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 1142,
+      "y" : 279
+    },
+    "minX" : 1028,
+    "maxX" : 1257,
+    "minY" : 206,
+    "maxY" : 353,
+    "prop" : {
+      "x" : 1028,
+      "y" : 206,
+      "width" : 229,
+      "height" : 147
+    },
+    "textPosition" : {
+      "x" : 1071,
+      "y" : 209
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 48, 24 ]
+  }, {
+    "id" : 11,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 696,
+      "y" : 635
+    },
+    "minX" : 4,
+    "maxX" : 1388,
+    "minY" : 14,
+    "maxY" : 1256,
+    "prop" : {
+      "x" : 4,
+      "y" : 14,
+      "width" : 1384,
+      "height" : 1242
+    },
+    "textPosition" : {
+      "x" : 21,
+      "y" : 1141
+    },
+    "insets" : {
+      "x" : 14,
+      "y" : 26,
+      "width" : 1359,
+      "height" : 1219
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 8, 9, 35, 36, 38, 32, 43, 2, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 47, 1, 47, 34, 7, 56, 58, 59, 63, 66, 54, 57, 61, 62, 65, 3, 6, 45, 64, 53, 47, 60, 37, 82, 22, 46, 72, 77, 78, 79, 75, 47, 39, 10, 29, 81, 28, 50, 51, 27, 25, 80, 84 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ {
+    "id" : 72,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 287,
+      "y" : 234
+    },
+    "minX" : 254,
+    "maxX" : 321,
+    "minY" : 189,
+    "maxY" : 280,
+    "segments" : [ {
+      "from" : {
+        "x" : 254,
+        "y" : 189
+      },
+      "to" : {
+        "x" : 321,
+        "y" : 280
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 281,
+        "y" : 228
+      },
+      "b" : {
+        "x" : 293,
+        "y" : 240
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 71
+    } ],
+    "outputs" : [ {
+      "id" : 19
+    } ]
+  }, {
+    "id" : 76,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 283,
+      "y" : 399
+    },
+    "minX" : 261,
+    "maxX" : 305,
+    "minY" : 393,
+    "maxY" : 405,
+    "segments" : [ {
+      "from" : {
+        "x" : 261,
+        "y" : 399
+      },
+      "to" : {
+        "x" : 305,
+        "y" : 400
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 277,
+        "y" : 393
+      },
+      "b" : {
+        "x" : 289,
+        "y" : 405
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 14
+    } ],
+    "outputs" : [ {
+      "id" : 20
+    } ]
+  }, {
+    "id" : 77,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 404,
+      "y" : 398
+    },
+    "minX" : 398,
+    "maxX" : 410,
+    "minY" : 392,
+    "maxY" : 404,
+    "segments" : [ {
+      "from" : {
+        "x" : 407,
+        "y" : 398
+      },
+      "to" : {
+        "x" : 402,
+        "y" : 398
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 398,
+        "y" : 392
+      },
+      "b" : {
+        "x" : 410,
+        "y" : 404
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 15
+    } ],
+    "outputs" : [ {
+      "id" : 20
+    } ]
+  }, {
+    "id" : 78,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 394,
+      "y" : 299
+    },
+    "minX" : 384,
+    "maxX" : 404,
+    "minY" : 293,
+    "maxY" : 305,
+    "segments" : [ {
+      "from" : {
+        "x" : 404,
+        "y" : 299
+      },
+      "to" : {
+        "x" : 384,
+        "y" : 299
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 388,
+        "y" : 293
+      },
+      "b" : {
+        "x" : 400,
+        "y" : 305
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 17
+    } ],
+    "outputs" : [ {
+      "id" : 19
+    } ]
+  }, {
+    "id" : 79,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 1218,
+      "y" : 1253
+    },
+    "minX" : 1211,
+    "maxX" : 1225,
+    "minY" : 1247,
+    "maxY" : 1259,
+    "segments" : [ {
+      "from" : {
+        "x" : 1211,
+        "y" : 1253
+      },
+      "to" : {
+        "x" : 1225,
+        "y" : 1254
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1212,
+        "y" : 1247
+      },
+      "b" : {
+        "x" : 1224,
+        "y" : 1259
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 3
+    } ],
+    "outputs" : [ {
+      "id" : 7
+    } ]
+  } ],
+  "shadows" : [ {
+    "id" : 85,
+    "reactomeId" : 190828,
+    "displayName" : "Gap junction trafficking",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 727,
+      "y" : 658
+    },
+    "minX" : -6,
+    "maxX" : 1460,
+    "minY" : 30,
+    "maxY" : 1287,
+    "prop" : {
+      "x" : 1134,
+      "y" : 596,
+      "width" : 326,
+      "height" : 686
+    },
+    "points" : [ {
+      "x" : -6,
+      "y" : 30
+    }, {
+      "x" : 1460,
+      "y" : 30
+    }, {
+      "x" : 1460,
+      "y" : 1287
+    }, {
+      "x" : -6,
+      "y" : 1287
+    } ],
+    "colour" : "#4684ee"
+  }, {
+    "id" : 86,
+    "reactomeId" : 191650,
+    "displayName" : "Regulation of gap junction activity",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 579,
+      "y" : 939
+    },
+    "minX" : 24,
+    "maxX" : 1134,
+    "minY" : 596,
+    "maxY" : 1282,
+    "prop" : {
+      "x" : 24,
+      "y" : 596,
+      "width" : 1110,
+      "height" : 686
+    },
+    "points" : [ {
+      "x" : 24,
+      "y" : 596
+    }, {
+      "x" : 1134,
+      "y" : 596
+    }, {
+      "x" : 1134,
+      "y" : 1282
+    }, {
+      "x" : 24,
+      "y" : 1282
+    } ],
+    "colour" : "#dc3912"
+  } ],
+  "minX" : 4,
+  "maxX" : 1450,
+  "minY" : 14,
+  "maxY" : 1277,
+  "disease" : false
+}
