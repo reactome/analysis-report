@@ -14,10 +14,12 @@ import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.analysis.exporter.constant.Colors;
 import org.reactome.server.tools.analysis.exporter.constant.FontSize;
+import org.reactome.server.tools.analysis.exporter.constant.Images;
 import org.reactome.server.tools.analysis.exporter.constant.URL;
 import org.reactome.server.tools.analysis.exporter.element.Header;
 import org.reactome.server.tools.analysis.exporter.element.ListParagraph;
 import org.reactome.server.tools.analysis.exporter.element.P;
+import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.exporter.factory.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.factory.TableRenderer;
 import org.reactome.server.tools.analysis.exporter.util.DiagramHelper;
@@ -43,7 +45,7 @@ public class PathwayDetail implements Section {
 	private static final Logger LOGGER = LoggerFactory.getLogger(PathwayDetail.class);
 
 
-	public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) throws Exception {
+	public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) throws Exception, AnalysisExporterException {
 		Pathway pathway;
 		PathwayNodeSummary pathwayNodeSummary;
 		report.add(new Header("4. Pathway details", FontSize.H1).setDestination("pathwayDetails"));
@@ -100,7 +102,7 @@ public class PathwayDetail implements Section {
 		}
 	}
 
-	private void addDiagram(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr, int i) throws Exception {
+	private void addDiagram(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr, int i) throws Exception, AnalysisExporterException {
 		BufferedImage image = DiagramHelper.getDiagram(sfr.getPathways().get(i).getStId(), asr, report.getReportArgs().getResource());
 		if (image != null) {
 			Image diagram = new Image(ImageDataFactory.create(image, java.awt.Color.WHITE));
@@ -162,7 +164,7 @@ public class PathwayDetail implements Section {
 								, literatureReference.getVolume()
 								, literatureReference.getYear()
 								, literatureReference.getPages()))
-								.add(PdfUtils.getLinkIcon(literatureReference.getUrl())));
+								.add(Images.getLink(literatureReference.getUrl())));
 						break;
 					case "Book":
 						book = (Book) pathway.getLiteratureReference().get(i);
@@ -178,7 +180,7 @@ public class PathwayDetail implements Section {
 								, PdfUtils.getAuthorDisplayName(url.getAuthor())
 								, url.getTitle()
 								, url.getDisplayName()))
-								.add(PdfUtils.getLinkIcon(url.getUniformResourceLocator())));
+								.add(Images.getLink(url.getUniformResourceLocator())));
 						break;
 				}
 			}

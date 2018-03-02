@@ -2,6 +2,7 @@ package org.reactome.server.tools.analysis.exporter.section;
 
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
+import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.exporter.factory.AnalysisReport;
 
 /**
@@ -22,5 +23,5 @@ public interface Section {
 	 *
 	 * @throws Exception when failed to manipulate with analysis report.
 	 */
-	void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) throws Exception;
+	void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) throws Exception, AnalysisExporterException;
 }

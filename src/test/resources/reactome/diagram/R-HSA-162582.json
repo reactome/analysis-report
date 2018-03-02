@@ -1,0 +1,416 @@
+{
+  "dbId" : 162582,
+  "stableId" : "R-HSA-162582",
+  "displayName" : "Signal Transduction",
+  "nodes" : [ {
+    "id" : 128,
+    "reactomeId" : 194315,
+    "displayName" : "Signaling by Rho GTPases",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 336,
+      "y" : 319
+    },
+    "minX" : 264,
+    "maxX" : 408,
+    "minY" : 292,
+    "maxY" : 347,
+    "prop" : {
+      "x" : 264,
+      "y" : 292,
+      "width" : 144,
+      "height" : 55
+    },
+    "textPosition" : {
+      "x" : 279,
+      "y" : 298
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 133,
+    "reactomeId" : 2028269,
+    "displayName" : "Signaling by Hippo",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 169,
+      "y" : 453
+    },
+    "minX" : 95,
+    "maxX" : 243,
+    "minY" : 425,
+    "maxY" : 481,
+    "prop" : {
+      "x" : 95,
+      "y" : 425,
+      "width" : 148,
+      "height" : 56
+    },
+    "textPosition" : {
+      "x" : 107,
+      "y" : 438
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 137,
+    "reactomeId" : 2586552,
+    "displayName" : "Signaling by Leptin",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 167,
+      "y" : 606
+    },
+    "minX" : 91,
+    "maxX" : 244,
+    "minY" : 579,
+    "maxY" : 633,
+    "prop" : {
+      "x" : 91,
+      "y" : 579,
+      "width" : 153,
+      "height" : 54
+    },
+    "textPosition" : {
+      "x" : 106,
+      "y" : 591
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 139,
+    "reactomeId" : 5358351,
+    "displayName" : "Signaling by Hedgehog",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 165,
+      "y" : 531
+    },
+    "minX" : 94,
+    "maxX" : 237,
+    "minY" : 501,
+    "maxY" : 562,
+    "prop" : {
+      "x" : 94,
+      "y" : 501,
+      "width" : 143,
+      "height" : 61
+    },
+    "textPosition" : {
+      "x" : 121,
+      "y" : 510
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 141,
+    "reactomeId" : 73887,
+    "displayName" : "Death Receptor Signalling",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 355,
+      "y" : 572
+    },
+    "minX" : 280,
+    "maxX" : 430,
+    "minY" : 546,
+    "maxY" : 599,
+    "prop" : {
+      "x" : 280,
+      "y" : 546,
+      "width" : 150,
+      "height" : 53
+    },
+    "textPosition" : {
+      "x" : 300,
+      "y" : 551
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 143,
+    "reactomeId" : 5683057,
+    "displayName" : "MAPK family signaling cascades",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 343,
+      "y" : 150
+    },
+    "minX" : 275,
+    "maxX" : 411,
+    "minY" : 119,
+    "maxY" : 182,
+    "prop" : {
+      "x" : 275,
+      "y" : 119,
+      "width" : 136,
+      "height" : 63
+    },
+    "textPosition" : {
+      "x" : 281,
+      "y" : 129
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 195721,
+    "displayName" : "Signaling by WNT",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 167,
+      "y" : 385
+    },
+    "minX" : 91,
+    "maxX" : 244,
+    "minY" : 363,
+    "maxY" : 407,
+    "prop" : {
+      "x" : 91,
+      "y" : 363,
+      "width" : 153,
+      "height" : 44
+    },
+    "textPosition" : {
+      "x" : 110,
+      "y" : 370
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 19,
+    "reactomeId" : 157118,
+    "displayName" : "Signaling by NOTCH",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 158,
+      "y" : 318
+    },
+    "minX" : 86,
+    "maxX" : 230,
+    "minY" : 291,
+    "maxY" : 346,
+    "prop" : {
+      "x" : 86,
+      "y" : 291,
+      "width" : 144,
+      "height" : 55
+    },
+    "textPosition" : {
+      "x" : 92,
+      "y" : 304
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 147,
+    "reactomeId" : 9006934,
+    "displayName" : "Signaling by Receptor Tyrosine Kinases",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 151,
+      "y" : 63
+    },
+    "minX" : 84,
+    "maxX" : 219,
+    "minY" : 24,
+    "maxY" : 103,
+    "prop" : {
+      "x" : 84,
+      "y" : 24,
+      "width" : 135,
+      "height" : 79
+    },
+    "textPosition" : {
+      "x" : 89,
+      "y" : 35
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 148,
+    "reactomeId" : 9006936,
+    "displayName" : "Signaling by TGF-beta family members",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 151,
+      "y" : 152
+    },
+    "minX" : 83,
+    "maxX" : 220,
+    "minY" : 112,
+    "maxY" : 192,
+    "prop" : {
+      "x" : 83,
+      "y" : 112,
+      "width" : 137,
+      "height" : 80
+    },
+    "textPosition" : {
+      "x" : 92,
+      "y" : 123
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 149,
+    "reactomeId" : 372790,
+    "displayName" : "Signaling by GPCR",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 153,
+      "y" : 242
+    },
+    "minX" : 84,
+    "maxX" : 223,
+    "minY" : 209,
+    "maxY" : 275,
+    "prop" : {
+      "x" : 84,
+      "y" : 209,
+      "width" : 139,
+      "height" : 66
+    },
+    "textPosition" : {
+      "x" : 93,
+      "y" : 227
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 150,
+    "reactomeId" : 9006921,
+    "displayName" : "Integrin signaling",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 166,
+      "y" : 684
+    },
+    "minX" : 90,
+    "maxX" : 243,
+    "minY" : 650,
+    "maxY" : 719,
+    "prop" : {
+      "x" : 90,
+      "y" : 650,
+      "width" : 153,
+      "height" : 69
+    },
+    "textPosition" : {
+      "x" : 110,
+      "y" : 670
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 151,
+    "reactomeId" : 9006931,
+    "displayName" : "Signaling by Nuclear Receptors",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 345,
+      "y" : 61
+    },
+    "minX" : 271,
+    "maxX" : 420,
+    "minY" : 24,
+    "maxY" : 98,
+    "prop" : {
+      "x" : 271,
+      "y" : 24,
+      "width" : 149,
+      "height" : 74
+    },
+    "textPosition" : {
+      "x" : 277,
+      "y" : 39
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 152,
+    "reactomeId" : 9006925,
+    "displayName" : "Intracellular signaling by second messengers",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 339,
+      "y" : 239
+    },
+    "minX" : 263,
+    "maxX" : 415,
+    "minY" : 200,
+    "maxY" : 279,
+    "prop" : {
+      "x" : 263,
+      "y" : 200,
+      "width" : 152,
+      "height" : 79
+    },
+    "textPosition" : {
+      "x" : 265,
+      "y" : 218
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 153,
+    "reactomeId" : 9006927,
+    "displayName" : "Signaling by Non-Receptor Tyrosine Kinases",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 346,
+      "y" : 404
+    },
+    "minX" : 271,
+    "maxX" : 422,
+    "minY" : 367,
+    "maxY" : 441,
+    "prop" : {
+      "x" : 271,
+      "y" : 367,
+      "width" : 151,
+      "height" : 74
+    },
+    "textPosition" : {
+      "x" : 284,
+      "y" : 375
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 154,
+    "reactomeId" : 165159,
+    "displayName" : "mTOR signalling",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 351,
+      "y" : 494
+    },
+    "minX" : 285,
+    "maxX" : 417,
+    "minY" : 464,
+    "maxY" : 525,
+    "prop" : {
+      "x" : 285,
+      "y" : 464,
+      "width" : 132,
+      "height" : 61
+    },
+    "textPosition" : {
+      "x" : 296,
+      "y" : 480
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 83,
+  "maxX" : 430,
+  "minY" : 24,
+  "maxY" : 719,
+  "disease" : false
+}

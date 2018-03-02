@@ -34,7 +34,7 @@ import java.util.List;
  */
 public class ParameterAndResultSummary implements Section {
 	private static final Logger LOGGER = LoggerFactory.getLogger(ParameterAndResultSummary.class);
-	private static final List<String> DESCRIPTION = PdfUtils.getText("texts/description.txt");
+	private static final List<String> DESCRIPTION = PdfUtils.getText(ParameterAndResultSummary.class.getResourceAsStream("description.txt"));
 
 
 	public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) throws IOException {

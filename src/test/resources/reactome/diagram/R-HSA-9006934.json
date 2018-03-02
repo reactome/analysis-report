@@ -1,0 +1,316 @@
+{
+  "dbId" : 9006934,
+  "stableId" : "R-HSA-9006934",
+  "displayName" : "Signaling by Receptor Tyrosine Kinases",
+  "nodes" : [ {
+    "id" : 516,
+    "reactomeId" : 1433557,
+    "displayName" : "Signaling by SCF-KIT",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 347,
+      "y" : 456
+    },
+    "minX" : 281,
+    "maxX" : 414,
+    "minY" : 429,
+    "maxY" : 483,
+    "prop" : {
+      "x" : 281,
+      "y" : 429,
+      "width" : 133,
+      "height" : 54
+    },
+    "textPosition" : {
+      "x" : 290,
+      "y" : 434
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 517,
+    "reactomeId" : 8852405,
+    "displayName" : "Signaling by MST1",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 546,
+      "y" : 173
+    },
+    "minX" : 472,
+    "maxX" : 621,
+    "minY" : 140,
+    "maxY" : 207,
+    "prop" : {
+      "x" : 472,
+      "y" : 140,
+      "width" : 149,
+      "height" : 67
+    },
+    "textPosition" : {
+      "x" : 486,
+      "y" : 159
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 518,
+    "reactomeId" : 166520,
+    "displayName" : "Signalling by NGF",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 160,
+      "y" : 270
+    },
+    "minX" : 88,
+    "maxX" : 233,
+    "minY" : 233,
+    "maxY" : 308,
+    "prop" : {
+      "x" : 88,
+      "y" : 233,
+      "width" : 145,
+      "height" : 75
+    },
+    "textPosition" : {
+      "x" : 103,
+      "y" : 256
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 519,
+    "reactomeId" : 74752,
+    "displayName" : "Signaling by Insulin receptor",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 349,
+      "y" : 272
+    },
+    "minX" : 276,
+    "maxX" : 422,
+    "minY" : 241,
+    "maxY" : 303,
+    "prop" : {
+      "x" : 276,
+      "y" : 241,
+      "width" : 146,
+      "height" : 62
+    },
+    "textPosition" : {
+      "x" : 285,
+      "y" : 250
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 520,
+    "reactomeId" : 186797,
+    "displayName" : "Signaling by PDGF",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 167,
+      "y" : 365
+    },
+    "minX" : 99,
+    "maxX" : 235,
+    "minY" : 329,
+    "maxY" : 401,
+    "prop" : {
+      "x" : 99,
+      "y" : 329,
+      "width" : 136,
+      "height" : 72
+    },
+    "textPosition" : {
+      "x" : 107,
+      "y" : 350
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 521,
+    "reactomeId" : 194138,
+    "displayName" : "Signaling by VEGF",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 161,
+      "y" : 456
+    },
+    "minX" : 93,
+    "maxX" : 230,
+    "minY" : 420,
+    "maxY" : 492,
+    "prop" : {
+      "x" : 93,
+      "y" : 420,
+      "width" : 137,
+      "height" : 72
+    },
+    "textPosition" : {
+      "x" : 102,
+      "y" : 441
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 522,
+    "reactomeId" : 177929,
+    "displayName" : "Signaling by EGFR",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 158,
+      "y" : 93
+    },
+    "minX" : 86,
+    "maxX" : 231,
+    "minY" : 60,
+    "maxY" : 127,
+    "prop" : {
+      "x" : 86,
+      "y" : 60,
+      "width" : 145,
+      "height" : 67
+    },
+    "textPosition" : {
+      "x" : 99,
+      "y" : 79
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 523,
+    "reactomeId" : 2404192,
+    "displayName" : "Signaling by Type 1 Insulin-like Growth Factor 1 Receptor (IGF1R)",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 340,
+      "y" : 366
+    },
+    "minX" : 273,
+    "maxX" : 407,
+    "minY" : 330,
+    "maxY" : 402,
+    "prop" : {
+      "x" : 273,
+      "y" : 330,
+      "width" : 134,
+      "height" : 72
+    },
+    "textPosition" : {
+      "x" : 273,
+      "y" : 330
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 524,
+    "reactomeId" : 190236,
+    "displayName" : "Signaling by FGFR",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 161,
+      "y" : 180
+    },
+    "minX" : 83,
+    "maxX" : 239,
+    "minY" : 143,
+    "maxY" : 217,
+    "prop" : {
+      "x" : 83,
+      "y" : 143,
+      "width" : 156,
+      "height" : 74
+    },
+    "textPosition" : {
+      "x" : 102,
+      "y" : 165
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 525,
+    "reactomeId" : 6806834,
+    "displayName" : "Signaling by MET",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 549,
+      "y" : 93
+    },
+    "minX" : 480,
+    "maxX" : 618,
+    "minY" : 60,
+    "maxY" : 126,
+    "prop" : {
+      "x" : 480,
+      "y" : 60,
+      "width" : 138,
+      "height" : 66
+    },
+    "textPosition" : {
+      "x" : 492,
+      "y" : 78
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 526,
+    "reactomeId" : 1236394,
+    "displayName" : "Signaling by ERBB4",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 358,
+      "y" : 175
+    },
+    "minX" : 280,
+    "maxX" : 436,
+    "minY" : 145,
+    "maxY" : 205,
+    "prop" : {
+      "x" : 280,
+      "y" : 145,
+      "width" : 156,
+      "height" : 60
+    },
+    "textPosition" : {
+      "x" : 295,
+      "y" : 160
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 527,
+    "reactomeId" : 1227986,
+    "displayName" : "Signaling by ERBB2",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 359,
+      "y" : 94
+    },
+    "minX" : 278,
+    "maxX" : 440,
+    "minY" : 63,
+    "maxY" : 126,
+    "prop" : {
+      "x" : 278,
+      "y" : 63,
+      "width" : 162,
+      "height" : 63
+    },
+    "textPosition" : {
+      "x" : 296,
+      "y" : 80
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 83,
+  "maxX" : 621,
+  "minY" : 60,
+  "maxY" : 492,
+  "disease" : false
+}

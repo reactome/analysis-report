@@ -3,9 +3,7 @@
 
     <appender name="exporter" class="ch.qos.logback.core.ConsoleAppender">
         <encoder><!--default class is : class="ch.qos.logback.classic.encoder.PatternLayoutEncoder"-->
-            <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level
-                Analysis-Exporter - %msg%n
-            </Pattern>
+            <Pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level Analysis-Exporter - %msg%n</Pattern>
             <!--<Pattern>%d{yyyy-MM-dd HH:mm:ss,UTC} UTC [%thread] %-5level %logger{60} - %msg%n</Pattern>-->
         </encoder>
     </appender>

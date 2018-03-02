@@ -4,6 +4,7 @@ import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.tools.analysis.exporter.constant.FontSize;
+import org.reactome.server.tools.analysis.exporter.constant.Images;
 import org.reactome.server.tools.analysis.exporter.element.Header;
 import org.reactome.server.tools.analysis.exporter.element.P;
 import org.reactome.server.tools.analysis.exporter.factory.AnalysisReport;
@@ -20,8 +21,8 @@ import java.util.List;
  */
 public class Introduction implements Section {
 
-	private static final List<String> INTRODUCTION = PdfUtils.getText("texts/introduction.txt");
-	private static final List<String> PUBLICATIONS = PdfUtils.getText("texts/references.txt");
+	private static final List<String> INTRODUCTION = PdfUtils.getText(Introduction.class.getResourceAsStream("introduction.txt"));
+	private static final List<String> PUBLICATIONS = PdfUtils.getText(Introduction.class.getResourceAsStream("references.txt"));
 
 	public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) {
 		report.add(new Header("1: Introduction", FontSize.H1).setDestination("introduction"));
@@ -36,7 +37,7 @@ public class Introduction implements Section {
 			// change this symbol in code, also need change it in text.txt file.
 			String[] text = publication.split("<>");
 			list.add(new P(text[0])
-					.add(PdfUtils.getLinkIcon(text[1])));
+					.add(Images.getLink(text[1])));
 		}
 		report.addAsList(list);
 	}

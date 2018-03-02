@@ -6,6 +6,7 @@ import org.reactome.server.analysis.core.result.model.ResourceSummary;
 import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.analysis.core.result.utils.TokenUtils;
 import org.reactome.server.tools.analysis.exporter.constant.FontSize;
+import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.exporter.exception.FailToRenderReportException;
 import org.reactome.server.tools.analysis.exporter.factory.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.factory.TableRenderer;
@@ -30,7 +31,6 @@ import java.util.List;
 class ReportRenderer {
 
 	private static final Long DEFAULT_SPECIES = 48887L; // Homo Sapiens.
-	private static final String PROFILE = "profiles/compact.json";
 	private static final ObjectMapper MAPPER = new ObjectMapper();
 	private static final Logger LOGGER = LoggerFactory.getLogger(ReportRenderer.class);
 	private static final PdfProfile profile = loadPdfProfile();
@@ -82,7 +82,7 @@ class ReportRenderer {
 			for (Section section : sections) {
 				section.render(report, asr, sfr);
 			}
-		} catch (Exception e) {
+		} catch (Exception |AnalysisExporterException e) {
 			throw new FailToRenderReportException("Fail to render report", e);
 		} finally {
 			report.close();
@@ -94,7 +94,7 @@ class ReportRenderer {
 	 */
 	private static PdfProfile loadPdfProfile() {
 		try {
-			InputStream resource = PdfProfile.class.getResourceAsStream(PROFILE);
+			InputStream resource = PdfProfile.class.getResourceAsStream("compact.json");
 			return MAPPER.readValue(resource, PdfProfile.class);
 		} catch (IOException e) {
 			e.printStackTrace();

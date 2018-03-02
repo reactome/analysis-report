@@ -1,0 +1,7624 @@
+{
+  "dbId" : 8951664,
+  "stableId" : "R-HSA-8951664",
+  "displayName" : "Neddylation",
+  "nodes" : [ {
+    "id" : 131,
+    "reactomeId" : 8952569,
+    "displayName" : "NEDD8-AcM-UBE2M",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1871,
+      "y" : 1501
+    },
+    "minX" : 1749,
+    "maxX" : 1918,
+    "minY" : 1410,
+    "maxY" : 1519,
+    "prop" : {
+      "x" : 1825,
+      "y" : 1483,
+      "width" : 93,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1827,
+      "y" : 1484
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 129,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1846,
+          "y" : 1480
+        },
+        "to" : {
+          "x" : 1749,
+          "y" : 1410
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 132,
+    "reactomeId" : 8952580,
+    "displayName" : "NEDD8-AcM-UBE2M:CRL4 E3 ubiquitin ligase:COMMDs:CCDC22:DCUND1,2,4,5",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1925,
+      "y" : 1410
+    },
+    "minX" : 1859,
+    "maxX" : 2057,
+    "minY" : 1366,
+    "maxY" : 1454,
+    "prop" : {
+      "x" : 1859,
+      "y" : 1366,
+      "width" : 133,
+      "height" : 88
+    },
+    "textPosition" : {
+      "x" : 1859,
+      "y" : 1377
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 129,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 133,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 133,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1995,
+          "y" : 1388
+        },
+        "to" : {
+          "x" : 2028,
+          "y" : 1377
+        }
+      }, {
+        "from" : {
+          "x" : 2028,
+          "y" : 1377
+        },
+        "to" : {
+          "x" : 2050,
+          "y" : 1402
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 2053,
+          "y" : 1405
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 261,
+    "reactomeId" : 8955222,
+    "displayName" : "CRL E3 ubiquitin ligases",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 445,
+      "y" : 1193
+    },
+    "minX" : 390,
+    "maxX" : 614,
+    "minY" : 1169,
+    "maxY" : 1211,
+    "prop" : {
+      "x" : 390,
+      "y" : 1175,
+      "width" : 110,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 391,
+      "y" : 1175
+    },
+    "connectors" : [ {
+      "edgeId" : 243,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 506,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 614,
+          "y" : 1169
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 134,
+    "reactomeId" : 8952502,
+    "displayName" : "AcM-UBE2M",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2152,
+      "y" : 1474
+    },
+    "minX" : 2093,
+    "maxX" : 2208,
+    "minY" : 1413,
+    "maxY" : 1492,
+    "prop" : {
+      "x" : 2103,
+      "y" : 1456,
+      "width" : 99,
+      "height" : 36
+    },
+    "innerProp" : {
+      "x" : 2109,
+      "y" : 1456,
+      "width" : 93,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2113,
+      "y" : 1463
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 8951628,
+      "label" : "Ac",
+      "description" : "N-acetyl-L-methionine at 1",
+      "shape" : {
+        "a" : {
+          "x" : 2097,
+          "y" : 1464
+        },
+        "b" : {
+          "x" : 2109,
+          "y" : 1476
+        },
+        "s" : "Ac",
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2202,
+          "y" : 1456
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 133,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2134,
+          "y" : 1453
+        },
+        "to" : {
+          "x" : 2093,
+          "y" : 1413
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2126,
+          "y" : 1451
+        },
+        "b" : {
+          "x" : 2134,
+          "y" : 1453
+        },
+        "c" : {
+          "x" : 2132,
+          "y" : 1445
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 136,
+    "reactomeId" : 8952585,
+    "displayName" : "NEDD8-CRL4 E3 ubiquitin ligase:COMMDs:CCDC22:DCUN1D1,2,4,5",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2239,
+      "y" : 1411
+    },
+    "minX" : 2093,
+    "maxX" : 2314,
+    "minY" : 1378,
+    "maxY" : 1444,
+    "prop" : {
+      "x" : 2165,
+      "y" : 1378,
+      "width" : 149,
+      "height" : 66
+    },
+    "textPosition" : {
+      "x" : 2181,
+      "y" : 1381
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 133,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2162,
+          "y" : 1412
+        },
+        "to" : {
+          "x" : 2093,
+          "y" : 1413
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2155,
+          "y" : 1416
+        },
+        "b" : {
+          "x" : 2162,
+          "y" : 1412
+        },
+        "c" : {
+          "x" : 2155,
+          "y" : 1408
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 574,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 10,
+    "reactomeId" : 29356,
+    "displayName" : "H2O",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 138,
+      "y" : 530
+    },
+    "minX" : 112,
+    "maxX" : 203,
+    "minY" : 479,
+    "maxY" : 548,
+    "prop" : {
+      "x" : 112,
+      "y" : 513,
+      "width" : 53,
+      "height" : 35
+    },
+    "textPosition" : {
+      "x" : 121,
+      "y" : 520
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 160,
+          "y" : 518
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 9,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 160,
+          "y" : 510
+        },
+        "to" : {
+          "x" : 203,
+          "y" : 479
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 11,
+    "reactomeId" : 6782635,
+    "displayName" : "UCHL3,SENP8:NEDD8(1-88)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 124,
+      "y" : 471
+    },
+    "minX" : 74,
+    "maxX" : 225,
+    "minY" : 433,
+    "maxY" : 496,
+    "prop" : {
+      "x" : 74,
+      "y" : 446,
+      "width" : 101,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 78,
+      "y" : 461
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 9,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 178,
+          "y" : 476
+        },
+        "to" : {
+          "x" : 203,
+          "y" : 479
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 9,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 163,
+          "y" : 443
+        },
+        "to" : {
+          "x" : 184,
+          "y" : 433
+        }
+      }, {
+        "from" : {
+          "x" : 184,
+          "y" : 433
+        },
+        "to" : {
+          "x" : 218,
+          "y" : 466
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 221,
+          "y" : 469
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 12,
+    "reactomeId" : 6782643,
+    "displayName" : "UCHL3,SENP8:NEDD8",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 363,
+      "y" : 477
+    },
+    "minX" : 254,
+    "maxX" : 420,
+    "minY" : 459,
+    "maxY" : 495,
+    "prop" : {
+      "x" : 307,
+      "y" : 459,
+      "width" : 113,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 317,
+      "y" : 460
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 9,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 304,
+          "y" : 477
+        },
+        "to" : {
+          "x" : 254,
+          "y" : 477
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 297,
+          "y" : 481
+        },
+        "b" : {
+          "x" : 304,
+          "y" : 477
+        },
+        "c" : {
+          "x" : 297,
+          "y" : 473
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 17,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 13,
+    "reactomeId" : 6782654,
+    "displayName" : "NEDD8(77-88)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 296,
+      "y" : 526
+    },
+    "minX" : 244,
+    "maxX" : 355,
+    "minY" : 477,
+    "maxY" : 544,
+    "prop" : {
+      "x" : 244,
+      "y" : 508,
+      "width" : 105,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 248,
+      "y" : 515
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 349,
+          "y" : 508
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 9,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 280,
+          "y" : 505
+        },
+        "to" : {
+          "x" : 254,
+          "y" : 477
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 272,
+          "y" : 503
+        },
+        "b" : {
+          "x" : 280,
+          "y" : 505
+        },
+        "c" : {
+          "x" : 278,
+          "y" : 497
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 19,
+    "reactomeId" : 5690783,
+    "displayName" : "UCHL3,SENP8",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 498,
+      "y" : 516
+    },
+    "minX" : 442,
+    "maxX" : 555,
+    "minY" : 484,
+    "maxY" : 529,
+    "prop" : {
+      "x" : 442,
+      "y" : 503,
+      "width" : 113,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 454,
+      "y" : 505
+    },
+    "connectors" : [ {
+      "edgeId" : 17,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 485,
+          "y" : 497
+        },
+        "to" : {
+          "x" : 468,
+          "y" : 484
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 477,
+          "y" : 496
+        },
+        "b" : {
+          "x" : 485,
+          "y" : 497
+        },
+        "c" : {
+          "x" : 482,
+          "y" : 490
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 275,
+    "reactomeId" : 8952551,
+    "displayName" : "DCUN1D1,2,4,5",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1721,
+      "y" : 1511
+    },
+    "minX" : 1645,
+    "maxX" : 1797,
+    "minY" : 1410,
+    "maxY" : 1532,
+    "prop" : {
+      "x" : 1645,
+      "y" : 1490,
+      "width" : 152,
+      "height" : 42
+    },
+    "textPosition" : {
+      "x" : 1669,
+      "y" : 1500
+    },
+    "connectors" : [ {
+      "edgeId" : 129,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1726,
+          "y" : 1484
+        },
+        "to" : {
+          "x" : 1749,
+          "y" : 1410
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 276,
+    "reactomeId" : 976149,
+    "displayName" : "RBX1:CUL4:DDB1:DCAFs",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1146,
+      "y" : 1402
+    },
+    "minX" : 1085,
+    "maxX" : 1250,
+    "minY" : 1384,
+    "maxY" : 1420,
+    "prop" : {
+      "x" : 1085,
+      "y" : 1384,
+      "width" : 123,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1089,
+      "y" : 1385
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 307,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1211,
+          "y" : 1407
+        },
+        "to" : {
+          "x" : 1250,
+          "y" : 1411
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 22,
+    "reactomeId" : 416969,
+    "displayName" : "NEDD8",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 520,
+      "y" : 409
+    },
+    "minX" : 468,
+    "maxX" : 2958,
+    "minY" : 163,
+    "maxY" : 666,
+    "prop" : {
+      "x" : 495,
+      "y" : 398,
+      "width" : 50,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 495,
+      "y" : 398
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 545,
+          "y" : 398
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 17,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 512,
+          "y" : 423
+        },
+        "to" : {
+          "x" : 468,
+          "y" : 484
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 511,
+          "y" : 431
+        },
+        "b" : {
+          "x" : 512,
+          "y" : 423
+        },
+        "c" : {
+          "x" : 505,
+          "y" : 426
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 26,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 534,
+          "y" : 423
+        },
+        "to" : {
+          "x" : 636,
+          "y" : 496
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 35,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 548,
+          "y" : 408
+        },
+        "to" : {
+          "x" : 888,
+          "y" : 404
+        }
+      }, {
+        "from" : {
+          "x" : 888,
+          "y" : 404
+        },
+        "to" : {
+          "x" : 933,
+          "y" : 497
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 566,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 543,
+          "y" : 395
+        },
+        "to" : {
+          "x" : 1015,
+          "y" : 173
+        }
+      }, {
+        "from" : {
+          "x" : 1015,
+          "y" : 173
+        },
+        "to" : {
+          "x" : 2794,
+          "y" : 163
+        }
+      }, {
+        "from" : {
+          "x" : 2794,
+          "y" : 163
+        },
+        "to" : {
+          "x" : 2958,
+          "y" : 666
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 548,
+          "y" : 388
+        },
+        "b" : {
+          "x" : 543,
+          "y" : 395
+        },
+        "c" : {
+          "x" : 551,
+          "y" : 396
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 27,
+    "reactomeId" : 113592,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 598,
+      "y" : 441
+    },
+    "minX" : 578,
+    "maxX" : 636,
+    "minY" : 425,
+    "maxY" : 496,
+    "prop" : {
+      "x" : 578,
+      "y" : 426,
+      "width" : 40,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 582,
+      "y" : 430
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 613,
+          "y" : 431
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 608,
+          "y" : 459
+        },
+        "to" : {
+          "x" : 636,
+          "y" : 496
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 924,
+    "reactomeId" : 8956232,
+    "displayName" : "PUM2:DCUN1D3 mRNA",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1968,
+      "y" : 118
+    },
+    "minX" : 1918,
+    "maxX" : 2019,
+    "minY" : 52,
+    "maxY" : 144,
+    "prop" : {
+      "x" : 1918,
+      "y" : 93,
+      "width" : 101,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 1933,
+      "y" : 95
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 922,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1954,
+          "y" : 90
+        },
+        "to" : {
+          "x" : 1935,
+          "y" : 54
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1931,
+          "y" : 56
+        },
+        "b" : {
+          "x" : 1939,
+          "y" : 52
+        },
+        "c" : {
+          "x" : 1935,
+          "y" : 54
+        },
+        "type" : "STOP"
+      }
+    } ]
+  }, {
+    "id" : 28,
+    "reactomeId" : 8951642,
+    "displayName" : "UBA3:NAE1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 589,
+      "y" : 562
+    },
+    "minX" : 551,
+    "maxX" : 672,
+    "minY" : 496,
+    "maxY" : 573,
+    "prop" : {
+      "x" : 551,
+      "y" : 551,
+      "width" : 76,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 551,
+      "y" : 552
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 596,
+          "y" : 548
+        },
+        "to" : {
+          "x" : 636,
+          "y" : 496
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 26,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 624,
+          "y" : 548
+        },
+        "to" : {
+          "x" : 672,
+          "y" : 536
+        }
+      }, {
+        "from" : {
+          "x" : 672,
+          "y" : 536
+        },
+        "to" : {
+          "x" : 667,
+          "y" : 512
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 666,
+          "y" : 508
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 29,
+    "reactomeId" : 76577,
+    "displayName" : "AMP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 680,
+      "y" : 440
+    },
+    "minX" : 659,
+    "maxX" : 980,
+    "minY" : 424,
+    "maxY" : 497,
+    "prop" : {
+      "x" : 659,
+      "y" : 425,
+      "width" : 42,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 663,
+      "y" : 429
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 696,
+          "y" : 430
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 682,
+          "y" : 458
+        },
+        "to" : {
+          "x" : 690,
+          "y" : 495
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 687,
+          "y" : 464
+        },
+        "b" : {
+          "x" : 682,
+          "y" : 458
+        },
+        "c" : {
+          "x" : 680,
+          "y" : 466
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 35,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 704,
+          "y" : 439
+        },
+        "to" : {
+          "x" : 952,
+          "y" : 437
+        }
+      }, {
+        "from" : {
+          "x" : 952,
+          "y" : 437
+        },
+        "to" : {
+          "x" : 980,
+          "y" : 497
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 711,
+          "y" : 435
+        },
+        "b" : {
+          "x" : 704,
+          "y" : 439
+        },
+        "c" : {
+          "x" : 711,
+          "y" : 443
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 30,
+    "reactomeId" : 111294,
+    "displayName" : "PPi",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 738,
+      "y" : 465
+    },
+    "minX" : 690,
+    "maxX" : 980,
+    "minY" : 449,
+    "maxY" : 497,
+    "prop" : {
+      "x" : 721,
+      "y" : 450,
+      "width" : 34,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 725,
+      "y" : 454
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 750,
+          "y" : 455
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 718,
+          "y" : 475
+        },
+        "to" : {
+          "x" : 690,
+          "y" : 495
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 715,
+          "y" : 482
+        },
+        "b" : {
+          "x" : 718,
+          "y" : 475
+        },
+        "c" : {
+          "x" : 710,
+          "y" : 476
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 35,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 758,
+          "y" : 465
+        },
+        "to" : {
+          "x" : 949,
+          "y" : 466
+        }
+      }, {
+        "from" : {
+          "x" : 949,
+          "y" : 466
+        },
+        "to" : {
+          "x" : 980,
+          "y" : 497
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 765,
+          "y" : 461
+        },
+        "b" : {
+          "x" : 758,
+          "y" : 465
+        },
+        "c" : {
+          "x" : 765,
+          "y" : 469
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 926,
+    "reactomeId" : 8956228,
+    "displayName" : "DCUN1D3 mRNA",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "RNA",
+    "position" : {
+      "x" : 1720,
+      "y" : 89
+    },
+    "minX" : 1650,
+    "maxX" : 1790,
+    "minY" : 70,
+    "maxY" : 108,
+    "prop" : {
+      "x" : 1650,
+      "y" : 70,
+      "width" : 140,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 1666,
+      "y" : 78
+    },
+    "connectors" : [ {
+      "edgeId" : 922,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 31,
+    "reactomeId" : 8951646,
+    "displayName" : "NEDD8-UBA3:NAE1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 810,
+      "y" : 501
+    },
+    "minX" : 690,
+    "maxX" : 1369,
+    "minY" : 397,
+    "maxY" : 686,
+    "prop" : {
+      "x" : 754,
+      "y" : 483,
+      "width" : 113,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 764,
+      "y" : 485
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 751,
+          "y" : 498
+        },
+        "to" : {
+          "x" : 690,
+          "y" : 495
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 744,
+          "y" : 502
+        },
+        "b" : {
+          "x" : 751,
+          "y" : 498
+        },
+        "c" : {
+          "x" : 744,
+          "y" : 494
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 35,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 870,
+          "y" : 499
+        },
+        "to" : {
+          "x" : 933,
+          "y" : 497
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 58,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 810,
+          "y" : 523
+        },
+        "to" : {
+          "x" : 811,
+          "y" : 686
+        }
+      }, {
+        "from" : {
+          "x" : 811,
+          "y" : 686
+        },
+        "to" : {
+          "x" : 1298,
+          "y" : 576
+        }
+      }, {
+        "from" : {
+          "x" : 1298,
+          "y" : 576
+        },
+        "to" : {
+          "x" : 1357,
+          "y" : 683
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 814,
+          "y" : 530
+        },
+        "b" : {
+          "x" : 810,
+          "y" : 523
+        },
+        "c" : {
+          "x" : 806,
+          "y" : 530
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 60,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 816,
+          "y" : 523
+        },
+        "to" : {
+          "x" : 850,
+          "y" : 607
+        }
+      }, {
+        "from" : {
+          "x" : 850,
+          "y" : 607
+        },
+        "to" : {
+          "x" : 1369,
+          "y" : 479
+        }
+      }, {
+        "from" : {
+          "x" : 1369,
+          "y" : 479
+        },
+        "to" : {
+          "x" : 1366,
+          "y" : 397
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 822,
+          "y" : 528
+        },
+        "b" : {
+          "x" : 816,
+          "y" : 523
+        },
+        "c" : {
+          "x" : 815,
+          "y" : 531
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 36,
+    "reactomeId" : 113592,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 898,
+      "y" : 528
+    },
+    "minX" : 878,
+    "maxX" : 933,
+    "minY" : 497,
+    "maxY" : 543,
+    "prop" : {
+      "x" : 878,
+      "y" : 513,
+      "width" : 40,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 882,
+      "y" : 517
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 913,
+          "y" : 518
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 35,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 914,
+          "y" : 510
+        },
+        "to" : {
+          "x" : 933,
+          "y" : 497
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 293,
+    "reactomeId" : 8955229,
+    "displayName" : "CRL E3 ubiquitin ligase:COMMDs:CCDC22",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1151,
+      "y" : 1182
+    },
+    "minX" : 1035,
+    "maxX" : 1217,
+    "minY" : 1160,
+    "maxY" : 1205,
+    "prop" : {
+      "x" : 1085,
+      "y" : 1160,
+      "width" : 132,
+      "height" : 45
+    },
+    "textPosition" : {
+      "x" : 1097,
+      "y" : 1158
+    },
+    "connectors" : [ {
+      "edgeId" : 248,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1079,
+          "y" : 1175
+        },
+        "to" : {
+          "x" : 1035,
+          "y" : 1171
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1072,
+          "y" : 1178
+        },
+        "b" : {
+          "x" : 1079,
+          "y" : 1175
+        },
+        "c" : {
+          "x" : 1072,
+          "y" : 1170
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 37,
+    "reactomeId" : 8951658,
+    "displayName" : "NEDD8-UBA3:NAE1:NEDD8",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1087,
+      "y" : 499
+    },
+    "minX" : 980,
+    "maxX" : 1152,
+    "minY" : 391,
+    "maxY" : 695,
+    "prop" : {
+      "x" : 1023,
+      "y" : 481,
+      "width" : 129,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1023,
+      "y" : 482
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 35,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1020,
+          "y" : 497
+        },
+        "to" : {
+          "x" : 980,
+          "y" : 497
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1013,
+          "y" : 501
+        },
+        "b" : {
+          "x" : 1020,
+          "y" : 497
+        },
+        "c" : {
+          "x" : 1013,
+          "y" : 493
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 43,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1079,
+          "y" : 520
+        },
+        "to" : {
+          "x" : 1009,
+          "y" : 695
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 48,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1091,
+          "y" : 478
+        },
+        "to" : {
+          "x" : 1113,
+          "y" : 391
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 678,
+    "reactomeId" : 8956136,
+    "displayName" : "NEDD8,UBD",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 368,
+      "y" : 241
+    },
+    "minX" : 329,
+    "maxX" : 482,
+    "minY" : 202,
+    "maxY" : 252,
+    "prop" : {
+      "x" : 329,
+      "y" : 230,
+      "width" : 79,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 329,
+      "y" : 230
+    },
+    "connectors" : [ {
+      "edgeId" : 677,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 400,
+          "y" : 224
+        },
+        "to" : {
+          "x" : 482,
+          "y" : 202
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 680,
+    "reactomeId" : 8956132,
+    "displayName" : "NUB1",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 373,
+      "y" : 170
+    },
+    "minX" : 341,
+    "maxX" : 768,
+    "minY" : 125,
+    "maxY" : 202,
+    "prop" : {
+      "x" : 341,
+      "y" : 156,
+      "width" : 64,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 353,
+      "y" : 160
+    },
+    "connectors" : [ {
+      "edgeId" : 677,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 411,
+          "y" : 179
+        },
+        "to" : {
+          "x" : 482,
+          "y" : 202
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 697,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 411,
+          "y" : 164
+        },
+        "to" : {
+          "x" : 651,
+          "y" : 125
+        }
+      }, {
+        "from" : {
+          "x" : 651,
+          "y" : 125
+        },
+        "to" : {
+          "x" : 768,
+          "y" : 194
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 417,
+          "y" : 159
+        },
+        "b" : {
+          "x" : 411,
+          "y" : 164
+        },
+        "c" : {
+          "x" : 418,
+          "y" : 167
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 681,
+    "reactomeId" : 68819,
+    "displayName" : "26S proteasome",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 402,
+      "y" : 119
+    },
+    "minX" : 351,
+    "maxX" : 768,
+    "minY" : 75,
+    "maxY" : 202,
+    "prop" : {
+      "x" : 351,
+      "y" : 108,
+      "width" : 103,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 351,
+      "y" : 109
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 677,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 412,
+          "y" : 133
+        },
+        "to" : {
+          "x" : 482,
+          "y" : 202
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 697,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 457,
+          "y" : 110
+        },
+        "to" : {
+          "x" : 674,
+          "y" : 75
+        }
+      }, {
+        "from" : {
+          "x" : 674,
+          "y" : 75
+        },
+        "to" : {
+          "x" : 768,
+          "y" : 194
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 463,
+          "y" : 105
+        },
+        "b" : {
+          "x" : 457,
+          "y" : 110
+        },
+        "c" : {
+          "x" : 464,
+          "y" : 113
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 298,
+    "reactomeId" : 8955216,
+    "displayName" : "CRL5 E3 ubiquitin ligase:COMMDs:CCDC22",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1349,
+      "y" : 258
+    },
+    "minX" : 1277,
+    "maxX" : 1533,
+    "minY" : 233,
+    "maxY" : 406,
+    "prop" : {
+      "x" : 1277,
+      "y" : 233,
+      "width" : 145,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1292,
+      "y" : 234
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1380,
+          "y" : 286
+        },
+        "to" : {
+          "x" : 1533,
+          "y" : 406
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 682,
+    "reactomeId" : 8956137,
+    "displayName" : "NEDD8,UBD:NUB1:26S proteasome",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 620,
+      "y" : 199
+    },
+    "minX" : 554,
+    "maxX" : 687,
+    "minY" : 178,
+    "maxY" : 220,
+    "prop" : {
+      "x" : 554,
+      "y" : 178,
+      "width" : 133,
+      "height" : 42
+    },
+    "textPosition" : {
+      "x" : 561,
+      "y" : 185
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 677,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 697,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 683,
+    "reactomeId" : 1234106,
+    "displayName" : "hydroxyPro-HIF-alpha",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2662,
+      "y" : 806
+    },
+    "minX" : 2609,
+    "maxX" : 2715,
+    "minY" : 788,
+    "maxY" : 881,
+    "prop" : {
+      "x" : 2609,
+      "y" : 788,
+      "width" : 106,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2609,
+      "y" : 788
+    },
+    "connectors" : [ {
+      "edgeId" : 619,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2671,
+          "y" : 830
+        },
+        "to" : {
+          "x" : 2703,
+          "y" : 881
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 44,
+    "reactomeId" : 8951627,
+    "displayName" : "AcM-UBE2M",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 892,
+      "y" : 709
+    },
+    "minX" : 852,
+    "maxX" : 2077,
+    "minY" : 687,
+    "maxY" : 1276,
+    "prop" : {
+      "x" : 852,
+      "y" : 695,
+      "width" : 81,
+      "height" : 28
+    },
+    "innerProp" : {
+      "x" : 852,
+      "y" : 695,
+      "width" : 81,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 853,
+      "y" : 698
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 8951628,
+      "label" : "Ac",
+      "description" : "N-acetyl-L-methionine at 1",
+      "shape" : {
+        "a" : {
+          "x" : 875,
+          "y" : 717
+        },
+        "b" : {
+          "x" : 887,
+          "y" : 729
+        },
+        "s" : "Ac",
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 933,
+          "y" : 695
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 92,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 936,
+          "y" : 712
+        },
+        "to" : {
+          "x" : 1434,
+          "y" : 757
+        }
+      }, {
+        "from" : {
+          "x" : 1434,
+          "y" : 757
+        },
+        "to" : {
+          "x" : 1888,
+          "y" : 743
+        }
+      }, {
+        "from" : {
+          "x" : 1888,
+          "y" : 743
+        },
+        "to" : {
+          "x" : 1944,
+          "y" : 687
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 943,
+          "y" : 709
+        },
+        "b" : {
+          "x" : 936,
+          "y" : 712
+        },
+        "c" : {
+          "x" : 943,
+          "y" : 717
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 610,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 906,
+          "y" : 726
+        },
+        "to" : {
+          "x" : 1467,
+          "y" : 1276
+        }
+      }, {
+        "from" : {
+          "x" : 1467,
+          "y" : 1276
+        },
+        "to" : {
+          "x" : 2077,
+          "y" : 1276
+        }
+      }, {
+        "from" : {
+          "x" : 2077,
+          "y" : 1276
+        },
+        "to" : {
+          "x" : 2070,
+          "y" : 1203
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 914,
+          "y" : 728
+        },
+        "b" : {
+          "x" : 906,
+          "y" : 726
+        },
+        "c" : {
+          "x" : 908,
+          "y" : 734
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 43,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 936,
+          "y" : 704
+        },
+        "to" : {
+          "x" : 1009,
+          "y" : 695
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 684,
+    "reactomeId" : 1234116,
+    "displayName" : "UBE2D1,2,3:Ubiquitin",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2934,
+      "y" : 939
+    },
+    "minX" : 2892,
+    "maxX" : 3071,
+    "minY" : 874,
+    "maxY" : 957,
+    "prop" : {
+      "x" : 2892,
+      "y" : 921,
+      "width" : 84,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2892,
+      "y" : 922
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 623,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2971,
+          "y" : 918
+        },
+        "to" : {
+          "x" : 3071,
+          "y" : 874
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 45,
+    "reactomeId" : 8951749,
+    "displayName" : "AcM-UBE2M:NEDD8-UBA3:NAE1:NEDD8",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1146,
+      "y" : 682
+    },
+    "minX" : 1082,
+    "maxX" : 1317,
+    "minY" : 610,
+    "maxY" : 707,
+    "prop" : {
+      "x" : 1082,
+      "y" : 657,
+      "width" : 129,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1082,
+      "y" : 658
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 43,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 58,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 58,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1186,
+          "y" : 654
+        },
+        "to" : {
+          "x" : 1262,
+          "y" : 610
+        }
+      }, {
+        "from" : {
+          "x" : 1262,
+          "y" : 610
+        },
+        "to" : {
+          "x" : 1311,
+          "y" : 670
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1313,
+          "y" : 673
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 47,
+    "reactomeId" : 8951623,
+    "displayName" : "AcM-UBE2F",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1054,
+      "y" : 333
+    },
+    "minX" : 1016,
+    "maxX" : 1861,
+    "minY" : 220,
+    "maxY" : 409,
+    "prop" : {
+      "x" : 1016,
+      "y" : 320,
+      "width" : 77,
+      "height" : 27
+    },
+    "innerProp" : {
+      "x" : 1016,
+      "y" : 320,
+      "width" : 77,
+      "height" : 21
+    },
+    "textPosition" : {
+      "x" : 1017,
+      "y" : 323
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 8951624,
+      "label" : "Ac",
+      "description" : "N-acetyl-L-methionine at 1",
+      "shape" : {
+        "a" : {
+          "x" : 1026,
+          "y" : 341
+        },
+        "b" : {
+          "x" : 1038,
+          "y" : 353
+        },
+        "s" : "Ac",
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1093,
+          "y" : 320
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 77,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1066,
+          "y" : 317
+        },
+        "to" : {
+          "x" : 1150,
+          "y" : 226
+        }
+      }, {
+        "from" : {
+          "x" : 1150,
+          "y" : 226
+        },
+        "to" : {
+          "x" : 1861,
+          "y" : 220
+        }
+      }, {
+        "from" : {
+          "x" : 1861,
+          "y" : 220
+        },
+        "to" : {
+          "x" : 1841,
+          "y" : 409
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1068,
+          "y" : 309
+        },
+        "b" : {
+          "x" : 1066,
+          "y" : 317
+        },
+        "c" : {
+          "x" : 1074,
+          "y" : 315
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 48,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1067,
+          "y" : 350
+        },
+        "to" : {
+          "x" : 1113,
+          "y" : 391
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 49,
+    "reactomeId" : 8951762,
+    "displayName" : "AcM-UBE2F:NEDD8-UBA3:NAE1:NEDD8",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1225,
+      "y" : 395
+    },
+    "minX" : 1164,
+    "maxX" : 1333,
+    "minY" : 341,
+    "maxY" : 423,
+    "prop" : {
+      "x" : 1164,
+      "y" : 367,
+      "width" : 122,
+      "height" : 56
+    },
+    "textPosition" : {
+      "x" : 1179,
+      "y" : 374
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 48,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 60,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 60,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1274,
+          "y" : 364
+        },
+        "to" : {
+          "x" : 1320,
+          "y" : 341
+        }
+      }, {
+        "from" : {
+          "x" : 1320,
+          "y" : 341
+        },
+        "to" : {
+          "x" : 1328,
+          "y" : 379
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1329,
+          "y" : 383
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 308,
+    "reactomeId" : 8955089,
+    "displayName" : "CAND1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1196,
+      "y" : 1479
+    },
+    "minX" : 1168,
+    "maxX" : 1576,
+    "minY" : 1404,
+    "maxY" : 1496,
+    "prop" : {
+      "x" : 1168,
+      "y" : 1468,
+      "width" : 56,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1171,
+      "y" : 1468
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1224,
+          "y" : 1468
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 307,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1204,
+          "y" : 1465
+        },
+        "to" : {
+          "x" : 1250,
+          "y" : 1411
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 310,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1227,
+          "y" : 1480
+        },
+        "to" : {
+          "x" : 1576,
+          "y" : 1496
+        }
+      }, {
+        "from" : {
+          "x" : 1576,
+          "y" : 1496
+        },
+        "to" : {
+          "x" : 1544,
+          "y" : 1404
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1234,
+          "y" : 1476
+        },
+        "b" : {
+          "x" : 1227,
+          "y" : 1480
+        },
+        "c" : {
+          "x" : 1234,
+          "y" : 1484
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 309,
+    "reactomeId" : 8955244,
+    "displayName" : "CRL4 E3 ubiquitin ligase:CAND1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1372,
+      "y" : 1413
+    },
+    "minX" : 1304,
+    "maxX" : 1470,
+    "minY" : 1395,
+    "maxY" : 1431,
+    "prop" : {
+      "x" : 1304,
+      "y" : 1395,
+      "width" : 137,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1315,
+      "y" : 1396
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 307,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 310,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1444,
+          "y" : 1409
+        },
+        "to" : {
+          "x" : 1470,
+          "y" : 1408
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 567,
+    "reactomeId" : 416968,
+    "displayName" : "COP9",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2873,
+      "y" : 611
+    },
+    "minX" : 2843,
+    "maxX" : 2911,
+    "minY" : 597,
+    "maxY" : 662,
+    "prop" : {
+      "x" : 2843,
+      "y" : 597,
+      "width" : 60,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 2853,
+      "y" : 604
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 566,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 2883,
+          "y" : 628
+        },
+        "to" : {
+          "x" : 2904,
+          "y" : 654
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 2907,
+          "y" : 658
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 312,
+    "reactomeId" : 8955268,
+    "displayName" : "CRL4 E3 ubiquitin ligase:COMMDs:CCDC22",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1658,
+      "y" : 1400
+    },
+    "minX" : 1544,
+    "maxX" : 1749,
+    "minY" : 1375,
+    "maxY" : 1426,
+    "prop" : {
+      "x" : 1596,
+      "y" : 1375,
+      "width" : 125,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 1601,
+      "y" : 1377
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 129,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1724,
+          "y" : 1406
+        },
+        "to" : {
+          "x" : 1749,
+          "y" : 1410
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 310,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1593,
+          "y" : 1402
+        },
+        "to" : {
+          "x" : 1544,
+          "y" : 1404
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1586,
+          "y" : 1406
+        },
+        "b" : {
+          "x" : 1593,
+          "y" : 1402
+        },
+        "c" : {
+          "x" : 1586,
+          "y" : 1398
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 440,
+    "reactomeId" : 8955646,
+    "displayName" : "COMMDs:CCDC22",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 710,
+      "y" : 1259
+    },
+    "minX" : 662,
+    "maxX" : 896,
+    "minY" : 1174,
+    "maxY" : 1277,
+    "prop" : {
+      "x" : 662,
+      "y" : 1241,
+      "width" : 96,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 678,
+      "y" : 1242
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 248,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 749,
+          "y" : 1238
+        },
+        "to" : {
+          "x" : 896,
+          "y" : 1174
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 568,
+    "reactomeId" : 8956021,
+    "displayName" : "NEDD8 CRL E3 ubiquitin ligases:COMMDs:CCDC22:DCUN1Ds",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2752,
+      "y" : 673
+    },
+    "minX" : 2674,
+    "maxX" : 2830,
+    "minY" : 635,
+    "maxY" : 711,
+    "prop" : {
+      "x" : 2674,
+      "y" : 635,
+      "width" : 156,
+      "height" : 76
+    },
+    "textPosition" : {
+      "x" : 2675,
+      "y" : 648
+    },
+    "connectors" : [ {
+      "edgeId" : 566,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 443,
+    "reactomeId" : 8955650,
+    "displayName" : "COMMDs:CCDC22",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1446,
+      "y" : 1460
+    },
+    "minX" : 1394,
+    "maxX" : 1499,
+    "minY" : 1408,
+    "maxY" : 1478,
+    "prop" : {
+      "x" : 1394,
+      "y" : 1442,
+      "width" : 105,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1414,
+      "y" : 1443
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 310,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1454,
+          "y" : 1439
+        },
+        "to" : {
+          "x" : 1470,
+          "y" : 1408
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 59,
+    "reactomeId" : 4419896,
+    "displayName" : "NEDD8-AcM-UBE2M",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1464,
+      "y" : 665
+    },
+    "minX" : 1357,
+    "maxX" : 1713,
+    "minY" : 643,
+    "maxY" : 1195,
+    "prop" : {
+      "x" : 1422,
+      "y" : 643,
+      "width" : 85,
+      "height" : 45
+    },
+    "textPosition" : {
+      "x" : 1425,
+      "y" : 653
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 89,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1510,
+          "y" : 665
+        },
+        "to" : {
+          "x" : 1622,
+          "y" : 668
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 607,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1474,
+          "y" : 691
+        },
+        "to" : {
+          "x" : 1713,
+          "y" : 1195
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 58,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1419,
+          "y" : 672
+        },
+        "to" : {
+          "x" : 1357,
+          "y" : 683
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1413,
+          "y" : 677
+        },
+        "b" : {
+          "x" : 1419,
+          "y" : 672
+        },
+        "c" : {
+          "x" : 1411,
+          "y" : 669
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 61,
+    "reactomeId" : 8951756,
+    "displayName" : "NEDD8-AcM-UBE2F",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1447,
+      "y" : 404
+    },
+    "minX" : 1366,
+    "maxX" : 1533,
+    "minY" : 383,
+    "maxY" : 425,
+    "prop" : {
+      "x" : 1406,
+      "y" : 383,
+      "width" : 82,
+      "height" : 42
+    },
+    "textPosition" : {
+      "x" : 1409,
+      "y" : 390
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1491,
+          "y" : 404
+        },
+        "to" : {
+          "x" : 1533,
+          "y" : 406
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 60,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1403,
+          "y" : 400
+        },
+        "to" : {
+          "x" : 1366,
+          "y" : 397
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1396,
+          "y" : 403
+        },
+        "b" : {
+          "x" : 1403,
+          "y" : 400
+        },
+        "c" : {
+          "x" : 1396,
+          "y" : 395
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 575,
+    "reactomeId" : 5697024,
+    "displayName" : "COP9 signalosome",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2392,
+      "y" : 1477
+    },
+    "minX" : 2337,
+    "maxX" : 2448,
+    "minY" : 1422,
+    "maxY" : 1495,
+    "prop" : {
+      "x" : 2337,
+      "y" : 1459,
+      "width" : 111,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2353,
+      "y" : 1460
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 574,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 2390,
+          "y" : 1456
+        },
+        "to" : {
+          "x" : 2389,
+          "y" : 1430
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 2389,
+          "y" : 1426
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 321,
+    "reactomeId" : 8955230,
+    "displayName" : "CRL1 E3 ubiquitin ligase:COMMDs:CCDC22",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1606,
+      "y" : 557
+    },
+    "minX" : 1529,
+    "maxX" : 2184,
+    "minY" : 36,
+    "maxY" : 668,
+    "prop" : {
+      "x" : 1529,
+      "y" : 530,
+      "width" : 154,
+      "height" : 55
+    },
+    "textPosition" : {
+      "x" : 1530,
+      "y" : 550
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 89,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1609,
+          "y" : 588
+        },
+        "to" : {
+          "x" : 1622,
+          "y" : 668
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 701,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1686,
+          "y" : 544
+        },
+        "to" : {
+          "x" : 2081,
+          "y" : 478
+        }
+      }, {
+        "from" : {
+          "x" : 2081,
+          "y" : 478
+        },
+        "to" : {
+          "x" : 2184,
+          "y" : 36
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 706,
+    "reactomeId" : 8956204,
+    "displayName" : "MyrG-DCUN1D3",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2047,
+      "y" : 31
+    },
+    "minX" : 1979,
+    "maxX" : 2184,
+    "minY" : 6,
+    "maxY" : 57,
+    "prop" : {
+      "x" : 1979,
+      "y" : 12,
+      "width" : 136,
+      "height" : 39
+    },
+    "innerProp" : {
+      "x" : 1979,
+      "y" : 12,
+      "width" : 136,
+      "height" : 33
+    },
+    "textPosition" : {
+      "x" : 1995,
+      "y" : 21
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 8956201,
+      "description" : "N-myristoylglycine at 2",
+      "shape" : {
+        "a" : {
+          "x" : 2050,
+          "y" : 45
+        },
+        "b" : {
+          "x" : 2062,
+          "y" : 57
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2115,
+          "y" : 12
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 922,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 701,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2118,
+          "y" : 33
+        },
+        "to" : {
+          "x" : 2184,
+          "y" : 36
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 707,
+    "reactomeId" : 8956203,
+    "displayName" : "CRL1 E3 ubiquitin ligase complex:MyrG-DCUN1D3",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2399,
+      "y" : 35
+    },
+    "minX" : 1907,
+    "maxX" : 2484,
+    "minY" : 5,
+    "maxY" : 679,
+    "prop" : {
+      "x" : 2314,
+      "y" : 5,
+      "width" : 170,
+      "height" : 61
+    },
+    "textPosition" : {
+      "x" : 2320,
+      "y" : 31
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 92,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 2381,
+          "y" : 69
+        },
+        "to" : {
+          "x" : 2147,
+          "y" : 487
+        }
+      }, {
+        "from" : {
+          "x" : 2147,
+          "y" : 487
+        },
+        "to" : {
+          "x" : 1909,
+          "y" : 676
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1907,
+          "y" : 673
+        },
+        "b" : {
+          "x" : 1911,
+          "y" : 679
+        },
+        "c" : {
+          "x" : 1909,
+          "y" : 676
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 701,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 587,
+    "reactomeId" : 8955926,
+    "displayName" : "NEDD8",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2524,
+      "y" : 1506
+    },
+    "minX" : 2466,
+    "maxX" : 2568,
+    "minY" : 1417,
+    "maxY" : 1521,
+    "prop" : {
+      "x" : 2486,
+      "y" : 1492,
+      "width" : 76,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 2499,
+      "y" : 1496
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2562,
+          "y" : 1492
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 574,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2514,
+          "y" : 1489
+        },
+        "to" : {
+          "x" : 2466,
+          "y" : 1417
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2507,
+          "y" : 1485
+        },
+        "b" : {
+          "x" : 2514,
+          "y" : 1489
+        },
+        "c" : {
+          "x" : 2513,
+          "y" : 1481
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 75,
+    "reactomeId" : 8952026,
+    "displayName" : "NEDD8-AcM-UBE2F:CRL5 E3 ubiquitin ligase:COMMDs:CCDC22:DCUN1Ds",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1689,
+      "y" : 407
+    },
+    "minX" : 1615,
+    "maxX" : 1803,
+    "minY" : 340,
+    "maxY" : 440,
+    "prop" : {
+      "x" : 1615,
+      "y" : 374,
+      "width" : 148,
+      "height" : 66
+    },
+    "textPosition" : {
+      "x" : 1625,
+      "y" : 377
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 77,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 77,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1724,
+          "y" : 371
+        },
+        "to" : {
+          "x" : 1761,
+          "y" : 340
+        }
+      }, {
+        "from" : {
+          "x" : 1761,
+          "y" : 340
+        },
+        "to" : {
+          "x" : 1797,
+          "y" : 396
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1799,
+          "y" : 399
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 78,
+    "reactomeId" : 8952024,
+    "displayName" : "NEDD8-CRL5 E3 ubiquitin ligase:COMMDs:CCDC22:DCUN1Ds",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1953,
+      "y" : 399
+    },
+    "minX" : 1841,
+    "maxX" : 2032,
+    "minY" : 375,
+    "maxY" : 424,
+    "prop" : {
+      "x" : 1875,
+      "y" : 375,
+      "width" : 157,
+      "height" : 49
+    },
+    "textPosition" : {
+      "x" : 1876,
+      "y" : 375
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 77,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1872,
+          "y" : 406
+        },
+        "to" : {
+          "x" : 1841,
+          "y" : 409
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1865,
+          "y" : 411
+        },
+        "b" : {
+          "x" : 1872,
+          "y" : 406
+        },
+        "c" : {
+          "x" : 1865,
+          "y" : 403
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 591,
+    "reactomeId" : 8956019,
+    "displayName" : "CRL E3 ubiquitin ligase complex:COMMDs:CCDC22:DCUN1Ds",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 3078,
+      "y" : 662
+    },
+    "minX" : 2958,
+    "maxX" : 3155,
+    "minY" : 631,
+    "maxY" : 693,
+    "prop" : {
+      "x" : 3001,
+      "y" : 631,
+      "width" : 154,
+      "height" : 62
+    },
+    "textPosition" : {
+      "x" : 3006,
+      "y" : 637
+    },
+    "connectors" : [ {
+      "edgeId" : 566,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2995,
+          "y" : 664
+        },
+        "to" : {
+          "x" : 2958,
+          "y" : 666
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2988,
+          "y" : 668
+        },
+        "b" : {
+          "x" : 2995,
+          "y" : 664
+        },
+        "c" : {
+          "x" : 2988,
+          "y" : 660
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 594,
+    "reactomeId" : 8955960,
+    "displayName" : "CRL4 E3 ubiquitin ligase:COMMDs:CCDC22:DCUN1D1,2,4,5",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2581,
+      "y" : 1417
+    },
+    "minX" : 2466,
+    "maxX" : 2648,
+    "minY" : 1382,
+    "maxY" : 1452,
+    "prop" : {
+      "x" : 2514,
+      "y" : 1382,
+      "width" : 134,
+      "height" : 70
+    },
+    "textPosition" : {
+      "x" : 2519,
+      "y" : 1389
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 574,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2511,
+          "y" : 1417
+        },
+        "to" : {
+          "x" : 2466,
+          "y" : 1417
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2504,
+          "y" : 1421
+        },
+        "b" : {
+          "x" : 2511,
+          "y" : 1417
+        },
+        "c" : {
+          "x" : 2504,
+          "y" : 1413
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 91,
+    "reactomeId" : 8952572,
+    "displayName" : "NEDD8-AcM-UBE2M:CRL1 E3 ubiquitin ligase:COMMDs:CCDC22:DCUN1Ds",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1768,
+      "y" : 664
+    },
+    "minX" : 1701,
+    "maxX" : 1898,
+    "minY" : 621,
+    "maxY" : 697,
+    "prop" : {
+      "x" : 1701,
+      "y" : 632,
+      "width" : 135,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1702,
+      "y" : 634
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 89,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 92,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 92,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1824,
+          "y" : 629
+        },
+        "to" : {
+          "x" : 1843,
+          "y" : 621
+        }
+      }, {
+        "from" : {
+          "x" : 1843,
+          "y" : 621
+        },
+        "to" : {
+          "x" : 1891,
+          "y" : 670
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1894,
+          "y" : 673
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 93,
+    "reactomeId" : 8952593,
+    "displayName" : "NEDD8-CRL1 E3 ubiquitin ligase:COMMDs:CCDC22:DCUN1Ds",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2044,
+      "y" : 665
+    },
+    "minX" : 1944,
+    "maxX" : 2103,
+    "minY" : 631,
+    "maxY" : 700,
+    "prop" : {
+      "x" : 1986,
+      "y" : 631,
+      "width" : 117,
+      "height" : 69
+    },
+    "textPosition" : {
+      "x" : 1986,
+      "y" : 637
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 92,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1983,
+          "y" : 677
+        },
+        "to" : {
+          "x" : 1944,
+          "y" : 687
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1977,
+          "y" : 683
+        },
+        "b" : {
+          "x" : 1983,
+          "y" : 677
+        },
+        "c" : {
+          "x" : 1975,
+          "y" : 675
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 608,
+    "reactomeId" : 8855013,
+    "displayName" : "CUL9:RBX1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1616,
+      "y" : 1242
+    },
+    "minX" : 1569,
+    "maxX" : 1713,
+    "minY" : 1195,
+    "maxY" : 1253,
+    "prop" : {
+      "x" : 1569,
+      "y" : 1231,
+      "width" : 95,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1580,
+      "y" : 1232
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 607,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1638,
+          "y" : 1228
+        },
+        "to" : {
+          "x" : 1713,
+          "y" : 1195
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 609,
+    "reactomeId" : 8955949,
+    "displayName" : "NEDD8-AcM-UBE2M:CUL9:RBX1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1859,
+      "y" : 1195
+    },
+    "minX" : 1792,
+    "maxX" : 2030,
+    "minY" : 1166,
+    "maxY" : 1217,
+    "prop" : {
+      "x" : 1792,
+      "y" : 1173,
+      "width" : 135,
+      "height" : 44
+    },
+    "textPosition" : {
+      "x" : 1793,
+      "y" : 1182
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 607,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 610,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 610,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1930,
+          "y" : 1179
+        },
+        "to" : {
+          "x" : 1989,
+          "y" : 1166
+        }
+      }, {
+        "from" : {
+          "x" : 1989,
+          "y" : 1166
+        },
+        "to" : {
+          "x" : 2023,
+          "y" : 1198
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 2026,
+          "y" : 1201
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 611,
+    "reactomeId" : 8955941,
+    "displayName" : "NEDD8-CUL9:RBX1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2199,
+      "y" : 1197
+    },
+    "minX" : 2070,
+    "maxX" : 2379,
+    "minY" : 1133,
+    "maxY" : 1215,
+    "prop" : {
+      "x" : 2129,
+      "y" : 1179,
+      "width" : 140,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2138,
+      "y" : 1194
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 610,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2126,
+          "y" : 1200
+        },
+        "to" : {
+          "x" : 2070,
+          "y" : 1203
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2119,
+          "y" : 1204
+        },
+        "b" : {
+          "x" : 2126,
+          "y" : 1200
+        },
+        "c" : {
+          "x" : 2119,
+          "y" : 1196
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 612,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 2272,
+          "y" : 1195
+        },
+        "to" : {
+          "x" : 2371,
+          "y" : 1194
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 2375,
+          "y" : 1194
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 617,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2235,
+          "y" : 1176
+        },
+        "to" : {
+          "x" : 2328,
+          "y" : 1133
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 613,
+    "reactomeId" : 113595,
+    "displayName" : "Ub",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2384,
+      "y" : 1303
+    },
+    "minX" : 2372,
+    "maxX" : 2397,
+    "minY" : 1244,
+    "maxY" : 1314,
+    "prop" : {
+      "x" : 2372,
+      "y" : 1292,
+      "width" : 25,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2372,
+      "y" : 1292
+    },
+    "connectors" : [ {
+      "edgeId" : 612,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2382,
+          "y" : 1286
+        },
+        "to" : {
+          "x" : 2376,
+          "y" : 1244
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 3,
+        "shape" : {
+          "a" : {
+            "x" : 2373,
+            "y" : 1259
+          },
+          "b" : {
+            "x" : 2385,
+            "y" : 1271
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 614,
+    "reactomeId" : 50851,
+    "displayName" : "BIRC5",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2313,
+      "y" : 1253
+    },
+    "minX" : 2283,
+    "maxX" : 2376,
+    "minY" : 1234,
+    "maxY" : 1266,
+    "prop" : {
+      "x" : 2283,
+      "y" : 1240,
+      "width" : 61,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 2292,
+      "y" : 1242
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2344,
+          "y" : 1240
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 612,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2347,
+          "y" : 1248
+        },
+        "to" : {
+          "x" : 2376,
+          "y" : 1244
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 615,
+    "reactomeId" : 8955933,
+    "displayName" : "ub-BIRC5",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2472,
+      "y" : 1181
+    },
+    "minX" : 2440,
+    "maxX" : 2511,
+    "minY" : 1164,
+    "maxY" : 1198,
+    "prop" : {
+      "x" : 2440,
+      "y" : 1170,
+      "width" : 65,
+      "height" : 22
+    },
+    "innerProp" : {
+      "x" : 2440,
+      "y" : 1170,
+      "width" : 65,
+      "height" : 16
+    },
+    "textPosition" : {
+      "x" : 2440,
+      "y" : 1170
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 8955932,
+      "description" : "ubiquitinylated lysine (polyubiquitin chain [cytosol]) at unknown position",
+      "shape" : {
+        "a" : {
+          "x" : 2446,
+          "y" : 1186
+        },
+        "b" : {
+          "x" : 2458,
+          "y" : 1198
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2505,
+          "y" : 1170
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 612,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 616,
+    "reactomeId" : 8955943,
+    "displayName" : "NEDD8-CUL9:RBX1:CUL7:CCDC8:OBSL1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2448,
+      "y" : 1116
+    },
+    "minX" : 2385,
+    "maxX" : 2512,
+    "minY" : 1098,
+    "maxY" : 1189,
+    "prop" : {
+      "x" : 2385,
+      "y" : 1098,
+      "width" : 127,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2385,
+      "y" : 1099
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 612,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 2433,
+          "y" : 1137
+        },
+        "to" : {
+          "x" : 2393,
+          "y" : 1187
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2390,
+          "y" : 1185
+        },
+        "b" : {
+          "x" : 2396,
+          "y" : 1189
+        },
+        "c" : {
+          "x" : 2393,
+          "y" : 1187
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 617,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 618,
+    "reactomeId" : 8955945,
+    "displayName" : "CUL7:CCDC8:OBSL1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2227,
+      "y" : 1134
+    },
+    "minX" : 2179,
+    "maxX" : 2328,
+    "minY" : 1116,
+    "maxY" : 1153,
+    "prop" : {
+      "x" : 2179,
+      "y" : 1116,
+      "width" : 97,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 2184,
+      "y" : 1118
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 617,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2279,
+          "y" : 1133
+        },
+        "to" : {
+          "x" : 2328,
+          "y" : 1133
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 621,
+    "reactomeId" : 8956074,
+    "displayName" : "RBX1:NEDD8-CUL2:EloB,C:VHL:COMMDs:CCDC22:DCUN1D1,2,4,5",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2577,
+      "y" : 872
+    },
+    "minX" : 2493,
+    "maxX" : 2776,
+    "minY" : 841,
+    "maxY" : 972,
+    "prop" : {
+      "x" : 2493,
+      "y" : 841,
+      "width" : 168,
+      "height" : 62
+    },
+    "textPosition" : {
+      "x" : 2494,
+      "y" : 854
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 619,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2664,
+          "y" : 878
+        },
+        "to" : {
+          "x" : 2703,
+          "y" : 881
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 628,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2638,
+          "y" : 906
+        },
+        "to" : {
+          "x" : 2776,
+          "y" : 972
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 622,
+    "reactomeId" : 8956082,
+    "displayName" : "RBX1:NEDD8-CUL2:EloB,C:VHL:COMMDs:CCDC22:DCUN1D1,2,4,5:hydroxyPro-HIF-alpha",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2917,
+      "y" : 870
+    },
+    "minX" : 2810,
+    "maxX" : 3114,
+    "minY" : 795,
+    "maxY" : 899,
+    "prop" : {
+      "x" : 2810,
+      "y" : 842,
+      "width" : 215,
+      "height" : 57
+    },
+    "textPosition" : {
+      "x" : 2821,
+      "y" : 850
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 619,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 623,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 3028,
+          "y" : 872
+        },
+        "to" : {
+          "x" : 3071,
+          "y" : 874
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 623,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 2981,
+          "y" : 839
+        },
+        "to" : {
+          "x" : 3088,
+          "y" : 795
+        }
+      }, {
+        "from" : {
+          "x" : 3088,
+          "y" : 795
+        },
+        "to" : {
+          "x" : 3109,
+          "y" : 861
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 3110,
+          "y" : 865
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 625,
+    "reactomeId" : 1234120,
+    "displayName" : "UBE2D1,2,3",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 3211,
+      "y" : 788
+    },
+    "minX" : 3149,
+    "maxX" : 3263,
+    "minY" : 776,
+    "maxY" : 874,
+    "prop" : {
+      "x" : 3160,
+      "y" : 776,
+      "width" : 103,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 3172,
+      "y" : 777
+    },
+    "connectors" : [ {
+      "edgeId" : 623,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 3202,
+          "y" : 806
+        },
+        "to" : {
+          "x" : 3149,
+          "y" : 874
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 3201,
+          "y" : 814
+        },
+        "b" : {
+          "x" : 3202,
+          "y" : 806
+        },
+        "c" : {
+          "x" : 3195,
+          "y" : 809
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 626,
+    "reactomeId" : 8956079,
+    "displayName" : "ub-hydroxyPro-HIF-alpha:VHL:EloB:EloC:NEDD8-CUL2:RBX1:COMMDs:CCDC22:DCUN1D1,2,4,5",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 3279,
+      "y" : 877
+    },
+    "minX" : 3149,
+    "maxX" : 3377,
+    "minY" : 842,
+    "maxY" : 913,
+    "prop" : {
+      "x" : 3181,
+      "y" : 842,
+      "width" : 196,
+      "height" : 71
+    },
+    "textPosition" : {
+      "x" : 3184,
+      "y" : 850
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 623,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 3178,
+          "y" : 874
+        },
+        "to" : {
+          "x" : 3149,
+          "y" : 874
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 3171,
+          "y" : 878
+        },
+        "b" : {
+          "x" : 3178,
+          "y" : 874
+        },
+        "c" : {
+          "x" : 3171,
+          "y" : 870
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 627,
+    "reactomeId" : 8956077,
+    "displayName" : "RBX1:NEDD8-CUL2:EloB,C:VHL:COMMDs:CCDC22:DCUN1D1,2,4,5:UBXN7",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 3131,
+      "y" : 987
+    },
+    "minX" : 3048,
+    "maxX" : 3215,
+    "minY" : 884,
+    "maxY" : 1016,
+    "prop" : {
+      "x" : 3048,
+      "y" : 959,
+      "width" : 167,
+      "height" : 57
+    },
+    "textPosition" : {
+      "x" : 3048,
+      "y" : 967
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 623,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 3126,
+          "y" : 956
+        },
+        "to" : {
+          "x" : 3115,
+          "y" : 885
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 3111,
+          "y" : 886
+        },
+        "b" : {
+          "x" : 3119,
+          "y" : 884
+        },
+        "c" : {
+          "x" : 3115,
+          "y" : 885
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 628,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 629,
+    "reactomeId" : 8956071,
+    "displayName" : "UBXN7",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2707,
+      "y" : 986
+    },
+    "minX" : 2676,
+    "maxX" : 2776,
+    "minY" : 968,
+    "maxY" : 998,
+    "prop" : {
+      "x" : 2676,
+      "y" : 974,
+      "width" : 63,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 2683,
+      "y" : 975
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2739,
+          "y" : 974
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 628,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2742,
+          "y" : 979
+        },
+        "to" : {
+          "x" : 2776,
+          "y" : 972
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 245,
+    "reactomeId" : 5691146,
+    "displayName" : "CAND1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 532,
+      "y" : 1130
+    },
+    "minX" : 507,
+    "maxX" : 1035,
+    "minY" : 1113,
+    "maxY" : 1171,
+    "prop" : {
+      "x" : 507,
+      "y" : 1119,
+      "width" : 51,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 507,
+      "y" : 1119
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 558,
+          "y" : 1119
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 243,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 555,
+          "y" : 1144
+        },
+        "to" : {
+          "x" : 614,
+          "y" : 1169
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 248,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 561,
+          "y" : 1129
+        },
+        "to" : {
+          "x" : 974,
+          "y" : 1120
+        }
+      }, {
+        "from" : {
+          "x" : 974,
+          "y" : 1120
+        },
+        "to" : {
+          "x" : 1035,
+          "y" : 1171
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 568,
+          "y" : 1125
+        },
+        "b" : {
+          "x" : 561,
+          "y" : 1129
+        },
+        "c" : {
+          "x" : 568,
+          "y" : 1133
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 246,
+    "reactomeId" : 8955224,
+    "displayName" : "CRL E3 ubiquitin ligase:CAND1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 755,
+      "y" : 1178
+    },
+    "minX" : 705,
+    "maxX" : 896,
+    "minY" : 1153,
+    "maxY" : 1203,
+    "prop" : {
+      "x" : 705,
+      "y" : 1153,
+      "width" : 101,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 706,
+      "y" : 1154
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 243,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 248,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 809,
+          "y" : 1176
+        },
+        "to" : {
+          "x" : 896,
+          "y" : 1174
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 253,
+    "reactomeId" : 8952553,
+    "displayName" : "DCUN1Ds",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1445,
+      "y" : 535
+    },
+    "minX" : 1396,
+    "maxX" : 1622,
+    "minY" : 406,
+    "maxY" : 668,
+    "prop" : {
+      "x" : 1396,
+      "y" : 524,
+      "width" : 99,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 1413,
+      "y" : 525
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1452,
+          "y" : 518
+        },
+        "to" : {
+          "x" : 1533,
+          "y" : 406
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 89,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1460,
+          "y" : 553
+        },
+        "to" : {
+          "x" : 1622,
+          "y" : 668
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 129,
+    "reactomeId" : 8952639,
+    "displayName" : "NEDD8:AcM-UBE2M binds CRL4 E3 ubiquitin ligase complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1781,
+      "y" : 1413
+    },
+    "minX" : 1749,
+    "maxX" : 1856,
+    "minY" : 1408,
+    "maxY" : 1418,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1749,
+        "y" : 1410
+      },
+      "to" : {
+        "x" : 1781,
+        "y" : 1413
+      }
+    }, {
+      "from" : {
+        "x" : 1781,
+        "y" : 1413
+      },
+      "to" : {
+        "x" : 1856,
+        "y" : 1411
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1849,
+        "y" : 1415
+      },
+      "b" : {
+        "x" : 1856,
+        "y" : 1411
+      },
+      "c" : {
+        "x" : 1849,
+        "y" : 1407
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1781,
+        "y" : 1413
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 275,
+      "points" : [ {
+        "x" : 1726,
+        "y" : 1484
+      } ]
+    }, {
+      "id" : 131,
+      "points" : [ {
+        "x" : 1846,
+        "y" : 1480
+      } ]
+    }, {
+      "id" : 312,
+      "points" : [ {
+        "x" : 1724,
+        "y" : 1406
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 132
+    } ]
+  }, {
+    "id" : 133,
+    "reactomeId" : 8952638,
+    "displayName" : "AcM-UBE2M transfers NEDD8 to CRL4 E3 ubiquitin ligase complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2061,
+      "y" : 1414
+    },
+    "minX" : 1995,
+    "maxX" : 2093,
+    "minY" : 1408,
+    "maxY" : 1420,
+    "segments" : [ {
+      "from" : {
+        "x" : 1995,
+        "y" : 1411
+      },
+      "to" : {
+        "x" : 2061,
+        "y" : 1414
+      }
+    }, {
+      "from" : {
+        "x" : 2061,
+        "y" : 1414
+      },
+      "to" : {
+        "x" : 2093,
+        "y" : 1413
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 2055,
+        "y" : 1408
+      },
+      "b" : {
+        "x" : 2067,
+        "y" : 1420
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 132
+    } ],
+    "outputs" : [ {
+      "id" : 136,
+      "points" : [ {
+        "x" : 2162,
+        "y" : 1412
+      } ]
+    }, {
+      "id" : 134,
+      "points" : [ {
+        "x" : 2134,
+        "y" : 1453
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 132,
+      "points" : [ {
+        "x" : 1995,
+        "y" : 1388
+      }, {
+        "x" : 2028,
+        "y" : 1377
+      } ]
+    } ]
+  }, {
+    "id" : 9,
+    "reactomeId" : 5690808,
+    "displayName" : "UCHL3, SENP8 cleave NEDD8",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 230,
+      "y" : 477
+    },
+    "minX" : 203,
+    "maxX" : 254,
+    "minY" : 471,
+    "maxY" : 483,
+    "segments" : [ {
+      "from" : {
+        "x" : 203,
+        "y" : 479
+      },
+      "to" : {
+        "x" : 230,
+        "y" : 477
+      }
+    }, {
+      "from" : {
+        "x" : 230,
+        "y" : 477
+      },
+      "to" : {
+        "x" : 254,
+        "y" : 477
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 224,
+        "y" : 471
+      },
+      "b" : {
+        "x" : 236,
+        "y" : 483
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 10,
+      "points" : [ {
+        "x" : 160,
+        "y" : 510
+      } ]
+    }, {
+      "id" : 11,
+      "points" : [ {
+        "x" : 178,
+        "y" : 476
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 12,
+      "points" : [ {
+        "x" : 304,
+        "y" : 477
+      } ]
+    }, {
+      "id" : 13,
+      "points" : [ {
+        "x" : 280,
+        "y" : 505
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 11,
+      "points" : [ {
+        "x" : 163,
+        "y" : 443
+      }, {
+        "x" : 184,
+        "y" : 433
+      } ]
+    } ]
+  }, {
+    "id" : 73,
+    "reactomeId" : 8952039,
+    "displayName" : "NEDD8:AcM-UBE2F binds CRL5 E3 ubiquitin ligase complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1576,
+      "y" : 404
+    },
+    "minX" : 1533,
+    "maxX" : 1612,
+    "minY" : 399,
+    "maxY" : 409,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1533,
+        "y" : 406
+      },
+      "to" : {
+        "x" : 1576,
+        "y" : 404
+      }
+    }, {
+      "from" : {
+        "x" : 1576,
+        "y" : 404
+      },
+      "to" : {
+        "x" : 1612,
+        "y" : 405
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1605,
+        "y" : 409
+      },
+      "b" : {
+        "x" : 1612,
+        "y" : 405
+      },
+      "c" : {
+        "x" : 1605,
+        "y" : 401
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1576,
+        "y" : 404
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 253,
+      "points" : [ {
+        "x" : 1452,
+        "y" : 518
+      } ]
+    }, {
+      "id" : 61,
+      "points" : [ {
+        "x" : 1491,
+        "y" : 404
+      } ]
+    }, {
+      "id" : 298,
+      "points" : [ {
+        "x" : 1380,
+        "y" : 286
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 75
+    } ]
+  }, {
+    "id" : 77,
+    "reactomeId" : 8952044,
+    "displayName" : "AcM-UBE2F transfers NEDD8 to CRL5 E3 ubiquitin ligase complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1806,
+      "y" : 409
+    },
+    "minX" : 1766,
+    "maxX" : 1841,
+    "minY" : 403,
+    "maxY" : 415,
+    "segments" : [ {
+      "from" : {
+        "x" : 1766,
+        "y" : 408
+      },
+      "to" : {
+        "x" : 1806,
+        "y" : 409
+      }
+    }, {
+      "from" : {
+        "x" : 1806,
+        "y" : 409
+      },
+      "to" : {
+        "x" : 1841,
+        "y" : 409
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1800,
+        "y" : 403
+      },
+      "b" : {
+        "x" : 1812,
+        "y" : 415
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 75
+    } ],
+    "outputs" : [ {
+      "id" : 78,
+      "points" : [ {
+        "x" : 1872,
+        "y" : 406
+      } ]
+    }, {
+      "id" : 47,
+      "points" : [ {
+        "x" : 1066,
+        "y" : 317
+      }, {
+        "x" : 1150,
+        "y" : 226
+      }, {
+        "x" : 1861,
+        "y" : 220
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 75,
+      "points" : [ {
+        "x" : 1724,
+        "y" : 371
+      }, {
+        "x" : 1761,
+        "y" : 340
+      } ]
+    } ]
+  }, {
+    "id" : 17,
+    "reactomeId" : 8951644,
+    "displayName" : "Release of mature NEDD8",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 444,
+      "y" : 471
+    },
+    "minX" : 423,
+    "maxX" : 468,
+    "minY" : 466,
+    "maxY" : 484,
+    "reactionType" : "Dissociation",
+    "segments" : [ {
+      "from" : {
+        "x" : 423,
+        "y" : 472
+      },
+      "to" : {
+        "x" : 444,
+        "y" : 471
+      }
+    }, {
+      "from" : {
+        "x" : 444,
+        "y" : 471
+      },
+      "to" : {
+        "x" : 468,
+        "y" : 484
+      }
+    } ],
+    "reactionShape" : {
+      "c" : {
+        "x" : 444,
+        "y" : 471
+      },
+      "r" : 5,
+      "r1" : 3,
+      "type" : "DOUBLE_CIRCLE",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 12
+    } ],
+    "outputs" : [ {
+      "id" : 19,
+      "points" : [ {
+        "x" : 485,
+        "y" : 497
+      } ]
+    }, {
+      "id" : 22,
+      "points" : [ {
+        "x" : 512,
+        "y" : 423
+      } ]
+    } ]
+  }, {
+    "id" : 89,
+    "reactomeId" : 8952620,
+    "displayName" : "NEDD8:AcM-UBE2M binds CRL1 E3 ubiquitin ligase complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1662,
+      "y" : 671
+    },
+    "minX" : 1622,
+    "maxX" : 1698,
+    "minY" : 666,
+    "maxY" : 676,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1622,
+        "y" : 668
+      },
+      "to" : {
+        "x" : 1662,
+        "y" : 671
+      }
+    }, {
+      "from" : {
+        "x" : 1662,
+        "y" : 671
+      },
+      "to" : {
+        "x" : 1698,
+        "y" : 668
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1691,
+        "y" : 673
+      },
+      "b" : {
+        "x" : 1698,
+        "y" : 668
+      },
+      "c" : {
+        "x" : 1691,
+        "y" : 665
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1662,
+        "y" : 671
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 59,
+      "points" : [ {
+        "x" : 1510,
+        "y" : 665
+      } ]
+    }, {
+      "id" : 253,
+      "points" : [ {
+        "x" : 1460,
+        "y" : 553
+      } ]
+    }, {
+      "id" : 321,
+      "points" : [ {
+        "x" : 1609,
+        "y" : 588
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 91
+    } ]
+  }, {
+    "id" : 922,
+    "reactomeId" : 8956234,
+    "displayName" : "Translation of DCUN1D3 is inhibited by PUM2",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1931,
+      "y" : 46
+    },
+    "minX" : 1793,
+    "maxX" : 1976,
+    "minY" : 39,
+    "maxY" : 74,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1793,
+        "y" : 74
+      },
+      "to" : {
+        "x" : 1931,
+        "y" : 46
+      }
+    }, {
+      "from" : {
+        "x" : 1931,
+        "y" : 46
+      },
+      "to" : {
+        "x" : 1976,
+        "y" : 39
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1970,
+        "y" : 44
+      },
+      "b" : {
+        "x" : 1976,
+        "y" : 39
+      },
+      "c" : {
+        "x" : 1969,
+        "y" : 36
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1925,
+        "y" : 40
+      },
+      "b" : {
+        "x" : 1937,
+        "y" : 52
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 926
+    } ],
+    "outputs" : [ {
+      "id" : 706
+    } ],
+    "inhibitors" : [ {
+      "id" : 924,
+      "points" : [ {
+        "x" : 1954,
+        "y" : 90
+      } ]
+    } ]
+  }, {
+    "id" : 26,
+    "reactomeId" : 8951648,
+    "displayName" : "NEDD8 covalently binds catalytic cysteine of UBA3:NAE1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 664,
+      "y" : 496
+    },
+    "minX" : 636,
+    "maxX" : 690,
+    "minY" : 491,
+    "maxY" : 501,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 636,
+        "y" : 496
+      },
+      "to" : {
+        "x" : 664,
+        "y" : 496
+      }
+    }, {
+      "from" : {
+        "x" : 664,
+        "y" : 496
+      },
+      "to" : {
+        "x" : 690,
+        "y" : 495
+      }
+    } ],
+    "reactionShape" : {
+      "c" : {
+        "x" : 664,
+        "y" : 496
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 27,
+      "points" : [ {
+        "x" : 608,
+        "y" : 459
+      } ]
+    }, {
+      "id" : 28,
+      "points" : [ {
+        "x" : 596,
+        "y" : 548
+      } ]
+    }, {
+      "id" : 22,
+      "points" : [ {
+        "x" : 534,
+        "y" : 423
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 29,
+      "points" : [ {
+        "x" : 682,
+        "y" : 458
+      } ]
+    }, {
+      "id" : 30,
+      "points" : [ {
+        "x" : 718,
+        "y" : 475
+      } ]
+    }, {
+      "id" : 31,
+      "points" : [ {
+        "x" : 751,
+        "y" : 498
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 28,
+      "points" : [ {
+        "x" : 624,
+        "y" : 548
+      }, {
+        "x" : 672,
+        "y" : 536
+      } ]
+    } ]
+  }, {
+    "id" : 92,
+    "reactomeId" : 8952618,
+    "displayName" : "AcM-UBE2M transfers NEDD8 to CRL1 E3 ubiquitin ligase complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1902,
+      "y" : 682
+    },
+    "minX" : 1839,
+    "maxX" : 1944,
+    "minY" : 673,
+    "maxY" : 688,
+    "segments" : [ {
+      "from" : {
+        "x" : 1839,
+        "y" : 673
+      },
+      "to" : {
+        "x" : 1902,
+        "y" : 682
+      }
+    }, {
+      "from" : {
+        "x" : 1902,
+        "y" : 682
+      },
+      "to" : {
+        "x" : 1944,
+        "y" : 687
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1896,
+        "y" : 676
+      },
+      "b" : {
+        "x" : 1908,
+        "y" : 688
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 91
+    } ],
+    "outputs" : [ {
+      "id" : 44,
+      "points" : [ {
+        "x" : 936,
+        "y" : 712
+      }, {
+        "x" : 1434,
+        "y" : 757
+      }, {
+        "x" : 1888,
+        "y" : 743
+      } ]
+    }, {
+      "id" : 93,
+      "points" : [ {
+        "x" : 1983,
+        "y" : 677
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 91,
+      "points" : [ {
+        "x" : 1824,
+        "y" : 629
+      }, {
+        "x" : 1843,
+        "y" : 621
+      } ]
+    } ],
+    "inhibitors" : [ {
+      "id" : 707,
+      "points" : [ {
+        "x" : 2381,
+        "y" : 69
+      }, {
+        "x" : 2147,
+        "y" : 487
+      } ]
+    } ]
+  }, {
+    "id" : 607,
+    "reactomeId" : 8956031,
+    "displayName" : "NEDD8:AcM-UBE2M binds CUL9:RBX1 ubiquitin ligase complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1751,
+      "y" : 1194
+    },
+    "minX" : 1713,
+    "maxX" : 1789,
+    "minY" : 1189,
+    "maxY" : 1199,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1713,
+        "y" : 1195
+      },
+      "to" : {
+        "x" : 1751,
+        "y" : 1194
+      }
+    }, {
+      "from" : {
+        "x" : 1751,
+        "y" : 1194
+      },
+      "to" : {
+        "x" : 1789,
+        "y" : 1194
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1782,
+        "y" : 1198
+      },
+      "b" : {
+        "x" : 1789,
+        "y" : 1194
+      },
+      "c" : {
+        "x" : 1782,
+        "y" : 1190
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1751,
+        "y" : 1194
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 59,
+      "points" : [ {
+        "x" : 1474,
+        "y" : 691
+      } ]
+    }, {
+      "id" : 608,
+      "points" : [ {
+        "x" : 1638,
+        "y" : 1228
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 609
+    } ]
+  }, {
+    "id" : 610,
+    "reactomeId" : 8956025,
+    "displayName" : "AcM-UBE2M transfers NEDD8 to CUL9:RBX1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2035,
+      "y" : 1209
+    },
+    "minX" : 1930,
+    "maxX" : 2070,
+    "minY" : 1200,
+    "maxY" : 1215,
+    "segments" : [ {
+      "from" : {
+        "x" : 1930,
+        "y" : 1200
+      },
+      "to" : {
+        "x" : 2035,
+        "y" : 1209
+      }
+    }, {
+      "from" : {
+        "x" : 2035,
+        "y" : 1209
+      },
+      "to" : {
+        "x" : 2070,
+        "y" : 1203
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 2029,
+        "y" : 1203
+      },
+      "b" : {
+        "x" : 2041,
+        "y" : 1215
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 609
+    } ],
+    "outputs" : [ {
+      "id" : 44,
+      "points" : [ {
+        "x" : 906,
+        "y" : 726
+      }, {
+        "x" : 1467,
+        "y" : 1276
+      }, {
+        "x" : 2077,
+        "y" : 1276
+      } ]
+    }, {
+      "id" : 611,
+      "points" : [ {
+        "x" : 2126,
+        "y" : 1200
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 609,
+      "points" : [ {
+        "x" : 1930,
+        "y" : 1179
+      }, {
+        "x" : 1989,
+        "y" : 1166
+      } ]
+    } ]
+  }, {
+    "id" : 35,
+    "reactomeId" : 8951656,
+    "displayName" : "NEDD8-UBA3:NAE1 binds a second NEDD8",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 956,
+      "y" : 497
+    },
+    "minX" : 933,
+    "maxX" : 980,
+    "minY" : 492,
+    "maxY" : 502,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 933,
+        "y" : 497
+      },
+      "to" : {
+        "x" : 956,
+        "y" : 497
+      }
+    }, {
+      "from" : {
+        "x" : 956,
+        "y" : 497
+      },
+      "to" : {
+        "x" : 980,
+        "y" : 497
+      }
+    } ],
+    "reactionShape" : {
+      "c" : {
+        "x" : 956,
+        "y" : 497
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 36,
+      "points" : [ {
+        "x" : 914,
+        "y" : 510
+      } ]
+    }, {
+      "id" : 22,
+      "points" : [ {
+        "x" : 548,
+        "y" : 408
+      }, {
+        "x" : 888,
+        "y" : 404
+      } ]
+    }, {
+      "id" : 31,
+      "points" : [ {
+        "x" : 870,
+        "y" : 499
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 29,
+      "points" : [ {
+        "x" : 704,
+        "y" : 439
+      }, {
+        "x" : 952,
+        "y" : 437
+      } ]
+    }, {
+      "id" : 37,
+      "points" : [ {
+        "x" : 1020,
+        "y" : 497
+      } ]
+    }, {
+      "id" : 30,
+      "points" : [ {
+        "x" : 758,
+        "y" : 465
+      }, {
+        "x" : 949,
+        "y" : 466
+      } ]
+    } ]
+  }, {
+    "id" : 612,
+    "reactomeId" : 8956026,
+    "displayName" : "CUL9:RBX1 ubiquitinates BIRC5",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2387,
+      "y" : 1194
+    },
+    "minX" : 2376,
+    "maxX" : 2437,
+    "minY" : 1185,
+    "maxY" : 1244,
+    "segments" : [ {
+      "from" : {
+        "x" : 2376,
+        "y" : 1244
+      },
+      "to" : {
+        "x" : 2387,
+        "y" : 1194
+      }
+    }, {
+      "from" : {
+        "x" : 2387,
+        "y" : 1194
+      },
+      "to" : {
+        "x" : 2437,
+        "y" : 1185
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2431,
+        "y" : 1190
+      },
+      "b" : {
+        "x" : 2437,
+        "y" : 1185
+      },
+      "c" : {
+        "x" : 2429,
+        "y" : 1182
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 2381,
+        "y" : 1188
+      },
+      "b" : {
+        "x" : 2393,
+        "y" : 1200
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 613,
+      "points" : [ {
+        "x" : 2382,
+        "y" : 1286
+      } ],
+      "stoichiometry" : 3
+    }, {
+      "id" : 614,
+      "points" : [ {
+        "x" : 2347,
+        "y" : 1248
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 615
+    } ],
+    "catalysts" : [ {
+      "id" : 611,
+      "points" : [ {
+        "x" : 2272,
+        "y" : 1195
+      } ]
+    } ],
+    "inhibitors" : [ {
+      "id" : 616,
+      "points" : [ {
+        "x" : 2433,
+        "y" : 1137
+      } ]
+    } ]
+  }, {
+    "id" : 677,
+    "reactomeId" : 8956140,
+    "displayName" : "NEDD8 and UBD bind NUB1 and the 26S proteasome",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 512,
+      "y" : 200
+    },
+    "minX" : 482,
+    "maxX" : 551,
+    "minY" : 195,
+    "maxY" : 205,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 482,
+        "y" : 202
+      },
+      "to" : {
+        "x" : 512,
+        "y" : 200
+      }
+    }, {
+      "from" : {
+        "x" : 512,
+        "y" : 200
+      },
+      "to" : {
+        "x" : 551,
+        "y" : 199
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 544,
+        "y" : 203
+      },
+      "b" : {
+        "x" : 551,
+        "y" : 199
+      },
+      "c" : {
+        "x" : 544,
+        "y" : 195
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 512,
+        "y" : 200
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 678,
+      "points" : [ {
+        "x" : 400,
+        "y" : 224
+      } ]
+    }, {
+      "id" : 680,
+      "points" : [ {
+        "x" : 411,
+        "y" : 179
+      } ]
+    }, {
+      "id" : 681,
+      "points" : [ {
+        "x" : 412,
+        "y" : 133
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 682
+    } ]
+  }, {
+    "id" : 617,
+    "reactomeId" : 8956050,
+    "displayName" : "NEDD8-CUL9:RBX1 binds CUL7:CCDC8:OBSL1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2357,
+      "y" : 1123
+    },
+    "minX" : 2328,
+    "maxX" : 2382,
+    "minY" : 1118,
+    "maxY" : 1133,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2328,
+        "y" : 1133
+      },
+      "to" : {
+        "x" : 2357,
+        "y" : 1123
+      }
+    }, {
+      "from" : {
+        "x" : 2357,
+        "y" : 1123
+      },
+      "to" : {
+        "x" : 2382,
+        "y" : 1120
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2376,
+        "y" : 1125
+      },
+      "b" : {
+        "x" : 2382,
+        "y" : 1120
+      },
+      "c" : {
+        "x" : 2375,
+        "y" : 1117
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2357,
+        "y" : 1123
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 611,
+      "points" : [ {
+        "x" : 2235,
+        "y" : 1176
+      } ]
+    }, {
+      "id" : 618,
+      "points" : [ {
+        "x" : 2279,
+        "y" : 1133
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 616
+    } ]
+  }, {
+    "id" : 619,
+    "reactomeId" : 8956103,
+    "displayName" : "VHL:EloB,C:NEDD8-CUL2:RBX1 complex binds hydroxyprolyl-HIF-alpha",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2743,
+      "y" : 884
+    },
+    "minX" : 2703,
+    "maxX" : 2807,
+    "minY" : 878,
+    "maxY" : 889,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2703,
+        "y" : 881
+      },
+      "to" : {
+        "x" : 2743,
+        "y" : 884
+      }
+    }, {
+      "from" : {
+        "x" : 2743,
+        "y" : 884
+      },
+      "to" : {
+        "x" : 2807,
+        "y" : 878
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2800,
+        "y" : 883
+      },
+      "b" : {
+        "x" : 2807,
+        "y" : 878
+      },
+      "c" : {
+        "x" : 2800,
+        "y" : 875
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2743,
+        "y" : 884
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 621,
+      "points" : [ {
+        "x" : 2664,
+        "y" : 878
+      } ]
+    }, {
+      "id" : 683,
+      "points" : [ {
+        "x" : 2671,
+        "y" : 830
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 622
+    } ]
+  }, {
+    "id" : 43,
+    "reactomeId" : 8951751,
+    "displayName" : "Doubly neddylated UBA3:NAE1 binds AcM-UBE2M",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1047,
+      "y" : 693
+    },
+    "minX" : 1009,
+    "maxX" : 1079,
+    "minY" : 688,
+    "maxY" : 698,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1009,
+        "y" : 695
+      },
+      "to" : {
+        "x" : 1047,
+        "y" : 693
+      }
+    }, {
+      "from" : {
+        "x" : 1047,
+        "y" : 693
+      },
+      "to" : {
+        "x" : 1079,
+        "y" : 689
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1073,
+        "y" : 694
+      },
+      "b" : {
+        "x" : 1079,
+        "y" : 689
+      },
+      "c" : {
+        "x" : 1072,
+        "y" : 686
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1047,
+        "y" : 693
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 37,
+      "points" : [ {
+        "x" : 1079,
+        "y" : 520
+      } ]
+    }, {
+      "id" : 44,
+      "points" : [ {
+        "x" : 936,
+        "y" : 704
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 45
+    } ]
+  }, {
+    "id" : 623,
+    "reactomeId" : 8956106,
+    "displayName" : "VHL:EloB,C:NEDD8-CUL2:RBX1 complex ubiquitinylates HIF-alpha",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 3114,
+      "y" : 876
+    },
+    "minX" : 3071,
+    "maxX" : 3149,
+    "minY" : 870,
+    "maxY" : 882,
+    "segments" : [ {
+      "from" : {
+        "x" : 3071,
+        "y" : 874
+      },
+      "to" : {
+        "x" : 3114,
+        "y" : 876
+      }
+    }, {
+      "from" : {
+        "x" : 3114,
+        "y" : 876
+      },
+      "to" : {
+        "x" : 3149,
+        "y" : 874
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 3108,
+        "y" : 870
+      },
+      "b" : {
+        "x" : 3120,
+        "y" : 882
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 684,
+      "points" : [ {
+        "x" : 2971,
+        "y" : 918
+      } ]
+    }, {
+      "id" : 622,
+      "points" : [ {
+        "x" : 3028,
+        "y" : 872
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 625,
+      "points" : [ {
+        "x" : 3202,
+        "y" : 806
+      } ]
+    }, {
+      "id" : 626,
+      "points" : [ {
+        "x" : 3178,
+        "y" : 874
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 622,
+      "points" : [ {
+        "x" : 2981,
+        "y" : 839
+      }, {
+        "x" : 3088,
+        "y" : 795
+      } ]
+    } ],
+    "inhibitors" : [ {
+      "id" : 627,
+      "points" : [ {
+        "x" : 3126,
+        "y" : 956
+      } ]
+    } ]
+  }, {
+    "id" : 48,
+    "reactomeId" : 8951766,
+    "displayName" : "Doubly neddylated UBA3:NAE1 binds AcM-UBE2F",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1129,
+      "y" : 388
+    },
+    "minX" : 1113,
+    "maxX" : 1161,
+    "minY" : 383,
+    "maxY" : 393,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1113,
+        "y" : 391
+      },
+      "to" : {
+        "x" : 1129,
+        "y" : 388
+      }
+    }, {
+      "from" : {
+        "x" : 1129,
+        "y" : 388
+      },
+      "to" : {
+        "x" : 1161,
+        "y" : 390
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1154,
+        "y" : 394
+      },
+      "b" : {
+        "x" : 1161,
+        "y" : 390
+      },
+      "c" : {
+        "x" : 1154,
+        "y" : 386
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1129,
+        "y" : 388
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 47,
+      "points" : [ {
+        "x" : 1067,
+        "y" : 350
+      } ]
+    }, {
+      "id" : 37,
+      "points" : [ {
+        "x" : 1091,
+        "y" : 478
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 49
+    } ]
+  }, {
+    "id" : 243,
+    "reactomeId" : 8955241,
+    "displayName" : "CAND1 binds cytosolic CRL E3 ubiquitin ligases",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 659,
+      "y" : 1170
+    },
+    "minX" : 614,
+    "maxX" : 702,
+    "minY" : 1165,
+    "maxY" : 1175,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 614,
+        "y" : 1169
+      },
+      "to" : {
+        "x" : 659,
+        "y" : 1170
+      }
+    }, {
+      "from" : {
+        "x" : 659,
+        "y" : 1170
+      },
+      "to" : {
+        "x" : 702,
+        "y" : 1173
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 695,
+        "y" : 1177
+      },
+      "b" : {
+        "x" : 702,
+        "y" : 1173
+      },
+      "c" : {
+        "x" : 695,
+        "y" : 1169
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 659,
+        "y" : 1170
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 261,
+      "points" : [ {
+        "x" : 506,
+        "y" : 1185
+      } ]
+    }, {
+      "id" : 245,
+      "points" : [ {
+        "x" : 555,
+        "y" : 1144
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 246
+    } ]
+  }, {
+    "id" : 307,
+    "reactomeId" : 8955245,
+    "displayName" : "CAND1 binds CRL4 E3 ubiquitin ligase in the nucleus",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1270,
+      "y" : 1411
+    },
+    "minX" : 1250,
+    "maxX" : 1301,
+    "minY" : 1406,
+    "maxY" : 1416,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1250,
+        "y" : 1411
+      },
+      "to" : {
+        "x" : 1270,
+        "y" : 1411
+      }
+    }, {
+      "from" : {
+        "x" : 1270,
+        "y" : 1411
+      },
+      "to" : {
+        "x" : 1301,
+        "y" : 1411
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1294,
+        "y" : 1415
+      },
+      "b" : {
+        "x" : 1301,
+        "y" : 1411
+      },
+      "c" : {
+        "x" : 1294,
+        "y" : 1407
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1270,
+        "y" : 1411
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 276,
+      "points" : [ {
+        "x" : 1211,
+        "y" : 1407
+      } ]
+    }, {
+      "id" : 308,
+      "points" : [ {
+        "x" : 1204,
+        "y" : 1465
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 309
+    } ]
+  }, {
+    "id" : 628,
+    "reactomeId" : 8956099,
+    "displayName" : "VHL:EloB,C:NEDD8-CUL2:RBX1 complex binds UBXN7",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2828,
+      "y" : 975
+    },
+    "minX" : 2776,
+    "maxX" : 3045,
+    "minY" : 970,
+    "maxY" : 983,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2776,
+        "y" : 972
+      },
+      "to" : {
+        "x" : 2828,
+        "y" : 975
+      }
+    }, {
+      "from" : {
+        "x" : 2828,
+        "y" : 975
+      },
+      "to" : {
+        "x" : 3045,
+        "y" : 983
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 3038,
+        "y" : 987
+      },
+      "b" : {
+        "x" : 3045,
+        "y" : 983
+      },
+      "c" : {
+        "x" : 3038,
+        "y" : 979
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2828,
+        "y" : 975
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 629,
+      "points" : [ {
+        "x" : 2742,
+        "y" : 979
+      } ]
+    }, {
+      "id" : 621,
+      "points" : [ {
+        "x" : 2638,
+        "y" : 906
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 627
+    } ]
+  }, {
+    "id" : 566,
+    "reactomeId" : 8956040,
+    "displayName" : "COP9 signalosome deneddylates cytosolic CRL E3 ubiquitin ligase complexes",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2914,
+      "y" : 667
+    },
+    "minX" : 2836,
+    "maxX" : 2958,
+    "minY" : 662,
+    "maxY" : 672,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2836,
+        "y" : 670
+      },
+      "to" : {
+        "x" : 2914,
+        "y" : 667
+      }
+    }, {
+      "from" : {
+        "x" : 2914,
+        "y" : 667
+      },
+      "to" : {
+        "x" : 2958,
+        "y" : 666
+      }
+    } ],
+    "reactionShape" : {
+      "c" : {
+        "x" : 2914,
+        "y" : 667
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 568
+    } ],
+    "outputs" : [ {
+      "id" : 22,
+      "points" : [ {
+        "x" : 543,
+        "y" : 395
+      }, {
+        "x" : 1015,
+        "y" : 173
+      }, {
+        "x" : 2794,
+        "y" : 163
+      } ]
+    }, {
+      "id" : 591,
+      "points" : [ {
+        "x" : 2995,
+        "y" : 664
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 567,
+      "points" : [ {
+        "x" : 2883,
+        "y" : 628
+      } ]
+    } ]
+  }, {
+    "id" : 310,
+    "reactomeId" : 8955285,
+    "displayName" : "COMMDs displace CAND1 from CRL4 E3 ubiquitin ligase complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1497,
+      "y" : 1407
+    },
+    "minX" : 1470,
+    "maxX" : 1544,
+    "minY" : 1402,
+    "maxY" : 1412,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1470,
+        "y" : 1408
+      },
+      "to" : {
+        "x" : 1497,
+        "y" : 1407
+      }
+    }, {
+      "from" : {
+        "x" : 1497,
+        "y" : 1407
+      },
+      "to" : {
+        "x" : 1544,
+        "y" : 1404
+      }
+    } ],
+    "reactionShape" : {
+      "c" : {
+        "x" : 1497,
+        "y" : 1407
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 443,
+      "points" : [ {
+        "x" : 1454,
+        "y" : 1439
+      } ]
+    }, {
+      "id" : 309,
+      "points" : [ {
+        "x" : 1444,
+        "y" : 1409
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 308,
+      "points" : [ {
+        "x" : 1227,
+        "y" : 1480
+      }, {
+        "x" : 1576,
+        "y" : 1496
+      } ]
+    }, {
+      "id" : 312,
+      "points" : [ {
+        "x" : 1593,
+        "y" : 1402
+      } ]
+    } ]
+  }, {
+    "id" : 248,
+    "reactomeId" : 8955289,
+    "displayName" : "COMMDs displace CAND1 from cytosolic CRL E3 ubiquitin ligase complexes",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 983,
+      "y" : 1173
+    },
+    "minX" : 896,
+    "maxX" : 1035,
+    "minY" : 1168,
+    "maxY" : 1178,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 896,
+        "y" : 1174
+      },
+      "to" : {
+        "x" : 983,
+        "y" : 1173
+      }
+    }, {
+      "from" : {
+        "x" : 983,
+        "y" : 1173
+      },
+      "to" : {
+        "x" : 1035,
+        "y" : 1171
+      }
+    } ],
+    "reactionShape" : {
+      "c" : {
+        "x" : 983,
+        "y" : 1173
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 246,
+      "points" : [ {
+        "x" : 809,
+        "y" : 1176
+      } ]
+    }, {
+      "id" : 440,
+      "points" : [ {
+        "x" : 749,
+        "y" : 1238
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 245,
+      "points" : [ {
+        "x" : 561,
+        "y" : 1129
+      }, {
+        "x" : 974,
+        "y" : 1120
+      } ]
+    }, {
+      "id" : 293,
+      "points" : [ {
+        "x" : 1079,
+        "y" : 1175
+      } ]
+    } ]
+  }, {
+    "id" : 697,
+    "reactomeId" : 8956184,
+    "displayName" : "26S- and NUB1-mediated degradation of NEDD8, UBD and their conjugates",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 713,
+      "y" : 194
+    },
+    "minX" : 690,
+    "maxX" : 768,
+    "minY" : 188,
+    "maxY" : 200,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 690,
+        "y" : 195
+      },
+      "to" : {
+        "x" : 713,
+        "y" : 194
+      }
+    }, {
+      "from" : {
+        "x" : 713,
+        "y" : 194
+      },
+      "to" : {
+        "x" : 768,
+        "y" : 194
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 707,
+        "y" : 188
+      },
+      "b" : {
+        "x" : 719,
+        "y" : 200
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 682
+    } ],
+    "outputs" : [ {
+      "id" : 680,
+      "points" : [ {
+        "x" : 411,
+        "y" : 164
+      }, {
+        "x" : 651,
+        "y" : 125
+      } ]
+    }, {
+      "id" : 681,
+      "points" : [ {
+        "x" : 457,
+        "y" : 110
+      }, {
+        "x" : 674,
+        "y" : 75
+      } ]
+    } ]
+  }, {
+    "id" : 58,
+    "reactomeId" : 8951661,
+    "displayName" : "Transfer of NEDD8 to AcM-UBE2M",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1321,
+      "y" : 682
+    },
+    "minX" : 1214,
+    "maxX" : 1357,
+    "minY" : 676,
+    "maxY" : 688,
+    "segments" : [ {
+      "from" : {
+        "x" : 1214,
+        "y" : 682
+      },
+      "to" : {
+        "x" : 1321,
+        "y" : 682
+      }
+    }, {
+      "from" : {
+        "x" : 1321,
+        "y" : 682
+      },
+      "to" : {
+        "x" : 1357,
+        "y" : 683
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1315,
+        "y" : 676
+      },
+      "b" : {
+        "x" : 1327,
+        "y" : 688
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 45
+    } ],
+    "outputs" : [ {
+      "id" : 31,
+      "points" : [ {
+        "x" : 810,
+        "y" : 523
+      }, {
+        "x" : 811,
+        "y" : 686
+      }, {
+        "x" : 1298,
+        "y" : 576
+      } ]
+    }, {
+      "id" : 59,
+      "points" : [ {
+        "x" : 1419,
+        "y" : 672
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 45,
+      "points" : [ {
+        "x" : 1186,
+        "y" : 654
+      }, {
+        "x" : 1262,
+        "y" : 610
+      } ]
+    } ]
+  }, {
+    "id" : 60,
+    "reactomeId" : 8951764,
+    "displayName" : "Transfer of NEDD8 to AcM-UBE2F",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1331,
+      "y" : 395
+    },
+    "minX" : 1289,
+    "maxX" : 1366,
+    "minY" : 389,
+    "maxY" : 401,
+    "segments" : [ {
+      "from" : {
+        "x" : 1289,
+        "y" : 395
+      },
+      "to" : {
+        "x" : 1331,
+        "y" : 395
+      }
+    }, {
+      "from" : {
+        "x" : 1331,
+        "y" : 395
+      },
+      "to" : {
+        "x" : 1366,
+        "y" : 397
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1325,
+        "y" : 389
+      },
+      "b" : {
+        "x" : 1337,
+        "y" : 401
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 49
+    } ],
+    "outputs" : [ {
+      "id" : 31,
+      "points" : [ {
+        "x" : 816,
+        "y" : 523
+      }, {
+        "x" : 850,
+        "y" : 607
+      }, {
+        "x" : 1369,
+        "y" : 479
+      } ]
+    }, {
+      "id" : 61,
+      "points" : [ {
+        "x" : 1403,
+        "y" : 400
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 49,
+      "points" : [ {
+        "x" : 1274,
+        "y" : 364
+      }, {
+        "x" : 1320,
+        "y" : 341
+      } ]
+    } ]
+  }, {
+    "id" : 701,
+    "reactomeId" : 8956200,
+    "displayName" : "MyrG-DCUN1D3 binds CRL1 E3 ubiquitin ligase complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2251,
+      "y" : 39
+    },
+    "minX" : 2184,
+    "maxX" : 2311,
+    "minY" : 34,
+    "maxY" : 44,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2184,
+        "y" : 36
+      },
+      "to" : {
+        "x" : 2251,
+        "y" : 39
+      }
+    }, {
+      "from" : {
+        "x" : 2251,
+        "y" : 39
+      },
+      "to" : {
+        "x" : 2311,
+        "y" : 37
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2304,
+        "y" : 41
+      },
+      "b" : {
+        "x" : 2311,
+        "y" : 37
+      },
+      "c" : {
+        "x" : 2304,
+        "y" : 33
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2251,
+        "y" : 39
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 321,
+      "points" : [ {
+        "x" : 1686,
+        "y" : 544
+      }, {
+        "x" : 2081,
+        "y" : 478
+      } ]
+    }, {
+      "id" : 706,
+      "points" : [ {
+        "x" : 2118,
+        "y" : 33
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 707
+    } ]
+  }, {
+    "id" : 574,
+    "reactomeId" : 8956045,
+    "displayName" : "COP9 signalosome deneddylates nuclear CRL4 E3 ubiquitin ligase complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2388,
+      "y" : 1414
+    },
+    "minX" : 2317,
+    "maxX" : 2466,
+    "minY" : 1409,
+    "maxY" : 1419,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2317,
+        "y" : 1412
+      },
+      "to" : {
+        "x" : 2388,
+        "y" : 1414
+      }
+    }, {
+      "from" : {
+        "x" : 2388,
+        "y" : 1414
+      },
+      "to" : {
+        "x" : 2466,
+        "y" : 1417
+      }
+    } ],
+    "reactionShape" : {
+      "c" : {
+        "x" : 2388,
+        "y" : 1414
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 136
+    } ],
+    "outputs" : [ {
+      "id" : 594,
+      "points" : [ {
+        "x" : 2511,
+        "y" : 1417
+      } ]
+    }, {
+      "id" : 587,
+      "points" : [ {
+        "x" : 2514,
+        "y" : 1489
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 575,
+      "points" : [ {
+        "x" : 2390,
+        "y" : 1456
+      } ]
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 8,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 1984,
+      "y" : 956
+    },
+    "minX" : 7,
+    "maxX" : 3961,
+    "minY" : 21,
+    "maxY" : 1891,
+    "prop" : {
+      "x" : 7,
+      "y" : 21,
+      "width" : 3954,
+      "height" : 1870
+    },
+    "textPosition" : {
+      "x" : 735,
+      "y" : 860
+    },
+    "insets" : {
+      "x" : 26,
+      "y" : 40,
+      "width" : 3889,
+      "height" : 1814
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 9, 10, 11, 12, 13, 17, 19, 22, 26, 27, 28, 29, 30, 31, 35, 36, 37, 43, 44, 45, 47, 48, 49, 58, 60, 73, 75, 77, 89, 91, 92, 93, 59, 78, 126, 61, 243, 245, 246, 248, 253, 261, 293, 298, 299, 321, 322, 440, 566, 567, 568, 570, 572, 591, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 621, 622, 623, 625, 626, 627, 628, 629, 677, 678, 679, 680, 681, 682, 683, 684, 697, 701, 706, 707, 924, 922, 926 ]
+  }, {
+    "id" : 126,
+    "reactomeId" : 7660,
+    "displayName" : "nucleoplasm",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 1950,
+      "y" : 1540
+    },
+    "minX" : 882,
+    "maxX" : 3019,
+    "minY" : 1345,
+    "maxY" : 1735,
+    "prop" : {
+      "x" : 882,
+      "y" : 1345,
+      "width" : 2137,
+      "height" : 390
+    },
+    "textPosition" : {
+      "x" : 1728,
+      "y" : 1564
+    },
+    "insets" : {
+      "x" : 924,
+      "y" : 1365,
+      "width" : 2060,
+      "height" : 353
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 132, 131, 129, 133, 134, 136, 275, 276, 307, 309, 308, 310, 312, 443, 574, 575, 587, 594 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ {
+    "id" : 322,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 1376,
+      "y" : 871
+    },
+    "minX" : 1167,
+    "maxX" : 1585,
+    "minY" : 588,
+    "maxY" : 1154,
+    "segments" : [ {
+      "from" : {
+        "x" : 1585,
+        "y" : 588
+      },
+      "to" : {
+        "x" : 1167,
+        "y" : 1154
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1370,
+        "y" : 865
+      },
+      "b" : {
+        "x" : 1382,
+        "y" : 877
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 321
+    } ],
+    "outputs" : [ {
+      "id" : 293
+    } ]
+  }, {
+    "id" : 679,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 443,
+      "y" : 326
+    },
+    "minX" : 378,
+    "maxX" : 509,
+    "minY" : 258,
+    "maxY" : 395,
+    "segments" : [ {
+      "from" : {
+        "x" : 509,
+        "y" : 395
+      },
+      "to" : {
+        "x" : 378,
+        "y" : 258
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 437,
+        "y" : 320
+      },
+      "b" : {
+        "x" : 449,
+        "y" : 332
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 22
+    } ],
+    "outputs" : [ {
+      "id" : 678
+    } ]
+  }, {
+    "id" : 570,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 2345,
+      "y" : 536
+    },
+    "minX" : 2023,
+    "maxX" : 2668,
+    "minY" : 427,
+    "maxY" : 646,
+    "segments" : [ {
+      "from" : {
+        "x" : 2023,
+        "y" : 427
+      },
+      "to" : {
+        "x" : 2668,
+        "y" : 646
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 2339,
+        "y" : 530
+      },
+      "b" : {
+        "x" : 2351,
+        "y" : 542
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 78
+    } ],
+    "outputs" : [ {
+      "id" : 568
+    } ]
+  }, {
+    "id" : 299,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 1249,
+      "y" : 720
+    },
+    "minX" : 1155,
+    "maxX" : 1343,
+    "minY" : 286,
+    "maxY" : 1154,
+    "segments" : [ {
+      "from" : {
+        "x" : 1343,
+        "y" : 286
+      },
+      "to" : {
+        "x" : 1155,
+        "y" : 1154
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1243,
+        "y" : 714
+      },
+      "b" : {
+        "x" : 1255,
+        "y" : 726
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 298
+    } ],
+    "outputs" : [ {
+      "id" : 293
+    } ]
+  }, {
+    "id" : 572,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 2387,
+      "y" : 668
+    },
+    "minX" : 2106,
+    "maxX" : 2668,
+    "minY" : 662,
+    "maxY" : 674,
+    "segments" : [ {
+      "from" : {
+        "x" : 2106,
+        "y" : 665
+      },
+      "to" : {
+        "x" : 2668,
+        "y" : 672
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 2381,
+        "y" : 662
+      },
+      "b" : {
+        "x" : 2393,
+        "y" : 674
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 93
+    } ],
+    "outputs" : [ {
+      "id" : 568
+    } ]
+  } ],
+  "shadows" : [ ],
+  "minX" : 7,
+  "maxX" : 3961,
+  "minY" : 5,
+  "maxY" : 1891,
+  "disease" : false
+}

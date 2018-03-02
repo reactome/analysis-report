@@ -8,6 +8,7 @@ import org.reactome.server.graph.domain.result.DiagramResult;
 import org.reactome.server.graph.service.DiagramService;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
 import org.reactome.server.tools.analysis.exporter.ReportArgs;
+import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.reactome.server.tools.diagram.exporter.raster.RasterExporter;
 import org.reactome.server.tools.diagram.exporter.raster.api.RasterArgs;
 
@@ -42,7 +43,7 @@ public class DiagramHelperTest {
 	}
 
 	@Test
-	public void getDiagramTest() throws IOException {
+	public void getDiagramTest() throws IOException, AnalysisExporterException {
 		ReportArgs reportArgs = new ReportArgs("MjAxODAyMTIxMTI5MzdfMQ==", diagramPath, ehldPath, fireworksPath, analysisPath, svgSummary);
 		DiagramHelper.setPaths(reportArgs);
 		AnalysisStoredResult result = new TokenUtils("src/test/resources/analysis").getFromToken(reportArgs.getToken());

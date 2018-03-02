@@ -24,7 +24,7 @@ import java.util.List;
  */
 public class Administrative implements Section {
 
-	private static final List<String> ADMINISTRATIVE = PdfUtils.getText("texts/administrative.txt");
+	private static final List<String> ADMINISTRATIVE = PdfUtils.getText(Administrative.class.getResourceAsStream("administrative.txt"));
 
 	public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) {
 

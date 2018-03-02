@@ -1,0 +1,69 @@
+{
+  "dbId" : 199991,
+  "stId" : "R-HSA-199991",
+  "nodes" : [ {
+    "dbId" : 157858,
+    "stId" : "R-HSA-157858",
+    "displayName" : "Gap junction trafficking and regulation",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 259 ]
+  }, {
+    "dbId" : 5694530,
+    "stId" : "R-HSA-5694530",
+    "displayName" : "Cargo concentration in the ER",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 486 ]
+  }, {
+    "dbId" : 9007101,
+    "stId" : "R-HSA-9007101",
+    "displayName" : "Rab regulation of trafficking",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 506 ]
+  }, {
+    "dbId" : 6811442,
+    "stId" : "R-HSA-6811442",
+    "displayName" : "Intra-Golgi and retrograde Golgi-to-ER traffic",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 499 ]
+  }, {
+    "dbId" : 199977,
+    "stId" : "R-HSA-199977",
+    "displayName" : "ER to Golgi Anterograde Transport",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 402 ]
+  }, {
+    "dbId" : 1445148,
+    "stId" : "R-HSA-1445148",
+    "displayName" : "Translocation of GLUT4 to the plasma membrane",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 401 ]
+  }, {
+    "dbId" : 199992,
+    "stId" : "R-HSA-199992",
+    "displayName" : "trans-Golgi Network Vesicle Budding",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 482 ]
+  }, {
+    "dbId" : 8856828,
+    "stId" : "R-HSA-8856828",
+    "displayName" : "Clathrin-mediated endocytosis",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 501 ]
+  }, {
+    "dbId" : 917729,
+    "stId" : "R-HSA-917729",
+    "displayName" : "Endosomal Sorting Complex Required For Transport (ESCRT)",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 484 ]
+  } ],
+  "edges" : [ ]
+}

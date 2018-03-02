@@ -4,6 +4,7 @@ import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Image;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
+import org.reactome.server.tools.analysis.exporter.constant.Images;
 import org.reactome.server.tools.analysis.exporter.constant.URL;
 import org.reactome.server.tools.analysis.exporter.element.Title;
 import org.reactome.server.tools.analysis.exporter.factory.AnalysisReport;
@@ -18,7 +19,7 @@ public class TitleAndLogo implements Section {
 	public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) {
 
 		// add Reactome logo
-		Image image = PdfUtils.getLogo();
+		Image image = Images.getLogo();
 		image.scaleToFit((report.getCurrentPageArea().getWidth() + report.getLeftMargin() + report.getRightMargin()) / 3, report.getTopMargin());
 		image.setFixedPosition(5, report.getCurrentPageArea().getHeight() + report.getBottomMargin() - 5);
 		image.setAction(PdfAction.createURI(URL.REACTOME));

@@ -1,0 +1,27 @@
+{
+  "dbId" : 2219528,
+  "stId" : "R-HSA-2219528",
+  "nodes" : [ {
+    "dbId" : 5674404,
+    "stId" : "R-HSA-5674404",
+    "displayName" : "PTEN Loss of Function in Cancer",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 813 ]
+  }, {
+    "dbId" : 5674400,
+    "stId" : "R-HSA-5674400",
+    "displayName" : "Constitutive Signaling by AKT1 E17K in Cancer",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 811 ]
+  }, {
+    "dbId" : 2219530,
+    "stId" : "R-HSA-2219530",
+    "displayName" : "Constitutive Signaling by Aberrant PI3K in Cancer",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 812 ]
+  } ],
+  "edges" : [ ]
+}

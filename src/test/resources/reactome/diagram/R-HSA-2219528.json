@@ -1,0 +1,124 @@
+{
+  "dbId" : 2219528,
+  "stableId" : "R-HSA-2219528",
+  "displayName" : "PI3K/AKT Signaling in Cancer",
+  "nodes" : [ {
+    "id" : 811,
+    "reactomeId" : 5674400,
+    "displayName" : "Constitutive Signaling by AKT1 E17K in Cancer",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 220,
+      "y" : 137
+    },
+    "isDisease" : true,
+    "minX" : 42,
+    "maxX" : 398,
+    "minY" : 107,
+    "maxY" : 168,
+    "prop" : {
+      "x" : 42,
+      "y" : 107,
+      "width" : 356,
+      "height" : 61
+    },
+    "textPosition" : {
+      "x" : 78,
+      "y" : 123
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 204
+    },
+    "fgColor" : {
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 812,
+    "reactomeId" : 2219530,
+    "displayName" : "Constitutive Signaling by Aberrant PI3K in Cancer",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 218,
+      "y" : 54
+    },
+    "isDisease" : true,
+    "minX" : 41,
+    "maxX" : 396,
+    "minY" : 21,
+    "maxY" : 88,
+    "prop" : {
+      "x" : 41,
+      "y" : 21,
+      "width" : 355,
+      "height" : 67
+    },
+    "textPosition" : {
+      "x" : 70,
+      "y" : 40
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 204
+    },
+    "fgColor" : {
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 813,
+    "reactomeId" : 5674404,
+    "displayName" : "PTEN Loss of Function in Cancer",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 221,
+      "y" : 216
+    },
+    "isDisease" : true,
+    "minX" : 42,
+    "maxX" : 400,
+    "minY" : 187,
+    "maxY" : 246,
+    "prop" : {
+      "x" : 42,
+      "y" : 187,
+      "width" : 358,
+      "height" : 59
+    },
+    "textPosition" : {
+      "x" : 121,
+      "y" : 202
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 204
+    },
+    "fgColor" : {
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 41,
+  "maxX" : 400,
+  "minY" : 21,
+  "maxY" : 246,
+  "disease" : false
+}
