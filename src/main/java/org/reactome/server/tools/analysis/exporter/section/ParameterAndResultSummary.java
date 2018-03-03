@@ -6,7 +6,7 @@ import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Text;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
-import org.reactome.server.tools.analysis.exporter.constant.Fonts;
+import org.reactome.server.tools.analysis.exporter.style.Fonts;
 import org.reactome.server.tools.analysis.exporter.element.H2;
 import org.reactome.server.tools.analysis.exporter.element.LP;
 import org.reactome.server.tools.analysis.exporter.element.UnorderedList;

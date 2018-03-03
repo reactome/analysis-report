@@ -9,7 +9,7 @@ import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.model.ResourceSummary;
 import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.analysis.core.result.utils.TokenUtils;
-import org.reactome.server.tools.analysis.exporter.constant.Fonts;
+import org.reactome.server.tools.analysis.exporter.style.Fonts;
 import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.exporter.exception.FailToRenderReportException;
 import org.reactome.server.tools.analysis.exporter.section.FooterEventHandler;

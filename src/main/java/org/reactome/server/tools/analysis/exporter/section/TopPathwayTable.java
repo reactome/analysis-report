@@ -13,7 +13,7 @@ import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.analysis.core.result.model.PathwayBase;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
 import org.reactome.server.tools.analysis.exporter.PathwayData;
-import org.reactome.server.tools.analysis.exporter.constant.Fonts;
+import org.reactome.server.tools.analysis.exporter.style.Fonts;
 import org.reactome.server.tools.analysis.exporter.element.BodyCell;
 import org.reactome.server.tools.analysis.exporter.element.H2;
 import org.reactome.server.tools.analysis.exporter.element.HeaderCell;

@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.constant;
+package org.reactome.server.tools.analysis.exporter.style;
 
 import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;

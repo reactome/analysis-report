@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.constant;
+package org.reactome.server.tools.analysis.exporter.style;
 
 import com.itextpdf.io.image.ImageData;
 import com.itextpdf.io.image.ImageDataFactory;

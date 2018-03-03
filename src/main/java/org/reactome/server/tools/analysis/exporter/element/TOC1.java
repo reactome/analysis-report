@@ -2,7 +2,7 @@ package org.reactome.server.tools.analysis.exporter.element;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Text;
-import org.reactome.server.tools.analysis.exporter.constant.Fonts;
+import org.reactome.server.tools.analysis.exporter.style.Fonts;
 
 public class TOC1 extends P {
 

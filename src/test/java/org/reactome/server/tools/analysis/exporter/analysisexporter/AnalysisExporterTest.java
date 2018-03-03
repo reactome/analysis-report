@@ -12,7 +12,6 @@ import org.reactome.server.tools.analysis.exporter.util.GraphCoreConfig;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
-import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -40,16 +39,21 @@ public class AnalysisExporterTest {
 
 	@BeforeClass
 	public static void beforeClass() {
-		SAVE_TO.mkdirs();
-		for (File file : SAVE_TO.listFiles()) file.delete();
+		if (!SAVE_TO.exists() && !SAVE_TO.mkdirs())
+			Assert.fail("Couldn't create test directory: " + SAVE_TO.getAbsolutePath());
 		ReactomeGraphCore.initialise("localhost", "7474", "neo4j", "reactome", GraphCoreConfig.class);
 	}
 
 	@AfterClass
 	public static void afterClass() {
 		if (!save) {
-			for (File file : SAVE_TO.listFiles()) file.delete();
-			SAVE_TO.delete();
+			final File[] files = SAVE_TO.listFiles();
+			if (files != null)
+				for (File file : files)
+					if (!file.delete())
+						Assert.fail("Couldn't delete test file: " + file.getAbsolutePath());
+			if (!SAVE_TO.delete())
+				Assert.fail("Couldn't delete test directory: " + SAVE_TO.getAbsolutePath());
 		}
 	}
 

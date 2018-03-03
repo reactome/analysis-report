@@ -6,7 +6,7 @@ import com.itextpdf.kernel.events.PdfDocumentEvent;
 import com.itextpdf.kernel.pdf.PdfPage;
 import com.itextpdf.kernel.pdf.canvas.PdfCanvas;
 import com.itextpdf.layout.Document;
-import org.reactome.server.tools.analysis.exporter.constant.Fonts;
+import org.reactome.server.tools.analysis.exporter.style.Fonts;
 
 /**
  * Event handler to add the footer text and page number.

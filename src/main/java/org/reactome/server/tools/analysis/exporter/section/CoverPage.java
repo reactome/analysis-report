@@ -4,7 +4,7 @@ import com.itextpdf.layout.Document;
 import com.itextpdf.layout.property.HorizontalAlignment;
 import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
-import org.reactome.server.tools.analysis.exporter.constant.Images;
+import org.reactome.server.tools.analysis.exporter.style.Images;
 import org.reactome.server.tools.analysis.exporter.element.H3;
 import org.reactome.server.tools.analysis.exporter.element.Title;
 import org.reactome.server.tools.analysis.exporter.util.GraphCoreHelper;

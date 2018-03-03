@@ -2,7 +2,7 @@ package org.reactome.server.tools.analysis.exporter.util;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Paragraph;
-import org.reactome.server.tools.analysis.exporter.constant.Fonts;
+import org.reactome.server.tools.analysis.exporter.style.Fonts;
 import org.reactome.server.tools.analysis.exporter.element.P;
 import org.reactome.server.tools.analysis.exporter.profile.Profile;
 

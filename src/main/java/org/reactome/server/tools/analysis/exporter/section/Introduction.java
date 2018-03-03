@@ -5,7 +5,7 @@ import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.ListItem;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
-import org.reactome.server.tools.analysis.exporter.constant.Images;
+import org.reactome.server.tools.analysis.exporter.style.Images;
 import org.reactome.server.tools.analysis.exporter.element.H2;
 import org.reactome.server.tools.analysis.exporter.element.LP;
 import org.reactome.server.tools.analysis.exporter.element.P;
