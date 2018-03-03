@@ -2,7 +2,6 @@ package org.reactome.server.tools.analysis.exporter.util;
 
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
-import org.reactome.server.tools.analysis.exporter.ReportArgs;
 import org.reactome.server.tools.fireworks.exporter.FireworksExporter;
 import org.reactome.server.tools.fireworks.exporter.common.analysis.exception.AnalysisServerError;
 import org.reactome.server.tools.fireworks.exporter.common.api.FireworkArgs;
@@ -38,13 +37,7 @@ public class FireworksHelper {
 		return exporter.renderRaster(args, analysisData.getAnalysisStoredResult());
 	}
 
-	/**
-	 * Set the necessary file before use it.
-	 *
-	 * @param reportArgs args contains the fireworks json file and analysis
-	 *                   binary file path.
-	 */
-	public static void setPaths(ReportArgs reportArgs) {
-		exporter = new FireworksExporter(reportArgs.getFireworksPath(), reportArgs.getAnalysisPath());
+	public static void setPaths(String fireworksPath, String analysisPath) {
+		exporter = new FireworksExporter(fireworksPath, analysisPath);
 	}
 }

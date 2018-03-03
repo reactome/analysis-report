@@ -7,14 +7,12 @@ import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.model.ResourceSummary;
-import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.analysis.core.result.utils.TokenUtils;
-import org.reactome.server.tools.analysis.exporter.style.Fonts;
 import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.exporter.exception.FailToRenderReportException;
-import org.reactome.server.tools.analysis.exporter.section.FooterEventHandler;
 import org.reactome.server.tools.analysis.exporter.profile.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.section.*;
+import org.reactome.server.tools.analysis.exporter.style.Fonts;
 import org.reactome.server.tools.analysis.exporter.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.util.FireworksHelper;
 import org.slf4j.Logger;
@@ -28,11 +26,16 @@ import java.util.List;
 import java.util.Locale;
 
 /**
+ * Analysis exporter to export the user's analysis result performance by
+ * Reactome to to export the analysis report(PDF format) according to the given
+ * token(produced by Reactome <a href="https://reactome.org/PathwayBrowser/#TOOL=AT">Analysis
+ * Tool</a>). </p>
+ * <p>
  * Create the report by using iText library.
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
-class ReportRenderer {
+public class ReportRenderer {
 
 	private static final Long DEFAULT_SPECIES = 48887L; // Homo Sapiens.
 	private static final ObjectMapper MAPPER = new ObjectMapper();
@@ -49,49 +52,13 @@ class ReportRenderer {
 			new PathwayDetail(),
 			new IdentifierNotFoundSummary()
 	);
+	private final TokenUtils tokenUtils;
 
-	/**
-	 * render the report with data set.
-	 *
-	 * @param reportArgs args contains json folder path in {@link ReportArgs}.
-	 *
-	 * @throws Exception when fail to create the PDF document.
-	 */
-	protected static void render(ReportArgs reportArgs, OutputStream destination) throws FailToRenderReportException {
+	public ReportRenderer(String diagramPath, String ehldPath, String fireworksPath, String analysisPath, String svgSummary) {
+		DiagramHelper.setPaths(diagramPath, ehldPath, analysisPath, svgSummary);
+		FireworksHelper.setPaths(fireworksPath, analysisPath);
 		Locale.setDefault(Locale.ENGLISH);
-		DiagramHelper.setPaths(reportArgs);
-		FireworksHelper.setPaths(reportArgs);
-		Fonts.reload();
-		AnalysisStoredResult asr = new TokenUtils(reportArgs.getAnalysisPath()).getFromToken(reportArgs.getToken());
-
-		if (reportArgs.getSpecies() == null) {
-			reportArgs.setSpecies(DEFAULT_SPECIES);
-			LOGGER.warn("Use default species");
-		}
-
-		// if the analysis result not contains the given resource, use the first resource in this analysis.
-		if (!asr.getResourceSummary().contains(new ResourceSummary(reportArgs.getResource(), null))) {
-			String resource = getDefaultResource(asr);
-			LOGGER.warn("Resource: '{}' not exist, use '{}' instead", reportArgs.getResource(), resource);
-			reportArgs.setResource(resource);
-		}
-
-		final AnalysisData analysisData = new AnalysisData(asr, reportArgs.getResource(), reportArgs.getSpecies());
-
-		// filter analysis result from whole result by specific species and resource,
-		SpeciesFilteredResult sfr = asr.filterBySpecies(reportArgs.getSpecies(), reportArgs.getResource());
-		checkReportArgs(sfr, reportArgs, profile);
-
-
-		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
-			document.setMargins(profile.getMargin().getTop(), profile.getMargin().getRight(),
-					profile.getMargin().getBottom(), profile.getMargin().getLeft());
-			document.getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(document));
-			for (Section section : SECTIONS)
-				section.render(document, analysisData);
-		} catch (Exception | AnalysisExporterException e) {
-			throw new FailToRenderReportException("Fail to render report", e);
-		}
+		tokenUtils = new TokenUtils(analysisPath);
 	}
 
 	/**
@@ -107,28 +74,63 @@ class ReportRenderer {
 		}
 	}
 
-	// check args pagination and pathwayToShow is illegal.
-	private static void checkReportArgs(SpeciesFilteredResult sfr, ReportArgs reportArgs, PdfProfile profile) {
-		if (profile.getPathwaysToShow() > sfr.getPathways().size()) {
-			profile.setPathwaysToShow(sfr.getPathways().size());
-			LOGGER.warn("There just have {} in your analysis result", sfr.getPathways().size());
-		}
-		if (reportArgs.getPagination() > sfr.getPathways().size() - 1) {
-			reportArgs.setPagination(0);
-			LOGGER.warn("Pagination must less than pathwaysToShow");
-		}
-		if (reportArgs.getPagination() + profile.getPathwaysToShow() > sfr.getPathways().size()) {
-			profile.setPathwaysToShow(sfr.getPathways().size() - reportArgs.getPagination());
-		}
-	}
-
 	private static String getDefaultResource(AnalysisStoredResult result) {
 		final List<ResourceSummary> summary = result.getResourceSummary();
-		if (summary.size() == 2) {
-			// Select the second one since first one always "TOTAL" .
-			return summary.get(1).getResource();
-		} else {
-			return summary.get(0).getResource();
+		// Select the second one since first one always "TOTAL" .
+		return summary.size() == 2
+				? summary.get(1).getResource()
+				: summary.get(0).getResource();
+	}
+
+	/**
+	 * to create an analysis report associated with token,receive parameters:
+	 * {@link ReportArgs} and any class extend from {@link OutputStream} as the
+	 * output destination. invoke this method by:<br><br> <code> ReportArgs
+	 * reportArgs = new ReportArgs("Token", "diagram_path", "ehld_path",
+	 * "fireworks_path", "analysis_path", "svgSummary.txt"); OutputStream
+	 * outputStream = new FileOutputStream(new File("saveDirectory/fileName.pdf"));
+	 * AnalysisExporter.export(reportArgs, outputStream); <code/> <p>PDF
+	 * document can be transport by http by using the OutputStream, or just save
+	 * as a local file by using the FileOutputStream.</p>
+	 *
+	 * @param destination destination you want to save the produced PDF report
+	 *                    document, it can be any stream extends from
+	 *                    OutputStream.
+	 *
+	 * @see ReportArgs
+	 */
+
+	public void render(String token, String resource, Long species, OutputStream destination) throws FailToRenderReportException {
+		final AnalysisStoredResult result = tokenUtils.getFromToken(token);
+		render(result, resource, species, destination);
+	}
+
+	/**
+	 * render the report with data set.
+	 */
+	public void render(AnalysisStoredResult result, String resource, Long species, OutputStream destination) throws FailToRenderReportException {
+		Fonts.reload();
+		if (species == null) {
+			species = DEFAULT_SPECIES;
+			LOGGER.warn("Use default species");
+		}
+
+		// if the analysis result not contains the given resource, use the first resource in this analysis.
+		if (!result.getResourceSummary().contains(new ResourceSummary(resource, null))) {
+			resource = getDefaultResource(result);
+			LOGGER.warn("Resource: '{}' not exist, use '{}' instead", resource, resource);
+		}
+
+		final AnalysisData analysisData = new AnalysisData(result, resource, species);
+
+		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
+			document.setMargins(profile.getMargin().getTop(), profile.getMargin().getRight(),
+					profile.getMargin().getBottom(), profile.getMargin().getLeft());
+			document.getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(document));
+			for (Section section : SECTIONS)
+				section.render(document, analysisData);
+		} catch (Exception | AnalysisExporterException e) {
+			throw new FailToRenderReportException("Fail to render report", e);
 		}
 	}
 }

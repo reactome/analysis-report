@@ -2,7 +2,7 @@ package org.reactome.server.tools.analysis.exporter;
 
 /**
  * Essential parameters to perform the analysis report. and it will be an
- * argument passed to {@link AnalysisExporter#export}
+ * argument passed to
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */

@@ -86,7 +86,11 @@ public class AnalysisExporterMain {
 		reportArgs.setResource("UNIPROT");
 
 		long start = Instant.now().toEpochMilli();
-		AnalysisExporter.export(reportArgs, new FileOutputStream(new File(config.getString("output"))));
+		final ReportRenderer renderer = new ReportRenderer(config.getString("diagramPath"), config.getString("ehldPath"),
+				config.getString("fireworksPath"), config.getString("analysisPath"),
+				config.getString("svgSummary"));
+		final FileOutputStream os = new FileOutputStream(new File(config.getString("output")));
+		renderer.render(config.getString("token"), config.getString("resource"), config.getLong("species"), os);
 		long end = Instant.now().toEpochMilli();
 		logger.info("Create PDF file in {}ms", end - start);
 		System.exit(0);

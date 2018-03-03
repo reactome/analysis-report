@@ -68,16 +68,6 @@ public class DiagramHelper {
 //		return null;
 	}
 
-	/**
-	 * Set the necessary file before use it.
-	 *
-	 * @param reportArgs args contains the diagram/ehld/analysis path and svg
-	 *                   summary file.
-	 */
-	public static void setPaths(ReportArgs reportArgs) {
-		exporter = new RasterExporter(reportArgs.getDiagramPath(), reportArgs.getEhldPath(), reportArgs.getAnalysisPath(), reportArgs.getSvgSummary());
-	}
-
 	private static int toQuality(double scale) {
 		if (scale <= 0.1) return 1;
 		if (scale >= 3) return 10;
@@ -92,4 +82,7 @@ public class DiagramHelper {
 		return (value - min) / (max - min) * (targetMax - targetMin) + targetMin;
 	}
 
+	public static void setPaths(String diagramPath, String ehldPath, String analysisPath, String svgSummary) {
+		exporter = new RasterExporter(diagramPath, ehldPath, analysisPath, svgSummary);
+	}
 }

@@ -5,8 +5,7 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
-import org.reactome.server.tools.analysis.exporter.AnalysisExporter;
-import org.reactome.server.tools.analysis.exporter.ReportArgs;
+import org.reactome.server.tools.analysis.exporter.ReportRenderer;
 import org.reactome.server.tools.analysis.exporter.util.GraphCoreConfig;
 
 import java.io.File;
@@ -36,6 +35,7 @@ public class AnalysisExporterTest {
 	private static final String FIREWORKS_PATH = "src/test/resources/reactome/fireworks";
 	private static final String EHLD_PATH = "src/test/resources/reactome/ehld";
 	private static final String SVG_SUMMARY = "src/test/resources/reactome/ehld/svgsummary.txt";
+	private static final ReportRenderer RENDERER = new ReportRenderer(DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, SVG_SUMMARY);
 
 	@BeforeClass
 	public static void beforeClass() {
@@ -63,10 +63,8 @@ public class AnalysisExporterTest {
 			final String type = entry.getKey();
 			final String token = entry.getValue();
 			try {
-				ReportArgs reportArgs = new ReportArgs(token, DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, SVG_SUMMARY);
-				reportArgs.setSpecies(48887L);
-				reportArgs.setResource("UNIPROT");
-				export(reportArgs, type);
+				final OutputStream os = new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)));
+				RENDERER.render(token, "UNIPROT", 48887L, os);
 			} catch (Exception e) {
 				e.printStackTrace();
 				Assert.fail(e.getMessage());
@@ -74,12 +72,4 @@ public class AnalysisExporterTest {
 		}
 	}
 
-	private void export(ReportArgs reportArgs, String type) {
-		try {
-			OutputStream outputStream = new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)));
-			AnalysisExporter.export(reportArgs, outputStream);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 }
