@@ -13,9 +13,11 @@ import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.analysis.core.result.model.PathwayBase;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
 import org.reactome.server.tools.analysis.exporter.PathwayData;
-import org.reactome.server.tools.analysis.exporter.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.constant.Fonts;
-import org.reactome.server.tools.analysis.exporter.element.*;
+import org.reactome.server.tools.analysis.exporter.element.BodyCell;
+import org.reactome.server.tools.analysis.exporter.element.H2;
+import org.reactome.server.tools.analysis.exporter.element.HeaderCell;
+import org.reactome.server.tools.analysis.exporter.element.P;
 import org.reactome.server.tools.analysis.exporter.profile.Profile;
 
 import java.util.Arrays;
@@ -38,13 +40,7 @@ public class TopPathwayTable implements Section {
 	);
 
 	@Override
-	public void render(Document document, AnalysisData analysisData) throws Exception {
-		document.add(new AreaBreak())
-				.add(new Header(String.format("3: Top %s over-representation pathways sorted by p-Value.", analysisData.getPathways().size()), FontSize.H1).setDestination("topPathways"));
-		addTopPathwaysTable(document, analysisData);
-	}
-
-	private void addTopPathwaysTable(Document document, AnalysisData analysisData) {
+	public void render(Document document, AnalysisData analysisData) {
 		final int min = analysisData.getPathways().size();
 		document.add(new AreaBreak());
 		document.add(new H2(String.format("4. Top %d pathways", min)).setDestination("pathway-list"));

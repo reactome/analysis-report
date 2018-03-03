@@ -3,7 +3,6 @@ package org.reactome.server.tools.analysis.exporter.section;
 import com.itextpdf.layout.Document;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
 import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
-import org.reactome.server.tools.analysis.exporter.factory.AnalysisReport;
 
 /**
  * Whole PDF report will be split into different sections.

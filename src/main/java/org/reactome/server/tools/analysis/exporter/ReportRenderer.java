@@ -1,6 +1,7 @@
 package org.reactome.server.tools.analysis.exporter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.itextpdf.kernel.events.PdfDocumentEvent;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
@@ -8,11 +9,10 @@ import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.model.ResourceSummary;
 import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.analysis.core.result.utils.TokenUtils;
-import org.reactome.server.tools.analysis.exporter.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.constant.Fonts;
 import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.exporter.exception.FailToRenderReportException;
-import org.reactome.server.tools.analysis.exporter.factory.TableRenderer;
+import org.reactome.server.tools.analysis.exporter.factory.FooterEventHandler;
 import org.reactome.server.tools.analysis.exporter.profile.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.section.*;
 import org.reactome.server.tools.analysis.exporter.util.DiagramHelper;
@@ -39,15 +39,13 @@ class ReportRenderer {
 	private static final PdfProfile profile = loadPdfProfile();
 
 	private static final List<Section> SECTIONS = Arrays.asList(
-			new TitleAndLogo(),
-			new Introduction(),
-//			new Administrative(),
+			new CoverPage(),
 			new TableOfContent(),
+			new Introduction(),
 			new ParameterAndResultSummary(),
 			new Overview(),
 			new TopPathwayTable(),
 			new PathwayDetail(),
-//			new IdentifierFoundSummary(),
 			new IdentifierNotFoundSummary()
 	);
 
@@ -82,12 +80,11 @@ class ReportRenderer {
 		SpeciesFilteredResult sfr = asr.filterBySpecies(reportArgs.getSpecies(), reportArgs.getResource());
 		checkReportArgs(sfr, reportArgs, profile);
 
-//		AnalysisReport report = new AnalysisReport(profile, reportArgs, destination);
-		FontSize.setFontSize(profile.getFontSize());
-		TableRenderer.setResultData(asr, sfr);
-
 
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
+			document.setMargins(profile.getMargin().getTop(), profile.getMargin().getRight(),
+					profile.getMargin().getBottom(), profile.getMargin().getLeft());
+			document.getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(document));
 			for (Section section : SECTIONS)
 				section.render(document, analysisData);
 		} catch (Exception | AnalysisExporterException e) {
@@ -100,7 +97,7 @@ class ReportRenderer {
 	 */
 	private static PdfProfile loadPdfProfile() {
 		try {
-			InputStream resource = PdfProfile.class.getResourceAsStream("compact.json");
+			InputStream resource = PdfProfile.class.getResourceAsStream("breathe.json");
 			return MAPPER.readValue(resource, PdfProfile.class);
 		} catch (IOException e) {
 			e.printStackTrace();
