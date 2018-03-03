@@ -1,14 +1,17 @@
 package org.reactome.server.tools.analysis.exporter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.itextpdf.kernel.pdf.PdfDocument;
+import com.itextpdf.kernel.pdf.PdfWriter;
+import com.itextpdf.layout.Document;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.model.ResourceSummary;
 import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.analysis.core.result.utils.TokenUtils;
 import org.reactome.server.tools.analysis.exporter.constant.FontSize;
+import org.reactome.server.tools.analysis.exporter.constant.Fonts;
 import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.exporter.exception.FailToRenderReportException;
-import org.reactome.server.tools.analysis.exporter.factory.AnalysisReport;
 import org.reactome.server.tools.analysis.exporter.factory.TableRenderer;
 import org.reactome.server.tools.analysis.exporter.profile.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.section.*;
@@ -20,7 +23,7 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -35,6 +38,19 @@ class ReportRenderer {
 	private static final Logger LOGGER = LoggerFactory.getLogger(ReportRenderer.class);
 	private static final PdfProfile profile = loadPdfProfile();
 
+	private static final List<Section> SECTIONS = Arrays.asList(
+			new TitleAndLogo(),
+			new Introduction(),
+//			new Administrative(),
+			new TableOfContent(),
+			new ParameterAndResultSummary(),
+			new Overview(),
+			new TopPathwayTable(),
+			new PathwayDetail(),
+//			new IdentifierFoundSummary(),
+			new IdentifierNotFoundSummary()
+	);
+
 	/**
 	 * render the report with data set.
 	 *
@@ -45,6 +61,7 @@ class ReportRenderer {
 	protected static void render(ReportArgs reportArgs, OutputStream destination) throws Exception {
 		DiagramHelper.setPaths(reportArgs);
 		FireworksHelper.setPaths(reportArgs);
+		Fonts.reload();
 		AnalysisStoredResult asr = new TokenUtils(reportArgs.getAnalysisPath()).getFromToken(reportArgs.getToken());
 
 		if (reportArgs.getSpecies() == null) {
@@ -59,33 +76,22 @@ class ReportRenderer {
 			reportArgs.setResource(resource);
 		}
 
+		final AnalysisData analysisData = new AnalysisData(asr, reportArgs.getResource(), reportArgs.getSpecies());
+
 		// filter analysis result from whole result by specific species and resource,
 		SpeciesFilteredResult sfr = asr.filterBySpecies(reportArgs.getSpecies(), reportArgs.getResource());
 		checkReportArgs(sfr, reportArgs, profile);
 
-		AnalysisReport report = new AnalysisReport(profile, reportArgs, destination);
-		FontSize.setFontSize(report.getProfile().getFontSize());
+//		AnalysisReport report = new AnalysisReport(profile, reportArgs, destination);
+		FontSize.setFontSize(profile.getFontSize());
 		TableRenderer.setResultData(asr, sfr);
 
-		List<Section> sections = new ArrayList<>(6);
-		sections.add(new TitleAndLogo());
-		sections.add(new Administrative());
-		sections.add(new TableOfContent());
-		sections.add(new Introduction());
-		sections.add(new ParameterAndResultSummary());
-		sections.add(new TopPathwayTable());
-		sections.add(new PathwayDetail());
-		sections.add(new IdentifierFoundSummary());
-		sections.add(new IdentifierNotFoundSummary());
 
-		try {
-			for (Section section : sections) {
-				section.render(report, asr, sfr);
-			}
-		} catch (Exception |AnalysisExporterException e) {
+		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
+			for (Section section : SECTIONS)
+				section.render(document, analysisData);
+		} catch (Exception | AnalysisExporterException e) {
 			throw new FailToRenderReportException("Fail to render report", e);
-		} finally {
-			report.close();
 		}
 	}
 

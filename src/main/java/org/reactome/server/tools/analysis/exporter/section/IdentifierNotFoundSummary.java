@@ -1,24 +1,32 @@
 package org.reactome.server.tools.analysis.exporter.section;
 
-import org.reactome.server.analysis.core.result.AnalysisStoredResult;
-import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
-import org.reactome.server.tools.analysis.exporter.constant.FontSize;
-import org.reactome.server.tools.analysis.exporter.element.Header;
-import org.reactome.server.tools.analysis.exporter.factory.AnalysisReport;
-import org.reactome.server.tools.analysis.exporter.factory.TableRenderer;
-import org.reactome.server.tools.analysis.exporter.factory.TableTypeEnum;
+import com.itextpdf.layout.Document;
+import com.itextpdf.layout.element.Table;
+import com.itextpdf.layout.property.UnitValue;
+import org.reactome.server.analysis.core.result.model.IdentifierSummary;
+import org.reactome.server.tools.analysis.exporter.AnalysisData;
+import org.reactome.server.tools.analysis.exporter.element.BodyCell;
+import org.reactome.server.tools.analysis.exporter.element.H2;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class IdentifierNotFoundSummary implements Section {
+
 	@Override
-	public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) throws Exception {
-		report.add(new Header("6. Summary of identifiers not found.", FontSize.H1).setDestination("identitiferNotFound"));
-		if (sfr.getExpressionSummary().getColumnNames().size() != 0) {
-			TableRenderer.createTable(report, TableTypeEnum.IDENTIFIER_NOT_FOUND);
-		} else {
-			TableRenderer.createTable(report, TableTypeEnum.IDENTIFIER_NOT_FOUND_NO_EXP);
+	public void render(Document document, AnalysisData analysisData) {
+		document.add(new H2("6. Identifiers not found").setDestination("not-found"));
+		final Table table = new Table(UnitValue.createPercentArray(8));
+		table.useAllAvailableWidth();
+		int i = 0;
+		int row = 0;
+		for (IdentifierSummary summary : analysisData.getAnalysisStoredResult().getNotFoundIdentifiers()) {
+			row = i / 8;
+			table.addCell(new BodyCell(summary.getId(), row));
+			i += 1;
 		}
+		final int n = 8 - analysisData.getAnalysisStoredResult().getNotFoundIdentifiers().size() % 8;
+		for (int j = 0; j < n; j++) table.addCell(new BodyCell(null, row));
+		document.add(table);
 	}
 }

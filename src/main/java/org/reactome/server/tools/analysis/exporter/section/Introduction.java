@@ -1,17 +1,19 @@
 package org.reactome.server.tools.analysis.exporter.section;
 
-import com.itextpdf.layout.element.Paragraph;
-import org.reactome.server.analysis.core.result.AnalysisStoredResult;
-import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
-import org.reactome.server.tools.analysis.exporter.constant.FontSize;
+import com.itextpdf.layout.Document;
+import com.itextpdf.layout.element.AreaBreak;
+import com.itextpdf.layout.element.Image;
+import com.itextpdf.layout.element.ListItem;
+import org.reactome.server.tools.analysis.exporter.AnalysisData;
 import org.reactome.server.tools.analysis.exporter.constant.Images;
-import org.reactome.server.tools.analysis.exporter.element.Header;
+import org.reactome.server.tools.analysis.exporter.element.H2;
+import org.reactome.server.tools.analysis.exporter.element.LP;
 import org.reactome.server.tools.analysis.exporter.element.P;
-import org.reactome.server.tools.analysis.exporter.factory.AnalysisReport;
+import org.reactome.server.tools.analysis.exporter.element.UnorderedList;
 import org.reactome.server.tools.analysis.exporter.util.PdfUtils;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Section Introduction contains the analysis introduction and Reactome relative
@@ -22,23 +24,35 @@ import java.util.List;
 public class Introduction implements Section {
 
 	private static final List<String> INTRODUCTION = PdfUtils.getText(Introduction.class.getResourceAsStream("introduction.txt"));
-	private static final List<String> PUBLICATIONS = PdfUtils.getText(Introduction.class.getResourceAsStream("references.txt"));
+	private static final List<Reference> PUBLICATIONS = PdfUtils.getText(Introduction.class.getResourceAsStream("references.txt"))
+			.stream()
+			.map(s -> s.split("\t"))
+			.map(line -> new Reference(line[0], line[1]))
+			.collect(Collectors.toList());
 
-	public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) {
-		report.add(new Header("1: Introduction", FontSize.H1).setDestination("introduction"));
-		for (String introduction : INTRODUCTION) {
-			report.add(new P(introduction));
+	@Override
+	public void render(Document document, AnalysisData analysisData) {
+		document.add(new AreaBreak());
+		document.add(new H2("1. Introduction").setDestination("introduction"));
+		INTRODUCTION.stream().map(P::new).forEach(document::add);
+
+		final UnorderedList list = new UnorderedList();
+		PUBLICATIONS.forEach(reference -> {
+			final Image image = Images.getLink(reference.link);
+			ListItem item = new ListItem();
+			item.add(new LP(reference.text).add(" ").add(image));
+			list.add(item);
+		});
+		document.add(list);
+	}
+
+	private static class Reference {
+		String text;
+		String link;
+
+		Reference(String text, String link) {
+			this.text = text;
+			this.link = link;
 		}
-
-		List<Paragraph> list = new ArrayList<>();
-		for (String publication : PUBLICATIONS) {
-
-			// Use '<>' symbol to split the publication text into literal one and the link url,
-			// change this symbol in code, also need change it in text.txt file.
-			String[] text = publication.split("<>");
-			list.add(new P(text[0])
-					.add(Images.getLink(text[1])));
-		}
-		report.addAsList(list);
 	}
 }

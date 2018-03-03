@@ -1,30 +1,15 @@
 package org.reactome.server.tools.analysis.exporter.section;
 
-import com.itextpdf.io.image.ImageDataFactory;
-import com.itextpdf.kernel.pdf.action.PdfAction;
+import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.AreaBreak;
-import com.itextpdf.layout.element.Image;
-import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Text;
-import com.itextpdf.layout.property.HorizontalAlignment;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
-import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
-import org.reactome.server.tools.analysis.exporter.constant.FontSize;
-import org.reactome.server.tools.analysis.exporter.constant.Colors;
-import org.reactome.server.tools.analysis.exporter.element.Header;
-import org.reactome.server.tools.analysis.exporter.element.ListParagraph;
-import org.reactome.server.tools.analysis.exporter.element.P;
-import org.reactome.server.tools.analysis.exporter.factory.AnalysisReport;
-import org.reactome.server.tools.analysis.exporter.util.FireworksHelper;
-import org.reactome.server.tools.analysis.exporter.util.GraphCoreHelper;
-import org.reactome.server.tools.analysis.exporter.util.PdfUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import org.reactome.server.tools.analysis.exporter.AnalysisData;
+import org.reactome.server.tools.analysis.exporter.constant.Fonts;
+import org.reactome.server.tools.analysis.exporter.element.H2;
+import org.reactome.server.tools.analysis.exporter.element.LP;
+import org.reactome.server.tools.analysis.exporter.element.UnorderedList;
 
 /**
  * Section ParameterAndResultSummary contains analysis parameter in the analysis
@@ -33,49 +18,33 @@ import java.util.List;
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class ParameterAndResultSummary implements Section {
-	private static final Logger LOGGER = LoggerFactory.getLogger(ParameterAndResultSummary.class);
-	private static final List<String> DESCRIPTION = PdfUtils.getText(ParameterAndResultSummary.class.getResourceAsStream("description.txt"));
 
-
-	public void render(AnalysisReport report, AnalysisStoredResult asr, SpeciesFilteredResult sfr) throws IOException {
-		report.add(new AreaBreak());
-		report.add(new Header("2: Summary of Parameters and Results", FontSize.H1).setDestination("parametersAnaResults"));
-
-		List<Paragraph> list = new ArrayList<>();
-
-		list.add(new ListParagraph("Species: ".concat(GraphCoreHelper.getSpeciesName(report.getReportArgs().getSpecies()))));
-		list.add(new ListParagraph("Interactors: ".concat(asr.getSummary().isInteractors() ? "interactors included" : "interactors not included")));
-		list.add(new ListParagraph("Type: ".concat(asr.getSummary().getType())));
-		list.add(new ListParagraph("Unique ID for Analysis: ".concat(asr.getSummary().getToken())));
-		list.add(new ListParagraph(
-				String.format("%s of %s identifiers submitted were "
-						, asr.getAnalysisIdentifiers().size()
-						, (asr.getNotFoundIdentifiers().size() + asr.getAnalysisIdentifiers().size())))
-				.add(new Text("found").setFontColor(Colors.REACTOME_COLOR).setAction(PdfAction.createGoTo("identifiersFound")))
-				.add(" in Reactome."));
-		list.add(new ListParagraph(String.format("%s Reactome pathways were hit.", asr.getPathways().size())));
-		list.add(new ListParagraph(String.format("%s top overrepresented pathways are listed based on their p-value.", report.getProfile().getPathwaysToShow())));
-		list.add(new ListParagraph("Genome-wide overview of pathway analysis results: "));
-		report.addAsList(list);
-
-		// add fireworks to report
-		addFireworks(report, asr);
-		for (String description : DESCRIPTION) {
-			report.add(new P(description));
-		}
+	@Override
+	public void render(Document document, AnalysisData analysisData) {
+		document.add(new AreaBreak());
+		document.add(new H2("2. Summary of parameters").setDestination("parameters"));
+		final AnalysisStoredResult result = analysisData.getAnalysisStoredResult();
+		final com.itextpdf.layout.element.List list = new UnorderedList();
+		list.add(getDescriptionListItem("Analysis type: ", String.valueOf(analysisData.getType())));
+		list.add(getDescriptionListItem("Pathways found: ", String.valueOf(result.getPathways().size())));
+		final int found = analysisData.getAnalysisStoredResult().getAnalysisIdentifiers().size();
+		final int notFound = analysisData.getAnalysisStoredResult().getNotFound().size();
+		final String identifiers = String.format("%d / %d", found, found + notFound);
+		list.add(getDescriptionListItem("Identifiers found: ", identifiers));
+		final boolean projection = result.getSummary().isProjection() != null && result.getSummary().isProjection();
+		list.add(getDescriptionListItem("Projected to human: ", projection ? "yes" : "no"));
+		final boolean interactors = result.getSummary().isInteractors() != null && result.getSummary().isInteractors();
+		list.add(getDescriptionListItem("Include interactors: ", interactors ? "yes" : "no"));
+		list.add(getDescriptionListItem("Results are shown for species: ", analysisData.getSpecies()));
+		list.add(getDescriptionListItem("Unique ID for analysis: ", analysisData.getAnalysisStoredResult().getSummary().getToken()));
+		document.add(list);
 	}
 
-	private void addFireworks(AnalysisReport report, AnalysisStoredResult asr) throws IOException {
-		BufferedImage image = FireworksHelper.getFireworks(asr);
-
-		if (image != null) {
-			Image fireworks = new Image(ImageDataFactory.create(image, java.awt.Color.WHITE));
-			fireworks.setHorizontalAlignment(HorizontalAlignment.CENTER);
-			float width = Math.min(fireworks.getImageWidth(), report.getCurrentPageArea().getWidth());
-			float height = Math.min(fireworks.getImageHeight(), report.getCurrentPageArea().getHeight());
-			report.add(fireworks.scaleToFit(width, height));
-		} else {
-			LOGGER.error("No fireworks found for analysis {}.", asr.getSummary().getToken());
-		}
+	private ListItem getDescriptionListItem(String title, String description) {
+		final ListItem item = new ListItem();
+		item.add(new LP().add(new Text(title).setFont(Fonts.BOLD)).add(new Text(description)));
+		return item;
 	}
+
+
 }

@@ -1,11 +1,11 @@
 package org.reactome.server.tools.analysis.exporter.util;
 
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
+import org.reactome.server.tools.analysis.exporter.AnalysisData;
 import org.reactome.server.tools.analysis.exporter.ReportArgs;
 import org.reactome.server.tools.fireworks.exporter.FireworksExporter;
+import org.reactome.server.tools.fireworks.exporter.common.analysis.exception.AnalysisServerError;
 import org.reactome.server.tools.fireworks.exporter.common.api.FireworkArgs;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.awt.image.BufferedImage;
 
@@ -17,34 +17,25 @@ import java.awt.image.BufferedImage;
  */
 public class FireworksHelper {
 
-	private static final String SPECIES = "Homo_sapiens";
-	private static final double QUALITY = 2.5;
-	private static final Logger LOGGER = LoggerFactory.getLogger(FireworksHelper.class);
+	private static final double QUALITY = 2.;
 	private static FireworksExporter exporter;
 
 	/**
 	 * get the fireworks image from {@link FireworksExporter} by given analysis
 	 * token.
 	 *
-	 * @param analysisStoredResult {@link AnalysisStoredResult}.
+	 * @param analysisData {@link AnalysisStoredResult}.
 	 *
 	 * @return fireworks.
 	 *
 	 * @see FireworksExporter
 	 */
-	public static BufferedImage getFireworks(AnalysisStoredResult analysisStoredResult) {
-
-		FireworkArgs args = new FireworkArgs(SPECIES, "png");
+	public static BufferedImage getFireworks(AnalysisData analysisData) throws AnalysisServerError {
+		final FireworkArgs args = new FireworkArgs(analysisData.getSpecies().replace(" ", "_"), "png");
 		args.setFactor(QUALITY);
 		args.setWriteTitle(false);
 		args.setProfile(FireworksColor.COPPER_PLUS.getColor());
-
-		try {
-			return exporter.renderRaster(args, analysisStoredResult);
-		} catch (Exception pascual) {
-			LOGGER.error("Failed to create fireworks for token: {}", analysisStoredResult.getSummary().getToken());
-			return null;
-		}
+		return exporter.renderRaster(args, analysisData.getAnalysisStoredResult());
 	}
 
 	/**

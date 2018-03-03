@@ -17,23 +17,22 @@ import java.io.IOException;
  */
 public class Fonts {
 
+	public static PdfFont ITALIC;
 	public static PdfFont REGULAR;
     public static PdfFont BOLD;
     public static PdfFont LIGHT;
 
-	public static void setUp() {
-		new Fonts().updateFonts();
-	}
-
-	private void updateFonts() {
+	public static void reload() {
 		// Every PDF must load the fonts again, as they are hold by one, and only one document
 		try {
 			byte[] bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("OpenSans-Regular.ttf"));
 			REGULAR = PdfFontFactory.createFont(bytes, "");
-            bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("OpenSans-Bold.ttf"));
-            BOLD = PdfFontFactory.createFont(bytes, "");
-            bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("OpenSans-Light.ttf"));
-            LIGHT = PdfFontFactory.createFont(bytes, "");
+			bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("OpenSans-Bold.ttf"));
+			BOLD = PdfFontFactory.createFont(bytes, "");
+			bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("OpenSans-Light.ttf"));
+			LIGHT = PdfFontFactory.createFont(bytes, "");
+			bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("OpenSans-Italic.ttf"));
+			ITALIC = PdfFontFactory.createFont(bytes, "");
 		} catch (IOException e) {
 			throw new AnalysisExporterRuntimeException("Internal error. Couldn't read fonts", e);
 		}

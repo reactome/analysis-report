@@ -3,6 +3,7 @@ package org.reactome.server.tools.analysis.exporter.element;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Text;
 import com.itextpdf.layout.hyphenation.HyphenationConfig;
+import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.tools.analysis.exporter.constant.Fonts;
 import org.reactome.server.tools.analysis.exporter.profile.Profile;
 
@@ -28,5 +29,6 @@ public class P extends Paragraph {
 		setFont(Fonts.REGULAR);
 		setMultipliedLeading(1.2f);
 		setHyphenation(HYPHENATION_CONFIG);
+		setTextAlignment(TextAlignment.JUSTIFIED);
 	}
 }

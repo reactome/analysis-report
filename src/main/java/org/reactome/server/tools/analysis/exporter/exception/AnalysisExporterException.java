@@ -4,4 +4,8 @@ public class AnalysisExporterException extends Throwable {
 	public AnalysisExporterException(String message, Throwable throwable) {
 		super(message, throwable);
 	}
+
+	public AnalysisExporterException(Throwable throwable) {
+		super(throwable);
+	}
 }

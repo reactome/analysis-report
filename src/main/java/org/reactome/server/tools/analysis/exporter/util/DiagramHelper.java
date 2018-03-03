@@ -1,5 +1,8 @@
 package org.reactome.server.tools.analysis.exporter.util;
 
+import com.itextpdf.io.image.ImageDataFactory;
+import com.itextpdf.layout.element.Image;
+import com.itextpdf.layout.property.HorizontalAlignment;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.graph.domain.result.DiagramResult;
 import org.reactome.server.tools.analysis.exporter.ReportArgs;
@@ -11,7 +14,9 @@ import org.reactome.server.tools.diagram.exporter.raster.RasterExporter;
 import org.reactome.server.tools.diagram.exporter.raster.api.RasterArgs;
 import org.reactome.server.tools.diagram.exporter.raster.ehld.exception.EhldException;
 
+import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.IOException;
 
 /**
  * Help to create the diagram image by invoking the Reactome {@link
@@ -22,6 +27,9 @@ import java.awt.image.BufferedImage;
 public class DiagramHelper {
 	private static RasterExporter exporter;
 
+	private static final double IMAGE_SCALE = 1.5;  // 1=keep original ppp
+	private static final int MIN_QUALITY = 3;
+
 	/**
 	 * create diagram image by using the RasterExporter{@see RasterExporter}.
 	 *
@@ -31,17 +39,30 @@ public class DiagramHelper {
 	 *
 	 * @return diagram.
 	 */
-	public static BufferedImage getDiagram(String stId, AnalysisStoredResult asr, String resource) throws AnalysisExporterException {
+	public static Image getDiagram(String stId, AnalysisStoredResult asr, String resource, double pageWidth) throws AnalysisExporterException {
 		final DiagramResult diagramResult = GraphCoreHelper.getDiagramResult(stId);
-		RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "png");
+		final RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "png");
 		args.setSelected(diagramResult.getEvents());
 		args.setWriteTitle(false);
 		args.setResource(resource);
+
+		final Integer width = diagramResult.getWidth();
+		final double desiredWidth = Math.min(width, pageWidth) * IMAGE_SCALE;
+		final double scale = desiredWidth / width;
+		int quality = Math.max(toQuality(scale), MIN_QUALITY);
+		args.setQuality(quality);
+
 		try {
-			return exporter.export(args, asr);
-		} catch (DiagramJsonNotFoundException | AnalysisException | DiagramJsonDeserializationException | EhldException e) {
+			final BufferedImage image = exporter.export(args, asr);
+			final Image fImage = new Image(ImageDataFactory.create(image, Color.WHITE));
+			fImage.setHorizontalAlignment(HorizontalAlignment.CENTER);
+
+
+			final float factor = (float) Math.min(1. / IMAGE_SCALE, pageWidth / image.getWidth()) - 0.01f;
+			fImage.scale(factor, factor);
+			return fImage;
+		} catch (DiagramJsonNotFoundException | AnalysisException | DiagramJsonDeserializationException | EhldException | IOException e) {
 			System.out.println("!!" + diagramResult.getDiagramStId());
-//			e.printStackTrace();
 //			throw new AnalysisExporterException("Exception reading diagram", e);
 		}
 		return null;
@@ -56,4 +77,19 @@ public class DiagramHelper {
 	public static void setPaths(ReportArgs reportArgs) {
 		exporter = new RasterExporter(reportArgs.getDiagramPath(), reportArgs.getEhldPath(), reportArgs.getAnalysisPath(), reportArgs.getSvgSummary());
 	}
+
+	private static int toQuality(double scale) {
+		if (scale <= 0.1) return 1;
+		if (scale >= 3) return 10;
+		double quality;
+		if (scale <= 1) {
+			quality = interpolate(scale, 0.1, 1, 1, 5);
+		} else quality = interpolate(scale, 1, 3, 5, 10);
+		return Math.toIntExact(Math.round(quality));
+	}
+
+	private static double interpolate(double value, double min, double max, double targetMin, double targetMax) {
+		return (value - min) / (max - min) * (targetMax - targetMin) + targetMin;
+	}
+
 }

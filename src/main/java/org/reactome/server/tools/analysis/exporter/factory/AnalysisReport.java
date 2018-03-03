@@ -40,7 +40,6 @@ public class AnalysisReport extends Document {
 		this.profile = profile;
 		this.reportArgs = reportArgs;
 		getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(this));
-		Fonts.setUp();
 		setFont(Fonts.REGULAR)
 				.setTextAlignment(TextAlignment.JUSTIFIED);
 		setMargins(profile.getMargin().getTop()

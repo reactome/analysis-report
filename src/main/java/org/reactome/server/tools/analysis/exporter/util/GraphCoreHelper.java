@@ -47,6 +47,7 @@ public class GraphCoreHelper {
 	}
 
 	public static String getSpeciesName(Long id) {
+		if (id == null) return null;
 		Species species = databaseObjectService.findByIdNoRelations(id);
 		return species.getName().get(0);
 	}
