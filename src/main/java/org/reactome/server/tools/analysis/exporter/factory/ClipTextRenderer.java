@@ -6,7 +6,7 @@ import com.itextpdf.layout.element.Text;
 import com.itextpdf.layout.layout.LayoutContext;
 import com.itextpdf.layout.layout.LayoutResult;
 import com.itextpdf.layout.renderer.CellRenderer;
-import org.reactome.server.tools.analysis.exporter.constant.FontSize;
+import org.reactome.server.tools.analysis.exporter.profile.Profile;
 
 import java.util.List;
 
@@ -27,13 +27,13 @@ public class ClipTextRenderer extends CellRenderer {
 	@Override
 	public LayoutResult layout(LayoutContext layoutContext) {
 		Paragraph content = new Paragraph()
-				.setFontSize(FontSize.TABLE)
+				.setFontSize(Profile.TABLE)
 				.setMultipliedLeading(1.0f);
 
 		String[] identifier = this.identifiers.toArray(new String[identifiers.size()]);
 		for (int i = 0; i < identifier.length; i++) {
 			content.add(new Text(identifier[i].concat(i == identifier.length - 1 ? " " : ", "))
-					.setFontSize(FontSize.TABLE));
+					.setFontSize(Profile.TABLE));
 		}
 		this.childRenderers.add(content.createRendererSubTree().setParent(this));
 		return super.layout(layoutContext);

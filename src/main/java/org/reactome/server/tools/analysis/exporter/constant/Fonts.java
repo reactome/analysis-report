@@ -25,14 +25,15 @@ public class Fonts {
 	public static void reload() {
 		// Every PDF must load the fonts again, as they are hold by one, and only one document
 		try {
-			byte[] bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("OpenSans-Regular.ttf"));
-			REGULAR = PdfFontFactory.createFont(bytes, "");
+			byte[] bytes;
+			bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("OpenSans-Regular.ttf"));
+			REGULAR = PdfFontFactory.createFont(bytes, true);
 			bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("OpenSans-Bold.ttf"));
-			BOLD = PdfFontFactory.createFont(bytes, "");
+			BOLD = PdfFontFactory.createFont(bytes, true);
 			bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("OpenSans-Light.ttf"));
-			LIGHT = PdfFontFactory.createFont(bytes, "");
+			LIGHT = PdfFontFactory.createFont(bytes, true);
 			bytes = IOUtils.toByteArray(Fonts.class.getResourceAsStream("OpenSans-Italic.ttf"));
-			ITALIC = PdfFontFactory.createFont(bytes, "");
+			ITALIC = PdfFontFactory.createFont(bytes, true);
 		} catch (IOException e) {
 			throw new AnalysisExporterRuntimeException("Internal error. Couldn't read fonts", e);
 		}

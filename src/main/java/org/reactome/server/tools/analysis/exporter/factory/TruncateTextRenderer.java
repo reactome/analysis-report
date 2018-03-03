@@ -6,8 +6,8 @@ import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.layout.LayoutContext;
 import com.itextpdf.layout.layout.LayoutResult;
 import com.itextpdf.layout.renderer.CellRenderer;
-import org.reactome.server.tools.analysis.exporter.constant.FontSize;
 import org.reactome.server.tools.analysis.exporter.constant.Fonts;
+import org.reactome.server.tools.analysis.exporter.profile.Profile;
 
 /**
  * Truncate text to fit in the cell.
@@ -31,7 +31,7 @@ public class TruncateTextRenderer extends CellRenderer {
 	public LayoutResult layout(LayoutContext layoutContext) {
 		PdfFont font = Fonts.REGULAR;
 		String symbol = "...";
-		int fontSize = FontSize.TABLE;
+		float fontSize = Profile.TABLE;
 		int length = text.length();
 		float cellWidth = layoutContext.getArea().getBBox().getWidth();
 		Paragraph content = new Paragraph()

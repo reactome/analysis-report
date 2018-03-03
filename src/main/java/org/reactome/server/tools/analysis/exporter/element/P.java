@@ -25,8 +25,8 @@ public class P extends Paragraph {
 	}
 
 	protected void style() {
-		setFontSize(Profile.P);
 		setFont(Fonts.REGULAR);
+		setFontSize(Profile.P);
 		setMultipliedLeading(1.2f);
 		setHyphenation(HYPHENATION_CONFIG);
 		setTextAlignment(TextAlignment.JUSTIFIED);

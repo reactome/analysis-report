@@ -1,0 +1,10 @@
+{
+  "margin": {
+    "top": 60,
+    "bottom": 60,
+    "left": 60,
+    "right": 60
+  },
+  "fontSize": 12,
+  "pathwaysToShow": 25
+}

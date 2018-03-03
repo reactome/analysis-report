@@ -17,7 +17,7 @@ public class FooterEventHandler implements IEventHandler {
 
 	private final Document document;
 
-	FooterEventHandler(Document document) {
+	public FooterEventHandler(Document document) {
 		this.document = document;
 	}
 
