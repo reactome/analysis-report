@@ -4,7 +4,7 @@ import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.element.Cell;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
-import org.reactome.server.tools.analysis.exporter.profile.Profile;
+import org.reactome.server.tools.analysis.exporter.style.Profile;
 
 public class BodyCell extends Cell {
 

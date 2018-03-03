@@ -18,7 +18,7 @@ import org.reactome.server.tools.analysis.exporter.element.BodyCell;
 import org.reactome.server.tools.analysis.exporter.element.H2;
 import org.reactome.server.tools.analysis.exporter.element.HeaderCell;
 import org.reactome.server.tools.analysis.exporter.element.P;
-import org.reactome.server.tools.analysis.exporter.profile.Profile;
+import org.reactome.server.tools.analysis.exporter.style.Profile;
 
 import java.util.Arrays;
 

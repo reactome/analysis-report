@@ -4,7 +4,6 @@ import com.itextpdf.io.image.ImageData;
 import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Image;
-import org.reactome.server.tools.analysis.exporter.profile.Profile;
 
 public class Images {
 

@@ -15,7 +15,7 @@ import org.reactome.server.tools.analysis.exporter.style.Fonts;
 import org.reactome.server.tools.analysis.exporter.style.Images;
 import org.reactome.server.tools.analysis.exporter.element.*;
 import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
-import org.reactome.server.tools.analysis.exporter.profile.Profile;
+import org.reactome.server.tools.analysis.exporter.style.Profile;
 import org.reactome.server.tools.analysis.exporter.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.util.HtmlParser;
 

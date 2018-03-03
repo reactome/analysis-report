@@ -10,7 +10,7 @@ import org.reactome.server.analysis.core.result.model.ResourceSummary;
 import org.reactome.server.analysis.core.result.utils.TokenUtils;
 import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.exporter.exception.FailToRenderReportException;
-import org.reactome.server.tools.analysis.exporter.profile.PdfProfile;
+import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.section.*;
 import org.reactome.server.tools.analysis.exporter.style.Fonts;
 import org.reactome.server.tools.analysis.exporter.util.DiagramHelper;
@@ -35,11 +35,11 @@ import java.util.Locale;
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
-public class ReportRenderer {
+public class AnalysisExporter {
 
 	private static final Long DEFAULT_SPECIES = 48887L; // Homo Sapiens.
 	private static final ObjectMapper MAPPER = new ObjectMapper();
-	private static final Logger LOGGER = LoggerFactory.getLogger(ReportRenderer.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(AnalysisExporter.class);
 	private static final PdfProfile profile = loadPdfProfile();
 
 	private static final List<Section> SECTIONS = Arrays.asList(
@@ -54,7 +54,7 @@ public class ReportRenderer {
 	);
 	private final TokenUtils tokenUtils;
 
-	public ReportRenderer(String diagramPath, String ehldPath, String fireworksPath, String analysisPath, String svgSummary) {
+	public AnalysisExporter(String diagramPath, String ehldPath, String fireworksPath, String analysisPath, String svgSummary) {
 		DiagramHelper.setPaths(diagramPath, ehldPath, analysisPath, svgSummary);
 		FireworksHelper.setPaths(fireworksPath, analysisPath);
 		Locale.setDefault(Locale.ENGLISH);

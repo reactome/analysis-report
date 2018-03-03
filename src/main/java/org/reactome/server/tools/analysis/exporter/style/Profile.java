@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.profile;
+package org.reactome.server.tools.analysis.exporter.style;
 
 import com.itextpdf.kernel.colors.Color;
 import com.itextpdf.kernel.colors.DeviceGray;

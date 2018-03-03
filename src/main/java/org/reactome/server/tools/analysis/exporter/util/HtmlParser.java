@@ -4,7 +4,7 @@ import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.tools.analysis.exporter.style.Fonts;
 import org.reactome.server.tools.analysis.exporter.element.P;
-import org.reactome.server.tools.analysis.exporter.profile.Profile;
+import org.reactome.server.tools.analysis.exporter.style.Profile;
 
 import java.util.LinkedList;
 import java.util.List;

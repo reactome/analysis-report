@@ -6,7 +6,7 @@ import com.itextpdf.layout.element.Cell;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.reactome.server.tools.analysis.exporter.style.Fonts;
-import org.reactome.server.tools.analysis.exporter.profile.Profile;
+import org.reactome.server.tools.analysis.exporter.style.Profile;
 
 public class HeaderCell extends Cell {
 

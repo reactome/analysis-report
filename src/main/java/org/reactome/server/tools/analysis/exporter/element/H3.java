@@ -2,7 +2,7 @@ package org.reactome.server.tools.analysis.exporter.element;
 
 import com.itextpdf.layout.element.Text;
 import org.reactome.server.tools.analysis.exporter.style.Fonts;
-import org.reactome.server.tools.analysis.exporter.profile.Profile;
+import org.reactome.server.tools.analysis.exporter.style.Profile;
 
 public class H3 extends P {
 	public H3(String text) {

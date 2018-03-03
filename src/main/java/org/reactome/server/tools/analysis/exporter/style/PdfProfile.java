@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.profile;
+package org.reactome.server.tools.analysis.exporter.style;
 
 /**
  * Profile model contains the report outlook setting.

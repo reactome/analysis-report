@@ -86,7 +86,7 @@ public class AnalysisExporterMain {
 		reportArgs.setResource("UNIPROT");
 
 		long start = Instant.now().toEpochMilli();
-		final ReportRenderer renderer = new ReportRenderer(config.getString("diagramPath"), config.getString("ehldPath"),
+		final AnalysisExporter renderer = new AnalysisExporter(config.getString("diagramPath"), config.getString("ehldPath"),
 				config.getString("fireworksPath"), config.getString("analysisPath"),
 				config.getString("svgSummary"));
 		final FileOutputStream os = new FileOutputStream(new File(config.getString("output")));

@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
-import org.reactome.server.tools.analysis.exporter.ReportRenderer;
+import org.reactome.server.tools.analysis.exporter.AnalysisExporter;
 import org.reactome.server.tools.analysis.exporter.util.GraphCoreConfig;
 
 import java.io.File;
@@ -35,7 +35,7 @@ public class AnalysisExporterTest {
 	private static final String FIREWORKS_PATH = "src/test/resources/reactome/fireworks";
 	private static final String EHLD_PATH = "src/test/resources/reactome/ehld";
 	private static final String SVG_SUMMARY = "src/test/resources/reactome/ehld/svgsummary.txt";
-	private static final ReportRenderer RENDERER = new ReportRenderer(DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, SVG_SUMMARY);
+	private static final AnalysisExporter RENDERER = new AnalysisExporter(DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, SVG_SUMMARY);
 
 	@BeforeClass
 	public static void beforeClass() {
