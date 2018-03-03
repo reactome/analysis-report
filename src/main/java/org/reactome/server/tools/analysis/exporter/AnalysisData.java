@@ -5,9 +5,6 @@ import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.graph.domain.model.Pathway;
-import org.reactome.server.graph.service.DatabaseObjectService;
-import org.reactome.server.graph.service.GeneralService;
-import org.reactome.server.graph.utils.ReactomeGraphCore;
 import org.reactome.server.tools.analysis.exporter.util.GraphCoreHelper;
 
 import java.util.Collection;
@@ -17,9 +14,7 @@ import java.util.Map;
 
 public class AnalysisData {
 
-	private static final GeneralService generalService = ReactomeGraphCore.getService(GeneralService.class);
 	private static final int MAX_PATHWAYS = 35;
-	private final DatabaseObjectService databaseObjectService = ReactomeGraphCore.getService(DatabaseObjectService.class);
 	private final AnalysisType type;
 	private final Map<String, PathwayData> pathwayDataMap;
 	private final String beautifiedResource;
@@ -46,7 +41,7 @@ public class AnalysisData {
 		final Map<String, PathwayData> map = new LinkedHashMap<>();
 		speciesFilteredResult.getPathways().stream().limit(MAX_PATHWAYS).forEach(pathwayBase -> {
 			final PathwayNodeSummary pathwaySummary = analysisStoredResult.getPathway(pathwayBase.getStId());
-			final Pathway pathway = databaseObjectService.findById(pathwayBase.getStId());
+			final Pathway pathway = GraphCoreHelper.getPathway(pathwayBase.getStId());
 			map.put(pathway.getStId(), new PathwayData(pathwaySummary, pathwayBase, pathway));
 		});
 		return map;
@@ -103,10 +98,6 @@ public class AnalysisData {
 
 	public String getName() {
 		return name;
-	}
-
-	public Integer getDBVersion() {
-		return generalService.getDBVersion();
 	}
 
 	public AnalysisType getType() {

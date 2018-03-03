@@ -1,4 +1,4 @@
-package org.reactome.server.tools.analysis.exporter.factory;
+package org.reactome.server.tools.analysis.exporter.section;
 
 import com.itextpdf.kernel.events.Event;
 import com.itextpdf.kernel.events.IEventHandler;

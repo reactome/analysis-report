@@ -1,6 +1,7 @@
 package org.reactome.server.tools.analysis.exporter;
 
-import org.reactome.server.tools.analysis.exporter.exception.*;
+import org.reactome.server.tools.analysis.exporter.exception.FailToExportAnalysisReportException;
+import org.reactome.server.tools.analysis.exporter.exception.FailToRenderReportException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -41,10 +42,7 @@ public class AnalysisExporter {
 	public static void export(ReportArgs reportArgs, OutputStream destination) throws Exception {
 		try {
 			ReportRenderer.render(reportArgs, destination);
-		} catch (FailToAddLogoException | TableTypeNotFoundException
-				| FailToGetDiagramException | FailToCreateFontException
-				| FailToGetFireworksException | FailToRenderReportException
-				| FailToRequestDataException e) {
+		} catch (FailToRenderReportException e) {
 			LOGGER.error(e.getMessage());
 			throw e;
 		} catch (ExceptionInInitializerError e) {

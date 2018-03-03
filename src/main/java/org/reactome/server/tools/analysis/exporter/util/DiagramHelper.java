@@ -62,10 +62,10 @@ public class DiagramHelper {
 			fImage.scale(factor, factor);
 			return fImage;
 		} catch (DiagramJsonNotFoundException | AnalysisException | DiagramJsonDeserializationException | EhldException | IOException e) {
-			System.out.println("!!" + diagramResult.getDiagramStId());
-//			throw new AnalysisExporterException("Exception reading diagram", e);
+//			System.out.println("!!" + diagramResult.getDiagramStId());
+			throw new AnalysisExporterException("Exception reading diagram", e);
 		}
-		return null;
+//		return null;
 	}
 
 	/**

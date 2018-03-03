@@ -32,7 +32,7 @@ public class AnalysisExporterTest {
 		}
 	};
 	private static final File SAVE_TO = new File("test-files");
-	private static final String ANALYSIS_PATH = "src/test/resources/analysis";
+	private static final String ANALYSIS_PATH = "src/test/resources/reactome/analysis";
 	private static final String DIAGRAM_PATH = "src/test/resources/reactome/diagram";
 	private static final String FIREWORKS_PATH = "src/test/resources/reactome/fireworks";
 	private static final String EHLD_PATH = "src/test/resources/reactome/ehld";

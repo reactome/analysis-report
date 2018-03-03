@@ -1,14 +1,12 @@
 package org.reactome.server.tools.analysis.exporter.util;
 
-import org.reactome.server.graph.domain.model.DatabaseObject;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.model.Species;
 import org.reactome.server.graph.domain.result.DiagramResult;
 import org.reactome.server.graph.service.DatabaseObjectService;
 import org.reactome.server.graph.service.DiagramService;
 import org.reactome.server.graph.service.GeneralService;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.reactome.server.graph.utils.ReactomeGraphCore;
 
 /**
  * Help to retrieve information from Reactome GraphCore.
@@ -17,18 +15,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class GraphCoreHelper {
 
-	private static ApplicationContext context;
-	private static GeneralService genericService;
-	private static DiagramService diagramService;
-
-	private static DatabaseObjectService databaseObjectService;
-
-	static {
-		context = new AnnotationConfigApplicationContext(GraphCoreConfig.class);
-		genericService = context.getBean(GeneralService.class);
-		diagramService = context.getBean(DiagramService.class);
-		databaseObjectService = context.getBean(DatabaseObjectService.class);
-	}
+	private static GeneralService genericService = ReactomeGraphCore.getService(GeneralService.class);
+	private static DiagramService diagramService = ReactomeGraphCore.getService(DiagramService.class);
+	private static DatabaseObjectService databaseObjectService = ReactomeGraphCore.getService(DatabaseObjectService.class);
 
 	/**
 	 * @return Reactome's current database version.
@@ -50,15 +39,6 @@ public class GraphCoreHelper {
 		if (id == null) return null;
 		Species species = databaseObjectService.findByIdNoRelations(id);
 		return species.getName().get(0);
-	}
-
-	public static String getFoundEntityName(String stId) {
-		DatabaseObject result = databaseObjectService.findById(stId);
-		if (result != null) {
-			return result.getDisplayName();
-		} else {
-			return stId;
-		}
 	}
 
 	public static DiagramResult getDiagramResult(String stId) {

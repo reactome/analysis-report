@@ -12,7 +12,7 @@ import org.reactome.server.analysis.core.result.utils.TokenUtils;
 import org.reactome.server.tools.analysis.exporter.constant.Fonts;
 import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.exporter.exception.FailToRenderReportException;
-import org.reactome.server.tools.analysis.exporter.factory.FooterEventHandler;
+import org.reactome.server.tools.analysis.exporter.section.FooterEventHandler;
 import org.reactome.server.tools.analysis.exporter.profile.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.section.*;
 import org.reactome.server.tools.analysis.exporter.util.DiagramHelper;
@@ -57,7 +57,7 @@ class ReportRenderer {
 	 *
 	 * @throws Exception when fail to create the PDF document.
 	 */
-	protected static void render(ReportArgs reportArgs, OutputStream destination) throws Exception {
+	protected static void render(ReportArgs reportArgs, OutputStream destination) throws FailToRenderReportException {
 		Locale.setDefault(Locale.ENGLISH);
 		DiagramHelper.setPaths(reportArgs);
 		FireworksHelper.setPaths(reportArgs);

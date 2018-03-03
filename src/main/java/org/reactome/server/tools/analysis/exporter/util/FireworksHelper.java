@@ -34,7 +34,7 @@ public class FireworksHelper {
 		final FireworkArgs args = new FireworkArgs(analysisData.getSpecies().replace(" ", "_"), "png");
 		args.setFactor(QUALITY);
 		args.setWriteTitle(false);
-		args.setProfile(FireworksColor.COPPER_PLUS.getColor());
+//		args.setProfile("Copper plus");
 		return exporter.renderRaster(args, analysisData.getAnalysisStoredResult());
 	}
 
