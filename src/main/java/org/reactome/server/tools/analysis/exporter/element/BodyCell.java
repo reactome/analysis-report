@@ -13,10 +13,10 @@ public class BodyCell extends Cell {
 		if (text != null)
 		add(new P(text)
 				.setFontSize(Profile.P - 2)
+				.setTextAlignment(TextAlignment.CENTER)
 				.setMultipliedLeading(1.0f));
 		setKeepTogether(true)
 				.setVerticalAlignment(VerticalAlignment.MIDDLE)
-				.setTextAlignment(TextAlignment.CENTER)
 				.setBorder(Border.NO_BORDER)
 				.setBackgroundColor(row % 2 == 0 ? null : Profile.LIGHT_GRAY);
 

@@ -25,10 +25,10 @@ public class AnalysisExporterTest {
 	private static final HashMap<String, String> tokens = new HashMap<String, String>() {
 		{
 			put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
-			put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
+//			put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
 			put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
-			put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
-			put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
+//			put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
+//			put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
 		}
 	};
 	private static final File SAVE_TO = new File("test-files");
@@ -72,7 +72,7 @@ public class AnalysisExporterTest {
 
 	private void export(ReportArgs reportArgs, String type) {
 		try {
-			OutputStream outputStream = new FileOutputStream(new File(String.format("%s/%s_%tL.pdf", SAVE_TO, type, Instant.now().toEpochMilli())));
+			OutputStream outputStream = new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)));
 			AnalysisExporter.export(reportArgs, outputStream);
 		} catch (Exception e) {
 			e.printStackTrace();

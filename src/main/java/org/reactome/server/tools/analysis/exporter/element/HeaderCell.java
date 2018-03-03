@@ -16,12 +16,12 @@ public class HeaderCell extends Cell {
 					.setFont(Fonts.BOLD)
 					.setFontColor(DeviceRgb.WHITE)
 					.setFontSize(Profile.P - 1)
+					.setTextAlignment(TextAlignment.CENTER)
 					.setMultipliedLeading(1.0f));
 			setKeepTogether(true)
 					.setVerticalAlignment(VerticalAlignment.MIDDLE)
 					.setBackgroundColor(Profile.REACTOME_COLOR)
-					.setBorder(Border.NO_BORDER)
-					.setTextAlignment(TextAlignment.CENTER);
+					.setBorder(Border.NO_BORDER);
 		}
 	}
 }

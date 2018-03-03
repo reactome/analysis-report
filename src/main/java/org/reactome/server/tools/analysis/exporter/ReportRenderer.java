@@ -25,6 +25,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Create the report by using iText library.
@@ -57,6 +58,7 @@ class ReportRenderer {
 	 * @throws Exception when fail to create the PDF document.
 	 */
 	protected static void render(ReportArgs reportArgs, OutputStream destination) throws Exception {
+		Locale.setDefault(Locale.ENGLISH);
 		DiagramHelper.setPaths(reportArgs);
 		FireworksHelper.setPaths(reportArgs);
 		Fonts.reload();
