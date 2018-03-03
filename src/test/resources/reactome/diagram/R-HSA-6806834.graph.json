@@ -1,0 +1,4075 @@
+{
+  "dbId" : 6806834,
+  "stId" : "R-HSA-6806834",
+  "nodes" : [ {
+    "dbId" : 2089992,
+    "stId" : "R-HSA-2089992",
+    "displayName" : "3x4Hyp-5Hyl-COL1A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02452",
+    "geneNames" : [ "COL1A1" ],
+    "parents" : [ 2428942, 2089973 ]
+  }, {
+    "dbId" : 2089991,
+    "stId" : "R-HSA-2089991",
+    "displayName" : "3x4Hyp-GalHyl-COL1A2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08123",
+    "geneNames" : [ "COL1A2" ],
+    "parents" : [ 2089983 ]
+  }, {
+    "dbId" : 1641473,
+    "stId" : "R-HSA-1641473",
+    "displayName" : "HGFAC(373-407) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q04756",
+    "geneNames" : [ "HGFAC" ],
+    "parents" : [ 6800311 ]
+  }, {
+    "dbId" : 2089990,
+    "stId" : "R-HSA-2089990",
+    "displayName" : "3x4Hyp-COL1A2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08123",
+    "geneNames" : [ "COL1A2" ],
+    "parents" : [ 2089983 ]
+  }, {
+    "dbId" : 2089989,
+    "stId" : "R-HSA-2089989",
+    "displayName" : "3x4Hyp-3Hyp-COL1A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02452",
+    "geneNames" : [ "COL1A1" ],
+    "parents" : [ 2089973 ]
+  }, {
+    "dbId" : 2089988,
+    "stId" : "R-HSA-2089988",
+    "displayName" : "3x4Hyp-COL1A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02452",
+    "geneNames" : [ "COL1A1" ],
+    "parents" : [ 2089973 ]
+  }, {
+    "dbId" : 2089987,
+    "stId" : "R-HSA-2089987",
+    "displayName" : "3x4Hyp-3Hyp-5Hyl-COL1A2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08123",
+    "geneNames" : [ "COL1A2" ],
+    "parents" : [ 2428943, 2089983 ]
+  }, {
+    "dbId" : 2089986,
+    "stId" : "R-HSA-2089986",
+    "displayName" : "3x4Hyp-3Hyp-5Hyl-COL1A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02452",
+    "geneNames" : [ "COL1A1" ],
+    "parents" : [ 2428942, 2089973 ]
+  }, {
+    "dbId" : 2089985,
+    "stId" : "R-HSA-2089985",
+    "displayName" : "3x4Hyp-GalHyl-COL1A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02452",
+    "geneNames" : [ "COL1A1" ],
+    "parents" : [ 2089973 ]
+  }, {
+    "dbId" : 2089984,
+    "stId" : "R-HSA-2089984",
+    "displayName" : "GlcGalHyl-COL1A2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08123",
+    "geneNames" : [ "COL1A2" ],
+    "parents" : [ 2089983 ]
+  }, {
+    "dbId" : 74787,
+    "stId" : "R-HSA-74787",
+    "displayName" : "PIK3CA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42336",
+    "geneNames" : [ "PIK3CA" ],
+    "parents" : [ 74689, 2399558, 5637693, 1226013, 5655267, 5655337, 5655294, 8853237, 5655217, 1839055, 1839051, 3080565, 5654331, 1806270, 1806218, 1806182, 1306961, 5654197, 5654195, 5654192, 198379, 5654205, 179791, 1250373, 5654190, 5654188, 5654187, 1250508 ]
+  }, {
+    "dbId" : 74789,
+    "stId" : "R-HSA-74789",
+    "displayName" : "PIK3R1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P27986",
+    "geneNames" : [ "PIK3R1", "GRB1" ],
+    "parents" : [ 6790032, 443399, 1839052, 1839048, 1295511, 391342, 179864, 1806213, 1806184, 1806218, 74688 ]
+  }, {
+    "dbId" : 8875181,
+    "stId" : "R-HSA-8875181",
+    "displayName" : "MonoUb-K,p-Y1234,Y1235,Y1349,Y1356-MET [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08581",
+    "geneNames" : [ "MET" ],
+    "parents" : [ 8876254, 8875345 ]
+  }, {
+    "dbId" : 8875180,
+    "stId" : "R-HSA-8875180",
+    "displayName" : "MonoUb-K,p-Y1003,4Y-MET [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08581",
+    "geneNames" : [ "MET" ],
+    "parents" : [ 8875349 ]
+  }, {
+    "dbId" : 1169488,
+    "stId" : "R-HSA-1169488",
+    "displayName" : "SHC1-2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 252 ],
+    "identifier" : "P29353-2",
+    "geneNames" : [ "SHC1", "SHC", "SHCA" ],
+    "parents" : [ 8851882, 1169480 ]
+  }, {
+    "dbId" : 8865998,
+    "stId" : "R-HSA-8865998",
+    "displayName" : "HGF:p-4Y-MET:p-5Y-GAB1, HGF:p-4Y-MET:GRB2-1:p-5Y-GAB1:PTPN11 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 360 ],
+    "children" : [ 162563, 8851943 ]
+  }, {
+    "dbId" : 3211389,
+    "stId" : "R-HSA-3211389",
+    "displayName" : "5-hydroxylysyl collagen alpha-3(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25940",
+    "geneNames" : [ "COL5A3" ],
+    "parents" : [ 2470321 ]
+  }, {
+    "dbId" : 3211388,
+    "stId" : "R-HSA-3211388",
+    "displayName" : "Collagen alpha-3(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25940",
+    "geneNames" : [ "COL5A3" ],
+    "parents" : [ 2470321 ]
+  }, {
+    "dbId" : 913472,
+    "stId" : "R-HSA-913472",
+    "displayName" : "RAPGEF1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 624 ],
+    "identifier" : "Q13905",
+    "geneNames" : [ "RAPGEF1", "GRF2" ],
+    "parents" : [ 914209, 8875561 ]
+  }, {
+    "dbId" : 3211391,
+    "stId" : "R-HSA-3211391",
+    "displayName" : "3,4-Hyp Glu-Gal-Hyl collagen alpha-3(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25940",
+    "geneNames" : [ "COL5A3" ],
+    "parents" : [ 2470321 ]
+  }, {
+    "dbId" : 3211390,
+    "stId" : "R-HSA-3211390",
+    "displayName" : "Glu-Gal-Hyl collagen alpha-3(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25940",
+    "geneNames" : [ "COL5A3" ],
+    "parents" : [ 2470321 ]
+  }, {
+    "dbId" : 354384,
+    "stId" : "R-HSA-354384",
+    "displayName" : "CRKL [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P46109",
+    "geneNames" : [ "CRKL" ],
+    "parents" : [ 381945 ]
+  }, {
+    "dbId" : 197745,
+    "stId" : "R-HSA-197745",
+    "displayName" : "LRIG1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 458 ],
+    "identifier" : "Q96JA1",
+    "geneNames" : [ "LRIG1", "LIG1" ],
+    "parents" : [ 8875375 ]
+  }, {
+    "dbId" : 180344,
+    "stId" : "R-HSA-180344",
+    "displayName" : "p-5Y-GAB1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13480",
+    "geneNames" : [ "GAB1" ],
+    "parents" : [ 8855296, 180304, 8851941, 8851942 ]
+  }, {
+    "dbId" : 5673001,
+    "stId" : "R-HSA-5673001",
+    "displayName" : "RAF/MAP kinase cascade",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 339 ]
+  }, {
+    "dbId" : 2327729,
+    "stId" : "R-HSA-2327729",
+    "displayName" : "Fibronectin matrix [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2681744, 2731114, 2426289, 2327790, 2537655, 216035, 8874086 ],
+    "children" : [ 266103 ]
+  }, {
+    "dbId" : 6785269,
+    "stId" : "R-HSA-6785269",
+    "displayName" : "PTPRJ [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 122 ],
+    "identifier" : "Q12913",
+    "geneNames" : [ "PTPRJ", "DEP1" ],
+    "parents" : [ 6806323, 6785270 ]
+  }, {
+    "dbId" : 939164,
+    "stId" : "R-HSA-939164",
+    "displayName" : "UBC(77-152) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0CG48",
+    "geneNames" : [ "UBC" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 939165,
+    "stId" : "R-HSA-939165",
+    "displayName" : "UBC(609-684) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0CG48",
+    "geneNames" : [ "UBC" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 1257604,
+    "stId" : "R-HSA-1257604",
+    "displayName" : "PIP3 activates AKT signaling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 329 ]
+  }, {
+    "dbId" : 3211393,
+    "stId" : "R-HSA-3211393",
+    "displayName" : "3,4-Hyp 5-Gal-Hyl collagen alpha-3(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25940",
+    "geneNames" : [ "COL5A3" ],
+    "parents" : [ 2470321 ]
+  }, {
+    "dbId" : 3211392,
+    "stId" : "R-HSA-3211392",
+    "displayName" : "5-Gal-Hyl collagen alpha-3(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25940",
+    "geneNames" : [ "COL5A3" ],
+    "parents" : [ 2470321 ]
+  }, {
+    "dbId" : 56497,
+    "stId" : "R-HSA-56497",
+    "displayName" : "HGF(32-494) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14210",
+    "geneNames" : [ "HGF", "HPTA" ],
+    "parents" : [ 6790034, 141763 ]
+  }, {
+    "dbId" : 3211395,
+    "stId" : "R-HSA-3211395",
+    "displayName" : "3,4-hydroxyprolyl collagen alpha-3(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25940",
+    "geneNames" : [ "COL5A3" ],
+    "parents" : [ 2470321 ]
+  }, {
+    "dbId" : 3211394,
+    "stId" : "R-HSA-3211394",
+    "displayName" : "4-Hyp 5-Gal-Hyl collagen alpha-3(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25940",
+    "geneNames" : [ "COL5A3" ],
+    "parents" : [ 2470321 ]
+  }, {
+    "dbId" : 3211397,
+    "stId" : "R-HSA-3211397",
+    "displayName" : "4-hydroxyprolyl collagen alpha-3(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25940",
+    "geneNames" : [ "COL5A3" ],
+    "parents" : [ 2470321 ]
+  }, {
+    "dbId" : 3211396,
+    "stId" : "R-HSA-3211396",
+    "displayName" : "4-Hyp 5-Hyl collagen alpha-3(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25940",
+    "geneNames" : [ "COL5A3" ],
+    "parents" : [ 2470321 ]
+  }, {
+    "dbId" : 3211399,
+    "stId" : "R-HSA-3211399",
+    "displayName" : "3,4-Hyp 5-Hyl collagen alpha-3(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25940",
+    "geneNames" : [ "COL5A3" ],
+    "parents" : [ 2470321 ]
+  }, {
+    "dbId" : 939192,
+    "stId" : "R-HSA-939192",
+    "displayName" : "UBC(229-304) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0CG48",
+    "geneNames" : [ "UBC" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 3211398,
+    "stId" : "R-HSA-3211398",
+    "displayName" : "4-Hyp Glu-Gal-Hyl collagen alpha-3(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25940",
+    "geneNames" : [ "COL5A3" ],
+    "parents" : [ 2470321 ]
+  }, {
+    "dbId" : 939191,
+    "stId" : "R-HSA-939191",
+    "displayName" : "UBC(381-456) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0CG48",
+    "geneNames" : [ "UBC" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 939188,
+    "stId" : "R-HSA-939188",
+    "displayName" : "UBC(1-76) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0CG48",
+    "geneNames" : [ "UBC" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 939184,
+    "stId" : "R-HSA-939184",
+    "displayName" : "UBC(457-532) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0CG48",
+    "geneNames" : [ "UBC" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 939214,
+    "stId" : "R-HSA-939214",
+    "displayName" : "UBB(1-76) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0CG47",
+    "geneNames" : [ "UBB" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 939213,
+    "stId" : "R-HSA-939213",
+    "displayName" : "UBB(77-152) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0CG47",
+    "geneNames" : [ "UBB" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 939205,
+    "stId" : "R-HSA-939205",
+    "displayName" : "RPS27A(1-76) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62979",
+    "geneNames" : [ "RPS27A", "UBA80", "UBCEP1" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 939203,
+    "stId" : "R-HSA-939203",
+    "displayName" : "UBA52(1-76) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62987",
+    "geneNames" : [ "UBA52", "UBCEP2" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 939230,
+    "stId" : "R-HSA-939230",
+    "displayName" : "UBB(153-228) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0CG47",
+    "geneNames" : [ "UBB" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 917720,
+    "stId" : "R-HSA-917720",
+    "displayName" : "USP8 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 503 ],
+    "identifier" : "P40818",
+    "geneNames" : [ "USP8", "KIAA0055", "UBPY" ],
+    "parents" : [ 6782796, 6782772, 6782825, 6782765 ]
+  }, {
+    "dbId" : 109783,
+    "stId" : "R-HSA-109783",
+    "displayName" : "p21 RAS:GTP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 171 ],
+    "parents" : [ 5218802, 5624478, 5624477, 5624470, 171020, 5672715, 5672712, 5672729, 8981350, 5675414, 5675430, 5674003, 5675412, 5674005, 5658227 ],
+    "children" : [ 109782, 29438 ]
+  }, {
+    "dbId" : 109782,
+    "stId" : "R-HSA-109782",
+    "displayName" : "RAS [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 167204, 109783, 109796 ],
+    "children" : [ 62719, 62717, 62725 ]
+  }, {
+    "dbId" : 57562,
+    "stId" : "R-HSA-57562",
+    "displayName" : "ITGA2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P17301",
+    "geneNames" : [ "ITGA2", "CD49B" ],
+    "parents" : [ 114561 ]
+  }, {
+    "dbId" : 8874087,
+    "stId" : "R-HSA-8874087",
+    "displayName" : "Integrin alpha2beta1,alpha3:beta1:(collagen,laminin,fibronectin) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 904 ],
+    "children" : [ 8874085, 8874086 ]
+  }, {
+    "dbId" : 8874086,
+    "stId" : "R-HSA-8874086",
+    "displayName" : "Collagen, laminin, fibronectin [extracellular region]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 8874087 ],
+    "children" : [ 2426651, 2327729, 2214304 ]
+  }, {
+    "dbId" : 8874085,
+    "stId" : "R-HSA-8874085",
+    "displayName" : "Integrin alpha2beta1,alpha3beta1 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 8874087 ],
+    "children" : [ 204444, 114561 ]
+  }, {
+    "dbId" : 109797,
+    "stId" : "R-HSA-109797",
+    "displayName" : "GRB2-1:SOS1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 153 ],
+    "parents" : [ 5637697, 5637704, 1225856, 1225859, 5655342, 5655345, 5655307, 8853233, 5655328, 5686070, 205202, 2685672, 186827, 921157, 5654296, 1306947, 5654343, 5654275, 8851807, 5654287, 1250505, 1250382, 5654327, 5685367, 109798, 109800, 180331, 5654264, 179820, 2179409, 8854903, 5654308, 8854399, 5654316, 1250479, 8851897 ],
+    "children" : [ 74686, 64847 ]
+  }, {
+    "dbId" : 1012970,
+    "stId" : "R-HSA-1012970",
+    "displayName" : "DOCK7 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96N67",
+    "geneNames" : [ "DOCK7", "KIAA1771" ],
+    "parents" : [ 1012978, 8875579 ]
+  }, {
+    "dbId" : 109796,
+    "stId" : "R-HSA-109796",
+    "displayName" : "p21 RAS:GDP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 169 ],
+    "children" : [ 109782, 29420 ]
+  }, {
+    "dbId" : 8874094,
+    "stId" : "R-HSA-8874094",
+    "displayName" : "HGF:p-4Y-MET dimer:p-Y397-PTK2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 388 ],
+    "parents" : [ 8874097 ],
+    "children" : [ 6806977, 354068 ]
+  }, {
+    "dbId" : 2168008,
+    "stId" : "R-HSA-2168008",
+    "displayName" : "Collagen type XI fibril [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2465885, 2413074, 2127450, 2214303 ],
+    "children" : [ 2142910 ]
+  }, {
+    "dbId" : 939239,
+    "stId" : "R-HSA-939239",
+    "displayName" : "UBC(533-608) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0CG48",
+    "geneNames" : [ "UBC" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 939232,
+    "stId" : "R-HSA-939232",
+    "displayName" : "UBC(305-380) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0CG48",
+    "geneNames" : [ "UBC" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 8874088,
+    "stId" : "R-HSA-8874088",
+    "displayName" : "HGF:p-4Y-MET dimer:PTK2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 377 ],
+    "children" : [ 6806977, 201621 ]
+  }, {
+    "dbId" : 939258,
+    "stId" : "R-HSA-939258",
+    "displayName" : "UBC(153-228) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0CG48",
+    "geneNames" : [ "UBC" ],
+    "parents" : [ 113595, 6793517 ]
+  }, {
+    "dbId" : 8874097,
+    "stId" : "R-HSA-8874097",
+    "displayName" : "HGF:p-4Y-MET dimer:p-Y397-PTK2:MyrG-p-Y419-SRC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 398 ],
+    "children" : [ 8874094, 1810408 ]
+  }, {
+    "dbId" : 57596,
+    "stId" : "R-HSA-57596",
+    "displayName" : "ITGB1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05556",
+    "geneNames" : [ "ITGB1", "FNRB", "MDF2", "MSK12" ],
+    "parents" : [ 6789331, 2681747, 446408, 216015, 215998, 202730, 198201, 204443, 215990, 216011, 216012, 215982, 215987, 8875528, 204444, 114561 ]
+  }, {
+    "dbId" : 62717,
+    "stId" : "R-HSA-62717",
+    "displayName" : "HRAS [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01112",
+    "geneNames" : [ "HRAS", "HRAS1" ],
+    "parents" : [ 109782 ]
+  }, {
+    "dbId" : 62719,
+    "stId" : "R-HSA-62719",
+    "displayName" : "KRAS [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01116",
+    "geneNames" : [ "KRAS", "KRAS2", "RASK2" ],
+    "parents" : [ 8951978, 109782 ]
+  }, {
+    "dbId" : 62725,
+    "stId" : "R-HSA-62725",
+    "displayName" : "NRAS [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01111",
+    "geneNames" : [ "NRAS", "HRAS1" ],
+    "parents" : [ 6806434, 109782 ]
+  }, {
+    "dbId" : 375054,
+    "stId" : "R-HSA-375054",
+    "displayName" : "COL3A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02461",
+    "geneNames" : [ "COL3A1" ],
+    "parents" : [ 2127409 ]
+  }, {
+    "dbId" : 8851860,
+    "stId" : "R-HSA-8851860",
+    "displayName" : "HGF:p-4Y-MET dimer:RANBP9:SOS1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 211 ],
+    "parents" : [ 5672601 ],
+    "children" : [ 64847, 374586, 6806977 ]
+  }, {
+    "dbId" : 375058,
+    "stId" : "R-HSA-375058",
+    "displayName" : "Collagen alpha-1(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20908",
+    "geneNames" : [ "COL5A1" ],
+    "parents" : [ 2127441 ]
+  }, {
+    "dbId" : 442641,
+    "stId" : "R-HSA-442641",
+    "displayName" : "RAC1:GTP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 694 ],
+    "parents" : [ 389778, 8981458, 5668738, 5668712, 5218774, 2685706, 5663231, 2130182, 2029148, 2029147, 5218784, 418826, 399872, 400679, 451352, 445001 ],
+    "children" : [ 351141, 29438 ]
+  }, {
+    "dbId" : 8851868,
+    "stId" : "R-HSA-8851868",
+    "displayName" : "HGF:p-4Y-MET dimer:RANBP10 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 222 ],
+    "children" : [ 8851865, 6806977 ]
+  }, {
+    "dbId" : 8851865,
+    "stId" : "R-HSA-8851865",
+    "displayName" : "RANBP10 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 229 ],
+    "identifier" : "Q6VN20",
+    "geneNames" : [ "RANBP10", "KIAA1464" ],
+    "parents" : [ 8851868 ]
+  }, {
+    "dbId" : 375066,
+    "stId" : "R-HSA-375066",
+    "displayName" : "Collagen alpha-2(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05997",
+    "geneNames" : [ "COL5A2" ],
+    "parents" : [ 2127360 ]
+  }, {
+    "dbId" : 8851882,
+    "stId" : "R-HSA-8851882",
+    "displayName" : "HGF:p-4Y-MET dimer:SHC1-2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 253 ],
+    "children" : [ 6806977, 1169488 ]
+  }, {
+    "dbId" : 8875434,
+    "stId" : "R-HSA-8875434",
+    "displayName" : "Ub-LRIG1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96JA1",
+    "geneNames" : [ "LRIG1", "LIG1" ],
+    "parents" : [ 8875433 ]
+  }, {
+    "dbId" : 8875433,
+    "stId" : "R-HSA-8875433",
+    "displayName" : "MET:Ub-LRIG1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 481 ],
+    "parents" : [ 8875497 ],
+    "children" : [ 8875434, 419603 ]
+  }, {
+    "dbId" : 8851895,
+    "stId" : "R-HSA-8851895",
+    "displayName" : "p-Y317-SHC1-2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29353-2",
+    "geneNames" : [ "SHC1", "SHC", "SHCA" ],
+    "parents" : [ 8851891 ]
+  }, {
+    "dbId" : 8851891,
+    "stId" : "R-HSA-8851891",
+    "displayName" : "HGF:p-4Y-MET dimer:p-Y317-SHC1-2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 264 ],
+    "parents" : [ 8851897 ],
+    "children" : [ 6806977, 8851895 ]
+  }, {
+    "dbId" : 8851897,
+    "stId" : "R-HSA-8851897",
+    "displayName" : "HGF:p-4Y-MET dimer:p-Y317-SHC1-2:GRB2:SOS1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 273 ],
+    "parents" : [ 5672601 ],
+    "children" : [ 109797, 8851891 ]
+  }, {
+    "dbId" : 8875457,
+    "stId" : "R-HSA-8875457",
+    "displayName" : "p-Y-CBL [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22681",
+    "geneNames" : [ "CBL", "CBL2", "RNF55" ],
+    "parents" : [ 8876352, 8876351, 8876374 ]
+  }, {
+    "dbId" : 6793517,
+    "stId" : "R-HSA-6793517",
+    "displayName" : "Ub [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 484, 453 ],
+    "parents" : [ 8866844, 8866846, 8866534 ],
+    "children" : [ 939214, 939213, 939239, 939205, 939203, 939232, 939230, 939164, 939165, 939258, 939192, 939191, 939188, 939184 ]
+  }, {
+    "dbId" : 8851913,
+    "stId" : "R-HSA-8851913",
+    "displayName" : "HGF:p-4Y-MET dimer:GAB1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 284 ],
+    "parents" : [ 8851934 ],
+    "children" : [ 6806977, 179795 ]
+  }, {
+    "dbId" : 64847,
+    "stId" : "R-HSA-64847",
+    "displayName" : "SOS1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 209 ],
+    "identifier" : "Q07889",
+    "geneNames" : [ "SOS1" ],
+    "parents" : [ 167215, 194849, 354168, 983692, 109797, 8851860, 210970, 392044, 9009718 ]
+  }, {
+    "dbId" : 8875475,
+    "stId" : "R-HSA-8875475",
+    "displayName" : "SH3KBP1 tetramer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8875480 ],
+    "children" : [ 182957 ]
+  }, {
+    "dbId" : 8851921,
+    "stId" : "R-HSA-8851921",
+    "displayName" : "HGF:p-4Y-MET dimer:GRB2-1:GAB1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 293 ],
+    "parents" : [ 8851934 ],
+    "children" : [ 74686, 6806977, 179795 ]
+  }, {
+    "dbId" : 8851934,
+    "stId" : "R-HSA-8851934",
+    "displayName" : "HGF:p-4Y-MET dimer:GAB1,HGF:p-4Y-MET dimer:GRB2:GAB1 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 295 ],
+    "children" : [ 8851913, 8851921 ]
+  }, {
+    "dbId" : 8875481,
+    "stId" : "R-HSA-8875481",
+    "displayName" : "HGF:MonoUb-K,p-4Y-MET dimer:GRB2:p-Y-CBL,(HGF:MonoUb-K,p-Y1003,4Y-METdimer:p-Y-CBL):CIN85:endophillin [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 534 ],
+    "parents" : [ 8875497 ],
+    "children" : [ 8875480, 8876375 ]
+  }, {
+    "dbId" : 8875480,
+    "stId" : "R-HSA-8875480",
+    "displayName" : "CIN85:endophilin [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 533 ],
+    "parents" : [ 8935905, 8867037, 8876251, 8875481, 182961, 182946 ],
+    "children" : [ 8867746, 8875475 ]
+  }, {
+    "dbId" : 8851943,
+    "stId" : "R-HSA-8851943",
+    "displayName" : "HGF:p-4Y-MET:p-5Y-GAB1, HGF:p-4Y-MET:GRB2-1:p-5Y-GAB1 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 300 ],
+    "parents" : [ 8865998, 8875548, 8851953 ],
+    "children" : [ 8851941, 8851942 ]
+  }, {
+    "dbId" : 8851942,
+    "stId" : "R-HSA-8851942",
+    "displayName" : "HGF:p-4Y-MET dimer:GRB2-1:p-5Y-GAB1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8851943 ],
+    "children" : [ 74686, 180344, 6806977 ]
+  }, {
+    "dbId" : 8851941,
+    "stId" : "R-HSA-8851941",
+    "displayName" : "HGF:p-4Y-MET dimer:p-5Y-GAB1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8851943 ],
+    "children" : [ 180344, 6806977 ]
+  }, {
+    "dbId" : 8875489,
+    "stId" : "R-HSA-8875489",
+    "displayName" : "HGF:MonoUb-K,p-4Y-MET dimer:GRB2:p-Y-CBL,(HGF:MonoUb-K,p-Y1003,4Y-METdimer:p-Y-CBL):CIN85:endophillin:EPS15:HGS:STAM,(MET:Ub-LRIG1:EPS15:HGS:STAM) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 584 ],
+    "children" : [ 8875497, 182947 ]
+  }, {
+    "dbId" : 8875497,
+    "stId" : "R-HSA-8875497",
+    "displayName" : "HGF:MonoUb-K,p-4Y-MET dimer:GRB2:p-Y-CBL,(HGF:MonoUb-K,p-Y1003,4Y-METdimer:p-Y-CBL):CIN85:endophillin,(MET:Ub-LRIG1) [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 580 ],
+    "parents" : [ 8875489 ],
+    "children" : [ 8875481, 8875433 ]
+  }, {
+    "dbId" : 8851953,
+    "stId" : "R-HSA-8851953",
+    "displayName" : "HGF:p-4Y-MET:p-5Y-GAB1, HGF:p-4Y-MET:GRB2-1:p-5Y-GAB1:PI3K [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 315 ],
+    "parents" : [ 2316432 ],
+    "children" : [ 1806218, 8851943 ]
+  }, {
+    "dbId" : 8875512,
+    "stId" : "R-HSA-8875512",
+    "displayName" : "HGF:p-4Y-MET dimer:TNS3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 587 ],
+    "children" : [ 6806977, 8875524 ]
+  }, {
+    "dbId" : 2214305,
+    "stId" : "R-HSA-2214305",
+    "displayName" : "Collagen type I fibre [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2466158, 2214304 ],
+    "children" : [ 1474201 ]
+  }, {
+    "dbId" : 6807014,
+    "stId" : "R-HSA-6807014",
+    "displayName" : "p-Y1234,Y1235,Y1356-MET [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08581",
+    "geneNames" : [ "MET" ],
+    "parents" : [ 6807017 ]
+  }, {
+    "dbId" : 2214304,
+    "stId" : "R-HSA-2214304",
+    "displayName" : "Collagen fibres [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 8874086 ],
+    "children" : [ 2214302, 2214303, 2214301, 2214299, 2214306, 2214307, 2214305 ]
+  }, {
+    "dbId" : 2214307,
+    "stId" : "R-HSA-2214307",
+    "displayName" : "Collagen type III fibre [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2214304 ],
+    "children" : [ 1474212 ]
+  }, {
+    "dbId" : 2214306,
+    "stId" : "R-HSA-2214306",
+    "displayName" : "Collagen type XXIV fibre [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2214304 ],
+    "children" : [ 2193154 ]
+  }, {
+    "dbId" : 6807023,
+    "stId" : "R-HSA-6807023",
+    "displayName" : "PTPN1,PTNP2 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 144 ],
+    "children" : [ 997292, 210625 ]
+  }, {
+    "dbId" : 6807017,
+    "stId" : "R-HSA-6807017",
+    "displayName" : "HGF dimer:p-Y1234,Y1235,Y1356-MET [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 6807016 ],
+    "children" : [ 6807014, 141763 ]
+  }, {
+    "dbId" : 6807016,
+    "stId" : "R-HSA-6807016",
+    "displayName" : "HGF:p-Y1234,Y1235,Y1356-MET dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 121 ],
+    "children" : [ 6807017 ]
+  }, {
+    "dbId" : 6807031,
+    "stId" : "R-HSA-6807031",
+    "displayName" : "HGF dimer:p-Y1349,Y1356-MET [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 6807029 ],
+    "children" : [ 6807032, 141763 ]
+  }, {
+    "dbId" : 6807029,
+    "stId" : "R-HSA-6807029",
+    "displayName" : "HGF:p-Y,1349,Y1356-MET dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 143 ],
+    "children" : [ 6807031 ]
+  }, {
+    "dbId" : 2470321,
+    "stId" : "R-HSA-2470321",
+    "displayName" : "Collagen alpha-3(V) chains [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2127310, 2127296 ],
+    "children" : [ 3211390, 3211391, 3211388, 3211389, 3211398, 3211399, 3211396, 3211397, 3211394, 3211395, 3211392, 3211393 ]
+  }, {
+    "dbId" : 2127295,
+    "stId" : "R-HSA-2127295",
+    "displayName" : "Collagen alpha-1(II) chains [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2142910, 2127377 ],
+    "children" : [ 2127337, 2127305, 2127399, 2127431, 2127366, 2127413, 2127364, 2127427, 2127330, 2127376, 2127408, 2127392 ]
+  }, {
+    "dbId" : 6807032,
+    "stId" : "R-HSA-6807032",
+    "displayName" : "p-Y1349,Y1356-MET [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08581",
+    "geneNames" : [ "MET" ],
+    "parents" : [ 6807031 ]
+  }, {
+    "dbId" : 6806977,
+    "stId" : "R-HSA-6806977",
+    "displayName" : "HGF:p-Y1234,Y1235,Y1349,Y1356-MET dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 84 ],
+    "parents" : [ 8874682, 8876358, 8876350, 8876357, 8851868, 8851942, 8851941, 8851860, 8851807, 8851891, 8851882, 8874094, 8874088, 8874599, 8874609, 8875512, 8875527, 8851913, 8851921, 8851839, 8875815 ],
+    "children" : [ 6806975 ]
+  }, {
+    "dbId" : 539044,
+    "stId" : "R-HSA-539044",
+    "displayName" : "STAT3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 817 ],
+    "identifier" : "P40763",
+    "geneNames" : [ "STAT3", "APRF" ],
+    "parents" : [ 1433551, 1112559, 380756, 9007142, 9006868, 1888196, 6786055, 6788573, 9009216, 8950547, 8983998, 8950267, 2671864, 8848084, 8875815, 9007112, 8982893, 6784795, 8982170, 8987123, 8987032, 8987189 ]
+  }, {
+    "dbId" : 8876351,
+    "stId" : "R-HSA-8876351",
+    "displayName" : "p-Y-CBL:GRB2 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8876253, 8876247, 8876357, 8876376 ],
+    "children" : [ 74686, 8875457 ]
+  }, {
+    "dbId" : 8876350,
+    "stId" : "R-HSA-8876350",
+    "displayName" : "HGF:p-Y1003,4Y-MET dimer:CBL [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8876353 ],
+    "children" : [ 6806977, 112199 ]
+  }, {
+    "dbId" : 2214299,
+    "stId" : "R-HSA-2214299",
+    "displayName" : "Collagen type II fibre [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2214304 ],
+    "children" : [ 1474209 ]
+  }, {
+    "dbId" : 2214301,
+    "stId" : "R-HSA-2214301",
+    "displayName" : "Collagen type XXVII fibre [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2214304 ],
+    "children" : [ 2193157 ]
+  }, {
+    "dbId" : 2214303,
+    "stId" : "R-HSA-2214303",
+    "displayName" : "Collagen type XI fibre [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2214304 ],
+    "children" : [ 2168008 ]
+  }, {
+    "dbId" : 2214302,
+    "stId" : "R-HSA-2214302",
+    "displayName" : "Collagen type V fibre [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2214304 ],
+    "children" : [ 1609685 ]
+  }, {
+    "dbId" : 2192865,
+    "stId" : "R-HSA-2192865",
+    "displayName" : "3,4-Hyp Glu-Gal-Hyl-collagen alpha-2(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13942",
+    "geneNames" : [ "COL11A2" ],
+    "parents" : [ 2192884 ]
+  }, {
+    "dbId" : 2192864,
+    "stId" : "R-HSA-2192864",
+    "displayName" : "4-Hyp 5-Gal-Hyl-collagen alpha-1(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12107",
+    "geneNames" : [ "COL11A1", "COLL6" ],
+    "parents" : [ 2192881 ]
+  }, {
+    "dbId" : 8876358,
+    "stId" : "R-HSA-8876358",
+    "displayName" : "HGF:p-4Y-MET dimer:GRB2:CBL [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8876353 ],
+    "children" : [ 182910, 6806977 ]
+  }, {
+    "dbId" : 141763,
+    "stId" : "R-HSA-141763",
+    "displayName" : "HGF dimer [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 27 ],
+    "parents" : [ 481033, 6807031, 8874678, 8875345, 8875349, 6807017, 6800287, 6806975 ],
+    "children" : [ 141767, 56497 ]
+  }, {
+    "dbId" : 8876357,
+    "stId" : "R-HSA-8876357",
+    "displayName" : "HGF:p-4Y-MET dimer:GRB2:p-Y-CBL [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8876355 ],
+    "children" : [ 8876351, 6806977 ]
+  }, {
+    "dbId" : 2192867,
+    "stId" : "R-HSA-2192867",
+    "displayName" : "5-Gal-Hyl collagen alpha-2(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13942",
+    "geneNames" : [ "COL11A2" ],
+    "parents" : [ 2192884 ]
+  }, {
+    "dbId" : 2127330,
+    "stId" : "R-HSA-2127330",
+    "displayName" : "GlcGalHyl-COL2A1(182-1241) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02458",
+    "geneNames" : [ "COL2A1" ],
+    "parents" : [ 2127295 ]
+  }, {
+    "dbId" : 8876356,
+    "stId" : "R-HSA-8876356",
+    "displayName" : "CBL:GRB2,CBL [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 888 ],
+    "children" : [ 182910, 112199 ]
+  }, {
+    "dbId" : 2127331,
+    "stId" : "R-HSA-2127331",
+    "displayName" : "3x4Hyp-GlcGalHyl-COL3A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02461",
+    "geneNames" : [ "COL3A1" ],
+    "parents" : [ 2127409 ]
+  }, {
+    "dbId" : 2192866,
+    "stId" : "R-HSA-2192866",
+    "displayName" : "5-hydroxylysyl-collagen alpha-2(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13942",
+    "geneNames" : [ "COL11A2" ],
+    "parents" : [ 2192884 ]
+  }, {
+    "dbId" : 2192869,
+    "stId" : "R-HSA-2192869",
+    "displayName" : "4-hydroxyprolyl collagen alpha-2(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13942",
+    "geneNames" : [ "COL11A2" ],
+    "parents" : [ 2192884 ]
+  }, {
+    "dbId" : 8876355,
+    "stId" : "R-HSA-8876355",
+    "displayName" : "HGF:p-4Y-MET dimer:GRB2:p-Y-CBL,(HGF:p-Y1003,4Y-MET dimer:p-Y-CBL) [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 899 ],
+    "children" : [ 8876357, 8876352 ]
+  }, {
+    "dbId" : 141767,
+    "stId" : "R-HSA-141767",
+    "displayName" : "HGF(495-728) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14210",
+    "geneNames" : [ "HGF", "HPTA" ],
+    "parents" : [ 1266704, 141763 ]
+  }, {
+    "dbId" : 2192868,
+    "stId" : "R-HSA-2192868",
+    "displayName" : "Glu-Gal-Hyl collagen alpha-2(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13942",
+    "geneNames" : [ "COL11A2" ],
+    "parents" : [ 2192884 ]
+  }, {
+    "dbId" : 2192871,
+    "stId" : "R-HSA-2192871",
+    "displayName" : "3,4-Hyp 5-Gal-Hyl-collagen alpha-2(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13942",
+    "geneNames" : [ "COL11A2" ],
+    "parents" : [ 2192884 ]
+  }, {
+    "dbId" : 8876353,
+    "stId" : "R-HSA-8876353",
+    "displayName" : "HGF:p-4Y-MET dimer:GRB2:CBL,(HGF:p-Y1003,4Y-MET dimer:CBL) [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 891 ],
+    "children" : [ 8876358, 8876350 ]
+  }, {
+    "dbId" : 2127334,
+    "stId" : "R-HSA-2127334",
+    "displayName" : "5-Gal-Hyl collagen alpha-2(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05997",
+    "geneNames" : [ "COL5A2" ],
+    "parents" : [ 2127360 ]
+  }, {
+    "dbId" : 8876352,
+    "stId" : "R-HSA-8876352",
+    "displayName" : "HGF:p-Y1003,4Y-MET dimer:p-Y-CBL [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8876355 ],
+    "children" : [ 8875457, 8874694 ]
+  }, {
+    "dbId" : 2192870,
+    "stId" : "R-HSA-2192870",
+    "displayName" : "Glu-Gal-Hyl-collagen alpha-1(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12107",
+    "geneNames" : [ "COL11A1", "COLL6" ],
+    "parents" : [ 2192881 ]
+  }, {
+    "dbId" : 2192873,
+    "stId" : "R-HSA-2192873",
+    "displayName" : "4-Hyp 5-Gal-Hyl collagen alpha-2(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13942",
+    "geneNames" : [ "COL11A2" ],
+    "parents" : [ 2192884 ]
+  }, {
+    "dbId" : 2127337,
+    "stId" : "R-HSA-2127337",
+    "displayName" : "COL2A1(182-1241) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02458",
+    "geneNames" : [ "COL2A1" ],
+    "parents" : [ 2127295 ]
+  }, {
+    "dbId" : 2192872,
+    "stId" : "R-HSA-2192872",
+    "displayName" : "4-Hyp 5-Hyl collagen alpha-2(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13942",
+    "geneNames" : [ "COL11A2" ],
+    "parents" : [ 2192884 ]
+  }, {
+    "dbId" : 2192875,
+    "stId" : "R-HSA-2192875",
+    "displayName" : "3,4-Hyp 5-Hyl-collagen alpha-1(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12107",
+    "geneNames" : [ "COL11A1", "COLL6" ],
+    "parents" : [ 2192881 ]
+  }, {
+    "dbId" : 2192874,
+    "stId" : "R-HSA-2192874",
+    "displayName" : "4-Hyp Glu-Gal-Hyl-collagen alpha-1(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12107",
+    "geneNames" : [ "COL11A1", "COLL6" ],
+    "parents" : [ 2192881 ]
+  }, {
+    "dbId" : 6806956,
+    "stId" : "R-HSA-6806956",
+    "displayName" : "HGF:MET dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 60 ],
+    "children" : [ 6800287 ]
+  }, {
+    "dbId" : 2127340,
+    "stId" : "R-HSA-2127340",
+    "displayName" : "3x4Hyp-3Hyp-COL3A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02461",
+    "geneNames" : [ "COL3A1" ],
+    "parents" : [ 2127409 ]
+  }, {
+    "dbId" : 2192876,
+    "stId" : "R-HSA-2192876",
+    "displayName" : "5-Gal-Hyl-collagen alpha-1(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12107",
+    "geneNames" : [ "COL11A1", "COLL6" ],
+    "parents" : [ 2192881 ]
+  }, {
+    "dbId" : 2192879,
+    "stId" : "R-HSA-2192879",
+    "displayName" : "4-Hyp 5-Hyl-collagen alpha-1(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12107",
+    "geneNames" : [ "COL11A1", "COLL6" ],
+    "parents" : [ 2192881 ]
+  }, {
+    "dbId" : 2192878,
+    "stId" : "R-HSA-2192878",
+    "displayName" : "5-hydroxylysyl-collagen alpha-1(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12107",
+    "geneNames" : [ "COL11A1", "COLL6" ],
+    "parents" : [ 2192881 ]
+  }, {
+    "dbId" : 2127343,
+    "stId" : "R-HSA-2127343",
+    "displayName" : "4-hydroxyprolyl collagen alpha-2(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05997",
+    "geneNames" : [ "COL5A2" ],
+    "parents" : [ 2127360 ]
+  }, {
+    "dbId" : 8876375,
+    "stId" : "R-HSA-8876375",
+    "displayName" : "HGF:MonoUb-K,p-4Y-MET dimer:GRB2:p-Y-CBL,(HGF:MonoUb-K,p-Y1003,4Y-MET dimer:p-Y-CBL) [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 902 ],
+    "parents" : [ 8875481 ],
+    "children" : [ 8876376, 8876374 ]
+  }, {
+    "dbId" : 2192881,
+    "stId" : "R-HSA-2192881",
+    "displayName" : "Collagen alpha-1(XI) chains [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2142910 ],
+    "children" : [ 2192878, 2192862, 2192879, 2192876, 2192861, 2192874, 2192875, 2192870, 2152278, 2192885, 2192880, 2192864 ]
+  }, {
+    "dbId" : 8876374,
+    "stId" : "R-HSA-8876374",
+    "displayName" : "HGF:MonoUb-K,p-Y1003,4Y-MET dimer:p-Y-CBL [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8876375 ],
+    "children" : [ 8875457, 8875348 ]
+  }, {
+    "dbId" : 2192880,
+    "stId" : "R-HSA-2192880",
+    "displayName" : "4-hydroxyprolyl collagen alpha-1(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12107",
+    "geneNames" : [ "COL11A1", "COLL6" ],
+    "parents" : [ 2192881 ]
+  }, {
+    "dbId" : 2127346,
+    "stId" : "R-HSA-2127346",
+    "displayName" : "4-Hyp Glu-Gal-Hyl collagen alpha-1(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20908",
+    "geneNames" : [ "COL5A1" ],
+    "parents" : [ 2127441 ]
+  }, {
+    "dbId" : 8875349,
+    "stId" : "R-HSA-8875349",
+    "displayName" : "HGF dimer:MonoUb-K,p-Y1003,4Y-MET [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8875348 ],
+    "children" : [ 8875180, 141763 ]
+  }, {
+    "dbId" : 2192883,
+    "stId" : "R-HSA-2192883",
+    "displayName" : "3,4-hydroxyprolyl collagen alpha-2(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13942",
+    "geneNames" : [ "COL11A2" ],
+    "parents" : [ 2192884 ]
+  }, {
+    "dbId" : 2192882,
+    "stId" : "R-HSA-2192882",
+    "displayName" : "4-Hyp Glu-Gal-Hyl collagen alpha-2(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13942",
+    "geneNames" : [ "COL11A2" ],
+    "parents" : [ 2192884 ]
+  }, {
+    "dbId" : 8875348,
+    "stId" : "R-HSA-8875348",
+    "displayName" : "HGF:MonoUb-K,p-Y1003,4Y-MET dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8876374 ],
+    "children" : [ 8875349 ]
+  }, {
+    "dbId" : 2192885,
+    "stId" : "R-HSA-2192885",
+    "displayName" : "3,4-hydroxyprolyl-collagen alpha-1(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12107",
+    "geneNames" : [ "COL11A1", "COLL6" ],
+    "parents" : [ 2192881 ]
+  }, {
+    "dbId" : 8875347,
+    "stId" : "R-HSA-8875347",
+    "displayName" : "HGF:MonoUb-K,p-Y1234,Y1235,Y1349,Y1356-MET dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8876376 ],
+    "children" : [ 8875345 ]
+  }, {
+    "dbId" : 2192884,
+    "stId" : "R-HSA-2192884",
+    "displayName" : "Collagen alpha-2(XI) chains [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2142910 ],
+    "children" : [ 2192863, 2152267, 2192872, 2192873, 2192871, 2192868, 2192869, 2192866, 2192882, 2192867, 2192883, 2192865 ]
+  }, {
+    "dbId" : 8875345,
+    "stId" : "R-HSA-8875345",
+    "displayName" : "HGF dimer:MonoUb-K,p-Y1234,Y1235,Y1349,Y1356-MET [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8875347 ],
+    "children" : [ 8875181, 141763 ]
+  }, {
+    "dbId" : 2127350,
+    "stId" : "R-HSA-2127350",
+    "displayName" : "4-Hyp 5-Gal-Hyl collagen alpha-1(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20908",
+    "geneNames" : [ "COL5A1" ],
+    "parents" : [ 2127441 ]
+  }, {
+    "dbId" : 8851807,
+    "stId" : "R-HSA-8851807",
+    "displayName" : "HGF:p-4Y-MET dimer:GRB2-1:SOS1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 154 ],
+    "parents" : [ 5672601 ],
+    "children" : [ 6806977, 109797 ]
+  }, {
+    "dbId" : 6806975,
+    "stId" : "R-HSA-6806975",
+    "displayName" : "HGF dimer:p-Y1234,Y1235,Y1349,Y1356-MET [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 6806977 ],
+    "children" : [ 6806973, 141763 ]
+  }, {
+    "dbId" : 2127352,
+    "stId" : "R-HSA-2127352",
+    "displayName" : "GlcGalHyl-COL3A1(154-1241) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02461",
+    "geneNames" : [ "COL3A1" ],
+    "parents" : [ 2127409 ]
+  }, {
+    "dbId" : 6806973,
+    "stId" : "R-HSA-6806973",
+    "displayName" : "p-Y1234,Y1235,Y1349,Y1356-MET [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08581",
+    "geneNames" : [ "MET" ],
+    "parents" : [ 8876228, 6806975 ]
+  }, {
+    "dbId" : 2127355,
+    "stId" : "R-HSA-2127355",
+    "displayName" : "3x4Hyp-COL3A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02461",
+    "geneNames" : [ "COL3A1" ],
+    "parents" : [ 2127409 ]
+  }, {
+    "dbId" : 2127357,
+    "stId" : "R-HSA-2127357",
+    "displayName" : "4-Hyp 5-Gal-Hyl collagen alpha-2(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05997",
+    "geneNames" : [ "COL5A2" ],
+    "parents" : [ 2127360 ]
+  }, {
+    "dbId" : 1112525,
+    "stId" : "R-HSA-1112525",
+    "displayName" : "p-Y705-STAT3 dimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 828 ],
+    "parents" : [ 6788618, 6788575, 2889026, 8848152, 1112574 ],
+    "children" : [ 1112554 ]
+  }, {
+    "dbId" : 2127358,
+    "stId" : "R-HSA-2127358",
+    "displayName" : "3x4Hyp-3Hyp-GlcGalHyl-COL3A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02461",
+    "geneNames" : [ "COL3A1" ],
+    "parents" : [ 2127409 ]
+  }, {
+    "dbId" : 1112526,
+    "stId" : "R-HSA-1112526",
+    "displayName" : "p-Y705-STAT3 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 826 ],
+    "parents" : [ 6788619, 6788580, 1112537 ],
+    "children" : [ 914048 ]
+  }, {
+    "dbId" : 8876376,
+    "stId" : "R-HSA-8876376",
+    "displayName" : "HGF:MonoUb-K,p-4Y-MET dimer:GRB2:p-Y-CBL [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8876375 ],
+    "children" : [ 8876351, 8875347 ]
+  }, {
+    "dbId" : 2127296,
+    "stId" : "R-HSA-2127296",
+    "displayName" : "Tropocollagen alpha-3(V) [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2127422 ],
+    "children" : [ 2470321 ]
+  }, {
+    "dbId" : 2127302,
+    "stId" : "R-HSA-2127302",
+    "displayName" : "3,4-Hyp Glu-Gal-Hyl collagen alpha-2(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05997",
+    "geneNames" : [ "COL5A2" ],
+    "parents" : [ 2127360 ]
+  }, {
+    "dbId" : 2029049,
+    "stId" : "R-HSA-2029049",
+    "displayName" : "ARF6 [recycling endosome membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62330",
+    "geneNames" : [ "ARF6" ],
+    "parents" : [ 2193115 ]
+  }, {
+    "dbId" : 8875375,
+    "stId" : "R-HSA-8875375",
+    "displayName" : "MET:LRIG1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 459 ],
+    "children" : [ 419603, 197745 ]
+  }, {
+    "dbId" : 2127305,
+    "stId" : "R-HSA-2127305",
+    "displayName" : "3x4Hyp-GalHyl-COL2A1(182-1241) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02458",
+    "geneNames" : [ "COL2A1" ],
+    "parents" : [ 2127295 ]
+  }, {
+    "dbId" : 2127308,
+    "stId" : "R-HSA-2127308",
+    "displayName" : "Tropocollagen alpha-1(V)X2 alpha-2(V) [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2127422 ],
+    "children" : [ 2127441, 2127360 ]
+  }, {
+    "dbId" : 2127310,
+    "stId" : "R-HSA-2127310",
+    "displayName" : "Tropocollagen alpha-1-3(V) [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2127422 ],
+    "children" : [ 2470321, 2127441, 2127360 ]
+  }, {
+    "dbId" : 2127312,
+    "stId" : "R-HSA-2127312",
+    "displayName" : "Glu-Gal-Hyl collagen alpha-1(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20908",
+    "geneNames" : [ "COL5A1" ],
+    "parents" : [ 2127441 ]
+  }, {
+    "dbId" : 2127314,
+    "stId" : "R-HSA-2127314",
+    "displayName" : "4-Hyp 5-Hyl collagen alpha-1(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20908",
+    "geneNames" : [ "COL5A1" ],
+    "parents" : [ 2127441 ]
+  }, {
+    "dbId" : 2127316,
+    "stId" : "R-HSA-2127316",
+    "displayName" : "5-hydroxylysyl collagen alpha-2(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05997",
+    "geneNames" : [ "COL5A2" ],
+    "parents" : [ 2127360 ]
+  }, {
+    "dbId" : 2127319,
+    "stId" : "R-HSA-2127319",
+    "displayName" : "5Hyl-COL3A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02461",
+    "geneNames" : [ "COL3A1" ],
+    "parents" : [ 2127409 ]
+  }, {
+    "dbId" : 8851839,
+    "stId" : "R-HSA-8851839",
+    "displayName" : "HGF:p-4Y MET dimer:MUC20 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 193 ],
+    "children" : [ 8851833, 6806977 ]
+  }, {
+    "dbId" : 2127320,
+    "stId" : "R-HSA-2127320",
+    "displayName" : "3,4-Hyp 5-Gal-Hyl collagen alpha-2(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05997",
+    "geneNames" : [ "COL5A2" ],
+    "parents" : [ 2127360 ]
+  }, {
+    "dbId" : 1112554,
+    "stId" : "R-HSA-1112554",
+    "displayName" : "p-Y705-STAT3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P40763",
+    "geneNames" : [ "STAT3", "APRF" ],
+    "parents" : [ 8950501, 1112590, 1112525, 1469979 ]
+  }, {
+    "dbId" : 2192861,
+    "stId" : "R-HSA-2192861",
+    "displayName" : "3,4-Hyp Glu-Gal-Hyl-collagen alpha-1(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12107",
+    "geneNames" : [ "COL11A1", "COLL6" ],
+    "parents" : [ 2192881 ]
+  }, {
+    "dbId" : 2192863,
+    "stId" : "R-HSA-2192863",
+    "displayName" : "3,4-Hyp 5-Hyl-collagen alpha-2(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13942",
+    "geneNames" : [ "COL11A2" ],
+    "parents" : [ 2192884 ]
+  }, {
+    "dbId" : 8851833,
+    "stId" : "R-HSA-8851833",
+    "displayName" : "MUC20 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 191 ],
+    "identifier" : "Q8N307",
+    "geneNames" : [ "MUC20", "KIAA1359", "UNQ2782/PRO7170" ],
+    "parents" : [ 8851839 ]
+  }, {
+    "dbId" : 2192862,
+    "stId" : "R-HSA-2192862",
+    "displayName" : "3,4-Hyp 5-Gal-Hyl-collagen alpha-1(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12107",
+    "geneNames" : [ "COL11A1", "COLL6" ],
+    "parents" : [ 2192881 ]
+  }, {
+    "dbId" : 2127392,
+    "stId" : "R-HSA-2127392",
+    "displayName" : "3x4Hyp-3Hyp-5Hyl-COL2A1(182-1241) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02458",
+    "geneNames" : [ "COL2A1" ],
+    "parents" : [ 2127295 ]
+  }, {
+    "dbId" : 8875655,
+    "stId" : "R-HSA-8875655",
+    "displayName" : "GGA3 [recycling endosome membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NZ52",
+    "geneNames" : [ "GGA3", "KIAA0154" ],
+    "parents" : [ 8875665 ]
+  }, {
+    "dbId" : 2328098,
+    "stId" : "R-HSA-2328098",
+    "displayName" : "Laminin-511 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2467086, 3907299, 2328121, 2426352, 2426529, 4084530, 3907306, 2426651 ],
+    "children" : [ 215962, 215956, 215959 ]
+  }, {
+    "dbId" : 2192928,
+    "stId" : "R-HSA-2192928",
+    "displayName" : "Collagen alpha-1(XXIV) chains [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2152372 ],
+    "children" : [ 2192942, 2192972, 2192970, 2192954, 2192984, 2192969, 2193046, 2192934, 2192948, 2152356, 2192949, 2192945 ]
+  }, {
+    "dbId" : 2127396,
+    "stId" : "R-HSA-2127396",
+    "displayName" : "3,4-Hyp 5-Hyl collagen alpha-1(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20908",
+    "geneNames" : [ "COL5A1" ],
+    "parents" : [ 2127441 ]
+  }, {
+    "dbId" : 2127397,
+    "stId" : "R-HSA-2127397",
+    "displayName" : "5-Gal-Hyl collagen alpha-1(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20908",
+    "geneNames" : [ "COL5A1" ],
+    "parents" : [ 2127441 ]
+  }, {
+    "dbId" : 2192934,
+    "stId" : "R-HSA-2192934",
+    "displayName" : "3x4Hyp-GalHyl-COL24A1(?-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q17RW2",
+    "geneNames" : [ "COL24A1" ],
+    "parents" : [ 2192928 ]
+  }, {
+    "dbId" : 2127399,
+    "stId" : "R-HSA-2127399",
+    "displayName" : "GalHyl-COL2A1(182-1241) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02458",
+    "geneNames" : [ "COL2A1" ],
+    "parents" : [ 2127295 ]
+  }, {
+    "dbId" : 2192936,
+    "stId" : "R-HSA-2192936",
+    "displayName" : "3x4Hyp-GlcGalHyl-COL27A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZC6",
+    "geneNames" : [ "COL27A1", "KIAA1870" ],
+    "parents" : [ 2192961 ]
+  }, {
+    "dbId" : 2328105,
+    "stId" : "R-HSA-2328105",
+    "displayName" : "LAMA4 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16363",
+    "geneNames" : [ "LAMA4" ],
+    "parents" : [ 2328176, 2328112, 2328173 ]
+  }, {
+    "dbId" : 2192939,
+    "stId" : "R-HSA-2192939",
+    "displayName" : "3x4Hyp-3Hyp-5Hyl-COL27A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZC6",
+    "geneNames" : [ "COL27A1", "KIAA1870" ],
+    "parents" : [ 2192961 ]
+  }, {
+    "dbId" : 2192938,
+    "stId" : "R-HSA-2192938",
+    "displayName" : "3x4Hyp-COL27A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZC6",
+    "geneNames" : [ "COL27A1", "KIAA1870" ],
+    "parents" : [ 2192961 ]
+  }, {
+    "dbId" : 2328111,
+    "stId" : "R-HSA-2328111",
+    "displayName" : "Laminin-311 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2467086, 2328121, 2426529, 2426651 ],
+    "children" : [ 215962, 215959, 445991 ]
+  }, {
+    "dbId" : 8875657,
+    "stId" : "R-HSA-8875657",
+    "displayName" : "GGC-RAB4 [recycling endosome membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 8875670 ],
+    "children" : [ 8875666, 8875675 ]
+  }, {
+    "dbId" : 2192942,
+    "stId" : "R-HSA-2192942",
+    "displayName" : "5Hyl-COL24A1(?-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q17RW2",
+    "geneNames" : [ "COL24A1" ],
+    "parents" : [ 2192928 ]
+  }, {
+    "dbId" : 2192945,
+    "stId" : "R-HSA-2192945",
+    "displayName" : "GlcGalHyl-COL24A1(?-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q17RW2",
+    "geneNames" : [ "COL24A1" ],
+    "parents" : [ 2192928 ]
+  }, {
+    "dbId" : 2127408,
+    "stId" : "R-HSA-2127408",
+    "displayName" : "3x4Hyp-3Hyp-COL2A1(182-1241) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02458",
+    "geneNames" : [ "COL2A1" ],
+    "parents" : [ 2127295 ]
+  }, {
+    "dbId" : 8875670,
+    "stId" : "R-HSA-8875670",
+    "displayName" : "GGC-RAB4:GTP [recycling endosome membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 746 ],
+    "children" : [ 29438, 8875657 ]
+  }, {
+    "dbId" : 2127409,
+    "stId" : "R-HSA-2127409",
+    "displayName" : "Collagen alpha-1(III) chains [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2127436 ],
+    "children" : [ 2127358, 2127340, 375054, 2127355, 2127418, 2127385, 2127369, 2127352, 2127319, 2127382, 2127331, 2127442 ]
+  }, {
+    "dbId" : 2192944,
+    "stId" : "R-HSA-2192944",
+    "displayName" : "3x4Hyp-5Hyl-COL27A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZC6",
+    "geneNames" : [ "COL27A1", "KIAA1870" ],
+    "parents" : [ 2192961 ]
+  }, {
+    "dbId" : 2328112,
+    "stId" : "R-HSA-2328112",
+    "displayName" : "Laminin-421 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2467086, 2328121, 2426529, 2426651 ],
+    "children" : [ 215961, 2328105, 215962 ]
+  }, {
+    "dbId" : 2192949,
+    "stId" : "R-HSA-2192949",
+    "displayName" : "GalHyl-COL24A1(?-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q17RW2",
+    "geneNames" : [ "COL24A1" ],
+    "parents" : [ 2192928 ]
+  }, {
+    "dbId" : 2127412,
+    "stId" : "R-HSA-2127412",
+    "displayName" : "3,4-Hyp Glu-Gal-Hyl collagen alpha-1(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20908",
+    "geneNames" : [ "COL5A1" ],
+    "parents" : [ 2127441 ]
+  }, {
+    "dbId" : 2127413,
+    "stId" : "R-HSA-2127413",
+    "displayName" : "3x4Hyp-COL2A1(182-1241) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02458",
+    "geneNames" : [ "COL2A1" ],
+    "parents" : [ 2127295 ]
+  }, {
+    "dbId" : 2192948,
+    "stId" : "R-HSA-2192948",
+    "displayName" : "3x4Hyp-GlcGalHyl-COL24A1(?-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q17RW2",
+    "geneNames" : [ "COL24A1" ],
+    "parents" : [ 2192928 ]
+  }, {
+    "dbId" : 8875666,
+    "stId" : "R-HSA-8875666",
+    "displayName" : "GGC-RAB4A [recycling endosome membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20338",
+    "geneNames" : [ "RAB4A", "RAB4" ],
+    "parents" : [ 8875657 ]
+  }, {
+    "dbId" : 8875665,
+    "stId" : "R-HSA-8875665",
+    "displayName" : "HGF:p-4Y-MET:p-5Y-GAB1, HGF:p-4Y-MET:GRB2-1:p-5Y-GAB1:CRK,CRKL:GGA3:ARF6:GTP [recycling endosome membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 739 ],
+    "children" : [ 8875548, 2193115, 8875655 ]
+  }, {
+    "dbId" : 2127418,
+    "stId" : "R-HSA-2127418",
+    "displayName" : "GalHyl-COL3A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02461",
+    "geneNames" : [ "COL3A1" ],
+    "parents" : [ 2127409 ]
+  }, {
+    "dbId" : 2192954,
+    "stId" : "R-HSA-2192954",
+    "displayName" : "3x4Hyp-3Hyp-5Hyl-COL24A1(?-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q17RW2",
+    "geneNames" : [ "COL24A1" ],
+    "parents" : [ 2192928 ]
+  }, {
+    "dbId" : 8875675,
+    "stId" : "R-HSA-8875675",
+    "displayName" : "GGC-RAB4B [recycling endosome membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61018",
+    "geneNames" : [ "RAB4B", "PP1596" ],
+    "parents" : [ 8875657 ]
+  }, {
+    "dbId" : 2127422,
+    "stId" : "R-HSA-2127422",
+    "displayName" : "Tropocollagen type V [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2060921, 1609685 ],
+    "children" : [ 2127310, 2127308, 2127296 ]
+  }, {
+    "dbId" : 2127360,
+    "stId" : "R-HSA-2127360",
+    "displayName" : "Collagen alpha-2(V) chains [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2127310, 2127308 ],
+    "children" : [ 375066, 2127343, 2127374, 2127357, 2127372, 2127320, 2127334, 2127302, 2127316, 2127444, 2127378, 2127424 ]
+  }, {
+    "dbId" : 445991,
+    "stId" : "R-HSA-445991",
+    "displayName" : "LAMA3 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16787",
+    "geneNames" : [ "LAMA3", "LAMNA" ],
+    "parents" : [ 2328111, 2328135, 216001 ]
+  }, {
+    "dbId" : 2127364,
+    "stId" : "R-HSA-2127364",
+    "displayName" : "5Hyl-COL2A1(182-1241) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02458",
+    "geneNames" : [ "COL2A1" ],
+    "parents" : [ 2127295 ]
+  }, {
+    "dbId" : 2127365,
+    "stId" : "R-HSA-2127365",
+    "displayName" : "3,4-hydroxyprolyl collagen alpha-1(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20908",
+    "geneNames" : [ "COL5A1" ],
+    "parents" : [ 2127441 ]
+  }, {
+    "dbId" : 2127366,
+    "stId" : "R-HSA-2127366",
+    "displayName" : "3x4Hyp-GlcGalHyl-COL2A1(182-1241) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02458",
+    "geneNames" : [ "COL2A1" ],
+    "parents" : [ 2127295 ]
+  }, {
+    "dbId" : 2127369,
+    "stId" : "R-HSA-2127369",
+    "displayName" : "3x4Hyp-GalHyl-COL3A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02461",
+    "geneNames" : [ "COL3A1" ],
+    "parents" : [ 2127409 ]
+  }, {
+    "dbId" : 2127371,
+    "stId" : "R-HSA-2127371",
+    "displayName" : "3,4-Hyp 5-Gal-Hyl collagen alpha-1(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20908",
+    "geneNames" : [ "COL5A1" ],
+    "parents" : [ 2127441 ]
+  }, {
+    "dbId" : 2127372,
+    "stId" : "R-HSA-2127372",
+    "displayName" : "3,4-hydroxyprolyl collagen alpha-2(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05997",
+    "geneNames" : [ "COL5A2" ],
+    "parents" : [ 2127360 ]
+  }, {
+    "dbId" : 445992,
+    "stId" : "R-HSA-445992",
+    "displayName" : "LAMB3 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13751",
+    "geneNames" : [ "LAMB3", "LAMNB1" ],
+    "parents" : [ 216001 ]
+  }, {
+    "dbId" : 2127374,
+    "stId" : "R-HSA-2127374",
+    "displayName" : "Glu-Gal-Hyl collagen alpha-2(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05997",
+    "geneNames" : [ "COL5A2" ],
+    "parents" : [ 2127360 ]
+  }, {
+    "dbId" : 2127376,
+    "stId" : "R-HSA-2127376",
+    "displayName" : "3x4Hyp-5Hyl-COL2A1(182-1241) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02458",
+    "geneNames" : [ "COL2A1" ],
+    "parents" : [ 2127295 ]
+  }, {
+    "dbId" : 2127377,
+    "stId" : "R-HSA-2127377",
+    "displayName" : "Tropocollagen type II [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2060921, 1474209 ],
+    "children" : [ 2127295 ]
+  }, {
+    "dbId" : 8874678,
+    "stId" : "R-HSA-8874678",
+    "displayName" : "HGF dimer:p-Y1003,4Y-MET [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8874694 ],
+    "children" : [ 8874689, 141763 ]
+  }, {
+    "dbId" : 2127378,
+    "stId" : "R-HSA-2127378",
+    "displayName" : "3,4-Hyp 5-Hyl collagen alpha-2(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05997",
+    "geneNames" : [ "COL5A2" ],
+    "parents" : [ 2127360 ]
+  }, {
+    "dbId" : 2127382,
+    "stId" : "R-HSA-2127382",
+    "displayName" : "3x4Hyp-3Hyp-GalHyl-COL3A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02461",
+    "geneNames" : [ "COL3A1" ],
+    "parents" : [ 2127409 ]
+  }, {
+    "dbId" : 2127385,
+    "stId" : "R-HSA-2127385",
+    "displayName" : "3x4Hyp-5Hyl-COL3A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02461",
+    "geneNames" : [ "COL3A1" ],
+    "parents" : [ 2127409 ]
+  }, {
+    "dbId" : 446012,
+    "stId" : "R-HSA-446012",
+    "displayName" : "LAMC2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13753",
+    "geneNames" : [ "LAMC2", "LAMB2T", "LAMNB2" ],
+    "parents" : [ 2328153, 216001 ]
+  }, {
+    "dbId" : 8874682,
+    "stId" : "R-HSA-8874682",
+    "displayName" : "HGF:p-4Y-MET dimer,(HGF:p-Y1003,4Y-METdimer) [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 437 ],
+    "children" : [ 6806977, 8874694 ]
+  }, {
+    "dbId" : 8874694,
+    "stId" : "R-HSA-8874694",
+    "displayName" : "HGF:p-Y1003,4Y-MET dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8874682, 8876352 ],
+    "children" : [ 8874678 ]
+  }, {
+    "dbId" : 54851,
+    "stId" : "R-HSA-54851",
+    "displayName" : "FN1(32-2386) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02751",
+    "geneNames" : [ "FN1", "FN" ],
+    "parents" : [ 6789504, 481033, 2396095, 349592, 266103, 377603 ]
+  }, {
+    "dbId" : 2192999,
+    "stId" : "R-HSA-2192999",
+    "displayName" : "3x4Hyp-GalHyl-COL27A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZC6",
+    "geneNames" : [ "COL27A1", "KIAA1870" ],
+    "parents" : [ 2192961 ]
+  }, {
+    "dbId" : 112199,
+    "stId" : "R-HSA-112199",
+    "displayName" : "CBL [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P22681",
+    "geneNames" : [ "CBL", "CBL2", "RNF55" ],
+    "parents" : [ 1225855, 983692, 205200, 1112744, 912623, 182910, 182914, 182942, 8876350, 4332229, 934572, 934576, 8876356 ]
+  }, {
+    "dbId" : 8874689,
+    "stId" : "R-HSA-8874689",
+    "displayName" : "p-Y1003,4Y-MET [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08581",
+    "geneNames" : [ "MET" ],
+    "parents" : [ 8874678 ]
+  }, {
+    "dbId" : 2328165,
+    "stId" : "R-HSA-2328165",
+    "displayName" : "Laminin-213 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2328121, 2426529, 4084530, 2426651 ],
+    "children" : [ 215964, 215959, 215955 ]
+  }, {
+    "dbId" : 2328169,
+    "stId" : "R-HSA-2328169",
+    "displayName" : "Laminin-121 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2467086, 2328121, 2426529, 4084530, 2426651 ],
+    "children" : [ 215961, 215962, 215953 ]
+  }, {
+    "dbId" : 2193002,
+    "stId" : "R-HSA-2193002",
+    "displayName" : "GlcGalHyl-COL27A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZC6",
+    "geneNames" : [ "COL27A1", "KIAA1870" ],
+    "parents" : [ 2192961 ]
+  }, {
+    "dbId" : 2328168,
+    "stId" : "R-HSA-2328168",
+    "displayName" : "Laminin-521 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2467086, 3907299, 2328121, 2426352, 2426529, 4084530, 3907306, 2426651 ],
+    "children" : [ 215961, 215962, 215956 ]
+  }, {
+    "dbId" : 2328173,
+    "stId" : "R-HSA-2328173",
+    "displayName" : "Laminin-411 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2467086, 3907299, 2328121, 2426529, 3907306, 2426651 ],
+    "children" : [ 2328105, 215962, 215959 ]
+  }, {
+    "dbId" : 2193008,
+    "stId" : "R-HSA-2193008",
+    "displayName" : "3x4Hyp-3Hyp-GlcGalHyl-COL27A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZC6",
+    "geneNames" : [ "COL27A1", "KIAA1870" ],
+    "parents" : [ 2192961 ]
+  }, {
+    "dbId" : 179795,
+    "stId" : "R-HSA-179795",
+    "displayName" : "GAB1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 283 ],
+    "identifier" : "Q13480",
+    "geneNames" : [ "GAB1" ],
+    "parents" : [ 8855092, 190399, 8851921, 8851913, 179849 ]
+  }, {
+    "dbId" : 2328176,
+    "stId" : "R-HSA-2328176",
+    "displayName" : "Laminin-423 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2328121, 2426529, 2426651 ],
+    "children" : [ 215964, 2328105, 215961 ]
+  }, {
+    "dbId" : 2193021,
+    "stId" : "R-HSA-2193021",
+    "displayName" : "3x4Hyp-3Hyp-COL27A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZC6",
+    "geneNames" : [ "COL27A1", "KIAA1870" ],
+    "parents" : [ 2192961 ]
+  }, {
+    "dbId" : 2127424,
+    "stId" : "R-HSA-2127424",
+    "displayName" : "3x4Hyp-5Hyl-COL5A2(?-1229) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05997",
+    "geneNames" : [ "COL5A2" ],
+    "parents" : [ 2127360 ]
+  }, {
+    "dbId" : 2192961,
+    "stId" : "R-HSA-2192961",
+    "displayName" : "Collagen alpha-1(XXVII) chains [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2152344 ],
+    "children" : [ 2192975, 2192991, 2193021, 2193002, 2192938, 2192939, 2192936, 2192999, 2152357, 2192965, 2192944, 2193008 ]
+  }, {
+    "dbId" : 2127427,
+    "stId" : "R-HSA-2127427",
+    "displayName" : "3x4Hyp-3Hyp-GalHyl-COL2A1(182-1241) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02458",
+    "geneNames" : [ "COL2A1" ],
+    "parents" : [ 2127295 ]
+  }, {
+    "dbId" : 2328135,
+    "stId" : "R-HSA-2328135",
+    "displayName" : "Laminin-321 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2467086, 2328121, 2426529, 2426651 ],
+    "children" : [ 215961, 215962, 445991 ]
+  }, {
+    "dbId" : 2192965,
+    "stId" : "R-HSA-2192965",
+    "displayName" : "5Hyl-COL27A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZC6",
+    "geneNames" : [ "COL27A1", "KIAA1870" ],
+    "parents" : [ 2192961 ]
+  }, {
+    "dbId" : 2127429,
+    "stId" : "R-HSA-2127429",
+    "displayName" : "4-hydroxyprolyl collagen alpha-1(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20908",
+    "geneNames" : [ "COL5A1" ],
+    "parents" : [ 2127441 ]
+  }, {
+    "dbId" : 2127431,
+    "stId" : "R-HSA-2127431",
+    "displayName" : "3x4Hyp-3Hyp-GlcGalHyl-COL2A1(182-1241) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02458",
+    "geneNames" : [ "COL2A1" ],
+    "parents" : [ 2127295 ]
+  }, {
+    "dbId" : 2192969,
+    "stId" : "R-HSA-2192969",
+    "displayName" : "3x4Hyp-3Hyp-GlcGalHyl-COL24A1(?-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q17RW2",
+    "geneNames" : [ "COL24A1" ],
+    "parents" : [ 2192928 ]
+  }, {
+    "dbId" : 2127433,
+    "stId" : "R-HSA-2127433",
+    "displayName" : "5-hydroxylysyl collagen alpha-1(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20908",
+    "geneNames" : [ "COL5A1" ],
+    "parents" : [ 2127441 ]
+  }, {
+    "dbId" : 2328137,
+    "stId" : "R-HSA-2328137",
+    "displayName" : "Laminin-221 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2467086, 3907299, 2328121, 2426352, 2426529, 4084530, 3907306, 2426651 ],
+    "children" : [ 215961, 215962, 215955 ]
+  }, {
+    "dbId" : 2192970,
+    "stId" : "R-HSA-2192970",
+    "displayName" : "3x4Hyp-3Hyp-COL24A1(?-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q17RW2",
+    "geneNames" : [ "COL24A1" ],
+    "parents" : [ 2192928 ]
+  }, {
+    "dbId" : 2127436,
+    "stId" : "R-HSA-2127436",
+    "displayName" : "Tropocollagen type III [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 3221907, 2060921, 1474212 ],
+    "children" : [ 2127409 ]
+  }, {
+    "dbId" : 2192972,
+    "stId" : "R-HSA-2192972",
+    "displayName" : "3x4Hyp-3Hyp-GalHyl-COL24A1(?-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q17RW2",
+    "geneNames" : [ "COL24A1" ],
+    "parents" : [ 2192928 ]
+  }, {
+    "dbId" : 2192975,
+    "stId" : "R-HSA-2192975",
+    "displayName" : "GalHyl-COL27A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZC6",
+    "geneNames" : [ "COL27A1", "KIAA1870" ],
+    "parents" : [ 2192961 ]
+  }, {
+    "dbId" : 2127441,
+    "stId" : "R-HSA-2127441",
+    "displayName" : "Collagen alpha-1(V) chains [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2127310, 2127308 ],
+    "children" : [ 2127371, 2127433, 375058, 2127350, 2127397, 2127429, 2127365, 2127412, 2127396, 2127346, 2127314, 2127312 ]
+  }, {
+    "dbId" : 2127442,
+    "stId" : "R-HSA-2127442",
+    "displayName" : "3x4Hyp-3Hyp-5Hyl-COL3A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02461",
+    "geneNames" : [ "COL3A1" ],
+    "parents" : [ 2127409 ]
+  }, {
+    "dbId" : 2127444,
+    "stId" : "R-HSA-2127444",
+    "displayName" : "4-Hyp Glu-Gal-Hyl collagen alpha-2(V) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05997",
+    "geneNames" : [ "COL5A2" ],
+    "parents" : [ 2127360 ]
+  }, {
+    "dbId" : 2192984,
+    "stId" : "R-HSA-2192984",
+    "displayName" : "3x4Hyp-COL24A1(?-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q17RW2",
+    "geneNames" : [ "COL24A1" ],
+    "parents" : [ 2192928 ]
+  }, {
+    "dbId" : 2328153,
+    "stId" : "R-HSA-2328153",
+    "displayName" : "Laminin-522 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2328121, 4084530, 2426651 ],
+    "children" : [ 446012, 215961, 215956 ]
+  }, {
+    "dbId" : 182910,
+    "stId" : "R-HSA-182910",
+    "displayName" : "CBL:GRB2 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8876242, 8876356, 8876358, 182928 ],
+    "children" : [ 74686, 112199 ]
+  }, {
+    "dbId" : 179838,
+    "stId" : "R-ALL-179838",
+    "displayName" : "PI(3,4,5)P3 [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 323 ],
+    "identifier" : "16618",
+    "parents" : [ 8874460, 5620974, 202277, 110452, 437275, 5655279, 5655346, 5655305, 1839061, 9490334, 9559949, 9678843, 9768832, 9332827, 9411246, 9616306, 9258253, 2424457, 9184682, 9768842, 9184689, 9332834, 9616313, 9411253, 9258260, 9490341, 9678850, 2424459, 9332833, 9258259, 9768841, 9184688, 9411252, 9616312, 9490340, 9678849, 2424467, 9559959, 9559958, 9490319, 9411233, 9678830, 9258240, 9616292, 9768820, 9184669, 9332814, 2424469, 9616300, 9184678, 9768828, 9332823, 9490328, 9411242, 9678839, 9258249, 2424461, 9559935, 9559943, 9818506, 9375105, 9453434, 9145869, 9592887, 9721504, 9226200, 9648930, 9530305, 180282, 9296819, 9379440, 9077781, 9822377, 9457883, 9100401, 9652553, 9595960, 9300887, 9229973, 9150588, 9534240, 202676, 9061961, 2685693, 9491436, 9412307, 9259284, 9334006, 9769953, 9617030, 9560789, 9679746, 2685683, 9185723, 9560798, 9679753, 9491450, 9412327, 9769971, 9185738, 9334015, 9617042, 9259293, 2685675, 9491516, 9412404, 9334181, 9185815, 9770029, 9560870, 9679797, 9259355, 9617089, 2685650, 9724877, 9299290, 9377690, 9099231, 9532709, 9594785, 9077242, 9820730, 9455834, 9034410, 9228397, 9651251, 198360, 9078549, 9539436, 9237531, 9466404, 9103073, 9735710, 9308580, 9657978, 9827101, 9600506, 9387943, 9035722, 198338, 9148518, 9159950, 9095140, 9814344, 9075303, 9290900, 9032208, 9369081, 9713713, 9525524, 9643239, 9447507, 9220766, 109696, 9139390, 9713739, 9369089, 9290914, 9447516, 9643243, 9814354, 9095148, 9220776, 9139407, 9075326, 9525538, 162387, 9032212, 9491486, 9679775, 9617064, 9560843, 9334068, 9769996, 9259332, 9412363, 2685707, 9185782, 2685701, 9769992, 9491481, 9412358, 9679771, 9851713, 9617060, 9560839, 9259327, 9334063, 2685687, 9185777, 9539290, 9466202, 9308359, 9237364, 9657814, 9600342, 9159771, 389334, 9387742, 9237361, 9308356, 9387737, 9539284, 9466197, 9657809, 9600336, 389332, 9159766, 434628, 9776602, 9660829, 9240421, 9831217, 9391242, 9564661, 9469683, 9311917, 9105257, 9620194, 5340329, 9163421, 9776603, 9496346, 9417381, 9119345, 9683963, 9564662, 9857060, 9339164, 9620195, 9190940, 5218789, 9263647, 9763963, 9255488, 9114646, 9847146, 9039509, 9676026, 9329638, 9408474, 9614448, 9557505, 9487152, 2029147, 9181513, 9676108, 9255536, 9039381, 9114080, 9181605, 9847262, 9764114, 9487221, 9614496, 9408526, 9557553, 9329710, 2029148, 9847289, 9408532, 9255542, 9764126, 9329716, 9557559, 9676118, 9039388, 9614502, 9114095, 9487233, 9181613, 2130182, 9487068, 9675945, 9408409, 9614391, 9255423, 9763844, 2029133, 9181437, 9567487, 9687135, 9420963, 9194832, 9499979, 9780994, 9342616, 9622870, 9266697, 9860613, 5654166, 9121336, 9622860, 9860603, 9780984, 9194822, 9687125, 9420953, 9567477, 9266687, 9499969, 9342606, 5654162, 9121324, 9487052, 9675929, 9408393, 9614375, 9255407, 9181421, 9763828, 2029156, 9780990, 9567483, 9342612, 9687131, 9266693, 9860609, 9499975, 9622866, 9420959, 9194828, 5654155, 9121332, 9266707, 9342626, 9687145, 9860623, 9781004, 9567497, 9194842, 9499989, 9622880, 9420973, 5654226, 9121346, 9185762, 9679759, 9617048, 9769980, 9259317, 9334040, 9491474, 9560832, 9412351, 2685706, 9320593, 9110964, 9248832, 9173014, 9669295, 9479754, 9840064, 9401273, 1433526, 9456015, 9099285, 9299475, 9077270, 9651368, 9820815, 9594952, 9532841, 9377848, 9228540, 9725087, 9034442, 2317329, 9148695, 9477070, 9749454, 9318397, 9667809, 9246751, 9170666, 1168366, 9318401, 9246755, 9749458, 9667813, 9477078, 9170670, 1168364, 9667820, 9170677, 9477085, 9246762, 9749474, 9318408, 1168365, 9398675, 9398664, 9398668, 9220771, 109697, 9032202, 9447511, 9139395, 9525529, 9713724, 9888637, 9941147, 9369086, 9051131, 9643234, 9095129, 9290905, 9588964, 9060157, 9075314, 9814349, 9228380, 2317310, 9532690, 9594769, 9077198, 9377674, 9299271, 9455812, 9099196, 9651236, 9724846, 9148464, 9034391, 9820714, 377179 ]
+  }, {
+    "dbId" : 2192991,
+    "stId" : "R-HSA-2192991",
+    "displayName" : "3x4Hyp-3Hyp-GalHyl-COL27A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZC6",
+    "geneNames" : [ "COL27A1", "KIAA1870" ],
+    "parents" : [ 2192961 ]
+  }, {
+    "dbId" : 8875527,
+    "stId" : "R-HSA-8875527",
+    "displayName" : "HGF:p-4Y-MET dimer:TNS4:ITGB1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 590 ],
+    "children" : [ 8875528, 6806977 ]
+  }, {
+    "dbId" : 8875524,
+    "stId" : "R-HSA-8875524",
+    "displayName" : "TNS3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 586 ],
+    "identifier" : "Q68CZ2",
+    "geneNames" : [ "TNS3", "TEM6", "TENS1", "TPP" ],
+    "parents" : [ 8875512 ]
+  }, {
+    "dbId" : 182920,
+    "stId" : "R-HSA-182920",
+    "displayName" : "EPS15 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42566",
+    "geneNames" : [ "EPS15", "AF1P" ],
+    "parents" : [ 8866243, 8871145, 8868627, 8868620, 8868632, 8868629, 8868626, 8868624, 8862276, 8856806, 182947 ]
+  }, {
+    "dbId" : 914048,
+    "stId" : "R-HSA-914048",
+    "displayName" : "p-Y705-STAT3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 822 ],
+    "identifier" : "P40763",
+    "geneNames" : [ "STAT3", "APRF" ],
+    "parents" : [ 8952748, 8950427, 8980551, 8952746, 8987122, 6788625, 6786065, 8982168, 6784779, 1169218, 1888197, 9006876, 2671874, 1112526, 1112555, 1112571, 1433413 ]
+  }, {
+    "dbId" : 1474201,
+    "stId" : "R-HSA-1474201",
+    "displayName" : "Collagen type I fibril [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 5696343, 5696346, 2465873, 2426282, 2466225, 2127450, 2220802, 2564686, 2465861, 2731136, 2465885, 114596, 2672066, 434822, 434812, 114562, 215988, 2399659, 2396143, 2396133, 2396268, 2399496, 2447200, 2396060, 2396037, 2396051, 2396474, 4127482, 2214305 ],
+    "children" : [ 2089970 ]
+  }, {
+    "dbId" : 8875528,
+    "stId" : "R-HSA-8875528",
+    "displayName" : "TNS4:ITGB1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 589 ],
+    "parents" : [ 8875527 ],
+    "children" : [ 57596, 201624 ]
+  }, {
+    "dbId" : 182925,
+    "stId" : "R-HSA-182925",
+    "displayName" : "STAM [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92783",
+    "geneNames" : [ "STAM", "STAM1" ],
+    "parents" : [ 5693064, 182929 ]
+  }, {
+    "dbId" : 179856,
+    "stId" : "R-ALL-179856",
+    "displayName" : "PI(4,5)P2 [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 321 ],
+    "identifier" : "18348",
+    "parents" : [ 8874460, 5620974, 9874377, 9356151, 9209173, 9700092, 9798354, 9434840, 9514117, 9578929, 9278991, 9632579, 8868632, 9129592, 9433649, 9999744, 9927392, 9631909, 9577861, 9278041, 9129178, 9512798, 9797343, 9873790, 9699188, 9355181, 8871153, 9208038, 9873805, 9699204, 9797379, 9208057, 9999754, 9927399, 9631932, 9433668, 9355205, 9577880, 9278060, 9129194, 9512817, 8856806, 434630, 9660828, 9105255, 9831215, 9240420, 9163420, 9391241, 9469682, 9311916, 434632, 2731131, 9116673, 9770220, 9617211, 9491673, 9259498, 9185978, 9851971, 9561012, 9412557, 9334364, 2731080, 2243943, 2219527, 622379, 9737480, 9658987, 9389175, 9828338, 9309835, 9467571, 9161192, 418834, 9731563, 9232912, 9382660, 9154029, 9461157, 9304350, 9655361, 9536963, 9598355, 9825557, 374570, 9101944, 9304354, 9825561, 9655368, 9154033, 9461161, 9232916, 9382664, 9536967, 9598359, 9101951, 9731574, 374558, 9682398, 9261860, 9188757, 9854686, 9337110, 9773762, 9563030, 9415305, 9494389, 9618854, 3928536, 443665, 9461199, 9825582, 9655403, 9382713, 9731617, 9232936, 9154072, 9304381, 9101978, 443660, 9632444, 9874220, 9434680, 9798147, 9355960, 9278827, 9578743, 9208991, 9699894, 9513939, 9129499, 8867034, 9632445, 9208992, 9874221, 9578744, 9355961, 9129500, 9434681, 9513940, 9699895, 9798148, 9278828, 8867035, 2029162, 9677912, 9850300, 9410245, 9039651, 9615786, 9081903, 9767446, 9489202, 9559104, 9064874, 442584, 9183516, 9181539, 9408499, 9487176, 9329670, 9255509, 9847169, 9614469, 9557526, 9676053, 9764006, 9081912, 2197680, 9331808, 9850301, 9677913, 9257335, 9615787, 9410246, 9081906, 9489203, 9767447, 9183517, 9559105, 2197683, 9889931, 9715489, 9292217, 9370269, 9221983, 9095768, 9140900, 9060517, 9032775, 9644446, 9942910, 9448918, 9589942, 9526645, 9815284, 8983508, 9460638, 9101633, 9655001, 9536587, 9382133, 9303815, 9232421, 9153421, 9730912, 9598070, 9825078, 354110, 9267824, 9343826, 9623784, 9196070, 9861870, 9782621, 9501176, 9688212, 9422093, 9568450, 354132, 9411937, 9616799, 9769566, 9679429, 9491062, 9185354, 9560484, 9258953, 9333567, 2559415, 5365824, 9081937, 9767713, 9975051, 9678082, 9183708, 9489407, 9115556, 9064901, 9039687, 9850463, 9332041, 9559220, 9410474, 9053231, 9907956, 9615889, 9257548, 2219520, 9379377, 9229906, 9457834, 9822348, 9061948, 9652487, 9726886, 9034747, 9534176, 9595901, 9893400, 9948635, 9100387, 9300808, 9051855, 9077768, 202269, 9150485 ]
+  }, {
+    "dbId" : 182929,
+    "stId" : "R-HSA-182929",
+    "displayName" : "STAM [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 917726, 182947, 8867032 ],
+    "children" : [ 182925, 182965 ]
+  }, {
+    "dbId" : 204441,
+    "stId" : "R-HSA-204441",
+    "displayName" : "ITGA3(33-1051) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P26006",
+    "geneNames" : [ "ITGA3", "MSK18" ],
+    "parents" : [ 204444 ]
+  }, {
+    "dbId" : 8875548,
+    "stId" : "R-HSA-8875548",
+    "displayName" : "HGF:p-4Y-MET:p-5Y-GAB1, HGF:p-4Y-MET:GRB2-1:p-5Y-GAB1:CRK,CRKL [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 606 ],
+    "parents" : [ 8875665, 8875561, 8875574 ],
+    "children" : [ 381945, 8851943 ]
+  }, {
+    "dbId" : 2142910,
+    "stId" : "R-HSA-2142910",
+    "displayName" : "Tropocollagen type XI [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2060921, 2168008 ],
+    "children" : [ 2127295, 2192884, 2192881 ]
+  }, {
+    "dbId" : 204444,
+    "stId" : "R-HSA-204444",
+    "displayName" : "Integrin alpha3beta1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2426349, 4088270, 4085052, 4205068, 2467437, 204466, 8874085 ],
+    "children" : [ 57596, 204441 ]
+  }, {
+    "dbId" : 182947,
+    "stId" : "R-HSA-182947",
+    "displayName" : "EPS15:HGS:STAM [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 583 ],
+    "parents" : [ 8876263, 8875489, 182936, 182961, 8867034 ],
+    "children" : [ 182920, 182954, 182929 ]
+  }, {
+    "dbId" : 182954,
+    "stId" : "R-HSA-182954",
+    "displayName" : "HGS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14964",
+    "geneNames" : [ "HGS", "HRS" ],
+    "parents" : [ 917726, 8867032, 182947, 6782772, 6782796, 5671700 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 502, 119 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 182958,
+    "stId" : "R-HSA-182958",
+    "displayName" : "SH3GL2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99962",
+    "geneNames" : [ "SH3GL2", "CNSA2", "SH3D2A" ],
+    "parents" : [ 8867741 ]
+  }, {
+    "dbId" : 8875561,
+    "stId" : "R-HSA-8875561",
+    "displayName" : "HGF:p-4Y-MET:p-5Y-GAB1, HGF:p-4Y-MET:GRB2-1:p-5Y-GAB1:CRK,CRKL:RAPGEF1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 625 ],
+    "children" : [ 913472, 8875548 ]
+  }, {
+    "dbId" : 182957,
+    "stId" : "R-HSA-182957",
+    "displayName" : "SH3KBP1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96B97",
+    "geneNames" : [ "SH3KBP1", "CIN85" ],
+    "parents" : [ 8855226, 8855258, 8875475, 983692 ]
+  }, {
+    "dbId" : 8875574,
+    "stId" : "R-HSA-8875574",
+    "displayName" : "HGF:p-4Y-MET:p-5Y-GAB1, HGF:p-4Y-MET:GRB2-1:p-5Y-GAB1:CRK,CRKL:(DOCK7) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 677 ],
+    "children" : [ 8875579, 8875548 ]
+  }, {
+    "dbId" : 1474212,
+    "stId" : "R-HSA-1474212",
+    "displayName" : "Collagen type III fibril [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 5696343, 5696346, 2466171, 2465902, 2466225, 2465885, 2731136, 2465861, 2564686, 2127450, 375078, 2424250, 2214307 ],
+    "children" : [ 2127436 ]
+  }, {
+    "dbId" : 2193046,
+    "stId" : "R-HSA-2193046",
+    "displayName" : "3x4Hyp-5Hyl-COL24A1(?-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q17RW2",
+    "geneNames" : [ "COL24A1" ],
+    "parents" : [ 2192928 ]
+  }, {
+    "dbId" : 1474209,
+    "stId" : "R-HSA-1474209",
+    "displayName" : "Collagen type II fibril [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 5696346, 2466171, 2426282, 2465902, 2466225, 2465885, 2465861, 2564686, 2220801, 2220791, 2413074, 2220802, 2127450, 375078, 215994, 4084898, 2214299 ],
+    "children" : [ 2127377 ]
+  }, {
+    "dbId" : 182965,
+    "stId" : "R-HSA-182965",
+    "displayName" : "STAM2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75886",
+    "geneNames" : [ "STAM2", "HBP" ],
+    "parents" : [ 6782796, 182929 ]
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 898, 324, 389, 821, 887, 408, 265, 426, 299 ],
+    "identifier" : "16761",
+    "parents" : [ 6788782, 170037, 500087, 9697693, 9511149, 9432021, 9206358, 9353591, 9795136, 9630850, 9576626, 6814647, 9276454, 9308768, 9600654, 9658148, 9160110, 9466548, 9388155, 9539602, 9736133, 9237677, 390582, 9741227, 9240850, 9831931, 9542652, 9470172, 9661300, 9312377, 9603268, 9391818, 445800, 9163954, 391405, 6790050, 9736232, 9160241, 9056082, 9952449, 9658213, 9895747, 9103166, 9827450, 9078597, 9388323, 9466651, 9035776, 9539705, 9600757, 9308939, 9070319, 390455, 9237786, 445015, 445018, 9977479, 9562443, 9414582, 9117822, 9082713, 9681762, 9772765, 9909744, 9188009, 9493620, 9065454, 9853847, 9040520, 3371441, 9053615, 9681804, 9772846, 9977954, 9910080, 9040575, 9414618, 9117855, 9053626, 9265602, 9341440, 9493660, 9065507, 9853904, 9188045, 9082763, 5618090, 6792616, 9684367, 9041363, 9417878, 9911631, 9496840, 9083614, 9054014, 9857497, 9777150, 9066083, 9979792, 9191465, 9119694, 5252087, 9041366, 9857498, 9496844, 9119696, 9083616, 9777154, 9417882, 9191469, 9684371, 5252111, 9496843, 9417881, 9083615, 9777153, 9119695, 9684370, 9191468, 5252110, 9191474, 9119701, 9777159, 9041371, 9417887, 9083621, 9979797, 9857503, 9054019, 9684375, 9911636, 9066088, 9496849, 5252012, 9496846, 9119698, 9417884, 9777156, 9041368, 9066085, 9979794, 9857500, 9054016, 9083618, 9911633, 9684373, 9191471, 5251980, 9496847, 9191472, 9119699, 9417885, 9777157, 9041369, 9066086, 9979795, 9857501, 9054017, 9083619, 9911634, 9684374, 5252038, 9054022, 9041374, 9119704, 9083624, 9066091, 9979800, 9911639, 5252097, 5252129, 9119700, 9083620, 9191473, 9066087, 9979796, 9857502, 9054018, 9911635, 9777158, 9041370, 9417886, 9496848, 5252096, 9041367, 9496845, 9119697, 9777155, 9054015, 9417883, 9066084, 9857499, 9083617, 9979793, 9911632, 9684372, 9191470, 5255423, 9041364, 9777151, 9496841, 9417879, 9191466, 9684368, 5251966, 9562478, 9191475, 9777161, 9119703, 9857505, 9041373, 9979799, 9417888, 9054021, 9083623, 9496850, 9911638, 9066090, 5251932, 9041365, 9496842, 9417880, 9191467, 9777152, 9684369, 5252090, 9979798, 9054020, 9777160, 9119702, 9083622, 9684376, 9857504, 9041372, 9066089, 9911637, 5251953, 9831368, 9660936, 9391412, 9036464, 9312027, 9105375, 9240526, 9740533, 9469808, 1063687, 9163554, 9764250, 9614553, 9676171, 9408585, 9487301, 9181673, 9255598, 2029139, 9181649, 9081751, 9907168, 9764195, 9974123, 9614529, 9408572, 9847332, 9329756, 9255581, 9676153, 9064771, 9557586, 9114122, 9487280, 202994, 9039435, 9325521, 9554399, 9757673, 9843562, 9081664, 9252484, 9039312, 9672820, 9177035, 9483654, 9612368, 9405341, 1861625 ]
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 120 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 8875579,
+    "stId" : "R-HSA-8875579",
+    "displayName" : "(DOCK7) [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 676 ],
+    "parents" : [ 8875574 ],
+    "children" : [ 1012970 ]
+  }, {
+    "dbId" : 210625,
+    "stId" : "R-HSA-210625",
+    "displayName" : "PTPN1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P18031",
+    "geneNames" : [ "PTPN1", "PTP1B" ],
+    "parents" : [ 1169233, 1169221, 1169227, 997298, 6807023, 8849424 ]
+  }, {
+    "dbId" : 5674631,
+    "stId" : "R-HSA-5674631",
+    "displayName" : "RAC1:GDP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 693 ],
+    "parents" : [ 8951587 ],
+    "children" : [ 29420, 351141 ]
+  }, {
+    "dbId" : 109276,
+    "stId" : "R-ALL-109276",
+    "displayName" : "H2O [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 26 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 8874599,
+    "stId" : "R-HSA-8874599",
+    "displayName" : "HGF:p-4Y-MET dimer:p-Y194,Y397-PTK2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8874601 ],
+    "children" : [ 8874600, 6806977 ]
+  }, {
+    "dbId" : 29420,
+    "stId" : "R-ALL-29420",
+    "displayName" : "GDP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 696, 650, 172 ],
+    "identifier" : "17552",
+    "parents" : [ 500077, 482627, 170037, 110416, 165123, 351066, 350999, 9799242, 9514751, 9435538, 9633051, 9875313, 9356857, 9279579, 9209834, 9700663, 9579475, 8871137, 9129987, 9279042, 9578956, 9514172, 9209233, 9700124, 9434887, 9874464, 9798422, 9356205, 9632608, 8868609, 9129655, 2316331, 9630989, 9276658, 9511359, 9353796, 9087903, 9046398, 9697857, 9576800, 9432239, 199988, 9631307, 9277178, 9354234, 9046459, 9926823, 9432735, 9128709, 9577086, 9511899, 9207078, 9872799, 9698299, 9056162, 9999004, 9796020, 9087978, 8850024, 9872217, 9795289, 9576712, 9511259, 9432133, 9128449, 9630923, 9087869, 9046365, 9206479, 9353708, 8847530, 9630877, 9795195, 9353616, 9872171, 9697727, 9206389, 9432042, 9511170, 9576656, 9276477, 6814641, 9794728, 9276081, 9070262, 9205943, 9576296, 9087768, 9926140, 9871804, 9353159, 9510742, 9630516, 9697366, 9056047, 9431628, 9997626, 9128169, 6811310, 9046158, 9070275, 9871822, 9431639, 9697380, 9510758, 9353176, 9576305, 9276092, 9128186, 9046171, 9630530, 6811351, 9205954, 9512554, 9277814, 9088272, 9698922, 9046749, 9207772, 9927131, 9354916, 9577654, 9631729, 9433389, 8854216, 9207697, 9354836, 9046707, 9277749, 9056318, 9512483, 9796762, 9088197, 9698847, 9577594, 9873424, 9631668, 9129007, 9433324, 8854215, 9577692, 9512621, 9277862, 9056352, 9207813, 9433447, 9698964, 9354985, 9796897, 9129071, 9088297, 9631762, 8854591, 9927112, 9512526, 9631692, 9433361, 9873482, 9698891, 9277786, 9207739, 9999469, 9070782, 9088249, 9129028, 9046725, 9354885, 9577626, 9796820, 9056331, 8854176, 9056565, 9071057, 9357076, 9633221, 9088889, 9279775, 9130116, 9047559, 9435749, 9928639, 9210052, 9579668, 9875507, 10001628, 8875329, 9130388, 9357410, 9701103, 9633465, 9088993, 9875868, 9579944, 9280052, 9799859, 9515239, 9210366, 9436047, 8877292, 9436048, 9130389, 9357411, 9875869, 9515240, 9280053, 9088994, 9701104, 9210367, 9799860, 8877294, 9435860, 9210170, 9088924, 9357211, 9515045, 9928741, 9071098, 9579773, 9875640, 9047620, 9130247, 9279882, 10001789, 9799604, 9700917, 8876130, 9633324, 9875692, 9799631, 9357238, 9130291, 10001807, 9279899, 9071103, 9700934, 9088929, 9515065, 9928752, 9435880, 9210187, 9047627, 9579794, 8876118, 9701114, 9633471, 9579950, 9280065, 9799874, 9436058, 9515250, 9357421, 9210381, 9089002, 8877285, 9210194, 9047638, 9928771, 9799649, 9515072, 9357247, 9279906, 9579806, 9633337, 9875700, 9700950, 9088936, 9435887, 8876112, 9280195, 9876075, 9580063, 9210503, 9436181, 9357540, 9515398, 9130478, 9056655, 9089048, 8877807, 9799483, 9514943, 9279763, 9875499, 9056551, 9088883, 9435737, 9357064, 9210040, 9579648, 8875328, 9279986, 9071125, 9701034, 9633411, 9357343, 9875801, 9435970, 9088960, 9047712, 9515160, 9799762, 9130344, 9210285, 9579890, 8876598, 9875882, 9357429, 9071153, 9799884, 9210389, 9089011, 9056626, 10002031, 9633479, 9130399, 9701127, 9515264, 9436066, 9047751, 9928923, 9579958, 9280073, 8877448, 9436117, 9130449, 9580001, 9799943, 9875943, 9280124, 9701178, 9047815, 9210439, 9633499, 9357479, 9515319, 8877602, 9056663, 9701261, 9047858, 9280221, 9580092, 9876123, 9515421, 9929020, 9633561, 9130496, 9210534, 10002128, 9089058, 9800051, 9436206, 9357583, 8877991, 9357521, 9515375, 9280179, 9701225, 9580047, 9089041, 9876046, 9210489, 9436156, 9799994, 9633535, 9047852, 9130473, 8877753, 9928778, 9799656, 9633358, 9056595, 9047677, 9357275, 9279928, 9875707, 9071110, 9579835, 10001840, 9130307, 9515094, 9435912, 9700977, 9088943, 9210222, 8876124, 9071159, 9130417, 9875905, 9436089, 9579974, 9089017, 9056633, 10002058, 9799911, 9280093, 9928955, 9047782, 9701150, 9515291, 9357449, 9633495, 9210409, 8877477, 9799912, 9130418, 9056637, 9436090, 10002059, 9280094, 9071160, 9089018, 9515292, 9047783, 9928956, 9210410, 9357450, 8877469, 9701067, 9088981, 9579913, 9210324, 9047743, 9357373, 9875844, 9435997, 9799801, 9633438, 9130375, 9515192, 10002011, 9280013, 8876839, 9210259, 9088949, 9799726, 9279960, 9579874, 9130340, 9875770, 9357317, 9515131, 9056610, 9435944, 9701009, 9633395, 8876451, 9515150, 9210275, 9357333, 9071121, 9928878, 9047699, 10001984, 9435960, 9799747, 9088956, 9701025, 9279976, 8876601, 9298487, 9892417, 9531910, 9650598, 9076895, 9594113, 9455106, 9947271, 9376863, 9147654, 9723676, 9061506, 9034081, 9227752, 9098603, 9819733, 194900, 9341488, 9566621, 9265654, 9083971, 9622071, 9041676, 9686167, 9193646, 9054267, 5623424, 9120414, 9566415, 9083924, 9041621, 9341303, 9685989, 9912323, 9066264, 9419614, 9859302, 9621887, 9265472, 9980991, 9193419, 9779411, 9120362, 9498672, 5623441, 141699, 156922, 159625, 9096101, 9222930, 9450011, 9645451, 9293285, 9075858, 9033004, 9371343, 156917, 9222929, 9527597, 9075857, 9645450, 9051422, 9943333, 9890150, 9096100, 9590878, 9450010, 9293284, 9060610, 9033003, 9371342, 156929, 9938504, 9074005, 9886605, 9523336, 9640740, 9444455, 9093501, 9710245, 9365726, 9288290, 9218499, 9058926, 9810839, 9586800, 9031016, 9136363, 72529, 9050428, 9710446, 9074320, 9939392, 9811107, 9887235, 9444835, 9136633, 9031224, 9093731, 9640916, 9586965, 9059309, 9365901, 9050632, 9523505, 72502, 9365683, 9073974, 9886497, 9938433, 9523303, 9444417, 9218461, 9093467, 9710203, 9810779, 9640701, 9030980, 9050401, 9586779, 9288270, 9058891, 72530, 9136316, 9056468, 9047060, 9434722, 9928108, 9088465, 9699948, 9578794, 9278872, 10000572, 9513986, 9209055, 9356014, 8867461, 9208835, 9046981, 9699754, 9355794, 9578601, 9056416, 9513784, 9434518, 9278677, 9088418, 10000316, 9927910, 8867455, 8955708, 9700558, 9514694, 9633031, 9579456, 9279519, 9435454, 9129978, 9799141, 9047450, 10001622, 9928633, 9356739, 9088871, 9875258, 9209771, 9071051, 8875337, 9279346, 9088661, 9798889, 9928333, 9435253, 9356535, 9070995, 9047251, 9514505, 9632900, 9700390, 10000983, 9874936, 9579288, 9209574, 9129857, 9056546, 8875311, 9800762, 9515980, 9436866, 9211153, 9580625, 8938820, 9536365, 9232214, 9654795, 9951072, 9303545, 9894885, 9381916, 9597888, 9051972, 9078145, 9460408, 9062319, 9035146, 201340, 9652879, 9948780, 9727469, 9458216, 9596132, 9034783, 9379835, 9077822, 9893477, 9822651, 9055238, 9534424, 9068739, 9150926, 9124072, 206617, 9736840, 9238167, 9309339, 9467076, 9388717, 400036, 9160687, 9221399, 9942319, 9526086, 9643781, 9589511, 9889346, 9448195, 9076069, 9095495, 9814876, 9369705, 9291594, 9032522, 9140137, 9714549, 111864, 2530509, 9333717, 9679513, 9560582, 9491172, 9259049, 9412044, 9769703, 74062, 165538, 165549, 9622349, 9566861, 9054192, 9341783, 9780007, 9120730, 9912295, 9686435, 9041604, 9980948, 9083904, 9265931, 9193960, 9498450, 9859798, 9419439, 5610519, 3928558, 428485, 9167989, 9063668, 9606127, 9664840, 9473803, 9052529, 9545899, 9835983, 9080231, 9395523, 9316130, 9108256, 9745725, 9965404, 9902772, 9244236, 9037385, 143378, 5359048, 5359051, 9653068, 9034870, 9458542, 9948874, 9727753, 9380178, 9893518, 9077918, 9596449, 9151258, 9534721, 9051876, 9822972, 9062093, 9230575, 9301709, 203989, 9100736, 9509742, 9204915, 9629932, 9925569, 9996685, 9087515, 9696771, 9793946, 9430467, 9575764, 9352328, 9275211, 9045673, 9070058, 6807786, 9127523, 9503784, 9919087, 9424695, 9055166, 9270175, 9785604, 9123300, 9067973, 9085476, 9346567, 9198949, 9043308, 9864277, 9987162, 9690961, 9625619, 5694296, 9570860, 187734, 9592013, 9295408, 9144432, 9529227, 9076147, 9096571, 9224899, 9647454, 9033317, 9817148, 9719484, 9373704, 9452086, 169860, 182015, 187652, 187671, 171005, 171002, 112372, 9373808, 9452190, 9719641, 9144566, 9592090, 9647604, 9225006, 9529281, 170669, 9295559, 9831373, 9240535, 9740547, 9542373, 9391419, 9036472, 9603005, 9105380, 9079264, 9469815, 9163561, 9660946, 206896, 9312037, 9372562, 9294516, 9075999, 9646496, 9591552, 9718297, 9451132, 9060737, 9143330, 9816786, 9528498, 9033195, 165191, 9224037, 421117, 9079221, 9740392, 9311922, 9602921, 9062928, 9660834, 9542267, 9163426, 9469688, 9240426, 9831222, 9391247, 442278, 9105262, 9660844, 9240433, 9391254, 9062930, 9311929, 9542274, 9469698, 9079224, 9831229, 9740402, 9602928, 9163433, 442313, 9105269, 9035575, 9826894, 9466200, 9657812, 9735506, 9539287, 9078415, 9102926, 9062430, 9387740, 9159769, 9600339, 418830, 9619005, 9774008, 9494557, 9337299, 9563194, 9118496, 4551532, 9682571, 9855363, 9262014, 3965392, 9188957, 9831657, 9127764, 9078325, 9611468, 9649736, 9146736, 9454185, 9740972, 9531077, 9052024, 9297602, 9951706, 9035424, 9226891, 9070253, 9895283, 9375978, 190512, 1250493, 9723400, 9061430, 9076818, 9376507, 9593856, 9819653, 9650275, 9098522, 9454718, 9298126, 9531571, 9147305, 9227405, 8964174, 9101686, 9655051, 9035231, 9460677, 9232479, 9598112, 9382173, 9303868, 9731001, 9536635, 9153538, 9078221, 9825207, 354074, 9408402, 9181430, 9557448, 9039344, 9255416, 9675938, 9847066, 9081734, 9763837, 9114028, 9329576, 9487061, 9614384, 5674631, 9076466, 9818465, 9375099, 9226173, 9033721, 9648924, 9721498, 9145863, 9530299, 9453428, 9592881, 9097544, 9296813, 109796, 9657804, 421113, 9600334, 9035573, 9159761, 9826892, 9308351, 9237351, 9078413, 9102924, 9735505, 9539282, 9466192, 445010, 9096375, 9075985, 9143090, 9591398, 9294238, 9372414, 9943615, 9462262, 9816497, 9646384, 9890356, 9528336, 9718100, 164333, 9223875, 9815210, 9095733, 9032695, 9448653, 9221780, 9526464, 9370079, 9075717, 9644217, 9589880, 9292005, 9715127, 114543, 9140644, 9224083, 9084277, 9451177, 9816835, 9591591, 9294553, 9718342, 9121305, 9528542, 9372614, 9042016, 9646544, 9066474, 5653977, 9121302, 9646539, 9084274, 9718339, 9591588, 9816832, 9042013, 9451171, 9372609, 9066471, 9528539, 9358154, 9224078, 5653981, 5653970, 9528559, 9372629, 9816844, 9066483, 9084286, 9224093, 9294563, 9121319, 9646554, 9718352, 9591601, 9451187, 9042025, 5653973, 9143391, 9143378, 9143373 ]
+  }, {
+    "dbId" : 8874601,
+    "stId" : "R-HSA-8874601",
+    "displayName" : "HGF:p-4Y-MET dimer:p-Y194,Y397-PTK2:MyrG-p-Y419-SRC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 409 ],
+    "children" : [ 1810408, 8874599 ]
+  }, {
+    "dbId" : 8874600,
+    "stId" : "R-HSA-8874600",
+    "displayName" : "p-Y194,Y397-PTK2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05397",
+    "geneNames" : [ "PTK2", "FAK", "FAK1" ],
+    "parents" : [ 8874599 ]
+  }, {
+    "dbId" : 8874613,
+    "stId" : "R-HSA-8874613",
+    "displayName" : "p-Y194,Y397,Y576,Y577-PTK2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05397",
+    "geneNames" : [ "PTK2", "FAK", "FAK1" ],
+    "parents" : [ 8874609 ]
+  }, {
+    "dbId" : 377590,
+    "stId" : "R-HSA-377590",
+    "displayName" : "RAP1B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61224",
+    "geneNames" : [ "RAP1B", "OK/SW-cl.11" ],
+    "parents" : [ 6806267, 377600 ]
+  }, {
+    "dbId" : 8874611,
+    "stId" : "R-HSA-8874611",
+    "displayName" : "HGF:p-4Y-MET dimer:p-Y194,Y397,Y576,Y577-PTK2:MyrG-p-Y419-SRC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 427 ],
+    "children" : [ 8874609, 1810408 ]
+  }, {
+    "dbId" : 8874609,
+    "stId" : "R-HSA-8874609",
+    "displayName" : "HGF:p-4Y-MET dimer:p-Y194,Y397,Y576,Y577-PTK2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8874611 ],
+    "children" : [ 6806977, 8874613 ]
+  }, {
+    "dbId" : 2193115,
+    "stId" : "R-HSA-2193115",
+    "displayName" : "ARF6:GTP [recycling endosome membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 737 ],
+    "parents" : [ 8854243, 8875665 ],
+    "children" : [ 29438, 2029049 ]
+  }, {
+    "dbId" : 29438,
+    "stId" : "R-ALL-29438",
+    "displayName" : "GTP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 648, 170, 698 ],
+    "identifier" : "15996",
+    "parents" : [ 482625, 170037, 110415, 165125, 194545, 350950, 206703, 351067, 9356337, 9632716, 9700221, 9579082, 9798611, 9279160, 9435020, 9874660, 9514304, 9209373, 8871141, 9129762, 9356195, 9129632, 9798412, 9700114, 9279032, 9632598, 9514162, 9434877, 9874454, 9578946, 8868235, 9209223, 8871130, 9208050, 9797363, 9631925, 9577873, 9512810, 9433661, 9355198, 9278053, 2316332, 2316465, 9432640, 9354177, 9872744, 9795931, 9577036, 9046452, 9631257, 9277094, 9698234, 9511832, 9128684, 9207005, 8849729, 9511836, 9207009, 9432644, 9354181, 9795938, 9277098, 9631265, 9872756, 9698241, 9577040, 8849731, 9128689, 9207013, 9872766, 9432648, 9354185, 9577044, 9277102, 9511840, 8849733, 9998550, 9046454, 9926708, 8849735, 9128500, 9056101, 9087910, 9576809, 9630998, 8847628, 9276600, 9795345, 9697811, 9511300, 9432190, 9353748, 9206518, 9871754, 9630475, 9697318, 9353114, 9576257, 9510689, 9128123, 9431585, 9926077, 9997520, 9205898, 9794672, 9276040, 9046121, 6811364, 9796041, 9926851, 9999028, 9046472, 8850025, 9872713, 9698191, 9631244, 9577023, 9511785, 9432611, 9354139, 9277066, 9206962, 9128655, 9872696, 9432595, 9631225, 9128640, 9206949, 9354121, 9511764, 9698176, 9577010, 9277053, 8849254, 9630824, 9576596, 9511127, 9795104, 9087822, 9697666, 9353567, 9431999, 9276429, 6814644, 9206331, 9630863, 9576639, 9697711, 9353602, 9276465, 9872157, 9206372, 9128371, 9795154, 9511158, 9432030, 6814643, 6814067, 9794827, 9997746, 9871934, 9697494, 9276249, 9630640, 9206126, 9926214, 9576403, 6814076, 9046280, 9576397, 9056053, 9353360, 9997731, 9276246, 9630632, 9794819, 9510944, 9871928, 9431810, 9926205, 9128290, 9046274, 9206123, 9087791, 9697488, 6814064, 9630921, 9576710, 9128447, 9795287, 9872215, 9087867, 9046363, 8847528, 9510871, 9431744, 9353288, 9206052, 9795213, 9510761, 9630533, 9998062, 9128189, 9431642, 9353179, 9697383, 9046174, 9276095, 9070278, 9205957, 9871825, 9576308, 9926386, 6811349, 9630636, 9576399, 9510828, 9128407, 9431700, 9276152, 9997736, 9794821, 9206019, 9046276, 9353251, 9871930, 9926207, 9697490, 6814072, 9276146, 9128404, 9697482, 9510822, 9576391, 9353245, 9206013, 9046267, 9630621, 9997718, 9794813, 9871921, 9926198, 9431694, 6814074, 9698921, 9512553, 9277813, 9207771, 9046748, 9129055, 9873509, 9056344, 9999478, 9927130, 9354915, 9070791, 9577653, 9796848, 9088271, 9433388, 9631728, 8854204, 9354835, 9207696, 9873423, 9277748, 9046706, 9056317, 9512482, 9088196, 9698846, 9796761, 9577593, 9129006, 9433323, 9631667, 8854335, 9698157, 9926701, 9070396, 9998541, 9631206, 9795879, 9872678, 9056154, 9576989, 9432576, 9087972, 9511740, 9277031, 9128609, 9046446, 9354093, 9206924, 8849251, 9512620, 9577691, 9433446, 9277861, 9207812, 9354984, 9796896, 9129070, 9056351, 9631761, 9088296, 9698963, 8854602, 9512510, 9433345, 9354869, 9698873, 9631688, 9796801, 9577616, 9277773, 9207724, 8854190, 9928652, 9633227, 10001677, 9357082, 9071064, 9056571, 9875513, 9088901, 9579678, 9279781, 9435755, 9047566, 9210062, 9130123, 8875316, 9799866, 9210371, 9633468, 9515244, 9088998, 9436052, 9579947, 9357415, 9280059, 9875875, 9130393, 9701108, 8877290, 9515246, 9799870, 9436054, 9357417, 9210377, 9701110, 9089000, 9875879, 9280061, 9130395, 8877288, 9928750, 9515048, 9435863, 9071101, 10001805, 9088927, 9579776, 9210173, 9357216, 9875643, 9700920, 9047625, 9799607, 9130250, 9279885, 8876128, 9700939, 9047636, 9130294, 9210192, 10001838, 9928769, 9357245, 9515070, 9071108, 9279904, 9088934, 9579801, 9875698, 9633329, 9435885, 9799636, 8876116, 9357424, 9210384, 9701119, 9280068, 9089007, 9515253, 9579953, 9436061, 9799877, 9633474, 8877284, 9928776, 9435892, 9047665, 9210202, 9515077, 9799654, 9579811, 9875705, 9700955, 9633342, 9357252, 9279911, 9088941, 8876110, 9056660, 9089057, 9515401, 9130483, 9580068, 9436186, 9357547, 9280200, 9876086, 9210508, 8877804, 9088887, 9279767, 9875503, 9056557, 9799489, 9579654, 9514947, 9435741, 9357068, 9210044, 8875326, 9210290, 9701039, 9279989, 9875808, 9633414, 9071128, 9088965, 9515165, 9357346, 9435973, 9047715, 9579893, 9799767, 9130347, 8876595, 9056629, 9633484, 9047767, 9071158, 9875885, 9799887, 9701132, 9210394, 9515269, 9357434, 9089016, 9928935, 9579963, 9130402, 9436071, 10002045, 9280078, 8877453, 9130452, 9047824, 9875950, 9799949, 9436120, 9580004, 9280127, 9089028, 9056647, 9633502, 9515322, 9701181, 9210442, 9357484, 8877601, 9047861, 9436209, 9357586, 9876128, 9929026, 9515424, 9056666, 9089061, 9800056, 9580095, 9280224, 9633566, 9130499, 9210537, 9701264, 10002138, 8877989, 9089046, 9047857, 9701230, 9357526, 9633540, 9280184, 9800004, 9210492, 9876057, 9436161, 9130476, 9580052, 9515380, 8877758, 9210227, 9088948, 10001859, 9875712, 9056600, 9279933, 9928793, 9357283, 9579838, 9515101, 9047682, 9130316, 9799667, 9700982, 9435917, 9633363, 9071115, 8876122, 9130422, 9210416, 9579977, 9799916, 9701155, 9071164, 9089022, 9928964, 9875908, 9515296, 9436094, 9056641, 9280100, 9633498, 9047789, 10002074, 9357454, 8877478, 10002087, 9210418, 9928970, 9357458, 9799918, 9047793, 9071166, 9515298, 9130424, 9436096, 9280102, 9089024, 9056643, 8877471, 9579916, 9875851, 9280016, 9210327, 10002017, 9633441, 9088986, 9436000, 9357376, 9515195, 9799804, 9047746, 9701072, 9130378, 8876838, 9210262, 9579877, 9279963, 9875779, 9088952, 9515134, 9056613, 9130343, 9357320, 9799729, 9633398, 9435947, 9701012, 8876448, 9071124, 9210278, 10002000, 9357336, 9279979, 9088959, 9435963, 9799750, 9701030, 9047704, 9928887, 9515153, 8876599, 194875, 9947274, 9650601, 9531913, 9298490, 9594116, 9455109, 9892420, 9061509, 9819736, 9376866, 9034084, 9723679, 9076898, 9227755, 9098606, 9147657, 194890, 5667053, 5666175, 9194243, 9342083, 9266177, 9780383, 9567067, 9686711, 2316453, 9342081, 9194241, 9780381, 9567065, 9686709, 9266175, 5627068, 9623500, 9195607, 9687849, 9121778, 9861345, 9568164, 9084416, 9343399, 9421703, 9781906, 9500787, 9042152, 9267437, 5668609, 9912410, 9498826, 9981153, 9419786, 9054254, 9041661, 9083962, 5618323, 9622141, 9120532, 9779771, 9686253, 9341584, 9193745, 9499004, 9419941, 9859663, 9566697, 9083999, 9265741, 5624106, 9686124, 9498895, 9912483, 9779649, 9054266, 9981367, 9566586, 9041667, 9622042, 9083970, 9419848, 9341451, 9193608, 9859511, 9265613, 5623423, 9120395, 9083925, 9041622, 9980992, 9341304, 9685990, 9912324, 9066265, 9621888, 9859303, 9419615, 9265473, 9779412, 9566416, 9498673, 9193420, 9120363, 5623445, 9265552, 9779529, 9084145, 9041843, 9621956, 9193498, 9054296, 9981431, 9498750, 9120448, 9912541, 9859548, 9566488, 9066370, 9419690, 9341388, 9686067, 5623431, 9792010, 9126804, 9351088, 9869931, 9924779, 9995427, 9508522, 9629255, 9274104, 9429243, 9055774, 9069797, 9695487, 9087206, 9574939, 9203689, 9045320, 143383, 141685, 9717032, 9371351, 9450019, 9075864, 9033019, 9815780, 9590883, 9943384, 9141988, 9890168, 9051428, 9645464, 9096110, 9060618, 156916, 159530, 9645452, 9222931, 9371344, 9450012, 9096102, 9293286, 9075859, 9033005, 156921, 9073942, 9710125, 9523273, 9365654, 9288220, 9938375, 9886425, 9444382, 9810681, 9218432, 9586740, 9050380, 9030956, 9640663, 9058859, 9093418, 72531, 9136260, 9031222, 9523503, 9136631, 9710444, 9887233, 9811105, 9444833, 9050630, 9093729, 9939390, 9365899, 9074318, 9640914, 9586963, 9059307, 72503, 391532, 391504, 391249, 391237, 391503, 391235, 391537, 391246, 391385, 390457, 9434738, 9209073, 9699966, 9928158, 9578826, 10000671, 9088477, 9514002, 9278892, 9356030, 9056490, 9047082, 8867380, 9355777, 9278658, 9927849, 9208802, 10000261, 9513768, 9434502, 9578586, 9046973, 9699734, 9056408, 9088410, 8867429, 8955576, 8955569, 8955720, 8955573, 9654797, 9062321, 9161500, 9232216, 9381918, 9737924, 9597890, 9051974, 9460410, 9078147, 9951088, 9828626, 9035148, 9894898, 9536369, 199981, 9303549, 9496653, 9417714, 9339475, 9053937, 9979490, 9065968, 9041264, 9684196, 9191263, 9119513, 9776914, 9083532, 9911380, 9857301, 5250197, 9263935, 9467070, 9309333, 9388711, 9238164, 9736834, 9160681, 400076, 9600108, 9463694, 9235330, 9156706, 9385324, 9538995, 9735157, 9306926, 5252145, 9737834, 9659213, 9540605, 9389412, 9310090, 9467826, 9238798, 420891, 804940, 941877, 421893, 2530541, 9137332, 9289059, 9524012, 9641525, 9219113, 9366554, 9711303, 9445504, 74049, 9778826, 9621388, 9419121, 9980689, 9498088, 9192811, 9685526, 9912102, 9565952, 9858902, 180686, 9980901, 9498441, 9419430, 9912243, 9041597, 9083897, 9054185, 5610522, 8951978, 9802750, 9581646, 9517258, 9438091, 9359489, 9281994, 9212487, 421676, 444974, 444967, 428484, 167204, 6802607, 5359063, 5359046, 5359045, 5359037, 5359036, 9570893, 9123348, 9043377, 9864320, 9987437, 9085534, 9424736, 9270208, 9919249, 9346600, 9503828, 9691063, 9198991, 9625648, 9068010, 5694299, 9785764, 9534511, 9230359, 9379925, 9727587, 9062047, 9822843, 9652957, 9100516, 9596222, 9051878, 9301444, 9034849, 9458294, 9151021, 9893525, 9948886, 9077898, 204003, 9087505, 9055952, 9270292, 9996655, 9575749, 9629927, 9346715, 9871064, 9696766, 9199105, 9043460, 9503933, 9424835, 9785983, 9070051, 9925559, 6807799, 9629934, 9871084, 9204918, 9996687, 9696773, 9925571, 9087518, 9055961, 9430469, 9793948, 9070060, 9352331, 9575766, 9275214, 9509744, 9045675, 6807789, 9127526, 9127511, 9696876, 9205043, 9997348, 9056022, 9925996, 9509897, 9794179, 9630048, 9430622, 9087739, 9871259, 9070214, 9352453, 9575864, 9275335, 9127630, 9045865, 6808826, 9509999, 9055956, 9127831, 9045968, 9925871, 9430712, 9794273, 9275449, 9697024, 9871388, 9070176, 9997104, 9630164, 9352587, 9205167, 9087690, 6808823, 9575985, 9341969, 9499342, 9194128, 9084049, 9120882, 9686596, 9780225, 9266083, 9041699, 9066316, 9566964, 9860053, 9622385, 5625964, 9420253, 8875670, 9279858, 9799576, 9700890, 9633293, 9579749, 9515015, 9435836, 9357184, 9210146, 9088261, 9796831, 9129041, 9512536, 9207749, 9071074, 9698901, 9577636, 9631703, 9433371, 9354895, 2193115, 9277796, 187686, 187722, 9076148, 9529228, 9592014, 9295409, 9144433, 9096572, 9033318, 9647455, 9719485, 9817149, 9224900, 9452087, 9373705, 169866, 182080, 187673, 187681, 170990, 171017, 449518, 9727995, 9034919, 217289, 9151497, 9823122, 9653236, 9596610, 9534936, 9458764, 9380373, 9301911, 9230756, 9100782, 9077978, 112373, 421789, 9529276, 9647599, 9144561, 9452185, 9592085, 9225001, 9373803, 9719636, 170661, 9295554, 9831374, 9542374, 9240536, 9391420, 9740548, 9036473, 9105381, 9603006, 9079265, 9469816, 9163562, 9660947, 206946, 9312038, 2311340, 9184610, 9616255, 9850639, 9559880, 9411174, 9678779, 9258186, 9490262, 9332746, 9768727, 2422449, 9559212, 9183697, 9615881, 9115548, 9064893, 9039679, 9332033, 9410466, 9257540, 9678071, 9489396, 9767702, 9081929, 9850455, 2311336, 9053219, 9769646, 9616873, 9333669, 9679477, 9560551, 9259003, 9491120, 9411999, 2562539, 9185390, 9265719, 9859631, 9622123, 9341559, 9193717, 9566679, 9686231, 9498979, 9120505, 9419919, 9083978, 5624294, 421101, 9062564, 9035860, 9737032, 9828046, 9160880, 9388901, 9103522, 9467284, 9078649, 9309516, 9658722, 9238317, 399865, 9658700, 9078641, 9540136, 9238229, 9828033, 9160767, 9736998, 9601120, 421110, 9467160, 9309414, 9103502, 9035848, 421104, 421103, 9391248, 9740393, 9311923, 9079222, 9062929, 9602922, 9660835, 9542268, 9469689, 9163427, 9240427, 9831223, 442290, 9105263, 9660845, 9240434, 9062931, 9391255, 9311930, 9469699, 9079225, 9542275, 9036450, 9831230, 9740403, 9602929, 9163434, 442315, 9105270, 9658732, 9467294, 9238327, 9601128, 9103552, 9309526, 9828050, 9078653, 9540180, 9062568, 9160890, 9388911, 419161, 5625897, 9343522, 9687960, 9623576, 9267572, 9500931, 9421837, 9861495, 9568259, 9084426, 8981459, 446942, 9773420, 9082931, 9562852, 9261657, 9494146, 9854310, 9040761, 9336869, 9118306, 9618679, 9415114, 9682199, 9188525, 3858468, 445852, 9103474, 9062525, 9540071, 9160669, 9388699, 9078622, 9952965, 9895928, 9736830, 9658617, 9601018, 9827890, 9238152, 9467058, 9035817, 400008, 374857, 9095413, 9643630, 9139958, 9942315, 9369525, 9814671, 9448037, 9714279, 9032475, 9076068, 9889342, 9221252, 9589364, 9291406, 9525939, 167438, 9774011, 9682574, 9563197, 9262017, 9188960, 9415477, 9337302, 9118499, 9619008, 9855366, 9494560, 3965396, 9774218, 9601532, 9337504, 9682712, 9161441, 9563333, 9494739, 4085980, 9262175, 4085966, 9226867, 9035414, 9649710, 9127760, 9611457, 9895204, 9831655, 9375968, 9951643, 9070246, 9740958, 9454168, 9297579, 9052014, 9146697, 9078315, 9531057, 190509, 9623407, 9343251, 9121746, 9861313, 9568054, 9195450, 9500628, 9421566, 5666092, 9121751, 9343257, 9066621, 9195455, 9861318, 9687747, 442568, 9421571, 9568059, 9042147, 9267300, 9623412, 9084399, 9781783, 5666123, 9083479, 9854330, 9682223, 9118343, 9620216, 9494170, 9261687, 9188549, 9564677, 9336893, 9415135, 3858473, 9500526, 9421473, 9343138, 9567979, 9687642, 9623334, 9267214, 9195373, 5665750, 9861304, 9421553, 9121733, 9066609, 9687732, 9568039, 9267291, 9500612, 9084398, 9623395, 9343230, 5666081, 9593033, 9097649, 9818671, 9078416, 9241304, 9062431, 9146047, 9296990, 9649089, 9453569, 9035576, 9530430, 448879, 9721713, 182921, 1250491, 9531790, 9227635, 9593999, 9061431, 9298358, 9376742, 9076819, 9147523, 9454966, 9819654, 9098523, 9650467, 5665993, 9825066, 9382129, 9035230, 9536583, 9101628, 9303811, 9730905, 9232417, 9460634, 9078220, 9153417, 9654994, 9598066, 354126, 9076311, 9817390, 9295732, 9096722, 9719845, 9054426, 9529439, 9914523, 9373957, 9452345, 9033408, 9144739, 9647764, 9225165, 9592178, 109783, 9035574, 9598671, 9826893, 9154579, 9537370, 2316458, 9102925, 9732401, 9305064, 9461620, 9233544, 9078414, 9655921, 442641, 421955, 9890313, 9528202, 9075953, 9294164, 9591297, 9816388, 9372319, 9943549, 9462265, 9223781, 9096322, 9717909, 9646259, 164358, 9142987, 9658268, 9466719, 9736314, 9309008, 9539755, 9237846, 9035779, 9827516, 9103244, 9600807, 9388396, 392003, 9160319, 9889929, 9221841, 9095766, 9078643, 9526532, 9644295, 9589920, 9370140, 9448736, 9032773, 9942908, 9715231, 9060515, 9815282, 9292079, 114534, 9140719, 9221811, 9103381, 9035795, 9370104, 9715169, 9589894, 9827706, 9890778, 9526488, 9944401, 9448691, 9076297, 9292044, 114525, 9140681, 9529278, 9452187, 9295556, 9144563, 9225003, 9592087, 9719638, 9647601, 9373805, 9035384, 392161, 9102627, 9889836, 9815215, 9526468, 9221784, 9095738, 9370081, 9644221, 9032709, 9715135, 9602325, 9942705, 9292009, 9448657, 9075722, 398056, 9140651, 9032694, 9095732, 9815209, 9370068, 9448645, 9140639, 9715111, 9075716, 9292000, 9526456, 9644209, 9589872, 114539, 9221775, 9372563, 9294517, 9591553, 9646497, 9718298, 9451133, 9224038, 9076000, 9060738, 9816787, 9033196, 9528499, 165189, 9224082, 9084276, 9646543, 9451176, 9816834, 9042015, 9294552, 9591590, 9121304, 9718341, 9528541, 9372613, 9066473, 5653976, 9121301, 9084273, 9646538, 9718338, 9042012, 9451170, 9591587, 9372608, 9066470, 9528538, 9816831, 9224077, 5653978, 9528558, 9816843, 9718351, 9372628, 9066482, 9084285, 9224092, 9294562, 9121318, 9646553, 9591600, 9451186, 9042024, 5653967, 9718347, 9591596, 9451182, 9816841, 9528554, 9143331, 9143372, 9143377, 9143386, 9143390, 5653971, 9372619, 9646549, 9121314, 9042022, 9084283, 9294558, 9224088, 9066480 ]
+  }, {
+    "dbId" : 8854137,
+    "stId" : "R-HSA-8854137",
+    "displayName" : "GGA3 [early endosome membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 738 ],
+    "identifier" : "Q9NZ52",
+    "geneNames" : [ "GGA3", "KIAA0154" ],
+    "parents" : [ 8854331 ]
+  }, {
+    "dbId" : 162563,
+    "stId" : "R-HSA-162563",
+    "displayName" : "PTPN11 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 359 ],
+    "identifier" : "Q06124",
+    "geneNames" : [ "PTPN11", "PTP2C", "SHPTP2" ],
+    "parents" : [ 997298, 389744, 2671758, 8987108, 418825, 8855762, 1369118, 210219, 204767, 5654268, 5654290, 186839, 180326, 5654337, 5654310, 205267, 1112758, 8865998, 914028, 388793, 180269, 180503 ]
+  }, {
+    "dbId" : 5250898,
+    "stId" : "R-HSA-5250898",
+    "displayName" : "unknown ubiquitin ligase [cytosol]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "diagramIds" : [ 482 ]
+  }, {
+    "dbId" : 377600,
+    "stId" : "R-HSA-377600",
+    "displayName" : "RAP1 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 354074, 354126 ],
+    "children" : [ 377590, 354118 ]
+  }, {
+    "dbId" : 6800235,
+    "stId" : "R-HSA-6800235",
+    "displayName" : "SPINT1,2 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 16 ],
+    "children" : [ 6800232, 6800233 ]
+  }, {
+    "dbId" : 6800233,
+    "stId" : "R-HSA-6800233",
+    "displayName" : "SPINT2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43291",
+    "geneNames" : [ "SPINT2", "HAI2", "KOP" ],
+    "parents" : [ 6800235 ]
+  }, {
+    "dbId" : 6800232,
+    "stId" : "R-HSA-6800232",
+    "displayName" : "SPINT1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 20 ],
+    "identifier" : "O43278",
+    "geneNames" : [ "SPINT1", "HAI1", "UNQ223/PRO256" ],
+    "parents" : [ 6800235 ]
+  }, {
+    "dbId" : 8867734,
+    "stId" : "R-HSA-8867734",
+    "displayName" : "SH3GL3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99963",
+    "geneNames" : [ "SH3GL3", "CNSA3", "SH3D2C" ],
+    "parents" : [ 8867739 ]
+  }, {
+    "dbId" : 354068,
+    "stId" : "R-HSA-354068",
+    "displayName" : "p-Y397-PTK2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05397",
+    "geneNames" : [ "PTK2", "FAK", "FAK1" ],
+    "parents" : [ 354135, 418822, 418839, 3928549, 5218639, 391841, 8874094 ]
+  }, {
+    "dbId" : 8867732,
+    "stId" : "R-HSA-8867732",
+    "displayName" : "SH3GL1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99961",
+    "geneNames" : [ "SH3GL1", "CNSA1", "SH3D2B" ],
+    "parents" : [ 8867743 ]
+  }, {
+    "dbId" : 419603,
+    "stId" : "R-HSA-419603",
+    "displayName" : "MET [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 33 ],
+    "identifier" : "P08581",
+    "geneNames" : [ "MET" ],
+    "parents" : [ 8875370, 8875375, 8875433, 419634, 419623, 6800287 ]
+  }, {
+    "dbId" : 8867743,
+    "stId" : "R-HSA-8867743",
+    "displayName" : "SH3GL1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8867746 ],
+    "children" : [ 8867732 ]
+  }, {
+    "dbId" : 8867741,
+    "stId" : "R-HSA-8867741",
+    "displayName" : "SH3GL2 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8867746 ],
+    "children" : [ 182958 ]
+  }, {
+    "dbId" : 8867739,
+    "stId" : "R-HSA-8867739",
+    "displayName" : "SH3GL3 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8867746 ],
+    "children" : [ 8867734 ]
+  }, {
+    "dbId" : 354074,
+    "stId" : "R-HSA-354074",
+    "displayName" : "RAP1:GDP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 645 ],
+    "children" : [ 29420, 377600 ]
+  }, {
+    "dbId" : 2193154,
+    "stId" : "R-HSA-2193154",
+    "displayName" : "Collagen type XXIV fibril [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2127450, 2214306 ],
+    "children" : [ 2152372 ]
+  }, {
+    "dbId" : 6800195,
+    "stId" : "R-HSA-6800195",
+    "displayName" : "HPN(1-162) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05981",
+    "geneNames" : [ "HPN", "TMPRSS1" ],
+    "parents" : [ 8849220 ]
+  }, {
+    "dbId" : 2193157,
+    "stId" : "R-HSA-2193157",
+    "displayName" : "Collagen type XXVII fibril [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2127450, 2214301 ],
+    "children" : [ 2152344 ]
+  }, {
+    "dbId" : 8867746,
+    "stId" : "R-HSA-8867746",
+    "displayName" : "SH3GLs [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 8871145, 8868627, 8868620, 8867751, 8868629, 8868626, 8868624, 8934537, 8875480 ],
+    "children" : [ 8867741, 8867739, 8867743 ]
+  }, {
+    "dbId" : 141093,
+    "stId" : "R-HSA-141093",
+    "displayName" : "COL1A2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08123",
+    "geneNames" : [ "COL1A2" ],
+    "parents" : [ 6789504, 2089983 ]
+  }, {
+    "dbId" : 6800218,
+    "stId" : "R-HSA-6800218",
+    "displayName" : "pro-HGF [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 25 ],
+    "identifier" : "P14210",
+    "geneNames" : [ "HGF", "HPTA" ]
+  }, {
+    "dbId" : 2426651,
+    "stId" : "R-HSA-2426651",
+    "displayName" : "Laminins [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2426622, 8874086 ],
+    "children" : [ 2328153, 215989, 2328176, 2328112, 2328173, 2328111, 2328168, 2328137, 2328169, 2328165, 2328135, 216001, 2328098, 216003 ]
+  }, {
+    "dbId" : 374586,
+    "stId" : "R-HSA-374586",
+    "displayName" : "RANBP9 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 210 ],
+    "identifier" : "Q96S59",
+    "geneNames" : [ "RANBP9", "RANBPM" ],
+    "parents" : [ 374585, 8851860 ]
+  }, {
+    "dbId" : 354118,
+    "stId" : "R-HSA-354118",
+    "displayName" : "RAP1A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62834",
+    "geneNames" : [ "RAP1A", "KREV1" ],
+    "parents" : [ 5252145, 5252143, 6806323, 377600 ]
+  }, {
+    "dbId" : 354126,
+    "stId" : "R-HSA-354126",
+    "displayName" : "RAP1:GTP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 646 ],
+    "parents" : [ 430243, 354110 ],
+    "children" : [ 29438, 377600 ]
+  }, {
+    "dbId" : 2980677,
+    "stId" : "R-HSA-2980677",
+    "displayName" : "CRK [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P46108",
+    "geneNames" : [ "CRK" ],
+    "parents" : [ 372652, 169854, 169872, 5218765, 2029141, 381945 ]
+  }, {
+    "dbId" : 2152267,
+    "stId" : "R-HSA-2152267",
+    "displayName" : "Collagen alpha-2(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13942",
+    "geneNames" : [ "COL11A2" ],
+    "parents" : [ 2192884 ]
+  }, {
+    "dbId" : 266103,
+    "stId" : "R-HSA-266103",
+    "displayName" : "FN1 dimer [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 202708, 2327729 ],
+    "children" : [ 54851 ]
+  }, {
+    "dbId" : 2152278,
+    "stId" : "R-HSA-2152278",
+    "displayName" : "Collagen alpha-1(XI) chain [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12107",
+    "geneNames" : [ "COL11A1", "COLL6" ],
+    "parents" : [ 2192881 ]
+  }, {
+    "dbId" : 114561,
+    "stId" : "R-HSA-114561",
+    "displayName" : "Integrin alpha2beta1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2681746, 2731104, 349628, 3907291, 4086171, 2467437, 2545198, 2545193, 4086102, 4088236, 4085058, 2473468, 2473502, 444996, 8874085 ],
+    "children" : [ 57596, 57562 ]
+  }, {
+    "dbId" : 2152356,
+    "stId" : "R-HSA-2152356",
+    "displayName" : "COL24A1(?-?) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q17RW2",
+    "geneNames" : [ "COL24A1" ],
+    "parents" : [ 2192928 ]
+  }, {
+    "dbId" : 2152357,
+    "stId" : "R-HSA-2152357",
+    "displayName" : "COL27A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZC6",
+    "geneNames" : [ "COL27A1", "KIAA1870" ],
+    "parents" : [ 2192961 ]
+  }, {
+    "dbId" : 215955,
+    "stId" : "R-HSA-215955",
+    "displayName" : "LAMA2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P24043",
+    "geneNames" : [ "LAMA2", "LAMM" ],
+    "parents" : [ 2328137, 2328165, 216003 ]
+  }, {
+    "dbId" : 1806218,
+    "stId" : "R-HSA-1806218",
+    "displayName" : "PIK3CA:PIK3R1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 314 ],
+    "parents" : [ 8851953, 1306974, 1806233, 1806189 ],
+    "children" : [ 74789, 74787 ]
+  }, {
+    "dbId" : 215953,
+    "stId" : "R-HSA-215953",
+    "displayName" : "LAMA1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P25391",
+    "geneNames" : [ "LAMA1", "LAMA" ],
+    "parents" : [ 215989, 2328169 ]
+  }, {
+    "dbId" : 2152372,
+    "stId" : "R-HSA-2152372",
+    "displayName" : "Tropocollagen type XXIV [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2060921, 2193154 ],
+    "children" : [ 2192928 ]
+  }, {
+    "dbId" : 215959,
+    "stId" : "R-HSA-215959",
+    "displayName" : "LAMB1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P07942",
+    "geneNames" : [ "LAMB1" ],
+    "parents" : [ 3791167, 215989, 2328173, 2328111, 2328165, 2328098, 216003 ]
+  }, {
+    "dbId" : 201621,
+    "stId" : "R-HSA-201621",
+    "displayName" : "PTK2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 376 ],
+    "identifier" : "Q05397",
+    "geneNames" : [ "PTK2", "FAK", "FAK1" ],
+    "parents" : [ 2197681, 354103, 373662, 3928544, 4420141, 8874088, 548936 ]
+  }, {
+    "dbId" : 215956,
+    "stId" : "R-HSA-215956",
+    "displayName" : "LAMA5 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15230",
+    "geneNames" : [ "LAMA5", "KIAA0533", "KIAA1907" ],
+    "parents" : [ 6789504, 2328153, 2328168, 2328098 ]
+  }, {
+    "dbId" : 215962,
+    "stId" : "R-HSA-215962",
+    "displayName" : "LAMC1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11047",
+    "geneNames" : [ "LAMC1", "LAMB2" ],
+    "parents" : [ 3791167, 215989, 2328112, 2328173, 2328111, 2328168, 2328137, 2328169, 2328135, 2328098, 216003 ]
+  }, {
+    "dbId" : 215961,
+    "stId" : "R-HSA-215961",
+    "displayName" : "LAMB2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P55268",
+    "geneNames" : [ "LAMB2", "LAMS" ],
+    "parents" : [ 2328153, 2328176, 2328112, 2328168, 2328137, 2328169, 2328135 ]
+  }, {
+    "dbId" : 201624,
+    "stId" : "R-HSA-201624",
+    "displayName" : "TNS4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZW8",
+    "geneNames" : [ "TNS4", "CTEN", "PP14434" ],
+    "parents" : [ 8875528 ]
+  }, {
+    "dbId" : 215964,
+    "stId" : "R-HSA-215964",
+    "displayName" : "LAMC3 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y6N6",
+    "geneNames" : [ "LAMC3" ],
+    "parents" : [ 2328176, 2328165 ]
+  }, {
+    "dbId" : 8875815,
+    "stId" : "R-HSA-8875815",
+    "displayName" : "HGF:p-4Y-MET dimer:STAT3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 818 ],
+    "children" : [ 539044, 6806977 ]
+  }, {
+    "dbId" : 351141,
+    "stId" : "R-HSA-351141",
+    "displayName" : "RAC1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63000",
+    "geneNames" : [ "RAC1", "TC25", "MIG5" ],
+    "parents" : [ 194906, 6806514, 6806534, 5624292, 5674631, 442641 ]
+  }, {
+    "dbId" : 997292,
+    "stId" : "R-HSA-997292",
+    "displayName" : "PTPN2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P17706",
+    "geneNames" : [ "PTPN2", "PTPT" ],
+    "parents" : [ 6807023 ]
+  }, {
+    "dbId" : 51125,
+    "stId" : "R-HSA-51125",
+    "displayName" : "COL1A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02452",
+    "geneNames" : [ "COL1A1" ],
+    "parents" : [ 2089973 ]
+  }, {
+    "dbId" : 215989,
+    "stId" : "R-HSA-215989",
+    "displayName" : "Laminin-111 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2467086, 2328121, 2426371, 3907290, 2426529, 4084530, 4084617, 443666, 2426651 ],
+    "children" : [ 215962, 215959, 215953 ]
+  }, {
+    "dbId" : 2152344,
+    "stId" : "R-HSA-2152344",
+    "displayName" : "Tropocollagen type XXVII [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2060921, 2193157 ],
+    "children" : [ 2192961 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 896, 322, 83, 387, 820, 263, 407, 425, 298 ],
+    "identifier" : "15422",
+    "parents" : [ 170037, 2263468, 9206355, 9630847, 9576623, 9432018, 9511146, 9353588, 9697690, 9795133, 6814649, 9276451, 9600652, 9736131, 9237675, 9388153, 9466546, 9658146, 9539600, 9308766, 390580, 9160108, 9542621, 9391763, 9163921, 9831775, 9603243, 9741155, 9312345, 9240824, 9661271, 9470131, 445789, 390446, 391390, 994134, 9794890, 9510958, 9046292, 9128311, 9431829, 9056083, 9997775, 9070329, 9353374, 9697532, 9206146, 9576446, 9871996, 9630682, 9276265, 9926229, 390474, 9087795, 443623, 9779593, 9419766, 9193599, 9686115, 9859450, 9265606, 9341444, 9981023, 9622036, 9498806, 9083944, 9912343, 9566577, 8948980, 9054223, 9859337, 9621997, 9341426, 9912333, 9265588, 9498788, 9083934, 9054206, 9981013, 9779576, 9566525, 9419748, 9193545, 9686096, 8948970, 9978087, 9065526, 9681832, 9188087, 9910208, 9493702, 9082788, 9414658, 9772921, 9853938, 9117897, 9040616, 5618079, 9053631, 9977478, 9562442, 9414581, 9909743, 9117821, 9681761, 9082712, 9772764, 9065453, 9188008, 9053614, 9493619, 9853846, 3371563, 9040519, 9566510, 9041623, 9083927, 9054199, 9859330, 9779553, 9193528, 9912326, 9120378, 9981000, 9066266, 9341411, 9621982, 9686105, 9265573, 9419721, 9498773, 5618088, 5251947, 9777034, 9119601, 9083581, 9684291, 9053991, 9979698, 9911581, 9191365, 9066018, 9417800, 9041326, 9857395, 9496755, 6792614, 9417808, 9777049, 9041333, 9496763, 9684299, 9191373, 5252045, 5252011, 9684317, 9083606, 9054006, 9066033, 9911618, 9857426, 9119631, 9041355, 9979768, 9777077, 5252104, 9496767, 9191377, 9119606, 9083591, 9684303, 9417812, 9777053, 5252040, 9119637, 9066039, 9911629, 9041361, 9979790, 9083612, 9054012, 5251940, 9083600, 9496777, 9911599, 9777069, 9979727, 9417822, 9857414, 9191393, 9119623, 9684313, 9041345, 9053998, 9066025, 5252036, 9777059, 9191386, 9496773, 9417818, 9041340, 9066020, 9979700, 9857402, 9119618, 9911583, 9684309, 9053993, 9083595, 5252100, 9041331, 9496759, 9191369, 9684295, 9417804, 9777045, 5251938, 9083607, 9054007, 9562506, 9119632, 9356215, 9066034, 9700130, 9632615, 9911619, 9417829, 9191403, 9857427, 9041356, 9279049, 9777078, 9979769, 9496784, 5251937, 9857400, 9119616, 9417816, 9777057, 9191384, 9496771, 9083593, 9041338, 9684307, 5251968, 9496783, 9083604, 9979747, 9857422, 9054002, 9911610, 9041349, 9417828, 9684315, 9066029, 9777075, 9191402, 9119629, 5252063, 9777058, 9417817, 9191385, 9496772, 9041339, 9857401, 9979699, 9119617, 9911582, 9066019, 9684308, 9053992, 9083594, 5252093, 9496781, 9417826, 9857420, 9054000, 9041347, 9083602, 9979740, 9777073, 9191400, 9911605, 9119625, 9066027, 5252028, 9394048, 9663305, 9605109, 9544724, 9166591, 9314781, 9243007, 9472545, 879207, 168906, 918190, 9370000, 9291920, 9644136, 9815167, 9140562, 9526393, 9715010, 9589796, 9448549, 114255, 9221701, 9973634, 9081650, 9064690, 9612356, 9177018, 9252472, 9672800, 9843545, 9757658, 9325507, 9039298, 9907039, 9483640, 9554385, 9405327, 9112971, 201854, 9081655, 9064695, 9973636, 9405331, 9112976, 9612360, 9672804, 9907044, 9177022, 9252476, 9039303, 9483644, 9325511, 9843550, 9757660, 9554389, 201855, 433729, 9948680, 9596076, 9727337, 9230161, 9061970, 9034769, 9150780, 9051869, 9379707, 9077784, 9893446, 9534367, 9458077, 9112940, 9652725, 9301198, 9843510, 201857 ]
+  }, {
+    "dbId" : 74686,
+    "stId" : "R-HSA-74686",
+    "displayName" : "GRB2-1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 292 ],
+    "identifier" : "P62993-1",
+    "geneNames" : [ "GRB2", "ASH" ],
+    "parents" : [ 2197679, 8935905, 8867037, 354113, 8854978, 8854983, 391112, 1295625, 8876351, 182964, 182948, 182946, 180511, 180304, 109801, 389921, 914028, 913411, 182910, 179849, 8851942, 983692, 1433549, 109797, 204865, 392044, 392043, 8851921, 1250499, 388786, 190399, 912623, 912647, 912799, 912528, 912522 ]
+  }, {
+    "dbId" : 216003,
+    "stId" : "R-HSA-216003",
+    "displayName" : "Laminin-211 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2467086, 3907299, 2328121, 2426352, 2426529, 4084530, 3907306, 2426651 ],
+    "children" : [ 215962, 215959, 215955 ]
+  }, {
+    "dbId" : 216001,
+    "stId" : "R-HSA-216001",
+    "displayName" : "Laminin-332 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2399659, 349628, 2328121, 2426352, 3907306, 2220790, 445997, 2426651 ],
+    "children" : [ 445992, 446012, 445991 ]
+  }, {
+    "dbId" : 8849220,
+    "stId" : "R-HSA-8849220",
+    "displayName" : "HPN heterodimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 145 ],
+    "children" : [ 8849219, 6800195 ]
+  }, {
+    "dbId" : 8849219,
+    "stId" : "R-HSA-8849219",
+    "displayName" : "HPN(163-417) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05981",
+    "geneNames" : [ "HPN", "TMPRSS1" ],
+    "parents" : [ 8849220 ]
+  }, {
+    "dbId" : 1609685,
+    "stId" : "R-HSA-1609685",
+    "displayName" : "Collagen type V fibril [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2465902, 2465885, 2731093, 2731136, 2465861, 2564686, 2127450, 375078, 2424250, 2214302 ],
+    "children" : [ 2127422 ]
+  }, {
+    "dbId" : 6800311,
+    "stId" : "R-HSA-6800311",
+    "displayName" : "HGFAC dimer [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 31 ],
+    "children" : [ 6800283, 1641473 ]
+  }, {
+    "dbId" : 2089983,
+    "stId" : "R-HSA-2089983",
+    "displayName" : "Collagen alpha-2(I) chains [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2089970 ],
+    "children" : [ 2089984, 2089987, 2089972, 2089990, 2089991, 141093, 2089976, 2089978, 2089965, 2089981, 2089966, 2089967 ]
+  }, {
+    "dbId" : 2089982,
+    "stId" : "R-HSA-2089982",
+    "displayName" : "GalHyl-COL1A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02452",
+    "geneNames" : [ "COL1A1" ],
+    "parents" : [ 2089973 ]
+  }, {
+    "dbId" : 2089981,
+    "stId" : "R-HSA-2089981",
+    "displayName" : "3x4Hyp-3Hyp-COL1A2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08123",
+    "geneNames" : [ "COL1A2" ],
+    "parents" : [ 2089983 ]
+  }, {
+    "dbId" : 2089980,
+    "stId" : "R-HSA-2089980",
+    "displayName" : "3x4Hyp-3Hyp-GalHyl-COL1A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02452",
+    "geneNames" : [ "COL1A1" ],
+    "parents" : [ 2089973 ]
+  }, {
+    "dbId" : 2089979,
+    "stId" : "R-HSA-2089979",
+    "displayName" : "3x4Hyp-3Hyp-GlcGalHyl-COL1A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02452",
+    "geneNames" : [ "COL1A1" ],
+    "parents" : [ 2089973 ]
+  }, {
+    "dbId" : 2089978,
+    "stId" : "R-HSA-2089978",
+    "displayName" : "GalHyl-COL1A2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08123",
+    "geneNames" : [ "COL1A2" ],
+    "parents" : [ 2089983 ]
+  }, {
+    "dbId" : 2089976,
+    "stId" : "R-HSA-2089976",
+    "displayName" : "3x4Hyp-3Hyp-GalHyl-COL1A2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08123",
+    "geneNames" : [ "COL1A2" ],
+    "parents" : [ 2089983 ]
+  }, {
+    "dbId" : 2089974,
+    "stId" : "R-HSA-2089974",
+    "displayName" : "5Hyl-COL1A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02452",
+    "geneNames" : [ "COL1A1" ],
+    "parents" : [ 2428942, 2089973 ]
+  }, {
+    "dbId" : 2089973,
+    "stId" : "R-HSA-2089973",
+    "displayName" : "Collagen alpha-1(I) chains [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2089970 ],
+    "children" : [ 2089968, 2089969, 2089985, 2089986, 2089988, 2089989, 2089974, 2089992, 51125, 2089979, 2089980, 2089982 ]
+  }, {
+    "dbId" : 2089972,
+    "stId" : "R-HSA-2089972",
+    "displayName" : "3x4Hyp-3Hyp-GlcGalHyl-COL1A2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08123",
+    "geneNames" : [ "COL1A2" ],
+    "parents" : [ 2089983 ]
+  }, {
+    "dbId" : 2089970,
+    "stId" : "R-HSA-2089970",
+    "displayName" : "Tropocollagen type I [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 3221907, 2396039, 2396256, 2396478, 2396456, 2396260, 2396451, 2396179, 2396183, 2396161, 2396334, 2060921, 1474201 ],
+    "children" : [ 2089973, 2089983 ]
+  }, {
+    "dbId" : 2089969,
+    "stId" : "R-HSA-2089969",
+    "displayName" : "GlcGalHyl-COL1A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02452",
+    "geneNames" : [ "COL1A1" ],
+    "parents" : [ 2089973 ]
+  }, {
+    "dbId" : 2089968,
+    "stId" : "R-HSA-2089968",
+    "displayName" : "3x4Hyp-GlcGalHyl-COL1A1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02452",
+    "geneNames" : [ "COL1A1" ],
+    "parents" : [ 2089973 ]
+  }, {
+    "dbId" : 2089967,
+    "stId" : "R-HSA-2089967",
+    "displayName" : "3x4Hyp-GlcGalHyl-COL1A2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08123",
+    "geneNames" : [ "COL1A2" ],
+    "parents" : [ 2089983 ]
+  }, {
+    "dbId" : 2089966,
+    "stId" : "R-HSA-2089966",
+    "displayName" : "5Hyl-COL1A2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08123",
+    "geneNames" : [ "COL1A2" ],
+    "parents" : [ 2428943, 2089983 ]
+  }, {
+    "dbId" : 2089965,
+    "stId" : "R-HSA-2089965",
+    "displayName" : "3x4Hyp-5Hyl-COL1A2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08123",
+    "geneNames" : [ "COL1A2" ],
+    "parents" : [ 2428943, 2089983 ]
+  }, {
+    "dbId" : 1810408,
+    "stId" : "R-HSA-1810408",
+    "displayName" : "MyrG-p-Y419-SRC [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 397 ],
+    "identifier" : "P12931",
+    "geneNames" : [ "SRC", "SRC1" ],
+    "parents" : [ 8937795, 8937825, 8874611, 8874601, 8874097, 1810413, 9021593 ]
+  }, {
+    "dbId" : 6800287,
+    "stId" : "R-HSA-6800287",
+    "displayName" : "HGF dimer:MET [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 34 ],
+    "parents" : [ 6806956 ],
+    "children" : [ 419603, 141763 ]
+  }, {
+    "dbId" : 6800283,
+    "stId" : "R-HSA-6800283",
+    "displayName" : "HGFAC(408-655) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q04756",
+    "geneNames" : [ "HGFAC" ],
+    "parents" : [ 6800311 ]
+  }, {
+    "dbId" : 381945,
+    "stId" : "R-HSA-381945",
+    "displayName" : "CRK, CRKL [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 605 ],
+    "parents" : [ 381955, 912774, 8875548 ],
+    "children" : [ 2980677, 354384 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 8875523,
+    "stId" : "R-HSA-8875523",
+    "displayName" : "MET binds TNS3",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6806977, 8875524 ],
+    "outputs" : [ 8875512 ],
+    "efs" : [ ],
+    "diagramIds" : [ 585 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851842,
+    "stId" : "R-HSA-8851842",
+    "displayName" : "MUC20 binds MET and inhibits GRB2 binding",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806974 ],
+    "inputs" : [ 8851833, 6806977 ],
+    "outputs" : [ 8851839 ],
+    "efs" : [ ],
+    "diagramIds" : [ 190 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6807008,
+    "stId" : "R-HSA-6807008",
+    "displayName" : "PTPRJ dephosphorylates MET",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806974 ],
+    "inputs" : [ 29356, 6806977 ],
+    "outputs" : [ 6807016, 29372 ],
+    "catalysts" : [ 6785269 ],
+    "efs" : [ ],
+    "diagramIds" : [ 118 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875661,
+    "stId" : "R-HSA-8875661",
+    "displayName" : "GGA3 associates with activated MET receptor",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 8875540 ],
+    "following" : [ 8875659 ],
+    "inputs" : [ 8854137, 8875548, 2193115 ],
+    "outputs" : [ 8875665 ],
+    "efs" : [ ],
+    "diagramIds" : [ 736 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875659,
+    "stId" : "R-HSA-8875659",
+    "displayName" : "RAB4:GTP promotes recycling of activated MET receptor to the plasma membrane",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 8875661 ],
+    "inputs" : [ 8875665 ],
+    "outputs" : [ 6806977 ],
+    "efs" : [ ],
+    "activators" : [ 8875670 ],
+    "diagramIds" : [ 743 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875531,
+    "stId" : "R-HSA-8875531",
+    "displayName" : "MET binds TNS4",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8875528, 6806977 ],
+    "outputs" : [ 8875527 ],
+    "efs" : [ ],
+    "diagramIds" : [ 588 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875540,
+    "stId" : "R-HSA-8875540",
+    "displayName" : "GAB1 recruits CRK,CRKL to MET",
+    "schemaClass" : "Reaction",
+    "following" : [ 8875661, 8875558, 8875576 ],
+    "inputs" : [ 381945, 8851943 ],
+    "outputs" : [ 8875548 ],
+    "efs" : [ ],
+    "diagramIds" : [ 604 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851859,
+    "stId" : "R-HSA-8851859",
+    "displayName" : "Activated MET binds RANBP9 and SOS1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806974 ],
+    "following" : [ 8851877 ],
+    "inputs" : [ 64847, 374586, 6806977 ],
+    "outputs" : [ 8851860 ],
+    "efs" : [ ],
+    "inhibitors" : [ 8851868 ],
+    "diagramIds" : [ 208 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6807027,
+    "stId" : "R-HSA-6807027",
+    "displayName" : "PTPN1 and PTPN2 dephosphorylate MET",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806974 ],
+    "inputs" : [ 29356, 6806977 ],
+    "outputs" : [ 29372, 6807029 ],
+    "catalysts" : [ 6807023 ],
+    "efs" : [ ],
+    "diagramIds" : [ 141 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851866,
+    "stId" : "R-HSA-8851866",
+    "displayName" : "MET binds RANBP10",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806974 ],
+    "inputs" : [ 8851865, 6806977 ],
+    "outputs" : [ 8851868 ],
+    "efs" : [ ],
+    "diagramIds" : [ 228 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875431,
+    "stId" : "R-HSA-8875431",
+    "displayName" : "LRIG1 undergoes ubiquitination",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8875374 ],
+    "following" : [ 8875443 ],
+    "inputs" : [ 6793517, 8875375 ],
+    "outputs" : [ 8875433 ],
+    "catalysts" : [ 5250898 ],
+    "efs" : [ ],
+    "diagramIds" : [ 480 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875558,
+    "stId" : "R-HSA-8875558",
+    "displayName" : "RAPGEF1 binds CRK,CRKL",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8875540 ],
+    "following" : [ 8875568 ],
+    "inputs" : [ 913472, 8875548 ],
+    "outputs" : [ 8875561 ],
+    "efs" : [ ],
+    "diagramIds" : [ 623 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851877,
+    "stId" : "R-HSA-8851877",
+    "displayName" : "RAS guanyl nucleotide exchange by SOS1 associated with RANBP9 and MET",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8851859 ],
+    "following" : [ 5672965 ],
+    "inputs" : [ 29438, 109796 ],
+    "outputs" : [ 29420, 109783 ],
+    "catalysts" : [ 8851860 ],
+    "efs" : [ ],
+    "diagramIds" : [ 241 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875183,
+    "stId" : "R-HSA-8875183",
+    "displayName" : "CBL monoubiquitinates activated MET",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8875451 ],
+    "following" : [ 8875482 ],
+    "inputs" : [ 6793517, 8876355 ],
+    "outputs" : [ 8876375 ],
+    "catalysts" : [ 8876355 ],
+    "efs" : [ ],
+    "diagramIds" : [ 452 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875817,
+    "stId" : "R-HSA-8875817",
+    "displayName" : "MET phosphorylates STAT3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8875816 ],
+    "following" : [ 2730595 ],
+    "inputs" : [ 113592, 8875815 ],
+    "outputs" : [ 914048, 29370, 6806977 ],
+    "catalysts" : [ 8875815 ],
+    "efs" : [ ],
+    "diagramIds" : [ 819 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6800200,
+    "stId" : "R-HSA-6800200",
+    "displayName" : "HPN heterodimer cleaves pro-HGF to form HGF dimer",
+    "schemaClass" : "Reaction",
+    "following" : [ 6800298 ],
+    "inputs" : [ 109276, 6800218 ],
+    "outputs" : [ 141763 ],
+    "catalysts" : [ 8849220 ],
+    "efs" : [ ],
+    "inhibitors" : [ 6800235 ],
+    "diagramIds" : [ 24 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875816,
+    "stId" : "R-HSA-8875816",
+    "displayName" : "STAT3 binds activated MET receptor",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806974 ],
+    "following" : [ 8875817 ],
+    "inputs" : [ 539044, 6806977 ],
+    "outputs" : [ 8875815 ],
+    "efs" : [ ],
+    "diagramIds" : [ 816 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8852019,
+    "stId" : "R-HSA-8852019",
+    "displayName" : "MET bound PI3K generates PIP3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8851954 ],
+    "inputs" : [ 113592, 179856 ],
+    "outputs" : [ 179838, 29370 ],
+    "catalysts" : [ 8851953 ],
+    "efs" : [ ],
+    "diagramIds" : [ 320 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875443,
+    "stId" : "R-HSA-8875443",
+    "displayName" : "USP8 deubiquitinates LRIG1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8875431 ],
+    "inputs" : [ 8875433, 29356 ],
+    "outputs" : [ 6793517, 8875375 ],
+    "catalysts" : [ 917720 ],
+    "efs" : [ ],
+    "diagramIds" : [ 501 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851890,
+    "stId" : "R-HSA-8851890",
+    "displayName" : "MET phosphorylates SHC1-2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8851888 ],
+    "following" : [ 8851900 ],
+    "inputs" : [ 8851882, 113592 ],
+    "outputs" : [ 29370, 8851891 ],
+    "catalysts" : [ 8851882 ],
+    "efs" : [ ],
+    "diagramIds" : [ 262 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851888,
+    "stId" : "R-HSA-8851888",
+    "displayName" : "MET binds SHC1-2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806974 ],
+    "following" : [ 8851890 ],
+    "inputs" : [ 6806977, 1169488 ],
+    "outputs" : [ 8851882 ],
+    "efs" : [ ],
+    "diagramIds" : [ 251 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875568,
+    "stId" : "R-HSA-8875568",
+    "displayName" : "RAPGEF1 activates RAP1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8875558 ],
+    "inputs" : [ 354074, 29438 ],
+    "outputs" : [ 29420, 354126 ],
+    "catalysts" : [ 8875561 ],
+    "efs" : [ ],
+    "diagramIds" : [ 644 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8874685,
+    "stId" : "R-HSA-8874685",
+    "displayName" : "CBL binds MET",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806974 ],
+    "following" : [ 8875451 ],
+    "inputs" : [ 8874682, 8876356 ],
+    "outputs" : [ 8876353 ],
+    "efs" : [ ],
+    "diagramIds" : [ 436 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851900,
+    "stId" : "R-HSA-8851900",
+    "displayName" : "SHC1-2 bound to MET recruits GRB2:SOS1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8851890 ],
+    "following" : [ 8851899 ],
+    "inputs" : [ 109797, 8851891 ],
+    "outputs" : [ 8851897 ],
+    "efs" : [ ],
+    "diagramIds" : [ 272 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875451,
+    "stId" : "R-HSA-8875451",
+    "displayName" : "MET phosphorylates CBL",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8874685 ],
+    "following" : [ 8875183 ],
+    "inputs" : [ 113592, 8876353 ],
+    "outputs" : [ 29370, 8876355 ],
+    "catalysts" : [ 8876353 ],
+    "efs" : [ ],
+    "diagramIds" : [ 517 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851899,
+    "stId" : "R-HSA-8851899",
+    "displayName" : "RAS guanyl nucleotide exchange by SOS1 bound to GRB2, SCH1-2 and MET",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8851900 ],
+    "following" : [ 5672965 ],
+    "inputs" : [ 29438, 109796 ],
+    "outputs" : [ 29420, 109783 ],
+    "catalysts" : [ 8851897 ],
+    "efs" : [ ],
+    "diagramIds" : [ 278 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875576,
+    "stId" : "R-HSA-8875576",
+    "displayName" : "CRK,CRKL recruits RAC1 GEF to activated MET",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 8875540 ],
+    "following" : [ 8875591 ],
+    "inputs" : [ 8875579, 8875548 ],
+    "outputs" : [ 8875574 ],
+    "efs" : [ ],
+    "diagramIds" : [ 675 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875591,
+    "stId" : "R-HSA-8875591",
+    "displayName" : "DOCK7 activates RAC1",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 8875576 ],
+    "inputs" : [ 29438, 5674631 ],
+    "outputs" : [ 29420, 442641 ],
+    "catalysts" : [ 8875574 ],
+    "efs" : [ ],
+    "diagramIds" : [ 692 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851908,
+    "stId" : "R-HSA-8851908",
+    "displayName" : "Activated MET binds GAB1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806974 ],
+    "following" : [ 8851933 ],
+    "inputs" : [ 6806977, 179795 ],
+    "outputs" : [ 8851913 ],
+    "efs" : [ ],
+    "diagramIds" : [ 282 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851919,
+    "stId" : "R-HSA-8851919",
+    "displayName" : "Activated MET binds GAB1 and GRB2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806974 ],
+    "following" : [ 8851933 ],
+    "inputs" : [ 74686, 6806977, 179795 ],
+    "outputs" : [ 8851921 ],
+    "efs" : [ ],
+    "diagramIds" : [ 291 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6806957,
+    "stId" : "R-HSA-6806957",
+    "displayName" : "MET receptor dimerizes",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6800298 ],
+    "following" : [ 6806974 ],
+    "inputs" : [ 6800287 ],
+    "outputs" : [ 6806956 ],
+    "efs" : [ ],
+    "diagramIds" : [ 59 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2730595,
+    "stId" : "R-HSA-2730595",
+    "displayName" : "Phosphorylated STAT3 Forms Dimers",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8875817, 8848124, 2671839 ],
+    "following" : [ 2730599 ],
+    "inputs" : [ 914048 ],
+    "outputs" : [ 1112526 ],
+    "efs" : [ ],
+    "diagramIds" : [ 825 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6800299,
+    "stId" : "R-HSA-6800299",
+    "displayName" : "HGFAC cleaves pro-HGF to form HGF dimer",
+    "schemaClass" : "Reaction",
+    "following" : [ 6800298 ],
+    "inputs" : [ 109276, 6800218 ],
+    "outputs" : [ 141763 ],
+    "catalysts" : [ 6800311 ],
+    "efs" : [ ],
+    "inhibitors" : [ 6800232 ],
+    "diagramIds" : [ 29 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6800298,
+    "stId" : "R-HSA-6800298",
+    "displayName" : "HGF dimer binds MET",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6800200, 6800299 ],
+    "following" : [ 6806957 ],
+    "inputs" : [ 419603, 141763 ],
+    "outputs" : [ 6800287 ],
+    "efs" : [ ],
+    "diagramIds" : [ 32 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8865994,
+    "stId" : "R-HSA-8865994",
+    "displayName" : "GAB1 binds PTPN11",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8851933 ],
+    "inputs" : [ 162563, 8851943 ],
+    "outputs" : [ 8865998 ],
+    "efs" : [ ],
+    "diagramIds" : [ 358 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2730599,
+    "stId" : "R-HSA-2730599",
+    "displayName" : "Phosphorylated STAT3 Dimer Translocates to the Nucleus",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 2730595 ],
+    "following" : [ 8848150 ],
+    "inputs" : [ 1112526 ],
+    "outputs" : [ 1112525 ],
+    "efs" : [ ],
+    "diagramIds" : [ 827 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8874079,
+    "stId" : "R-HSA-8874079",
+    "displayName" : "PTK2 binds activated MET",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806974 ],
+    "following" : [ 8874078 ],
+    "inputs" : [ 6806977, 201621 ],
+    "outputs" : [ 8874088 ],
+    "efs" : [ ],
+    "activators" : [ 8874087 ],
+    "diagramIds" : [ 374 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8874078,
+    "stId" : "R-HSA-8874078",
+    "displayName" : "PTK2 autophosphorylates",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8874079 ],
+    "following" : [ 8874083 ],
+    "inputs" : [ 8874088, 113592 ],
+    "outputs" : [ 29370, 8874094 ],
+    "catalysts" : [ 8874088 ],
+    "efs" : [ ],
+    "diagramIds" : [ 386 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6806974,
+    "stId" : "R-HSA-6806974",
+    "displayName" : "MET dimers autophosphorylate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806957 ],
+    "following" : [ 8851859, 6807027, 8874685, 6807008, 8851866, 8851842, 8875816, 8851804, 8851919, 8851908, 8874079, 8851888 ],
+    "inputs" : [ 6806956, 113592 ],
+    "outputs" : [ 29370, 6806977 ],
+    "catalysts" : [ 6806956 ],
+    "efs" : [ ],
+    "diagramIds" : [ 82 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851933,
+    "stId" : "R-HSA-8851933",
+    "displayName" : "MET phosphorylates GAB1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8851919, 8851908 ],
+    "following" : [ 8865994, 8851954 ],
+    "inputs" : [ 113592, 8851934 ],
+    "outputs" : [ 29370, 8851943 ],
+    "catalysts" : [ 8851934 ],
+    "efs" : [ ],
+    "diagramIds" : [ 294 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851804,
+    "stId" : "R-HSA-8851804",
+    "displayName" : "Activated MET recruits GRB2-1:SOS1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6806974 ],
+    "following" : [ 8851827 ],
+    "inputs" : [ 6806977, 109797 ],
+    "outputs" : [ 8851807 ],
+    "efs" : [ ],
+    "inhibitors" : [ 8851839 ],
+    "diagramIds" : [ 152 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875482,
+    "stId" : "R-HSA-8875482",
+    "displayName" : "CBL recruits CIN85:endophilin to ubiquitinated MET",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8875183 ],
+    "following" : [ 8875490 ],
+    "inputs" : [ 8875480, 8876375 ],
+    "outputs" : [ 8875481 ],
+    "efs" : [ ],
+    "diagramIds" : [ 532 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8874083,
+    "stId" : "R-HSA-8874083",
+    "displayName" : "p-Y397-PTK2 binds SRC",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8874078 ],
+    "following" : [ 8874082 ],
+    "inputs" : [ 8874094, 1810408 ],
+    "outputs" : [ 8874097 ],
+    "efs" : [ ],
+    "diagramIds" : [ 396 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8874082,
+    "stId" : "R-HSA-8874082",
+    "displayName" : "MET phosphorylates PTK2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8874083 ],
+    "inputs" : [ 113592, 8874097 ],
+    "outputs" : [ 8874601, 29370 ],
+    "catalysts" : [ 8874097 ],
+    "efs" : [ ],
+    "diagramIds" : [ 406 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875490,
+    "stId" : "R-HSA-8875490",
+    "displayName" : "EPS15 and HGS bind ubiquitinated MET",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8875482 ],
+    "inputs" : [ 8875497, 182947 ],
+    "outputs" : [ 8875489 ],
+    "efs" : [ ],
+    "diagramIds" : [ 579 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8874080,
+    "stId" : "R-HSA-8874080",
+    "displayName" : "SRC phosphorylates PTK2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8874601, 113592 ],
+    "outputs" : [ 29370, 8874611 ],
+    "catalysts" : [ 8874601 ],
+    "efs" : [ ],
+    "diagramIds" : [ 424 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8875374,
+    "stId" : "R-HSA-8875374",
+    "displayName" : "MET binds LRIG1",
+    "schemaClass" : "Reaction",
+    "following" : [ 8875431 ],
+    "inputs" : [ 419603, 197745 ],
+    "outputs" : [ 8875375 ],
+    "efs" : [ ],
+    "diagramIds" : [ 457 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851827,
+    "stId" : "R-HSA-8851827",
+    "displayName" : "RAS guanyl nucleotide exchange by MET-bound GRB2:SOS1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8851804 ],
+    "following" : [ 5672965 ],
+    "inputs" : [ 29438, 109796 ],
+    "outputs" : [ 29420, 109783 ],
+    "catalysts" : [ 8851807 ],
+    "efs" : [ ],
+    "diagramIds" : [ 168 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8851954,
+    "stId" : "R-HSA-8851954",
+    "displayName" : "Phosphorylated GAB1 recruits PI3K to MET",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8851933 ],
+    "following" : [ 8852019 ],
+    "inputs" : [ 1806218, 8851943 ],
+    "outputs" : [ 8851953 ],
+    "efs" : [ ],
+    "diagramIds" : [ 313 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 8851805,
+    "stId" : "R-HSA-8851805",
+    "displayName" : "MET activates RAS signaling",
+    "events" : [ 8851877, 8851827, 8851859, 8851842, 8851890, 8851888, 8851804, 8851900, 8851899, 8851866 ]
+  }, {
+    "dbId" : 8875555,
+    "stId" : "R-HSA-8875555",
+    "displayName" : "MET activates RAP1 and RAC1",
+    "events" : [ 8875591, 8875558, 8875540, 8875568, 8875576 ]
+  }, {
+    "dbId" : 8875513,
+    "stId" : "R-HSA-8875513",
+    "displayName" : "MET interacts with TNS proteins",
+    "events" : [ 8875523, 8875531 ]
+  }, {
+    "dbId" : 8875791,
+    "stId" : "R-HSA-8875791",
+    "displayName" : "MET activates STAT3",
+    "events" : [ 2730595, 8875817, 2730599, 8875816 ]
+  }, {
+    "dbId" : 8875656,
+    "stId" : "R-HSA-8875656",
+    "displayName" : "MET receptor recycling",
+    "events" : [ 8875661, 8875659 ]
+  }, {
+    "dbId" : 8851907,
+    "stId" : "R-HSA-8851907",
+    "displayName" : "MET activates PI3K/AKT signaling",
+    "events" : [ 8851908, 8852019, 8851954, 8851919, 8851933 ]
+  }, {
+    "dbId" : 8865999,
+    "stId" : "R-HSA-8865999",
+    "displayName" : "MET activates PTPN11",
+    "events" : [ 8865994 ]
+  }, {
+    "dbId" : 8874081,
+    "stId" : "R-HSA-8874081",
+    "displayName" : "MET activates PTK2 signaling",
+    "events" : [ 8874083, 8874082, 8874080, 8874079, 8874078 ]
+  }, {
+    "dbId" : 8875878,
+    "stId" : "R-HSA-8875878",
+    "displayName" : "MET promotes cell motility",
+    "events" : [ 8875591, 8875558, 8875540, 8875568, 8875576, 8874083, 8874082, 8874080, 8874079, 8874078, 8875523, 8875531 ]
+  }, {
+    "dbId" : 6806942,
+    "stId" : "R-HSA-6806942",
+    "displayName" : "MET Receptor Activation",
+    "events" : [ 6806974, 6806957, 6800299, 6800298, 6800200 ]
+  }, {
+    "dbId" : 6807004,
+    "stId" : "R-HSA-6807004",
+    "displayName" : "Negative regulation of MET activity",
+    "events" : [ 8875431, 6807027, 8875443, 8875490, 6807008, 8875183, 8875374, 8874685, 8875451, 8875482 ]
+  } ]
+}

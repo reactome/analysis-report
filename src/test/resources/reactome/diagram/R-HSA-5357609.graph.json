@@ -1,0 +1,148 @@
+{
+  "dbId" : 5357609,
+  "stId" : "R-HSA-5357609",
+  "nodes" : [ {
+    "dbId" : 5357557,
+    "stId" : "R-ALL-5357557",
+    "displayName" : "Mn2+ [lysosomal lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29035",
+    "parents" : [ 9191799, 9911821, 9980128, 9777570, 9684709, 9339870, 9083706, 9497181, 9620665, 9418180, 9119969, 5357538, 9565168, 9191790, 9620660, 9497177, 9418178, 9777562, 9911800, 9264287, 9857988, 9119960, 9684704, 9339863, 9083697, 9980035, 5357548, 9684706, 9565170, 9620662, 9911810, 9119964, 9339865, 9191796, 9777564, 9980081, 9857997, 9264289, 9083701, 5357563, 9911831, 9191805, 9777572, 9083710, 9684711, 9565175, 9858016, 9980174, 9620667, 9264294, 9119973, 9339872, 5357533, 9858007, 9565173, 9264292 ]
+  }, {
+    "dbId" : 5357556,
+    "stId" : "R-HSA-5357556",
+    "displayName" : "poly((1,4)-alpha-glucosyl)GYG dimer [lysosomal lumen]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1092, 1110, 1100 ],
+    "children" : [ 5357533, 5357563 ]
+  }, {
+    "dbId" : 5357558,
+    "stId" : "R-HSA-5357558",
+    "displayName" : "((1,6)-alpha-glucosyl)poly((1,4)-alpha-glucosyl)GYG2 [lysosomal lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15488",
+    "geneNames" : [ "GYG2" ],
+    "parents" : [ 5357548 ]
+  }, {
+    "dbId" : 5357563,
+    "stId" : "R-HSA-5357563",
+    "displayName" : "poly((1,4)-alpha-glucosyl)GYG2 dimer [lysosomal lumen]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5357556 ],
+    "children" : [ 5357532, 5357557 ]
+  }, {
+    "dbId" : 1605715,
+    "stId" : "R-ALL-1605715",
+    "displayName" : "H2O [lysosomal lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1093, 1103 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 5357533,
+    "stId" : "R-HSA-5357533",
+    "displayName" : "poly((1,4)-alpha-glucosyl)GYG1 dimer [lysosomal lumen]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5357556 ],
+    "children" : [ 5357545, 5357557 ]
+  }, {
+    "dbId" : 5357532,
+    "stId" : "R-HSA-5357532",
+    "displayName" : "poly((1,4)-alpha-glucosyl)GYG2 [lysosomal lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15488",
+    "geneNames" : [ "GYG2" ],
+    "parents" : [ 5357563 ]
+  }, {
+    "dbId" : 5357599,
+    "stId" : "R-HSA-5357599",
+    "displayName" : "GAA mutants [lysosomal lumen]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 124970 ],
+    "children" : [ 5357598, 5357607 ]
+  }, {
+    "dbId" : 5357598,
+    "stId" : "R-HSA-5357598",
+    "displayName" : "GAA E521K [lysosomal lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10253",
+    "geneNames" : [ "GAA" ],
+    "parents" : [ 5357599 ]
+  }, {
+    "dbId" : 5357538,
+    "stId" : "R-HSA-5357538",
+    "displayName" : "((1,6)-alpha-glucosyl)poly((1,4)-alpha-glucosyl)GYG1 dimer [lysosomal lumen]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5357551 ],
+    "children" : [ 5357542, 5357557 ]
+  }, {
+    "dbId" : 5357607,
+    "stId" : "R-HSA-5357607",
+    "displayName" : "GAA M318T [lysosomal lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10253",
+    "geneNames" : [ "GAA" ],
+    "parents" : [ 5357599 ]
+  }, {
+    "dbId" : 5357542,
+    "stId" : "R-HSA-5357542",
+    "displayName" : "((1,6)-alpha-glucosyl)poly((1,4)-alpha-glucosyl)GYG1 [lysosomal lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P46976",
+    "geneNames" : [ "GYG1", "GYG" ],
+    "parents" : [ 5357538 ]
+  }, {
+    "dbId" : 5357545,
+    "stId" : "R-HSA-5357545",
+    "displayName" : "poly((1,4)-alpha-glucosyl)GYG1 [lysosomal lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P46976",
+    "geneNames" : [ "GYG1", "GYG" ],
+    "parents" : [ 5357533 ]
+  }, {
+    "dbId" : 5357548,
+    "stId" : "R-HSA-5357548",
+    "displayName" : "((1,6)-alpha-glucosyl)poly((1,4)-alpha-glucosyl)GYG2 dimer [lysosomal lumen]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5357551 ],
+    "children" : [ 5357558, 5357557 ]
+  }, {
+    "dbId" : 5357551,
+    "stId" : "R-HSA-5357551",
+    "displayName" : "((1,6)-alpha-glucosyl)poly((1,4)-alpha-glucosyl)GYG dimer [lysosomal lumen]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1102 ],
+    "children" : [ 5357548, 5357538 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 5357600,
+    "stId" : "R-HSA-5357600",
+    "displayName" : "Defective GAA does not hydrolyze alpha(1,6) linkages in lysosomal glycogen",
+    "schemaClass" : "FailedReaction",
+    "inputs" : [ 5357551, 1605715 ],
+    "efs" : [ 5357599 ],
+    "diagramIds" : [ 124969 ],
+    "entityFunctionalStatus" : [ 5357599 ]
+  }, {
+    "dbId" : 5357606,
+    "stId" : "R-HSA-5357606",
+    "displayName" : "Defective GAA does not hydrolyze alpha(1,4) linkages in lysosomal glycogen",
+    "schemaClass" : "FailedReaction",
+    "inputs" : [ 1605715, 5357556 ],
+    "efs" : [ 5357599 ],
+    "diagramIds" : [ 124971 ],
+    "entityFunctionalStatus" : [ 5357599 ]
+  } ]
+}

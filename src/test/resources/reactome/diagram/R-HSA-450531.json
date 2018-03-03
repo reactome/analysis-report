@@ -1,0 +1,7116 @@
+{
+  "dbId" : 450531,
+  "stableId" : "R-HSA-450531",
+  "displayName" : "Regulation of mRNA stability by proteins that bind AU-rich elements",
+  "nodes" : [ {
+    "id" : 132,
+    "reactomeId" : 29358,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1103,
+      "y" : 260
+    },
+    "minX" : 1079,
+    "maxX" : 1129,
+    "minY" : 221,
+    "maxY" : 301,
+    "prop" : {
+      "x" : 1079,
+      "y" : 248,
+      "width" : 49,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 1088,
+      "y" : 249
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1123,
+          "y" : 253
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 131,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1106,
+          "y" : 275
+        },
+        "to" : {
+          "x" : 1115,
+          "y" : 301
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 1104,
+            "y" : 282
+          },
+          "b" : {
+            "x" : 1116,
+            "y" : 294
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    }, {
+      "edgeId" : 143,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1104,
+          "y" : 245
+        },
+        "to" : {
+          "x" : 1107,
+          "y" : 221
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 1099,
+            "y" : 227
+          },
+          "b" : {
+            "x" : 1111,
+            "y" : 239
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 450391,
+    "displayName" : "AUF1 Dimer (isoform p37 or p40)",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 213,
+      "y" : 79
+    },
+    "minX" : 154,
+    "maxX" : 261,
+    "minY" : 55,
+    "maxY" : 140,
+    "prop" : {
+      "x" : 166,
+      "y" : 55,
+      "width" : 95,
+      "height" : 48
+    },
+    "textPosition" : {
+      "x" : 170,
+      "y" : 55
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 3,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 189,
+          "y" : 109
+        },
+        "to" : {
+          "x" : 154,
+          "y" : 140
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 165,
+            "y" : 118
+          },
+          "b" : {
+            "x" : 177,
+            "y" : 130
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 5,
+    "reactomeId" : 450444,
+    "displayName" : "mRNA Transcript Targeted by AUF1(hnRNP D0)",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 91,
+      "y" : 76
+    },
+    "minX" : 33,
+    "maxX" : 154,
+    "minY" : 48,
+    "maxY" : 140,
+    "prop" : {
+      "x" : 33,
+      "y" : 48,
+      "width" : 116,
+      "height" : 57
+    },
+    "textPosition" : {
+      "x" : 34,
+      "y" : 52
+    },
+    "connectors" : [ {
+      "edgeId" : 3,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 119,
+          "y" : 108
+        },
+        "to" : {
+          "x" : 154,
+          "y" : 140
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 133,
+    "reactomeId" : 450601,
+    "displayName" : "ELAVL1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1022,
+      "y" : 271
+    },
+    "minX" : 991,
+    "maxX" : 1115,
+    "minY" : 221,
+    "maxY" : 405,
+    "prop" : {
+      "x" : 991,
+      "y" : 256,
+      "width" : 63,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 997,
+      "y" : 261
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1054,
+          "y" : 256
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 131,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1057,
+          "y" : 281
+        },
+        "to" : {
+          "x" : 1115,
+          "y" : 301
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 143,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1048,
+          "y" : 253
+        },
+        "to" : {
+          "x" : 1107,
+          "y" : 221
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 154,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1032,
+          "y" : 290
+        },
+        "to" : {
+          "x" : 1109,
+          "y" : 405
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 450598,
+    "displayName" : "AUF1 Tetramer: Destabilized mRNA Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 154,
+      "y" : 215
+    },
+    "minX" : 100,
+    "maxX" : 208,
+    "minY" : 191,
+    "maxY" : 283,
+    "prop" : {
+      "x" : 100,
+      "y" : 191,
+      "width" : 108,
+      "height" : 48
+    },
+    "textPosition" : {
+      "x" : 102,
+      "y" : 190
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 3,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 143,
+          "y" : 242
+        },
+        "to" : {
+          "x" : 125,
+          "y" : 283
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 134,
+    "reactomeId" : 113582,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1197,
+      "y" : 257
+    },
+    "minX" : 1176,
+    "maxX" : 1218,
+    "minY" : 221,
+    "maxY" : 300,
+    "prop" : {
+      "x" : 1178,
+      "y" : 246,
+      "width" : 39,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1181,
+      "y" : 246
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1212,
+          "y" : 251
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 131,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1191,
+          "y" : 271
+        },
+        "to" : {
+          "x" : 1176,
+          "y" : 300
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 1177,
+            "y" : 279
+          },
+          "b" : {
+            "x" : 1189,
+            "y" : 291
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1191,
+          "y" : 279
+        },
+        "b" : {
+          "x" : 1191,
+          "y" : 271
+        },
+        "c" : {
+          "x" : 1184,
+          "y" : 275
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 143,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1191,
+          "y" : 243
+        },
+        "to" : {
+          "x" : 1178,
+          "y" : 221
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 1178,
+            "y" : 226
+          },
+          "b" : {
+            "x" : 1190,
+            "y" : 238
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1184,
+          "y" : 239
+        },
+        "b" : {
+          "x" : 1191,
+          "y" : 243
+        },
+        "c" : {
+          "x" : 1191,
+          "y" : 235
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 135,
+    "reactomeId" : 450576,
+    "displayName" : "p-S158,S221-ELAVL1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1275,
+      "y" : 310
+    },
+    "minX" : 1176,
+    "maxX" : 1366,
+    "minY" : 285,
+    "maxY" : 333,
+    "prop" : {
+      "x" : 1221,
+      "y" : 291,
+      "width" : 108,
+      "height" : 39
+    },
+    "innerProp" : {
+      "x" : 1221,
+      "y" : 297,
+      "width" : 108,
+      "height" : 33
+    },
+    "textPosition" : {
+      "x" : 1228,
+      "y" : 293
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 450383,
+      "description" : "O-phospho-L-serine at 158",
+      "shape" : {
+        "a" : {
+          "x" : 1231,
+          "y" : 285
+        },
+        "b" : {
+          "x" : 1243,
+          "y" : 297
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    }, {
+      "reactomeId" : 450482,
+      "description" : "O-phospho-L-serine at 221",
+      "shape" : {
+        "a" : {
+          "x" : 1247,
+          "y" : 285
+        },
+        "b" : {
+          "x" : 1259,
+          "y" : 297
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1329,
+          "y" : 291
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 131,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1218,
+          "y" : 304
+        },
+        "to" : {
+          "x" : 1176,
+          "y" : 300
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1211,
+          "y" : 307
+        },
+        "b" : {
+          "x" : 1218,
+          "y" : 304
+        },
+        "c" : {
+          "x" : 1211,
+          "y" : 299
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 148,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1332,
+          "y" : 323
+        },
+        "to" : {
+          "x" : 1366,
+          "y" : 333
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 72584,
+    "displayName" : "EIF4G1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 66,
+      "y" : 251
+    },
+    "minX" : 37,
+    "maxX" : 125,
+    "minY" : 234,
+    "maxY" : 283,
+    "prop" : {
+      "x" : 37,
+      "y" : 240,
+      "width" : 58,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 41,
+      "y" : 240
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 95,
+          "y" : 240
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 86,
+          "y" : 265
+        },
+        "to" : {
+          "x" : 125,
+          "y" : 283
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 136,
+    "reactomeId" : 450530,
+    "displayName" : "PRKCA",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1143,
+      "y" : 339
+    },
+    "minX" : 1111,
+    "maxX" : 1182,
+    "minY" : 308,
+    "maxY" : 352,
+    "prop" : {
+      "x" : 1111,
+      "y" : 327,
+      "width" : 65,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 1120,
+      "y" : 329
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1176,
+          "y" : 327
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 131,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1143,
+          "y" : 324
+        },
+        "to" : {
+          "x" : 1143,
+          "y" : 316
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1144,
+          "y" : 312
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 9,
+    "reactomeId" : 156803,
+    "displayName" : "PABPC1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 66,
+      "y" : 277
+    },
+    "minX" : 36,
+    "maxX" : 125,
+    "minY" : 260,
+    "maxY" : 288,
+    "prop" : {
+      "x" : 36,
+      "y" : 266,
+      "width" : 60,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 39,
+      "y" : 266
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 96,
+          "y" : 266
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 99,
+          "y" : 280
+        },
+        "to" : {
+          "x" : 125,
+          "y" : 283
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 10,
+    "reactomeId" : 450563,
+    "displayName" : "HSPB1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 68,
+      "y" : 305
+    },
+    "minX" : 42,
+    "maxX" : 125,
+    "minY" : 283,
+    "maxY" : 316,
+    "prop" : {
+      "x" : 42,
+      "y" : 294,
+      "width" : 52,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 45,
+      "y" : 294
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 94,
+          "y" : 294
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 97,
+          "y" : 294
+        },
+        "to" : {
+          "x" : 125,
+          "y" : 283
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 11,
+    "reactomeId" : 264476,
+    "displayName" : "HSPA8",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 201,
+      "y" : 280
+    },
+    "minX" : 125,
+    "maxX" : 239,
+    "minY" : 263,
+    "maxY" : 292,
+    "prop" : {
+      "x" : 169,
+      "y" : 269,
+      "width" : 64,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 178,
+      "y" : 270
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 233,
+          "y" : 269
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 166,
+          "y" : 281
+        },
+        "to" : {
+          "x" : 125,
+          "y" : 283
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 13,
+    "reactomeId" : 450623,
+    "displayName" : "AUF1 Complexed with Translation and Heat Shock Proteins",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 153,
+      "y" : 367
+    },
+    "minX" : 97,
+    "maxX" : 210,
+    "minY" : 335,
+    "maxY" : 428,
+    "prop" : {
+      "x" : 97,
+      "y" : 335,
+      "width" : 113,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 97,
+      "y" : 337
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 14,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 152,
+          "y" : 403
+        },
+        "to" : {
+          "x" : 152,
+          "y" : 428
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 15,
+    "reactomeId" : 113595,
+    "displayName" : "Ub",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 250,
+      "y" : 407
+    },
+    "minX" : 152,
+    "maxX" : 281,
+    "minY" : 397,
+    "maxY" : 428,
+    "prop" : {
+      "x" : 220,
+      "y" : 397,
+      "width" : 61,
+      "height" : 20
+    },
+    "textPosition" : {
+      "x" : 238,
+      "y" : 397
+    },
+    "connectors" : [ {
+      "edgeId" : 14,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 214,
+          "y" : 413
+        },
+        "to" : {
+          "x" : 152,
+          "y" : 428
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 177,
+            "y" : 414
+          },
+          "b" : {
+            "x" : 189,
+            "y" : 426
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 16,
+    "reactomeId" : 450458,
+    "displayName" : "Ubiquitinated AUF1 Tetramer: Destabilized mRNA Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 154,
+      "y" : 507
+    },
+    "minX" : 97,
+    "maxX" : 211,
+    "minY" : 475,
+    "maxY" : 540,
+    "prop" : {
+      "x" : 97,
+      "y" : 475,
+      "width" : 114,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 102,
+      "y" : 477
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 14,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 17,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 68819,
+    "displayName" : "26S proteasome",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 244,
+      "y" : 567
+    },
+    "minX" : 160,
+    "maxX" : 291,
+    "minY" : 549,
+    "maxY" : 586,
+    "prop" : {
+      "x" : 198,
+      "y" : 549,
+      "width" : 93,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 206,
+      "y" : 551
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 17,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 195,
+          "y" : 568
+        },
+        "to" : {
+          "x" : 168,
+          "y" : 569
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 164,
+          "y" : 569
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 146,
+    "reactomeId" : 450532,
+    "displayName" : "p-S221,S318-ELAVL1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1290,
+      "y" : 164
+    },
+    "minX" : 1178,
+    "maxX" : 1374,
+    "minY" : 139,
+    "maxY" : 221,
+    "prop" : {
+      "x" : 1231,
+      "y" : 145,
+      "width" : 118,
+      "height" : 38
+    },
+    "innerProp" : {
+      "x" : 1231,
+      "y" : 151,
+      "width" : 118,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 1243,
+      "y" : 146
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 450482,
+      "description" : "O-phospho-L-serine at 221",
+      "shape" : {
+        "a" : {
+          "x" : 1241,
+          "y" : 139
+        },
+        "b" : {
+          "x" : 1253,
+          "y" : 151
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    }, {
+      "reactomeId" : 450553,
+      "description" : "O-phospho-L-serine at 318",
+      "shape" : {
+        "a" : {
+          "x" : 1257,
+          "y" : 139
+        },
+        "b" : {
+          "x" : 1269,
+          "y" : 151
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1349,
+          "y" : 145
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 143,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1252,
+          "y" : 186
+        },
+        "to" : {
+          "x" : 1178,
+          "y" : 221
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1247,
+          "y" : 193
+        },
+        "b" : {
+          "x" : 1252,
+          "y" : 186
+        },
+        "c" : {
+          "x" : 1244,
+          "y" : 185
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 151,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1352,
+          "y" : 149
+        },
+        "to" : {
+          "x" : 1374,
+          "y" : 143
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 147,
+    "reactomeId" : 450606,
+    "displayName" : "PRKCD(1-676)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1140,
+      "y" : 177
+    },
+    "minX" : 1088,
+    "maxX" : 1199,
+    "minY" : 158,
+    "maxY" : 211,
+    "prop" : {
+      "x" : 1088,
+      "y" : 164,
+      "width" : 105,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 1093,
+      "y" : 167
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1193,
+          "y" : 164
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 143,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1140,
+          "y" : 194
+        },
+        "to" : {
+          "x" : 1140,
+          "y" : 203
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1140,
+          "y" : 207
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 149,
+    "reactomeId" : 450605,
+    "displayName" : "mRNA Transcript Targeted by HuR Phosphorylated on Ser158 and Ser318.",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1291,
+      "y" : 386
+    },
+    "minX" : 1224,
+    "maxX" : 1366,
+    "minY" : 333,
+    "maxY" : 421,
+    "prop" : {
+      "x" : 1224,
+      "y" : 351,
+      "width" : 134,
+      "height" : 70
+    },
+    "textPosition" : {
+      "x" : 1228,
+      "y" : 354
+    },
+    "connectors" : [ {
+      "edgeId" : 148,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1340,
+          "y" : 348
+        },
+        "to" : {
+          "x" : 1366,
+          "y" : 333
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 150,
+    "reactomeId" : 517672,
+    "displayName" : "HuR with phosphoserine221 and phosphoserine158:mRNA Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1477,
+      "y" : 331
+    },
+    "minX" : 1414,
+    "maxX" : 1540,
+    "minY" : 294,
+    "maxY" : 369,
+    "prop" : {
+      "x" : 1414,
+      "y" : 294,
+      "width" : 126,
+      "height" : 75
+    },
+    "textPosition" : {
+      "x" : 1416,
+      "y" : 292
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 148,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 152,
+    "reactomeId" : 517622,
+    "displayName" : "mRNA Transcript Targeted by HuR Phosphorylated on Ser221 and Ser318",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1308,
+      "y" : 85
+    },
+    "minX" : 1218,
+    "maxX" : 1399,
+    "minY" : 60,
+    "maxY" : 143,
+    "prop" : {
+      "x" : 1218,
+      "y" : 60,
+      "width" : 181,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1224,
+      "y" : 60
+    },
+    "connectors" : [ {
+      "edgeId" : 151,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1336,
+          "y" : 113
+        },
+        "to" : {
+          "x" : 1374,
+          "y" : 143
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 153,
+    "reactomeId" : 517751,
+    "displayName" : "HuR with phosphoserine221 and phosphoserine318:mRNA Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1489,
+      "y" : 181
+    },
+    "minX" : 1430,
+    "maxX" : 1549,
+    "minY" : 140,
+    "maxY" : 222,
+    "prop" : {
+      "x" : 1430,
+      "y" : 140,
+      "width" : 119,
+      "height" : 82
+    },
+    "textPosition" : {
+      "x" : 1429,
+      "y" : 145
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 151,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 26,
+    "reactomeId" : 450523,
+    "displayName" : "mRNA Transcript Targeted by BRF1",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 683,
+      "y" : 534
+    },
+    "minX" : 623,
+    "maxX" : 747,
+    "minY" : 512,
+    "maxY" : 584,
+    "prop" : {
+      "x" : 623,
+      "y" : 512,
+      "width" : 120,
+      "height" : 44
+    },
+    "textPosition" : {
+      "x" : 627,
+      "y" : 516
+    },
+    "connectors" : [ {
+      "edgeId" : 25,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 711,
+          "y" : 559
+        },
+        "to" : {
+          "x" : 747,
+          "y" : 584
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 155,
+    "reactomeId" : 450613,
+    "displayName" : "mRNA Transcript Targeted by HuR with Unknown Phosphorylation",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1078,
+      "y" : 458
+    },
+    "minX" : 997,
+    "maxX" : 1160,
+    "minY" : 405,
+    "maxY" : 490,
+    "prop" : {
+      "x" : 997,
+      "y" : 426,
+      "width" : 163,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 1001,
+      "y" : 433
+    },
+    "connectors" : [ {
+      "edgeId" : 154,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1096,
+          "y" : 423
+        },
+        "to" : {
+          "x" : 1109,
+          "y" : 405
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 27,
+    "reactomeId" : 450547,
+    "displayName" : "ZFP36L1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 801,
+      "y" : 540
+    },
+    "minX" : 747,
+    "maxX" : 845,
+    "minY" : 519,
+    "maxY" : 584,
+    "prop" : {
+      "x" : 763,
+      "y" : 525,
+      "width" : 76,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 772,
+      "y" : 529
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 839,
+          "y" : 525
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 25,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 782,
+          "y" : 558
+        },
+        "to" : {
+          "x" : 747,
+          "y" : 584
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 28,
+    "reactomeId" : 450589,
+    "displayName" : "BRF1:mRNA Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 749,
+      "y" : 652
+    },
+    "minX" : 707,
+    "maxX" : 864,
+    "minY" : 616,
+    "maxY" : 715,
+    "prop" : {
+      "x" : 707,
+      "y" : 635,
+      "width" : 84,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 708,
+      "y" : 634
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 25,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 748,
+          "y" : 672
+        },
+        "to" : {
+          "x" : 746,
+          "y" : 715
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 35,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 794,
+          "y" : 638
+        },
+        "to" : {
+          "x" : 864,
+          "y" : 616
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 40,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 785,
+          "y" : 672
+        },
+        "to" : {
+          "x" : 864,
+          "y" : 706
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 156,
+    "reactomeId" : 450395,
+    "displayName" : "HuR with Unknown Phosphorylation: mRNA Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1442,
+      "y" : 455
+    },
+    "minX" : 1374,
+    "maxX" : 1511,
+    "minY" : 430,
+    "maxY" : 481,
+    "prop" : {
+      "x" : 1374,
+      "y" : 430,
+      "width" : 137,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 1383,
+      "y" : 432
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 154,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 30,
+    "reactomeId" : 430043,
+    "displayName" : "DCP1A",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 584,
+      "y" : 737
+    },
+    "minX" : 413,
+    "maxX" : 746,
+    "minY" : 715,
+    "maxY" : 751,
+    "prop" : {
+      "x" : 557,
+      "y" : 723,
+      "width" : 55,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 560,
+      "y" : 726
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 612,
+          "y" : 723
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 67,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 554,
+          "y" : 735
+        },
+        "to" : {
+          "x" : 413,
+          "y" : 725
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 615,
+          "y" : 733
+        },
+        "to" : {
+          "x" : 746,
+          "y" : 715
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 31,
+    "reactomeId" : 429835,
+    "displayName" : "XRN1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 584,
+      "y" : 704
+    },
+    "minX" : 413,
+    "maxX" : 746,
+    "minY" : 688,
+    "maxY" : 725,
+    "prop" : {
+      "x" : 560,
+      "y" : 694,
+      "width" : 49,
+      "height" : 20
+    },
+    "textPosition" : {
+      "x" : 564,
+      "y" : 694
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 609,
+          "y" : 694
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 67,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 557,
+          "y" : 707
+        },
+        "to" : {
+          "x" : 413,
+          "y" : 725
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 612,
+          "y" : 705
+        },
+        "to" : {
+          "x" : 746,
+          "y" : 715
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 32,
+    "reactomeId" : 429971,
+    "displayName" : "Exosome Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 575,
+      "y" : 668
+    },
+    "minX" : 413,
+    "maxX" : 746,
+    "minY" : 324,
+    "maxY" : 725,
+    "prop" : {
+      "x" : 540,
+      "y" : 651,
+      "width" : 70,
+      "height" : 35
+    },
+    "textPosition" : {
+      "x" : 543,
+      "y" : 651
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 67,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 537,
+          "y" : 680
+        },
+        "to" : {
+          "x" : 413,
+          "y" : 725
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 92,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 573,
+          "y" : 648
+        },
+        "to" : {
+          "x" : 537,
+          "y" : 324
+        }
+      }, {
+        "from" : {
+          "x" : 537,
+          "y" : 324
+        },
+        "to" : {
+          "x" : 450,
+          "y" : 344
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 613,
+          "y" : 677
+        },
+        "to" : {
+          "x" : 746,
+          "y" : 715
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 33,
+    "reactomeId" : 429937,
+    "displayName" : "DCP2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 624,
+      "y" : 595
+    },
+    "minX" : 413,
+    "maxX" : 746,
+    "minY" : 298,
+    "maxY" : 725,
+    "prop" : {
+      "x" : 595,
+      "y" : 583,
+      "width" : 59,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 604,
+      "y" : 585
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 654,
+          "y" : 583
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 67,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 603,
+          "y" : 611
+        },
+        "to" : {
+          "x" : 413,
+          "y" : 725
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 92,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 620,
+          "y" : 580
+        },
+        "to" : {
+          "x" : 544,
+          "y" : 298
+        }
+      }, {
+        "from" : {
+          "x" : 544,
+          "y" : 298
+        },
+        "to" : {
+          "x" : 450,
+          "y" : 344
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 636,
+          "y" : 611
+        },
+        "to" : {
+          "x" : 746,
+          "y" : 715
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 34,
+    "reactomeId" : 450430,
+    "displayName" : "BRF1:mRNA Degradation Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 746,
+      "y" : 794
+    },
+    "minX" : 700,
+    "maxX" : 793,
+    "minY" : 767,
+    "maxY" : 821,
+    "prop" : {
+      "x" : 700,
+      "y" : 767,
+      "width" : 93,
+      "height" : 54
+    },
+    "textPosition" : {
+      "x" : 705,
+      "y" : 772
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 164,
+    "reactomeId" : 451201,
+    "displayName" : "SET",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1717,
+      "y" : 143
+    },
+    "minX" : 1661,
+    "maxX" : 1750,
+    "minY" : 121,
+    "maxY" : 327,
+    "prop" : {
+      "x" : 1691,
+      "y" : 127,
+      "width" : 53,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 1703,
+      "y" : 132
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1744,
+          "y" : 127
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 163,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1712,
+          "y" : 162
+        },
+        "to" : {
+          "x" : 1661,
+          "y" : 327
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 36,
+    "reactomeId" : 113592,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 838,
+      "y" : 655
+    },
+    "minX" : 818,
+    "maxX" : 864,
+    "minY" : 616,
+    "maxY" : 706,
+    "prop" : {
+      "x" : 818,
+      "y" : 644,
+      "width" : 40,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 822,
+      "y" : 645
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 853,
+          "y" : 649
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 35,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 845,
+          "y" : 641
+        },
+        "to" : {
+          "x" : 864,
+          "y" : 616
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 848,
+            "y" : 622
+          },
+          "b" : {
+            "x" : 860,
+            "y" : 634
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    }, {
+      "edgeId" : 40,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 843,
+          "y" : 670
+        },
+        "to" : {
+          "x" : 864,
+          "y" : 706
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 3,
+        "shape" : {
+          "a" : {
+            "x" : 847,
+            "y" : 682
+          },
+          "b" : {
+            "x" : 859,
+            "y" : 694
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 165,
+    "reactomeId" : 450603,
+    "displayName" : "p-T244-TNFSF13",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1563,
+      "y" : 99
+    },
+    "minX" : 1499,
+    "maxX" : 1661,
+    "minY" : 78,
+    "maxY" : 327,
+    "prop" : {
+      "x" : 1499,
+      "y" : 84,
+      "width" : 128,
+      "height" : 30
+    },
+    "innerProp" : {
+      "x" : 1499,
+      "y" : 90,
+      "width" : 128,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 1506,
+      "y" : 88
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 450460,
+      "description" : "O-phospho-L-threonine at 244",
+      "shape" : {
+        "a" : {
+          "x" : 1509,
+          "y" : 78
+        },
+        "b" : {
+          "x" : 1521,
+          "y" : 90
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1627,
+          "y" : 84
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 163,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1569,
+          "y" : 117
+        },
+        "to" : {
+          "x" : 1661,
+          "y" : 327
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 37,
+    "reactomeId" : 29370,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 968,
+      "y" : 652
+    },
+    "minX" : 924,
+    "maxX" : 992,
+    "minY" : 616,
+    "maxY" : 706,
+    "prop" : {
+      "x" : 945,
+      "y" : 639,
+      "width" : 46,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 952,
+      "y" : 641
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 986,
+          "y" : 644
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 35,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 952,
+          "y" : 636
+        },
+        "to" : {
+          "x" : 924,
+          "y" : 616
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 932,
+            "y" : 620
+          },
+          "b" : {
+            "x" : 944,
+            "y" : 632
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 944,
+          "y" : 635
+        },
+        "b" : {
+          "x" : 952,
+          "y" : 636
+        },
+        "c" : {
+          "x" : 949,
+          "y" : 629
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 40,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 960,
+          "y" : 668
+        },
+        "to" : {
+          "x" : 936,
+          "y" : 706
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 3,
+        "shape" : {
+          "a" : {
+            "x" : 942,
+            "y" : 681
+          },
+          "b" : {
+            "x" : 954,
+            "y" : 693
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 960,
+          "y" : 676
+        },
+        "b" : {
+          "x" : 960,
+          "y" : 668
+        },
+        "c" : {
+          "x" : 953,
+          "y" : 672
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 166,
+    "reactomeId" : 450467,
+    "displayName" : "ANP32A",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1683,
+      "y" : 99
+    },
+    "minX" : 1648,
+    "maxX" : 1725,
+    "minY" : 80,
+    "maxY" : 327,
+    "prop" : {
+      "x" : 1648,
+      "y" : 86,
+      "width" : 71,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 1655,
+      "y" : 89
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1719,
+          "y" : 86
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 163,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1681,
+          "y" : 116
+        },
+        "to" : {
+          "x" : 1661,
+          "y" : 327
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 38,
+    "reactomeId" : 450378,
+    "displayName" : "Phosphorylated BRF1 (Ser92, Ser203):mRNA Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1056,
+      "y" : 615
+    },
+    "minX" : 924,
+    "maxX" : 1195,
+    "minY" : 583,
+    "maxY" : 648,
+    "prop" : {
+      "x" : 1000,
+      "y" : 583,
+      "width" : 113,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1006,
+      "y" : 585
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 35,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 997,
+          "y" : 615
+        },
+        "to" : {
+          "x" : 924,
+          "y" : 616
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 990,
+          "y" : 619
+        },
+        "b" : {
+          "x" : 997,
+          "y" : 615
+        },
+        "c" : {
+          "x" : 990,
+          "y" : 611
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 45,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1116,
+          "y" : 615
+        },
+        "to" : {
+          "x" : 1195,
+          "y" : 615
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 39,
+    "reactomeId" : 198356,
+    "displayName" : "p-T308,S473-AKT1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 922,
+      "y" : 553
+    },
+    "minX" : 647,
+    "maxX" : 995,
+    "minY" : 246,
+    "maxY" : 608,
+    "prop" : {
+      "x" : 855,
+      "y" : 537,
+      "width" : 134,
+      "height" : 32
+    },
+    "innerProp" : {
+      "x" : 855,
+      "y" : 543,
+      "width" : 134,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 858,
+      "y" : 542
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 198329,
+      "description" : "O-phospho-L-threonine at 308",
+      "shape" : {
+        "a" : {
+          "x" : 865,
+          "y" : 531
+        },
+        "b" : {
+          "x" : 877,
+          "y" : 543
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    }, {
+      "reactomeId" : 198374,
+      "description" : "O-phospho-L-serine at 473",
+      "shape" : {
+        "a" : {
+          "x" : 881,
+          "y" : 531
+        },
+        "b" : {
+          "x" : 893,
+          "y" : 543
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 989,
+          "y" : 537
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 95,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 906,
+          "y" : 534
+        },
+        "to" : {
+          "x" : 652,
+          "y" : 269
+        }
+      }, {
+        "from" : {
+          "x" : 652,
+          "y" : 269
+        },
+        "to" : {
+          "x" : 652,
+          "y" : 254
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 651,
+          "y" : 250
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 35,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 917,
+          "y" : 572
+        },
+        "to" : {
+          "x" : 908,
+          "y" : 600
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 907,
+          "y" : 604
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 167,
+    "reactomeId" : 517615,
+    "displayName" : "HuR:mRNA complexes",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1598,
+      "y" : 325
+    },
+    "minX" : 1561,
+    "maxX" : 1661,
+    "minY" : 305,
+    "maxY" : 345,
+    "prop" : {
+      "x" : 1561,
+      "y" : 305,
+      "width" : 75,
+      "height" : 40
+    },
+    "textPosition" : {
+      "x" : 1561,
+      "y" : 307
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 163,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1642,
+          "y" : 326
+        },
+        "to" : {
+          "x" : 1661,
+          "y" : 327
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 168,
+    "reactomeId" : 451222,
+    "displayName" : "NUP214",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1728,
+      "y" : 303
+    },
+    "minX" : 1661,
+    "maxX" : 1770,
+    "minY" : 280,
+    "maxY" : 327,
+    "prop" : {
+      "x" : 1692,
+      "y" : 286,
+      "width" : 72,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 1700,
+      "y" : 292
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1764,
+          "y" : 286
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 163,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1689,
+          "y" : 315
+        },
+        "to" : {
+          "x" : 1661,
+          "y" : 327
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 169,
+    "reactomeId" : 165529,
+    "displayName" : "XPO1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1620,
+      "y" : 139
+    },
+    "minX" : 1594,
+    "maxX" : 1661,
+    "minY" : 121,
+    "maxY" : 327,
+    "prop" : {
+      "x" : 1594,
+      "y" : 127,
+      "width" : 53,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 1600,
+      "y" : 128
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1647,
+          "y" : 127
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 163,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1622,
+          "y" : 154
+        },
+        "to" : {
+          "x" : 1661,
+          "y" : 327
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 42,
+    "reactomeId" : 450502,
+    "displayName" : "Phosphorylated BRF1 (Ser54, Ser92, Ser203):mRNA Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1054,
+      "y" : 707
+    },
+    "minX" : 936,
+    "maxX" : 1197,
+    "minY" : 676,
+    "maxY" : 739,
+    "prop" : {
+      "x" : 993,
+      "y" : 676,
+      "width" : 123,
+      "height" : 63
+    },
+    "textPosition" : {
+      "x" : 1004,
+      "y" : 676
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 40,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 990,
+          "y" : 706
+        },
+        "to" : {
+          "x" : 936,
+          "y" : 706
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 983,
+          "y" : 710
+        },
+        "b" : {
+          "x" : 990,
+          "y" : 706
+        },
+        "c" : {
+          "x" : 983,
+          "y" : 702
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 54,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1119,
+          "y" : 706
+        },
+        "to" : {
+          "x" : 1197,
+          "y" : 706
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 170,
+    "reactomeId" : 450537,
+    "displayName" : "HuR:APRIL:pp32:SET(SETalpha):Nup214(SETbeta):CRM1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1663,
+      "y" : 442
+    },
+    "minX" : 1608,
+    "maxX" : 1718,
+    "minY" : 408,
+    "maxY" : 476,
+    "prop" : {
+      "x" : 1608,
+      "y" : 408,
+      "width" : 110,
+      "height" : 68
+    },
+    "textPosition" : {
+      "x" : 1609,
+      "y" : 413
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 163,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 171,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 172,
+    "reactomeId" : 450619,
+    "displayName" : "p-T244-TNFSF13",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1588,
+      "y" : 595
+    },
+    "minX" : 1528,
+    "maxX" : 1663,
+    "minY" : 559,
+    "maxY" : 612,
+    "prop" : {
+      "x" : 1528,
+      "y" : 579,
+      "width" : 120,
+      "height" : 33
+    },
+    "innerProp" : {
+      "x" : 1528,
+      "y" : 585,
+      "width" : 120,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 1531,
+      "y" : 585
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 450460,
+      "description" : "O-phospho-L-threonine at 244",
+      "shape" : {
+        "a" : {
+          "x" : 1538,
+          "y" : 573
+        },
+        "b" : {
+          "x" : 1550,
+          "y" : 585
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1648,
+          "y" : 579
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 171,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1622,
+          "y" : 576
+        },
+        "to" : {
+          "x" : 1663,
+          "y" : 559
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1627,
+          "y" : 570
+        },
+        "b" : {
+          "x" : 1622,
+          "y" : 576
+        },
+        "c" : {
+          "x" : 1630,
+          "y" : 577
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 44,
+    "reactomeId" : 187760,
+    "displayName" : "p-T222,S272,T334-MAPKAPK2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 906,
+      "y" : 777
+    },
+    "minX" : 852,
+    "maxX" : 967,
+    "minY" : 715,
+    "maxY" : 841,
+    "prop" : {
+      "x" : 852,
+      "y" : 750,
+      "width" : 109,
+      "height" : 55
+    },
+    "innerProp" : {
+      "x" : 852,
+      "y" : 756,
+      "width" : 109,
+      "height" : 49
+    },
+    "textPosition" : {
+      "x" : 860,
+      "y" : 753
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 187729,
+      "description" : "O-phospho-L-threonine at 222",
+      "shape" : {
+        "a" : {
+          "x" : 862,
+          "y" : 744
+        },
+        "b" : {
+          "x" : 874,
+          "y" : 756
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    }, {
+      "reactomeId" : 187728,
+      "description" : "O-phospho-L-serine at 272",
+      "shape" : {
+        "a" : {
+          "x" : 878,
+          "y" : 744
+        },
+        "b" : {
+          "x" : 890,
+          "y" : 756
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    }, {
+      "reactomeId" : 450263,
+      "description" : "O-phospho-L-threonine at 334",
+      "shape" : {
+        "a" : {
+          "x" : 894,
+          "y" : 744
+        },
+        "b" : {
+          "x" : 906,
+          "y" : 756
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 961,
+          "y" : 750
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 69,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 905,
+          "y" : 808
+        },
+        "to" : {
+          "x" : 905,
+          "y" : 833
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 905,
+          "y" : 837
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 40,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 905,
+          "y" : 747
+        },
+        "to" : {
+          "x" : 904,
+          "y" : 723
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 904,
+          "y" : 719
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 173,
+    "reactomeId" : 517713,
+    "displayName" : "HuR:mRNA Complex",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1703,
+      "y" : 603
+    },
+    "minX" : 1663,
+    "maxX" : 1741,
+    "minY" : 559,
+    "maxY" : 622,
+    "prop" : {
+      "x" : 1665,
+      "y" : 584,
+      "width" : 76,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 1665,
+      "y" : 585
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 171,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1685,
+          "y" : 578
+        },
+        "to" : {
+          "x" : 1663,
+          "y" : 559
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1677,
+          "y" : 576
+        },
+        "b" : {
+          "x" : 1685,
+          "y" : 578
+        },
+        "c" : {
+          "x" : 1682,
+          "y" : 570
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 46,
+    "reactomeId" : 48888,
+    "displayName" : "YWHAB",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1162,
+      "y" : 780
+    },
+    "minX" : 1111,
+    "maxX" : 1220,
+    "minY" : 615,
+    "maxY" : 852,
+    "prop" : {
+      "x" : 1111,
+      "y" : 761,
+      "width" : 103,
+      "height" : 39
+    },
+    "textPosition" : {
+      "x" : 1138,
+      "y" : 770
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1214,
+          "y" : 761
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1174,
+          "y" : 803
+        },
+        "to" : {
+          "x" : 1207,
+          "y" : 852
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 45,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1165,
+          "y" : 758
+        },
+        "to" : {
+          "x" : 1195,
+          "y" : 615
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 54,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1171,
+          "y" : 758
+        },
+        "to" : {
+          "x" : 1197,
+          "y" : 706
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 47,
+    "reactomeId" : 450585,
+    "displayName" : "Phosphorylated BRF1 (Ser92, Ser203):mRNA:14-3-3 Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1318,
+      "y" : 613
+    },
+    "minX" : 1241,
+    "maxX" : 1396,
+    "minY" : 588,
+    "maxY" : 638,
+    "prop" : {
+      "x" : 1241,
+      "y" : 588,
+      "width" : 155,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1246,
+      "y" : 589
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 45,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 177,
+    "reactomeId" : 6792602,
+    "displayName" : "HSPA1A",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 190,
+      "y" : 255
+    },
+    "minX" : 125,
+    "maxX" : 226,
+    "minY" : 238,
+    "maxY" : 283,
+    "prop" : {
+      "x" : 161,
+      "y" : 244,
+      "width" : 59,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 163,
+      "y" : 244
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 220,
+          "y" : 244
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 164,
+          "y" : 269
+        },
+        "to" : {
+          "x" : 125,
+          "y" : 283
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 55,
+    "reactomeId" : 482787,
+    "displayName" : "Phosphorylated BRF1 (Ser54, Ser92, Ser203):mRNA:14-3-3 Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1320,
+      "y" : 704
+    },
+    "minX" : 1245,
+    "maxX" : 1396,
+    "minY" : 672,
+    "maxY" : 736,
+    "prop" : {
+      "x" : 1245,
+      "y" : 672,
+      "width" : 151,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 1246,
+      "y" : 687
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 54,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 57,
+    "reactomeId" : 450597,
+    "displayName" : "mRNA Transcript Targeted by Tristetraproline",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 409,
+      "y" : 498
+    },
+    "minX" : 348,
+    "maxX" : 470,
+    "minY" : 473,
+    "maxY" : 592,
+    "prop" : {
+      "x" : 348,
+      "y" : 473,
+      "width" : 122,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 353,
+      "y" : 474
+    },
+    "connectors" : [ {
+      "edgeId" : 56,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 410,
+          "y" : 527
+        },
+        "to" : {
+          "x" : 414,
+          "y" : 592
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 58,
+    "reactomeId" : 450562,
+    "displayName" : "ZFP36",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 478,
+      "y" : 557
+    },
+    "minX" : 414,
+    "maxX" : 534,
+    "minY" : 541,
+    "maxY" : 592,
+    "prop" : {
+      "x" : 428,
+      "y" : 547,
+      "width" : 100,
+      "height" : 21
+    },
+    "textPosition" : {
+      "x" : 456,
+      "y" : 547
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 528,
+          "y" : 547
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 56,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 458,
+          "y" : 571
+        },
+        "to" : {
+          "x" : 414,
+          "y" : 592
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 59,
+    "reactomeId" : 180743,
+    "displayName" : "TNPO1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 357,
+      "y" : 560
+    },
+    "minX" : 327,
+    "maxX" : 414,
+    "minY" : 540,
+    "maxY" : 592,
+    "prop" : {
+      "x" : 327,
+      "y" : 546,
+      "width" : 60,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 332,
+      "y" : 550
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 387,
+          "y" : 546
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 56,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 382,
+          "y" : 578
+        },
+        "to" : {
+          "x" : 414,
+          "y" : 592
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 60,
+    "reactomeId" : 450365,
+    "displayName" : "TTP:mRNA Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 413,
+      "y" : 663
+    },
+    "minX" : 354,
+    "maxX" : 869,
+    "minY" : 642,
+    "maxY" : 850,
+    "prop" : {
+      "x" : 375,
+      "y" : 642,
+      "width" : 76,
+      "height" : 42
+    },
+    "textPosition" : {
+      "x" : 375,
+      "y" : 649
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 67,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 413,
+          "y" : 687
+        },
+        "to" : {
+          "x" : 413,
+          "y" : 725
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 69,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 372,
+          "y" : 661
+        },
+        "to" : {
+          "x" : 356,
+          "y" : 661
+        }
+      }, {
+        "from" : {
+          "x" : 356,
+          "y" : 661
+        },
+        "to" : {
+          "x" : 354,
+          "y" : 847
+        }
+      }, {
+        "from" : {
+          "x" : 354,
+          "y" : 847
+        },
+        "to" : {
+          "x" : 869,
+          "y" : 850
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 56,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 68,
+    "reactomeId" : 450436,
+    "displayName" : "TTP:mRNA Degradation Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 424,
+      "y" : 811
+    },
+    "minX" : 374,
+    "maxX" : 474,
+    "minY" : 787,
+    "maxY" : 836,
+    "prop" : {
+      "x" : 374,
+      "y" : 787,
+      "width" : 100,
+      "height" : 49
+    },
+    "textPosition" : {
+      "x" : 382,
+      "y" : 787
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 67,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 70,
+    "reactomeId" : 113592,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 838,
+      "y" : 890
+    },
+    "minX" : 819,
+    "maxX" : 869,
+    "minY" : 850,
+    "maxY" : 901,
+    "prop" : {
+      "x" : 819,
+      "y" : 880,
+      "width" : 38,
+      "height" : 21
+    },
+    "textPosition" : {
+      "x" : 822,
+      "y" : 880
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 852,
+          "y" : 885
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 69,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 846,
+          "y" : 877
+        },
+        "to" : {
+          "x" : 869,
+          "y" : 850
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 851,
+            "y" : 857
+          },
+          "b" : {
+            "x" : 863,
+            "y" : 869
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 71,
+    "reactomeId" : 450541,
+    "displayName" : "Phosphorylated TTP:mRNA Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1058,
+      "y" : 851
+    },
+    "minX" : 949,
+    "maxX" : 1207,
+    "minY" : 826,
+    "maxY" : 877,
+    "prop" : {
+      "x" : 1008,
+      "y" : 826,
+      "width" : 100,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 1008,
+      "y" : 828
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 69,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1005,
+          "y" : 850
+        },
+        "to" : {
+          "x" : 949,
+          "y" : 850
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 998,
+          "y" : 854
+        },
+        "b" : {
+          "x" : 1005,
+          "y" : 850
+        },
+        "c" : {
+          "x" : 998,
+          "y" : 846
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 73,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1111,
+          "y" : 851
+        },
+        "to" : {
+          "x" : 1207,
+          "y" : 852
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 72,
+    "reactomeId" : 29370,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 981,
+      "y" : 888
+    },
+    "minX" : 949,
+    "maxX" : 1002,
+    "minY" : 850,
+    "maxY" : 899,
+    "prop" : {
+      "x" : 961,
+      "y" : 877,
+      "width" : 40,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 965,
+      "y" : 877
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 996,
+          "y" : 882
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 69,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 971,
+          "y" : 874
+        },
+        "to" : {
+          "x" : 949,
+          "y" : 850
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 954,
+            "y" : 856
+          },
+          "b" : {
+            "x" : 966,
+            "y" : 868
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 963,
+          "y" : 872
+        },
+        "b" : {
+          "x" : 971,
+          "y" : 874
+        },
+        "c" : {
+          "x" : 969,
+          "y" : 866
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 74,
+    "reactomeId" : 450420,
+    "displayName" : "Phosphorylated TTP:mRNA:14-3-3 Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1337,
+      "y" : 847
+    },
+    "minX" : 1259,
+    "maxX" : 1416,
+    "minY" : 829,
+    "maxY" : 865,
+    "prop" : {
+      "x" : 1259,
+      "y" : 829,
+      "width" : 157,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1263,
+      "y" : 830
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 88,
+    "reactomeId" : 450485,
+    "displayName" : "KSRP",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 494,
+      "y" : 194
+    },
+    "minX" : 450,
+    "maxX" : 600,
+    "minY" : 132,
+    "maxY" : 238,
+    "prop" : {
+      "x" : 471,
+      "y" : 185,
+      "width" : 46,
+      "height" : 19
+    },
+    "textPosition" : {
+      "x" : 475,
+      "y" : 184
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 517,
+          "y" : 185
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 89,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 475,
+          "y" : 207
+        },
+        "to" : {
+          "x" : 450,
+          "y" : 217
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 95,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 520,
+          "y" : 203
+        },
+        "to" : {
+          "x" : 597,
+          "y" : 238
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 108,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 510,
+          "y" : 182
+        },
+        "to" : {
+          "x" : 600,
+          "y" : 132
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 90,
+    "reactomeId" : 450386,
+    "displayName" : "mRNA Transcript Targeted by KSRP",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 364,
+      "y" : 178
+    },
+    "minX" : 302,
+    "maxX" : 450,
+    "minY" : 156,
+    "maxY" : 217,
+    "prop" : {
+      "x" : 302,
+      "y" : 156,
+      "width" : 125,
+      "height" : 45
+    },
+    "textPosition" : {
+      "x" : 308,
+      "y" : 161
+    },
+    "connectors" : [ {
+      "edgeId" : 89,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 413,
+          "y" : 204
+        },
+        "to" : {
+          "x" : 450,
+          "y" : 217
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 91,
+    "reactomeId" : 450608,
+    "displayName" : "KSRP:mRNA Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 451,
+      "y" : 292
+    },
+    "minX" : 410,
+    "maxX" : 493,
+    "minY" : 273,
+    "maxY" : 344,
+    "prop" : {
+      "x" : 410,
+      "y" : 273,
+      "width" : 83,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 411,
+      "y" : 276
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 89,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 92,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 450,
+          "y" : 314
+        },
+        "to" : {
+          "x" : 450,
+          "y" : 344
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 93,
+    "reactomeId" : 430009,
+    "displayName" : "PARN",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 353,
+      "y" : 302
+    },
+    "minX" : 324,
+    "maxX" : 450,
+    "minY" : 282,
+    "maxY" : 344,
+    "prop" : {
+      "x" : 324,
+      "y" : 288,
+      "width" : 58,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 333,
+      "y" : 291
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 382,
+          "y" : 288
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 92,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 385,
+          "y" : 314
+        },
+        "to" : {
+          "x" : 450,
+          "y" : 344
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 94,
+    "reactomeId" : 450479,
+    "displayName" : "KSRP:mRNA Degradation Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 451,
+      "y" : 423
+    },
+    "minX" : 407,
+    "maxX" : 495,
+    "minY" : 398,
+    "maxY" : 449,
+    "prop" : {
+      "x" : 407,
+      "y" : 398,
+      "width" : 88,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 409,
+      "y" : 400
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 92,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 96,
+    "reactomeId" : 113592,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 573,
+      "y" : 189
+    },
+    "minX" : 549,
+    "maxX" : 600,
+    "minY" : 132,
+    "maxY" : 238,
+    "prop" : {
+      "x" : 549,
+      "y" : 175,
+      "width" : 48,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 557,
+      "y" : 179
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 592,
+          "y" : 180
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 95,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 580,
+          "y" : 207
+        },
+        "to" : {
+          "x" : 597,
+          "y" : 238
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 108,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 579,
+          "y" : 172
+        },
+        "to" : {
+          "x" : 600,
+          "y" : 132
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 97,
+    "reactomeId" : 450505,
+    "displayName" : "p-S193-KHSRP",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 824,
+      "y" : 232
+    },
+    "minX" : 691,
+    "maxX" : 1041,
+    "minY" : 90,
+    "maxY" : 250,
+    "prop" : {
+      "x" : 773,
+      "y" : 214,
+      "width" : 102,
+      "height" : 36
+    },
+    "innerProp" : {
+      "x" : 773,
+      "y" : 220,
+      "width" : 102,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 775,
+      "y" : 221
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 450521,
+      "description" : "O-phospho-L-serine at 193",
+      "shape" : {
+        "a" : {
+          "x" : 783,
+          "y" : 208
+        },
+        "b" : {
+          "x" : 795,
+          "y" : 220
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 875,
+          "y" : 214
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 95,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 770,
+          "y" : 234
+        },
+        "to" : {
+          "x" : 691,
+          "y" : 238
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 763,
+          "y" : 238
+        },
+        "b" : {
+          "x" : 770,
+          "y" : 234
+        },
+        "c" : {
+          "x" : 763,
+          "y" : 230
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 105,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 851,
+          "y" : 211
+        },
+        "to" : {
+          "x" : 1041,
+          "y" : 90
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 98,
+    "reactomeId" : 29370,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 726,
+      "y" : 185
+    },
+    "minX" : 691,
+    "maxX" : 748,
+    "minY" : 131,
+    "maxY" : 238,
+    "prop" : {
+      "x" : 705,
+      "y" : 170,
+      "width" : 42,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 710,
+      "y" : 175
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 742,
+          "y" : 175
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 95,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 715,
+          "y" : 204
+        },
+        "to" : {
+          "x" : 691,
+          "y" : 238
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 714,
+          "y" : 212
+        },
+        "b" : {
+          "x" : 715,
+          "y" : 204
+        },
+        "c" : {
+          "x" : 708,
+          "y" : 207
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 108,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 716,
+          "y" : 167
+        },
+        "to" : {
+          "x" : 694,
+          "y" : 131
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 709,
+          "y" : 163
+        },
+        "b" : {
+          "x" : 716,
+          "y" : 167
+        },
+        "c" : {
+          "x" : 716,
+          "y" : 159
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 106,
+    "reactomeId" : 450469,
+    "displayName" : "YWHAZ",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1030,
+      "y" : 62
+    },
+    "minX" : 989,
+    "maxX" : 1078,
+    "minY" : 43,
+    "maxY" : 90,
+    "prop" : {
+      "x" : 989,
+      "y" : 49,
+      "width" : 83,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 1006,
+      "y" : 51
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1072,
+          "y" : 49
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 105,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1035,
+          "y" : 78
+        },
+        "to" : {
+          "x" : 1041,
+          "y" : 90
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 107,
+    "reactomeId" : 450446,
+    "displayName" : "Phosphorylated KSRP (Ser193):14-3-3zeta Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1157,
+      "y" : 90
+    },
+    "minX" : 1103,
+    "maxX" : 1211,
+    "minY" : 55,
+    "maxY" : 126,
+    "prop" : {
+      "x" : 1103,
+      "y" : 55,
+      "width" : 108,
+      "height" : 71
+    },
+    "textPosition" : {
+      "x" : 1106,
+      "y" : 63
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 105,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 111,
+    "reactomeId" : 451177,
+    "displayName" : "p-T692-KHSRP",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 816,
+      "y" : 139
+    },
+    "minX" : 694,
+    "maxX" : 879,
+    "minY" : 115,
+    "maxY" : 157,
+    "prop" : {
+      "x" : 760,
+      "y" : 121,
+      "width" : 113,
+      "height" : 36
+    },
+    "innerProp" : {
+      "x" : 760,
+      "y" : 127,
+      "width" : 113,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 766,
+      "y" : 128
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 451166,
+      "description" : "O-phospho-L-threonine at 692",
+      "shape" : {
+        "a" : {
+          "x" : 770,
+          "y" : 115
+        },
+        "b" : {
+          "x" : 782,
+          "y" : 127
+        },
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 873,
+          "y" : 121
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 108,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 757,
+          "y" : 135
+        },
+        "to" : {
+          "x" : 694,
+          "y" : 131
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 750,
+          "y" : 139
+        },
+        "b" : {
+          "x" : 757,
+          "y" : 135
+        },
+        "c" : {
+          "x" : 750,
+          "y" : 131
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 112,
+    "reactomeId" : 170993,
+    "displayName" : "Phospho-MAP kinase p38 (Mg2+ cofactor)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 658,
+      "y" : 65
+    },
+    "minX" : 599,
+    "maxX" : 718,
+    "minY" : 41,
+    "maxY" : 123,
+    "prop" : {
+      "x" : 599,
+      "y" : 41,
+      "width" : 119,
+      "height" : 48
+    },
+    "textPosition" : {
+      "x" : 599,
+      "y" : 40
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 108,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 656,
+          "y" : 92
+        },
+        "to" : {
+          "x" : 655,
+          "y" : 115
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 655,
+          "y" : 119
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 3,
+    "reactomeId" : 450434,
+    "displayName" : "AUF1(hnRNP D0) dimers bind AU-rich element in 3' UTR of mRNA",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 153,
+      "y" : 164
+    },
+    "minX" : 148,
+    "maxX" : 158,
+    "minY" : 140,
+    "maxY" : 188,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 154,
+        "y" : 140
+      },
+      "to" : {
+        "x" : 153,
+        "y" : 164
+      }
+    }, {
+      "from" : {
+        "x" : 153,
+        "y" : 164
+      },
+      "to" : {
+        "x" : 153,
+        "y" : 188
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 149,
+        "y" : 181
+      },
+      "b" : {
+        "x" : 153,
+        "y" : 188
+      },
+      "c" : {
+        "x" : 157,
+        "y" : 181
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 153,
+        "y" : 164
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 4,
+      "points" : [ {
+        "x" : 189,
+        "y" : 109
+      } ],
+      "stoichiometry" : 2
+    }, {
+      "id" : 5,
+      "points" : [ {
+        "x" : 119,
+        "y" : 108
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 6
+    } ]
+  }, {
+    "id" : 131,
+    "reactomeId" : 450550,
+    "displayName" : "PKCalpha phosphorylates HuR",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1144,
+      "y" : 300
+    },
+    "minX" : 1115,
+    "maxX" : 1176,
+    "minY" : 294,
+    "maxY" : 306,
+    "segments" : [ {
+      "from" : {
+        "x" : 1115,
+        "y" : 301
+      },
+      "to" : {
+        "x" : 1144,
+        "y" : 300
+      }
+    }, {
+      "from" : {
+        "x" : 1144,
+        "y" : 300
+      },
+      "to" : {
+        "x" : 1176,
+        "y" : 300
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1138,
+        "y" : 294
+      },
+      "b" : {
+        "x" : 1150,
+        "y" : 306
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 132,
+      "points" : [ {
+        "x" : 1106,
+        "y" : 275
+      } ],
+      "stoichiometry" : 2
+    }, {
+      "id" : 133,
+      "points" : [ {
+        "x" : 1057,
+        "y" : 281
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 134,
+      "points" : [ {
+        "x" : 1191,
+        "y" : 271
+      } ],
+      "stoichiometry" : 2
+    }, {
+      "id" : 135,
+      "points" : [ {
+        "x" : 1218,
+        "y" : 304
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 136,
+      "points" : [ {
+        "x" : 1143,
+        "y" : 324
+      } ]
+    } ]
+  }, {
+    "id" : 67,
+    "reactomeId" : 450431,
+    "displayName" : "ZFP36 (TTP) recruits RNA degradation activities",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 412,
+      "y" : 750
+    },
+    "minX" : 407,
+    "maxX" : 419,
+    "minY" : 725,
+    "maxY" : 784,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 413,
+        "y" : 725
+      },
+      "to" : {
+        "x" : 412,
+        "y" : 750
+      }
+    }, {
+      "from" : {
+        "x" : 412,
+        "y" : 750
+      },
+      "to" : {
+        "x" : 419,
+        "y" : 784
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 414,
+        "y" : 778
+      },
+      "b" : {
+        "x" : 419,
+        "y" : 784
+      },
+      "c" : {
+        "x" : 422,
+        "y" : 776
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 412,
+        "y" : 750
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 31,
+      "points" : [ {
+        "x" : 557,
+        "y" : 707
+      } ]
+    }, {
+      "id" : 30,
+      "points" : [ {
+        "x" : 554,
+        "y" : 735
+      } ]
+    }, {
+      "id" : 32,
+      "points" : [ {
+        "x" : 537,
+        "y" : 680
+      } ]
+    }, {
+      "id" : 33,
+      "points" : [ {
+        "x" : 603,
+        "y" : 611
+      } ]
+    }, {
+      "id" : 60,
+      "points" : [ {
+        "x" : 413,
+        "y" : 687
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 68
+    } ]
+  }, {
+    "id" : 69,
+    "reactomeId" : 450463,
+    "displayName" : "MK2 phosphorylates ZFP36 (Tristetraproline, TTP)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 905,
+      "y" : 849
+    },
+    "minX" : 869,
+    "maxX" : 949,
+    "minY" : 843,
+    "maxY" : 855,
+    "segments" : [ {
+      "from" : {
+        "x" : 869,
+        "y" : 850
+      },
+      "to" : {
+        "x" : 905,
+        "y" : 849
+      }
+    }, {
+      "from" : {
+        "x" : 905,
+        "y" : 849
+      },
+      "to" : {
+        "x" : 949,
+        "y" : 850
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 899,
+        "y" : 843
+      },
+      "b" : {
+        "x" : 911,
+        "y" : 855
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 70,
+      "points" : [ {
+        "x" : 846,
+        "y" : 877
+      } ],
+      "stoichiometry" : 2
+    }, {
+      "id" : 60,
+      "points" : [ {
+        "x" : 372,
+        "y" : 661
+      }, {
+        "x" : 356,
+        "y" : 661
+      }, {
+        "x" : 354,
+        "y" : 847
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 71,
+      "points" : [ {
+        "x" : 1005,
+        "y" : 850
+      } ]
+    }, {
+      "id" : 72,
+      "points" : [ {
+        "x" : 971,
+        "y" : 874
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "catalysts" : [ {
+      "id" : 44,
+      "points" : [ {
+        "x" : 905,
+        "y" : 808
+      } ]
+    } ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 450551,
+    "displayName" : "AUF1 binds translation and heat shock proteins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 153,
+      "y" : 305
+    },
+    "minX" : 125,
+    "maxX" : 158,
+    "minY" : 283,
+    "maxY" : 332,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 125,
+        "y" : 283
+      },
+      "to" : {
+        "x" : 153,
+        "y" : 305
+      }
+    }, {
+      "from" : {
+        "x" : 153,
+        "y" : 305
+      },
+      "to" : {
+        "x" : 153,
+        "y" : 332
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 149,
+        "y" : 325
+      },
+      "b" : {
+        "x" : 153,
+        "y" : 332
+      },
+      "c" : {
+        "x" : 157,
+        "y" : 325
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 153,
+        "y" : 305
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 8,
+      "points" : [ {
+        "x" : 86,
+        "y" : 265
+      } ]
+    }, {
+      "id" : 177,
+      "points" : [ {
+        "x" : 164,
+        "y" : 269
+      } ]
+    }, {
+      "id" : 9,
+      "points" : [ {
+        "x" : 99,
+        "y" : 280
+      } ]
+    }, {
+      "id" : 10,
+      "points" : [ {
+        "x" : 97,
+        "y" : 294
+      } ]
+    }, {
+      "id" : 11,
+      "points" : [ {
+        "x" : 166,
+        "y" : 281
+      } ]
+    }, {
+      "id" : 6,
+      "points" : [ {
+        "x" : 143,
+        "y" : 242
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 13
+    } ]
+  }, {
+    "id" : 73,
+    "reactomeId" : 450394,
+    "displayName" : "p-S60,S186-ZFP36 (Tristetraproline, TTP) binds 14-3-3beta",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1232,
+      "y" : 853
+    },
+    "minX" : 1207,
+    "maxX" : 1256,
+    "minY" : 848,
+    "maxY" : 858,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1207,
+        "y" : 852
+      },
+      "to" : {
+        "x" : 1232,
+        "y" : 853
+      }
+    }, {
+      "from" : {
+        "x" : 1232,
+        "y" : 853
+      },
+      "to" : {
+        "x" : 1256,
+        "y" : 851
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1249,
+        "y" : 856
+      },
+      "b" : {
+        "x" : 1256,
+        "y" : 851
+      },
+      "c" : {
+        "x" : 1249,
+        "y" : 848
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1232,
+        "y" : 853
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 46,
+      "points" : [ {
+        "x" : 1174,
+        "y" : 803
+      } ]
+    }, {
+      "id" : 71,
+      "points" : [ {
+        "x" : 1111,
+        "y" : 851
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 74
+    } ]
+  }, {
+    "id" : 14,
+    "reactomeId" : 450580,
+    "displayName" : "AUF1 (hnRNP D0) is ubiquitinylated",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 153,
+      "y" : 444
+    },
+    "minX" : 147,
+    "maxX" : 159,
+    "minY" : 428,
+    "maxY" : 472,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 152,
+        "y" : 428
+      },
+      "to" : {
+        "x" : 153,
+        "y" : 444
+      }
+    }, {
+      "from" : {
+        "x" : 153,
+        "y" : 444
+      },
+      "to" : {
+        "x" : 153,
+        "y" : 472
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 149,
+        "y" : 465
+      },
+      "b" : {
+        "x" : 153,
+        "y" : 472
+      },
+      "c" : {
+        "x" : 157,
+        "y" : 465
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 147,
+        "y" : 438
+      },
+      "b" : {
+        "x" : 159,
+        "y" : 450
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 15,
+      "points" : [ {
+        "x" : 214,
+        "y" : 413
+      } ],
+      "stoichiometry" : 4
+    }, {
+      "id" : 13,
+      "points" : [ {
+        "x" : 152,
+        "y" : 403
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 16
+    } ]
+  }, {
+    "id" : 143,
+    "reactomeId" : 450533,
+    "displayName" : "PKCdelta phosphorylates HuR",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1140,
+      "y" : 219
+    },
+    "minX" : 1107,
+    "maxX" : 1178,
+    "minY" : 213,
+    "maxY" : 225,
+    "segments" : [ {
+      "from" : {
+        "x" : 1107,
+        "y" : 221
+      },
+      "to" : {
+        "x" : 1140,
+        "y" : 219
+      }
+    }, {
+      "from" : {
+        "x" : 1140,
+        "y" : 219
+      },
+      "to" : {
+        "x" : 1178,
+        "y" : 221
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1134,
+        "y" : 213
+      },
+      "b" : {
+        "x" : 1146,
+        "y" : 225
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 133,
+      "points" : [ {
+        "x" : 1048,
+        "y" : 253
+      } ]
+    }, {
+      "id" : 132,
+      "points" : [ {
+        "x" : 1104,
+        "y" : 245
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 146,
+      "points" : [ {
+        "x" : 1252,
+        "y" : 186
+      } ]
+    }, {
+      "id" : 134,
+      "points" : [ {
+        "x" : 1191,
+        "y" : 243
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "catalysts" : [ {
+      "id" : 147,
+      "points" : [ {
+        "x" : 1140,
+        "y" : 194
+      } ]
+    } ]
+  }, {
+    "id" : 17,
+    "reactomeId" : 450466,
+    "displayName" : "AUF1:mRNA complex is destroyed",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 152,
+      "y" : 569
+    },
+    "minX" : 146,
+    "maxX" : 158,
+    "minY" : 543,
+    "maxY" : 597,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 152,
+        "y" : 543
+      },
+      "to" : {
+        "x" : 152,
+        "y" : 569
+      }
+    }, {
+      "from" : {
+        "x" : 152,
+        "y" : 569
+      },
+      "to" : {
+        "x" : 152,
+        "y" : 597
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 146,
+        "y" : 563
+      },
+      "b" : {
+        "x" : 158,
+        "y" : 575
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 16
+    } ],
+    "catalysts" : [ {
+      "id" : 18,
+      "points" : [ {
+        "x" : 195,
+        "y" : 568
+      } ]
+    } ]
+  }, {
+    "id" : 148,
+    "reactomeId" : 517674,
+    "displayName" : "p-S158,221-HuR binds mRNA",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1386,
+      "y" : 333
+    },
+    "minX" : 1366,
+    "maxX" : 1411,
+    "minY" : 328,
+    "maxY" : 338,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1366,
+        "y" : 333
+      },
+      "to" : {
+        "x" : 1386,
+        "y" : 333
+      }
+    }, {
+      "from" : {
+        "x" : 1386,
+        "y" : 333
+      },
+      "to" : {
+        "x" : 1411,
+        "y" : 332
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1404,
+        "y" : 336
+      },
+      "b" : {
+        "x" : 1411,
+        "y" : 332
+      },
+      "c" : {
+        "x" : 1404,
+        "y" : 328
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1386,
+        "y" : 333
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 135,
+      "points" : [ {
+        "x" : 1332,
+        "y" : 323
+      } ]
+    }, {
+      "id" : 149,
+      "points" : [ {
+        "x" : 1340,
+        "y" : 348
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 150
+    } ]
+  }, {
+    "id" : 151,
+    "reactomeId" : 517705,
+    "displayName" : "p-S318,221-HuR binds mRNA",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1400,
+      "y" : 142
+    },
+    "minX" : 1374,
+    "maxX" : 1427,
+    "minY" : 137,
+    "maxY" : 154,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1374,
+        "y" : 143
+      },
+      "to" : {
+        "x" : 1400,
+        "y" : 142
+      }
+    }, {
+      "from" : {
+        "x" : 1400,
+        "y" : 142
+      },
+      "to" : {
+        "x" : 1427,
+        "y" : 154
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1419,
+        "y" : 155
+      },
+      "b" : {
+        "x" : 1427,
+        "y" : 154
+      },
+      "c" : {
+        "x" : 1422,
+        "y" : 148
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1400,
+        "y" : 142
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 152,
+      "points" : [ {
+        "x" : 1336,
+        "y" : 113
+      } ]
+    }, {
+      "id" : 146,
+      "points" : [ {
+        "x" : 1352,
+        "y" : 149
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 153
+    } ]
+  }, {
+    "id" : 25,
+    "reactomeId" : 450517,
+    "displayName" : "Butyrate Response Factor1 (BRF1) binds AU-rich element in 3' UTR of mRNA",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 748,
+      "y" : 606
+    },
+    "minX" : 743,
+    "maxX" : 753,
+    "minY" : 584,
+    "maxY" : 632,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 747,
+        "y" : 584
+      },
+      "to" : {
+        "x" : 748,
+        "y" : 606
+      }
+    }, {
+      "from" : {
+        "x" : 748,
+        "y" : 606
+      },
+      "to" : {
+        "x" : 748,
+        "y" : 632
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 744,
+        "y" : 625
+      },
+      "b" : {
+        "x" : 748,
+        "y" : 632
+      },
+      "c" : {
+        "x" : 752,
+        "y" : 625
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 748,
+        "y" : 606
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 26,
+      "points" : [ {
+        "x" : 711,
+        "y" : 559
+      } ]
+    }, {
+      "id" : 27,
+      "points" : [ {
+        "x" : 782,
+        "y" : 558
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 28
+    } ]
+  }, {
+    "id" : 89,
+    "reactomeId" : 450592,
+    "displayName" : "KSRP binds AU-rich element in 3' UTR of mRNA",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 451,
+      "y" : 242
+    },
+    "minX" : 446,
+    "maxX" : 456,
+    "minY" : 217,
+    "maxY" : 270,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 450,
+        "y" : 217
+      },
+      "to" : {
+        "x" : 451,
+        "y" : 242
+      }
+    }, {
+      "from" : {
+        "x" : 451,
+        "y" : 242
+      },
+      "to" : {
+        "x" : 451,
+        "y" : 270
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 447,
+        "y" : 263
+      },
+      "b" : {
+        "x" : 451,
+        "y" : 270
+      },
+      "c" : {
+        "x" : 455,
+        "y" : 263
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 451,
+        "y" : 242
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 88,
+      "points" : [ {
+        "x" : 475,
+        "y" : 207
+      } ]
+    }, {
+      "id" : 90,
+      "points" : [ {
+        "x" : 413,
+        "y" : 204
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 91
+    } ]
+  }, {
+    "id" : 154,
+    "reactomeId" : 450494,
+    "displayName" : "HuR binds mRNAs in the nucleus",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1315,
+      "y" : 454
+    },
+    "minX" : 1109,
+    "maxX" : 1371,
+    "minY" : 405,
+    "maxY" : 459,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1109,
+        "y" : 405
+      },
+      "to" : {
+        "x" : 1315,
+        "y" : 454
+      }
+    }, {
+      "from" : {
+        "x" : 1315,
+        "y" : 454
+      },
+      "to" : {
+        "x" : 1371,
+        "y" : 454
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1364,
+        "y" : 458
+      },
+      "b" : {
+        "x" : 1371,
+        "y" : 454
+      },
+      "c" : {
+        "x" : 1364,
+        "y" : 450
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1315,
+        "y" : 454
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 133,
+      "points" : [ {
+        "x" : 1032,
+        "y" : 290
+      } ]
+    }, {
+      "id" : 155,
+      "points" : [ {
+        "x" : 1096,
+        "y" : 423
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 156
+    } ]
+  }, {
+    "id" : 92,
+    "reactomeId" : 450422,
+    "displayName" : "KSRP recruits RNA degradation activities",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 450,
+      "y" : 367
+    },
+    "minX" : 445,
+    "maxX" : 455,
+    "minY" : 344,
+    "maxY" : 395,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 450,
+        "y" : 344
+      },
+      "to" : {
+        "x" : 450,
+        "y" : 367
+      }
+    }, {
+      "from" : {
+        "x" : 450,
+        "y" : 367
+      },
+      "to" : {
+        "x" : 450,
+        "y" : 395
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 446,
+        "y" : 388
+      },
+      "b" : {
+        "x" : 450,
+        "y" : 395
+      },
+      "c" : {
+        "x" : 454,
+        "y" : 388
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 450,
+        "y" : 367
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 93,
+      "points" : [ {
+        "x" : 385,
+        "y" : 314
+      } ]
+    }, {
+      "id" : 32,
+      "points" : [ {
+        "x" : 573,
+        "y" : 648
+      }, {
+        "x" : 537,
+        "y" : 324
+      } ]
+    }, {
+      "id" : 91,
+      "points" : [ {
+        "x" : 450,
+        "y" : 314
+      } ]
+    }, {
+      "id" : 33,
+      "points" : [ {
+        "x" : 620,
+        "y" : 580
+      }, {
+        "x" : 544,
+        "y" : 298
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 94
+    } ]
+  }, {
+    "id" : 29,
+    "reactomeId" : 450488,
+    "displayName" : "BRF1 Complex recruits RNA degradation activities",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 747,
+      "y" : 740
+    },
+    "minX" : 742,
+    "maxX" : 752,
+    "minY" : 715,
+    "maxY" : 764,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 746,
+        "y" : 715
+      },
+      "to" : {
+        "x" : 747,
+        "y" : 740
+      }
+    }, {
+      "from" : {
+        "x" : 747,
+        "y" : 740
+      },
+      "to" : {
+        "x" : 746,
+        "y" : 764
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 742,
+        "y" : 757
+      },
+      "b" : {
+        "x" : 746,
+        "y" : 764
+      },
+      "c" : {
+        "x" : 750,
+        "y" : 757
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 747,
+        "y" : 740
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 30,
+      "points" : [ {
+        "x" : 615,
+        "y" : 733
+      } ]
+    }, {
+      "id" : 31,
+      "points" : [ {
+        "x" : 612,
+        "y" : 705
+      } ]
+    }, {
+      "id" : 32,
+      "points" : [ {
+        "x" : 613,
+        "y" : 677
+      } ]
+    }, {
+      "id" : 28,
+      "points" : [ {
+        "x" : 748,
+        "y" : 672
+      } ]
+    }, {
+      "id" : 33,
+      "points" : [ {
+        "x" : 636,
+        "y" : 611
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 34
+    } ]
+  }, {
+    "id" : 95,
+    "reactomeId" : 450499,
+    "displayName" : "Protein Kinase B (AKT) phosphorylates KSRP",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 651,
+      "y" : 238
+    },
+    "minX" : 597,
+    "maxX" : 691,
+    "minY" : 232,
+    "maxY" : 244,
+    "segments" : [ {
+      "from" : {
+        "x" : 597,
+        "y" : 238
+      },
+      "to" : {
+        "x" : 651,
+        "y" : 238
+      }
+    }, {
+      "from" : {
+        "x" : 651,
+        "y" : 238
+      },
+      "to" : {
+        "x" : 691,
+        "y" : 238
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 645,
+        "y" : 232
+      },
+      "b" : {
+        "x" : 657,
+        "y" : 244
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 88,
+      "points" : [ {
+        "x" : 520,
+        "y" : 203
+      } ]
+    }, {
+      "id" : 96,
+      "points" : [ {
+        "x" : 580,
+        "y" : 207
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 97,
+      "points" : [ {
+        "x" : 770,
+        "y" : 234
+      } ]
+    }, {
+      "id" : 98,
+      "points" : [ {
+        "x" : 715,
+        "y" : 204
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 39,
+      "points" : [ {
+        "x" : 906,
+        "y" : 534
+      }, {
+        "x" : 652,
+        "y" : 269
+      } ]
+    } ]
+  }, {
+    "id" : 163,
+    "reactomeId" : 450387,
+    "displayName" : "HuR binds the CRM1 nuclear export machinery",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1661,
+      "y" : 375
+    },
+    "minX" : 1656,
+    "maxX" : 1666,
+    "minY" : 327,
+    "maxY" : 405,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1661,
+        "y" : 327
+      },
+      "to" : {
+        "x" : 1661,
+        "y" : 375
+      }
+    }, {
+      "from" : {
+        "x" : 1661,
+        "y" : 375
+      },
+      "to" : {
+        "x" : 1661,
+        "y" : 405
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1657,
+        "y" : 398
+      },
+      "b" : {
+        "x" : 1661,
+        "y" : 405
+      },
+      "c" : {
+        "x" : 1665,
+        "y" : 398
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1661,
+        "y" : 375
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 164,
+      "points" : [ {
+        "x" : 1712,
+        "y" : 162
+      } ]
+    }, {
+      "id" : 165,
+      "points" : [ {
+        "x" : 1569,
+        "y" : 117
+      } ]
+    }, {
+      "id" : 166,
+      "points" : [ {
+        "x" : 1681,
+        "y" : 116
+      } ]
+    }, {
+      "id" : 167,
+      "points" : [ {
+        "x" : 1642,
+        "y" : 326
+      } ]
+    }, {
+      "id" : 168,
+      "points" : [ {
+        "x" : 1689,
+        "y" : 315
+      } ]
+    }, {
+      "id" : 169,
+      "points" : [ {
+        "x" : 1622,
+        "y" : 154
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 170
+    } ]
+  }, {
+    "id" : 35,
+    "reactomeId" : 450490,
+    "displayName" : "Protein Kinase B/Akt phosphorylates BRF1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 903,
+      "y" : 615
+    },
+    "minX" : 864,
+    "maxX" : 924,
+    "minY" : 609,
+    "maxY" : 621,
+    "segments" : [ {
+      "from" : {
+        "x" : 864,
+        "y" : 616
+      },
+      "to" : {
+        "x" : 903,
+        "y" : 615
+      }
+    }, {
+      "from" : {
+        "x" : 903,
+        "y" : 615
+      },
+      "to" : {
+        "x" : 924,
+        "y" : 616
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 897,
+        "y" : 609
+      },
+      "b" : {
+        "x" : 909,
+        "y" : 621
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 36,
+      "points" : [ {
+        "x" : 845,
+        "y" : 641
+      } ],
+      "stoichiometry" : 2
+    }, {
+      "id" : 28,
+      "points" : [ {
+        "x" : 794,
+        "y" : 638
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 37,
+      "points" : [ {
+        "x" : 952,
+        "y" : 636
+      } ],
+      "stoichiometry" : 2
+    }, {
+      "id" : 38,
+      "points" : [ {
+        "x" : 997,
+        "y" : 615
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 39,
+      "points" : [ {
+        "x" : 917,
+        "y" : 572
+      } ]
+    } ]
+  }, {
+    "id" : 40,
+    "reactomeId" : 450474,
+    "displayName" : "MK2 phosphorylates BRF1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 904,
+      "y" : 707
+    },
+    "minX" : 864,
+    "maxX" : 936,
+    "minY" : 701,
+    "maxY" : 713,
+    "segments" : [ {
+      "from" : {
+        "x" : 864,
+        "y" : 706
+      },
+      "to" : {
+        "x" : 904,
+        "y" : 707
+      }
+    }, {
+      "from" : {
+        "x" : 904,
+        "y" : 707
+      },
+      "to" : {
+        "x" : 936,
+        "y" : 706
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 898,
+        "y" : 701
+      },
+      "b" : {
+        "x" : 910,
+        "y" : 713
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 28,
+      "points" : [ {
+        "x" : 785,
+        "y" : 672
+      } ]
+    }, {
+      "id" : 36,
+      "points" : [ {
+        "x" : 843,
+        "y" : 670
+      } ],
+      "stoichiometry" : 3
+    } ],
+    "outputs" : [ {
+      "id" : 42,
+      "points" : [ {
+        "x" : 990,
+        "y" : 706
+      } ]
+    }, {
+      "id" : 37,
+      "points" : [ {
+        "x" : 960,
+        "y" : 668
+      } ],
+      "stoichiometry" : 3
+    } ],
+    "catalysts" : [ {
+      "id" : 44,
+      "points" : [ {
+        "x" : 905,
+        "y" : 747
+      } ]
+    } ]
+  }, {
+    "id" : 105,
+    "reactomeId" : 450620,
+    "displayName" : "p-S193-KSRP binds 14-3-3zeta in the nucleus",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1065,
+      "y" : 90
+    },
+    "minX" : 1041,
+    "maxX" : 1100,
+    "minY" : 84,
+    "maxY" : 96,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1041,
+        "y" : 90
+      },
+      "to" : {
+        "x" : 1065,
+        "y" : 90
+      }
+    }, {
+      "from" : {
+        "x" : 1065,
+        "y" : 90
+      },
+      "to" : {
+        "x" : 1100,
+        "y" : 90
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1093,
+        "y" : 94
+      },
+      "b" : {
+        "x" : 1100,
+        "y" : 90
+      },
+      "c" : {
+        "x" : 1093,
+        "y" : 86
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1059,
+        "y" : 84
+      },
+      "b" : {
+        "x" : 1071,
+        "y" : 96
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 97,
+      "points" : [ {
+        "x" : 851,
+        "y" : 211
+      } ]
+    }, {
+      "id" : 106,
+      "points" : [ {
+        "x" : 1035,
+        "y" : 78
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 107
+    } ]
+  }, {
+    "id" : 171,
+    "reactomeId" : 450595,
+    "displayName" : "HuR:mRNA complex translocates from the nucleus to the cytosol",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1662,
+      "y" : 531
+    },
+    "minX" : 1656,
+    "maxX" : 1668,
+    "minY" : 479,
+    "maxY" : 559,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1662,
+        "y" : 479
+      },
+      "to" : {
+        "x" : 1662,
+        "y" : 531
+      }
+    }, {
+      "from" : {
+        "x" : 1662,
+        "y" : 531
+      },
+      "to" : {
+        "x" : 1663,
+        "y" : 559
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1656,
+        "y" : 525
+      },
+      "b" : {
+        "x" : 1668,
+        "y" : 537
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 170
+    } ],
+    "outputs" : [ {
+      "id" : 172,
+      "points" : [ {
+        "x" : 1622,
+        "y" : 576
+      } ]
+    }, {
+      "id" : 173,
+      "points" : [ {
+        "x" : 1685,
+        "y" : 578
+      } ]
+    } ]
+  }, {
+    "id" : 108,
+    "reactomeId" : 451152,
+    "displayName" : "MAP kinase p38 phosphorylates KSRP",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 654,
+      "y" : 131
+    },
+    "minX" : 600,
+    "maxX" : 694,
+    "minY" : 125,
+    "maxY" : 137,
+    "segments" : [ {
+      "from" : {
+        "x" : 600,
+        "y" : 132
+      },
+      "to" : {
+        "x" : 654,
+        "y" : 131
+      }
+    }, {
+      "from" : {
+        "x" : 654,
+        "y" : 131
+      },
+      "to" : {
+        "x" : 694,
+        "y" : 131
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 648,
+        "y" : 125
+      },
+      "b" : {
+        "x" : 660,
+        "y" : 137
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 88,
+      "points" : [ {
+        "x" : 510,
+        "y" : 182
+      } ]
+    }, {
+      "id" : 96,
+      "points" : [ {
+        "x" : 579,
+        "y" : 172
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 111,
+      "points" : [ {
+        "x" : 757,
+        "y" : 135
+      } ]
+    }, {
+      "id" : 98,
+      "points" : [ {
+        "x" : 716,
+        "y" : 167
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 112,
+      "points" : [ {
+        "x" : 656,
+        "y" : 92
+      } ]
+    } ]
+  }, {
+    "id" : 45,
+    "reactomeId" : 450406,
+    "displayName" : "p-S92,203-BRF1 binds 14-3-3",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1212,
+      "y" : 616
+    },
+    "minX" : 1195,
+    "maxX" : 1238,
+    "minY" : 611,
+    "maxY" : 621,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1195,
+        "y" : 615
+      },
+      "to" : {
+        "x" : 1212,
+        "y" : 616
+      }
+    }, {
+      "from" : {
+        "x" : 1212,
+        "y" : 616
+      },
+      "to" : {
+        "x" : 1238,
+        "y" : 615
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1231,
+        "y" : 619
+      },
+      "b" : {
+        "x" : 1238,
+        "y" : 615
+      },
+      "c" : {
+        "x" : 1231,
+        "y" : 611
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1212,
+        "y" : 616
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 46,
+      "points" : [ {
+        "x" : 1165,
+        "y" : 758
+      } ]
+    }, {
+      "id" : 38,
+      "points" : [ {
+        "x" : 1116,
+        "y" : 615
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 47
+    } ]
+  }, {
+    "id" : 54,
+    "reactomeId" : 482788,
+    "displayName" : "p-S54,92,203-BRF1 binds 14-3-3",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1220,
+      "y" : 706
+    },
+    "minX" : 1197,
+    "maxX" : 1242,
+    "minY" : 701,
+    "maxY" : 711,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1197,
+        "y" : 706
+      },
+      "to" : {
+        "x" : 1220,
+        "y" : 706
+      }
+    }, {
+      "from" : {
+        "x" : 1220,
+        "y" : 706
+      },
+      "to" : {
+        "x" : 1242,
+        "y" : 705
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1235,
+        "y" : 709
+      },
+      "b" : {
+        "x" : 1242,
+        "y" : 705
+      },
+      "c" : {
+        "x" : 1235,
+        "y" : 701
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1220,
+        "y" : 706
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 42,
+      "points" : [ {
+        "x" : 1119,
+        "y" : 706
+      } ]
+    }, {
+      "id" : 46,
+      "points" : [ {
+        "x" : 1171,
+        "y" : 758
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 55
+    } ]
+  }, {
+    "id" : 56,
+    "reactomeId" : 450400,
+    "displayName" : "ZFP36 (Tristetraproline, TTP) binds AU-rich elements in 3' UTR of target mRNAs",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 413,
+      "y" : 614
+    },
+    "minX" : 408,
+    "maxX" : 418,
+    "minY" : 592,
+    "maxY" : 639,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 414,
+        "y" : 592
+      },
+      "to" : {
+        "x" : 413,
+        "y" : 614
+      }
+    }, {
+      "from" : {
+        "x" : 413,
+        "y" : 614
+      },
+      "to" : {
+        "x" : 413,
+        "y" : 639
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 409,
+        "y" : 632
+      },
+      "b" : {
+        "x" : 413,
+        "y" : 639
+      },
+      "c" : {
+        "x" : 417,
+        "y" : 632
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 413,
+        "y" : 614
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 57,
+      "points" : [ {
+        "x" : 410,
+        "y" : 527
+      } ]
+    }, {
+      "id" : 58,
+      "points" : [ {
+        "x" : 458,
+        "y" : 571
+      } ]
+    }, {
+      "id" : 59,
+      "points" : [ {
+        "x" : 382,
+        "y" : 578
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 60
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 1,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 902,
+      "y" : 481
+    },
+    "minX" : 4,
+    "maxX" : 1801,
+    "minY" : 5,
+    "maxY" : 957,
+    "prop" : {
+      "x" : 4,
+      "y" : 5,
+      "width" : 1797,
+      "height" : 952
+    },
+    "textPosition" : {
+      "x" : 1726,
+      "y" : 908
+    },
+    "insets" : {
+      "x" : 14,
+      "y" : 15,
+      "width" : 1774,
+      "height" : 929
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 25, 26, 27, 28, 34, 30, 31, 32, 33, 35, 36, 37, 38, 39, 29, 40, 42, 44, 45, 46, 47, 54, 55, 56, 57, 58, 59, 60, 67, 68, 69, 70, 71, 72, 73, 74, 88, 89, 90, 91, 92, 93, 94, 96, 97, 98, 108, 111, 112, 95, 172, 173, 2, 171, 177 ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 7660,
+    "displayName" : "nucleoplasm",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 1379,
+      "y" : 272
+    },
+    "minX" : 968,
+    "maxX" : 1791,
+    "minY" : 30,
+    "maxY" : 515,
+    "prop" : {
+      "x" : 968,
+      "y" : 30,
+      "width" : 823,
+      "height" : 485
+    },
+    "textPosition" : {
+      "x" : 1686,
+      "y" : 469
+    },
+    "insets" : {
+      "x" : 977,
+      "y" : 40,
+      "width" : 804,
+      "height" : 465
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 105, 106, 107, 131, 132, 133, 134, 135, 136, 146, 147, 143, 148, 149, 150, 151, 152, 153, 154, 155, 156, 163, 164, 165, 166, 167, 168, 169, 170, 174, 175, 176 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ {
+    "id" : 176,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 1551,
+      "y" : 262
+    },
+    "minX" : 1521,
+    "maxX" : 1582,
+    "minY" : 225,
+    "maxY" : 299,
+    "segments" : [ {
+      "from" : {
+        "x" : 1521,
+        "y" : 225
+      },
+      "to" : {
+        "x" : 1582,
+        "y" : 299
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1545,
+        "y" : 256
+      },
+      "b" : {
+        "x" : 1557,
+        "y" : 268
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 153
+    } ],
+    "outputs" : [ {
+      "id" : 167
+    } ]
+  }, {
+    "id" : 174,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 1523,
+      "y" : 389
+    },
+    "minX" : 1474,
+    "maxX" : 1573,
+    "minY" : 351,
+    "maxY" : 427,
+    "segments" : [ {
+      "from" : {
+        "x" : 1474,
+        "y" : 427
+      },
+      "to" : {
+        "x" : 1573,
+        "y" : 351
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1517,
+        "y" : 383
+      },
+      "b" : {
+        "x" : 1529,
+        "y" : 395
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 156
+    } ],
+    "outputs" : [ {
+      "id" : 167
+    } ]
+  }, {
+    "id" : 175,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 1549,
+      "y" : 325
+    },
+    "minX" : 1543,
+    "maxX" : 1555,
+    "minY" : 319,
+    "maxY" : 331,
+    "segments" : [ {
+      "from" : {
+        "x" : 1543,
+        "y" : 326
+      },
+      "to" : {
+        "x" : 1555,
+        "y" : 325
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1543,
+        "y" : 319
+      },
+      "b" : {
+        "x" : 1555,
+        "y" : 331
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 150
+    } ],
+    "outputs" : [ {
+      "id" : 167
+    } ]
+  } ],
+  "shadows" : [ {
+    "id" : 178,
+    "reactomeId" : 450385,
+    "displayName" : "Butyrate Response Factor 1 (BRF1) binds and destabilizes mRNA",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 968,
+      "y" : 666
+    },
+    "minX" : 530,
+    "maxX" : 1406,
+    "minY" : 502,
+    "maxY" : 831,
+    "prop" : {
+      "x" : 530,
+      "y" : 696,
+      "width" : 876,
+      "height" : 135
+    },
+    "points" : [ {
+      "x" : 530,
+      "y" : 502
+    }, {
+      "x" : 1406,
+      "y" : 502
+    }, {
+      "x" : 1406,
+      "y" : 831
+    }, {
+      "x" : 530,
+      "y" : 831
+    } ],
+    "colour" : "#4684ee"
+  }, {
+    "id" : 179,
+    "reactomeId" : 450408,
+    "displayName" : "AUF1 (hnRNP D0) binds and destabilizes mRNA",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 162,
+      "y" : 322
+    },
+    "minX" : 23,
+    "maxX" : 301,
+    "minY" : 38,
+    "maxY" : 607,
+    "prop" : {
+      "x" : 23,
+      "y" : 38,
+      "width" : 269,
+      "height" : 569
+    },
+    "points" : [ {
+      "x" : 23,
+      "y" : 38
+    }, {
+      "x" : 301,
+      "y" : 38
+    }, {
+      "x" : 301,
+      "y" : 607
+    }, {
+      "x" : 23,
+      "y" : 607
+    } ],
+    "colour" : "#dc3912"
+  }, {
+    "id" : 180,
+    "reactomeId" : 450513,
+    "displayName" : "Tristetraprolin (TTP, ZFP36) binds and destabilizes mRNA",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 871,
+      "y" : 687
+    },
+    "minX" : 317,
+    "maxX" : 1426,
+    "minY" : 463,
+    "maxY" : 911,
+    "prop" : {
+      "x" : 317,
+      "y" : 831,
+      "width" : 1109,
+      "height" : 80
+    },
+    "points" : [ {
+      "x" : 317,
+      "y" : 463
+    }, {
+      "x" : 1426,
+      "y" : 463
+    }, {
+      "x" : 1426,
+      "y" : 911
+    }, {
+      "x" : 317,
+      "y" : 911
+    } ],
+    "colour" : "#008000"
+  }, {
+    "id" : 181,
+    "reactomeId" : 450520,
+    "displayName" : "HuR (ELAVL1) binds and stabilizes mRNA",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 1377,
+      "y" : 341
+    },
+    "minX" : 981,
+    "maxX" : 1774,
+    "minY" : 50,
+    "maxY" : 632,
+    "prop" : {
+      "x" : 1221,
+      "y" : 50,
+      "width" : 553,
+      "height" : 413
+    },
+    "points" : [ {
+      "x" : 981,
+      "y" : 50
+    }, {
+      "x" : 1774,
+      "y" : 50
+    }, {
+      "x" : 1774,
+      "y" : 632
+    }, {
+      "x" : 981,
+      "y" : 632
+    } ],
+    "colour" : "#666666"
+  }, {
+    "id" : 182,
+    "reactomeId" : 450604,
+    "displayName" : "KSRP (KHSRP) binds and destabilizes mRNA",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 756,
+      "y" : 363
+    },
+    "minX" : 292,
+    "maxX" : 1221,
+    "minY" : 31,
+    "maxY" : 696,
+    "prop" : {
+      "x" : 301,
+      "y" : 50,
+      "width" : 680,
+      "height" : 413
+    },
+    "points" : [ {
+      "x" : 292,
+      "y" : 31
+    }, {
+      "x" : 1221,
+      "y" : 31
+    }, {
+      "x" : 1221,
+      "y" : 696
+    }, {
+      "x" : 292,
+      "y" : 696
+    } ],
+    "colour" : "#4942cc"
+  } ],
+  "minX" : 4,
+  "maxX" : 1801,
+  "minY" : 5,
+  "maxY" : 957,
+  "disease" : false
+}

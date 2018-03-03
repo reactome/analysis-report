@@ -1,0 +1,55 @@
+{
+  "dbId" : 109582,
+  "stId" : "R-HSA-109582",
+  "nodes" : [ {
+    "dbId" : 983231,
+    "stId" : "R-HSA-983231",
+    "displayName" : "Factors involved in megakaryocyte development and platelet production",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ]
+  }, {
+    "dbId" : 76002,
+    "stId" : "R-HSA-76002",
+    "displayName" : "Platelet activation, signaling and aggregation",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 63 ]
+  }, {
+    "dbId" : 75205,
+    "stId" : "R-HSA-75205",
+    "displayName" : "Dissolution of Fibrin Clot",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3 ]
+  }, {
+    "dbId" : 75892,
+    "stId" : "R-HSA-75892",
+    "displayName" : "Platelet Adhesion to exposed collagen",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ]
+  }, {
+    "dbId" : 418346,
+    "stId" : "R-HSA-418346",
+    "displayName" : "Platelet homeostasis",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6 ]
+  }, {
+    "dbId" : 202733,
+    "stId" : "R-HSA-202733",
+    "displayName" : "Cell surface interactions at the vascular wall",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ]
+  }, {
+    "dbId" : 140877,
+    "stId" : "R-HSA-140877",
+    "displayName" : "Formation of Fibrin Clot (Clotting Cascade)",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2 ]
+  } ],
+  "edges" : [ ]
+}

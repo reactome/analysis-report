@@ -1,0 +1,2583 @@
+{
+  "dbId" : 5576891,
+  "stId" : "R-HSA-5576891",
+  "nodes" : [ {
+    "dbId" : 5578837,
+    "stId" : "R-HSA-5578837",
+    "displayName" : "FGF14 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92915",
+    "geneNames" : [ "FGF14", "FHF4" ],
+    "parents" : [ 5578833 ]
+  }, {
+    "dbId" : 5578838,
+    "stId" : "R-HSA-5578838",
+    "displayName" : "FGF13 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92913",
+    "geneNames" : [ "FGF13", "FHF2" ],
+    "parents" : [ 5578833 ]
+  }, {
+    "dbId" : 418306,
+    "stId" : "R-HSA-418306",
+    "displayName" : "ATP2B1-4 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 409 ],
+    "children" : [ 418301, 418300, 418303, 418304 ]
+  }, {
+    "dbId" : 5578833,
+    "stId" : "R-HSA-5578833",
+    "displayName" : "FGF11-14 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 26 ],
+    "children" : [ 5216024, 5578835, 5578838, 5578837 ]
+  }, {
+    "dbId" : 418304,
+    "stId" : "R-HSA-418304",
+    "displayName" : "ATP2B4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 516 ],
+    "identifier" : "P23634",
+    "geneNames" : [ "ATP2B4", "ATP2B2", "MXRA1" ],
+    "parents" : [ 418306, 5617181 ]
+  }, {
+    "dbId" : 5578835,
+    "stId" : "R-HSA-5578835",
+    "displayName" : "FGF11 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92914",
+    "geneNames" : [ "FGF11", "FHF3" ],
+    "parents" : [ 5578833 ]
+  }, {
+    "dbId" : 2684963,
+    "stId" : "R-HSA-2684963",
+    "displayName" : "CLIC2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 243 ],
+    "identifier" : "O15247",
+    "geneNames" : [ "CLIC2" ]
+  }, {
+    "dbId" : 418312,
+    "stId" : "R-HSA-418312",
+    "displayName" : "ATP2A1-3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 200 ],
+    "children" : [ 391962, 391961, 391965 ]
+  }, {
+    "dbId" : 434696,
+    "stId" : "R-HSA-434696",
+    "displayName" : "ORAI1 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8862646 ],
+    "children" : [ 434672 ]
+  }, {
+    "dbId" : 5578817,
+    "stId" : "R-HSA-5578817",
+    "displayName" : "FKBP1B tetramer [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2855167 ],
+    "children" : [ 5490321 ]
+  }, {
+    "dbId" : 5617219,
+    "stId" : "R-HSA-5617219",
+    "displayName" : "p-S23,S24-TNNI3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 678 ],
+    "identifier" : "P19429",
+    "geneNames" : [ "TNNI3", "TNNC1" ]
+  }, {
+    "dbId" : 975378,
+    "stId" : "R-HSA-975378",
+    "displayName" : "KCNJ2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63252",
+    "geneNames" : [ "KCNJ2", "IRK1" ],
+    "parents" : [ 1296069, 975359 ]
+  }, {
+    "dbId" : 977455,
+    "stId" : "R-HSA-977455",
+    "displayName" : "KCND1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NSA2",
+    "geneNames" : [ "KCND1" ],
+    "parents" : [ 1296101 ]
+  }, {
+    "dbId" : 210465,
+    "stId" : "R-HSA-210465",
+    "displayName" : "CACNG3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60359",
+    "geneNames" : [ "CACNG3" ],
+    "parents" : [ 5577203, 416844 ]
+  }, {
+    "dbId" : 977453,
+    "stId" : "R-HSA-977453",
+    "displayName" : "KCND2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NZV8",
+    "geneNames" : [ "KCND2", "KIAA1044" ],
+    "parents" : [ 1296101 ]
+  }, {
+    "dbId" : 977451,
+    "stId" : "R-HSA-977451",
+    "displayName" : "KCND3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UK17",
+    "geneNames" : [ "KCND3" ],
+    "parents" : [ 1296101 ]
+  }, {
+    "dbId" : 3006467,
+    "stId" : "R-HSA-3006467",
+    "displayName" : "ITPR2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14571",
+    "geneNames" : [ "ITPR2" ],
+    "parents" : [ 112289, 112290, 169685, 5622011 ]
+  }, {
+    "dbId" : 5578875,
+    "stId" : "R-HSA-5578875",
+    "displayName" : "NKX2-5:GATA4:HIPK1,2 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 956 ],
+    "children" : [ 5578874, 400553, 4005994 ]
+  }, {
+    "dbId" : 5578874,
+    "stId" : "R-HSA-5578874",
+    "displayName" : "HIPK1,2 [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5578875 ],
+    "children" : [ 3215224, 3215222 ]
+  }, {
+    "dbId" : 139826,
+    "stId" : "R-ALL-139826",
+    "displayName" : "I(1,4,5)P3 [platelet dense tubular network membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16595",
+    "parents" : [ 9815307, 9589980, 9370320, 9032791, 9715576, 9526685, 9222039, 9448986, 9140962, 9095784, 9644499, 9292285, 139839 ]
+  }, {
+    "dbId" : 139827,
+    "stId" : "R-ALL-139827",
+    "displayName" : "Ca2+ [platelet dense tubular network lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 270 ],
+    "identifier" : "29108"
+  }, {
+    "dbId" : 6784597,
+    "stId" : "R-HSA-6784597",
+    "displayName" : "NPPA(124-151):NPR1 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 967 ],
+    "children" : [ 6784600, 5578799 ]
+  }, {
+    "dbId" : 210486,
+    "stId" : "R-HSA-210486",
+    "displayName" : "CACNG8 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WXS5",
+    "geneNames" : [ "CACNG8", "CACNG6" ],
+    "parents" : [ 5577203, 416844 ]
+  }, {
+    "dbId" : 976950,
+    "stId" : "R-HSA-976950",
+    "displayName" : "NPPA(1-153) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 955 ],
+    "identifier" : "P01160",
+    "geneNames" : [ "NPPA", "ANP", "PND" ]
+  }, {
+    "dbId" : 139839,
+    "stId" : "R-HSA-139839",
+    "displayName" : "IP3R tetramer:I(1,4,5)P3:4xCa2+ [platelet dense tubular network membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 271 ],
+    "children" : [ 418292, 141090, 139826 ]
+  }, {
+    "dbId" : 6784600,
+    "stId" : "R-HSA-6784600",
+    "displayName" : "NPR1 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 966 ],
+    "parents" : [ 6784597 ],
+    "children" : [ 5490308 ]
+  }, {
+    "dbId" : 197699,
+    "stId" : "R-HSA-197699",
+    "displayName" : "SCN1B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q07699",
+    "geneNames" : [ "SCN1B" ],
+    "parents" : [ 443638 ]
+  }, {
+    "dbId" : 2752104,
+    "stId" : "R-HSA-2752104",
+    "displayName" : "FXYD6 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H0Q3",
+    "geneNames" : [ "FXYD6", "UNQ521/PRO1056" ],
+    "parents" : [ 2752106 ]
+  }, {
+    "dbId" : 5577236,
+    "stId" : "R-HSA-5577236",
+    "displayName" : "KCNIP1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NZI2",
+    "geneNames" : [ "KCNIP1", "KCHIP1", "VABP" ],
+    "parents" : [ 5577094 ]
+  }, {
+    "dbId" : 5577239,
+    "stId" : "R-HSA-5577239",
+    "displayName" : "CACNB1-4 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5577115, 5577111 ],
+    "children" : [ 532198, 532197, 532201, 532200 ]
+  }, {
+    "dbId" : 2752106,
+    "stId" : "R-HSA-2752106",
+    "displayName" : "FXYDs [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 936770 ],
+    "children" : [ 2752086, 2752084, 2752082, 936805, 2752081, 2752104 ]
+  }, {
+    "dbId" : 5617181,
+    "stId" : "R-HSA-5617181",
+    "displayName" : "ATP2B4:NOS1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 518 ],
+    "children" : [ 419293, 418304 ]
+  }, {
+    "dbId" : 5577221,
+    "stId" : "R-HSA-5577221",
+    "displayName" : "CACNA2D3(29-?) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZS8",
+    "geneNames" : [ "CACNA2D3" ],
+    "parents" : [ 5577066 ]
+  }, {
+    "dbId" : 5577223,
+    "stId" : "R-HSA-5577223",
+    "displayName" : "KCNEs [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 5577100, 5577121 ],
+    "children" : [ 977537, 977542, 977536, 977539, 977533 ]
+  }, {
+    "dbId" : 210519,
+    "stId" : "R-HSA-210519",
+    "displayName" : "CACNG7 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62955",
+    "geneNames" : [ "CACNG7" ],
+    "parents" : [ 5577203 ]
+  }, {
+    "dbId" : 4005994,
+    "stId" : "R-HSA-4005994",
+    "displayName" : "NKX2-5 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52952",
+    "geneNames" : [ "NKX2-5", "CSX", "NKX2.5", "NKX2E" ],
+    "parents" : [ 5578875 ]
+  }, {
+    "dbId" : 1629775,
+    "stId" : "R-HSA-1629775",
+    "displayName" : "WWTR1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9GZV5",
+    "geneNames" : [ "WWTR1", "TAZ" ],
+    "parents" : [ 2032799, 2064919, 2032762, 2106580 ]
+  }, {
+    "dbId" : 5692430,
+    "stId" : "R-HSA-5692430",
+    "displayName" : "NPR2:NPPC [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 971 ],
+    "children" : [ 5490332, 5692448 ]
+  }, {
+    "dbId" : 194653,
+    "stId" : "R-ALL-194653",
+    "displayName" : "NAD+ [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15846",
+    "parents" : [ 5226942, 9620290, 9684066, 9263775, 9776726, 9417498, 9496469, 9119421, 9191082, 9339286, 9083472, 9564764, 9857225 ]
+  }, {
+    "dbId" : 977517,
+    "stId" : "R-HSA-977517",
+    "displayName" : "KCNQ1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51787",
+    "geneNames" : [ "KCNQ1", "KCNA8", "KCNA9", "KVLQT1" ],
+    "parents" : [ 1296100, 5577100 ]
+  }, {
+    "dbId" : 210533,
+    "stId" : "R-HSA-210533",
+    "displayName" : "CACNG5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UF02",
+    "geneNames" : [ "CACNG5" ],
+    "parents" : [ 5577203 ]
+  }, {
+    "dbId" : 5578802,
+    "stId" : "R-HSA-5578802",
+    "displayName" : "DMPK dimer [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 195 ],
+    "children" : [ 5490309 ]
+  }, {
+    "dbId" : 5578813,
+    "stId" : "R-HSA-5578813",
+    "displayName" : "p-S16-PLN [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P26678",
+    "geneNames" : [ "PLN", "PLB" ],
+    "parents" : [ 5578810 ]
+  }, {
+    "dbId" : 29804,
+    "stId" : "R-ALL-29804",
+    "displayName" : "K+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 17, 38, 42, 938, 222 ],
+    "identifier" : "29103",
+    "parents" : [ 9685581, 9621465, 9419208, 9340840, 9566018, 9498179, 174371, 9265094, 9944748, 9076368, 9296181, 9648257, 9096923, 9051515, 9891000, 9061037, 9033582, 9529812, 9720503, 9592464, 450663, 9639602, 9364524, 9443186, 9585812, 9522233, 9073511, 9030553, 9050075, 9058395, 9135066, 9217469, 9287100, 9092178, 9808908, 9708463, 9884136, 9935113, 70098, 9073515, 9808918, 9639606, 9443190, 9935133, 9217473, 9287107, 9708474, 9030557, 9884162, 9135070, 9092188, 9050077, 9058397, 9364533, 71668, 9225578, 174402 ]
+  }, {
+    "dbId" : 5578811,
+    "stId" : "R-HSA-5578811",
+    "displayName" : "PLN pentamer [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 191 ],
+    "children" : [ 5490319 ]
+  }, {
+    "dbId" : 5578810,
+    "stId" : "R-HSA-5578810",
+    "displayName" : "p-S16-PLN pentamer [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 194 ],
+    "children" : [ 5578813 ]
+  }, {
+    "dbId" : 5578791,
+    "stId" : "R-HSA-5578791",
+    "displayName" : "NPPA(1-25) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 960 ],
+    "identifier" : "P01160",
+    "geneNames" : [ "NPPA", "ANP", "PND" ]
+  }, {
+    "dbId" : 977533,
+    "stId" : "R-HSA-977533",
+    "displayName" : "KCNE4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WWG9",
+    "geneNames" : [ "KCNE4" ],
+    "parents" : [ 5577223 ]
+  }, {
+    "dbId" : 5692448,
+    "stId" : "R-HSA-5692448",
+    "displayName" : "NPR2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 970 ],
+    "identifier" : "P20594",
+    "geneNames" : [ "NPR2", "ANPRB" ],
+    "parents" : [ 5692430 ]
+  }, {
+    "dbId" : 977529,
+    "stId" : "R-HSA-977529",
+    "displayName" : "KCNH2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12809",
+    "geneNames" : [ "KCNH2", "ERG", "ERG1", "HERG" ],
+    "parents" : [ 1296103, 5577121 ]
+  }, {
+    "dbId" : 2752081,
+    "stId" : "R-HSA-2752081",
+    "displayName" : "FXYD4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P59646",
+    "geneNames" : [ "FXYD4", "UNQ526/PRO1069" ],
+    "parents" : [ 2752106 ]
+  }, {
+    "dbId" : 5578797,
+    "stId" : "R-HSA-5578797",
+    "displayName" : "NPPA(56-123) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 962 ],
+    "identifier" : "P01160",
+    "geneNames" : [ "NPPA", "ANP", "PND" ]
+  }, {
+    "dbId" : 5578799,
+    "stId" : "R-HSA-5578799",
+    "displayName" : "NPPA(124-151) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 961 ],
+    "identifier" : "P01160",
+    "geneNames" : [ "NPPA", "ANP", "PND" ],
+    "parents" : [ 6784597, 977181, 976987 ]
+  }, {
+    "dbId" : 2752082,
+    "stId" : "R-HSA-2752082",
+    "displayName" : "FXYD7 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P58549",
+    "geneNames" : [ "FXYD7" ],
+    "parents" : [ 2752106 ]
+  }, {
+    "dbId" : 2752084,
+    "stId" : "R-HSA-2752084",
+    "displayName" : "FXYD3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14802",
+    "geneNames" : [ "FXYD3", "MAT8", "PLML" ],
+    "parents" : [ 2752106 ]
+  }, {
+    "dbId" : 2752086,
+    "stId" : "R-HSA-2752086",
+    "displayName" : "FXYD1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00168",
+    "geneNames" : [ "FXYD1", "PLM" ],
+    "parents" : [ 2752106 ]
+  }, {
+    "dbId" : 5578794,
+    "stId" : "R-HSA-5578794",
+    "displayName" : "NPPA(26-55) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 959 ],
+    "identifier" : "P01160",
+    "geneNames" : [ "NPPA", "ANP", "PND" ]
+  }, {
+    "dbId" : 2032799,
+    "stId" : "R-HSA-2032799",
+    "displayName" : "TBX5:WWTR1:PCAF [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 957 ],
+    "children" : [ 2032786, 352430, 1629775 ]
+  }, {
+    "dbId" : 977542,
+    "stId" : "R-HSA-977542",
+    "displayName" : "KCNE1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P15382",
+    "geneNames" : [ "KCNE1" ],
+    "parents" : [ 5577223 ]
+  }, {
+    "dbId" : 1296031,
+    "stId" : "R-HSA-1296031",
+    "displayName" : "KCNJ14 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UNX9",
+    "geneNames" : [ "KCNJ14", "IRK4" ],
+    "parents" : [ 1296069 ]
+  }, {
+    "dbId" : 2032786,
+    "stId" : "R-HSA-2032786",
+    "displayName" : "TBX5 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99593",
+    "geneNames" : [ "TBX5" ],
+    "parents" : [ 2032799 ]
+  }, {
+    "dbId" : 977539,
+    "stId" : "R-HSA-977539",
+    "displayName" : "KCNE1L [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UJ90",
+    "geneNames" : [ "KCNE5", "AMMECR2", "KCNE1L" ],
+    "parents" : [ 5577223 ]
+  }, {
+    "dbId" : 977536,
+    "stId" : "R-HSA-977536",
+    "displayName" : "KCNE3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y6H6",
+    "geneNames" : [ "KCNE3" ],
+    "parents" : [ 5577223 ]
+  }, {
+    "dbId" : 977537,
+    "stId" : "R-HSA-977537",
+    "displayName" : "KCNE2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y6J6",
+    "geneNames" : [ "KCNE2" ],
+    "parents" : [ 5577223 ]
+  }, {
+    "dbId" : 432790,
+    "stId" : "R-HSA-432790",
+    "displayName" : "p-CAMK2D, p-CAMK2G [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 432792 ],
+    "children" : [ 432794, 432797 ]
+  }, {
+    "dbId" : 432791,
+    "stId" : "R-HSA-432791",
+    "displayName" : "p-T287-CAMK2B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13554",
+    "geneNames" : [ "CAMK2B", "CAM2", "CAMK2", "CAMKB" ],
+    "parents" : [ 432795 ]
+  }, {
+    "dbId" : 6787314,
+    "stId" : "R-HSA-6787314",
+    "displayName" : "NPPA gene [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 972 ],
+    "identifier" : "ENSG00000175206",
+    "geneNames" : [ "NPPA", "ANP", "PND" ]
+  }, {
+    "dbId" : 432796,
+    "stId" : "R-HSA-432796",
+    "displayName" : "p-T286-CAMK2A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UQM7",
+    "geneNames" : [ "CAMK2A", "CAMKA", "KIAA0968" ],
+    "parents" : [ 432795 ]
+  }, {
+    "dbId" : 432797,
+    "stId" : "R-HSA-432797",
+    "displayName" : "p-T287-CAMK2G [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13555",
+    "geneNames" : [ "CAMK2G", "CAMK", "CAMK-II", "CAMKG" ],
+    "parents" : [ 432790 ]
+  }, {
+    "dbId" : 432794,
+    "stId" : "R-HSA-432794",
+    "displayName" : "p-T287-CAMK2D [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13557",
+    "geneNames" : [ "CAMK2D", "CAMKD" ],
+    "parents" : [ 432790 ]
+  }, {
+    "dbId" : 432795,
+    "stId" : "R-HSA-432795",
+    "displayName" : "p-CAMK2A, p-CAMK2B [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 432792 ],
+    "children" : [ 432796, 432791 ]
+  }, {
+    "dbId" : 432792,
+    "stId" : "R-HSA-432792",
+    "displayName" : "CAMK2 heteromer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 444601, 432793 ],
+    "children" : [ 432795, 432790 ]
+  }, {
+    "dbId" : 5622012,
+    "stId" : "R-HSA-5622012",
+    "displayName" : "ITPR1 tetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5622009 ],
+    "children" : [ 3006433 ]
+  }, {
+    "dbId" : 5215973,
+    "stId" : "R-HSA-5215973",
+    "displayName" : "AHCYL1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43865",
+    "geneNames" : [ "AHCYL1", "DCAL", "IRBIT", "XPVKONA" ],
+    "parents" : [ 5226942 ]
+  }, {
+    "dbId" : 352430,
+    "stId" : "R-HSA-352430",
+    "displayName" : "KAT2B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92831",
+    "geneNames" : [ "KAT2B", "PCAF" ],
+    "parents" : [ 8869505, 5250942, 2032799, 8936477, 3662319, 350078 ]
+  }, {
+    "dbId" : 3325593,
+    "stId" : "R-HSA-3325593",
+    "displayName" : "ITPR1 [platelet dense tubular network membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14643",
+    "geneNames" : [ "ITPR1", "INSP3R1" ],
+    "parents" : [ 418432, 418425, 418284 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 217 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 5622009,
+    "stId" : "R-HSA-5622009",
+    "displayName" : "ITPR tetramers [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 169696 ],
+    "children" : [ 5622011, 5622008, 5622012 ]
+  }, {
+    "dbId" : 5622008,
+    "stId" : "R-HSA-5622008",
+    "displayName" : "ITPR3 tetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5622009 ],
+    "children" : [ 169690 ]
+  }, {
+    "dbId" : 5622011,
+    "stId" : "R-HSA-5622011",
+    "displayName" : "ITPR2 tetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5622009 ],
+    "children" : [ 3006467 ]
+  }, {
+    "dbId" : 400553,
+    "stId" : "R-HSA-400553",
+    "displayName" : "GATA4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P43694",
+    "geneNames" : [ "GATA4" ],
+    "parents" : [ 996770, 5578875 ]
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 193, 679, 219 ],
+    "identifier" : "16761",
+    "parents" : [ 6788782, 170037, 500087, 9697693, 9511149, 9432021, 9206358, 9353591, 9795136, 9630850, 9576626, 6814647, 9276454, 9308768, 9600654, 9658148, 9160110, 9466548, 9388155, 9539602, 9736133, 9237677, 390582, 9741227, 9240850, 9831931, 9542652, 9470172, 9661300, 9312377, 9603268, 9391818, 445800, 9163954, 391405, 6790050, 9736232, 9160241, 9056082, 9952449, 9658213, 9895747, 9103166, 9827450, 9078597, 9388323, 9466651, 9035776, 9539705, 9600757, 9308939, 9070319, 390455, 9237786, 445015, 445018, 9977479, 9562443, 9414582, 9117822, 9082713, 9681762, 9772765, 9909744, 9188009, 9493620, 9065454, 9853847, 9040520, 3371441, 9053615, 9681804, 9772846, 9977954, 9910080, 9040575, 9414618, 9117855, 9053626, 9265602, 9341440, 9493660, 9065507, 9853904, 9188045, 9082763, 5618090, 6792616, 9684367, 9041363, 9417878, 9911631, 9496840, 9083614, 9054014, 9857497, 9777150, 9066083, 9979792, 9191465, 9119694, 5252087, 9041366, 9857498, 9496844, 9119696, 9083616, 9777154, 9417882, 9191469, 9684371, 5252111, 9496843, 9417881, 9083615, 9777153, 9119695, 9684370, 9191468, 5252110, 9191474, 9119701, 9777159, 9041371, 9417887, 9083621, 9979797, 9857503, 9054019, 9684375, 9911636, 9066088, 9496849, 5252012, 9496846, 9119698, 9417884, 9777156, 9041368, 9066085, 9979794, 9857500, 9054016, 9083618, 9911633, 9684373, 9191471, 5251980, 9496847, 9191472, 9119699, 9417885, 9777157, 9041369, 9066086, 9979795, 9857501, 9054017, 9083619, 9911634, 9684374, 5252038, 9054022, 9041374, 9119704, 9083624, 9066091, 9979800, 9911639, 5252097, 5252129, 9119700, 9083620, 9191473, 9066087, 9979796, 9857502, 9054018, 9911635, 9777158, 9041370, 9417886, 9496848, 5252096, 9041367, 9496845, 9119697, 9777155, 9054015, 9417883, 9066084, 9857499, 9083617, 9979793, 9911632, 9684372, 9191470, 5255423, 9041364, 9777151, 9496841, 9417879, 9191466, 9684368, 5251966, 9562478, 9191475, 9777161, 9119703, 9857505, 9041373, 9979799, 9417888, 9054021, 9083623, 9496850, 9911638, 9066090, 5251932, 9041365, 9496842, 9417880, 9191467, 9777152, 9684369, 5252090, 9979798, 9054020, 9777160, 9119702, 9083622, 9684376, 9857504, 9041372, 9066089, 9911637, 5251953, 9831368, 9660936, 9391412, 9036464, 9312027, 9105375, 9240526, 9740533, 9469808, 1063687, 9163554, 9764250, 9614553, 9676171, 9408585, 9487301, 9181673, 9255598, 2029139, 9181649, 9081751, 9907168, 9764195, 9974123, 9614529, 9408572, 9847332, 9329756, 9255581, 9676153, 9064771, 9557586, 9114122, 9487280, 202994, 9039435, 9325521, 9554399, 9757673, 9843562, 9081664, 9252484, 9039312, 9672820, 9177035, 9483654, 9612368, 9405341, 1861625 ]
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 218 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 425658,
+    "stId" : "R-HSA-425658",
+    "displayName" : "SLC8A3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P57103",
+    "geneNames" : [ "SLC8A3", "NCX3" ],
+    "parents" : [ 425675 ]
+  }, {
+    "dbId" : 425656,
+    "stId" : "R-HSA-425656",
+    "displayName" : "SLC8A2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UPR5",
+    "geneNames" : [ "SLC8A2", "KIAA1087", "NCX2" ],
+    "parents" : [ 425675 ]
+  }, {
+    "dbId" : 444601,
+    "stId" : "R-HSA-444601",
+    "displayName" : "CAMK2 heteromer:CALM:4xCa2+ [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 306 ],
+    "children" : [ 432792, 194447 ]
+  }, {
+    "dbId" : 5578900,
+    "stId" : "R-HSA-5578900",
+    "displayName" : "KCNK9 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5578913 ],
+    "children" : [ 1296317 ]
+  }, {
+    "dbId" : 5490321,
+    "stId" : "R-HSA-5490321",
+    "displayName" : "FKBP1B [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P68106",
+    "geneNames" : [ "FKBP1B", "FKBP12.6", "FKBP1L", "FKBP9", "OTK4" ],
+    "parents" : [ 5578817 ]
+  }, {
+    "dbId" : 5490331,
+    "stId" : "R-HSA-5490331",
+    "displayName" : "ASPH [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12797",
+    "geneNames" : [ "ASPH", "BAH" ],
+    "parents" : [ 2855167 ]
+  }, {
+    "dbId" : 5578908,
+    "stId" : "R-HSA-5578908",
+    "displayName" : "KCNK15 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5578913 ],
+    "children" : [ 1296336 ]
+  }, {
+    "dbId" : 5578911,
+    "stId" : "R-HSA-5578911",
+    "displayName" : "KCNK5 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5578913 ],
+    "children" : [ 1296323 ]
+  }, {
+    "dbId" : 5578904,
+    "stId" : "R-HSA-5578904",
+    "displayName" : "KCNK10 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5578913 ],
+    "children" : [ 1296342 ]
+  }, {
+    "dbId" : 425675,
+    "stId" : "R-HSA-425675",
+    "displayName" : "SLC8A1,2,3 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 182 ],
+    "children" : [ 425656, 425658, 425681 ]
+  }, {
+    "dbId" : 5490332,
+    "stId" : "R-HSA-5490332",
+    "displayName" : "NPPC [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 969 ],
+    "identifier" : "P23582",
+    "geneNames" : [ "NPPC", "CNP2" ],
+    "parents" : [ 5692430 ]
+  }, {
+    "dbId" : 5490311,
+    "stId" : "R-HSA-5490311",
+    "displayName" : "CORIN(802-1042) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 963 ],
+    "identifier" : "Q9Y5Q5",
+    "geneNames" : [ "CORIN", "CRN", "TMPRSS10" ]
+  }, {
+    "dbId" : 2855167,
+    "stId" : "R-HSA-2855167",
+    "displayName" : "RYR tetramer:FKBP1B tetramer:CASQ polymer:TRDN:junctin [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 241 ],
+    "children" : [ 5490331, 5578817, 2855215, 2855176, 2855210 ]
+  }, {
+    "dbId" : 5490309,
+    "stId" : "R-HSA-5490309",
+    "displayName" : "DMPK [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q09013",
+    "geneNames" : [ "DMPK", "DM1PK", "MDPK" ],
+    "parents" : [ 5578802 ]
+  }, {
+    "dbId" : 1296069,
+    "stId" : "R-HSA-1296069",
+    "displayName" : "KCNJs [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 1299200 ],
+    "children" : [ 1296031, 975282, 975378, 975336 ]
+  }, {
+    "dbId" : 5490308,
+    "stId" : "R-HSA-5490308",
+    "displayName" : "NPR1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P16066",
+    "geneNames" : [ "NPR1", "ANPRA" ],
+    "parents" : [ 6784600 ]
+  }, {
+    "dbId" : 425681,
+    "stId" : "R-HSA-425681",
+    "displayName" : "SLC8A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P32418",
+    "geneNames" : [ "SLC8A1", "CNC", "NCX1" ],
+    "parents" : [ 425675 ]
+  }, {
+    "dbId" : 169690,
+    "stId" : "R-HSA-169690",
+    "displayName" : "ITPR3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14573",
+    "geneNames" : [ "ITPR3" ],
+    "parents" : [ 112291, 112292, 169685, 5622008 ]
+  }, {
+    "dbId" : 5490313,
+    "stId" : "R-HSA-5490313",
+    "displayName" : "SRI [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 305 ],
+    "identifier" : "P30626",
+    "geneNames" : [ "SRI" ]
+  }, {
+    "dbId" : 5490319,
+    "stId" : "R-HSA-5490319",
+    "displayName" : "PLN [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P26678",
+    "geneNames" : [ "PLN", "PLB" ],
+    "parents" : [ 5578811 ]
+  }, {
+    "dbId" : 532200,
+    "stId" : "R-HSA-532200",
+    "displayName" : "CACNB2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q08289",
+    "geneNames" : [ "CACNB2", "CACNLB2", "MYSB" ],
+    "parents" : [ 5577239, 525825 ]
+  }, {
+    "dbId" : 532201,
+    "stId" : "R-HSA-532201",
+    "displayName" : "CACNB3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P54284",
+    "geneNames" : [ "CACNB3", "CACNLB3" ],
+    "parents" : [ 5577239, 525825 ]
+  }, {
+    "dbId" : 169696,
+    "stId" : "R-HSA-169696",
+    "displayName" : "ITPR:I(1,4,5)P3 tetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 263 ],
+    "parents" : [ 5226920 ],
+    "children" : [ 5622009, 114520 ]
+  }, {
+    "dbId" : 5215917,
+    "stId" : "R-HSA-5215917",
+    "displayName" : "SLN [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 974 ],
+    "identifier" : "O00631",
+    "geneNames" : [ "SLN" ]
+  }, {
+    "dbId" : 5578928,
+    "stId" : "R-HSA-5578928",
+    "displayName" : "KCNK13 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5578913 ],
+    "children" : [ 1296338 ]
+  }, {
+    "dbId" : 532197,
+    "stId" : "R-HSA-532197",
+    "displayName" : "CACNB1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q02641",
+    "geneNames" : [ "CACNB1", "CACNLB1" ],
+    "parents" : [ 5577239, 525825 ]
+  }, {
+    "dbId" : 5678267,
+    "stId" : "R-HSA-5678267",
+    "displayName" : "KCNJ11:ABCC9 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 936 ],
+    "children" : [ 265561, 1369054 ]
+  }, {
+    "dbId" : 532198,
+    "stId" : "R-HSA-532198",
+    "displayName" : "CACNB4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00305",
+    "geneNames" : [ "CACNB4", "CACNLB4" ],
+    "parents" : [ 5577239, 525825 ]
+  }, {
+    "dbId" : 443638,
+    "stId" : "R-HSA-443638",
+    "displayName" : "SCNBs [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 443632 ],
+    "children" : [ 197699, 2671926, 197921, 197905 ]
+  }, {
+    "dbId" : 5578919,
+    "stId" : "R-HSA-5578919",
+    "displayName" : "KCNK2 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5578913 ],
+    "children" : [ 1296328 ]
+  }, {
+    "dbId" : 443637,
+    "stId" : "R-HSA-443637",
+    "displayName" : "SCNAs [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 443632 ],
+    "children" : [ 443382, 2671941, 443375, 443374, 443377, 443376, 443378, 443381, 443380, 2671896 ]
+  }, {
+    "dbId" : 5578918,
+    "stId" : "R-HSA-5578918",
+    "displayName" : "KCNK12 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5578913 ],
+    "children" : [ 1296341 ]
+  }, {
+    "dbId" : 5578913,
+    "stId" : "R-HSA-5578913",
+    "displayName" : "KCNK dimers [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 21 ],
+    "children" : [ 5578908, 1299268, 1299252, 1299250, 5578923, 5578904, 1299256, 1299272, 5578911, 1299275, 1299253, 5578928, 5578918, 5578919, 5578900 ]
+  }, {
+    "dbId" : 1296101,
+    "stId" : "R-HSA-1296101",
+    "displayName" : "KCND1,2,3 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 1296098, 5577088 ],
+    "children" : [ 977451, 977453, 977455 ]
+  }, {
+    "dbId" : 443632,
+    "stId" : "R-HSA-443632",
+    "displayName" : "SCNAs:SCNBs [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 25 ],
+    "parents" : [ 443633 ],
+    "children" : [ 443637, 443638 ]
+  }, {
+    "dbId" : 5578923,
+    "stId" : "R-HSA-5578923",
+    "displayName" : "KCNK4 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5578913 ],
+    "children" : [ 1296325 ]
+  }, {
+    "dbId" : 2855211,
+    "stId" : "R-HSA-2855211",
+    "displayName" : "RYR1 tetramer [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2855176 ],
+    "children" : [ 937287 ]
+  }, {
+    "dbId" : 2855210,
+    "stId" : "R-HSA-2855210",
+    "displayName" : "CASQ polymer [sarcoplasmic reticulum lumen]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2855167 ],
+    "children" : [ 2855188, 2855198 ]
+  }, {
+    "dbId" : 5577044,
+    "stId" : "R-HSA-5577044",
+    "displayName" : "KCNIP3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y2W7",
+    "geneNames" : [ "KCNIP3", "CSEN", "DREAM", "KCHIP3" ],
+    "parents" : [ 5577094 ]
+  }, {
+    "dbId" : 111875,
+    "stId" : "R-ALL-111875",
+    "displayName" : "Ca2+ [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 198 ],
+    "identifier" : "29108",
+    "parents" : [ 9671497, 9755389, 9403735, 9064412, 9482148, 9553090, 9175406, 9323870, 9251085, 1614355, 9549134, 9110069, 9399346, 9749528, 9838669, 9477675, 9171328, 9319156, 9667850, 9608299, 9247355, 1168371, 181857 ]
+  }, {
+    "dbId" : 5577041,
+    "stId" : "R-HSA-5577041",
+    "displayName" : "CACNA2Da:CACNA2Dd [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5577115, 5577111 ],
+    "children" : [ 5577066, 5577067, 5577209, 5577078 ]
+  }, {
+    "dbId" : 2855215,
+    "stId" : "R-HSA-2855215",
+    "displayName" : "TRDN [sarcoplasmic reticulum lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13061",
+    "geneNames" : [ "TRDN" ],
+    "parents" : [ 2855167 ]
+  }, {
+    "dbId" : 5577053,
+    "stId" : "R-HSA-5577053",
+    "displayName" : "CACNA2D3(?-1091) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZS8",
+    "geneNames" : [ "CACNA2D3" ],
+    "parents" : [ 5577066 ]
+  }, {
+    "dbId" : 9016707,
+    "stId" : "R-HSA-9016707",
+    "displayName" : "CALM1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 978 ],
+    "identifier" : "P0DP23",
+    "geneNames" : [ "CALM1", "CALM", "CAM", "CAM1" ],
+    "parents" : [ 482771, 2316345, 3229180, 450890, 111965, 2023849, 2023848, 71534, 71520, 194447, 74294, 2023885 ]
+  }, {
+    "dbId" : 2855225,
+    "stId" : "R-HSA-2855225",
+    "displayName" : "CASQ2 [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14958",
+    "geneNames" : [ "CASQ2" ],
+    "parents" : [ 2855188 ]
+  }, {
+    "dbId" : 197905,
+    "stId" : "R-HSA-197905",
+    "displayName" : "SCN2B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60939",
+    "geneNames" : [ "SCN2B", "UNQ326/PRO386" ],
+    "parents" : [ 443638 ]
+  }, {
+    "dbId" : 1299200,
+    "stId" : "R-HSA-1299200",
+    "displayName" : "KCNJ tetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 19 ],
+    "children" : [ 1296069 ]
+  }, {
+    "dbId" : 2855229,
+    "stId" : "R-ALL-2855229",
+    "displayName" : "Ca2+ [sarcoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 240 ],
+    "identifier" : "29108"
+  }, {
+    "dbId" : 391965,
+    "stId" : "R-HSA-391965",
+    "displayName" : "ATP2A3 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q93084",
+    "geneNames" : [ "ATP2A3" ],
+    "parents" : [ 418312 ]
+  }, {
+    "dbId" : 2671921,
+    "stId" : "R-HSA-2671921",
+    "displayName" : "CACNG1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q06432",
+    "geneNames" : [ "CACNG1", "CACNLG" ],
+    "parents" : [ 5577203 ]
+  }, {
+    "dbId" : 375071,
+    "stId" : "R-HSA-375071",
+    "displayName" : "ATP1B1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05026",
+    "geneNames" : [ "ATP1B1", "ATP1B" ],
+    "parents" : [ 936820, 375085 ]
+  }, {
+    "dbId" : 391961,
+    "stId" : "R-HSA-391961",
+    "displayName" : "ATP2A1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14983",
+    "geneNames" : [ "ATP2A1" ],
+    "parents" : [ 418312 ]
+  }, {
+    "dbId" : 2671926,
+    "stId" : "R-HSA-2671926",
+    "displayName" : "SCN4B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IWT1",
+    "geneNames" : [ "SCN4B" ],
+    "parents" : [ 443638 ]
+  }, {
+    "dbId" : 2855220,
+    "stId" : "R-HSA-2855220",
+    "displayName" : "RYR3 tetramer [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2855176 ],
+    "children" : [ 937282 ]
+  }, {
+    "dbId" : 391962,
+    "stId" : "R-HSA-391962",
+    "displayName" : "ATP2A2 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P16615",
+    "geneNames" : [ "ATP2A2", "ATP2B" ],
+    "parents" : [ 418312 ]
+  }, {
+    "dbId" : 141090,
+    "stId" : "R-ALL-141090",
+    "displayName" : "Ca2+ [platelet dense tubular network membrane]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29108",
+    "parents" : [ 9815307, 9589980, 9370320, 9032791, 9715576, 9526685, 9222039, 9448986, 9140962, 9095784, 9644499, 9292285, 139839 ]
+  }, {
+    "dbId" : 74016,
+    "stId" : "R-ALL-74016",
+    "displayName" : "Ca2+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 274, 202, 266, 410, 29, 189, 238, 255 ],
+    "identifier" : "29108",
+    "parents" : [ 426221, 1604565, 1604564, 5263625, 5263619, 5260209, 5260210, 9776586, 9417361, 9564645, 9683938, 9083429, 9496317, 9857054, 9041134, 9339144, 9263627, 9119342, 9620182, 9190920, 5218773, 9736027, 9466510, 9160069, 9658094, 9237639, 9308724, 9600602, 9539536, 9388110, 390587, 9741162, 9312352, 9661278, 9603247, 9470138, 9542632, 9831777, 9391788, 9240828, 9163930, 445808, 8932611, 9795675, 9354018, 9926605, 9576923, 9511609, 9698038, 9276904, 9631136, 9432462, 9206780, 8848668, 9460685, 9382180, 9232487, 9078225, 9101698, 9731011, 9303882, 9598116, 9536642, 9655058, 9153546, 392841, 9956874, 9390482, 9162594, 9897647, 9660068, 9739330, 9602342, 9311130, 9468866, 9036187, 9541569, 265277, 9390480, 9468862, 9541565, 9162592, 9956800, 9897633, 9311128, 9739328, 9660066, 9036184, 9602338, 2237880, 9239709, 9239707, 3274487, 3229219, 3229193, 9769698, 9679508, 9491167, 9412039, 9333712, 9259044, 9185436, 3229180, 9431488, 9510602, 9205814, 9353031, 9275963, 6814186, 9205810, 9353027, 9275959, 9510598, 9431484, 6814181, 9436517, 3288241, 9633833, 9171540, 9477886, 9549291, 9319352, 9247551, 9608419, 9399566, 9749716, 9668003, 1183170, 2685677, 2685686, 9643644, 9589373, 9448046, 9525948, 9714302, 9291415, 9221261, 9369534, 111860, 9139967, 2025905, 5672768, 9369696, 9714537, 9589502, 9526077, 9291585, 9140128, 9448186, 9814867, 9095486, 9221390, 112002, 4332386, 9116060, 9082113, 9616914, 9560593, 2586744, 9082115, 9616916, 9116062, 9560595, 2586740, 9116061, 9082114, 9560594, 9616915, 2586742, 9137751, 9137753, 9812409, 9812413, 9812417, 9711866, 9711864, 9711874, 9641887, 9641881, 9641883, 9445934, 9445930, 9366917, 9366919, 9289410, 9289408, 9289414, 9219475, 9219471, 9031748, 9031756, 9031752, 75340, 9366910, 9031739, 9711854, 9445921, 9641874, 9289401, 9219464, 9812400, 75339, 9366906, 9219457, 9031735, 9812396, 9641870, 9711850, 9445914, 9289397, 9137744, 9137740, 9672558, 9252230, 9612136, 9554152, 9405078, 9843246, 9483368, 9325238, 9176756, 9757313, 2023849, 9843257, 9757323, 9483372, 9252234, 9405082, 9176760, 9325245, 9672562, 2023848, 9252226, 9405074, 9325234, 9176752, 9757309, 9672554, 9612132, 9843235, 9554148, 9483364, 2023885, 9112723, 9112731, 9112715, 9973317, 9176848, 9325332, 9039155, 9405175, 9483461, 9053081, 9906822, 9252322, 9612220, 9064612, 9112800, 9554235, 1604629, 9405168, 9843368, 9053073, 9252315, 9064607, 9906808, 9483454, 9973297, 9039150, 9672629, 9176841, 9612214, 9554229, 9325325, 1604622, 9843369, 9405169, 9053075, 9252316, 9483455, 9906809, 9973298, 9757438, 9064608, 9554230, 9176842, 9039151, 9672630, 9612215, 9325326, 1604651, 9053077, 9405170, 9843370, 9039152, 9483456, 9252317, 9906810, 9973299, 9757439, 9064609, 9176843, 9672631, 9325327, 1604618, 9325328, 9843371, 9053079, 9405171, 9039153, 9757440, 9252318, 9483457, 9112795, 9973300, 9906811, 9672632, 9612216, 9064610, 9554231, 9176844, 1604664, 74293, 9053264, 9486889, 9082131, 9065116, 9675750, 9614243, 9181187, 9334208, 2025906, 9255238, 9557307, 9040015, 9846963, 9116398, 9763702, 2025950, 9053153, 9064739, 74294, 9210835, 9701529, 9515677, 9280455, 9876511, 9436486, 9580341, 9357848, 9130749, 9633814, 9800421, 4332385, 9897256, 9955626, 9589454, 9814798, 9221334, 9714445, 9095443, 9291517, 9643740, 9526014, 9032518, 9075623, 9448124, 9369612, 194447, 9140069, 1500626, 9174251, 9402381, 9481075, 9670358, 9249802, 9322342, 9753646, 9552044, 9610191 ]
+  }, {
+    "dbId" : 1299250,
+    "stId" : "R-HSA-1299250",
+    "displayName" : "TWIK2 dimers [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1299255, 5578913 ],
+    "children" : [ 1296321 ]
+  }, {
+    "dbId" : 197921,
+    "stId" : "R-HSA-197921",
+    "displayName" : "SCN3B [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NY72",
+    "geneNames" : [ "SCN3B", "KIAA1158" ],
+    "parents" : [ 443638 ]
+  }, {
+    "dbId" : 2855176,
+    "stId" : "R-HSA-2855176",
+    "displayName" : "RYR tetramers [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2855167 ],
+    "children" : [ 2855220, 2855184, 2855211 ]
+  }, {
+    "dbId" : 5577078,
+    "stId" : "R-HSA-5577078",
+    "displayName" : "CACNA2D1a:CACNA2D1d [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5577041 ],
+    "children" : [ 5577182, 5577142 ]
+  }, {
+    "dbId" : 375073,
+    "stId" : "R-HSA-375073",
+    "displayName" : "ATP1B3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P54709",
+    "geneNames" : [ "ATP1B3" ],
+    "parents" : [ 936820, 375085 ]
+  }, {
+    "dbId" : 375075,
+    "stId" : "R-HSA-375075",
+    "displayName" : "ATP1B2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14415",
+    "geneNames" : [ "ATP1B2" ],
+    "parents" : [ 936820, 375085 ]
+  }, {
+    "dbId" : 1299253,
+    "stId" : "R-HSA-1299253",
+    "displayName" : "KCNK7 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1299255, 5578913 ],
+    "children" : [ 1296319 ]
+  }, {
+    "dbId" : 1299252,
+    "stId" : "R-HSA-1299252",
+    "displayName" : "TWIK1 dimers [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1299255, 5578913 ],
+    "children" : [ 1296345 ]
+  }, {
+    "dbId" : 1299256,
+    "stId" : "R-HSA-1299256",
+    "displayName" : "TRESK homodimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5578913 ],
+    "children" : [ 1296330 ]
+  }, {
+    "dbId" : 2855174,
+    "stId" : "R-HSA-2855174",
+    "displayName" : "CASQ1 [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31415",
+    "geneNames" : [ "CASQ1", "CASQ" ],
+    "parents" : [ 2855198 ]
+  }, {
+    "dbId" : 8862647,
+    "stId" : "R-HSA-8862647",
+    "displayName" : "ORAI2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96SN7",
+    "geneNames" : [ "ORAI2", "C7orf19", "CBCIP2", "TMEM142B", "PP1729" ],
+    "parents" : [ 8862645 ]
+  }, {
+    "dbId" : 2671896,
+    "stId" : "R-HSA-2671896",
+    "displayName" : "SCN11A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UI33",
+    "geneNames" : [ "SCN11A", "SCN12A", "SNS2" ],
+    "parents" : [ 443637 ]
+  }, {
+    "dbId" : 8862646,
+    "stId" : "R-HSA-8862646",
+    "displayName" : "ORAI dimer [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 434679 ],
+    "children" : [ 434696, 8862645 ]
+  }, {
+    "dbId" : 8862645,
+    "stId" : "R-HSA-8862645",
+    "displayName" : "ORAI2 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8862646 ],
+    "children" : [ 8862647 ]
+  }, {
+    "dbId" : 2855198,
+    "stId" : "R-HSA-2855198",
+    "displayName" : "CASQ1 polymer [sarcoplasmic reticulum lumen]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2855210 ],
+    "children" : [ 2855174 ]
+  }, {
+    "dbId" : 2855184,
+    "stId" : "R-HSA-2855184",
+    "displayName" : "RYR2 tetramer [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2855176 ],
+    "children" : [ 937283 ]
+  }, {
+    "dbId" : 5577067,
+    "stId" : "R-HSA-5577067",
+    "displayName" : "CACNA2D4a:CACNA2D4d [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5577041 ],
+    "children" : [ 5577164, 5577189 ]
+  }, {
+    "dbId" : 2855188,
+    "stId" : "R-HSA-2855188",
+    "displayName" : "CASQ2 polymer [sarcoplasmic reticulum lumen]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2855210 ],
+    "children" : [ 2855225 ]
+  }, {
+    "dbId" : 5577066,
+    "stId" : "R-HSA-5577066",
+    "displayName" : "CACNA2D3a:CACNA2D3d [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5577041 ],
+    "children" : [ 5577053, 5577221 ]
+  }, {
+    "dbId" : 936779,
+    "stId" : "R-HSA-936779",
+    "displayName" : "ATP1A [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 936770 ],
+    "children" : [ 936803, 936914, 936850, 936827 ]
+  }, {
+    "dbId" : 3215222,
+    "stId" : "R-HSA-3215222",
+    "displayName" : "HIPK2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H2X6",
+    "geneNames" : [ "HIPK2" ],
+    "parents" : [ 5578874 ]
+  }, {
+    "dbId" : 937287,
+    "stId" : "R-HSA-937287",
+    "displayName" : "RYR1 [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21817",
+    "geneNames" : [ "RYR1", "RYDR" ],
+    "parents" : [ 2855211 ]
+  }, {
+    "dbId" : 3215224,
+    "stId" : "R-HSA-3215224",
+    "displayName" : "HIPK1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86Z02",
+    "geneNames" : [ "HIPK1", "KIAA0630", "MYAK", "NBAK2" ],
+    "parents" : [ 5578874, 6799433 ]
+  }, {
+    "dbId" : 265551,
+    "stId" : "R-HSA-265551",
+    "displayName" : "CACNA1C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13936",
+    "geneNames" : [ "CACNA1C", "CACH2", "CACN2", "CACNL1A1", "CCHL1A1" ],
+    "parents" : [ 5577109, 265697, 525825 ]
+  }, {
+    "dbId" : 936770,
+    "stId" : "R-HSA-936770",
+    "displayName" : "ATP1A:ATP1B:FXYD [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 220 ],
+    "children" : [ 936820, 936779, 2752106 ]
+  }, {
+    "dbId" : 937282,
+    "stId" : "R-HSA-937282",
+    "displayName" : "RYR3 [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15413",
+    "geneNames" : [ "RYR3", "HBRR" ],
+    "parents" : [ 2855220 ]
+  }, {
+    "dbId" : 937283,
+    "stId" : "R-HSA-937283",
+    "displayName" : "RYR2 [sarcoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92736",
+    "geneNames" : [ "RYR2" ],
+    "parents" : [ 2855184 ]
+  }, {
+    "dbId" : 1299268,
+    "stId" : "R-HSA-1299268",
+    "displayName" : "TASK 1 homomer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1299270, 5578913 ],
+    "children" : [ 1296326 ]
+  }, {
+    "dbId" : 5216024,
+    "stId" : "R-HSA-5216024",
+    "displayName" : "FGF12 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61328",
+    "geneNames" : [ "FGF12", "FGF12B", "FHF1" ],
+    "parents" : [ 5578833 ]
+  }, {
+    "dbId" : 1299275,
+    "stId" : "R-HSA-1299275",
+    "displayName" : "TALK1 homomer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1299271, 5578913 ],
+    "children" : [ 1296335 ]
+  }, {
+    "dbId" : 114520,
+    "stId" : "R-ALL-114520",
+    "displayName" : "I(1,4,5)P3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 264 ],
+    "identifier" : "16595",
+    "parents" : [ 9306896, 9102742, 9600088, 9538971, 9156675, 9463671, 9735122, 9657541, 9826720, 9035516, 9235309, 9385295, 112287, 9385297, 9156677, 9538973, 9306898, 9463673, 9600090, 9035518, 9657543, 9235311, 9735124, 112291, 9385296, 9306897, 9156676, 9538972, 9600089, 9463672, 9735123, 9657542, 9035517, 9235310, 112289, 9889932, 9292218, 9715490, 9095769, 9370270, 9140901, 9644447, 9221984, 9060518, 9942911, 9526646, 9448919, 9589943, 9032776, 9815285, 8983509, 169696, 9247357, 9549136, 9319158, 9171330, 9838671, 9399348, 9110071, 9477677, 9749530, 9608301, 9667852, 182055 ]
+  }, {
+    "dbId" : 1299272,
+    "stId" : "R-HSA-1299272",
+    "displayName" : "TALK 2 homomer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1299271, 5578913 ],
+    "children" : [ 1296333 ]
+  }, {
+    "dbId" : 265561,
+    "stId" : "R-HSA-265561",
+    "displayName" : "KCNJ11 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14654",
+    "geneNames" : [ "KCNJ11" ],
+    "parents" : [ 1296027, 265692, 265734, 5683095, 5678267 ]
+  }, {
+    "dbId" : 380260,
+    "stId" : "R-HSA-380260",
+    "displayName" : "AKAP9 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99996",
+    "geneNames" : [ "AKAP9", "AKAP350", "AKAP450", "KIAA0803" ],
+    "parents" : [ 5626173, 5626171, 5577100, 380705, 380704, 380698, 380268, 432787 ]
+  }, {
+    "dbId" : 936805,
+    "stId" : "R-HSA-936805",
+    "displayName" : "FXYD2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P54710",
+    "geneNames" : [ "FXYD2", "ATP1C", "ATP1G1" ],
+    "parents" : [ 2752106 ]
+  }, {
+    "dbId" : 936803,
+    "stId" : "R-HSA-936803",
+    "displayName" : "ATP1A3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13637",
+    "geneNames" : [ "ATP1A3" ],
+    "parents" : [ 936779 ]
+  }, {
+    "dbId" : 2671941,
+    "stId" : "R-HSA-2671941",
+    "displayName" : "SCN10A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y5Y9",
+    "geneNames" : [ "SCN10A" ],
+    "parents" : [ 443637 ]
+  }, {
+    "dbId" : 5216063,
+    "stId" : "R-HSA-5216063",
+    "displayName" : "RANGRF [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 275 ],
+    "identifier" : "Q9HD47",
+    "geneNames" : [ "RANGRF", "MOG1", "RANGNRF", "HSPC165", "HSPC236", "MDS5" ]
+  }, {
+    "dbId" : 936827,
+    "stId" : "R-HSA-936827",
+    "displayName" : "ATP1A2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50993",
+    "geneNames" : [ "ATP1A2", "KIAA0778" ],
+    "parents" : [ 936779 ]
+  }, {
+    "dbId" : 936820,
+    "stId" : "R-HSA-936820",
+    "displayName" : "ATP1B [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 936770 ],
+    "children" : [ 375071, 375075, 375073 ]
+  }, {
+    "dbId" : 156540,
+    "stId" : "R-ALL-156540",
+    "displayName" : "H+ [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 197 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 226, 23, 183 ],
+    "identifier" : "29101",
+    "parents" : [ 426219, 9272435, 9506388, 9201592, 9573280, 9349103, 9427199, 6798411 ]
+  }, {
+    "dbId" : 74112,
+    "stId" : "R-ALL-74112",
+    "displayName" : "Ca2+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 187, 28, 236, 412 ],
+    "identifier" : "29108",
+    "parents" : [ 426219, 9242178, 9833659, 9743372, 9604346, 9313878, 9106653, 9543940, 9036893, 9393244, 9471714, 9662482, 9165611, 481030, 8850849, 377604, 9744523, 9544685, 9663268, 9472516, 9394011, 9242974, 9314748, 9605075, 790906, 9166564, 9472508, 9394003, 9544664, 9663236, 9605030, 9242958, 9744500, 9314734, 791492, 9166552, 420706, 2132219, 2173560, 2132045, 2132108, 2132077, 2859041, 2859037, 976776, 9250785, 9111922, 9671147, 9323542, 9175067, 9403454, 9481840, 1500668, 9403441, 9175057, 9250775, 9610938, 9323529, 9552787, 9111914, 9671139, 1602386, 9175075, 9552799, 9481851, 9403462, 9610954, 9754928, 9671159, 9250793, 9841958, 1602352, 9175059, 9403443, 9481832, 9671141, 9323531, 9111918, 9250777, 1602383, 9323521, 9671133, 9250755, 9175047, 9552779, 9754909, 9403431, 9111902, 9610934, 9481824, 1602365, 9610942, 9481836, 9323538, 9175063, 9671145, 9841950, 9403450, 9754917, 9250781, 1602411, 9754921, 9403458, 9111926, 9552795, 9250789, 9610950, 9481844, 9323546, 9175071, 9671155, 1602425, 9552783, 9250771, 9111910, 9323525, 9481830, 9671137, 9403437, 9175053, 1602360, 9436416, 9210743, 9280375, 9130659, 9633749, 9800310, 9515602, 9580272, 9357756, 9701444, 8932644, 9633757, 9701448, 9515610, 9357764, 9210756, 9436424, 9580276, 9130671, 9280383, 9800324, 8932639, 9357760, 9633753, 9436420, 9800317, 9515606, 9210747, 9280379, 9701446, 9130665, 9580274, 8932632, 9449358, 9590255, 9370658, 9716221, 9222340, 9526967, 9292619, 9644822, 140849, 9141349, 9411186, 9184624, 9258198, 9678788, 9490278, 9332760, 9559893, 9768740, 2672066, 3828003, 3828004, 3827963, 9494126, 9773390, 9336852, 9415094, 9188501, 9682182, 9261646, 9562835, 9618658, 2534301, 9773403, 9261648, 9682184, 9188503, 9336854, 9415096, 9618660, 9562837, 9494128, 2534305, 266279, 804943, 5205716, 8877011, 8876944, 9629772, 9575599, 9275029, 9430253, 6805958, 5621572, 9671135, 9250759, 9111906, 9403433, 9175049, 9481826, 1602363, 9696238, 9509228, 9204407, 9429928, 9792980, 6807628, 9272432, 9201589, 6798557, 9573278, 9272421, 9506386, 9349101, 9427197, 9201581, 8944189, 9573277, 9272420, 9427196, 9349100, 9506385, 9201580, 8944198, 9370608, 9292561, 9644778, 9449304, 9526917, 9716070, 9141291, 8959612, 9222296, 9716059, 9526910, 9222291, 9370601, 9644773, 9449299, 9292556, 140751, 9141286, 9370560, 9644735, 9590185, 9292518, 9449257, 9526867, 9715861, 9222253, 140692, 9644732, 9292515, 9715852, 9222250, 9370557, 9449250, 9526864, 9590178, 140689, 9141248, 9141245, 9715946, 9370499, 9222192, 9141184, 9292439, 9527016, 9644651, 9590308, 9449187, 141050, 9188499, 9494124, 9336850, 9682180, 9773377, 9618656, 9261644, 9562833, 2534182, 9415092, 206722, 206832, 9715530, 9644477, 9370304, 9448957, 9095830, 9222023, 9526667, 9589962, 9292266, 9140943, 156786, 976808, 9144855, 9720053, 9647939, 9529526, 9452451, 9374082, 9295844, 9225268, 9646805, 2855093, 9718635, 9372864, 9451386, 9646709, 9528768, 9224317, 166719, 9528776, 9224325, 9646740, 9372872, 9294777, 9451394, 2855134, 9528781, 9451399, 9224330, 9294782, 9372877, 9646755, 2855065, 9143697, 9143672, 9143688, 420743, 9155368, 9305721, 9462358, 9234212, 9733534, 9656472, 9537981, 9384050, 9599183, 9224469, 9224341, 9224338, 9224339, 2855064, 9451412, 9646822, 9294795, 9372886, 9143712, 9528794, 2855080, 9646823, 166724, 9451414, 9372888, 9143714, 9646825, 9718654, 9528796, 2855106, 9451411, 9143711, 9646821, 9294794, 9528793, 9372885, 8852493, 9528897, 9294911, 9718752, 9373226, 9647062, 9143917, 9591816, 9451598 ]
+  }, {
+    "dbId" : 5577182,
+    "stId" : "R-HSA-5577182",
+    "displayName" : "CACNA2D1(25-956) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UIU0",
+    "geneNames" : [ "CACNA2D1" ],
+    "parents" : [ 5577078 ]
+  }, {
+    "dbId" : 390542,
+    "stId" : "R-HSA-390542",
+    "displayName" : "TNNI3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 680 ],
+    "identifier" : "P19429",
+    "geneNames" : [ "TNNI3", "TNNC1" ],
+    "parents" : [ 390541 ]
+  }, {
+    "dbId" : 194447,
+    "stId" : "R-HSA-194447",
+    "displayName" : "CALM1:4xCa2+ [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 444601, 442735 ],
+    "children" : [ 9016707, 74016 ]
+  }, {
+    "dbId" : 74126,
+    "stId" : "R-ALL-74126",
+    "displayName" : "K+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 224, 18, 36, 44, 940 ],
+    "identifier" : "29103"
+  }, {
+    "dbId" : 5577157,
+    "stId" : "R-HSA-5577157",
+    "displayName" : "KCNIP2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NS61",
+    "geneNames" : [ "KCNIP2", "KCHIP2" ],
+    "parents" : [ 5577094 ]
+  }, {
+    "dbId" : 5577152,
+    "stId" : "R-HSA-5577152",
+    "displayName" : "KCNIP4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6PIL6",
+    "geneNames" : [ "KCNIP4", "CALP", "KCHIP4" ],
+    "parents" : [ 5577094 ]
+  }, {
+    "dbId" : 5577164,
+    "stId" : "R-HSA-5577164",
+    "displayName" : "CACNA2D4(20-991) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q7Z3S7",
+    "geneNames" : [ "CACNA2D4" ],
+    "parents" : [ 5577067 ]
+  }, {
+    "dbId" : 936850,
+    "stId" : "R-HSA-936850",
+    "displayName" : "ATP1A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05023",
+    "geneNames" : [ "ATP1A1" ],
+    "parents" : [ 936779 ]
+  }, {
+    "dbId" : 5577207,
+    "stId" : "R-HSA-5577207",
+    "displayName" : "KCNIP tetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5577126 ],
+    "children" : [ 5577094 ]
+  }, {
+    "dbId" : 5577203,
+    "stId" : "R-HSA-5577203",
+    "displayName" : "CACNG1-8 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5577115, 5577111 ],
+    "children" : [ 2671921, 210533, 210486, 210406, 210519, 210375, 210417, 210465 ]
+  }, {
+    "dbId" : 5577209,
+    "stId" : "R-HSA-5577209",
+    "displayName" : "CACNA2D2a:CACNA2D2d [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5577041 ],
+    "children" : [ 5577186, 5577141 ]
+  }, {
+    "dbId" : 1296319,
+    "stId" : "R-HSA-1296319",
+    "displayName" : "KCNK7 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y2U2",
+    "geneNames" : [ "KCNK7" ],
+    "parents" : [ 1299253 ]
+  }, {
+    "dbId" : 1296317,
+    "stId" : "R-HSA-1296317",
+    "displayName" : "KCNK9 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NPC2",
+    "geneNames" : [ "KCNK9", "TASK3" ],
+    "parents" : [ 1299266, 5578900 ]
+  }, {
+    "dbId" : 5577189,
+    "stId" : "R-HSA-5577189",
+    "displayName" : "CACNA2D4(992-1137) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q7Z3S7",
+    "geneNames" : [ "CACNA2D4" ],
+    "parents" : [ 5577067 ]
+  }, {
+    "dbId" : 5577186,
+    "stId" : "R-HSA-5577186",
+    "displayName" : "CACNA2D2(19-1001) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NY47",
+    "geneNames" : [ "CACNA2D2", "KIAA0558" ],
+    "parents" : [ 5577209 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 192, 242, 216, 681 ],
+    "identifier" : "15422",
+    "parents" : [ 170037, 2263468, 9206355, 9630847, 9576623, 9432018, 9511146, 9353588, 9697690, 9795133, 6814649, 9276451, 9600652, 9736131, 9237675, 9388153, 9466546, 9658146, 9539600, 9308766, 390580, 9160108, 9542621, 9391763, 9163921, 9831775, 9603243, 9741155, 9312345, 9240824, 9661271, 9470131, 445789, 390446, 391390, 994134, 9794890, 9510958, 9046292, 9128311, 9431829, 9056083, 9997775, 9070329, 9353374, 9697532, 9206146, 9576446, 9871996, 9630682, 9276265, 9926229, 390474, 9087795, 443623, 9779593, 9419766, 9193599, 9686115, 9859450, 9265606, 9341444, 9981023, 9622036, 9498806, 9083944, 9912343, 9566577, 8948980, 9054223, 9859337, 9621997, 9341426, 9912333, 9265588, 9498788, 9083934, 9054206, 9981013, 9779576, 9566525, 9419748, 9193545, 9686096, 8948970, 9978087, 9065526, 9681832, 9188087, 9910208, 9493702, 9082788, 9414658, 9772921, 9853938, 9117897, 9040616, 5618079, 9053631, 9977478, 9562442, 9414581, 9909743, 9117821, 9681761, 9082712, 9772764, 9065453, 9188008, 9053614, 9493619, 9853846, 3371563, 9040519, 9566510, 9041623, 9083927, 9054199, 9859330, 9779553, 9193528, 9912326, 9120378, 9981000, 9066266, 9341411, 9621982, 9686105, 9265573, 9419721, 9498773, 5618088, 5251947, 9777034, 9119601, 9083581, 9684291, 9053991, 9979698, 9911581, 9191365, 9066018, 9417800, 9041326, 9857395, 9496755, 6792614, 9417808, 9777049, 9041333, 9496763, 9684299, 9191373, 5252045, 5252011, 9684317, 9083606, 9054006, 9066033, 9911618, 9857426, 9119631, 9041355, 9979768, 9777077, 5252104, 9496767, 9191377, 9119606, 9083591, 9684303, 9417812, 9777053, 5252040, 9119637, 9066039, 9911629, 9041361, 9979790, 9083612, 9054012, 5251940, 9083600, 9496777, 9911599, 9777069, 9979727, 9417822, 9857414, 9191393, 9119623, 9684313, 9041345, 9053998, 9066025, 5252036, 9777059, 9191386, 9496773, 9417818, 9041340, 9066020, 9979700, 9857402, 9119618, 9911583, 9684309, 9053993, 9083595, 5252100, 9041331, 9496759, 9191369, 9684295, 9417804, 9777045, 5251938, 9083607, 9054007, 9562506, 9119632, 9356215, 9066034, 9700130, 9632615, 9911619, 9417829, 9191403, 9857427, 9041356, 9279049, 9777078, 9979769, 9496784, 5251937, 9857400, 9119616, 9417816, 9777057, 9191384, 9496771, 9083593, 9041338, 9684307, 5251968, 9496783, 9083604, 9979747, 9857422, 9054002, 9911610, 9041349, 9417828, 9684315, 9066029, 9777075, 9191402, 9119629, 5252063, 9777058, 9417817, 9191385, 9496772, 9041339, 9857401, 9979699, 9119617, 9911582, 9066019, 9684308, 9053992, 9083594, 5252093, 9496781, 9417826, 9857420, 9054000, 9041347, 9083602, 9979740, 9777073, 9191400, 9911605, 9119625, 9066027, 5252028, 9394048, 9663305, 9605109, 9544724, 9166591, 9314781, 9243007, 9472545, 879207, 168906, 918190, 9370000, 9291920, 9644136, 9815167, 9140562, 9526393, 9715010, 9589796, 9448549, 114255, 9221701, 9973634, 9081650, 9064690, 9612356, 9177018, 9252472, 9672800, 9843545, 9757658, 9325507, 9039298, 9907039, 9483640, 9554385, 9405327, 9112971, 201854, 9081655, 9064695, 9973636, 9405331, 9112976, 9612360, 9672804, 9907044, 9177022, 9252476, 9039303, 9483644, 9325511, 9843550, 9757660, 9554389, 201855, 433729, 9948680, 9596076, 9727337, 9230161, 9061970, 9034769, 9150780, 9051869, 9379707, 9077784, 9893446, 9534367, 9458077, 9112940, 9652725, 9301198, 9843510, 201857 ]
+  }, {
+    "dbId" : 975282,
+    "stId" : "R-HSA-975282",
+    "displayName" : "KCNJ12 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14500",
+    "geneNames" : [ "KCNJ12", "IRK2", "KCNJN1" ],
+    "parents" : [ 1296069, 975240 ]
+  }, {
+    "dbId" : 5577109,
+    "stId" : "R-HSA-5577109",
+    "displayName" : "CACNA1C,D,F,S [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5577115, 5577111 ],
+    "children" : [ 525814, 525812, 265551, 525807 ]
+  }, {
+    "dbId" : 1296338,
+    "stId" : "R-HSA-1296338",
+    "displayName" : "KCNK13 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HB14",
+    "geneNames" : [ "KCNK13" ],
+    "parents" : [ 1299264, 5578928 ]
+  }, {
+    "dbId" : 5577111,
+    "stId" : "R-HSA-5577111",
+    "displayName" : "LTCC heteropentamer (open) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 30 ],
+    "children" : [ 5577203, 5577041, 5577239, 5577109 ]
+  }, {
+    "dbId" : 1296336,
+    "stId" : "R-HSA-1296336",
+    "displayName" : "KCNK15 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H427",
+    "geneNames" : [ "KCNK15", "TASK5" ],
+    "parents" : [ 5578908 ]
+  }, {
+    "dbId" : 210375,
+    "stId" : "R-HSA-210375",
+    "displayName" : "CACNG2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y698",
+    "geneNames" : [ "CACNG2" ],
+    "parents" : [ 5577203, 210492, 210504, 416844 ]
+  }, {
+    "dbId" : 1296342,
+    "stId" : "R-HSA-1296342",
+    "displayName" : "KCNK10 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P57789",
+    "geneNames" : [ "KCNK10", "TREK2" ],
+    "parents" : [ 1299261, 5578904 ]
+  }, {
+    "dbId" : 1296341,
+    "stId" : "R-HSA-1296341",
+    "displayName" : "KCNK12 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HB15",
+    "geneNames" : [ "KCNK12" ],
+    "parents" : [ 5578918 ]
+  }, {
+    "dbId" : 83910,
+    "stId" : "R-ALL-83910",
+    "displayName" : "Na+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 228, 24, 185 ],
+    "identifier" : "29101",
+    "parents" : [ 426221 ]
+  }, {
+    "dbId" : 1296345,
+    "stId" : "R-HSA-1296345",
+    "displayName" : "KCNK1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00180",
+    "geneNames" : [ "KCNK1", "HOHO1", "KCNO1", "TWIK1" ],
+    "parents" : [ 1299252 ]
+  }, {
+    "dbId" : 1369054,
+    "stId" : "R-HSA-1369054",
+    "displayName" : "ABCC9 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60706",
+    "geneNames" : [ "ABCC9", "SUR2" ],
+    "parents" : [ 1369001, 1454912, 5678267 ]
+  }, {
+    "dbId" : 3006433,
+    "stId" : "R-HSA-3006433",
+    "displayName" : "ITPR1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14643",
+    "geneNames" : [ "ITPR1", "INSP3R1" ],
+    "parents" : [ 112287, 112288, 169685, 5622012 ]
+  }, {
+    "dbId" : 5577115,
+    "stId" : "R-HSA-5577115",
+    "displayName" : "LTCC heteropentamer (closed) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 32 ],
+    "children" : [ 5577203, 5577041, 5577239, 5577109 ]
+  }, {
+    "dbId" : 2089937,
+    "stId" : "R-HSA-2089937",
+    "displayName" : "TRPC1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48995",
+    "geneNames" : [ "TRPC1", "TRP1" ],
+    "parents" : [ 2089954 ]
+  }, {
+    "dbId" : 1296323,
+    "stId" : "R-HSA-1296323",
+    "displayName" : "KCNK5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95279",
+    "geneNames" : [ "KCNK5", "TASK2" ],
+    "parents" : [ 5578911 ]
+  }, {
+    "dbId" : 1296321,
+    "stId" : "R-HSA-1296321",
+    "displayName" : "KCNK6 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y257",
+    "geneNames" : [ "KCNK6", "TOSS", "TWIK2" ],
+    "parents" : [ 1299250 ]
+  }, {
+    "dbId" : 5577094,
+    "stId" : "R-HSA-5577094",
+    "displayName" : "KCNIP1-4 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5577207 ],
+    "children" : [ 5577152, 5577044, 5577236, 5577157 ]
+  }, {
+    "dbId" : 1296326,
+    "stId" : "R-HSA-1296326",
+    "displayName" : "KCNK3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14649",
+    "geneNames" : [ "KCNK3", "TASK", "TASK1" ],
+    "parents" : [ 1299266, 1299268 ]
+  }, {
+    "dbId" : 5577088,
+    "stId" : "R-HSA-5577088",
+    "displayName" : "KCND tetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5577126 ],
+    "children" : [ 1296101 ]
+  }, {
+    "dbId" : 1296325,
+    "stId" : "R-HSA-1296325",
+    "displayName" : "KCNK4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NYG8",
+    "geneNames" : [ "KCNK4", "TRAAK" ],
+    "parents" : [ 1299261, 5578923 ]
+  }, {
+    "dbId" : 5577100,
+    "stId" : "R-HSA-5577100",
+    "displayName" : "AKAP9:KCNQ1 tetramer:KCNE dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 40 ],
+    "children" : [ 977517, 5577223, 380260 ]
+  }, {
+    "dbId" : 1296330,
+    "stId" : "R-HSA-1296330",
+    "displayName" : "KCNK18 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q7Z418",
+    "geneNames" : [ "KCNK18", "TRESK", "TRIK" ],
+    "parents" : [ 1299256 ]
+  }, {
+    "dbId" : 1296328,
+    "stId" : "R-HSA-1296328",
+    "displayName" : "KCNK2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95069",
+    "geneNames" : [ "KCNK2", "TREK", "TREK1" ],
+    "parents" : [ 1299261, 5578919 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 199 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 419293,
+    "stId" : "R-HSA-419293",
+    "displayName" : "NOS1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 515 ],
+    "identifier" : "P29475",
+    "geneNames" : [ "NOS1" ],
+    "parents" : [ 5617181, 419294 ]
+  }, {
+    "dbId" : 1296335,
+    "stId" : "R-HSA-1296335",
+    "displayName" : "KCNK16 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96T55",
+    "geneNames" : [ "KCNK16", "TALK1" ],
+    "parents" : [ 1299275 ]
+  }, {
+    "dbId" : 936914,
+    "stId" : "R-HSA-936914",
+    "displayName" : "ATP1A4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13733",
+    "geneNames" : [ "ATP1A4", "ATP1AL2" ],
+    "parents" : [ 936779 ]
+  }, {
+    "dbId" : 1296333,
+    "stId" : "R-HSA-1296333",
+    "displayName" : "KCNK17 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96T54",
+    "geneNames" : [ "KCNK17", "TALK2", "TASK4", "UNQ5816/PRO19634" ],
+    "parents" : [ 1299272 ]
+  }, {
+    "dbId" : 5577141,
+    "stId" : "R-HSA-5577141",
+    "displayName" : "CACNA2D2(1002-1150) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NY47",
+    "geneNames" : [ "CACNA2D2", "KIAA0558" ],
+    "parents" : [ 5577209 ]
+  }, {
+    "dbId" : 5577142,
+    "stId" : "R-HSA-5577142",
+    "displayName" : "CACNA2D1(957-1103) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P54289",
+    "geneNames" : [ "CACNA2D1", "CACNL2A", "CCHL2A", "MHS3" ],
+    "parents" : [ 5577078 ]
+  }, {
+    "dbId" : 1168370,
+    "stId" : "R-HSA-1168370",
+    "displayName" : "STIM1 Dimer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2089954, 434679 ],
+    "children" : [ 434675 ]
+  }, {
+    "dbId" : 210406,
+    "stId" : "R-HSA-210406",
+    "displayName" : "CACNG6 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BXT2",
+    "geneNames" : [ "CACNG6" ],
+    "parents" : [ 5577203 ]
+  }, {
+    "dbId" : 975336,
+    "stId" : "R-HSA-975336",
+    "displayName" : "KCNJ4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48050",
+    "geneNames" : [ "KCNJ4", "IRK3" ],
+    "parents" : [ 1296069, 975240 ]
+  }, {
+    "dbId" : 5226920,
+    "stId" : "R-HSA-5226920",
+    "displayName" : "AHCYL1:NAD+:ITPR1:I(1,4,5)P3 tetramer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 688 ],
+    "children" : [ 169696, 5226942 ]
+  }, {
+    "dbId" : 525807,
+    "stId" : "R-HSA-525807",
+    "displayName" : "CACNA1S [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13698",
+    "geneNames" : [ "CACNA1S", "CACH1", "CACN1", "CACNL1A3" ],
+    "parents" : [ 5577109, 525825 ]
+  }, {
+    "dbId" : 443374,
+    "stId" : "R-HSA-443374",
+    "displayName" : "SCN9A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15858",
+    "geneNames" : [ "SCN9A", "NENA" ],
+    "parents" : [ 443637 ]
+  }, {
+    "dbId" : 443375,
+    "stId" : "R-HSA-443375",
+    "displayName" : "SCN3A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NY46",
+    "geneNames" : [ "SCN3A", "KIAA1356", "NAC3" ],
+    "parents" : [ 443637 ]
+  }, {
+    "dbId" : 418284,
+    "stId" : "R-HSA-418284",
+    "displayName" : "IP3R subunits [platelet dense tubular network membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 418292 ],
+    "children" : [ 418281, 418283, 3325593 ]
+  }, {
+    "dbId" : 418283,
+    "stId" : "R-HSA-418283",
+    "displayName" : "ITPR3 [platelet dense tubular network membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14573",
+    "geneNames" : [ "ITPR3" ],
+    "parents" : [ 418284 ]
+  }, {
+    "dbId" : 418281,
+    "stId" : "R-HSA-418281",
+    "displayName" : "ITPR2 [platelet dense tubular network membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14571",
+    "geneNames" : [ "ITPR2" ],
+    "parents" : [ 418284 ]
+  }, {
+    "dbId" : 443382,
+    "stId" : "R-HSA-443382",
+    "displayName" : "SCN5A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14524",
+    "geneNames" : [ "SCN5A" ],
+    "parents" : [ 443637 ]
+  }, {
+    "dbId" : 434679,
+    "stId" : "R-HSA-434679",
+    "displayName" : "CRAC channel [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 234 ],
+    "children" : [ 1168370, 8862646 ]
+  }, {
+    "dbId" : 5226942,
+    "stId" : "R-HSA-5226942",
+    "displayName" : "AHCYL1:NAD+ [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 686 ],
+    "parents" : [ 5226920 ],
+    "children" : [ 194653, 5215973 ]
+  }, {
+    "dbId" : 210417,
+    "stId" : "R-HSA-210417",
+    "displayName" : "CACNG4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UBN1",
+    "geneNames" : [ "CACNG4" ],
+    "parents" : [ 5577203, 210394, 416844 ]
+  }, {
+    "dbId" : 418292,
+    "stId" : "R-HSA-418292",
+    "displayName" : "IP3R tetramer [platelet dense tubular network membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 139839 ],
+    "children" : [ 418284 ]
+  }, {
+    "dbId" : 443380,
+    "stId" : "R-HSA-443380",
+    "displayName" : "SCN7A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01118",
+    "geneNames" : [ "SCN7A", "SCN6A" ],
+    "parents" : [ 443637 ]
+  }, {
+    "dbId" : 443381,
+    "stId" : "R-HSA-443381",
+    "displayName" : "SCN8A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UQD0",
+    "geneNames" : [ "SCN8A", "MED" ],
+    "parents" : [ 443637 ]
+  }, {
+    "dbId" : 5577126,
+    "stId" : "R-HSA-5577126",
+    "displayName" : "KCND tetramer:KCNIP tetramer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 35 ],
+    "children" : [ 5577088, 5577207 ]
+  }, {
+    "dbId" : 443378,
+    "stId" : "R-HSA-443378",
+    "displayName" : "SCN1A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35498",
+    "geneNames" : [ "SCN1A", "NAC1", "SCN1" ],
+    "parents" : [ 443637 ]
+  }, {
+    "dbId" : 5577121,
+    "stId" : "R-HSA-5577121",
+    "displayName" : "KCNH2:KCNE [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 48 ],
+    "children" : [ 977529, 5577223 ]
+  }, {
+    "dbId" : 57844,
+    "stId" : "R-HSA-57844",
+    "displayName" : "PRKACA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 547 ],
+    "identifier" : "P17612",
+    "geneNames" : [ "PRKACA", "PKACA" ],
+    "parents" : [ 5626173, 5626171, 913999, 180050, 425833, 380705, 380704, 380698, 380268, 111920 ]
+  }, {
+    "dbId" : 434675,
+    "stId" : "R-HSA-434675",
+    "displayName" : "STIM1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13586",
+    "geneNames" : [ "STIM1", "GOK" ],
+    "parents" : [ 1168371, 1168370 ]
+  }, {
+    "dbId" : 443376,
+    "stId" : "R-HSA-443376",
+    "displayName" : "SCN4A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35499",
+    "geneNames" : [ "SCN4A" ],
+    "parents" : [ 443637 ]
+  }, {
+    "dbId" : 434672,
+    "stId" : "R-HSA-434672",
+    "displayName" : "ORAI1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96D31",
+    "geneNames" : [ "ORAI1", "CRACM1", "TMEM142A" ],
+    "parents" : [ 434696 ]
+  }, {
+    "dbId" : 443377,
+    "stId" : "R-HSA-443377",
+    "displayName" : "SCN2A [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99250",
+    "geneNames" : [ "SCN2A", "NAC2", "SCN2A1", "SCN2A2" ],
+    "parents" : [ 443637 ]
+  }, {
+    "dbId" : 418303,
+    "stId" : "R-HSA-418303",
+    "displayName" : "ATP2B2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01814",
+    "geneNames" : [ "ATP2B2", "PMCA2" ],
+    "parents" : [ 418306 ]
+  }, {
+    "dbId" : 418300,
+    "stId" : "R-HSA-418300",
+    "displayName" : "ATP2B3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16720",
+    "geneNames" : [ "ATP2B3" ],
+    "parents" : [ 418306 ]
+  }, {
+    "dbId" : 418301,
+    "stId" : "R-HSA-418301",
+    "displayName" : "ATP2B1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20020",
+    "geneNames" : [ "ATP2B1", "PMCA1" ],
+    "parents" : [ 418306 ]
+  }, {
+    "dbId" : 525812,
+    "stId" : "R-HSA-525812",
+    "displayName" : "CACNA1F [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60840",
+    "geneNames" : [ "CACNA1F", "CACNAF1" ],
+    "parents" : [ 5577109 ]
+  }, {
+    "dbId" : 2089954,
+    "stId" : "R-HSA-2089954",
+    "displayName" : "STIM1:TRPC1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 268 ],
+    "children" : [ 2089937, 1168370 ]
+  }, {
+    "dbId" : 525814,
+    "stId" : "R-HSA-525814",
+    "displayName" : "CACNA1D [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01668",
+    "geneNames" : [ "CACNA1D", "CACH3", "CACN4", "CACNL1A2", "CCHL1A2" ],
+    "parents" : [ 5577109, 265559, 525825 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 5577237,
+    "stId" : "R-HSA-5577237",
+    "displayName" : "KCNH2:KCNE transport K+ from cytosol to extracellular region",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29804 ],
+    "outputs" : [ 74126 ],
+    "catalysts" : [ 5577121 ],
+    "efs" : [ ],
+    "diagramIds" : [ 47 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 427910,
+    "stId" : "R-HSA-427910",
+    "displayName" : "ATP2A1-3 transport Ca2+ from cytosol to ER lumen",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5578777 ],
+    "inputs" : [ 156540, 74016 ],
+    "outputs" : [ 70106, 111875 ],
+    "catalysts" : [ 418312 ],
+    "efs" : [ ],
+    "inhibitors" : [ 5215917, 5578811 ],
+    "activators" : [ 444601, 5578810, 5490313 ],
+    "diagramIds" : [ 196 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 418309,
+    "stId" : "R-HSA-418309",
+    "displayName" : "ATP2B1-4 transport cytosolic Ca2+ to extracellular region",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 74016 ],
+    "outputs" : [ 74112 ],
+    "catalysts" : [ 418306 ],
+    "efs" : [ ],
+    "diagramIds" : [ 408 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2855020,
+    "stId" : "R-HSA-2855020",
+    "displayName" : "RYR tetramers transport Ca2+ from sarcoplasmic reticulum lumen to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 2855229 ],
+    "outputs" : [ 74016 ],
+    "catalysts" : [ 2855167 ],
+    "efs" : [ ],
+    "inhibitors" : [ 9016707, 2684963 ],
+    "activators" : [ 5490313, 74016, 113592 ],
+    "diagramIds" : [ 239 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5577234,
+    "stId" : "R-HSA-5577234",
+    "displayName" : "KCND tetramer:KCNIP tetramer transport K+ from cytosol to extrqcellular region",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29804 ],
+    "outputs" : [ 74126 ],
+    "catalysts" : [ 5577126 ],
+    "efs" : [ ],
+    "diagramIds" : [ 34 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2089943,
+    "stId" : "R-HSA-2089943",
+    "displayName" : "TRPC1 translocates calcium from the extracellular region to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2089927 ],
+    "following" : [ 74448 ],
+    "inputs" : [ 74112 ],
+    "outputs" : [ 74016 ],
+    "catalysts" : [ 2089954 ],
+    "efs" : [ ],
+    "diagramIds" : [ 267 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5578783,
+    "stId" : "R-HSA-5578783",
+    "displayName" : "CORIN(802-1042) hydrolyses NPPA to form NPPA(124-151)",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 976950 ],
+    "outputs" : [ 5578794, 5578799, 5578797, 5578791 ],
+    "catalysts" : [ 5490311 ],
+    "efs" : [ ],
+    "diagramIds" : [ 958 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5578910,
+    "stId" : "R-HSA-5578910",
+    "displayName" : "KCNK dimers transport K+ from cytosol to extracellular region",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29804 ],
+    "outputs" : [ 74126 ],
+    "catalysts" : [ 5578913 ],
+    "efs" : [ ],
+    "diagramIds" : [ 20 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5617182,
+    "stId" : "R-HSA-5617182",
+    "displayName" : "PRKACA phosphorylates PLN",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5578811, 113592 ],
+    "outputs" : [ 5578810, 29370 ],
+    "catalysts" : [ 57844 ],
+    "efs" : [ ],
+    "activators" : [ 5617181 ],
+    "diagramIds" : [ 523 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139854,
+    "stId" : "R-HSA-139854",
+    "displayName" : "IP3R tetramer:I(1,4,5)P3:4xCa2+ transports Ca2+ from platelet dense tubular system to cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139941 ],
+    "following" : [ 114553, 392831, 74448 ],
+    "inputs" : [ 139827 ],
+    "outputs" : [ 74016 ],
+    "catalysts" : [ 139839 ],
+    "efs" : [ ],
+    "diagramIds" : [ 269 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5578777,
+    "stId" : "R-HSA-5578777",
+    "displayName" : "DMPK phosphorylates PLN",
+    "schemaClass" : "Reaction",
+    "following" : [ 427910 ],
+    "inputs" : [ 5578811, 113592 ],
+    "outputs" : [ 5578810, 29370 ],
+    "catalysts" : [ 5578802 ],
+    "efs" : [ ],
+    "diagramIds" : [ 190 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5617179,
+    "stId" : "R-HSA-5617179",
+    "displayName" : "PRKACA phosphorylates TNNI3",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 390542, 113592 ],
+    "outputs" : [ 29370, 5617219 ],
+    "catalysts" : [ 57844 ],
+    "efs" : [ ],
+    "activators" : [ 5617181 ],
+    "diagramIds" : [ 675 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 936897,
+    "stId" : "R-HSA-936897",
+    "displayName" : "ATP1A:ATP1B:FXYD exchanges Na+ for K+",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 74126, 29356, 113592, 83910 ],
+    "outputs" : [ 29372, 29804, 29370, 74113 ],
+    "catalysts" : [ 936770 ],
+    "efs" : [ ],
+    "diagramIds" : [ 215 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5617178,
+    "stId" : "R-HSA-5617178",
+    "displayName" : "ATP2B4 binds to NOS1, inhibiting it",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 419293, 418304 ],
+    "outputs" : [ 5617181 ],
+    "efs" : [ ],
+    "diagramIds" : [ 514 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5577050,
+    "stId" : "R-HSA-5577050",
+    "displayName" : "AKAP9:KCNQ1 tetramer:KCNE dimer transports K+ from cytosol to extracellular region",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29804 ],
+    "outputs" : [ 74126 ],
+    "catalysts" : [ 5577100 ],
+    "efs" : [ ],
+    "diagramIds" : [ 39 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 169683,
+    "stId" : "R-HSA-169683",
+    "displayName" : "IP3R:I(1,4,5)P3 tetramer transports Ca2+ from ER lumen to cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 169680 ],
+    "following" : [ 265166, 1168373, 1168376, 74448 ],
+    "inputs" : [ 111875 ],
+    "outputs" : [ 74016 ],
+    "catalysts" : [ 169696 ],
+    "efs" : [ ],
+    "inhibitors" : [ 5226920 ],
+    "activators" : [ 114520 ],
+    "diagramIds" : [ 262 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5226904,
+    "stId" : "R-HSA-5226904",
+    "displayName" : "AHCYL1:NAD+ binds ITPR1:I(1,3,5)P3 tetramer, inhibiting it",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 169696, 5226942 ],
+    "outputs" : [ 5226920 ],
+    "efs" : [ ],
+    "diagramIds" : [ 685 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5678261,
+    "stId" : "R-HSA-5678261",
+    "displayName" : "KCNJ11:ABCC9 transports K+ from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 74126 ],
+    "outputs" : [ 29804 ],
+    "catalysts" : [ 5678267 ],
+    "efs" : [ ],
+    "diagramIds" : [ 935 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5577213,
+    "stId" : "R-HSA-5577213",
+    "displayName" : "LTCC heteropentamer (open) transports Ca2+ from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 74112 ],
+    "outputs" : [ 74016 ],
+    "catalysts" : [ 5577111 ],
+    "efs" : [ ],
+    "inhibitors" : [ 5577115 ],
+    "diagramIds" : [ 27 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 434798,
+    "stId" : "R-HSA-434798",
+    "displayName" : "CRAC translocates calcium from the extracellular region to the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 434700 ],
+    "following" : [ 2025890, 1168373, 74448 ],
+    "inputs" : [ 74112 ],
+    "outputs" : [ 74016 ],
+    "catalysts" : [ 434679 ],
+    "efs" : [ ],
+    "diagramIds" : [ 233 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5576895,
+    "stId" : "R-HSA-5576895",
+    "displayName" : "SCNAs:SNCBs transport Na+ from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 74113 ],
+    "outputs" : [ 83910 ],
+    "catalysts" : [ 443632 ],
+    "efs" : [ ],
+    "inhibitors" : [ 444601 ],
+    "activators" : [ 5216063, 5578833 ],
+    "diagramIds" : [ 22 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5692408,
+    "stId" : "R-HSA-5692408",
+    "displayName" : "NPR2 binds NPPC",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5490332, 5692448 ],
+    "outputs" : [ 5692430 ],
+    "efs" : [ ],
+    "diagramIds" : [ 968 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 6784598,
+    "stId" : "R-HSA-6784598",
+    "displayName" : "NPPA(124-151) binds NPR1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6784600, 5578799 ],
+    "outputs" : [ 6784597 ],
+    "efs" : [ ],
+    "diagramIds" : [ 965 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 425661,
+    "stId" : "R-HSA-425661",
+    "displayName" : "SLC8A1,2,3 exchange 3Na+ for Ca2+",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 74016, 74113 ],
+    "outputs" : [ 83910, 74112 ],
+    "catalysts" : [ 425675 ],
+    "efs" : [ ],
+    "inhibitors" : [ 9016707 ],
+    "activators" : [ 5490313 ],
+    "diagramIds" : [ 181 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 1296046,
+    "stId" : "R-HSA-1296046",
+    "displayName" : "KCNJs transport K+ from cytosol to extracellular region",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29804 ],
+    "outputs" : [ 74126 ],
+    "catalysts" : [ 1299200 ],
+    "efs" : [ ],
+    "diagramIds" : [ 16 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2032800,
+    "stId" : "R-HSA-2032800",
+    "displayName" : "Expression of NPPA (ANF)",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 2032794 ],
+    "inputs" : [ 6787314 ],
+    "outputs" : [ 976950 ],
+    "efs" : [ ],
+    "activators" : [ 2032799, 5578875 ],
+    "diagramIds" : [ 954 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 5578775,
+    "stId" : "R-HSA-5578775",
+    "displayName" : "Ion homeostasis",
+    "events" : [ 427910, 418309, 5678261, 2855020, 434798, 2089943, 5617182, 5578777, 139854, 5617179, 936897, 5617178, 169683, 5226904, 425661 ]
+  }, {
+    "dbId" : 5576893,
+    "stId" : "R-HSA-5576893",
+    "displayName" : "Phase 2 - plateau phase",
+    "events" : [ 5577213, 5577050 ]
+  }, {
+    "dbId" : 5576894,
+    "stId" : "R-HSA-5576894",
+    "displayName" : "Phase 1 - inactivation of fast Na+ channels",
+    "events" : [ 5577234 ]
+  }, {
+    "dbId" : 5578768,
+    "stId" : "R-HSA-5578768",
+    "displayName" : "Physiological factors",
+    "events" : [ 6784598, 5578783, 5692408, 2032800 ]
+  }, {
+    "dbId" : 5576886,
+    "stId" : "R-HSA-5576886",
+    "displayName" : "Phase 4 - resting membrane potential",
+    "events" : [ 5578910, 1296046 ]
+  }, {
+    "dbId" : 5576890,
+    "stId" : "R-HSA-5576890",
+    "displayName" : "Phase 3 - rapid repolarisation",
+    "events" : [ 5577237, 5577050 ]
+  }, {
+    "dbId" : 5576892,
+    "stId" : "R-HSA-5576892",
+    "displayName" : "Phase 0 - rapid depolarisation",
+    "events" : [ 5577213, 5576895 ]
+  } ]
+}

@@ -1,0 +1,1044 @@
+{
+  "dbId" : 74158,
+  "stId" : "R-HSA-74158",
+  "nodes" : [ {
+    "dbId" : 83713,
+    "stId" : "R-HSA-83713",
+    "displayName" : "POLR2E [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19388",
+    "geneNames" : [ "POLR2E" ],
+    "parents" : [ 83716, 73859, 6814540, 6810223, 113427, 209680, 113716, 113401, 109909, 6797702, 6781851 ]
+  }, {
+    "dbId" : 83715,
+    "stId" : "R-HSA-83715",
+    "displayName" : "POLR2L [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62875",
+    "geneNames" : [ "POLR2L" ],
+    "parents" : [ 83716, 209680, 113716, 113401, 109909, 6797702, 6781851, 113427, 6810223, 6814540, 73859 ]
+  }, {
+    "dbId" : 30595,
+    "stId" : "R-ALL-30595",
+    "displayName" : "NTP [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 512, 99, 519, 106, 522, 509 ],
+    "parents" : [ 167286, 167081, 167199, 167091, 167193, 167184, 113721, 9526335, 9369920, 9291856, 9140432, 9448457, 9589732, 9815094, 9221631, 9714932, 9644067, 113719, 9095641, 9714939, 9140439, 9291863, 9221638, 9095648, 9644074, 9589739, 9369927, 9815101, 9526342, 9448464, 113726, 9448463, 9714938, 9140438, 9291862, 9644073, 9815100, 9221637, 9589738, 9369926, 9095647, 9526341, 113724, 170736, 170726, 9289840, 9642281, 9367319, 9094610, 9813307, 9712378, 9588188, 9940571, 9524699, 9446330, 9059936, 9075053, 9888243, 9219816, 9138184, 83591, 9031947 ],
+    "children" : [ 113571, 113562, 29358, 29470 ]
+  }, {
+    "dbId" : 83714,
+    "stId" : "R-HSA-83714",
+    "displayName" : "POLR2F [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61218",
+    "geneNames" : [ "POLR2F", "POLRF" ],
+    "parents" : [ 83716, 73859, 6814540, 6810223, 113427, 6781851, 6797702, 109909, 113401, 113716, 209680 ]
+  }, {
+    "dbId" : 83717,
+    "stId" : "R-HSA-83717",
+    "displayName" : "RNA polymerase III:TFIIIB:TFIIIC:TFIIIA:Type 1 Promoter Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 67 ],
+    "children" : [ 76055, 83716 ]
+  }, {
+    "dbId" : 83716,
+    "stId" : "R-HSA-83716",
+    "displayName" : "RNA Polymerase III Holoenzyme [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 66, 115 ],
+    "parents" : [ 113453, 83755, 112151, 83750, 112148, 83717, 112147, 112479 ],
+    "children" : [ 1964452, 83702, 83700, 1964428, 63537, 1964461, 63500, 63498, 1964442, 63523, 83714, 83715, 83713 ]
+  }, {
+    "dbId" : 83719,
+    "stId" : "R-HSA-83719",
+    "displayName" : "TFIIIB-Type 1 and 2 Promoter Selective Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 63 ],
+    "parents" : [ 83749, 112148, 76055, 112147 ],
+    "children" : [ 83718, 65894, 83687 ]
+  }, {
+    "dbId" : 112135,
+    "stId" : "R-ALL-112135",
+    "displayName" : "DNA with RNA Polymerase III Type 3 Open Promoter [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 112151 ]
+  }, {
+    "dbId" : 83718,
+    "stId" : "R-HSA-83718",
+    "displayName" : "TBP [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20226",
+    "geneNames" : [ "TBP", "GTF2D1", "TF2D", "TFIID" ],
+    "parents" : [ 83722, 83719, 73693, 73692, 6814541, 6810225, 109626 ]
+  }, {
+    "dbId" : 1964442,
+    "stId" : "R-HSA-1964442",
+    "displayName" : "HsRPC6:HsRPC3:HsRPC7 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 83716 ],
+    "children" : [ 1964432, 83708, 1964430 ]
+  }, {
+    "dbId" : 112134,
+    "stId" : "R-ALL-112134",
+    "displayName" : "DNA with RNA Polymerase III Type 2 Open Promoter [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 112148 ]
+  }, {
+    "dbId" : 83721,
+    "stId" : "R-HSA-83721",
+    "displayName" : "BRF2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HAW0",
+    "geneNames" : [ "BRF2", "BRFU", "PRO1470" ],
+    "parents" : [ 83722 ]
+  }, {
+    "dbId" : 63498,
+    "stId" : "R-HSA-63498",
+    "displayName" : "POLR1C [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15160",
+    "geneNames" : [ "POLR1C", "POLR1E" ],
+    "parents" : [ 83716, 73859 ]
+  }, {
+    "dbId" : 83722,
+    "stId" : "R-HSA-83722",
+    "displayName" : "TFIIIB-Type 3 Promoter Selective Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 86 ],
+    "parents" : [ 83754, 112151 ],
+    "children" : [ 83721, 83718, 83687 ]
+  }, {
+    "dbId" : 83725,
+    "stId" : "R-HSA-83725",
+    "displayName" : "SNAPC2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13487",
+    "geneNames" : [ "SNAPC2", "SNAP45" ],
+    "parents" : [ 83730 ]
+  }, {
+    "dbId" : 63500,
+    "stId" : "R-HSA-63500",
+    "displayName" : "POLR1D [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y2S0",
+    "geneNames" : [ "POLR1D" ],
+    "parents" : [ 83716, 73859 ]
+  }, {
+    "dbId" : 1964432,
+    "stId" : "R-HSA-1964432",
+    "displayName" : "RPC7/RPC7-like [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 1964442 ],
+    "children" : [ 1964458, 1964459 ]
+  }, {
+    "dbId" : 83724,
+    "stId" : "R-HSA-83724",
+    "displayName" : "SNAPC5 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75971",
+    "geneNames" : [ "SNAPC5", "SNAP19" ],
+    "parents" : [ 83730 ]
+  }, {
+    "dbId" : 83727,
+    "stId" : "R-HSA-83727",
+    "displayName" : "SNAPC3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92966",
+    "geneNames" : [ "SNAPC3", "SNAP50" ],
+    "parents" : [ 83730 ]
+  }, {
+    "dbId" : 83726,
+    "stId" : "R-HSA-83726",
+    "displayName" : "SNAPC1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16533",
+    "geneNames" : [ "SNAPC1", "SNAP43" ],
+    "parents" : [ 83730 ]
+  }, {
+    "dbId" : 83729,
+    "stId" : "R-HSA-83729",
+    "displayName" : "SNAPC4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5SXM2",
+    "geneNames" : [ "SNAPC4", "SNAP190" ],
+    "parents" : [ 83730 ]
+  }, {
+    "dbId" : 1964428,
+    "stId" : "R-HSA-1964428",
+    "displayName" : "HsRPC4:HsRPC5 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 83716 ],
+    "children" : [ 83706, 83704 ]
+  }, {
+    "dbId" : 76051,
+    "stId" : "R-HSA-76051",
+    "displayName" : "TFIIIA:Type 1 Promoter complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 58 ],
+    "children" : [ 65892, 76050 ]
+  }, {
+    "dbId" : 112147,
+    "stId" : "R-HSA-112147",
+    "displayName" : "RNA polymerase III:TFIIIB:TFIIIC:TFIIIA:Type 1 Open Promoter Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 69 ],
+    "children" : [ 83719, 65892, 83716, 83698, 112051 ]
+  }, {
+    "dbId" : 83730,
+    "stId" : "R-HSA-83730",
+    "displayName" : "SNAPc [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 81 ],
+    "parents" : [ 83753, 112151, 6810222 ],
+    "children" : [ 83726, 83727, 83724, 83725, 83729 ]
+  }, {
+    "dbId" : 76050,
+    "stId" : "R-ALL-76050",
+    "displayName" : "DNA with RNA Polymerase III Type 1 Closed Promoter [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 56 ],
+    "parents" : [ 9712585, 9075158, 9888367, 9940801, 9813633, 9138361, 9524831, 9032036, 9289990, 9446490, 9642426, 9588342, 9367471, 9060010, 76051, 9219956, 9138390, 9588363, 9712611, 9642453, 9367496, 9524852, 9446517, 9219977, 9290014, 76053 ]
+  }, {
+    "dbId" : 1964430,
+    "stId" : "R-HSA-1964430",
+    "displayName" : "POLR3C [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BUI4",
+    "geneNames" : [ "POLR3C" ],
+    "parents" : [ 1964442 ]
+  }, {
+    "dbId" : 76053,
+    "stId" : "R-HSA-76053",
+    "displayName" : "TFIIIC:TFIIIA:Type I Promoter Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 61 ],
+    "parents" : [ 76055 ],
+    "children" : [ 65892, 76050, 83698 ]
+  }, {
+    "dbId" : 112148,
+    "stId" : "R-HSA-112148",
+    "displayName" : "RNA Polymerase III:TFIIIB:TFIIIC:Type 2 Open Promoter Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 78 ],
+    "children" : [ 112134, 83719, 83716, 83698 ]
+  }, {
+    "dbId" : 112151,
+    "stId" : "R-HSA-112151",
+    "displayName" : "RNA Polymerase III:TFIIIB:SNAPc:Type 3 Open Promoter Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 91 ],
+    "children" : [ 83836, 83837, 83722, 112135, 83716, 83730 ]
+  }, {
+    "dbId" : 76055,
+    "stId" : "R-HSA-76055",
+    "displayName" : "TFIIIB:TFIIIC:TFIIIA:Type 1 Promoter Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 64 ],
+    "parents" : [ 83717 ],
+    "children" : [ 83719, 76053 ]
+  }, {
+    "dbId" : 113562,
+    "stId" : "R-ALL-113562",
+    "displayName" : "UTP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15713",
+    "parents" : [ 30595 ]
+  }, {
+    "dbId" : 29470,
+    "stId" : "R-ALL-29470",
+    "displayName" : "CTP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17677",
+    "parents" : [ 30595 ]
+  }, {
+    "dbId" : 6805190,
+    "stId" : "R-HSA-6805190",
+    "displayName" : "GTF3C6 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q969F1",
+    "geneNames" : [ "GTF3C6", "C6orf51", "CDA020", "NPD020" ],
+    "parents" : [ 83698 ]
+  }, {
+    "dbId" : 113443,
+    "stId" : "R-ALL-113443",
+    "displayName" : "Polymerase III gene DNA with transcription bubble (single-stranded region) [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 112479 ]
+  }, {
+    "dbId" : 83747,
+    "stId" : "R-ALL-83747",
+    "displayName" : "DNA with RNA Polymerase III Type 2 Closed Promoter [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 71 ],
+    "parents" : [ 9588684, 9713033, 9525197, 9447016, 9368038, 9220420, 9290456, 9642880, 9138888, 83748 ]
+  }, {
+    "dbId" : 113571,
+    "stId" : "R-ALL-113571",
+    "displayName" : "GTP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15996",
+    "parents" : [ 30595, 165530, 180738, 9534416, 9652855, 9114222, 9055234, 9150913, 9458206, 9596124, 9893464, 9948697, 9727456, 9068735, 9077811, 9379825, 9034774, 9822634 ]
+  }, {
+    "dbId" : 63523,
+    "stId" : "R-HSA-63523",
+    "displayName" : "POLR2H [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52434",
+    "geneNames" : [ "POLR2H" ],
+    "parents" : [ 83716, 73859, 6814540, 6810223, 113427, 6781851, 6797702, 109909, 113401, 113716, 209680 ]
+  }, {
+    "dbId" : 83749,
+    "stId" : "R-HSA-83749",
+    "displayName" : "TFIIIB:TFIIIC:Type 2 Promoter Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 74 ],
+    "parents" : [ 83750 ],
+    "children" : [ 83719, 83748 ]
+  }, {
+    "dbId" : 83748,
+    "stId" : "R-HSA-83748",
+    "displayName" : "TFIIIC:Type 2 Promoter Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 72 ],
+    "parents" : [ 83749 ],
+    "children" : [ 83698, 83747 ]
+  }, {
+    "dbId" : 83750,
+    "stId" : "R-HSA-83750",
+    "displayName" : "RNA Polymerase III:TFIIIB:TFIIIC:Type 2 Promoter Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 76 ],
+    "children" : [ 83716, 83749 ]
+  }, {
+    "dbId" : 83753,
+    "stId" : "R-HSA-83753",
+    "displayName" : "SNAPc:Oct-1:Staf:Type 3 Promoter Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 84 ],
+    "parents" : [ 83754 ],
+    "children" : [ 83836, 83837, 83752, 83730 ]
+  }, {
+    "dbId" : 113704,
+    "stId" : "R-ALL-113704",
+    "displayName" : "elongating pre-RNA Pol III transcript plus 1 nucleotide [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 101 ]
+  }, {
+    "dbId" : 83752,
+    "stId" : "R-ALL-83752",
+    "displayName" : "DNA with RNA Polymerase III Type 3 Closed Promoter [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 83 ],
+    "parents" : [ 9642908, 9138918, 9368068, 9220453, 9447048, 9290490, 9713088, 9525221, 83753 ]
+  }, {
+    "dbId" : 113448,
+    "stId" : "R-ALL-113448",
+    "displayName" : "Polymerase III gene DNA with a termination site [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 108 ],
+    "parents" : [ 113453 ]
+  }, {
+    "dbId" : 83755,
+    "stId" : "R-HSA-83755",
+    "displayName" : "RNA Polymerase III:TFIIIB:SNAPc:Type 3 Promoter Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 89 ],
+    "children" : [ 83754, 83716 ]
+  }, {
+    "dbId" : 83754,
+    "stId" : "R-HSA-83754",
+    "displayName" : "TFIIIB:SNAPc:Oct-1:Staf:Type 3 Promoter Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 87 ],
+    "parents" : [ 83755 ],
+    "children" : [ 83722, 83753 ]
+  }, {
+    "dbId" : 113453,
+    "stId" : "R-HSA-113453",
+    "displayName" : "Paused RNA Polymerase III Transcription Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 103 ],
+    "children" : [ 113448, 83716 ]
+  }, {
+    "dbId" : 29358,
+    "stId" : "R-ALL-29358",
+    "displayName" : "ATP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15422",
+    "parents" : [ 30595, 9859339, 9498794, 9912335, 9265594, 9341432, 9566531, 9981015, 9054215, 9779582, 9083936, 9686102, 9419754, 9193551, 9622003, 5618103, 6792604, 9777082, 9417833, 9496788, 9191407, 9684321, 9119641, 9857431, 9066043, 5252069, 5252107, 9496797, 9417842, 9857434, 9119649, 9684330, 9191418, 9066044, 9777095, 5252071, 9119652, 9684333, 9417845, 9777101, 9857441, 9066047, 9191423, 9496800, 5251939, 9119663, 9066058, 5252098, 9496798, 9857435, 9777096, 9417843, 9119650, 9684331, 9191419, 9066045, 5252066, 9191427, 9119654, 9066049, 9777103, 9417847, 9496802, 9857447, 5251935, 9496794, 9191413, 9684327, 9777092, 9417839, 9119643, 5251999, 9191430, 9857454, 9119661, 9496805, 9417850, 9066056, 9777108, 5251965, 9066055, 9857453, 9119660, 9777107, 9684337, 5251995, 9191409, 9496790, 9777088, 9417835, 9684323, 5251962, 9191411, 9496792, 9777090, 9684325, 9417837, 5251991, 9857449, 9684335, 9191429, 9066051, 9417849, 9777105, 9496804, 9119658, 5252117, 9857433, 9417841, 9496796, 9119648, 9684329, 9191417, 9777094, 5251956, 5358517, 9911916, 9041491, 9191956, 9565254, 9120030, 9083774, 9684835, 9620770, 9066181, 9777787, 9980403, 9858143, 9339976, 9054121, 9497330, 9418317, 9264397, 5358531, 9093205, 9810414, 9288021, 9365467, 9523077, 9586557, 9444090, 9136003, 9937555, 9709845, 9218253, 9885782, 9640467, 8849161 ]
+  }, {
+    "dbId" : 1964461,
+    "stId" : "R-HSA-1964461",
+    "displayName" : "POLR3K [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y2Y1",
+    "geneNames" : [ "POLR3K", "RPC11", "My010" ],
+    "parents" : [ 83716 ]
+  }, {
+    "dbId" : 63537,
+    "stId" : "R-HSA-63537",
+    "displayName" : "POLR2K [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P53803",
+    "geneNames" : [ "POLR2K" ],
+    "parents" : [ 83716, 73859, 6814540, 6810223, 113427, 6781851, 6797702, 109909, 113401, 113716, 209680 ]
+  }, {
+    "dbId" : 112051,
+    "stId" : "R-ALL-112051",
+    "displayName" : "DNA with RNA Polymerase III Type 1 Open Promoter [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 112147 ]
+  }, {
+    "dbId" : 58418,
+    "stId" : "R-HSA-58418",
+    "displayName" : "SSB [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 111 ],
+    "identifier" : "P05455",
+    "geneNames" : [ "SSB" ]
+  }, {
+    "dbId" : 1964459,
+    "stId" : "R-HSA-1964459",
+    "displayName" : "POLR3G [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15318",
+    "geneNames" : [ "POLR3G" ],
+    "parents" : [ 1964432 ]
+  }, {
+    "dbId" : 1964458,
+    "stId" : "R-HSA-1964458",
+    "displayName" : "POLR3GL [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BT43",
+    "geneNames" : [ "POLR3GL" ],
+    "parents" : [ 1964432 ]
+  }, {
+    "dbId" : 1964452,
+    "stId" : "R-HSA-1964452",
+    "displayName" : "HsRPC8:HsRPC9 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 83716 ],
+    "children" : [ 83710, 5420844 ]
+  }, {
+    "dbId" : 112475,
+    "stId" : "R-ALL-112475",
+    "displayName" : "paused pre-RNA Pol III transcript [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 104 ]
+  }, {
+    "dbId" : 112479,
+    "stId" : "R-HSA-112479",
+    "displayName" : "Elongating RNA Polymerase III Transcription Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 96 ],
+    "children" : [ 83716, 113443 ]
+  }, {
+    "dbId" : 112478,
+    "stId" : "R-ALL-112478",
+    "displayName" : "released pre-RNA Pol III transcript [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 109 ]
+  }, {
+    "dbId" : 30181,
+    "stId" : "R-ALL-30181",
+    "displayName" : "NDP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 506 ],
+    "identifier" : "16862"
+  }, {
+    "dbId" : 65892,
+    "stId" : "R-HSA-65892",
+    "displayName" : "GTF3A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 57 ],
+    "identifier" : "Q92664",
+    "geneNames" : [ "GTF3A" ],
+    "parents" : [ 76051, 76053, 112147 ]
+  }, {
+    "dbId" : 83687,
+    "stId" : "R-HSA-83687",
+    "displayName" : "BDP1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "A6H8Y1",
+    "geneNames" : [ "BDP1", "KIAA1241", "KIAA1689", "TFNR" ],
+    "parents" : [ 83722, 83719 ]
+  }, {
+    "dbId" : 60134,
+    "stId" : "R-HSA-60134",
+    "displayName" : "NFIA [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 110 ],
+    "identifier" : "Q12857",
+    "geneNames" : [ "NFIA", "KIAA1439" ]
+  }, {
+    "dbId" : 65894,
+    "stId" : "R-HSA-65894",
+    "displayName" : "BRF1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92994",
+    "geneNames" : [ "BRF1", "BRF", "GTF3B", "TAF3B2", "TAF3C" ],
+    "parents" : [ 83719 ]
+  }, {
+    "dbId" : 60136,
+    "stId" : "R-HSA-60136",
+    "displayName" : "NFIB [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 114 ],
+    "identifier" : "O00712",
+    "geneNames" : [ "NFIB" ]
+  }, {
+    "dbId" : 83689,
+    "stId" : "R-HSA-83689",
+    "displayName" : "GTF3C4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UKN8",
+    "geneNames" : [ "GTF3C4" ],
+    "parents" : [ 83698 ]
+  }, {
+    "dbId" : 60138,
+    "stId" : "R-HSA-60138",
+    "displayName" : "NFIC [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 113 ],
+    "identifier" : "P08651",
+    "geneNames" : [ "NFIC", "NFI" ]
+  }, {
+    "dbId" : 83691,
+    "stId" : "R-HSA-83691",
+    "displayName" : "GTF3C3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y5Q9",
+    "geneNames" : [ "GTF3C3" ],
+    "parents" : [ 83698 ]
+  }, {
+    "dbId" : 60140,
+    "stId" : "R-HSA-60140",
+    "displayName" : "NFIX [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 112 ],
+    "identifier" : "Q14938",
+    "geneNames" : [ "NFIX" ]
+  }, {
+    "dbId" : 83693,
+    "stId" : "R-HSA-83693",
+    "displayName" : "GTF3C5 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y5Q8",
+    "geneNames" : [ "GTF3C5", "CDABP0017" ],
+    "parents" : [ 83698 ]
+  }, {
+    "dbId" : 111980,
+    "stId" : "R-ALL-111980",
+    "displayName" : "elongating pre-RNA Pol III oligonucleotide [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 500, 504, 493, 95 ]
+  }, {
+    "dbId" : 83695,
+    "stId" : "R-HSA-83695",
+    "displayName" : "GTF3C2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WUA4",
+    "geneNames" : [ "GTF3C2", "KIAA0011" ],
+    "parents" : [ 83698 ]
+  }, {
+    "dbId" : 83697,
+    "stId" : "R-HSA-83697",
+    "displayName" : "GTF3C1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12789",
+    "geneNames" : [ "GTF3C1" ],
+    "parents" : [ 83698 ]
+  }, {
+    "dbId" : 111984,
+    "stId" : "R-ALL-111984",
+    "displayName" : "released pre-RNA Pol III oligonucleotide [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 502, 489, 494 ]
+  }, {
+    "dbId" : 111987,
+    "stId" : "R-ALL-111987",
+    "displayName" : "elongating pre-RNA Pol III transcript [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 97 ]
+  }, {
+    "dbId" : 83698,
+    "stId" : "R-HSA-83698",
+    "displayName" : "TFIIIC [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 60 ],
+    "parents" : [ 83748, 112148, 76053, 112147 ],
+    "children" : [ 83695, 83693, 83691, 83689, 6805190, 83697 ]
+  }, {
+    "dbId" : 83700,
+    "stId" : "R-HSA-83700",
+    "displayName" : "POLR3A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14802",
+    "geneNames" : [ "POLR3A" ],
+    "parents" : [ 83716 ]
+  }, {
+    "dbId" : 83702,
+    "stId" : "R-HSA-83702",
+    "displayName" : "POLR3B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NW08",
+    "geneNames" : [ "POLR3B" ],
+    "parents" : [ 83716 ]
+  }, {
+    "dbId" : 83704,
+    "stId" : "R-HSA-83704",
+    "displayName" : "POLR3D [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05423",
+    "geneNames" : [ "POLR3D", "BN51", "BN51T" ],
+    "parents" : [ 1964428 ]
+  }, {
+    "dbId" : 83706,
+    "stId" : "R-HSA-83706",
+    "displayName" : "POLR3E [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NVU0",
+    "geneNames" : [ "POLR3E", "KIAA1452" ],
+    "parents" : [ 1964428 ]
+  }, {
+    "dbId" : 83837,
+    "stId" : "R-HSA-83837",
+    "displayName" : "ZNF143 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 82 ],
+    "identifier" : "P52747",
+    "geneNames" : [ "ZNF143", "SBF", "STAF" ],
+    "parents" : [ 83753, 112151, 6807504 ]
+  }, {
+    "dbId" : 83836,
+    "stId" : "R-HSA-83836",
+    "displayName" : "POU2F1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 80 ],
+    "identifier" : "P14859",
+    "geneNames" : [ "POU2F1", "OCT1", "OTF1" ],
+    "parents" : [ 6790042, 83753, 112151, 6814929 ]
+  }, {
+    "dbId" : 83708,
+    "stId" : "R-HSA-83708",
+    "displayName" : "POLR3F [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H1D9",
+    "geneNames" : [ "POLR3F" ],
+    "parents" : [ 1964442 ]
+  }, {
+    "dbId" : 5420844,
+    "stId" : "R-HSA-5420844",
+    "displayName" : "CRCP [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75575",
+    "geneNames" : [ "CRCP" ],
+    "parents" : [ 1964452 ]
+  }, {
+    "dbId" : 83710,
+    "stId" : "R-HSA-83710",
+    "displayName" : "POLR3H [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y535",
+    "geneNames" : [ "POLR3H", "KIAA1665", "RPC8" ],
+    "parents" : [ 1964452 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 83723,
+    "stId" : "R-HSA-83723",
+    "displayName" : "Binding of TFIIIB to TFIIIC:TFIIIA:Type I Promoter complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 76054 ],
+    "following" : [ 76056 ],
+    "inputs" : [ 83719, 76053 ],
+    "outputs" : [ 76055 ],
+    "efs" : [ ],
+    "diagramIds" : [ 62 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 83788,
+    "stId" : "R-HSA-83788",
+    "displayName" : "Binding of TFIIIC to Type 2 promoter",
+    "schemaClass" : "Reaction",
+    "following" : [ 83790 ],
+    "inputs" : [ 83698, 83747 ],
+    "outputs" : [ 83748 ],
+    "efs" : [ ],
+    "diagramIds" : [ 70 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 83791,
+    "stId" : "R-HSA-83791",
+    "displayName" : "Binding of SNAPc, Oct-1, and Staf to Type 3 Promoter",
+    "schemaClass" : "Reaction",
+    "following" : [ 83793 ],
+    "inputs" : [ 83836, 83837, 83752, 83730 ],
+    "outputs" : [ 83753 ],
+    "efs" : [ ],
+    "diagramIds" : [ 79 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 83790,
+    "stId" : "R-HSA-83790",
+    "displayName" : "Binding of TFIIIB to TFIIC: Type 2 Promoter Complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 83788 ],
+    "following" : [ 83805 ],
+    "inputs" : [ 83719, 83748 ],
+    "outputs" : [ 83749 ],
+    "efs" : [ ],
+    "diagramIds" : [ 73 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 83793,
+    "stId" : "R-HSA-83793",
+    "displayName" : "Binding of TFIIIB to SNAPc:Oct-1:Staf:Type 3 Promoter Complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 83791 ],
+    "following" : [ 83803 ],
+    "inputs" : [ 83722, 83753 ],
+    "outputs" : [ 83754 ],
+    "efs" : [ ],
+    "diagramIds" : [ 85 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112149,
+    "stId" : "R-HSA-112149",
+    "displayName" : "RNA Polymerase III Abortive Initiation At Type 2 Open Promoters",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112150 ],
+    "following" : [ 112155 ],
+    "inputs" : [ 111980, 112148 ],
+    "outputs" : [ 112148, 111984 ],
+    "efs" : [ ],
+    "diagramIds" : [ 490 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76052,
+    "stId" : "R-HSA-76052",
+    "displayName" : "Binding of TFIIIA To type 1 Promoter",
+    "schemaClass" : "Reaction",
+    "following" : [ 76054 ],
+    "inputs" : [ 65892, 76050 ],
+    "outputs" : [ 76051 ],
+    "efs" : [ ],
+    "diagramIds" : [ 55 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76054,
+    "stId" : "R-HSA-76054",
+    "displayName" : "Binding of TFIIIC to TFIIIA:Type I Promoter complex ",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 76052 ],
+    "following" : [ 83723 ],
+    "inputs" : [ 83698, 76051 ],
+    "outputs" : [ 76053 ],
+    "efs" : [ ],
+    "diagramIds" : [ 59 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112150,
+    "stId" : "R-HSA-112150",
+    "displayName" : "RNA Polymerase III Promoter Opening at Type 2 Promoters",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 83805 ],
+    "following" : [ 112155, 112149 ],
+    "inputs" : [ 83750 ],
+    "outputs" : [ 112148 ],
+    "efs" : [ ],
+    "diagramIds" : [ 77 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112153,
+    "stId" : "R-HSA-112153",
+    "displayName" : "RNA Polymerase III Simple Start Sequence Initiation At Type 1 Promoters",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 76060, 112055 ],
+    "following" : [ 113446 ],
+    "inputs" : [ 30595, 112147 ],
+    "outputs" : [ 111980, 112147 ],
+    "efs" : [ ],
+    "diagramIds" : [ 507 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76056,
+    "stId" : "R-HSA-76056",
+    "displayName" : "Recruitment of  RNA polymerase III to TFIIIB:TFIIIC:TFIIIA:Type 1 Promoter Complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 83723 ],
+    "following" : [ 76060 ],
+    "inputs" : [ 76055, 83716 ],
+    "outputs" : [ 83717 ],
+    "efs" : [ ],
+    "diagramIds" : [ 65 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112152,
+    "stId" : "R-HSA-112152",
+    "displayName" : "RNA Polymerase III Promoter Opening at Type 3 Promoters",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 83803 ],
+    "following" : [ 112156, 112054 ],
+    "inputs" : [ 83755 ],
+    "outputs" : [ 112151 ],
+    "efs" : [ ],
+    "diagramIds" : [ 90 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112155,
+    "stId" : "R-HSA-112155",
+    "displayName" : "RNA Polymerase III Simple Start Sequence Initiation At Type 2 Promoters",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112150, 112149 ],
+    "following" : [ 113446 ],
+    "inputs" : [ 112148, 30595 ],
+    "outputs" : [ 111980, 112148 ],
+    "efs" : [ ],
+    "diagramIds" : [ 510 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 83803,
+    "stId" : "R-HSA-83803",
+    "displayName" : "Recruitment of RNA Polymerase III to TFIIIB:SNAPc:Type 3 Promoter Complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 83793 ],
+    "following" : [ 112152 ],
+    "inputs" : [ 83754, 83716 ],
+    "outputs" : [ 83755 ],
+    "efs" : [ ],
+    "diagramIds" : [ 88 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 83805,
+    "stId" : "R-HSA-83805",
+    "displayName" : "Recruitment of RNA Polymerase III to the TFIIIB:TFIIIC: Type 2 Promoter Complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 83790 ],
+    "following" : [ 112150 ],
+    "inputs" : [ 83716, 83749 ],
+    "outputs" : [ 83750 ],
+    "efs" : [ ],
+    "diagramIds" : [ 75 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76060,
+    "stId" : "R-HSA-76060",
+    "displayName" : "RNA Polymerase III Promoter Opening at Type 1 Promoters",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 76056 ],
+    "following" : [ 112153, 112055 ],
+    "inputs" : [ 83717 ],
+    "outputs" : [ 112147 ],
+    "efs" : [ ],
+    "diagramIds" : [ 68 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112156,
+    "stId" : "R-HSA-112156",
+    "displayName" : "RNA Polymerase III Simple Start Sequence Initiation At Type 3 Promoters",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112152, 112054 ],
+    "following" : [ 113446 ],
+    "inputs" : [ 112151, 30595 ],
+    "outputs" : [ 111980, 112151 ],
+    "efs" : [ ],
+    "diagramIds" : [ 513 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113442,
+    "stId" : "R-HSA-113442",
+    "displayName" : "RNA Polymerase III Retractive RNase Activity at U-tract Pause Sites",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 113705 ],
+    "following" : [ 113451 ],
+    "inputs" : [ 112479, 113704 ],
+    "outputs" : [ 112479, 112475, 30181 ],
+    "efs" : [ ],
+    "diagramIds" : [ 505 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113446,
+    "stId" : "R-HSA-113446",
+    "displayName" : "Initiation of RNA Polymerase III Productive Transcription",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112156, 112155, 112153 ],
+    "following" : [ 113705 ],
+    "inputs" : [ 112479, 111980, 30595 ],
+    "outputs" : [ 112479, 111987 ],
+    "efs" : [ ],
+    "diagramIds" : [ 94 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113705,
+    "stId" : "R-HSA-113705",
+    "displayName" : "RNA Polymerase III Productive Transcription",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 113451, 113446 ],
+    "following" : [ 113449, 113442 ],
+    "inputs" : [ 112479, 30595, 111987 ],
+    "outputs" : [ 112479, 113704 ],
+    "efs" : [ ],
+    "diagramIds" : [ 100 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113449,
+    "stId" : "R-HSA-113449",
+    "displayName" : "RNA Polymerase III Transcriptional Pause at Terminator Sequence",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 113705 ],
+    "inputs" : [ 112479, 111987 ],
+    "outputs" : [ 113453, 112475 ],
+    "efs" : [ ],
+    "diagramIds" : [ 102 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113451,
+    "stId" : "R-HSA-113451",
+    "displayName" : "Resumption of RNA Polymerase III Productive Transcription",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 113442 ],
+    "following" : [ 113705 ],
+    "inputs" : [ 112479, 112475, 30595 ],
+    "outputs" : [ 112479, 111987 ],
+    "efs" : [ ],
+    "diagramIds" : [ 520 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113454,
+    "stId" : "R-HSA-113454",
+    "displayName" : "RNA Polymerase III Termination and release of transcribed RNA",
+    "schemaClass" : "Reaction",
+    "following" : [ 6782311, 5696810 ],
+    "inputs" : [ 113453, 112475 ],
+    "outputs" : [ 112478, 113448, 83716 ],
+    "efs" : [ ],
+    "activators" : [ 60136, 60138, 58418, 60134, 60140 ],
+    "diagramIds" : [ 107 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112055,
+    "stId" : "R-HSA-112055",
+    "displayName" : "RNA Polymerase III Abortive Initiation At Type 1 Open Promoters",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 76060 ],
+    "following" : [ 112153 ],
+    "inputs" : [ 111980, 112147 ],
+    "outputs" : [ 112147, 111984 ],
+    "efs" : [ ],
+    "diagramIds" : [ 488 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112054,
+    "stId" : "R-HSA-112054",
+    "displayName" : "RNA Polymerase III Abortive Initiation At Type 3 Open Promoters",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112152 ],
+    "following" : [ 112156 ],
+    "inputs" : [ 111980, 112151 ],
+    "outputs" : [ 112151, 111984 ],
+    "efs" : [ ],
+    "diagramIds" : [ 491 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 76066,
+    "stId" : "R-HSA-76066",
+    "displayName" : "RNA Polymerase III Transcription Initiation From Type 2 Promoter",
+    "events" : [ 112150, 83805, 83788, 83790 ]
+  }, {
+    "dbId" : 749476,
+    "stId" : "R-HSA-749476",
+    "displayName" : "RNA Polymerase III Abortive And Retractive Initiation",
+    "events" : [ 113442, 113705, 113449, 113454, 112149, 112055, 112054, 112150, 112153, 112152, 112155, 76060, 112156 ]
+  }, {
+    "dbId" : 73980,
+    "stId" : "R-HSA-73980",
+    "displayName" : "RNA Polymerase III Transcription Termination",
+    "events" : [ 113449, 113454 ]
+  }, {
+    "dbId" : 76061,
+    "stId" : "R-HSA-76061",
+    "displayName" : "RNA Polymerase III Transcription Initiation From Type 1 Promoter",
+    "events" : [ 76052, 76054, 76056, 83723, 76060 ]
+  }, {
+    "dbId" : 76046,
+    "stId" : "R-HSA-76046",
+    "displayName" : "RNA Polymerase III Transcription Initiation",
+    "events" : [ 112150, 83805, 83788, 83790, 83793, 112152, 83803, 83791, 76052, 76054, 76056, 83723, 76060 ]
+  }, {
+    "dbId" : 73780,
+    "stId" : "R-HSA-73780",
+    "displayName" : "RNA Polymerase III Chain Elongation",
+    "events" : [ 113446, 113705, 113451 ]
+  }, {
+    "dbId" : 76071,
+    "stId" : "R-HSA-76071",
+    "displayName" : "RNA Polymerase III Transcription Initiation From Type 3 Promoter",
+    "events" : [ 83793, 112152, 83803, 83791 ]
+  } ]
+}

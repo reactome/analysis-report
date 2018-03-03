@@ -1,0 +1,116 @@
+{
+  "dbId" : 190236,
+  "stableId" : "R-HSA-190236",
+  "displayName" : "Signaling by FGFR",
+  "nodes" : [ {
+    "id" : 1,
+    "reactomeId" : 5654736,
+    "displayName" : "Signaling by FGFR1",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 152,
+      "y" : 104
+    },
+    "minX" : 74,
+    "maxX" : 230,
+    "minY" : 60,
+    "maxY" : 148,
+    "prop" : {
+      "x" : 74,
+      "y" : 60,
+      "width" : 156,
+      "height" : 88
+    },
+    "textPosition" : {
+      "x" : 89,
+      "y" : 89
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 5654738,
+    "displayName" : "Signaling by FGFR2",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 326,
+      "y" : 104
+    },
+    "minX" : 247,
+    "maxX" : 406,
+    "minY" : 60,
+    "maxY" : 148,
+    "prop" : {
+      "x" : 247,
+      "y" : 60,
+      "width" : 159,
+      "height" : 88
+    },
+    "textPosition" : {
+      "x" : 264,
+      "y" : 89
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 5654741,
+    "displayName" : "Signaling by FGFR3",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 496,
+      "y" : 104
+    },
+    "minX" : 422,
+    "maxX" : 570,
+    "minY" : 60,
+    "maxY" : 148,
+    "prop" : {
+      "x" : 422,
+      "y" : 60,
+      "width" : 148,
+      "height" : 88
+    },
+    "textPosition" : {
+      "x" : 433,
+      "y" : 89
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 5654743,
+    "displayName" : "Signaling by FGFR4",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 663,
+      "y" : 104
+    },
+    "minX" : 585,
+    "maxX" : 742,
+    "minY" : 60,
+    "maxY" : 148,
+    "prop" : {
+      "x" : 585,
+      "y" : 60,
+      "width" : 157,
+      "height" : 88
+    },
+    "textPosition" : {
+      "x" : 601,
+      "y" : 89
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 74,
+  "maxX" : 742,
+  "minY" : 60,
+  "maxY" : 148,
+  "disease" : false
+}

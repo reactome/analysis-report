@@ -1,0 +1,20 @@
+{
+  "dbId" : 5683057,
+  "stId" : "R-HSA-5683057",
+  "nodes" : [ {
+    "dbId" : 5684996,
+    "stId" : "R-HSA-5684996",
+    "displayName" : "MAPK1/MAPK3 signaling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ]
+  }, {
+    "dbId" : 5687128,
+    "stId" : "R-HSA-5687128",
+    "displayName" : "MAPK6/MAPK4 signaling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6 ]
+  } ],
+  "edges" : [ ]
+}
