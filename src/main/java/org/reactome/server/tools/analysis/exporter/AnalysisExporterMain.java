@@ -3,6 +3,7 @@ package org.reactome.server.tools.analysis.exporter;
 import com.martiansoftware.jsap.FlaggedOption;
 import com.martiansoftware.jsap.JSAP;
 import com.martiansoftware.jsap.JSAPResult;
+import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -75,22 +76,18 @@ public class AnalysisExporterMain {
 		jsap.registerParameter(svgSummary);
 
 		JSAPResult config = jsap.parse(args);
-		ReportArgs reportArgs = new ReportArgs(config.getString("token")
-				, config.getString("diagramPath")
-				, config.getString("ehdlPath")
-				, config.getString("fireworksPath")
-				, config.getString("analysisPath")
-				, config.getString("svgSummary"));
-
-		reportArgs.setSpecies(48887L);
-		reportArgs.setResource("UNIPROT");
 
 		long start = Instant.now().toEpochMilli();
 		final AnalysisExporter renderer = new AnalysisExporter(config.getString("diagramPath"), config.getString("ehldPath"),
 				config.getString("fireworksPath"), config.getString("analysisPath"),
 				config.getString("svgSummary"));
 		final FileOutputStream os = new FileOutputStream(new File(config.getString("output")));
-		renderer.render(config.getString("token"), config.getString("resource"), config.getLong("species"), os);
+		try {
+			renderer.render(config.getString("token"), config.getString("resource"), config.getLong("species"), "breathe", os);
+		} catch (AnalysisExporterException e) {
+			logger.info("Failed creating PDF");
+			e.printStackTrace();
+		}
 		long end = Instant.now().toEpochMilli();
 		logger.info("Create PDF file in {}ms", end - start);
 		System.exit(0);

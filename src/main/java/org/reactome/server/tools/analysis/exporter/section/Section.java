@@ -13,8 +13,6 @@ public interface Section {
 	/**
 	 * This method is to render the pdf document according to the analysis
 	 * result data set.
-	 *
-	 * @throws Exception when failed to manipulate with analysis report.
 	 */
-	void render(Document document, AnalysisData analysisData) throws Exception, AnalysisExporterException;
+	void render(Document document, AnalysisData analysisData) throws AnalysisExporterException;
 }

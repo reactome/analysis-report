@@ -6,9 +6,11 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
 import org.reactome.server.tools.analysis.exporter.AnalysisExporter;
+import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.exporter.util.GraphCoreConfig;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.util.HashMap;
@@ -64,8 +66,8 @@ public class AnalysisExporterTest {
 			final String token = entry.getValue();
 			try {
 				final OutputStream os = new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)));
-				RENDERER.render(token, "UNIPROT", 48887L, os);
-			} catch (Exception e) {
+				RENDERER.render(token, "UNIPROT", 48887L, "breathe", os);
+			} catch (AnalysisExporterException | FileNotFoundException e) {
 				e.printStackTrace();
 				Assert.fail(e.getMessage());
 			}
