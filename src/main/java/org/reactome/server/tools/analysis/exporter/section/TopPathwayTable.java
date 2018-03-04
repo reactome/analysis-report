@@ -13,12 +13,11 @@ import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.analysis.core.result.model.PathwayBase;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
 import org.reactome.server.tools.analysis.exporter.PathwayData;
-import org.reactome.server.tools.analysis.exporter.style.Fonts;
 import org.reactome.server.tools.analysis.exporter.element.BodyCell;
 import org.reactome.server.tools.analysis.exporter.element.H2;
 import org.reactome.server.tools.analysis.exporter.element.HeaderCell;
 import org.reactome.server.tools.analysis.exporter.element.P;
-import org.reactome.server.tools.analysis.exporter.style.Profile;
+import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 
 import java.util.Arrays;
 
@@ -83,16 +82,16 @@ public class TopPathwayTable implements Section {
 	private Cell getPathwayCell(int i, PathwayNodeSummary pathway) {
 		return new Cell().setKeepTogether(true)
 				.add(new P(pathway.getName())
-						.setFontSize(Profile.P - 2)
-						.setFontColor(Profile.REACTOME_COLOR)
-						.setFont(Fonts.BOLD)
+						.setFontSize(PdfProfile.P - 2)
+						.setFontColor(PdfProfile.REACTOME_COLOR)
+						.setFont(PdfProfile.BOLD)
 						.setMultipliedLeading(1.0f)
 						.setTextAlignment(TextAlignment.LEFT)
 						.setAction(PdfAction.createGoTo(pathway.getStId())))
 				.setVerticalAlignment(VerticalAlignment.MIDDLE)
 				.setBorder(Border.NO_BORDER)
 				.setPadding(5)
-				.setBackgroundColor(i % 2 == 0 ? null : Profile.LIGHT_GRAY);
+				.setBackgroundColor(i % 2 == 0 ? null : PdfProfile.LIGHT_GRAY);
 	}
 
 }

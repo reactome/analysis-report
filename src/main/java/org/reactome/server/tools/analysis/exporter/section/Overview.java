@@ -39,8 +39,6 @@ public class Overview implements Section {
 			document.add(new P(paragraph).setTextAlignment(TextAlignment.CENTER));
 		// Starts a new normal page
 		document.getPdfDocument().setDefaultPageSize(PageSize.A4);
-		document.add(new AreaBreak());
-
 	}
 
 	private void addFireworks(Document document, AnalysisData analysisData) {

@@ -2,9 +2,8 @@ package org.reactome.server.tools.analysis.exporter.util;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Paragraph;
-import org.reactome.server.tools.analysis.exporter.style.Fonts;
 import org.reactome.server.tools.analysis.exporter.element.P;
-import org.reactome.server.tools.analysis.exporter.style.Profile;
+import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -141,7 +140,7 @@ public class HtmlParser {
 
 		@Override
 		void render(Paragraph paragraph) {
-			paragraph.add(new com.itextpdf.layout.element.Text(text).setFont(Fonts.ITALIC));
+			paragraph.add(new com.itextpdf.layout.element.Text(text).setFont(PdfProfile.ITALIC));
 
 		}
 	}
@@ -153,7 +152,7 @@ public class HtmlParser {
 
 		@Override
 		void render(Paragraph paragraph) {
-			paragraph.add(new com.itextpdf.layout.element.Text(text).setFont(Fonts.BOLD));
+			paragraph.add(new com.itextpdf.layout.element.Text(text).setFont(PdfProfile.BOLD));
 		}
 	}
 
@@ -173,7 +172,7 @@ public class HtmlParser {
 				paragraph
 						.add(new com.itextpdf.layout.element.Text(text)
 								.setAction(PdfAction.createURI(link))
-								.setFontColor(Profile.LINK_COLOR));
+								.setFontColor(PdfProfile.LINK_COLOR));
 		}
 
 	}
@@ -185,7 +184,7 @@ public class HtmlParser {
 
 		@Override
 		void render(Paragraph paragraph) {
-			paragraph.add(new com.itextpdf.layout.element.Text(text).setFontSize(1 + Profile.P / 2));
+			paragraph.add(new com.itextpdf.layout.element.Text(text).setFontSize(1 + PdfProfile.P / 2));
 		}
 	}
 }

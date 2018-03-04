@@ -11,11 +11,10 @@ import org.reactome.server.analysis.core.result.model.ResourceSummary;
 import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
 import org.reactome.server.tools.analysis.exporter.PathwayData;
-import org.reactome.server.tools.analysis.exporter.style.Fonts;
 import org.reactome.server.tools.analysis.exporter.style.Images;
 import org.reactome.server.tools.analysis.exporter.element.*;
 import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
-import org.reactome.server.tools.analysis.exporter.style.Profile;
+import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.util.HtmlParser;
 
@@ -106,9 +105,9 @@ public class PathwayDetail implements Section {
 
 	private void addDatabaseObjectList(Document document, String title, Collection<? extends DatabaseObject> objects) {
 		if (objects != null && !objects.isEmpty()) {
-			final Paragraph paragraph = new P().add(new Text(title + ": ").setFont(Fonts.BOLD));
+			final Paragraph paragraph = new P().add(new Text(title + ": ").setFont(PdfProfile.BOLD));
 			final java.util.List<String> list = objects.stream().map(DatabaseObject::getDisplayName).collect(Collectors.toList());
-			paragraph.add(new Text(String.join(", ", list)).setFont(Fonts.REGULAR));
+			paragraph.add(new Text(String.join(", ", list)).setFont(PdfProfile.REGULAR));
 			paragraph.add(".");
 			document.add(paragraph);
 		}
@@ -119,7 +118,7 @@ public class PathwayDetail implements Section {
 				.add(" (")
 				.add(new Text(pathway.getStId())
 						.setAction(PdfAction.createURI(PATHWAY_DETAIL + pathway.getStId()))
-						.setFontColor(Profile.REACTOME_COLOR))
+						.setFontColor(PdfProfile.REACTOME_COLOR))
 				.add(")")
 				.setDestination(pathway.getStId());
 	}

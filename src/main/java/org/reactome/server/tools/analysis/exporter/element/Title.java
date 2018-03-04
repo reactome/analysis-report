@@ -1,8 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.element;
 
 import com.itextpdf.layout.property.TextAlignment;
-import org.reactome.server.tools.analysis.exporter.style.Profile;
-import org.reactome.server.tools.analysis.exporter.style.Fonts;
+import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -15,8 +14,8 @@ public class Title extends P {
 	@Override
 	protected void style() {
 		super.style();
-		setFontSize(Profile.TITLE);
-		setFont(Fonts.LIGHT);
+		setFontSize(PdfProfile.TITLE);
+		setFont(PdfProfile.LIGHT);
 		setTextAlignment(TextAlignment.CENTER);
 		setMultipliedLeading(2);
 	}

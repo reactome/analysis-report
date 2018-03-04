@@ -5,6 +5,6 @@
     "left": 60,
     "right": 60
   },
-  "fontSize": 12,
-  "pathwaysToShow": 25
+  "fontSize": 10,
+  "maxPathways": 25
 }

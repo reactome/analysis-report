@@ -2,7 +2,7 @@ package org.reactome.server.tools.analysis.exporter.element;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.element.Text;
-import org.reactome.server.tools.analysis.exporter.style.Fonts;
+import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 
 public class TOC1 extends P {
 
@@ -19,7 +19,7 @@ public class TOC1 extends P {
 	@Override
 	protected void style() {
 		super.style();
-		setFont(Fonts.BOLD);
+		setFont(PdfProfile.BOLD);
 		setMarginLeft(10);
 		setMultipliedLeading(2);
 	}

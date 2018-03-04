@@ -6,10 +6,10 @@ import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Text;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
-import org.reactome.server.tools.analysis.exporter.style.Fonts;
 import org.reactome.server.tools.analysis.exporter.element.H2;
 import org.reactome.server.tools.analysis.exporter.element.LP;
 import org.reactome.server.tools.analysis.exporter.element.UnorderedList;
+import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 
 /**
  * Section ParameterAndResultSummary contains analysis parameter in the analysis
@@ -42,7 +42,7 @@ public class ParameterAndResultSummary implements Section {
 
 	private ListItem getDescriptionListItem(String title, String description) {
 		final ListItem item = new ListItem();
-		item.add(new LP().add(new Text(title).setFont(Fonts.BOLD)).add(new Text(description)));
+		item.add(new LP().add(new Text(title).setFont(PdfProfile.BOLD)).add(new Text(description)));
 		return item;
 	}
 

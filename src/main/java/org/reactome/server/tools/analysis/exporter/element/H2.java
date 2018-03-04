@@ -1,8 +1,7 @@
 package org.reactome.server.tools.analysis.exporter.element;
 
 import com.itextpdf.layout.element.Text;
-import org.reactome.server.tools.analysis.exporter.style.Fonts;
-import org.reactome.server.tools.analysis.exporter.style.Profile;
+import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 
 
 public class H2 extends P {
@@ -23,8 +22,8 @@ public class H2 extends P {
 
 	@Override
 	protected void style() {
-		setFontSize(Profile.H2);
-		setFont(Fonts.BOLD);
+		setFontSize(PdfProfile.H2);
+		setFont(PdfProfile.BOLD);
 		setMultipliedLeading(1.5f);
 	}
 }

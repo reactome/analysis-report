@@ -6,7 +6,7 @@ import com.itextpdf.kernel.events.PdfDocumentEvent;
 import com.itextpdf.kernel.pdf.PdfPage;
 import com.itextpdf.kernel.pdf.canvas.PdfCanvas;
 import com.itextpdf.layout.Document;
-import org.reactome.server.tools.analysis.exporter.style.Fonts;
+import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 
 /**
  * Event handler to add the footer text and page number.
@@ -32,9 +32,9 @@ public class FooterEventHandler implements IEventHandler {
 		final String paging = String.format("Page %d", pageNumber - 1);
 		final float yCenter = document.getBottomMargin() * 0.5f;
 		final float width = page.getMediaBox().getWidth();
-		final float pagingWidth = Fonts.REGULAR.getWidth(paging, 8);
+		final float pagingWidth = PdfProfile.REGULAR.getWidth(paging, 8);
 
-		canvas.setFontAndSize(Fonts.REGULAR, 8)
+		canvas.setFontAndSize(PdfProfile.REGULAR, 8)
 				.moveTo(document.getLeftMargin(), yCenter)
 				.showText("reactome.org")
 				.moveTo(width - document.getRightMargin() - pagingWidth, yCenter)

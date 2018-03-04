@@ -17,7 +17,7 @@ public class Images {
 	 * @param url where the link will point.
 	 */
 	public static Image getLink(String url) {
-		return getLink(url, Profile.P);
+		return getLink(url, PdfProfile.P);
 	}
 
 	/**

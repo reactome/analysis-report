@@ -4,8 +4,7 @@ import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Text;
 import com.itextpdf.layout.hyphenation.HyphenationConfig;
 import com.itextpdf.layout.property.TextAlignment;
-import org.reactome.server.tools.analysis.exporter.style.Fonts;
-import org.reactome.server.tools.analysis.exporter.style.Profile;
+import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 
 public class P extends Paragraph {
 
@@ -25,8 +24,8 @@ public class P extends Paragraph {
 	}
 
 	protected void style() {
-		setFont(Fonts.REGULAR);
-		setFontSize(Profile.P);
+		setFont(PdfProfile.REGULAR);
+		setFontSize(PdfProfile.P);
 		setMultipliedLeading(1.2f);
 		setHyphenation(HYPHENATION_CONFIG);
 		setTextAlignment(TextAlignment.JUSTIFIED);
