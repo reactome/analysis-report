@@ -11,16 +11,6 @@ public class Images {
 	private static ImageData LINK_DATA = ImageDataFactory.create(Images.class.getResource("link.png"));
 
 	/**
-	 * Gets a new fresh link icon with dimensions fitting FontSize.P and
-	 * pointing to the url passed by argument.
-	 *
-	 * @param url where the link will point.
-	 */
-	public static Image getLink(String url) {
-		return getLink(url, PdfProfile.P);
-	}
-
-	/**
 	 * Gets a new fresh link icon with dimensions fitting scale and pointing to
 	 * the url passed by argument.
 	 *

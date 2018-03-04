@@ -3,15 +3,13 @@ package org.reactome.server.tools.analysis.exporter.section;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Image;
-import com.itextpdf.layout.element.ListItem;
+import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
 import org.reactome.server.tools.analysis.exporter.style.Images;
-import org.reactome.server.tools.analysis.exporter.element.H2;
-import org.reactome.server.tools.analysis.exporter.element.LP;
-import org.reactome.server.tools.analysis.exporter.element.P;
-import org.reactome.server.tools.analysis.exporter.element.UnorderedList;
+import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.util.PdfUtils;
 
+import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -31,19 +29,18 @@ public class Introduction implements Section {
 			.collect(Collectors.toList());
 
 	@Override
-	public void render(Document document, AnalysisData analysisData) {
+	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		document.add(new AreaBreak());
-		document.add(new H2("1. Introduction").setDestination("introduction"));
-		INTRODUCTION.stream().map(P::new).forEach(document::add);
+		document.add(profile.getH2("1. Introduction").setDestination("introduction"));
+		INTRODUCTION.stream().map(profile::getParagraph).forEach(document::add);
 
-		final UnorderedList list = new UnorderedList();
-		PUBLICATIONS.forEach(reference -> {
-			final Image image = Images.getLink(reference.link);
-			ListItem item = new ListItem();
-			item.add(new LP(reference.text).add(" ").add(image));
-			list.add(item);
-		});
-		document.add(list);
+		final List<Paragraph> paragraphs = new LinkedList<>();
+		for (Reference publication : PUBLICATIONS) {
+			final Image image = Images.getLink(publication.link, profile.getP());
+			paragraphs.add(profile.getParagraph(publication.text).add(image));
+		}
+		document.add(profile.getList(paragraphs));
+
 	}
 
 	private static class Reference {

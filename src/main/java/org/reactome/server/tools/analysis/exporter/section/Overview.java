@@ -9,8 +9,7 @@ import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.property.HorizontalAlignment;
 import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
-import org.reactome.server.tools.analysis.exporter.element.H2;
-import org.reactome.server.tools.analysis.exporter.element.P;
+import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.util.FireworksHelper;
 import org.reactome.server.tools.analysis.exporter.util.PdfUtils;
 import org.reactome.server.tools.fireworks.exporter.common.analysis.exception.AnalysisServerError;
@@ -28,15 +27,15 @@ public class Overview implements Section {
 	private static final List<String> FIREWORKS_TEXT = PdfUtils.getText(Overview.class.getResourceAsStream("fireworks.txt"));
 
 	@Override
-	public void render(Document document, AnalysisData analysisData) {
+	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		// Starts a new rotated page
 		document.getPdfDocument().setDefaultPageSize(PageSize.A4.rotate());
 		document.add(new AreaBreak());
 
-		document.add(new H2("3. Genome-wide overview").setDestination("overview"));
+		document.add(profile.getH2("3. Genome-wide overview").setDestination("overview"));
 		addFireworks(document, analysisData);
 		for (String paragraph : FIREWORKS_TEXT)
-			document.add(new P(paragraph).setTextAlignment(TextAlignment.CENTER));
+			document.add(profile.getParagraph(paragraph).setTextAlignment(TextAlignment.CENTER));
 		// Starts a new normal page
 		document.getPdfDocument().setDefaultPageSize(PageSize.A4);
 	}

@@ -55,7 +55,6 @@ public class AnalysisExporter {
 	private static final ObjectMapper MAPPER = new ObjectMapper();
 	private static final Logger LOGGER = LoggerFactory.getLogger(AnalysisExporter.class);
 
-	private static final PdfProfile profile = loadPdfProfile();
 	private final TokenUtils tokenUtils;
 	private final List<Section> SECTIONS = Arrays.asList(
 			new CoverPage(),
@@ -73,19 +72,6 @@ public class AnalysisExporter {
 		FireworksHelper.setPaths(fireworksPath, analysisPath);
 		Locale.setDefault(Locale.ENGLISH);
 		tokenUtils = new TokenUtils(analysisPath);
-	}
-
-	/**
-	 * load the {@see PdfProfile} config information to control PDF layout.
-	 */
-	private static PdfProfile loadPdfProfile() {
-		try {
-			final InputStream resource = PdfProfile.class.getResourceAsStream("breathe.json");
-			return MAPPER.readValue(resource, PdfProfile.class);
-		} catch (IOException e) {
-			e.printStackTrace();
-			return new PdfProfile();
-		}
 	}
 
 	private String getDefaultResource(AnalysisStoredResult result) {
@@ -108,7 +94,7 @@ public class AnalysisExporter {
 	 * OutputStream, or just save as a local file by using the
 	 * FileOutputStream.</p>
 	 *
-	 * @param profile compact or breathe
+	 * @param profile     compact or breathe
 	 * @param destination destination you want to save the produced PDF report
 	 *                    document, it can be any stream extends from
 	 *                    OutputStream.
@@ -116,14 +102,15 @@ public class AnalysisExporter {
 
 	public void render(String token, String resource, Long species, String profile, OutputStream destination) throws AnalysisExporterException {
 		final AnalysisStoredResult result = tokenUtils.getFromToken(token);
-		render(result, resource, species, destination);
+		render(result, resource, species, profile, destination);
 	}
 
 	/**
 	 * render the report with data set.
 	 */
-	public void render(AnalysisStoredResult result, String resource, Long species, OutputStream destination) throws AnalysisExporterException {
-		PdfProfile.reload();
+	public void render(AnalysisStoredResult result, String resource, Long species, String profile, OutputStream destination) throws AnalysisExporterException {
+		final PdfProfile pdfProfile = loadProfile(profile);
+
 		if (species == null) {
 			species = DEFAULT_SPECIES;
 			LOGGER.warn("Use default species");
@@ -135,14 +122,25 @@ public class AnalysisExporter {
 			LOGGER.warn("Resource: '{}' not exist, use '{}' instead", resource, resource);
 		}
 
-		final AnalysisData analysisData = new AnalysisData(result, resource, species);
+		final AnalysisData analysisData = new AnalysisData(result, resource, species, pdfProfile);
 
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
-			document.setMargins(profile.getMargin().getTop(), profile.getMargin().getRight(),
-					profile.getMargin().getBottom(), profile.getMargin().getLeft());
-			document.getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(document));
+			document.setMargins(pdfProfile.getMargin().getTop(),
+					pdfProfile.getMargin().getRight(),
+					pdfProfile.getMargin().getBottom(),
+					pdfProfile.getMargin().getLeft());
+			document.getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(document, pdfProfile));
 			for (Section section : SECTIONS)
-				section.render(document, analysisData);
+				section.render(document, pdfProfile, analysisData);
+		}
+	}
+
+	private PdfProfile loadProfile(String profile) throws AnalysisExporterException {
+		try {
+			final InputStream resource = PdfProfile.class.getResourceAsStream(profile.toLowerCase() + ".json");
+			return MAPPER.readValue(resource, PdfProfile.class);
+		} catch (IOException e) {
+			throw new AnalysisExporterException("Unknown profile " + profile, e);
 		}
 	}
 }

@@ -16,9 +16,11 @@ import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 public class FooterEventHandler implements IEventHandler {
 
 	private final Document document;
+	private PdfProfile profile;
 
-	public FooterEventHandler(Document document) {
+	public FooterEventHandler(Document document, PdfProfile profile) {
 		this.document = document;
+		this.profile = profile;
 	}
 
 	@Override
@@ -32,9 +34,9 @@ public class FooterEventHandler implements IEventHandler {
 		final String paging = String.format("Page %d", pageNumber - 1);
 		final float yCenter = document.getBottomMargin() * 0.5f;
 		final float width = page.getMediaBox().getWidth();
-		final float pagingWidth = PdfProfile.REGULAR.getWidth(paging, 8);
+		final float pagingWidth = profile.getRegularFont().getWidth(paging, 8);
 
-		canvas.setFontAndSize(PdfProfile.REGULAR, 8)
+		canvas.setFontAndSize(profile.getRegularFont(), 8)
 				.moveTo(document.getLeftMargin(), yCenter)
 				.showText("reactome.org")
 				.moveTo(width - document.getRightMargin() - pagingWidth, yCenter)

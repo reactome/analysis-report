@@ -11,14 +11,14 @@ import org.reactome.server.analysis.core.result.model.ResourceSummary;
 import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
 import org.reactome.server.tools.analysis.exporter.PathwayData;
-import org.reactome.server.tools.analysis.exporter.style.Images;
-import org.reactome.server.tools.analysis.exporter.element.*;
 import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
+import org.reactome.server.tools.analysis.exporter.style.Images;
 import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.util.HtmlParser;
 
 import java.util.*;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -34,64 +34,64 @@ public class PathwayDetail implements Section {
 	private static final String PATHWAY_DETAIL = "https://reactome.org/content/detail/";
 
 	@Override
-	public void render(Document document, AnalysisData analysisData) throws AnalysisExporterException {
+	public void render(Document document, PdfProfile profile, AnalysisData analysisData) throws AnalysisExporterException {
 		document.add(new AreaBreak());
-		document.add(new H1("5. Pathway details").setDestination("pathway-details"));
+		document.add(profile.getH1("5. Pathway details").setDestination("pathway-details"));
 		int i = 1;
 		for (PathwayData pathwayData : analysisData.getPathways()) {
 			final Pathway pathway = pathwayData.getPathway();
-			document.add(getLinkedPathwayName(i, pathway));
+			document.add(getLinkedPathwayName(i, pathway, profile));
 			final float width = document.getPdfDocument().getLastPage().getMediaBox().getWidth() - document.getLeftMargin() - document.getRightMargin();
 			final Image diagram = DiagramHelper.getDiagram(pathway.getStId(), analysisData.getAnalysisStoredResult(), analysisData.getResource(), width);
 			if (diagram != null) document.add(diagram);
-			addDatabaseObjectList(document, "Compartments", pathway.getCompartment());
-			addRelatedDiseases(document, pathway);
-			addDatabaseObjectList(document, "Inferred from", pathway.getInferredFrom());
+			addDatabaseObjectList(document, "Compartments", pathway.getCompartment(), profile);
+			addRelatedDiseases(document, pathway, profile);
+			addDatabaseObjectList(document, "Inferred from", pathway.getInferredFrom(), profile);
 
-			addSummations(document, pathway);
-			addReferences(document, pathway);
+			addSummations(document, pathway, profile);
+			addReferences(document, pathway, profile);
 
 //			addEditTable(document, pathway);
 
-			addFoundElements(document, analysisData, pathway);
+			addFoundElements(document, analysisData, pathway, profile);
 
 			document.add(new AreaBreak());
 			i += 1;
 		}
 	}
 
-	private void addFoundElements(Document document, AnalysisData analysisData, Pathway pathway) {
-		document.add(new H3("Elements found in this pathway"));
+	private void addFoundElements(Document document, AnalysisData analysisData, Pathway pathway, PdfProfile profile) {
+		document.add(profile.getH3("Elements found in this pathway"));
 		if (analysisData.getResource().equalsIgnoreCase("total")) {
 			for (ResourceSummary summary : analysisData.getAnalysisStoredResult().getResourceSummary()) {
 				if (summary.getResource().equalsIgnoreCase("total")) continue;
 				final FoundElements foundElements = analysisData.getAnalysisStoredResult().getFoundElmentsForPathway(pathway.getStId(), summary.getResource());
 				if (foundElements.getFoundEntities() > 0)
-					addIdentifiers(document, foundElements, analysisData.beautify(summary.getResource()));
+					addIdentifiers(document, foundElements, analysisData.beautify(summary.getResource()), profile);
 			}
 		} else {
 			final FoundElements foundElements = analysisData.getAnalysisStoredResult().getFoundElmentsForPathway(pathway.getStId(), analysisData.getResource());
-			addIdentifiers(document, foundElements, analysisData.getBeautifiedResource());
+			addIdentifiers(document, foundElements, analysisData.getBeautifiedResource(), profile);
 		}
 	}
 
-	private void addSummations(Document document, Pathway pathway) {
+	private void addSummations(Document document, Pathway pathway, PdfProfile profile) {
 		pathway.getSummation().forEach(summation -> {
 			final String[] paragraphs = summation.getText().split("(?i)<br>|<p>");
 			for (String paragraph : paragraphs) {
 				final String trim = paragraph.trim();
 				if (trim.isEmpty()) continue;
-				document.add(HtmlParser.parseParagraph(trim));
+				document.add(HtmlParser.parseParagraph(trim, profile));
 			}
 		});
 	}
 
-	private void addRelatedDiseases(Document document, Pathway pathwayDetail) {
+	private void addRelatedDiseases(Document document, Pathway pathwayDetail, PdfProfile profile) {
 		if (pathwayDetail.getDisease() != null) {
 			final java.util.List<Disease> diseases = pathwayDetail.getDisease().stream()
 					.filter(disease -> !disease.getDisplayName().equals("disease"))
 					.collect(Collectors.toList());
-			addDatabaseObjectList(document, "Diseases", diseases);
+			addDatabaseObjectList(document, "Diseases", diseases, profile);
 		}
 	}
 
@@ -103,27 +103,30 @@ public class PathwayDetail implements Section {
 		return person.getFirstname();
 	}
 
-	private void addDatabaseObjectList(Document document, String title, Collection<? extends DatabaseObject> objects) {
+	private void addDatabaseObjectList(Document document, String title, Collection<? extends DatabaseObject> objects, PdfProfile profile) {
 		if (objects != null && !objects.isEmpty()) {
-			final Paragraph paragraph = new P().add(new Text(title + ": ").setFont(PdfProfile.BOLD));
-			final java.util.List<String> list = objects.stream().map(DatabaseObject::getDisplayName).collect(Collectors.toList());
-			paragraph.add(new Text(String.join(", ", list)).setFont(PdfProfile.REGULAR));
-			paragraph.add(".");
+			final java.util.List<String> list = objects.stream()
+					.map(DatabaseObject::getDisplayName)
+					.collect(Collectors.toList());
+			final String body = String.join(", ", list) + ".";
+			final Paragraph paragraph = profile.getParagraph("")
+					.add(new Text(title + ": ").setFont(profile.getBoldFont()))
+					.add(body);
 			document.add(paragraph);
 		}
 	}
 
-	private Paragraph getLinkedPathwayName(int i, Pathway pathway) {
-		return new H2(i + ". " + pathway.getDisplayName())
+	private Paragraph getLinkedPathwayName(int i, Pathway pathway, PdfProfile profile) {
+		return profile.getH2(i + ". " + pathway.getDisplayName())
 				.add(" (")
 				.add(new Text(pathway.getStId())
 						.setAction(PdfAction.createURI(PATHWAY_DETAIL + pathway.getStId()))
-						.setFontColor(PdfProfile.REACTOME_COLOR))
+						.setFontColor(profile.getLinkColor()))
 				.add(")")
 				.setDestination(pathway.getStId());
 	}
 
-	private void addIdentifiers(Document document, FoundElements elements, String resource) {
+	private void addIdentifiers(Document document, FoundElements elements, String resource, PdfProfile profile) {
 		final Set<FoundEntity> identifiers = new TreeSet<>(Comparator.comparing(IdentifierSummary::getId));
 		identifiers.addAll(elements.getEntities());
 
@@ -131,14 +134,14 @@ public class PathwayDetail implements Section {
 		table.useAllAvailableWidth();
 		final String input = "Input";
 		final String mapping = String.format("%s Id", resource);
-		table.addHeaderCell(new HeaderCell(input));
-		table.addHeaderCell(new HeaderCell(mapping));
-		table.addHeaderCell(new BodyCell(null, 0));
-		table.addHeaderCell(new HeaderCell(input));
-		table.addHeaderCell(new HeaderCell(mapping));
-		table.addHeaderCell(new BodyCell(null, 0));
-		table.addHeaderCell(new HeaderCell(input));
-		table.addHeaderCell(new HeaderCell(mapping));
+		table.addHeaderCell(profile.getHeaderCell(input));
+		table.addHeaderCell(profile.getHeaderCell(mapping));
+		table.addHeaderCell(profile.getBodyCell(null, 0));
+		table.addHeaderCell(profile.getHeaderCell(input));
+		table.addHeaderCell(profile.getHeaderCell(mapping));
+		table.addHeaderCell(profile.getBodyCell(null, 0));
+		table.addHeaderCell(profile.getHeaderCell(input));
+		table.addHeaderCell(profile.getHeaderCell(mapping));
 		int i = 0;
 		int row = 0;
 		int column;
@@ -148,49 +151,51 @@ public class PathwayDetail implements Section {
 			final java.util.List<String> mapsTo = identifier.getMapsTo().stream()
 					.flatMap(identifierMap -> identifierMap.getIds().stream())
 					.collect(Collectors.toList());
-			table.addCell(new BodyCell(identifier.getId(), row));
-			table.addCell(new BodyCell(String.join(", ", mapsTo), row));
+			table.addCell(profile.getBodyCell(identifier.getId(), row));
+			table.addCell(profile.getBodyCell(String.join(", ", mapsTo), row));
 			if (column == 0 || column == 1)
-				table.addCell(new BodyCell(null, 0));
+				table.addCell(profile.getBodyCell(null, 0));
 			i += 1;
 		}
-		fillLastRow(table, identifiers.size(), row);
+		fillLastRow(table, identifiers.size(), row, profile);
 		document.add(table);
 	}
 
-	private void fillLastRow(Table table, int identifiers, int row) {
+	private void fillLastRow(Table table, int identifiers, int row, PdfProfile profile) {
 		int n = identifiers % 3;
 		if (n == 1) n = 5;
 		if (n == 2) n = 2;
 		if (n == 3) n = 0;
 		for (int j = 0; j < n; j++)
-			table.addCell(new BodyCell(null, row));
+			table.addCell(profile.getBodyCell(null, row));
 	}
 
-	private void addReferences(Document document, Pathway pathwayDetail) {
+	private void addReferences(Document document, Pathway pathwayDetail, PdfProfile profile) {
 		if (pathwayDetail.getLiteratureReference() != null) {
-			document.add(new H3("References"));
-			final com.itextpdf.layout.element.List list = new UnorderedList();
-			pathwayDetail.getLiteratureReference().stream().limit(5)
-					.forEach(publication -> list.add(createPublication(publication)));
-			document.add(list);
+			document.add(profile.getH3("References"));
+			final List<Paragraph> paragraphs = pathwayDetail.getLiteratureReference().stream()
+					.limit(5)
+					.map(publication -> createPublication(publication, profile))
+					.collect(Collectors.toList());
+			document.add(profile.getList(paragraphs));
 		}
 	}
 
-	private ListItem createPublication(Publication publication) {
-		final ListItem item = new ListItem();
+	private Paragraph createPublication(Publication publication, PdfProfile profile) {
 		if (publication instanceof LiteratureReference) {
 			final LiteratureReference reference = (LiteratureReference) publication;
-			item.add(new P(toString(reference)).add(". ").add(Images.getLink(reference.getUrl())));
+			return profile.getParagraph(toString(reference))
+					.add(". ")
+					.add(Images.getLink(reference.getUrl(), profile.getP()));
 		} else if (publication instanceof Book) {
 			final Book book = (Book) publication;
-			item.add(new P(toString(book)).add("."));
+			return profile.getParagraph(toString(book)).add(".");
 		} else if (publication instanceof org.reactome.server.graph.domain.model.URL) {
 			final org.reactome.server.graph.domain.model.URL url = (org.reactome.server.graph.domain.model.URL) publication;
 			final String citation = toString(url);
-			item.add(new P(citation).add(". ").add(Images.getLink(url.getUniformResourceLocator())));
+			return profile.getParagraph(citation).add(". ").add(Images.getLink(url.getUniformResourceLocator(), profile.getP()));
 		}
-		return item;
+		return profile.getParagraph(publication.getDisplayName());
 	}
 
 	private String toString(LiteratureReference reference) {

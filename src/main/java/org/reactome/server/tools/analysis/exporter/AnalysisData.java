@@ -29,11 +29,12 @@ public class AnalysisData {
 	private final String name;
 	private final String species;
 	private final String speciesComparisonSpecies;
+	private PdfProfile profile;
 	private final String resource;
 	private final AnalysisStoredResult analysisStoredResult;
 	private final Long speciesDbId;
 
-	AnalysisData(AnalysisStoredResult analysisStoredResult, String resource, Long speciesDbId) {
+	AnalysisData(AnalysisStoredResult analysisStoredResult, String resource, Long speciesDbId, PdfProfile profile) {
 		this.analysisStoredResult = analysisStoredResult;
 		this.resource = resource;
 		this.speciesDbId = speciesDbId;
@@ -41,6 +42,7 @@ public class AnalysisData {
 		this.species = getSpeciesName(speciesDbId);
 		this.type = AnalysisType.valueOf(analysisStoredResult.getSummary().getType());
 		this.speciesComparisonSpecies = getSpeciesName(analysisStoredResult.getSummary().getSpecies());
+		this.profile = profile;
 		this.name = computeName();
 		pathways = collectPathways();
 	}
@@ -61,7 +63,7 @@ public class AnalysisData {
 	private List<PathwayData> collectPathways() {
 		final List<PathwayData> list = new LinkedList<>();
 		analysisStoredResult.filterBySpecies(speciesDbId, resource).getPathways().stream()
-				.limit(PdfProfile.MAX_PATHWAYS).forEach(pathwayBase -> {
+				.limit(profile.getMaxPathways()).forEach(pathwayBase -> {
 			final PathwayNodeSummary pathwaySummary = analysisStoredResult.getPathway(pathwayBase.getStId());
 			final Pathway pathway = databaseObjectService.findByIdNoRelations(pathwayBase.getStId());
 			list.add(new PathwayData(pathwaySummary, pathwayBase, pathway));
