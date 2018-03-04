@@ -3,48 +3,48 @@ package org.reactome.server.tools.analysis.exporter;
 import org.reactome.server.analysis.core.model.AnalysisType;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
-import org.reactome.server.analysis.core.result.model.SpeciesFilteredResult;
 import org.reactome.server.graph.domain.model.Pathway;
+import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.util.GraphCoreHelper;
 
 import java.util.Collection;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.LinkedList;
+import java.util.List;
 
 
 public class AnalysisData {
 
-	private static final int MAX_PATHWAYS = 35;
 	private final AnalysisType type;
-	private final Map<String, PathwayData> pathwayDataMap;
+	private final List<PathwayData> pathways;
 	private final String beautifiedResource;
 	private final String name;
 	private final String species;
 	private final String speciesComparisonSpecies;
 	private final String resource;
-	private AnalysisStoredResult analysisStoredResult;
-	private SpeciesFilteredResult speciesFilteredResult;
+	private final AnalysisStoredResult analysisStoredResult;
+	private final Long speciesDbId;
 
 	AnalysisData(AnalysisStoredResult analysisStoredResult, String resource, Long speciesDbId) {
 		this.analysisStoredResult = analysisStoredResult;
 		this.resource = resource;
+		this.speciesDbId = speciesDbId;
 		this.beautifiedResource = beautify(resource);
 		this.species = GraphCoreHelper.getSpeciesName(speciesDbId);
 		this.type = AnalysisType.valueOf(analysisStoredResult.getSummary().getType());
-		this.speciesFilteredResult = analysisStoredResult.filterBySpecies(speciesDbId, resource);
 		this.speciesComparisonSpecies = GraphCoreHelper.getSpeciesName(analysisStoredResult.getSummary().getSpecies());
 		this.name = computeName();
-		pathwayDataMap = indexPathways();
+		pathways = collectPathways();
 	}
 
-	private Map<String, PathwayData> indexPathways() {
-		final Map<String, PathwayData> map = new LinkedHashMap<>();
-		speciesFilteredResult.getPathways().stream().limit(MAX_PATHWAYS).forEach(pathwayBase -> {
+	private List<PathwayData> collectPathways() {
+		final List<PathwayData> list = new LinkedList<>();
+		analysisStoredResult.filterBySpecies(speciesDbId, resource).getPathways().stream()
+				.limit(PdfProfile.MAX_PATHWAYS).forEach(pathwayBase -> {
 			final PathwayNodeSummary pathwaySummary = analysisStoredResult.getPathway(pathwayBase.getStId());
 			final Pathway pathway = GraphCoreHelper.getPathway(pathwayBase.getStId());
-			map.put(pathway.getStId(), new PathwayData(pathwaySummary, pathwayBase, pathway));
+			list.add(new PathwayData(pathwaySummary, pathwayBase, pathway));
 		});
-		return map;
+		return list;
 	}
 
 	private String computeName() {
@@ -83,17 +83,8 @@ public class AnalysisData {
 		return analysisStoredResult;
 	}
 
-	public SpeciesFilteredResult getSpeciesFilteredResult() {
-		return speciesFilteredResult;
-	}
-
-
 	public Collection<PathwayData> getPathways() {
-		return pathwayDataMap.values();
-	}
-
-	public PathwayData getPathwayData(String stId) {
-		return pathwayDataMap.get(stId);
+		return pathways;
 	}
 
 	public String getName() {
@@ -104,7 +95,7 @@ public class AnalysisData {
 		return type;
 	}
 
-	public String getSpeciesComparisonSpecies() {
+	public String getSpeciesComparisonSpeciesName() {
 		return speciesComparisonSpecies;
 	}
 
