@@ -4,16 +4,25 @@ import org.reactome.server.analysis.core.model.AnalysisType;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.graph.domain.model.Pathway;
+import org.reactome.server.graph.domain.model.Species;
+import org.reactome.server.graph.service.DatabaseObjectService;
+import org.reactome.server.graph.service.GeneralService;
+import org.reactome.server.graph.utils.ReactomeGraphCore;
 import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
-import org.reactome.server.tools.analysis.exporter.util.GraphCoreHelper;
 
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
-
+/**
+ * Contains the data needed for the analysis. All of the accesses to the graph
+ * database and the AnalysisStoredResult are done here, providing a convenient
+ * method {@link AnalysisData#getPathways()} to fetch data.
+ */
 public class AnalysisData {
 
+	private static GeneralService genericService = ReactomeGraphCore.getService(GeneralService.class);
+	private static DatabaseObjectService databaseObjectService = ReactomeGraphCore.getService(DatabaseObjectService.class);
 	private final AnalysisType type;
 	private final List<PathwayData> pathways;
 	private final String beautifiedResource;
@@ -29,11 +38,24 @@ public class AnalysisData {
 		this.resource = resource;
 		this.speciesDbId = speciesDbId;
 		this.beautifiedResource = beautify(resource);
-		this.species = GraphCoreHelper.getSpeciesName(speciesDbId);
+		this.species = getSpeciesName(speciesDbId);
 		this.type = AnalysisType.valueOf(analysisStoredResult.getSummary().getType());
-		this.speciesComparisonSpecies = GraphCoreHelper.getSpeciesName(analysisStoredResult.getSummary().getSpecies());
+		this.speciesComparisonSpecies = getSpeciesName(analysisStoredResult.getSummary().getSpecies());
 		this.name = computeName();
 		pathways = collectPathways();
+	}
+
+	/**
+	 * @return Reactome's current database version.
+	 */
+	public static int getDBVersion() {
+		return genericService.getDBVersion();
+	}
+
+	private static String getSpeciesName(Long id) {
+		if (id == null) return null;
+		Species species = databaseObjectService.findByIdNoRelations(id);
+		return species.getName().get(0);
 	}
 
 	private List<PathwayData> collectPathways() {
@@ -41,7 +63,7 @@ public class AnalysisData {
 		analysisStoredResult.filterBySpecies(speciesDbId, resource).getPathways().stream()
 				.limit(PdfProfile.MAX_PATHWAYS).forEach(pathwayBase -> {
 			final PathwayNodeSummary pathwaySummary = analysisStoredResult.getPathway(pathwayBase.getStId());
-			final Pathway pathway = GraphCoreHelper.getPathway(pathwayBase.getStId());
+			final Pathway pathway = databaseObjectService.findByIdNoRelations(pathwayBase.getStId());
 			list.add(new PathwayData(pathwaySummary, pathwayBase, pathway));
 		});
 		return list;

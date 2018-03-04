@@ -7,7 +7,6 @@ import org.reactome.server.tools.analysis.exporter.AnalysisData;
 import org.reactome.server.tools.analysis.exporter.style.Images;
 import org.reactome.server.tools.analysis.exporter.element.H3;
 import org.reactome.server.tools.analysis.exporter.element.Title;
-import org.reactome.server.tools.analysis.exporter.util.GraphCoreHelper;
 import org.reactome.server.tools.analysis.exporter.util.HtmlParser;
 import org.reactome.server.tools.analysis.exporter.util.PdfUtils;
 
@@ -33,7 +32,7 @@ public class CoverPage implements Section {
 		final String link = "https://reactome.org/PathwayBrowser/#/ANALYSIS=" + analysisData.getAnalysisStoredResult().getSummary().getToken();
 		final String p1 = String.format(SUMMARY_TEXT.get(0),
 				analysisData.getName(),
-				GraphCoreHelper.getDBVersion(),
+				AnalysisData.getDBVersion(),
 				DATE_FORMAT.format(new Date()),
 				analysisData.getBeautifiedResource(),
 				link, link);

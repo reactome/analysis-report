@@ -5,6 +5,8 @@ import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.property.HorizontalAlignment;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.graph.domain.result.DiagramResult;
+import org.reactome.server.graph.service.DiagramService;
+import org.reactome.server.graph.utils.ReactomeGraphCore;
 import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.reactome.server.tools.diagram.exporter.common.analysis.AnalysisException;
 import org.reactome.server.tools.diagram.exporter.common.profiles.factory.DiagramJsonDeserializationException;
@@ -27,6 +29,7 @@ public class DiagramHelper {
 	private static final double IMAGE_SCALE = 1.5;  // 1=keep original ppp
 	private static final int MIN_QUALITY = 3;
 	private static RasterExporter exporter;
+	private static DiagramService diagramService = ReactomeGraphCore.getService(DiagramService.class);
 
 	/**
 	 * create diagram image by using the RasterExporter{@see RasterExporter}.
@@ -38,7 +41,7 @@ public class DiagramHelper {
 	 * @return diagram.
 	 */
 	public static Image getDiagram(String stId, AnalysisStoredResult asr, String resource, double pageWidth) throws AnalysisExporterException {
-		final DiagramResult diagramResult = GraphCoreHelper.getDiagramResult(stId);
+		final DiagramResult diagramResult = getDiagramResult(stId);
 		final RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "png");
 		args.setSelected(diagramResult.getEvents());
 		args.setWriteTitle(false);
@@ -82,5 +85,9 @@ public class DiagramHelper {
 
 	public static void setPaths(String diagramPath, String ehldPath, String analysisPath, String svgSummary) {
 		exporter = new RasterExporter(diagramPath, ehldPath, analysisPath, svgSummary);
+	}
+
+	public static DiagramResult getDiagramResult(String stId) {
+		return diagramService.getDiagramResult(stId);
 	}
 }
