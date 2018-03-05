@@ -26,7 +26,7 @@ import java.io.IOException;
  * @author Chuan Deng dengchuanbio@gmail.com
  */
 public class DiagramHelper {
-	private static final double IMAGE_SCALE = 1.5;  // 1=keep original ppp
+	private static final double IMAGE_SCALE = 2;  // 1=keep original ppp
 	private static final int MIN_QUALITY = 3;
 	private static RasterExporter exporter;
 	private static DiagramService diagramService = ReactomeGraphCore.getService(DiagramService.class);

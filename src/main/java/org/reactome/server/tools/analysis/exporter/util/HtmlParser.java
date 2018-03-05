@@ -1,7 +1,9 @@
 package org.reactome.server.tools.analysis.exporter.util;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
+import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
+import org.reactome.server.graph.domain.model.Summation;
 import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 
 import java.util.LinkedList;
@@ -27,6 +29,15 @@ public class HtmlParser {
 		final Paragraph paragraph = profile.getParagraph("");
 		spans.forEach(span -> span.render(paragraph, profile));
 		return paragraph;
+	}
+
+	public static void parseText(Document document, PdfProfile profile, Summation summation) {
+		final String[] paragraphs = summation.getText().split("(?i)<br>|<p>");
+		for (String paragraph : paragraphs) {
+			final String trim = paragraph.trim();
+			if (trim.isEmpty()) continue;
+			document.add(parseParagraph(trim, profile));
+		}
 	}
 
 	private static List<Span> trimItalic(List<Span> in) {
@@ -168,10 +179,9 @@ public class HtmlParser {
 			if (link == null)
 				paragraph.add(text);
 			else
-				paragraph
-						.add(new com.itextpdf.layout.element.Text(text)
-								.setAction(PdfAction.createURI(link))
-								.setFontColor(profile.getLinkColor()));
+				paragraph.add(new com.itextpdf.layout.element.Text(text)
+						.setAction(PdfAction.createURI(link))
+						.setFontColor(profile.getLinkColor()));
 		}
 
 	}
@@ -183,7 +193,7 @@ public class HtmlParser {
 
 		@Override
 		void render(Paragraph paragraph, PdfProfile profile) {
-			paragraph.add(new com.itextpdf.layout.element.Text(text).setFontSize(1 + profile.getP() / 2));
+			paragraph.add(new com.itextpdf.layout.element.Text(text).setFontSize(1 + profile.getFontSize() / 2));
 		}
 	}
 }

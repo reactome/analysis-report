@@ -12,6 +12,7 @@ import com.itextpdf.layout.element.List;
 import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.hyphenation.HyphenationConfig;
+import com.itextpdf.layout.property.ListNumberingType;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.apache.commons.io.IOUtils;
@@ -36,7 +37,7 @@ public class PdfProfile {
 	private float H2;
 	private float H3;
 	private float H4;
-	private float P;
+	private float fontSize;
 	private float TITLE;
 	private float TABLE;
 
@@ -64,31 +65,12 @@ public class PdfProfile {
 		}
 	}
 
-	public void setFontSize(Integer fontSize) {
-		P = fontSize;
-		TABLE = P - 2;
-		H4 = P + 2;
-		H3 = P + 4;
-		H2 = P + 6;
-		H1 = P + 10;
-		TITLE = P + 14;
-	}
-
 	public MarginProfile getMargin() {
 		return margin;
 	}
 
 	public Integer getMaxPathways() {
 		return maxPathways;
-	}
-
-	@Override
-	public String toString() {
-		return "PdfProfile{" +
-				", fontSize=" + P +
-				", pathwaysToShow=" + maxPathways +
-				", margin=" + margin +
-				'}';
 	}
 
 	public PdfFont getItalic() {
@@ -103,14 +85,24 @@ public class PdfProfile {
 		return LINK_COLOR;
 	}
 
-	public float getP() {
-		return P;
+	public float getFontSize() {
+		return fontSize;
+	}
+
+	public void setFontSize(Integer fontSize) {
+		this.fontSize = fontSize;
+		TABLE = this.fontSize - 2;
+		H4 = this.fontSize + 2;
+		H3 = this.fontSize + 4;
+		H2 = this.fontSize + 6;
+		H1 = this.fontSize + 10;
+		TITLE = this.fontSize + 14;
 	}
 
 	public Paragraph getParagraph(String text) {
 		return new Paragraph(text)
 				.setFont(REGULAR)
-				.setFontSize(P)
+				.setFontSize(fontSize)
 				.setMultipliedLeading(1.2f)
 				.setHyphenation(HYPHENATION_CONFIG)
 				.setTextAlignment(TextAlignment.JUSTIFIED);
@@ -118,7 +110,7 @@ public class PdfProfile {
 
 	public Paragraph getH1(String text) {
 		return new Paragraph(text)
-				.setFont(BOLD)
+				.setFont(LIGHT)
 				.setFontSize(H1)
 				.setMultipliedLeading(2f)
 				.setHyphenation(HYPHENATION_CONFIG)
@@ -127,16 +119,29 @@ public class PdfProfile {
 
 	public Paragraph getH2(String text) {
 		return new Paragraph(text)
-				.setFont(BOLD)
+				.setFont(LIGHT)
 				.setFontSize(H2)
 				.setMultipliedLeading(1.5f)
 				.setHyphenation(HYPHENATION_CONFIG)
 				.setTextAlignment(TextAlignment.LEFT);
 	}
 
+	public List getIndexedH2(int i, Paragraph paragraph) {
+		final List list = new List(ListNumberingType.DECIMAL)
+				.setItemStartIndex(i)
+				.setFont(LIGHT)
+				.setFontSize(H2)
+				.setHyphenation(HYPHENATION_CONFIG)
+				.setTextAlignment(TextAlignment.LEFT);
+		ListItem item = new ListItem();
+		item.add(paragraph);
+		list.add(item);
+		return list;
+	}
+
 	public Paragraph getH3(String text) {
 		return new Paragraph(text)
-				.setFont(REGULAR)
+				.setFont(LIGHT)
 				.setFontSize(H3)
 				.setMultipliedLeading(1.2f)
 				.setHyphenation(HYPHENATION_CONFIG)
@@ -227,7 +232,7 @@ public class PdfProfile {
 	public Paragraph getToc1(String text, String destination) {
 		return new Paragraph(text)
 				.setFont(BOLD)
-				.setFontSize(P + 2)
+				.setFontSize(fontSize + 2)
 				.setMarginLeft(10)
 				.setMultipliedLeading(2)
 				.setAction(PdfAction.createGoTo(destination));
@@ -236,7 +241,7 @@ public class PdfProfile {
 	public Paragraph getToc2(String text, String destination) {
 		return new Paragraph(text)
 				.setFont(BOLD)
-				.setFontSize(P)
+				.setFontSize(fontSize)
 				.setMarginLeft(20)
 				.setMultipliedLeading(2)
 				.setDestination(destination);

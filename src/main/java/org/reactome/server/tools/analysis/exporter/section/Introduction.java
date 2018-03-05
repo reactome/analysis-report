@@ -31,12 +31,12 @@ public class Introduction implements Section {
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		document.add(new AreaBreak());
-		document.add(profile.getH2("1. Introduction").setDestination("introduction"));
+		document.add(profile.getH1("1. Introduction").setDestination("introduction"));
 		INTRODUCTION.stream().map(profile::getParagraph).forEach(document::add);
 
 		final List<Paragraph> paragraphs = new LinkedList<>();
 		for (Reference publication : PUBLICATIONS) {
-			final Image image = Images.getLink(publication.link, profile.getP());
+			final Image image = Images.getLink(publication.link, profile.getFontSize());
 			paragraphs.add(profile.getParagraph(publication.text).add(image));
 		}
 		document.add(profile.getList(paragraphs));

@@ -32,7 +32,7 @@ public class Overview implements Section {
 		document.getPdfDocument().setDefaultPageSize(PageSize.A4.rotate());
 		document.add(new AreaBreak());
 
-		document.add(profile.getH2("3. Genome-wide overview").setDestination("overview"));
+		document.add(profile.getH1("3. Genome-wide overview").setDestination("overview"));
 		addFireworks(document, analysisData);
 		for (String paragraph : FIREWORKS_TEXT)
 			document.add(profile.getParagraph(paragraph).setTextAlignment(TextAlignment.CENTER));

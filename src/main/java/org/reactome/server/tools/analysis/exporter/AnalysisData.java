@@ -29,10 +29,10 @@ public class AnalysisData {
 	private final String name;
 	private final String species;
 	private final String speciesComparisonSpecies;
-	private PdfProfile profile;
 	private final String resource;
 	private final AnalysisStoredResult analysisStoredResult;
 	private final Long speciesDbId;
+	private PdfProfile profile;
 
 	AnalysisData(AnalysisStoredResult analysisStoredResult, String resource, Long speciesDbId, PdfProfile profile) {
 		this.analysisStoredResult = analysisStoredResult;

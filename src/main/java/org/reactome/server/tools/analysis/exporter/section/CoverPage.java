@@ -26,8 +26,10 @@ public class CoverPage implements Section {
 		// Empty space
 		document.add(profile.getTitle(""));
 		document.add(profile.getTitle("Pathway Analysis Report"));
+		document.add(profile.getTitle(""));
 
 		document.add(profile.getH3(analysisData.getName()).setTextAlignment(TextAlignment.CENTER));
+		document.add(profile.getTitle(""));
 
 		// Paragraph 1: argument details
 		final String p1 = String.format(SUMMARY_TEXT.get(0),

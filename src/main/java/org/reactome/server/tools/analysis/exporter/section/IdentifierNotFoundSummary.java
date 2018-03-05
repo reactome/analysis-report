@@ -14,7 +14,7 @@ public class IdentifierNotFoundSummary implements Section {
 
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
-		document.add(profile.getH2("6. Identifiers not found").setDestination("not-found"));
+		document.add(profile.getH1("6. Identifiers not found").setDestination("not-found"));
 		final Table table = new Table(UnitValue.createPercentArray(8));
 		table.useAllAvailableWidth();
 		int i = 0;
