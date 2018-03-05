@@ -4,10 +4,7 @@ import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.*;
 import com.itextpdf.layout.property.UnitValue;
-import org.reactome.server.analysis.core.result.model.FoundElements;
-import org.reactome.server.analysis.core.result.model.FoundEntity;
-import org.reactome.server.analysis.core.result.model.IdentifierSummary;
-import org.reactome.server.analysis.core.result.model.ResourceSummary;
+import org.reactome.server.analysis.core.result.model.*;
 import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
 import org.reactome.server.tools.analysis.exporter.PathwayData;
@@ -16,9 +13,12 @@ import org.reactome.server.tools.analysis.exporter.style.Images;
 import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.util.HtmlParser;
+import org.reactome.server.tools.analysis.exporter.util.PdfUtils;
 
-import java.util.*;
-import java.util.List;
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -44,7 +44,7 @@ public class PathwayDetail implements Section {
 			final float width = document.getPdfDocument().getLastPage().getMediaBox().getWidth() - document.getLeftMargin() - document.getRightMargin();
 			final Image diagram = DiagramHelper.getDiagram(pathway.getStId(), analysisData.getAnalysisStoredResult(), analysisData.getResource(), width);
 			if (diagram != null) document.add(diagram);
-			addDatabaseObjectList(document, "Compartments", pathway.getCompartment(), profile);
+			addDatabaseObjectList(document, "Cellular compartments", pathway.getCompartment(), profile);
 			addRelatedDiseases(document, pathway, profile);
 			addDatabaseObjectList(document, "Inferred from", pathway.getInferredFrom(), profile);
 
@@ -76,14 +76,7 @@ public class PathwayDetail implements Section {
 	}
 
 	private void addSummations(Document document, Pathway pathway, PdfProfile profile) {
-		pathway.getSummation().forEach(summation -> {
-			final String[] paragraphs = summation.getText().split("(?i)<br>|<p>");
-			for (String paragraph : paragraphs) {
-				final String trim = paragraph.trim();
-				if (trim.isEmpty()) continue;
-				document.add(HtmlParser.parseParagraph(trim, profile));
-			}
-		});
+		pathway.getSummation().forEach(summation -> HtmlParser.parseText(document, profile, summation));
 	}
 
 	private void addRelatedDiseases(Document document, Pathway pathwayDetail, PdfProfile profile) {
@@ -116,20 +109,48 @@ public class PathwayDetail implements Section {
 		}
 	}
 
-	private Paragraph getLinkedPathwayName(int i, Pathway pathway, PdfProfile profile) {
-		return profile.getH2(i + ". " + pathway.getDisplayName())
+	private com.itextpdf.layout.element.List getLinkedPathwayName(int i, Pathway pathway, PdfProfile profile) {
+		final Paragraph paragraph = profile.getH2(pathway.getDisplayName())
 				.add(" (")
 				.add(new Text(pathway.getStId())
 						.setAction(PdfAction.createURI(PATHWAY_DETAIL + pathway.getStId()))
 						.setFontColor(profile.getLinkColor()))
 				.add(")")
-				.setDestination(pathway.getStId());
+				.setDestination(pathway.getStId())
+				.setMultipliedLeading(1);
+		return profile.getIndexedH2(i, paragraph);
 	}
 
 	private void addIdentifiers(Document document, FoundElements elements, String resource, PdfProfile profile) {
-		final Set<FoundEntity> identifiers = new TreeSet<>(Comparator.comparing(IdentifierSummary::getId));
-		identifiers.addAll(elements.getEntities());
+		if (elements.getExpNames() == null || elements.getExpNames().isEmpty())
+			addSimpleTable(document, elements, resource, profile);
+		else addExpressionTable(document, elements, resource, profile);
+	}
 
+	private void addExpressionTable(Document document, FoundElements elements, String resource, PdfProfile profile) {
+		final java.util.List<String> expNames = elements.getExpNames();
+		final Table table = new Table(UnitValue.createPercentArray(2 + expNames.size()));
+		table.useAllAvailableWidth();
+		table.addHeaderCell(profile.getHeaderCell("Input"));
+		table.addHeaderCell(profile.getHeaderCell(resource + " Id"));
+		for (String name : expNames)
+			table.addHeaderCell(profile.getHeaderCell(name));
+		int row = 0;
+		for (FoundEntity entity : elements.getEntities()) {
+			table.addCell(profile.getBodyCell(entity.getId(), row));
+			table.addCell(profile.getBodyCell(toString(entity.getMapsTo()), row));
+			for (Double exp : entity.getExp())
+				table.addCell(profile.getBodyCell(PdfUtils.formatNumber(exp), row));
+			row++;
+		}
+		document.add(table);
+	}
+
+	private void addSimpleTable(Document document, FoundElements elements, String resource, PdfProfile profile) {
+		final java.util.List<FoundEntity> identifiers = elements.getEntities().stream()
+				.sorted(Comparator.comparing(IdentifierSummary::getId))
+				.distinct()
+				.collect(Collectors.toList());
 		final Table table = new Table(UnitValue.createPercentArray(new float[]{1, 1, 0.1f, 1, 1, 0.1f, 1, 1}));
 		table.useAllAvailableWidth();
 		final String input = "Input";
@@ -148,11 +169,9 @@ public class PathwayDetail implements Section {
 		for (FoundEntity identifier : identifiers) {
 			column = i % 3;
 			row = i / 3;
-			final java.util.List<String> mapsTo = identifier.getMapsTo().stream()
-					.flatMap(identifierMap -> identifierMap.getIds().stream())
-					.collect(Collectors.toList());
+			final String join = toString(identifier.getMapsTo());
 			table.addCell(profile.getBodyCell(identifier.getId(), row));
-			table.addCell(profile.getBodyCell(String.join(", ", mapsTo), row));
+			table.addCell(profile.getBodyCell(join, row));
 			if (column == 0 || column == 1)
 				table.addCell(profile.getBodyCell(null, 0));
 			i += 1;
@@ -161,19 +180,26 @@ public class PathwayDetail implements Section {
 		document.add(table);
 	}
 
+	private String toString(Set<IdentifierMap> identifier) {
+		final java.util.List<String> mapsTo = identifier.stream()
+				.flatMap(identifierMap -> identifierMap.getIds().stream())
+				.collect(Collectors.toList());
+		return String.join(", ", mapsTo);
+	}
+
 	private void fillLastRow(Table table, int identifiers, int row, PdfProfile profile) {
 		int n = identifiers % 3;
 		if (n == 1) n = 5;
 		if (n == 2) n = 2;
 		if (n == 3) n = 0;
 		for (int j = 0; j < n; j++)
-			table.addCell(profile.getBodyCell(null, row));
+			table.addCell(profile.getBodyCell(null, 0));
 	}
 
 	private void addReferences(Document document, Pathway pathwayDetail, PdfProfile profile) {
 		if (pathwayDetail.getLiteratureReference() != null) {
 			document.add(profile.getH3("References"));
-			final List<Paragraph> paragraphs = pathwayDetail.getLiteratureReference().stream()
+			final java.util.List<Paragraph> paragraphs = pathwayDetail.getLiteratureReference().stream()
 					.limit(5)
 					.map(publication -> createPublication(publication, profile))
 					.collect(Collectors.toList());
@@ -186,14 +212,14 @@ public class PathwayDetail implements Section {
 			final LiteratureReference reference = (LiteratureReference) publication;
 			return profile.getParagraph(toString(reference))
 					.add(". ")
-					.add(Images.getLink(reference.getUrl(), profile.getP()));
+					.add(Images.getLink(reference.getUrl(), profile.getFontSize()));
 		} else if (publication instanceof Book) {
 			final Book book = (Book) publication;
 			return profile.getParagraph(toString(book)).add(".");
 		} else if (publication instanceof org.reactome.server.graph.domain.model.URL) {
 			final org.reactome.server.graph.domain.model.URL url = (org.reactome.server.graph.domain.model.URL) publication;
 			final String citation = toString(url);
-			return profile.getParagraph(citation).add(". ").add(Images.getLink(url.getUniformResourceLocator(), profile.getP()));
+			return profile.getParagraph(citation).add(". ").add(Images.getLink(url.getUniformResourceLocator(), profile.getFontSize()));
 		}
 		return profile.getParagraph(publication.getDisplayName());
 	}

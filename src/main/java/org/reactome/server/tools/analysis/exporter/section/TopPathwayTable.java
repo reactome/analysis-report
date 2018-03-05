@@ -10,6 +10,7 @@ import org.reactome.server.analysis.core.result.model.PathwayBase;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;
 import org.reactome.server.tools.analysis.exporter.PathwayData;
 import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
+import org.reactome.server.tools.analysis.exporter.util.PdfUtils;
 
 import java.util.Arrays;
 
@@ -34,7 +35,7 @@ public class TopPathwayTable implements Section {
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		final int min = analysisData.getPathways().size();
 		document.add(new AreaBreak());
-		document.add(profile.getH2(String.format("4. Top %d pathways", min)).setDestination("pathway-list"));
+		document.add(profile.getH1(String.format("4. Top %d pathways", min)).setDestination("pathway-list"));
 		final float[] COLUMNS_RELATIVE_WIDTH = new float[]{0.4f, 0.1f, 0.1f, 0.1f, 0.1f, 0.1f, 0.1f};
 		final Table table = new Table(UnitValue.createPercentArray(COLUMNS_RELATIVE_WIDTH));
 		table.setBorder(Border.NO_BORDER);
@@ -48,27 +49,19 @@ public class TopPathwayTable implements Section {
 			table.addCell(profile.getPathwayCell(i, pathway));
 			final String entities = String.format("%d / %d", pathwayBase.getEntities().getFound(), pathwayBase.getEntities().getTotal());
 			table.addCell(profile.getBodyCell(entities, i));
-			table.addCell(profile.getBodyCell(formatNumber(pathwayBase.getEntities().getRatio()), i));
-			table.addCell(profile.getBodyCell(formatNumber(pathwayBase.getEntities().getpValue()), i));
-			table.addCell(profile.getBodyCell(formatNumber(pathwayBase.getEntities().getFdr()), i));
+			table.addCell(profile.getBodyCell(PdfUtils.formatNumber(pathwayBase.getEntities().getRatio()), i));
+			table.addCell(profile.getBodyCell(PdfUtils.formatNumber(pathwayBase.getEntities().getpValue()), i));
+			table.addCell(profile.getBodyCell(PdfUtils.formatNumber(pathwayBase.getEntities().getFdr()), i));
 			final String reactions = String.format("%d / %d",
 					pathway.getData().getReactionsFound(),
 					pathway.getData().getReactionsCount());
 			table.addCell(profile.getBodyCell(reactions, i));
-			table.addCell(profile.getBodyCell(formatNumber(pathway.getData().getReactionsRatio()), i));
+			table.addCell(profile.getBodyCell(PdfUtils.formatNumber(pathway.getData().getReactionsRatio()), i));
 			i++;
 
 		}
 		document.add(table);
 	}
 
-
-	private String formatNumber(Number number) {
-		if (number instanceof Integer || number instanceof Long)
-			return number.toString();
-		if (number.doubleValue() < 1e-3)
-			return String.format("%.2e", number);
-		return String.format("%.3f", number);
-	}
 
 }
