@@ -44,8 +44,10 @@ public class Overview implements Section {
 		try {
 			final BufferedImage image = FireworksHelper.getFireworks(analysisData);
 			final Rectangle area = document.getPdfDocument().getLastPage().getPageSize();
-			final float width = area.getWidth() - document.getRightMargin() - document.getLeftMargin();
-			final float height = area.getHeight() - document.getTopMargin() - document.getBottomMargin();
+			float width = area.getWidth() - document.getRightMargin() - document.getLeftMargin();
+			float height = area.getHeight() - document.getTopMargin() - document.getBottomMargin();
+			width *= 0.9;
+			height *= .9f;
 			final Image fImage = new Image(ImageDataFactory.create(image, Color.WHITE));
 			fImage.setHorizontalAlignment(HorizontalAlignment.CENTER);
 			fImage.scaleToFit(width, height);
