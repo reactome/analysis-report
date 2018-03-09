@@ -22,7 +22,7 @@ public class CoverPage implements Section {
 
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
-		document.add(Images.getLogo().scaleToFit(150, 150).setHorizontalAlignment(HorizontalAlignment.CENTER));
+		document.add(Images.getLogo().scaleToFit(100, 100).setHorizontalAlignment(HorizontalAlignment.LEFT));
 		// Empty space
 		document.add(profile.getTitle(""));
 		document.add(profile.getTitle("Pathway Analysis Report"));
