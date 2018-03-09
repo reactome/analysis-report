@@ -8,7 +8,6 @@ import org.reactome.server.graph.domain.model.Species;
 import org.reactome.server.graph.service.DatabaseObjectService;
 import org.reactome.server.graph.service.GeneralService;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
-import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 
 import java.util.Collection;
 import java.util.LinkedList;
@@ -32,9 +31,9 @@ public class AnalysisData {
 	private final String resource;
 	private final AnalysisStoredResult analysisStoredResult;
 	private final Long speciesDbId;
-	private PdfProfile profile;
+	private final int maxPathways;
 
-	AnalysisData(AnalysisStoredResult analysisStoredResult, String resource, Long speciesDbId, PdfProfile profile) {
+	AnalysisData(AnalysisStoredResult analysisStoredResult, String resource, Long speciesDbId, int maxPathways) {
 		this.analysisStoredResult = analysisStoredResult;
 		this.resource = resource;
 		this.speciesDbId = speciesDbId;
@@ -42,7 +41,7 @@ public class AnalysisData {
 		this.species = getSpeciesName(speciesDbId);
 		this.type = AnalysisType.valueOf(analysisStoredResult.getSummary().getType());
 		this.speciesComparisonSpecies = getSpeciesName(analysisStoredResult.getSummary().getSpecies());
-		this.profile = profile;
+		this.maxPathways = maxPathways;
 		this.name = computeName();
 		pathways = collectPathways();
 	}
@@ -63,7 +62,7 @@ public class AnalysisData {
 	private List<PathwayData> collectPathways() {
 		final List<PathwayData> list = new LinkedList<>();
 		analysisStoredResult.filterBySpecies(speciesDbId, resource).getPathways().stream()
-				.limit(profile.getMaxPathways()).forEach(pathwayBase -> {
+				.limit(maxPathways).forEach(pathwayBase -> {
 			final PathwayNodeSummary pathwaySummary = analysisStoredResult.getPathway(pathwayBase.getStId());
 			final Pathway pathway = databaseObjectService.findByIdNoRelations(pathwayBase.getStId());
 			list.add(new PathwayData(pathwaySummary, pathwayBase, pathway));

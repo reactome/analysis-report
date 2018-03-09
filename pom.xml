@@ -183,7 +183,6 @@
                 <configuration>
                     <useSystemClassLoader>true</useSystemClassLoader>
                     <forkMode>always</forkMode>
-                    <skipTests>true</skipTests>
                     <test>*Test.java</test>
 
                     <!-- Configure the Neo4j database for testcase -->

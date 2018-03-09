@@ -26,7 +26,7 @@ public class AnalysisExporterTest {
 		{
 			put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
 //			put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
-			put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
+//			put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
 //			put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
 //			put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
 		}
@@ -70,7 +70,7 @@ public class AnalysisExporterTest {
 			final String token = entry.getValue();
 			try {
 				final OutputStream os = new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)));
-				RENDERER.render(token, "UNIPROT", 48887L, "breathe", os);
+				RENDERER.render(token, "UNIPROT", 48887L, "breathe", 25, os);
 			} catch (AnalysisExporterException | FileNotFoundException e) {
 				e.printStackTrace();
 				Assert.fail(e.getMessage());

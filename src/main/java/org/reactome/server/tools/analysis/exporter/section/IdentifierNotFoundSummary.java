@@ -25,7 +25,7 @@ public class IdentifierNotFoundSummary implements Section {
 			i += 1;
 		}
 		final int n = 8 - analysisData.getAnalysisStoredResult().getNotFoundIdentifiers().size() % 8;
-		for (int j = 0; j < n; j++) table.addCell(profile.getBodyCell(null, row));
+		for (int j = 0; j < n; j++) table.addCell(profile.getBodyCell("", row));
 		document.add(table);
 	}
 }

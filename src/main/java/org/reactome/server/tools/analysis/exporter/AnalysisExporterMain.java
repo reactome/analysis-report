@@ -75,6 +75,13 @@ public class AnalysisExporterMain {
 				.setHelp("static path contains the svgSummary raw information txt file");
 		jsap.registerParameter(svgSummary);
 
+		FlaggedOption maxPathways = new FlaggedOption("maxPathways")
+				.setRequired(false)
+				.setDefault("25")
+				.setShortFlag('m');
+		maxPathways.setHelp("Max number of pathways to show");
+		jsap.registerParameter(maxPathways);
+
 		JSAPResult config = jsap.parse(args);
 
 		long start = Instant.now().toEpochMilli();
@@ -83,7 +90,11 @@ public class AnalysisExporterMain {
 				config.getString("svgSummary"));
 		final FileOutputStream os = new FileOutputStream(new File(config.getString("output")));
 		try {
-			renderer.render(config.getString("token"), config.getString("resource"), config.getLong("species"), "breathe", os);
+			renderer.render(config.getString("token"),
+					config.getString("resource"),
+					config.getLong("species"),
+					"breathe",
+					config.getInt("maxPathways"), os);
 		} catch (AnalysisExporterException e) {
 			logger.info("Failed creating PDF");
 			e.printStackTrace();

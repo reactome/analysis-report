@@ -44,7 +44,6 @@ public class PdfProfile {
 	private PdfFont ITALIC;
 	private PdfFont REGULAR;
 	private PdfFont BOLD;
-	private Integer maxPathways;
 	private PdfFont LIGHT;
 	private MarginProfile margin;
 
@@ -67,10 +66,6 @@ public class PdfProfile {
 
 	public MarginProfile getMargin() {
 		return margin;
-	}
-
-	public Integer getMaxPathways() {
-		return maxPathways;
 	}
 
 	public PdfFont getItalic() {
@@ -198,6 +193,20 @@ public class PdfProfile {
 		return cell;
 	}
 
+	public Cell getBodyCell(Paragraph paragraph, int row) {
+		final Cell cell = new Cell()
+				.setKeepTogether(true)
+				.setVerticalAlignment(VerticalAlignment.MIDDLE)
+				.setBorder(Border.NO_BORDER)
+				.setBackgroundColor(row % 2 == 0 ? null : LIGHT_GRAY)
+				.add(paragraph);
+		paragraph.setFont(REGULAR)
+				.setFontSize(TABLE)
+				.setTextAlignment(TextAlignment.CENTER)
+				.setMultipliedLeading(1.0f);
+		return cell;
+	}
+
 	public Cell getPathwayCell(int i, PathwayNodeSummary pathway) {
 		final Cell cell = new Cell()
 				.setKeepTogether(true)
@@ -231,7 +240,7 @@ public class PdfProfile {
 
 	public Paragraph getToc1(String text, String destination) {
 		return new Paragraph(text)
-				.setFont(BOLD)
+				.setFont(REGULAR)
 				.setFontSize(fontSize + 2)
 				.setMarginLeft(10)
 				.setMultipliedLeading(2)
@@ -240,7 +249,7 @@ public class PdfProfile {
 
 	public Paragraph getToc2(String text, String destination) {
 		return new Paragraph(text)
-				.setFont(BOLD)
+				.setFont(REGULAR)
 				.setFontSize(fontSize)
 				.setMarginLeft(20)
 				.setMultipliedLeading(2)

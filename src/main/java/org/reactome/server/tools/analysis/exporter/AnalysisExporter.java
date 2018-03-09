@@ -93,22 +93,20 @@ public class AnalysisExporter {
 	 * <code> <p>PDF document can be transport by http by using the
 	 * OutputStream, or just save as a local file by using the
 	 * FileOutputStream.</p>
-	 *
-	 * @param profile     compact or breathe
+	 *  @param profile     compact or breathe
 	 * @param destination destination you want to save the produced PDF report
 	 *                    document, it can be any stream extends from
-	 *                    OutputStream.
 	 */
 
-	public void render(String token, String resource, Long species, String profile, OutputStream destination) throws AnalysisExporterException {
+	public void render(String token, String resource, Long species, String profile, int maxPathways, OutputStream destination) throws AnalysisExporterException {
 		final AnalysisStoredResult result = tokenUtils.getFromToken(token);
-		render(result, resource, species, profile, destination);
+		render(result, resource, species, profile, maxPathways, destination);
 	}
 
 	/**
 	 * render the report with data set.
 	 */
-	public void render(AnalysisStoredResult result, String resource, Long species, String profile, OutputStream destination) throws AnalysisExporterException {
+	public void render(AnalysisStoredResult result, String resource, Long species, String profile, int maxPathways, OutputStream destination) throws AnalysisExporterException {
 		final PdfProfile pdfProfile = loadProfile(profile);
 
 		if (species == null) {
@@ -122,7 +120,7 @@ public class AnalysisExporter {
 			LOGGER.warn("Resource: '{}' not exist, use '{}' instead", resource, resource);
 		}
 
-		final AnalysisData analysisData = new AnalysisData(result, resource, species, pdfProfile);
+		final AnalysisData analysisData = new AnalysisData(result, resource, species, maxPathways);
 
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
 			document.setMargins(pdfProfile.getMargin().getTop(),

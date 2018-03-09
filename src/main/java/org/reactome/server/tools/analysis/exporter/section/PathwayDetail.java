@@ -2,7 +2,10 @@ package org.reactome.server.tools.analysis.exporter.section;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
+import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.element.*;
+import com.itextpdf.layout.element.List;
+import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.UnitValue;
 import org.reactome.server.analysis.core.result.model.*;
 import org.reactome.server.graph.domain.model.*;
@@ -15,10 +18,7 @@ import org.reactome.server.tools.analysis.exporter.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.util.HtmlParser;
 import org.reactome.server.tools.analysis.exporter.util.PdfUtils;
 
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -51,7 +51,7 @@ public class PathwayDetail implements Section {
 			addSummations(document, pathway, profile);
 			addReferences(document, pathway, profile);
 
-//			addEditTable(document, pathway);
+			addEditTable(document, pathway, profile);
 
 			addFoundElements(document, analysisData, pathway, profile);
 
@@ -157,10 +157,10 @@ public class PathwayDetail implements Section {
 		final String mapping = String.format("%s Id", resource);
 		table.addHeaderCell(profile.getHeaderCell(input));
 		table.addHeaderCell(profile.getHeaderCell(mapping));
-		table.addHeaderCell(profile.getBodyCell(null, 0));
+		table.addHeaderCell(profile.getBodyCell("", 0));
 		table.addHeaderCell(profile.getHeaderCell(input));
 		table.addHeaderCell(profile.getHeaderCell(mapping));
-		table.addHeaderCell(profile.getBodyCell(null, 0));
+		table.addHeaderCell(profile.getBodyCell("", 0));
 		table.addHeaderCell(profile.getHeaderCell(input));
 		table.addHeaderCell(profile.getHeaderCell(mapping));
 		int i = 0;
@@ -173,7 +173,7 @@ public class PathwayDetail implements Section {
 			table.addCell(profile.getBodyCell(identifier.getId(), row));
 			table.addCell(profile.getBodyCell(join, row));
 			if (column == 0 || column == 1)
-				table.addCell(profile.getBodyCell(null, 0));
+				table.addCell(profile.getBodyCell("", 0));
 			i += 1;
 		}
 		fillLastRow(table, identifiers.size(), row, profile);
@@ -193,7 +193,7 @@ public class PathwayDetail implements Section {
 		if (n == 2) n = 2;
 		if (n == 3) n = 0;
 		for (int j = 0; j < n; j++)
-			table.addCell(profile.getBodyCell(null, 0));
+			table.addCell(profile.getBodyCell("", 0));
 	}
 
 	private void addReferences(Document document, Pathway pathwayDetail, PdfProfile profile) {
@@ -270,4 +270,63 @@ public class PathwayDetail implements Section {
 		return text;
 	}
 
+
+	private void addEditTable(Document document, Pathway pathway, PdfProfile profile) {
+		document.add(profile.getH3("Edit history"));
+		final java.util.List<Edition> editions = new LinkedList<>();
+		if (pathway.getCreated() != null)
+			editions.add(new Edition("Created", pathway.getCreated()));
+		if (pathway.getModified() != null)
+			editions.add(new Edition("Modified", pathway.getModified()));
+		if (pathway.getAuthored() != null)
+			pathway.getAuthored().forEach(instanceEdit -> editions.add(new Edition("Authored", instanceEdit)));
+		if (pathway.getEdited() != null)
+			pathway.getEdited().forEach(instanceEdit -> editions.add(new Edition("Edited", instanceEdit)));
+		if (pathway.getReviewed() != null)
+			pathway.getReviewed().forEach(instanceEdit -> editions.add(new Edition("Reviewed", instanceEdit)));
+		if (pathway.getRevised() != null)
+			pathway.getRevised().forEach(instanceEdit -> editions.add(new Edition("Revised", instanceEdit)));
+
+		editions.sort(Comparator.comparing(Edition::getDate));
+
+		final Table table = new Table(new float[]{0.2f, 0.2f, 1f});
+		table.useAllAvailableWidth();
+		table.setBorder(Border.NO_BORDER);
+		table.addHeaderCell(profile.getHeaderCell("Date"));
+		table.addHeaderCell(profile.getHeaderCell("Action"));
+		table.addHeaderCell(profile.getHeaderCell("Author"));
+		int row = 0;
+		for (Edition edition : editions) {
+			table.addCell(profile.getBodyCell(edition.getDate(), row));
+			table.addCell(profile.getBodyCell(edition.getType(), row));
+			table.addCell(profile.getBodyCell(edition.getAuthors(), row).setTextAlignment(TextAlignment.LEFT).setPadding(5));
+			row += 1;
+		}
+		document.add(table);
+
+	}
+
+	private class Edition {
+		private final String type;
+		private final String authors;
+		private final String date;
+
+		public Edition(String type, InstanceEdit instanceEdit) {
+			this.type = type;
+			this.authors = asString(instanceEdit.getAuthor());
+			this.date = instanceEdit.getDateTime().substring(0, 10);
+		}
+
+		public String getType() {
+			return type;
+		}
+
+		public String getAuthors() {
+			return authors;
+		}
+
+		public String getDate() {
+			return date;
+		}
+	}
 }
