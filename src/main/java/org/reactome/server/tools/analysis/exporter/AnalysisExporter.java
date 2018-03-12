@@ -93,22 +93,22 @@ public class AnalysisExporter {
 	 * <code> <p>PDF document can be transport by http by using the
 	 * OutputStream, or just save as a local file by using the
 	 * FileOutputStream.</p>
-	 *  @param profile     compact or breathe
+	 * @param profile     compact or breathe
 	 * @param destination destination you want to save the produced PDF report
-	 *                    document, it can be any stream extends from
 	 */
 
-	public void render(String token, String resource, Long species, String profile, int maxPathways, OutputStream destination) throws AnalysisExporterException {
+	public void render(String token, String resource, Long species, String profile, int maxPathways, String diagramProfile, String analysisProfile, String fireworksProfile, OutputStream destination) throws AnalysisExporterException {
 		final AnalysisStoredResult result = tokenUtils.getFromToken(token);
-		render(result, resource, species, profile, maxPathways, destination);
+		render(result, resource, species, profile, maxPathways, diagramProfile, analysisProfile, fireworksProfile, destination);
 	}
 
 	/**
 	 * render the report with data set.
 	 */
-	public void render(AnalysisStoredResult result, String resource, Long species, String profile, int maxPathways, OutputStream destination) throws AnalysisExporterException {
+	public void render(AnalysisStoredResult result, String resource, Long species, String profile, int maxPathways, String diagramProfile, String analysisProfile, String fireworksProfile,OutputStream destination) throws AnalysisExporterException {
 		final PdfProfile pdfProfile = loadProfile(profile);
-
+		DiagramHelper.setProfiles(diagramProfile, analysisProfile);
+		FireworksHelper.setProfile(fireworksProfile);
 		if (species == null) {
 			species = DEFAULT_SPECIES;
 			LOGGER.warn("Use default species");

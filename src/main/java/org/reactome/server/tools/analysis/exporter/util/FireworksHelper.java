@@ -18,6 +18,7 @@ public class FireworksHelper {
 
 	private static final double QUALITY = 2.;
 	private static FireworksExporter exporter;
+	private static String profile;
 
 	/**
 	 * get the fireworks image from {@link FireworksExporter} by given analysis
@@ -33,11 +34,16 @@ public class FireworksHelper {
 		final FireworkArgs args = new FireworkArgs(analysisData.getSpecies().replace(" ", "_"), "png");
 		args.setFactor(QUALITY);
 		args.setWriteTitle(false);
+		args.setProfile(profile);
 //		args.setProfile("Copper plus");
 		return exporter.renderRaster(args, analysisData.getAnalysisStoredResult());
 	}
 
 	public static void setPaths(String fireworksPath, String analysisPath) {
 		exporter = new FireworksExporter(fireworksPath, analysisPath);
+	}
+
+	public static void setProfile(String profile) {
+		FireworksHelper.profile = profile;
 	}
 }

@@ -94,7 +94,8 @@ public class AnalysisExporterMain {
 					config.getString("resource"),
 					config.getLong("species"),
 					"breathe",
-					config.getInt("maxPathways"), os);
+					config.getInt("maxPathways"),
+					null, null, null, os);
 		} catch (AnalysisExporterException e) {
 			logger.info("Failed creating PDF");
 			e.printStackTrace();

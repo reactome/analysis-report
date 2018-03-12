@@ -14,6 +14,7 @@ import org.reactome.server.tools.diagram.exporter.common.profiles.factory.Diagra
 import org.reactome.server.tools.diagram.exporter.raster.RasterExporter;
 import org.reactome.server.tools.diagram.exporter.raster.api.RasterArgs;
 import org.reactome.server.tools.diagram.exporter.raster.ehld.exception.EhldException;
+import org.reactome.server.tools.diagram.exporter.raster.profiles.ColorProfiles;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -30,6 +31,8 @@ public class DiagramHelper {
 	private static final int MIN_QUALITY = 3;
 	private static RasterExporter exporter;
 	private static DiagramService diagramService = ReactomeGraphCore.getService(DiagramService.class);
+	private static String diagramProfile;
+	private static String analysisProfile;
 
 	/**
 	 * create diagram image by using the RasterExporter{@see RasterExporter}.
@@ -46,6 +49,7 @@ public class DiagramHelper {
 		args.setSelected(diagramResult.getEvents());
 		args.setWriteTitle(false);
 		args.setResource(resource);
+		args.setProfiles(new ColorProfiles(diagramProfile, analysisProfile, null));
 
 		final Integer width = diagramResult.getWidth();
 		final double desiredWidth = Math.min(width, pageWidth) * IMAGE_SCALE;
@@ -89,5 +93,10 @@ public class DiagramHelper {
 
 	public static DiagramResult getDiagramResult(String stId) {
 		return diagramService.getDiagramResult(stId);
+	}
+
+	public static void setProfiles(String diagramProfile, String analysisProfile) {
+		DiagramHelper.diagramProfile = diagramProfile;
+		DiagramHelper.analysisProfile = analysisProfile;
 	}
 }

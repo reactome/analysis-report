@@ -21,14 +21,14 @@ import java.util.Map;
  */
 public class AnalysisExporterTest {
 
-	private static final boolean save = true;
+	private static final boolean save = false;
 	private static final HashMap<String, String> tokens = new HashMap<String, String>() {
 		{
 			put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
-//			put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
-//			put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
-//			put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
-//			put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
+			put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
+			put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
+			put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
+			put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
 		}
 	};
 	private static final File SAVE_TO = new File("test-files");
@@ -70,7 +70,7 @@ public class AnalysisExporterTest {
 			final String token = entry.getValue();
 			try {
 				final OutputStream os = new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)));
-				RENDERER.render(token, "UNIPROT", 48887L, "breathe", 25, os);
+				RENDERER.render(token, "UNIPROT", 48887L, "breathe", 25, "standard", "strosobar", "barium lithium", os);
 			} catch (AnalysisExporterException | FileNotFoundException e) {
 				e.printStackTrace();
 				Assert.fail(e.getMessage());
