@@ -41,7 +41,8 @@ public class PathwayDetail implements Section {
 			final Pathway pathway = pathwayData.getPathway();
 			document.add(getLinkedPathwayName(i, pathway, profile));
 			final float width = document.getPdfDocument().getLastPage().getMediaBox().getWidth() - document.getLeftMargin() - document.getRightMargin();
-			final Image diagram = DiagramHelper.getDiagram(pathway.getStId(), analysisData.getAnalysisStoredResult(), analysisData.getResource(), width);
+			final float heigth = document.getPdfDocument().getLastPage().getMediaBox().getHeight() - document.getTopMargin() - document.getBottomMargin();
+			final Image diagram = DiagramHelper.getDiagram(pathway.getStId(), analysisData.getAnalysisStoredResult(), analysisData.getResource(), width, heigth);
 			if (diagram != null) document.add(diagram);
 			addDatabaseObjectList(document, "Cellular compartments", pathway.getCompartment(), profile);
 			addRelatedDiseases(document, pathway, profile);

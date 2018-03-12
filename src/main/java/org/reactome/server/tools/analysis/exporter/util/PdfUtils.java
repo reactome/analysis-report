@@ -1,7 +1,5 @@
 package org.reactome.server.tools.analysis.exporter.util;
 
-import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.element.Text;
 import org.apache.commons.io.IOUtils;
 import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterRuntimeException;
 
@@ -37,6 +35,7 @@ public class PdfUtils {
 	public static String formatNumber(Number number) {
 		if (number instanceof Integer || number instanceof Long)
 			return number.toString();
+		if (number.doubleValue() == 0.0) return "0";
 		if (number.doubleValue() < 1e-3)
 			return String.format("%.2e", number);
 		return NUMBER_FORMAT.format(number);

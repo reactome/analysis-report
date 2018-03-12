@@ -4,7 +4,6 @@ import com.itextpdf.layout.Document;
 import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Table;
-import com.itextpdf.layout.property.UnitValue;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.analysis.core.result.model.PathwayBase;
 import org.reactome.server.tools.analysis.exporter.AnalysisData;

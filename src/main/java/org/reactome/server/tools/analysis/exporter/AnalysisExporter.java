@@ -13,8 +13,6 @@ import org.reactome.server.tools.analysis.exporter.section.*;
 import org.reactome.server.tools.analysis.exporter.style.PdfProfile;
 import org.reactome.server.tools.analysis.exporter.util.DiagramHelper;
 import org.reactome.server.tools.analysis.exporter.util.FireworksHelper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -53,7 +51,6 @@ public class AnalysisExporter {
 
 	private static final Long DEFAULT_SPECIES = 48887L; // Homo Sapiens.
 	private static final ObjectMapper MAPPER = new ObjectMapper();
-	private static final Logger LOGGER = LoggerFactory.getLogger(AnalysisExporter.class);
 
 	private final TokenUtils tokenUtils;
 	private final List<Section> SECTIONS = Arrays.asList(
@@ -94,6 +91,7 @@ public class AnalysisExporter {
 	 * <code> <p>PDF document can be transport by http by using the
 	 * OutputStream, or just save as a local file by using the
 	 * FileOutputStream.</p>
+	 *
 	 * @param profile     compact or breathe
 	 * @param destination destination you want to save the produced PDF report
 	 */
@@ -106,24 +104,20 @@ public class AnalysisExporter {
 	/**
 	 * render the report with data set.
 	 */
-	public void render(AnalysisStoredResult result, String resource, Long species, String profile, int maxPathways, String diagramProfile, String analysisProfile, String fireworksProfile,OutputStream destination) throws AnalysisExporterException {
+	public void render(AnalysisStoredResult result, String resource, Long species, String profile, int maxPathways, String diagramProfile, String analysisProfile, String fireworksProfile, OutputStream destination) throws AnalysisExporterException {
 		final PdfProfile pdfProfile = loadProfile(profile);
 		DiagramHelper.setProfiles(diagramProfile, analysisProfile);
 		FireworksHelper.setProfile(fireworksProfile);
-		if (species == null) {
-			species = DEFAULT_SPECIES;
-			LOGGER.warn("Use default species");
-		}
+		if (species == null) species = DEFAULT_SPECIES;
 
 		// if the analysis result not contains the given resource, use the first resource in this analysis.
-		if (!result.getResourceSummary().contains(new ResourceSummary(resource, null))) {
+		if (!result.getResourceSummary().contains(new ResourceSummary(resource, null)))
 			resource = getDefaultResource(result);
-			LOGGER.warn("Resource: '{}' not exist, use '{}' instead", resource, resource);
-		}
 
 		final AnalysisData analysisData = new AnalysisData(result, resource, species, maxPathways);
 
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
+			document.setFont(pdfProfile.getRegularFont());
 			document.setMargins(pdfProfile.getMargin().getTop(),
 					pdfProfile.getMargin().getRight(),
 					pdfProfile.getMargin().getBottom(),

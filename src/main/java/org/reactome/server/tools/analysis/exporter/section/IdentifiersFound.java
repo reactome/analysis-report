@@ -1,7 +1,6 @@
 package org.reactome.server.tools.analysis.exporter.section;
 
 import com.itextpdf.layout.Document;
-import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Table;
 import com.itextpdf.layout.property.UnitValue;
 import org.reactome.server.analysis.core.model.AnalysisType;
@@ -33,7 +32,8 @@ public class IdentifiersFound implements Section {
 				}
 				if (analysisData.getType() == AnalysisType.EXPRESSION)
 					addExpressionTable(document, entities, analysisData.beautify(summary.getResource()), profile, analysisData.getAnalysisStoredResult().getExpressionSummary().getColumnNames());
-				else addSimpleTable(document, entities, summary.getResource(), profile);
+				else
+					addSimpleTable(document, entities, summary.getResource(), profile);
 			}
 		} else {
 			final Set<FoundEntity> entities = new TreeSet<>(Comparator.comparing(IdentifierSummary::getId));
@@ -43,7 +43,8 @@ public class IdentifiersFound implements Section {
 			}
 			if (analysisData.getType() == AnalysisType.EXPRESSION)
 				addExpressionTable(document, entities, analysisData.getBeautifiedResource(), profile, analysisData.getAnalysisStoredResult().getExpressionSummary().getColumnNames());
-			else addSimpleTable(document, entities, analysisData.getResource(), profile);
+			else
+				addSimpleTable(document, entities, analysisData.getBeautifiedResource(), profile);
 		}
 
 
@@ -104,6 +105,7 @@ public class IdentifiersFound implements Section {
 		fillLastRow(table, identifiers.size(), row, profile);
 		document.add(table);
 	}
+
 	private String toString(Set<IdentifierMap> identifier) {
 		final java.util.List<String> mapsTo = identifier.stream()
 				.flatMap(identifierMap -> identifierMap.getIds().stream())

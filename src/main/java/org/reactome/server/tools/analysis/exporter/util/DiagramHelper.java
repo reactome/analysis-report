@@ -19,6 +19,8 @@ import org.reactome.server.tools.diagram.exporter.raster.profiles.ColorProfiles;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * Help to create the diagram image by invoking the Reactome {@link
@@ -43,7 +45,7 @@ public class DiagramHelper {
 	 *
 	 * @return diagram.
 	 */
-	public static Image getDiagram(String stId, AnalysisStoredResult asr, String resource, double pageWidth) throws AnalysisExporterException {
+	public static Image getDiagram(String stId, AnalysisStoredResult asr, String resource, double pageWidth, double pageHeight) throws AnalysisExporterException {
 		final DiagramResult diagramResult = getDiagramResult(stId);
 		final RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "png");
 		args.setSelected(diagramResult.getEvents());
@@ -61,13 +63,15 @@ public class DiagramHelper {
 			final BufferedImage image = exporter.export(args, asr);
 			final Image fImage = new Image(ImageDataFactory.create(image, Color.WHITE));
 			fImage.setHorizontalAlignment(HorizontalAlignment.CENTER);
-
-
-			final float factor = (float) Math.min(1. / IMAGE_SCALE, pageWidth / image.getWidth()) - 0.01f;
-			fImage.scale(factor, factor);
+			final Double factor = Collections.min(Arrays.asList(
+					1. / IMAGE_SCALE,
+					pageWidth / image.getWidth(),
+					pageHeight / image.getHeight())) - 0.01f;
+			fImage.scale(factor.floatValue(), factor.floatValue());
 			return fImage;
 		} catch (DiagramJsonNotFoundException | AnalysisException | DiagramJsonDeserializationException | EhldException | IOException e) {
 //			System.out.println("!!" + diagramResult.getDiagramStId());
+//			return null;
 			throw new AnalysisExporterException("Exception reading diagram", e);
 		}
 //		return null;
