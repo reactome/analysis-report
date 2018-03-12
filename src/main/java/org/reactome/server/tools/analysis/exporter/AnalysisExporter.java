@@ -64,7 +64,8 @@ public class AnalysisExporter {
 			new Overview(),
 			new TopPathwayTable(),
 			new PathwayDetail(),
-			new IdentifierNotFoundSummary()
+			new IdentifiersFound(),
+			new IdentifierNotFound()
 	);
 
 	public AnalysisExporter(String diagramPath, String ehldPath, String fireworksPath, String analysisPath, String svgSummary) {

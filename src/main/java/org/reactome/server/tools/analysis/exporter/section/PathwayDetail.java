@@ -4,7 +4,6 @@ import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.borders.Border;
 import com.itextpdf.layout.element.*;
-import com.itextpdf.layout.element.List;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.UnitValue;
 import org.reactome.server.analysis.core.result.model.*;
@@ -129,24 +128,27 @@ public class PathwayDetail implements Section {
 
 	private void addExpressionTable(Document document, FoundElements elements, String resource, PdfProfile profile) {
 		final java.util.List<String> expNames = elements.getExpNames();
-		final Table table = new Table(UnitValue.createPercentArray(2 + expNames.size()));
+		final int rows = Math.min(6, expNames.size());
+		final Table table = new Table(UnitValue.createPercentArray(2 + rows));
 		table.useAllAvailableWidth();
 		table.addHeaderCell(profile.getHeaderCell("Input"));
 		table.addHeaderCell(profile.getHeaderCell(resource + " Id"));
-		for (String name : expNames)
-			table.addHeaderCell(profile.getHeaderCell(name));
+		for (int i = 0; i < rows; i++)
+			table.addHeaderCell(profile.getHeaderCell(expNames.get(i)));
 		int row = 0;
 		for (FoundEntity entity : elements.getEntities()) {
 			table.addCell(profile.getBodyCell(entity.getId(), row));
 			table.addCell(profile.getBodyCell(toString(entity.getMapsTo()), row));
-			for (Double exp : entity.getExp())
-				table.addCell(profile.getBodyCell(PdfUtils.formatNumber(exp), row));
+			for (int i = 0; i < rows; i++) {
+				table.addCell(profile.getBodyCell(PdfUtils.formatNumber(entity.getExp().get(i)), row));
+			}
 			row++;
 		}
 		document.add(table);
 	}
 
 	private void addSimpleTable(Document document, FoundElements elements, String resource, PdfProfile profile) {
+		// This is a custom made layout to present 3 tables side by side
 		final java.util.List<FoundEntity> identifiers = elements.getEntities().stream()
 				.sorted(Comparator.comparing(IdentifierSummary::getId))
 				.distinct()
@@ -311,7 +313,7 @@ public class PathwayDetail implements Section {
 		private final String authors;
 		private final String date;
 
-		public Edition(String type, InstanceEdit instanceEdit) {
+		Edition(String type, InstanceEdit instanceEdit) {
 			this.type = type;
 			this.authors = asString(instanceEdit.getAuthor());
 			this.date = instanceEdit.getDateTime().substring(0, 10);
@@ -321,11 +323,11 @@ public class PathwayDetail implements Section {
 			return type;
 		}
 
-		public String getAuthors() {
+		String getAuthors() {
 			return authors;
 		}
 
-		public String getDate() {
+		String getDate() {
 			return date;
 		}
 	}

@@ -18,6 +18,7 @@ public class TableOfContent implements Section {
 		document.add(profile.getToc1("3. Genome-wide overview", "overview"));
 		document.add(profile.getToc1("4. Most significant pathways", "pathway-list"));
 		document.add(profile.getToc1("5. Pathway details", "pathway-details"));
-		document.add(profile.getToc1("6. Identifiers not found", "not-found"));
+		document.add(profile.getToc1("6. Identifiers found", "identifiers-found"));
+		document.add(profile.getToc1("7. Identifiers not found", "not-found"));
 	}
 }

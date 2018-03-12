@@ -7,12 +7,10 @@ import org.reactome.server.graph.domain.model.Pathway;
 /**
  * Includes for a stId: <dl> <dt>summary : {@link PathwayNodeSummary}</dt>
  * <dd>The pathway raw data, as is, in the analysis. Data is not filtered by
- * resource neither species.</dd>
- * <dt>base : {@link PathwayBase}</dt>
+ * resource neither species.</dd> <dt>base : {@link PathwayBase}</dt>
  * <dd>Statistics of the pathway filtered by resource and species.</dd>
- * <dt>pathway : {@link Pathway}</dt>
- * <dd>Graph database data of the pathway, including summations, references...</dd>
- * </dl>
+ * <dt>pathway : {@link Pathway}</dt> <dd>Graph database data of the pathway,
+ * including summations, references...</dd> </dl>
  */
 public class PathwayData {
 
@@ -26,14 +24,24 @@ public class PathwayData {
 		this.pathway = pathway;
 	}
 
+	/**
+	 * Statistics of the pathway filtered by resource and species.
+	 */
 	public PathwayBase getBase() {
 		return base;
 	}
 
+	/**
+	 * The pathway raw data, as is, in the analysis. Data is not filtered by
+	 * resource neither species.
+	 */
 	public PathwayNodeSummary getSummary() {
 		return summary;
 	}
 
+	/**
+	 * Graph database data of the pathway, including summations, references...
+	 */
 	public Pathway getPathway() {
 		return pathway;
 	}
