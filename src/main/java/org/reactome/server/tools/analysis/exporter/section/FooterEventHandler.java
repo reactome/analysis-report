@@ -35,11 +35,15 @@ public class FooterEventHandler implements IEventHandler {
 		final float yCenter = document.getBottomMargin() * 0.5f;
 		final float width = page.getMediaBox().getWidth();
 		final float pagingWidth = profile.getRegularFont().getWidth(paging, 8);
-
-		canvas.setFontAndSize(profile.getRegularFont(), 8)
-				.moveTo(document.getLeftMargin(), yCenter)
+		canvas.setFontAndSize(profile.getRegularFont(), 8);
+		canvas.beginText()
+				.moveText(document.getLeftMargin(), yCenter)
 				.showText("reactome.org")
-				.moveTo(width - document.getRightMargin() - pagingWidth, yCenter)
-				.showText(paging);
+				.endText()
+				.beginText()
+				.moveText(width - document.getRightMargin() - pagingWidth, yCenter)
+				.showText(paging)
+				.endText()
+				.release();
 	}
 }
