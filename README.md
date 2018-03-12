@@ -6,10 +6,10 @@ AnalysisExporter is a tool to export the analysis result to a PDF document (PDF-
  
 ### Structure of the PDF
 
-* __Administrative:__   a brief explanation of what you are going to see
-* __Content:__  table of navigation list
-* __Introduction:__ explanation of [Reactome](https://reactome.org) database and latest publications
-* __Summary of Parameters and Results:__    parameters used in analysis service and a genome-wide overview image:      
+* __Cover page:__ summary of the analysis. Will help identify which analysis was performed and the date. 
+* __Table of content__
+* __Introduction:__ static text introducing Reactome Analysis.
+* __Summary of Parameters and Results:__ detailedparameters used in analysis service and a genome-wide overview image:      
     ![fireworks](src/main/resources/readme/fireworks.png)
 
 * __Top over-representation pathways sorted by p-Value:__   table contains the top pathways sorted by p-value with each statistics data  
@@ -102,38 +102,25 @@ Add AnalysisExporter as Maven dependency in your project:
 
 Use AnalysisExporter to export DPF document: 
 
-```
-    // This path must contains the layout and graph json files (eg: R-HSA-12345.json and R-HSA-12345.graph.json).
-    // You can download them from https://reactome.org/download/current/diagram/
-    String DIAGRAM_PATH = "diagram/path";
-    
-    // This path must contains the EHLD svg file
-    // You can download them from https://reactome.org/download/current/ehld/
-    String EHLD_PATH = "ehld/path";
-    
-    // This path contains ths svgSummary file.
-    // You will also find a file containing a list of available EHLD: https://reactome.org/download/current/ehld/svgsummary.txt
-    String svgSummary = "directory/svgSummary.txt";
+``` java
+// Configure Reactome graph database
+ReactomeGraphCore.initialise("host", "port", "username", "password", GraphCoreConfig.class);
 
-    // This path contains the fireworks layout json files. 
-    // You can download the file from https://reactome.org/download/current/fireworks/
-    String FIREWORKS_PATH = "fireworks/path";
-    
-    // This path contains the Reactome analysis binary files (eg: res_301812345_1.bin).
-    String ANALYSIS_PATH = "analysis/path";
-    
-    ReportArgs reportArgs = new ReportArgs("MjAxODAyMTIxMTI5MzdfMQ==", DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, svgSummary);
-    
-    // Save the PDF document to the local directory.
-    FileOutputStream fos = new FileOutputStream(new File("directory/fileName.pdf"));
-    AnalysisExporter.export(reportArgs, fos);
-    
-    // Or hold the PDF Document as a OutputStream so you can pass it by any http method.
-    OutputStream os = new ByteArrayOutputStream();
-    AnalysisExporter.export(reportArgs, os);
-    ...
+// Create an exporter with the paths to resources:
+private static AnalysisExporter exporter = new AnalysisExporter(
+	DIAGRAM_PATH,    // Layout(12345.json) and graph (12345.grap.json) files.
+	EHLD_PATH,       // EHLD (R-HSA-123.svg) files
+	FIREWORKS_PATH,  // Fireworks (Homo_sapiens.json) files
+	ANALYSIS_PATH,   // Analysis (res_20210101_1.bin)
+	SVG_SUMMARY);    // svgsummary.txt
+
+OutputStream os = new FileOutputStream(new File("output.pdf"));
+
+exporter.render(token, resource, 48887L, "breathe", 25, "modern", "copper plus", "barium lithium", os);
+// or if you already host an analysis (AnalysisStoredResult)
+exporter.render(analysis, resource, 48887L, "breathe", 25, "modern", "copper plus", "barium lithium", os);
 ```
 
 ###License
-This module use the [iText](https://itextpdf.com) library to create PDF document, so it naturally adopt the [![License](https://img.shields.io/badge/license-AGPL%203.0-blue.svg?style=plastic)](https://opensource.org/licenses/AGPL-3.0), 
+This module uses the [iText](https://itextpdf.com) library to create PDF document, so it naturally adopt the [![License](https://img.shields.io/badge/license-AGPL%203.0-blue.svg?style=plastic)](https://opensource.org/licenses/AGPL-3.0), 
 you can use this module freely on condition that also comply with this license.
