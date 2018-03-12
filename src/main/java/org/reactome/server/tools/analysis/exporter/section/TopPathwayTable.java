@@ -36,8 +36,9 @@ public class TopPathwayTable implements Section {
 		final int min = analysisData.getPathways().size();
 		document.add(new AreaBreak());
 		document.add(profile.getH1(String.format("4. Top %d pathways", min)).setDestination("pathway-list"));
-		final float[] COLUMNS_RELATIVE_WIDTH = new float[]{0.4f, 0.1f, 0.1f, 0.1f, 0.1f, 0.1f, 0.1f};
-		final Table table = new Table(UnitValue.createPercentArray(COLUMNS_RELATIVE_WIDTH));
+//		final float[] COLUMNS_RELATIVE_WIDTH = new float[]{0.4f, 0.15f, 0.1f, 0.1f, 0.1f, 0.15f, 0.1f};
+		// Let iText decide the width of the columns
+		final Table table = new Table(7);
 		table.setBorder(Border.NO_BORDER);
 		table.useAllAvailableWidth();
 		for (String header : HEADERS)
@@ -47,12 +48,12 @@ public class TopPathwayTable implements Section {
 			final PathwayBase pathwayBase = pathwayData.getBase();
 			final PathwayNodeSummary pathway = analysisData.getAnalysisStoredResult().getPathway(pathwayBase.getStId());
 			table.addCell(profile.getPathwayCell(i, pathway));
-			final String entities = String.format("%d / %d", pathwayBase.getEntities().getFound(), pathwayBase.getEntities().getTotal());
+			final String entities = String.format("%,d / %,d", pathwayBase.getEntities().getFound(), pathwayBase.getEntities().getTotal());
 			table.addCell(profile.getBodyCell(entities, i));
 			table.addCell(profile.getBodyCell(PdfUtils.formatNumber(pathwayBase.getEntities().getRatio()), i));
 			table.addCell(profile.getBodyCell(PdfUtils.formatNumber(pathwayBase.getEntities().getpValue()), i));
 			table.addCell(profile.getBodyCell(PdfUtils.formatNumber(pathwayBase.getEntities().getFdr()), i));
-			final String reactions = String.format("%d / %d",
+			final String reactions = String.format("%,d / %,d",
 					pathway.getData().getReactionsFound(),
 					pathway.getData().getReactionsCount());
 			table.addCell(profile.getBodyCell(reactions, i));

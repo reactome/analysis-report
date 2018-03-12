@@ -22,6 +22,7 @@ public class PdfUtils {
 
 	static {
 		NUMBER_FORMAT.setMaximumFractionDigits(3);
+		NUMBER_FORMAT.setGroupingUsed(true);
 		EXP_FORMAT.setMaximumFractionDigits(2);
 	}
 
