@@ -1,0 +1,20 @@
+{
+  "dbId" : 5357801,
+  "stId" : "R-HSA-5357801",
+  "nodes" : [ {
+    "dbId" : 5218859,
+    "stId" : "R-HSA-5218859",
+    "displayName" : "Regulated Necrosis",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 113 ]
+  }, {
+    "dbId" : 109581,
+    "stId" : "R-HSA-109581",
+    "displayName" : "Apoptosis",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 112 ]
+  } ],
+  "edges" : [ ]
+}
