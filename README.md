@@ -1,6 +1,6 @@
 ![reactome](src/main/resources/org/reactome/server/tools/analysis/exporter/style/logo.png)
 
-Analysis Exporter
+Analysis Report
 ------
 Exports results of an analysis performed in reactome.org to a PDF document. Click here to know more about [Analysis Service](https://reactome.org/dev/analysis).
 
