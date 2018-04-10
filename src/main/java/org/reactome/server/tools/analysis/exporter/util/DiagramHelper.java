@@ -7,7 +7,6 @@ import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.graph.domain.result.DiagramResult;
 import org.reactome.server.graph.service.DiagramService;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
-import org.reactome.server.tools.analysis.exporter.exception.AnalysisExporterException;
 import org.reactome.server.tools.diagram.exporter.common.analysis.AnalysisException;
 import org.reactome.server.tools.diagram.exporter.common.profiles.factory.DiagramJsonDeserializationException;
 import org.reactome.server.tools.diagram.exporter.common.profiles.factory.DiagramJsonNotFoundException;
@@ -15,6 +14,8 @@ import org.reactome.server.tools.diagram.exporter.raster.RasterExporter;
 import org.reactome.server.tools.diagram.exporter.raster.api.RasterArgs;
 import org.reactome.server.tools.diagram.exporter.raster.ehld.exception.EhldException;
 import org.reactome.server.tools.diagram.exporter.raster.profiles.ColorProfiles;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -35,7 +36,7 @@ public class DiagramHelper {
 	private static DiagramService diagramService = ReactomeGraphCore.getService(DiagramService.class);
 	private static String diagramProfile;
 	private static String analysisProfile;
-
+	private static final Logger logger = LoggerFactory.getLogger(DiagramHelper.class.getName());
 	/**
 	 * create diagram image by using the RasterExporter{@see RasterExporter}.
 	 *
@@ -45,7 +46,7 @@ public class DiagramHelper {
 	 *
 	 * @return diagram.
 	 */
-	public static Image getDiagram(String stId, AnalysisStoredResult asr, String resource, double pageWidth, double pageHeight) throws AnalysisExporterException {
+	public static Image getDiagram(String stId, AnalysisStoredResult asr, String resource, double pageWidth, double pageHeight) {
 		final DiagramResult diagramResult = getDiagramResult(stId);
 		final RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "png");
 		args.setSelected(diagramResult.getEvents());
@@ -53,6 +54,7 @@ public class DiagramHelper {
 		args.setResource(resource);
 		args.setProfiles(new ColorProfiles(diagramProfile, analysisProfile, null));
 
+		// 1 ask for an image larger than the original diagram -> better quality
 		final Integer width = diagramResult.getWidth();
 		final double desiredWidth = Math.min(width, pageWidth) * IMAGE_SCALE;
 		final double scale = desiredWidth / width;
@@ -63,6 +65,7 @@ public class DiagramHelper {
 			final BufferedImage image = exporter.export(args, asr);
 			final Image fImage = new Image(ImageDataFactory.create(image, Color.WHITE));
 			fImage.setHorizontalAlignment(HorizontalAlignment.CENTER);
+			// 2 downscale to fit page
 			final Double factor = Collections.min(Arrays.asList(
 					1. / IMAGE_SCALE,
 					pageWidth / image.getWidth(),
@@ -72,9 +75,9 @@ public class DiagramHelper {
 		} catch (DiagramJsonNotFoundException | AnalysisException | DiagramJsonDeserializationException | EhldException | IOException e) {
 //			System.out.println("!!" + diagramResult.getDiagramStId());
 //			return null;
-			throw new AnalysisExporterException("Exception reading diagram", e);
+			logger.warn("Couldn't generate diagram: " + stId, e);
 		}
-//		return null;
+		return null;
 	}
 
 	private static int toQuality(double scale) {
