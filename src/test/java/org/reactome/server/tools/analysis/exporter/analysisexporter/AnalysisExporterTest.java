@@ -71,7 +71,7 @@ public class AnalysisExporterTest {
 			final String token = entry.getValue();
 			try {
 				final OutputStream os = new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)));
-				RENDERER.render(token, "UNIPROT", 48887L, "breathe", 25, "modern", "copper plus", "barium lithium", os);
+				RENDERER.render(token, "UNIPROT", 48887L, 25, "modern", "copper plus", "barium lithium", os);
 			} catch (AnalysisExporterException | FileNotFoundException e) {
 				e.printStackTrace();
 				Assert.fail(e.getMessage());

@@ -14,7 +14,7 @@ public class TableOfContent implements Section {
 		document.add(profile.getH1("Table of Contents"));
 
 		document.add(profile.getToc1("1. Introduction", "introduction"));
-		document.add(profile.getToc1("2. Summary of parameters", "parameters"));
+		document.add(profile.getToc1("2. Properties of analysis", "properties"));
 		document.add(profile.getToc1("3. Genome-wide overview", "overview"));
 		document.add(profile.getToc1("4. Most significant pathways", "pathway-list"));
 		document.add(profile.getToc1("5. Pathway details", "pathway-details"));

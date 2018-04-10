@@ -29,7 +29,7 @@ public class ParameterAndResultSummary implements Section {
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		document.add(new AreaBreak());
-		document.add(profile.getH1("2. Summary of parameters").setDestination("parameters"));
+		document.add(profile.getH1("2. Properties of analysis").setDestination("properties"));
 		final AnalysisStoredResult result = analysisData.getAnalysisStoredResult();
 		final List<Paragraph> list = new LinkedList<>();
 		list.add(getDescriptionListItem("Analysis type: ", String.valueOf(analysisData.getType()), profile));

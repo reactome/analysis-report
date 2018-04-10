@@ -93,7 +93,6 @@ public class AnalysisExporterMain {
 			renderer.render(config.getString("token"),
 					config.getString("resource"),
 					config.getLong("species"),
-					"breathe",
 					config.getInt("maxPathways"),
 					null, null, null, os);
 		} catch (AnalysisExporterException e) {
