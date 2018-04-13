@@ -1,0 +1,91 @@
+{
+  "dbId" : 196854,
+  "stableId" : "R-HSA-196854",
+  "displayName" : "Metabolism of vitamins and cofactors",
+  "nodes" : [ {
+    "id" : 251,
+    "reactomeId" : 196849,
+    "displayName" : "Metabolism of water-soluble vitamins and cofactors",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 182,
+      "y" : 114
+    },
+    "minX" : 80,
+    "maxX" : 284,
+    "minY" : 81,
+    "maxY" : 147,
+    "prop" : {
+      "x" : 80,
+      "y" : 81,
+      "width" : 204,
+      "height" : 66
+    },
+    "textPosition" : {
+      "x" : 89,
+      "y" : 92
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 252,
+    "reactomeId" : 6806667,
+    "displayName" : "Metabolism of fat-soluble vitamins",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 400,
+      "y" : 113
+    },
+    "minX" : 304,
+    "maxX" : 497,
+    "minY" : 79,
+    "maxY" : 147,
+    "prop" : {
+      "x" : 304,
+      "y" : 79,
+      "width" : 193,
+      "height" : 68
+    },
+    "textPosition" : {
+      "x" : 316,
+      "y" : 91
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 253,
+    "reactomeId" : 8978934,
+    "displayName" : "Metabolism of cofactors",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 613,
+      "y" : 115
+    },
+    "minX" : 528,
+    "maxX" : 699,
+    "minY" : 82,
+    "maxY" : 148,
+    "prop" : {
+      "x" : 528,
+      "y" : 82,
+      "width" : 171,
+      "height" : 66
+    },
+    "textPosition" : {
+      "x" : 537,
+      "y" : 100
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 80,
+  "maxX" : 699,
+  "minY" : 79,
+  "maxY" : 148,
+  "disease" : false
+}

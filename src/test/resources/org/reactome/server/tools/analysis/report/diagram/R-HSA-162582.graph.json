@@ -1,0 +1,118 @@
+{
+  "dbId" : 162582,
+  "stId" : "R-HSA-162582",
+  "nodes" : [ {
+    "dbId" : 9006921,
+    "stId" : "R-HSA-9006921",
+    "displayName" : "Integrin signaling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 150 ]
+  }, {
+    "dbId" : 9006925,
+    "stId" : "R-HSA-9006925",
+    "displayName" : "Intracellular signaling by second messengers",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 152 ]
+  }, {
+    "dbId" : 165159,
+    "stId" : "R-HSA-165159",
+    "displayName" : "mTOR signalling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 154 ]
+  }, {
+    "dbId" : 9006927,
+    "stId" : "R-HSA-9006927",
+    "displayName" : "Signaling by Non-Receptor Tyrosine Kinases",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 153 ]
+  }, {
+    "dbId" : 5683057,
+    "stId" : "R-HSA-5683057",
+    "displayName" : "MAPK family signaling cascades",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 143 ]
+  }, {
+    "dbId" : 194315,
+    "stId" : "R-HSA-194315",
+    "displayName" : "Signaling by Rho GTPases",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 128 ]
+  }, {
+    "dbId" : 195721,
+    "stId" : "R-HSA-195721",
+    "displayName" : "Signaling by WNT",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 18 ]
+  }, {
+    "dbId" : 9006936,
+    "stId" : "R-HSA-9006936",
+    "displayName" : "Signaling by TGF-beta family members",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 148 ]
+  }, {
+    "dbId" : 372790,
+    "stId" : "R-HSA-372790",
+    "displayName" : "Signaling by GPCR",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 149 ]
+  }, {
+    "dbId" : 2028269,
+    "stId" : "R-HSA-2028269",
+    "displayName" : "Signaling by Hippo",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 133 ]
+  }, {
+    "dbId" : 9006931,
+    "stId" : "R-HSA-9006931",
+    "displayName" : "Signaling by Nuclear Receptors",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 151 ]
+  }, {
+    "dbId" : 157118,
+    "stId" : "R-HSA-157118",
+    "displayName" : "Signaling by NOTCH",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 19 ]
+  }, {
+    "dbId" : 73887,
+    "stId" : "R-HSA-73887",
+    "displayName" : "Death Receptor Signalling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 141 ]
+  }, {
+    "dbId" : 5358351,
+    "stId" : "R-HSA-5358351",
+    "displayName" : "Signaling by Hedgehog",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 139 ]
+  }, {
+    "dbId" : 9006934,
+    "stId" : "R-HSA-9006934",
+    "displayName" : "Signaling by Receptor Tyrosine Kinases",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 147 ]
+  }, {
+    "dbId" : 2586552,
+    "stId" : "R-HSA-2586552",
+    "displayName" : "Signaling by Leptin",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 137 ]
+  } ],
+  "edges" : [ ]
+}

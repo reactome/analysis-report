@@ -1,0 +1,291 @@
+{
+  "dbId" : 71291,
+  "stableId" : "R-HSA-71291",
+  "displayName" : "Metabolism of amino acids and derivatives",
+  "nodes" : [ {
+    "id" : 6336,
+    "reactomeId" : 1614635,
+    "displayName" : "Sulfur amino acid metabolism",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 288,
+      "y" : 221
+    },
+    "minX" : 224,
+    "maxX" : 352,
+    "minY" : 191,
+    "maxY" : 252,
+    "prop" : {
+      "x" : 224,
+      "y" : 191,
+      "width" : 128,
+      "height" : 61
+    },
+    "textPosition" : {
+      "x" : 228,
+      "y" : 200
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 6320,
+    "reactomeId" : 70614,
+    "displayName" : "Amino acid synthesis and interconversion (transamination)",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 102,
+      "y" : 79
+    },
+    "minX" : 40,
+    "maxX" : 164,
+    "minY" : 32,
+    "maxY" : 127,
+    "prop" : {
+      "x" : 40,
+      "y" : 32,
+      "width" : 124,
+      "height" : 95
+    },
+    "textPosition" : {
+      "x" : 47,
+      "y" : 44
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 6337,
+    "reactomeId" : 8849175,
+    "displayName" : "Threonine catabolism",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 783,
+      "y" : 213
+    },
+    "minX" : 720,
+    "maxX" : 847,
+    "minY" : 183,
+    "maxY" : 244,
+    "prop" : {
+      "x" : 720,
+      "y" : 183,
+      "width" : 127,
+      "height" : 61
+    },
+    "textPosition" : {
+      "x" : 744,
+      "y" : 192
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 6321,
+    "reactomeId" : 70895,
+    "displayName" : "Branched-chain amino acid catabolism",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 256,
+      "y" : 79
+    },
+    "minX" : 192,
+    "maxX" : 320,
+    "minY" : 44,
+    "maxY" : 115,
+    "prop" : {
+      "x" : 192,
+      "y" : 44,
+      "width" : 128,
+      "height" : 71
+    },
+    "textPosition" : {
+      "x" : 200,
+      "y" : 51
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 6338,
+    "reactomeId" : 6798163,
+    "displayName" : "Choline catabolism",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 120,
+      "y" : 326
+    },
+    "minX" : 50,
+    "maxX" : 191,
+    "minY" : 298,
+    "maxY" : 355,
+    "prop" : {
+      "x" : 50,
+      "y" : 298,
+      "width" : 141,
+      "height" : 57
+    },
+    "textPosition" : {
+      "x" : 58,
+      "y" : 312
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 2307,
+    "reactomeId" : 5662702,
+    "displayName" : "Melanin biosynthesis",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 616,
+      "y" : 217
+    },
+    "minX" : 561,
+    "maxX" : 672,
+    "minY" : 187,
+    "maxY" : 247,
+    "prop" : {
+      "x" : 561,
+      "y" : 187,
+      "width" : 111,
+      "height" : 60
+    },
+    "textPosition" : {
+      "x" : 573,
+      "y" : 195
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 2213,
+    "reactomeId" : 2408522,
+    "displayName" : "Selenoamino acid metabolism",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 451,
+      "y" : 222
+    },
+    "minX" : 379,
+    "maxX" : 523,
+    "minY" : 181,
+    "maxY" : 263,
+    "prop" : {
+      "x" : 379,
+      "y" : 181,
+      "width" : 144,
+      "height" : 82
+    },
+    "textPosition" : {
+      "x" : 391,
+      "y" : 200
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 6332,
+    "reactomeId" : 6788656,
+    "displayName" : "Histidine, lysine, phenylalanine, tyrosine, proline and tryptophan catabolism",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 424,
+      "y" : 88
+    },
+    "minX" : 349,
+    "maxX" : 499,
+    "minY" : 34,
+    "maxY" : 143,
+    "prop" : {
+      "x" : 349,
+      "y" : 34,
+      "width" : 150,
+      "height" : 109
+    },
+    "textPosition" : {
+      "x" : 351,
+      "y" : 53
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 6333,
+    "reactomeId" : 351202,
+    "displayName" : "Metabolism of polyamines",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 613,
+      "y" : 93
+    },
+    "minX" : 541,
+    "maxX" : 686,
+    "minY" : 59,
+    "maxY" : 127,
+    "prop" : {
+      "x" : 541,
+      "y" : 59,
+      "width" : 145,
+      "height" : 68
+    },
+    "textPosition" : {
+      "x" : 563,
+      "y" : 71
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 6334,
+    "reactomeId" : 209776,
+    "displayName" : "Amine-derived hormones",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 779,
+      "y" : 96
+    },
+    "minX" : 712,
+    "maxX" : 847,
+    "minY" : 68,
+    "maxY" : 124,
+    "prop" : {
+      "x" : 712,
+      "y" : 68,
+      "width" : 135,
+      "height" : 56
+    },
+    "textPosition" : {
+      "x" : 726,
+      "y" : 74
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 6335,
+    "reactomeId" : 389661,
+    "displayName" : "Glyoxylate metabolism and glycine degradation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 113,
+      "y" : 217
+    },
+    "minX" : 34,
+    "maxX" : 192,
+    "minY" : 179,
+    "maxY" : 255,
+    "prop" : {
+      "x" : 34,
+      "y" : 179,
+      "width" : 158,
+      "height" : 76
+    },
+    "textPosition" : {
+      "x" : 35,
+      "y" : 195
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 34,
+  "maxX" : 847,
+  "minY" : 32,
+  "maxY" : 355,
+  "disease" : false
+}

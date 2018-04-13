@@ -1,0 +1,102 @@
+{
+  "dbId" : 5656364,
+  "stId" : "R-HSA-5656364",
+  "nodes" : [ {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 26, 586 ],
+    "identifier" : "29101",
+    "parents" : [ 426219, 9272435, 9506388, 9201592, 9573280, 9349103, 9427199, 6798411 ]
+  }, {
+    "dbId" : 5656372,
+    "stId" : "R-HSA-5656372",
+    "displayName" : "SLC5A1 Y191* [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13866",
+    "geneNames" : [ "SLC5A1", "NAGT", "SGLT1" ],
+    "parents" : [ 5656360 ]
+  }, {
+    "dbId" : 70115,
+    "stId" : "R-ALL-70115",
+    "displayName" : "Glc [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 658, 38, 666, 730, 524, 652, 607 ],
+    "identifier" : "17925",
+    "parents" : [ 429620, 428819, 429078, 189219, 189227, 189075 ]
+  }, {
+    "dbId" : 5656373,
+    "stId" : "R-HSA-5656373",
+    "displayName" : "SLC5A1 G100V [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13866",
+    "geneNames" : [ "SLC5A1", "NAGT", "SGLT1" ],
+    "parents" : [ 5656360 ]
+  }, {
+    "dbId" : 5656354,
+    "stId" : "R-HSA-5656354",
+    "displayName" : "SLC5A1 Q457R [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13866",
+    "geneNames" : [ "SLC5A1", "NAGT", "SGLT1" ],
+    "parents" : [ 5656360 ]
+  }, {
+    "dbId" : 5656370,
+    "stId" : "R-HSA-5656370",
+    "displayName" : "SLC5A1 R379* [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13866",
+    "geneNames" : [ "SLC5A1", "NAGT", "SGLT1" ],
+    "parents" : [ 5656360 ]
+  }, {
+    "dbId" : 5656368,
+    "stId" : "R-HSA-5656368",
+    "displayName" : "SLC5A1 D28G [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13866",
+    "geneNames" : [ "SLC5A1", "NAGT", "SGLT1" ],
+    "parents" : [ 5656360 ]
+  }, {
+    "dbId" : 5656381,
+    "stId" : "R-HSA-5656381",
+    "displayName" : "SLC5A1 R135W [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13866",
+    "geneNames" : [ "SLC5A1", "NAGT", "SGLT1" ],
+    "parents" : [ 5656360 ]
+  }, {
+    "dbId" : 5656362,
+    "stId" : "R-HSA-5656362",
+    "displayName" : "SLC5A1 D28N [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13866",
+    "geneNames" : [ "SLC5A1", "NAGT", "SGLT1" ],
+    "parents" : [ 5656360 ]
+  }, {
+    "dbId" : 5656360,
+    "stId" : "R-HSA-5656360",
+    "displayName" : "SLC5A1 mutants [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 168579 ],
+    "children" : [ 5656362, 5656381, 5656368, 5656370, 5656354, 5656373, 5656372 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 5656356,
+    "stId" : "R-HSA-5656356",
+    "displayName" : "Defective SLC5A1 does not cotransport Glc and Na+",
+    "schemaClass" : "FailedReaction",
+    "inputs" : [ 70115, 74113 ],
+    "efs" : [ 5656360 ],
+    "diagramIds" : [ 168578 ],
+    "entityFunctionalStatus" : [ 5656360 ]
+  } ]
+}

@@ -1,0 +1,66 @@
+{
+  "dbId" : 5684996,
+  "stableId" : "R-HSA-5684996",
+  "displayName" : "MAPK1/MAPK3 signaling",
+  "nodes" : [ {
+    "id" : 51,
+    "reactomeId" : 112409,
+    "displayName" : "RAF-independent MAPK1/3 activation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 434,
+      "y" : 138
+    },
+    "minX" : 362,
+    "maxX" : 506,
+    "minY" : 101,
+    "maxY" : 175,
+    "prop" : {
+      "x" : 362,
+      "y" : 101,
+      "width" : 144,
+      "height" : 74
+    },
+    "textPosition" : {
+      "x" : 369,
+      "y" : 116
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 52,
+    "reactomeId" : 5673001,
+    "displayName" : "RAF/MAP kinase cascade",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 252,
+      "y" : 139
+    },
+    "minX" : 178,
+    "maxX" : 327,
+    "minY" : 102,
+    "maxY" : 177,
+    "prop" : {
+      "x" : 178,
+      "y" : 102,
+      "width" : 149,
+      "height" : 75
+    },
+    "textPosition" : {
+      "x" : 195,
+      "y" : 118
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 178,
+  "maxX" : 506,
+  "minY" : 101,
+  "maxY" : 177,
+  "disease" : false
+}

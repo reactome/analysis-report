@@ -4,6 +4,7 @@ import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.graph.domain.model.Summation;
+import org.reactome.server.tools.analysis.report.document.TexDocument;
 import org.reactome.server.tools.analysis.report.style.PdfProfile;
 
 import java.util.LinkedList;
@@ -121,6 +122,27 @@ public class HtmlParser {
 		return null;
 	}
 
+	public static void parseText(TexDocument document, Summation summation) {
+		final String[] paragraphs = summation.getText().split("(?i)<br>|<p>");
+		for (String paragraph : paragraphs) {
+			final String trim = paragraph.trim();
+			if (trim.isEmpty()) continue;
+			parseParagraph(document, trim);
+			document.newLine();
+			document.newLine();
+		}
+	}
+
+	public static void parseParagraph(TexDocument document, String html) {
+		List<Span> spans = new LinkedList<>();
+		spans.add(new Text(html));
+		spans = trimItalic(spans);
+		spans = trimBold(spans);
+		spans = trimSubs(spans);
+		spans = trimLinks(spans);
+		spans.forEach(span -> span.render(document));
+	}
+
 	static abstract class Span {
 		String text;
 
@@ -129,6 +151,8 @@ public class HtmlParser {
 		}
 
 		abstract void render(Paragraph paragraph, PdfProfile profile);
+
+		public abstract void render(TexDocument document);
 	}
 
 	static class Text extends Span {
@@ -139,6 +163,11 @@ public class HtmlParser {
 		@Override
 		void render(Paragraph paragraph, PdfProfile profile) {
 			paragraph.add(text);
+		}
+
+		@Override
+		public void render(TexDocument document) {
+			document.text(document.scape(text));
 		}
 	}
 
@@ -153,6 +182,11 @@ public class HtmlParser {
 			paragraph.add(new com.itextpdf.layout.element.Text(text).setFont(profile.getItalic()));
 
 		}
+
+		@Override
+		public void render(TexDocument document) {
+			document.command(TexDocument.TEXT_IT, document.scape(text));
+		}
 	}
 
 	private static class Bold extends Span {
@@ -163,6 +197,11 @@ public class HtmlParser {
 		@Override
 		void render(Paragraph paragraph, PdfProfile profile) {
 			paragraph.add(new com.itextpdf.layout.element.Text(text).setFont(profile.getBold()));
+		}
+
+		@Override
+		public void render(TexDocument document) {
+			document.command(TexDocument.TEXT_BF, document.scape(text));
 		}
 	}
 
@@ -184,9 +223,15 @@ public class HtmlParser {
 						.setFontColor(profile.getLinkColor()));
 		}
 
+		@Override
+		public void render(TexDocument document) {
+			document.command(TexDocument.HYPERREF, document.scape(text), link);
+		}
+
 	}
 
 	private static class Sub extends Span {
+
 		Sub(String text) {
 			super(text);
 		}
@@ -194,6 +239,11 @@ public class HtmlParser {
 		@Override
 		void render(Paragraph paragraph, PdfProfile profile) {
 			paragraph.add(new com.itextpdf.layout.element.Text(text).setFontSize(1 + profile.getFontSize() / 2));
+		}
+
+		@Override
+		public void render(TexDocument document) {
+			document.command(TexDocument.TEXT_SUBSCRIPT, document.scape(text));
 		}
 	}
 }

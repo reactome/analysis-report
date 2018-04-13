@@ -1,0 +1,1809 @@
+{
+  "dbId" : 109606,
+  "stId" : "R-HSA-109606",
+  "nodes" : [ {
+    "dbId" : 54017,
+    "stId" : "R-HSA-54017",
+    "displayName" : "DYNLL1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63167",
+    "geneNames" : [ "DYNLL1", "DLC1", "DNCL1", "DNCLC1", "HDLC1" ],
+    "parents" : [ 6806514, 6806434, 140526, 140524 ]
+  }, {
+    "dbId" : 50690,
+    "stId" : "R-HSA-50690",
+    "displayName" : "BAK1 activated [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2055 ],
+    "identifier" : "Q16611",
+    "geneNames" : [ "BAK1", "BAK", "BCL2L7", "CDN1" ],
+    "parents" : [ 114262 ]
+  }, {
+    "dbId" : 6804324,
+    "stId" : "R-HSA-6804324",
+    "displayName" : "CASP7(2-303) dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2500 ],
+    "children" : [ 57029 ]
+  }, {
+    "dbId" : 1445138,
+    "stId" : "R-HSA-1445138",
+    "displayName" : "14-3-3 dimer [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2394 ],
+    "parents" : [ 1454696, 5632727, 5632741, 139904, 75005 ],
+    "children" : [ 194364, 2262716, 206751, 2028645, 2262713, 2262715, 2262714 ]
+  }, {
+    "dbId" : 508161,
+    "stId" : "R-HSA-508161",
+    "displayName" : "Bcl-XL interacting BH3-only proteins [mitochondrial outer membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1958 ],
+    "parents" : [ 508159 ],
+    "children" : [ 3145027, 140222, 114266, 140218, 114242 ]
+  }, {
+    "dbId" : 4331332,
+    "stId" : "R-HSA-4331332",
+    "displayName" : "p-S15,S20-TP53 Tetramer:PMAIP1 Gene [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2475 ],
+    "children" : [ 4331342, 3222171 ]
+  }, {
+    "dbId" : 4331338,
+    "stId" : "R-HSA-4331338",
+    "displayName" : "E2F1:TFDP1:PMAIP1 Gene [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2487 ],
+    "children" : [ 68653, 4331342 ]
+  }, {
+    "dbId" : 53259,
+    "stId" : "R-HSA-53259",
+    "displayName" : "CYCS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2146 ],
+    "identifier" : "P99999",
+    "geneNames" : [ "CYCS", "CYC" ],
+    "parents" : [ 114253 ]
+  }, {
+    "dbId" : 4331342,
+    "stId" : "R-HSA-4331342",
+    "displayName" : "PMAIP1 Gene [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2470 ],
+    "identifier" : "ENSG00000141682",
+    "geneNames" : [ "PMAIP1", "NOXA" ],
+    "parents" : [ 4331338, 4331332 ]
+  }, {
+    "dbId" : 206099,
+    "stId" : "R-HSA-206099",
+    "displayName" : "YWHAZ [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63104",
+    "geneNames" : [ "YWHAZ" ],
+    "parents" : [ 914001, 914180, 206751, 3769387 ]
+  }, {
+    "dbId" : 4331345,
+    "stId" : "R-HSA-4331345",
+    "displayName" : "(p-S15,S20-TP53,TP63,TP73):(PPP1R13B,TP53BP2):BBC3 Gene [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2465 ],
+    "children" : [ 6799788, 4331320 ]
+  }, {
+    "dbId" : 68639,
+    "stId" : "R-HSA-68639",
+    "displayName" : "E2F1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01094",
+    "geneNames" : [ "E2F1", "RBBP3" ],
+    "parents" : [ 68640, 187942, 9007512, 68653 ]
+  }, {
+    "dbId" : 1362225,
+    "stId" : "R-HSA-1362225",
+    "displayName" : "TFDP2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14188",
+    "geneNames" : [ "TFDP2", "DP2" ],
+    "parents" : [ 1362227, 8954055, 9007508 ]
+  }, {
+    "dbId" : 1362227,
+    "stId" : "R-HSA-1362227",
+    "displayName" : "TFDP1,TFDP2 [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 1362228, 1226072, 1227905, 2248825, 2127252, 1226088, 1226089, 68653, 6798265 ],
+    "children" : [ 68652, 1362225 ]
+  }, {
+    "dbId" : 5632381,
+    "stId" : "R-HSA-5632381",
+    "displayName" : "TP63 Tetramer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5632387, 6800828, 6798076 ],
+    "children" : [ 2997585 ]
+  }, {
+    "dbId" : 68653,
+    "stId" : "R-HSA-68653",
+    "displayName" : "E2F1:TFDP1,TFDP2 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 137 ],
+    "parents" : [ 113648, 8961838, 4331338, 4331325, 8961672, 8961655, 8961960, 8961621, 8961924, 8961860, 8961992, 8963658, 8961690, 8961945, 8961641, 8961882, 8961906, 8961974 ],
+    "children" : [ 1362227, 68639 ]
+  }, {
+    "dbId" : 6804299,
+    "stId" : "R-HSA-6804299",
+    "displayName" : "CASP3(1-277) dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2496 ],
+    "children" : [ 57021 ]
+  }, {
+    "dbId" : 68652,
+    "stId" : "R-HSA-68652",
+    "displayName" : "TFDP1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14186",
+    "geneNames" : [ "TFDP1", "DP1" ],
+    "parents" : [ 8953103, 9007508, 1362227 ]
+  }, {
+    "dbId" : 69683,
+    "stId" : "R-HSA-69683",
+    "displayName" : "p-S15,S20-TP53 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04637",
+    "geneNames" : [ "TP53", "P53" ],
+    "parents" : [ 3222171 ]
+  }, {
+    "dbId" : 114236,
+    "stId" : "R-HSA-114236",
+    "displayName" : "BCL2L1 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2352 ],
+    "identifier" : "Q07817",
+    "geneNames" : [ "BCL2L1", "BCL2L", "BCLX" ],
+    "parents" : [ 879209, 508159 ]
+  }, {
+    "dbId" : 194364,
+    "stId" : "R-HSA-194364",
+    "displayName" : "YWHAE dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8933379, 2028649, 4793921, 205018, 1445138 ],
+    "children" : [ 194368 ]
+  }, {
+    "dbId" : 141373,
+    "stId" : "R-HSA-141373",
+    "displayName" : "MYS-BID(62-195) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 86 ],
+    "identifier" : "P55957",
+    "geneNames" : [ "BID" ]
+  }, {
+    "dbId" : 194368,
+    "stId" : "R-HSA-194368",
+    "displayName" : "YWHAE [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62258",
+    "geneNames" : [ "YWHAE" ],
+    "parents" : [ 5626173, 5626171, 8863673, 380705, 380704, 380698, 194364, 380268 ]
+  }, {
+    "dbId" : 114242,
+    "stId" : "R-HSA-114242",
+    "displayName" : "BAD [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 130 ],
+    "identifier" : "Q92934",
+    "geneNames" : [ "BAD", "BBC6", "BCL2L8" ],
+    "parents" : [ 508161, 508157, 114268 ]
+  }, {
+    "dbId" : 141638,
+    "stId" : "R-HSA-141638",
+    "displayName" : "CASP9(?-315) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P55211",
+    "geneNames" : [ "CASP9", "MCH6" ],
+    "parents" : [ 141640 ]
+  }, {
+    "dbId" : 114244,
+    "stId" : "R-HSA-114244",
+    "displayName" : "CYCS [mitochondrial intermembrane space]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2145 ],
+    "identifier" : "P99999",
+    "geneNames" : [ "CYCS", "CYC" ]
+  }, {
+    "dbId" : 141639,
+    "stId" : "R-HSA-141639",
+    "displayName" : "CASP9(331-416) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P55211",
+    "geneNames" : [ "CASP9", "MCH6" ],
+    "parents" : [ 141640 ]
+  }, {
+    "dbId" : 50757,
+    "stId" : "R-HSA-50757",
+    "displayName" : "BCL2 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1954 ],
+    "identifier" : "P10415",
+    "geneNames" : [ "BCL2" ],
+    "parents" : [ 879209, 508158, 114268, 114339 ]
+  }, {
+    "dbId" : 141642,
+    "stId" : "R-HSA-141642",
+    "displayName" : "CASP7(207-303) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P55210",
+    "geneNames" : [ "CASP7", "MCH3" ],
+    "parents" : [ 6804359 ]
+  }, {
+    "dbId" : 141643,
+    "stId" : "R-HSA-141643",
+    "displayName" : "Caspase-7 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2253 ],
+    "parents" : [ 202877, 114308 ],
+    "children" : [ 6804359 ]
+  }, {
+    "dbId" : 141640,
+    "stId" : "R-HSA-141640",
+    "displayName" : "Cleaved Caspase-9 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2351 ],
+    "parents" : [ 373664, 114317, 114258 ],
+    "children" : [ 141639, 141638 ]
+  }, {
+    "dbId" : 141641,
+    "stId" : "R-HSA-141641",
+    "displayName" : "CASP7(24-198) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P55210",
+    "geneNames" : [ "CASP7", "MCH3" ],
+    "parents" : [ 6804359 ]
+  }, {
+    "dbId" : 141646,
+    "stId" : "R-HSA-141646",
+    "displayName" : "CASP3(176-277) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42574",
+    "geneNames" : [ "CASP3", "CPP32" ],
+    "parents" : [ 350888 ]
+  }, {
+    "dbId" : 114253,
+    "stId" : "R-HSA-114253",
+    "displayName" : "Apaf-1:Cytochrome C [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2180 ],
+    "parents" : [ 114255, 114258 ],
+    "children" : [ 53259, 50099 ]
+  }, {
+    "dbId" : 202062,
+    "stId" : "R-HSA-202062",
+    "displayName" : "p-T309,S474-AKT2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31751",
+    "geneNames" : [ "AKT2" ],
+    "parents" : [ 202074 ]
+  }, {
+    "dbId" : 141644,
+    "stId" : "R-HSA-141644",
+    "displayName" : "CASP3(29-175) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42574",
+    "geneNames" : [ "CASP3", "CPP32" ],
+    "parents" : [ 350888 ]
+  }, {
+    "dbId" : 114255,
+    "stId" : "R-HSA-114255",
+    "displayName" : "Cytochrome C:Apaf-1:ATP:Procaspase-9 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2184 ],
+    "children" : [ 114253, 113592, 57033 ]
+  }, {
+    "dbId" : 114258,
+    "stId" : "R-HSA-114258",
+    "displayName" : "Apoptosome [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2187 ],
+    "children" : [ 114253, 141640 ]
+  }, {
+    "dbId" : 114262,
+    "stId" : "R-HSA-114262",
+    "displayName" : "Active oligomeric BAK [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2085 ],
+    "parents" : [ 9029242 ],
+    "children" : [ 50690 ]
+  }, {
+    "dbId" : 202074,
+    "stId" : "R-HSA-202074",
+    "displayName" : "Active AKT [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2380 ],
+    "parents" : [ 198338 ],
+    "children" : [ 198356, 202062, 3009367 ]
+  }, {
+    "dbId" : 114266,
+    "stId" : "R-HSA-114266",
+    "displayName" : "MYS-BID(62-195) [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 89 ],
+    "identifier" : "P55957",
+    "geneNames" : [ "BID" ],
+    "parents" : [ 508161, 508157, 114339, 168847 ]
+  }, {
+    "dbId" : 51291,
+    "stId" : "R-HSA-51291",
+    "displayName" : "PPP3R1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63098",
+    "geneNames" : [ "PPP3R1", "CNA2", "CNB" ],
+    "parents" : [ 201788, 140202, 2025950, 2025977 ]
+  }, {
+    "dbId" : 114269,
+    "stId" : "R-HSA-114269",
+    "displayName" : "Activated BAX [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2022 ],
+    "parents" : [ 9029242 ],
+    "children" : [ 139949 ]
+  }, {
+    "dbId" : 114268,
+    "stId" : "R-HSA-114268",
+    "displayName" : "BAD:BCL-2 [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 133 ],
+    "children" : [ 50757, 114242 ]
+  }, {
+    "dbId" : 6798094,
+    "stId" : "R-HSA-6798094",
+    "displayName" : "TP73 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15350",
+    "geneNames" : [ "TP73", "P73" ],
+    "parents" : [ 6798077 ]
+  }, {
+    "dbId" : 55915,
+    "stId" : "R-HSA-55915",
+    "displayName" : "GZMB [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 84 ],
+    "identifier" : "P10144",
+    "geneNames" : [ "GZMB", "CGL1", "CSPB", "CTLA1", "GRB" ]
+  }, {
+    "dbId" : 3145027,
+    "stId" : "R-HSA-3145027",
+    "displayName" : "p-BCL2L11 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2431 ],
+    "identifier" : "O43521",
+    "geneNames" : [ "BCL2L11", "BIM" ],
+    "parents" : [ 508161, 508157 ]
+  }, {
+    "dbId" : 3145026,
+    "stId" : "R-HSA-3145026",
+    "displayName" : "p-BMF [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2432 ],
+    "identifier" : "Q96LC9",
+    "geneNames" : [ "BMF" ],
+    "parents" : [ 508157 ]
+  }, {
+    "dbId" : 4331320,
+    "stId" : "R-HSA-4331320",
+    "displayName" : "BBC3 Gene [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2461 ],
+    "identifier" : "ENSG00000105327",
+    "geneNames" : [ "BBC3", "PUMA" ],
+    "parents" : [ 4331325, 4331345 ]
+  }, {
+    "dbId" : 139896,
+    "stId" : "R-HSA-139896",
+    "displayName" : "BAK1 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2143 ],
+    "identifier" : "Q16611",
+    "geneNames" : [ "BAK1", "BAK", "BCL2L7", "CDN1" ],
+    "parents" : [ 168847 ]
+  }, {
+    "dbId" : 3009367,
+    "stId" : "R-HSA-3009367",
+    "displayName" : "p-T305,S472-AKT3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y243",
+    "geneNames" : [ "AKT3", "PKBG" ],
+    "parents" : [ 202074 ]
+  }, {
+    "dbId" : 114298,
+    "stId" : "R-HSA-114298",
+    "displayName" : "DIABLO [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2177 ],
+    "identifier" : "Q9NR28",
+    "geneNames" : [ "DIABLO", "SMAC" ],
+    "parents" : [ 114318, 114353, 114391, 114305 ]
+  }, {
+    "dbId" : 2028645,
+    "stId" : "R-HSA-2028645",
+    "displayName" : "YWHAB dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2028630, 5672707, 5672728, 5675412, 5675430, 5675414, 5672696, 5672692, 1445138, 5672710, 5672712, 5672715 ],
+    "children" : [ 48888 ]
+  }, {
+    "dbId" : 2997585,
+    "stId" : "R-HSA-2997585",
+    "displayName" : "TP63 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H3D4",
+    "geneNames" : [ "TP63", "KET", "P63", "P73H", "P73L", "TP73L" ],
+    "parents" : [ 5632381 ]
+  }, {
+    "dbId" : 64637,
+    "stId" : "R-HSA-64637",
+    "displayName" : "DIABLO [mitochondrial intermembrane space]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2176 ],
+    "identifier" : "Q9NR28",
+    "geneNames" : [ "DIABLO", "SMAC" ]
+  }, {
+    "dbId" : 76158,
+    "stId" : "R-HSA-76158",
+    "displayName" : "CASP8(385-479) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14790",
+    "geneNames" : [ "CASP8", "MCH5" ],
+    "parents" : [ 139950 ]
+  }, {
+    "dbId" : 4331325,
+    "stId" : "R-HSA-4331325",
+    "displayName" : "E2F1:TFDP1:BBC3 Gene [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2483 ],
+    "children" : [ 68653, 4331320 ]
+  }, {
+    "dbId" : 114305,
+    "stId" : "R-HSA-114305",
+    "displayName" : "SMAC:XIAP:Caspase-3 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2312 ],
+    "children" : [ 114298, 114304 ]
+  }, {
+    "dbId" : 139907,
+    "stId" : "R-HSA-139907",
+    "displayName" : "BAX activated [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2018 ],
+    "identifier" : "Q07812",
+    "geneNames" : [ "BAX", "BCL2L4" ]
+  }, {
+    "dbId" : 114304,
+    "stId" : "R-HSA-114304",
+    "displayName" : "XIAP:Caspase-3 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2311 ],
+    "parents" : [ 114305 ],
+    "children" : [ 350870, 50849 ]
+  }, {
+    "dbId" : 139904,
+    "stId" : "R-HSA-139904",
+    "displayName" : "14-3-3 proteins:p-S99-BAD complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 126 ],
+    "children" : [ 198335, 1445138 ]
+  }, {
+    "dbId" : 114308,
+    "stId" : "R-HSA-114308",
+    "displayName" : "XIAP:Caspase-7 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2314 ],
+    "parents" : [ 114353 ],
+    "children" : [ 141643, 50849 ]
+  }, {
+    "dbId" : 50825,
+    "stId" : "R-HSA-50825",
+    "displayName" : "BID(1-195) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 80 ],
+    "identifier" : "P55957",
+    "geneNames" : [ "BID" ]
+  }, {
+    "dbId" : 114317,
+    "stId" : "R-HSA-114317",
+    "displayName" : "XIAP:Caspase-9 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2317 ],
+    "parents" : [ 114318 ],
+    "children" : [ 141640, 50849 ]
+  }, {
+    "dbId" : 2976673,
+    "stId" : "R-HSA-2976673",
+    "displayName" : "BCL2L11 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43521",
+    "geneNames" : [ "BCL2L11", "BIM" ],
+    "parents" : [ 140524 ]
+  }, {
+    "dbId" : 168847,
+    "stId" : "R-HSA-168847",
+    "displayName" : "tBID bound to inactive BAK [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2054 ],
+    "children" : [ 114266, 139896 ]
+  }, {
+    "dbId" : 139916,
+    "stId" : "R-HSA-139916",
+    "displayName" : "BAX [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2052 ],
+    "identifier" : "Q07812",
+    "geneNames" : [ "BAX", "BCL2L4" ],
+    "parents" : [ 6803894, 168850 ]
+  }, {
+    "dbId" : 114318,
+    "stId" : "R-HSA-114318",
+    "displayName" : "SMAC:XIAP:Caspase-9 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2318 ],
+    "children" : [ 114317, 114298 ]
+  }, {
+    "dbId" : 168850,
+    "stId" : "R-HSA-168850",
+    "displayName" : "tBID bound to inactive BAX [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2017 ],
+    "children" : [ 139916, 139953 ]
+  }, {
+    "dbId" : 60306,
+    "stId" : "R-HSA-60306",
+    "displayName" : "NMT 1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 87 ],
+    "identifier" : "P30419",
+    "geneNames" : [ "NMT1", "NMT" ]
+  }, {
+    "dbId" : 350870,
+    "stId" : "R-HSA-350870",
+    "displayName" : "Caspase-3 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2499 ],
+    "parents" : [ 3828019, 205013, 202877, 114304 ],
+    "children" : [ 350888 ]
+  }, {
+    "dbId" : 1257604,
+    "stId" : "R-HSA-1257604",
+    "displayName" : "PIP3 activates AKT signaling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2381 ]
+  }, {
+    "dbId" : 2262714,
+    "stId" : "R-HSA-2262714",
+    "displayName" : "14-3-3 theta dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1445138 ],
+    "children" : [ 1445116 ]
+  }, {
+    "dbId" : 2262715,
+    "stId" : "R-HSA-2262715",
+    "displayName" : "14-3-3 eta dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1445138 ],
+    "children" : [ 1445107 ]
+  }, {
+    "dbId" : 6798077,
+    "stId" : "R-HSA-6798077",
+    "displayName" : "TP73 Tetramer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8956675, 6798076 ],
+    "children" : [ 6798094 ]
+  }, {
+    "dbId" : 2262713,
+    "stId" : "R-HSA-2262713",
+    "displayName" : "14-3-3 gamma dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1445138 ],
+    "children" : [ 380312 ]
+  }, {
+    "dbId" : 6798076,
+    "stId" : "R-HSA-6798076",
+    "displayName" : "p-S15,S20-TP53,TP63,TP73 [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 6799745, 6799788, 6798078 ],
+    "children" : [ 6798077, 3222171, 5632381 ]
+  }, {
+    "dbId" : 206751,
+    "stId" : "R-HSA-206751",
+    "displayName" : "14-3-3 zeta dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 429544, 443827, 1445138 ],
+    "children" : [ 206099 ]
+  }, {
+    "dbId" : 380312,
+    "stId" : "R-HSA-380312",
+    "displayName" : "YWHAG [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61981",
+    "geneNames" : [ "YWHAG" ],
+    "parents" : [ 5626173, 5626171, 380705, 380704, 380698, 380268, 2262713 ]
+  }, {
+    "dbId" : 2262716,
+    "stId" : "R-HSA-2262716",
+    "displayName" : "14-3-3 sigma dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 1445138 ],
+    "children" : [ 1445105 ]
+  }, {
+    "dbId" : 50849,
+    "stId" : "R-HSA-50849",
+    "displayName" : "XIAP [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P98170",
+    "geneNames" : [ "XIAP", "API3", "BIRC4", "IAP3" ],
+    "parents" : [ 6807286, 114317, 5357900, 114308, 114391, 114304, 6807260 ]
+  }, {
+    "dbId" : 114339,
+    "stId" : "R-HSA-114339",
+    "displayName" : "tBID:BCL-2 [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 132 ],
+    "children" : [ 114266, 50757 ]
+  }, {
+    "dbId" : 140202,
+    "stId" : "R-HSA-140202",
+    "displayName" : "Calcineurin B complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 128 ],
+    "children" : [ 51291, 61113 ]
+  }, {
+    "dbId" : 3222171,
+    "stId" : "R-HSA-3222171",
+    "displayName" : "p-S15,S20-TP53 Tetramer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2506 ],
+    "parents" : [ 6798076, 6800828, 6803418, 6804423, 6804394, 6804245, 6803938, 6803916, 6801640, 6802166, 6798042, 3222096, 6805621, 3215194, 6806590, 6806601, 6796650, 6806565, 6806584, 6806574, 6804190, 3222134, 3215149, 6800034, 5633436, 3215242, 6791298, 6799421, 6791290, 6797994, 6801165, 6801208, 4331332, 6803718, 6791369, 6798303, 6803394, 3700998, 6798290, 6798123, 6800276, 6801357, 6791350, 6798147, 6797767, 6801088, 5633301, 6791328, 6800252 ],
+    "children" : [ 69683 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2407 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 139950,
+    "stId" : "R-HSA-139950",
+    "displayName" : "Caspase-8 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5660651, 2562550 ],
+    "children" : [ 76158, 75975 ]
+  }, {
+    "dbId" : 350888,
+    "stId" : "R-HSA-350888",
+    "displayName" : "CASP3(29-175):CASP3(176-277) [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 350870 ],
+    "children" : [ 141644, 141646 ]
+  }, {
+    "dbId" : 139949,
+    "stId" : "R-HSA-139949",
+    "displayName" : "BAX [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2020 ],
+    "identifier" : "Q07812",
+    "geneNames" : [ "BAX", "BCL2L4" ],
+    "parents" : [ 114269 ]
+  }, {
+    "dbId" : 114353,
+    "stId" : "R-HSA-114353",
+    "displayName" : "SMAC:XIAP:Caspase-7 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2315 ],
+    "children" : [ 114298, 114308 ]
+  }, {
+    "dbId" : 139953,
+    "stId" : "R-HSA-139953",
+    "displayName" : "BID(62-195) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 81 ],
+    "identifier" : "P55957",
+    "geneNames" : [ "BID" ],
+    "parents" : [ 168850 ]
+  }, {
+    "dbId" : 140209,
+    "stId" : "R-HSA-140209",
+    "displayName" : "BMF [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96LC9",
+    "geneNames" : [ "BMF" ],
+    "parents" : [ 140528 ]
+  }, {
+    "dbId" : 50099,
+    "stId" : "R-HSA-50099",
+    "displayName" : "APAF1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2179 ],
+    "identifier" : "O14727",
+    "geneNames" : [ "APAF1", "KIAA0413" ],
+    "parents" : [ 114253 ]
+  }, {
+    "dbId" : 140215,
+    "stId" : "R-HSA-140215",
+    "displayName" : "PMAIP1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 135 ],
+    "identifier" : "Q13794",
+    "geneNames" : [ "PMAIP1", "NOXA" ]
+  }, {
+    "dbId" : 140218,
+    "stId" : "R-HSA-140218",
+    "displayName" : "PMAIP1 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 139 ],
+    "identifier" : "Q13794",
+    "geneNames" : [ "PMAIP1", "NOXA" ],
+    "parents" : [ 508161, 508157 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2497, 2501, 2182, 2378 ],
+    "identifier" : "15422",
+    "parents" : [ 170037, 2263468, 9206355, 9630847, 9576623, 9432018, 9511146, 9353588, 9697690, 9795133, 6814649, 9276451, 9600652, 9736131, 9237675, 9388153, 9466546, 9658146, 9539600, 9308766, 390580, 9160108, 9542621, 9391763, 9163921, 9831775, 9603243, 9741155, 9312345, 9240824, 9661271, 9470131, 445789, 390446, 391390, 994134, 9794890, 9510958, 9046292, 9128311, 9431829, 9056083, 9997775, 9070329, 9353374, 9697532, 9206146, 9576446, 9871996, 9630682, 9276265, 9926229, 390474, 9087795, 443623, 9779593, 9419766, 9193599, 9686115, 9859450, 9265606, 9341444, 9981023, 9622036, 9498806, 9083944, 9912343, 9566577, 8948980, 9054223, 9859337, 9621997, 9341426, 9912333, 9265588, 9498788, 9083934, 9054206, 9981013, 9779576, 9566525, 9419748, 9193545, 9686096, 8948970, 9978087, 9065526, 9681832, 9188087, 9910208, 9493702, 9082788, 9414658, 9772921, 9853938, 9117897, 9040616, 5618079, 9053631, 9977478, 9562442, 9414581, 9909743, 9117821, 9681761, 9082712, 9772764, 9065453, 9188008, 9053614, 9493619, 9853846, 3371563, 9040519, 9566510, 9041623, 9083927, 9054199, 9859330, 9779553, 9193528, 9912326, 9120378, 9981000, 9066266, 9341411, 9621982, 9686105, 9265573, 9419721, 9498773, 5618088, 5251947, 9777034, 9119601, 9083581, 9684291, 9053991, 9979698, 9911581, 9191365, 9066018, 9417800, 9041326, 9857395, 9496755, 6792614, 9417808, 9777049, 9041333, 9496763, 9684299, 9191373, 5252045, 5252011, 9684317, 9083606, 9054006, 9066033, 9911618, 9857426, 9119631, 9041355, 9979768, 9777077, 5252104, 9496767, 9191377, 9119606, 9083591, 9684303, 9417812, 9777053, 5252040, 9119637, 9066039, 9911629, 9041361, 9979790, 9083612, 9054012, 5251940, 9083600, 9496777, 9911599, 9777069, 9979727, 9417822, 9857414, 9191393, 9119623, 9684313, 9041345, 9053998, 9066025, 5252036, 9777059, 9191386, 9496773, 9417818, 9041340, 9066020, 9979700, 9857402, 9119618, 9911583, 9684309, 9053993, 9083595, 5252100, 9041331, 9496759, 9191369, 9684295, 9417804, 9777045, 5251938, 9083607, 9054007, 9562506, 9119632, 9356215, 9066034, 9700130, 9632615, 9911619, 9417829, 9191403, 9857427, 9041356, 9279049, 9777078, 9979769, 9496784, 5251937, 9857400, 9119616, 9417816, 9777057, 9191384, 9496771, 9083593, 9041338, 9684307, 5251968, 9496783, 9083604, 9979747, 9857422, 9054002, 9911610, 9041349, 9417828, 9684315, 9066029, 9777075, 9191402, 9119629, 5252063, 9777058, 9417817, 9191385, 9496772, 9041339, 9857401, 9979699, 9119617, 9911582, 9066019, 9684308, 9053992, 9083594, 5252093, 9496781, 9417826, 9857420, 9054000, 9041347, 9083602, 9979740, 9777073, 9191400, 9911605, 9119625, 9066027, 5252028, 9394048, 9663305, 9605109, 9544724, 9166591, 9314781, 9243007, 9472545, 879207, 168906, 918190, 9370000, 9291920, 9644136, 9815167, 9140562, 9526393, 9715010, 9589796, 9448549, 114255, 9221701, 9973634, 9081650, 9064690, 9612356, 9177018, 9252472, 9672800, 9843545, 9757658, 9325507, 9039298, 9907039, 9483640, 9554385, 9405327, 9112971, 201854, 9081655, 9064695, 9973636, 9405331, 9112976, 9612360, 9672804, 9907044, 9177022, 9252476, 9039303, 9483644, 9325511, 9843550, 9757660, 9554389, 201855, 433729, 9948680, 9596076, 9727337, 9230161, 9061970, 9034769, 9150780, 9051869, 9379707, 9077784, 9893446, 9534367, 9458077, 9112940, 9652725, 9301198, 9843510, 201857 ]
+  }, {
+    "dbId" : 61113,
+    "stId" : "R-HSA-61113",
+    "displayName" : "PPP3CC [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P48454",
+    "geneNames" : [ "PPP3CC", "CALNA3", "CNA3" ],
+    "parents" : [ 201798, 140202 ]
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2498, 2186, 2379, 2252 ],
+    "identifier" : "16761",
+    "parents" : [ 6788782, 170037, 500087, 9697693, 9511149, 9432021, 9206358, 9353591, 9795136, 9630850, 9576626, 6814647, 9276454, 9308768, 9600654, 9658148, 9160110, 9466548, 9388155, 9539602, 9736133, 9237677, 390582, 9741227, 9240850, 9831931, 9542652, 9470172, 9661300, 9312377, 9603268, 9391818, 445800, 9163954, 391405, 6790050, 9736232, 9160241, 9056082, 9952449, 9658213, 9895747, 9103166, 9827450, 9078597, 9388323, 9466651, 9035776, 9539705, 9600757, 9308939, 9070319, 390455, 9237786, 445015, 445018, 9977479, 9562443, 9414582, 9117822, 9082713, 9681762, 9772765, 9909744, 9188009, 9493620, 9065454, 9853847, 9040520, 3371441, 9053615, 9681804, 9772846, 9977954, 9910080, 9040575, 9414618, 9117855, 9053626, 9265602, 9341440, 9493660, 9065507, 9853904, 9188045, 9082763, 5618090, 6792616, 9684367, 9041363, 9417878, 9911631, 9496840, 9083614, 9054014, 9857497, 9777150, 9066083, 9979792, 9191465, 9119694, 5252087, 9041366, 9857498, 9496844, 9119696, 9083616, 9777154, 9417882, 9191469, 9684371, 5252111, 9496843, 9417881, 9083615, 9777153, 9119695, 9684370, 9191468, 5252110, 9191474, 9119701, 9777159, 9041371, 9417887, 9083621, 9979797, 9857503, 9054019, 9684375, 9911636, 9066088, 9496849, 5252012, 9496846, 9119698, 9417884, 9777156, 9041368, 9066085, 9979794, 9857500, 9054016, 9083618, 9911633, 9684373, 9191471, 5251980, 9496847, 9191472, 9119699, 9417885, 9777157, 9041369, 9066086, 9979795, 9857501, 9054017, 9083619, 9911634, 9684374, 5252038, 9054022, 9041374, 9119704, 9083624, 9066091, 9979800, 9911639, 5252097, 5252129, 9119700, 9083620, 9191473, 9066087, 9979796, 9857502, 9054018, 9911635, 9777158, 9041370, 9417886, 9496848, 5252096, 9041367, 9496845, 9119697, 9777155, 9054015, 9417883, 9066084, 9857499, 9083617, 9979793, 9911632, 9684372, 9191470, 5255423, 9041364, 9777151, 9496841, 9417879, 9191466, 9684368, 5251966, 9562478, 9191475, 9777161, 9119703, 9857505, 9041373, 9979799, 9417888, 9054021, 9083623, 9496850, 9911638, 9066090, 5251932, 9041365, 9496842, 9417880, 9191467, 9777152, 9684369, 5252090, 9979798, 9054020, 9777160, 9119702, 9083622, 9684376, 9857504, 9041372, 9066089, 9911637, 5251953, 9831368, 9660936, 9391412, 9036464, 9312027, 9105375, 9240526, 9740533, 9469808, 1063687, 9163554, 9764250, 9614553, 9676171, 9408585, 9487301, 9181673, 9255598, 2029139, 9181649, 9081751, 9907168, 9764195, 9974123, 9614529, 9408572, 9847332, 9329756, 9255581, 9676153, 9064771, 9557586, 9114122, 9487280, 202994, 9039435, 9325521, 9554399, 9757673, 9843562, 9081664, 9252484, 9039312, 9672820, 9177035, 9483654, 9612368, 9405341, 1861625 ]
+  }, {
+    "dbId" : 198335,
+    "stId" : "R-HSA-198335",
+    "displayName" : "p-S99-BAD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2372 ],
+    "identifier" : "Q92934",
+    "geneNames" : [ "BAD", "BBC6", "BCL2L8" ],
+    "parents" : [ 139904 ]
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2408 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 140222,
+    "stId" : "R-HSA-140222",
+    "displayName" : "BBC3 [mitochondrial outer membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 144 ],
+    "identifier" : "Q9BXH1",
+    "geneNames" : [ "BBC3", "PUMA" ],
+    "parents" : [ 508161, 508157 ]
+  }, {
+    "dbId" : 57021,
+    "stId" : "R-HSA-57021",
+    "displayName" : "CASP3(1-277) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42574",
+    "geneNames" : [ "CASP3", "CPP32" ],
+    "parents" : [ 204948, 6804299 ]
+  }, {
+    "dbId" : 140220,
+    "stId" : "R-HSA-140220",
+    "displayName" : "BBC3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 141 ],
+    "identifier" : "Q9BXH1",
+    "geneNames" : [ "BBC3", "PUMA" ]
+  }, {
+    "dbId" : 6799780,
+    "stId" : "R-HSA-6799780",
+    "displayName" : "TP53BP2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13625",
+    "geneNames" : [ "TP53BP2", "ASPP2", "BBP" ],
+    "parents" : [ 6799786 ]
+  }, {
+    "dbId" : 57029,
+    "stId" : "R-HSA-57029",
+    "displayName" : "CASP7(2-303) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P55210",
+    "geneNames" : [ "CASP7", "MCH3" ],
+    "parents" : [ 6804324 ]
+  }, {
+    "dbId" : 75975,
+    "stId" : "R-HSA-75975",
+    "displayName" : "CASP8(217-374) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14790",
+    "geneNames" : [ "CASP8", "MCH5" ],
+    "parents" : [ 139950 ]
+  }, {
+    "dbId" : 57033,
+    "stId" : "R-HSA-57033",
+    "displayName" : "CASP9(1-416) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2183 ],
+    "identifier" : "P55211",
+    "geneNames" : [ "CASP9", "MCH6" ],
+    "parents" : [ 622416, 114255 ]
+  }, {
+    "dbId" : 6799788,
+    "stId" : "R-HSA-6799788",
+    "displayName" : "(p-S15,S20-TP53,TP63,TP73):(PPP1R13B,TP53BP2) [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2505 ],
+    "parents" : [ 6799810, 4331345, 3700978, 6799461 ],
+    "children" : [ 6799786, 6798076 ]
+  }, {
+    "dbId" : 6799786,
+    "stId" : "R-HSA-6799786",
+    "displayName" : "PPP1R13B,TP53BP2 [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 6799788 ],
+    "children" : [ 6799775, 6799780 ]
+  }, {
+    "dbId" : 168141,
+    "stId" : "R-HSA-168141",
+    "displayName" : "MAPK8 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2370 ],
+    "identifier" : "P45983",
+    "geneNames" : [ "MAPK8", "JNK1", "PRKM8", "SAPK1", "SAPK1C" ],
+    "parents" : [ 450289 ]
+  }, {
+    "dbId" : 2562550,
+    "stId" : "R-HSA-2562550",
+    "displayName" : "active caspase-8  [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2366 ],
+    "parents" : [ 2672221 ],
+    "children" : [ 139950 ]
+  }, {
+    "dbId" : 114391,
+    "stId" : "R-HSA-114391",
+    "displayName" : "SMAC:XIAP [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2348 ],
+    "children" : [ 114298, 50849 ]
+  }, {
+    "dbId" : 198356,
+    "stId" : "R-HSA-198356",
+    "displayName" : "p-T308,S473-AKT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31749",
+    "geneNames" : [ "AKT1", "PKB", "RAC" ],
+    "parents" : [ 1497889, 202121, 202074 ]
+  }, {
+    "dbId" : 6804359,
+    "stId" : "R-HSA-6804359",
+    "displayName" : "CASP7(24-198):CASP7(207-303) [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 141643 ],
+    "children" : [ 141641, 141642 ]
+  }, {
+    "dbId" : 1445107,
+    "stId" : "R-HSA-1445107",
+    "displayName" : "YWHAH [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q04917",
+    "geneNames" : [ "YWHAH", "YWHA1" ],
+    "parents" : [ 2262715 ]
+  }, {
+    "dbId" : 50662,
+    "stId" : "R-HSA-50662",
+    "displayName" : "BAD [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 121 ],
+    "identifier" : "Q92934",
+    "geneNames" : [ "BAD", "BBC6", "BCL2L8" ]
+  }, {
+    "dbId" : 1445105,
+    "stId" : "R-HSA-1445105",
+    "displayName" : "SFN [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31947",
+    "geneNames" : [ "SFN", "HME1" ],
+    "parents" : [ 6803886, 2262716 ]
+  }, {
+    "dbId" : 140523,
+    "stId" : "R-HSA-140523",
+    "displayName" : "microtubules [plasma membrane]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "parents" : [ 140526, 140524, 140530, 140528 ]
+  }, {
+    "dbId" : 1445116,
+    "stId" : "R-HSA-1445116",
+    "displayName" : "YWHAQ [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P27348",
+    "geneNames" : [ "YWHAQ" ],
+    "parents" : [ 2262714 ]
+  }, {
+    "dbId" : 140526,
+    "stId" : "R-HSA-140526",
+    "displayName" : "Dynein (DLC1) on microtubules [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 204 ],
+    "children" : [ 140523, 54017 ]
+  }, {
+    "dbId" : 140527,
+    "stId" : "R-HSA-140527",
+    "displayName" : "DYNLL2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96FJ2",
+    "geneNames" : [ "DYNLL2", "DLC2" ],
+    "parents" : [ 140530, 140528 ]
+  }, {
+    "dbId" : 140524,
+    "stId" : "R-HSA-140524",
+    "displayName" : "BIM sequestered to dynein (DLC1) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 202 ],
+    "children" : [ 2976673, 140523, 54017 ]
+  }, {
+    "dbId" : 140525,
+    "stId" : "R-HSA-140525",
+    "displayName" : "p-BCL2L11 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2428 ],
+    "identifier" : "O43521",
+    "geneNames" : [ "BCL2L11", "BIM" ]
+  }, {
+    "dbId" : 140530,
+    "stId" : "R-HSA-140530",
+    "displayName" : "Dynein (DLC2) on microtubules [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 324 ],
+    "children" : [ 140527, 140523 ]
+  }, {
+    "dbId" : 140528,
+    "stId" : "R-HSA-140528",
+    "displayName" : "BMF sequestered to dynein (DLC2) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 322 ],
+    "children" : [ 140527, 140523, 140209 ]
+  }, {
+    "dbId" : 9029242,
+    "stId" : "R-HSA-9029242",
+    "displayName" : "Activated BAX,BAK oligomers [mitochondrial outer membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2531 ],
+    "children" : [ 114269, 114262 ]
+  }, {
+    "dbId" : 140529,
+    "stId" : "R-HSA-140529",
+    "displayName" : "p-BMF(1-89) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2427 ],
+    "identifier" : "Q96LC9",
+    "geneNames" : [ "BMF" ]
+  }, {
+    "dbId" : 6799775,
+    "stId" : "R-HSA-6799775",
+    "displayName" : "PPP1R13B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96KQ4",
+    "geneNames" : [ "PPP1R13B", "ASPP1", "KIAA0771" ],
+    "parents" : [ 6799786 ]
+  }, {
+    "dbId" : 48888,
+    "stId" : "R-HSA-48888",
+    "displayName" : "YWHAB [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31946",
+    "geneNames" : [ "YWHAB" ],
+    "parents" : [ 450420, 482787, 450585, 914001, 8936655, 8936663, 8933620, 6802713, 6802615, 6802610, 6802621, 6802624, 170966, 5672866, 5672861, 2028645 ]
+  }, {
+    "dbId" : 508159,
+    "stId" : "R-HSA-508159",
+    "displayName" : "Bcl-XL:BH3-only protein complex [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1959 ],
+    "children" : [ 114236, 508161 ]
+  }, {
+    "dbId" : 508158,
+    "stId" : "R-HSA-508158",
+    "displayName" : "Bcl2:BH3-only protein complex [mitochondrial outer membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1955 ],
+    "children" : [ 508157, 50757 ]
+  }, {
+    "dbId" : 508157,
+    "stId" : "R-HSA-508157",
+    "displayName" : "Bcl-2 interacting BH-3 only proteins [mitochondrial outer membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1953 ],
+    "parents" : [ 508158 ],
+    "children" : [ 3145026, 3145027, 140222, 114266, 140218, 114242 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 139906,
+    "stId" : "R-HSA-139906",
+    "displayName" : "Activation of BAD by calcineurin",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139899 ],
+    "following" : [ 139905 ],
+    "inputs" : [ 29356, 139904 ],
+    "outputs" : [ 29372, 50662, 1445138 ],
+    "catalysts" : [ 140202 ],
+    "efs" : [ ],
+    "diagramIds" : [ 127 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 4331331,
+    "stId" : "R-HSA-4331331",
+    "displayName" : "TP53 binds the PMAIP1 (NOXA) promoter",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6799246, 69685, 6805285 ],
+    "following" : [ 140214 ],
+    "inputs" : [ 4331342, 3222171 ],
+    "outputs" : [ 4331332 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2494 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114307,
+    "stId" : "R-HSA-114307",
+    "displayName" : "Release of SMAC from mitochondria",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 180905, 114263, 139920, 114275 ],
+    "following" : [ 114361, 114306, 114354 ],
+    "inputs" : [ 64637 ],
+    "outputs" : [ 114298 ],
+    "efs" : [ ],
+    "activators" : [ 9029242 ],
+    "diagramIds" : [ 2175 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139905,
+    "stId" : "R-HSA-139905",
+    "displayName" : "Translocation of activated BAD protein to mitochondria",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139906 ],
+    "following" : [ 508162, 508163, 139897 ],
+    "inputs" : [ 50662 ],
+    "outputs" : [ 114242 ],
+    "efs" : [ ],
+    "diagramIds" : [ 129 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114306,
+    "stId" : "R-HSA-114306",
+    "displayName" : "SMAC binds XIAP:Caspase-3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 114307 ],
+    "following" : [ 202939, 114419 ],
+    "inputs" : [ 114298, 114304 ],
+    "outputs" : [ 114305 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2310 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 508163,
+    "stId" : "R-HSA-508163",
+    "displayName" : "BH3-only proteins associate with and inactivate anti-apoptotic BCL-2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139919, 140216, 139914, 139909, 139905, 139920 ],
+    "inputs" : [ 508157, 50757 ],
+    "outputs" : [ 508158 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1952 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 508162,
+    "stId" : "R-HSA-508162",
+    "displayName" : "BH3 only proteins associate with and inactivate anti-apoptotic BCL-XL",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139919, 140216, 139914, 139905, 139920 ],
+    "inputs" : [ 114236, 508161 ],
+    "outputs" : [ 508159 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1956 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139908,
+    "stId" : "R-HSA-139908",
+    "displayName" : "Phosphorylation of DLC2 by MAPK8",
+    "schemaClass" : "Reaction",
+    "following" : [ 139909 ],
+    "inputs" : [ 140528 ],
+    "outputs" : [ 140529, 140530 ],
+    "catalysts" : [ 168141 ],
+    "efs" : [ ],
+    "diagramIds" : [ 321 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139909,
+    "stId" : "R-HSA-139909",
+    "displayName" : "Translocation of BMF to mitochondria",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139908 ],
+    "following" : [ 508163 ],
+    "inputs" : [ 140529 ],
+    "outputs" : [ 3145026 ],
+    "efs" : [ ],
+    "diagramIds" : [ 381 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 198347,
+    "stId" : "R-HSA-198347",
+    "displayName" : "AKT phosphorylates BAD",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 198270 ],
+    "following" : [ 139899 ],
+    "inputs" : [ 113592, 50662 ],
+    "outputs" : [ 198335, 29370 ],
+    "catalysts" : [ 202074 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2377 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139914,
+    "stId" : "R-HSA-139914",
+    "displayName" : "Translocation of BBC3 (PUMA) protein to mitochondria",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 140221, 139913 ],
+    "following" : [ 508162, 508163 ],
+    "inputs" : [ 140220 ],
+    "outputs" : [ 140222 ],
+    "efs" : [ ],
+    "diagramIds" : [ 143 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114440,
+    "stId" : "R-HSA-114440",
+    "displayName" : "Dissociation of Caspase-9 from SMAC:XIAP:Caspase-9",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 114361 ],
+    "inputs" : [ 114318 ],
+    "outputs" : [ 141640, 114391 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2350 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139913,
+    "stId" : "R-HSA-139913",
+    "displayName" : "TP53 stimulates BBC3 (PUMA) expression",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 4331340 ],
+    "following" : [ 139914 ],
+    "inputs" : [ 4331320 ],
+    "outputs" : [ 140220 ],
+    "efs" : [ ],
+    "activators" : [ 4331345 ],
+    "diagramIds" : [ 140 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139918,
+    "stId" : "R-HSA-139918",
+    "displayName" : "Phosphorylation of BIM by JNK",
+    "schemaClass" : "Reaction",
+    "following" : [ 139919 ],
+    "inputs" : [ 140524 ],
+    "outputs" : [ 140525, 140526 ],
+    "catalysts" : [ 168141 ],
+    "efs" : [ ],
+    "diagramIds" : [ 201 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139919,
+    "stId" : "R-HSA-139919",
+    "displayName" : "Translocation of BIM to mitochondria",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139918 ],
+    "following" : [ 508162, 508163 ],
+    "inputs" : [ 140525 ],
+    "outputs" : [ 3145027 ],
+    "efs" : [ ],
+    "diagramIds" : [ 291 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114252,
+    "stId" : "R-HSA-114252",
+    "displayName" : "Cleavage of Procaspase-3 by the apoptosome",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 114259 ],
+    "following" : [ 211651, 350651, 202960, 351849, 201640, 201631, 202969, 202939, 202917, 351877, 201628, 201629, 201608, 201622, 202966, 201639, 202967, 202947 ],
+    "inputs" : [ 6804299, 113592 ],
+    "outputs" : [ 29370, 350870 ],
+    "catalysts" : [ 114258 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2244 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 4331340,
+    "stId" : "R-HSA-4331340",
+    "displayName" : "TP53 binds the BBC3 (PUMA) promoter",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6799777 ],
+    "following" : [ 139913 ],
+    "inputs" : [ 6799788, 4331320 ],
+    "outputs" : [ 4331345 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2491 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114254,
+    "stId" : "R-HSA-114254",
+    "displayName" : "Cytochrome C Binds to Apaf-1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 114284, 6791348 ],
+    "following" : [ 114256 ],
+    "inputs" : [ 53259, 50099 ],
+    "outputs" : [ 114253 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2178 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139917,
+    "stId" : "R-HSA-139917",
+    "displayName" : "tBID activates BAX protein",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 168849 ],
+    "following" : [ 114264 ],
+    "inputs" : [ 168850 ],
+    "outputs" : [ 139953, 139907 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2016 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114256,
+    "stId" : "R-HSA-114256",
+    "displayName" : "Cytochrome C:Apaf-1 binds Procaspase-9",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 114254 ],
+    "following" : [ 114259 ],
+    "inputs" : [ 114253, 113592, 57033 ],
+    "outputs" : [ 114255 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2181 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139920,
+    "stId" : "R-HSA-139920",
+    "displayName" : "Translocation of tBID to mitochondria",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 141367 ],
+    "following" : [ 508162, 508163, 114352, 114307, 114284, 168848 ],
+    "inputs" : [ 141373 ],
+    "outputs" : [ 114266 ],
+    "efs" : [ ],
+    "diagramIds" : [ 88 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 168848,
+    "stId" : "R-HSA-168848",
+    "displayName" : "tBID binds to inactive BAK protein",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139920 ],
+    "following" : [ 139895 ],
+    "inputs" : [ 114266, 139896 ],
+    "outputs" : [ 168847 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2142 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114259,
+    "stId" : "R-HSA-114259",
+    "displayName" : "Cleavage of Procaspase-9 to Caspase-9",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 114256 ],
+    "following" : [ 114261, 114252 ],
+    "inputs" : [ 114255 ],
+    "outputs" : [ 29370, 114258 ],
+    "catalysts" : [ 114255 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2185 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 168849,
+    "stId" : "R-HSA-168849",
+    "displayName" : "tBID binds to inactive BAX protein",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139898, 139893, 3700984 ],
+    "following" : [ 139917 ],
+    "inputs" : [ 139916, 139953 ],
+    "outputs" : [ 168850 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2051 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114261,
+    "stId" : "R-HSA-114261",
+    "displayName" : "Cleavage of Procaspase-7 by the apoptosome",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 114259 ],
+    "following" : [ 351936, 201628, 201639, 201634 ],
+    "inputs" : [ 113592, 6804324 ],
+    "outputs" : [ 29370, 141643 ],
+    "catalysts" : [ 114258 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2249 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114263,
+    "stId" : "R-HSA-114263",
+    "displayName" : "Oligomerization  of BAK at the mitochondrial membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139895 ],
+    "following" : [ 114307, 114284 ],
+    "inputs" : [ 50690 ],
+    "outputs" : [ 114262 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2084 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114392,
+    "stId" : "R-HSA-114392",
+    "displayName" : "Dissociation of Caspase-7 from SMAC:XIAP:Caspase-7",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 114354 ],
+    "following" : [ 201639, 201634 ],
+    "inputs" : [ 114353 ],
+    "outputs" : [ 141643, 114391 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2349 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114264,
+    "stId" : "R-HSA-114264",
+    "displayName" : "Translocation of activated BAX to the mitochondria",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139917 ],
+    "following" : [ 114275 ],
+    "inputs" : [ 139907 ],
+    "outputs" : [ 139949 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2019 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114275,
+    "stId" : "R-HSA-114275",
+    "displayName" : "Oligomerization of BAX at the mitochondrial membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 114264 ],
+    "following" : [ 114307, 114284 ],
+    "inputs" : [ 139949 ],
+    "outputs" : [ 114269 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2021 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114284,
+    "stId" : "R-HSA-114284",
+    "displayName" : "Release of Cytochrome c from mitochondria",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 180905, 114263, 139920, 114275 ],
+    "following" : [ 114254 ],
+    "inputs" : [ 114244 ],
+    "outputs" : [ 53259 ],
+    "efs" : [ ],
+    "activators" : [ 9029242 ],
+    "diagramIds" : [ 2144 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114352,
+    "stId" : "R-HSA-114352",
+    "displayName" : "Sequestration of tBID by BCL-2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139920 ],
+    "following" : [ 139897 ],
+    "inputs" : [ 114266, 50757 ],
+    "outputs" : [ 114339 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2353 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114419,
+    "stId" : "R-HSA-114419",
+    "displayName" : "Dissociation of Caspase-3 from SMAC:XIAP:Caspase-3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 114306 ],
+    "following" : [ 350651, 202960, 351849, 201640, 201631, 202969, 202917, 351877, 201608, 202966, 201639, 202967, 202947 ],
+    "inputs" : [ 114305 ],
+    "outputs" : [ 114391, 350870 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2347 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114354,
+    "stId" : "R-HSA-114354",
+    "displayName" : "SMAC binds XIAP:Caspase-7",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 114307 ],
+    "following" : [ 114392 ],
+    "inputs" : [ 114298, 114308 ],
+    "outputs" : [ 114353 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2313 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 140214,
+    "stId" : "R-HSA-140214",
+    "displayName" : "TP53 stimulates PMAIP1 (NOXA) expression",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 4331331 ],
+    "following" : [ 140216 ],
+    "inputs" : [ 4331342 ],
+    "outputs" : [ 140215 ],
+    "efs" : [ ],
+    "activators" : [ 4331332 ],
+    "diagramIds" : [ 134 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139895,
+    "stId" : "R-HSA-139895",
+    "displayName" : "tBID activates BAK protein",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 168848 ],
+    "following" : [ 114263 ],
+    "inputs" : [ 168847 ],
+    "outputs" : [ 114266, 50690 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2053 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 141367,
+    "stId" : "R-HSA-141367",
+    "displayName" : "Myristoylation of tBID by NMT1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139898, 139893 ],
+    "following" : [ 139920 ],
+    "inputs" : [ 139953 ],
+    "outputs" : [ 141373 ],
+    "catalysts" : [ 60306 ],
+    "efs" : [ ],
+    "diagramIds" : [ 85 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139893,
+    "stId" : "R-HSA-139893",
+    "displayName" : "Granzyme-B activates BID by cleavage",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6791291 ],
+    "following" : [ 141367, 168849 ],
+    "inputs" : [ 50825 ],
+    "outputs" : [ 139953 ],
+    "catalysts" : [ 55915 ],
+    "efs" : [ ],
+    "diagramIds" : [ 83 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 114361,
+    "stId" : "R-HSA-114361",
+    "displayName" : "SMAC binds XIAP:Caspase-9",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 114307 ],
+    "following" : [ 114440 ],
+    "inputs" : [ 114317, 114298 ],
+    "outputs" : [ 114318 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2316 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139898,
+    "stId" : "R-HSA-139898",
+    "displayName" : "Caspase-8 activates BID by cleavage",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 6791291, 139952 ],
+    "following" : [ 141367, 168849 ],
+    "inputs" : [ 50825 ],
+    "outputs" : [ 139953 ],
+    "catalysts" : [ 2562550 ],
+    "efs" : [ ],
+    "diagramIds" : [ 79 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139899,
+    "stId" : "R-HSA-139899",
+    "displayName" : "Sequestration of BAD protein by 14-3-3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 198347 ],
+    "following" : [ 139906 ],
+    "inputs" : [ 198335, 1445138 ],
+    "outputs" : [ 139904 ],
+    "efs" : [ ],
+    "diagramIds" : [ 124 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 140216,
+    "stId" : "R-HSA-140216",
+    "displayName" : "Translocation of PMAIP1 (NOXA) to mitochondria",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 140217, 140214 ],
+    "following" : [ 508162, 508163 ],
+    "inputs" : [ 140215 ],
+    "outputs" : [ 140218 ],
+    "efs" : [ ],
+    "diagramIds" : [ 138 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 139897,
+    "stId" : "R-HSA-139897",
+    "displayName" : "BAD displaces tBID from BCL-2 sequestration",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 139905, 114352 ],
+    "inputs" : [ 114242, 114339 ],
+    "outputs" : [ 114268, 114266 ],
+    "efs" : [ ],
+    "diagramIds" : [ 131 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 140217,
+    "stId" : "R-HSA-140217",
+    "displayName" : "Transactivation of PMAIP1 (NOXA) by E2F1",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 4331327 ],
+    "following" : [ 140216 ],
+    "inputs" : [ 4331342 ],
+    "outputs" : [ 140215 ],
+    "efs" : [ ],
+    "activators" : [ 4331338 ],
+    "diagramIds" : [ 136 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 4331327,
+    "stId" : "R-HSA-4331327",
+    "displayName" : "E2F1 binds PMAIP1 (NOXA) promoter",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 69227 ],
+    "following" : [ 140217 ],
+    "inputs" : [ 68653, 4331342 ],
+    "outputs" : [ 4331338 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2490 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 4331324,
+    "stId" : "R-HSA-4331324",
+    "displayName" : "E2F1 binds BBC3 (PUMA) promoter",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 69227 ],
+    "following" : [ 140221 ],
+    "inputs" : [ 68653, 4331320 ],
+    "outputs" : [ 4331325 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2493 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 140221,
+    "stId" : "R-HSA-140221",
+    "displayName" : "Transactivation of BBC3 (PUMA) by E2F1",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 4331324 ],
+    "following" : [ 139914 ],
+    "inputs" : [ 4331320 ],
+    "outputs" : [ 140220 ],
+    "efs" : [ ],
+    "activators" : [ 4331325 ],
+    "diagramIds" : [ 142 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 75108,
+    "stId" : "R-HSA-75108",
+    "displayName" : "Activation, myristolyation of BID and translocation to mitochondria",
+    "events" : [ 139920, 141367, 139893, 139898 ]
+  }, {
+    "dbId" : 111453,
+    "stId" : "R-HSA-111453",
+    "displayName" : "BH3-only proteins associate with and inactivate anti-apoptotic BCL-2 members",
+    "events" : [ 114352, 508163, 508162 ]
+  }, {
+    "dbId" : 111471,
+    "stId" : "R-HSA-111471",
+    "displayName" : "Apoptotic factor-mediated response",
+    "events" : [ 114261, 114252, 114256, 114259, 114254, 114306, 114354, 114361, 114419, 114392, 114440 ]
+  }, {
+    "dbId" : 114452,
+    "stId" : "R-HSA-114452",
+    "displayName" : "Activation of BH3-only proteins",
+    "events" : [ 139908, 139909, 139906, 139905, 198347, 139899, 139897, 139918, 139919, 4331331, 140214, 140216, 140217, 4331327, 139914, 139913, 4331340, 4331324, 140221 ]
+  }, {
+    "dbId" : 111464,
+    "stId" : "R-HSA-111464",
+    "displayName" : "SMAC-mediated dissociation of IAP:caspase complexes ",
+    "events" : [ 114419, 114392, 114440 ]
+  }, {
+    "dbId" : 139915,
+    "stId" : "R-HSA-139915",
+    "displayName" : "Activation of PUMA and translocation to mitochondria",
+    "events" : [ 139914, 139913, 4331340, 4331324, 140221 ]
+  }, {
+    "dbId" : 111461,
+    "stId" : "R-HSA-111461",
+    "displayName" : "Cytochrome c-mediated apoptotic response",
+    "events" : [ 114261, 114252, 114256, 114259, 114254 ]
+  }, {
+    "dbId" : 111469,
+    "stId" : "R-HSA-111469",
+    "displayName" : "SMAC-mediated apoptotic response",
+    "events" : [ 114306, 114354, 114361, 114419, 114392, 114440 ]
+  }, {
+    "dbId" : 111446,
+    "stId" : "R-HSA-111446",
+    "displayName" : "Activation of BIM and translocation to mitochondria ",
+    "events" : [ 139918, 139919 ]
+  }, {
+    "dbId" : 114294,
+    "stId" : "R-HSA-114294",
+    "displayName" : "Activation, translocation and oligomerization of BAX",
+    "events" : [ 114275, 168849, 114264, 139917 ]
+  }, {
+    "dbId" : 111447,
+    "stId" : "R-HSA-111447",
+    "displayName" : "Activation of BAD and translocation to mitochondria ",
+    "events" : [ 139906, 139905, 198347, 139899, 139897 ]
+  }, {
+    "dbId" : 111452,
+    "stId" : "R-HSA-111452",
+    "displayName" : "Activation and oligomerization of BAK protein",
+    "events" : [ 168848, 139895, 114263 ]
+  }, {
+    "dbId" : 111448,
+    "stId" : "R-HSA-111448",
+    "displayName" : "Activation of NOXA and translocation to mitochondria",
+    "events" : [ 4331331, 140214, 140216, 140217, 4331327 ]
+  }, {
+    "dbId" : 111463,
+    "stId" : "R-HSA-111463",
+    "displayName" : "SMAC binds to IAPs ",
+    "events" : [ 114306, 114354, 114361 ]
+  }, {
+    "dbId" : 111457,
+    "stId" : "R-HSA-111457",
+    "displayName" : "Release of apoptotic factors from the mitochondria",
+    "events" : [ 114307, 114284 ]
+  }, {
+    "dbId" : 139910,
+    "stId" : "R-HSA-139910",
+    "displayName" : "Activation of BMF and translocation to mitochondria",
+    "events" : [ 139908, 139909 ]
+  }, {
+    "dbId" : 111458,
+    "stId" : "R-HSA-111458",
+    "displayName" : "Formation of apoptosome",
+    "events" : [ 114256, 114259, 114254 ]
+  }, {
+    "dbId" : 111459,
+    "stId" : "R-HSA-111459",
+    "displayName" : "Activation of caspases through apoptosome-mediated cleavage",
+    "events" : [ 114261, 114252 ]
+  } ]
+}

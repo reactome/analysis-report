@@ -1,0 +1,116 @@
+{
+  "dbId" : 1226099,
+  "stableId" : "R-HSA-1226099",
+  "displayName" : "Signaling by FGFR in disease",
+  "nodes" : [ {
+    "id" : 1,
+    "reactomeId" : 5655302,
+    "displayName" : "Signaling by FGFR1 in disease",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 128,
+      "y" : 63
+    },
+    "minX" : 4,
+    "maxX" : 252,
+    "minY" : 13,
+    "maxY" : 113,
+    "prop" : {
+      "x" : 4,
+      "y" : 13,
+      "width" : 248,
+      "height" : 100
+    },
+    "textPosition" : {
+      "x" : 34,
+      "y" : 48
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 5655253,
+    "displayName" : "Signaling by FGFR2 in disease",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 399,
+      "y" : 63
+    },
+    "minX" : 277,
+    "maxX" : 522,
+    "minY" : 14,
+    "maxY" : 112,
+    "prop" : {
+      "x" : 277,
+      "y" : 14,
+      "width" : 245,
+      "height" : 98
+    },
+    "textPosition" : {
+      "x" : 306,
+      "y" : 48
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 5655332,
+    "displayName" : "Signaling by FGFR3 in disease",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 665,
+      "y" : 63
+    },
+    "minX" : 543,
+    "maxX" : 787,
+    "minY" : 14,
+    "maxY" : 113,
+    "prop" : {
+      "x" : 543,
+      "y" : 14,
+      "width" : 244,
+      "height" : 99
+    },
+    "textPosition" : {
+      "x" : 571,
+      "y" : 49
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 5655291,
+    "displayName" : "Signaling by FGFR4 in disease",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 931,
+      "y" : 63
+    },
+    "minX" : 810,
+    "maxX" : 1053,
+    "minY" : 14,
+    "maxY" : 113,
+    "prop" : {
+      "x" : 810,
+      "y" : 14,
+      "width" : 243,
+      "height" : 99
+    },
+    "textPosition" : {
+      "x" : 838,
+      "y" : 49
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 4,
+  "maxX" : 1053,
+  "minY" : 13,
+  "maxY" : 113,
+  "disease" : false
+}

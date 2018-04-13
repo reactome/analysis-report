@@ -1,0 +1,7537 @@
+{
+  "dbId" : 8950505,
+  "stableId" : "R-HSA-8950505",
+  "displayName" : "Gene and protein expression by JAK-STAT signaling after Interleukin-12 stimulation",
+  "nodes" : [ {
+    "id" : 144,
+    "reactomeId" : 8950385,
+    "displayName" : "CA1 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1938,
+      "y" : 1102
+    },
+    "minX" : 1894,
+    "maxX" : 1990,
+    "minY" : 1068,
+    "maxY" : 1135,
+    "prop" : {
+      "x" : 1894,
+      "y" : 1070,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1906,
+      "y" : 1097
+    },
+    "connectors" : [ {
+      "edgeId" : 143,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1990,
+        "y" : 1068
+      },
+      "b" : {
+        "x" : 1983,
+        "y" : 1072
+      },
+      "c" : {
+        "x" : 1990,
+        "y" : 1076
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 145,
+    "reactomeId" : 1237027,
+    "displayName" : "CA1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2253,
+      "y" : 1384
+    },
+    "minX" : 2212,
+    "maxX" : 2301,
+    "minY" : 1367,
+    "maxY" : 1395,
+    "prop" : {
+      "x" : 2212,
+      "y" : 1373,
+      "width" : 83,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2237,
+      "y" : 1373
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2295,
+          "y" : 1373
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 143,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 147,
+    "reactomeId" : 8950440,
+    "displayName" : "SNRPA1 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1608,
+      "y" : 1637
+    },
+    "minX" : 1561,
+    "maxX" : 1663,
+    "minY" : 1603,
+    "maxY" : 1670,
+    "prop" : {
+      "x" : 1561,
+      "y" : 1605,
+      "width" : 95,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1565,
+      "y" : 1632
+    },
+    "connectors" : [ {
+      "edgeId" : 146,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1663,
+        "y" : 1603
+      },
+      "b" : {
+        "x" : 1656,
+        "y" : 1607
+      },
+      "c" : {
+        "x" : 1663,
+        "y" : 1611
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2964,
+    "reactomeId" : 158997,
+    "displayName" : "SERPINB2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 734,
+      "y" : 755
+    },
+    "minX" : 703,
+    "maxX" : 772,
+    "minY" : 738,
+    "maxY" : 766,
+    "prop" : {
+      "x" : 703,
+      "y" : 744,
+      "width" : 63,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 703,
+      "y" : 744
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 766,
+          "y" : 744
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2542,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 148,
+    "reactomeId" : 71958,
+    "displayName" : "SNRPA1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1786,
+      "y" : 1589
+    },
+    "minX" : 1742,
+    "maxX" : 1837,
+    "minY" : 1565,
+    "maxY" : 1607,
+    "prop" : {
+      "x" : 1742,
+      "y" : 1571,
+      "width" : 89,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1759,
+      "y" : 1578
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1831,
+          "y" : 1571
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 146,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2965,
+    "reactomeId" : 8870627,
+    "displayName" : "p-S43,S173,S294,S325-FOXO3",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 498,
+      "y" : 2123
+    },
+    "minX" : 438,
+    "maxX" : 1307,
+    "minY" : 1963,
+    "maxY" : 2141,
+    "prop" : {
+      "x" : 438,
+      "y" : 2105,
+      "width" : 121,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 440,
+      "y" : 2105
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 559,
+          "y" : 2105
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2962,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 562,
+          "y" : 2111
+        },
+        "to" : {
+          "x" : 1307,
+          "y" : 1966
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1301,
+          "y" : 1971
+        },
+        "b" : {
+          "x" : 1307,
+          "y" : 1966
+        },
+        "c" : {
+          "x" : 1299,
+          "y" : 1963
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 150,
+    "reactomeId" : 8870704,
+    "displayName" : "SOD2 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1278,
+      "y" : 1837
+    },
+    "minX" : 1234,
+    "maxX" : 1330,
+    "minY" : 1803,
+    "maxY" : 1870,
+    "prop" : {
+      "x" : 1234,
+      "y" : 1805,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1242,
+      "y" : 1832
+    },
+    "connectors" : [ {
+      "edgeId" : 2962,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1330,
+        "y" : 1803
+      },
+      "b" : {
+        "x" : 1323,
+        "y" : 1807
+      },
+      "c" : {
+        "x" : 1330,
+        "y" : 1811
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 151,
+    "reactomeId" : 3299687,
+    "displayName" : "SOD2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1314,
+      "y" : 2024
+    },
+    "minX" : 1286,
+    "maxX" : 1349,
+    "minY" : 2006,
+    "maxY" : 2037,
+    "prop" : {
+      "x" : 1286,
+      "y" : 2012,
+      "width" : 57,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 1294,
+      "y" : 2014
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1343,
+          "y" : 2012
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2962,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2968,
+    "reactomeId" : 6790020,
+    "displayName" : "IL10 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1637,
+      "y" : 987
+    },
+    "minX" : 1604,
+    "maxX" : 1677,
+    "minY" : 960,
+    "maxY" : 1013,
+    "prop" : {
+      "x" : 1604,
+      "y" : 962,
+      "width" : 66,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 1604,
+      "y" : 989
+    },
+    "connectors" : [ {
+      "edgeId" : 2967,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1677,
+        "y" : 960
+      },
+      "b" : {
+        "x" : 1670,
+        "y" : 964
+      },
+      "c" : {
+        "x" : 1677,
+        "y" : 968
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 24,
+    "reactomeId" : 8950759,
+    "displayName" : "Y963-STAT4 dimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1681,
+      "y" : 1164
+    },
+    "minX" : 1195,
+    "maxX" : 2054,
+    "minY" : 738,
+    "maxY" : 1958,
+    "prop" : {
+      "x" : 1622,
+      "y" : 1146,
+      "width" : 119,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1637,
+      "y" : 1147
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2496,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1631,
+          "y" : 1143
+        },
+        "to" : {
+          "x" : 1200,
+          "y" : 990
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1199,
+          "y" : 994
+        },
+        "b" : {
+          "x" : 1201,
+          "y" : 986
+        },
+        "c" : {
+          "x" : 1200,
+          "y" : 990
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2499,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1668,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 1469,
+          "y" : 1459
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1466,
+          "y" : 1457
+        },
+        "b" : {
+          "x" : 1472,
+          "y" : 1461
+        },
+        "c" : {
+          "x" : 1469,
+          "y" : 1459
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2502,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1619,
+          "y" : 1146
+        },
+        "to" : {
+          "x" : 1196,
+          "y" : 1019
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1195,
+          "y" : 1023
+        },
+        "b" : {
+          "x" : 1197,
+          "y" : 1015
+        },
+        "c" : {
+          "x" : 1196,
+          "y" : 1019
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2505,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1679,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 1654,
+          "y" : 1491
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1650,
+          "y" : 1491
+        },
+        "b" : {
+          "x" : 1658,
+          "y" : 1491
+        },
+        "c" : {
+          "x" : 1654,
+          "y" : 1491
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2508,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1713,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 2054,
+          "y" : 1371
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2046,
+          "y" : 1371
+        },
+        "b" : {
+          "x" : 2054,
+          "y" : 1371
+        },
+        "c" : {
+          "x" : 2050,
+          "y" : 1364
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 143,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1717,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 2047,
+          "y" : 1342
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2039,
+          "y" : 1343
+        },
+        "b" : {
+          "x" : 2047,
+          "y" : 1342
+        },
+        "c" : {
+          "x" : 2042,
+          "y" : 1335
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2512,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1628,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 1281,
+          "y" : 1300
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1280,
+          "y" : 1296
+        },
+        "b" : {
+          "x" : 1282,
+          "y" : 1304
+        },
+        "c" : {
+          "x" : 1281,
+          "y" : 1300
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 146,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1681,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 1690,
+          "y" : 1573
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1686,
+          "y" : 1573
+        },
+        "b" : {
+          "x" : 1694,
+          "y" : 1573
+        },
+        "c" : {
+          "x" : 1690,
+          "y" : 1573
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2962,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1672,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 1320,
+          "y" : 1956
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1316,
+          "y" : 1954
+        },
+        "b" : {
+          "x" : 1324,
+          "y" : 1958
+        },
+        "c" : {
+          "x" : 1320,
+          "y" : 1956
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2515,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1744,
+          "y" : 1167
+        },
+        "to" : {
+          "x" : 2036,
+          "y" : 1183
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2029,
+          "y" : 1187
+        },
+        "b" : {
+          "x" : 2036,
+          "y" : 1183
+        },
+        "c" : {
+          "x" : 2029,
+          "y" : 1179
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2966,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1685,
+          "y" : 1143
+        },
+        "to" : {
+          "x" : 1778,
+          "y" : 788
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1780,
+          "y" : 796
+        },
+        "b" : {
+          "x" : 1778,
+          "y" : 788
+        },
+        "c" : {
+          "x" : 1772,
+          "y" : 794
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2518,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1660,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 1257,
+          "y" : 1532
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1254,
+          "y" : 1529
+        },
+        "b" : {
+          "x" : 1260,
+          "y" : 1535
+        },
+        "c" : {
+          "x" : 1257,
+          "y" : 1532
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2967,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1683,
+          "y" : 1143
+        },
+        "to" : {
+          "x" : 1730,
+          "y" : 738
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1733,
+          "y" : 745
+        },
+        "b" : {
+          "x" : 1730,
+          "y" : 738
+        },
+        "c" : {
+          "x" : 1725,
+          "y" : 744
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2521,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1744,
+          "y" : 1180
+        },
+        "to" : {
+          "x" : 2041,
+          "y" : 1265
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2033,
+          "y" : 1267
+        },
+        "b" : {
+          "x" : 2041,
+          "y" : 1265
+        },
+        "c" : {
+          "x" : 2035,
+          "y" : 1259
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2524,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1657,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 1264,
+          "y" : 1480
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1262,
+          "y" : 1477
+        },
+        "b" : {
+          "x" : 1266,
+          "y" : 1483
+        },
+        "c" : {
+          "x" : 1264,
+          "y" : 1480
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2527,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1690,
+          "y" : 1143
+        },
+        "to" : {
+          "x" : 1847,
+          "y" : 853
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1847,
+          "y" : 861
+        },
+        "b" : {
+          "x" : 1847,
+          "y" : 853
+        },
+        "c" : {
+          "x" : 1840,
+          "y" : 857
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2463,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1744,
+          "y" : 1158
+        },
+        "to" : {
+          "x" : 2032,
+          "y" : 1130
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2025,
+          "y" : 1135
+        },
+        "b" : {
+          "x" : 2032,
+          "y" : 1130
+        },
+        "c" : {
+          "x" : 2025,
+          "y" : 1127
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 32,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1722,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 2045,
+          "y" : 1321
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2037,
+          "y" : 1322
+        },
+        "b" : {
+          "x" : 2045,
+          "y" : 1321
+        },
+        "c" : {
+          "x" : 2040,
+          "y" : 1315
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2466,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1663,
+          "y" : 1143
+        },
+        "to" : {
+          "x" : 1325,
+          "y" : 804
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1322,
+          "y" : 807
+        },
+        "b" : {
+          "x" : 1328,
+          "y" : 801
+        },
+        "c" : {
+          "x" : 1325,
+          "y" : 804
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2530,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1680,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 1667,
+          "y" : 1517
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1663,
+          "y" : 1510
+        },
+        "b" : {
+          "x" : 1667,
+          "y" : 1517
+        },
+        "c" : {
+          "x" : 1671,
+          "y" : 1510
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2533,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1683,
+          "y" : 1143
+        },
+        "to" : {
+          "x" : 1748,
+          "y" : 756
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1751,
+          "y" : 763
+        },
+        "b" : {
+          "x" : 1748,
+          "y" : 756
+        },
+        "c" : {
+          "x" : 1743,
+          "y" : 762
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2469,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1662,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 1249,
+          "y" : 1589
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1246,
+          "y" : 1586
+        },
+        "b" : {
+          "x" : 1252,
+          "y" : 1592
+        },
+        "c" : {
+          "x" : 1249,
+          "y" : 1589
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2536,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1619,
+          "y" : 1152
+        },
+        "to" : {
+          "x" : 1264,
+          "y" : 1086
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1263,
+          "y" : 1090
+        },
+        "b" : {
+          "x" : 1265,
+          "y" : 1082
+        },
+        "c" : {
+          "x" : 1264,
+          "y" : 1086
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2472,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1664,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 1286,
+          "y" : 1606
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1283,
+          "y" : 1603
+        },
+        "b" : {
+          "x" : 1289,
+          "y" : 1609
+        },
+        "c" : {
+          "x" : 1286,
+          "y" : 1606
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2475,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1619,
+          "y" : 1161
+        },
+        "to" : {
+          "x" : 1281,
+          "y" : 1146
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1281,
+          "y" : 1150
+        },
+        "b" : {
+          "x" : 1281,
+          "y" : 1142
+        },
+        "c" : {
+          "x" : 1281,
+          "y" : 1146
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2539,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1645,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 1275,
+          "y" : 1368
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1273,
+          "y" : 1364
+        },
+        "b" : {
+          "x" : 1277,
+          "y" : 1372
+        },
+        "c" : {
+          "x" : 1275,
+          "y" : 1368
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2542,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1666,
+          "y" : 1143
+        },
+        "to" : {
+          "x" : 1383,
+          "y" : 793
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1380,
+          "y" : 796
+        },
+        "b" : {
+          "x" : 1386,
+          "y" : 790
+        },
+        "c" : {
+          "x" : 1383,
+          "y" : 793
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2478,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1744,
+          "y" : 1161
+        },
+        "to" : {
+          "x" : 2031,
+          "y" : 1147
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2024,
+          "y" : 1151
+        },
+        "b" : {
+          "x" : 2031,
+          "y" : 1147
+        },
+        "c" : {
+          "x" : 2024,
+          "y" : 1143
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2481,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1687,
+          "y" : 1143
+        },
+        "to" : {
+          "x" : 1799,
+          "y" : 827
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1800,
+          "y" : 835
+        },
+        "b" : {
+          "x" : 1799,
+          "y" : 827
+        },
+        "c" : {
+          "x" : 1793,
+          "y" : 832
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2545,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1669,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 1436,
+          "y" : 1549
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1436,
+          "y" : 1541
+        },
+        "b" : {
+          "x" : 1436,
+          "y" : 1549
+        },
+        "c" : {
+          "x" : 1443,
+          "y" : 1545
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2548,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1619,
+          "y" : 1169
+        },
+        "to" : {
+          "x" : 1282,
+          "y" : 1200
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1282,
+          "y" : 1196
+        },
+        "b" : {
+          "x" : 1282,
+          "y" : 1204
+        },
+        "c" : {
+          "x" : 1282,
+          "y" : 1200
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2484,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1691,
+          "y" : 1143
+        },
+        "to" : {
+          "x" : 1847,
+          "y" : 881
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1847,
+          "y" : 889
+        },
+        "b" : {
+          "x" : 1847,
+          "y" : 881
+        },
+        "c" : {
+          "x" : 1840,
+          "y" : 885
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2487,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1652,
+          "y" : 1185
+        },
+        "to" : {
+          "x" : 1276,
+          "y" : 1422
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1274,
+          "y" : 1419
+        },
+        "b" : {
+          "x" : 1278,
+          "y" : 1425
+        },
+        "c" : {
+          "x" : 1276,
+          "y" : 1422
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2551,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1744,
+          "y" : 1172
+        },
+        "to" : {
+          "x" : 2041,
+          "y" : 1213
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2034,
+          "y" : 1216
+        },
+        "b" : {
+          "x" : 2041,
+          "y" : 1213
+        },
+        "c" : {
+          "x" : 2035,
+          "y" : 1208
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 2490,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1668,
+          "y" : 1143
+        },
+        "to" : {
+          "x" : 1428,
+          "y" : 808
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1425,
+          "y" : 810
+        },
+        "b" : {
+          "x" : 1431,
+          "y" : 806
+        },
+        "c" : {
+          "x" : 1428,
+          "y" : 808
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 2493,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1744,
+          "y" : 1175
+        },
+        "to" : {
+          "x" : 2041,
+          "y" : 1235
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 2033,
+          "y" : 1238
+        },
+        "b" : {
+          "x" : 2041,
+          "y" : 1235
+        },
+        "c" : {
+          "x" : 2035,
+          "y" : 1230
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 2969,
+    "reactomeId" : 447125,
+    "displayName" : "IL10",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1662,
+      "y" : 660
+    },
+    "minX" : 1645,
+    "maxX" : 1685,
+    "minY" : 643,
+    "maxY" : 671,
+    "prop" : {
+      "x" : 1645,
+      "y" : 649,
+      "width" : 34,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1645,
+      "y" : 649
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1679,
+          "y" : 649
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2967,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 26,
+    "reactomeId" : 8877362,
+    "displayName" : "IFNG gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1626,
+      "y" : 796
+    },
+    "minX" : 1574,
+    "maxX" : 1685,
+    "minY" : 762,
+    "maxY" : 829,
+    "prop" : {
+      "x" : 1574,
+      "y" : 764,
+      "width" : 104,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1592,
+      "y" : 791
+    },
+    "connectors" : [ {
+      "edgeId" : 2966,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1685,
+        "y" : 762
+      },
+      "b" : {
+        "x" : 1678,
+        "y" : 766
+      },
+      "c" : {
+        "x" : 1685,
+        "y" : 770
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 27,
+    "reactomeId" : 629621,
+    "displayName" : "IFNG",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1760,
+      "y" : 396
+    },
+    "minX" : 1722,
+    "maxX" : 1805,
+    "minY" : 377,
+    "maxY" : 410,
+    "prop" : {
+      "x" : 1722,
+      "y" : 383,
+      "width" : 77,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 1743,
+      "y" : 386
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1799,
+          "y" : 383
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2966,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 30,
+    "reactomeId" : 8950353,
+    "displayName" : "BOLA2 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1939,
+      "y" : 1020
+    },
+    "minX" : 1887,
+    "maxX" : 1998,
+    "minY" : 986,
+    "maxY" : 1053,
+    "prop" : {
+      "x" : 1887,
+      "y" : 988,
+      "width" : 104,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1900,
+      "y" : 1015
+    },
+    "connectors" : [ {
+      "edgeId" : 32,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1998,
+        "y" : 986
+      },
+      "b" : {
+        "x" : 1991,
+        "y" : 990
+      },
+      "c" : {
+        "x" : 1998,
+        "y" : 994
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 31,
+    "reactomeId" : 8950552,
+    "displayName" : "BOLA2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2247,
+      "y" : 1304
+    },
+    "minX" : 2193,
+    "maxX" : 2308,
+    "minY" : 1287,
+    "maxY" : 1315,
+    "prop" : {
+      "x" : 2193,
+      "y" : 1293,
+      "width" : 109,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2224,
+      "y" : 1293
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2302,
+          "y" : 1293
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 32,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2464,
+    "reactomeId" : 8950628,
+    "displayName" : "AIP gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1924,
+      "y" : 784
+    },
+    "minX" : 1880,
+    "maxX" : 1976,
+    "minY" : 750,
+    "maxY" : 817,
+    "prop" : {
+      "x" : 1880,
+      "y" : 752,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1895,
+      "y" : 779
+    },
+    "connectors" : [ {
+      "edgeId" : 2463,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1976,
+        "y" : 750
+      },
+      "b" : {
+        "x" : 1969,
+        "y" : 754
+      },
+      "c" : {
+        "x" : 1976,
+        "y" : 758
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2467,
+    "reactomeId" : 8950337,
+    "displayName" : "ANXA2 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1243,
+      "y" : 832
+    },
+    "minX" : 1199,
+    "maxX" : 1295,
+    "minY" : 798,
+    "maxY" : 865,
+    "prop" : {
+      "x" : 1199,
+      "y" : 800,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1203,
+      "y" : 827
+    },
+    "connectors" : [ {
+      "edgeId" : 2466,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1295,
+        "y" : 798
+      },
+      "b" : {
+        "x" : 1288,
+        "y" : 802
+      },
+      "c" : {
+        "x" : 1295,
+        "y" : 806
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2468,
+    "reactomeId" : 6806242,
+    "displayName" : "ANXA2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1309,
+      "y" : 363
+    },
+    "minX" : 1262,
+    "maxX" : 1363,
+    "minY" : 332,
+    "maxY" : 388,
+    "prop" : {
+      "x" : 1262,
+      "y" : 338,
+      "width" : 95,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1285,
+      "y" : 352
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1357,
+          "y" : 338
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2466,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2470,
+    "reactomeId" : 8950279,
+    "displayName" : "ARF1 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1105,
+      "y" : 1734
+    },
+    "minX" : 1061,
+    "maxX" : 1157,
+    "minY" : 1700,
+    "maxY" : 1767,
+    "prop" : {
+      "x" : 1061,
+      "y" : 1702,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1070,
+      "y" : 1729
+    },
+    "connectors" : [ {
+      "edgeId" : 2469,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1157,
+        "y" : 1700
+      },
+      "b" : {
+        "x" : 1150,
+        "y" : 1704
+      },
+      "c" : {
+        "x" : 1157,
+        "y" : 1708
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2471,
+    "reactomeId" : 200826,
+    "displayName" : "ARF1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 985,
+      "y" : 1766
+    },
+    "minX" : 941,
+    "maxX" : 1036,
+    "minY" : 1749,
+    "maxY" : 1777,
+    "prop" : {
+      "x" : 941,
+      "y" : 1755,
+      "width" : 89,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 966,
+      "y" : 1755
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1030,
+          "y" : 1755
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2469,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2473,
+    "reactomeId" : 8950250,
+    "displayName" : "CAPZA1 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1124,
+      "y" : 1801
+    },
+    "minX" : 1077,
+    "maxX" : 1179,
+    "minY" : 1767,
+    "maxY" : 1834,
+    "prop" : {
+      "x" : 1077,
+      "y" : 1769,
+      "width" : 95,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1081,
+      "y" : 1796
+    },
+    "connectors" : [ {
+      "edgeId" : 2472,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1179,
+        "y" : 1767
+      },
+      "b" : {
+        "x" : 1172,
+        "y" : 1771
+      },
+      "c" : {
+        "x" : 1179,
+        "y" : 1775
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2474,
+    "reactomeId" : 879363,
+    "displayName" : "CAPZA1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 960,
+      "y" : 1891
+    },
+    "minX" : 907,
+    "maxX" : 1020,
+    "minY" : 1874,
+    "maxY" : 1902,
+    "prop" : {
+      "x" : 907,
+      "y" : 1880,
+      "width" : 107,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 933,
+      "y" : 1880
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1014,
+          "y" : 1880
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2472,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2476,
+    "reactomeId" : 8950770,
+    "displayName" : "CDC42 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1154,
+      "y" : 1188
+    },
+    "minX" : 1110,
+    "maxX" : 1206,
+    "minY" : 1154,
+    "maxY" : 1221,
+    "prop" : {
+      "x" : 1110,
+      "y" : 1156,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1114,
+      "y" : 1183
+    },
+    "connectors" : [ {
+      "edgeId" : 2475,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1206,
+        "y" : 1154
+      },
+      "b" : {
+        "x" : 1199,
+        "y" : 1158
+      },
+      "c" : {
+        "x" : 1206,
+        "y" : 1162
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2477,
+    "reactomeId" : 5672086,
+    "displayName" : "CDC42",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 766,
+      "y" : 946
+    },
+    "minX" : 700,
+    "maxX" : 839,
+    "minY" : 915,
+    "maxY" : 971,
+    "prop" : {
+      "x" : 700,
+      "y" : 921,
+      "width" : 133,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 742,
+      "y" : 935
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 833,
+          "y" : 921
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2475,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2479,
+    "reactomeId" : 8950669,
+    "displayName" : "CFL1 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1939,
+      "y" : 877
+    },
+    "minX" : 1895,
+    "maxX" : 1991,
+    "minY" : 843,
+    "maxY" : 910,
+    "prop" : {
+      "x" : 1895,
+      "y" : 845,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1905,
+      "y" : 872
+    },
+    "connectors" : [ {
+      "edgeId" : 2478,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1991,
+        "y" : 843
+      },
+      "b" : {
+        "x" : 1984,
+        "y" : 847
+      },
+      "c" : {
+        "x" : 1991,
+        "y" : 851
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2480,
+    "reactomeId" : 350751,
+    "displayName" : "CFL1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2232,
+      "y" : 1076
+    },
+    "minX" : 2189,
+    "maxX" : 2282,
+    "minY" : 1059,
+    "maxY" : 1087,
+    "prop" : {
+      "x" : 2189,
+      "y" : 1065,
+      "width" : 87,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2214,
+      "y" : 1065
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2276,
+          "y" : 1065
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2478,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2482,
+    "reactomeId" : 8950391,
+    "displayName" : "CNN2 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1635,
+      "y" : 836
+    },
+    "minX" : 1591,
+    "maxX" : 1687,
+    "minY" : 802,
+    "maxY" : 869,
+    "prop" : {
+      "x" : 1591,
+      "y" : 804,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1598,
+      "y" : 831
+    },
+    "connectors" : [ {
+      "edgeId" : 2481,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1687,
+        "y" : 802
+      },
+      "b" : {
+        "x" : 1680,
+        "y" : 806
+      },
+      "c" : {
+        "x" : 1687,
+        "y" : 810
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2483,
+    "reactomeId" : 6806300,
+    "displayName" : "CNN2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1845,
+      "y" : 399
+    },
+    "minX" : 1808,
+    "maxX" : 1888,
+    "minY" : 375,
+    "maxY" : 417,
+    "prop" : {
+      "x" : 1808,
+      "y" : 381,
+      "width" : 74,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1824,
+      "y" : 388
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1882,
+          "y" : 381
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2481,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2485,
+    "reactomeId" : 8950534,
+    "displayName" : "GSTA2 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1624,
+      "y" : 950
+    },
+    "minX" : 1580,
+    "maxX" : 1676,
+    "minY" : 916,
+    "maxY" : 983,
+    "prop" : {
+      "x" : 1580,
+      "y" : 918,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1585,
+      "y" : 945
+    },
+    "connectors" : [ {
+      "edgeId" : 2484,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1676,
+        "y" : 916
+      },
+      "b" : {
+        "x" : 1669,
+        "y" : 920
+      },
+      "c" : {
+        "x" : 1676,
+        "y" : 924
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2486,
+    "reactomeId" : 8950276,
+    "displayName" : "GSTA2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2007,
+      "y" : 232
+    },
+    "minX" : 1960,
+    "maxX" : 2061,
+    "minY" : 201,
+    "maxY" : 257,
+    "prop" : {
+      "x" : 1960,
+      "y" : 207,
+      "width" : 95,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1984,
+      "y" : 221
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2055,
+          "y" : 207
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2484,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2488,
+    "reactomeId" : 8950743,
+    "displayName" : "GSTO1 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1132,
+      "y" : 1509
+    },
+    "minX" : 1088,
+    "maxX" : 1184,
+    "minY" : 1475,
+    "maxY" : 1542,
+    "prop" : {
+      "x" : 1088,
+      "y" : 1477,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1092,
+      "y" : 1504
+    },
+    "connectors" : [ {
+      "edgeId" : 2487,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1184,
+        "y" : 1475
+      },
+      "b" : {
+        "x" : 1177,
+        "y" : 1479
+      },
+      "c" : {
+        "x" : 1184,
+        "y" : 1483
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2489,
+    "reactomeId" : 176043,
+    "displayName" : "GSTO1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 951,
+      "y" : 1498
+    },
+    "minX" : 902,
+    "maxX" : 1007,
+    "minY" : 1481,
+    "maxY" : 1509,
+    "prop" : {
+      "x" : 902,
+      "y" : 1487,
+      "width" : 99,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 927,
+      "y" : 1487
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1001,
+          "y" : 1487
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2487,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2491,
+    "reactomeId" : 8950542,
+    "displayName" : "HNRNPA2B1 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1351,
+      "y" : 940
+    },
+    "minX" : 1294,
+    "maxX" : 1416,
+    "minY" : 906,
+    "maxY" : 973,
+    "prop" : {
+      "x" : 1294,
+      "y" : 908,
+      "width" : 115,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1295,
+      "y" : 935
+    },
+    "connectors" : [ {
+      "edgeId" : 2490,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1416,
+        "y" : 906
+      },
+      "b" : {
+        "x" : 1409,
+        "y" : 910
+      },
+      "c" : {
+        "x" : 1416,
+        "y" : 914
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2492,
+    "reactomeId" : 8950304,
+    "displayName" : "HNRNPA2B1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1513,
+      "y" : 227
+    },
+    "minX" : 1466,
+    "maxX" : 1567,
+    "minY" : 196,
+    "maxY" : 252,
+    "prop" : {
+      "x" : 1466,
+      "y" : 202,
+      "width" : 95,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1473,
+      "y" : 216
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1561,
+          "y" : 202
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2490,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2494,
+    "reactomeId" : 8950209,
+    "displayName" : "HNRNPDL gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1933,
+      "y" : 974
+    },
+    "minX" : 1883,
+    "maxX" : 1991,
+    "minY" : 940,
+    "maxY" : 1007,
+    "prop" : {
+      "x" : 1883,
+      "y" : 942,
+      "width" : 101,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1885,
+      "y" : 969
+    },
+    "connectors" : [ {
+      "edgeId" : 2493,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1991,
+        "y" : 940
+      },
+      "b" : {
+        "x" : 1984,
+        "y" : 944
+      },
+      "c" : {
+        "x" : 1991,
+        "y" : 948
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2495,
+    "reactomeId" : 8950323,
+    "displayName" : "HNRNPDL",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2222,
+      "y" : 1184
+    },
+    "minX" : 2166,
+    "maxX" : 2285,
+    "minY" : 1167,
+    "maxY" : 1195,
+    "prop" : {
+      "x" : 2166,
+      "y" : 1173,
+      "width" : 113,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2190,
+      "y" : 1173
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2279,
+          "y" : 1173
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2493,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2497,
+    "reactomeId" : 8950665,
+    "displayName" : "HNRNPF gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1112,
+      "y" : 1018
+    },
+    "minX" : 1066,
+    "maxX" : 1166,
+    "minY" : 984,
+    "maxY" : 1051,
+    "prop" : {
+      "x" : 1066,
+      "y" : 986,
+      "width" : 93,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1068,
+      "y" : 1013
+    },
+    "connectors" : [ {
+      "edgeId" : 2496,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1166,
+        "y" : 984
+      },
+      "b" : {
+        "x" : 1159,
+        "y" : 988
+      },
+      "c" : {
+        "x" : 1166,
+        "y" : 992
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2498,
+    "reactomeId" : 8950714,
+    "displayName" : "HNRNPF",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1186,
+      "y" : 428
+    },
+    "minX" : 1131,
+    "maxX" : 1248,
+    "minY" : 404,
+    "maxY" : 446,
+    "prop" : {
+      "x" : 1131,
+      "y" : 410,
+      "width" : 111,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1158,
+      "y" : 417
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1242,
+          "y" : 410
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2496,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2500,
+    "reactomeId" : 8950249,
+    "displayName" : "HSP9 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1265,
+      "y" : 1725
+    },
+    "minX" : 1221,
+    "maxX" : 1317,
+    "minY" : 1691,
+    "maxY" : 1758,
+    "prop" : {
+      "x" : 1221,
+      "y" : 1693,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1230,
+      "y" : 1720
+    },
+    "connectors" : [ {
+      "edgeId" : 2499,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1317,
+        "y" : 1691
+      },
+      "b" : {
+        "x" : 1310,
+        "y" : 1695
+      },
+      "c" : {
+        "x" : 1317,
+        "y" : 1699
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2503,
+    "reactomeId" : 8950605,
+    "displayName" : "LCP1 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1152,
+      "y" : 1067
+    },
+    "minX" : 1108,
+    "maxX" : 1204,
+    "minY" : 1033,
+    "maxY" : 1100,
+    "prop" : {
+      "x" : 1108,
+      "y" : 1035,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1118,
+      "y" : 1062
+    },
+    "connectors" : [ {
+      "edgeId" : 2502,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1204,
+        "y" : 1033
+      },
+      "b" : {
+        "x" : 1197,
+        "y" : 1037
+      },
+      "c" : {
+        "x" : 1204,
+        "y" : 1041
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2504,
+    "reactomeId" : 8950517,
+    "displayName" : "LCP1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 943,
+      "y" : 313
+    },
+    "minX" : 893,
+    "maxX" : 999,
+    "minY" : 291,
+    "maxY" : 329,
+    "prop" : {
+      "x" : 893,
+      "y" : 297,
+      "width" : 100,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 924,
+      "y" : 302
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 993,
+          "y" : 297
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2502,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2506,
+    "reactomeId" : 8950582,
+    "displayName" : "LMNB1 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1576,
+      "y" : 1515
+    },
+    "minX" : 1532,
+    "maxX" : 1628,
+    "minY" : 1481,
+    "maxY" : 1548,
+    "prop" : {
+      "x" : 1532,
+      "y" : 1483,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1536,
+      "y" : 1510
+    },
+    "connectors" : [ {
+      "edgeId" : 2505,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1628,
+        "y" : 1481
+      },
+      "b" : {
+        "x" : 1621,
+        "y" : 1485
+      },
+      "c" : {
+        "x" : 1628,
+        "y" : 1489
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2507,
+    "reactomeId" : 264867,
+    "displayName" : "LMNB1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1790,
+      "y" : 1488
+    },
+    "minX" : 1727,
+    "maxX" : 1860,
+    "minY" : 1471,
+    "maxY" : 1499,
+    "prop" : {
+      "x" : 1727,
+      "y" : 1477,
+      "width" : 127,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1766,
+      "y" : 1477
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1854,
+          "y" : 1477
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2505,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2509,
+    "reactomeId" : 8950444,
+    "displayName" : "MIF gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1930,
+      "y" : 1498
+    },
+    "minX" : 1886,
+    "maxX" : 1982,
+    "minY" : 1464,
+    "maxY" : 1531,
+    "prop" : {
+      "x" : 1886,
+      "y" : 1466,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1901,
+      "y" : 1493
+    },
+    "connectors" : [ {
+      "edgeId" : 2508,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1982,
+        "y" : 1464
+      },
+      "b" : {
+        "x" : 1975,
+        "y" : 1468
+      },
+      "c" : {
+        "x" : 1982,
+        "y" : 1472
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2511,
+    "reactomeId" : 6803282,
+    "displayName" : "MIF",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2317,
+      "y" : 1516
+    },
+    "minX" : 2269,
+    "maxX" : 2372,
+    "minY" : 1492,
+    "maxY" : 1534,
+    "prop" : {
+      "x" : 2269,
+      "y" : 1498,
+      "width" : 97,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2304,
+      "y" : 1505
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2366,
+          "y" : 1498
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2508,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2513,
+    "reactomeId" : 8950244,
+    "displayName" : "MSN gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1142,
+      "y" : 1353
+    },
+    "minX" : 1098,
+    "maxX" : 1194,
+    "minY" : 1319,
+    "maxY" : 1386,
+    "prop" : {
+      "x" : 1098,
+      "y" : 1321,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1110,
+      "y" : 1348
+    },
+    "connectors" : [ {
+      "edgeId" : 2512,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1194,
+        "y" : 1319
+      },
+      "b" : {
+        "x" : 1187,
+        "y" : 1323
+      },
+      "c" : {
+        "x" : 1194,
+        "y" : 1327
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2514,
+    "reactomeId" : 437350,
+    "displayName" : "MSN",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 969,
+      "y" : 1336
+    },
+    "minX" : 926,
+    "maxX" : 1019,
+    "minY" : 1319,
+    "maxY" : 1347,
+    "prop" : {
+      "x" : 926,
+      "y" : 1325,
+      "width" : 87,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 953,
+      "y" : 1325
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1013,
+          "y" : 1325
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2512,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2516,
+    "reactomeId" : 8950683,
+    "displayName" : "MTAP gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1928,
+      "y" : 833
+    },
+    "minX" : 1884,
+    "maxX" : 1980,
+    "minY" : 799,
+    "maxY" : 866,
+    "prop" : {
+      "x" : 1884,
+      "y" : 801,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1892,
+      "y" : 828
+    },
+    "connectors" : [ {
+      "edgeId" : 2515,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1980,
+        "y" : 799
+      },
+      "b" : {
+        "x" : 1973,
+        "y" : 803
+      },
+      "c" : {
+        "x" : 1980,
+        "y" : 807
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2517,
+    "reactomeId" : 1237091,
+    "displayName" : "MTAP",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2220,
+      "y" : 1115
+    },
+    "minX" : 2176,
+    "maxX" : 2271,
+    "minY" : 1098,
+    "maxY" : 1126,
+    "prop" : {
+      "x" : 2176,
+      "y" : 1104,
+      "width" : 89,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2200,
+      "y" : 1104
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2265,
+          "y" : 1104
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2515,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2519,
+    "reactomeId" : 8950429,
+    "displayName" : "PAK2 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1119,
+      "y" : 1650
+    },
+    "minX" : 1075,
+    "maxX" : 1171,
+    "minY" : 1616,
+    "maxY" : 1683,
+    "prop" : {
+      "x" : 1075,
+      "y" : 1618,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1084,
+      "y" : 1645
+    },
+    "connectors" : [ {
+      "edgeId" : 2518,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1171,
+        "y" : 1616
+      },
+      "b" : {
+        "x" : 1164,
+        "y" : 1620
+      },
+      "c" : {
+        "x" : 1171,
+        "y" : 1624
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2520,
+    "reactomeId" : 211604,
+    "displayName" : "PAK2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 983,
+      "y" : 1677
+    },
+    "minX" : 938,
+    "maxX" : 1035,
+    "minY" : 1660,
+    "maxY" : 1688,
+    "prop" : {
+      "x" : 938,
+      "y" : 1666,
+      "width" : 91,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 964,
+      "y" : 1666
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1029,
+          "y" : 1666
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2518,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2522,
+    "reactomeId" : 8950263,
+    "displayName" : "PDCD4 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1858,
+      "y" : 1383
+    },
+    "minX" : 1814,
+    "maxX" : 1910,
+    "minY" : 1349,
+    "maxY" : 1416,
+    "prop" : {
+      "x" : 1814,
+      "y" : 1351,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1818,
+      "y" : 1378
+    },
+    "connectors" : [ {
+      "edgeId" : 2521,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1910,
+        "y" : 1349
+      },
+      "b" : {
+        "x" : 1903,
+        "y" : 1353
+      },
+      "c" : {
+        "x" : 1910,
+        "y" : 1357
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2523,
+    "reactomeId" : 5432887,
+    "displayName" : "PDCD4",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2228,
+      "y" : 1224
+    },
+    "minX" : 2179,
+    "maxX" : 2284,
+    "minY" : 1207,
+    "maxY" : 1235,
+    "prop" : {
+      "x" : 2179,
+      "y" : 1213,
+      "width" : 99,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2204,
+      "y" : 1213
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2278,
+          "y" : 1213
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2521,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2525,
+    "reactomeId" : 8950459,
+    "displayName" : "PITPNA gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1147,
+      "y" : 1573
+    },
+    "minX" : 1103,
+    "maxX" : 1199,
+    "minY" : 1539,
+    "maxY" : 1606,
+    "prop" : {
+      "x" : 1103,
+      "y" : 1541,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1106,
+      "y" : 1568
+    },
+    "connectors" : [ {
+      "edgeId" : 2524,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1199,
+        "y" : 1539
+      },
+      "b" : {
+        "x" : 1192,
+        "y" : 1543
+      },
+      "c" : {
+        "x" : 1199,
+        "y" : 1547
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2526,
+    "reactomeId" : 418391,
+    "displayName" : "PITPNA",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 991,
+      "y" : 1599
+    },
+    "minX" : 943,
+    "maxX" : 1046,
+    "minY" : 1582,
+    "maxY" : 1610,
+    "prop" : {
+      "x" : 943,
+      "y" : 1588,
+      "width" : 97,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 966,
+      "y" : 1588
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1040,
+          "y" : 1588
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2524,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2528,
+    "reactomeId" : 8950229,
+    "displayName" : "PPIA gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1624,
+      "y" : 897
+    },
+    "minX" : 1580,
+    "maxX" : 1676,
+    "minY" : 863,
+    "maxY" : 930,
+    "prop" : {
+      "x" : 1580,
+      "y" : 865,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1592,
+      "y" : 892
+    },
+    "connectors" : [ {
+      "edgeId" : 2527,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1676,
+        "y" : 863
+      },
+      "b" : {
+        "x" : 1669,
+        "y" : 867
+      },
+      "c" : {
+        "x" : 1676,
+        "y" : 871
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2529,
+    "reactomeId" : 6801538,
+    "displayName" : "PPIA",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1897,
+      "y" : 264
+    },
+    "minX" : 1837,
+    "maxX" : 1964,
+    "minY" : 240,
+    "maxY" : 282,
+    "prop" : {
+      "x" : 1837,
+      "y" : 246,
+      "width" : 121,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1881,
+      "y" : 253
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1958,
+          "y" : 246
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2527,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2531,
+    "reactomeId" : 8950594,
+    "displayName" : "PSME2 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1596,
+      "y" : 1573
+    },
+    "minX" : 1552,
+    "maxX" : 1648,
+    "minY" : 1539,
+    "maxY" : 1606,
+    "prop" : {
+      "x" : 1552,
+      "y" : 1541,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1557,
+      "y" : 1568
+    },
+    "connectors" : [ {
+      "edgeId" : 2530,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1648,
+        "y" : 1539
+      },
+      "b" : {
+        "x" : 1641,
+        "y" : 1543
+      },
+      "c" : {
+        "x" : 1648,
+        "y" : 1547
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2532,
+    "reactomeId" : 174350,
+    "displayName" : "PSME2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1783,
+      "y" : 1544
+    },
+    "minX" : 1718,
+    "maxX" : 1855,
+    "minY" : 1527,
+    "maxY" : 1555,
+    "prop" : {
+      "x" : 1718,
+      "y" : 1533,
+      "width" : 131,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1760,
+      "y" : 1533
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1849,
+          "y" : 1533
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2530,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2534,
+    "reactomeId" : 8950528,
+    "displayName" : "RALA gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1599,
+      "y" : 749
+    },
+    "minX" : 1555,
+    "maxX" : 1651,
+    "minY" : 715,
+    "maxY" : 782,
+    "prop" : {
+      "x" : 1555,
+      "y" : 717,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1564,
+      "y" : 744
+    },
+    "connectors" : [ {
+      "edgeId" : 2533,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1651,
+        "y" : 715
+      },
+      "b" : {
+        "x" : 1644,
+        "y" : 719
+      },
+      "c" : {
+        "x" : 1651,
+        "y" : 723
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2535,
+    "reactomeId" : 1458479,
+    "displayName" : "RALA",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1653,
+      "y" : 556
+    },
+    "minX" : 1585,
+    "maxX" : 1727,
+    "minY" : 532,
+    "maxY" : 575,
+    "prop" : {
+      "x" : 1585,
+      "y" : 538,
+      "width" : 136,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 1634,
+      "y" : 546
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1721,
+          "y" : 538
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2533,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2537,
+    "reactomeId" : 8950765,
+    "displayName" : "RAPB1 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1167,
+      "y" : 1111
+    },
+    "minX" : 1123,
+    "maxX" : 1219,
+    "minY" : 1077,
+    "maxY" : 1144,
+    "prop" : {
+      "x" : 1123,
+      "y" : 1079,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1128,
+      "y" : 1106
+    },
+    "connectors" : [ {
+      "edgeId" : 2536,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1219,
+        "y" : 1077
+      },
+      "b" : {
+        "x" : 1212,
+        "y" : 1081
+      },
+      "c" : {
+        "x" : 1219,
+        "y" : 1085
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2538,
+    "reactomeId" : 6804972,
+    "displayName" : "RAP1B",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 709,
+      "y" : 527
+    },
+    "minX" : 646,
+    "maxX" : 779,
+    "minY" : 503,
+    "maxY" : 545,
+    "prop" : {
+      "x" : 646,
+      "y" : 509,
+      "width" : 127,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 686,
+      "y" : 516
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 773,
+          "y" : 509
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2536,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2540,
+    "reactomeId" : 8950579,
+    "displayName" : "RPLP0 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1148,
+      "y" : 1409
+    },
+    "minX" : 1104,
+    "maxX" : 1200,
+    "minY" : 1375,
+    "maxY" : 1442,
+    "prop" : {
+      "x" : 1104,
+      "y" : 1377,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1110,
+      "y" : 1404
+    },
+    "connectors" : [ {
+      "edgeId" : 2539,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1200,
+        "y" : 1375
+      },
+      "b" : {
+        "x" : 1193,
+        "y" : 1379
+      },
+      "c" : {
+        "x" : 1200,
+        "y" : 1383
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2541,
+    "reactomeId" : 72396,
+    "displayName" : "RPLP0",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 963,
+      "y" : 1422
+    },
+    "minX" : 917,
+    "maxX" : 1016,
+    "minY" : 1405,
+    "maxY" : 1433,
+    "prop" : {
+      "x" : 917,
+      "y" : 1411,
+      "width" : 93,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 941,
+      "y" : 1411
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1010,
+          "y" : 1411
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2539,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2543,
+    "reactomeId" : 8950546,
+    "displayName" : "SERPINB2 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1272,
+      "y" : 880
+    },
+    "minX" : 1224,
+    "maxX" : 1328,
+    "minY" : 853,
+    "maxY" : 906,
+    "prop" : {
+      "x" : 1224,
+      "y" : 855,
+      "width" : 97,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 1225,
+      "y" : 882
+    },
+    "connectors" : [ {
+      "edgeId" : 2542,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1328,
+        "y" : 853
+      },
+      "b" : {
+        "x" : 1321,
+        "y" : 857
+      },
+      "c" : {
+        "x" : 1328,
+        "y" : 861
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2546,
+    "reactomeId" : 8950473,
+    "displayName" : "SOD1 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1273,
+      "y" : 1777
+    },
+    "minX" : 1229,
+    "maxX" : 1325,
+    "minY" : 1743,
+    "maxY" : 1810,
+    "prop" : {
+      "x" : 1229,
+      "y" : 1745,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1237,
+      "y" : 1772
+    },
+    "connectors" : [ {
+      "edgeId" : 2545,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1325,
+        "y" : 1743
+      },
+      "b" : {
+        "x" : 1318,
+        "y" : 1747
+      },
+      "c" : {
+        "x" : 1325,
+        "y" : 1751
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2547,
+    "reactomeId" : 3777082,
+    "displayName" : "SOD1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1406,
+      "y" : 2019
+    },
+    "minX" : 1381,
+    "maxX" : 1437,
+    "minY" : 1993,
+    "maxY" : 2039,
+    "prop" : {
+      "x" : 1381,
+      "y" : 1999,
+      "width" : 50,
+      "height" : 40
+    },
+    "textPosition" : {
+      "x" : 1386,
+      "y" : 2008
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1431,
+          "y" : 1999
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2545,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2549,
+    "reactomeId" : 8950482,
+    "displayName" : "TALDO1 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1150,
+      "y" : 1272
+    },
+    "minX" : 1105,
+    "maxX" : 1203,
+    "minY" : 1238,
+    "maxY" : 1305,
+    "prop" : {
+      "x" : 1105,
+      "y" : 1240,
+      "width" : 91,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1106,
+      "y" : 1267
+    },
+    "connectors" : [ {
+      "edgeId" : 2548,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1203,
+        "y" : 1238
+      },
+      "b" : {
+        "x" : 1196,
+        "y" : 1242
+      },
+      "c" : {
+        "x" : 1203,
+        "y" : 1246
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2550,
+    "reactomeId" : 71325,
+    "displayName" : "TALDO1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 984,
+      "y" : 1219
+    },
+    "minX" : 933,
+    "maxX" : 1042,
+    "minY" : 1202,
+    "maxY" : 1230,
+    "prop" : {
+      "x" : 933,
+      "y" : 1208,
+      "width" : 103,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 956,
+      "y" : 1208
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1036,
+          "y" : 1208
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2548,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2552,
+    "reactomeId" : 8950478,
+    "displayName" : "TCP1 gene",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Gene",
+    "position" : {
+      "x" : 1937,
+      "y" : 928
+    },
+    "minX" : 1893,
+    "maxX" : 1989,
+    "minY" : 894,
+    "maxY" : 961,
+    "prop" : {
+      "x" : 1893,
+      "y" : 896,
+      "width" : 89,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 1902,
+      "y" : 923
+    },
+    "connectors" : [ {
+      "edgeId" : 2551,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1989,
+        "y" : 894
+      },
+      "b" : {
+        "x" : 1982,
+        "y" : 898
+      },
+      "c" : {
+        "x" : 1989,
+        "y" : 902
+      },
+      "type" : "ARROW"
+    }
+  }, {
+    "id" : 2553,
+    "reactomeId" : 390448,
+    "displayName" : "TCP1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2239,
+      "y" : 1151
+    },
+    "minX" : 2196,
+    "maxX" : 2289,
+    "minY" : 1134,
+    "maxY" : 1162,
+    "prop" : {
+      "x" : 2196,
+      "y" : 1140,
+      "width" : 87,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2220,
+      "y" : 1140
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2283,
+          "y" : 1140
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2551,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2942,
+    "reactomeId" : 8936839,
+    "displayName" : "AIP",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2231,
+      "y" : 1031
+    },
+    "minX" : 2217,
+    "maxX" : 2252,
+    "minY" : 1014,
+    "maxY" : 1042,
+    "prop" : {
+      "x" : 2217,
+      "y" : 1020,
+      "width" : 29,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2218,
+      "y" : 1020
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2246,
+          "y" : 1020
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2463,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2943,
+    "reactomeId" : 8878802,
+    "displayName" : "HSPA9",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1532,
+      "y" : 2036
+    },
+    "minX" : 1509,
+    "maxX" : 1561,
+    "minY" : 2019,
+    "maxY" : 2047,
+    "prop" : {
+      "x" : 1509,
+      "y" : 2025,
+      "width" : 46,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1509,
+      "y" : 2025
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1555,
+          "y" : 2025
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2499,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 2496,
+    "reactomeId" : 8950415,
+    "displayName" : "Expression of heterogeneous nuclear ribonucleoprotein F",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1192,
+      "y" : 987
+    },
+    "minX" : 1168,
+    "maxX" : 1198,
+    "minY" : 449,
+    "maxY" : 993,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1168,
+        "y" : 988
+      },
+      "to" : {
+        "x" : 1192,
+        "y" : 987
+      }
+    }, {
+      "from" : {
+        "x" : 1192,
+        "y" : 987
+      },
+      "to" : {
+        "x" : 1186,
+        "y" : 449
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1190,
+        "y" : 456
+      },
+      "b" : {
+        "x" : 1186,
+        "y" : 449
+      },
+      "c" : {
+        "x" : 1182,
+        "y" : 456
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1186,
+        "y" : 981
+      },
+      "b" : {
+        "x" : 1198,
+        "y" : 993
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2497
+    } ],
+    "outputs" : [ {
+      "id" : 2498
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1631,
+        "y" : 1143
+      } ]
+    } ]
+  }, {
+    "id" : 2499,
+    "reactomeId" : 8950389,
+    "displayName" : "Expression of Stress-70 protein, mitochondrial",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1464,
+      "y" : 1466
+    },
+    "minX" : 1319,
+    "maxX" : 1530,
+    "minY" : 1460,
+    "maxY" : 2022,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1319,
+        "y" : 1695
+      },
+      "to" : {
+        "x" : 1464,
+        "y" : 1466
+      }
+    }, {
+      "from" : {
+        "x" : 1464,
+        "y" : 1466
+      },
+      "to" : {
+        "x" : 1530,
+        "y" : 2022
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1525,
+        "y" : 2016
+      },
+      "b" : {
+        "x" : 1530,
+        "y" : 2022
+      },
+      "c" : {
+        "x" : 1533,
+        "y" : 2015
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1458,
+        "y" : 1460
+      },
+      "b" : {
+        "x" : 1470,
+        "y" : 1472
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2500
+    } ],
+    "outputs" : [ {
+      "id" : 2943
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1668,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 2502,
+    "reactomeId" : 8950426,
+    "displayName" : "Expression of lymphocyte cytosolic protein 1",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1187,
+      "y" : 1016
+    },
+    "minX" : 948,
+    "maxX" : 1206,
+    "minY" : 332,
+    "maxY" : 1037,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1206,
+        "y" : 1037
+      },
+      "to" : {
+        "x" : 1187,
+        "y" : 1016
+      }
+    }, {
+      "from" : {
+        "x" : 1187,
+        "y" : 1016
+      },
+      "to" : {
+        "x" : 948,
+        "y" : 332
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 954,
+        "y" : 337
+      },
+      "b" : {
+        "x" : 948,
+        "y" : 332
+      },
+      "c" : {
+        "x" : 947,
+        "y" : 340
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1181,
+        "y" : 1010
+      },
+      "b" : {
+        "x" : 1193,
+        "y" : 1022
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2503
+    } ],
+    "outputs" : [ {
+      "id" : 2504
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1619,
+        "y" : 1146
+      } ]
+    } ]
+  }, {
+    "id" : 2505,
+    "reactomeId" : 8950681,
+    "displayName" : "Expression of Lamin-B1",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1653,
+      "y" : 1500
+    },
+    "minX" : 1630,
+    "maxX" : 1724,
+    "minY" : 1485,
+    "maxY" : 1506,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1630,
+        "y" : 1485
+      },
+      "to" : {
+        "x" : 1653,
+        "y" : 1500
+      }
+    }, {
+      "from" : {
+        "x" : 1653,
+        "y" : 1500
+      },
+      "to" : {
+        "x" : 1724,
+        "y" : 1493
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1717,
+        "y" : 1498
+      },
+      "b" : {
+        "x" : 1724,
+        "y" : 1493
+      },
+      "c" : {
+        "x" : 1717,
+        "y" : 1490
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1647,
+        "y" : 1494
+      },
+      "b" : {
+        "x" : 1659,
+        "y" : 1506
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2506
+    } ],
+    "outputs" : [ {
+      "id" : 2507
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1679,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 2508,
+    "reactomeId" : 8950732,
+    "displayName" : "Expression of Macrophage migration inhibitory factor",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2062,
+      "y" : 1375
+    },
+    "minX" : 1984,
+    "maxX" : 2284,
+    "minY" : 1369,
+    "maxY" : 1495,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1984,
+        "y" : 1468
+      },
+      "to" : {
+        "x" : 2062,
+        "y" : 1375
+      }
+    }, {
+      "from" : {
+        "x" : 2062,
+        "y" : 1375
+      },
+      "to" : {
+        "x" : 2284,
+        "y" : 1495
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2276,
+        "y" : 1495
+      },
+      "b" : {
+        "x" : 2284,
+        "y" : 1495
+      },
+      "c" : {
+        "x" : 2280,
+        "y" : 1488
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 2056,
+        "y" : 1369
+      },
+      "b" : {
+        "x" : 2068,
+        "y" : 1381
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2509
+    } ],
+    "outputs" : [ {
+      "id" : 2511
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1713,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 143,
+    "reactomeId" : 8950623,
+    "displayName" : "Expression of Carbonic anhydrase 1",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2055,
+      "y" : 1346
+    },
+    "minX" : 1992,
+    "maxX" : 2209,
+    "minY" : 1072,
+    "maxY" : 1376,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1992,
+        "y" : 1072
+      },
+      "to" : {
+        "x" : 2055,
+        "y" : 1346
+      }
+    }, {
+      "from" : {
+        "x" : 2055,
+        "y" : 1346
+      },
+      "to" : {
+        "x" : 2209,
+        "y" : 1376
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2201,
+        "y" : 1379
+      },
+      "b" : {
+        "x" : 2209,
+        "y" : 1376
+      },
+      "c" : {
+        "x" : 2203,
+        "y" : 1371
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 2049,
+        "y" : 1340
+      },
+      "b" : {
+        "x" : 2061,
+        "y" : 1352
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 144
+    } ],
+    "outputs" : [ {
+      "id" : 145
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1717,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 2512,
+    "reactomeId" : 8950218,
+    "displayName" : "Expression of Moesin",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1272,
+      "y" : 1303
+    },
+    "minX" : 1016,
+    "maxX" : 1278,
+    "minY" : 1297,
+    "maxY" : 1331,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1196,
+        "y" : 1323
+      },
+      "to" : {
+        "x" : 1272,
+        "y" : 1303
+      }
+    }, {
+      "from" : {
+        "x" : 1272,
+        "y" : 1303
+      },
+      "to" : {
+        "x" : 1016,
+        "y" : 1331
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1022,
+        "y" : 1326
+      },
+      "b" : {
+        "x" : 1016,
+        "y" : 1331
+      },
+      "c" : {
+        "x" : 1023,
+        "y" : 1334
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1266,
+        "y" : 1297
+      },
+      "b" : {
+        "x" : 1278,
+        "y" : 1309
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2513
+    } ],
+    "outputs" : [ {
+      "id" : 2514
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1628,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 146,
+    "reactomeId" : 8950608,
+    "displayName" : "Expression U2 small nuclear ribonucleoprotein A'",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1690,
+      "y" : 1582
+    },
+    "minX" : 1665,
+    "maxX" : 1739,
+    "minY" : 1576,
+    "maxY" : 1607,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1665,
+        "y" : 1607
+      },
+      "to" : {
+        "x" : 1690,
+        "y" : 1582
+      }
+    }, {
+      "from" : {
+        "x" : 1690,
+        "y" : 1582
+      },
+      "to" : {
+        "x" : 1739,
+        "y" : 1585
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1732,
+        "y" : 1589
+      },
+      "b" : {
+        "x" : 1739,
+        "y" : 1585
+      },
+      "c" : {
+        "x" : 1732,
+        "y" : 1581
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1684,
+        "y" : 1576
+      },
+      "b" : {
+        "x" : 1696,
+        "y" : 1588
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 147
+    } ],
+    "outputs" : [ {
+      "id" : 148
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1681,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 2962,
+    "reactomeId" : 8870703,
+    "displayName" : "Expression of superoxide dismutase 2",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1316,
+      "y" : 1964
+    },
+    "minX" : 1310,
+    "maxX" : 1332,
+    "minY" : 1807,
+    "maxY" : 2009,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1332,
+        "y" : 1807
+      },
+      "to" : {
+        "x" : 1316,
+        "y" : 1964
+      }
+    }, {
+      "from" : {
+        "x" : 1316,
+        "y" : 1964
+      },
+      "to" : {
+        "x" : 1314,
+        "y" : 2009
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1310,
+        "y" : 2002
+      },
+      "b" : {
+        "x" : 1314,
+        "y" : 2009
+      },
+      "c" : {
+        "x" : 1318,
+        "y" : 2002
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1310,
+        "y" : 1958
+      },
+      "b" : {
+        "x" : 1322,
+        "y" : 1970
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 150
+    } ],
+    "outputs" : [ {
+      "id" : 151
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1672,
+        "y" : 1185
+      } ]
+    } ],
+    "activators" : [ {
+      "id" : 2965,
+      "points" : [ {
+        "x" : 562,
+        "y" : 2111
+      } ]
+    } ]
+  }, {
+    "id" : 2515,
+    "reactomeId" : 8950365,
+    "displayName" : "Expression of S-methyl-5'-thioadenosine phosphorylase",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2045,
+      "y" : 1184
+    },
+    "minX" : 1982,
+    "maxX" : 2192,
+    "minY" : 803,
+    "maxY" : 1190,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1982,
+        "y" : 803
+      },
+      "to" : {
+        "x" : 2045,
+        "y" : 1184
+      }
+    }, {
+      "from" : {
+        "x" : 2045,
+        "y" : 1184
+      },
+      "to" : {
+        "x" : 2192,
+        "y" : 1129
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2187,
+        "y" : 1135
+      },
+      "b" : {
+        "x" : 2192,
+        "y" : 1129
+      },
+      "c" : {
+        "x" : 2184,
+        "y" : 1128
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 2039,
+        "y" : 1178
+      },
+      "b" : {
+        "x" : 2051,
+        "y" : 1190
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2516
+    } ],
+    "outputs" : [ {
+      "id" : 2517
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1744,
+        "y" : 1167
+      } ]
+    } ]
+  }, {
+    "id" : 2966,
+    "reactomeId" : 9006431,
+    "displayName" : "Expression of IFNG gene",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1780,
+      "y" : 779
+    },
+    "minX" : 1687,
+    "maxX" : 1786,
+    "minY" : 413,
+    "maxY" : 785,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1687,
+        "y" : 766
+      },
+      "to" : {
+        "x" : 1780,
+        "y" : 779
+      }
+    }, {
+      "from" : {
+        "x" : 1780,
+        "y" : 779
+      },
+      "to" : {
+        "x" : 1760,
+        "y" : 413
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1764,
+        "y" : 420
+      },
+      "b" : {
+        "x" : 1760,
+        "y" : 413
+      },
+      "c" : {
+        "x" : 1756,
+        "y" : 420
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1774,
+        "y" : 773
+      },
+      "b" : {
+        "x" : 1786,
+        "y" : 785
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 26
+    } ],
+    "outputs" : [ {
+      "id" : 27
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1685,
+        "y" : 1143
+      } ]
+    } ]
+  }, {
+    "id" : 2518,
+    "reactomeId" : 8950190,
+    "displayName" : "Expression of PAK2",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1250,
+      "y" : 1538
+    },
+    "minX" : 1004,
+    "maxX" : 1256,
+    "minY" : 1532,
+    "maxY" : 1663,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1173,
+        "y" : 1620
+      },
+      "to" : {
+        "x" : 1250,
+        "y" : 1538
+      }
+    }, {
+      "from" : {
+        "x" : 1250,
+        "y" : 1538
+      },
+      "to" : {
+        "x" : 1004,
+        "y" : 1663
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1008,
+        "y" : 1656
+      },
+      "b" : {
+        "x" : 1004,
+        "y" : 1663
+      },
+      "c" : {
+        "x" : 1012,
+        "y" : 1663
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1244,
+        "y" : 1532
+      },
+      "b" : {
+        "x" : 1256,
+        "y" : 1544
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2519
+    } ],
+    "outputs" : [ {
+      "id" : 2520
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1660,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 2967,
+    "reactomeId" : 8981073,
+    "displayName" : "Expression of Interleukin-10",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1731,
+      "y" : 729
+    },
+    "minX" : 1673,
+    "maxX" : 1737,
+    "minY" : 674,
+    "maxY" : 964,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1679,
+        "y" : 964
+      },
+      "to" : {
+        "x" : 1731,
+        "y" : 729
+      }
+    }, {
+      "from" : {
+        "x" : 1731,
+        "y" : 729
+      },
+      "to" : {
+        "x" : 1673,
+        "y" : 674
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1681,
+        "y" : 676
+      },
+      "b" : {
+        "x" : 1673,
+        "y" : 674
+      },
+      "c" : {
+        "x" : 1675,
+        "y" : 682
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1725,
+        "y" : 723
+      },
+      "b" : {
+        "x" : 1737,
+        "y" : 735
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2968
+    } ],
+    "outputs" : [ {
+      "id" : 2969
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1683,
+        "y" : 1143
+      } ]
+    } ]
+  }, {
+    "id" : 2521,
+    "reactomeId" : 8950721,
+    "displayName" : "Expression of Programmed cell death protein 4",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2050,
+      "y" : 1267
+    },
+    "minX" : 1912,
+    "maxX" : 2182,
+    "minY" : 1238,
+    "maxY" : 1353,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1912,
+        "y" : 1353
+      },
+      "to" : {
+        "x" : 2050,
+        "y" : 1267
+      }
+    }, {
+      "from" : {
+        "x" : 2050,
+        "y" : 1267
+      },
+      "to" : {
+        "x" : 2182,
+        "y" : 1238
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2176,
+        "y" : 1243
+      },
+      "b" : {
+        "x" : 2182,
+        "y" : 1238
+      },
+      "c" : {
+        "x" : 2174,
+        "y" : 1236
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 2044,
+        "y" : 1261
+      },
+      "b" : {
+        "x" : 2056,
+        "y" : 1273
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2522
+    } ],
+    "outputs" : [ {
+      "id" : 2523
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1744,
+        "y" : 1180
+      } ]
+    } ]
+  }, {
+    "id" : 2524,
+    "reactomeId" : 8950213,
+    "displayName" : "Expression of Phosphatidylinositol transfer protein alpha isoform",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1257,
+      "y" : 1485
+    },
+    "minX" : 1016,
+    "maxX" : 1263,
+    "minY" : 1479,
+    "maxY" : 1585,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1201,
+        "y" : 1543
+      },
+      "to" : {
+        "x" : 1257,
+        "y" : 1485
+      }
+    }, {
+      "from" : {
+        "x" : 1257,
+        "y" : 1485
+      },
+      "to" : {
+        "x" : 1016,
+        "y" : 1585
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1021,
+        "y" : 1579
+      },
+      "b" : {
+        "x" : 1016,
+        "y" : 1585
+      },
+      "c" : {
+        "x" : 1024,
+        "y" : 1586
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1251,
+        "y" : 1479
+      },
+      "b" : {
+        "x" : 1263,
+        "y" : 1491
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2525
+    } ],
+    "outputs" : [ {
+      "id" : 2526
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1657,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 2527,
+    "reactomeId" : 8950328,
+    "displayName" : "Expression of Peptidyl-prolyl cis-trans isomerase A",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1851,
+      "y" : 845
+    },
+    "minX" : 1678,
+    "maxX" : 1895,
+    "minY" : 285,
+    "maxY" : 867,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1678,
+        "y" : 867
+      },
+      "to" : {
+        "x" : 1851,
+        "y" : 845
+      }
+    }, {
+      "from" : {
+        "x" : 1851,
+        "y" : 845
+      },
+      "to" : {
+        "x" : 1895,
+        "y" : 285
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1898,
+        "y" : 292
+      },
+      "b" : {
+        "x" : 1895,
+        "y" : 285
+      },
+      "c" : {
+        "x" : 1890,
+        "y" : 292
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1845,
+        "y" : 839
+      },
+      "b" : {
+        "x" : 1857,
+        "y" : 851
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2528
+    } ],
+    "outputs" : [ {
+      "id" : 2529
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1690,
+        "y" : 1143
+      } ]
+    } ]
+  }, {
+    "id" : 2463,
+    "reactomeId" : 8950201,
+    "displayName" : "Expression of Aryl Hydrocarbon receptor-interacting protein",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2041,
+      "y" : 1129
+    },
+    "minX" : 1978,
+    "maxX" : 2214,
+    "minY" : 754,
+    "maxY" : 1135,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1978,
+        "y" : 754
+      },
+      "to" : {
+        "x" : 2041,
+        "y" : 1129
+      }
+    }, {
+      "from" : {
+        "x" : 2041,
+        "y" : 1129
+      },
+      "to" : {
+        "x" : 2214,
+        "y" : 1038
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2210,
+        "y" : 1045
+      },
+      "b" : {
+        "x" : 2214,
+        "y" : 1038
+      },
+      "c" : {
+        "x" : 2206,
+        "y" : 1038
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 2035,
+        "y" : 1123
+      },
+      "b" : {
+        "x" : 2047,
+        "y" : 1135
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2464
+    } ],
+    "outputs" : [ {
+      "id" : 2942
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1744,
+        "y" : 1158
+      } ]
+    } ]
+  }, {
+    "id" : 32,
+    "reactomeId" : 8950344,
+    "displayName" : "Expression of BolA-like protein 2",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2053,
+      "y" : 1324
+    },
+    "minX" : 2000,
+    "maxX" : 2190,
+    "minY" : 990,
+    "maxY" : 1330,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 2000,
+        "y" : 990
+      },
+      "to" : {
+        "x" : 2053,
+        "y" : 1324
+      }
+    }, {
+      "from" : {
+        "x" : 2053,
+        "y" : 1324
+      },
+      "to" : {
+        "x" : 2190,
+        "y" : 1309
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2184,
+        "y" : 1314
+      },
+      "b" : {
+        "x" : 2190,
+        "y" : 1309
+      },
+      "c" : {
+        "x" : 2183,
+        "y" : 1306
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 2047,
+        "y" : 1318
+      },
+      "b" : {
+        "x" : 2059,
+        "y" : 1330
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 30
+    } ],
+    "outputs" : [ {
+      "id" : 31
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1722,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 2466,
+    "reactomeId" : 8950480,
+    "displayName" : "Expression of annexin A2",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1319,
+      "y" : 798
+    },
+    "minX" : 1297,
+    "maxX" : 1325,
+    "minY" : 391,
+    "maxY" : 804,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1297,
+        "y" : 802
+      },
+      "to" : {
+        "x" : 1319,
+        "y" : 798
+      }
+    }, {
+      "from" : {
+        "x" : 1319,
+        "y" : 798
+      },
+      "to" : {
+        "x" : 1309,
+        "y" : 391
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1313,
+        "y" : 398
+      },
+      "b" : {
+        "x" : 1309,
+        "y" : 391
+      },
+      "c" : {
+        "x" : 1305,
+        "y" : 398
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1313,
+        "y" : 792
+      },
+      "b" : {
+        "x" : 1325,
+        "y" : 804
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2467
+    } ],
+    "outputs" : [ {
+      "id" : 2468
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1663,
+        "y" : 1143
+      } ]
+    } ]
+  }, {
+    "id" : 2530,
+    "reactomeId" : 8950260,
+    "displayName" : "Expression of Proteasome activator complex subunit 2",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1667,
+      "y" : 1526
+    },
+    "minX" : 1650,
+    "maxX" : 1715,
+    "minY" : 1520,
+    "maxY" : 1543,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1650,
+        "y" : 1543
+      },
+      "to" : {
+        "x" : 1667,
+        "y" : 1526
+      }
+    }, {
+      "from" : {
+        "x" : 1667,
+        "y" : 1526
+      },
+      "to" : {
+        "x" : 1715,
+        "y" : 1533
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1708,
+        "y" : 1536
+      },
+      "b" : {
+        "x" : 1715,
+        "y" : 1533
+      },
+      "c" : {
+        "x" : 1709,
+        "y" : 1528
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1661,
+        "y" : 1520
+      },
+      "b" : {
+        "x" : 1673,
+        "y" : 1532
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2531
+    } ],
+    "outputs" : [ {
+      "id" : 2532
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1680,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 2533,
+    "reactomeId" : 8950533,
+    "displayName" : "Expression of Ras-related protein Ral-A",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1750,
+      "y" : 747
+    },
+    "minX" : 1653,
+    "maxX" : 1756,
+    "minY" : 578,
+    "maxY" : 753,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1653,
+        "y" : 719
+      },
+      "to" : {
+        "x" : 1750,
+        "y" : 747
+      }
+    }, {
+      "from" : {
+        "x" : 1750,
+        "y" : 747
+      },
+      "to" : {
+        "x" : 1662,
+        "y" : 578
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1669,
+        "y" : 582
+      },
+      "b" : {
+        "x" : 1662,
+        "y" : 578
+      },
+      "c" : {
+        "x" : 1662,
+        "y" : 586
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1744,
+        "y" : 741
+      },
+      "b" : {
+        "x" : 1756,
+        "y" : 753
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2534
+    } ],
+    "outputs" : [ {
+      "id" : 2535
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1683,
+        "y" : 1143
+      } ]
+    } ]
+  }, {
+    "id" : 2469,
+    "reactomeId" : 8950173,
+    "displayName" : "Expression of ADP-ribosylation factor 1",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1243,
+      "y" : 1595
+    },
+    "minX" : 1001,
+    "maxX" : 1249,
+    "minY" : 1589,
+    "maxY" : 1752,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1159,
+        "y" : 1704
+      },
+      "to" : {
+        "x" : 1243,
+        "y" : 1595
+      }
+    }, {
+      "from" : {
+        "x" : 1243,
+        "y" : 1595
+      },
+      "to" : {
+        "x" : 1001,
+        "y" : 1752
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1005,
+        "y" : 1745
+      },
+      "b" : {
+        "x" : 1001,
+        "y" : 1752
+      },
+      "c" : {
+        "x" : 1009,
+        "y" : 1752
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1237,
+        "y" : 1589
+      },
+      "b" : {
+        "x" : 1249,
+        "y" : 1601
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2470
+    } ],
+    "outputs" : [ {
+      "id" : 2471
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1662,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 2536,
+    "reactomeId" : 8950225,
+    "displayName" : "Expression of Ras-related protein Rap-1b",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1255,
+      "y" : 1084
+    },
+    "minX" : 726,
+    "maxX" : 1261,
+    "minY" : 548,
+    "maxY" : 1090,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1221,
+        "y" : 1081
+      },
+      "to" : {
+        "x" : 1255,
+        "y" : 1084
+      }
+    }, {
+      "from" : {
+        "x" : 1255,
+        "y" : 1084
+      },
+      "to" : {
+        "x" : 726,
+        "y" : 548
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 734,
+        "y" : 550
+      },
+      "b" : {
+        "x" : 726,
+        "y" : 548
+      },
+      "c" : {
+        "x" : 728,
+        "y" : 556
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1249,
+        "y" : 1078
+      },
+      "b" : {
+        "x" : 1261,
+        "y" : 1090
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2537
+    } ],
+    "outputs" : [ {
+      "id" : 2538
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1619,
+        "y" : 1152
+      } ]
+    } ]
+  }, {
+    "id" : 2472,
+    "reactomeId" : 8950634,
+    "displayName" : "Expression of capping actin protein of muscle Z-line alpha subunit 1",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1280,
+      "y" : 1613
+    },
+    "minX" : 972,
+    "maxX" : 1286,
+    "minY" : 1607,
+    "maxY" : 1877,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1181,
+        "y" : 1771
+      },
+      "to" : {
+        "x" : 1280,
+        "y" : 1613
+      }
+    }, {
+      "from" : {
+        "x" : 1280,
+        "y" : 1613
+      },
+      "to" : {
+        "x" : 972,
+        "y" : 1877
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 975,
+        "y" : 1869
+      },
+      "b" : {
+        "x" : 972,
+        "y" : 1877
+      },
+      "c" : {
+        "x" : 980,
+        "y" : 1876
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1274,
+        "y" : 1607
+      },
+      "b" : {
+        "x" : 1286,
+        "y" : 1619
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2473
+    } ],
+    "outputs" : [ {
+      "id" : 2474
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1664,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 2475,
+    "reactomeId" : 8950637,
+    "displayName" : "Expression of cell division cycle 42",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1272,
+      "y" : 1146
+    },
+    "minX" : 829,
+    "maxX" : 1278,
+    "minY" : 974,
+    "maxY" : 1158,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1208,
+        "y" : 1158
+      },
+      "to" : {
+        "x" : 1272,
+        "y" : 1146
+      }
+    }, {
+      "from" : {
+        "x" : 1272,
+        "y" : 1146
+      },
+      "to" : {
+        "x" : 829,
+        "y" : 974
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 837,
+        "y" : 973
+      },
+      "b" : {
+        "x" : 829,
+        "y" : 974
+      },
+      "c" : {
+        "x" : 834,
+        "y" : 980
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1266,
+        "y" : 1140
+      },
+      "b" : {
+        "x" : 1278,
+        "y" : 1152
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2476
+    } ],
+    "outputs" : [ {
+      "id" : 2477
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1619,
+        "y" : 1161
+      } ]
+    } ]
+  }, {
+    "id" : 2539,
+    "reactomeId" : 8950322,
+    "displayName" : "Expression of ribosomal protein lateral stalk subunit P0",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1267,
+      "y" : 1372
+    },
+    "minX" : 1013,
+    "maxX" : 1273,
+    "minY" : 1366,
+    "maxY" : 1414,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1202,
+        "y" : 1379
+      },
+      "to" : {
+        "x" : 1267,
+        "y" : 1372
+      }
+    }, {
+      "from" : {
+        "x" : 1267,
+        "y" : 1372
+      },
+      "to" : {
+        "x" : 1013,
+        "y" : 1414
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1019,
+        "y" : 1409
+      },
+      "b" : {
+        "x" : 1013,
+        "y" : 1414
+      },
+      "c" : {
+        "x" : 1020,
+        "y" : 1417
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1261,
+        "y" : 1366
+      },
+      "b" : {
+        "x" : 1273,
+        "y" : 1378
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2540
+    } ],
+    "outputs" : [ {
+      "id" : 2541
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1645,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 2542,
+    "reactomeId" : 8950567,
+    "displayName" : "Expression of Plasminogen activator inhibitor 2",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1377,
+      "y" : 786
+    },
+    "minX" : 769,
+    "maxX" : 1383,
+    "minY" : 756,
+    "maxY" : 857,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1330,
+        "y" : 857
+      },
+      "to" : {
+        "x" : 1377,
+        "y" : 786
+      }
+    }, {
+      "from" : {
+        "x" : 1377,
+        "y" : 786
+      },
+      "to" : {
+        "x" : 769,
+        "y" : 756
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 776,
+        "y" : 752
+      },
+      "b" : {
+        "x" : 769,
+        "y" : 756
+      },
+      "c" : {
+        "x" : 776,
+        "y" : 760
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1371,
+        "y" : 780
+      },
+      "b" : {
+        "x" : 1383,
+        "y" : 792
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2543
+    } ],
+    "outputs" : [ {
+      "id" : 2964
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1666,
+        "y" : 1143
+      } ]
+    } ]
+  }, {
+    "id" : 2478,
+    "reactomeId" : 8950581,
+    "displayName" : "Expression of Cofilin-1",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2040,
+      "y" : 1147
+    },
+    "minX" : 1993,
+    "maxX" : 2202,
+    "minY" : 847,
+    "maxY" : 1153,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1993,
+        "y" : 847
+      },
+      "to" : {
+        "x" : 2040,
+        "y" : 1147
+      }
+    }, {
+      "from" : {
+        "x" : 2040,
+        "y" : 1147
+      },
+      "to" : {
+        "x" : 2202,
+        "y" : 1090
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2197,
+        "y" : 1096
+      },
+      "b" : {
+        "x" : 2202,
+        "y" : 1090
+      },
+      "c" : {
+        "x" : 2194,
+        "y" : 1089
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 2034,
+        "y" : 1141
+      },
+      "b" : {
+        "x" : 2046,
+        "y" : 1153
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2479
+    } ],
+    "outputs" : [ {
+      "id" : 2480
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1744,
+        "y" : 1161
+      } ]
+    } ]
+  }, {
+    "id" : 2481,
+    "reactomeId" : 8950314,
+    "displayName" : "Expression of calponin-2",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1802,
+      "y" : 819
+    },
+    "minX" : 1689,
+    "maxX" : 1843,
+    "minY" : 420,
+    "maxY" : 825,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1689,
+        "y" : 806
+      },
+      "to" : {
+        "x" : 1802,
+        "y" : 819
+      }
+    }, {
+      "from" : {
+        "x" : 1802,
+        "y" : 819
+      },
+      "to" : {
+        "x" : 1843,
+        "y" : 420
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1846,
+        "y" : 427
+      },
+      "b" : {
+        "x" : 1843,
+        "y" : 420
+      },
+      "c" : {
+        "x" : 1838,
+        "y" : 426
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1796,
+        "y" : 813
+      },
+      "b" : {
+        "x" : 1808,
+        "y" : 825
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2482
+    } ],
+    "outputs" : [ {
+      "id" : 2483
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1687,
+        "y" : 1143
+      } ]
+    } ]
+  }, {
+    "id" : 2545,
+    "reactomeId" : 8950771,
+    "displayName" : "Expression of SOD1",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1431,
+      "y" : 1557
+    },
+    "minX" : 1327,
+    "maxX" : 1437,
+    "minY" : 1551,
+    "maxY" : 1996,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1327,
+        "y" : 1747
+      },
+      "to" : {
+        "x" : 1431,
+        "y" : 1557
+      }
+    }, {
+      "from" : {
+        "x" : 1431,
+        "y" : 1557
+      },
+      "to" : {
+        "x" : 1407,
+        "y" : 1996
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1403,
+        "y" : 1989
+      },
+      "b" : {
+        "x" : 1407,
+        "y" : 1996
+      },
+      "c" : {
+        "x" : 1411,
+        "y" : 1989
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1425,
+        "y" : 1551
+      },
+      "b" : {
+        "x" : 1437,
+        "y" : 1563
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2546
+    } ],
+    "outputs" : [ {
+      "id" : 2547
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1669,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 2548,
+    "reactomeId" : 8950367,
+    "displayName" : "Expression of transaldolase 1",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1273,
+      "y" : 1201
+    },
+    "minX" : 1039,
+    "maxX" : 1279,
+    "minY" : 1195,
+    "maxY" : 1242,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1205,
+        "y" : 1242
+      },
+      "to" : {
+        "x" : 1273,
+        "y" : 1201
+      }
+    }, {
+      "from" : {
+        "x" : 1273,
+        "y" : 1201
+      },
+      "to" : {
+        "x" : 1039,
+        "y" : 1215
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1046,
+        "y" : 1211
+      },
+      "b" : {
+        "x" : 1039,
+        "y" : 1215
+      },
+      "c" : {
+        "x" : 1046,
+        "y" : 1219
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1267,
+        "y" : 1195
+      },
+      "b" : {
+        "x" : 1279,
+        "y" : 1207
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2549
+    } ],
+    "outputs" : [ {
+      "id" : 2550
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1619,
+        "y" : 1169
+      } ]
+    } ]
+  }, {
+    "id" : 2484,
+    "reactomeId" : 8950586,
+    "displayName" : "Expression of glutathione S-transferase alpha 2",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1852,
+      "y" : 873
+    },
+    "minX" : 1678,
+    "maxX" : 2000,
+    "minY" : 260,
+    "maxY" : 920,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1678,
+        "y" : 920
+      },
+      "to" : {
+        "x" : 1852,
+        "y" : 873
+      }
+    }, {
+      "from" : {
+        "x" : 1852,
+        "y" : 873
+      },
+      "to" : {
+        "x" : 2000,
+        "y" : 260
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2002,
+        "y" : 268
+      },
+      "b" : {
+        "x" : 2000,
+        "y" : 260
+      },
+      "c" : {
+        "x" : 1994,
+        "y" : 266
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1846,
+        "y" : 867
+      },
+      "b" : {
+        "x" : 1858,
+        "y" : 879
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2485
+    } ],
+    "outputs" : [ {
+      "id" : 2486
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1691,
+        "y" : 1143
+      } ]
+    } ]
+  }, {
+    "id" : 2487,
+    "reactomeId" : 8950175,
+    "displayName" : "Expression of Glutathione S-transferase omega-1",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1268,
+      "y" : 1427
+    },
+    "minX" : 1000,
+    "maxX" : 1274,
+    "minY" : 1421,
+    "maxY" : 1484,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1186,
+        "y" : 1479
+      },
+      "to" : {
+        "x" : 1268,
+        "y" : 1427
+      }
+    }, {
+      "from" : {
+        "x" : 1268,
+        "y" : 1427
+      },
+      "to" : {
+        "x" : 1000,
+        "y" : 1484
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1006,
+        "y" : 1479
+      },
+      "b" : {
+        "x" : 1000,
+        "y" : 1484
+      },
+      "c" : {
+        "x" : 1008,
+        "y" : 1486
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1262,
+        "y" : 1421
+      },
+      "b" : {
+        "x" : 1274,
+        "y" : 1433
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2488
+    } ],
+    "outputs" : [ {
+      "id" : 2489
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1652,
+        "y" : 1185
+      } ]
+    } ]
+  }, {
+    "id" : 2551,
+    "reactomeId" : 8950718,
+    "displayName" : "Expression of TCP1",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2050,
+      "y" : 1214
+    },
+    "minX" : 1991,
+    "maxX" : 2206,
+    "minY" : 898,
+    "maxY" : 1220,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1991,
+        "y" : 898
+      },
+      "to" : {
+        "x" : 2050,
+        "y" : 1214
+      }
+    }, {
+      "from" : {
+        "x" : 2050,
+        "y" : 1214
+      },
+      "to" : {
+        "x" : 2206,
+        "y" : 1165
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2201,
+        "y" : 1171
+      },
+      "b" : {
+        "x" : 2206,
+        "y" : 1165
+      },
+      "c" : {
+        "x" : 2198,
+        "y" : 1163
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 2044,
+        "y" : 1208
+      },
+      "b" : {
+        "x" : 2056,
+        "y" : 1220
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2552
+    } ],
+    "outputs" : [ {
+      "id" : 2553
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1744,
+        "y" : 1172
+      } ]
+    } ]
+  }, {
+    "id" : 2490,
+    "reactomeId" : 8950292,
+    "displayName" : "Expression of Heterogeneous nuclear ribonucleoproteins A2/B1",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1423,
+      "y" : 801
+    },
+    "minX" : 1417,
+    "maxX" : 1509,
+    "minY" : 255,
+    "maxY" : 910,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1418,
+        "y" : 910
+      },
+      "to" : {
+        "x" : 1423,
+        "y" : 801
+      }
+    }, {
+      "from" : {
+        "x" : 1423,
+        "y" : 801
+      },
+      "to" : {
+        "x" : 1509,
+        "y" : 255
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1512,
+        "y" : 262
+      },
+      "b" : {
+        "x" : 1509,
+        "y" : 255
+      },
+      "c" : {
+        "x" : 1504,
+        "y" : 261
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1417,
+        "y" : 795
+      },
+      "b" : {
+        "x" : 1429,
+        "y" : 807
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2491
+    } ],
+    "outputs" : [ {
+      "id" : 2492
+    } ],
+    "inhibitors" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1668,
+        "y" : 1143
+      } ]
+    } ]
+  }, {
+    "id" : 2493,
+    "reactomeId" : 8950684,
+    "displayName" : "Expression of Heterogeneous nuclear ribonucleoprotein D-like",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2050,
+      "y" : 1237
+    },
+    "minX" : 1993,
+    "maxX" : 2186,
+    "minY" : 944,
+    "maxY" : 1243,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 1993,
+        "y" : 944
+      },
+      "to" : {
+        "x" : 2050,
+        "y" : 1237
+      }
+    }, {
+      "from" : {
+        "x" : 2050,
+        "y" : 1237
+      },
+      "to" : {
+        "x" : 2186,
+        "y" : 1198
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2180,
+        "y" : 1204
+      },
+      "b" : {
+        "x" : 2186,
+        "y" : 1198
+      },
+      "c" : {
+        "x" : 2178,
+        "y" : 1196
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 2044,
+        "y" : 1231
+      },
+      "b" : {
+        "x" : 2056,
+        "y" : 1243
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 2494
+    } ],
+    "outputs" : [ {
+      "id" : 2495
+    } ],
+    "activators" : [ {
+      "id" : 24,
+      "points" : [ {
+        "x" : 1744,
+        "y" : 1175
+      } ]
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 2737,
+    "reactomeId" : 5460,
+    "displayName" : "mitochondrial matrix",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 1434,
+      "y" : 2043
+    },
+    "minX" : 1265,
+    "maxX" : 1604,
+    "minY" : 1972,
+    "maxY" : 2115,
+    "prop" : {
+      "x" : 1265,
+      "y" : 1972,
+      "width" : 339,
+      "height" : 143
+    },
+    "textPosition" : {
+      "x" : 1299,
+      "y" : 2069
+    },
+    "insets" : {
+      "x" : 1274,
+      "y" : 1982,
+      "width" : 320,
+      "height" : 123
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2547, 151, 2943 ]
+  }, {
+    "id" : 2866,
+    "reactomeId" : 1462052,
+    "displayName" : "secretory granule lumen",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 2347,
+      "y" : 1518
+    },
+    "minX" : 2224,
+    "maxX" : 2471,
+    "minY" : 1446,
+    "maxY" : 1591,
+    "prop" : {
+      "x" : 2224,
+      "y" : 1446,
+      "width" : 247,
+      "height" : 145
+    },
+    "textPosition" : {
+      "x" : 2235,
+      "y" : 1544
+    },
+    "insets" : {
+      "x" : 2232,
+      "y" : 1456,
+      "width" : 229,
+      "height" : 124
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2511 ]
+  }, {
+    "id" : 2738,
+    "reactomeId" : 6798757,
+    "displayName" : "azurophil granule membrane",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 717,
+      "y" : 551
+    },
+    "minX" : 625,
+    "maxX" : 810,
+    "minY" : 494,
+    "maxY" : 609,
+    "prop" : {
+      "x" : 625,
+      "y" : 494,
+      "width" : 185,
+      "height" : 115
+    },
+    "textPosition" : {
+      "x" : 628,
+      "y" : 559
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2538 ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 1665,
+      "y" : 1437
+    },
+    "minX" : 152,
+    "maxX" : 3178,
+    "minY" : 419,
+    "maxY" : 2455,
+    "prop" : {
+      "x" : 152,
+      "y" : 419,
+      "width" : 3026,
+      "height" : 2036
+    },
+    "textPosition" : {
+      "x" : 165,
+      "y" : 2413
+    },
+    "insets" : {
+      "x" : 162,
+      "y" : 427,
+      "width" : 3005,
+      "height" : 2022
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 28, 2471, 2474, 2514, 2550, 2541, 2498, 2526, 2480, 2520, 2517, 31, 2495, 2523, 2553, 145, 2737, 2738, 2489, 2866, 2867, 2904, 2942, 2962, 2964, 2965, 2969 ]
+  }, {
+    "id" : 2867,
+    "reactomeId" : 437051,
+    "displayName" : "cytoplasmic vesicle membrane",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 1646,
+      "y" : 576
+    },
+    "minX" : 1550,
+    "maxX" : 1742,
+    "minY" : 526,
+    "maxY" : 626,
+    "prop" : {
+      "x" : 1550,
+      "y" : 526,
+      "width" : 192,
+      "height" : 100
+    },
+    "textPosition" : {
+      "x" : 1553,
+      "y" : 576
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2535 ]
+  }, {
+    "id" : 2775,
+    "reactomeId" : 383505,
+    "displayName" : "extracellular exosome",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 1720,
+      "y" : 243
+    },
+    "minX" : 1369,
+    "maxX" : 2071,
+    "minY" : 170,
+    "maxY" : 316,
+    "prop" : {
+      "x" : 1369,
+      "y" : 170,
+      "width" : 702,
+      "height" : 146
+    },
+    "textPosition" : {
+      "x" : 1382,
+      "y" : 264
+    },
+    "insets" : {
+      "x" : 1375,
+      "y" : 180,
+      "width" : 691,
+      "height" : 120
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2492, 2486, 2529 ]
+  }, {
+    "id" : 2904,
+    "reactomeId" : 12045,
+    "displayName" : "endoplasmic reticulum membrane",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 765,
+      "y" : 970
+    },
+    "minX" : 674,
+    "maxX" : 856,
+    "minY" : 910,
+    "maxY" : 1030,
+    "prop" : {
+      "x" : 674,
+      "y" : 910,
+      "width" : 182,
+      "height" : 120
+    },
+    "textPosition" : {
+      "x" : 677,
+      "y" : 980
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2477 ]
+  }, {
+    "id" : 28,
+    "reactomeId" : 7660,
+    "displayName" : "nucleoplasm",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 1580,
+      "y" : 1305
+    },
+    "minX" : 1053,
+    "maxX" : 2108,
+    "minY" : 696,
+    "maxY" : 1915,
+    "prop" : {
+      "x" : 1053,
+      "y" : 696,
+      "width" : 1055,
+      "height" : 1219
+    },
+    "textPosition" : {
+      "x" : 1065,
+      "y" : 1869
+    },
+    "insets" : {
+      "x" : 1060,
+      "y" : 705,
+      "width" : 1041,
+      "height" : 1200
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 24, 2505, 2506, 2507, 2464, 2532, 148, 2530, 146, 147, 2531, 2500, 2499, 2467, 2466, 2490, 2491, 2542, 2543, 2496, 2497, 2502, 2503, 2536, 2475, 2487, 2524, 2518, 2469, 2476, 2488, 2525, 2519, 2470, 2472, 2473, 2551, 26, 2481, 2482, 2527, 2528, 2463, 2478, 2534, 2515, 2516, 2479, 2552, 2508, 2493, 2494, 2484, 2485, 2545, 2521, 32, 143, 30, 144, 150, 2546, 2509, 2522, 2512, 2513, 2537, 2539, 2540, 2548, 2549, 2533, 2966, 2968, 2967 ]
+  }, {
+    "id" : 2941,
+    "reactomeId" : 204883,
+    "displayName" : "cell junction",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 861,
+      "y" : 332
+    },
+    "minX" : 658,
+    "maxX" : 1065,
+    "minY" : 258,
+    "maxY" : 406,
+    "prop" : {
+      "x" : 658,
+      "y" : 258,
+      "width" : 407,
+      "height" : 148
+    },
+    "textPosition" : {
+      "x" : 691,
+      "y" : 351
+    },
+    "insets" : {
+      "x" : 668,
+      "y" : 268,
+      "width" : 387,
+      "height" : 128
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2504 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 152,
+  "maxX" : 3178,
+  "minY" : 170,
+  "maxY" : 2455,
+  "disease" : false
+}

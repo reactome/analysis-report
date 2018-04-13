@@ -62,7 +62,7 @@ public class DiagramHelper {
 		args.setQuality(quality);
 
 		try {
-			final BufferedImage image = exporter.export(args, asr);
+			final BufferedImage image = exporter.exportToImage(args, asr);
 			final Image fImage = new Image(ImageDataFactory.create(image, Color.WHITE));
 			fImage.setHorizontalAlignment(HorizontalAlignment.CENTER);
 			// 2 downscale to fit page

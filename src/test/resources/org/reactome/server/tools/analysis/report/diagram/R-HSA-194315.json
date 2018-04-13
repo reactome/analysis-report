@@ -1,0 +1,1299 @@
+{
+  "dbId" : 194315,
+  "stableId" : "R-HSA-194315",
+  "displayName" : "Signaling by Rho GTPases",
+  "nodes" : [ {
+    "id" : 65,
+    "reactomeId" : 195258,
+    "displayName" : "RHO GTPase Effectors",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 655,
+      "y" : 167
+    },
+    "minX" : 593,
+    "maxX" : 717,
+    "minY" : 141,
+    "maxY" : 193,
+    "prop" : {
+      "x" : 593,
+      "y" : 141,
+      "width" : 124,
+      "height" : 52
+    },
+    "textPosition" : {
+      "x" : 608,
+      "y" : 145
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 323,
+    "reactomeId" : 194904,
+    "displayName" : "GAPs",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 410,
+      "y" : 222
+    },
+    "minX" : 380,
+    "maxX" : 440,
+    "minY" : 172,
+    "maxY" : 239,
+    "prop" : {
+      "x" : 380,
+      "y" : 205,
+      "width" : 60,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 391,
+      "y" : 211
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 204
+    },
+    "fgColor" : {
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    },
+    "connectors" : [ {
+      "edgeId" : 54,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 399,
+          "y" : 199
+        },
+        "to" : {
+          "x" : 386,
+          "y" : 179
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 384,
+          "y" : 176
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 44,
+    "reactomeId" : 194915,
+    "displayName" : "RhoGTPase:GDP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 241,
+      "y" : 44
+    },
+    "minX" : 192,
+    "maxX" : 321,
+    "minY" : 25,
+    "maxY" : 167,
+    "prop" : {
+      "x" : 192,
+      "y" : 25,
+      "width" : 98,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 202,
+      "y" : 28
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 54,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 252,
+          "y" : 66
+        },
+        "to" : {
+          "x" : 314,
+          "y" : 167
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 259,
+          "y" : 70
+        },
+        "b" : {
+          "x" : 252,
+          "y" : 66
+        },
+        "c" : {
+          "x" : 252,
+          "y" : 74
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 43,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 293,
+          "y" : 44
+        },
+        "to" : {
+          "x" : 321,
+          "y" : 44
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 59,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 234,
+          "y" : 66
+        },
+        "to" : {
+          "x" : 220,
+          "y" : 101
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 45,
+    "reactomeId" : 29438,
+    "displayName" : "GTP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 309,
+      "y" : 89
+    },
+    "minX" : 290,
+    "maxX" : 329,
+    "minY" : 44,
+    "maxY" : 105,
+    "prop" : {
+      "x" : 290,
+      "y" : 74,
+      "width" : 38,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 293,
+      "y" : 79
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 323,
+          "y" : 79
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 43,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 313,
+          "y" : 71
+        },
+        "to" : {
+          "x" : 321,
+          "y" : 44
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 46,
+    "reactomeId" : 29420,
+    "displayName" : "GDP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 410,
+      "y" : 87
+    },
+    "minX" : 383,
+    "maxX" : 431,
+    "minY" : 44,
+    "maxY" : 103,
+    "prop" : {
+      "x" : 391,
+      "y" : 72,
+      "width" : 39,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 394,
+      "y" : 77
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 425,
+          "y" : 77
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 43,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 400,
+          "y" : 69
+        },
+        "to" : {
+          "x" : 383,
+          "y" : 44
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 393,
+          "y" : 66
+        },
+        "b" : {
+          "x" : 400,
+          "y" : 69
+        },
+        "c" : {
+          "x" : 399,
+          "y" : 61
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 47,
+    "reactomeId" : 194890,
+    "displayName" : "RhoGTPase:GTP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 480,
+      "y" : 44
+    },
+    "minX" : 383,
+    "maxX" : 551,
+    "minY" : 26,
+    "maxY" : 62,
+    "prop" : {
+      "x" : 431,
+      "y" : 26,
+      "width" : 98,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 441,
+      "y" : 27
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 50,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 532,
+          "y" : 43
+        },
+        "to" : {
+          "x" : 551,
+          "y" : 43
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 54,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 43,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 428,
+          "y" : 44
+        },
+        "to" : {
+          "x" : 383,
+          "y" : 44
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 421,
+          "y" : 48
+        },
+        "b" : {
+          "x" : 428,
+          "y" : 44
+        },
+        "c" : {
+          "x" : 421,
+          "y" : 40
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 82,
+    "reactomeId" : 194849,
+    "displayName" : "GEFs",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 354,
+      "y" : 124
+    },
+    "minX" : 324,
+    "maxX" : 385,
+    "minY" : 52,
+    "maxY" : 136,
+    "prop" : {
+      "x" : 324,
+      "y" : 112,
+      "width" : 61,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 336,
+      "y" : 113
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 204
+    },
+    "fgColor" : {
+      "r" : 0,
+      "g" : 0,
+      "b" : 0
+    },
+    "connectors" : [ {
+      "edgeId" : 43,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 354,
+          "y" : 106
+        },
+        "to" : {
+          "x" : 354,
+          "y" : 60
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 354,
+          "y" : 56
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 51,
+    "reactomeId" : 194872,
+    "displayName" : "effector proteins",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 530,
+      "y" : 102
+    },
+    "minX" : 485,
+    "maxX" : 575,
+    "minY" : 43,
+    "maxY" : 121,
+    "prop" : {
+      "x" : 485,
+      "y" : 83,
+      "width" : 90,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 502,
+      "y" : 84
+    },
+    "connectors" : [ {
+      "edgeId" : 50,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 536,
+          "y" : 80
+        },
+        "to" : {
+          "x" : 551,
+          "y" : 43
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 52,
+    "reactomeId" : 194875,
+    "displayName" : "RhoGTPase:GTP:Effectors complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 653,
+      "y" : 45
+    },
+    "minX" : 601,
+    "maxX" : 706,
+    "minY" : 19,
+    "maxY" : 72,
+    "prop" : {
+      "x" : 601,
+      "y" : 19,
+      "width" : 105,
+      "height" : 53
+    },
+    "textPosition" : {
+      "x" : 608,
+      "y" : 23
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 50,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 55,
+    "reactomeId" : 29372,
+    "displayName" : "Pi",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 290,
+      "y" : 219
+    },
+    "minX" : 261,
+    "maxX" : 321,
+    "minY" : 167,
+    "maxY" : 232,
+    "prop" : {
+      "x" : 261,
+      "y" : 207,
+      "width" : 59,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 281,
+      "y" : 209
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 315,
+          "y" : 212
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 54,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 295,
+          "y" : 204
+        },
+        "to" : {
+          "x" : 314,
+          "y" : 167
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 295,
+          "y" : 196
+        },
+        "b" : {
+          "x" : 295,
+          "y" : 204
+        },
+        "c" : {
+          "x" : 302,
+          "y" : 200
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 60,
+    "reactomeId" : 194862,
+    "displayName" : "GDI proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 238,
+      "y" : 164
+    },
+    "minX" : 143,
+    "maxX" : 274,
+    "minY" : 101,
+    "maxY" : 182,
+    "prop" : {
+      "x" : 202,
+      "y" : 148,
+      "width" : 72,
+      "height" : 33
+    },
+    "textPosition" : {
+      "x" : 210,
+      "y" : 147
+    },
+    "connectors" : [ {
+      "edgeId" : 59,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 233,
+          "y" : 142
+        },
+        "to" : {
+          "x" : 220,
+          "y" : 101
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 62,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 196,
+          "y" : 170
+        },
+        "to" : {
+          "x" : 143,
+          "y" : 182
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 190,
+          "y" : 175
+        },
+        "b" : {
+          "x" : 196,
+          "y" : 170
+        },
+        "c" : {
+          "x" : 188,
+          "y" : 168
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 61,
+    "reactomeId" : 194912,
+    "displayName" : "Inactivated RhoGTPase:GDP:GDI complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 103,
+      "y" : 100
+    },
+    "minX" : 42,
+    "maxX" : 165,
+    "minY" : 74,
+    "maxY" : 127,
+    "prop" : {
+      "x" : 42,
+      "y" : 74,
+      "width" : 123,
+      "height" : 53
+    },
+    "textPosition" : {
+      "x" : 50,
+      "y" : 78
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 59,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 62,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 63,
+    "reactomeId" : 194900,
+    "displayName" : "RhoGTPase:GDP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 137,
+      "y" : 223
+    },
+    "minX" : 81,
+    "maxX" : 193,
+    "minY" : 182,
+    "maxY" : 236,
+    "prop" : {
+      "x" : 81,
+      "y" : 210,
+      "width" : 112,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 85,
+      "y" : 215
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 62,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 138,
+          "y" : 207
+        },
+        "to" : {
+          "x" : 143,
+          "y" : 182
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 135,
+          "y" : 199
+        },
+        "b" : {
+          "x" : 138,
+          "y" : 207
+        },
+        "c" : {
+          "x" : 143,
+          "y" : 201
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 50,
+    "reactomeId" : 194894,
+    "displayName" : "Rho GTPase:GTP activates downstream effectors",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 571,
+      "y" : 43
+    },
+    "minX" : 551,
+    "maxX" : 598,
+    "minY" : 38,
+    "maxY" : 48,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 551,
+        "y" : 43
+      },
+      "to" : {
+        "x" : 571,
+        "y" : 43
+      }
+    }, {
+      "from" : {
+        "x" : 571,
+        "y" : 43
+      },
+      "to" : {
+        "x" : 598,
+        "y" : 43
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 591,
+        "y" : 47
+      },
+      "b" : {
+        "x" : 598,
+        "y" : 43
+      },
+      "c" : {
+        "x" : 591,
+        "y" : 39
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 571,
+        "y" : 43
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 47,
+      "points" : [ {
+        "x" : 532,
+        "y" : 43
+      } ]
+    }, {
+      "id" : 51,
+      "points" : [ {
+        "x" : 536,
+        "y" : 80
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 52
+    } ]
+  }, {
+    "id" : 54,
+    "reactomeId" : 194922,
+    "displayName" : "GAPs inactivate Rho GTPase:GTP by hydrolysis",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 377,
+      "y" : 166
+    },
+    "minX" : 314,
+    "maxX" : 464,
+    "minY" : 65,
+    "maxY" : 172,
+    "segments" : [ {
+      "from" : {
+        "x" : 464,
+        "y" : 65
+      },
+      "to" : {
+        "x" : 377,
+        "y" : 166
+      }
+    }, {
+      "from" : {
+        "x" : 377,
+        "y" : 166
+      },
+      "to" : {
+        "x" : 314,
+        "y" : 167
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 371,
+        "y" : 160
+      },
+      "b" : {
+        "x" : 383,
+        "y" : 172
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 47
+    } ],
+    "outputs" : [ {
+      "id" : 44,
+      "points" : [ {
+        "x" : 252,
+        "y" : 66
+      } ]
+    }, {
+      "id" : 55,
+      "points" : [ {
+        "x" : 295,
+        "y" : 204
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 323,
+      "points" : [ {
+        "x" : 399,
+        "y" : 199
+      } ]
+    } ]
+  }, {
+    "id" : 43,
+    "reactomeId" : 194913,
+    "displayName" : "GEFs activate Rho GTPase:GDP",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 354,
+      "y" : 44
+    },
+    "minX" : 321,
+    "maxX" : 383,
+    "minY" : 38,
+    "maxY" : 50,
+    "segments" : [ {
+      "from" : {
+        "x" : 321,
+        "y" : 44
+      },
+      "to" : {
+        "x" : 354,
+        "y" : 44
+      }
+    }, {
+      "from" : {
+        "x" : 354,
+        "y" : 44
+      },
+      "to" : {
+        "x" : 383,
+        "y" : 44
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 348,
+        "y" : 38
+      },
+      "b" : {
+        "x" : 360,
+        "y" : 50
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 44,
+      "points" : [ {
+        "x" : 293,
+        "y" : 44
+      } ]
+    }, {
+      "id" : 45,
+      "points" : [ {
+        "x" : 313,
+        "y" : 71
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 46,
+      "points" : [ {
+        "x" : 400,
+        "y" : 69
+      } ]
+    }, {
+      "id" : 47,
+      "points" : [ {
+        "x" : 428,
+        "y" : 44
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 82,
+      "points" : [ {
+        "x" : 354,
+        "y" : 106
+      } ]
+    } ]
+  }, {
+    "id" : 59,
+    "reactomeId" : 194854,
+    "displayName" : "GDIs block activation of Rho GTPase:GDP",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 197,
+      "y" : 100
+    },
+    "minX" : 168,
+    "maxX" : 220,
+    "minY" : 95,
+    "maxY" : 105,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 220,
+        "y" : 101
+      },
+      "to" : {
+        "x" : 197,
+        "y" : 100
+      }
+    }, {
+      "from" : {
+        "x" : 197,
+        "y" : 100
+      },
+      "to" : {
+        "x" : 168,
+        "y" : 100
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 175,
+        "y" : 96
+      },
+      "b" : {
+        "x" : 168,
+        "y" : 100
+      },
+      "c" : {
+        "x" : 175,
+        "y" : 104
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 197,
+        "y" : 100
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 44,
+      "points" : [ {
+        "x" : 234,
+        "y" : 66
+      } ]
+    }, {
+      "id" : 60,
+      "points" : [ {
+        "x" : 233,
+        "y" : 142
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 61
+    } ]
+  }, {
+    "id" : 62,
+    "reactomeId" : 195146,
+    "displayName" : "Dissociation of Rho GTP:GDP from GDI complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 129,
+      "y" : 157
+    },
+    "minX" : 115,
+    "maxX" : 143,
+    "minY" : 130,
+    "maxY" : 182,
+    "reactionType" : "Dissociation",
+    "segments" : [ {
+      "from" : {
+        "x" : 115,
+        "y" : 130
+      },
+      "to" : {
+        "x" : 129,
+        "y" : 157
+      }
+    }, {
+      "from" : {
+        "x" : 129,
+        "y" : 157
+      },
+      "to" : {
+        "x" : 143,
+        "y" : 182
+      }
+    } ],
+    "reactionShape" : {
+      "c" : {
+        "x" : 129,
+        "y" : 157
+      },
+      "r" : 5,
+      "r1" : 3,
+      "type" : "DOUBLE_CIRCLE",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 61
+    } ],
+    "outputs" : [ {
+      "id" : 63,
+      "points" : [ {
+        "x" : 138,
+        "y" : 207
+      } ]
+    }, {
+      "id" : 60,
+      "points" : [ {
+        "x" : 196,
+        "y" : 170
+      } ]
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 42,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 350,
+      "y" : 153
+    },
+    "minX" : 21,
+    "maxX" : 680,
+    "minY" : 38,
+    "maxY" : 269,
+    "prop" : {
+      "x" : 21,
+      "y" : 38,
+      "width" : 659,
+      "height" : 231
+    },
+    "textPosition" : {
+      "x" : 611,
+      "y" : 230
+    },
+    "insets" : {
+      "x" : 31,
+      "y" : 48,
+      "width" : 639,
+      "height" : 211
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 43, 44, 45, 46, 47, 50, 51, 52, 54, 55, 59, 60, 61, 62, 63, 65, 66, 82, 153, 323 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ {
+    "id" : 66,
+    "renderableClass" : "Interaction",
+    "position" : {
+      "x" : 653,
+      "y" : 106
+    },
+    "minX" : 647,
+    "maxX" : 659,
+    "minY" : 75,
+    "maxY" : 138,
+    "interactionType" : "Activate",
+    "segments" : [ {
+      "from" : {
+        "x" : 653,
+        "y" : 75
+      },
+      "to" : {
+        "x" : 654,
+        "y" : 138
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 650,
+        "y" : 131
+      },
+      "b" : {
+        "x" : 654,
+        "y" : 138
+      },
+      "c" : {
+        "x" : 658,
+        "y" : 131
+      },
+      "type" : "ARROW",
+      "empty" : true
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 647,
+        "y" : 100
+      },
+      "b" : {
+        "x" : 659,
+        "y" : 112
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 52
+    } ],
+    "outputs" : [ {
+      "id" : 65
+    } ]
+  }, {
+    "id" : 153,
+    "renderableClass" : "EntitySetAndEntitySetLink",
+    "position" : {
+      "x" : 380,
+      "y" : 170
+    },
+    "minX" : 361,
+    "maxX" : 399,
+    "minY" : 142,
+    "maxY" : 199,
+    "segments" : [ {
+      "from" : {
+        "x" : 361,
+        "y" : 142
+      },
+      "to" : {
+        "x" : 399,
+        "y" : 199
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 374,
+        "y" : 164
+      },
+      "b" : {
+        "x" : 386,
+        "y" : 176
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 82
+    } ],
+    "outputs" : [ {
+      "id" : 323
+    } ]
+  } ],
+  "shadows" : [ {
+    "id" : 324,
+    "reactomeId" : 194840,
+    "displayName" : "Rho GTPase cycle",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 374,
+      "y" : 129
+    },
+    "minX" : 32,
+    "maxX" : 716,
+    "minY" : 9,
+    "maxY" : 249,
+    "prop" : {
+      "x" : 32,
+      "y" : 9,
+      "width" : 684,
+      "height" : 240
+    },
+    "points" : [ {
+      "x" : 32,
+      "y" : 9
+    }, {
+      "x" : 716,
+      "y" : 9
+    }, {
+      "x" : 716,
+      "y" : 249
+    }, {
+      "x" : 32,
+      "y" : 249
+    } ],
+    "colour" : "#4684ee"
+  } ],
+  "minX" : 21,
+  "maxX" : 717,
+  "minY" : 19,
+  "maxY" : 269,
+  "disease" : false
+}

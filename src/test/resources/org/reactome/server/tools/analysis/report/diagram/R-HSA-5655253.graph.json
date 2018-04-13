@@ -1,0 +1,2474 @@
+{
+  "dbId" : 5655253,
+  "stId" : "R-HSA-5655253",
+  "nodes" : [ {
+    "dbId" : 1637916,
+    "stId" : "R-HSA-1637916",
+    "displayName" : "FGFR2c P253R [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033375, 2011943 ]
+  }, {
+    "dbId" : 8853123,
+    "stId" : "R-HSA-8853123",
+    "displayName" : "FGFR2(22-768)-BICC1(80-974) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853186, 8853265 ]
+  }, {
+    "dbId" : 8853121,
+    "stId" : "R-HSA-8853121",
+    "displayName" : "p-6Y FGFR2(22-767)-AHCYL1(108-530) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853219 ]
+  }, {
+    "dbId" : 189957,
+    "stId" : "R-HSA-189957",
+    "displayName" : "FGFR2c-binding FGFs [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1252 ],
+    "parents" : [ 2065982, 192609, 190225, 192592, 190418 ],
+    "children" : [ 189903, 189918, 189870, 189881, 189914, 189898, 8851633, 189892, 189862, 189905, 189856, 189907 ]
+  }, {
+    "dbId" : 8853134,
+    "stId" : "R-HSA-8853134",
+    "displayName" : "p-6Y FGFR2(22-767)-CCDC6(102-474) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853224 ]
+  }, {
+    "dbId" : 1637905,
+    "stId" : "R-HSA-1637905",
+    "displayName" : "FGFR2 K660N [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033331, 2033351 ]
+  }, {
+    "dbId" : 8853133,
+    "stId" : "R-HSA-8853133",
+    "displayName" : "p-6Y FGFR2(22-767)-CASP7(1-303) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853221 ]
+  }, {
+    "dbId" : 8853132,
+    "stId" : "R-HSA-8853132",
+    "displayName" : "p-6Y FGFR2(2-822)-CIT(927-2027) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853215 ]
+  }, {
+    "dbId" : 1637908,
+    "stId" : "R-HSA-1637908",
+    "displayName" : "FGFR2 L764fs*4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2071927, 2029955 ]
+  }, {
+    "dbId" : 8853130,
+    "stId" : "R-HSA-8853130",
+    "displayName" : "p-6Y FGFR2(22-767)-AFF3(292-1226) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853216 ]
+  }, {
+    "dbId" : 189967,
+    "stId" : "R-HSA-189967",
+    "displayName" : "FGFR2b-binding FGFs [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1238 ],
+    "parents" : [ 2065925, 192591, 190227, 190411, 192597 ],
+    "children" : [ 189869, 189884, 189886, 189877, 189856 ]
+  }, {
+    "dbId" : 63502,
+    "stId" : "R-HSA-63502",
+    "displayName" : "POLR2A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P24928",
+    "geneNames" : [ "POLR2A", "POLR2" ],
+    "parents" : [ 113401, 209680 ]
+  }, {
+    "dbId" : 1637910,
+    "stId" : "R-HSA-1637910",
+    "displayName" : "FGFR2 N549K [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033329, 2033351 ]
+  }, {
+    "dbId" : 63504,
+    "stId" : "R-HSA-63504",
+    "displayName" : "POLR2B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30876",
+    "geneNames" : [ "POLR2B" ],
+    "parents" : [ 6814540, 6810223, 113427, 6781851, 6797702, 109909, 113401, 113716, 209680 ]
+  }, {
+    "dbId" : 8853141,
+    "stId" : "R-HSA-8853141",
+    "displayName" : "p-6Y FGFR2 (22-767)-CCAR(51-923) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853223 ]
+  }, {
+    "dbId" : 63506,
+    "stId" : "R-HSA-63506",
+    "displayName" : "POLR2C [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19387",
+    "geneNames" : [ "POLR2C", "A-152E5.7" ],
+    "parents" : [ 6814540, 6810223, 113427, 6781851, 6797702, 109909, 113401, 113716, 209680 ]
+  }, {
+    "dbId" : 8853139,
+    "stId" : "R-HSA-8853139",
+    "displayName" : "FGFR2(22-767)-AFF3(292-1226) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853174, 8853265 ]
+  }, {
+    "dbId" : 1637900,
+    "stId" : "R-HSA-1637900",
+    "displayName" : "FGFR2 K660E [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033339, 2033351 ]
+  }, {
+    "dbId" : 2065931,
+    "stId" : "R-HSA-2065931",
+    "displayName" : "Activated FGFR2b mutants with enhanced ligand binding [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1292 ],
+    "parents" : [ 5654747 ],
+    "children" : [ 2065923, 2065925, 190915 ]
+  }, {
+    "dbId" : 63508,
+    "stId" : "R-HSA-63508",
+    "displayName" : "POLR2D [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15514",
+    "geneNames" : [ "POLR2D" ],
+    "parents" : [ 6814540, 6810223, 113427, 6781851, 6797702, 109909, 113401, 113716, 209680 ]
+  }, {
+    "dbId" : 8853137,
+    "stId" : "R-HSA-8853137",
+    "displayName" : "FGFR2(22-767)-CCDC6(102-474) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853182, 8853265 ]
+  }, {
+    "dbId" : 1637902,
+    "stId" : "R-HSA-1637902",
+    "displayName" : "FGFR2 K660M [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033327, 2033351 ]
+  }, {
+    "dbId" : 2065929,
+    "stId" : "R-HSA-2065929",
+    "displayName" : "FGFR2b mutant dimers with enhanced ligand-binding bound to FGFs [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1289 ],
+    "parents" : [ 2077401 ],
+    "children" : [ 2065925, 2065927, 190915 ]
+  }, {
+    "dbId" : 8853136,
+    "stId" : "R-HSA-8853136",
+    "displayName" : "p-6Y FGFR2(22-767)-OFD1(38-1012) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853227 ]
+  }, {
+    "dbId" : 2065927,
+    "stId" : "R-HSA-2065927",
+    "displayName" : "FGFR2b mutant dimers with enhanced ligand-binding [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2065929 ],
+    "children" : [ 2011931, 2011934 ]
+  }, {
+    "dbId" : 1637888,
+    "stId" : "R-HSA-1637888",
+    "displayName" : "FGFR2c A314D [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033375, 2071939 ]
+  }, {
+    "dbId" : 8853150,
+    "stId" : "R-HSA-8853150",
+    "displayName" : "FGFR2(22-767)-OFD1(38-1012) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853185, 8853265 ]
+  }, {
+    "dbId" : 1637889,
+    "stId" : "R-HSA-1637889",
+    "displayName" : "FGFR2c A315T [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033375, 2071934 ]
+  }, {
+    "dbId" : 2065925,
+    "stId" : "R-HSA-2065925",
+    "displayName" : "FGFR2b mutant-binding FGFs [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1286 ],
+    "parents" : [ 2065929, 2077406, 2065931 ],
+    "children" : [ 189967, 189870, 189881, 189898 ]
+  }, {
+    "dbId" : 65565,
+    "stId" : "R-HSA-65565",
+    "displayName" : "GTF2F1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35269",
+    "geneNames" : [ "GTF2F1", "RAP74" ],
+    "parents" : [ 109631 ]
+  }, {
+    "dbId" : 2065923,
+    "stId" : "R-HSA-2065923",
+    "displayName" : "p-8Y-FGFR2b dimers with enhanced ligand binding [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2065931 ],
+    "children" : [ 2011957, 2011962 ]
+  }, {
+    "dbId" : 8853146,
+    "stId" : "R-HSA-8853146",
+    "displayName" : "p-6Y FGFR2(22-768)-BICC1(80-974) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853228 ]
+  }, {
+    "dbId" : 63517,
+    "stId" : "R-HSA-63517",
+    "displayName" : "POLR2G [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62487",
+    "geneNames" : [ "POLR2G", "RPB7" ],
+    "parents" : [ 6814540, 6810223, 113427, 6781851, 6797702, 109909, 113401, 113716, 209680 ]
+  }, {
+    "dbId" : 65567,
+    "stId" : "R-HSA-65567",
+    "displayName" : "GTF2F2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13984",
+    "geneNames" : [ "GTF2F2", "RAP30" ],
+    "parents" : [ 109631 ]
+  }, {
+    "dbId" : 2065983,
+    "stId" : "R-HSA-2065983",
+    "displayName" : "FGFR2c mutant dimers with enhanced ligand-binding [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 2065986 ],
+    "children" : [ 2011938, 2011943, 2071933, 2071937, 2071939, 2071934 ]
+  }, {
+    "dbId" : 8853159,
+    "stId" : "R-HSA-8853159",
+    "displayName" : "FGFR2(22-767)-CCAR(51-923) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853181, 8853265 ]
+  }, {
+    "dbId" : 8853158,
+    "stId" : "R-HSA-8853158",
+    "displayName" : "FGFR2(22-767)-AHCYL1(108-530) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853176, 8853265 ]
+  }, {
+    "dbId" : 2065982,
+    "stId" : "R-HSA-2065982",
+    "displayName" : "FGFR2c mutant binding FGFs [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1306 ],
+    "parents" : [ 2065986, 2065989 ],
+    "children" : [ 189869, 189884, 189957 ]
+  }, {
+    "dbId" : 74787,
+    "stId" : "R-HSA-74787",
+    "displayName" : "PIK3CA [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1481 ],
+    "identifier" : "P42336",
+    "geneNames" : [ "PIK3CA" ],
+    "parents" : [ 74689, 2399558, 5637693, 1226013, 5655267, 5655337, 5655294, 8853237, 5655217, 1839055, 1839051, 3080565, 5654331, 1806270, 1806218, 1806182, 1306961, 5654197, 5654195, 5654192, 198379, 5654205, 179791, 1250373, 5654190, 5654188, 5654187, 1250508 ]
+  }, {
+    "dbId" : 63523,
+    "stId" : "R-HSA-63523",
+    "displayName" : "POLR2H [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52434",
+    "geneNames" : [ "POLR2H" ],
+    "parents" : [ 83716, 73859, 6814540, 6810223, 113427, 6781851, 6797702, 109909, 113401, 113716, 209680 ]
+  }, {
+    "dbId" : 6803524,
+    "stId" : "R-HSA-6803524",
+    "displayName" : "capped, methylated pre-FGFR2 mRNA:CBC complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1855 ],
+    "parents" : [ 6803525, 6803522 ],
+    "children" : [ 71307, 6803521, 77088 ]
+  }, {
+    "dbId" : 74789,
+    "stId" : "R-HSA-74789",
+    "displayName" : "PIK3R1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1473 ],
+    "identifier" : "P27986",
+    "geneNames" : [ "PIK3R1", "GRB1" ],
+    "parents" : [ 6790032, 443399, 1839052, 1839048, 1295511, 391342, 179864, 1806213, 1806184, 1806218, 74688 ]
+  }, {
+    "dbId" : 8853154,
+    "stId" : "R-HSA-8853154",
+    "displayName" : "FGFR2(2-822)-CIT(927-2027) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853172, 8853265 ]
+  }, {
+    "dbId" : 63525,
+    "stId" : "R-HSA-63525",
+    "displayName" : "POLR2I [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36954",
+    "geneNames" : [ "POLR2I" ],
+    "parents" : [ 6814540, 6810223, 113427, 6781851, 6797702, 109909, 113401, 113716, 209680 ]
+  }, {
+    "dbId" : 6803521,
+    "stId" : "R-HSA-6803521",
+    "displayName" : "capped, methylated FGFR2 nascent transcript [nucleoplasm]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "parents" : [ 6803524 ]
+  }, {
+    "dbId" : 8853153,
+    "stId" : "R-HSA-8853153",
+    "displayName" : "FGFR2(22-767)-CASP7(1-303) fusion [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853179, 8853265 ]
+  }, {
+    "dbId" : 63531,
+    "stId" : "R-HSA-63531",
+    "displayName" : "POLR2J [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52435",
+    "geneNames" : [ "POLR2J", "POLR2J1" ],
+    "parents" : [ 6814540, 6810223, 113427, 6781851, 6797702, 109909, 113401, 113716, 209680 ]
+  }, {
+    "dbId" : 8853174,
+    "stId" : "R-HSA-8853174",
+    "displayName" : "FGFR2(22-767)-AFF3(292-1226) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853264 ],
+    "children" : [ 8853139 ]
+  }, {
+    "dbId" : 63537,
+    "stId" : "R-HSA-63537",
+    "displayName" : "POLR2K [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P53803",
+    "geneNames" : [ "POLR2K" ],
+    "parents" : [ 83716, 73859, 6814540, 6810223, 113427, 6781851, 6797702, 109909, 113401, 113716, 209680 ]
+  }, {
+    "dbId" : 1637929,
+    "stId" : "R-HSA-1637929",
+    "displayName" : "FGFR2 W290C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029919, 2029955 ]
+  }, {
+    "dbId" : 8853172,
+    "stId" : "R-HSA-8853172",
+    "displayName" : "FGFR2(2-822)-CIT(927-2027) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853264 ],
+    "children" : [ 8853154 ]
+  }, {
+    "dbId" : 1637931,
+    "stId" : "R-HSA-1637931",
+    "displayName" : "FGFR2b Y376C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-3",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029924, 2029955 ]
+  }, {
+    "dbId" : 8851633,
+    "stId" : "R-HSA-8851633",
+    "displayName" : "GalNAc-T178-FGF23(25-251) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9GZV9",
+    "geneNames" : [ "FGF23", "HYPF", "UNQ3027/PRO9828" ],
+    "parents" : [ 5654351, 189959, 189953, 189957, 189955 ]
+  }, {
+    "dbId" : 1637920,
+    "stId" : "R-HSA-1637920",
+    "displayName" : "FGFR2 S267P [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033335, 2029955 ]
+  }, {
+    "dbId" : 8853182,
+    "stId" : "R-HSA-8853182",
+    "displayName" : "FGFR2(22-767)-CCDC6(102-474) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853264 ],
+    "children" : [ 8853137 ]
+  }, {
+    "dbId" : 8853181,
+    "stId" : "R-HSA-8853181",
+    "displayName" : "FGFR2(22-767)-CCAR(51-923) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853264 ],
+    "children" : [ 8853159 ]
+  }, {
+    "dbId" : 1637924,
+    "stId" : "R-HSA-1637924",
+    "displayName" : "FGFR2b S373C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-3",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029923, 2029955 ]
+  }, {
+    "dbId" : 8853179,
+    "stId" : "R-HSA-8853179",
+    "displayName" : "FGFR2(22-767)-CASP7(1-303) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853264 ],
+    "children" : [ 8853153 ]
+  }, {
+    "dbId" : 109631,
+    "stId" : "R-HSA-109631",
+    "displayName" : "TFIIF [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 6814541, 6810225, 167460, 113722, 167482, 113427, 6797705, 113425, 71307, 113404 ],
+    "children" : [ 65567, 65565 ]
+  }, {
+    "dbId" : 8853176,
+    "stId" : "R-HSA-8853176",
+    "displayName" : "FGFR2(22-767)-AHCYL1(108-530) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853264 ],
+    "children" : [ 8853158 ]
+  }, {
+    "dbId" : 8853189,
+    "stId" : "R-HSA-8853189",
+    "displayName" : "FGFR2IIIa TM:FGF1,2:FGFR2b, FGFR2c [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2727 ],
+    "children" : [ 8851704, 8851713, 190915, 8851703 ]
+  }, {
+    "dbId" : 8853186,
+    "stId" : "R-HSA-8853186",
+    "displayName" : "FGFR2(22-768)-BICC1(80-974) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853264 ],
+    "children" : [ 8853123 ]
+  }, {
+    "dbId" : 8853185,
+    "stId" : "R-HSA-8853185",
+    "displayName" : "FGFR2(22-767)-OFD1(38-1012) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853264 ],
+    "children" : [ 8853150 ]
+  }, {
+    "dbId" : 179795,
+    "stId" : "R-HSA-179795",
+    "displayName" : "GAB1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13480",
+    "geneNames" : [ "GAB1" ],
+    "parents" : [ 8855092, 190399, 8851921, 8851913, 179849 ]
+  }, {
+    "dbId" : 192596,
+    "stId" : "R-HSA-192596",
+    "displayName" : "FGFR2c [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1254 ],
+    "parents" : [ 8851704 ],
+    "children" : [ 189885, 189920 ]
+  }, {
+    "dbId" : 8853215,
+    "stId" : "R-HSA-8853215",
+    "displayName" : "p-6Y FGFR2(2-822)-CIT(927-2027) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853275 ],
+    "children" : [ 8853132 ]
+  }, {
+    "dbId" : 2065989,
+    "stId" : "R-HSA-2065989",
+    "displayName" : "Activated FGFR2c mutants with enhanced ligand-binding [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1314 ],
+    "parents" : [ 5654747 ],
+    "children" : [ 2065987, 190915, 2065982 ]
+  }, {
+    "dbId" : 192601,
+    "stId" : "R-HSA-192601",
+    "displayName" : "FGFR2b short [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-18",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 192604, 192612 ]
+  }, {
+    "dbId" : 2065987,
+    "stId" : "R-HSA-2065987",
+    "displayName" : "p-8Y-FGFR2c mutant dimers with enhanced ligand-binding [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 2065989 ],
+    "children" : [ 2011964, 2011967, 2071951, 2071952, 2071955, 2071948 ]
+  }, {
+    "dbId" : 2065986,
+    "stId" : "R-HSA-2065986",
+    "displayName" : "FGFR2c mutant dimers with enhanced ligand-binding bound to FGFs [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1310 ],
+    "parents" : [ 2077401 ],
+    "children" : [ 190915, 2065982, 2065983 ]
+  }, {
+    "dbId" : 192604,
+    "stId" : "R-HSA-192604",
+    "displayName" : "FGFR2b [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1236 ],
+    "parents" : [ 8851704 ],
+    "children" : [ 189871, 192601 ]
+  }, {
+    "dbId" : 8853223,
+    "stId" : "R-HSA-8853223",
+    "displayName" : "p-6Y FGFR2(22-767)-CCAR(51-923) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853275 ],
+    "children" : [ 8853141 ]
+  }, {
+    "dbId" : 8853221,
+    "stId" : "R-HSA-8853221",
+    "displayName" : "p-6Y FGFR2(22-767)-CASP7(1-303) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853275 ],
+    "children" : [ 8853133 ]
+  }, {
+    "dbId" : 8853219,
+    "stId" : "R-HSA-8853219",
+    "displayName" : "p-6Y FGFR2(22-767)-AHCYL1(108-530) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853275 ],
+    "children" : [ 8853121 ]
+  }, {
+    "dbId" : 8853216,
+    "stId" : "R-HSA-8853216",
+    "displayName" : "p-6Y FGFR2(22-767)-AFF3(292-1226) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853275 ],
+    "children" : [ 8853130 ]
+  }, {
+    "dbId" : 8853228,
+    "stId" : "R-HSA-8853228",
+    "displayName" : "p-6Y FGFR2(22-768)-BICC1(80-974) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853275 ],
+    "children" : [ 8853146 ]
+  }, {
+    "dbId" : 8853227,
+    "stId" : "R-HSA-8853227",
+    "displayName" : "p-6Y FGFR2(22-767)-OFD1(38-1012) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853275 ],
+    "children" : [ 8853136 ]
+  }, {
+    "dbId" : 8853224,
+    "stId" : "R-HSA-8853224",
+    "displayName" : "p-6Y FGFR2(22-767)-CCDC6(102-474) fusion dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8853275 ],
+    "children" : [ 8853134 ]
+  }, {
+    "dbId" : 8851703,
+    "stId" : "R-HSA-8851703",
+    "displayName" : "FGFR2 IIIa TM [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2692 ],
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 8853189 ]
+  }, {
+    "dbId" : 1489509,
+    "stId" : "R-HSA-1489509",
+    "displayName" : "DAG and IP3 signaling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1446 ]
+  }, {
+    "dbId" : 2038886,
+    "stId" : "R-ALL-2038886",
+    "displayName" : "AZD4547 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "63453",
+    "parents" : [ 2029965, 2077403, 2077416, 2023441 ]
+  }, {
+    "dbId" : 179838,
+    "stId" : "R-ALL-179838",
+    "displayName" : "PI(3,4,5)P3 [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1489, 1430 ],
+    "identifier" : "16618",
+    "parents" : [ 8874460, 5620974, 202277, 110452, 437275, 5655279, 5655346, 5655305, 1839061, 9490334, 9559949, 9678843, 9768832, 9332827, 9411246, 9616306, 9258253, 2424457, 9184682, 9768842, 9184689, 9332834, 9616313, 9411253, 9258260, 9490341, 9678850, 2424459, 9332833, 9258259, 9768841, 9184688, 9411252, 9616312, 9490340, 9678849, 2424467, 9559959, 9559958, 9490319, 9411233, 9678830, 9258240, 9616292, 9768820, 9184669, 9332814, 2424469, 9616300, 9184678, 9768828, 9332823, 9490328, 9411242, 9678839, 9258249, 2424461, 9559935, 9559943, 9818506, 9375105, 9453434, 9145869, 9592887, 9721504, 9226200, 9648930, 9530305, 180282, 9296819, 9379440, 9077781, 9822377, 9457883, 9100401, 9652553, 9595960, 9300887, 9229973, 9150588, 9534240, 202676, 9061961, 2685693, 9491436, 9412307, 9259284, 9334006, 9769953, 9617030, 9560789, 9679746, 2685683, 9185723, 9560798, 9679753, 9491450, 9412327, 9769971, 9185738, 9334015, 9617042, 9259293, 2685675, 9491516, 9412404, 9334181, 9185815, 9770029, 9560870, 9679797, 9259355, 9617089, 2685650, 9724877, 9299290, 9377690, 9099231, 9532709, 9594785, 9077242, 9820730, 9455834, 9034410, 9228397, 9651251, 198360, 9078549, 9539436, 9237531, 9466404, 9103073, 9735710, 9308580, 9657978, 9827101, 9600506, 9387943, 9035722, 198338, 9148518, 9159950, 9095140, 9814344, 9075303, 9290900, 9032208, 9369081, 9713713, 9525524, 9643239, 9447507, 9220766, 109696, 9139390, 9713739, 9369089, 9290914, 9447516, 9643243, 9814354, 9095148, 9220776, 9139407, 9075326, 9525538, 162387, 9032212, 9491486, 9679775, 9617064, 9560843, 9334068, 9769996, 9259332, 9412363, 2685707, 9185782, 2685701, 9769992, 9491481, 9412358, 9679771, 9851713, 9617060, 9560839, 9259327, 9334063, 2685687, 9185777, 9539290, 9466202, 9308359, 9237364, 9657814, 9600342, 9159771, 389334, 9387742, 9237361, 9308356, 9387737, 9539284, 9466197, 9657809, 9600336, 389332, 9159766, 434628, 9776602, 9660829, 9240421, 9831217, 9391242, 9564661, 9469683, 9311917, 9105257, 9620194, 5340329, 9163421, 9776603, 9496346, 9417381, 9119345, 9683963, 9564662, 9857060, 9339164, 9620195, 9190940, 5218789, 9263647, 9763963, 9255488, 9114646, 9847146, 9039509, 9676026, 9329638, 9408474, 9614448, 9557505, 9487152, 2029147, 9181513, 9676108, 9255536, 9039381, 9114080, 9181605, 9847262, 9764114, 9487221, 9614496, 9408526, 9557553, 9329710, 2029148, 9847289, 9408532, 9255542, 9764126, 9329716, 9557559, 9676118, 9039388, 9614502, 9114095, 9487233, 9181613, 2130182, 9487068, 9675945, 9408409, 9614391, 9255423, 9763844, 2029133, 9181437, 9567487, 9687135, 9420963, 9194832, 9499979, 9780994, 9342616, 9622870, 9266697, 9860613, 5654166, 9121336, 9622860, 9860603, 9780984, 9194822, 9687125, 9420953, 9567477, 9266687, 9499969, 9342606, 5654162, 9121324, 9487052, 9675929, 9408393, 9614375, 9255407, 9181421, 9763828, 2029156, 9780990, 9567483, 9342612, 9687131, 9266693, 9860609, 9499975, 9622866, 9420959, 9194828, 5654155, 9121332, 9266707, 9342626, 9687145, 9860623, 9781004, 9567497, 9194842, 9499989, 9622880, 9420973, 5654226, 9121346, 9185762, 9679759, 9617048, 9769980, 9259317, 9334040, 9491474, 9560832, 9412351, 2685706, 9320593, 9110964, 9248832, 9173014, 9669295, 9479754, 9840064, 9401273, 1433526, 9456015, 9099285, 9299475, 9077270, 9651368, 9820815, 9594952, 9532841, 9377848, 9228540, 9725087, 9034442, 2317329, 9148695, 9477070, 9749454, 9318397, 9667809, 9246751, 9170666, 1168366, 9318401, 9246755, 9749458, 9667813, 9477078, 9170670, 1168364, 9667820, 9170677, 9477085, 9246762, 9749474, 9318408, 1168365, 9398675, 9398664, 9398668, 9220771, 109697, 9032202, 9447511, 9139395, 9525529, 9713724, 9888637, 9941147, 9369086, 9051131, 9643234, 9095129, 9290905, 9588964, 9060157, 9075314, 9814349, 9228380, 2317310, 9532690, 9594769, 9077198, 9377674, 9299271, 9455812, 9099196, 9651236, 9724846, 9148464, 9034391, 9820714, 377179 ]
+  }, {
+    "dbId" : 5673001,
+    "stId" : "R-HSA-5673001",
+    "displayName" : "RAF/MAP kinase cascade",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1800 ]
+  }, {
+    "dbId" : 8851704,
+    "stId" : "R-HSA-8851704",
+    "displayName" : "FGFR2b, FGFR2c [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2718 ],
+    "parents" : [ 8853170, 8853189 ],
+    "children" : [ 192604, 192596 ]
+  }, {
+    "dbId" : 2033310,
+    "stId" : "R-HSA-2033310",
+    "displayName" : "Activated FGFR2 K660M mutant [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2033348 ],
+    "children" : [ 2033300 ]
+  }, {
+    "dbId" : 2033308,
+    "stId" : "R-HSA-2033308",
+    "displayName" : "Activated FGFR2 K660E mutant [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2033348 ],
+    "children" : [ 2033298 ]
+  }, {
+    "dbId" : 2033306,
+    "stId" : "R-HSA-2033306",
+    "displayName" : "p-8Y-FGFR2 N549K [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033316 ]
+  }, {
+    "dbId" : 2033304,
+    "stId" : "R-HSA-2033304",
+    "displayName" : "p-8Y-FGFR2 N549H [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033315 ]
+  }, {
+    "dbId" : 2033301,
+    "stId" : "R-HSA-2033301",
+    "displayName" : "p-8Y-FGFR2 K660N [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033312 ]
+  }, {
+    "dbId" : 71307,
+    "stId" : "R-HSA-71307",
+    "displayName" : "RNA Polymerase II (unphosphorylated):TFIIF complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 167102, 75890, 167471, 167120, 71954, 6803524, 157171, 111261, 75902, 75882, 75881, 75878, 109878, 83601, 83591, 109876, 109632, 167472, 75859, 167101, 167119, 167106, 167137, 167093, 167124, 167100, 167132 ],
+    "children" : [ 113401, 109631 ]
+  }, {
+    "dbId" : 179849,
+    "stId" : "R-HSA-179849",
+    "displayName" : "GRB2:GAB1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1472 ],
+    "parents" : [ 180282, 180348, 179864, 1306958 ],
+    "children" : [ 74686, 179795 ]
+  }, {
+    "dbId" : 2033300,
+    "stId" : "R-HSA-2033300",
+    "displayName" : "p-8Y-FGFR2 K660M [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033310 ]
+  }, {
+    "dbId" : 5654747,
+    "stId" : "R-HSA-5654747",
+    "displayName" : "Activated FGFR2 mutants [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 167663 ],
+    "parents" : [ 5654745, 5655346, 5655236, 5655257 ],
+    "children" : [ 8853275, 2033348, 2065989, 2029940, 2065931, 2029948 ]
+  }, {
+    "dbId" : 2033298,
+    "stId" : "R-HSA-2033298",
+    "displayName" : "p-8Y-FGFR2 K660E [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033308 ]
+  }, {
+    "dbId" : 5654745,
+    "stId" : "R-HSA-5654745",
+    "displayName" : "Activated FGFR2 mutants:p-4Y-PLCG1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 167661 ],
+    "children" : [ 5654747, 167679 ]
+  }, {
+    "dbId" : 5655257,
+    "stId" : "R-HSA-5655257",
+    "displayName" : "Activated FGFR2 mutants:FRS2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 167655 ],
+    "children" : [ 5654747, 170963 ]
+  }, {
+    "dbId" : 2033296,
+    "stId" : "R-HSA-2033296",
+    "displayName" : "FGFR2 N549H [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033341, 2033351 ]
+  }, {
+    "dbId" : 5655236,
+    "stId" : "R-HSA-5655236",
+    "displayName" : "Activated FGFR2 mutants:p-FRS2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 167648, 167656 ],
+    "parents" : [ 5655330, 5655345 ],
+    "children" : [ 5654747, 170959 ]
+  }, {
+    "dbId" : 179856,
+    "stId" : "R-ALL-179856",
+    "displayName" : "PI(4,5)P2 [plasma membrane]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1486 ],
+    "identifier" : "18348",
+    "parents" : [ 8874460, 5620974, 9874377, 9356151, 9209173, 9700092, 9798354, 9434840, 9514117, 9578929, 9278991, 9632579, 8868632, 9129592, 9433649, 9999744, 9927392, 9631909, 9577861, 9278041, 9129178, 9512798, 9797343, 9873790, 9699188, 9355181, 8871153, 9208038, 9873805, 9699204, 9797379, 9208057, 9999754, 9927399, 9631932, 9433668, 9355205, 9577880, 9278060, 9129194, 9512817, 8856806, 434630, 9660828, 9105255, 9831215, 9240420, 9163420, 9391241, 9469682, 9311916, 434632, 2731131, 9116673, 9770220, 9617211, 9491673, 9259498, 9185978, 9851971, 9561012, 9412557, 9334364, 2731080, 2243943, 2219527, 622379, 9737480, 9658987, 9389175, 9828338, 9309835, 9467571, 9161192, 418834, 9731563, 9232912, 9382660, 9154029, 9461157, 9304350, 9655361, 9536963, 9598355, 9825557, 374570, 9101944, 9304354, 9825561, 9655368, 9154033, 9461161, 9232916, 9382664, 9536967, 9598359, 9101951, 9731574, 374558, 9682398, 9261860, 9188757, 9854686, 9337110, 9773762, 9563030, 9415305, 9494389, 9618854, 3928536, 443665, 9461199, 9825582, 9655403, 9382713, 9731617, 9232936, 9154072, 9304381, 9101978, 443660, 9632444, 9874220, 9434680, 9798147, 9355960, 9278827, 9578743, 9208991, 9699894, 9513939, 9129499, 8867034, 9632445, 9208992, 9874221, 9578744, 9355961, 9129500, 9434681, 9513940, 9699895, 9798148, 9278828, 8867035, 2029162, 9677912, 9850300, 9410245, 9039651, 9615786, 9081903, 9767446, 9489202, 9559104, 9064874, 442584, 9183516, 9181539, 9408499, 9487176, 9329670, 9255509, 9847169, 9614469, 9557526, 9676053, 9764006, 9081912, 2197680, 9331808, 9850301, 9677913, 9257335, 9615787, 9410246, 9081906, 9489203, 9767447, 9183517, 9559105, 2197683, 9889931, 9715489, 9292217, 9370269, 9221983, 9095768, 9140900, 9060517, 9032775, 9644446, 9942910, 9448918, 9589942, 9526645, 9815284, 8983508, 9460638, 9101633, 9655001, 9536587, 9382133, 9303815, 9232421, 9153421, 9730912, 9598070, 9825078, 354110, 9267824, 9343826, 9623784, 9196070, 9861870, 9782621, 9501176, 9688212, 9422093, 9568450, 354132, 9411937, 9616799, 9769566, 9679429, 9491062, 9185354, 9560484, 9258953, 9333567, 2559415, 5365824, 9081937, 9767713, 9975051, 9678082, 9183708, 9489407, 9115556, 9064901, 9039687, 9850463, 9332041, 9559220, 9410474, 9053231, 9907956, 9615889, 9257548, 2219520, 9379377, 9229906, 9457834, 9822348, 9061948, 9652487, 9726886, 9034747, 9534176, 9595901, 9893400, 9948635, 9100387, 9300808, 9051855, 9077768, 202269, 9150485 ]
+  }, {
+    "dbId" : 2038925,
+    "stId" : "R-ALL-2038925",
+    "displayName" : "BGJ398 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "63451",
+    "parents" : [ 2029965, 2077403, 2077416, 2023441 ]
+  }, {
+    "dbId" : 1257604,
+    "stId" : "R-HSA-1257604",
+    "displayName" : "PIP3 activates AKT signaling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1507 ]
+  }, {
+    "dbId" : 2038919,
+    "stId" : "R-ALL-2038919",
+    "displayName" : "PD173074 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "63448",
+    "parents" : [ 2046360, 2029965, 2077403, 2077416, 2023441, 2045079 ]
+  }, {
+    "dbId" : 179864,
+    "stId" : "R-HSA-179864",
+    "displayName" : "GRB2:GAB1:PIK3R1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1474 ],
+    "parents" : [ 5637694, 1226015, 5655344, 5655330, 5655271, 8853238, 5655218, 5654333, 5654191, 5654185, 5654189, 179867, 5654186, 5654194, 5654203, 5654199 ],
+    "children" : [ 179849, 74789 ]
+  }, {
+    "dbId" : 2033341,
+    "stId" : "R-HSA-2033341",
+    "displayName" : "FGFR2 N549H mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2033349 ],
+    "children" : [ 2033296 ]
+  }, {
+    "dbId" : 2033339,
+    "stId" : "R-HSA-2033339",
+    "displayName" : "FGFR2 K660E mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2033349 ],
+    "children" : [ 1637900 ]
+  }, {
+    "dbId" : 2033335,
+    "stId" : "R-HSA-2033335",
+    "displayName" : "FGFR2 S267P mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029952 ],
+    "children" : [ 1637920 ]
+  }, {
+    "dbId" : 2033331,
+    "stId" : "R-HSA-2033331",
+    "displayName" : "FGFR2 K660N mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2033349 ],
+    "children" : [ 1637905 ]
+  }, {
+    "dbId" : 2033329,
+    "stId" : "R-HSA-2033329",
+    "displayName" : "FGFR2 N549K mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2033349 ],
+    "children" : [ 1637910 ]
+  }, {
+    "dbId" : 2033327,
+    "stId" : "R-HSA-2033327",
+    "displayName" : "FGFR2 K660M mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2033349 ],
+    "children" : [ 1637902 ]
+  }, {
+    "dbId" : 2033319,
+    "stId" : "R-HSA-2033319",
+    "displayName" : "Activated FGFR2 S267C mutant [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029948 ],
+    "children" : [ 2029879 ]
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1728, 1569, 1250, 1283, 1733, 1419, 1262, 1391, 1679, 2735, 1488, 1745, 1395, 1459, 1593, 1436, 1758 ],
+    "identifier" : "16761",
+    "parents" : [ 6788782, 170037, 500087, 9697693, 9511149, 9432021, 9206358, 9353591, 9795136, 9630850, 9576626, 6814647, 9276454, 9308768, 9600654, 9658148, 9160110, 9466548, 9388155, 9539602, 9736133, 9237677, 390582, 9741227, 9240850, 9831931, 9542652, 9470172, 9661300, 9312377, 9603268, 9391818, 445800, 9163954, 391405, 6790050, 9736232, 9160241, 9056082, 9952449, 9658213, 9895747, 9103166, 9827450, 9078597, 9388323, 9466651, 9035776, 9539705, 9600757, 9308939, 9070319, 390455, 9237786, 445015, 445018, 9977479, 9562443, 9414582, 9117822, 9082713, 9681762, 9772765, 9909744, 9188009, 9493620, 9065454, 9853847, 9040520, 3371441, 9053615, 9681804, 9772846, 9977954, 9910080, 9040575, 9414618, 9117855, 9053626, 9265602, 9341440, 9493660, 9065507, 9853904, 9188045, 9082763, 5618090, 6792616, 9684367, 9041363, 9417878, 9911631, 9496840, 9083614, 9054014, 9857497, 9777150, 9066083, 9979792, 9191465, 9119694, 5252087, 9041366, 9857498, 9496844, 9119696, 9083616, 9777154, 9417882, 9191469, 9684371, 5252111, 9496843, 9417881, 9083615, 9777153, 9119695, 9684370, 9191468, 5252110, 9191474, 9119701, 9777159, 9041371, 9417887, 9083621, 9979797, 9857503, 9054019, 9684375, 9911636, 9066088, 9496849, 5252012, 9496846, 9119698, 9417884, 9777156, 9041368, 9066085, 9979794, 9857500, 9054016, 9083618, 9911633, 9684373, 9191471, 5251980, 9496847, 9191472, 9119699, 9417885, 9777157, 9041369, 9066086, 9979795, 9857501, 9054017, 9083619, 9911634, 9684374, 5252038, 9054022, 9041374, 9119704, 9083624, 9066091, 9979800, 9911639, 5252097, 5252129, 9119700, 9083620, 9191473, 9066087, 9979796, 9857502, 9054018, 9911635, 9777158, 9041370, 9417886, 9496848, 5252096, 9041367, 9496845, 9119697, 9777155, 9054015, 9417883, 9066084, 9857499, 9083617, 9979793, 9911632, 9684372, 9191470, 5255423, 9041364, 9777151, 9496841, 9417879, 9191466, 9684368, 5251966, 9562478, 9191475, 9777161, 9119703, 9857505, 9041373, 9979799, 9417888, 9054021, 9083623, 9496850, 9911638, 9066090, 5251932, 9041365, 9496842, 9417880, 9191467, 9777152, 9684369, 5252090, 9979798, 9054020, 9777160, 9119702, 9083622, 9684376, 9857504, 9041372, 9066089, 9911637, 5251953, 9831368, 9660936, 9391412, 9036464, 9312027, 9105375, 9240526, 9740533, 9469808, 1063687, 9163554, 9764250, 9614553, 9676171, 9408585, 9487301, 9181673, 9255598, 2029139, 9181649, 9081751, 9907168, 9764195, 9974123, 9614529, 9408572, 9847332, 9329756, 9255581, 9676153, 9064771, 9557586, 9114122, 9487280, 202994, 9039435, 9325521, 9554399, 9757673, 9843562, 9081664, 9252484, 9039312, 9672820, 9177035, 9483654, 9612368, 9405341, 1861625 ]
+  }, {
+    "dbId" : 2033316,
+    "stId" : "R-HSA-2033316",
+    "displayName" : "Activated FGFR2 N549K mutant [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2033348 ],
+    "children" : [ 2033306 ]
+  }, {
+    "dbId" : 2033315,
+    "stId" : "R-HSA-2033315",
+    "displayName" : "Activated FGFR2 N549H mutant [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2033348 ],
+    "children" : [ 2033304 ]
+  }, {
+    "dbId" : 2033312,
+    "stId" : "R-HSA-2033312",
+    "displayName" : "Activated FGFR2 K660N mutant [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2033348 ],
+    "children" : [ 2033301 ]
+  }, {
+    "dbId" : 2033375,
+    "stId" : "R-HSA-2033375",
+    "displayName" : "FGFR2c mutants with enhanced ligand binding [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1305 ],
+    "children" : [ 2071931, 1637916, 2011852, 1637889, 1637888, 2071928 ]
+  }, {
+    "dbId" : 2077406,
+    "stId" : "R-HSA-2077406",
+    "displayName" : "FGFR2b mutant-binding FGFs:FP-1039 [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1296 ],
+    "children" : [ 2077408, 2065925 ]
+  }, {
+    "dbId" : 2077404,
+    "stId" : "R-HSA-2077404",
+    "displayName" : "FGFR2 point mutant dimers:TKIs [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1329 ],
+    "children" : [ 2077401, 2077403 ]
+  }, {
+    "dbId" : 2077403,
+    "stId" : "R-ALL-2077403",
+    "displayName" : "Tyrosine kinase inhibitors of FGFR2 mutants [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 1323 ],
+    "parents" : [ 2077404 ],
+    "children" : [ 2023393, 2054052, 2038886, 2038919, 2023389, 2038925 ]
+  }, {
+    "dbId" : 2033371,
+    "stId" : "R-HSA-2033371",
+    "displayName" : "FGFR2b mutants with enhanced ligand binding [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1285 ],
+    "children" : [ 2011846, 2011851 ]
+  }, {
+    "dbId" : 2077401,
+    "stId" : "R-HSA-2077401",
+    "displayName" : "FGFR2 point mutant dimers [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1324 ],
+    "parents" : [ 2077404 ],
+    "children" : [ 2029952, 2065986, 2033349, 2065929 ]
+  }, {
+    "dbId" : 2011852,
+    "stId" : "R-HSA-2011852",
+    "displayName" : "FGFR2c S252W [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033375, 2011938 ]
+  }, {
+    "dbId" : 2011851,
+    "stId" : "R-HSA-2011851",
+    "displayName" : "FGFR2b P253R [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-3",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2011934, 2033371 ]
+  }, {
+    "dbId" : 109783,
+    "stId" : "R-HSA-109783",
+    "displayName" : "p21 RAS:GTP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1427 ],
+    "parents" : [ 5218802, 5624478, 5624477, 5624470, 171020, 5672715, 5672712, 5672729, 8981350, 5675414, 5675430, 5674003, 5675412, 5674005, 5658227 ],
+    "children" : [ 109782, 29438 ]
+  }, {
+    "dbId" : 109782,
+    "stId" : "R-HSA-109782",
+    "displayName" : "RAS [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 167204, 109783, 109796 ],
+    "children" : [ 62719, 62717, 62725 ]
+  }, {
+    "dbId" : 2011846,
+    "stId" : "R-HSA-2011846",
+    "displayName" : "FGFR2b S252W [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-3",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2011931, 2033371 ]
+  }, {
+    "dbId" : 2033351,
+    "stId" : "R-HSA-2033351",
+    "displayName" : "FGFR2 mutants with enhanced kinase activity [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1316 ],
+    "children" : [ 2033296, 1637910, 1637905, 1637902, 1637900 ]
+  }, {
+    "dbId" : 2033349,
+    "stId" : "R-HSA-2033349",
+    "displayName" : "FGFR2 mutant dimers with enhanced kinase activity [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1317 ],
+    "parents" : [ 2077401 ],
+    "children" : [ 2033329, 2033331, 2033341, 2033339, 2033327 ]
+  }, {
+    "dbId" : 2033348,
+    "stId" : "R-HSA-2033348",
+    "displayName" : "Activated FGFR2 mutants with enhanced kinase activity [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1320 ],
+    "parents" : [ 5654747 ],
+    "children" : [ 2033312, 2033315, 2033316, 2033308, 2033310 ]
+  }, {
+    "dbId" : 109797,
+    "stId" : "R-HSA-109797",
+    "displayName" : "GRB2-1:SOS1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1421 ],
+    "parents" : [ 5637697, 5637704, 1225856, 1225859, 5655342, 5655345, 5655307, 8853233, 5655328, 5686070, 205202, 2685672, 186827, 921157, 5654296, 1306947, 5654343, 5654275, 8851807, 5654287, 1250505, 1250382, 5654327, 5685367, 109798, 109800, 180331, 5654264, 179820, 2179409, 8854903, 5654308, 8854399, 5654316, 1250479, 8851897 ],
+    "children" : [ 74686, 64847 ]
+  }, {
+    "dbId" : 109796,
+    "stId" : "R-HSA-109796",
+    "displayName" : "p21 RAS:GDP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1424 ],
+    "children" : [ 109782, 29420 ]
+  }, {
+    "dbId" : 29420,
+    "stId" : "R-ALL-29420",
+    "displayName" : "GDP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1426 ],
+    "identifier" : "17552",
+    "parents" : [ 500077, 482627, 170037, 110416, 165123, 351066, 350999, 9799242, 9514751, 9435538, 9633051, 9875313, 9356857, 9279579, 9209834, 9700663, 9579475, 8871137, 9129987, 9279042, 9578956, 9514172, 9209233, 9700124, 9434887, 9874464, 9798422, 9356205, 9632608, 8868609, 9129655, 2316331, 9630989, 9276658, 9511359, 9353796, 9087903, 9046398, 9697857, 9576800, 9432239, 199988, 9631307, 9277178, 9354234, 9046459, 9926823, 9432735, 9128709, 9577086, 9511899, 9207078, 9872799, 9698299, 9056162, 9999004, 9796020, 9087978, 8850024, 9872217, 9795289, 9576712, 9511259, 9432133, 9128449, 9630923, 9087869, 9046365, 9206479, 9353708, 8847530, 9630877, 9795195, 9353616, 9872171, 9697727, 9206389, 9432042, 9511170, 9576656, 9276477, 6814641, 9794728, 9276081, 9070262, 9205943, 9576296, 9087768, 9926140, 9871804, 9353159, 9510742, 9630516, 9697366, 9056047, 9431628, 9997626, 9128169, 6811310, 9046158, 9070275, 9871822, 9431639, 9697380, 9510758, 9353176, 9576305, 9276092, 9128186, 9046171, 9630530, 6811351, 9205954, 9512554, 9277814, 9088272, 9698922, 9046749, 9207772, 9927131, 9354916, 9577654, 9631729, 9433389, 8854216, 9207697, 9354836, 9046707, 9277749, 9056318, 9512483, 9796762, 9088197, 9698847, 9577594, 9873424, 9631668, 9129007, 9433324, 8854215, 9577692, 9512621, 9277862, 9056352, 9207813, 9433447, 9698964, 9354985, 9796897, 9129071, 9088297, 9631762, 8854591, 9927112, 9512526, 9631692, 9433361, 9873482, 9698891, 9277786, 9207739, 9999469, 9070782, 9088249, 9129028, 9046725, 9354885, 9577626, 9796820, 9056331, 8854176, 9056565, 9071057, 9357076, 9633221, 9088889, 9279775, 9130116, 9047559, 9435749, 9928639, 9210052, 9579668, 9875507, 10001628, 8875329, 9130388, 9357410, 9701103, 9633465, 9088993, 9875868, 9579944, 9280052, 9799859, 9515239, 9210366, 9436047, 8877292, 9436048, 9130389, 9357411, 9875869, 9515240, 9280053, 9088994, 9701104, 9210367, 9799860, 8877294, 9435860, 9210170, 9088924, 9357211, 9515045, 9928741, 9071098, 9579773, 9875640, 9047620, 9130247, 9279882, 10001789, 9799604, 9700917, 8876130, 9633324, 9875692, 9799631, 9357238, 9130291, 10001807, 9279899, 9071103, 9700934, 9088929, 9515065, 9928752, 9435880, 9210187, 9047627, 9579794, 8876118, 9701114, 9633471, 9579950, 9280065, 9799874, 9436058, 9515250, 9357421, 9210381, 9089002, 8877285, 9210194, 9047638, 9928771, 9799649, 9515072, 9357247, 9279906, 9579806, 9633337, 9875700, 9700950, 9088936, 9435887, 8876112, 9280195, 9876075, 9580063, 9210503, 9436181, 9357540, 9515398, 9130478, 9056655, 9089048, 8877807, 9799483, 9514943, 9279763, 9875499, 9056551, 9088883, 9435737, 9357064, 9210040, 9579648, 8875328, 9279986, 9071125, 9701034, 9633411, 9357343, 9875801, 9435970, 9088960, 9047712, 9515160, 9799762, 9130344, 9210285, 9579890, 8876598, 9875882, 9357429, 9071153, 9799884, 9210389, 9089011, 9056626, 10002031, 9633479, 9130399, 9701127, 9515264, 9436066, 9047751, 9928923, 9579958, 9280073, 8877448, 9436117, 9130449, 9580001, 9799943, 9875943, 9280124, 9701178, 9047815, 9210439, 9633499, 9357479, 9515319, 8877602, 9056663, 9701261, 9047858, 9280221, 9580092, 9876123, 9515421, 9929020, 9633561, 9130496, 9210534, 10002128, 9089058, 9800051, 9436206, 9357583, 8877991, 9357521, 9515375, 9280179, 9701225, 9580047, 9089041, 9876046, 9210489, 9436156, 9799994, 9633535, 9047852, 9130473, 8877753, 9928778, 9799656, 9633358, 9056595, 9047677, 9357275, 9279928, 9875707, 9071110, 9579835, 10001840, 9130307, 9515094, 9435912, 9700977, 9088943, 9210222, 8876124, 9071159, 9130417, 9875905, 9436089, 9579974, 9089017, 9056633, 10002058, 9799911, 9280093, 9928955, 9047782, 9701150, 9515291, 9357449, 9633495, 9210409, 8877477, 9799912, 9130418, 9056637, 9436090, 10002059, 9280094, 9071160, 9089018, 9515292, 9047783, 9928956, 9210410, 9357450, 8877469, 9701067, 9088981, 9579913, 9210324, 9047743, 9357373, 9875844, 9435997, 9799801, 9633438, 9130375, 9515192, 10002011, 9280013, 8876839, 9210259, 9088949, 9799726, 9279960, 9579874, 9130340, 9875770, 9357317, 9515131, 9056610, 9435944, 9701009, 9633395, 8876451, 9515150, 9210275, 9357333, 9071121, 9928878, 9047699, 10001984, 9435960, 9799747, 9088956, 9701025, 9279976, 8876601, 9298487, 9892417, 9531910, 9650598, 9076895, 9594113, 9455106, 9947271, 9376863, 9147654, 9723676, 9061506, 9034081, 9227752, 9098603, 9819733, 194900, 9341488, 9566621, 9265654, 9083971, 9622071, 9041676, 9686167, 9193646, 9054267, 5623424, 9120414, 9566415, 9083924, 9041621, 9341303, 9685989, 9912323, 9066264, 9419614, 9859302, 9621887, 9265472, 9980991, 9193419, 9779411, 9120362, 9498672, 5623441, 141699, 156922, 159625, 9096101, 9222930, 9450011, 9645451, 9293285, 9075858, 9033004, 9371343, 156917, 9222929, 9527597, 9075857, 9645450, 9051422, 9943333, 9890150, 9096100, 9590878, 9450010, 9293284, 9060610, 9033003, 9371342, 156929, 9938504, 9074005, 9886605, 9523336, 9640740, 9444455, 9093501, 9710245, 9365726, 9288290, 9218499, 9058926, 9810839, 9586800, 9031016, 9136363, 72529, 9050428, 9710446, 9074320, 9939392, 9811107, 9887235, 9444835, 9136633, 9031224, 9093731, 9640916, 9586965, 9059309, 9365901, 9050632, 9523505, 72502, 9365683, 9073974, 9886497, 9938433, 9523303, 9444417, 9218461, 9093467, 9710203, 9810779, 9640701, 9030980, 9050401, 9586779, 9288270, 9058891, 72530, 9136316, 9056468, 9047060, 9434722, 9928108, 9088465, 9699948, 9578794, 9278872, 10000572, 9513986, 9209055, 9356014, 8867461, 9208835, 9046981, 9699754, 9355794, 9578601, 9056416, 9513784, 9434518, 9278677, 9088418, 10000316, 9927910, 8867455, 8955708, 9700558, 9514694, 9633031, 9579456, 9279519, 9435454, 9129978, 9799141, 9047450, 10001622, 9928633, 9356739, 9088871, 9875258, 9209771, 9071051, 8875337, 9279346, 9088661, 9798889, 9928333, 9435253, 9356535, 9070995, 9047251, 9514505, 9632900, 9700390, 10000983, 9874936, 9579288, 9209574, 9129857, 9056546, 8875311, 9800762, 9515980, 9436866, 9211153, 9580625, 8938820, 9536365, 9232214, 9654795, 9951072, 9303545, 9894885, 9381916, 9597888, 9051972, 9078145, 9460408, 9062319, 9035146, 201340, 9652879, 9948780, 9727469, 9458216, 9596132, 9034783, 9379835, 9077822, 9893477, 9822651, 9055238, 9534424, 9068739, 9150926, 9124072, 206617, 9736840, 9238167, 9309339, 9467076, 9388717, 400036, 9160687, 9221399, 9942319, 9526086, 9643781, 9589511, 9889346, 9448195, 9076069, 9095495, 9814876, 9369705, 9291594, 9032522, 9140137, 9714549, 111864, 2530509, 9333717, 9679513, 9560582, 9491172, 9259049, 9412044, 9769703, 74062, 165538, 165549, 9622349, 9566861, 9054192, 9341783, 9780007, 9120730, 9912295, 9686435, 9041604, 9980948, 9083904, 9265931, 9193960, 9498450, 9859798, 9419439, 5610519, 3928558, 428485, 9167989, 9063668, 9606127, 9664840, 9473803, 9052529, 9545899, 9835983, 9080231, 9395523, 9316130, 9108256, 9745725, 9965404, 9902772, 9244236, 9037385, 143378, 5359048, 5359051, 9653068, 9034870, 9458542, 9948874, 9727753, 9380178, 9893518, 9077918, 9596449, 9151258, 9534721, 9051876, 9822972, 9062093, 9230575, 9301709, 203989, 9100736, 9509742, 9204915, 9629932, 9925569, 9996685, 9087515, 9696771, 9793946, 9430467, 9575764, 9352328, 9275211, 9045673, 9070058, 6807786, 9127523, 9503784, 9919087, 9424695, 9055166, 9270175, 9785604, 9123300, 9067973, 9085476, 9346567, 9198949, 9043308, 9864277, 9987162, 9690961, 9625619, 5694296, 9570860, 187734, 9592013, 9295408, 9144432, 9529227, 9076147, 9096571, 9224899, 9647454, 9033317, 9817148, 9719484, 9373704, 9452086, 169860, 182015, 187652, 187671, 171005, 171002, 112372, 9373808, 9452190, 9719641, 9144566, 9592090, 9647604, 9225006, 9529281, 170669, 9295559, 9831373, 9240535, 9740547, 9542373, 9391419, 9036472, 9603005, 9105380, 9079264, 9469815, 9163561, 9660946, 206896, 9312037, 9372562, 9294516, 9075999, 9646496, 9591552, 9718297, 9451132, 9060737, 9143330, 9816786, 9528498, 9033195, 165191, 9224037, 421117, 9079221, 9740392, 9311922, 9602921, 9062928, 9660834, 9542267, 9163426, 9469688, 9240426, 9831222, 9391247, 442278, 9105262, 9660844, 9240433, 9391254, 9062930, 9311929, 9542274, 9469698, 9079224, 9831229, 9740402, 9602928, 9163433, 442313, 9105269, 9035575, 9826894, 9466200, 9657812, 9735506, 9539287, 9078415, 9102926, 9062430, 9387740, 9159769, 9600339, 418830, 9619005, 9774008, 9494557, 9337299, 9563194, 9118496, 4551532, 9682571, 9855363, 9262014, 3965392, 9188957, 9831657, 9127764, 9078325, 9611468, 9649736, 9146736, 9454185, 9740972, 9531077, 9052024, 9297602, 9951706, 9035424, 9226891, 9070253, 9895283, 9375978, 190512, 1250493, 9723400, 9061430, 9076818, 9376507, 9593856, 9819653, 9650275, 9098522, 9454718, 9298126, 9531571, 9147305, 9227405, 8964174, 9101686, 9655051, 9035231, 9460677, 9232479, 9598112, 9382173, 9303868, 9731001, 9536635, 9153538, 9078221, 9825207, 354074, 9408402, 9181430, 9557448, 9039344, 9255416, 9675938, 9847066, 9081734, 9763837, 9114028, 9329576, 9487061, 9614384, 5674631, 9076466, 9818465, 9375099, 9226173, 9033721, 9648924, 9721498, 9145863, 9530299, 9453428, 9592881, 9097544, 9296813, 109796, 9657804, 421113, 9600334, 9035573, 9159761, 9826892, 9308351, 9237351, 9078413, 9102924, 9735505, 9539282, 9466192, 445010, 9096375, 9075985, 9143090, 9591398, 9294238, 9372414, 9943615, 9462262, 9816497, 9646384, 9890356, 9528336, 9718100, 164333, 9223875, 9815210, 9095733, 9032695, 9448653, 9221780, 9526464, 9370079, 9075717, 9644217, 9589880, 9292005, 9715127, 114543, 9140644, 9224083, 9084277, 9451177, 9816835, 9591591, 9294553, 9718342, 9121305, 9528542, 9372614, 9042016, 9646544, 9066474, 5653977, 9121302, 9646539, 9084274, 9718339, 9591588, 9816832, 9042013, 9451171, 9372609, 9066471, 9528539, 9358154, 9224078, 5653981, 5653970, 9528559, 9372629, 9816844, 9066483, 9084286, 9224093, 9294563, 9121319, 9646554, 9718352, 9591601, 9451187, 9042025, 5653973, 9143391, 9143378, 9143373 ]
+  }, {
+    "dbId" : 2011880,
+    "stId" : "R-HSA-2011880",
+    "displayName" : "p-8Y-FGFR2c P253R [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2011967 ]
+  }, {
+    "dbId" : 113401,
+    "stId" : "R-HSA-113401",
+    "displayName" : "RNA Polymerase II holoenzyme complex (unphosphorylated) [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5578688, 6814541, 71307 ],
+    "children" : [ 63502, 63517, 63531, 63525, 63508, 83714, 63523, 83715, 63506, 63537, 83713, 63504 ]
+  }, {
+    "dbId" : 2011879,
+    "stId" : "R-HSA-2011879",
+    "displayName" : "p-8Y-FGFR2c S252W [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2011964 ]
+  }, {
+    "dbId" : 2011877,
+    "stId" : "R-HSA-2011877",
+    "displayName" : "p-8Y-FGFR2b P253R [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-3",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2011962 ]
+  }, {
+    "dbId" : 2011874,
+    "stId" : "R-HSA-2011874",
+    "displayName" : "p-8Y-FGFR2b S252W [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-3",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2011957 ]
+  }, {
+    "dbId" : 62717,
+    "stId" : "R-HSA-62717",
+    "displayName" : "HRAS [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01112",
+    "geneNames" : [ "HRAS", "HRAS1" ],
+    "parents" : [ 109782 ]
+  }, {
+    "dbId" : 167679,
+    "stId" : "R-HSA-167679",
+    "displayName" : "p-4Y-PLCG1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1445, 167646 ],
+    "identifier" : "P19174",
+    "geneNames" : [ "PLCG1", "PLC1" ],
+    "parents" : [ 2685653, 2029095, 1247846, 5655237, 5654745, 5655321, 1839062, 1524184, 5654168, 5654150, 212703, 4420110, 167681, 5654154, 5654156, 202269 ]
+  }, {
+    "dbId" : 29438,
+    "stId" : "R-ALL-29438",
+    "displayName" : "GTP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1425 ],
+    "identifier" : "15996",
+    "parents" : [ 482625, 170037, 110415, 165125, 194545, 350950, 206703, 351067, 9356337, 9632716, 9700221, 9579082, 9798611, 9279160, 9435020, 9874660, 9514304, 9209373, 8871141, 9129762, 9356195, 9129632, 9798412, 9700114, 9279032, 9632598, 9514162, 9434877, 9874454, 9578946, 8868235, 9209223, 8871130, 9208050, 9797363, 9631925, 9577873, 9512810, 9433661, 9355198, 9278053, 2316332, 2316465, 9432640, 9354177, 9872744, 9795931, 9577036, 9046452, 9631257, 9277094, 9698234, 9511832, 9128684, 9207005, 8849729, 9511836, 9207009, 9432644, 9354181, 9795938, 9277098, 9631265, 9872756, 9698241, 9577040, 8849731, 9128689, 9207013, 9872766, 9432648, 9354185, 9577044, 9277102, 9511840, 8849733, 9998550, 9046454, 9926708, 8849735, 9128500, 9056101, 9087910, 9576809, 9630998, 8847628, 9276600, 9795345, 9697811, 9511300, 9432190, 9353748, 9206518, 9871754, 9630475, 9697318, 9353114, 9576257, 9510689, 9128123, 9431585, 9926077, 9997520, 9205898, 9794672, 9276040, 9046121, 6811364, 9796041, 9926851, 9999028, 9046472, 8850025, 9872713, 9698191, 9631244, 9577023, 9511785, 9432611, 9354139, 9277066, 9206962, 9128655, 9872696, 9432595, 9631225, 9128640, 9206949, 9354121, 9511764, 9698176, 9577010, 9277053, 8849254, 9630824, 9576596, 9511127, 9795104, 9087822, 9697666, 9353567, 9431999, 9276429, 6814644, 9206331, 9630863, 9576639, 9697711, 9353602, 9276465, 9872157, 9206372, 9128371, 9795154, 9511158, 9432030, 6814643, 6814067, 9794827, 9997746, 9871934, 9697494, 9276249, 9630640, 9206126, 9926214, 9576403, 6814076, 9046280, 9576397, 9056053, 9353360, 9997731, 9276246, 9630632, 9794819, 9510944, 9871928, 9431810, 9926205, 9128290, 9046274, 9206123, 9087791, 9697488, 6814064, 9630921, 9576710, 9128447, 9795287, 9872215, 9087867, 9046363, 8847528, 9510871, 9431744, 9353288, 9206052, 9795213, 9510761, 9630533, 9998062, 9128189, 9431642, 9353179, 9697383, 9046174, 9276095, 9070278, 9205957, 9871825, 9576308, 9926386, 6811349, 9630636, 9576399, 9510828, 9128407, 9431700, 9276152, 9997736, 9794821, 9206019, 9046276, 9353251, 9871930, 9926207, 9697490, 6814072, 9276146, 9128404, 9697482, 9510822, 9576391, 9353245, 9206013, 9046267, 9630621, 9997718, 9794813, 9871921, 9926198, 9431694, 6814074, 9698921, 9512553, 9277813, 9207771, 9046748, 9129055, 9873509, 9056344, 9999478, 9927130, 9354915, 9070791, 9577653, 9796848, 9088271, 9433388, 9631728, 8854204, 9354835, 9207696, 9873423, 9277748, 9046706, 9056317, 9512482, 9088196, 9698846, 9796761, 9577593, 9129006, 9433323, 9631667, 8854335, 9698157, 9926701, 9070396, 9998541, 9631206, 9795879, 9872678, 9056154, 9576989, 9432576, 9087972, 9511740, 9277031, 9128609, 9046446, 9354093, 9206924, 8849251, 9512620, 9577691, 9433446, 9277861, 9207812, 9354984, 9796896, 9129070, 9056351, 9631761, 9088296, 9698963, 8854602, 9512510, 9433345, 9354869, 9698873, 9631688, 9796801, 9577616, 9277773, 9207724, 8854190, 9928652, 9633227, 10001677, 9357082, 9071064, 9056571, 9875513, 9088901, 9579678, 9279781, 9435755, 9047566, 9210062, 9130123, 8875316, 9799866, 9210371, 9633468, 9515244, 9088998, 9436052, 9579947, 9357415, 9280059, 9875875, 9130393, 9701108, 8877290, 9515246, 9799870, 9436054, 9357417, 9210377, 9701110, 9089000, 9875879, 9280061, 9130395, 8877288, 9928750, 9515048, 9435863, 9071101, 10001805, 9088927, 9579776, 9210173, 9357216, 9875643, 9700920, 9047625, 9799607, 9130250, 9279885, 8876128, 9700939, 9047636, 9130294, 9210192, 10001838, 9928769, 9357245, 9515070, 9071108, 9279904, 9088934, 9579801, 9875698, 9633329, 9435885, 9799636, 8876116, 9357424, 9210384, 9701119, 9280068, 9089007, 9515253, 9579953, 9436061, 9799877, 9633474, 8877284, 9928776, 9435892, 9047665, 9210202, 9515077, 9799654, 9579811, 9875705, 9700955, 9633342, 9357252, 9279911, 9088941, 8876110, 9056660, 9089057, 9515401, 9130483, 9580068, 9436186, 9357547, 9280200, 9876086, 9210508, 8877804, 9088887, 9279767, 9875503, 9056557, 9799489, 9579654, 9514947, 9435741, 9357068, 9210044, 8875326, 9210290, 9701039, 9279989, 9875808, 9633414, 9071128, 9088965, 9515165, 9357346, 9435973, 9047715, 9579893, 9799767, 9130347, 8876595, 9056629, 9633484, 9047767, 9071158, 9875885, 9799887, 9701132, 9210394, 9515269, 9357434, 9089016, 9928935, 9579963, 9130402, 9436071, 10002045, 9280078, 8877453, 9130452, 9047824, 9875950, 9799949, 9436120, 9580004, 9280127, 9089028, 9056647, 9633502, 9515322, 9701181, 9210442, 9357484, 8877601, 9047861, 9436209, 9357586, 9876128, 9929026, 9515424, 9056666, 9089061, 9800056, 9580095, 9280224, 9633566, 9130499, 9210537, 9701264, 10002138, 8877989, 9089046, 9047857, 9701230, 9357526, 9633540, 9280184, 9800004, 9210492, 9876057, 9436161, 9130476, 9580052, 9515380, 8877758, 9210227, 9088948, 10001859, 9875712, 9056600, 9279933, 9928793, 9357283, 9579838, 9515101, 9047682, 9130316, 9799667, 9700982, 9435917, 9633363, 9071115, 8876122, 9130422, 9210416, 9579977, 9799916, 9701155, 9071164, 9089022, 9928964, 9875908, 9515296, 9436094, 9056641, 9280100, 9633498, 9047789, 10002074, 9357454, 8877478, 10002087, 9210418, 9928970, 9357458, 9799918, 9047793, 9071166, 9515298, 9130424, 9436096, 9280102, 9089024, 9056643, 8877471, 9579916, 9875851, 9280016, 9210327, 10002017, 9633441, 9088986, 9436000, 9357376, 9515195, 9799804, 9047746, 9701072, 9130378, 8876838, 9210262, 9579877, 9279963, 9875779, 9088952, 9515134, 9056613, 9130343, 9357320, 9799729, 9633398, 9435947, 9701012, 8876448, 9071124, 9210278, 10002000, 9357336, 9279979, 9088959, 9435963, 9799750, 9701030, 9047704, 9928887, 9515153, 8876599, 194875, 9947274, 9650601, 9531913, 9298490, 9594116, 9455109, 9892420, 9061509, 9819736, 9376866, 9034084, 9723679, 9076898, 9227755, 9098606, 9147657, 194890, 5667053, 5666175, 9194243, 9342083, 9266177, 9780383, 9567067, 9686711, 2316453, 9342081, 9194241, 9780381, 9567065, 9686709, 9266175, 5627068, 9623500, 9195607, 9687849, 9121778, 9861345, 9568164, 9084416, 9343399, 9421703, 9781906, 9500787, 9042152, 9267437, 5668609, 9912410, 9498826, 9981153, 9419786, 9054254, 9041661, 9083962, 5618323, 9622141, 9120532, 9779771, 9686253, 9341584, 9193745, 9499004, 9419941, 9859663, 9566697, 9083999, 9265741, 5624106, 9686124, 9498895, 9912483, 9779649, 9054266, 9981367, 9566586, 9041667, 9622042, 9083970, 9419848, 9341451, 9193608, 9859511, 9265613, 5623423, 9120395, 9083925, 9041622, 9980992, 9341304, 9685990, 9912324, 9066265, 9621888, 9859303, 9419615, 9265473, 9779412, 9566416, 9498673, 9193420, 9120363, 5623445, 9265552, 9779529, 9084145, 9041843, 9621956, 9193498, 9054296, 9981431, 9498750, 9120448, 9912541, 9859548, 9566488, 9066370, 9419690, 9341388, 9686067, 5623431, 9792010, 9126804, 9351088, 9869931, 9924779, 9995427, 9508522, 9629255, 9274104, 9429243, 9055774, 9069797, 9695487, 9087206, 9574939, 9203689, 9045320, 143383, 141685, 9717032, 9371351, 9450019, 9075864, 9033019, 9815780, 9590883, 9943384, 9141988, 9890168, 9051428, 9645464, 9096110, 9060618, 156916, 159530, 9645452, 9222931, 9371344, 9450012, 9096102, 9293286, 9075859, 9033005, 156921, 9073942, 9710125, 9523273, 9365654, 9288220, 9938375, 9886425, 9444382, 9810681, 9218432, 9586740, 9050380, 9030956, 9640663, 9058859, 9093418, 72531, 9136260, 9031222, 9523503, 9136631, 9710444, 9887233, 9811105, 9444833, 9050630, 9093729, 9939390, 9365899, 9074318, 9640914, 9586963, 9059307, 72503, 391532, 391504, 391249, 391237, 391503, 391235, 391537, 391246, 391385, 390457, 9434738, 9209073, 9699966, 9928158, 9578826, 10000671, 9088477, 9514002, 9278892, 9356030, 9056490, 9047082, 8867380, 9355777, 9278658, 9927849, 9208802, 10000261, 9513768, 9434502, 9578586, 9046973, 9699734, 9056408, 9088410, 8867429, 8955576, 8955569, 8955720, 8955573, 9654797, 9062321, 9161500, 9232216, 9381918, 9737924, 9597890, 9051974, 9460410, 9078147, 9951088, 9828626, 9035148, 9894898, 9536369, 199981, 9303549, 9496653, 9417714, 9339475, 9053937, 9979490, 9065968, 9041264, 9684196, 9191263, 9119513, 9776914, 9083532, 9911380, 9857301, 5250197, 9263935, 9467070, 9309333, 9388711, 9238164, 9736834, 9160681, 400076, 9600108, 9463694, 9235330, 9156706, 9385324, 9538995, 9735157, 9306926, 5252145, 9737834, 9659213, 9540605, 9389412, 9310090, 9467826, 9238798, 420891, 804940, 941877, 421893, 2530541, 9137332, 9289059, 9524012, 9641525, 9219113, 9366554, 9711303, 9445504, 74049, 9778826, 9621388, 9419121, 9980689, 9498088, 9192811, 9685526, 9912102, 9565952, 9858902, 180686, 9980901, 9498441, 9419430, 9912243, 9041597, 9083897, 9054185, 5610522, 8951978, 9802750, 9581646, 9517258, 9438091, 9359489, 9281994, 9212487, 421676, 444974, 444967, 428484, 167204, 6802607, 5359063, 5359046, 5359045, 5359037, 5359036, 9570893, 9123348, 9043377, 9864320, 9987437, 9085534, 9424736, 9270208, 9919249, 9346600, 9503828, 9691063, 9198991, 9625648, 9068010, 5694299, 9785764, 9534511, 9230359, 9379925, 9727587, 9062047, 9822843, 9652957, 9100516, 9596222, 9051878, 9301444, 9034849, 9458294, 9151021, 9893525, 9948886, 9077898, 204003, 9087505, 9055952, 9270292, 9996655, 9575749, 9629927, 9346715, 9871064, 9696766, 9199105, 9043460, 9503933, 9424835, 9785983, 9070051, 9925559, 6807799, 9629934, 9871084, 9204918, 9996687, 9696773, 9925571, 9087518, 9055961, 9430469, 9793948, 9070060, 9352331, 9575766, 9275214, 9509744, 9045675, 6807789, 9127526, 9127511, 9696876, 9205043, 9997348, 9056022, 9925996, 9509897, 9794179, 9630048, 9430622, 9087739, 9871259, 9070214, 9352453, 9575864, 9275335, 9127630, 9045865, 6808826, 9509999, 9055956, 9127831, 9045968, 9925871, 9430712, 9794273, 9275449, 9697024, 9871388, 9070176, 9997104, 9630164, 9352587, 9205167, 9087690, 6808823, 9575985, 9341969, 9499342, 9194128, 9084049, 9120882, 9686596, 9780225, 9266083, 9041699, 9066316, 9566964, 9860053, 9622385, 5625964, 9420253, 8875670, 9279858, 9799576, 9700890, 9633293, 9579749, 9515015, 9435836, 9357184, 9210146, 9088261, 9796831, 9129041, 9512536, 9207749, 9071074, 9698901, 9577636, 9631703, 9433371, 9354895, 2193115, 9277796, 187686, 187722, 9076148, 9529228, 9592014, 9295409, 9144433, 9096572, 9033318, 9647455, 9719485, 9817149, 9224900, 9452087, 9373705, 169866, 182080, 187673, 187681, 170990, 171017, 449518, 9727995, 9034919, 217289, 9151497, 9823122, 9653236, 9596610, 9534936, 9458764, 9380373, 9301911, 9230756, 9100782, 9077978, 112373, 421789, 9529276, 9647599, 9144561, 9452185, 9592085, 9225001, 9373803, 9719636, 170661, 9295554, 9831374, 9542374, 9240536, 9391420, 9740548, 9036473, 9105381, 9603006, 9079265, 9469816, 9163562, 9660947, 206946, 9312038, 2311340, 9184610, 9616255, 9850639, 9559880, 9411174, 9678779, 9258186, 9490262, 9332746, 9768727, 2422449, 9559212, 9183697, 9615881, 9115548, 9064893, 9039679, 9332033, 9410466, 9257540, 9678071, 9489396, 9767702, 9081929, 9850455, 2311336, 9053219, 9769646, 9616873, 9333669, 9679477, 9560551, 9259003, 9491120, 9411999, 2562539, 9185390, 9265719, 9859631, 9622123, 9341559, 9193717, 9566679, 9686231, 9498979, 9120505, 9419919, 9083978, 5624294, 421101, 9062564, 9035860, 9737032, 9828046, 9160880, 9388901, 9103522, 9467284, 9078649, 9309516, 9658722, 9238317, 399865, 9658700, 9078641, 9540136, 9238229, 9828033, 9160767, 9736998, 9601120, 421110, 9467160, 9309414, 9103502, 9035848, 421104, 421103, 9391248, 9740393, 9311923, 9079222, 9062929, 9602922, 9660835, 9542268, 9469689, 9163427, 9240427, 9831223, 442290, 9105263, 9660845, 9240434, 9062931, 9391255, 9311930, 9469699, 9079225, 9542275, 9036450, 9831230, 9740403, 9602929, 9163434, 442315, 9105270, 9658732, 9467294, 9238327, 9601128, 9103552, 9309526, 9828050, 9078653, 9540180, 9062568, 9160890, 9388911, 419161, 5625897, 9343522, 9687960, 9623576, 9267572, 9500931, 9421837, 9861495, 9568259, 9084426, 8981459, 446942, 9773420, 9082931, 9562852, 9261657, 9494146, 9854310, 9040761, 9336869, 9118306, 9618679, 9415114, 9682199, 9188525, 3858468, 445852, 9103474, 9062525, 9540071, 9160669, 9388699, 9078622, 9952965, 9895928, 9736830, 9658617, 9601018, 9827890, 9238152, 9467058, 9035817, 400008, 374857, 9095413, 9643630, 9139958, 9942315, 9369525, 9814671, 9448037, 9714279, 9032475, 9076068, 9889342, 9221252, 9589364, 9291406, 9525939, 167438, 9774011, 9682574, 9563197, 9262017, 9188960, 9415477, 9337302, 9118499, 9619008, 9855366, 9494560, 3965396, 9774218, 9601532, 9337504, 9682712, 9161441, 9563333, 9494739, 4085980, 9262175, 4085966, 9226867, 9035414, 9649710, 9127760, 9611457, 9895204, 9831655, 9375968, 9951643, 9070246, 9740958, 9454168, 9297579, 9052014, 9146697, 9078315, 9531057, 190509, 9623407, 9343251, 9121746, 9861313, 9568054, 9195450, 9500628, 9421566, 5666092, 9121751, 9343257, 9066621, 9195455, 9861318, 9687747, 442568, 9421571, 9568059, 9042147, 9267300, 9623412, 9084399, 9781783, 5666123, 9083479, 9854330, 9682223, 9118343, 9620216, 9494170, 9261687, 9188549, 9564677, 9336893, 9415135, 3858473, 9500526, 9421473, 9343138, 9567979, 9687642, 9623334, 9267214, 9195373, 5665750, 9861304, 9421553, 9121733, 9066609, 9687732, 9568039, 9267291, 9500612, 9084398, 9623395, 9343230, 5666081, 9593033, 9097649, 9818671, 9078416, 9241304, 9062431, 9146047, 9296990, 9649089, 9453569, 9035576, 9530430, 448879, 9721713, 182921, 1250491, 9531790, 9227635, 9593999, 9061431, 9298358, 9376742, 9076819, 9147523, 9454966, 9819654, 9098523, 9650467, 5665993, 9825066, 9382129, 9035230, 9536583, 9101628, 9303811, 9730905, 9232417, 9460634, 9078220, 9153417, 9654994, 9598066, 354126, 9076311, 9817390, 9295732, 9096722, 9719845, 9054426, 9529439, 9914523, 9373957, 9452345, 9033408, 9144739, 9647764, 9225165, 9592178, 109783, 9035574, 9598671, 9826893, 9154579, 9537370, 2316458, 9102925, 9732401, 9305064, 9461620, 9233544, 9078414, 9655921, 442641, 421955, 9890313, 9528202, 9075953, 9294164, 9591297, 9816388, 9372319, 9943549, 9462265, 9223781, 9096322, 9717909, 9646259, 164358, 9142987, 9658268, 9466719, 9736314, 9309008, 9539755, 9237846, 9035779, 9827516, 9103244, 9600807, 9388396, 392003, 9160319, 9889929, 9221841, 9095766, 9078643, 9526532, 9644295, 9589920, 9370140, 9448736, 9032773, 9942908, 9715231, 9060515, 9815282, 9292079, 114534, 9140719, 9221811, 9103381, 9035795, 9370104, 9715169, 9589894, 9827706, 9890778, 9526488, 9944401, 9448691, 9076297, 9292044, 114525, 9140681, 9529278, 9452187, 9295556, 9144563, 9225003, 9592087, 9719638, 9647601, 9373805, 9035384, 392161, 9102627, 9889836, 9815215, 9526468, 9221784, 9095738, 9370081, 9644221, 9032709, 9715135, 9602325, 9942705, 9292009, 9448657, 9075722, 398056, 9140651, 9032694, 9095732, 9815209, 9370068, 9448645, 9140639, 9715111, 9075716, 9292000, 9526456, 9644209, 9589872, 114539, 9221775, 9372563, 9294517, 9591553, 9646497, 9718298, 9451133, 9224038, 9076000, 9060738, 9816787, 9033196, 9528499, 165189, 9224082, 9084276, 9646543, 9451176, 9816834, 9042015, 9294552, 9591590, 9121304, 9718341, 9528541, 9372613, 9066473, 5653976, 9121301, 9084273, 9646538, 9718338, 9042012, 9451170, 9591587, 9372608, 9066470, 9528538, 9816831, 9224077, 5653978, 9528558, 9816843, 9718351, 9372628, 9066482, 9084285, 9224092, 9294562, 9121318, 9646553, 9591600, 9451186, 9042024, 5653967, 9718347, 9591596, 9451182, 9816841, 9528554, 9143331, 9143372, 9143377, 9143386, 9143390, 5653971, 9372619, 9646549, 9121314, 9042022, 9084283, 9294558, 9224088, 9066480 ]
+  }, {
+    "dbId" : 2077408,
+    "stId" : "R-ALL-2077408",
+    "displayName" : "FP-1039 [extracellular region]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 1295 ],
+    "parents" : [ 2077406 ]
+  }, {
+    "dbId" : 62719,
+    "stId" : "R-HSA-62719",
+    "displayName" : "KRAS [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01116",
+    "geneNames" : [ "KRAS", "KRAS2", "RASK2" ],
+    "parents" : [ 8951978, 109782 ]
+  }, {
+    "dbId" : 2011934,
+    "stId" : "R-HSA-2011934",
+    "displayName" : "FGFR2b P253R mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065927 ],
+    "children" : [ 2011851 ]
+  }, {
+    "dbId" : 167682,
+    "stId" : "R-HSA-167682",
+    "displayName" : "PLCG1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1431 ],
+    "identifier" : "P19174",
+    "geneNames" : [ "PLCG1", "PLC1" ],
+    "parents" : [ 5637698, 1247845, 5655279, 5655346, 5655305, 1839061, 186795, 2023858, 5654166, 5654162, 167687, 5654155, 5654226 ]
+  }, {
+    "dbId" : 83713,
+    "stId" : "R-HSA-83713",
+    "displayName" : "POLR2E [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19388",
+    "geneNames" : [ "POLR2E" ],
+    "parents" : [ 83716, 73859, 6814540, 6810223, 113427, 209680, 113716, 113401, 109909, 6797702, 6781851 ]
+  }, {
+    "dbId" : 83715,
+    "stId" : "R-HSA-83715",
+    "displayName" : "POLR2L [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62875",
+    "geneNames" : [ "POLR2L" ],
+    "parents" : [ 83716, 209680, 113716, 113401, 109909, 6797702, 6781851, 113427, 6810223, 6814540, 73859 ]
+  }, {
+    "dbId" : 83714,
+    "stId" : "R-HSA-83714",
+    "displayName" : "POLR2F [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61218",
+    "geneNames" : [ "POLR2F", "POLRF" ],
+    "parents" : [ 83716, 73859, 6814540, 6810223, 113427, 6781851, 6797702, 109909, 113401, 113716, 209680 ]
+  }, {
+    "dbId" : 2011931,
+    "stId" : "R-HSA-2011931",
+    "displayName" : "FGFR2b S252W mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065927 ],
+    "children" : [ 2011846 ]
+  }, {
+    "dbId" : 62725,
+    "stId" : "R-HSA-62725",
+    "displayName" : "NRAS [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01111",
+    "geneNames" : [ "NRAS", "HRAS1" ],
+    "parents" : [ 6806434, 109782 ]
+  }, {
+    "dbId" : 51463,
+    "stId" : "R-HSA-51463",
+    "displayName" : "NCBP2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52298",
+    "geneNames" : [ "NCBP2", "CBP20", "PIG55" ],
+    "parents" : [ 112164, 112159, 111682, 77088 ]
+  }, {
+    "dbId" : 51469,
+    "stId" : "R-HSA-51469",
+    "displayName" : "NCBP1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q09161",
+    "geneNames" : [ "NCBP1", "CBP80", "NCBP" ],
+    "parents" : [ 112164, 112159, 111682, 77088 ]
+  }, {
+    "dbId" : 2067714,
+    "stId" : "R-HSA-2067714",
+    "displayName" : "Overexpressed FGFR2 homodimers:GP369 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1346 ],
+    "children" : [ 2067712, 2029963 ]
+  }, {
+    "dbId" : 2067712,
+    "stId" : "R-ALL-2067712",
+    "displayName" : "GP369 [extracellular region]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 1345 ],
+    "parents" : [ 2067714 ]
+  }, {
+    "dbId" : 2029886,
+    "stId" : "R-HSA-2029886",
+    "displayName" : "FGFR2c S372C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029928, 2029955 ]
+  }, {
+    "dbId" : 2011967,
+    "stId" : "R-HSA-2011967",
+    "displayName" : "p-8Y-FGFR2c P253R dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065987 ],
+    "children" : [ 2011880 ]
+  }, {
+    "dbId" : 77088,
+    "stId" : "R-HSA-77088",
+    "displayName" : "Cap Binding Complex (CBC) [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 191887, 113815, 8849126, 156769, 72177, 8850671, 77474, 72157, 71954, 6803524, 113715, 77089, 167086, 167080, 110758, 156959, 6814907, 6814903, 112167 ],
+    "children" : [ 51463, 51469 ]
+  }, {
+    "dbId" : 2011964,
+    "stId" : "R-HSA-2011964",
+    "displayName" : "p-8Y-FGFR2c S252W dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065987 ],
+    "children" : [ 2011879 ]
+  }, {
+    "dbId" : 2011962,
+    "stId" : "R-HSA-2011962",
+    "displayName" : "p-8Y-FGFR2b P253R dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065923 ],
+    "children" : [ 2011877 ]
+  }, {
+    "dbId" : 2029883,
+    "stId" : "R-HSA-2029883",
+    "displayName" : "FGFR2c W290G [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029930, 2029955 ]
+  }, {
+    "dbId" : 2029881,
+    "stId" : "R-HSA-2029881",
+    "displayName" : "FGFR2c Y375C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029936, 2029955 ]
+  }, {
+    "dbId" : 2029879,
+    "stId" : "R-HSA-2029879",
+    "displayName" : "p-8Y-FGFR2 S267P [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033319 ]
+  }, {
+    "dbId" : 2011957,
+    "stId" : "R-HSA-2011957",
+    "displayName" : "p-8Y-FGFR2b P252W dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065923 ],
+    "children" : [ 2011874 ]
+  }, {
+    "dbId" : 2029874,
+    "stId" : "R-HSA-2029874",
+    "displayName" : "p-8Y-FGFR2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029916 ]
+  }, {
+    "dbId" : 2029875,
+    "stId" : "R-HSA-2029875",
+    "displayName" : "p-8Y-FGFR2 W290C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029905 ]
+  }, {
+    "dbId" : 2029870,
+    "stId" : "R-HSA-2029870",
+    "displayName" : "p-6Y-FGFR2b C3 variant [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-17",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029932 ]
+  }, {
+    "dbId" : 2029869,
+    "stId" : "R-HSA-2029869",
+    "displayName" : "p-8Y-FGFR2b S373C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-3",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029906 ]
+  }, {
+    "dbId" : 2029866,
+    "stId" : "R-HSA-2029866",
+    "displayName" : "p-8Y-FGFR2b S376C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-3",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029909 ]
+  }, {
+    "dbId" : 2029865,
+    "stId" : "R-HSA-2029865",
+    "displayName" : "p-8Y-FGFR2c S372C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029911 ]
+  }, {
+    "dbId" : 2029862,
+    "stId" : "R-HSA-2029862",
+    "displayName" : "p-8Y-FGFR2c W290G [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029913 ]
+  }, {
+    "dbId" : 2011943,
+    "stId" : "R-HSA-2011943",
+    "displayName" : "FGFR2c P253R mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065983 ],
+    "children" : [ 1637916 ]
+  }, {
+    "dbId" : 2029861,
+    "stId" : "R-HSA-2029861",
+    "displayName" : "p-8Y-FGFR2c Y375C [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029915 ]
+  }, {
+    "dbId" : 2011938,
+    "stId" : "R-HSA-2011938",
+    "displayName" : "FGFR2c S252W mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065983 ],
+    "children" : [ 2011852 ]
+  }, {
+    "dbId" : 2029919,
+    "stId" : "R-HSA-2029919",
+    "displayName" : "FGFR2 W290C mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029952 ],
+    "children" : [ 1637929 ]
+  }, {
+    "dbId" : 2029916,
+    "stId" : "R-HSA-2029916",
+    "displayName" : "Activated overexpressed FGFR2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029940 ],
+    "children" : [ 2029874 ]
+  }, {
+    "dbId" : 2029915,
+    "stId" : "R-HSA-2029915",
+    "displayName" : "Activated FGFR2c Y375C mutant [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029948 ],
+    "children" : [ 2029861 ]
+  }, {
+    "dbId" : 2029913,
+    "stId" : "R-HSA-2029913",
+    "displayName" : "Activated FGFR2c W290G mutant [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029948 ],
+    "children" : [ 2029862 ]
+  }, {
+    "dbId" : 2029911,
+    "stId" : "R-HSA-2029911",
+    "displayName" : "Activated FGFR2c S372C mutant [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029948 ],
+    "children" : [ 2029865 ]
+  }, {
+    "dbId" : 2029909,
+    "stId" : "R-HSA-2029909",
+    "displayName" : "Activated FGFR2b S376C mutant [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029948 ],
+    "children" : [ 2029866 ]
+  }, {
+    "dbId" : 2029906,
+    "stId" : "R-HSA-2029906",
+    "displayName" : "Activated FGFR2b S373C mutant [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029948 ],
+    "children" : [ 2029869 ]
+  }, {
+    "dbId" : 64847,
+    "stId" : "R-HSA-64847",
+    "displayName" : "SOS1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q07889",
+    "geneNames" : [ "SOS1" ],
+    "parents" : [ 167215, 194849, 354168, 983692, 109797, 8851860, 210970, 392044, 9009718 ]
+  }, {
+    "dbId" : 2029905,
+    "stId" : "R-HSA-2029905",
+    "displayName" : "Activated FGFR2 W290C mutant [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029948 ],
+    "children" : [ 2029875 ]
+  }, {
+    "dbId" : 2029902,
+    "stId" : "R-HSA-2029902",
+    "displayName" : "FGFR2b C3 variant [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-17",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029960, 2029921 ]
+  }, {
+    "dbId" : 2071934,
+    "stId" : "R-HSA-2071934",
+    "displayName" : "FGFR2c A315T mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065983 ],
+    "children" : [ 1637889 ]
+  }, {
+    "dbId" : 2029948,
+    "stId" : "R-HSA-2029948",
+    "displayName" : "Activated FGFR2 ligand-independent mutants [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1282 ],
+    "parents" : [ 5654747 ],
+    "children" : [ 2033319, 2029913, 2029905, 2029906, 2029909, 2071958, 2029911, 2029915 ]
+  }, {
+    "dbId" : 2071933,
+    "stId" : "R-HSA-2071933",
+    "displayName" : "FGFR2c A315S mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065983 ],
+    "children" : [ 2071931 ]
+  }, {
+    "dbId" : 2071931,
+    "stId" : "R-HSA-2071931",
+    "displayName" : "FGFR2c A315S [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033375, 2071933 ]
+  }, {
+    "dbId" : 5655346,
+    "stId" : "R-HSA-5655346",
+    "displayName" : "Activated FGFR2 mutants:PLCG1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 167660 ],
+    "children" : [ 5654747, 179838, 167682 ]
+  }, {
+    "dbId" : 2071928,
+    "stId" : "R-HSA-2071928",
+    "displayName" : "FGFR2c A314S [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2033375, 2071937 ]
+  }, {
+    "dbId" : 5655345,
+    "stId" : "R-HSA-5655345",
+    "displayName" : "FGFR2 mutants:p-FRS2:GRB2:SOS1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 167649 ],
+    "children" : [ 109797, 5655236 ]
+  }, {
+    "dbId" : 2071927,
+    "stId" : "R-HSA-2071927",
+    "displayName" : "FGFR2 L764fs*4STOP mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029952 ],
+    "children" : [ 1637908 ]
+  }, {
+    "dbId" : 2029940,
+    "stId" : "R-HSA-2029940",
+    "displayName" : "Activated overexpressed FGFR2 dimers [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1343 ],
+    "parents" : [ 5654747 ],
+    "children" : [ 2029916, 2029932 ]
+  }, {
+    "dbId" : 2029938,
+    "stId" : "R-HSA-2029938",
+    "displayName" : "Overexpressed FGFR2 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029963 ],
+    "children" : [ 2023840 ]
+  }, {
+    "dbId" : 2029936,
+    "stId" : "R-HSA-2029936",
+    "displayName" : "FGFR2c Y375C mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029952 ],
+    "children" : [ 2029881 ]
+  }, {
+    "dbId" : 2029932,
+    "stId" : "R-HSA-2029932",
+    "displayName" : "p-6Y-FGFR2b C3 variant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029940 ],
+    "children" : [ 2029870 ]
+  }, {
+    "dbId" : 2029930,
+    "stId" : "R-HSA-2029930",
+    "displayName" : "FGFR2c W290G mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029952 ],
+    "children" : [ 2029883 ]
+  }, {
+    "dbId" : 5655330,
+    "stId" : "R-HSA-5655330",
+    "displayName" : "Activated FGFR2 mutants:p-FRS2:GRB2:GAB1:PIK3R1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 167651 ],
+    "parents" : [ 5655337 ],
+    "children" : [ 179864, 5655236 ]
+  }, {
+    "dbId" : 2029928,
+    "stId" : "R-HSA-2029928",
+    "displayName" : "FGFR2c S372C mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029952 ],
+    "children" : [ 2029886 ]
+  }, {
+    "dbId" : 2029924,
+    "stId" : "R-HSA-2029924",
+    "displayName" : "FGFR2b Y376C mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029952 ],
+    "children" : [ 1637931 ]
+  }, {
+    "dbId" : 2029923,
+    "stId" : "R-HSA-2029923",
+    "displayName" : "FGFR2b S373C mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029952 ],
+    "children" : [ 1637924 ]
+  }, {
+    "dbId" : 2029921,
+    "stId" : "R-HSA-2029921",
+    "displayName" : "FGFR2b C3 variant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029963 ],
+    "children" : [ 2029902 ]
+  }, {
+    "dbId" : 5655337,
+    "stId" : "R-HSA-5655337",
+    "displayName" : "Activated FGFR2 mutants:p-FRS2:GRB2:GAB1:PI3K [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 167652 ],
+    "children" : [ 5655330, 74787 ]
+  }, {
+    "dbId" : 8851713,
+    "stId" : "R-HSA-8851713",
+    "displayName" : "FGF1,2 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2721 ],
+    "parents" : [ 8853170, 8853189 ],
+    "children" : [ 189898, 189856 ]
+  }, {
+    "dbId" : 2071958,
+    "stId" : "R-HSA-2071958",
+    "displayName" : "Activated FGFR2 L764fs*4STOP mutant [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2029948 ],
+    "children" : [ 2071957 ]
+  }, {
+    "dbId" : 2071957,
+    "stId" : "R-HSA-2071957",
+    "displayName" : "phosphorylated FGFR2 L764fs*4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2071958 ]
+  }, {
+    "dbId" : 2071955,
+    "stId" : "R-HSA-2071955",
+    "displayName" : "p-8Y-FGFR2c A314D dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065987 ],
+    "children" : [ 2071946 ]
+  }, {
+    "dbId" : 2071952,
+    "stId" : "R-HSA-2071952",
+    "displayName" : "p-8Y-FGFR2c A314S dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065987 ],
+    "children" : [ 2071944 ]
+  }, {
+    "dbId" : 2029966,
+    "stId" : "R-HSA-2029966",
+    "displayName" : "Overexpressed FGFR2:TKIs [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1350 ],
+    "children" : [ 2029963, 2029965 ]
+  }, {
+    "dbId" : 2071951,
+    "stId" : "R-HSA-2071951",
+    "displayName" : "p-8Y-FGFR2c A315S dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065987 ],
+    "children" : [ 2071942 ]
+  }, {
+    "dbId" : 2071948,
+    "stId" : "R-HSA-2071948",
+    "displayName" : "p-8Y-FGFR2c A315T dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065987 ],
+    "children" : [ 2071940 ]
+  }, {
+    "dbId" : 2029965,
+    "stId" : "R-ALL-2029965",
+    "displayName" : "Tyrosine kinase inhibitors of overexpressed FGFR2 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 1348 ],
+    "parents" : [ 2029966 ],
+    "children" : [ 2023377, 2038886, 2038919, 2038925 ]
+  }, {
+    "dbId" : 2071946,
+    "stId" : "R-HSA-2071946",
+    "displayName" : "p-8Y-FGFR2c A314D [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2071955 ]
+  }, {
+    "dbId" : 2029963,
+    "stId" : "R-HSA-2029963",
+    "displayName" : "Overexpressed FGFR2 homodimers [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1339 ],
+    "parents" : [ 2067714, 2029966 ],
+    "children" : [ 2029921, 2029938 ]
+  }, {
+    "dbId" : 2029960,
+    "stId" : "R-HSA-2029960",
+    "displayName" : "Overexpressed FGFR2 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1338 ],
+    "children" : [ 2023840, 2029902 ]
+  }, {
+    "dbId" : 8853265,
+    "stId" : "R-HSA-8853265",
+    "displayName" : "FGFR2 fusions [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2731 ],
+    "children" : [ 8853137, 8853154, 8853123, 8853158, 8853150, 8853153, 8853139, 8853159 ]
+  }, {
+    "dbId" : 2071944,
+    "stId" : "R-HSA-2071944",
+    "displayName" : "p-8Y-FGFR2c A314S [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2071952 ]
+  }, {
+    "dbId" : 8853264,
+    "stId" : "R-HSA-8853264",
+    "displayName" : "FGFR2 fusion dimers [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2732 ],
+    "children" : [ 8853176, 8853182, 8853186, 8853172, 8853179, 8853181, 8853185, 8853174 ]
+  }, {
+    "dbId" : 2071942,
+    "stId" : "R-HSA-2071942",
+    "displayName" : "p-8Y-FGFR2c A315S mutant [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2071951 ]
+  }, {
+    "dbId" : 2071940,
+    "stId" : "R-HSA-2071940",
+    "displayName" : "p-8Y-FGFR2c A315T [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2071948 ]
+  }, {
+    "dbId" : 2071939,
+    "stId" : "R-HSA-2071939",
+    "displayName" : "FGFR2c A314D mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065983 ],
+    "children" : [ 1637888 ]
+  }, {
+    "dbId" : 8853275,
+    "stId" : "R-HSA-8853275",
+    "displayName" : "p-Y FGFR2 fusion dimers [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2736 ],
+    "parents" : [ 5654747 ],
+    "children" : [ 8853224, 8853228, 8853215, 8853219, 8853227, 8853216, 8853221, 8853223 ]
+  }, {
+    "dbId" : 2029955,
+    "stId" : "R-HSA-2029955",
+    "displayName" : "FGFR2 ligand-independent mutants [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1278 ],
+    "children" : [ 1637920, 2029883, 1637908, 1637924, 2029881, 1637931, 1637929, 2029886 ]
+  }, {
+    "dbId" : 2029952,
+    "stId" : "R-HSA-2029952",
+    "displayName" : "FGFR2 ligand-independent mutant dimers [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1279 ],
+    "parents" : [ 2077401 ],
+    "children" : [ 2033335, 2029930, 2029936, 2029923, 2029924, 2071927, 2029928, 2029919 ]
+  }, {
+    "dbId" : 2071937,
+    "stId" : "R-HSA-2071937",
+    "displayName" : "FGFR2c A314S mutant dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2065983 ],
+    "children" : [ 2071928 ]
+  }, {
+    "dbId" : 189856,
+    "stId" : "R-HSA-189856",
+    "displayName" : "FGF1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05230",
+    "geneNames" : [ "FGF1", "FGFA" ],
+    "parents" : [ 8851713, 189959, 189963, 189953, 189967, 189957, 189964, 189955 ]
+  }, {
+    "dbId" : 189862,
+    "stId" : "R-HSA-189862",
+    "displayName" : "FGF20 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NP95",
+    "geneNames" : [ "FGF20" ],
+    "parents" : [ 189959, 189953, 189957, 189964, 189955 ]
+  }, {
+    "dbId" : 189870,
+    "stId" : "R-HSA-189870",
+    "displayName" : "FGF9 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31371",
+    "geneNames" : [ "FGF9" ],
+    "parents" : [ 2065925, 189959, 189953, 189957, 189964, 189955 ]
+  }, {
+    "dbId" : 189871,
+    "stId" : "R-HSA-189871",
+    "displayName" : "FGFR2b long [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-3",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 192604, 190230 ]
+  }, {
+    "dbId" : 189869,
+    "stId" : "R-HSA-189869",
+    "displayName" : "FGF10 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15520",
+    "geneNames" : [ "FGF10" ],
+    "parents" : [ 2065982, 5654351, 5656048, 189963, 189967 ]
+  }, {
+    "dbId" : 189877,
+    "stId" : "R-HSA-189877",
+    "displayName" : "FGF22 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HCT0",
+    "geneNames" : [ "FGF22", "UNQ2500/PRO5800" ],
+    "parents" : [ 5654351, 5656048, 189963, 189967 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1248, 1732, 1417, 1261, 1389, 1677, 2734, 1487, 1744, 1393, 1458, 1592, 1434, 1723, 1757, 1567, 1727 ],
+    "identifier" : "15422",
+    "parents" : [ 170037, 2263468, 9206355, 9630847, 9576623, 9432018, 9511146, 9353588, 9697690, 9795133, 6814649, 9276451, 9600652, 9736131, 9237675, 9388153, 9466546, 9658146, 9539600, 9308766, 390580, 9160108, 9542621, 9391763, 9163921, 9831775, 9603243, 9741155, 9312345, 9240824, 9661271, 9470131, 445789, 390446, 391390, 994134, 9794890, 9510958, 9046292, 9128311, 9431829, 9056083, 9997775, 9070329, 9353374, 9697532, 9206146, 9576446, 9871996, 9630682, 9276265, 9926229, 390474, 9087795, 443623, 9779593, 9419766, 9193599, 9686115, 9859450, 9265606, 9341444, 9981023, 9622036, 9498806, 9083944, 9912343, 9566577, 8948980, 9054223, 9859337, 9621997, 9341426, 9912333, 9265588, 9498788, 9083934, 9054206, 9981013, 9779576, 9566525, 9419748, 9193545, 9686096, 8948970, 9978087, 9065526, 9681832, 9188087, 9910208, 9493702, 9082788, 9414658, 9772921, 9853938, 9117897, 9040616, 5618079, 9053631, 9977478, 9562442, 9414581, 9909743, 9117821, 9681761, 9082712, 9772764, 9065453, 9188008, 9053614, 9493619, 9853846, 3371563, 9040519, 9566510, 9041623, 9083927, 9054199, 9859330, 9779553, 9193528, 9912326, 9120378, 9981000, 9066266, 9341411, 9621982, 9686105, 9265573, 9419721, 9498773, 5618088, 5251947, 9777034, 9119601, 9083581, 9684291, 9053991, 9979698, 9911581, 9191365, 9066018, 9417800, 9041326, 9857395, 9496755, 6792614, 9417808, 9777049, 9041333, 9496763, 9684299, 9191373, 5252045, 5252011, 9684317, 9083606, 9054006, 9066033, 9911618, 9857426, 9119631, 9041355, 9979768, 9777077, 5252104, 9496767, 9191377, 9119606, 9083591, 9684303, 9417812, 9777053, 5252040, 9119637, 9066039, 9911629, 9041361, 9979790, 9083612, 9054012, 5251940, 9083600, 9496777, 9911599, 9777069, 9979727, 9417822, 9857414, 9191393, 9119623, 9684313, 9041345, 9053998, 9066025, 5252036, 9777059, 9191386, 9496773, 9417818, 9041340, 9066020, 9979700, 9857402, 9119618, 9911583, 9684309, 9053993, 9083595, 5252100, 9041331, 9496759, 9191369, 9684295, 9417804, 9777045, 5251938, 9083607, 9054007, 9562506, 9119632, 9356215, 9066034, 9700130, 9632615, 9911619, 9417829, 9191403, 9857427, 9041356, 9279049, 9777078, 9979769, 9496784, 5251937, 9857400, 9119616, 9417816, 9777057, 9191384, 9496771, 9083593, 9041338, 9684307, 5251968, 9496783, 9083604, 9979747, 9857422, 9054002, 9911610, 9041349, 9417828, 9684315, 9066029, 9777075, 9191402, 9119629, 5252063, 9777058, 9417817, 9191385, 9496772, 9041339, 9857401, 9979699, 9119617, 9911582, 9066019, 9684308, 9053992, 9083594, 5252093, 9496781, 9417826, 9857420, 9054000, 9041347, 9083602, 9979740, 9777073, 9191400, 9911605, 9119625, 9066027, 5252028, 9394048, 9663305, 9605109, 9544724, 9166591, 9314781, 9243007, 9472545, 879207, 168906, 918190, 9370000, 9291920, 9644136, 9815167, 9140562, 9526393, 9715010, 9589796, 9448549, 114255, 9221701, 9973634, 9081650, 9064690, 9612356, 9177018, 9252472, 9672800, 9843545, 9757658, 9325507, 9039298, 9907039, 9483640, 9554385, 9405327, 9112971, 201854, 9081655, 9064695, 9973636, 9405331, 9112976, 9612360, 9672804, 9907044, 9177022, 9252476, 9039303, 9483644, 9325511, 9843550, 9757660, 9554389, 201855, 433729, 9948680, 9596076, 9727337, 9230161, 9061970, 9034769, 9150780, 9051869, 9379707, 9077784, 9893446, 9534367, 9458077, 9112940, 9652725, 9301198, 9843510, 201857 ]
+  }, {
+    "dbId" : 189881,
+    "stId" : "R-HSA-189881",
+    "displayName" : "FGF6 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10767",
+    "geneNames" : [ "FGF6", "HST2", "HSTF2" ],
+    "parents" : [ 2065925, 189959, 189953, 189957 ]
+  }, {
+    "dbId" : 2054052,
+    "stId" : "R-ALL-2054052",
+    "displayName" : "SU5402 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "63449",
+    "parents" : [ 2077403, 2077416, 2023441, 2045079 ]
+  }, {
+    "dbId" : 189886,
+    "stId" : "R-HSA-189886",
+    "displayName" : "FGF3 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11487",
+    "geneNames" : [ "FGF3", "INT2" ],
+    "parents" : [ 5654351, 189963, 189967 ]
+  }, {
+    "dbId" : 189884,
+    "stId" : "R-HSA-189884",
+    "displayName" : "FGF7 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21781",
+    "geneNames" : [ "FGF7", "KGF" ],
+    "parents" : [ 2065982, 5656048, 189967 ]
+  }, {
+    "dbId" : 2023840,
+    "stId" : "R-HSA-2023840",
+    "displayName" : "FGFR2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 2029960, 2029938 ]
+  }, {
+    "dbId" : 189885,
+    "stId" : "R-HSA-189885",
+    "displayName" : "FGFR2c short [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-5",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 192596, 192586 ]
+  }, {
+    "dbId" : 74686,
+    "stId" : "R-HSA-74686",
+    "displayName" : "GRB2-1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1573 ],
+    "identifier" : "P62993-1",
+    "geneNames" : [ "GRB2", "ASH" ],
+    "parents" : [ 2197679, 8935905, 8867037, 354113, 8854978, 8854983, 391112, 1295625, 8876351, 182964, 182948, 182946, 180511, 180304, 109801, 389921, 914028, 913411, 182910, 179849, 8851942, 983692, 1433549, 109797, 204865, 392044, 392043, 8851921, 1250499, 388786, 190399, 912623, 912647, 912799, 912528, 912522 ]
+  }, {
+    "dbId" : 190915,
+    "stId" : "R-ALL-190915",
+    "displayName" : "HS [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1237, 1256, 2729 ],
+    "identifier" : "28815",
+    "parents" : [ 8853170, 8853189, 2065929, 2065986, 2065989, 2065931, 2011952, 2011989, 2050638, 2050642, 9421058, 9781113, 9687241, 9342711, 9622970, 9500086, 9121469, 9266792, 9194927, 9567587, 5654354, 9819242, 9722347, 9226723, 9649549, 9454027, 9593368, 9297396, 9097929, 9375726, 9530865, 192609, 9297394, 9530863, 9819240, 9722345, 9226721, 9097927, 9454025, 9649547, 9593366, 9375724, 190225, 9146529, 9146527, 9454045, 9530875, 9297412, 9097939, 9722369, 9649559, 9819252, 9375774, 9226733, 9593378, 192591, 9297410, 9722367, 9454043, 9097937, 9530873, 9819250, 9226731, 9649557, 9375772, 9593376, 190227, 9146549, 9146547, 9454078, 9649592, 9297447, 9530904, 9226762, 9593411, 9722420, 9375823, 190218, 9146580, 5654355, 9097916, 9819227, 9722324, 9649538, 9593357, 9530854, 9297379, 9226712, 9146508, 9226704, 9097910, 9722319, 9593352, 9454010, 9649530, 9819216, 9297374, 9530849, 9375679, 190233, 9146499, 9530844, 9819209, 9226699, 9649525, 9097900, 9375674, 9297369, 9454003, 9722310, 9593347, 190226, 9146492, 9454063, 9297430, 9530891, 9819260, 9649579, 9375800, 9593398, 9226749, 9722404, 9097946, 190234, 9146565, 9226754, 9097952, 9593403, 9722412, 9375815, 9819267, 9454070, 9649584, 9530896, 9297437, 190232, 9146570, 9320453, 9669145, 9479609, 9550887, 9248683, 9609286, 9751366, 9401133, 1307953, 9172850, 9819274, 9097958, 9454075, 9226759, 9297444, 9649589, 9722417, 9530901, 9375820, 9593408, 190223, 9146577, 9643196, 9290850, 9525487, 9814302, 9369047, 9713651, 9447461, 9097967, 9220728, 9588928, 190328, 9098037, 9368227, 9525357, 9643064, 9588809, 9814188, 9447224, 9290635, 9220607, 9713317, 190430, 9588831, 9643103, 9713358, 9525385, 9290666, 9220635, 9447254, 9814192, 9098041, 9368255, 190425, 9643117, 9713369, 9220646, 9588842, 9290677, 9525396, 9368266, 9447265, 500333, 9643133, 9220662, 9713436, 9588858, 9290714, 9525415, 9097998, 9814212, 9368463, 9447312, 190411, 9098007, 9713486, 9290740, 9368617, 9643142, 9220671, 9447346, 9814228, 9588867, 9525424, 192597, 9588894, 9525453, 9713582, 9290791, 9220694, 9643162, 9814257, 9098025, 9139347, 9139326, 9139317, 9139225, 9139183, 9139273, 9139305, 9139129, 9139118, 9139088, 190389, 9290829, 9588915, 9525474, 9369034, 9814288, 9220715, 9713635, 9447448, 9097987, 9643183, 190380, 9290812, 9097977, 9643174, 9447431, 9814274, 9525465, 9588906, 9220706, 9368961, 9713611, 190418, 9643155, 9814245, 9220687, 9588887, 9368760, 9525446, 9098018, 9447384, 9713544, 9290771, 192592, 9368876, 9447410 ]
+  }, {
+    "dbId" : 2023389,
+    "stId" : "R-ALL-2023389",
+    "displayName" : "E3810 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "65138",
+    "parents" : [ 2077403, 2077416, 2023441 ]
+  }, {
+    "dbId" : 189892,
+    "stId" : "R-HSA-189892",
+    "displayName" : "FGF8-1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P55075-1",
+    "geneNames" : [ "FGF8", "AIGF" ],
+    "parents" : [ 5654351, 189959, 189953, 189957, 189964, 189955 ]
+  }, {
+    "dbId" : 189898,
+    "stId" : "R-HSA-189898",
+    "displayName" : "FGF2(10-155) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09038",
+    "geneNames" : [ "FGF2", "FGFB" ],
+    "parents" : [ 6790034, 2684512, 2426289, 8851713, 2065925, 5654351, 5656048, 189959, 189963, 189953, 189957, 189955 ]
+  }, {
+    "dbId" : 189903,
+    "stId" : "R-HSA-189903",
+    "displayName" : "FGF5-1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12034-1",
+    "geneNames" : [ "FGF5" ],
+    "parents" : [ 5654351, 189953, 189957, 189955 ]
+  }, {
+    "dbId" : 170959,
+    "stId" : "R-HSA-170959",
+    "displayName" : "p-6Y-FRS2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WU20",
+    "geneNames" : [ "FRS2" ],
+    "parents" : [ 5655308, 5655236, 5655238, 8853231, 5655216, 190350, 5654193, 5654200, 5654201, 5654196 ]
+  }, {
+    "dbId" : 2023377,
+    "stId" : "R-ALL-2023377",
+    "displayName" : "AZ 2171 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "9933475",
+    "parents" : [ 2029965, 2023441 ]
+  }, {
+    "dbId" : 170963,
+    "stId" : "R-HSA-170963",
+    "displayName" : "FRS2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1383 ],
+    "identifier" : "Q8WU20",
+    "geneNames" : [ "FRS2" ],
+    "parents" : [ 5655299, 5655257, 5655312, 8853235, 5655296, 8855579, 5654178, 5654176, 5654180, 5654182 ]
+  }, {
+    "dbId" : 189907,
+    "stId" : "R-HSA-189907",
+    "displayName" : "FGF4 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P08620",
+    "geneNames" : [ "FGF4", "HST", "HSTF1", "KS3" ],
+    "parents" : [ 5654351, 189959, 189953, 189957, 189955 ]
+  }, {
+    "dbId" : 189905,
+    "stId" : "R-HSA-189905",
+    "displayName" : "FGF18 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O76093",
+    "geneNames" : [ "FGF18", "UNQ420/PRO856" ],
+    "parents" : [ 5654351, 189959, 189957, 189964, 189955 ]
+  }, {
+    "dbId" : 189914,
+    "stId" : "R-HSA-189914",
+    "displayName" : "FGF17-1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60258-1",
+    "geneNames" : [ "FGF17", "UNQ161/PRO187" ],
+    "parents" : [ 5654351, 189959, 189953, 189957, 189964, 189955 ]
+  }, {
+    "dbId" : 189918,
+    "stId" : "R-HSA-189918",
+    "displayName" : "FGF16 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43320",
+    "geneNames" : [ "FGF16" ],
+    "parents" : [ 189959, 189957, 189955 ]
+  }, {
+    "dbId" : 189920,
+    "stId" : "R-HSA-189920",
+    "displayName" : "FGFR2c long [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21802-1",
+    "geneNames" : [ "FGFR2", "BEK", "KGFR", "KSAM" ],
+    "parents" : [ 192596, 190231 ]
+  }, {
+    "dbId" : 2023393,
+    "stId" : "R-ALL-2023393",
+    "displayName" : "E7080 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "85994",
+    "parents" : [ 2077403, 2077416 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 8853319,
+    "stId" : "R-HSA-8853319",
+    "displayName" : "FGFR2 fusions dimerize",
+    "schemaClass" : "Reaction",
+    "following" : [ 8853313 ],
+    "inputs" : [ 8853265 ],
+    "outputs" : [ 8853264 ],
+    "efs" : [ 8853265 ],
+    "diagramIds" : [ 2730 ],
+    "entityFunctionalStatus" : [ 8853265 ]
+  }, {
+    "dbId" : 2029983,
+    "stId" : "R-HSA-2029983",
+    "displayName" : "Dimerization of FGFR2 ligand-independent mutants",
+    "schemaClass" : "Reaction",
+    "following" : [ 2029984 ],
+    "inputs" : [ 2029955 ],
+    "outputs" : [ 2029952 ],
+    "efs" : [ 2029955 ],
+    "diagramIds" : [ 1721 ],
+    "entityFunctionalStatus" : [ 2029955 ]
+  }, {
+    "dbId" : 8853313,
+    "stId" : "R-HSA-8853313",
+    "displayName" : "FGFR2 fusions autophosphorylate",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8853319 ],
+    "inputs" : [ 113592, 8853264 ],
+    "outputs" : [ 8853275, 29370 ],
+    "catalysts" : [ 8853264 ],
+    "efs" : [ 8853264 ],
+    "diagramIds" : [ 2733 ],
+    "entityFunctionalStatus" : [ 8853264 ]
+  }, {
+    "dbId" : 5654748,
+    "stId" : "R-HSA-5654748",
+    "displayName" : "p-4Y-PLCG1 dissociates from activated FGFR2 mutants",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5655301 ],
+    "inputs" : [ 5654745 ],
+    "outputs" : [ 5654747, 167679 ],
+    "efs" : [ 5654745 ],
+    "diagramIds" : [ 167645 ],
+    "entityFunctionalStatus" : [ 5654745 ]
+  }, {
+    "dbId" : 2033490,
+    "stId" : "R-HSA-2033490",
+    "displayName" : "Autocatalytic phosphorylation of FGFR2 point mutants with enhanced kinase activity",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2033479 ],
+    "inputs" : [ 2033349, 113592 ],
+    "outputs" : [ 2033348, 29370 ],
+    "catalysts" : [ 2033349 ],
+    "efs" : [ 2033349 ],
+    "diagramIds" : [ 1743 ],
+    "entityFunctionalStatus" : [ 2033349 ]
+  }, {
+    "dbId" : 5655323,
+    "stId" : "R-HSA-5655323",
+    "displayName" : "Activated FGFR2 mutant-associated PI3K phosphorylates PIP2 to PIP3",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113592, 179856 ],
+    "outputs" : [ 179838, 29370 ],
+    "catalysts" : [ 5655337 ],
+    "efs" : [ 5655337 ],
+    "diagramIds" : [ 167657 ],
+    "entityFunctionalStatus" : [ 5655337 ]
+  }, {
+    "dbId" : 5655320,
+    "stId" : "R-HSA-5655320",
+    "displayName" : "Activated FGFR2 mutants:p-FRS2 binds GRB2:GAB1:PIK3R1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5655268 ],
+    "inputs" : [ 179864, 5655236 ],
+    "outputs" : [ 5655330 ],
+    "efs" : [ 5655236 ],
+    "diagramIds" : [ 167658 ],
+    "entityFunctionalStatus" : [ 5655236 ]
+  }, {
+    "dbId" : 2033488,
+    "stId" : "R-HSA-2033488",
+    "displayName" : "Autocatalytic phosphorylation of FGFR2b mutants with enhanced ligand binding",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2033474 ],
+    "inputs" : [ 113592, 2065929 ],
+    "outputs" : [ 29370, 2065931 ],
+    "catalysts" : [ 2065929 ],
+    "efs" : [ 2065929 ],
+    "diagramIds" : [ 1726 ],
+    "entityFunctionalStatus" : [ 2065929 ]
+  }, {
+    "dbId" : 8853320,
+    "stId" : "R-HSA-8853320",
+    "displayName" : "FGFR2IIIa TM binds ligand and full length receptors to inhibit signaling",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 8851710 ],
+    "inputs" : [ 8851704, 8851713, 190915, 8851703 ],
+    "outputs" : [ 8853189 ],
+    "efs" : [ 8851703 ],
+    "diagramIds" : [ 2717 ],
+    "entityFunctionalStatus" : [ 8851703 ]
+  }, {
+    "dbId" : 2033486,
+    "stId" : "R-HSA-2033486",
+    "displayName" : "Autocatalytic phosphorylation of FGFR2c mutants with enhanced ligand binding",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2033472 ],
+    "inputs" : [ 2065986, 113592 ],
+    "outputs" : [ 2065989, 29370 ],
+    "catalysts" : [ 2065986 ],
+    "efs" : [ 2065986 ],
+    "diagramIds" : [ 1731 ],
+    "entityFunctionalStatus" : [ 2065986 ]
+  }, {
+    "dbId" : 5655301,
+    "stId" : "R-HSA-5655301",
+    "displayName" : "Activated FGFR2 mutants phosphorylate PLCG1",
+    "schemaClass" : "Reaction",
+    "following" : [ 5654748 ],
+    "inputs" : [ 113592, 5655346 ],
+    "outputs" : [ 5654745, 29370 ],
+    "catalysts" : [ 5655346 ],
+    "efs" : [ 5655346 ],
+    "diagramIds" : [ 167659 ],
+    "entityFunctionalStatus" : [ 5655346 ]
+  }, {
+    "dbId" : 5655233,
+    "stId" : "R-HSA-5655233",
+    "displayName" : "Activated FGFR2 mutants:p-FRS2 binds GRB2-SOS1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109797, 5655236 ],
+    "outputs" : [ 5655345 ],
+    "efs" : [ 5655236 ],
+    "diagramIds" : [ 167647 ],
+    "entityFunctionalStatus" : [ 5655236 ]
+  }, {
+    "dbId" : 2033479,
+    "stId" : "R-HSA-2033479",
+    "displayName" : "Dimerization of FGFR2 point mutants with enhanced kinase activity",
+    "schemaClass" : "Reaction",
+    "following" : [ 2033490 ],
+    "inputs" : [ 2033351 ],
+    "outputs" : [ 2033349 ],
+    "efs" : [ 2033351 ],
+    "diagramIds" : [ 1742 ],
+    "entityFunctionalStatus" : [ 2033351 ]
+  }, {
+    "dbId" : 5655245,
+    "stId" : "R-HSA-5655245",
+    "displayName" : "Activated FGFR2 mutants:p-FRS2:GRB2:GAB1:PIK3R1 binds PIK3CA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5655330, 74787 ],
+    "outputs" : [ 5655337 ],
+    "efs" : [ 5655330 ],
+    "diagramIds" : [ 167650 ],
+    "entityFunctionalStatus" : [ 5655330 ]
+  }, {
+    "dbId" : 2033474,
+    "stId" : "R-HSA-2033474",
+    "displayName" : "FGFR2b mutants bind an expanded range of ligands",
+    "schemaClass" : "Reaction",
+    "following" : [ 2033488 ],
+    "inputs" : [ 2065925, 2033371, 190915 ],
+    "outputs" : [ 2065929 ],
+    "efs" : [ 2033371 ],
+    "diagramIds" : [ 1725 ],
+    "entityFunctionalStatus" : [ 2033371 ]
+  }, {
+    "dbId" : 2067713,
+    "stId" : "R-HSA-2067713",
+    "displayName" : "GP369 inhibits activation of amplified FGFR2 signaling",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 2067712, 2029963 ],
+    "outputs" : [ 2067714 ],
+    "efs" : [ 2029963 ],
+    "diagramIds" : [ 1760 ],
+    "entityFunctionalStatus" : [ 2029963 ]
+  }, {
+    "dbId" : 2033472,
+    "stId" : "R-HSA-2033472",
+    "displayName" : "FGFR2c mutants bind an expanded range of ligands",
+    "schemaClass" : "Reaction",
+    "following" : [ 2033486 ],
+    "inputs" : [ 2065982, 190915, 2033375 ],
+    "outputs" : [ 2065986 ],
+    "efs" : [ 2033375 ],
+    "diagramIds" : [ 1730 ],
+    "entityFunctionalStatus" : [ 2033375 ]
+  }, {
+    "dbId" : 5655241,
+    "stId" : "R-HSA-5655241",
+    "displayName" : "Activated FGFR2 mutants:p-FRS2:GRB2:SOS1 activates RAS nucleotide exchange",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29438, 109796 ],
+    "outputs" : [ 29420, 109783 ],
+    "catalysts" : [ 5655345 ],
+    "efs" : [ 5655345 ],
+    "diagramIds" : [ 167653 ],
+    "entityFunctionalStatus" : [ 5655345 ]
+  }, {
+    "dbId" : 2077424,
+    "stId" : "R-HSA-2077424",
+    "displayName" : "Point mutants of FGFR2 bind and are inactivated by tyrosine kinase inhibitors",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 2077401, 2077403 ],
+    "outputs" : [ 2077404 ],
+    "efs" : [ 2077401 ],
+    "diagramIds" : [ 1746 ],
+    "entityFunctionalStatus" : [ 2077401 ]
+  }, {
+    "dbId" : 5655268,
+    "stId" : "R-HSA-5655268",
+    "displayName" : "Activated FGFR2 mutants phosphorylate FRS2",
+    "schemaClass" : "Reaction",
+    "following" : [ 5655320 ],
+    "inputs" : [ 5655257, 113592 ],
+    "outputs" : [ 29370, 5655236 ],
+    "catalysts" : [ 5655257 ],
+    "efs" : [ 5655257 ],
+    "diagramIds" : [ 167654 ],
+    "entityFunctionalStatus" : [ 5655257 ]
+  }, {
+    "dbId" : 2077421,
+    "stId" : "R-HSA-2077421",
+    "displayName" : "FP-1039 acts as a ligand-trap for FGFR2b-binding ligands in endometrial cancer",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 2077408, 2065925 ],
+    "outputs" : [ 2077406 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1729 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2029992,
+    "stId" : "R-HSA-2029992",
+    "displayName" : "Tyrosine kinase inhibitors bind to overexpressed FGFR2 variants",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2029988 ],
+    "inputs" : [ 2029963, 2029965 ],
+    "outputs" : [ 2029966 ],
+    "efs" : [ 2029963 ],
+    "diagramIds" : [ 1759 ],
+    "entityFunctionalStatus" : [ 2029963 ]
+  }, {
+    "dbId" : 5655343,
+    "stId" : "R-HSA-5655343",
+    "displayName" : "Activated FGFR2 mutants bind PLCG1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5654747, 179838, 167682 ],
+    "outputs" : [ 5655346 ],
+    "efs" : [ 5654747 ],
+    "diagramIds" : [ 167662 ],
+    "entityFunctionalStatus" : [ 5654747 ]
+  }, {
+    "dbId" : 8851710,
+    "stId" : "R-HSA-8851710",
+    "displayName" : "Aberrant alternative splicing yields a secreted FGFR2 IIIa TM disease variant",
+    "schemaClass" : "BlackBoxEvent",
+    "following" : [ 8853320 ],
+    "inputs" : [ 6803524 ],
+    "outputs" : [ 8851703 ],
+    "efs" : [ 8851703 ],
+    "diagramIds" : [ 2691 ],
+    "entityFunctionalStatus" : [ 8851703 ]
+  }, {
+    "dbId" : 2029988,
+    "stId" : "R-HSA-2029988",
+    "displayName" : "Dimerization of overexpressed FGFR2",
+    "schemaClass" : "Reaction",
+    "following" : [ 2029989, 2029992 ],
+    "inputs" : [ 2029960 ],
+    "outputs" : [ 2029963 ],
+    "efs" : [ 2029960 ],
+    "diagramIds" : [ 1755 ],
+    "entityFunctionalStatus" : [ 2029960 ]
+  }, {
+    "dbId" : 2029989,
+    "stId" : "R-HSA-2029989",
+    "displayName" : "Autocatalytic phosphorylation of overexpressed FGFR2 variants",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2029988 ],
+    "inputs" : [ 113592, 2029963 ],
+    "outputs" : [ 29370, 2029940 ],
+    "catalysts" : [ 2029963 ],
+    "efs" : [ 2029963 ],
+    "diagramIds" : [ 1756 ],
+    "entityFunctionalStatus" : [ 2029963 ]
+  }, {
+    "dbId" : 5655339,
+    "stId" : "R-HSA-5655339",
+    "displayName" : "Activated FGFR2 mutants bind FRS2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5654747, 170963 ],
+    "outputs" : [ 5655257 ],
+    "efs" : [ 5654747 ],
+    "diagramIds" : [ 167664 ],
+    "entityFunctionalStatus" : [ 5654747 ]
+  }, {
+    "dbId" : 2029984,
+    "stId" : "R-HSA-2029984",
+    "displayName" : "Autocatalytic phosphorylation of FGFR2 ligand-independent  mutants",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2029983 ],
+    "inputs" : [ 2029952, 113592 ],
+    "outputs" : [ 29370, 2029948 ],
+    "catalysts" : [ 2029952 ],
+    "efs" : [ 2029952 ],
+    "diagramIds" : [ 1722 ],
+    "entityFunctionalStatus" : [ 2029952 ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 8851708,
+    "stId" : "R-HSA-8851708",
+    "displayName" : "Signaling by FGFR2 IIIa TM",
+    "events" : [ 8851710, 8853320 ]
+  }, {
+    "dbId" : 8853333,
+    "stId" : "R-HSA-8853333",
+    "displayName" : "Signaling by FGFR2 fusions",
+    "events" : [ 8853319, 8853313 ]
+  }, {
+    "dbId" : 2033519,
+    "stId" : "R-HSA-2033519",
+    "displayName" : "Activated point mutants of FGFR2",
+    "events" : [ 2029983, 2033486, 2077421, 2033479, 2033474, 2033490, 2029984, 2033488, 2033472, 2077424 ]
+  }, {
+    "dbId" : 1839126,
+    "stId" : "R-HSA-1839126",
+    "displayName" : "FGFR2 mutant receptor activation",
+    "events" : [ 2029983, 2033486, 2077421, 2033479, 2033474, 2033490, 2029984, 2033488, 2033472, 2077424, 8853319, 8853313, 2029992, 2029988, 2029989, 2067713, 8851710, 8853320 ]
+  }, {
+    "dbId" : 2023837,
+    "stId" : "R-HSA-2023837",
+    "displayName" : "Signaling by FGFR2 amplification mutants",
+    "events" : [ 2029992, 2029988, 2029989, 2067713 ]
+  } ]
+}

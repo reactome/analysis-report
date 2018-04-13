@@ -1,0 +1,2 @@
+The Reactome pathway Knowledgebase. Nucleic Acids Research, Volume 44, Issue D1,4 January 2016,Pages D481–D487	https://academic.oup.com/nar/article/44/D1/D481/2503122
+Reactome pathway analysis: a high-performance in-memory approach. BMC Bioinformatics, 18, 142, 2 March 2017	https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1559-2
