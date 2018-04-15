@@ -3,12 +3,6 @@ package org.reactome.server.tools.analysis.report.document;
 import java.io.BufferedOutputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.PatternSyntaxException;
 
 public class TexDocument {
 
@@ -31,15 +25,9 @@ public class TexDocument {
 	public static final String Large = "Large";
 	public static final String V_SPACE = "vspace";
 	public static final String TITLEPAGE = "titlepage";
+	public static final String MULTICOLUMN = "multicolumn";
+	public static final String INCLUDE_GRAPHICS = "includegraphics";
 
-	private static final Map<String, String> TO_COMMAND_CHARACTERS = new LinkedHashMap<>();
-	private static final List<String> TO_SCAPE_CHARACTERS = Arrays.asList("&", "%", "\\$", "#", "_", "\\{", "\\}");
-
-	static {
-		TO_COMMAND_CHARACTERS.put("\\\\", "textbackslash");
-		TO_COMMAND_CHARACTERS.put("~", "textasciitilde");
-		TO_COMMAND_CHARACTERS.put("\\^", "textasciicircum");
-	}
 
 	private final PrintStream output;
 
@@ -50,45 +38,17 @@ public class TexDocument {
 
 	}
 
-	private static String createCommand(String command, String modifier, String value, String floats) {
-		final StringBuilder line = new StringBuilder("\\")
-				.append(command);
-		if (modifier != null)
-			line.append("[").append(modifier).append("]");
-		if (value != null)
-			line.append("{").append(value).append("}");
-		if (floats != null)
-			line.append("[").append(floats).append("]");
-		return line.toString();
+	public TexDocument command(Command command) {
+		output.print(command);
+		return this;
 	}
 
-	public static String scape(String text) {
-		// Order matters
-		for (Map.Entry<String, String> entry : TO_COMMAND_CHARACTERS.entrySet()) {
-			try {
-				final String replacement = Matcher.quoteReplacement(createCommand(entry.getValue(), null, null, null));
-				text = text.replaceAll(entry.getKey(), replacement + " ");
-			} catch (PatternSyntaxException e) {
-				System.out.println(text);
-				System.out.println(entry.getKey());
-				throw (e);
-			}
-		}
-		for (String s : TO_SCAPE_CHARACTERS) {
-			try {
-				final String replacement = Matcher.quoteReplacement("\\" + s);
-				text = text.replaceAll(s, replacement);
-			} catch (PatternSyntaxException e) {
-				System.out.println(text);
-				System.out.println(s);
-				throw (e);
-			}
-		}
-
-		return text;
+	public TexDocument commandln(Command command) {
+		output.println(command);
+		return this;
 	}
 
-	public TexDocument newLine() {
+	public TexDocument ln() {
 		output.println();
 		return this;
 	}
@@ -98,8 +58,7 @@ public class TexDocument {
 	 * <code>\command</code> and newline.
 	 */
 	public TexDocument commandln(String command) {
-		commandln(command, null);
-		return this;
+		return commandln(command, null);
 	}
 
 	/**
@@ -107,8 +66,7 @@ public class TexDocument {
 	 * <code>\command</code>.
 	 */
 	public TexDocument command(String command) {
-		command(command, null);
-		return this;
+		return command(command, null);
 	}
 
 	/**
@@ -116,8 +74,7 @@ public class TexDocument {
 	 * Appends<code>\command{params}</code> and newline
 	 */
 	public TexDocument commandln(String command, String params) {
-		commandln(command, null, params);
-		return this;
+		return command(command, null, params).ln();
 	}
 
 	/**
@@ -125,8 +82,7 @@ public class TexDocument {
 	 * Appends<code>\command{value}</code>
 	 */
 	public TexDocument command(String command, String value) {
-		command(command, null, value);
-		return this;
+		return command(command, null, value);
 	}
 
 	/**
@@ -134,8 +90,7 @@ public class TexDocument {
 	 * Appends<code>\command[modifier]{params}</code> and newline
 	 */
 	public TexDocument commandln(String command, String modifier, String params) {
-		commandln(command, modifier, params, null);
-		return this;
+		return command(command, modifier, params, null).ln();
 	}
 
 	/**
@@ -143,8 +98,7 @@ public class TexDocument {
 	 * Appends<code>\command[modifier]{params}</code>
 	 */
 	public TexDocument command(String command, String modifier, String params) {
-		command(command, modifier, params, null);
-		return this;
+		return command(command, modifier, params, null);
 	}
 
 	/**
@@ -153,9 +107,7 @@ public class TexDocument {
 	 * brackets, use empty String.
 	 */
 	public TexDocument commandln(String command, String modifier, String params, String floats) {
-		command(command, modifier, params, floats);
-		output.println();
-		return this;
+		return command(command, modifier, params, floats).ln();
 	}
 
 	/**
@@ -164,8 +116,7 @@ public class TexDocument {
 	 * use empty String.
 	 */
 	public TexDocument command(String command, String modifier, String params, String floats) {
-		final String line = createCommand(command, modifier, params, floats);
-		output.print(line);
+		output.print(new Command(command).values(params).modifiers(modifier).floats(floats));
 		return this;
 	}
 
@@ -175,13 +126,12 @@ public class TexDocument {
 	}
 
 	public TexDocument textln(String text) {
-		text(text);
-		output.println();
+		output.println(text);
 		return this;
 	}
 
 	/**
-	 * Appends text followed by two newlines, enforcing a new paragraph in
+	 * Appends command followed by two newlines, enforcing a new paragraph in
 	 * latex.
 	 */
 	public TexDocument paragraph(String text) {
@@ -194,7 +144,7 @@ public class TexDocument {
 		output.flush();
 	}
 
-	public void newPage() {
-		commandln(NEW_PAGE);
+	public TexDocument newPage() {
+		return commandln(NEW_PAGE);
 	}
 }

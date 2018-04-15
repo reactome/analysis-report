@@ -5,6 +5,7 @@ import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.graph.domain.model.Summation;
 import org.reactome.server.tools.analysis.report.document.TexDocument;
+import org.reactome.server.tools.analysis.report.document.TextUtils;
 import org.reactome.server.tools.analysis.report.style.PdfProfile;
 
 import java.util.LinkedList;
@@ -128,8 +129,7 @@ public class HtmlParser {
 			final String trim = paragraph.trim();
 			if (trim.isEmpty()) continue;
 			parseParagraph(document, trim);
-			document.newLine();
-			document.newLine();
+			document.ln().ln();
 		}
 	}
 
@@ -167,7 +167,7 @@ public class HtmlParser {
 
 		@Override
 		public void render(TexDocument document) {
-			document.text(document.scape(text));
+			document.text(TextUtils.scape(text));
 		}
 	}
 
@@ -185,7 +185,7 @@ public class HtmlParser {
 
 		@Override
 		public void render(TexDocument document) {
-			document.command(TexDocument.TEXT_IT, document.scape(text));
+			document.command(TexDocument.TEXT_IT, TextUtils.scape(text));
 		}
 	}
 
@@ -201,7 +201,7 @@ public class HtmlParser {
 
 		@Override
 		public void render(TexDocument document) {
-			document.command(TexDocument.TEXT_BF, document.scape(text));
+			document.command(TexDocument.TEXT_BF, TextUtils.scape(text));
 		}
 	}
 
@@ -225,7 +225,7 @@ public class HtmlParser {
 
 		@Override
 		public void render(TexDocument document) {
-			document.command(TexDocument.HYPERREF, document.scape(text), link);
+			document.command(TexDocument.HYPERREF, TextUtils.scape(text), link);
 		}
 
 	}
@@ -243,7 +243,7 @@ public class HtmlParser {
 
 		@Override
 		public void render(TexDocument document) {
-			document.command(TexDocument.TEXT_SUBSCRIPT, document.scape(text));
+			document.command(TexDocument.TEXT_SUBSCRIPT, TextUtils.scape(text));
 		}
 	}
 }

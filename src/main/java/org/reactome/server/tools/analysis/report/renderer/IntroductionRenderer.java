@@ -18,7 +18,7 @@ public class IntroductionRenderer implements TexRenderer {
 
 	@Override
 	public void render(TexDocument document, AnalysisData analysisData) {
-		document.command(TexDocument.SECTION, "Introduction");
+		document.command(TexDocument.SECTION, "Introduction").ln();
 		INTRODUCTION.forEach(document::paragraph);
 		document.commandln(TexDocument.BEGIN, "itemize");
 		for (Reference publication : PUBLICATIONS)
