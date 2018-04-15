@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.report.util;
 
 import org.reactome.server.graph.domain.model.*;
-import org.reactome.server.tools.analysis.report.document.TexDocument;
+import org.reactome.server.tools.analysis.report.document.TextUtils;
 
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -22,7 +22,7 @@ public class ReferenceFactory {
 			final URL url = (URL) publication;
 			text = toString(url);
 		}
-		return TexDocument.scape(text) + ".";
+		return TextUtils.scape(text) + ".";
 	}
 
 	private static String toString(LiteratureReference reference) {

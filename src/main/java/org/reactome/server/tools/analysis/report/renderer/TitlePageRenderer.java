@@ -2,6 +2,7 @@ package org.reactome.server.tools.analysis.report.renderer;
 
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.analysis.report.document.TexDocument;
+import org.reactome.server.tools.analysis.report.document.TextUtils;
 import org.reactome.server.tools.analysis.report.util.PdfUtils;
 
 import java.util.List;
@@ -23,7 +24,7 @@ public class TitlePageRenderer implements TexRenderer {
 		String link = "https://reactome.org/PathwayBrowser/#/ANALYSIS=" + analysisData.getAnalysisStoredResult().getSummary().getToken();
 		// Links only scape %
 		link = link.replaceAll("%", "\\\\%");
-		final String escaped = TexDocument.scape(link);
+		final String escaped = TextUtils.scape(link);
 		final String p2 = "\\href{" + link + "}{" + escaped + "}";
 
 		final String p3 = SUMMARY_TEXT.get(1);
