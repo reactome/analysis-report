@@ -1,9 +1,6 @@
 package org.reactome.server.tools.analysis.report;
 
-import com.itextpdf.kernel.pdf.PdfDocument;
-import com.itextpdf.kernel.pdf.PdfReader;
 import org.apache.batik.transcoder.TranscoderException;
-import org.apache.commons.io.IOUtils;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.graph.domain.result.DiagramResult;
 import org.reactome.server.graph.service.DiagramService;
@@ -21,12 +18,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.nio.charset.Charset;
 import java.nio.file.Files;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public class ReportBuilder {
 
@@ -79,9 +71,7 @@ public class ReportBuilder {
 			args.setResource(data.getResource());
 			final File file = new File(folder, stId + ".svg");
 			try {
-//				synchronized (this) {
-					rasterExporter.export(args, new FileOutputStream(file), this.result);
-//				}
+				rasterExporter.export(args, new FileOutputStream(file), this.result);
 			} catch (EhldException | AnalysisException | DiagramJsonNotFoundException | IOException | DiagramJsonDeserializationException | TranscoderException e) {
 				logger.error("Couldn't create diagram " + args.getStId(), e);
 			}
@@ -101,30 +91,6 @@ public class ReportBuilder {
 			final Process process = builder.start();
 			process.waitFor();
 		} catch (IOException | InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
-
-	private void cleanPdf(File file) {
-		try {
-			final File pdf = new File(file.getParentFile(), file.getName().replace(".svg", ".pdf"));
-			final File pdf_tex = new File(file.getParentFile(), file.getName().replace(".svg", ".pdf_tex"));
-			PdfDocument document = new PdfDocument(new PdfReader(pdf));
-			final int numberOfPages = document.getNumberOfPages();
-			document.close();
-			final List<String> lines = IOUtils.readLines(new FileInputStream(pdf_tex), Charset.defaultCharset());
-			final Pattern pattern = Pattern.compile("\\s*\\\\put\\(\\d+,\\d+\\)\\{\\\\includegraphics\\[width=\\\\unitlength,page=(\\d+)]\\{.*\\.pdf}}%\\s*");
-			final List<String> resulting = lines.stream()
-					.filter(line -> {
-						final Matcher matcher = pattern.matcher(line);
-						if (matcher.matches()) {
-							final int page = Integer.parseInt(matcher.group(1));
-							return page <= numberOfPages;
-						}
-						return true;
-					}).collect(Collectors.toList());
-			IOUtils.writeLines(resulting, System.lineSeparator(), new FileOutputStream(pdf_tex), Charset.defaultCharset());
-		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
@@ -149,6 +115,7 @@ public class ReportBuilder {
 
 	private void compile(File latex) {
 		final ProcessBuilder builder = new ProcessBuilder("pdflatex",
+				"-halt-on-error",
 				latex.getAbsolutePath())
 				.redirectErrorStream(true)
 				.directory(latex.getParentFile());
