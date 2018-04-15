@@ -10,7 +10,7 @@ import java.util.Collection;
 public class ReportRenderer {
 
 	private static final Collection<TexRenderer> RENDERERS = Arrays.asList(
-			new DependenciesRenderer(),
+			new PreambleRenderer(),
 			(document, data) -> document.commandln(TexDocument.BEGIN, "document"),
 			new TitlePageRenderer(),
 			new TableOfContentsRenderer(),
