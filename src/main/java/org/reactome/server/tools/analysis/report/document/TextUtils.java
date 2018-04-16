@@ -42,4 +42,17 @@ public class TextUtils {
 
 		return text;
 	}
+
+	/**
+	 * Calls <code>ellipsis(text, 10)</code>.
+	 */
+	public static String ellipsis(String text) {
+		return ellipsis(text, 10);
+	}
+
+	public static String ellipsis(String text, int maxLength) {
+		return text.length() > maxLength
+				? text.substring(0, maxLength - 3) + "..."
+				: text;
+	}
 }

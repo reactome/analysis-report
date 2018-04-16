@@ -11,7 +11,7 @@ public class TableOfContent implements Section {
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 
 		document.add(new AreaBreak());
-		document.add(profile.getH1("Table of Contents"));
+		document.add(profile.getH1("TexTable of Contents"));
 
 		document.add(profile.getToc1("1. Introduction", "introduction"));
 		document.add(profile.getToc1("2. Properties of analysis", "properties"));

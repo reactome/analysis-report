@@ -1,24 +1,27 @@
 package org.reactome.server.tools.analysis.report.renderer;
 
-import org.reactome.server.graph.domain.model.*;
+import org.reactome.server.analysis.core.result.model.FoundElements;
+import org.reactome.server.analysis.core.result.model.FoundEntity;
+import org.reactome.server.analysis.core.result.model.IdentifierMap;
+import org.reactome.server.analysis.core.result.model.ResourceSummary;
+import org.reactome.server.graph.domain.model.DatabaseObject;
+import org.reactome.server.graph.domain.model.Disease;
+import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.result.DiagramResult;
 import org.reactome.server.graph.service.DiagramService;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.analysis.report.PathwayData;
-import org.reactome.server.tools.analysis.report.document.Command;
 import org.reactome.server.tools.analysis.report.document.TexDocument;
 import org.reactome.server.tools.analysis.report.document.TextUtils;
-import org.reactome.server.tools.analysis.report.util.HtmlParser;
-import org.reactome.server.tools.analysis.report.util.ReferenceFactory;
+import org.reactome.server.tools.analysis.report.util.*;
 
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.LinkedList;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class PathwayDetailRenderer implements TexRenderer {
 
+	public static final String HEAEDER_CONF = "\\cellcolor[RGB]{47,158,194}{\\color{white}";
 	private static final DiagramService SERVICE = ReactomeGraphCore.getService(DiagramService.class);
 	private static final String PATHWAY_DETAIL = "https://reactome.org/content/detail/";
 
@@ -42,10 +45,6 @@ public class PathwayDetailRenderer implements TexRenderer {
 
 			document.commandln(TexDocument.NEW_PAGE);
 		});
-	}
-
-	private void addFoundElements(TexDocument document, AnalysisData analysisData, Pathway pathway) {
-
 	}
 
 	private void addDiagram(TexDocument document, PathwayData pathwayData) {
@@ -98,84 +97,113 @@ public class PathwayDetailRenderer implements TexRenderer {
 	}
 
 	private void addEditTable(TexDocument document, Pathway pathway) {
+		final List<List<String>> rows = Editions.from(pathway).stream()
+				.map(edition -> Arrays.asList(edition.getDate(), edition.getType(), edition.getAuthors()))
+				.collect(Collectors.toList());
+		final TexTable table = new TexTable(Arrays.asList("Date", "Action", "Author"), rows);
+		table.setAlignment("ccZ");
 		document.ln().commandln(TexDocument.SUB_SUB_SECTION + "*", "Edit history");
-		final java.util.List<Edition> editions = new LinkedList<>();
-		if (pathway.getCreated() != null)
-			editions.add(new Edition("Created", pathway.getCreated()));
-		if (pathway.getModified() != null)
-			editions.add(new Edition("Modified", pathway.getModified()));
-		if (pathway.getAuthored() != null)
-			pathway.getAuthored().forEach(instanceEdit -> editions.add(new Edition("Authored", instanceEdit)));
-		if (pathway.getEdited() != null)
-			pathway.getEdited().forEach(instanceEdit -> editions.add(new Edition("Edited", instanceEdit)));
-		if (pathway.getReviewed() != null)
-			pathway.getReviewed().forEach(instanceEdit -> editions.add(new Edition("Reviewed", instanceEdit)));
-		if (pathway.getRevised() != null)
-			pathway.getRevised().forEach(instanceEdit -> editions.add(new Edition("Revised", instanceEdit)));
-
-		editions.sort(Comparator.comparing(Edition::getDate));
-
-		final String heaederConf = "\\cellcolor[RGB]{47,158,194}{\\color{white}";
-		document.commandln(TexDocument.BEGIN, null, "table", "H")
-				.commandln(TexDocument.CENTERING)
-				.commandln("bgroup")
-				.command("renewcommand").commandln(new Command("arraystretch", "1.5"))
-				.commandln(new Command(TexDocument.BEGIN, "tabularx", "\\textwidth", "ccX"))
-				.command(new Command(TexDocument.MULTICOLUMN, "1", "c", heaederConf + new Command(TexDocument.TEXT_BF, "Date") + "}")).text(" & ")
-				.command(new Command(TexDocument.MULTICOLUMN, "1", "c", heaederConf + new Command(TexDocument.TEXT_BF, "Action") + "}")).text(" & ")
-				.command(new Command(TexDocument.MULTICOLUMN, "1", "c", heaederConf + new Command(TexDocument.TEXT_BF, "Authors") + "}")).textln(" \\\\ ");
-		for (Edition edition : editions) {
-			document.text(TextUtils.scape(edition.getDate())
-					+ " & " + TextUtils.scape(edition.getType())
-					+ " & " + TextUtils.scape(edition.getAuthors()))
-					.textln(" \\\\");
-		}
-		document.commandln(TexDocument.END, "tabularx")
-				.commandln("egroup")
-				.commandln(TexDocument.END, "table")
-				.ln();
+		table.render(document);
 	}
 
-	private class Edition {
-		private final String type;
-		private final String authors;
-		private final String date;
 
-		Edition(String type, InstanceEdit instanceEdit) {
-			this.type = type;
-			this.authors = asString(instanceEdit.getAuthor());
-			this.date = instanceEdit.getDateTime().substring(0, 10);
-		}
-
-		public String getType() {
-			return type;
-		}
-
-		String getAuthors() {
-			return authors;
-		}
-
-		String getDate() {
-			return date;
+	private void addFoundElements(TexDocument document, AnalysisData analysisData, Pathway pathway) {
+		document.commandln(TexDocument.SUB_SUB_SECTION + "*", "Elements found in this pathway");
+		if (analysisData.getResource().equalsIgnoreCase("total")) {
+			for (ResourceSummary summary : analysisData.getAnalysisStoredResult().getResourceSummary()) {
+				if (summary.getResource().equalsIgnoreCase("total")) continue;
+				final FoundElements foundElements = analysisData.getAnalysisStoredResult().getFoundElmentsForPathway(pathway.getStId(), summary.getResource());
+				if (foundElements.getFoundEntities() > 0)
+					addIdentifiers(document, foundElements, analysisData.beautify(summary.getResource()));
+			}
+		} else {
+			final FoundElements foundElements = analysisData.getAnalysisStoredResult().getFoundElmentsForPathway(pathway.getStId(), analysisData.getResource());
+			addIdentifiers(document, foundElements, analysisData.getBeautifiedResource());
 		}
 
 
-		private String asString(java.util.List<Person> persons) {
-			if (persons == null) return "";
-			String text = String.join(", ", persons.stream()
-					.limit(5)
-					.map(this::compileName)
-					.collect(Collectors.toList()));
-			if (persons.size() > 5) text += " et al.";
-			return text;
-		}
-
-		private String compileName(Person person) {
-			if (person.getFirstname() != null && person.getSurname() != null)
-				return person.getSurname() + " " + person.getFirstname();
-			if (person.getSurname() != null)
-				return person.getSurname();
-			return person.getFirstname();
-		}
 	}
+
+	private void addIdentifiers(TexDocument document, FoundElements elements, String resource) {
+		if (elements.getExpNames() == null || elements.getExpNames().isEmpty())
+			addSimpleTable(document, elements, resource);
+		else addExpressionTable(document, elements, resource);
+
+	}
+
+	private void addExpressionTable(TexDocument document, FoundElements elements, String resource) {
+		final List<String> expNames = elements.getExpNames();
+		final int numberOfColumns = Math.min(5, expNames.size());
+		final List<String> headers = new LinkedList<>(Arrays.asList("Input", resource + " Id"));
+		for (int i = 0; i < numberOfColumns; i++) headers.add(TextUtils.ellipsis(expNames.get(i)));
+
+		final List<List<String>> rows = new LinkedList<>();
+		for (FoundEntity entity : elements.getEntities()) {
+			final LinkedList<String> row = new LinkedList<>(Arrays.asList(entity.getId(), toString(entity.getMapsTo())));
+			for (int i = 0; i < numberOfColumns; i++)
+				row.add(PdfUtils.formatNumber(entity.getExp().get(i)));
+			rows.add(row);
+		}
+		final TexTable table = new TexTable(headers, rows);
+		final StringBuilder builder = new StringBuilder("cZ");
+		for (int i = 0; i < numberOfColumns; i++) builder.append("c");
+		table.setAlignment(builder.toString());
+		table.render(document);
+		//		table.addHeaderCell(profile.getHeaderCell("Input"));
+//		table.addHeaderCell(profile.getHeaderCell(resource + " Id"));
+//		for (int i = 0; i < rows; i++)
+//			table.addHeaderCell(profile.getHeaderCell(expNames.get(i)));
+//		int row = 0;
+//		for (FoundEntity entity : elements.getEntities()) {
+//			table.addCell(profile.getBodyCell(entity.getId(), row));
+//			table.addCell(profile.getBodyCell(toString(entity.getMapsTo()), row));
+//			for (int i = 0; i < rows; i++) {
+//				table.addCell(profile.getBodyCell(PdfUtils.formatNumber(entity.getExp().get(i)), row));
+//			}
+//			row++;
+//		}
+//		document.add(table);
+	}
+
+	private void addSimpleTable(TexDocument document, FoundElements elements, String resource) {
+//		// This is a custom made layout to present 3 tables side by side
+//		final java.util.List<FoundEntity> identifiers = elements.getEntities().stream()
+//				.sorted(Comparator.comparing(IdentifierSummary::getId))
+//				.distinct()
+//				.collect(Collectors.toList());
+//		final Table table = new Table(UnitValue.createPercentArray(new float[]{1, 1, 0.1f, 1, 1, 0.1f, 1, 1}));
+//		table.useAllAvailableWidth();
+//		final String input = "Input";
+//		final String mapping = String.format("%s Id", resource);
+//		table.addHeaderCell(profile.getHeaderCell(input));
+//		table.addHeaderCell(profile.getHeaderCell(mapping));
+//		table.addHeaderCell(profile.getBodyCell("", 0));
+//		table.addHeaderCell(profile.getHeaderCell(input));
+//		table.addHeaderCell(profile.getHeaderCell(mapping));
+//		table.addHeaderCell(profile.getBodyCell("", 0));
+//		table.addHeaderCell(profile.getHeaderCell(input));
+//		table.addHeaderCell(profile.getHeaderCell(mapping));
+//		int i = 0;
+//		int row = 0;
+//		int column;
+//		for (FoundEntity identifier : identifiers) {
+//			column = i % 3;
+//			row = i / 3;
+//			final String join = toString(identifier.getMapsTo());
+//			table.addCell(profile.getBodyCell(identifier.getId(), row));
+//			table.addCell(profile.getBodyCell(join, row));
+//			if (column == 0 || column == 1)
+//				table.addCell(profile.getBodyCell("", 0));
+//			i += 1;
+//		}
+//		document.add(table);
+	}
+
+	private String toString(Set<IdentifierMap> identifier) {
+		final java.util.List<String> mapsTo = identifier.stream()
+				.flatMap(identifierMap -> identifierMap.getIds().stream())
+				.collect(Collectors.toList());
+		return String.join(", ", mapsTo);
+	}
+
 }

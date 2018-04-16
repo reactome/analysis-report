@@ -23,9 +23,9 @@ public class TitlePageRenderer implements TexRenderer {
 
 		String link = "https://reactome.org/PathwayBrowser/#/ANALYSIS=" + analysisData.getAnalysisStoredResult().getSummary().getToken();
 		// Links only scape %
-		link = link.replaceAll("%", "\\\\%");
+		String link2 = link.replaceAll("%", "\\\\%");
 		final String escaped = TextUtils.scape(link);
-		final String p2 = "\\href{" + link + "}{" + escaped + "}";
+		final String p2 = "\\href{" + link2 + "}{\\url{" + escaped + "}}";
 
 		final String p3 = SUMMARY_TEXT.get(1);
 

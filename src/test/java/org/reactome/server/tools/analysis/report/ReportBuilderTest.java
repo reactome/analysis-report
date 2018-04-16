@@ -1,6 +1,5 @@
 package org.reactome.server.tools.analysis.report;
 
-import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
@@ -13,6 +12,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class ReportBuilderTest {
 
@@ -40,13 +40,16 @@ public class ReportBuilderTest {
 	@Test
 	public void test() {
 		final ReportBuilder factory = new ReportBuilder(ehldPath, diagramPath, analysisPath, fireworksPath, svgSummary);
-		final File root = new File("src/test/resources/org/reactome/server/tools/analysis/report");
-		final File file = new File(root, "output.pdf");
-		try (final FileOutputStream outputStream = new FileOutputStream(file)) {
-			final AnalysisStoredResult result = new TokenUtils(analysisPath).getFromToken(tokens.get("overlay01"));
-			factory.create(result, "TOTAL", 48887L, 25, "modern", "copper plus", "barium lithium", outputStream);
-		} catch (IOException e) {
-			Assert.fail(e.getMessage());
+		for (Map.Entry<String, String> entry : tokens.entrySet()) {
+			final String name = entry.getKey();
+			final String token = entry.getValue();
+			final File file = new File("test-files", "text-" + name + ".pdf");
+			try (final FileOutputStream outputStream = new FileOutputStream(file)) {
+				final AnalysisStoredResult result = new TokenUtils(analysisPath).getFromToken(token);
+				factory.create(result, "TOTAL", 48887L, 6, "modern", "copper plus", "barium lithium", outputStream);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 //		final long start = System.nanoTime();
 //		try (final FileOutputStream outputStream = new FileOutputStream(file)) {
