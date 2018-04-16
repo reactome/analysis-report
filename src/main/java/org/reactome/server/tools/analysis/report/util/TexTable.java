@@ -62,20 +62,17 @@ public class TexTable {
 
 	public void render(TexDocument document) {
 		document
-//		document.commandln(TexDocument.BEGIN, null, "table", floats)
-//				.commandln(TexDocument.CENTERING)
 				.commandln("bgroup")
 				.command("renewcommand").commandln(new Command("arraystretch", String.valueOf(padding)))
 				.commandln(new Command("rowcolors", "3", "lightgray", "white"))
-				.commandln(new Command(TexDocument.BEGIN, "tabularx", "\\textwidth", alignment))
-		;
+				.commandln(new Command(TexDocument.BEGIN, "tabularx", "\\textwidth", alignment));
 		// Header row
 		final List<String> columnHeaders = IntStream.range(0, headers.size())
 				.mapToObj(this::createColumnHeader)
 				.collect(Collectors.toList());
 		document.text(String.join(" & ", columnHeaders)).textln(" \\\\");
 		document.commandln("endhead");
-		// scape content, join rows by & and values by \\
+		// scape content and join rows by & and values by \\
 		final String rows = values.stream()
 				.map(row -> row.stream()
 						.map(TextUtils::scape)

@@ -47,6 +47,8 @@ public class PreambleRenderer implements TexRenderer {
 		// Help tables use the whole width
 		document.commandln("keepXColumns");
 
+		document.textln("\\renewcommand\\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column");
+
 
 	}
 }

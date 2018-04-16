@@ -1,9 +1,6 @@
 package org.reactome.server.tools.analysis.report.renderer;
 
-import org.reactome.server.analysis.core.result.model.FoundElements;
-import org.reactome.server.analysis.core.result.model.FoundEntity;
-import org.reactome.server.analysis.core.result.model.IdentifierMap;
-import org.reactome.server.analysis.core.result.model.ResourceSummary;
+import org.reactome.server.analysis.core.result.model.*;
 import org.reactome.server.graph.domain.model.DatabaseObject;
 import org.reactome.server.graph.domain.model.Disease;
 import org.reactome.server.graph.domain.model.Pathway;
@@ -52,8 +49,6 @@ public class PathwayDetailRenderer implements TexRenderer {
 		final int width = (int) (Math.min(result.getWidth(), 165));
 		document.commandln(TexDocument.BEGIN, null, TexDocument.FIGURE, "H")
 				.commandln(TexDocument.CENTERING)
-//				.command("def").commandln("svgwidth", width + "mm")
-//				.commandln("input", pathwayData.getSummary().getStId() + ".pdf_tex")
 				.commandln(TexDocument.INCLUDE_GRAPHICS, "width=" + width + "mm", pathwayData.getSummary().getStId())
 				.commandln(TexDocument.END, TexDocument.FIGURE)
 				.ln();
@@ -119,22 +114,20 @@ public class PathwayDetailRenderer implements TexRenderer {
 			final FoundElements foundElements = analysisData.getAnalysisStoredResult().getFoundElmentsForPathway(pathway.getStId(), analysisData.getResource());
 			addIdentifiers(document, foundElements, analysisData.getBeautifiedResource());
 		}
-
-
 	}
 
 	private void addIdentifiers(TexDocument document, FoundElements elements, String resource) {
 		if (elements.getExpNames() == null || elements.getExpNames().isEmpty())
 			addSimpleTable(document, elements, resource);
 		else addExpressionTable(document, elements, resource);
-
 	}
 
 	private void addExpressionTable(TexDocument document, FoundElements elements, String resource) {
 		final List<String> expNames = elements.getExpNames();
 		final int numberOfColumns = Math.min(5, expNames.size());
 		final List<String> headers = new LinkedList<>(Arrays.asList("Input", resource + " Id"));
-		for (int i = 0; i < numberOfColumns; i++) headers.add(TextUtils.ellipsis(expNames.get(i)));
+		for (int i = 0; i < numberOfColumns; i++)
+			headers.add(TextUtils.ellipsis(expNames.get(i)));
 
 		final List<List<String>> rows = new LinkedList<>();
 		for (FoundEntity entity : elements.getEntities()) {
@@ -144,65 +137,49 @@ public class PathwayDetailRenderer implements TexRenderer {
 			rows.add(row);
 		}
 		final TexTable table = new TexTable(headers, rows);
+		// Allow fill width to mapsTo column
 		final StringBuilder builder = new StringBuilder("cZ");
 		for (int i = 0; i < numberOfColumns; i++) builder.append("c");
 		table.setAlignment(builder.toString());
 		table.render(document);
-		//		table.addHeaderCell(profile.getHeaderCell("Input"));
-//		table.addHeaderCell(profile.getHeaderCell(resource + " Id"));
-//		for (int i = 0; i < rows; i++)
-//			table.addHeaderCell(profile.getHeaderCell(expNames.get(i)));
-//		int row = 0;
-//		for (FoundEntity entity : elements.getEntities()) {
-//			table.addCell(profile.getBodyCell(entity.getId(), row));
-//			table.addCell(profile.getBodyCell(toString(entity.getMapsTo()), row));
-//			for (int i = 0; i < rows; i++) {
-//				table.addCell(profile.getBodyCell(PdfUtils.formatNumber(entity.getExp().get(i)), row));
-//			}
-//			row++;
-//		}
-//		document.add(table);
 	}
 
 	private void addSimpleTable(TexDocument document, FoundElements elements, String resource) {
-//		// This is a custom made layout to present 3 tables side by side
-//		final java.util.List<FoundEntity> identifiers = elements.getEntities().stream()
-//				.sorted(Comparator.comparing(IdentifierSummary::getId))
-//				.distinct()
-//				.collect(Collectors.toList());
-//		final Table table = new Table(UnitValue.createPercentArray(new float[]{1, 1, 0.1f, 1, 1, 0.1f, 1, 1}));
-//		table.useAllAvailableWidth();
-//		final String input = "Input";
-//		final String mapping = String.format("%s Id", resource);
-//		table.addHeaderCell(profile.getHeaderCell(input));
-//		table.addHeaderCell(profile.getHeaderCell(mapping));
-//		table.addHeaderCell(profile.getBodyCell("", 0));
-//		table.addHeaderCell(profile.getHeaderCell(input));
-//		table.addHeaderCell(profile.getHeaderCell(mapping));
-//		table.addHeaderCell(profile.getBodyCell("", 0));
-//		table.addHeaderCell(profile.getHeaderCell(input));
-//		table.addHeaderCell(profile.getHeaderCell(mapping));
-//		int i = 0;
-//		int row = 0;
-//		int column;
-//		for (FoundEntity identifier : identifiers) {
-//			column = i % 3;
-//			row = i / 3;
-//			final String join = toString(identifier.getMapsTo());
-//			table.addCell(profile.getBodyCell(identifier.getId(), row));
-//			table.addCell(profile.getBodyCell(join, row));
-//			if (column == 0 || column == 1)
-//				table.addCell(profile.getBodyCell("", 0));
-//			i += 1;
-//		}
-//		document.add(table);
+		final List<String> headers = new LinkedList<>();
+		for (int i = 0; i < 3; i++) {
+			headers.add("Input");
+			headers.add(resource + " Id");
+		}
+
+		final List<List<String>> values = new LinkedList<>();
+		final ArrayList<FoundEntity> entities = new ArrayList<>(elements.getEntities());
+		entities.sort(Comparator.comparing(IdentifierSummary::getId));
+		List<String> row = new LinkedList<>();
+		for (FoundEntity entity : entities) {
+			row.add(entity.getId());
+			row.add(toString(entity.getMapsTo()));
+			if (row.size() == 6) {
+				values.add(row);
+				row = new LinkedList<>();
+			}
+		}
+		if (!row.isEmpty()) {
+			while (row.size() < 6) row.add("");
+			values.add(row);
+		}
+
+		final TexTable table = new TexTable(headers, values);
+		// Add white vertical lines
+		table.setAlignment("cZ!{\\color{white}\\vrule}cZ!{\\color{white}\\vrule}cZ");
+		table.setHeaderAlignment(Arrays.asList("c", "c!{\\color{white}\\vrule}", "c", "c!{\\color{white}\\vrule}", "c", "c"));
+		table.render(document);
+
 	}
 
 	private String toString(Set<IdentifierMap> identifier) {
-		final java.util.List<String> mapsTo = identifier.stream()
+		return identifier.stream()
 				.flatMap(identifierMap -> identifierMap.getIds().stream())
-				.collect(Collectors.toList());
-		return String.join(", ", mapsTo);
+				.collect(Collectors.joining(", "));
 	}
 
 }
