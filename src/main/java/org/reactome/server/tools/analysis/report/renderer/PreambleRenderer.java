@@ -20,7 +20,7 @@ public class PreambleRenderer implements TexRenderer {
 				.commandln(USE_PACKAGE, "color")
 				.commandln(USE_PACKAGE, "float")
 				.commandln(USE_PACKAGE, "hyperref")
-				.commandln(USE_PACKAGE, "tabularx")
+//				.commandln(USE_PACKAGE, "tabularx")
 				.commandln(USE_PACKAGE, "ltablex")
 				.commandln(USE_PACKAGE, "a4paper, margin=20mm, left=25mm", "geometry")
 				.commandln(USE_PACKAGE, "dvipsnames, table, xcdraw", "xcolor");
@@ -35,13 +35,18 @@ public class PreambleRenderer implements TexRenderer {
 				"colorlinks = true");
 
 		document.ln();
+		// Bigger space between paragraph
 		document.command("setlength", "\\parskip").textln("{1em}");
 
-		document.command("definecolor", "Gray").textln("{gray}{0.85}")
-				.command("definecolor", "LightCyan").textln("{rgb}{0.88, 1, 1}");
+		// Colors for nothing
+		document.commandln(new Command("definecolor", "lightgray", "gray", "0.85"));
 
 		// centered column with linebreak
 		document.textln("\\newcolumntype{Z}{>{\\centering\\let\\newline\\\\\\arraybackslash\\hspace{0pt}}X}");
+
+		// Help tables use the whole width
+		document.commandln("keepXColumns");
+
 
 	}
 }

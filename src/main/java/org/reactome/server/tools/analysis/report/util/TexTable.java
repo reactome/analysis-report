@@ -7,10 +7,13 @@ import org.reactome.server.tools.analysis.report.document.TextUtils;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class TexTable {
 
-	private static final String HEAEDER_CONF = "\\cellcolor[RGB]{47,158,194}{\\color{white}";
+	// \cellcolor[RGB]{47,158,194}{\color{white} Column}
+	private static final Command HEADER_CELL_COLOR = new Command("cellcolor", "RGB", "47,158,194");
+	private static final Command HEADER_TEXT_COLOR = new Command("color", "white");
 
 	private final List<String> headers;
 	private final List<List<String>> values;
@@ -58,28 +61,42 @@ public class TexTable {
 	}
 
 	public void render(TexDocument document) {
-		document.commandln(TexDocument.BEGIN, null, "table", floats)
-				.commandln(TexDocument.CENTERING)
+		document
+//		document.commandln(TexDocument.BEGIN, null, "table", floats)
+//				.commandln(TexDocument.CENTERING)
 				.commandln("bgroup")
 				.command("renewcommand").commandln(new Command("arraystretch", String.valueOf(padding)))
-				.commandln(new Command(TexDocument.BEGIN, "tabularx", "\\textwidth", alignment));
-		for (int i = 0; i < headers.size(); i++) {
-			final String bold = new Command(TexDocument.TEXT_BF, headers.get(i)).toString();
-			final Command command = new Command(TexDocument.MULTICOLUMN, "1", "" + headerAlignment.get(i), HEAEDER_CONF + bold + "}");
-			document.command(command);
-			if (i < headers.size() - 1) document.text(" & ");
-		}
-		document.textln(" \\\\");
-		values.forEach(row -> {
-			final String line = row.stream()
-					.map(TextUtils::scape)
-					.collect(Collectors.joining(" & ", "", " \\\\"));
-			document.textln(line);
-		});
+				.commandln(new Command("rowcolors", "3", "lightgray", "white"))
+				.commandln(new Command(TexDocument.BEGIN, "tabularx", "\\textwidth", alignment))
+		;
+		// Header row
+		final List<String> columnHeaders = IntStream.range(0, headers.size())
+				.mapToObj(this::createColumnHeader)
+				.collect(Collectors.toList());
+		document.text(String.join(" & ", columnHeaders)).textln(" \\\\");
+		document.commandln("endhead");
+		// scape content, join rows by & and values by \\
+		final String rows = values.stream()
+				.map(row -> row.stream()
+						.map(TextUtils::scape)
+						.collect(Collectors.joining(" & ")))
+				.collect(Collectors.joining(" \\\\" + System.lineSeparator()));
+		document.textln(rows);
 		document.commandln(TexDocument.END, "tabularx")
 				.commandln("egroup")
-				.commandln(TexDocument.END, "table")
 				.ln();
+	}
+
+	private String createColumnHeader(int i) {
+		// scape
+		final String scape = TextUtils.scape(headers.get(i));
+		// bold
+		final String bold = new Command(TexDocument.TEXT_BF, scape).toString();
+		// color
+		final String colored = new Command("cellcolor").modifiers("RGB").values("47,158,194", HEADER_TEXT_COLOR + bold).toString();
+		// align
+		return new Command(TexDocument.MULTICOLUMN, "1", "" + headerAlignment.get(i), colored).toString();
+
 	}
 
 }

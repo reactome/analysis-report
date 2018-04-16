@@ -1,10 +1,12 @@
 package org.reactome.server.tools.analysis.report;
 
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.utils.TokenUtils;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
+import org.reactome.server.tools.analysis.exception.AnalysisReportException;
 import org.reactome.server.tools.analysis.report.util.GraphCoreConfig;
 
 import java.io.File;
@@ -39,26 +41,22 @@ public class ReportBuilderTest {
 	}
 	@Test
 	public void test() {
-		final ReportBuilder factory = new ReportBuilder(ehldPath, diagramPath, analysisPath, fireworksPath, svgSummary);
+		final ReportBuilder builder = new ReportBuilder(ehldPath, diagramPath, analysisPath, fireworksPath, svgSummary);
 		for (Map.Entry<String, String> entry : tokens.entrySet()) {
 			final String name = entry.getKey();
 			final String token = entry.getValue();
 			final File file = new File("test-files", "text-" + name + ".pdf");
+			final long start = System.nanoTime();
 			try (final FileOutputStream outputStream = new FileOutputStream(file)) {
 				final AnalysisStoredResult result = new TokenUtils(analysisPath).getFromToken(token);
-				factory.create(result, "TOTAL", 48887L, 6, "modern", "copper plus", "barium lithium", outputStream);
-			} catch (IOException e) {
+				builder.create(result, "TOTAL", 48887L, 6, "modern", "copper plus", "barium lithium", outputStream);
+			} catch (IOException | AnalysisReportException e) {
 				e.printStackTrace();
+				Assert.fail(e.getMessage());
 			}
+			final long elapsed = System.nanoTime() - start;
+			System.out.println(elapsed / 1e9);
 		}
-//		final long start = System.nanoTime();
-//		try (final FileOutputStream outputStream = new FileOutputStream(file)) {
-//			final AnalysisStoredResult result = new TokenUtils(analysisPath).getFromToken(tokens.get("overlay01"));
-//			factory.create(result, "TOTAL", 48887L, 25, "modern", "copper plus", "barium lithium", outputStream);
-//		} catch (IOException e) {
-//			Assert.fail(e.getMessage());
-//		}
-//		System.out.println((System.nanoTime() - start) / 1e9);
 	}
 
 }

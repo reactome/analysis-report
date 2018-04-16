@@ -21,7 +21,6 @@ import java.util.stream.Collectors;
 
 public class PathwayDetailRenderer implements TexRenderer {
 
-	public static final String HEAEDER_CONF = "\\cellcolor[RGB]{47,158,194}{\\color{white}";
 	private static final DiagramService SERVICE = ReactomeGraphCore.getService(DiagramService.class);
 	private static final String PATHWAY_DETAIL = "https://reactome.org/content/detail/";
 
