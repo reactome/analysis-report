@@ -11,7 +11,6 @@ import java.util.stream.IntStream;
 public class TexTable {
 
 	// \cellcolor[RGB]{47,158,194}{\color{white} Column}
-	private static final Command HEADER_CELL_COLOR = new Command("cellcolor", "RGB", "47,158,194");
 	private static final Command HEADER_TEXT_COLOR = new Command("color", "white");
 
 	private final List<String> headers;
@@ -25,10 +24,12 @@ public class TexTable {
 		this.headers = headers;
 		this.values = values;
 		final StringBuilder builder = new StringBuilder();
-		headers.forEach(s -> builder.append("c"));
+		values.get(0).forEach(s -> builder.append("c"));
 		alignment = builder.toString();
-		headerAlignment = new LinkedList<>();
-		headers.forEach(s -> headerAlignment.add("c"));
+		if (headers != null) {
+			headerAlignment = new LinkedList<>();
+			headers.forEach(s -> headerAlignment.add("c"));
+		}
 	}
 
 	/**
@@ -66,11 +67,13 @@ public class TexTable {
 				.commandln(new Command("rowcolors", "3", "lightgray", "white"))
 				.commandln(new Command(TexDocument.BEGIN, "tabularx", "\\textwidth", alignment));
 		// Header row
-		final List<String> columnHeaders = IntStream.range(0, headers.size())
-				.mapToObj(this::createColumnHeader)
-				.collect(Collectors.toList());
-		document.text(String.join(" & ", columnHeaders)).textln(" \\\\");
-		document.commandln("endhead");
+		if (headers != null) {
+			final List<String> columnHeaders = IntStream.range(0, headers.size())
+					.mapToObj(this::createColumnHeader)
+					.collect(Collectors.toList());
+			document.text(String.join(" & ", columnHeaders)).textln(" \\\\");
+			document.commandln("endhead");
+		}
 		// scape content and join rows by & and values by \\
 		final String rows = values.stream()
 				.map(row -> row.stream()
