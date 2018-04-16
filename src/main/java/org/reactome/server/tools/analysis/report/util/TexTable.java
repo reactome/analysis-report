@@ -2,7 +2,6 @@ package org.reactome.server.tools.analysis.report.util;
 
 import org.reactome.server.tools.analysis.report.document.Command;
 import org.reactome.server.tools.analysis.report.document.TexDocument;
-import org.reactome.server.tools.analysis.report.document.TextUtils;
 
 import java.util.LinkedList;
 import java.util.List;

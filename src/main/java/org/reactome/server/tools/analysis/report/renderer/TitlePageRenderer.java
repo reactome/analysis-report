@@ -2,8 +2,8 @@ package org.reactome.server.tools.analysis.report.renderer;
 
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.analysis.report.document.TexDocument;
-import org.reactome.server.tools.analysis.report.document.TextUtils;
 import org.reactome.server.tools.analysis.report.util.PdfUtils;
+import org.reactome.server.tools.analysis.report.util.TextUtils;
 
 import java.util.List;
 

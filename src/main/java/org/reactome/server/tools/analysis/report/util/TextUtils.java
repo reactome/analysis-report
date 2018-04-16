@@ -1,4 +1,6 @@
-package org.reactome.server.tools.analysis.report.document;
+package org.reactome.server.tools.analysis.report.util;
+
+import org.reactome.server.tools.analysis.report.document.Command;
 
 import java.util.Arrays;
 import java.util.LinkedHashMap;

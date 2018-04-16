@@ -20,7 +20,6 @@ public class PreambleRenderer implements TexRenderer {
 				.commandln(USE_PACKAGE, "color")
 				.commandln(USE_PACKAGE, "float")
 				.commandln(USE_PACKAGE, "hyperref")
-//				.commandln(USE_PACKAGE, "tabularx")
 				.commandln(USE_PACKAGE, "ltablex")
 				.commandln(USE_PACKAGE, "a4paper, margin=20mm, left=25mm", "geometry")
 				.commandln(USE_PACKAGE, "dvipsnames, table, xcdraw", "xcolor");
@@ -47,7 +46,8 @@ public class PreambleRenderer implements TexRenderer {
 		// Help tables use the whole width
 		document.commandln("keepXColumns");
 
-		document.textln("\\renewcommand\\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column");
+		// Vertical centering text in X column
+		document.textln("\\renewcommand\\tabularxcolumn[1]{m{#1}}");
 
 
 	}

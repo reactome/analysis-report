@@ -16,6 +16,8 @@ public class ReportRenderer {
 			new TableOfContentsRenderer(),
 			new IntroductionRenderer(),
 			new PathwayDetailRenderer(),
+			new FoundElementsRenderer(),
+			new NotFoundElementsRenderer(),
 			(document, data) -> document.commandln(TexDocument.END, "document")
 			);
 	private final TexDocument document;

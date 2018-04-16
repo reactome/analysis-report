@@ -5,7 +5,6 @@ import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.graph.domain.model.Summation;
 import org.reactome.server.tools.analysis.report.document.TexDocument;
-import org.reactome.server.tools.analysis.report.document.TextUtils;
 import org.reactome.server.tools.analysis.report.style.PdfProfile;
 
 import java.util.LinkedList;

@@ -1,7 +1,6 @@
 package org.reactome.server.tools.analysis.report.util;
 
 import org.reactome.server.graph.domain.model.*;
-import org.reactome.server.tools.analysis.report.document.TextUtils;
 
 import java.util.Objects;
 import java.util.stream.Collectors;
