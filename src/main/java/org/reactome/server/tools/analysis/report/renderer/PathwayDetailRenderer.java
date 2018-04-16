@@ -31,7 +31,7 @@ public class PathwayDetailRenderer implements TexRenderer {
 		analysisData.getPathways().forEach(pathwayData -> {
 			final Pathway pathway = pathwayData.getPathway();
 			final String link = PATHWAY_DETAIL + pathway.getStId();
-			final String title = pathway.getDisplayName() + " (\\href{" + link + "}{" + pathway.getStId() + "})";
+			final String title = TextUtils.scape(pathway.getDisplayName()) + " (\\href{" + link + "}{" + pathway.getStId() + "})";
 			document.commandln(TexDocument.SUB_SECTION, title);
 			addDiagram(document, pathwayData);
 			addDatabaseObjectList(document, "Cellular compartments", pathway.getCompartment());
