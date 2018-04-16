@@ -5,6 +5,8 @@ import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.graph.domain.result.DiagramResult;
 import org.reactome.server.graph.service.DiagramService;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
+import org.reactome.server.tools.analysis.exception.AnalysisReportException;
+import org.reactome.server.tools.analysis.exception.AnalysisReportRuntimeException;
 import org.reactome.server.tools.analysis.report.renderer.ReportRenderer;
 import org.reactome.server.tools.diagram.exporter.common.analysis.AnalysisException;
 import org.reactome.server.tools.diagram.exporter.common.profiles.factory.DiagramJsonDeserializationException;
@@ -19,6 +21,8 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.nio.file.Files;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class ReportBuilder {
 
@@ -37,7 +41,7 @@ public class ReportBuilder {
 		fireworksExporter = new FireworksExporter(fireworksPath, analysisPath);
 	}
 
-	public void create(AnalysisStoredResult result, String resource, Long species, int maxPathways, String diagramProfile, String analysisProfile, String fireworksProfile, OutputStream outputStream) {
+	public void create(AnalysisStoredResult result, String resource, Long species, int maxPathways, String diagramProfile, String analysisProfile, String fireworksProfile, OutputStream outputStream) throws AnalysisReportException {
 		this.result = result;
 		this.diagramProfile = diagramProfile;
 		this.analysisProfile = analysisProfile;
@@ -52,8 +56,7 @@ public class ReportBuilder {
 		compile(latex);
 		final File file = new File(tempFolder, "output.pdf");
 		export(file, outputStream);
-//		clear(tempFolder);
-
+		clear(tempFolder);
 	}
 
 	private synchronized String getStamp() {
@@ -61,25 +64,29 @@ public class ReportBuilder {
 //		return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmssSSS", Locale.ENGLISH));
 	}
 
-	private void createSvgs(File folder, AnalysisData data) {
-		data.getPathways().parallelStream().forEach(pathwayData -> {
-			final String stId = pathwayData.getSummary().getStId();
-			final DiagramResult result = diagramService.getDiagramResult(stId);
-			final RasterArgs args = new RasterArgs(result.getDiagramStId(), "svg");
-			args.setSelected(result.getEvents());
-			args.setProfiles(new ColorProfiles(diagramProfile, analysisProfile, null));
-			args.setResource(data.getResource());
-			final File file = new File(folder, stId + ".svg");
-			try {
-				rasterExporter.export(args, new FileOutputStream(file), this.result);
-			} catch (EhldException | AnalysisException | DiagramJsonNotFoundException | IOException | DiagramJsonDeserializationException | TranscoderException e) {
-				logger.error("Couldn't create diagram " + args.getStId(), e);
-			}
-			svgToPdf(file);
-		});
+	private void createSvgs(File folder, AnalysisData data) throws AnalysisReportException {
+		try {
+			data.getPathways().parallelStream().forEach(pathwayData -> {
+				final String stId = pathwayData.getSummary().getStId();
+				final DiagramResult result = diagramService.getDiagramResult(stId);
+				final RasterArgs args = new RasterArgs(result.getDiagramStId(), "svg");
+				args.setSelected(result.getEvents());
+				args.setProfiles(new ColorProfiles(diagramProfile, analysisProfile, null));
+				args.setResource(data.getResource());
+				final File file = new File(folder, stId + ".svg");
+				try {
+					rasterExporter.export(args, new FileOutputStream(file), this.result);
+				} catch (EhldException | AnalysisException | DiagramJsonNotFoundException | IOException | DiagramJsonDeserializationException | TranscoderException e) {
+					logger.error("Couldn't create diagram " + args.getStId(), e);
+				}
+				svgToPdf(file);
+			});
+		} catch (AnalysisReportRuntimeException e) {
+			throw new AnalysisReportException(e);
+		}
 	}
 
-	private void svgToPdf(File file) {
+	private void svgToPdf(File file) throws AnalysisReportRuntimeException {
 		final ProcessBuilder builder = new ProcessBuilder("inkscape",
 				"--export-area-drawing", "--without-gui",
 				"--export-text-to-path",
@@ -91,8 +98,9 @@ public class ReportBuilder {
 			final Process process = builder.start();
 			process.waitFor();
 		} catch (IOException | InterruptedException e) {
-			e.printStackTrace();
+			throw new AnalysisReportRuntimeException("Couldn't generate PDF from SVG for " + file.getAbsolutePath(), e);
 		}
+
 	}
 
 	private void clear(File folder) {
@@ -122,12 +130,17 @@ public class ReportBuilder {
 
 		try {
 			final Process process = builder.start();
+			final List<String> lines;
 			try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
-				reader.lines().forEach(System.out::println);
+				lines = reader.lines().collect(Collectors.toList());
 			}
-			process.waitFor();
+			final int exitValue = process.waitFor();
+			if (exitValue != 0) {
+				throw new AnalysisReportRuntimeException("Compilation error for " + latex + System.lineSeparator()
+						+ String.join(System.lineSeparator(), lines));
+			}
 		} catch (IOException | InterruptedException e) {
-			e.printStackTrace();
+			throw new AnalysisReportRuntimeException(e);
 		}
 	}
 
