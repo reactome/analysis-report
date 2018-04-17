@@ -16,7 +16,6 @@ public class PropertiesRenderer implements TexRenderer {
 	public void render(TexDocument document, AnalysisData analysisData) {
 		document.commandln(TexDocument.SECTION, "Properties");
 		final AnalysisStoredResult result = analysisData.getAnalysisStoredResult();
-		final List<String> headers = Arrays.asList("Property", "Value");
 		final List<List<String>> values = new ArrayList<>();
 		values.add(Arrays.asList("Analysis type", String.valueOf(analysisData.getType())));
 		values.add(Arrays.asList("Pathways found", String.format("%,d", result.getPathways().size())));

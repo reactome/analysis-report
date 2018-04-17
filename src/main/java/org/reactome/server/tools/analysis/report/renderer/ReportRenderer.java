@@ -17,6 +17,7 @@ public class ReportRenderer {
 			new IntroductionRenderer(),
 			new PropertiesRenderer(),
 			new OverviewRenderer(),
+			new TopPathwayRenderer(),
 			new PathwayDetailRenderer(),
 			new FoundElementsRenderer(),
 			new NotFoundElementsRenderer(),

@@ -45,6 +45,7 @@ public class ReportBuilder {
 	public ReportBuilder(String ehldPath, String diagramPath, String analysisPath, String fireworksPath, String svgSummary) {
 		rasterExporter = new RasterExporter(diagramPath, ehldPath, analysisPath, svgSummary);
 		fireworksExporter = new FireworksExporter(fireworksPath, analysisPath);
+		Locale.setDefault(Locale.ENGLISH);
 	}
 
 	public void create(AnalysisStoredResult result, String resource, Long species, int maxPathways, String diagramProfile, String analysisProfile, String fireworksProfile, OutputStream outputStream) throws AnalysisReportException {
