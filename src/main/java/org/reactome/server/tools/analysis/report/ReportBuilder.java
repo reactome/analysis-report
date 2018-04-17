@@ -17,12 +17,17 @@ import org.reactome.server.tools.diagram.exporter.raster.api.RasterArgs;
 import org.reactome.server.tools.diagram.exporter.raster.ehld.exception.EhldException;
 import org.reactome.server.tools.diagram.exporter.raster.profiles.ColorProfiles;
 import org.reactome.server.tools.fireworks.exporter.FireworksExporter;
+import org.reactome.server.tools.fireworks.exporter.common.analysis.exception.AnalysisServerError;
+import org.reactome.server.tools.fireworks.exporter.common.api.FireworkArgs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.nio.file.Files;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Locale;
 import java.util.stream.Collectors;
 
 public class ReportBuilder {
@@ -52,6 +57,7 @@ public class ReportBuilder {
 		tempFolder.mkdirs();
 		final File latex = new File(tempFolder, "output.tex");
 		createTextFile(latex, analysisData);
+		createFireworksSvg(tempFolder, analysisData);
 		createSvgs(tempFolder, analysisData);
 		copyIcon(tempFolder);
 		compile(latex);
@@ -62,8 +68,7 @@ public class ReportBuilder {
 	}
 
 	private synchronized String getStamp() {
-		return "";
-//		return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmssSSS", Locale.ENGLISH));
+		return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmssSSS", Locale.ENGLISH));
 	}
 
 	private void createSvgs(File folder, AnalysisData data) throws AnalysisReportException {
@@ -78,14 +83,28 @@ public class ReportBuilder {
 				final File file = new File(folder, stId + ".svg");
 				try {
 					rasterExporter.export(args, new FileOutputStream(file), this.result);
+					svgToPdf(file);
 				} catch (EhldException | AnalysisException | DiagramJsonNotFoundException | IOException | DiagramJsonDeserializationException | TranscoderException e) {
 					logger.error("Couldn't create diagram " + args.getStId(), e);
 				}
-				svgToPdf(file);
 			});
 		} catch (AnalysisReportRuntimeException e) {
 			throw new AnalysisReportException(e);
 		}
+	}
+
+	private void createFireworksSvg(File folder, AnalysisData data) {
+		final String species = data.getSpecies().replaceAll(" ", "_");
+		final File file = new File(folder, species + ".svg");
+		final FireworkArgs args = new FireworkArgs(species, "svg");
+		args.setProfile(fireworksProfile);
+		try {
+			fireworksExporter.render(args, data.getAnalysisStoredResult(), new FileOutputStream(file));
+			svgToPdf(file);
+		} catch (AnalysisServerError | TranscoderException | IOException e) {
+			logger.error("Couldn't create fireworks " + args.getSpeciesName(), e);
+		}
+
 	}
 
 	private void svgToPdf(File file) throws AnalysisReportRuntimeException {

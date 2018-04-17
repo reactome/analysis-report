@@ -18,7 +18,6 @@ public class PreambleRenderer implements TexRenderer {
 				.ln()
 //				.commandln(USE_PACKAGE, "default,osfigures,scale=0.95", "opensans", null)
 //				.commandln(USE_PACKAGE, "T1", "fontenc", null)
-				.commandln(USE_PACKAGE, "default", "lmodern", null)
 				.commandln(USE_PACKAGE, "graphicx")
 				.commandln(USE_PACKAGE, "color")
 				.commandln(USE_PACKAGE, "float")

@@ -49,7 +49,7 @@ public class ReportBuilderTest {
 			final long start = System.nanoTime();
 			try (final FileOutputStream outputStream = new FileOutputStream(file)) {
 				final AnalysisStoredResult result = new TokenUtils(analysisPath).getFromToken(token);
-				builder.create(result, "TOTAL", 48887L, 6, "modern", "copper plus", "barium lithium", outputStream);
+				builder.create(result, "TOTAL", 48887L, 6, "modern", "copper plus", "copper", outputStream);
 			} catch (IOException | AnalysisReportException e) {
 				e.printStackTrace();
 				Assert.fail(e.getMessage());
