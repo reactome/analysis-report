@@ -3,6 +3,7 @@ package org.reactome.server.tools.analysis.report.document;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class Command {
 
@@ -15,10 +16,9 @@ public class Command {
 		this.name = name;
 	}
 
-	public Command(String name, String... values) {
+	public Command(String name, Object... values) {
 		this.name = name;
-		if (values != null)
-			this.values = Arrays.asList(values);
+		values(values);
 	}
 
 	public Command floats(String floats) {
@@ -31,8 +31,12 @@ public class Command {
 		return this;
 	}
 
-	public Command values(String... values) {
-		if (values != null) this.values = Arrays.asList(values);
+	public Command values(Object... values) {
+		if (values != null)
+			this.values = Arrays.stream(values)
+					.filter(Objects::nonNull)
+					.map(String::valueOf)
+					.collect(Collectors.toList());
 		return this;
 	}
 
@@ -41,8 +45,8 @@ public class Command {
 		final StringBuilder line = new StringBuilder("\\").append(name);
 		if (modifiers != null)
 			line.append("[").append(modifiers).append("]");
-		if (values != null)
-			values.stream().filter(Objects::nonNull).forEach(value -> line.append("{").append(value).append("}"));
+		if (values != null && !values.isEmpty())
+			values.forEach(value -> line.append("{").append(value).append("}"));
 		if (floats != null)
 			line.append("[").append(floats).append("]");
 		return line.toString();

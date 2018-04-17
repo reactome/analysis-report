@@ -95,7 +95,6 @@ public class TexTable {
 		final String colored = new Command("cellcolor").modifiers("RGB").values("47,158,194", HEADER_TEXT_COLOR + bold).toString();
 		// align
 		return new Command(TexDocument.MULTICOLUMN, "1", "" + headerAlignment.get(i), colored).toString();
-
 	}
 
 }
