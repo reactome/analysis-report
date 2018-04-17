@@ -3,6 +3,7 @@ package org.reactome.server.tools.analysis.report.renderer;
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.analysis.report.document.TexDocument;
 import org.reactome.server.tools.analysis.report.util.PdfUtils;
+import org.reactome.server.tools.analysis.report.util.TextUtils;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -22,7 +23,8 @@ public class IntroductionRenderer implements TexRenderer {
 		INTRODUCTION.forEach(document::paragraph);
 		document.commandln(TexDocument.BEGIN, "itemize");
 		for (Reference publication : PUBLICATIONS)
-			document.command("item").textln(" " + publication.text);
+			document.command("item").text(" " + publication.text + ". ")
+					.commandln("linkicon", TextUtils.scapeUrl(publication.link));
 		document.commandln(TexDocument.END, "itemize");
 		document.newPage();
 	}

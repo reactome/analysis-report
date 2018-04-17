@@ -2,9 +2,7 @@ package org.reactome.server.tools.analysis.report.renderer;
 
 import org.reactome.server.analysis.core.result.model.FoundElements;
 import org.reactome.server.analysis.core.result.model.ResourceSummary;
-import org.reactome.server.graph.domain.model.DatabaseObject;
-import org.reactome.server.graph.domain.model.Disease;
-import org.reactome.server.graph.domain.model.Pathway;
+import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.graph.domain.result.DiagramResult;
 import org.reactome.server.graph.service.DiagramService;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
@@ -85,10 +83,20 @@ public class PathwayDetailRenderer implements TexRenderer {
 		if (pathway.getLiteratureReference() != null) {
 			document.commandln(TexDocument.SUB_SUB_SECTION + "*", "References");
 			document.commandln(TexDocument.BEGIN, "itemize");
-			pathway.getLiteratureReference().stream()
-					.limit(5)
-					.map(ReferenceFactory::createPublication)
-					.forEach(reference -> document.command("item").textln(" " + reference));
+			int i = 1;
+			for (Publication publication : pathway.getLiteratureReference()) {
+
+				final String text = ReferenceFactory.toString(publication);
+				document.command("item").text(" " + TextUtils.scape(text) + ". ");
+				if (publication instanceof LiteratureReference){
+					final String url = ((LiteratureReference) publication).getUrl();
+					document.commandln("linkicon", TextUtils.scapeUrl(url));
+				} else if (publication instanceof URL) {
+					final String url = ((URL) publication).getUniformResourceLocator();
+					document.commandln("linkicon", TextUtils.scapeUrl(url));
+				} else document.ln();
+				if (i++ == 5) break;
+			}
 			document.commandln(TexDocument.END, "itemize");
 		}
 	}

@@ -16,11 +16,15 @@ public class PreambleRenderer implements TexRenderer {
 	public void render(TexDocument document, AnalysisData analysisData) {
 		document.commandln(new Command(DOCUMENT_CLASS, "article").modifiers("titlepage"))
 				.ln()
+//				.commandln(USE_PACKAGE, "default,osfigures,scale=0.95", "opensans", null)
+//				.commandln(USE_PACKAGE, "T1", "fontenc", null)
+				.commandln(USE_PACKAGE, "default", "lmodern", null)
 				.commandln(USE_PACKAGE, "graphicx")
 				.commandln(USE_PACKAGE, "color")
 				.commandln(USE_PACKAGE, "float")
 				.commandln(USE_PACKAGE, "hyperref")
 				.commandln(USE_PACKAGE, "ltablex")
+				.commandln(USE_PACKAGE, "fancyhdr")
 				.commandln(USE_PACKAGE, "a4paper, margin=20mm, left=25mm", "geometry")
 				.commandln(USE_PACKAGE, "dvipsnames, table, xcdraw", "xcolor");
 		document.command("newcommand").commandln("myshade", "85")
@@ -49,6 +53,25 @@ public class PreambleRenderer implements TexRenderer {
 		// Vertical centering text in X column
 		document.textln("\\renewcommand\\tabularxcolumn[1]{m{#1}}");
 
+		// No header
+		document.commandln(new Command("renewcommand", new Command("headrulewidth"), "0pt"));
 
+		// Footer
+		document.commandln("pagestyle", "fancy")
+				.commandln("fancyhf", "")
+				.commandln(new Command("lfoot", new Command("href", "https://reactome.org", "https://reactome.org")))
+				.commandln("rfoot", "Page \\thepage");
+
+		// Link icon
+		document.textln("\\newcommand{\\linkicon}[1]{" +
+				"  \\begingroup\\normalfont" +
+				"  \\href{#1}{\\includegraphics[height=\\fontcharht\\font`\\B]{linkicon.png}}" +
+				"  \\endgroup" +
+				"}");
+//		document.textln("\\DeclareRobustCommand{\\linkicon}{%\n" +
+//				"  \\begingroup\\normalfont\n" +
+//				"  \\href{#1}{\\includegraphics[height=\\fontcharht\\font`\\B]{linkicon.png}}%\n" +
+//				"  \\endgroup\n" +
+//				"}");
 	}
 }

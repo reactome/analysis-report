@@ -9,19 +9,14 @@ import java.util.stream.Stream;
 public class ReferenceFactory {
 
 
-	public static String createPublication(Publication publication) {
-		String text = publication.getDisplayName();
+	public static String toString(Publication publication) {
 		if (publication instanceof LiteratureReference) {
-			final LiteratureReference reference = (LiteratureReference) publication;
-			text = toString(reference);
+			return toString((LiteratureReference) publication);
 		} else if (publication instanceof Book) {
-			final Book book = (Book) publication;
-			text = toString(book);
+			return toString((Book) publication);
 		} else if (publication instanceof URL) {
-			final URL url = (URL) publication;
-			text = toString(url);
-		}
-		return TextUtils.scape(text) + ".";
+			return toString((URL) publication);
+		} else return publication.getDisplayName();
 	}
 
 	private static String toString(LiteratureReference reference) {

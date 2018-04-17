@@ -1,6 +1,7 @@
 package org.reactome.server.tools.analysis.report;
 
 import org.apache.batik.transcoder.TranscoderException;
+import org.apache.commons.io.FileUtils;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.graph.domain.result.DiagramResult;
 import org.reactome.server.graph.service.DiagramService;
@@ -52,6 +53,7 @@ public class ReportBuilder {
 		final File latex = new File(tempFolder, "output.tex");
 		createTextFile(latex, analysisData);
 		createSvgs(tempFolder, analysisData);
+		copyIcon(tempFolder);
 		compile(latex);
 		compile(latex);
 		final File file = new File(tempFolder, "output.pdf");
@@ -101,6 +103,15 @@ public class ReportBuilder {
 			throw new AnalysisReportRuntimeException("Couldn't generate PDF from SVG for " + file.getAbsolutePath(), e);
 		}
 
+	}
+
+	private void copyIcon(File tempFolder) {
+		final File icon = new File(tempFolder, "linkicon.png");
+		try {
+			FileUtils.copyInputStreamToFile(ReportBuilder.class.getResourceAsStream("link.png"), icon);
+		} catch (IOException e) {
+			logger.error("Couldn't copy link.png to " + icon);
+		}
 	}
 
 	private void clear(File folder) {
