@@ -15,6 +15,7 @@ public class ReportRenderer {
 			new TitlePageRenderer(),
 			new TableOfContentsRenderer(),
 			new IntroductionRenderer(),
+			new PropertiesRenderer(),
 			new OverviewRenderer(),
 			new PathwayDetailRenderer(),
 			new FoundElementsRenderer(),
