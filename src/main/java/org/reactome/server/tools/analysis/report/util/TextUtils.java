@@ -57,4 +57,11 @@ public class TextUtils {
 				? text.substring(0, maxLength - 3) + "..."
 				: text;
 	}
+
+	/**
+	 * Scapes only the % symbol
+	 */
+	public static String scapeUrl(String link) {
+		return link.replaceAll("%", "\\\\%");
+	}
 }

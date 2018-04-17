@@ -23,7 +23,7 @@ public class TitlePageRenderer implements TexRenderer {
 
 		String link = "https://reactome.org/PathwayBrowser/#/ANALYSIS=" + analysisData.getAnalysisStoredResult().getSummary().getToken();
 		// Links only scape %
-		String link2 = link.replaceAll("%", "\\\\%");
+		final String link2 = TextUtils.scapeUrl(link);
 		final String escaped = TextUtils.scape(link);
 		final String p2 = "\\href{" + link2 + "}{\\url{" + escaped + "}}";
 
@@ -43,4 +43,5 @@ public class TitlePageRenderer implements TexRenderer {
 		document.commandln(TexDocument.END, TexDocument.TITLEPAGE);
 		document.commandln(TexDocument.NEW_PAGE);
 	}
+
 }
