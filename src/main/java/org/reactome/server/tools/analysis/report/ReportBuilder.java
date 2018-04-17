@@ -2,6 +2,7 @@ package org.reactome.server.tools.analysis.report;
 
 import org.apache.batik.transcoder.TranscoderException;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.graph.domain.result.DiagramResult;
 import org.reactome.server.graph.service.DiagramService;
@@ -74,23 +75,36 @@ public class ReportBuilder {
 
 	private void createSvgs(File folder, AnalysisData data) throws AnalysisReportException {
 		try {
-			data.getPathways().parallelStream().forEach(pathwayData -> {
-				final String stId = pathwayData.getSummary().getStId();
-				final DiagramResult result = diagramService.getDiagramResult(stId);
-				final RasterArgs args = new RasterArgs(result.getDiagramStId(), "svg");
-				args.setSelected(result.getEvents());
-				args.setProfiles(new ColorProfiles(diagramProfile, analysisProfile, null));
-				args.setResource(data.getResource());
-				final File file = new File(folder, stId + ".svg");
-				try {
-					rasterExporter.export(args, new FileOutputStream(file), this.result);
-					svgToPdf(file);
-				} catch (EhldException | AnalysisException | DiagramJsonNotFoundException | IOException | DiagramJsonDeserializationException | TranscoderException e) {
-					logger.error("Couldn't create diagram " + args.getStId(), e);
-				}
-			});
+			data.getPathways().parallelStream()
+					.forEach(pathwayData -> createPdf(folder, data, pathwayData.getSummary().getStId()));
 		} catch (AnalysisReportRuntimeException e) {
 			throw new AnalysisReportException(e);
+		}
+	}
+
+	private void createPdf(File folder, AnalysisData data, String stId) {
+		// We will copy the SVG directly from memory into inkscape command
+		// We start the inkscape in a thread waiting for /dev/stdin
+		// Then we pipe the SVG into /dev/stdin through process.getOutputStream()
+		final DiagramResult result = diagramService.getDiagramResult(stId);
+		final RasterArgs args = new RasterArgs(result.getDiagramStId(), "svg");
+		args.setSelected(result.getEvents());
+		args.setProfiles(new ColorProfiles(diagramProfile, analysisProfile, null));
+		args.setResource(data.getResource());
+		final ProcessBuilder builder = new ProcessBuilder("inkscape",
+				"--export-area-drawing", "--without-gui",
+				"--export-text-to-path",
+				"--export-pdf-version=1.5",
+				"--file=" + "/dev/stdin",
+				"--export-pdf=" + stId + ".pdf");
+		builder.directory(folder);
+		try {
+			final Process process = builder.start();
+			rasterExporter.export(args, new BufferedOutputStream(process.getOutputStream()), this.result);
+			process.getOutputStream().close();
+			process.waitFor();
+		} catch (InterruptedException | IOException | TranscoderException | DiagramJsonNotFoundException | EhldException | DiagramJsonDeserializationException | AnalysisException e) {
+			logger.error("Couldn't create diagram " + args.getStId(), e);
 		}
 	}
 
@@ -104,6 +118,31 @@ public class ReportBuilder {
 			svgToPdf(file);
 		} catch (AnalysisServerError | TranscoderException | IOException e) {
 			logger.error("Couldn't create fireworks " + args.getSpeciesName(), e);
+		}
+
+	}
+
+	private void svgToPdf(byte[] bytes, File file) {
+		final ProcessBuilder builder = new ProcessBuilder("inkscape",
+				"--export-area-drawing", "--without-gui",
+				"--export-text-to-path",
+				"--export-pdf-version=1.5",
+				"--file=" + "/dev/stdin",
+				"--export-pdf=" + file.getName().replace(".svg", ".pdf"));
+		builder.directory(file.getParentFile());
+		try {
+			final Process process = builder.start();
+			try (final BufferedInputStream inputStream = new BufferedInputStream(new ByteArrayInputStream(bytes));
+			final BufferedOutputStream outputStream = new BufferedOutputStream(process.getOutputStream())) {
+				IOUtils.copy(inputStream, outputStream);
+			}
+			process.getOutputStream().close();
+			try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getErrorStream()))) {
+				reader.lines().forEach(System.out::println);
+			}
+			process.waitFor();
+		} catch (IOException | InterruptedException e) {
+			throw new AnalysisReportRuntimeException("Couldn't generate PDF from SVG for " + file.getAbsolutePath(), e);
 		}
 
 	}

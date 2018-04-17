@@ -36,7 +36,7 @@ public class Editions extends LinkedList<Editions.Edition> {
 		if (edit != null)
 			edits.computeIfAbsent(edit.getDateTime().substring(0, 10), k -> new LinkedHashMap<>())
 					.computeIfAbsent(type, k -> new TreeSet<>())
-					.addAll(edit.getAuthor());
+					.addAll(edit.getAuthor() == null ? Collections.emptyList() : edit.getAuthor());
 	}
 
 	private static void add(Map<String, Map<String, Set<Person>>> edits, String type, List<InstanceEdit> instanceEdits) {
