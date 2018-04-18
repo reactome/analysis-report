@@ -28,6 +28,7 @@ public class ReportBuilder {
 	}
 
 	public void create(AnalysisStoredResult result, String resource, Long species, int maxPathways, String diagramProfile, String analysisProfile, String fireworksProfile, OutputStream outputStream) throws AnalysisReportException {
+		DiagramFactory.setProfiles(diagramProfile, analysisProfile, fireworksProfile);
 		long last = System.nanoTime();
 		final AnalysisData analysisData = new AnalysisData(result, resource, species, maxPathways);
 		final File tempFolder = new File("temp" + getStamp());
@@ -36,10 +37,10 @@ public class ReportBuilder {
 		createTextFile(latex, analysisData);
 		final long doc = System.nanoTime() - last;
 		last = System.nanoTime();
-		DiagramFactory.createFireworksPdf(tempFolder, analysisData, fireworksProfile);
+		DiagramFactory.createFireworksPdf(tempFolder, analysisData);
 		final long fireworks = System.nanoTime() - last;
 		last = System.nanoTime();
-		DiagramFactory.createDiagramPdfs(tempFolder, analysisData, diagramProfile, analysisProfile);
+		DiagramFactory.createDiagramPdfs(tempFolder, analysisData);
 		final long diagrams = System.nanoTime() - last;
 		last = System.nanoTime();
 		copyIcon(tempFolder);
