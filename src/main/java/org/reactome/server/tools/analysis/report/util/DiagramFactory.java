@@ -4,8 +4,6 @@ import org.apache.batik.transcoder.TranscoderException;
 import org.reactome.server.graph.domain.result.DiagramResult;
 import org.reactome.server.graph.service.DiagramService;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
-import org.reactome.server.tools.analysis.exception.AnalysisReportException;
-import org.reactome.server.tools.analysis.exception.AnalysisReportRuntimeException;
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.diagram.exporter.common.analysis.AnalysisException;
 import org.reactome.server.tools.diagram.exporter.common.profiles.factory.DiagramJsonDeserializationException;
@@ -35,13 +33,9 @@ public class DiagramFactory {
 	private static String fireworksProfile;
 
 
-	public static void createDiagramPdfs(File folder, AnalysisData data) throws AnalysisReportException {
-		try {
-			data.getPathways().parallelStream()
-					.forEach(pathwayData -> createDiagramPdf(folder, data, pathwayData.getSummary().getStId()));
-		} catch (AnalysisReportRuntimeException e) {
-			throw new AnalysisReportException(e);
-		}
+	public static void createDiagramPdfs(File folder, AnalysisData data) {
+		data.getPathways().parallelStream()
+				.forEach(pathwayData -> createDiagramPdf(folder, data, pathwayData.getSummary().getStId()));
 	}
 
 	private static void createDiagramPdf(File folder, AnalysisData data, String stId) {

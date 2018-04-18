@@ -13,7 +13,6 @@ import org.reactome.server.tools.analysis.report.util.GraphCoreConfig;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -52,8 +51,8 @@ public class ReportBuilderTest {
 		} catch (AnalysisReportException e) {
 			e.printStackTrace();
 		}
-		System.out.println(Arrays.asList("doc", "fireworks", "diagrams", "icon", "compile1", "compile2", "copy"));
-		IntStream.of(5, 25).forEach(numberOfPathways -> {
+//		System.out.println(Arrays.asList("doc", "fireworks", "diagrams", "icon", "compile1", "compile2", "copy"));
+		IntStream.of(5).forEach(numberOfPathways -> {
 			for (Map.Entry<String, String> entry : tokens.entrySet()) {
 				final String name = entry.getKey();
 				final String token = entry.getValue();

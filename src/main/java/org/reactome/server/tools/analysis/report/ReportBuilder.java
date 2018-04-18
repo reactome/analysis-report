@@ -13,10 +13,10 @@ import java.io.*;
 import java.nio.file.Files;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ReportBuilder {
 
@@ -29,34 +29,25 @@ public class ReportBuilder {
 
 	public void create(AnalysisStoredResult result, String resource, Long species, int maxPathways, String diagramProfile, String analysisProfile, String fireworksProfile, OutputStream outputStream) throws AnalysisReportException {
 		DiagramFactory.setProfiles(diagramProfile, analysisProfile, fireworksProfile);
-		long last = System.nanoTime();
 		final AnalysisData analysisData = new AnalysisData(result, resource, species, maxPathways);
 		final File tempFolder = new File("temp" + getStamp());
 		tempFolder.mkdirs();
 		final File latex = new File(tempFolder, "output.tex");
-		createTextFile(latex, analysisData);
-		final long doc = System.nanoTime() - last;
-		last = System.nanoTime();
-		DiagramFactory.createFireworksPdf(tempFolder, analysisData);
-		final long fireworks = System.nanoTime() - last;
-		last = System.nanoTime();
-		DiagramFactory.createDiagramPdfs(tempFolder, analysisData);
-		final long diagrams = System.nanoTime() - last;
-		last = System.nanoTime();
-		copyIcon(tempFolder);
-		final long icon = System.nanoTime() - last;
-		last = System.nanoTime();
+		try {
+			Stream.of(
+					(Runnable) () -> createTextFile(latex, analysisData),
+					() -> DiagramFactory.createFireworksPdf(tempFolder, analysisData),
+					() -> DiagramFactory.createDiagramPdfs(tempFolder, analysisData),
+					() -> copyIcon(tempFolder)
+			).parallel().forEach(Runnable::run);
+		} catch (AnalysisReportRuntimeException e) {
+			throw new AnalysisReportException(e);
+		}
 		compile(latex);
-		final long compile1 = System.nanoTime() - last;
-		last = System.nanoTime();
 		compile(latex);
-		final long compile2 = System.nanoTime() - last;
-		last = System.nanoTime();
 		final File file = new File(tempFolder, "output.pdf");
 		export(file, outputStream);
-		final long copy = System.nanoTime() - last;
 		clear(tempFolder);
-		System.out.println(Arrays.asList(doc, fireworks, diagrams, icon, compile1, compile2, copy));
 	}
 
 	private synchronized String getStamp() {
