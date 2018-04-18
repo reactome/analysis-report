@@ -1,25 +1,11 @@
 package org.reactome.server.tools.analysis.report;
 
-import org.apache.batik.transcoder.TranscoderException;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
-import org.reactome.server.graph.domain.result.DiagramResult;
-import org.reactome.server.graph.service.DiagramService;
-import org.reactome.server.graph.utils.ReactomeGraphCore;
 import org.reactome.server.tools.analysis.exception.AnalysisReportException;
 import org.reactome.server.tools.analysis.exception.AnalysisReportRuntimeException;
 import org.reactome.server.tools.analysis.report.renderer.ReportRenderer;
-import org.reactome.server.tools.diagram.exporter.common.analysis.AnalysisException;
-import org.reactome.server.tools.diagram.exporter.common.profiles.factory.DiagramJsonDeserializationException;
-import org.reactome.server.tools.diagram.exporter.common.profiles.factory.DiagramJsonNotFoundException;
-import org.reactome.server.tools.diagram.exporter.raster.RasterExporter;
-import org.reactome.server.tools.diagram.exporter.raster.api.RasterArgs;
-import org.reactome.server.tools.diagram.exporter.raster.ehld.exception.EhldException;
-import org.reactome.server.tools.diagram.exporter.raster.profiles.ColorProfiles;
-import org.reactome.server.tools.fireworks.exporter.FireworksExporter;
-import org.reactome.server.tools.fireworks.exporter.common.analysis.exception.AnalysisServerError;
-import org.reactome.server.tools.fireworks.exporter.common.api.FireworkArgs;
+import org.reactome.server.tools.analysis.report.util.DiagramFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,6 +13,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
@@ -34,134 +21,45 @@ import java.util.stream.Collectors;
 public class ReportBuilder {
 
 	private static final Logger logger = LoggerFactory.getLogger(ReportBuilder.class);
-	private static DiagramService diagramService = ReactomeGraphCore.getService(DiagramService.class);
-	private final RasterExporter rasterExporter;
-	private final FireworksExporter fireworksExporter;
-	private AnalysisStoredResult result;
-	private String diagramProfile;
-	private String analysisProfile;
-	private String fireworksProfile;
-
 
 	public ReportBuilder(String ehldPath, String diagramPath, String analysisPath, String fireworksPath, String svgSummary) {
-		rasterExporter = new RasterExporter(diagramPath, ehldPath, analysisPath, svgSummary);
-		fireworksExporter = new FireworksExporter(fireworksPath, analysisPath);
 		Locale.setDefault(Locale.ENGLISH);
+		DiagramFactory.configure(diagramPath, ehldPath, analysisPath, svgSummary, fireworksPath);
 	}
 
 	public void create(AnalysisStoredResult result, String resource, Long species, int maxPathways, String diagramProfile, String analysisProfile, String fireworksProfile, OutputStream outputStream) throws AnalysisReportException {
-		this.result = result;
-		this.diagramProfile = diagramProfile;
-		this.analysisProfile = analysisProfile;
-		this.fireworksProfile = fireworksProfile;
+		long last = System.nanoTime();
 		final AnalysisData analysisData = new AnalysisData(result, resource, species, maxPathways);
 		final File tempFolder = new File("temp" + getStamp());
 		tempFolder.mkdirs();
 		final File latex = new File(tempFolder, "output.tex");
 		createTextFile(latex, analysisData);
-		createFireworksSvg(tempFolder, analysisData);
-		createSvgs(tempFolder, analysisData);
+		final long doc = System.nanoTime() - last;
+		last = System.nanoTime();
+		DiagramFactory.createFireworksPdf(tempFolder, analysisData, fireworksProfile);
+		final long fireworks = System.nanoTime() - last;
+		last = System.nanoTime();
+		DiagramFactory.createDiagramPdfs(tempFolder, analysisData, diagramProfile, analysisProfile);
+		final long diagrams = System.nanoTime() - last;
+		last = System.nanoTime();
 		copyIcon(tempFolder);
+		final long icon = System.nanoTime() - last;
+		last = System.nanoTime();
 		compile(latex);
+		final long compile1 = System.nanoTime() - last;
+		last = System.nanoTime();
 		compile(latex);
+		final long compile2 = System.nanoTime() - last;
+		last = System.nanoTime();
 		final File file = new File(tempFolder, "output.pdf");
 		export(file, outputStream);
+		final long copy = System.nanoTime() - last;
 		clear(tempFolder);
+		System.out.println(Arrays.asList(doc, fireworks, diagrams, icon, compile1, compile2, copy));
 	}
 
 	private synchronized String getStamp() {
 		return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmssSSS", Locale.ENGLISH));
-	}
-
-	private void createSvgs(File folder, AnalysisData data) throws AnalysisReportException {
-		try {
-			data.getPathways().parallelStream()
-					.forEach(pathwayData -> createPdf(folder, data, pathwayData.getSummary().getStId()));
-		} catch (AnalysisReportRuntimeException e) {
-			throw new AnalysisReportException(e);
-		}
-	}
-
-	private void createPdf(File folder, AnalysisData data, String stId) {
-		// We will copy the SVG directly from memory into inkscape command
-		// We start the inkscape in a thread waiting for /dev/stdin
-		// Then we pipe the SVG into /dev/stdin through process.getOutputStream()
-		final DiagramResult result = diagramService.getDiagramResult(stId);
-		final RasterArgs args = new RasterArgs(result.getDiagramStId(), "svg");
-		args.setSelected(result.getEvents());
-		args.setProfiles(new ColorProfiles(diagramProfile, analysisProfile, null));
-		args.setResource(data.getResource());
-		final ProcessBuilder builder = new ProcessBuilder("inkscape",
-				"--export-area-drawing", "--without-gui",
-				"--export-text-to-path",
-				"--export-pdf-version=1.5",
-				"--file=" + "/dev/stdin",
-				"--export-pdf=" + stId + ".pdf");
-		builder.directory(folder);
-		try {
-			final Process process = builder.start();
-			rasterExporter.export(args, new BufferedOutputStream(process.getOutputStream()), this.result);
-			process.getOutputStream().close();
-			process.waitFor();
-		} catch (InterruptedException | IOException | TranscoderException | DiagramJsonNotFoundException | EhldException | DiagramJsonDeserializationException | AnalysisException e) {
-			logger.error("Couldn't create diagram " + args.getStId(), e);
-		}
-	}
-
-	private void createFireworksSvg(File folder, AnalysisData data) {
-		final String species = data.getSpecies().replaceAll(" ", "_");
-		final File file = new File(folder, species + ".svg");
-		final FireworkArgs args = new FireworkArgs(species, "svg");
-		args.setProfile(fireworksProfile);
-		try {
-			fireworksExporter.render(args, data.getAnalysisStoredResult(), new FileOutputStream(file));
-			svgToPdf(file);
-		} catch (AnalysisServerError | TranscoderException | IOException e) {
-			logger.error("Couldn't create fireworks " + args.getSpeciesName(), e);
-		}
-
-	}
-
-	private void svgToPdf(byte[] bytes, File file) {
-		final ProcessBuilder builder = new ProcessBuilder("inkscape",
-				"--export-area-drawing", "--without-gui",
-				"--export-text-to-path",
-				"--export-pdf-version=1.5",
-				"--file=" + "/dev/stdin",
-				"--export-pdf=" + file.getName().replace(".svg", ".pdf"));
-		builder.directory(file.getParentFile());
-		try {
-			final Process process = builder.start();
-			try (final BufferedInputStream inputStream = new BufferedInputStream(new ByteArrayInputStream(bytes));
-			final BufferedOutputStream outputStream = new BufferedOutputStream(process.getOutputStream())) {
-				IOUtils.copy(inputStream, outputStream);
-			}
-			process.getOutputStream().close();
-			try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getErrorStream()))) {
-				reader.lines().forEach(System.out::println);
-			}
-			process.waitFor();
-		} catch (IOException | InterruptedException e) {
-			throw new AnalysisReportRuntimeException("Couldn't generate PDF from SVG for " + file.getAbsolutePath(), e);
-		}
-
-	}
-
-	private void svgToPdf(File file) throws AnalysisReportRuntimeException {
-		final ProcessBuilder builder = new ProcessBuilder("inkscape",
-				"--export-area-drawing", "--without-gui",
-				"--export-text-to-path",
-				"--export-pdf-version=1.5",
-				"--file=" + file.getName(),
-				"--export-pdf=" + file.getName().replace(".svg", ".pdf"));
-		builder.directory(file.getParentFile());
-		try {
-			final Process process = builder.start();
-			process.waitFor();
-		} catch (IOException | InterruptedException e) {
-			throw new AnalysisReportRuntimeException("Couldn't generate PDF from SVG for " + file.getAbsolutePath(), e);
-		}
-
 	}
 
 	private void copyIcon(File tempFolder) {
@@ -197,7 +95,6 @@ public class ReportBuilder {
 				latex.getAbsolutePath())
 				.redirectErrorStream(true)
 				.directory(latex.getParentFile());
-
 		try {
 			final Process process = builder.start();
 			final List<String> lines;

@@ -1,5 +1,6 @@
 package org.reactome.server.tools.analysis.report;
 
+import org.apache.commons.io.output.NullOutputStream;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -12,9 +13,11 @@ import org.reactome.server.tools.analysis.report.util.GraphCoreConfig;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.stream.IntStream;
 
 public class ReportBuilderTest {
 
@@ -42,21 +45,31 @@ public class ReportBuilderTest {
 	@Test
 	public void test() {
 		final ReportBuilder builder = new ReportBuilder(ehldPath, diagramPath, analysisPath, fireworksPath, svgSummary);
-		for (Map.Entry<String, String> entry : tokens.entrySet()) {
-			final String name = entry.getKey();
-			final String token = entry.getValue();
-			final File file = new File("test-files", "text-" + name + ".pdf");
-			final long start = System.nanoTime();
-			try (final FileOutputStream outputStream = new FileOutputStream(file)) {
-				final AnalysisStoredResult result = new TokenUtils(analysisPath).getFromToken(token);
-				builder.create(result, "TOTAL", 48887L, 6, "modern", "copper plus", "copper", outputStream);
-			} catch (IOException | AnalysisReportException e) {
-				e.printStackTrace();
-				Assert.fail(e.getMessage());
-			}
-			final long elapsed = System.nanoTime() - start;
-			System.out.println(elapsed / 1e9);
+		try {
+			// Warm up
+			final AnalysisStoredResult result = new TokenUtils(analysisPath).getFromToken("MjAxODAyMTIxMTMwMTRfMg==");
+			builder.create(result, "TOTAL", 48887L, 25, "modern", "copper plus", "copper", new NullOutputStream());
+		} catch (AnalysisReportException e) {
+			e.printStackTrace();
 		}
+		System.out.println(Arrays.asList("doc", "fireworks", "diagrams", "icon", "compile1", "compile2", "copy"));
+		IntStream.of(5, 25).forEach(numberOfPathways -> {
+			for (Map.Entry<String, String> entry : tokens.entrySet()) {
+				final String name = entry.getKey();
+				final String token = entry.getValue();
+				final File file = new File("test-files", "text-" + name + ".pdf");
+				final long start = System.nanoTime();
+				try (final FileOutputStream outputStream = new FileOutputStream(file)) {
+					final AnalysisStoredResult result = new TokenUtils(analysisPath).getFromToken(token);
+					builder.create(result, "TOTAL", 48887L, numberOfPathways, "modern", "copper plus", "copper", outputStream);
+				} catch (IOException | AnalysisReportException e) {
+					e.printStackTrace();
+					Assert.fail(e.getMessage());
+				}
+				final long elapsed = System.nanoTime() - start;
+//				System.out.println(elapsed / 1e9);
+			}
+		});
 	}
 
 }
