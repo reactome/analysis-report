@@ -10,8 +10,9 @@ import org.reactome.server.graph.service.GeneralService;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
 
 import java.util.Collection;
-import java.util.LinkedList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Contains the data needed for the analysis. All of the accesses to the graph
@@ -60,14 +61,15 @@ public class AnalysisData {
 	}
 
 	private List<PathwayData> collectPathways() {
-		final List<PathwayData> list = new LinkedList<>();
-		analysisStoredResult.filterBySpecies(speciesDbId, resource).getPathways().stream()
-				.limit(maxPathways).forEach(pathwayBase -> {
-			final PathwayNodeSummary pathwaySummary = analysisStoredResult.getPathway(pathwayBase.getStId());
-			final Pathway pathway = databaseObjectService.findByIdNoRelations(pathwayBase.getStId());
-			list.add(new PathwayData(pathwaySummary, pathwayBase, pathway));
-		});
-		return list;
+		return analysisStoredResult.filterBySpecies(speciesDbId, resource).getPathways().stream()
+				.limit(maxPathways)
+				.map(pathwayBase -> {
+					final PathwayNodeSummary pathwaySummary = analysisStoredResult.getPathway(pathwayBase.getStId());
+					final Pathway pathway = databaseObjectService.findByIdNoRelations(pathwayBase.getStId());
+					return (new PathwayData(pathwaySummary, pathwayBase, pathway));
+				})
+				.sorted(Comparator.comparing(pathwayData -> pathwayData.getBase().getEntities().getFdr()))
+				.collect(Collectors.toList());
 	}
 
 	private String computeName() {

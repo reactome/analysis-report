@@ -88,14 +88,6 @@ public class PathwayDetail implements Section {
 		}
 	}
 
-	private String compileName(Person person) {
-		if (person.getFirstname() != null && person.getSurname() != null)
-			return person.getSurname() + " " + person.getFirstname();
-		if (person.getSurname() != null)
-			return person.getSurname();
-		return person.getFirstname();
-	}
-
 	private void addDatabaseObjectList(Document document, String title, Collection<? extends DatabaseObject> objects, PdfProfile profile) {
 		if (objects != null && !objects.isEmpty()) {
 			final java.util.List<String> list = objects.stream()
@@ -273,6 +265,19 @@ public class PathwayDetail implements Section {
 		return text;
 	}
 
+	private String compileName(Person person) {
+		if (person.getFirstname() != null && person.getSurname() != null)
+			return person.getSurname() + ", " + person.getFirstname();
+		if (person.getSurname() != null)
+			return person.getSurname();
+		return person.getFirstname();
+	}
+
+	private String initials(String name) {
+		return Arrays.stream(name.split(" "))
+				.map(n -> n.substring(0, 1).toUpperCase())
+				.collect(Collectors.joining(" "));
+	}
 
 	private void addEditTable(Document document, Pathway pathway, PdfProfile profile) {
 		document.add(profile.getH3("Edit history"));
