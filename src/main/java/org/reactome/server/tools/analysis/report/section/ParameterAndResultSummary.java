@@ -63,7 +63,7 @@ public class ParameterAndResultSummary implements Section {
 		list.add(profile.getParagraph(properties.getProperty(analysisData.getAnalysisStoredResult().getSummary().getType().toLowerCase()))
 				.add(Images.getLink(properties.getProperty("analysis.url"), profile.getFontSize())));
 		list.add(profile.getParagraph(String.format(properties.getProperty("identifiers.found"),
-				found, found + notFound, analysisData.getPathways().size())));
+				found, found + notFound, analysisData.getAnalysisStoredResult().getPathways().size())));
 //		if (analysisData.getAnalysisStoredResult().getSummary().isProjection())
 		list.add(profile.getParagraph(properties.getProperty("projected"))
 				.add(Images.getLink(properties.getProperty("projected.url"), profile.getFontSize())));

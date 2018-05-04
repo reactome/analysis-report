@@ -55,11 +55,11 @@ public class DiagramHelper {
 		args.setProfiles(new ColorProfiles(diagramProfile, analysisProfile, null));
 
 		// 1 ask for an image larger than the original diagram -> better quality
-		final Integer width = diagramResult.getWidth();
-		final double desiredWidth = Math.min(width, pageWidth) * IMAGE_SCALE;
-		final double scale = desiredWidth / width;
-		int quality = Math.max(toQuality(scale), MIN_QUALITY);
-		args.setQuality(quality);
+//		final Integer width = diagramResult.getWidth();
+//		final double desiredWidth = Math.min(width, pageWidth) * IMAGE_SCALE;
+//		final double scale = desiredWidth / width;
+//		int quality = Math.max(toQuality(scale), MIN_QUALITY);
+		args.setQuality(10);
 
 		try {
 			final BufferedImage image = exporter.export(args, asr);

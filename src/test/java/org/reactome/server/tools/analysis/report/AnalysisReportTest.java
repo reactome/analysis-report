@@ -24,11 +24,11 @@ public class AnalysisReportTest {
 	private static final HashMap<String, String> tokens = new HashMap<String, String>() {
 		{
 			put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
-//			put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
-//			put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
-//			put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
-//			put("expression03", "MjAxODAzMDIwNTM2MDNfMQ%253D%253D");
-//			put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
+			put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
+			put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
+			put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
+			put("expression03", "MjAxODAzMDIwNTM2MDNfMQ%253D%253D");
+			put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
 		}
 	};
 	private static final File SAVE_TO = new File("test-files");
