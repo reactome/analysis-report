@@ -5,15 +5,10 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
-import org.reactome.server.tools.analysis.report.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.report.util.GraphCoreConfig;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -65,17 +60,17 @@ public class AnalysisReportTest {
 
 	@Test
 	public void exportTest() {
-		for (Map.Entry<String, String> entry : tokens.entrySet()) {
-			final String type = entry.getKey();
-			final String token = entry.getValue();
-			try {
-				final OutputStream os = new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)));
-				RENDERER.create(token, "UNIPROT", 48887L, 25, "modern", "copper plus", "barium lithium", os);
-			} catch (AnalysisExporterException | FileNotFoundException e) {
-				e.printStackTrace();
-				Assert.fail(e.getMessage());
-			}
-		}
+//		for (Map.Entry<String, String> entry : tokens.entrySet()) {
+//			final String type = entry.getKey();
+//			final String token = entry.getValue();
+//			try {
+//				final OutputStream os = new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)));
+//				RENDERER.create(token, "UNIPROT", 48887L, 25, "modern", "copper plus", "barium lithium", os);
+//			} catch (AnalysisExporterException | FileNotFoundException e) {
+//				e.printStackTrace();
+//				Assert.fail(e.getMessage());
+//			}
+//		}
 	}
 
 }

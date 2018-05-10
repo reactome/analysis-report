@@ -16,7 +16,7 @@ import java.awt.image.BufferedImage;
  */
 public class FireworksHelper {
 
-	private static final double QUALITY = 2.;
+	private static final double QUALITY = 3.;
 	private static FireworksExporter exporter;
 	private static String profile;
 

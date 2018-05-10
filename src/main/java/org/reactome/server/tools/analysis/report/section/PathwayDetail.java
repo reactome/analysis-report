@@ -56,6 +56,7 @@ public class PathwayDetail implements Section {
 			addFoundElements(document, analysisData, pathway, profile);
 
 			document.add(new AreaBreak());
+			document.flush();
 			i += 1;
 		}
 	}
