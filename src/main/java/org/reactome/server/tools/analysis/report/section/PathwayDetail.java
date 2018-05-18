@@ -3,14 +3,16 @@ package org.reactome.server.tools.analysis.report.section;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.borders.Border;
-import com.itextpdf.layout.element.*;
+import com.itextpdf.layout.element.AreaBreak;
+import com.itextpdf.layout.element.Paragraph;
+import com.itextpdf.layout.element.Table;
+import com.itextpdf.layout.element.Text;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.UnitValue;
 import org.reactome.server.analysis.core.result.model.*;
 import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.analysis.report.PathwayData;
-import org.reactome.server.tools.analysis.report.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.report.style.Images;
 import org.reactome.server.tools.analysis.report.style.PdfProfile;
 import org.reactome.server.tools.analysis.report.util.DiagramHelper;
@@ -33,17 +35,14 @@ public class PathwayDetail implements Section {
 	private static final String PATHWAY_DETAIL = "https://reactome.org/content/detail/";
 
 	@Override
-	public void render(Document document, PdfProfile profile, AnalysisData analysisData) throws AnalysisExporterException {
+	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		document.add(new AreaBreak());
 		document.add(profile.getH1("5. Pathway details").setDestination("pathway-details"));
 		int i = 1;
 		for (PathwayData pathwayData : analysisData.getPathways()) {
 			final Pathway pathway = pathwayData.getPathway();
 			document.add(getLinkedPathwayName(i, pathway, profile));
-			final float width = document.getPdfDocument().getLastPage().getMediaBox().getWidth() - document.getLeftMargin() - document.getRightMargin();
-			final float heigth = document.getPdfDocument().getLastPage().getMediaBox().getHeight() - document.getTopMargin() - document.getBottomMargin();
-			final Image diagram = DiagramHelper.getDiagram(pathway.getStId(), analysisData.getAnalysisStoredResult(), analysisData.getResource(), width, heigth);
-			if (diagram != null) document.add(diagram);
+			DiagramHelper.insertDiagram(pathway.getStId(), analysisData.getAnalysisStoredResult(), analysisData.getResource(), document);
 			addDatabaseObjectList(document, "Cellular compartments", pathway.getCompartment(), profile);
 			addRelatedDiseases(document, pathway, profile);
 			addDatabaseObjectList(document, "Inferred from", pathway.getInferredFrom(), profile);
@@ -76,7 +75,7 @@ public class PathwayDetail implements Section {
 	}
 
 	private void addSummations(Document document, Pathway pathway, PdfProfile profile) {
-		pathway.getSummation().forEach(summation -> HtmlParser.parseText(document, profile, summation));
+		pathway.getSummation().forEach(summation -> HtmlParser.parseText(document, profile, summation.getText()));
 	}
 
 	private void addRelatedDiseases(Document document, Pathway pathwayDetail, PdfProfile profile) {
@@ -255,19 +254,23 @@ public class PathwayDetail implements Section {
 				.collect(Collectors.toList()));
 	}
 
-	private String asString(java.util.List<Person> persons) {
+	private String asString(Collection<Person> persons) {
+		return asString(persons, 5);
+	}
+
+	private String asString(Collection<Person> persons, int maxAuthors) {
 		if (persons == null) return "";
 		String text = String.join(", ", persons.stream()
-				.limit(5)
+				.limit(maxAuthors)
 				.map(this::compileName)
 				.collect(Collectors.toList()));
-		if (persons.size() > 5) text += " et al.";
+		if (persons.size() > maxAuthors) text += " et al.";
 		return text;
 	}
 
 	private String compileName(Person person) {
 		if (person.getFirstname() != null && person.getSurname() != null)
-			return person.getSurname() + ", " + person.getFirstname();
+			return person.getSurname() + " " + initials(person.getFirstname());
 		if (person.getSurname() != null)
 			return person.getSurname();
 		return person.getFirstname();
@@ -295,7 +298,11 @@ public class PathwayDetail implements Section {
 		if (pathway.getRevised() != null)
 			pathway.getRevised().forEach(instanceEdit -> editions.add(new Edition("Revised", instanceEdit)));
 
-		editions.sort(Comparator.comparing(Edition::getDate));
+		// Group by date and type
+		final Map<String, Map<String, List<Edition>>> edits = editions.stream()
+				.collect(Collectors.groupingBy(Edition::getDate,
+						TreeMap::new,  // forces key sorting
+						Collectors.groupingBy(Edition::getType)));
 
 		final Table table = new Table(new float[]{0.2f, 0.2f, 1f});
 		table.useAllAvailableWidth();
@@ -304,11 +311,18 @@ public class PathwayDetail implements Section {
 		table.addHeaderCell(profile.getHeaderCell("Action"));
 		table.addHeaderCell(profile.getHeaderCell("Author"));
 		int row = 0;
-		for (Edition edition : editions) {
-			table.addCell(profile.getBodyCell(edition.getDate(), row));
-			table.addCell(profile.getBodyCell(edition.getType(), row));
-			table.addCell(profile.getBodyCell(edition.getAuthors(), row).setTextAlignment(TextAlignment.LEFT).setPadding(5));
-			row += 1;
+		for (Map.Entry<String, Map<String, List<Edition>>> dateEntry : edits.entrySet()) {
+			for (Map.Entry<String, List<Edition>> typeEntry : dateEntry.getValue().entrySet()) {
+				table.addCell(profile.getBodyCell(dateEntry.getKey(), row));
+				table.addCell(profile.getBodyCell(typeEntry.getKey(), row));
+				final Set<Person> authors = typeEntry.getValue().stream()
+						.map(Edition::getAuthors)
+						.filter(Objects::nonNull)
+						.flatMap(Collection::stream)
+						.collect(Collectors.toSet());
+				table.addCell(profile.getBodyCell(asString(authors), row).setTextAlignment(TextAlignment.LEFT).setPadding(5));
+				row += 1;
+			}
 		}
 		document.add(table);
 
@@ -316,12 +330,12 @@ public class PathwayDetail implements Section {
 
 	private class Edition {
 		private final String type;
-		private final String authors;
+		private final List<Person> authors;
 		private final String date;
 
 		Edition(String type, InstanceEdit instanceEdit) {
 			this.type = type;
-			this.authors = asString(instanceEdit.getAuthor());
+			this.authors = instanceEdit.getAuthor();
 			this.date = instanceEdit.getDateTime().substring(0, 10);
 		}
 
@@ -329,7 +343,7 @@ public class PathwayDetail implements Section {
 			return type;
 		}
 
-		String getAuthors() {
+		List<Person> getAuthors() {
 			return authors;
 		}
 

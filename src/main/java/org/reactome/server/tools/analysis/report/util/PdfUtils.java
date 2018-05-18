@@ -2,13 +2,16 @@ package org.reactome.server.tools.analysis.report.util;
 
 import org.apache.commons.io.IOUtils;
 import org.reactome.server.tools.analysis.report.exception.AnalysisExporterRuntimeException;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.text.NumberFormat;
 import java.util.List;
 import java.util.Locale;
+import java.util.Properties;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
@@ -17,6 +20,18 @@ public class PdfUtils {
 
 	private static final NumberFormat NUMBER_FORMAT = NumberFormat.getNumberInstance(Locale.ENGLISH);
 	private static final NumberFormat EXP_FORMAT = NumberFormat.getNumberInstance(Locale.ENGLISH);
+
+	private static final Properties properties = new Properties();
+
+	static {
+		try {
+			final InputStream resource = PdfUtils.class.getResourceAsStream("properties.properties");
+			final InputStreamReader reader = new InputStreamReader(resource, Charset.forName("utf8"));
+			properties.load(reader);
+		} catch (IOException e) {
+			LoggerFactory.getLogger(PdfUtils.class).error("Couldn't load resource properties.properties");
+		}
+	}
 
 	static {
 		NUMBER_FORMAT.setMaximumFractionDigits(3);
@@ -39,6 +54,14 @@ public class PdfUtils {
 		if (number.doubleValue() < 1e-3)
 			return String.format("%.2e", number);
 		return NUMBER_FORMAT.format(number);
+	}
+
+	public static String getProperty(String key) {
+		return properties.getProperty(key);
+	}
+
+	public static String getProperty(String key, Object... args) {
+		return String.format(getProperty(key), args);
 	}
 
 //	public static Paragraph format(Number number) {

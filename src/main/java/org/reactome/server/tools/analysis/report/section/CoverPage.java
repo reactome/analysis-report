@@ -11,14 +11,13 @@ import org.reactome.server.tools.analysis.report.util.PdfUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
 public class CoverPage implements Section {
 	private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
-	private static List<String> SUMMARY_TEXT = PdfUtils.getText(CoverPage.class.getResourceAsStream("administrative.txt"));
+//	private static List<String> SUMMARY_TEXT = PdfUtils.getText(CoverPage.class.getResourceAsStream("administrative.txt"));
 
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
@@ -30,22 +29,27 @@ public class CoverPage implements Section {
 
 		document.add(profile.getH3(analysisData.getName()).setTextAlignment(TextAlignment.CENTER));
 		document.add(profile.getTitle(""));
+		final String link = "https://reactome.org/PathwayBrowser/#/ANALYSIS=" + analysisData.getAnalysisStoredResult().getSummary().getToken();
 
-		// Paragraph 1: argument details
-		final String p1 = String.format(SUMMARY_TEXT.get(0),
+		final String text = PdfUtils.getProperty("cover.page",
 				analysisData.getName(),
 				AnalysisData.getDBVersion(),
 				DATE_FORMAT.format(new Date()),
-				analysisData.getBeautifiedResource());
-		document.add(HtmlParser.parseParagraph(p1, profile));
+				analysisData.getBeautifiedResource(),
+				link, link);
 
-		// Paragraph 2: centered link
-		final String link = "https://reactome.org/PathwayBrowser/#/ANALYSIS=" + analysisData.getAnalysisStoredResult().getSummary().getToken();
-		final String p2 = String.format(SUMMARY_TEXT.get(1), link, link);
-		document.add(HtmlParser.parseParagraph(p2, profile).setTextAlignment(TextAlignment.CENTER));
-
-		// Paragraph 3: bla bla
-		document.add(HtmlParser.parseParagraph(SUMMARY_TEXT.get(2), profile));
+		HtmlParser.parseText(document, profile, text);
+//		// Paragraph 1: argument details
+//		final String p1 = String.format();
+//		document.add(HtmlParser.parseParagraph(p1, profile));
+//
+//		// Paragraph 2: centered link
+//		final String link = "https://reactome.org/PathwayBrowser/#/ANALYSIS=" + analysisData.getAnalysisStoredResult().getSummary().getToken();
+//		final String p2 = String.format(SUMMARY_TEXT.get(1), link, link);
+//		document.add(HtmlParser.parseParagraph(p2, profile).setTextAlignment(TextAlignment.CENTER));
+//
+//		// Paragraph 3: bla bla
+//		document.add(HtmlParser.parseParagraph(SUMMARY_TEXT.get(2), profile));
 	}
 
 
