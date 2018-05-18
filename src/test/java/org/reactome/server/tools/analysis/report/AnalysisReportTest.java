@@ -1,6 +1,5 @@
 package org.reactome.server.tools.analysis.report;
 
-import org.apache.commons.io.output.NullOutputStream;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
