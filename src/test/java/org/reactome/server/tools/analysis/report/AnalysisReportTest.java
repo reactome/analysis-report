@@ -1,5 +1,6 @@
 package org.reactome.server.tools.analysis.report;
 
+import org.apache.commons.io.output.NullOutputStream;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -20,11 +21,11 @@ import java.util.Map;
  */
 public class AnalysisReportTest {
 
-	private static final boolean save = true;
+	private static final boolean save = false;
 	private static final HashMap<String, String> tokens = new HashMap<String, String>() {
 		{
-			put("overlay01", "MjAxODAyMTIxMTI5MzdfMQ==");
-			put("overlay02", "MjAxODAyMTIxMTMwMTRfMg==");
+			put("overrepresentation01", "MjAxODAyMTIxMTI5MzdfMQ==");
+			put("overrepresentation02", "MjAxODAyMTIxMTMwMTRfMg==");
 			put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
 			put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
 			put("expression03", "MjAxODAzMDIwNTM2MDNfMQ%253D%253D");
@@ -69,8 +70,10 @@ public class AnalysisReportTest {
 			final String type = entry.getKey();
 			final String token = entry.getValue();
 			try {
-				final OutputStream os = new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)));
-				RENDERER.create(token, "UNIPROT", 48887L, 25, "modern", "copper plus", "barium lithium", os);
+				final OutputStream os = save
+						? new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)))
+						: new NullOutputStream();
+				RENDERER.create(token, "UNIPROT", 48887L, 25, "modern", "copper plus", "copper", os);
 			} catch (AnalysisExporterException | FileNotFoundException e) {
 				e.printStackTrace();
 				Assert.fail(e.getMessage());
