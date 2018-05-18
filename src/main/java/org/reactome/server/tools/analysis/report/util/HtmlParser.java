@@ -3,7 +3,6 @@ package org.reactome.server.tools.analysis.report.util;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
-import org.reactome.server.graph.domain.model.Summation;
 import org.reactome.server.tools.analysis.report.style.PdfProfile;
 
 import java.util.LinkedList;
@@ -31,8 +30,8 @@ public class HtmlParser {
 		return paragraph;
 	}
 
-	public static void parseText(Document document, PdfProfile profile, Summation summation) {
-		final String[] paragraphs = summation.getText().split("(?i)<br>|<p>");
+	public static void parseText(Document document, PdfProfile profile, String text) {
+		final String[] paragraphs = text.split("(?i)<br>|<p>");
 		for (String paragraph : paragraphs) {
 			final String trim = paragraph.trim();
 			if (trim.isEmpty()) continue;
