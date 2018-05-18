@@ -2,7 +2,6 @@ package org.reactome.server.tools.analysis.report.section;
 
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.borders.Border;
-import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Table;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.analysis.core.result.model.PathwayBase;
@@ -33,9 +32,7 @@ public class TopPathwayTable implements Section {
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		final int min = analysisData.getPathways().size();
-		document.add(new AreaBreak());
 		document.add(profile.getH1(String.format("4. Top %d pathways", min)).setDestination("pathway-list"));
-//		final float[] COLUMNS_RELATIVE_WIDTH = new float[]{0.4f, 0.15f, 0.1f, 0.1f, 0.1f, 0.15f, 0.1f};
 		// Let iText decide the width of the columns
 		final Table table = new Table(7);
 		table.setBorder(Border.NO_BORDER);
