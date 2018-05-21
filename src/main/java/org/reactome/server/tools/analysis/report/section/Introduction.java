@@ -31,7 +31,7 @@ public class Introduction implements Section {
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		document.add(new AreaBreak());
-		document.add(profile.getH1("1. Introduction").setDestination("introduction"));
+		document.add(profile.getH1("Introduction").setDestination("introduction"));
 		INTRODUCTION.stream().map(profile::getParagraph).forEach(document::add);
 
 		final List<Paragraph> paragraphs = new LinkedList<>();

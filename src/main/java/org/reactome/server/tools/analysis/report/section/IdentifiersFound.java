@@ -20,7 +20,7 @@ public class IdentifiersFound implements Section {
 
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
-		document.add(profile.getH1(("6. Identifiers found")).setDestination("identifiers-found"));
+		document.add(profile.getH1(("Identifiers found")).setDestination("identifiers-found"));
 
 		if (analysisData.getResource().equalsIgnoreCase("total")) {
 			for (ResourceSummary summary : analysisData.getAnalysisStoredResult().getResourceSummary()) {

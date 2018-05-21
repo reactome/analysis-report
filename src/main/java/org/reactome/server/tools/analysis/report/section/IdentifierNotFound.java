@@ -16,7 +16,7 @@ public class IdentifierNotFound implements Section {
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		document.add(new AreaBreak());
-		document.add(profile.getH1("7. Identifiers not found").setDestination("not-found"));
+		document.add(profile.getH1("Identifiers not found").setDestination("not-found"));
 		final Table table = new Table(UnitValue.createPercentArray(8));
 		table.useAllAvailableWidth();
 		int i = 0;

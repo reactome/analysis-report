@@ -32,7 +32,7 @@ public class TopPathwayTable implements Section {
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		final int min = analysisData.getPathways().size();
-		document.add(profile.getH1(String.format("4. Top %d pathways", min)).setDestination("pathway-list"));
+		document.add(profile.getH1(String.format("Top %d pathways", min)).setDestination("pathway-list"));
 		// Let iText decide the width of the columns
 		final Table table = new Table(7);
 		table.setBorder(Border.NO_BORDER);

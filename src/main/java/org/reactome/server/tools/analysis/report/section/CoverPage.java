@@ -1,6 +1,7 @@
 package org.reactome.server.tools.analysis.report.section;
 
 import com.itextpdf.layout.Document;
+import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.property.HorizontalAlignment;
 import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.tools.analysis.report.AnalysisData;
@@ -10,6 +11,7 @@ import org.reactome.server.tools.analysis.report.util.HtmlParser;
 import org.reactome.server.tools.analysis.report.util.PdfUtils;
 
 import java.text.SimpleDateFormat;
+import java.util.Collection;
 import java.util.Date;
 
 /**
@@ -38,18 +40,9 @@ public class CoverPage implements Section {
 				analysisData.getBeautifiedResource(),
 				link, link);
 
-		HtmlParser.parseText(document, profile, text);
-//		// Paragraph 1: argument details
-//		final String p1 = String.format();
-//		document.add(HtmlParser.parseParagraph(p1, profile));
-//
-//		// Paragraph 2: centered link
-//		final String link = "https://reactome.org/PathwayBrowser/#/ANALYSIS=" + analysisData.getAnalysisStoredResult().getSummary().getToken();
-//		final String p2 = String.format(SUMMARY_TEXT.get(1), link, link);
-//		document.add(HtmlParser.parseParagraph(p2, profile).setTextAlignment(TextAlignment.CENTER));
-//
-//		// Paragraph 3: bla bla
-//		document.add(HtmlParser.parseParagraph(SUMMARY_TEXT.get(2), profile));
+		final Collection<Paragraph> paragraphs = HtmlParser.parseText(profile, text);
+		for (Paragraph paragraph : paragraphs)
+			document.add(paragraph.setTextAlignment(TextAlignment.CENTER));
 	}
 
 

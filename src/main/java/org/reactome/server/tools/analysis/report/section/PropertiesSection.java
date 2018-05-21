@@ -24,7 +24,7 @@ public class PropertiesSection implements Section {
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		document.add(new AreaBreak());
-		document.add(profile.getH1("2. Properties of analysis").setDestination("properties"));
+		document.add(profile.getH1("Properties").setDestination("properties"));
 		final List<Paragraph> list = new LinkedList<>();
 
 		final String text = PdfUtils.getProperty(analysisData.getAnalysisStoredResult().getSummary().getType().toLowerCase());

@@ -1,14 +1,16 @@
 package org.reactome.server.tools.analysis.report.util;
 
 import com.itextpdf.kernel.pdf.action.PdfAction;
-import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.tools.analysis.report.style.PdfProfile;
 
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class HtmlParser {
 
@@ -30,13 +32,13 @@ public class HtmlParser {
 		return paragraph;
 	}
 
-	public static void parseText(Document document, PdfProfile profile, String text) {
-		final String[] paragraphs = text.split("(?i)<br>|<p>");
-		for (String paragraph : paragraphs) {
-			final String trim = paragraph.trim();
-			if (trim.isEmpty()) continue;
-			document.add(parseParagraph(trim, profile));
-		}
+	public static Collection<Paragraph> parseText(PdfProfile profile, String text) {
+		final String[] paragraphs = text.split("(?i)<br>|<p>|</p>");
+		return Arrays.stream(paragraphs)
+				.map(String::trim)
+				.filter(p -> !p.isEmpty())
+				.map(p -> parseParagraph(p, profile))
+				.collect(Collectors.toList());
 	}
 
 	private static List<Span> trimItalic(List<Span> in) {

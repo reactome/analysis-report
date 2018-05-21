@@ -3,10 +3,9 @@ package org.reactome.server.tools.analysis.report.section;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.borders.Border;
-import com.itextpdf.layout.element.AreaBreak;
-import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.element.Table;
-import com.itextpdf.layout.element.Text;
+import com.itextpdf.layout.element.*;
+import com.itextpdf.layout.element.List;
+import com.itextpdf.layout.property.ListNumberingType;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.UnitValue;
 import org.reactome.server.analysis.core.result.model.*;
@@ -37,11 +36,11 @@ public class PathwayDetail implements Section {
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		document.add(new AreaBreak());
-		document.add(profile.getH1("5. Pathway details").setDestination("pathway-details"));
+		document.add(profile.getH1("Pathway details").setDestination("pathway-details"));
 		int i = 1;
 		for (PathwayData pathwayData : analysisData.getPathways()) {
 			final Pathway pathway = pathwayData.getPathway();
-			document.add(getLinkedPathwayName(i, pathway, profile));
+			document.add(getTitle(profile, i, pathway));
 			DiagramHelper.insertDiagram(pathway.getStId(), analysisData.getAnalysisStoredResult(), analysisData.getResource(), document);
 			addDatabaseObjectList(document, "Cellular compartments", pathway.getCompartment(), profile);
 			addRelatedDiseases(document, pathway, profile);
@@ -60,6 +59,25 @@ public class PathwayDetail implements Section {
 		}
 	}
 
+	private List getTitle(PdfProfile profile, int i, Pathway pathway) {
+		final List list = new List(ListNumberingType.DECIMAL)
+				.setItemStartIndex(i)
+				.setFontSize(profile.getFontSize() + 2)
+				.setBold()
+				.setSymbolIndent(10);
+		final ListItem item = new ListItem();
+		final Paragraph paragraph = new Paragraph(pathway.getDisplayName())
+				.add(" (")
+				.add(new Text(pathway.getStId())
+						.setAction(PdfAction.createURI(PATHWAY_DETAIL + pathway.getStId()))
+						.setFontColor(profile.getLinkColor()))
+				.add(")")
+				.setDestination(pathway.getStId());
+		item.add(paragraph);
+		list.add(item);
+		return list;
+	}
+
 	private void addFoundElements(Document document, AnalysisData analysisData, Pathway pathway, PdfProfile profile) {
 		document.add(profile.getH3("Elements found in this pathway"));
 		if (analysisData.getResource().equalsIgnoreCase("total")) {
@@ -76,7 +94,10 @@ public class PathwayDetail implements Section {
 	}
 
 	private void addSummations(Document document, Pathway pathway, PdfProfile profile) {
-		pathway.getSummation().forEach(summation -> HtmlParser.parseText(document, profile, summation.getText()));
+		pathway.getSummation().stream()
+				.map(summation -> HtmlParser.parseText(profile, summation.getText()))
+				.flatMap(Collection::stream)
+				.forEach(document::add);
 	}
 
 	private void addRelatedDiseases(Document document, Pathway pathwayDetail, PdfProfile profile) {
@@ -99,18 +120,6 @@ public class PathwayDetail implements Section {
 					.add(body);
 			document.add(paragraph);
 		}
-	}
-
-	private com.itextpdf.layout.element.List getLinkedPathwayName(int i, Pathway pathway, PdfProfile profile) {
-		final Paragraph paragraph = profile.getH2(pathway.getDisplayName())
-				.add(" (")
-				.add(new Text(pathway.getStId())
-						.setAction(PdfAction.createURI(PATHWAY_DETAIL + pathway.getStId()))
-						.setFontColor(profile.getLinkColor()))
-				.add(")")
-				.setDestination(pathway.getStId())
-				.setMultipliedLeading(1);
-		return profile.getIndexedH2(i, paragraph);
 	}
 
 	private void addIdentifiers(Document document, FoundElements elements, String resource, PdfProfile profile) {
@@ -300,7 +309,7 @@ public class PathwayDetail implements Section {
 			pathway.getRevised().forEach(instanceEdit -> editions.add(new Edition("Revised", instanceEdit)));
 
 		// Group by date and type
-		final Map<String, Map<String, List<Edition>>> edits = editions.stream()
+		final Map<String, Map<String, java.util.List<Edition>>> edits = editions.stream()
 				.collect(Collectors.groupingBy(Edition::getDate,
 						TreeMap::new,  // forces key sorting
 						Collectors.groupingBy(Edition::getType)));
@@ -312,8 +321,8 @@ public class PathwayDetail implements Section {
 		table.addHeaderCell(profile.getHeaderCell("Action"));
 		table.addHeaderCell(profile.getHeaderCell("Author"));
 		int row = 0;
-		for (Map.Entry<String, Map<String, List<Edition>>> dateEntry : edits.entrySet()) {
-			for (Map.Entry<String, List<Edition>> typeEntry : dateEntry.getValue().entrySet()) {
+		for (Map.Entry<String, Map<String, java.util.List<Edition>>> dateEntry : edits.entrySet()) {
+			for (Map.Entry<String, java.util.List<Edition>> typeEntry : dateEntry.getValue().entrySet()) {
 				table.addCell(profile.getBodyCell(dateEntry.getKey(), row));
 				table.addCell(profile.getBodyCell(typeEntry.getKey(), row));
 				final Set<Person> authors = typeEntry.getValue().stream()
@@ -331,7 +340,7 @@ public class PathwayDetail implements Section {
 
 	private class Edition {
 		private final String type;
-		private final List<Person> authors;
+		private final java.util.List<Person> authors;
 		private final String date;
 
 		Edition(String type, InstanceEdit instanceEdit) {
@@ -344,7 +353,7 @@ public class PathwayDetail implements Section {
 			return type;
 		}
 
-		List<Person> getAuthors() {
+		java.util.List<Person> getAuthors() {
 			return authors;
 		}
 

@@ -12,7 +12,6 @@ import com.itextpdf.layout.element.List;
 import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.hyphenation.HyphenationConfig;
-import com.itextpdf.layout.property.ListNumberingType;
 import com.itextpdf.layout.property.TextAlignment;
 import com.itextpdf.layout.property.VerticalAlignment;
 import org.apache.commons.io.IOUtils;
@@ -36,7 +35,6 @@ public class PdfProfile {
 	private float H1;
 	private float H2;
 	private float H3;
-	private float H4;
 	private float fontSize;
 	private float TITLE;
 	private float TABLE;
@@ -46,6 +44,8 @@ public class PdfProfile {
 	private PdfFont BOLD;
 	private PdfFont LIGHT;
 	private MarginProfile margin;
+
+	private int toc = 1;
 
 	public PdfProfile() {
 		// Every PDF must load the fonts again, as they are hold by one, and only one document
@@ -87,10 +87,9 @@ public class PdfProfile {
 	public void setFontSize(Integer fontSize) {
 		this.fontSize = fontSize;
 		TABLE = this.fontSize - 2;
-		H4 = this.fontSize + 2;
-		H3 = this.fontSize + 4;
-		H2 = this.fontSize + 6;
-		H1 = this.fontSize + 10;
+		H3 = this.fontSize + 2;
+		H2 = this.fontSize + 4;
+		H1 = this.fontSize + 6;
 		TITLE = this.fontSize + 14;
 	}
 
@@ -104,53 +103,27 @@ public class PdfProfile {
 	}
 
 	public Paragraph getH1(String text) {
-		return new Paragraph(text)
-				.setFont(LIGHT)
+		return getH1(text, true);
+	}
+
+	public Paragraph getH1(String text, boolean indexed) {
+		return new Paragraph(indexed ? (toc++ + ". " + text) : text)
+				.setFont(BOLD)
 				.setFontSize(H1)
 				.setMultipliedLeading(2f)
 				.setHyphenation(HYPHENATION_CONFIG)
 				.setTextAlignment(TextAlignment.LEFT);
 	}
 
-	public Paragraph getH2(String text) {
-		return new Paragraph(text)
-				.setFont(LIGHT)
-				.setFontSize(H2)
-				.setMultipliedLeading(1.5f)
-				.setHyphenation(HYPHENATION_CONFIG)
-				.setTextAlignment(TextAlignment.LEFT);
-	}
-
-	public List getIndexedH2(int i, Paragraph paragraph) {
-		final List list = new List(ListNumberingType.DECIMAL)
-				.setItemStartIndex(i)
-				.setFont(LIGHT)
-				.setFontSize(H2)
-				.setHyphenation(HYPHENATION_CONFIG)
-				.setTextAlignment(TextAlignment.LEFT);
-		ListItem item = new ListItem();
-		item.add(paragraph);
-		list.add(item);
-		return list;
-	}
-
 	public Paragraph getH3(String text) {
 		return new Paragraph(text)
-				.setFont(LIGHT)
+				.setFont(BOLD)
 				.setFontSize(H3)
 				.setMultipliedLeading(1.2f)
 				.setHyphenation(HYPHENATION_CONFIG)
 				.setTextAlignment(TextAlignment.LEFT);
 	}
 
-	public Paragraph getH4(String text) {
-		return new Paragraph(text)
-				.setFont(REGULAR)
-				.setFontSize(H4)
-				.setMultipliedLeading(1.2f)
-				.setHyphenation(HYPHENATION_CONFIG)
-				.setTextAlignment(TextAlignment.LEFT);
-	}
 
 	public Paragraph getTitle(String text) {
 		return new Paragraph(text)
@@ -193,20 +166,6 @@ public class PdfProfile {
 		return cell;
 	}
 
-	public Cell getBodyCell(Paragraph paragraph, int row) {
-		final Cell cell = new Cell()
-				.setKeepTogether(true)
-				.setVerticalAlignment(VerticalAlignment.MIDDLE)
-				.setBorder(Border.NO_BORDER)
-				.setBackgroundColor(row % 2 == 0 ? null : LIGHT_GRAY)
-				.add(paragraph);
-		paragraph.setFont(REGULAR)
-				.setFontSize(TABLE)
-				.setTextAlignment(TextAlignment.CENTER)
-				.setMultipliedLeading(1.0f);
-		return cell;
-	}
-
 	public Cell getPathwayCell(int i, PathwayNodeSummary pathway) {
 		final Cell cell = new Cell()
 				.setKeepTogether(true)
@@ -236,24 +195,6 @@ public class PdfProfile {
 			list.add(item);
 		}
 		return list;
-	}
-
-	public Paragraph getToc1(String text, String destination) {
-		return new Paragraph(text)
-				.setFont(REGULAR)
-				.setFontSize(fontSize + 2)
-				.setMarginLeft(10)
-				.setMultipliedLeading(2)
-				.setAction(PdfAction.createGoTo(destination));
-	}
-
-	public Paragraph getToc2(String text, String destination) {
-		return new Paragraph(text)
-				.setFont(REGULAR)
-				.setFontSize(fontSize)
-				.setMarginLeft(20)
-				.setMultipliedLeading(2)
-				.setDestination(destination);
 	}
 
 	public PdfFont getRegularFont() {

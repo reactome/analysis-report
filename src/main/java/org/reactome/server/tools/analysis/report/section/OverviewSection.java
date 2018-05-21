@@ -17,7 +17,7 @@ public class OverviewSection implements Section {
 
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
-		document.add(profile.getH1("3. Genome-wide overview").setDestination("overview"));
+		document.add(profile.getH1("Genome-wide overview").setDestination("overview"));
 		addFireworks(document, analysisData);
 		final String text = PdfUtils.getProperty("fireworks.caption");
 		document.add(profile.getParagraph(text).setTextAlignment(TextAlignment.CENTER));
