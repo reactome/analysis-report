@@ -2,7 +2,6 @@ package org.reactome.server.tools.analysis.report.section;
 
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.AreaBreak;
-import com.itextpdf.layout.element.Image;
 import com.itextpdf.layout.element.Paragraph;
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.analysis.report.style.Images;
@@ -11,7 +10,6 @@ import org.reactome.server.tools.analysis.report.util.HtmlParser;
 import org.reactome.server.tools.analysis.report.util.PdfUtils;
 
 import java.util.Collection;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -37,12 +35,14 @@ public class Introduction implements Section {
 		final Collection<Paragraph> intro = HtmlParser.parseText(profile, INTRODUCTION);
 		intro.forEach(document::add);
 
-		final List<Paragraph> paragraphs = new LinkedList<>();
 		for (Reference publication : PUBLICATIONS) {
-			final Image image = Images.getLink(publication.link, profile.getFontSize());
-			paragraphs.add(profile.getParagraph(publication.text).add(" ").add(image));
+			document.add(profile.getParagraph(publication.text)
+					.setFirstLineIndent(-15)
+					.setPaddingLeft(15)
+					.setMultipliedLeading(1)
+					.add(" ")
+					.add(Images.getLink(publication.link, profile.getFontSize())));
 		}
-		document.add(profile.getList(paragraphs));
 	}
 
 	private static class Reference {

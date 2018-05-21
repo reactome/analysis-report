@@ -203,17 +203,19 @@ public class PathwayDetail implements Section {
 	private void addReferences(Document document, Pathway pathwayDetail, PdfProfile profile) {
 		if (pathwayDetail.getLiteratureReference() != null) {
 			document.add(profile.getH3("References"));
-			final java.util.List<Paragraph> paragraphs = pathwayDetail.getLiteratureReference().stream()
+			pathwayDetail.getLiteratureReference().stream()
 					.limit(5)
 					.map(publication -> createPublication(publication, profile))
-					.collect(Collectors.toList());
-			document.add(profile.getList(paragraphs));
+					.forEach(document::add);
 		}
 	}
 
 	private Paragraph createPublication(Publication publication, PdfProfile profile) {
 		final java.util.List<Text> texts = ApaStyle.toApa(publication);
-		final Paragraph paragraph = profile.getParagraph("");
+		final Paragraph paragraph = profile.getParagraph("")
+				.setFirstLineIndent(-15)
+				.setPaddingLeft(15)
+				.setMultipliedLeading(1);
 		texts.forEach(paragraph::add);
 		if (publication instanceof LiteratureReference) {
 			final LiteratureReference reference = (LiteratureReference) publication;
@@ -221,7 +223,7 @@ public class PathwayDetail implements Section {
 				paragraph.add(" ").add(Images.getLink(reference.getUrl(), profile.getFontSize()));
 		} else if (publication instanceof org.reactome.server.graph.domain.model.URL) {
 			final org.reactome.server.graph.domain.model.URL url = (org.reactome.server.graph.domain.model.URL) publication;
-			paragraph.add(Images.getLink(url.getUniformResourceLocator(), profile.getFontSize()));
+			paragraph.add(Images.getLink(url.getUniformResourceLocator(), profile.getFontSize() * 0.8f));
 		}
 		return paragraph;
 	}

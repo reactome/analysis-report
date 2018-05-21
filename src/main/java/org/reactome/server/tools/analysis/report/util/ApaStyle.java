@@ -80,7 +80,7 @@ public class ApaStyle {
 		} else {
 			for (int i = 0; i < 6; i++)
 				citation.append(apa(author.get(i))).append(", ");
-			citation.append("...").append(apa(author.get(author.size() - 1)));
+			citation.append("... ").append(apa(author.get(author.size() - 1)));
 		}
 		return citation.toString();
 	}
