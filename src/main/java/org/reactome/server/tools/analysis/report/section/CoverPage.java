@@ -19,7 +19,6 @@ import java.util.Date;
  */
 public class CoverPage implements Section {
 	private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("dd/MM/yyyy");
-//	private static List<String> SUMMARY_TEXT = PdfUtils.getText(CoverPage.class.getResourceAsStream("administrative.txt"));
 
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
