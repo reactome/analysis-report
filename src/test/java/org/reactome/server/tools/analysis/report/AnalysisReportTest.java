@@ -8,12 +8,14 @@ import org.junit.Test;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
 import org.reactome.server.tools.analysis.report.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.report.util.GraphCoreConfig;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -22,7 +24,7 @@ import java.util.Map;
 public class AnalysisReportTest {
 
 	private static final boolean save = true;
-	private static final HashMap<String, String> tokens = new HashMap<String, String>() {
+	private static final HashMap<String, String> tokens = new LinkedHashMap<String, String>() {
 		{
 			put("overrepresentation01", "MjAxODAyMTIxMTI5MzdfMQ==");
 			put("overrepresentation02", "MjAxODAyMTIxMTMwMTRfMg==");
@@ -69,6 +71,7 @@ public class AnalysisReportTest {
 		for (Map.Entry<String, String> entry : tokens.entrySet()) {
 			final String type = entry.getKey();
 			final String token = entry.getValue();
+			LoggerFactory.getLogger(AnalysisReportTest.class).info(type);
 			try {
 				final OutputStream os = save
 						? new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)))
