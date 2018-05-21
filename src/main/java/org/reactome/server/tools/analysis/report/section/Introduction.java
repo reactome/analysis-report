@@ -37,7 +37,7 @@ public class Introduction implements Section {
 		final List<Paragraph> paragraphs = new LinkedList<>();
 		for (Reference publication : PUBLICATIONS) {
 			final Image image = Images.getLink(publication.link, profile.getFontSize());
-			paragraphs.add(profile.getParagraph(publication.text).add(image));
+			paragraphs.add(profile.getParagraph(publication.text).add(" ").add(image));
 		}
 		document.add(profile.getList(paragraphs));
 

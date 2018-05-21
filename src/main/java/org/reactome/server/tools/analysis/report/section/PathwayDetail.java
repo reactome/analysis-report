@@ -14,13 +14,13 @@ import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.analysis.report.PathwayData;
 import org.reactome.server.tools.analysis.report.style.Images;
 import org.reactome.server.tools.analysis.report.style.PdfProfile;
+import org.reactome.server.tools.analysis.report.util.ApaStyle;
 import org.reactome.server.tools.analysis.report.util.DiagramHelper;
 import org.reactome.server.tools.analysis.report.util.HtmlParser;
 import org.reactome.server.tools.analysis.report.util.PdfUtils;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Section PathwayDetail contains the detail info for top hit pathways(sorted by
@@ -212,56 +212,18 @@ public class PathwayDetail implements Section {
 	}
 
 	private Paragraph createPublication(Publication publication, PdfProfile profile) {
+		final java.util.List<Text> texts = ApaStyle.toApa(publication);
+		final Paragraph paragraph = profile.getParagraph("");
+		texts.forEach(paragraph::add);
 		if (publication instanceof LiteratureReference) {
 			final LiteratureReference reference = (LiteratureReference) publication;
-			return profile.getParagraph(toString(reference))
-					.add(". ")
-					.add(Images.getLink(reference.getUrl(), profile.getFontSize()));
-		} else if (publication instanceof Book) {
-			final Book book = (Book) publication;
-			return profile.getParagraph(toString(book)).add(".");
+			if (reference.getUrl() != null)
+				paragraph.add(" ").add(Images.getLink(reference.getUrl(), profile.getFontSize()));
 		} else if (publication instanceof org.reactome.server.graph.domain.model.URL) {
 			final org.reactome.server.graph.domain.model.URL url = (org.reactome.server.graph.domain.model.URL) publication;
-			final String citation = toString(url);
-			return profile.getParagraph(citation).add(". ").add(Images.getLink(url.getUniformResourceLocator(), profile.getFontSize()));
+			paragraph.add(Images.getLink(url.getUniformResourceLocator(), profile.getFontSize()));
 		}
-		return profile.getParagraph(publication.getDisplayName());
-	}
-
-	private String toString(LiteratureReference reference) {
-		return joinNonNullNonEmpty(", ",
-				asString(reference.getAuthor()),
-				reference.getTitle(),
-				reference.getJournal(),
-				reference.getVolume(),
-				reference.getYear(),
-				reference.getPages(),
-				reference.getPubMedIdentifier());
-	}
-
-	private String toString(Book book) {
-		return joinNonNullNonEmpty(", ",
-				asString(book.getAuthor()),
-				book.getTitle(),
-				book.getChapterTitle(),
-				book.getPublisher() == null ? null : book.getPublisher().getDisplayName(),
-				book.getYear(),
-				book.getPages(),
-				book.getISBN());
-	}
-
-	private String toString(org.reactome.server.graph.domain.model.URL url) {
-		return joinNonNullNonEmpty(", ",
-				asString(url.getAuthor()),
-				url.getUniformResourceLocator());
-	}
-
-	private String joinNonNullNonEmpty(String delimiter, Object... objects) {
-		return String.join(delimiter, Stream.of(objects)
-				.filter(Objects::nonNull)
-				.map(String::valueOf)
-				.filter(s -> !s.isEmpty())
-				.collect(Collectors.toList()));
+		return paragraph;
 	}
 
 	private String asString(Collection<Person> persons) {
