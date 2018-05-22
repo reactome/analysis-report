@@ -27,13 +27,13 @@ public class ApaStyle {
 	private static List<Text> toApa(LiteratureReference reference) {
 		final List<Text> citation = new LinkedList<>();
 		citation.add(new Text(toApa(reference.getAuthor())
-				+ " (" + reference.getYear() + "). " + reference.getTitle()));
+				+ " (" + reference.getYear() + "). " + reference.getTitle().trim()));
 		if (reference.getJournal() != null)
-			citation.add(new Text(". " + reference.getJournal()));
+			citation.add(new Text(". " + reference.getJournal().trim()));
 		if (reference.getVolume() != null)
 			citation.add(new Text(", " + reference.getVolume()));
 		if (reference.getPages() != null)
-			citation.add(new Text(", " + reference.getPages()));
+			citation.add(new Text(", " + reference.getPages().trim()));
 		citation.add(new Text("."));
 		return citation;
 	}

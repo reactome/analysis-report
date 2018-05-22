@@ -27,8 +27,7 @@ import java.io.IOException;
  * @author Chuan Deng dengchuanbio@gmail.com
  */
 public class DiagramHelper {
-	private static final double IMAGE_SCALE = 2;  // 1=keep original ppp
-	private static final int MIN_QUALITY = 3;
+
 	private static final Logger logger = LoggerFactory.getLogger(DiagramHelper.class.getName());
 	private static RasterExporter exporter;
 	private static DiagramService diagramService = ReactomeGraphCore.getService(DiagramService.class);
@@ -36,7 +35,7 @@ public class DiagramHelper {
 	private static String analysisProfile;
 
 	public static void insertDiagram(String stId, AnalysisStoredResult result, String resource, Document document) {
-		final DiagramResult diagramResult = getDiagramResult(stId);
+		final DiagramResult diagramResult = diagramService.getDiagramResult(stId);
 		final RasterArgs args = new RasterArgs(diagramResult.getDiagramStId(), "pdf");
 		args.setSelected(diagramResult.getEvents());
 		args.setWriteTitle(false);
@@ -56,10 +55,6 @@ public class DiagramHelper {
 
 	public static void setPaths(String diagramPath, String ehldPath, String analysisPath, String svgSummary) {
 		exporter = new RasterExporter(diagramPath, ehldPath, analysisPath, svgSummary);
-	}
-
-	public static DiagramResult getDiagramResult(String stId) {
-		return diagramService.getDiagramResult(stId);
 	}
 
 	public static void setProfiles(String diagramProfile, String analysisProfile) {

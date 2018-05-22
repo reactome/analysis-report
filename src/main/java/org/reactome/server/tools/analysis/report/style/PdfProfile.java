@@ -96,6 +96,7 @@ public class PdfProfile {
 	public Paragraph getParagraph(String text) {
 		return new Paragraph(text)
 				.setFont(REGULAR)
+				.setKeepTogether(true)
 				.setFontSize(fontSize)
 				.setMultipliedLeading(1.2f)
 				.setHyphenation(HYPHENATION_CONFIG)

@@ -41,7 +41,7 @@ public class Introduction implements Section {
 					.setPaddingLeft(15)
 					.setMultipliedLeading(1)
 					.add(" ")
-					.add(Images.getLink(publication.link, profile.getFontSize())));
+					.add(Images.getLink(publication.link, profile.getFontSize() - 1f)));
 		}
 	}
 
