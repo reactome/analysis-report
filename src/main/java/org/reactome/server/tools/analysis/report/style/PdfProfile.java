@@ -204,4 +204,20 @@ public class PdfProfile {
 	public PdfFont getBoldFont() {
 		return BOLD;
 	}
+
+	public Cell getHeaderCell(String text, int rowspan, int colspan) {
+		final Cell cell = new Cell(rowspan, colspan)
+				.setKeepTogether(true)
+				.setVerticalAlignment(VerticalAlignment.MIDDLE)
+				.setBorder(Border.NO_BORDER)
+				.setFontColor(DeviceGray.WHITE)
+				.setFont(BOLD)
+				.setFontSize(TABLE + 1)
+				.setBackgroundColor(REACTOME_COLOR);
+		if (text != null)
+			cell.add(new Paragraph(text)
+					.setTextAlignment(TextAlignment.CENTER)
+					.setMultipliedLeading(1.0f));
+		return cell;
+	}
 }

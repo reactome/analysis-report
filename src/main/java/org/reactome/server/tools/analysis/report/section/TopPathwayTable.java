@@ -2,6 +2,7 @@ package org.reactome.server.tools.analysis.report.section;
 
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.borders.Border;
+import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Table;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.analysis.core.result.model.PathwayBase;
@@ -20,13 +21,12 @@ import java.util.Arrays;
 public class TopPathwayTable implements Section {
 
 	private static final java.util.List<String> HEADERS = Arrays.asList(
-			"Pathway name",
-			"Found entities",
-			"Entity ratio",
-			"Entity p-value",
-			"Entity FDR",
-			"Found reactions",
-			"Reactions rate"
+			"found",
+			"ratio",
+			"p-value",
+			"FDR*",
+			"found",
+			"ratio"
 	);
 
 	@Override
@@ -34,9 +34,13 @@ public class TopPathwayTable implements Section {
 		final int min = analysisData.getPathways().size();
 		document.add(profile.getH1(String.format("Top %d pathways", min)).setDestination("pathway-list"));
 		// Let iText decide the width of the columns
-		final Table table = new Table(7);
+		final Table table = new Table(new float[]{3, 1, 1, 1, 1, 1, 1});
 		table.setBorder(Border.NO_BORDER);
 		table.useAllAvailableWidth();
+		table.setFixedLayout();
+		table.addHeaderCell(profile.getHeaderCell("Pathway name", 2, 1));
+		table.addHeaderCell(profile.getHeaderCell("Entities", 1, 4));
+		table.addHeaderCell(profile.getHeaderCell("Reactions", 1, 2));
 		for (String header : HEADERS)
 			table.addHeaderCell(profile.getHeaderCell(header));
 		int i = 0;
@@ -55,9 +59,9 @@ public class TopPathwayTable implements Section {
 			table.addCell(profile.getBodyCell(reactions, i));
 			table.addCell(profile.getBodyCell(PdfUtils.formatNumber(pathway.getData().getReactionsRatio()), i));
 			i++;
-
 		}
 		document.add(table);
+		document.add(new Paragraph("* False Discovery Rate").setFontSize(profile.getFontSize() - 2));
 	}
 
 
