@@ -34,6 +34,7 @@ public class PropertiesSection implements Section {
 
 
 		list.add(HtmlParser.parseParagraph(text, profile)
+				.add(" ")
 				.add(Images.getLink(PdfUtils.getProperty("analysis.url"), profile.getFontSize())));
 
 		list.add(profile.getParagraph(String.format(PdfUtils.getProperty("identifiers.found"),
@@ -41,6 +42,7 @@ public class PropertiesSection implements Section {
 
 		if (summary.isProjection() != null && summary.isProjection())
 			list.add(profile.getParagraph(PdfUtils.getProperty("projected"))
+					.add(" ")
 					.add(Images.getLink(PdfUtils.getProperty("projected.url"), profile.getFontSize())));
 
 		if (summary.isInteractors() != null && summary.isInteractors())
