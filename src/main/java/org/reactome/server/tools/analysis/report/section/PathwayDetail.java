@@ -157,7 +157,7 @@ public class PathwayDetail implements Section {
 		if (publication instanceof LiteratureReference) {
 			final LiteratureReference reference = (LiteratureReference) publication;
 			if (reference.getUrl() != null)
-				paragraph.add(" ").add(Images.getLink(reference.getUrl(), profile.getFontSize()));
+				paragraph.add(" ").add(Images.getLink(reference.getUrl(), profile.getFontSize())).setKeepTogether(true);
 		} else if (publication instanceof org.reactome.server.graph.domain.model.URL) {
 			final org.reactome.server.graph.domain.model.URL url = (org.reactome.server.graph.domain.model.URL) publication;
 			paragraph.add(Images.getLink(url.getUniformResourceLocator(), profile.getFontSize() * 0.8f));

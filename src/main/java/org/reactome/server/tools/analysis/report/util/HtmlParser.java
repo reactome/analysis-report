@@ -151,7 +151,7 @@ public class HtmlParser {
 
 		@Override
 		void render(Paragraph paragraph, PdfProfile profile) {
-			paragraph.add(new com.itextpdf.layout.element.Text(text).setFont(profile.getItalic()));
+			paragraph.add(new com.itextpdf.layout.element.Text(text).setItalic());
 
 		}
 	}

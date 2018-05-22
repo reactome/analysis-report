@@ -23,7 +23,7 @@ import java.util.Map;
  */
 public class AnalysisReportTest {
 
-	private static final boolean save = true;
+	private static final boolean save = false;
 	private static final HashMap<String, String> tokens = new LinkedHashMap<String, String>() {
 		{
 			put("overrepresentation01", "MjAxODAyMTIxMTI5MzdfMQ==");

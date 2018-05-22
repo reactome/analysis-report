@@ -51,11 +51,11 @@ public class PdfProfile {
 		// Every PDF must load the fonts again, as they are hold by one, and only one document
 		try {
 			byte[] bytes;
-			bytes = IOUtils.toByteArray(PdfProfile.class.getResourceAsStream("OpenSans-Regular.ttf"));
+			bytes = IOUtils.toByteArray(PdfProfile.class.getResourceAsStream("SourceSerifPro-Regular.ttf"));
 			REGULAR = PdfFontFactory.createFont(bytes, true);
-			bytes = IOUtils.toByteArray(PdfProfile.class.getResourceAsStream("OpenSans-Bold.ttf"));
+			bytes = IOUtils.toByteArray(PdfProfile.class.getResourceAsStream("SourceSerifPro-Bold.ttf"));
 			BOLD = PdfFontFactory.createFont(bytes, true);
-			bytes = IOUtils.toByteArray(PdfProfile.class.getResourceAsStream("OpenSans-Light.ttf"));
+			bytes = IOUtils.toByteArray(PdfProfile.class.getResourceAsStream("SourceSerifPro-Semibold.ttf"));
 			LIGHT = PdfFontFactory.createFont(bytes, true);
 			bytes = IOUtils.toByteArray(PdfProfile.class.getResourceAsStream("OpenSans-Italic.ttf"));
 			ITALIC = PdfFontFactory.createFont(bytes, true);
