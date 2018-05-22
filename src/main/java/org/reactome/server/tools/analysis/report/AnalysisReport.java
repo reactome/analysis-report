@@ -121,7 +121,7 @@ public class AnalysisReport {
 					pdfProfile.getMargin().getRight(),
 					pdfProfile.getMargin().getBottom(),
 					pdfProfile.getMargin().getLeft());
-			document.getPdfDocument().addEventHandler(PdfDocumentEvent.END_PAGE, new FooterEventHandler(document, pdfProfile));
+			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(document, pdfProfile));
 			for (Section section : SECTIONS)
 				section.render(document, pdfProfile, analysisData);
 		}

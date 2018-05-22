@@ -30,7 +30,7 @@ public class FooterEventHandler implements IEventHandler {
 		final PdfPage page = documentEvent.getPage();
 
 		final int pageNumber = document.getPdfDocument().getPageNumber(page);
-		if (pageNumber == 1) return;  // Cover page
+		if (pageNumber <= 2) return;  // Cover page and table of content
 		final String paging = String.format("Page %d", pageNumber - 1);
 		final float yCenter = document.getBottomMargin() * 0.5f;
 		final float width = page.getMediaBox().getWidth();
