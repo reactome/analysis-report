@@ -50,9 +50,9 @@ public class PdfUtils {
 	public static String formatNumber(Number number) {
 		if (number instanceof Integer || number instanceof Long)
 			return number.toString();
-		if (number.doubleValue() == 0.0) return "0";
+		if (Double.compare(number.doubleValue(), 0.0) == 0) return "0";
 		if (number.doubleValue() < 1e-3)
-			return String.format("%.2e", number);
+			return String.format("%.2e", number.doubleValue());
 		return NUMBER_FORMAT.format(number);
 	}
 
@@ -64,19 +64,4 @@ public class PdfUtils {
 		return String.format(getProperty(key), args);
 	}
 
-//	public static Paragraph format(Number number) {
-//		if (number instanceof Integer || number instanceof Long)
-//			return new Paragraph(number.toString());
-//		if (number.doubleValue() < 1e-3) {
-//			double result = number.doubleValue();
-//			int mantis = 0;
-//			while (result < 1) {
-//				result *= 10;
-//				mantis += 1;
-//			}
-//			return new Paragraph(EXP_FORMAT.format(result) + "x10")
-//					.add(new Text("-" + mantis).setFontSize(6).setTextRise(4));
-//		}
-//		return new Paragraph(NUMBER_FORMAT.format(number));
-//	}
 }

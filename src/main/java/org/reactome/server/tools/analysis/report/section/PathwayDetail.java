@@ -180,10 +180,11 @@ public class PathwayDetail implements Section {
 	}
 
 	private String compileName(Person person) {
-		if (person.getFirstname() != null && person.getSurname() != null)
+		if (person.getSurname() != null && person.getInitial() != null)
+			return person.getSurname() + " " + person.getInitial();
+		if (person.getSurname() != null && person.getFirstname() != null)
 			return person.getSurname() + " " + initials(person.getFirstname());
-		if (person.getSurname() != null)
-			return person.getSurname();
+		if (person.getSurname() != null) return person.getSurname();
 		return person.getFirstname();
 	}
 

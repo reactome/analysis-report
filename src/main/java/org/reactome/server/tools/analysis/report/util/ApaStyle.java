@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class ApaStyle {
@@ -27,7 +28,7 @@ public class ApaStyle {
 	private static List<Text> toApa(LiteratureReference reference) {
 		final List<Text> citation = new LinkedList<>();
 		citation.add(new Text(toApa(reference.getAuthor())
-				+ " (" + reference.getYear() + "). " + reference.getTitle().trim()));
+				+ " (" + reference.getYear() + "). " + trim(reference.getTitle())));
 		if (reference.getJournal() != null)
 			citation.add(new Text(". " + reference.getJournal().trim()));
 		if (reference.getVolume() != null)
@@ -36,6 +37,14 @@ public class ApaStyle {
 			citation.add(new Text(", " + reference.getPages().trim()));
 		citation.add(new Text("."));
 		return citation;
+	}
+
+	private static String trim(String title) {
+		final Pattern FACING_SPACES = Pattern.compile("^[\\s,.]+");
+		final Pattern TRAILING_SPACES = Pattern.compile("[\\s,.]+$");
+		title = FACING_SPACES.matcher(title).replaceAll("");
+		title = TRAILING_SPACES.matcher(title).replaceAll("");
+		return title;
 	}
 
 	private static List<Text> toApa(URL url) {
@@ -87,10 +96,11 @@ public class ApaStyle {
 
 
 	private static String apa(Person person) {
-		if (person.getFirstname() != null && person.getSurname() != null)
+		if (person.getSurname() != null && person.getInitial() != null)
+			return person.getSurname() + " " + person.getInitial();
+		if (person.getSurname() != null && person.getFirstname() != null)
 			return person.getSurname() + " " + initials(person.getFirstname());
-		if (person.getSurname() != null)
-			return person.getSurname();
+		if (person.getSurname() != null) return person.getSurname();
 		return person.getFirstname();
 	}
 
