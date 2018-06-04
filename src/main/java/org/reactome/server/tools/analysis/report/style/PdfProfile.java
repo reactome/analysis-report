@@ -7,6 +7,7 @@ import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.font.PdfFontFactory;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.borders.Border;
+import com.itextpdf.layout.borders.SolidBorder;
 import com.itextpdf.layout.element.Cell;
 import com.itextpdf.layout.element.List;
 import com.itextpdf.layout.element.ListItem;
@@ -136,22 +137,6 @@ public class PdfProfile {
 
 	}
 
-	public Cell getHeaderCell(String text) {
-		final Cell cell = new Cell()
-				.setKeepTogether(true)
-				.setVerticalAlignment(VerticalAlignment.MIDDLE)
-				.setBorder(Border.NO_BORDER)
-				.setFontColor(DeviceGray.WHITE)
-				.setFont(BOLD)
-				.setFontSize(TABLE + 1)
-				.setBackgroundColor(REACTOME_COLOR);
-		if (text != null)
-			cell.add(new Paragraph(text)
-					.setTextAlignment(TextAlignment.CENTER)
-					.setMultipliedLeading(1.0f));
-		return cell;
-	}
-
 	public Cell getBodyCell(String text, int row) {
 		final Cell cell = new Cell()
 				.setKeepTogether(true)
@@ -206,11 +191,15 @@ public class PdfProfile {
 		return BOLD;
 	}
 
+	public Cell getHeaderCell(String text) {
+		return getHeaderCell(text, 1, 1);
+	}
+
 	public Cell getHeaderCell(String text, int rowspan, int colspan) {
 		final Cell cell = new Cell(rowspan, colspan)
 				.setKeepTogether(true)
 				.setVerticalAlignment(VerticalAlignment.MIDDLE)
-				.setBorder(Border.NO_BORDER)
+				.setBorder(new SolidBorder(DeviceGray.WHITE, 1))
 				.setFontColor(DeviceGray.WHITE)
 				.setFont(BOLD)
 				.setFontSize(TABLE + 1)
