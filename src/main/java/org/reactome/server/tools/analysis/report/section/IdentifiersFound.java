@@ -33,7 +33,7 @@ public class IdentifiersFound implements Section {
 				if (analysisData.getType() == AnalysisType.EXPRESSION)
 					addExpressionTable(document, entities, analysisData.beautify(summary.getResource()), profile, analysisData.getAnalysisStoredResult().getExpressionSummary().getColumnNames());
 				else
-					addSimpleTable(document, entities, summary.getResource(), profile);
+					addSimpleTable(document, entities, analysisData.beautify(summary.getResource()), profile);
 			}
 		} else {
 			final Set<FoundEntity> entities = new TreeSet<>(Comparator.comparing(IdentifierSummary::getId));
