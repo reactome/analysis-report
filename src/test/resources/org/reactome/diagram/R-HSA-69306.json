@@ -1,0 +1,147 @@
+{
+  "dbId" : 69306,
+  "stableId" : "R-HSA-69306",
+  "displayName" : "DNA Replication",
+  "nodes" : [ {
+    "id" : 33,
+    "reactomeId" : 68874,
+    "displayName" : "M/G1 Transition",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 316,
+      "y" : 164
+    },
+    "minX" : 247,
+    "maxX" : 386,
+    "minY" : 140,
+    "maxY" : 188,
+    "prop" : {
+      "x" : 247,
+      "y" : 140,
+      "width" : 139,
+      "height" : 48
+    },
+    "textPosition" : {
+      "x" : 261,
+      "y" : 149
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 35,
+    "reactomeId" : 69239,
+    "displayName" : "Synthesis of DNA",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 509,
+      "y" : 163
+    },
+    "minX" : 428,
+    "maxX" : 591,
+    "minY" : 139,
+    "maxY" : 187,
+    "prop" : {
+      "x" : 428,
+      "y" : 139,
+      "width" : 163,
+      "height" : 48
+    },
+    "textPosition" : {
+      "x" : 453,
+      "y" : 148
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 11,
+    "reactomeId" : 69304,
+    "displayName" : "Regulation of DNA replication",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 396,
+      "y" : 82
+    },
+    "minX" : 323,
+    "maxX" : 470,
+    "minY" : 46,
+    "maxY" : 118,
+    "prop" : {
+      "x" : 323,
+      "y" : 46,
+      "width" : 147,
+      "height" : 72
+    },
+    "textPosition" : {
+      "x" : 334,
+      "y" : 60
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ {
+    "id" : 36,
+    "renderableClass" : "Interaction",
+    "position" : {
+      "x" : 407,
+      "y" : 162
+    },
+    "minX" : 389,
+    "maxX" : 425,
+    "minY" : 156,
+    "maxY" : 168,
+    "interactionType" : "Activate",
+    "segments" : [ {
+      "from" : {
+        "x" : 389,
+        "y" : 162
+      },
+      "to" : {
+        "x" : 425,
+        "y" : 162
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 418,
+        "y" : 166
+      },
+      "b" : {
+        "x" : 425,
+        "y" : 162
+      },
+      "c" : {
+        "x" : 418,
+        "y" : 158
+      },
+      "type" : "ARROW",
+      "empty" : true
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 401,
+        "y" : 156
+      },
+      "b" : {
+        "x" : 413,
+        "y" : 168
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 33
+    } ],
+    "outputs" : [ {
+      "id" : 35
+    } ]
+  } ],
+  "shadows" : [ ],
+  "minX" : 247,
+  "maxX" : 591,
+  "minY" : 46,
+  "maxY" : 188,
+  "disease" : false
+}

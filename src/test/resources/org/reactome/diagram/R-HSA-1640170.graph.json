@@ -1,0 +1,34 @@
+{
+  "dbId" : 1640170,
+  "stId" : "R-HSA-1640170",
+  "nodes" : [ {
+    "dbId" : 69620,
+    "stId" : "R-HSA-69620",
+    "displayName" : "Cell Cycle Checkpoints",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1 ]
+  }, {
+    "dbId" : 1500620,
+    "stId" : "R-HSA-1500620",
+    "displayName" : "Meiosis",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ]
+  }, {
+    "dbId" : 69278,
+    "stId" : "R-HSA-69278",
+    "displayName" : "Cell Cycle, Mitotic",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2 ]
+  }, {
+    "dbId" : 73886,
+    "stId" : "R-HSA-73886",
+    "displayName" : "Chromosome Maintenance",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3 ]
+  } ],
+  "edges" : [ ]
+}

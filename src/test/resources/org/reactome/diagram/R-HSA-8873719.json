@@ -1,0 +1,1262 @@
+{
+  "dbId" : 8873719,
+  "stableId" : "R-HSA-8873719",
+  "displayName" : "RAB geranylgeranylation",
+  "nodes" : [ {
+    "id" : 161,
+    "reactomeId" : 1132084,
+    "displayName" : "PPi(3-)",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1138,
+      "y" : 414
+    },
+    "minX" : 1070,
+    "maxX" : 1168,
+    "minY" : 345,
+    "maxY" : 429,
+    "prop" : {
+      "x" : 1110,
+      "y" : 399,
+      "width" : 57,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 1114,
+      "y" : 403
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1162,
+          "y" : 404
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 4,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1123,
+          "y" : 396
+        },
+        "to" : {
+          "x" : 1070,
+          "y" : 345
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1115,
+          "y" : 394
+        },
+        "b" : {
+          "x" : 1123,
+          "y" : 396
+        },
+        "c" : {
+          "x" : 1121,
+          "y" : 388
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 8870455,
+    "displayName" : "FarC-PTP4A2:RABGGTB",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 370,
+      "y" : 269
+    },
+    "minX" : 312,
+    "maxX" : 428,
+    "minY" : 251,
+    "maxY" : 349,
+    "prop" : {
+      "x" : 312,
+      "y" : 251,
+      "width" : 116,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 324,
+      "y" : 252
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 16,
+      "type" : "INHIBITOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 364,
+          "y" : 290
+        },
+        "to" : {
+          "x" : 344,
+          "y" : 348
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 340,
+          "y" : 347
+        },
+        "b" : {
+          "x" : 348,
+          "y" : 349
+        },
+        "c" : {
+          "x" : 344,
+          "y" : 348
+        },
+        "type" : "STOP"
+      }
+    }, {
+      "edgeId" : 8,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 5,
+    "reactomeId" : 8870419,
+    "displayName" : "RABGGTB",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 190,
+      "y" : 343
+    },
+    "minX" : 132,
+    "maxX" : 306,
+    "minY" : 275,
+    "maxY" : 359,
+    "prop" : {
+      "x" : 132,
+      "y" : 332,
+      "width" : 116,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 158,
+      "y" : 332
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 248,
+          "y" : 332
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 16,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 251,
+          "y" : 351
+        },
+        "to" : {
+          "x" : 306,
+          "y" : 359
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 8,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 199,
+          "y" : 329
+        },
+        "to" : {
+          "x" : 248,
+          "y" : 275
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 1131164,
+    "displayName" : "geranylgeranyl diphosphate",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 512,
+      "y" : 453
+    },
+    "minX" : 457,
+    "maxX" : 988,
+    "minY" : 348,
+    "maxY" : 482,
+    "prop" : {
+      "x" : 457,
+      "y" : 424,
+      "width" : 110,
+      "height" : 58
+    },
+    "textPosition" : {
+      "x" : 464,
+      "y" : 435
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 562,
+          "y" : 429
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 18,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 527,
+          "y" : 421
+        },
+        "to" : {
+          "x" : 562,
+          "y" : 357
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 4,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 570,
+          "y" : 452
+        },
+        "to" : {
+          "x" : 926,
+          "y" : 450
+        }
+      }, {
+        "from" : {
+          "x" : 926,
+          "y" : 450
+        },
+        "to" : {
+          "x" : 988,
+          "y" : 348
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 9,
+    "reactomeId" : 8870418,
+    "displayName" : "RABGGTA",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 196,
+      "y" : 392
+    },
+    "minX" : 138,
+    "maxX" : 306,
+    "minY" : 359,
+    "maxY" : 403,
+    "prop" : {
+      "x" : 138,
+      "y" : 381,
+      "width" : 117,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 164,
+      "y" : 381
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 255,
+          "y" : 381
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 16,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 232,
+          "y" : 378
+        },
+        "to" : {
+          "x" : 306,
+          "y" : 359
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 11,
+    "reactomeId" : 8870446,
+    "displayName" : "CHMs",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 503,
+      "y" : 299
+    },
+    "minX" : 457,
+    "maxX" : 562,
+    "minY" : 288,
+    "maxY" : 357,
+    "prop" : {
+      "x" : 457,
+      "y" : 288,
+      "width" : 93,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 483,
+      "y" : 288
+    },
+    "connectors" : [ {
+      "edgeId" : 18,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 514,
+          "y" : 316
+        },
+        "to" : {
+          "x" : 562,
+          "y" : 357
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 203,
+    "reactomeId" : 8936087,
+    "displayName" : "RGGTA:RGGTB:GGPP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1136,
+      "y" : 271
+    },
+    "minX" : 1070,
+    "maxX" : 1186,
+    "minY" : 253,
+    "maxY" : 345,
+    "prop" : {
+      "x" : 1086,
+      "y" : 253,
+      "width" : 100,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1086,
+      "y" : 254
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 4,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1119,
+          "y" : 292
+        },
+        "to" : {
+          "x" : 1070,
+          "y" : 345
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1117,
+          "y" : 300
+        },
+        "b" : {
+          "x" : 1119,
+          "y" : 292
+        },
+        "c" : {
+          "x" : 1111,
+          "y" : 294
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 12,
+    "reactomeId" : 8870467,
+    "displayName" : "RGGT:CHMs:RABs:GDP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 893,
+      "y" : 347
+    },
+    "minX" : 835,
+    "maxX" : 1013,
+    "minY" : 306,
+    "maxY" : 365,
+    "prop" : {
+      "x" : 835,
+      "y" : 329,
+      "width" : 117,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 835,
+      "y" : 330
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 4,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 955,
+          "y" : 347
+        },
+        "to" : {
+          "x" : 988,
+          "y" : 348
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 4,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 918,
+          "y" : 326
+        },
+        "to" : {
+          "x" : 951,
+          "y" : 306
+        }
+      }, {
+        "from" : {
+          "x" : 951,
+          "y" : 306
+        },
+        "to" : {
+          "x" : 1005,
+          "y" : 339
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1009,
+          "y" : 341
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 10,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 13,
+    "reactomeId" : 8870421,
+    "displayName" : "FarC-PTP4A2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 184,
+      "y" : 228
+    },
+    "minX" : 138,
+    "maxX" : 248,
+    "minY" : 204,
+    "maxY" : 275,
+    "prop" : {
+      "x" : 138,
+      "y" : 210,
+      "width" : 92,
+      "height" : 36
+    },
+    "innerProp" : {
+      "x" : 138,
+      "y" : 210,
+      "width" : 92,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 140,
+      "y" : 217
+    },
+    "nodeAttachments" : [ {
+      "reactomeId" : 8870375,
+      "label" : "FA",
+      "description" : "S-farnesyl-L-cysteine at 164",
+      "shape" : {
+        "a" : {
+          "x" : 177,
+          "y" : 240
+        },
+        "b" : {
+          "x" : 189,
+          "y" : 252
+        },
+        "s" : "FA",
+        "type" : "BOX",
+        "empty" : true
+      }
+    } ],
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 230,
+          "y" : 210
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 8,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 208,
+          "y" : 249
+        },
+        "to" : {
+          "x" : 248,
+          "y" : 275
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 14,
+    "reactomeId" : 8870460,
+    "displayName" : "RABGGTA:RABGGTB",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 449,
+      "y" : 357
+    },
+    "minX" : 384,
+    "maxX" : 562,
+    "minY" : 339,
+    "maxY" : 375,
+    "prop" : {
+      "x" : 384,
+      "y" : 339,
+      "width" : 130,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 386,
+      "y" : 354
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 16,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 18,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 517,
+          "y" : 357
+        },
+        "to" : {
+          "x" : 562,
+          "y" : 357
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 15,
+    "reactomeId" : 8870447,
+    "displayName" : "CHMs:GGC-RABs:GDP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1165,
+      "y" : 343
+    },
+    "minX" : 1070,
+    "maxX" : 1207,
+    "minY" : 323,
+    "maxY" : 364,
+    "prop" : {
+      "x" : 1124,
+      "y" : 323,
+      "width" : 83,
+      "height" : 41
+    },
+    "textPosition" : {
+      "x" : 1126,
+      "y" : 329
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 4,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1121,
+          "y" : 343
+        },
+        "to" : {
+          "x" : 1070,
+          "y" : 345
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1114,
+          "y" : 347
+        },
+        "b" : {
+          "x" : 1121,
+          "y" : 343
+        },
+        "c" : {
+          "x" : 1114,
+          "y" : 339
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 49,
+    "reactomeId" : 8875311,
+    "displayName" : "RABs:GDP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 736,
+      "y" : 410
+    },
+    "minX" : 698,
+    "maxX" : 775,
+    "minY" : 349,
+    "maxY" : 424,
+    "prop" : {
+      "x" : 698,
+      "y" : 396,
+      "width" : 77,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 703,
+      "y" : 403
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 744,
+          "y" : 393
+        },
+        "to" : {
+          "x" : 774,
+          "y" : 349
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 17,
+    "reactomeId" : 8870462,
+    "displayName" : "RABGGTA:RABGGTB:CHMs:GGPP",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 675,
+      "y" : 353
+    },
+    "minX" : 610,
+    "maxX" : 774,
+    "minY" : 335,
+    "maxY" : 371,
+    "prop" : {
+      "x" : 610,
+      "y" : 335,
+      "width" : 130,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 610,
+      "y" : 336
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 18,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 743,
+          "y" : 350
+        },
+        "to" : {
+          "x" : 774,
+          "y" : 349
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 16,
+    "reactomeId" : 8870461,
+    "displayName" : "RABGGTA and RABGGTB bind",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 341,
+      "y" : 356
+    },
+    "minX" : 306,
+    "maxX" : 381,
+    "minY" : 351,
+    "maxY" : 361,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 306,
+        "y" : 359
+      },
+      "to" : {
+        "x" : 341,
+        "y" : 356
+      }
+    }, {
+      "from" : {
+        "x" : 341,
+        "y" : 356
+      },
+      "to" : {
+        "x" : 381,
+        "y" : 356
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 374,
+        "y" : 360
+      },
+      "b" : {
+        "x" : 381,
+        "y" : 356
+      },
+      "c" : {
+        "x" : 374,
+        "y" : 352
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 341,
+        "y" : 356
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 9,
+      "points" : [ {
+        "x" : 232,
+        "y" : 378
+      } ]
+    }, {
+      "id" : 5,
+      "points" : [ {
+        "x" : 251,
+        "y" : 351
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 14
+    } ],
+    "inhibitors" : [ {
+      "id" : 3,
+      "points" : [ {
+        "x" : 364,
+        "y" : 290
+      } ]
+    } ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 8870465,
+    "displayName" : "RGGT binds the RAB-binding subunit",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 583,
+      "y" : 357
+    },
+    "minX" : 562,
+    "maxX" : 607,
+    "minY" : 352,
+    "maxY" : 362,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 562,
+        "y" : 357
+      },
+      "to" : {
+        "x" : 583,
+        "y" : 357
+      }
+    }, {
+      "from" : {
+        "x" : 583,
+        "y" : 357
+      },
+      "to" : {
+        "x" : 607,
+        "y" : 355
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 600,
+        "y" : 360
+      },
+      "b" : {
+        "x" : 607,
+        "y" : 355
+      },
+      "c" : {
+        "x" : 600,
+        "y" : 352
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 583,
+        "y" : 357
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 6,
+      "points" : [ {
+        "x" : 527,
+        "y" : 421
+      } ]
+    }, {
+      "id" : 11,
+      "points" : [ {
+        "x" : 514,
+        "y" : 316
+      } ]
+    }, {
+      "id" : 14,
+      "points" : [ {
+        "x" : 517,
+        "y" : 357
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 17
+    } ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 8870469,
+    "displayName" : "RGGT geranylgeranylates RAB proteins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1019,
+      "y" : 347
+    },
+    "minX" : 988,
+    "maxX" : 1070,
+    "minY" : 341,
+    "maxY" : 353,
+    "segments" : [ {
+      "from" : {
+        "x" : 988,
+        "y" : 348
+      },
+      "to" : {
+        "x" : 1019,
+        "y" : 347
+      }
+    }, {
+      "from" : {
+        "x" : 1019,
+        "y" : 347
+      },
+      "to" : {
+        "x" : 1070,
+        "y" : 345
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1013,
+        "y" : 341
+      },
+      "b" : {
+        "x" : 1025,
+        "y" : 353
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 12,
+      "points" : [ {
+        "x" : 955,
+        "y" : 347
+      } ]
+    }, {
+      "id" : 6,
+      "points" : [ {
+        "x" : 570,
+        "y" : 452
+      }, {
+        "x" : 926,
+        "y" : 450
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 203,
+      "points" : [ {
+        "x" : 1119,
+        "y" : 292
+      } ]
+    }, {
+      "id" : 161,
+      "points" : [ {
+        "x" : 1123,
+        "y" : 396
+      } ]
+    }, {
+      "id" : 15,
+      "points" : [ {
+        "x" : 1121,
+        "y" : 343
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 12,
+      "points" : [ {
+        "x" : 918,
+        "y" : 326
+      }, {
+        "x" : 951,
+        "y" : 306
+      } ]
+    } ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 8870457,
+    "displayName" : "FarC-PTP4A2 binds RABGGTB",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 281,
+      "y" : 271
+    },
+    "minX" : 248,
+    "maxX" : 309,
+    "minY" : 266,
+    "maxY" : 276,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 248,
+        "y" : 275
+      },
+      "to" : {
+        "x" : 281,
+        "y" : 271
+      }
+    }, {
+      "from" : {
+        "x" : 281,
+        "y" : 271
+      },
+      "to" : {
+        "x" : 309,
+        "y" : 270
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 302,
+        "y" : 274
+      },
+      "b" : {
+        "x" : 309,
+        "y" : 270
+      },
+      "c" : {
+        "x" : 302,
+        "y" : 266
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 281,
+        "y" : 271
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 5,
+      "points" : [ {
+        "x" : 199,
+        "y" : 329
+      } ]
+    }, {
+      "id" : 13,
+      "points" : [ {
+        "x" : 208,
+        "y" : 249
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 3
+    } ]
+  }, {
+    "id" : 10,
+    "reactomeId" : 8870466,
+    "displayName" : "RGGT:CHM binds RABs",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 806,
+      "y" : 348
+    },
+    "minX" : 774,
+    "maxX" : 832,
+    "minY" : 343,
+    "maxY" : 353,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 774,
+        "y" : 349
+      },
+      "to" : {
+        "x" : 806,
+        "y" : 348
+      }
+    }, {
+      "from" : {
+        "x" : 806,
+        "y" : 348
+      },
+      "to" : {
+        "x" : 832,
+        "y" : 347
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 825,
+        "y" : 351
+      },
+      "b" : {
+        "x" : 832,
+        "y" : 347
+      },
+      "c" : {
+        "x" : 825,
+        "y" : 343
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 806,
+        "y" : 348
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 49,
+      "points" : [ {
+        "x" : 744,
+        "y" : 393
+      } ]
+    }, {
+      "id" : 17,
+      "points" : [ {
+        "x" : 743,
+        "y" : 350
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 12
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 19,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 808,
+      "y" : 382
+    },
+    "minX" : 41,
+    "maxX" : 1576,
+    "minY" : 90,
+    "maxY" : 675,
+    "prop" : {
+      "x" : 41,
+      "y" : 90,
+      "width" : 1535,
+      "height" : 585
+    },
+    "textPosition" : {
+      "x" : 681,
+      "y" : 238
+    },
+    "insets" : {
+      "x" : 91,
+      "y" : 140,
+      "width" : 1460,
+      "height" : 512
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 3, 4, 5, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 12, 6, 49, 161, 203 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 41,
+  "maxX" : 1576,
+  "minY" : 90,
+  "maxY" : 675,
+  "disease" : false
+}

@@ -1,0 +1,34 @@
+{
+  "dbId" : 425407,
+  "stId" : "R-HSA-425407",
+  "nodes" : [ {
+    "dbId" : 425366,
+    "stId" : "R-HSA-425366",
+    "displayName" : "Transport of bile salts and organic acids, metal ions and amine compounds",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ]
+  }, {
+    "dbId" : 189200,
+    "stId" : "R-HSA-189200",
+    "displayName" : "Cellular hexose transport",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7 ]
+  }, {
+    "dbId" : 425397,
+    "stId" : "R-HSA-425397",
+    "displayName" : "Transport of vitamins, nucleosides, and related molecules",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ]
+  }, {
+    "dbId" : 425393,
+    "stId" : "R-HSA-425393",
+    "displayName" : "Transport of inorganic cations/anions and amino acids/oligopeptides",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3 ]
+  } ],
+  "edges" : [ ]
+}

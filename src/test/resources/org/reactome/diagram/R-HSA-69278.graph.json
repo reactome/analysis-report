@@ -1,0 +1,55 @@
+{
+  "dbId" : 69278,
+  "stId" : "R-HSA-69278",
+  "nodes" : [ {
+    "dbId" : 68886,
+    "stId" : "R-HSA-68886",
+    "displayName" : "M Phase",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 35 ]
+  }, {
+    "dbId" : 453279,
+    "stId" : "R-HSA-453279",
+    "displayName" : "Mitotic G1-G1/S phases",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1 ]
+  }, {
+    "dbId" : 69304,
+    "stId" : "R-HSA-69304",
+    "displayName" : "Regulation of DNA replication",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ]
+  }, {
+    "dbId" : 453276,
+    "stId" : "R-HSA-453276",
+    "displayName" : "Regulation of mitotic cell cycle",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 34 ]
+  }, {
+    "dbId" : 69242,
+    "stId" : "R-HSA-69242",
+    "displayName" : "S Phase",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2 ]
+  }, {
+    "dbId" : 68874,
+    "stId" : "R-HSA-68874",
+    "displayName" : "M/G1 Transition",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 37 ]
+  }, {
+    "dbId" : 453274,
+    "stId" : "R-HSA-453274",
+    "displayName" : "Mitotic G2-G2/M phases",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ]
+  } ],
+  "edges" : [ ]
+}

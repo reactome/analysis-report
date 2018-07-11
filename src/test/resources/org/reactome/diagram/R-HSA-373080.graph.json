@@ -1,0 +1,1663 @@
+{
+  "dbId" : 373080,
+  "stId" : "R-HSA-373080",
+  "nodes" : [ {
+    "dbId" : 420103,
+    "stId" : "R-HSA-420103",
+    "displayName" : "ADCYAP1R1:ADCYAP1 peptides [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 145 ],
+    "parents" : [ 391181 ],
+    "children" : [ 420269, 420080 ]
+  }, {
+    "dbId" : 381699,
+    "stId" : "R-HSA-381699",
+    "displayName" : "ArgN-GCG(98-127) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01275",
+    "geneNames" : [ "GCG" ],
+    "parents" : [ 381662 ]
+  }, {
+    "dbId" : 8937614,
+    "stId" : "R-HSA-8937614",
+    "displayName" : "CRHR1,CRHR2-1:CRH,UCN [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 50 ],
+    "children" : [ 8937588, 8937597 ]
+  }, {
+    "dbId" : 167428,
+    "stId" : "R-HSA-167428",
+    "displayName" : "GNGT1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63211",
+    "geneNames" : [ "GNGT1" ],
+    "parents" : [ 380924, 1013010, 400062, 167442 ]
+  }, {
+    "dbId" : 420097,
+    "stId" : "R-HSA-420097",
+    "displayName" : "SCTR [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 147 ],
+    "identifier" : "P47872",
+    "geneNames" : [ "SCTR" ],
+    "parents" : [ 790204, 420082 ]
+  }, {
+    "dbId" : 517390,
+    "stId" : "R-HSA-517390",
+    "displayName" : "WNT8B [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q93098",
+    "geneNames" : [ "WNT8B" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 517388,
+    "stId" : "R-HSA-517388",
+    "displayName" : "Frizzled receptors [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 104 ],
+    "parents" : [ 517468 ],
+    "children" : [ 443947, 443952, 517394, 443956, 443945, 443946, 443948, 443950, 205974, 443943 ]
+  }, {
+    "dbId" : 420109,
+    "stId" : "R-HSA-420109",
+    "displayName" : "AM2 receptor [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 420118 ],
+    "children" : [ 420191, 419860 ]
+  }, {
+    "dbId" : 517386,
+    "stId" : "R-HSA-517386",
+    "displayName" : "WNT9A [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14904",
+    "geneNames" : [ "WNT9A", "WNT14" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 164367,
+    "stId" : "R-HSA-164367",
+    "displayName" : "GNG12 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UBI6",
+    "geneNames" : [ "GNG12" ],
+    "parents" : [ 1013010, 164340, 400062, 167442 ]
+  }, {
+    "dbId" : 8937605,
+    "stId" : "R-HSA-8937605",
+    "displayName" : "CRHBP:CRH [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 33 ],
+    "children" : [ 8937598, 420146 ]
+  }, {
+    "dbId" : 517385,
+    "stId" : "R-HSA-517385",
+    "displayName" : "WNT4 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P56705",
+    "geneNames" : [ "WNT4", "UNQ426/PRO864" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 419848,
+    "stId" : "R-HSA-419848",
+    "displayName" : "CALCR:CALCA(83-119) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ],
+    "parents" : [ 391181 ],
+    "children" : [ 419781, 419798 ]
+  }, {
+    "dbId" : 420118,
+    "stId" : "R-HSA-420118",
+    "displayName" : "Adrenomedullin receptor [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "parents" : [ 790204, 420062 ],
+    "children" : [ 420232, 420109 ]
+  }, {
+    "dbId" : 517398,
+    "stId" : "R-HSA-517398",
+    "displayName" : "WNT8A [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H1J5",
+    "geneNames" : [ "WNT8A", "WNT8D" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 164371,
+    "stId" : "R-HSA-164371",
+    "displayName" : "GNG8 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UK08",
+    "geneNames" : [ "GNG8", "GNG9", "GNGT9" ],
+    "parents" : [ 1013010, 164340, 400062, 167442 ]
+  }, {
+    "dbId" : 8937626,
+    "stId" : "R-HSA-8937626",
+    "displayName" : "UCN2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96RP3",
+    "geneNames" : [ "UCN2", "SRP", "URP" ],
+    "parents" : [ 8937627 ]
+  }, {
+    "dbId" : 419860,
+    "stId" : "R-HSA-419860",
+    "displayName" : "CALCRL [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16602",
+    "geneNames" : [ "CALCRL", "CGRPR" ],
+    "parents" : [ 420232, 420109, 419782 ]
+  }, {
+    "dbId" : 167440,
+    "stId" : "R-HSA-167440",
+    "displayName" : "GNGT2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14610",
+    "geneNames" : [ "GNGT2", "GNG8", "GNG9", "GNGT8" ],
+    "parents" : [ 1013010, 400062, 167442 ]
+  }, {
+    "dbId" : 517396,
+    "stId" : "R-HSA-517396",
+    "displayName" : "WNT5A [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P41221",
+    "geneNames" : [ "WNT5A" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 8937627,
+    "stId" : "R-HSA-8937627",
+    "displayName" : "CRH,UCN,UCN2,UCN3 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 65 ],
+    "parents" : [ 8937629 ],
+    "children" : [ 8943426, 420146, 8931580, 8937626 ]
+  }, {
+    "dbId" : 517395,
+    "stId" : "R-HSA-517395",
+    "displayName" : "WNT9B [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14905",
+    "geneNames" : [ "WNT9B", "WNT14B", "WNT15", "UNQ6973/PRO21956" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 8937629,
+    "stId" : "R-HSA-8937629",
+    "displayName" : "CRHR2-2:CRH,UCN,UCN2,UCN3 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 68 ],
+    "children" : [ 8937630, 8937627 ]
+  }, {
+    "dbId" : 517394,
+    "stId" : "R-HSA-517394",
+    "displayName" : "FZD7 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75084",
+    "geneNames" : [ "FZD7" ],
+    "parents" : [ 517388, 1504198, 5140744, 3858485 ]
+  }, {
+    "dbId" : 517393,
+    "stId" : "R-HSA-517393",
+    "displayName" : "WNT7B(32-349) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P56706",
+    "geneNames" : [ "WNT7B" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 8937630,
+    "stId" : "R-HSA-8937630",
+    "displayName" : "CRHR2-2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 64 ],
+    "identifier" : "Q13324-2",
+    "geneNames" : [ "CRHR2", "CRF2R", "CRH2R" ],
+    "parents" : [ 8937629 ]
+  }, {
+    "dbId" : 517407,
+    "stId" : "R-HSA-517407",
+    "displayName" : "WNT10A [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9GZT5",
+    "geneNames" : [ "WNT10A" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 164376,
+    "stId" : "R-HSA-164376",
+    "displayName" : "GNG3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63215",
+    "geneNames" : [ "GNG3", "GNGT3" ],
+    "parents" : [ 1013010, 164340, 400062, 167442 ]
+  }, {
+    "dbId" : 517404,
+    "stId" : "R-HSA-517404",
+    "displayName" : "WNT7A [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00755",
+    "geneNames" : [ "WNT7A" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 164383,
+    "stId" : "R-HSA-164383",
+    "displayName" : "GNG5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63218",
+    "geneNames" : [ "GNG5", "GNGT5" ],
+    "parents" : [ 1013010, 164340, 400062, 167442 ]
+  }, {
+    "dbId" : 164380,
+    "stId" : "R-HSA-164380",
+    "displayName" : "GNG2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P59768",
+    "geneNames" : [ "GNG2" ],
+    "parents" : [ 1013010, 164340, 400062, 167442 ]
+  }, {
+    "dbId" : 163618,
+    "stId" : "R-HSA-163618",
+    "displayName" : "GCGR [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 124 ],
+    "identifier" : "P47871",
+    "geneNames" : [ "GCGR" ],
+    "parents" : [ 790204, 791493, 163627 ]
+  }, {
+    "dbId" : 164387,
+    "stId" : "R-HSA-164387",
+    "displayName" : "GNAS2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P63092",
+    "geneNames" : [ "GNAS", "GNAS1", "GSP" ],
+    "parents" : [ 8873941 ]
+  }, {
+    "dbId" : 443943,
+    "stId" : "R-HSA-443943",
+    "displayName" : "FZD10 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9ULW2",
+    "geneNames" : [ "FZD10" ],
+    "parents" : [ 517388 ]
+  }, {
+    "dbId" : 420132,
+    "stId" : "R-HSA-420132",
+    "displayName" : "GIPR [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 119 ],
+    "identifier" : "P48546",
+    "geneNames" : [ "GIPR" ],
+    "parents" : [ 790204, 420229 ]
+  }, {
+    "dbId" : 517409,
+    "stId" : "R-HSA-517409",
+    "displayName" : "WNTs [extracellular region]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 103 ],
+    "parents" : [ 517468 ],
+    "children" : [ 201676, 201710, 201690, 201702, 517396, 517467, 517404, 517471, 517407, 517393, 517395, 517398, 517385, 517386, 517390, 517408, 517473, 517474 ]
+  }, {
+    "dbId" : 517408,
+    "stId" : "R-HSA-517408",
+    "displayName" : "WNT6 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y6F9",
+    "geneNames" : [ "WNT6" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 163626,
+    "stId" : "R-HSA-163626",
+    "displayName" : "GCG(53-81) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 123 ],
+    "identifier" : "P01275",
+    "geneNames" : [ "GCG" ],
+    "parents" : [ 790205, 791492, 163627 ]
+  }, {
+    "dbId" : 443950,
+    "stId" : "R-HSA-443950",
+    "displayName" : "FZD6 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60353",
+    "geneNames" : [ "FZD6" ],
+    "parents" : [ 517388, 4641164, 3965381, 3858485 ]
+  }, {
+    "dbId" : 163627,
+    "stId" : "R-HSA-163627",
+    "displayName" : "GCGR:GCG(53-81) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 125 ],
+    "parents" : [ 391181, 380110 ],
+    "children" : [ 163626, 163618 ]
+  }, {
+    "dbId" : 443948,
+    "stId" : "R-HSA-443948",
+    "displayName" : "FZD3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NPG1",
+    "geneNames" : [ "FZD3" ],
+    "parents" : [ 517388, 4608864, 5140744, 3965381, 3858485 ]
+  }, {
+    "dbId" : 443946,
+    "stId" : "R-HSA-443946",
+    "displayName" : "FZD9 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00144",
+    "geneNames" : [ "FZD9", "FZD3" ],
+    "parents" : [ 517388 ]
+  }, {
+    "dbId" : 443947,
+    "stId" : "R-HSA-443947",
+    "displayName" : "FZD8 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H461",
+    "geneNames" : [ "FZD8" ],
+    "parents" : [ 517388, 4641164, 5140744 ]
+  }, {
+    "dbId" : 443945,
+    "stId" : "R-HSA-443945",
+    "displayName" : "FZD2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14332",
+    "geneNames" : [ "FZD2" ],
+    "parents" : [ 517388, 1504202, 5140732, 5140744, 3965381 ]
+  }, {
+    "dbId" : 879676,
+    "stId" : "R-HSA-879676",
+    "displayName" : "CD55:CD97 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 158 ],
+    "children" : [ 879667, 444764 ]
+  }, {
+    "dbId" : 443956,
+    "stId" : "R-HSA-443956",
+    "displayName" : "FZD4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9ULV1",
+    "geneNames" : [ "FZD4" ],
+    "parents" : [ 517388, 4641164, 5099901, 5140744, 3965381 ]
+  }, {
+    "dbId" : 420146,
+    "stId" : "R-HSA-420146",
+    "displayName" : "CRH [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 31 ],
+    "identifier" : "P06850",
+    "geneNames" : [ "CRH" ],
+    "parents" : [ 8937627, 8937605, 8937588, 790205, 420105 ]
+  }, {
+    "dbId" : 420147,
+    "stId" : "R-HSA-420147",
+    "displayName" : "AMY1-3:IAPP(34-70) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "parents" : [ 391181 ],
+    "children" : [ 420237, 420076 ]
+  }, {
+    "dbId" : 420144,
+    "stId" : "R-HSA-420144",
+    "displayName" : "ADCYAP1(132-158) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P18509",
+    "geneNames" : [ "ADCYAP1" ],
+    "parents" : [ 420080 ]
+  }, {
+    "dbId" : 443952,
+    "stId" : "R-HSA-443952",
+    "displayName" : "FZD5 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13467",
+    "geneNames" : [ "FZD5", "C2orf31" ],
+    "parents" : [ 517514, 517388, 4641164, 5368521, 5140732, 5140744, 3965379, 3965381 ]
+  }, {
+    "dbId" : 420157,
+    "stId" : "R-HSA-420157",
+    "displayName" : "VIPR1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P32241",
+    "geneNames" : [ "VIPR1" ],
+    "parents" : [ 420267 ]
+  }, {
+    "dbId" : 879667,
+    "stId" : "R-HSA-879667",
+    "displayName" : "CD55 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 157 ],
+    "identifier" : "P08174",
+    "geneNames" : [ "CD55", "CR", "DAF" ],
+    "parents" : [ 879676 ]
+  }, {
+    "dbId" : 420166,
+    "stId" : "R-HSA-420166",
+    "displayName" : "CRHR1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P34998",
+    "geneNames" : [ "CRHR1", "CRFR", "CRFR1", "CRHR" ],
+    "parents" : [ 8937597, 420140 ]
+  }, {
+    "dbId" : 420172,
+    "stId" : "R-HSA-420172",
+    "displayName" : "AMY3 receptor [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 420237 ],
+    "children" : [ 420191, 419798 ]
+  }, {
+    "dbId" : 8873941,
+    "stId" : "R-HSA-8873941",
+    "displayName" : "GNAS [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 164333, 164358 ],
+    "children" : [ 164387, 8873940 ]
+  }, {
+    "dbId" : 8873940,
+    "stId" : "R-HSA-8873940",
+    "displayName" : "GNAS1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5JWF2",
+    "geneNames" : [ "GNAS", "GNAS1" ],
+    "parents" : [ 8873941 ]
+  }, {
+    "dbId" : 444754,
+    "stId" : "R-HSA-444754",
+    "displayName" : "EGF-7TMs:CHS [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 153 ],
+    "children" : [ 444761, 444765 ]
+  }, {
+    "dbId" : 444753,
+    "stId" : "R-HSA-444753",
+    "displayName" : "EMR3(22-652) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BY15",
+    "geneNames" : [ "ADGRE3", "EMR3", "UNQ683/PRO1562" ],
+    "parents" : [ 444765, 6806514, 6806534 ]
+  }, {
+    "dbId" : 517471,
+    "stId" : "R-HSA-517471",
+    "displayName" : "WNT10B [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00744",
+    "geneNames" : [ "WNT10B", "WNT12" ],
+    "parents" : [ 517409, 976184 ]
+  }, {
+    "dbId" : 420191,
+    "stId" : "R-HSA-420191",
+    "displayName" : "RAMP3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60896",
+    "geneNames" : [ "RAMP3" ],
+    "parents" : [ 420172, 420109 ]
+  }, {
+    "dbId" : 444764,
+    "stId" : "R-HSA-444764",
+    "displayName" : "CD97 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 155 ],
+    "identifier" : "P48960",
+    "geneNames" : [ "CD97" ],
+    "parents" : [ 879676, 444765, 6806534 ]
+  }, {
+    "dbId" : 420444,
+    "stId" : "R-HSA-420444",
+    "displayName" : "PTHLH [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12272",
+    "geneNames" : [ "PTHLH", "PTHRP" ],
+    "parents" : [ 420569 ]
+  }, {
+    "dbId" : 444765,
+    "stId" : "R-HSA-444765",
+    "displayName" : "EGF-7TMs [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 152 ],
+    "parents" : [ 444754 ],
+    "children" : [ 444760, 444764, 444753, 444775 ]
+  }, {
+    "dbId" : 517468,
+    "stId" : "R-HSA-517468",
+    "displayName" : "Frizzled receptors:WNTs [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 105 ],
+    "children" : [ 517388, 517409 ]
+  }, {
+    "dbId" : 420445,
+    "stId" : "R-HSA-420445",
+    "displayName" : "PTH [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01270",
+    "geneNames" : [ "PTH" ],
+    "parents" : [ 420569 ]
+  }, {
+    "dbId" : 420186,
+    "stId" : "R-HSA-420186",
+    "displayName" : "AMY2 receptor [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 420237 ],
+    "children" : [ 420200, 419798 ]
+  }, {
+    "dbId" : 517467,
+    "stId" : "R-HSA-517467",
+    "displayName" : "WNT2B(?-391) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q93097",
+    "geneNames" : [ "WNT2B", "WNT13" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 444760,
+    "stId" : "R-HSA-444760",
+    "displayName" : "EMR2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UHX3",
+    "geneNames" : [ "ADGRE2", "EMR2" ],
+    "parents" : [ 444765 ]
+  }, {
+    "dbId" : 444761,
+    "stId" : "R-ALL-444761",
+    "displayName" : "CHS [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 151 ],
+    "identifier" : "37397",
+    "parents" : [ 9410276, 9489224, 9331830, 9183546, 9767478, 9615809, 9257358, 9677922, 2197765, 1604783, 9312257, 9661165, 9240737, 9105536, 9831598, 9740899, 9391656, 9603175, 9470017, 9163819, 444754 ]
+  }, {
+    "dbId" : 444775,
+    "stId" : "R-HSA-444775",
+    "displayName" : "EMR1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14246",
+    "geneNames" : [ "ADGRE1", "EMR1", "TM7LN3" ],
+    "parents" : [ 444765 ]
+  }, {
+    "dbId" : 517474,
+    "stId" : "R-HSA-517474",
+    "displayName" : "WNT16 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UBV4",
+    "geneNames" : [ "WNT16" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 517473,
+    "stId" : "R-HSA-517473",
+    "displayName" : "WNT11 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O96014",
+    "geneNames" : [ "WNT11" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 420200,
+    "stId" : "R-HSA-420200",
+    "displayName" : "RAMP2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60895",
+    "geneNames" : [ "RAMP2" ],
+    "parents" : [ 420186, 420232 ]
+  }, {
+    "dbId" : 420212,
+    "stId" : "R-HSA-420212",
+    "displayName" : "AMY1 receptor [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 420237 ],
+    "children" : [ 419763, 419798 ]
+  }, {
+    "dbId" : 420213,
+    "stId" : "R-HSA-420213",
+    "displayName" : "VIPR1,VIPR2:VIP(125-152) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 141 ],
+    "parents" : [ 391181 ],
+    "children" : [ 420267, 420208 ]
+  }, {
+    "dbId" : 8931580,
+    "stId" : "R-HSA-8931580",
+    "displayName" : "UCN(83-122) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P55089",
+    "geneNames" : [ "UCN" ],
+    "parents" : [ 8937627, 8937588, 8931578 ]
+  }, {
+    "dbId" : 420211,
+    "stId" : "R-HSA-420211",
+    "displayName" : "GCG(146-178) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 131 ],
+    "identifier" : "P01275",
+    "geneNames" : [ "GCG" ],
+    "parents" : [ 790205, 420087 ]
+  }, {
+    "dbId" : 420208,
+    "stId" : "R-HSA-420208",
+    "displayName" : "VIP(125-152) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 139 ],
+    "identifier" : "P01282",
+    "geneNames" : [ "VIP" ],
+    "parents" : [ 790205, 420213 ]
+  }, {
+    "dbId" : 420479,
+    "stId" : "R-HSA-420479",
+    "displayName" : "PTH1R [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q03431",
+    "geneNames" : [ "PTH1R", "PTHR", "PTHR1" ],
+    "parents" : [ 420554 ]
+  }, {
+    "dbId" : 420476,
+    "stId" : "R-HSA-420476",
+    "displayName" : "PTH2R [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P49190",
+    "geneNames" : [ "PTH2R", "PTHR2" ],
+    "parents" : [ 420554 ]
+  }, {
+    "dbId" : 420230,
+    "stId" : "R-HSA-420230",
+    "displayName" : "ADM2(19-153) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q7Z4H4",
+    "geneNames" : [ "ADM2", "AM2" ],
+    "parents" : [ 420061 ]
+  }, {
+    "dbId" : 420229,
+    "stId" : "R-HSA-420229",
+    "displayName" : "GIPR:GIP(52-93) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 121 ],
+    "parents" : [ 391181 ],
+    "children" : [ 400540, 420132 ]
+  }, {
+    "dbId" : 420227,
+    "stId" : "R-HSA-420227",
+    "displayName" : "VIPR2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P41587",
+    "geneNames" : [ "VIPR2", "VIP2R" ],
+    "parents" : [ 420267 ]
+  }, {
+    "dbId" : 420236,
+    "stId" : "R-HSA-420236",
+    "displayName" : "CGRP1 receptor:CGRP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 13 ],
+    "parents" : [ 391181 ],
+    "children" : [ 419795, 419782 ]
+  }, {
+    "dbId" : 420237,
+    "stId" : "R-HSA-420237",
+    "displayName" : "AMY1-3 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7 ],
+    "parents" : [ 790204, 420147 ],
+    "children" : [ 420186, 420172, 420212 ]
+  }, {
+    "dbId" : 420232,
+    "stId" : "R-HSA-420232",
+    "displayName" : "AM1 receptor [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 420118 ],
+    "children" : [ 420200, 419860 ]
+  }, {
+    "dbId" : 420503,
+    "stId" : "R-HSA-420503",
+    "displayName" : "PTH1R,PTH2R:PTH1R,PTH2R ligands [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 72 ],
+    "parents" : [ 391181 ],
+    "children" : [ 420569, 420554 ]
+  }, {
+    "dbId" : 205974,
+    "stId" : "R-HSA-205974",
+    "displayName" : "FZD1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UP38",
+    "geneNames" : [ "FZD1" ],
+    "parents" : [ 206831, 206761, 517388, 1504202, 5140744, 3858485 ]
+  }, {
+    "dbId" : 420254,
+    "stId" : "R-HSA-420254",
+    "displayName" : "ADCYAP1(82-129) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P18509",
+    "geneNames" : [ "ADCYAP1" ],
+    "parents" : [ 420080 ]
+  }, {
+    "dbId" : 400540,
+    "stId" : "R-HSA-400540",
+    "displayName" : "GIP(52-93) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 120 ],
+    "identifier" : "P09681",
+    "geneNames" : [ "GIP" ],
+    "parents" : [ 790205, 420229 ]
+  }, {
+    "dbId" : 422310,
+    "stId" : "R-HSA-422310",
+    "displayName" : "GLP-1:GLP-1R:Heterotrimeric G(s):GDP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 129 ],
+    "children" : [ 164333, 381656, 400034 ]
+  }, {
+    "dbId" : 420258,
+    "stId" : "R-HSA-420258",
+    "displayName" : "GHRH receptor:GHRH [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 137 ],
+    "parents" : [ 391181 ],
+    "children" : [ 420079, 420068 ]
+  }, {
+    "dbId" : 400034,
+    "stId" : "R-HSA-400034",
+    "displayName" : "G-beta:G-gamma (candidates) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 400038, 400088, 400031, 422311, 432200, 422322, 422310, 422314 ],
+    "children" : [ 400093, 400062 ]
+  }, {
+    "dbId" : 6814414,
+    "stId" : "R-HSA-6814414",
+    "displayName" : "GNB3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P16520",
+    "geneNames" : [ "GNB3" ],
+    "parents" : [ 8850531, 164339, 400093, 6814413 ]
+  }, {
+    "dbId" : 6814412,
+    "stId" : "R-HSA-6814412",
+    "displayName" : "GNB1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62873",
+    "geneNames" : [ "GNB1" ],
+    "parents" : [ 8850531, 164339, 400093, 6814413 ]
+  }, {
+    "dbId" : 420269,
+    "stId" : "R-HSA-420269",
+    "displayName" : "ADCYAP1R1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 144 ],
+    "identifier" : "P41586",
+    "geneNames" : [ "ADCYAP1R1" ],
+    "parents" : [ 790204, 420103 ]
+  }, {
+    "dbId" : 422314,
+    "stId" : "R-HSA-422314",
+    "displayName" : "GLP-1R:Heterotrimeric G(s):GDP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 128 ],
+    "children" : [ 164333, 400034, 381684 ]
+  }, {
+    "dbId" : 420267,
+    "stId" : "R-HSA-420267",
+    "displayName" : "VIPR1,VIPR2 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 140 ],
+    "parents" : [ 790204, 420213 ],
+    "children" : [ 420157, 420227 ]
+  }, {
+    "dbId" : 6814421,
+    "stId" : "R-HSA-6814421",
+    "displayName" : "GNB2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62879",
+    "geneNames" : [ "GNB2" ],
+    "parents" : [ 8850531, 164339, 400093, 6814413 ]
+  }, {
+    "dbId" : 419763,
+    "stId" : "R-HSA-419763",
+    "displayName" : "RAMP1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60894",
+    "geneNames" : [ "RAMP1" ],
+    "parents" : [ 420212, 419782 ]
+  }, {
+    "dbId" : 6814417,
+    "stId" : "R-HSA-6814417",
+    "displayName" : "GNB4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HAV0",
+    "geneNames" : [ "GNB4" ],
+    "parents" : [ 8850531, 164339, 400093, 6814413 ]
+  }, {
+    "dbId" : 6814416,
+    "stId" : "R-HSA-6814416",
+    "displayName" : "GNB5 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O14775",
+    "geneNames" : [ "GNB5" ],
+    "parents" : [ 8850535, 8850533, 400093, 6814413 ]
+  }, {
+    "dbId" : 400062,
+    "stId" : "R-HSA-400062",
+    "displayName" : "G-protein gamma subunit [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 400034 ],
+    "children" : [ 164380, 164367, 164383, 164350, 164329, 164344, 164376, 164346, 164325, 167428, 167440, 164371 ]
+  }, {
+    "dbId" : 400574,
+    "stId" : "R-HSA-400574",
+    "displayName" : "mature GLP-1 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 381656 ],
+    "children" : [ 400575, 400576 ]
+  }, {
+    "dbId" : 400575,
+    "stId" : "R-HSA-400575",
+    "displayName" : "ArgN-GCG(98-127) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01275",
+    "geneNames" : [ "GCG" ],
+    "parents" : [ 400574 ]
+  }, {
+    "dbId" : 420282,
+    "stId" : "R-HSA-420282",
+    "displayName" : "ADCYAP1(132-169) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P18509",
+    "geneNames" : [ "ADCYAP1" ],
+    "parents" : [ 420080 ]
+  }, {
+    "dbId" : 419782,
+    "stId" : "R-HSA-419782",
+    "displayName" : "CGRP receptor [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 12 ],
+    "parents" : [ 790204, 420236 ],
+    "children" : [ 419763, 419860 ]
+  }, {
+    "dbId" : 381636,
+    "stId" : "R-HSA-381636",
+    "displayName" : "GLP-1 (7-37) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01275",
+    "geneNames" : [ "GCG" ],
+    "parents" : [ 381662 ]
+  }, {
+    "dbId" : 419781,
+    "stId" : "R-HSA-419781",
+    "displayName" : "CALCA(83-119) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ],
+    "identifier" : "P01258",
+    "geneNames" : [ "CALCA", "CALC1" ],
+    "parents" : [ 977181, 976978, 790205, 419848 ]
+  }, {
+    "dbId" : 400576,
+    "stId" : "R-HSA-400576",
+    "displayName" : "GLP-1 (7-37) [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01275",
+    "geneNames" : [ "GCG" ],
+    "parents" : [ 400574 ]
+  }, {
+    "dbId" : 445121,
+    "stId" : "R-HSA-445121",
+    "displayName" : "SMO [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 87 ],
+    "identifier" : "Q99835",
+    "geneNames" : [ "SMO", "SMOH" ],
+    "parents" : [ 5624113, 445147 ]
+  }, {
+    "dbId" : 445134,
+    "stId" : "R-HSA-445134",
+    "displayName" : "PTCH1,PTCH2 [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 86 ],
+    "parents" : [ 445151, 445147 ],
+    "children" : [ 445133, 445136 ]
+  }, {
+    "dbId" : 8943426,
+    "stId" : "R-HSA-8943426",
+    "displayName" : "UCN3 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q969E3",
+    "geneNames" : [ "UCN3", "SPC" ],
+    "parents" : [ 8937627 ]
+  }, {
+    "dbId" : 445133,
+    "stId" : "R-HSA-445133",
+    "displayName" : "PTCH1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13635",
+    "geneNames" : [ "PTCH1", "PTCH" ],
+    "parents" : [ 445134 ]
+  }, {
+    "dbId" : 420554,
+    "stId" : "R-HSA-420554",
+    "displayName" : "PTH1R,PTH2R [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 70 ],
+    "parents" : [ 790204, 420503 ],
+    "children" : [ 420476, 420479 ]
+  }, {
+    "dbId" : 201676,
+    "stId" : "R-HSA-201676",
+    "displayName" : "WNT3 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P56703",
+    "geneNames" : [ "WNT3", "INT4" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 419798,
+    "stId" : "R-HSA-419798",
+    "displayName" : "CALCR [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3 ],
+    "identifier" : "P30988",
+    "geneNames" : [ "CALCR" ],
+    "parents" : [ 790204, 420186, 420172, 420212, 419848 ]
+  }, {
+    "dbId" : 445140,
+    "stId" : "R-HSA-445140",
+    "displayName" : "CHOL-N-palmitoyl-L-cysteine-SHH(24-197) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15465",
+    "geneNames" : [ "SHH" ],
+    "parents" : [ 445153 ]
+  }, {
+    "dbId" : 419795,
+    "stId" : "R-HSA-419795",
+    "displayName" : "CGRP ligands [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 11 ],
+    "parents" : [ 790205, 420236 ],
+    "children" : [ 419836, 419826 ]
+  }, {
+    "dbId" : 445136,
+    "stId" : "R-HSA-445136",
+    "displayName" : "PTCH2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y6C5",
+    "geneNames" : [ "PTCH2", "UNQ560/PRO1121/PRO57079" ],
+    "parents" : [ 445134 ]
+  }, {
+    "dbId" : 420062,
+    "stId" : "R-HSA-420062",
+    "displayName" : "Adrenomedullin receptor:ADM,ADM2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 17 ],
+    "parents" : [ 391181 ],
+    "children" : [ 420061, 420118 ]
+  }, {
+    "dbId" : 201690,
+    "stId" : "R-HSA-201690",
+    "displayName" : "WNT2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P09544",
+    "geneNames" : [ "WNT2", "INT1L1", "IRP" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 420063,
+    "stId" : "R-HSA-420063",
+    "displayName" : "GLP2R [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 132 ],
+    "identifier" : "O95838",
+    "geneNames" : [ "GLP2R" ],
+    "parents" : [ 790204, 420087 ]
+  }, {
+    "dbId" : 445151,
+    "stId" : "R-HSA-445151",
+    "displayName" : "Patched:Hedgehog [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 89 ],
+    "children" : [ 445134, 445153 ]
+  }, {
+    "dbId" : 416476,
+    "stId" : "R-HSA-416476",
+    "displayName" : "G alpha (q) signalling events",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 169 ]
+  }, {
+    "dbId" : 420572,
+    "stId" : "R-HSA-420572",
+    "displayName" : "PTH2(62-100) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96A98",
+    "geneNames" : [ "PTH2", "TIP39", "TIPF39" ],
+    "parents" : [ 420569 ]
+  }, {
+    "dbId" : 420060,
+    "stId" : "R-HSA-420060",
+    "displayName" : "SCT [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 148 ],
+    "identifier" : "P09683",
+    "geneNames" : [ "SCT" ],
+    "parents" : [ 790205, 420082 ]
+  }, {
+    "dbId" : 381662,
+    "stId" : "R-HSA-381662",
+    "displayName" : "mature GLP-1 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 127 ],
+    "parents" : [ 790205 ],
+    "children" : [ 381699, 381636 ]
+  }, {
+    "dbId" : 445149,
+    "stId" : "R-HSA-445149",
+    "displayName" : "CHOL-N-palmitoyl-L-cysteine-IHH(28-202) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14623",
+    "geneNames" : [ "IHH" ],
+    "parents" : [ 445153 ]
+  }, {
+    "dbId" : 420061,
+    "stId" : "R-HSA-420061",
+    "displayName" : "ADM,ADM2 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 16 ],
+    "parents" : [ 790205, 420062 ],
+    "children" : [ 420093, 420230 ]
+  }, {
+    "dbId" : 400093,
+    "stId" : "R-HSA-400093",
+    "displayName" : "G-protein beta subunit [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 400034 ],
+    "children" : [ 6814412, 6814414, 6814416, 6814417, 6814421 ]
+  }, {
+    "dbId" : 445147,
+    "stId" : "R-HSA-445147",
+    "displayName" : "PTCH1,PTCH2:SMO [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 88 ],
+    "children" : [ 445134, 445121 ]
+  }, {
+    "dbId" : 381656,
+    "stId" : "R-HSA-381656",
+    "displayName" : "GLP-1:GLP-1R [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 422311, 422310, 391181 ],
+    "children" : [ 400574, 381684 ]
+  }, {
+    "dbId" : 420569,
+    "stId" : "R-HSA-420569",
+    "displayName" : "PTH1R,PTH2R ligands [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 71 ],
+    "parents" : [ 790205, 420503 ],
+    "children" : [ 420445, 420572, 420444 ]
+  }, {
+    "dbId" : 420068,
+    "stId" : "R-HSA-420068",
+    "displayName" : "GHRH [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 136 ],
+    "identifier" : "P01286",
+    "geneNames" : [ "GHRH", "GHRF" ],
+    "parents" : [ 790205, 420258 ]
+  }, {
+    "dbId" : 201702,
+    "stId" : "R-HSA-201702",
+    "displayName" : "WNT1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04628",
+    "geneNames" : [ "WNT1", "INT1" ],
+    "parents" : [ 206831, 206761, 517409, 976184 ]
+  }, {
+    "dbId" : 445155,
+    "stId" : "R-HSA-445155",
+    "displayName" : "CHOL-N-palmitoyl-L-cysteine-DHH(23-198) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43323",
+    "geneNames" : [ "DHH" ],
+    "parents" : [ 445153 ]
+  }, {
+    "dbId" : 164325,
+    "stId" : "R-HSA-164325",
+    "displayName" : "GNG7 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60262",
+    "geneNames" : [ "GNG7", "GNGT7" ],
+    "parents" : [ 1013010, 164340, 400062, 167442 ]
+  }, {
+    "dbId" : 445153,
+    "stId" : "R-HSA-445153",
+    "displayName" : "Hh-Np [extracellular region]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 445151, 5362546, 5362543 ],
+    "children" : [ 445140, 445149, 445155 ]
+  }, {
+    "dbId" : 420079,
+    "stId" : "R-HSA-420079",
+    "displayName" : "GHRHR [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 135 ],
+    "identifier" : "Q02643",
+    "geneNames" : [ "GHRHR" ],
+    "parents" : [ 790204, 420258 ]
+  }, {
+    "dbId" : 420076,
+    "stId" : "R-HSA-420076",
+    "displayName" : "IAPP(34-70) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "identifier" : "P10997",
+    "geneNames" : [ "IAPP" ],
+    "parents" : [ 977181, 976981, 790205, 420147 ]
+  }, {
+    "dbId" : 164329,
+    "stId" : "R-HSA-164329",
+    "displayName" : "GNG11 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61952",
+    "geneNames" : [ "GNG11", "GNGT11" ],
+    "parents" : [ 164340, 400062, 167442 ]
+  }, {
+    "dbId" : 29420,
+    "stId" : "R-ALL-29420",
+    "displayName" : "GDP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17552",
+    "parents" : [ 500077, 482627, 170037, 110416, 165123, 351066, 350999, 9799242, 9514751, 9435538, 9633051, 9875313, 9356857, 9279579, 9209834, 9700663, 9579475, 8871137, 9129987, 9279042, 9578956, 9514172, 9209233, 9700124, 9434887, 9874464, 9798422, 9356205, 9632608, 8868609, 9129655, 2316331, 9630989, 9276658, 9511359, 9353796, 9087903, 9046398, 9697857, 9576800, 9432239, 199988, 9631307, 9277178, 9354234, 9046459, 9926823, 9432735, 9128709, 9577086, 9511899, 9207078, 9872799, 9698299, 9056162, 9999004, 9796020, 9087978, 8850024, 9872217, 9795289, 9576712, 9511259, 9432133, 9128449, 9630923, 9087869, 9046365, 9206479, 9353708, 8847530, 9630877, 9795195, 9353616, 9872171, 9697727, 9206389, 9432042, 9511170, 9576656, 9276477, 6814641, 9794728, 9276081, 9070262, 9205943, 9576296, 9087768, 9926140, 9871804, 9353159, 9510742, 9630516, 9697366, 9056047, 9431628, 9997626, 9128169, 6811310, 9046158, 9070275, 9871822, 9431639, 9697380, 9510758, 9353176, 9576305, 9276092, 9128186, 9046171, 9630530, 6811351, 9205954, 9512554, 9277814, 9088272, 9698922, 9046749, 9207772, 9927131, 9354916, 9577654, 9631729, 9433389, 8854216, 9207697, 9354836, 9046707, 9277749, 9056318, 9512483, 9796762, 9088197, 9698847, 9577594, 9873424, 9631668, 9129007, 9433324, 8854215, 9577692, 9512621, 9277862, 9056352, 9207813, 9433447, 9698964, 9354985, 9796897, 9129071, 9088297, 9631762, 8854591, 9927112, 9512526, 9631692, 9433361, 9873482, 9698891, 9277786, 9207739, 9999469, 9070782, 9088249, 9129028, 9046725, 9354885, 9577626, 9796820, 9056331, 8854176, 9056565, 9071057, 9357076, 9633221, 9088889, 9279775, 9130116, 9047559, 9435749, 9928639, 9210052, 9579668, 9875507, 10001628, 8875329, 9130388, 9357410, 9701103, 9633465, 9088993, 9875868, 9579944, 9280052, 9799859, 9515239, 9210366, 9436047, 8877292, 9436048, 9130389, 9357411, 9875869, 9515240, 9280053, 9088994, 9701104, 9210367, 9799860, 8877294, 9435860, 9210170, 9088924, 9357211, 9515045, 9928741, 9071098, 9579773, 9875640, 9047620, 9130247, 9279882, 10001789, 9799604, 9700917, 8876130, 9633324, 9875692, 9799631, 9357238, 9130291, 10001807, 9279899, 9071103, 9700934, 9088929, 9515065, 9928752, 9435880, 9210187, 9047627, 9579794, 8876118, 9701114, 9633471, 9579950, 9280065, 9799874, 9436058, 9515250, 9357421, 9210381, 9089002, 8877285, 9210194, 9047638, 9928771, 9799649, 9515072, 9357247, 9279906, 9579806, 9633337, 9875700, 9700950, 9088936, 9435887, 8876112, 9280195, 9876075, 9580063, 9210503, 9436181, 9357540, 9515398, 9130478, 9056655, 9089048, 8877807, 9799483, 9514943, 9279763, 9875499, 9056551, 9088883, 9435737, 9357064, 9210040, 9579648, 8875328, 9279986, 9071125, 9701034, 9633411, 9357343, 9875801, 9435970, 9088960, 9047712, 9515160, 9799762, 9130344, 9210285, 9579890, 8876598, 9875882, 9357429, 9071153, 9799884, 9210389, 9089011, 9056626, 10002031, 9633479, 9130399, 9701127, 9515264, 9436066, 9047751, 9928923, 9579958, 9280073, 8877448, 9436117, 9130449, 9580001, 9799943, 9875943, 9280124, 9701178, 9047815, 9210439, 9633499, 9357479, 9515319, 8877602, 9056663, 9701261, 9047858, 9280221, 9580092, 9876123, 9515421, 9929020, 9633561, 9130496, 9210534, 10002128, 9089058, 9800051, 9436206, 9357583, 8877991, 9357521, 9515375, 9280179, 9701225, 9580047, 9089041, 9876046, 9210489, 9436156, 9799994, 9633535, 9047852, 9130473, 8877753, 9928778, 9799656, 9633358, 9056595, 9047677, 9357275, 9279928, 9875707, 9071110, 9579835, 10001840, 9130307, 9515094, 9435912, 9700977, 9088943, 9210222, 8876124, 9071159, 9130417, 9875905, 9436089, 9579974, 9089017, 9056633, 10002058, 9799911, 9280093, 9928955, 9047782, 9701150, 9515291, 9357449, 9633495, 9210409, 8877477, 9799912, 9130418, 9056637, 9436090, 10002059, 9280094, 9071160, 9089018, 9515292, 9047783, 9928956, 9210410, 9357450, 8877469, 9701067, 9088981, 9579913, 9210324, 9047743, 9357373, 9875844, 9435997, 9799801, 9633438, 9130375, 9515192, 10002011, 9280013, 8876839, 9210259, 9088949, 9799726, 9279960, 9579874, 9130340, 9875770, 9357317, 9515131, 9056610, 9435944, 9701009, 9633395, 8876451, 9515150, 9210275, 9357333, 9071121, 9928878, 9047699, 10001984, 9435960, 9799747, 9088956, 9701025, 9279976, 8876601, 9298487, 9892417, 9531910, 9650598, 9076895, 9594113, 9455106, 9947271, 9376863, 9147654, 9723676, 9061506, 9034081, 9227752, 9098603, 9819733, 194900, 9341488, 9566621, 9265654, 9083971, 9622071, 9041676, 9686167, 9193646, 9054267, 5623424, 9120414, 9566415, 9083924, 9041621, 9341303, 9685989, 9912323, 9066264, 9419614, 9859302, 9621887, 9265472, 9980991, 9193419, 9779411, 9120362, 9498672, 5623441, 141699, 156922, 159625, 9096101, 9222930, 9450011, 9645451, 9293285, 9075858, 9033004, 9371343, 156917, 9222929, 9527597, 9075857, 9645450, 9051422, 9943333, 9890150, 9096100, 9590878, 9450010, 9293284, 9060610, 9033003, 9371342, 156929, 9938504, 9074005, 9886605, 9523336, 9640740, 9444455, 9093501, 9710245, 9365726, 9288290, 9218499, 9058926, 9810839, 9586800, 9031016, 9136363, 72529, 9050428, 9710446, 9074320, 9939392, 9811107, 9887235, 9444835, 9136633, 9031224, 9093731, 9640916, 9586965, 9059309, 9365901, 9050632, 9523505, 72502, 9365683, 9073974, 9886497, 9938433, 9523303, 9444417, 9218461, 9093467, 9710203, 9810779, 9640701, 9030980, 9050401, 9586779, 9288270, 9058891, 72530, 9136316, 9056468, 9047060, 9434722, 9928108, 9088465, 9699948, 9578794, 9278872, 10000572, 9513986, 9209055, 9356014, 8867461, 9208835, 9046981, 9699754, 9355794, 9578601, 9056416, 9513784, 9434518, 9278677, 9088418, 10000316, 9927910, 8867455, 8955708, 9700558, 9514694, 9633031, 9579456, 9279519, 9435454, 9129978, 9799141, 9047450, 10001622, 9928633, 9356739, 9088871, 9875258, 9209771, 9071051, 8875337, 9279346, 9088661, 9798889, 9928333, 9435253, 9356535, 9070995, 9047251, 9514505, 9632900, 9700390, 10000983, 9874936, 9579288, 9209574, 9129857, 9056546, 8875311, 9800762, 9515980, 9436866, 9211153, 9580625, 8938820, 9536365, 9232214, 9654795, 9951072, 9303545, 9894885, 9381916, 9597888, 9051972, 9078145, 9460408, 9062319, 9035146, 201340, 9652879, 9948780, 9727469, 9458216, 9596132, 9034783, 9379835, 9077822, 9893477, 9822651, 9055238, 9534424, 9068739, 9150926, 9124072, 206617, 9736840, 9238167, 9309339, 9467076, 9388717, 400036, 9160687, 9221399, 9942319, 9526086, 9643781, 9589511, 9889346, 9448195, 9076069, 9095495, 9814876, 9369705, 9291594, 9032522, 9140137, 9714549, 111864, 2530509, 9333717, 9679513, 9560582, 9491172, 9259049, 9412044, 9769703, 74062, 165538, 165549, 9622349, 9566861, 9054192, 9341783, 9780007, 9120730, 9912295, 9686435, 9041604, 9980948, 9083904, 9265931, 9193960, 9498450, 9859798, 9419439, 5610519, 3928558, 428485, 9167989, 9063668, 9606127, 9664840, 9473803, 9052529, 9545899, 9835983, 9080231, 9395523, 9316130, 9108256, 9745725, 9965404, 9902772, 9244236, 9037385, 143378, 5359048, 5359051, 9653068, 9034870, 9458542, 9948874, 9727753, 9380178, 9893518, 9077918, 9596449, 9151258, 9534721, 9051876, 9822972, 9062093, 9230575, 9301709, 203989, 9100736, 9509742, 9204915, 9629932, 9925569, 9996685, 9087515, 9696771, 9793946, 9430467, 9575764, 9352328, 9275211, 9045673, 9070058, 6807786, 9127523, 9503784, 9919087, 9424695, 9055166, 9270175, 9785604, 9123300, 9067973, 9085476, 9346567, 9198949, 9043308, 9864277, 9987162, 9690961, 9625619, 5694296, 9570860, 187734, 9592013, 9295408, 9144432, 9529227, 9076147, 9096571, 9224899, 9647454, 9033317, 9817148, 9719484, 9373704, 9452086, 169860, 182015, 187652, 187671, 171005, 171002, 112372, 9373808, 9452190, 9719641, 9144566, 9592090, 9647604, 9225006, 9529281, 170669, 9295559, 9831373, 9240535, 9740547, 9542373, 9391419, 9036472, 9603005, 9105380, 9079264, 9469815, 9163561, 9660946, 206896, 9312037, 9372562, 9294516, 9075999, 9646496, 9591552, 9718297, 9451132, 9060737, 9143330, 9816786, 9528498, 9033195, 165191, 9224037, 421117, 9079221, 9740392, 9311922, 9602921, 9062928, 9660834, 9542267, 9163426, 9469688, 9240426, 9831222, 9391247, 442278, 9105262, 9660844, 9240433, 9391254, 9062930, 9311929, 9542274, 9469698, 9079224, 9831229, 9740402, 9602928, 9163433, 442313, 9105269, 9035575, 9826894, 9466200, 9657812, 9735506, 9539287, 9078415, 9102926, 9062430, 9387740, 9159769, 9600339, 418830, 9619005, 9774008, 9494557, 9337299, 9563194, 9118496, 4551532, 9682571, 9855363, 9262014, 3965392, 9188957, 9831657, 9127764, 9078325, 9611468, 9649736, 9146736, 9454185, 9740972, 9531077, 9052024, 9297602, 9951706, 9035424, 9226891, 9070253, 9895283, 9375978, 190512, 1250493, 9723400, 9061430, 9076818, 9376507, 9593856, 9819653, 9650275, 9098522, 9454718, 9298126, 9531571, 9147305, 9227405, 8964174, 9101686, 9655051, 9035231, 9460677, 9232479, 9598112, 9382173, 9303868, 9731001, 9536635, 9153538, 9078221, 9825207, 354074, 9408402, 9181430, 9557448, 9039344, 9255416, 9675938, 9847066, 9081734, 9763837, 9114028, 9329576, 9487061, 9614384, 5674631, 9076466, 9818465, 9375099, 9226173, 9033721, 9648924, 9721498, 9145863, 9530299, 9453428, 9592881, 9097544, 9296813, 109796, 9657804, 421113, 9600334, 9035573, 9159761, 9826892, 9308351, 9237351, 9078413, 9102924, 9735505, 9539282, 9466192, 445010, 9096375, 9075985, 9143090, 9591398, 9294238, 9372414, 9943615, 9462262, 9816497, 9646384, 9890356, 9528336, 9718100, 164333, 9223875, 9815210, 9095733, 9032695, 9448653, 9221780, 9526464, 9370079, 9075717, 9644217, 9589880, 9292005, 9715127, 114543, 9140644, 9224083, 9084277, 9451177, 9816835, 9591591, 9294553, 9718342, 9121305, 9528542, 9372614, 9042016, 9646544, 9066474, 5653977, 9121302, 9646539, 9084274, 9718339, 9591588, 9816832, 9042013, 9451171, 9372609, 9066471, 9528539, 9358154, 9224078, 5653981, 5653970, 9528559, 9372629, 9816844, 9066483, 9084286, 9224093, 9294563, 9121319, 9646554, 9718352, 9591601, 9451187, 9042025, 5653973, 9143391, 9143378, 9143373 ]
+  }, {
+    "dbId" : 201710,
+    "stId" : "R-HSA-201710",
+    "displayName" : "WNT3A [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P56704",
+    "geneNames" : [ "WNT3A" ],
+    "parents" : [ 517409 ]
+  }, {
+    "dbId" : 164333,
+    "stId" : "R-HSA-164333",
+    "displayName" : "G alpha (s):GDP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 432200, 164384, 422310, 422314, 391179 ],
+    "children" : [ 29420, 8873941 ]
+  }, {
+    "dbId" : 381684,
+    "stId" : "R-HSA-381684",
+    "displayName" : "GLP1R [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P43220",
+    "geneNames" : [ "GLP1R" ],
+    "parents" : [ 422314, 790204, 381656 ]
+  }, {
+    "dbId" : 420087,
+    "stId" : "R-HSA-420087",
+    "displayName" : "GLP2R:GCG(146-178) [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 133 ],
+    "parents" : [ 391181 ],
+    "children" : [ 420063, 420211 ]
+  }, {
+    "dbId" : 419826,
+    "stId" : "R-HSA-419826",
+    "displayName" : "CALCB(82-118) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10092",
+    "geneNames" : [ "CALCB", "CALC2" ],
+    "parents" : [ 419795 ]
+  }, {
+    "dbId" : 420082,
+    "stId" : "R-HSA-420082",
+    "displayName" : "SCTR:SCT [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 149 ],
+    "parents" : [ 391181 ],
+    "children" : [ 420060, 420097 ]
+  }, {
+    "dbId" : 8937597,
+    "stId" : "R-HSA-8937597",
+    "displayName" : "CRHR1, CRHR2-1 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 47 ],
+    "parents" : [ 8937614 ],
+    "children" : [ 8937589, 420166 ]
+  }, {
+    "dbId" : 8937598,
+    "stId" : "R-HSA-8937598",
+    "displayName" : "CRHBP [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 32 ],
+    "identifier" : "P24387",
+    "geneNames" : [ "CRHBP", "CRFBP" ],
+    "parents" : [ 8937605 ]
+  }, {
+    "dbId" : 420080,
+    "stId" : "R-HSA-420080",
+    "displayName" : "ADCYAP1 peptides [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 143 ],
+    "parents" : [ 790205, 420103 ],
+    "children" : [ 420282, 420254, 420144 ]
+  }, {
+    "dbId" : 164346,
+    "stId" : "R-HSA-164346",
+    "displayName" : "GNG13 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9P2W3",
+    "geneNames" : [ "GNG13" ],
+    "parents" : [ 400532, 164340, 400062, 167442 ]
+  }, {
+    "dbId" : 419836,
+    "stId" : "R-HSA-419836",
+    "displayName" : "CALCA(83-119) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P06881",
+    "geneNames" : [ "CALCA", "CALC1" ],
+    "parents" : [ 419795 ]
+  }, {
+    "dbId" : 164344,
+    "stId" : "R-HSA-164344",
+    "displayName" : "GNG10 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50151",
+    "geneNames" : [ "GNG10", "GNGT10" ],
+    "parents" : [ 1013010, 164340, 400062, 167442 ]
+  }, {
+    "dbId" : 420093,
+    "stId" : "R-HSA-420093",
+    "displayName" : "ADM(95-146) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35318",
+    "geneNames" : [ "ADM", "AM" ],
+    "parents" : [ 420061 ]
+  }, {
+    "dbId" : 8937588,
+    "stId" : "R-HSA-8937588",
+    "displayName" : "CRH,UCN [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 48 ],
+    "parents" : [ 8937614 ],
+    "children" : [ 420146, 8931580 ]
+  }, {
+    "dbId" : 164350,
+    "stId" : "R-HSA-164350",
+    "displayName" : "GNG4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50150",
+    "geneNames" : [ "GNG4", "GNGT4" ],
+    "parents" : [ 1013010, 164340, 400062, 167442 ]
+  }, {
+    "dbId" : 418555,
+    "stId" : "R-HSA-418555",
+    "displayName" : "G alpha (s) signalling events",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 159 ]
+  }, {
+    "dbId" : 8937589,
+    "stId" : "R-HSA-8937589",
+    "displayName" : "CRHR2-1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13324-1",
+    "geneNames" : [ "CRHR2", "CRF2R", "CRH2R" ],
+    "parents" : [ 8937597 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 445124,
+    "stId" : "R-HSA-445124",
+    "displayName" : "Patched binds Smoothened",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 445134, 445121 ],
+    "outputs" : [ 445147 ],
+    "efs" : [ ],
+    "inhibitors" : [ 445151 ],
+    "diagramIds" : [ 85 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 444773,
+    "stId" : "R-HSA-444773",
+    "displayName" : "EGF-TM7 receptors bind chondroitin sulphate",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 444761, 444765 ],
+    "outputs" : [ 444754 ],
+    "efs" : [ ],
+    "diagramIds" : [ 150 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8937613,
+    "stId" : "R-HSA-8937613",
+    "displayName" : "CRHBP binds CRH",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8937598, 420146 ],
+    "outputs" : [ 8937605 ],
+    "efs" : [ ],
+    "diagramIds" : [ 30 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420131,
+    "stId" : "R-HSA-420131",
+    "displayName" : "The PACAP receptor binds PACAP",
+    "schemaClass" : "Reaction",
+    "following" : [ 744887 ],
+    "inputs" : [ 420269, 420080 ],
+    "outputs" : [ 420103 ],
+    "efs" : [ ],
+    "diagramIds" : [ 142 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 419843,
+    "stId" : "R-HSA-419843",
+    "displayName" : "Calcitonin receptor binds calcitonin",
+    "schemaClass" : "Reaction",
+    "following" : [ 744887 ],
+    "inputs" : [ 419781, 419798 ],
+    "outputs" : [ 419848 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 381612,
+    "stId" : "R-HSA-381612",
+    "displayName" : "Glucagon-like Peptide-1 Receptor (GLP1R) binds Glucagon-like peptide-1",
+    "schemaClass" : "Reaction",
+    "following" : [ 381706, 744887 ],
+    "inputs" : [ 422314, 381662 ],
+    "outputs" : [ 422310 ],
+    "efs" : [ ],
+    "diagramIds" : [ 126 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420173,
+    "stId" : "R-HSA-420173",
+    "displayName" : "CRHR1,CRHR2-1 binds CRH,UCN",
+    "schemaClass" : "Reaction",
+    "following" : [ 744887 ],
+    "inputs" : [ 8937588, 8937597 ],
+    "outputs" : [ 8937614 ],
+    "efs" : [ ],
+    "diagramIds" : [ 46 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 163625,
+    "stId" : "R-HSA-163625",
+    "displayName" : "Glucagon binds to Glucagon receptor",
+    "schemaClass" : "Reaction",
+    "following" : [ 825631, 744887, 749448 ],
+    "inputs" : [ 163626, 163618 ],
+    "outputs" : [ 163627 ],
+    "efs" : [ ],
+    "diagramIds" : [ 122 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420202,
+    "stId" : "R-HSA-420202",
+    "displayName" : "Secretin receptor binds secretin",
+    "schemaClass" : "Reaction",
+    "following" : [ 744887 ],
+    "inputs" : [ 420060, 420097 ],
+    "outputs" : [ 420082 ],
+    "efs" : [ ],
+    "diagramIds" : [ 146 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420233,
+    "stId" : "R-HSA-420233",
+    "displayName" : "VIP receptors bind VIP",
+    "schemaClass" : "Reaction",
+    "following" : [ 744887 ],
+    "inputs" : [ 420267, 420208 ],
+    "outputs" : [ 420213 ],
+    "efs" : [ ],
+    "diagramIds" : [ 138 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 201708,
+    "stId" : "R-HSA-201708",
+    "displayName" : "Frizzled receptors bind Wnts",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 517388, 517409 ],
+    "outputs" : [ 517468 ],
+    "efs" : [ ],
+    "diagramIds" : [ 102 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420265,
+    "stId" : "R-HSA-420265",
+    "displayName" : "Amylin receptors can bind Amylin",
+    "schemaClass" : "Reaction",
+    "following" : [ 744887 ],
+    "inputs" : [ 420237, 420076 ],
+    "outputs" : [ 420147 ],
+    "efs" : [ ],
+    "diagramIds" : [ 6 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420489,
+    "stId" : "R-HSA-420489",
+    "displayName" : "Parathyroid hormone receptor can bind parathyroid hormone",
+    "schemaClass" : "Reaction",
+    "following" : [ 744887 ],
+    "inputs" : [ 420569, 420554 ],
+    "outputs" : [ 420503 ],
+    "efs" : [ ],
+    "diagramIds" : [ 69 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420214,
+    "stId" : "R-HSA-420214",
+    "displayName" : "The adrenomedullin receptor can bind adrenomedullin and intermedin",
+    "schemaClass" : "Reaction",
+    "following" : [ 744887 ],
+    "inputs" : [ 420061, 420118 ],
+    "outputs" : [ 420062 ],
+    "efs" : [ ],
+    "diagramIds" : [ 14 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420274,
+    "stId" : "R-HSA-420274",
+    "displayName" : "GIP receptor binds gastric inhibitory peptide",
+    "schemaClass" : "Reaction",
+    "following" : [ 744887 ],
+    "inputs" : [ 400540, 420132 ],
+    "outputs" : [ 420229 ],
+    "efs" : [ ],
+    "diagramIds" : [ 118 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420243,
+    "stId" : "R-HSA-420243",
+    "displayName" : "GHRH receptor binds GHRH",
+    "schemaClass" : "Reaction",
+    "following" : [ 744887 ],
+    "inputs" : [ 420079, 420068 ],
+    "outputs" : [ 420258 ],
+    "efs" : [ ],
+    "diagramIds" : [ 134 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8937631,
+    "stId" : "R-HSA-8937631",
+    "displayName" : "CRHR2-2 binds CRH,UCN,UCN2,UCN3",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8937630, 8937627 ],
+    "outputs" : [ 8937629 ],
+    "efs" : [ ],
+    "diagramIds" : [ 63 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 879674,
+    "stId" : "R-HSA-879674",
+    "displayName" : "CD97 binds CD55",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 879667, 444764 ],
+    "outputs" : [ 879676 ],
+    "efs" : [ ],
+    "diagramIds" : [ 154 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420127,
+    "stId" : "R-HSA-420127",
+    "displayName" : "CGRP receptor can bind calcitonin gene-related peptides",
+    "schemaClass" : "Reaction",
+    "following" : [ 744887 ],
+    "inputs" : [ 419795, 419782 ],
+    "outputs" : [ 420236 ],
+    "efs" : [ ],
+    "diagramIds" : [ 10 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 420123,
+    "stId" : "R-HSA-420123",
+    "displayName" : "Glucagon-like receptor 2 binds GLP2",
+    "schemaClass" : "Reaction",
+    "following" : [ 744887 ],
+    "inputs" : [ 420063, 420211 ],
+    "outputs" : [ 420087 ],
+    "efs" : [ ],
+    "diagramIds" : [ 130 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 419812,
+    "stId" : "R-HSA-419812",
+    "displayName" : "Calcitonin-like ligand receptors",
+    "events" : [ 420214, 419843, 420127, 420265 ]
+  }, {
+    "dbId" : 420092,
+    "stId" : "R-HSA-420092",
+    "displayName" : "Glucagon-type ligand receptors",
+    "events" : [ 420274, 420243, 420131, 381612, 163625, 420202, 420123, 420233 ]
+  } ]
+}

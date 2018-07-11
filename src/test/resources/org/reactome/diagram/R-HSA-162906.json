@@ -1,0 +1,66 @@
+{
+  "dbId" : 162906,
+  "stableId" : "R-HSA-162906",
+  "displayName" : "HIV Infection",
+  "nodes" : [ {
+    "id" : 295,
+    "reactomeId" : 162909,
+    "displayName" : "Host Interactions of HIV factors",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 361,
+      "y" : 97
+    },
+    "minX" : 289,
+    "maxX" : 434,
+    "minY" : 65,
+    "maxY" : 130,
+    "prop" : {
+      "x" : 289,
+      "y" : 65,
+      "width" : 145,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 296,
+      "y" : 76
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 296,
+    "reactomeId" : 162587,
+    "displayName" : "HIV Life Cycle",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 181,
+      "y" : 98
+    },
+    "minX" : 110,
+    "maxX" : 253,
+    "minY" : 66,
+    "maxY" : 130,
+    "prop" : {
+      "x" : 110,
+      "y" : 66,
+      "width" : 143,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 134,
+      "y" : 83
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 110,
+  "maxX" : 434,
+  "minY" : 65,
+  "maxY" : 130,
+  "disease" : false
+}

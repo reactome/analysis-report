@@ -1,0 +1,3886 @@
+{
+  "dbId" : 6807505,
+  "stableId" : "R-HSA-6807505",
+  "displayName" : "RNA polymerase II transcribes snRNA genes",
+  "nodes" : [ {
+    "id" : 64,
+    "reactomeId" : 191803,
+    "displayName" : "PHAX",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1122,
+      "y" : 663
+    },
+    "minX" : 1004,
+    "maxX" : 1152,
+    "minY" : 611,
+    "maxY" : 676,
+    "prop" : {
+      "x" : 1099,
+      "y" : 651,
+      "width" : 47,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 1102,
+      "y" : 653
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1146,
+          "y" : 651
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 62,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1096,
+          "y" : 652
+        },
+        "to" : {
+          "x" : 1004,
+          "y" : 611
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 65,
+    "reactomeId" : 6814858,
+    "displayName" : "SRRT",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1088,
+      "y" : 703
+    },
+    "minX" : 1004,
+    "maxX" : 1121,
+    "minY" : 611,
+    "maxY" : 716,
+    "prop" : {
+      "x" : 1062,
+      "y" : 691,
+      "width" : 53,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 1069,
+      "y" : 693
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1115,
+          "y" : 691
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 62,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1076,
+          "y" : 688
+        },
+        "to" : {
+          "x" : 1004,
+          "y" : 611
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 66,
+    "reactomeId" : 6814929,
+    "displayName" : "POU2F1,2",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 397,
+      "y" : 103
+    },
+    "minX" : 362,
+    "maxX" : 461,
+    "minY" : 74,
+    "maxY" : 114,
+    "prop" : {
+      "x" : 362,
+      "y" : 92,
+      "width" : 70,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 364,
+      "y" : 92
+    },
+    "connectors" : [ {
+      "edgeId" : 2,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 421,
+          "y" : 86
+        },
+        "to" : {
+          "x" : 461,
+          "y" : 74
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 83837,
+    "displayName" : "ZNF143",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 441,
+      "y" : 43
+    },
+    "minX" : 408,
+    "maxX" : 481,
+    "minY" : 26,
+    "maxY" : 74,
+    "prop" : {
+      "x" : 408,
+      "y" : 32,
+      "width" : 67,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 414,
+      "y" : 33
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 475,
+          "y" : 32
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 448,
+          "y" : 58
+        },
+        "to" : {
+          "x" : 461,
+          "y" : 74
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 68,
+    "reactomeId" : 1592223,
+    "displayName" : "SP1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 371,
+      "y" : 49
+    },
+    "minX" : 355,
+    "maxX" : 461,
+    "minY" : 32,
+    "maxY" : 74,
+    "prop" : {
+      "x" : 355,
+      "y" : 38,
+      "width" : 33,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 357,
+      "y" : 38
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 388,
+          "y" : 38
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 391,
+          "y" : 53
+        },
+        "to" : {
+          "x" : 461,
+          "y" : 74
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 69,
+    "reactomeId" : 112420,
+    "displayName" : "DSIF complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 414,
+      "y" : 813
+    },
+    "minX" : 362,
+    "maxX" : 467,
+    "minY" : 782,
+    "maxY" : 825,
+    "prop" : {
+      "x" : 362,
+      "y" : 801,
+      "width" : 105,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 372,
+      "y" : 804
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 421,
+          "y" : 798
+        },
+        "to" : {
+          "x" : 432,
+          "y" : 782
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 431,
+          "y" : 790
+        },
+        "b" : {
+          "x" : 432,
+          "y" : 782
+        },
+        "c" : {
+          "x" : 425,
+          "y" : 785
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 5,
+    "reactomeId" : 6807498,
+    "displayName" : "U1,U2,U4,U4atac,U5,U11,U12 gene",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 192,
+      "y" : 70
+    },
+    "minX" : 73,
+    "maxX" : 461,
+    "minY" : 54,
+    "maxY" : 86,
+    "prop" : {
+      "x" : 73,
+      "y" : 54,
+      "width" : 239,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 84,
+      "y" : 59
+    },
+    "connectors" : [ {
+      "edgeId" : 2,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 318,
+          "y" : 71
+        },
+        "to" : {
+          "x" : 461,
+          "y" : 74
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 70,
+    "reactomeId" : 6814915,
+    "displayName" : "SSU72",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 901,
+      "y" : 424
+    },
+    "minX" : 872,
+    "maxX" : 991,
+    "minY" : 406,
+    "maxY" : 439,
+    "prop" : {
+      "x" : 872,
+      "y" : 412,
+      "width" : 59,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 879,
+      "y" : 413
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 931,
+          "y" : 412
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 934,
+          "y" : 427
+        },
+        "to" : {
+          "x" : 991,
+          "y" : 436
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 984,
+          "y" : 439
+        },
+        "b" : {
+          "x" : 991,
+          "y" : 436
+        },
+        "c" : {
+          "x" : 985,
+          "y" : 431
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 6807504,
+    "displayName" : "POU2F1,2:SP1:ZNF143:snRNA gene",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 768,
+      "y" : 74
+    },
+    "minX" : 651,
+    "maxX" : 886,
+    "minY" : 61,
+    "maxY" : 125,
+    "prop" : {
+      "x" : 651,
+      "y" : 61,
+      "width" : 235,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 661,
+      "y" : 67
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 769,
+          "y" : 91
+        },
+        "to" : {
+          "x" : 772,
+          "y" : 125
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 71,
+    "reactomeId" : 72019,
+    "displayName" : "PCF11",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 902,
+      "y" : 456
+    },
+    "minX" : 874,
+    "maxX" : 991,
+    "minY" : 436,
+    "maxY" : 468,
+    "prop" : {
+      "x" : 874,
+      "y" : 445,
+      "width" : 56,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 879,
+      "y" : 446
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 930,
+          "y" : 445
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 933,
+          "y" : 450
+        },
+        "to" : {
+          "x" : 991,
+          "y" : 439
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 985,
+          "y" : 444
+        },
+        "b" : {
+          "x" : 991,
+          "y" : 439
+        },
+        "c" : {
+          "x" : 983,
+          "y" : 436
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 83730,
+    "displayName" : "SNAPc",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 849,
+      "y" : 118
+    },
+    "minX" : 772,
+    "maxX" : 885,
+    "minY" : 107,
+    "maxY" : 129,
+    "prop" : {
+      "x" : 813,
+      "y" : 107,
+      "width" : 72,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 827,
+      "y" : 108
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 810,
+          "y" : 121
+        },
+        "to" : {
+          "x" : 772,
+          "y" : 125
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 9,
+    "reactomeId" : 6810222,
+    "displayName" : "SNAPc:POU2F1,2:SP1:ZNF143:snRNA gene",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 761,
+      "y" : 192
+    },
+    "minX" : 524,
+    "maxX" : 904,
+    "minY" : 179,
+    "maxY" : 240,
+    "prop" : {
+      "x" : 618,
+      "y" : 179,
+      "width" : 286,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 633,
+      "y" : 185
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 694,
+          "y" : 209
+        },
+        "to" : {
+          "x" : 524,
+          "y" : 240
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 11,
+    "reactomeId" : 83718,
+    "displayName" : "TBP",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 480,
+      "y" : 153
+    },
+    "minX" : 462,
+    "maxX" : 524,
+    "minY" : 136,
+    "maxY" : 240,
+    "prop" : {
+      "x" : 462,
+      "y" : 142,
+      "width" : 37,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 465,
+      "y" : 142
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 499,
+          "y" : 142
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 485,
+          "y" : 167
+        },
+        "to" : {
+          "x" : 524,
+          "y" : 240
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 12,
+    "reactomeId" : 109631,
+    "displayName" : "TFIIF",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 431,
+      "y" : 162
+    },
+    "minX" : 408,
+    "maxX" : 524,
+    "minY" : 151,
+    "maxY" : 240,
+    "prop" : {
+      "x" : 408,
+      "y" : 151,
+      "width" : 46,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 414,
+      "y" : 152
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 444,
+          "y" : 176
+        },
+        "to" : {
+          "x" : 524,
+          "y" : 240
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 13,
+    "reactomeId" : 109629,
+    "displayName" : "TFIIA",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 376,
+      "y" : 168
+    },
+    "minX" : 353,
+    "maxX" : 524,
+    "minY" : 157,
+    "maxY" : 240,
+    "prop" : {
+      "x" : 353,
+      "y" : 157,
+      "width" : 46,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 358,
+      "y" : 158
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 398,
+          "y" : 182
+        },
+        "to" : {
+          "x" : 524,
+          "y" : 240
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 14,
+    "reactomeId" : 109633,
+    "displayName" : "TFIIE",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 322,
+      "y" : 183
+    },
+    "minX" : 299,
+    "maxX" : 524,
+    "minY" : 172,
+    "maxY" : 240,
+    "prop" : {
+      "x" : 299,
+      "y" : 172,
+      "width" : 46,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 304,
+      "y" : 173
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 348,
+          "y" : 189
+        },
+        "to" : {
+          "x" : 524,
+          "y" : 240
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 15,
+    "reactomeId" : 112431,
+    "displayName" : "P-TEFb complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 142,
+      "y" : 209
+    },
+    "minX" : 77,
+    "maxX" : 524,
+    "minY" : 198,
+    "maxY" : 240,
+    "prop" : {
+      "x" : 77,
+      "y" : 198,
+      "width" : 130,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 90,
+      "y" : 199
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 210,
+          "y" : 214
+        },
+        "to" : {
+          "x" : 524,
+          "y" : 240
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 16,
+    "reactomeId" : 65888,
+    "displayName" : "GTF2B",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 536,
+      "y" : 153
+    },
+    "minX" : 509,
+    "maxX" : 570,
+    "minY" : 135,
+    "maxY" : 240,
+    "prop" : {
+      "x" : 509,
+      "y" : 141,
+      "width" : 55,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 513,
+      "y" : 142
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 564,
+          "y" : 141
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 534,
+          "y" : 168
+        },
+        "to" : {
+          "x" : 524,
+          "y" : 240
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 17,
+    "reactomeId" : 69218,
+    "displayName" : "CDK7",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 606,
+      "y" : 154
+    },
+    "minX" : 524,
+    "maxX" : 641,
+    "minY" : 137,
+    "maxY" : 240,
+    "prop" : {
+      "x" : 578,
+      "y" : 143,
+      "width" : 57,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 586,
+      "y" : 143
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 635,
+          "y" : 143
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 595,
+          "y" : 168
+        },
+        "to" : {
+          "x" : 524,
+          "y" : 240
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 6810225,
+    "displayName" : "Initiation factors:CDK7:snRNA gene",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 172,
+      "y" : 322
+    },
+    "minX" : 50,
+    "maxX" : 539,
+    "minY" : 309,
+    "maxY" : 367,
+    "prop" : {
+      "x" : 50,
+      "y" : 309,
+      "width" : 244,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 67,
+      "y" : 314
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 20,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 174,
+          "y" : 338
+        },
+        "to" : {
+          "x" : 179,
+          "y" : 367
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 10,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 47,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 297,
+          "y" : 319
+        },
+        "to" : {
+          "x" : 539,
+          "y" : 314
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 304,
+          "y" : 315
+        },
+        "b" : {
+          "x" : 297,
+          "y" : 319
+        },
+        "c" : {
+          "x" : 304,
+          "y" : 323
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 19,
+    "reactomeId" : 6810230,
+    "displayName" : "snTAFc",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 253,
+      "y" : 195
+    },
+    "minX" : 221,
+    "maxX" : 524,
+    "minY" : 184,
+    "maxY" : 240,
+    "prop" : {
+      "x" : 221,
+      "y" : 184,
+      "width" : 65,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 229,
+      "y" : 185
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 289,
+          "y" : 200
+        },
+        "to" : {
+          "x" : 524,
+          "y" : 240
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 21,
+    "reactomeId" : 113401,
+    "displayName" : "RNA Polymerase II holoenzyme complex (unphosphorylated)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 336,
+      "y" : 367
+    },
+    "minX" : 179,
+    "maxX" : 539,
+    "minY" : 314,
+    "maxY" : 387,
+    "prop" : {
+      "x" : 223,
+      "y" : 347,
+      "width" : 227,
+      "height" : 40
+    },
+    "textPosition" : {
+      "x" : 241,
+      "y" : 352
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 20,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 220,
+          "y" : 367
+        },
+        "to" : {
+          "x" : 179,
+          "y" : 367
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 47,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 412,
+          "y" : 344
+        },
+        "to" : {
+          "x" : 539,
+          "y" : 314
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 418,
+          "y" : 339
+        },
+        "b" : {
+          "x" : 412,
+          "y" : 344
+        },
+        "c" : {
+          "x" : 420,
+          "y" : 346
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 22,
+    "reactomeId" : 6810219,
+    "displayName" : "RNA polymerase II (unphosphorylated):Initiation factors at promoter of snRNA gene",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 180,
+      "y" : 430
+    },
+    "minX" : 28,
+    "maxX" : 332,
+    "minY" : 411,
+    "maxY" : 480,
+    "prop" : {
+      "x" : 28,
+      "y" : 411,
+      "width" : 304,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 37,
+      "y" : 414
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 20,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 24,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 188,
+          "y" : 452
+        },
+        "to" : {
+          "x" : 202,
+          "y" : 479
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 24,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 181,
+          "y" : 452
+        },
+        "to" : {
+          "x" : 183,
+          "y" : 472
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 184,
+          "y" : 476
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 25,
+    "reactomeId" : 6810221,
+    "displayName" : "RNA polymerase II (phosphoserine-5,7):Initiation factors:CDK7:snRNA gene",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 171,
+      "y" : 566
+    },
+    "minX" : 40,
+    "maxX" : 303,
+    "minY" : 515,
+    "maxY" : 648,
+    "prop" : {
+      "x" : 40,
+      "y" : 547,
+      "width" : 263,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 50,
+      "y" : 550
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 24,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 176,
+          "y" : 544
+        },
+        "to" : {
+          "x" : 187,
+          "y" : 515
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 175,
+          "y" : 536
+        },
+        "b" : {
+          "x" : 176,
+          "y" : 544
+        },
+        "c" : {
+          "x" : 182,
+          "y" : 539
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 26,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 172,
+          "y" : 588
+        },
+        "to" : {
+          "x" : 176,
+          "y" : 648
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 27,
+    "reactomeId" : 6810227,
+    "displayName" : "RPAP2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 365,
+      "y" : 571
+    },
+    "minX" : 176,
+    "maxX" : 539,
+    "minY" : 314,
+    "maxY" : 648,
+    "prop" : {
+      "x" : 339,
+      "y" : 560,
+      "width" : 52,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 342,
+      "y" : 561
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 391,
+          "y" : 560
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 336,
+          "y" : 581
+        },
+        "to" : {
+          "x" : 176,
+          "y" : 648
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 47,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 394,
+          "y" : 569
+        },
+        "to" : {
+          "x" : 455,
+          "y" : 567
+        }
+      }, {
+        "from" : {
+          "x" : 455,
+          "y" : 567
+        },
+        "to" : {
+          "x" : 539,
+          "y" : 314
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 401,
+          "y" : 565
+        },
+        "b" : {
+          "x" : 394,
+          "y" : 569
+        },
+        "c" : {
+          "x" : 401,
+          "y" : 573
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 28,
+    "reactomeId" : 6810229,
+    "displayName" : "RPAP2:RPRD1A,B:RPRD2:RNA polymerase II (phosphoserine-5,7):Initiation factors:snRNA gene",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 177,
+      "y" : 774
+    },
+    "minX" : 57,
+    "maxX" : 429,
+    "minY" : 744,
+    "maxY" : 798,
+    "prop" : {
+      "x" : 57,
+      "y" : 750,
+      "width" : 241,
+      "height" : 48
+    },
+    "textPosition" : {
+      "x" : 71,
+      "y" : 749
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 301,
+          "y" : 758
+        },
+        "to" : {
+          "x" : 408,
+          "y" : 744
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 29,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 301,
+          "y" : 774
+        },
+        "to" : {
+          "x" : 421,
+          "y" : 775
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 425,
+          "y" : 775
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 30,
+    "reactomeId" : 29470,
+    "displayName" : "CTP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 298,
+      "y" : 686
+    },
+    "minX" : 275,
+    "maxX" : 408,
+    "minY" : 670,
+    "maxY" : 744,
+    "prop" : {
+      "x" : 275,
+      "y" : 671,
+      "width" : 47,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 283,
+      "y" : 676
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 317,
+          "y" : 676
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 325,
+          "y" : 698
+        },
+        "to" : {
+          "x" : 408,
+          "y" : 744
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 31,
+    "reactomeId" : 113562,
+    "displayName" : "UTP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 349,
+      "y" : 680
+    },
+    "minX" : 326,
+    "maxX" : 408,
+    "minY" : 665,
+    "maxY" : 744,
+    "prop" : {
+      "x" : 326,
+      "y" : 666,
+      "width" : 47,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 334,
+      "y" : 669
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 368,
+          "y" : 671
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 361,
+          "y" : 697
+        },
+        "to" : {
+          "x" : 408,
+          "y" : 744
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 32,
+    "reactomeId" : 29358,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 248,
+      "y" : 700
+    },
+    "minX" : 223,
+    "maxX" : 408,
+    "minY" : 684,
+    "maxY" : 744,
+    "prop" : {
+      "x" : 223,
+      "y" : 685,
+      "width" : 50,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 232,
+      "y" : 689
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 268,
+          "y" : 690
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 276,
+          "y" : 706
+        },
+        "to" : {
+          "x" : 408,
+          "y" : 744
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 33,
+    "reactomeId" : 113571,
+    "displayName" : "GTP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 221,
+      "y" : 730
+    },
+    "minX" : 197,
+    "maxX" : 408,
+    "minY" : 714,
+    "maxY" : 746,
+    "prop" : {
+      "x" : 197,
+      "y" : 715,
+      "width" : 48,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 205,
+      "y" : 720
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 240,
+          "y" : 720
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 248,
+          "y" : 731
+        },
+        "to" : {
+          "x" : 408,
+          "y" : 744
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 34,
+    "reactomeId" : 6807453,
+    "displayName" : "Integrator",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 427,
+      "y" : 690
+    },
+    "minX" : 380,
+    "maxX" : 539,
+    "minY" : 314,
+    "maxY" : 744,
+    "prop" : {
+      "x" : 380,
+      "y" : 679,
+      "width" : 94,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 395,
+      "y" : 681
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 422,
+          "y" : 705
+        },
+        "to" : {
+          "x" : 408,
+          "y" : 744
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 47,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 477,
+          "y" : 681
+        },
+        "to" : {
+          "x" : 522,
+          "y" : 673
+        }
+      }, {
+        "from" : {
+          "x" : 522,
+          "y" : 673
+        },
+        "to" : {
+          "x" : 539,
+          "y" : 314
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 483,
+          "y" : 676
+        },
+        "b" : {
+          "x" : 477,
+          "y" : 681
+        },
+        "c" : {
+          "x" : 485,
+          "y" : 684
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 35,
+    "reactomeId" : 6807410,
+    "displayName" : "LEC",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 455,
+      "y" : 721
+    },
+    "minX" : 408,
+    "maxX" : 539,
+    "minY" : 314,
+    "maxY" : 744,
+    "prop" : {
+      "x" : 433,
+      "y" : 710,
+      "width" : 44,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 440,
+      "y" : 711
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 430,
+          "y" : 731
+        },
+        "to" : {
+          "x" : 408,
+          "y" : 744
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 47,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 480,
+          "y" : 714
+        },
+        "to" : {
+          "x" : 528,
+          "y" : 701
+        }
+      }, {
+        "from" : {
+          "x" : 528,
+          "y" : 701
+        },
+        "to" : {
+          "x" : 539,
+          "y" : 314
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 486,
+          "y" : 708
+        },
+        "b" : {
+          "x" : 480,
+          "y" : 714
+        },
+        "c" : {
+          "x" : 488,
+          "y" : 716
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 36,
+    "reactomeId" : 6814534,
+    "displayName" : "RNA polymerase II (phosphoserine-5,7):RPRD1A,B:RPRD2:RPAP2:Integrator:LEC:pre-snRNA:Initiation factors:snRNA gene",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 605,
+      "y" : 776
+    },
+    "minX" : 468,
+    "maxX" : 823,
+    "minY" : 752,
+    "maxY" : 801,
+    "prop" : {
+      "x" : 468,
+      "y" : 752,
+      "width" : 274,
+      "height" : 49
+    },
+    "textPosition" : {
+      "x" : 470,
+      "y" : 752
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 38,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 745,
+          "y" : 758
+        },
+        "to" : {
+          "x" : 792,
+          "y" : 752
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 38,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 745,
+          "y" : 774
+        },
+        "to" : {
+          "x" : 815,
+          "y" : 773
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 819,
+          "y" : 773
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 29,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 39,
+    "reactomeId" : 29358,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 667,
+      "y" : 701
+    },
+    "minX" : 644,
+    "maxX" : 792,
+    "minY" : 684,
+    "maxY" : 752,
+    "prop" : {
+      "x" : 644,
+      "y" : 685,
+      "width" : 46,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 651,
+      "y" : 690
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 685,
+          "y" : 690
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 38,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 693,
+          "y" : 710
+        },
+        "to" : {
+          "x" : 792,
+          "y" : 752
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 40,
+    "reactomeId" : 6814537,
+    "displayName" : "RNA polymerase II (phosphoserine-2,7):RPAP2:Integrator:LEC:capped pre-snRNA:Initiation factors:snRNA gene",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1006,
+      "y" : 773
+    },
+    "minX" : 872,
+    "maxX" : 1140,
+    "minY" : 611,
+    "maxY" : 798,
+    "prop" : {
+      "x" : 872,
+      "y" : 748,
+      "width" : 268,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 880,
+      "y" : 749
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 38,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 62,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1005,
+          "y" : 745
+        },
+        "to" : {
+          "x" : 1004,
+          "y" : 611
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 41,
+    "reactomeId" : 113562,
+    "displayName" : "UTP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 749,
+      "y" : 656
+    },
+    "minX" : 726,
+    "maxX" : 792,
+    "minY" : 641,
+    "maxY" : 752,
+    "prop" : {
+      "x" : 726,
+      "y" : 642,
+      "width" : 47,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 734,
+      "y" : 645
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 768,
+          "y" : 647
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 38,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 755,
+          "y" : 673
+        },
+        "to" : {
+          "x" : 792,
+          "y" : 752
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 42,
+    "reactomeId" : 29470,
+    "displayName" : "CTP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 702,
+      "y" : 674
+    },
+    "minX" : 679,
+    "maxX" : 792,
+    "minY" : 658,
+    "maxY" : 752,
+    "prop" : {
+      "x" : 679,
+      "y" : 659,
+      "width" : 47,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 687,
+      "y" : 664
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 721,
+          "y" : 664
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 38,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 719,
+          "y" : 693
+        },
+        "to" : {
+          "x" : 792,
+          "y" : 752
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 43,
+    "reactomeId" : 113571,
+    "displayName" : "GTP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 637,
+      "y" : 730
+    },
+    "minX" : 613,
+    "maxX" : 792,
+    "minY" : 712,
+    "maxY" : 752,
+    "prop" : {
+      "x" : 613,
+      "y" : 713,
+      "width" : 48,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 621,
+      "y" : 719
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 656,
+          "y" : 718
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 38,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 664,
+          "y" : 733
+        },
+        "to" : {
+          "x" : 792,
+          "y" : 752
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 46,
+    "reactomeId" : 6814530,
+    "displayName" : "RNA polymerase II (phosphoserine-2,7):RPAP2:Integrator:LEC:Initiation factors:snRNA gene",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 842,
+      "y" : 317
+    },
+    "minX" : 692,
+    "maxX" : 1001,
+    "minY" : 300,
+    "maxY" : 410,
+    "prop" : {
+      "x" : 692,
+      "y" : 300,
+      "width" : 300,
+      "height" : 35
+    },
+    "textPosition" : {
+      "x" : 700,
+      "y" : 300
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 871,
+          "y" : 338
+        },
+        "to" : {
+          "x" : 1001,
+          "y" : 410
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 879,
+          "y" : 338
+        },
+        "b" : {
+          "x" : 871,
+          "y" : 338
+        },
+        "c" : {
+          "x" : 875,
+          "y" : 345
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 47,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 55,
+    "reactomeId" : 29358,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 254,
+      "y" : 475
+    },
+    "minX" : 202,
+    "maxX" : 274,
+    "minY" : 459,
+    "maxY" : 490,
+    "prop" : {
+      "x" : 235,
+      "y" : 460,
+      "width" : 38,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 238,
+      "y" : 464
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 268,
+          "y" : 465
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 24,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 232,
+          "y" : 476
+        },
+        "to" : {
+          "x" : 202,
+          "y" : 479
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 211,
+            "y" : 471
+          },
+          "b" : {
+            "x" : 223,
+            "y" : 483
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 57,
+    "reactomeId" : 113582,
+    "displayName" : "ADP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 257,
+      "y" : 521
+    },
+    "minX" : 187,
+    "maxX" : 278,
+    "minY" : 505,
+    "maxY" : 536,
+    "prop" : {
+      "x" : 238,
+      "y" : 506,
+      "width" : 39,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 241,
+      "y" : 510
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 272,
+          "y" : 511
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 24,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 235,
+          "y" : 519
+        },
+        "to" : {
+          "x" : 187,
+          "y" : 515
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 205,
+            "y" : 511
+          },
+          "b" : {
+            "x" : 217,
+            "y" : 523
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 228,
+          "y" : 522
+        },
+        "b" : {
+          "x" : 235,
+          "y" : 519
+        },
+        "c" : {
+          "x" : 228,
+          "y" : 514
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 58,
+    "reactomeId" : 6814908,
+    "displayName" : "RPRD1A,B:RPRD1A,B",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 391,
+      "y" : 629
+    },
+    "minX" : 176,
+    "maxX" : 539,
+    "minY" : 314,
+    "maxY" : 648,
+    "prop" : {
+      "x" : 318,
+      "y" : 618,
+      "width" : 146,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 326,
+      "y" : 620
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 315,
+          "y" : 635
+        },
+        "to" : {
+          "x" : 176,
+          "y" : 648
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 47,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 423,
+          "y" : 615
+        },
+        "to" : {
+          "x" : 458,
+          "y" : 605
+        }
+      }, {
+        "from" : {
+          "x" : 458,
+          "y" : 605
+        },
+        "to" : {
+          "x" : 539,
+          "y" : 314
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 429,
+          "y" : 609
+        },
+        "b" : {
+          "x" : 423,
+          "y" : 615
+        },
+        "c" : {
+          "x" : 431,
+          "y" : 617
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 59,
+    "reactomeId" : 6814906,
+    "displayName" : "RPRD2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 395,
+      "y" : 598
+    },
+    "minX" : 176,
+    "maxX" : 539,
+    "minY" : 314,
+    "maxY" : 648,
+    "prop" : {
+      "x" : 370,
+      "y" : 587,
+      "width" : 50,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 371,
+      "y" : 587
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 420,
+          "y" : 587
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 26,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 367,
+          "y" : 603
+        },
+        "to" : {
+          "x" : 176,
+          "y" : 648
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 47,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 423,
+          "y" : 590
+        },
+        "to" : {
+          "x" : 458,
+          "y" : 580
+        }
+      }, {
+        "from" : {
+          "x" : 458,
+          "y" : 580
+        },
+        "to" : {
+          "x" : 539,
+          "y" : 314
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 429,
+          "y" : 584
+        },
+        "b" : {
+          "x" : 423,
+          "y" : 590
+        },
+        "c" : {
+          "x" : 431,
+          "y" : 592
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 60,
+    "reactomeId" : 6814860,
+    "displayName" : "RNA polymerase II (phosphoserine-2,7):RPAP2:Integrator:LEC:CBCAP:capped pre-snRNA:Initiation factors:snRNA gene",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1004,
+      "y" : 509
+    },
+    "minX" : 865,
+    "maxX" : 1144,
+    "minY" : 445,
+    "maxY" : 535,
+    "prop" : {
+      "x" : 865,
+      "y" : 483,
+      "width" : 279,
+      "height" : 52
+    },
+    "textPosition" : {
+      "x" : 878,
+      "y" : 486
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 44,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1002,
+          "y" : 480
+        },
+        "to" : {
+          "x" : 1001,
+          "y" : 453
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1001,
+          "y" : 449
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 62,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 61,
+    "reactomeId" : 6814903,
+    "displayName" : "CBCAP:capped snRNA U1,U2,U4,U4atac,U5,U11,U12",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1086,
+      "y" : 355
+    },
+    "minX" : 1001,
+    "maxX" : 1164,
+    "minY" : 332,
+    "maxY" : 410,
+    "prop" : {
+      "x" : 1008,
+      "y" : 332,
+      "width" : 156,
+      "height" : 46
+    },
+    "textPosition" : {
+      "x" : 1016,
+      "y" : 329
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1050,
+          "y" : 381
+        },
+        "to" : {
+          "x" : 1001,
+          "y" : 410
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1046,
+          "y" : 388
+        },
+        "b" : {
+          "x" : 1050,
+          "y" : 381
+        },
+        "c" : {
+          "x" : 1042,
+          "y" : 381
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 63,
+    "reactomeId" : 77088,
+    "displayName" : "Cap Binding Complex (CBC)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 934,
+      "y" : 671
+    },
+    "minX" : 881,
+    "maxX" : 1004,
+    "minY" : 611,
+    "maxY" : 691,
+    "prop" : {
+      "x" : 881,
+      "y" : 652,
+      "width" : 107,
+      "height" : 39
+    },
+    "textPosition" : {
+      "x" : 887,
+      "y" : 656
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 62,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 956,
+          "y" : 649
+        },
+        "to" : {
+          "x" : 1004,
+          "y" : 611
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 2,
+    "reactomeId" : 6807496,
+    "displayName" : "POU2F1 (OCT1) or POU2F2 (OCT2), SP1, and ZNF143 (STAF) bind the DSE of snRNA gene (U1, U2, U4, U4atac, U5, U11, U12)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 550,
+      "y" : 74
+    },
+    "minX" : 461,
+    "maxX" : 648,
+    "minY" : 69,
+    "maxY" : 79,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 461,
+        "y" : 74
+      },
+      "to" : {
+        "x" : 550,
+        "y" : 74
+      }
+    }, {
+      "from" : {
+        "x" : 550,
+        "y" : 74
+      },
+      "to" : {
+        "x" : 648,
+        "y" : 74
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 641,
+        "y" : 78
+      },
+      "b" : {
+        "x" : 648,
+        "y" : 74
+      },
+      "c" : {
+        "x" : 641,
+        "y" : 70
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 550,
+        "y" : 74
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 66,
+      "points" : [ {
+        "x" : 421,
+        "y" : 86
+      } ]
+    }, {
+      "id" : 5,
+      "points" : [ {
+        "x" : 318,
+        "y" : 71
+      } ]
+    }, {
+      "id" : 68,
+      "points" : [ {
+        "x" : 391,
+        "y" : 53
+      } ]
+    }, {
+      "id" : 3,
+      "points" : [ {
+        "x" : 448,
+        "y" : 58
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 6
+    } ]
+  }, {
+    "id" : 20,
+    "reactomeId" : 6810238,
+    "displayName" : "RNA polymerase II binds initiation factors at promoter of snRNA gene (U1, U2, U4, U4atac, U5, U11, U12)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 179,
+      "y" : 387
+    },
+    "minX" : 174,
+    "maxX" : 184,
+    "minY" : 367,
+    "maxY" : 408,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 179,
+        "y" : 367
+      },
+      "to" : {
+        "x" : 179,
+        "y" : 387
+      }
+    }, {
+      "from" : {
+        "x" : 179,
+        "y" : 387
+      },
+      "to" : {
+        "x" : 179,
+        "y" : 408
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 175,
+        "y" : 401
+      },
+      "b" : {
+        "x" : 179,
+        "y" : 408
+      },
+      "c" : {
+        "x" : 183,
+        "y" : 401
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 179,
+        "y" : 387
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 18,
+      "points" : [ {
+        "x" : 174,
+        "y" : 338
+      } ]
+    }, {
+      "id" : 21,
+      "points" : [ {
+        "x" : 220,
+        "y" : 367
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 22
+    } ]
+  }, {
+    "id" : 38,
+    "reactomeId" : 6814559,
+    "displayName" : "Pre-snRNA is elongated and capped with 7-methylguanosine",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 831,
+      "y" : 773
+    },
+    "minX" : 792,
+    "maxX" : 869,
+    "minY" : 752,
+    "maxY" : 779,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 792,
+        "y" : 752
+      },
+      "to" : {
+        "x" : 831,
+        "y" : 773
+      }
+    }, {
+      "from" : {
+        "x" : 831,
+        "y" : 773
+      },
+      "to" : {
+        "x" : 869,
+        "y" : 773
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 862,
+        "y" : 777
+      },
+      "b" : {
+        "x" : 869,
+        "y" : 773
+      },
+      "c" : {
+        "x" : 862,
+        "y" : 769
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 825,
+        "y" : 767
+      },
+      "b" : {
+        "x" : 837,
+        "y" : 779
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 36,
+      "points" : [ {
+        "x" : 745,
+        "y" : 758
+      } ]
+    }, {
+      "id" : 39,
+      "points" : [ {
+        "x" : 693,
+        "y" : 710
+      } ]
+    }, {
+      "id" : 41,
+      "points" : [ {
+        "x" : 755,
+        "y" : 673
+      } ]
+    }, {
+      "id" : 42,
+      "points" : [ {
+        "x" : 719,
+        "y" : 693
+      } ]
+    }, {
+      "id" : 43,
+      "points" : [ {
+        "x" : 664,
+        "y" : 733
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 40
+    } ],
+    "catalysts" : [ {
+      "id" : 36,
+      "points" : [ {
+        "x" : 745,
+        "y" : 774
+      } ]
+    } ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 6810239,
+    "displayName" : "SNAPc binds PSE of snRNA gene (U1, U2, U4, U4atac, U5, U11, U12)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 773,
+      "y" : 148
+    },
+    "minX" : 764,
+    "maxX" : 778,
+    "minY" : 125,
+    "maxY" : 176,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 772,
+        "y" : 125
+      },
+      "to" : {
+        "x" : 773,
+        "y" : 148
+      }
+    }, {
+      "from" : {
+        "x" : 773,
+        "y" : 148
+      },
+      "to" : {
+        "x" : 764,
+        "y" : 176
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 762,
+        "y" : 168
+      },
+      "b" : {
+        "x" : 764,
+        "y" : 176
+      },
+      "c" : {
+        "x" : 770,
+        "y" : 171
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 773,
+        "y" : 148
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 6,
+      "points" : [ {
+        "x" : 769,
+        "y" : 91
+      } ]
+    }, {
+      "id" : 8,
+      "points" : [ {
+        "x" : 810,
+        "y" : 121
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 9
+    } ]
+  }, {
+    "id" : 24,
+    "reactomeId" : 6810233,
+    "displayName" : "CDK7 phosphorylates serine-5 and serine-7 of heptad repeats in C-terminal domain of RNA polymerase II at snRNA promoter",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 185,
+      "y" : 488
+    },
+    "minX" : 179,
+    "maxX" : 202,
+    "minY" : 479,
+    "maxY" : 515,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 202,
+        "y" : 479
+      },
+      "to" : {
+        "x" : 185,
+        "y" : 488
+      }
+    }, {
+      "from" : {
+        "x" : 185,
+        "y" : 488
+      },
+      "to" : {
+        "x" : 187,
+        "y" : 515
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 179,
+        "y" : 482
+      },
+      "b" : {
+        "x" : 191,
+        "y" : 494
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 22,
+      "points" : [ {
+        "x" : 188,
+        "y" : 452
+      } ]
+    }, {
+      "id" : 55,
+      "points" : [ {
+        "x" : 232,
+        "y" : 476
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 25,
+      "points" : [ {
+        "x" : 176,
+        "y" : 544
+      } ]
+    }, {
+      "id" : 57,
+      "points" : [ {
+        "x" : 235,
+        "y" : 519
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "catalysts" : [ {
+      "id" : 22,
+      "points" : [ {
+        "x" : 181,
+        "y" : 452
+      } ]
+    } ]
+  }, {
+    "id" : 26,
+    "reactomeId" : 6810235,
+    "displayName" : "RPAP2 binds RNA polymerase II phosphorylated at serine-7 residues of heptad repeats in the C-terminal domain",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 175,
+      "y" : 688
+    },
+    "minX" : 170,
+    "maxX" : 180,
+    "minY" : 648,
+    "maxY" : 747,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 176,
+        "y" : 648
+      },
+      "to" : {
+        "x" : 175,
+        "y" : 688
+      }
+    }, {
+      "from" : {
+        "x" : 175,
+        "y" : 688
+      },
+      "to" : {
+        "x" : 176,
+        "y" : 747
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 172,
+        "y" : 740
+      },
+      "b" : {
+        "x" : 176,
+        "y" : 747
+      },
+      "c" : {
+        "x" : 180,
+        "y" : 740
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 175,
+        "y" : 688
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 58,
+      "points" : [ {
+        "x" : 315,
+        "y" : 635
+      } ]
+    }, {
+      "id" : 59,
+      "points" : [ {
+        "x" : 367,
+        "y" : 603
+      } ]
+    }, {
+      "id" : 27,
+      "points" : [ {
+        "x" : 336,
+        "y" : 581
+      } ]
+    }, {
+      "id" : 25,
+      "points" : [ {
+        "x" : 172,
+        "y" : 588
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 28
+    } ]
+  }, {
+    "id" : 10,
+    "reactomeId" : 6810234,
+    "displayName" : "General transcription factors bind SNAPc:POU2F1:ZNF143:snRNA gene",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 467,
+      "y" : 278
+    },
+    "minX" : 259,
+    "maxX" : 524,
+    "minY" : 240,
+    "maxY" : 306,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 524,
+        "y" : 240
+      },
+      "to" : {
+        "x" : 467,
+        "y" : 278
+      }
+    }, {
+      "from" : {
+        "x" : 467,
+        "y" : 278
+      },
+      "to" : {
+        "x" : 259,
+        "y" : 306
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 265,
+        "y" : 301
+      },
+      "b" : {
+        "x" : 259,
+        "y" : 306
+      },
+      "c" : {
+        "x" : 266,
+        "y" : 309
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 467,
+        "y" : 278
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 11,
+      "points" : [ {
+        "x" : 485,
+        "y" : 167
+      } ]
+    }, {
+      "id" : 19,
+      "points" : [ {
+        "x" : 289,
+        "y" : 200
+      } ]
+    }, {
+      "id" : 12,
+      "points" : [ {
+        "x" : 444,
+        "y" : 176
+      } ]
+    }, {
+      "id" : 13,
+      "points" : [ {
+        "x" : 398,
+        "y" : 182
+      } ]
+    }, {
+      "id" : 14,
+      "points" : [ {
+        "x" : 348,
+        "y" : 189
+      } ]
+    }, {
+      "id" : 15,
+      "points" : [ {
+        "x" : 210,
+        "y" : 214
+      } ]
+    }, {
+      "id" : 9,
+      "points" : [ {
+        "x" : 694,
+        "y" : 209
+      } ]
+    }, {
+      "id" : 16,
+      "points" : [ {
+        "x" : 534,
+        "y" : 168
+      } ]
+    }, {
+      "id" : 17,
+      "points" : [ {
+        "x" : 595,
+        "y" : 168
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 18
+    } ]
+  }, {
+    "id" : 44,
+    "reactomeId" : 6814555,
+    "displayName" : "Integrator complex processes the 3' end of snRNA",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1000,
+      "y" : 437
+    },
+    "minX" : 994,
+    "maxX" : 1006,
+    "minY" : 410,
+    "maxY" : 480,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 995,
+        "y" : 480
+      },
+      "to" : {
+        "x" : 1000,
+        "y" : 437
+      }
+    }, {
+      "from" : {
+        "x" : 1000,
+        "y" : 437
+      },
+      "to" : {
+        "x" : 1001,
+        "y" : 410
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 994,
+        "y" : 431
+      },
+      "b" : {
+        "x" : 1006,
+        "y" : 443
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 60
+    } ],
+    "outputs" : [ {
+      "id" : 61,
+      "points" : [ {
+        "x" : 1050,
+        "y" : 381
+      } ]
+    }, {
+      "id" : 46,
+      "points" : [ {
+        "x" : 871,
+        "y" : 338
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 60,
+      "points" : [ {
+        "x" : 1002,
+        "y" : 480
+      } ]
+    } ],
+    "activators" : [ {
+      "id" : 70,
+      "points" : [ {
+        "x" : 934,
+        "y" : 427
+      } ]
+    }, {
+      "id" : 71,
+      "points" : [ {
+        "x" : 933,
+        "y" : 450
+      } ]
+    } ]
+  }, {
+    "id" : 29,
+    "reactomeId" : 6814549,
+    "displayName" : "Pre-snRNA transcript initiation, Integrator binding, LEC binding",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 437,
+      "y" : 775
+    },
+    "minX" : 408,
+    "maxX" : 465,
+    "minY" : 744,
+    "maxY" : 781,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 408,
+        "y" : 744
+      },
+      "to" : {
+        "x" : 437,
+        "y" : 775
+      }
+    }, {
+      "from" : {
+        "x" : 437,
+        "y" : 775
+      },
+      "to" : {
+        "x" : 465,
+        "y" : 775
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 458,
+        "y" : 779
+      },
+      "b" : {
+        "x" : 465,
+        "y" : 775
+      },
+      "c" : {
+        "x" : 458,
+        "y" : 771
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 431,
+        "y" : 769
+      },
+      "b" : {
+        "x" : 443,
+        "y" : 781
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 30,
+      "points" : [ {
+        "x" : 325,
+        "y" : 698
+      } ]
+    }, {
+      "id" : 28,
+      "points" : [ {
+        "x" : 301,
+        "y" : 758
+      } ]
+    }, {
+      "id" : 31,
+      "points" : [ {
+        "x" : 361,
+        "y" : 697
+      } ]
+    }, {
+      "id" : 32,
+      "points" : [ {
+        "x" : 276,
+        "y" : 706
+      } ]
+    }, {
+      "id" : 33,
+      "points" : [ {
+        "x" : 248,
+        "y" : 731
+      } ]
+    }, {
+      "id" : 34,
+      "points" : [ {
+        "x" : 422,
+        "y" : 705
+      } ]
+    }, {
+      "id" : 35,
+      "points" : [ {
+        "x" : 430,
+        "y" : 731
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 36
+    } ],
+    "catalysts" : [ {
+      "id" : 28,
+      "points" : [ {
+        "x" : 301,
+        "y" : 774
+      } ]
+    } ],
+    "activators" : [ {
+      "id" : 69,
+      "points" : [ {
+        "x" : 421,
+        "y" : 798
+      } ]
+    } ]
+  }, {
+    "id" : 62,
+    "reactomeId" : 6814885,
+    "displayName" : "CBCAP complex binds 7-methylguanosine cap of snRNA",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1005,
+      "y" : 578
+    },
+    "minX" : 999,
+    "maxX" : 1011,
+    "minY" : 538,
+    "maxY" : 611,
+    "segments" : [ {
+      "from" : {
+        "x" : 1004,
+        "y" : 611
+      },
+      "to" : {
+        "x" : 1005,
+        "y" : 578
+      }
+    }, {
+      "from" : {
+        "x" : 1005,
+        "y" : 578
+      },
+      "to" : {
+        "x" : 1004,
+        "y" : 538
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1008,
+        "y" : 545
+      },
+      "b" : {
+        "x" : 1004,
+        "y" : 538
+      },
+      "c" : {
+        "x" : 1000,
+        "y" : 545
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 999,
+        "y" : 572
+      },
+      "b" : {
+        "x" : 1011,
+        "y" : 584
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 63,
+      "points" : [ {
+        "x" : 956,
+        "y" : 649
+      } ]
+    }, {
+      "id" : 64,
+      "points" : [ {
+        "x" : 1096,
+        "y" : 652
+      } ]
+    }, {
+      "id" : 40,
+      "points" : [ {
+        "x" : 1005,
+        "y" : 745
+      } ]
+    }, {
+      "id" : 65,
+      "points" : [ {
+        "x" : 1076,
+        "y" : 688
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 60
+    } ]
+  }, {
+    "id" : 47,
+    "reactomeId" : 6814554,
+    "displayName" : "Dephosphorylation and dissociation of RNA polymerase II at 3' end of snRNA gene",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 624,
+      "y" : 315
+    },
+    "minX" : 539,
+    "maxX" : 689,
+    "minY" : 309,
+    "maxY" : 321,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 689,
+        "y" : 315
+      },
+      "to" : {
+        "x" : 624,
+        "y" : 315
+      }
+    }, {
+      "from" : {
+        "x" : 624,
+        "y" : 315
+      },
+      "to" : {
+        "x" : 539,
+        "y" : 314
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 618,
+        "y" : 309
+      },
+      "b" : {
+        "x" : 630,
+        "y" : 321
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 46
+    } ],
+    "outputs" : [ {
+      "id" : 58,
+      "points" : [ {
+        "x" : 423,
+        "y" : 615
+      }, {
+        "x" : 458,
+        "y" : 605
+      } ]
+    }, {
+      "id" : 18,
+      "points" : [ {
+        "x" : 297,
+        "y" : 319
+      } ]
+    }, {
+      "id" : 34,
+      "points" : [ {
+        "x" : 477,
+        "y" : 681
+      }, {
+        "x" : 522,
+        "y" : 673
+      } ]
+    }, {
+      "id" : 35,
+      "points" : [ {
+        "x" : 480,
+        "y" : 714
+      }, {
+        "x" : 528,
+        "y" : 701
+      } ]
+    }, {
+      "id" : 27,
+      "points" : [ {
+        "x" : 394,
+        "y" : 569
+      }, {
+        "x" : 455,
+        "y" : 567
+      } ]
+    }, {
+      "id" : 21,
+      "points" : [ {
+        "x" : 412,
+        "y" : 344
+      } ]
+    }, {
+      "id" : 59,
+      "points" : [ {
+        "x" : 423,
+        "y" : 590
+      }, {
+        "x" : 458,
+        "y" : 580
+      } ]
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 1,
+    "reactomeId" : 7660,
+    "displayName" : "nucleoplasm",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 597,
+      "y" : 433
+    },
+    "minX" : 10,
+    "maxX" : 1185,
+    "minY" : 5,
+    "maxY" : 862,
+    "prop" : {
+      "x" : 10,
+      "y" : 5,
+      "width" : 1175,
+      "height" : 857
+    },
+    "textPosition" : {
+      "x" : 23,
+      "y" : 817
+    },
+    "insets" : {
+      "x" : 20,
+      "y" : 14,
+      "width" : 1156,
+      "height" : 841
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 38, 39, 40, 41, 42, 43, 44, 46, 47, 55, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 68, 69, 70, 71 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 10,
+  "maxX" : 1185,
+  "minY" : 5,
+  "maxY" : 862,
+  "disease" : false
+}

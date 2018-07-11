@@ -1,0 +1,2865 @@
+{
+  "dbId" : 68875,
+  "stId" : "R-HSA-68875",
+  "nodes" : [ {
+    "dbId" : 157697,
+    "stId" : "R-HSA-157697",
+    "displayName" : "NUPL2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15504",
+    "geneNames" : [ "NUPL2", "CG1" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157703,
+    "stId" : "R-HSA-157703",
+    "displayName" : "RANBP2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P49792",
+    "geneNames" : [ "RANBP2", "NUP358" ],
+    "parents" : [ 2990888, 2990903, 157689, 375305 ]
+  }, {
+    "dbId" : 157700,
+    "stId" : "R-HSA-157700",
+    "displayName" : "Nup107 Complex [nuclear envelope]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ],
+    "children" : [ 157743, 157721, 157720, 157717, 157745 ]
+  }, {
+    "dbId" : 113671,
+    "stId" : "R-ALL-113671",
+    "displayName" : "2OG [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 797 ],
+    "identifier" : "30915"
+  }, {
+    "dbId" : 157712,
+    "stId" : "R-HSA-157712",
+    "displayName" : "Nup62 Complex [nuclear envelope]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ],
+    "children" : [ 157724, 157736, 157713, 157746 ]
+  }, {
+    "dbId" : 157713,
+    "stId" : "R-HSA-157713",
+    "displayName" : "NUP62 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P37198",
+    "geneNames" : [ "NUP62" ],
+    "parents" : [ 157712 ]
+  }, {
+    "dbId" : 113685,
+    "stId" : "R-ALL-113685",
+    "displayName" : "O2 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 796 ],
+    "identifier" : "15379"
+  }, {
+    "dbId" : 157718,
+    "stId" : "R-HSA-157718",
+    "displayName" : "RAE1 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P78406",
+    "geneNames" : [ "RAE1", "MRNP41" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157717,
+    "stId" : "R-HSA-157717",
+    "displayName" : "NUP107 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P57740",
+    "geneNames" : [ "NUP107" ],
+    "parents" : [ 157700 ]
+  }, {
+    "dbId" : 157722,
+    "stId" : "R-HSA-157722",
+    "displayName" : "NUP210 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8TEM1",
+    "geneNames" : [ "NUP210", "KIAA0906", "PSEC0245" ],
+    "parents" : [ 5228516, 2990888, 157689, 2990903 ]
+  }, {
+    "dbId" : 157723,
+    "stId" : "R-HSA-157723",
+    "displayName" : "NUP98-3 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52948-3",
+    "geneNames" : [ "NUP98", "ADAR2" ],
+    "parents" : [ 2990879 ]
+  }, {
+    "dbId" : 157720,
+    "stId" : "R-HSA-157720",
+    "displayName" : "NUP98-5 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52948-5",
+    "geneNames" : [ "NUP98", "ADAR2" ],
+    "parents" : [ 157700 ]
+  }, {
+    "dbId" : 157721,
+    "stId" : "R-HSA-157721",
+    "displayName" : "NUP160 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12769",
+    "geneNames" : [ "NUP160", "KIAA0197", "NUP120" ],
+    "parents" : [ 157700 ]
+  }, {
+    "dbId" : 157724,
+    "stId" : "R-HSA-157724",
+    "displayName" : "NUP54 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q7Z3B4",
+    "geneNames" : [ "NUP54" ],
+    "parents" : [ 157712 ]
+  }, {
+    "dbId" : 380443,
+    "stId" : "R-HSA-380443",
+    "displayName" : "NUMA1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14980",
+    "geneNames" : [ "NUMA1", "NMP22", "NUMA" ],
+    "parents" : [ 8982283 ]
+  }, {
+    "dbId" : 68642,
+    "stId" : "R-HSA-68642",
+    "displayName" : "RB1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 605 ],
+    "identifier" : "P06400",
+    "geneNames" : [ "RB1" ],
+    "parents" : [ 8985476, 8985470, 113646, 188373, 2172665, 187963, 68644 ]
+  }, {
+    "dbId" : 157738,
+    "stId" : "R-HSA-157738",
+    "displayName" : "AAAS [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NRG9",
+    "geneNames" : [ "AAAS", "ADRACALA", "GL003" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157739,
+    "stId" : "R-HSA-157739",
+    "displayName" : "NUP43 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NFH3",
+    "geneNames" : [ "NUP43" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157736,
+    "stId" : "R-HSA-157736",
+    "displayName" : "NUPL1-2 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BVL2-1",
+    "geneNames" : [ "NUP58", "KIAA0410", "NUPL1" ],
+    "parents" : [ 157712 ]
+  }, {
+    "dbId" : 157743,
+    "stId" : "R-HSA-157743",
+    "displayName" : "NUP133 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WUM0",
+    "geneNames" : [ "NUP133" ],
+    "parents" : [ 157700 ]
+  }, {
+    "dbId" : 157740,
+    "stId" : "R-HSA-157740",
+    "displayName" : "NUP50 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UKX7",
+    "geneNames" : [ "NUP50", "NPAP60L", "PRO1146" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157741,
+    "stId" : "R-HSA-157741",
+    "displayName" : "NUP85 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BW27",
+    "geneNames" : [ "NUP85", "NUP75", "PCNT1" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157746,
+    "stId" : "R-HSA-157746",
+    "displayName" : "Nup45 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BVL2-2",
+    "geneNames" : [ "NUP58", "KIAA0410", "NUPL1" ],
+    "parents" : [ 157712 ]
+  }, {
+    "dbId" : 157747,
+    "stId" : "R-HSA-157747",
+    "displayName" : "POM121 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96HA1",
+    "geneNames" : [ "POM121", "KIAA0618", "NUP121", "POM121A" ],
+    "parents" : [ 6805169 ]
+  }, {
+    "dbId" : 157745,
+    "stId" : "R-HSA-157745",
+    "displayName" : "NUP37 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NFH4",
+    "geneNames" : [ "NUP37" ],
+    "parents" : [ 157700 ]
+  }, {
+    "dbId" : 157750,
+    "stId" : "R-HSA-157750",
+    "displayName" : "SEH1L-2 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96EE3-2",
+    "geneNames" : [ "SEH1L", "SEC13L", "SEH1" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157748,
+    "stId" : "R-HSA-157748",
+    "displayName" : "NUP35 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NFH5",
+    "geneNames" : [ "NUP35", "MP44", "NUP53" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157749,
+    "stId" : "R-HSA-157749",
+    "displayName" : "NUP93 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N1F7",
+    "geneNames" : [ "NUP93", "KIAA0095" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157754,
+    "stId" : "R-HSA-157754",
+    "displayName" : "NUP205 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92621",
+    "geneNames" : [ "NUP205", "C7orf14", "KIAA0225" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157752,
+    "stId" : "R-HSA-157752",
+    "displayName" : "NUP188 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5SRE5",
+    "geneNames" : [ "NUP188", "KIAA0169" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157753,
+    "stId" : "R-HSA-157753",
+    "displayName" : "NUP88 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99567",
+    "geneNames" : [ "NUP88" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 380473,
+    "stId" : "R-HSA-380473",
+    "displayName" : "p-T2055-NUMA1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14980",
+    "geneNames" : [ "NUMA1", "NMP22", "NUMA" ],
+    "parents" : [ 8982281 ]
+  }, {
+    "dbId" : 2422372,
+    "stId" : "R-HSA-2422372",
+    "displayName" : "BLZF1 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H2G9",
+    "geneNames" : [ "BLZF1", "JEM1" ],
+    "parents" : [ 2422429, 2422951 ]
+  }, {
+    "dbId" : 2245219,
+    "stId" : "R-HSA-2245219",
+    "displayName" : "PHF8:Fe2+ [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2172681, 2172686 ],
+    "children" : [ 2245214, 111793 ]
+  }, {
+    "dbId" : 2422374,
+    "stId" : "R-HSA-2422374",
+    "displayName" : "p-T191-RAB1B [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H0U4",
+    "geneNames" : [ "RAB1B" ],
+    "parents" : [ 2422387 ]
+  }, {
+    "dbId" : 2245222,
+    "stId" : "R-HSA-2245222",
+    "displayName" : "PHF8-2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UPP1-2",
+    "geneNames" : [ "PHF8", "KIAA1111", "ZNF422" ],
+    "parents" : [ 2245214 ]
+  }, {
+    "dbId" : 1629790,
+    "stId" : "R-HSA-1629790",
+    "displayName" : "NCAPD3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42695",
+    "geneNames" : [ "NCAPD3", "CAPD3", "KIAA0056" ],
+    "parents" : [ 1638144 ]
+  }, {
+    "dbId" : 2245220,
+    "stId" : "R-HSA-2245220",
+    "displayName" : "p-S33,84-PHF8-2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UPP1-2",
+    "geneNames" : [ "PHF8", "KIAA1111", "ZNF422" ],
+    "parents" : [ 2245225 ]
+  }, {
+    "dbId" : 2245221,
+    "stId" : "R-HSA-2245221",
+    "displayName" : "p-S69,S120-PHF8-3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UPP1-3",
+    "geneNames" : [ "PHF8", "KIAA1111", "ZNF422" ],
+    "parents" : [ 2245225 ]
+  }, {
+    "dbId" : 2245227,
+    "stId" : "R-HSA-2245227",
+    "displayName" : "p-2S-PHF8:Fe2+ [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1242 ],
+    "children" : [ 2245225, 111793 ]
+  }, {
+    "dbId" : 2422381,
+    "stId" : "R-HSA-2422381",
+    "displayName" : "RAB1B [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H0U4",
+    "geneNames" : [ "RAB1B" ],
+    "parents" : [ 6808822, 2422388 ]
+  }, {
+    "dbId" : 2245225,
+    "stId" : "R-HSA-2245225",
+    "displayName" : "p-2S-PHF8 [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 2245227 ],
+    "children" : [ 2245220, 2245211, 2245221 ]
+  }, {
+    "dbId" : 170066,
+    "stId" : "R-HSA-170066",
+    "displayName" : "p-T161-CDK1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P06493",
+    "geneNames" : [ "CDK1", "CDC2", "CDC28A", "CDKN1", "P34CDC2" ],
+    "parents" : [ 68906, 68892, 170127, 170081, 170146, 170160 ]
+  }, {
+    "dbId" : 2422388,
+    "stId" : "R-HSA-2422388",
+    "displayName" : "RAB1 [Golgi membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 2311340 ],
+    "children" : [ 2167938, 2422381 ]
+  }, {
+    "dbId" : 165968,
+    "stId" : "R-HSA-165968",
+    "displayName" : "PPP2R1A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30153",
+    "geneNames" : [ "PPP2R1A" ],
+    "parents" : [ 165997 ]
+  }, {
+    "dbId" : 165974,
+    "stId" : "R-HSA-165974",
+    "displayName" : "PP2A-catalytic subunit C [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 1362456, 2430554, 6792873, 4088142, 1363265, 165970 ],
+    "children" : [ 165978, 165991 ]
+  }, {
+    "dbId" : 2422385,
+    "stId" : "R-HSA-2422385",
+    "displayName" : "GORASP2 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H8Y8",
+    "geneNames" : [ "GORASP2", "GOLPH6" ],
+    "parents" : [ 2422429 ]
+  }, {
+    "dbId" : 2422386,
+    "stId" : "R-HSA-2422386",
+    "displayName" : "RAB2A [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61019",
+    "geneNames" : [ "RAB2A", "RAB2" ],
+    "parents" : [ 2422449 ]
+  }, {
+    "dbId" : 2422387,
+    "stId" : "R-HSA-2422387",
+    "displayName" : "p-RAB1 [Golgi membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 2422975, 2311336 ],
+    "children" : [ 2172190, 2422374 ]
+  }, {
+    "dbId" : 165978,
+    "stId" : "R-HSA-165978",
+    "displayName" : "PPP2CA [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P67775",
+    "geneNames" : [ "PPP2CA" ],
+    "parents" : [ 165974 ]
+  }, {
+    "dbId" : 2167933,
+    "stId" : "R-HSA-2167933",
+    "displayName" : "GOLGA2 [endoplasmic reticulum-Golgi intermediate compartment membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q08379",
+    "geneNames" : [ "GOLGA2" ],
+    "parents" : [ 5694327, 2172177 ]
+  }, {
+    "dbId" : 8862427,
+    "stId" : "R-HSA-8862427",
+    "displayName" : "H2AFV [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q71UI9",
+    "geneNames" : [ "H2AFV", "H2AV" ],
+    "parents" : [ 181899 ]
+  }, {
+    "dbId" : 2245186,
+    "stId" : "R-HSA-2245186",
+    "displayName" : "Me2K5-HIST3H3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16695",
+    "geneNames" : [ "HIST3H3", "H3FT" ],
+    "parents" : [ 2245191 ]
+  }, {
+    "dbId" : 2430532,
+    "stId" : "R-HSA-2430532",
+    "displayName" : "p-S67-ENSA [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2729 ],
+    "identifier" : "O43768",
+    "geneNames" : [ "ENSA" ],
+    "parents" : [ 2430548 ]
+  }, {
+    "dbId" : 2245187,
+    "stId" : "R-HSA-2245187",
+    "displayName" : "H3K4me3 [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 2245189, 3364035 ],
+    "children" : [ 1214223, 1214216, 1214186, 2245188 ]
+  }, {
+    "dbId" : 2245190,
+    "stId" : "R-HSA-2245190",
+    "displayName" : "Nucleosome with H3K4me2/3:H4K20me1 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1241 ],
+    "parents" : [ 2172686, 2288093, 2294607, 2294604, 2294591 ],
+    "children" : [ 181899, 2245189, 2172676, 181911 ]
+  }, {
+    "dbId" : 165991,
+    "stId" : "R-HSA-165991",
+    "displayName" : "PPP2CB [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62714",
+    "geneNames" : [ "PPP2CB" ],
+    "parents" : [ 165974 ]
+  }, {
+    "dbId" : 2245191,
+    "stId" : "R-HSA-2245191",
+    "displayName" : "H3K4me2 [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 2245189 ],
+    "children" : [ 1214206, 1214170, 1214225, 2245186 ]
+  }, {
+    "dbId" : 2245188,
+    "stId" : "R-HSA-2245188",
+    "displayName" : "Me3K5-HIST3H3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16695",
+    "geneNames" : [ "HIST3H3", "H3FT" ],
+    "parents" : [ 2245187 ]
+  }, {
+    "dbId" : 8862432,
+    "stId" : "R-HSA-8862432",
+    "displayName" : "H2AFJ [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BTM1",
+    "geneNames" : [ "H2AFJ" ],
+    "parents" : [ 181899 ]
+  }, {
+    "dbId" : 2245189,
+    "stId" : "R-HSA-2245189",
+    "displayName" : "H3K4me2/3 [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 2245194, 2245190 ],
+    "children" : [ 2245191, 2245187 ]
+  }, {
+    "dbId" : 2245194,
+    "stId" : "R-HSA-2245194",
+    "displayName" : "Nucleosome with H3K4me2/3 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2172681 ],
+    "children" : [ 181902, 181899, 2245189, 181911 ]
+  }, {
+    "dbId" : 165997,
+    "stId" : "R-HSA-165997",
+    "displayName" : "PP2A-subunit A [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 1362456, 2430554, 6792873, 4088142, 1363265, 8857787, 165970 ],
+    "children" : [ 166000, 165968 ]
+  }, {
+    "dbId" : 2430549,
+    "stId" : "R-HSA-2430549",
+    "displayName" : "p-T194,T207,T741-MASTL [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2541 ],
+    "identifier" : "Q96GX5",
+    "geneNames" : [ "MASTL", "GW", "GWL", "THC2" ]
+  }, {
+    "dbId" : 2430548,
+    "stId" : "R-HSA-2430548",
+    "displayName" : "p-S62-ARPP19/p-S67-ENSA [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2788 ],
+    "parents" : [ 2430556 ],
+    "children" : [ 2430532, 2168081 ]
+  }, {
+    "dbId" : 166000,
+    "stId" : "R-HSA-166000",
+    "displayName" : "PPP2R1B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30154",
+    "geneNames" : [ "PPP2R1B" ],
+    "parents" : [ 165997 ]
+  }, {
+    "dbId" : 1629792,
+    "stId" : "R-HSA-1629792",
+    "displayName" : "SMC2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95347",
+    "geneNames" : [ "SMC2", "CAPE", "SMC2L1", "PRO0324" ],
+    "parents" : [ 1638144, 2294598, 2294584 ]
+  }, {
+    "dbId" : 2245211,
+    "stId" : "R-HSA-2245211",
+    "displayName" : "p-S69,120-PHF8-1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UPP1-1",
+    "geneNames" : [ "PHF8", "KIAA1111", "ZNF422" ],
+    "parents" : [ 2245225 ]
+  }, {
+    "dbId" : 2430556,
+    "stId" : "R-HSA-2430556",
+    "displayName" : "p-S62-ARPP19/p-S67-ENSA:PP2A-PPP2R2D [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2791 ],
+    "children" : [ 2430554, 2430548 ]
+  }, {
+    "dbId" : 1629795,
+    "stId" : "R-HSA-1629795",
+    "displayName" : "SMC4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NTJ3",
+    "geneNames" : [ "SMC4", "CAPC", "SMC4L1" ],
+    "parents" : [ 1638144, 2294598, 2294584 ]
+  }, {
+    "dbId" : 2245214,
+    "stId" : "R-HSA-2245214",
+    "displayName" : "PHF8 [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 2245219 ],
+    "children" : [ 2245222, 2245212, 2172669 ]
+  }, {
+    "dbId" : 1629797,
+    "stId" : "R-HSA-1629797",
+    "displayName" : "NCAPH2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6IBW4",
+    "geneNames" : [ "NCAPH2", "CAPH2" ],
+    "parents" : [ 1638144, 2294584 ]
+  }, {
+    "dbId" : 181887,
+    "stId" : "R-HSA-181887",
+    "displayName" : "H2AFB1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0C5Y9",
+    "geneNames" : [ "H2AFB1" ],
+    "parents" : [ 181899 ]
+  }, {
+    "dbId" : 2245212,
+    "stId" : "R-HSA-2245212",
+    "displayName" : "PHF8-3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UPP1-3",
+    "geneNames" : [ "PHF8", "KIAA1111", "ZNF422" ],
+    "parents" : [ 2245214 ]
+  }, {
+    "dbId" : 1629799,
+    "stId" : "R-HSA-1629799",
+    "displayName" : "NCAPG2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86XI2",
+    "geneNames" : [ "NCAPG2", "LUZP5" ],
+    "parents" : [ 1638144, 2294584 ]
+  }, {
+    "dbId" : 2430554,
+    "stId" : "R-HSA-2430554",
+    "displayName" : "PP2A-PPP2R2D [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2787 ],
+    "parents" : [ 2430556 ],
+    "children" : [ 165997, 165974, 2160962 ]
+  }, {
+    "dbId" : 181890,
+    "stId" : "R-HSA-181890",
+    "displayName" : "HIST1H2AJ [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99878",
+    "geneNames" : [ "HIST1H2AJ", "H2AFE" ],
+    "parents" : [ 4549214, 181899 ]
+  }, {
+    "dbId" : 181891,
+    "stId" : "R-HSA-181891",
+    "displayName" : "HIST2H2AA3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6FI13",
+    "geneNames" : [ "HIST2H2AA3", "H2AFO", "HIST2H2AA", "HIST2H2AA4" ],
+    "parents" : [ 4549206, 181899 ]
+  }, {
+    "dbId" : 181888,
+    "stId" : "R-HSA-181888",
+    "displayName" : "HIST1H2AB [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P04908",
+    "geneNames" : [ "HIST1H2AB", "H2AFM", "HIST1H2AE", "H2AFA" ],
+    "parents" : [ 4549214, 181899 ]
+  }, {
+    "dbId" : 2422951,
+    "stId" : "R-HSA-2422951",
+    "displayName" : "p-T222,225-GORASP2:BLZF1:RAB2A:GTP [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2320 ],
+    "children" : [ 2422449, 2422965, 2422372 ]
+  }, {
+    "dbId" : 2311335,
+    "stId" : "R-HSA-2311335",
+    "displayName" : "USO1 homodimer [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 6808829, 2172177 ],
+    "children" : [ 2167936 ]
+  }, {
+    "dbId" : 181895,
+    "stId" : "R-HSA-181895",
+    "displayName" : "HIST1H2AC [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q93077",
+    "geneNames" : [ "HIST1H2AC", "H2AFL" ],
+    "parents" : [ 4549214, 181899 ]
+  }, {
+    "dbId" : 181892,
+    "stId" : "R-HSA-181892",
+    "displayName" : "HIST2H2AC [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16777",
+    "geneNames" : [ "HIST2H2AC", "H2AFQ" ],
+    "parents" : [ 4549206, 181899 ]
+  }, {
+    "dbId" : 451201,
+    "stId" : "R-HSA-451201",
+    "displayName" : "SET [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2413 ],
+    "identifier" : "Q01105",
+    "geneNames" : [ "SET" ],
+    "parents" : [ 450537, 2429713 ]
+  }, {
+    "dbId" : 2422444,
+    "stId" : "R-HSA-2422444",
+    "displayName" : "p-Y204-MAPK3-3 homodimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2422450 ],
+    "children" : [ 2422448 ]
+  }, {
+    "dbId" : 5228743,
+    "stId" : "R-HSA-5228743",
+    "displayName" : "p-S395-LMNA-1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02545-1",
+    "geneNames" : [ "LMNA", "LMN1" ],
+    "parents" : [ 5229025 ]
+  }, {
+    "dbId" : 181898,
+    "stId" : "R-HSA-181898",
+    "displayName" : "HIST1H2BK [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60814",
+    "geneNames" : [ "HIST1H2BK", "H2BFT", "HIRIP1" ],
+    "parents" : [ 4549207, 181911 ]
+  }, {
+    "dbId" : 2311338,
+    "stId" : "R-HSA-2311338",
+    "displayName" : "USO1 [ER to Golgi transport vesicle membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60763",
+    "geneNames" : [ "USO1", "VDP" ],
+    "parents" : [ 2311342 ]
+  }, {
+    "dbId" : 181899,
+    "stId" : "R-HSA-181899",
+    "displayName" : "Histone H2A [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 433760, 427405, 5250919, 8936581, 5617447, 181921, 3364032, 3364035, 3451132, 5625760, 5625791, 5625748, 5625860, 5625876, 433757, 427402, 2245190, 2245194, 427331, 1214200, 1214169, 606295 ],
+    "children" : [ 181890, 181891, 181888, 181895, 181892, 8862432, 56151, 181896, 181897, 8862427, 181887 ]
+  }, {
+    "dbId" : 181896,
+    "stId" : "R-HSA-181896",
+    "displayName" : "HIST1H2AD [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20671",
+    "geneNames" : [ "HIST1H2AD", "H2AFG" ],
+    "parents" : [ 4549214, 181899 ]
+  }, {
+    "dbId" : 5228740,
+    "stId" : "R-HSA-5228740",
+    "displayName" : "p-S395-LMNA-2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02545-2",
+    "geneNames" : [ "LMNA", "LMN1" ],
+    "parents" : [ 5229027 ]
+  }, {
+    "dbId" : 2311336,
+    "stId" : "R-HSA-2311336",
+    "displayName" : "p-RAB1:GTP [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2314414, 2172185 ],
+    "children" : [ 29438, 2422387 ]
+  }, {
+    "dbId" : 181897,
+    "stId" : "R-HSA-181897",
+    "displayName" : "H2AFZ [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P0C0S5",
+    "geneNames" : [ "H2AFZ", "H2AZ" ],
+    "parents" : [ 181899 ]
+  }, {
+    "dbId" : 2314415,
+    "stId" : "R-HSA-2314415",
+    "displayName" : "p-S189,T216,S274,S373-GORASP1 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BQQ3",
+    "geneNames" : [ "GORASP1", "GOLPH5", "GRASP65" ],
+    "parents" : [ 2314414 ]
+  }, {
+    "dbId" : 181902,
+    "stId" : "R-HSA-181902",
+    "displayName" : "HIST1H4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62805",
+    "geneNames" : [ "HIST1H4A", "H4/A", "H4FA", "HIST1H4B", "H4/I", "H4FI", "HIST1H4C", "H4/G", "H4FG", "HIST1H4D", "H4/B", "H4FB", "HIST1H4E", "H4/J", "H4FJ", "HIST1H4F", "H4/C", "H4FC", "HIST1H4H", "H4/H", "H4FH", "HIST1H4I", "H4/M", "H4FM", "HIST1H4J", "H4/E", "H4FE", "HIST1H4K", "H4/D", "H4FD", "HIST1H4L", "H4/K", "H4FK", "HIST2H4A", "H4/N", "H4F2", "H4FN", "HIST2H4", "HIST2H4B", "H4/O", "H4FO", "HIST4H4" ],
+    "parents" : [ 4549239, 4549252, 4568765, 4551323, 433760, 5250919, 8936581, 5617447, 4657037, 606291, 606295, 1214169, 1214200, 427331, 2245194, 427402, 433757, 975776, 5683972, 5683932, 975775, 181921, 3364032, 3364035, 5625760, 5625791, 5625748, 5625860, 5625876, 4568580, 5216232 ]
+  }, {
+    "dbId" : 5228738,
+    "stId" : "R-HSA-5228738",
+    "displayName" : "p-S395, S405-LMNB1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20700",
+    "geneNames" : [ "LMNB1", "LMN2", "LMNB" ],
+    "parents" : [ 5229026 ]
+  }, {
+    "dbId" : 181903,
+    "stId" : "R-HSA-181903",
+    "displayName" : "HIST1H2BB [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P33778",
+    "geneNames" : [ "HIST1H2BB", "H2BFF" ],
+    "parents" : [ 4549207, 181911 ]
+  }, {
+    "dbId" : 2311342,
+    "stId" : "R-HSA-2311342",
+    "displayName" : "USO1 homodimer [ER to Golgi transport vesicle membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2164 ],
+    "parents" : [ 5694332, 5694326 ],
+    "children" : [ 2311338 ]
+  }, {
+    "dbId" : 2314414,
+    "stId" : "R-HSA-2314414",
+    "displayName" : "p-T216,S189,S274,S373-GORASP1:p-S37-GOLGA2:p-RAB1:GTP:p-T210-PLK1 [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2235 ],
+    "children" : [ 2314415, 2311336, 3000318, 2172179 ]
+  }, {
+    "dbId" : 181900,
+    "stId" : "R-HSA-181900",
+    "displayName" : "HIST1H2BJ [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P06899",
+    "geneNames" : [ "HIST1H2BJ", "H2BFR" ],
+    "parents" : [ 4549207, 181911 ]
+  }, {
+    "dbId" : 2311340,
+    "stId" : "R-HSA-2311340",
+    "displayName" : "RAB1:GTP [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2422980, 2172177 ],
+    "children" : [ 29438, 2422388 ]
+  }, {
+    "dbId" : 181906,
+    "stId" : "R-HSA-181906",
+    "displayName" : "HIST1H2BC [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62807",
+    "geneNames" : [ "HIST1H2BC", "H2BFL", "HIST1H2BE", "H2BFH", "HIST1H2BF", "H2BFG", "HIST1H2BG", "H2BFA", "HIST1H2BI", "H2BFK" ],
+    "parents" : [ 4549207, 181911 ]
+  }, {
+    "dbId" : 2422965,
+    "stId" : "R-HSA-2422965",
+    "displayName" : "p-T222,T225-GORASP2 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H8Y8",
+    "geneNames" : [ "GORASP2", "GOLPH6" ],
+    "parents" : [ 2422951 ]
+  }, {
+    "dbId" : 181907,
+    "stId" : "R-HSA-181907",
+    "displayName" : "HIST1H2BN [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99877",
+    "geneNames" : [ "HIST1H2BN", "H2BFD" ],
+    "parents" : [ 4549207, 181911 ]
+  }, {
+    "dbId" : 181904,
+    "stId" : "R-HSA-181904",
+    "displayName" : "H2BFS [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P57053",
+    "geneNames" : [ "H2BFS" ],
+    "parents" : [ 181911 ]
+  }, {
+    "dbId" : 181910,
+    "stId" : "R-HSA-181910",
+    "displayName" : "HIST1H2BO [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P23527",
+    "geneNames" : [ "HIST1H2BO", "H2BFH", "H2BFN" ],
+    "parents" : [ 4549207, 181911 ]
+  }, {
+    "dbId" : 2422448,
+    "stId" : "R-HSA-2422448",
+    "displayName" : "p-Y204-MAPK3-3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P27361-3",
+    "geneNames" : [ "MAPK3", "ERK1", "PRKM3" ],
+    "parents" : [ 2422444 ]
+  }, {
+    "dbId" : 181911,
+    "stId" : "R-HSA-181911",
+    "displayName" : "Histone H2B [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 433760, 427405, 5250919, 8936581, 5617447, 606295, 1214169, 1214200, 427331, 5682998, 5682971, 975776, 5683972, 5683932, 975775, 181921, 3451132, 5625760, 5625791, 5625748, 5625860, 5625876, 433757, 427402, 2245190, 2245194 ],
+    "children" : [ 181923, 181920, 181898, 181903, 181900, 181906, 181907, 181904, 181910, 181908, 181915, 181912, 181916, 181917 ]
+  }, {
+    "dbId" : 2422449,
+    "stId" : "R-HSA-2422449",
+    "displayName" : "RAB2A:GTP [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2422429, 2422951 ],
+    "children" : [ 29438, 2422386 ]
+  }, {
+    "dbId" : 2422450,
+    "stId" : "R-HSA-2422450",
+    "displayName" : "p-Y204-MAPK3-3/p-T185,Y187-MAPK1 homodimer [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2330 ],
+    "children" : [ 109855, 2422444 ]
+  }, {
+    "dbId" : 181908,
+    "stId" : "R-HSA-181908",
+    "displayName" : "HIST2H2BE [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16778",
+    "geneNames" : [ "HIST2H2BE", "H2BFQ" ],
+    "parents" : [ 4549213, 4657027, 181911 ]
+  }, {
+    "dbId" : 181915,
+    "stId" : "R-HSA-181915",
+    "displayName" : "HIST1H2BH [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q93079",
+    "geneNames" : [ "HIST1H2BH", "H2BFJ" ],
+    "parents" : [ 4549207, 181911 ]
+  }, {
+    "dbId" : 181912,
+    "stId" : "R-HSA-181912",
+    "displayName" : "HIST1H2BD [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P58876",
+    "geneNames" : [ "HIST1H2BD", "H2BFB", "HIRIP2" ],
+    "parents" : [ 4549207, 181911 ]
+  }, {
+    "dbId" : 453274,
+    "stId" : "R-HSA-453274",
+    "displayName" : "Mitotic G2-G2/M phases",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3025 ]
+  }, {
+    "dbId" : 181916,
+    "stId" : "R-HSA-181916",
+    "displayName" : "HIST1H2BA [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96A08",
+    "geneNames" : [ "HIST1H2BA", "TSH2B" ],
+    "parents" : [ 4549207, 181911 ]
+  }, {
+    "dbId" : 181917,
+    "stId" : "R-HSA-181917",
+    "displayName" : "HIST1H2BM [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99879",
+    "geneNames" : [ "HIST1H2BM", "H2BFE" ],
+    "parents" : [ 4549207, 181911 ]
+  }, {
+    "dbId" : 181923,
+    "stId" : "R-HSA-181923",
+    "displayName" : "HIST3H2BB [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N257",
+    "geneNames" : [ "HIST3H2BB" ],
+    "parents" : [ 4549213, 4657027, 181911 ]
+  }, {
+    "dbId" : 2167936,
+    "stId" : "R-HSA-2167936",
+    "displayName" : "USO1 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60763",
+    "geneNames" : [ "USO1", "VDP" ],
+    "parents" : [ 2311335 ]
+  }, {
+    "dbId" : 181920,
+    "stId" : "R-HSA-181920",
+    "displayName" : "HIST1H2BL [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99880",
+    "geneNames" : [ "HIST1H2BL", "H2BFC" ],
+    "parents" : [ 4549207, 181911 ]
+  }, {
+    "dbId" : 2167938,
+    "stId" : "R-HSA-2167938",
+    "displayName" : "RAB1A [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62820",
+    "geneNames" : [ "RAB1A", "RAB1" ],
+    "parents" : [ 6808822, 2422388 ]
+  }, {
+    "dbId" : 264866,
+    "stId" : "R-HSA-264866",
+    "displayName" : "Lamin A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02545-1",
+    "geneNames" : [ "LMNA", "LMN1" ],
+    "parents" : [ 5228498 ]
+  }, {
+    "dbId" : 264867,
+    "stId" : "R-HSA-264867",
+    "displayName" : "LMNB1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20700",
+    "geneNames" : [ "LMNB1", "LMN2", "LMNB" ],
+    "parents" : [ 2993894 ]
+  }, {
+    "dbId" : 162984,
+    "stId" : "R-HSA-162984",
+    "displayName" : "GORASP1 [endoplasmic reticulum-Golgi intermediate compartment membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BQQ3",
+    "geneNames" : [ "GORASP1", "GOLPH5", "GRASP65" ],
+    "parents" : [ 5694327, 2172177 ]
+  }, {
+    "dbId" : 5244666,
+    "stId" : "R-HSA-5244666",
+    "displayName" : "p-S22/23, S395-Lamin dimers [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4451 ],
+    "children" : [ 5229030, 5229031, 5229029 ]
+  }, {
+    "dbId" : 264872,
+    "stId" : "R-HSA-264872",
+    "displayName" : "Lamin C [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02545-2",
+    "geneNames" : [ "LMNA", "LMN1" ],
+    "parents" : [ 2993891 ]
+  }, {
+    "dbId" : 29358,
+    "stId" : "R-ALL-29358",
+    "displayName" : "ATP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4496, 2881, 4241, 4449, 2884, 1382, 1510, 1240, 4328, 3003, 4126 ],
+    "identifier" : "15422",
+    "parents" : [ 30595, 9859339, 9498794, 9912335, 9265594, 9341432, 9566531, 9981015, 9054215, 9779582, 9083936, 9686102, 9419754, 9193551, 9622003, 5618103, 6792604, 9777082, 9417833, 9496788, 9191407, 9684321, 9119641, 9857431, 9066043, 5252069, 5252107, 9496797, 9417842, 9857434, 9119649, 9684330, 9191418, 9066044, 9777095, 5252071, 9119652, 9684333, 9417845, 9777101, 9857441, 9066047, 9191423, 9496800, 5251939, 9119663, 9066058, 5252098, 9496798, 9857435, 9777096, 9417843, 9119650, 9684331, 9191419, 9066045, 5252066, 9191427, 9119654, 9066049, 9777103, 9417847, 9496802, 9857447, 5251935, 9496794, 9191413, 9684327, 9777092, 9417839, 9119643, 5251999, 9191430, 9857454, 9119661, 9496805, 9417850, 9066056, 9777108, 5251965, 9066055, 9857453, 9119660, 9777107, 9684337, 5251995, 9191409, 9496790, 9777088, 9417835, 9684323, 5251962, 9191411, 9496792, 9777090, 9684325, 9417837, 5251991, 9857449, 9684335, 9191429, 9066051, 9417849, 9777105, 9496804, 9119658, 5252117, 9857433, 9417841, 9496796, 9119648, 9684329, 9191417, 9777094, 5251956, 5358517, 9911916, 9041491, 9191956, 9565254, 9120030, 9083774, 9684835, 9620770, 9066181, 9777787, 9980403, 9858143, 9339976, 9054121, 9497330, 9418317, 9264397, 5358531, 9093205, 9810414, 9288021, 9365467, 9523077, 9586557, 9444090, 9136003, 9937555, 9709845, 9218253, 9885782, 9640467, 8849161 ]
+  }, {
+    "dbId" : 111793,
+    "stId" : "R-ALL-111793",
+    "displayName" : "Fe2+ [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18248",
+    "parents" : [ 5220964, 5220932, 5221013, 5221040, 5221028, 5220943, 9526140, 9589550, 9448236, 9221440, 9369750, 9714611, 9643829, 9291625, 9889413, 9140201, 9814917, 5656466, 9797497, 9433748, 9577944, 9278133, 9699284, 9355275, 9632001, 9512899, 9208158, 8857714, 9433744, 9699277, 9512895, 9278129, 9631993, 9577931, 9355271, 9797490, 9208154, 8857702, 9889353, 9291600, 9643800, 9714574, 3222589, 9335294, 9492576, 9186905, 9771360, 9065298, 9680763, 9040272, 9117154, 9260304, 9082388, 9413633, 9115399, 9115576, 2245219, 9677730, 9410074, 9331638, 9257172, 9489033, 9767161, 9081895, 9183347, 2245227, 9678259, 9081947, 5656464, 9369727, 9140174, 9589527, 9221418, 9526121, 9448217 ]
+  }, {
+    "dbId" : 170160,
+    "stId" : "R-HSA-170160",
+    "displayName" : "CCNB1:p-T161-CDK1 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1244 ],
+    "parents" : [ 4088061 ],
+    "children" : [ 68901, 170066 ]
+  }, {
+    "dbId" : 4419830,
+    "stId" : "R-HSA-4419830",
+    "displayName" : "CNEP1R1 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N9A8",
+    "geneNames" : [ "CNEP1R1", "C16orf69", "TMEM188" ],
+    "parents" : [ 4419833 ]
+  }, {
+    "dbId" : 2422429,
+    "stId" : "R-HSA-2422429",
+    "displayName" : "GORASP2:BLZF1:RAB2A:GTP [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2328 ],
+    "children" : [ 2422449, 2422385, 2422372 ]
+  }, {
+    "dbId" : 4419833,
+    "stId" : "R-HSA-4419833",
+    "displayName" : "CTDNEP1:CNEP1R1 [nuclear envelope]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4158 ],
+    "children" : [ 3632863, 4419830 ]
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3104, 2163, 2356, 3031, 3335, 3960, 3035, 2236 ],
+    "identifier" : "16761",
+    "parents" : [ 6788782, 170037, 500087, 9697693, 9511149, 9432021, 9206358, 9353591, 9795136, 9630850, 9576626, 6814647, 9276454, 9308768, 9600654, 9658148, 9160110, 9466548, 9388155, 9539602, 9736133, 9237677, 390582, 9741227, 9240850, 9831931, 9542652, 9470172, 9661300, 9312377, 9603268, 9391818, 445800, 9163954, 391405, 6790050, 9736232, 9160241, 9056082, 9952449, 9658213, 9895747, 9103166, 9827450, 9078597, 9388323, 9466651, 9035776, 9539705, 9600757, 9308939, 9070319, 390455, 9237786, 445015, 445018, 9977479, 9562443, 9414582, 9117822, 9082713, 9681762, 9772765, 9909744, 9188009, 9493620, 9065454, 9853847, 9040520, 3371441, 9053615, 9681804, 9772846, 9977954, 9910080, 9040575, 9414618, 9117855, 9053626, 9265602, 9341440, 9493660, 9065507, 9853904, 9188045, 9082763, 5618090, 6792616, 9684367, 9041363, 9417878, 9911631, 9496840, 9083614, 9054014, 9857497, 9777150, 9066083, 9979792, 9191465, 9119694, 5252087, 9041366, 9857498, 9496844, 9119696, 9083616, 9777154, 9417882, 9191469, 9684371, 5252111, 9496843, 9417881, 9083615, 9777153, 9119695, 9684370, 9191468, 5252110, 9191474, 9119701, 9777159, 9041371, 9417887, 9083621, 9979797, 9857503, 9054019, 9684375, 9911636, 9066088, 9496849, 5252012, 9496846, 9119698, 9417884, 9777156, 9041368, 9066085, 9979794, 9857500, 9054016, 9083618, 9911633, 9684373, 9191471, 5251980, 9496847, 9191472, 9119699, 9417885, 9777157, 9041369, 9066086, 9979795, 9857501, 9054017, 9083619, 9911634, 9684374, 5252038, 9054022, 9041374, 9119704, 9083624, 9066091, 9979800, 9911639, 5252097, 5252129, 9119700, 9083620, 9191473, 9066087, 9979796, 9857502, 9054018, 9911635, 9777158, 9041370, 9417886, 9496848, 5252096, 9041367, 9496845, 9119697, 9777155, 9054015, 9417883, 9066084, 9857499, 9083617, 9979793, 9911632, 9684372, 9191470, 5255423, 9041364, 9777151, 9496841, 9417879, 9191466, 9684368, 5251966, 9562478, 9191475, 9777161, 9119703, 9857505, 9041373, 9979799, 9417888, 9054021, 9083623, 9496850, 9911638, 9066090, 5251932, 9041365, 9496842, 9417880, 9191467, 9777152, 9684369, 5252090, 9979798, 9054020, 9777160, 9119702, 9083622, 9684376, 9857504, 9041372, 9066089, 9911637, 5251953, 9831368, 9660936, 9391412, 9036464, 9312027, 9105375, 9240526, 9740533, 9469808, 1063687, 9163554, 9764250, 9614553, 9676171, 9408585, 9487301, 9181673, 9255598, 2029139, 9181649, 9081751, 9907168, 9764195, 9974123, 9614529, 9408572, 9847332, 9329756, 9255581, 9676153, 9064771, 9557586, 9114122, 9487280, 202994, 9039435, 9325521, 9554399, 9757673, 9843562, 9081664, 9252484, 9039312, 9672820, 9177035, 9483654, 9612368, 9405341, 1861625 ]
+  }, {
+    "dbId" : 2311324,
+    "stId" : "R-HSA-2311324",
+    "displayName" : "CCNB1,CCNB2:p-T161-CDK1 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1931 ],
+    "parents" : [ 8853807 ],
+    "children" : [ 68898, 157456 ]
+  }, {
+    "dbId" : 77502,
+    "stId" : "R-ALL-77502",
+    "displayName" : "AdoHcy [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1841 ],
+    "identifier" : "16680"
+  }, {
+    "dbId" : 2528998,
+    "stId" : "R-HSA-2528998",
+    "displayName" : "VRK1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99986",
+    "geneNames" : [ "VRK1" ],
+    "parents" : [ 2993899 ]
+  }, {
+    "dbId" : 2993901,
+    "stId" : "R-HSA-2993901",
+    "displayName" : "Lamin dimers [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 5228493 ],
+    "children" : [ 2993891, 5228498, 2993894 ]
+  }, {
+    "dbId" : 159939,
+    "stId" : "R-ALL-159939",
+    "displayName" : "SUCCA [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 800 ],
+    "identifier" : "15741"
+  }, {
+    "dbId" : 2993900,
+    "stId" : "R-HSA-2993900",
+    "displayName" : "EMD/TMPO/LEMD3/LEMD2:Lamin filaments:BANF1:Chromatin [nuclear envelope]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3965 ],
+    "children" : [ 2537690, 2993892, 2993914, 5228493 ]
+  }, {
+    "dbId" : 159942,
+    "stId" : "R-ALL-159942",
+    "displayName" : "CO2 [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 799 ],
+    "identifier" : "16526"
+  }, {
+    "dbId" : 2993896,
+    "stId" : "R-HSA-2993896",
+    "displayName" : "p-T2,T3,S4-BANF1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75531",
+    "geneNames" : [ "BANF1", "BAF", "BCRG1" ],
+    "parents" : [ 2993912 ]
+  }, {
+    "dbId" : 2993899,
+    "stId" : "R-HSA-2993899",
+    "displayName" : "VRK1/VRK2 [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3970 ],
+    "children" : [ 2528998, 2993893 ]
+  }, {
+    "dbId" : 2993893,
+    "stId" : "R-HSA-2993893",
+    "displayName" : "VRK2-2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86Y07-2",
+    "geneNames" : [ "VRK2" ],
+    "parents" : [ 2993899 ]
+  }, {
+    "dbId" : 5229191,
+    "stId" : "R-HSA-5229191",
+    "displayName" : "p-S395-Lamin dimers [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4330 ],
+    "children" : [ 5229025, 5229027, 5229026 ]
+  }, {
+    "dbId" : 1214170,
+    "stId" : "R-HSA-1214170",
+    "displayName" : "Me2K5-HIST1H3A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P68431",
+    "geneNames" : [ "HIST1H3A", "H3FA", "HIST1H3B", "H3FL", "HIST1H3C", "H3FC", "HIST1H3D", "H3FB", "HIST1H3E", "H3FD", "HIST1H3F", "H3FI", "HIST1H3G", "H3FH", "HIST1H3H", "H3FK", "HIST1H3I", "H3FF", "HIST1H3J", "H3FJ" ],
+    "parents" : [ 5244740, 1214192, 2245191 ]
+  }, {
+    "dbId" : 2993892,
+    "stId" : "R-HSA-2993892",
+    "displayName" : "EMD/ TMPO/ LEMD3/ LEMD2 [nuclear envelope]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4331 ],
+    "parents" : [ 2993900, 2993911 ],
+    "children" : [ 201573, 3067329, 2993886, 2993885 ]
+  }, {
+    "dbId" : 6805165,
+    "stId" : "R-HSA-6805165",
+    "displayName" : "POM121C [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "A8CG34",
+    "geneNames" : [ "POM121C" ],
+    "parents" : [ 6805169 ]
+  }, {
+    "dbId" : 2993894,
+    "stId" : "R-HSA-2993894",
+    "displayName" : "Lamin B1 dimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2993901 ],
+    "children" : [ 264867 ]
+  }, {
+    "dbId" : 2993891,
+    "stId" : "R-HSA-2993891",
+    "displayName" : "Lamin C dimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2993901 ],
+    "children" : [ 264872 ]
+  }, {
+    "dbId" : 2993912,
+    "stId" : "R-HSA-2993912",
+    "displayName" : "p-T2,T3,S4-BANF1 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3992 ],
+    "children" : [ 2993896 ]
+  }, {
+    "dbId" : 6805169,
+    "stId" : "R-HSA-6805169",
+    "displayName" : "POM121 [nuclear envelope]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ],
+    "children" : [ 6805165, 157747 ]
+  }, {
+    "dbId" : 2993914,
+    "stId" : "R-HSA-2993914",
+    "displayName" : "BANF1 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2993900 ],
+    "children" : [ 175030 ]
+  }, {
+    "dbId" : 6805183,
+    "stId" : "R-HSA-6805183",
+    "displayName" : "NDC1 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BTX1",
+    "geneNames" : [ "NDC1", "TMEM48" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 2172665,
+    "stId" : "R-HSA-2172665",
+    "displayName" : "Condensin II:RB1 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 606 ],
+    "children" : [ 1638144, 68642 ]
+  }, {
+    "dbId" : 2993911,
+    "stId" : "R-HSA-2993911",
+    "displayName" : "EMD/TMPO/LEMD3/LEMD2:Lamin filaments [nuclear envelope]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3968 ],
+    "children" : [ 2993892, 5228493 ]
+  }, {
+    "dbId" : 2172669,
+    "stId" : "R-HSA-2172669",
+    "displayName" : "PHF8-1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UPP1-1",
+    "geneNames" : [ "PHF8", "KIAA1111", "ZNF422" ],
+    "parents" : [ 2245214 ]
+  }, {
+    "dbId" : 2429638,
+    "stId" : "R-HSA-2429638",
+    "displayName" : "MCPH1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2414 ],
+    "identifier" : "Q8NEM0",
+    "geneNames" : [ "MCPH1" ],
+    "parents" : [ 2429713 ]
+  }, {
+    "dbId" : 157415,
+    "stId" : "R-HSA-157415",
+    "displayName" : "p-T161-CDK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P06493",
+    "geneNames" : [ "CDK1", "CDC2", "CDC28A", "CDKN1", "P34CDC2" ],
+    "parents" : [ 174232, 170121, 170047, 68898, 157456 ]
+  }, {
+    "dbId" : 3632863,
+    "stId" : "R-HSA-3632863",
+    "displayName" : "CTDNEP1 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95476",
+    "geneNames" : [ "CTDNEP1", "DULLARD" ],
+    "parents" : [ 4419833 ]
+  }, {
+    "dbId" : 1214206,
+    "stId" : "R-HSA-1214206",
+    "displayName" : "Me2K5-H3F3A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P84243",
+    "geneNames" : [ "H3F3A", "H3.3A", "H3F3", "PP781", "H3F3B", "H3.3B" ],
+    "parents" : [ 1214192, 2245191 ]
+  }, {
+    "dbId" : 2993885,
+    "stId" : "R-HSA-2993885",
+    "displayName" : "TMPO-1 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42167-1",
+    "geneNames" : [ "TMPO", "LAP2" ],
+    "parents" : [ 2993892 ]
+  }, {
+    "dbId" : 2993886,
+    "stId" : "R-HSA-2993886",
+    "displayName" : "LEMD3 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y2U8",
+    "geneNames" : [ "LEMD3", "MAN1" ],
+    "parents" : [ 2993892 ]
+  }, {
+    "dbId" : 1214186,
+    "stId" : "R-HSA-1214186",
+    "displayName" : "Me3K5-HIST1H3A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P68431",
+    "geneNames" : [ "HIST1H3A", "H3FA", "HIST1H3B", "H3FL", "HIST1H3C", "H3FC", "HIST1H3D", "H3FB", "HIST1H3E", "H3FD", "HIST1H3F", "H3FI", "HIST1H3G", "H3FH", "HIST1H3H", "H3FK", "HIST1H3I", "H3FF", "HIST1H3J", "H3FJ" ],
+    "parents" : [ 4551288, 5244761, 1214232, 2245187 ]
+  }, {
+    "dbId" : 2537690,
+    "stId" : "R-ALL-2537690",
+    "displayName" : "Chromatin [chromosome]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 3969 ],
+    "parents" : [ 9412983, 9334662, 9186299, 9680227, 9492000, 9259773, 2993900 ],
+    "children" : [ 1638790, 1638792 ]
+  }, {
+    "dbId" : 29438,
+    "stId" : "R-ALL-29438",
+    "displayName" : "GTP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15996",
+    "parents" : [ 482625, 170037, 110415, 165125, 194545, 350950, 206703, 351067, 9356337, 9632716, 9700221, 9579082, 9798611, 9279160, 9435020, 9874660, 9514304, 9209373, 8871141, 9129762, 9356195, 9129632, 9798412, 9700114, 9279032, 9632598, 9514162, 9434877, 9874454, 9578946, 8868235, 9209223, 8871130, 9208050, 9797363, 9631925, 9577873, 9512810, 9433661, 9355198, 9278053, 2316332, 2316465, 9432640, 9354177, 9872744, 9795931, 9577036, 9046452, 9631257, 9277094, 9698234, 9511832, 9128684, 9207005, 8849729, 9511836, 9207009, 9432644, 9354181, 9795938, 9277098, 9631265, 9872756, 9698241, 9577040, 8849731, 9128689, 9207013, 9872766, 9432648, 9354185, 9577044, 9277102, 9511840, 8849733, 9998550, 9046454, 9926708, 8849735, 9128500, 9056101, 9087910, 9576809, 9630998, 8847628, 9276600, 9795345, 9697811, 9511300, 9432190, 9353748, 9206518, 9871754, 9630475, 9697318, 9353114, 9576257, 9510689, 9128123, 9431585, 9926077, 9997520, 9205898, 9794672, 9276040, 9046121, 6811364, 9796041, 9926851, 9999028, 9046472, 8850025, 9872713, 9698191, 9631244, 9577023, 9511785, 9432611, 9354139, 9277066, 9206962, 9128655, 9872696, 9432595, 9631225, 9128640, 9206949, 9354121, 9511764, 9698176, 9577010, 9277053, 8849254, 9630824, 9576596, 9511127, 9795104, 9087822, 9697666, 9353567, 9431999, 9276429, 6814644, 9206331, 9630863, 9576639, 9697711, 9353602, 9276465, 9872157, 9206372, 9128371, 9795154, 9511158, 9432030, 6814643, 6814067, 9794827, 9997746, 9871934, 9697494, 9276249, 9630640, 9206126, 9926214, 9576403, 6814076, 9046280, 9576397, 9056053, 9353360, 9997731, 9276246, 9630632, 9794819, 9510944, 9871928, 9431810, 9926205, 9128290, 9046274, 9206123, 9087791, 9697488, 6814064, 9630921, 9576710, 9128447, 9795287, 9872215, 9087867, 9046363, 8847528, 9510871, 9431744, 9353288, 9206052, 9795213, 9510761, 9630533, 9998062, 9128189, 9431642, 9353179, 9697383, 9046174, 9276095, 9070278, 9205957, 9871825, 9576308, 9926386, 6811349, 9630636, 9576399, 9510828, 9128407, 9431700, 9276152, 9997736, 9794821, 9206019, 9046276, 9353251, 9871930, 9926207, 9697490, 6814072, 9276146, 9128404, 9697482, 9510822, 9576391, 9353245, 9206013, 9046267, 9630621, 9997718, 9794813, 9871921, 9926198, 9431694, 6814074, 9698921, 9512553, 9277813, 9207771, 9046748, 9129055, 9873509, 9056344, 9999478, 9927130, 9354915, 9070791, 9577653, 9796848, 9088271, 9433388, 9631728, 8854204, 9354835, 9207696, 9873423, 9277748, 9046706, 9056317, 9512482, 9088196, 9698846, 9796761, 9577593, 9129006, 9433323, 9631667, 8854335, 9698157, 9926701, 9070396, 9998541, 9631206, 9795879, 9872678, 9056154, 9576989, 9432576, 9087972, 9511740, 9277031, 9128609, 9046446, 9354093, 9206924, 8849251, 9512620, 9577691, 9433446, 9277861, 9207812, 9354984, 9796896, 9129070, 9056351, 9631761, 9088296, 9698963, 8854602, 9512510, 9433345, 9354869, 9698873, 9631688, 9796801, 9577616, 9277773, 9207724, 8854190, 9928652, 9633227, 10001677, 9357082, 9071064, 9056571, 9875513, 9088901, 9579678, 9279781, 9435755, 9047566, 9210062, 9130123, 8875316, 9799866, 9210371, 9633468, 9515244, 9088998, 9436052, 9579947, 9357415, 9280059, 9875875, 9130393, 9701108, 8877290, 9515246, 9799870, 9436054, 9357417, 9210377, 9701110, 9089000, 9875879, 9280061, 9130395, 8877288, 9928750, 9515048, 9435863, 9071101, 10001805, 9088927, 9579776, 9210173, 9357216, 9875643, 9700920, 9047625, 9799607, 9130250, 9279885, 8876128, 9700939, 9047636, 9130294, 9210192, 10001838, 9928769, 9357245, 9515070, 9071108, 9279904, 9088934, 9579801, 9875698, 9633329, 9435885, 9799636, 8876116, 9357424, 9210384, 9701119, 9280068, 9089007, 9515253, 9579953, 9436061, 9799877, 9633474, 8877284, 9928776, 9435892, 9047665, 9210202, 9515077, 9799654, 9579811, 9875705, 9700955, 9633342, 9357252, 9279911, 9088941, 8876110, 9056660, 9089057, 9515401, 9130483, 9580068, 9436186, 9357547, 9280200, 9876086, 9210508, 8877804, 9088887, 9279767, 9875503, 9056557, 9799489, 9579654, 9514947, 9435741, 9357068, 9210044, 8875326, 9210290, 9701039, 9279989, 9875808, 9633414, 9071128, 9088965, 9515165, 9357346, 9435973, 9047715, 9579893, 9799767, 9130347, 8876595, 9056629, 9633484, 9047767, 9071158, 9875885, 9799887, 9701132, 9210394, 9515269, 9357434, 9089016, 9928935, 9579963, 9130402, 9436071, 10002045, 9280078, 8877453, 9130452, 9047824, 9875950, 9799949, 9436120, 9580004, 9280127, 9089028, 9056647, 9633502, 9515322, 9701181, 9210442, 9357484, 8877601, 9047861, 9436209, 9357586, 9876128, 9929026, 9515424, 9056666, 9089061, 9800056, 9580095, 9280224, 9633566, 9130499, 9210537, 9701264, 10002138, 8877989, 9089046, 9047857, 9701230, 9357526, 9633540, 9280184, 9800004, 9210492, 9876057, 9436161, 9130476, 9580052, 9515380, 8877758, 9210227, 9088948, 10001859, 9875712, 9056600, 9279933, 9928793, 9357283, 9579838, 9515101, 9047682, 9130316, 9799667, 9700982, 9435917, 9633363, 9071115, 8876122, 9130422, 9210416, 9579977, 9799916, 9701155, 9071164, 9089022, 9928964, 9875908, 9515296, 9436094, 9056641, 9280100, 9633498, 9047789, 10002074, 9357454, 8877478, 10002087, 9210418, 9928970, 9357458, 9799918, 9047793, 9071166, 9515298, 9130424, 9436096, 9280102, 9089024, 9056643, 8877471, 9579916, 9875851, 9280016, 9210327, 10002017, 9633441, 9088986, 9436000, 9357376, 9515195, 9799804, 9047746, 9701072, 9130378, 8876838, 9210262, 9579877, 9279963, 9875779, 9088952, 9515134, 9056613, 9130343, 9357320, 9799729, 9633398, 9435947, 9701012, 8876448, 9071124, 9210278, 10002000, 9357336, 9279979, 9088959, 9435963, 9799750, 9701030, 9047704, 9928887, 9515153, 8876599, 194875, 9947274, 9650601, 9531913, 9298490, 9594116, 9455109, 9892420, 9061509, 9819736, 9376866, 9034084, 9723679, 9076898, 9227755, 9098606, 9147657, 194890, 5667053, 5666175, 9194243, 9342083, 9266177, 9780383, 9567067, 9686711, 2316453, 9342081, 9194241, 9780381, 9567065, 9686709, 9266175, 5627068, 9623500, 9195607, 9687849, 9121778, 9861345, 9568164, 9084416, 9343399, 9421703, 9781906, 9500787, 9042152, 9267437, 5668609, 9912410, 9498826, 9981153, 9419786, 9054254, 9041661, 9083962, 5618323, 9622141, 9120532, 9779771, 9686253, 9341584, 9193745, 9499004, 9419941, 9859663, 9566697, 9083999, 9265741, 5624106, 9686124, 9498895, 9912483, 9779649, 9054266, 9981367, 9566586, 9041667, 9622042, 9083970, 9419848, 9341451, 9193608, 9859511, 9265613, 5623423, 9120395, 9083925, 9041622, 9980992, 9341304, 9685990, 9912324, 9066265, 9621888, 9859303, 9419615, 9265473, 9779412, 9566416, 9498673, 9193420, 9120363, 5623445, 9265552, 9779529, 9084145, 9041843, 9621956, 9193498, 9054296, 9981431, 9498750, 9120448, 9912541, 9859548, 9566488, 9066370, 9419690, 9341388, 9686067, 5623431, 9792010, 9126804, 9351088, 9869931, 9924779, 9995427, 9508522, 9629255, 9274104, 9429243, 9055774, 9069797, 9695487, 9087206, 9574939, 9203689, 9045320, 143383, 141685, 9717032, 9371351, 9450019, 9075864, 9033019, 9815780, 9590883, 9943384, 9141988, 9890168, 9051428, 9645464, 9096110, 9060618, 156916, 159530, 9645452, 9222931, 9371344, 9450012, 9096102, 9293286, 9075859, 9033005, 156921, 9073942, 9710125, 9523273, 9365654, 9288220, 9938375, 9886425, 9444382, 9810681, 9218432, 9586740, 9050380, 9030956, 9640663, 9058859, 9093418, 72531, 9136260, 9031222, 9523503, 9136631, 9710444, 9887233, 9811105, 9444833, 9050630, 9093729, 9939390, 9365899, 9074318, 9640914, 9586963, 9059307, 72503, 391532, 391504, 391249, 391237, 391503, 391235, 391537, 391246, 391385, 390457, 9434738, 9209073, 9699966, 9928158, 9578826, 10000671, 9088477, 9514002, 9278892, 9356030, 9056490, 9047082, 8867380, 9355777, 9278658, 9927849, 9208802, 10000261, 9513768, 9434502, 9578586, 9046973, 9699734, 9056408, 9088410, 8867429, 8955576, 8955569, 8955720, 8955573, 9654797, 9062321, 9161500, 9232216, 9381918, 9737924, 9597890, 9051974, 9460410, 9078147, 9951088, 9828626, 9035148, 9894898, 9536369, 199981, 9303549, 9496653, 9417714, 9339475, 9053937, 9979490, 9065968, 9041264, 9684196, 9191263, 9119513, 9776914, 9083532, 9911380, 9857301, 5250197, 9263935, 9467070, 9309333, 9388711, 9238164, 9736834, 9160681, 400076, 9600108, 9463694, 9235330, 9156706, 9385324, 9538995, 9735157, 9306926, 5252145, 9737834, 9659213, 9540605, 9389412, 9310090, 9467826, 9238798, 420891, 804940, 941877, 421893, 2530541, 9137332, 9289059, 9524012, 9641525, 9219113, 9366554, 9711303, 9445504, 74049, 9778826, 9621388, 9419121, 9980689, 9498088, 9192811, 9685526, 9912102, 9565952, 9858902, 180686, 9980901, 9498441, 9419430, 9912243, 9041597, 9083897, 9054185, 5610522, 8951978, 9802750, 9581646, 9517258, 9438091, 9359489, 9281994, 9212487, 421676, 444974, 444967, 428484, 167204, 6802607, 5359063, 5359046, 5359045, 5359037, 5359036, 9570893, 9123348, 9043377, 9864320, 9987437, 9085534, 9424736, 9270208, 9919249, 9346600, 9503828, 9691063, 9198991, 9625648, 9068010, 5694299, 9785764, 9534511, 9230359, 9379925, 9727587, 9062047, 9822843, 9652957, 9100516, 9596222, 9051878, 9301444, 9034849, 9458294, 9151021, 9893525, 9948886, 9077898, 204003, 9087505, 9055952, 9270292, 9996655, 9575749, 9629927, 9346715, 9871064, 9696766, 9199105, 9043460, 9503933, 9424835, 9785983, 9070051, 9925559, 6807799, 9629934, 9871084, 9204918, 9996687, 9696773, 9925571, 9087518, 9055961, 9430469, 9793948, 9070060, 9352331, 9575766, 9275214, 9509744, 9045675, 6807789, 9127526, 9127511, 9696876, 9205043, 9997348, 9056022, 9925996, 9509897, 9794179, 9630048, 9430622, 9087739, 9871259, 9070214, 9352453, 9575864, 9275335, 9127630, 9045865, 6808826, 9509999, 9055956, 9127831, 9045968, 9925871, 9430712, 9794273, 9275449, 9697024, 9871388, 9070176, 9997104, 9630164, 9352587, 9205167, 9087690, 6808823, 9575985, 9341969, 9499342, 9194128, 9084049, 9120882, 9686596, 9780225, 9266083, 9041699, 9066316, 9566964, 9860053, 9622385, 5625964, 9420253, 8875670, 9279858, 9799576, 9700890, 9633293, 9579749, 9515015, 9435836, 9357184, 9210146, 9088261, 9796831, 9129041, 9512536, 9207749, 9071074, 9698901, 9577636, 9631703, 9433371, 9354895, 2193115, 9277796, 187686, 187722, 9076148, 9529228, 9592014, 9295409, 9144433, 9096572, 9033318, 9647455, 9719485, 9817149, 9224900, 9452087, 9373705, 169866, 182080, 187673, 187681, 170990, 171017, 449518, 9727995, 9034919, 217289, 9151497, 9823122, 9653236, 9596610, 9534936, 9458764, 9380373, 9301911, 9230756, 9100782, 9077978, 112373, 421789, 9529276, 9647599, 9144561, 9452185, 9592085, 9225001, 9373803, 9719636, 170661, 9295554, 9831374, 9542374, 9240536, 9391420, 9740548, 9036473, 9105381, 9603006, 9079265, 9469816, 9163562, 9660947, 206946, 9312038, 2311340, 9184610, 9616255, 9850639, 9559880, 9411174, 9678779, 9258186, 9490262, 9332746, 9768727, 2422449, 9559212, 9183697, 9615881, 9115548, 9064893, 9039679, 9332033, 9410466, 9257540, 9678071, 9489396, 9767702, 9081929, 9850455, 2311336, 9053219, 9769646, 9616873, 9333669, 9679477, 9560551, 9259003, 9491120, 9411999, 2562539, 9185390, 9265719, 9859631, 9622123, 9341559, 9193717, 9566679, 9686231, 9498979, 9120505, 9419919, 9083978, 5624294, 421101, 9062564, 9035860, 9737032, 9828046, 9160880, 9388901, 9103522, 9467284, 9078649, 9309516, 9658722, 9238317, 399865, 9658700, 9078641, 9540136, 9238229, 9828033, 9160767, 9736998, 9601120, 421110, 9467160, 9309414, 9103502, 9035848, 421104, 421103, 9391248, 9740393, 9311923, 9079222, 9062929, 9602922, 9660835, 9542268, 9469689, 9163427, 9240427, 9831223, 442290, 9105263, 9660845, 9240434, 9062931, 9391255, 9311930, 9469699, 9079225, 9542275, 9036450, 9831230, 9740403, 9602929, 9163434, 442315, 9105270, 9658732, 9467294, 9238327, 9601128, 9103552, 9309526, 9828050, 9078653, 9540180, 9062568, 9160890, 9388911, 419161, 5625897, 9343522, 9687960, 9623576, 9267572, 9500931, 9421837, 9861495, 9568259, 9084426, 8981459, 446942, 9773420, 9082931, 9562852, 9261657, 9494146, 9854310, 9040761, 9336869, 9118306, 9618679, 9415114, 9682199, 9188525, 3858468, 445852, 9103474, 9062525, 9540071, 9160669, 9388699, 9078622, 9952965, 9895928, 9736830, 9658617, 9601018, 9827890, 9238152, 9467058, 9035817, 400008, 374857, 9095413, 9643630, 9139958, 9942315, 9369525, 9814671, 9448037, 9714279, 9032475, 9076068, 9889342, 9221252, 9589364, 9291406, 9525939, 167438, 9774011, 9682574, 9563197, 9262017, 9188960, 9415477, 9337302, 9118499, 9619008, 9855366, 9494560, 3965396, 9774218, 9601532, 9337504, 9682712, 9161441, 9563333, 9494739, 4085980, 9262175, 4085966, 9226867, 9035414, 9649710, 9127760, 9611457, 9895204, 9831655, 9375968, 9951643, 9070246, 9740958, 9454168, 9297579, 9052014, 9146697, 9078315, 9531057, 190509, 9623407, 9343251, 9121746, 9861313, 9568054, 9195450, 9500628, 9421566, 5666092, 9121751, 9343257, 9066621, 9195455, 9861318, 9687747, 442568, 9421571, 9568059, 9042147, 9267300, 9623412, 9084399, 9781783, 5666123, 9083479, 9854330, 9682223, 9118343, 9620216, 9494170, 9261687, 9188549, 9564677, 9336893, 9415135, 3858473, 9500526, 9421473, 9343138, 9567979, 9687642, 9623334, 9267214, 9195373, 5665750, 9861304, 9421553, 9121733, 9066609, 9687732, 9568039, 9267291, 9500612, 9084398, 9623395, 9343230, 5666081, 9593033, 9097649, 9818671, 9078416, 9241304, 9062431, 9146047, 9296990, 9649089, 9453569, 9035576, 9530430, 448879, 9721713, 182921, 1250491, 9531790, 9227635, 9593999, 9061431, 9298358, 9376742, 9076819, 9147523, 9454966, 9819654, 9098523, 9650467, 5665993, 9825066, 9382129, 9035230, 9536583, 9101628, 9303811, 9730905, 9232417, 9460634, 9078220, 9153417, 9654994, 9598066, 354126, 9076311, 9817390, 9295732, 9096722, 9719845, 9054426, 9529439, 9914523, 9373957, 9452345, 9033408, 9144739, 9647764, 9225165, 9592178, 109783, 9035574, 9598671, 9826893, 9154579, 9537370, 2316458, 9102925, 9732401, 9305064, 9461620, 9233544, 9078414, 9655921, 442641, 421955, 9890313, 9528202, 9075953, 9294164, 9591297, 9816388, 9372319, 9943549, 9462265, 9223781, 9096322, 9717909, 9646259, 164358, 9142987, 9658268, 9466719, 9736314, 9309008, 9539755, 9237846, 9035779, 9827516, 9103244, 9600807, 9388396, 392003, 9160319, 9889929, 9221841, 9095766, 9078643, 9526532, 9644295, 9589920, 9370140, 9448736, 9032773, 9942908, 9715231, 9060515, 9815282, 9292079, 114534, 9140719, 9221811, 9103381, 9035795, 9370104, 9715169, 9589894, 9827706, 9890778, 9526488, 9944401, 9448691, 9076297, 9292044, 114525, 9140681, 9529278, 9452187, 9295556, 9144563, 9225003, 9592087, 9719638, 9647601, 9373805, 9035384, 392161, 9102627, 9889836, 9815215, 9526468, 9221784, 9095738, 9370081, 9644221, 9032709, 9715135, 9602325, 9942705, 9292009, 9448657, 9075722, 398056, 9140651, 9032694, 9095732, 9815209, 9370068, 9448645, 9140639, 9715111, 9075716, 9292000, 9526456, 9644209, 9589872, 114539, 9221775, 9372563, 9294517, 9591553, 9646497, 9718298, 9451133, 9224038, 9076000, 9060738, 9816787, 9033196, 9528499, 165189, 9224082, 9084276, 9646543, 9451176, 9816834, 9042015, 9294552, 9591590, 9121304, 9718341, 9528541, 9372613, 9066473, 5653976, 9121301, 9084273, 9646538, 9718338, 9042012, 9451170, 9591587, 9372608, 9066470, 9528538, 9816831, 9224077, 5653978, 9528558, 9816843, 9718351, 9372628, 9066482, 9084285, 9224092, 9294562, 9121318, 9646553, 9591600, 9451186, 9042024, 5653967, 9718347, 9591596, 9451182, 9816841, 9528554, 9143331, 9143372, 9143377, 9143386, 9143390, 5653971, 9372619, 9646549, 9121314, 9042022, 9084283, 9294558, 9224088, 9066480 ]
+  }, {
+    "dbId" : 2172193,
+    "stId" : "R-HSA-2172193",
+    "displayName" : "p-T216,S274,S373-GORASP1:p-S37-GOLGA2:p-RAB1:GTP:p-T210-PLK1 [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 589 ],
+    "children" : [ 2172185, 3000318 ]
+  }, {
+    "dbId" : 2990893,
+    "stId" : "R-HSA-2990893",
+    "displayName" : "p-4S,3T-NUP98-3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52948-3",
+    "geneNames" : [ "NUP98", "ADAR2" ],
+    "parents" : [ 2990901 ]
+  }, {
+    "dbId" : 2530599,
+    "stId" : "R-HSA-2530599",
+    "displayName" : "NEK7 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8TDX7",
+    "geneNames" : [ "NEK7" ],
+    "parents" : [ 2980718 ]
+  }, {
+    "dbId" : 2530596,
+    "stId" : "R-HSA-2530596",
+    "displayName" : "NEK6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HC98",
+    "geneNames" : [ "NEK6" ],
+    "parents" : [ 2980718 ]
+  }, {
+    "dbId" : 2990895,
+    "stId" : "R-HSA-2990895",
+    "displayName" : "p-2S,3T-NUP98-4 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52948-4",
+    "geneNames" : [ "NUP98", "ADAR2" ],
+    "parents" : [ 2990907 ]
+  }, {
+    "dbId" : 1214225,
+    "stId" : "R-HSA-1214225",
+    "displayName" : "Me2K5-HIST2H3A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q71DI3",
+    "geneNames" : [ "HIST2H3A", "HIST2H3C", "H3F2", "H3FM", "HIST2H3D" ],
+    "parents" : [ 5244740, 1214192, 2245191 ]
+  }, {
+    "dbId" : 2990888,
+    "stId" : "R-HSA-2990888",
+    "displayName" : "Partially Disassembled NPC [nuclear envelope]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3962 ],
+    "children" : [ 157692, 157695, 157753, 157752, 157691, 6805183, 157754, 157690, 157722, 157749, 6805169, 157748, 157750, 157718, 157712, 157741, 157740, 157739, 157738, 157700, 157703, 157697 ]
+  }, {
+    "dbId" : 2990884,
+    "stId" : "R-HSA-2990884",
+    "displayName" : "p-4S,3T-NUP98-4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52948-4",
+    "geneNames" : [ "NUP98", "ADAR2" ],
+    "parents" : [ 2990905 ]
+  }, {
+    "dbId" : 157451,
+    "stId" : "R-HSA-157451",
+    "displayName" : "CCNB1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14635",
+    "geneNames" : [ "CCNB1", "CCNB" ],
+    "parents" : [ 157461, 6803876, 170068, 170048, 157456 ]
+  }, {
+    "dbId" : 68877,
+    "stId" : "R-HSA-68877",
+    "displayName" : "Mitotic Prometaphase",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4132 ]
+  }, {
+    "dbId" : 2984225,
+    "stId" : "R-HSA-2984225",
+    "displayName" : "p-S29,T210,T333,S750,S869-NEK9 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8TD19",
+    "geneNames" : [ "NEK9", "KIAA1995", "NEK8", "NERCC" ],
+    "parents" : [ 2984227 ]
+  }, {
+    "dbId" : 2294575,
+    "stId" : "R-ALL-2294575",
+    "displayName" : "Interphase chromosomes [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 1558 ]
+  }, {
+    "dbId" : 2530600,
+    "stId" : "R-HSA-2530600",
+    "displayName" : "p-T333-NEK9 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8TD19",
+    "geneNames" : [ "NEK9", "KIAA1995", "NEK8", "NERCC" ],
+    "parents" : [ 2984219 ]
+  }, {
+    "dbId" : 2984227,
+    "stId" : "R-HSA-2984227",
+    "displayName" : "p-3S,2T-NEK9 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3034 ],
+    "parents" : [ 2984255, 2980721 ],
+    "children" : [ 2984225 ]
+  }, {
+    "dbId" : 2294572,
+    "stId" : "R-HSA-2294572",
+    "displayName" : "p-S-NCAPG2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86XI2",
+    "geneNames" : [ "NCAPG2", "LUZP5" ],
+    "parents" : [ 2294598 ]
+  }, {
+    "dbId" : 2984253,
+    "stId" : "R-HSA-2984253",
+    "displayName" : "p-S206-NEK6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HC98",
+    "geneNames" : [ "NEK6" ],
+    "parents" : [ 2984248 ]
+  }, {
+    "dbId" : 157456,
+    "stId" : "R-HSA-157456",
+    "displayName" : "CCNB1:p-T161-CDK1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 174095, 170106, 2311324 ],
+    "children" : [ 157451, 157415 ]
+  }, {
+    "dbId" : 2984255,
+    "stId" : "R-HSA-2984255",
+    "displayName" : "p-3S,2T-NEK9: p-S206-NEK6/ p-S195-NEK7 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3103 ],
+    "children" : [ 2984227, 2984248 ]
+  }, {
+    "dbId" : 2990905,
+    "stId" : "R-HSA-2990905",
+    "displayName" : "p-4S,3T-NUP98 [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3961 ],
+    "children" : [ 2990884, 2990914 ]
+  }, {
+    "dbId" : 4419927,
+    "stId" : "R-HSA-4419927",
+    "displayName" : "LPIN1 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14693",
+    "geneNames" : [ "LPIN1", "KIAA0188" ],
+    "parents" : [ 4419925 ]
+  }, {
+    "dbId" : 4419926,
+    "stId" : "R-HSA-4419926",
+    "displayName" : "LPIN2 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92539",
+    "geneNames" : [ "LPIN2", "KIAA0249" ],
+    "parents" : [ 4419925 ]
+  }, {
+    "dbId" : 2984248,
+    "stId" : "R-HSA-2984248",
+    "displayName" : "p-S206-NEK6/p-S195-NEK7 [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 2984255 ],
+    "children" : [ 2984253, 2984246 ]
+  }, {
+    "dbId" : 2990907,
+    "stId" : "R-HSA-2990907",
+    "displayName" : "p-2S,3T-NUP98 [nuclear envelope]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 2990903 ],
+    "children" : [ 2990895, 2990916 ]
+  }, {
+    "dbId" : 4419925,
+    "stId" : "R-HSA-4419925",
+    "displayName" : "LPIN [nuclear envelope]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4156 ],
+    "children" : [ 4419927, 4419928, 4419926 ]
+  }, {
+    "dbId" : 1638144,
+    "stId" : "R-HSA-1638144",
+    "displayName" : "Condensin II [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 604 ],
+    "parents" : [ 2429713, 2172665, 2288093 ],
+    "children" : [ 1629799, 1629797, 1629795, 1629792, 1629790 ]
+  }, {
+    "dbId" : 2294587,
+    "stId" : "R-HSA-2294587",
+    "displayName" : "p-T1415-NCAPD3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42695",
+    "geneNames" : [ "NCAPD3", "CAPD3", "KIAA0056" ],
+    "parents" : [ 2294584 ]
+  }, {
+    "dbId" : 2990901,
+    "stId" : "R-HSA-2990901",
+    "displayName" : "p-4S,3T-NUP98 [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3963 ],
+    "children" : [ 2990915, 2990893 ]
+  }, {
+    "dbId" : 2990903,
+    "stId" : "R-HSA-2990903",
+    "displayName" : "Nuclear Pore Complex (p-2S,3T-NUP98) [nuclear envelope]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3334 ],
+    "children" : [ 157692, 157695, 157753, 157752, 157691, 6805183, 157754, 157690, 157722, 157749, 6805169, 2990907, 157748, 157750, 157718, 157712, 157741, 157740, 157739, 157738, 157700, 157703, 157697 ]
+  }, {
+    "dbId" : 1214216,
+    "stId" : "R-HSA-1214216",
+    "displayName" : "Me3K5-H3F3A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P84243",
+    "geneNames" : [ "H3F3A", "H3.3A", "H3F3", "PP781", "H3F3B", "H3.3B" ],
+    "parents" : [ 1214232, 2245187 ]
+  }, {
+    "dbId" : 2984246,
+    "stId" : "R-HSA-2984246",
+    "displayName" : "p-S195-NEK7 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8TDX7",
+    "geneNames" : [ "NEK7" ],
+    "parents" : [ 2984248 ]
+  }, {
+    "dbId" : 4419928,
+    "stId" : "R-HSA-4419928",
+    "displayName" : "LPIN3 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BQK8",
+    "geneNames" : [ "LPIN3", "LIPN3L" ],
+    "parents" : [ 4419925 ]
+  }, {
+    "dbId" : 2294584,
+    "stId" : "R-HSA-2294584",
+    "displayName" : "Phosphorylated Condensin II [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2294607, 2294591 ],
+    "children" : [ 1629799, 1629797, 1629795, 2294587, 1629792 ]
+  }, {
+    "dbId" : 2294591,
+    "stId" : "R-HSA-2294591",
+    "displayName" : "p-T210-PLK1:Phosphorylated Condensin II:Nucleosome [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1475 ],
+    "children" : [ 3002800, 2294584, 2245190 ]
+  }, {
+    "dbId" : 4419935,
+    "stId" : "R-HSA-4419935",
+    "displayName" : "p-S106-LPIN3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BQK8",
+    "geneNames" : [ "LPIN3", "LIPN3L" ],
+    "parents" : [ 4419938 ]
+  }, {
+    "dbId" : 109853,
+    "stId" : "R-HSA-109853",
+    "displayName" : "p-T185,Y187-MAPK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P28482",
+    "geneNames" : [ "MAPK1", "ERK2", "PRKM1", "PRKM2" ],
+    "parents" : [ 169289, 445005, 109854, 109855 ]
+  }, {
+    "dbId" : 2314559,
+    "stId" : "R-ALL-2314559",
+    "displayName" : "ER to Golgi transport vesicle [ER to Golgi transport vesicle membrane]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 2318 ]
+  }, {
+    "dbId" : 1214223,
+    "stId" : "R-HSA-1214223",
+    "displayName" : "Me3K5-HIST2H3A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q71DI3",
+    "geneNames" : [ "HIST2H3A", "HIST2H3C", "H3F2", "H3FM", "HIST2H3D" ],
+    "parents" : [ 5244761, 1214232, 2245187 ]
+  }, {
+    "dbId" : 2160957,
+    "stId" : "R-HSA-2160957",
+    "displayName" : "MASTL [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2590 ],
+    "identifier" : "Q96GX5",
+    "geneNames" : [ "MASTL", "GW", "GWL", "THC2" ]
+  }, {
+    "dbId" : 2314558,
+    "stId" : "R-ALL-2314558",
+    "displayName" : "Golgi cisternae [Golgi membrane]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 2260 ]
+  }, {
+    "dbId" : 77087,
+    "stId" : "R-ALL-77087",
+    "displayName" : "AdoMet [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1840 ],
+    "identifier" : "15414"
+  }, {
+    "dbId" : 109855,
+    "stId" : "R-HSA-109855",
+    "displayName" : "p-T185,Y187 MAPK1 dimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2422450, 1268261 ],
+    "children" : [ 109853 ]
+  }, {
+    "dbId" : 4419933,
+    "stId" : "R-HSA-4419933",
+    "displayName" : "p-S106-LPIN2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92539",
+    "geneNames" : [ "LPIN2", "KIAA0249" ],
+    "parents" : [ 4419938 ]
+  }, {
+    "dbId" : 2294589,
+    "stId" : "R-HSA-2294589",
+    "displayName" : "p-S-NCAPH2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6IBW4",
+    "geneNames" : [ "NCAPH2", "CAPH2" ],
+    "parents" : [ 2294598 ]
+  }, {
+    "dbId" : 2160959,
+    "stId" : "R-HSA-2160959",
+    "displayName" : "ARPP19 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 305 ],
+    "identifier" : "P56211",
+    "geneNames" : [ "ARPP19" ]
+  }, {
+    "dbId" : 68897,
+    "stId" : "R-HSA-68897",
+    "displayName" : "CCNB2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95067",
+    "geneNames" : [ "CCNB2" ],
+    "parents" : [ 157461, 170152, 68898 ]
+  }, {
+    "dbId" : 4419938,
+    "stId" : "R-HSA-4419938",
+    "displayName" : "p-S106-LPIN [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4154 ],
+    "children" : [ 4419936, 4419933, 4419935 ]
+  }, {
+    "dbId" : 68898,
+    "stId" : "R-HSA-68898",
+    "displayName" : "CCNB2:p-T161-CDK1 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2311324 ],
+    "children" : [ 157415, 68897 ]
+  }, {
+    "dbId" : 4419936,
+    "stId" : "R-HSA-4419936",
+    "displayName" : "p-S106-LPIN1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14693",
+    "geneNames" : [ "LPIN1", "KIAA0188" ],
+    "parents" : [ 4419938 ]
+  }, {
+    "dbId" : 68901,
+    "stId" : "R-HSA-68901",
+    "displayName" : "CCNB1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14635",
+    "geneNames" : [ "CCNB1", "CCNB" ],
+    "parents" : [ 75032, 170056, 170065, 170073, 170160 ]
+  }, {
+    "dbId" : 2172676,
+    "stId" : "R-HSA-2172676",
+    "displayName" : "MeK-HIST1H4A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62805",
+    "geneNames" : [ "HIST1H4A", "H4/A", "H4FA", "HIST1H4B", "H4/I", "H4FI", "HIST1H4C", "H4/G", "H4FG", "HIST1H4D", "H4/B", "H4FB", "HIST1H4E", "H4/J", "H4FJ", "HIST1H4F", "H4/C", "H4FC", "HIST1H4H", "H4/H", "H4FH", "HIST1H4I", "H4/M", "H4FM", "HIST1H4J", "H4/E", "H4FE", "HIST1H4K", "H4/D", "H4FD", "HIST1H4L", "H4/K", "H4FK", "HIST2H4A", "H4/N", "H4F2", "H4FN", "HIST2H4", "HIST2H4B", "H4/O", "H4FO", "HIST4H4" ],
+    "parents" : [ 2245190 ]
+  }, {
+    "dbId" : 29478,
+    "stId" : "R-ALL-29478",
+    "displayName" : "CH2O [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 802 ],
+    "identifier" : "16842"
+  }, {
+    "dbId" : 2172681,
+    "stId" : "R-HSA-2172681",
+    "displayName" : "PHF8:Nucleosome with H3K4me2/3 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 801 ],
+    "children" : [ 2245194, 2245219 ]
+  }, {
+    "dbId" : 2172686,
+    "stId" : "R-HSA-2172686",
+    "displayName" : "PHF8:Nucleosome with H3K4me2/3:H4K20me1 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 798 ],
+    "children" : [ 2245190, 2245219 ]
+  }, {
+    "dbId" : 2168081,
+    "stId" : "R-HSA-2168081",
+    "displayName" : "p-S62-ARPP19 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 387 ],
+    "identifier" : "P56211",
+    "geneNames" : [ "ARPP19" ],
+    "parents" : [ 2430548 ]
+  }, {
+    "dbId" : 2172177,
+    "stId" : "R-HSA-2172177",
+    "displayName" : "GORASP1:GOLGA2:USO1:RAB1:GTP [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 477 ],
+    "children" : [ 2311340, 2167933, 162984, 2311335 ]
+  }, {
+    "dbId" : 5223295,
+    "stId" : "R-HSA-5223295",
+    "displayName" : "p-PKCA, p-PKCB [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4267 ],
+    "parents" : [ 5223297 ],
+    "children" : [ 5223292, 5223294 ]
+  }, {
+    "dbId" : 5223294,
+    "stId" : "R-HSA-5223294",
+    "displayName" : "p-T500,T642,S661-PRKCB [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05771",
+    "geneNames" : [ "PRKCB", "PKCB", "PRKCB1" ],
+    "parents" : [ 5223295 ]
+  }, {
+    "dbId" : 2990879,
+    "stId" : "R-HSA-2990879",
+    "displayName" : "NUP98 [nuclear envelope]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 5228516, 157689 ],
+    "children" : [ 2990912, 157723 ]
+  }, {
+    "dbId" : 2172179,
+    "stId" : "R-HSA-2172179",
+    "displayName" : "p-S37-GOLGA2 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q08379",
+    "geneNames" : [ "GOLGA2" ],
+    "parents" : [ 2314414, 2172185 ]
+  }, {
+    "dbId" : 5223292,
+    "stId" : "R-HSA-5223292",
+    "displayName" : "p-T497,T638,S657-PRKCA [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P17252",
+    "geneNames" : [ "PRKCA", "PKCA", "PRKACA" ],
+    "parents" : [ 5223295 ]
+  }, {
+    "dbId" : 2429713,
+    "stId" : "R-HSA-2429713",
+    "displayName" : "Condensin II:MCPH1:SET [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2415 ],
+    "children" : [ 1638144, 451201, 2429638 ]
+  }, {
+    "dbId" : 2984219,
+    "stId" : "R-HSA-2984219",
+    "displayName" : "p-T333-NEK9 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3028 ],
+    "children" : [ 2530600 ]
+  }, {
+    "dbId" : 2172182,
+    "stId" : "R-HSA-2172182",
+    "displayName" : "p-T216,S274,S373-GORASP1 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BQQ3",
+    "geneNames" : [ "GORASP1", "GOLPH5", "GRASP65" ],
+    "parents" : [ 2172185 ]
+  }, {
+    "dbId" : 29496,
+    "stId" : "R-ALL-29496",
+    "displayName" : "Ca2+ [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4268 ],
+    "identifier" : "29108",
+    "parents" : [ 9684047, 9083454, 9417468, 9263742, 9564736, 9857210, 9191040, 9776702, 9496439, 9119374, 9041164, 9339245, 2685704, 9412431, 9770071, 9679831, 9491541, 9065122, 9617118, 9851783, 9560899, 9082137, 9334234, 9185849, 9259382, 9040021, 9053270, 9116404, 629658, 9369548, 9643669, 9139980, 9448056, 9075591, 9065124, 9291426, 9053272, 9116408, 9221272, 9525959, 9714317, 9589384, 9040023, 9851785, 194846, 9221277, 9714322, 9643674, 9075600, 9139985, 9291431, 9448061, 9525964, 9369553, 9589389, 379839, 5223297, 9620274 ]
+  }, {
+    "dbId" : 2984213,
+    "stId" : "R-HSA-2984213",
+    "displayName" : "p-S29,T333,S750,S869-NEK9 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8TD19",
+    "geneNames" : [ "NEK9", "KIAA1995", "NEK8", "NERCC" ],
+    "parents" : [ 2984215 ]
+  }, {
+    "dbId" : 2172185,
+    "stId" : "R-HSA-2172185",
+    "displayName" : "p-T216,S274,S373-GORASP1:p-S37-GOLGA2:p-RAB1:GTP [Golgi membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 482 ],
+    "parents" : [ 2172193 ],
+    "children" : [ 2311336, 2172182, 2172179 ]
+  }, {
+    "dbId" : 2984215,
+    "stId" : "R-HSA-2984215",
+    "displayName" : "p-3S,T-NEK9 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3030 ],
+    "children" : [ 2984213 ]
+  }, {
+    "dbId" : 2172190,
+    "stId" : "R-HSA-2172190",
+    "displayName" : "p-T195-RAB1A [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62820",
+    "geneNames" : [ "RAB1A", "RAB1" ],
+    "parents" : [ 2422387 ]
+  }, {
+    "dbId" : 2980718,
+    "stId" : "R-HSA-2980718",
+    "displayName" : "NEK6/NEK7 [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3099 ],
+    "parents" : [ 2980721 ],
+    "children" : [ 2530596, 2530599 ]
+  }, {
+    "dbId" : 5221124,
+    "stId" : "R-ALL-5221124",
+    "displayName" : "DAG [nuclear envelope]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4246 ],
+    "identifier" : "17815",
+    "parents" : [ 5223297, 9620274, 9339245, 9041164, 9119374, 9496439, 9776702, 9191040, 9857210, 9564736, 9263742, 9417468, 9083454, 9684047 ]
+  }, {
+    "dbId" : 5221122,
+    "stId" : "R-ALL-5221122",
+    "displayName" : "1,2-diacyl-glycerol 3-phosphate [nuclear envelope]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4244 ],
+    "identifier" : "29089"
+  }, {
+    "dbId" : 56151,
+    "stId" : "R-HSA-56151",
+    "displayName" : "H2AFX [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P16104",
+    "geneNames" : [ "H2AFX", "H2AX" ],
+    "parents" : [ 181899, 975775 ]
+  }, {
+    "dbId" : 2980721,
+    "stId" : "R-HSA-2980721",
+    "displayName" : "p-3S,2T-NEK9:NEK6/NEK7 [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3100 ],
+    "children" : [ 2984227, 2980718 ]
+  }, {
+    "dbId" : 2294594,
+    "stId" : "R-HSA-2294594",
+    "displayName" : "p-T1415,S1419-NCAPD3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P42695",
+    "geneNames" : [ "NCAPD3", "CAPD3", "KIAA0056" ],
+    "parents" : [ 2294598 ]
+  }, {
+    "dbId" : 2314561,
+    "stId" : "R-ALL-2314561",
+    "displayName" : "ER to Golgi transport vesicle fused with cis-Golgi [Golgi membrane]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 2319 ]
+  }, {
+    "dbId" : 2160962,
+    "stId" : "R-HSA-2160962",
+    "displayName" : "PPP2R2D [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q66LE6",
+    "geneNames" : [ "PPP2R2D", "KIAA1541" ],
+    "parents" : [ 2430554 ]
+  }, {
+    "dbId" : 2160964,
+    "stId" : "R-HSA-2160964",
+    "displayName" : "ENSA [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2626 ],
+    "identifier" : "O43768",
+    "geneNames" : [ "ENSA" ]
+  }, {
+    "dbId" : 2294598,
+    "stId" : "R-HSA-2294598",
+    "displayName" : "Hyperphosphorylated Condensin II [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2294604 ],
+    "children" : [ 2294572, 2294589, 1629795, 1629792, 2294594 ]
+  }, {
+    "dbId" : 201573,
+    "stId" : "R-HSA-201573",
+    "displayName" : "EMD [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50402",
+    "geneNames" : [ "EMD", "EDMD", "STA" ],
+    "parents" : [ 2993892 ]
+  }, {
+    "dbId" : 2314571,
+    "stId" : "R-ALL-2314571",
+    "displayName" : "Stacked Golgi cisternae [Golgi membrane]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 2261 ]
+  }, {
+    "dbId" : 2990916,
+    "stId" : "R-HSA-2990916",
+    "displayName" : "p-2S,3T-NUP98-3 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52948-3",
+    "geneNames" : [ "NUP98", "ADAR2" ],
+    "parents" : [ 2990907 ]
+  }, {
+    "dbId" : 2294602,
+    "stId" : "R-ALL-2294602",
+    "displayName" : "Condensed prophase chromosomes [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 1559 ]
+  }, {
+    "dbId" : 2294607,
+    "stId" : "R-HSA-2294607",
+    "displayName" : "Phosphorylated Condensin II:Nucleosome [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1384 ],
+    "children" : [ 2294584, 2245190 ]
+  }, {
+    "dbId" : 2990912,
+    "stId" : "R-HSA-2990912",
+    "displayName" : "NUP98-4 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52948-4",
+    "geneNames" : [ "NUP98", "ADAR2" ],
+    "parents" : [ 2990879 ]
+  }, {
+    "dbId" : 2990915,
+    "stId" : "R-HSA-2990915",
+    "displayName" : "p-4S,3T-NUP98-4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52948-4",
+    "geneNames" : [ "NUP98", "ADAR2" ],
+    "parents" : [ 2990901 ]
+  }, {
+    "dbId" : 2990914,
+    "stId" : "R-HSA-2990914",
+    "displayName" : "p-4S,3T-NUP98-3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52948-3",
+    "geneNames" : [ "NUP98", "ADAR2" ],
+    "parents" : [ 2990905 ]
+  }, {
+    "dbId" : 2294604,
+    "stId" : "R-HSA-2294604",
+    "displayName" : "Hyperphosphorylated Condensin II:Nucleosome [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1511 ],
+    "children" : [ 3002800, 2294598, 2245190 ]
+  }, {
+    "dbId" : 113518,
+    "stId" : "R-ALL-113518",
+    "displayName" : "H2O [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4245, 4155 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 417142,
+    "stId" : "R-HSA-417142",
+    "displayName" : "SETD8 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1842 ],
+    "identifier" : "Q9NQR1",
+    "geneNames" : [ "KMT5A", "PRSET7", "SET07", "SET8", "SETD8" ]
+  }, {
+    "dbId" : 8982281,
+    "stId" : "R-HSA-8982281",
+    "displayName" : "p-T2055-NUMA1 homodimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4497 ],
+    "children" : [ 380473 ]
+  }, {
+    "dbId" : 8982283,
+    "stId" : "R-HSA-8982283",
+    "displayName" : "NUMA1 homodimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4494 ],
+    "children" : [ 380443 ]
+  }, {
+    "dbId" : 5228493,
+    "stId" : "R-HSA-5228493",
+    "displayName" : "Lamin filaments [nucleoplasm]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 2993900, 2993911 ],
+    "children" : [ 2993901 ]
+  }, {
+    "dbId" : 113550,
+    "stId" : "R-ALL-113550",
+    "displayName" : "Pi [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4453, 4157 ],
+    "identifier" : "18367",
+    "parents" : [ 9706568, 9441867, 9072624, 9882511, 9029712, 9931631, 9090814, 9584897, 9216189, 9133508, 9807192, 9363207, 9521014, 9057679, 9638096, 9049673, 9285647, 68569 ]
+  }, {
+    "dbId" : 1638792,
+    "stId" : "R-ALL-1638792",
+    "displayName" : "Sister Centromere [chromosome, centromeric region]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 2537690, 9411664, 9908301, 9490822, 9333304, 9616679, 9039866, 9115897, 9851111, 9769310, 9975634, 9679222, 9065006, 9560304, 9185100, 2545177, 9258703, 9851112, 9616680, 9333300, 9908302, 9490818, 9039867, 9115898, 9975635, 9769311, 9258699, 9065007, 9411660, 9679218, 9560305, 2473149, 9185096, 9975719, 9851178, 9333302, 9065021, 9908353, 9490820, 9560322, 9769336, 9679220, 9185098, 9115917, 9039882, 9616688, 9411662, 9851177, 9975718, 9616687, 9333301, 9908352, 9065020, 9490819, 9560321, 9115916, 9185097, 9769335, 9411661, 9679219, 9039881, 2473148, 1638799, 9258700, 9258701, 9560234, 9679145, 9333188, 9769261, 9616563, 9258572, 9490688, 9411599, 2484816, 9185069, 9611485, 9553308, 9251393, 9755820, 9482358, 9175720, 9404077, 9671746, 1638796, 9671740, 9755802, 9482349, 9404071, 9553302, 9611476, 9251387, 9175706, 2468282, 9185084, 2470943, 9490706, 9115867, 9411614, 9333212, 9679168, 9851077, 9560261, 9258587, 9975630, 9616591, 9769288, 9908297, 9324225, 9333132, 2500242, 9175724, 9553312, 9611489, 9755824, 9671750, 9251397, 9482362, 9404081, 2467806, 9560195, 9185007, 9490627, 9769190, 9258522, 9411559, 9679098, 9616521, 9333143, 2484902, 9616530, 9679107, 9185025, 9560204, 9258531, 9490638, 9411568, 9769210, 9324212, 9324221 ]
+  }, {
+    "dbId" : 5229021,
+    "stId" : "R-HSA-5229021",
+    "displayName" : "p-S22, S395-LMNA-1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02545-1",
+    "geneNames" : [ "LMNA", "LMN1" ],
+    "parents" : [ 5229030 ]
+  }, {
+    "dbId" : 5229019,
+    "stId" : "R-HSA-5229019",
+    "displayName" : "p-S22, S395-LMNA-2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P02545-2",
+    "geneNames" : [ "LMNA", "LMN1" ],
+    "parents" : [ 5229031 ]
+  }, {
+    "dbId" : 5229018,
+    "stId" : "R-HSA-5229018",
+    "displayName" : "p-S23, S395, S405-LMNB1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20700",
+    "geneNames" : [ "LMNB1", "LMN2", "LMNB" ],
+    "parents" : [ 5229029 ]
+  }, {
+    "dbId" : 5228498,
+    "stId" : "R-HSA-5228498",
+    "displayName" : "Lamin A dimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 2993901 ],
+    "children" : [ 264866 ]
+  }, {
+    "dbId" : 3002800,
+    "stId" : "R-HSA-3002800",
+    "displayName" : "p-T210-PLK1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4460 ],
+    "identifier" : "P53350",
+    "geneNames" : [ "PLK1", "PLK" ],
+    "parents" : [ 2294604, 2294591, 4088136 ]
+  }, {
+    "dbId" : 1638790,
+    "stId" : "R-ALL-1638790",
+    "displayName" : "Sister Chromosomal Arm [chromosome]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 2537690, 9908270, 9490661, 9185049, 9616550, 9411579, 9851044, 9769241, 9115847, 9064998, 9560219, 9333161, 9975548, 9679122, 9039848, 2545179, 9258546, 9616556, 9851053, 9490667, 9258552, 9975562, 9411583, 9560223, 9769247, 9908274, 9679126, 9039852, 9333165, 9115851, 9065002, 2473153, 9185053, 9679143, 9851065, 9616572, 9490686, 9333186, 9975602, 9908285, 9258570, 9185067, 9065005, 9115855, 9769270, 9560243, 9411597, 1638802, 9039863, 9490575, 9258480, 9616489, 9560136, 9184948, 9679046, 9975338, 9908165, 9411517, 9115783, 9039813, 9850940, 9769116, 9064963, 1638805, 9490568, 9411512, 9039806, 9185085, 2470928, 9616592, 9490707, 9411615, 9851078, 9258588, 9679169, 9333213, 9115868, 9560262, 9975631, 9769289, 9908298, 9333078, 9333085, 2468274, 9908151, 9769104, 9184938, 9258475, 9975283, 9616482, 9560131, 9679041, 9850915, 9064956, 9115773 ]
+  }, {
+    "dbId" : 5229031,
+    "stId" : "R-HSA-5229031",
+    "displayName" : "p-S22, S395-Lamin C dimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5244666 ],
+    "children" : [ 5229019 ]
+  }, {
+    "dbId" : 5229030,
+    "stId" : "R-HSA-5229030",
+    "displayName" : "p-S22, S395-Lamin A dimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5244666 ],
+    "children" : [ 5229021 ]
+  }, {
+    "dbId" : 5229029,
+    "stId" : "R-HSA-5229029",
+    "displayName" : "p-S23, S395, S405-Lamin B1 dimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5244666 ],
+    "children" : [ 5229018 ]
+  }, {
+    "dbId" : 5229027,
+    "stId" : "R-HSA-5229027",
+    "displayName" : "p-S395-Lamin C dimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5229191 ],
+    "children" : [ 5228740 ]
+  }, {
+    "dbId" : 5229026,
+    "stId" : "R-HSA-5229026",
+    "displayName" : "p-S395, S405-Lamin B1 dimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5229191 ],
+    "children" : [ 5228738 ]
+  }, {
+    "dbId" : 5229025,
+    "stId" : "R-HSA-5229025",
+    "displayName" : "p-S395-Lamin A dimer [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5229191 ],
+    "children" : [ 5228743 ]
+  }, {
+    "dbId" : 113582,
+    "stId" : "R-ALL-113582",
+    "displayName" : "ADP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2882, 4242, 4450, 4131, 2885, 4501, 1383, 1512, 4329, 1243, 3004 ],
+    "identifier" : "16761",
+    "parents" : [ 6788807, 6792600, 9777112, 9119671, 9496809, 9684341, 9857458, 9066062, 9417854, 9191436, 5252025, 5251983, 9496815, 9191442, 9777118, 9417860, 9066064, 9684347, 9857461, 9119675, 5252074, 9857464, 9684349, 9191445, 9066067, 9417863, 9119678, 9777121, 9496818, 5252008, 9066069, 9857466, 9119680, 9191446, 9417864, 9777123, 9496819, 5252006, 9777114, 9417856, 9496811, 9684343, 9191438, 5252102, 9496813, 9417858, 9191440, 9684345, 9777116, 9857459, 9119673, 5252004, 9684348, 9191443, 9066065, 9777119, 9417861, 9119676, 9857462, 9496816, 5252003, 9496814, 9191441, 9417859, 9684346, 9777117, 9066063, 9857460, 9119674, 5251936, 9857465, 9066068, 9684350, 9777122, 9119679, 5252092, 9066070, 9119681, 5251963, 9777113, 9496810, 9684342, 9191437, 9417855, 5252089, 9417862, 9191444, 9066066, 9119677, 9777120, 9857463, 9496817, 5252024, 9777115, 9417857, 9496812, 9684344, 9191439, 9119672, 5251957, 9565261, 9684842, 9264404, 9191963, 9041499, 9777797, 9418339, 9083782, 9497337, 9066189, 9911924, 9620784, 9339983, 5357508, 9777803, 9339989, 9054128, 9066195, 9264410, 9858150, 9497343, 9911930, 9191969, 9120035, 9041505, 9418345, 9083788, 9620790, 9684848, 9980410, 9565267, 5357523, 9450367, 9371824, 9223282, 9645774, 9096198, 9142371, 9816019, 9717237, 8849115 ]
+  }, {
+    "dbId" : 175030,
+    "stId" : "R-HSA-175030",
+    "displayName" : "BANF1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75531",
+    "geneNames" : [ "BANF1", "BAF", "BCRG1" ],
+    "parents" : [ 177527, 175416, 2993914 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2355, 3332, 3029, 3959, 3033, 2234, 3102, 1999 ],
+    "identifier" : "15422",
+    "parents" : [ 170037, 2263468, 9206355, 9630847, 9576623, 9432018, 9511146, 9353588, 9697690, 9795133, 6814649, 9276451, 9600652, 9736131, 9237675, 9388153, 9466546, 9658146, 9539600, 9308766, 390580, 9160108, 9542621, 9391763, 9163921, 9831775, 9603243, 9741155, 9312345, 9240824, 9661271, 9470131, 445789, 390446, 391390, 994134, 9794890, 9510958, 9046292, 9128311, 9431829, 9056083, 9997775, 9070329, 9353374, 9697532, 9206146, 9576446, 9871996, 9630682, 9276265, 9926229, 390474, 9087795, 443623, 9779593, 9419766, 9193599, 9686115, 9859450, 9265606, 9341444, 9981023, 9622036, 9498806, 9083944, 9912343, 9566577, 8948980, 9054223, 9859337, 9621997, 9341426, 9912333, 9265588, 9498788, 9083934, 9054206, 9981013, 9779576, 9566525, 9419748, 9193545, 9686096, 8948970, 9978087, 9065526, 9681832, 9188087, 9910208, 9493702, 9082788, 9414658, 9772921, 9853938, 9117897, 9040616, 5618079, 9053631, 9977478, 9562442, 9414581, 9909743, 9117821, 9681761, 9082712, 9772764, 9065453, 9188008, 9053614, 9493619, 9853846, 3371563, 9040519, 9566510, 9041623, 9083927, 9054199, 9859330, 9779553, 9193528, 9912326, 9120378, 9981000, 9066266, 9341411, 9621982, 9686105, 9265573, 9419721, 9498773, 5618088, 5251947, 9777034, 9119601, 9083581, 9684291, 9053991, 9979698, 9911581, 9191365, 9066018, 9417800, 9041326, 9857395, 9496755, 6792614, 9417808, 9777049, 9041333, 9496763, 9684299, 9191373, 5252045, 5252011, 9684317, 9083606, 9054006, 9066033, 9911618, 9857426, 9119631, 9041355, 9979768, 9777077, 5252104, 9496767, 9191377, 9119606, 9083591, 9684303, 9417812, 9777053, 5252040, 9119637, 9066039, 9911629, 9041361, 9979790, 9083612, 9054012, 5251940, 9083600, 9496777, 9911599, 9777069, 9979727, 9417822, 9857414, 9191393, 9119623, 9684313, 9041345, 9053998, 9066025, 5252036, 9777059, 9191386, 9496773, 9417818, 9041340, 9066020, 9979700, 9857402, 9119618, 9911583, 9684309, 9053993, 9083595, 5252100, 9041331, 9496759, 9191369, 9684295, 9417804, 9777045, 5251938, 9083607, 9054007, 9562506, 9119632, 9356215, 9066034, 9700130, 9632615, 9911619, 9417829, 9191403, 9857427, 9041356, 9279049, 9777078, 9979769, 9496784, 5251937, 9857400, 9119616, 9417816, 9777057, 9191384, 9496771, 9083593, 9041338, 9684307, 5251968, 9496783, 9083604, 9979747, 9857422, 9054002, 9911610, 9041349, 9417828, 9684315, 9066029, 9777075, 9191402, 9119629, 5252063, 9777058, 9417817, 9191385, 9496772, 9041339, 9857401, 9979699, 9119617, 9911582, 9066019, 9684308, 9053992, 9083594, 5252093, 9496781, 9417826, 9857420, 9054000, 9041347, 9083602, 9979740, 9777073, 9191400, 9911605, 9119625, 9066027, 5252028, 9394048, 9663305, 9605109, 9544724, 9166591, 9314781, 9243007, 9472545, 879207, 168906, 918190, 9370000, 9291920, 9644136, 9815167, 9140562, 9526393, 9715010, 9589796, 9448549, 114255, 9221701, 9973634, 9081650, 9064690, 9612356, 9177018, 9252472, 9672800, 9843545, 9757658, 9325507, 9039298, 9907039, 9483640, 9554385, 9405327, 9112971, 201854, 9081655, 9064695, 9973636, 9405331, 9112976, 9612360, 9672804, 9907044, 9177022, 9252476, 9039303, 9483644, 9325511, 9843550, 9757660, 9554389, 201855, 433729, 9948680, 9596076, 9727337, 9230161, 9061970, 9034769, 9150780, 9051869, 9379707, 9077784, 9893446, 9534367, 9458077, 9112940, 9652725, 9301198, 9843510, 201857 ]
+  }, {
+    "dbId" : 5223297,
+    "stId" : "R-HSA-5223297",
+    "displayName" : "DAG:active PKC:Ca+2 [nuclear envelope]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4269 ],
+    "children" : [ 5221124, 29496, 5223295 ]
+  }, {
+    "dbId" : 3000318,
+    "stId" : "R-HSA-3000318",
+    "displayName" : "p-T210-PLK1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4454 ],
+    "identifier" : "P53350",
+    "geneNames" : [ "PLK1", "PLK" ],
+    "parents" : [ 2314414, 2172193, 8852323, 3000305 ]
+  }, {
+    "dbId" : 3067329,
+    "stId" : "R-HSA-3067329",
+    "displayName" : "LEMD2 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NC56",
+    "geneNames" : [ "LEMD2" ],
+    "parents" : [ 2993892 ]
+  }, {
+    "dbId" : 157690,
+    "stId" : "R-HSA-157690",
+    "displayName" : "NUP155 [nuclear envelope]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75694",
+    "geneNames" : [ "NUP155", "KIAA0791" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157691,
+    "stId" : "R-HSA-157691",
+    "displayName" : "NUP214 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35658",
+    "geneNames" : [ "NUP214", "CAIN", "CAN", "KIAA0023" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157689,
+    "stId" : "R-HSA-157689",
+    "displayName" : "Nuclear Pore Complex (NPC) [nuclear envelope]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3333 ],
+    "parents" : [ 165531, 180720, 180610, 113815, 159259 ],
+    "children" : [ 157697, 157703, 157700, 157738, 157739, 157740, 157741, 157712, 2990879, 157718, 157750, 157748, 6805169, 157749, 157722, 157690, 157754, 6805183, 157691, 157752, 157753, 157695, 157692 ]
+  }, {
+    "dbId" : 157695,
+    "stId" : "R-HSA-157695",
+    "displayName" : "NUP153 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P49790",
+    "geneNames" : [ "NUP153" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 157692,
+    "stId" : "R-HSA-157692",
+    "displayName" : "TPR [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12270",
+    "geneNames" : [ "TPR" ],
+    "parents" : [ 5228516, 2990888, 2990903, 157689 ]
+  }, {
+    "dbId" : 2288093,
+    "stId" : "R-HSA-2288093",
+    "displayName" : "Condensin II:Nucleosome with H4K20me1 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1292 ],
+    "children" : [ 1638144, 2245190 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 2245218,
+    "stId" : "R-HSA-2245218",
+    "displayName" : "CDK1 phosphorylates PHF8",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 170153 ],
+    "following" : [ 2288097 ],
+    "inputs" : [ 2172686, 29358 ],
+    "outputs" : [ 113582, 2245227, 2245190 ],
+    "catalysts" : [ 170160 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1239 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2288097,
+    "stId" : "R-HSA-2288097",
+    "displayName" : "Condensin II complex binds H4K20me1-containing nucleosomes",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2172666, 2245218 ],
+    "following" : [ 2294600 ],
+    "inputs" : [ 1638144, 2245190 ],
+    "outputs" : [ 2288093 ],
+    "efs" : [ ],
+    "activators" : [ 2172665 ],
+    "diagramIds" : [ 1291 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2172194,
+    "stId" : "R-HSA-2172194",
+    "displayName" : "Recruitment of PLK1 to phosphorylated GORASP1 (GRASP65)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 3000327 ],
+    "inputs" : [ 2172185, 3000318 ],
+    "outputs" : [ 2172193 ],
+    "efs" : [ ],
+    "diagramIds" : [ 588 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5229194,
+    "stId" : "R-HSA-5229194",
+    "displayName" : "Depolymerization of lamin filaments after PKC-mediated phosphorylation",
+    "schemaClass" : "Depolymerisation",
+    "preceding" : [ 5223304 ],
+    "following" : [ 5244669 ],
+    "inputs" : [ 29358, 2993911 ],
+    "outputs" : [ 113582, 2993892, 5229191 ],
+    "catalysts" : [ 5223297 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4327 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5221130,
+    "stId" : "R-HSA-5221130",
+    "displayName" : "LPIN catalyzes conversion of phosphatidic acid to diacylglycerol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 4419948 ],
+    "following" : [ 5223304 ],
+    "inputs" : [ 113518, 5221122 ],
+    "outputs" : [ 113550, 5221124 ],
+    "catalysts" : [ 4419925 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4243 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5195402,
+    "stId" : "R-HSA-5195402",
+    "displayName" : "CDK1 phosphorylates LPIN",
+    "schemaClass" : "Reaction",
+    "following" : [ 4419948 ],
+    "inputs" : [ 29358, 4419925 ],
+    "outputs" : [ 113582, 4419938 ],
+    "catalysts" : [ 170160 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4240 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5223304,
+    "stId" : "R-HSA-5223304",
+    "displayName" : "DAG and Ca+2 bind to PKC and tether it to membrane",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5218805, 5221130 ],
+    "following" : [ 5229194 ],
+    "inputs" : [ 5221124, 29496, 5223295 ],
+    "outputs" : [ 5223297 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4266 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2993898,
+    "stId" : "R-HSA-2993898",
+    "displayName" : "VRK1/VRK2 phosphorylate BANF1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 29358, 2993900 ],
+    "outputs" : [ 113582, 2537690, 2993911, 2993912 ],
+    "catalysts" : [ 2993899 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3964 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2990880,
+    "stId" : "R-HSA-2990880",
+    "displayName" : "NEK6/NEK7 phosphorylates NUP98",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2984258 ],
+    "inputs" : [ 2990903, 113592 ],
+    "outputs" : [ 29370, 2990901, 2990888, 2990905 ],
+    "catalysts" : [ 2984255 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3958 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2294574,
+    "stId" : "R-HSA-2294574",
+    "displayName" : "Condensin II-mediated condensation of prophase chromosomes",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 2294580 ],
+    "inputs" : [ 2294575 ],
+    "outputs" : [ 2294602 ],
+    "efs" : [ ],
+    "activators" : [ 2294604 ],
+    "diagramIds" : [ 1557 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2984226,
+    "stId" : "R-HSA-2984226",
+    "displayName" : "PLK1 phosphorylates NEK9",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 3000327, 2984220 ],
+    "following" : [ 2980720 ],
+    "inputs" : [ 2984215, 113592 ],
+    "outputs" : [ 2984227, 29370 ],
+    "catalysts" : [ 3000318 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3032 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2990882,
+    "stId" : "R-HSA-2990882",
+    "displayName" : "CDK1 phosphorylates NUP98",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 157689, 113592 ],
+    "outputs" : [ 29370, 2990903 ],
+    "catalysts" : [ 2311324 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3331 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2294580,
+    "stId" : "R-HSA-2294580",
+    "displayName" : "PLK1 hyperphosphorylates Condensin II complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2294590 ],
+    "following" : [ 2294574 ],
+    "inputs" : [ 29358, 2294591 ],
+    "outputs" : [ 113582, 2294604 ],
+    "catalysts" : [ 2294591 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1509 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2172666,
+    "stId" : "R-HSA-2172666",
+    "displayName" : "RB1 binds condensin II",
+    "schemaClass" : "Reaction",
+    "following" : [ 2288097 ],
+    "inputs" : [ 1638144, 68642 ],
+    "outputs" : [ 2172665 ],
+    "efs" : [ ],
+    "diagramIds" : [ 603 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2980720,
+    "stId" : "R-HSA-2980720",
+    "displayName" : "NEK9 binds NEK6/NEK7 in the cytosol",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2984226 ],
+    "following" : [ 2984258 ],
+    "inputs" : [ 2984227, 2980718 ],
+    "outputs" : [ 2980721 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3098 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2294590,
+    "stId" : "R-HSA-2294590",
+    "displayName" : "PLK1 binds phosphorylated condensin II complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2294600, 3002798 ],
+    "following" : [ 2294580 ],
+    "inputs" : [ 3002800, 2294607 ],
+    "outputs" : [ 2294591 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1473 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2430533,
+    "stId" : "R-HSA-2430533",
+    "displayName" : "CDK1 phosphorylates MASTL",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 170153 ],
+    "following" : [ 2168079, 2430535 ],
+    "inputs" : [ 29358, 2160957 ],
+    "outputs" : [ 113582, 2430549 ],
+    "catalysts" : [ 170160 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2588 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2430535,
+    "stId" : "R-HSA-2430535",
+    "displayName" : "MASTL phosphorylates ENSA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2430533 ],
+    "following" : [ 2430552 ],
+    "inputs" : [ 29358, 2160964 ],
+    "outputs" : [ 113582, 2430532 ],
+    "catalysts" : [ 2430549 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2727 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2314566,
+    "stId" : "R-HSA-2314566",
+    "displayName" : "GORASP1 phosphorylated by PLK1 and GORASP2 phosphorylated by MAPK3-3/MAPK1 are unable to promote Golgi cisternae stacking",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 2314558 ],
+    "outputs" : [ 2314571 ],
+    "efs" : [ ],
+    "inhibitors" : [ 2422951, 2314414 ],
+    "diagramIds" : [ 2259 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2172678,
+    "stId" : "R-HSA-2172678",
+    "displayName" : "PHF8 demethylates histone H4K20me1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2301205 ],
+    "inputs" : [ 2172686, 113671, 113685 ],
+    "outputs" : [ 2172681, 29478, 159942, 159939 ],
+    "catalysts" : [ 2172686 ],
+    "efs" : [ ],
+    "diagramIds" : [ 795 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2314569,
+    "stId" : "R-HSA-2314569",
+    "displayName" : "GOLGA2 phosphorylated by CDK1 is unable to promote fusion of ER to Golgi transport vesicles with cis-Golgi",
+    "schemaClass" : "BlackBoxEvent",
+    "inputs" : [ 2314559 ],
+    "outputs" : [ 2314561 ],
+    "efs" : [ ],
+    "inhibitors" : [ 2172185 ],
+    "diagramIds" : [ 2317 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2422927,
+    "stId" : "R-HSA-2422927",
+    "displayName" : "MAPK3-3 or MAPK1 phosphorylate GORASP2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113592, 2422429 ],
+    "outputs" : [ 29370, 2422951 ],
+    "catalysts" : [ 2422450 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2326 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2294600,
+    "stId" : "R-HSA-2294600",
+    "displayName" : "CDK1 phosphorylates condensin II subunit NCAPD3",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 170153, 2288097 ],
+    "following" : [ 2294590 ],
+    "inputs" : [ 2288093, 29358 ],
+    "outputs" : [ 113582, 2294607 ],
+    "catalysts" : [ 170160 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1381 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5244669,
+    "stId" : "R-HSA-5244669",
+    "displayName" : "CDK1 phosphorylates lamins and facilitates depolymerization of lamin filaments",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5229194 ],
+    "inputs" : [ 29358, 5229191 ],
+    "outputs" : [ 113582, 5244666 ],
+    "catalysts" : [ 170160 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4448 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2168079,
+    "stId" : "R-HSA-2168079",
+    "displayName" : "MASTL (GWL) phosphorylates ARPP19",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2430533 ],
+    "following" : [ 2430552 ],
+    "inputs" : [ 2160959, 29358 ],
+    "outputs" : [ 113582, 2168081 ],
+    "catalysts" : [ 2430549 ],
+    "efs" : [ ],
+    "diagramIds" : [ 384 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2214351,
+    "stId" : "R-HSA-2214351",
+    "displayName" : "PLK1 phosphorylates GORASP1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113592, 2172193 ],
+    "outputs" : [ 2314414, 29370 ],
+    "catalysts" : [ 2172193 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2233 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 4419948,
+    "stId" : "R-HSA-4419948",
+    "displayName" : "CTDNEP1:CNEP1R1 dephosphorylates LPIN",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 5195402 ],
+    "following" : [ 5221130 ],
+    "inputs" : [ 113518, 4419938 ],
+    "outputs" : [ 113550, 4419925 ],
+    "catalysts" : [ 4419833 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4153 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2984258,
+    "stId" : "R-HSA-2984258",
+    "displayName" : "NEK9 phosphorylates NEK6/NEK7",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2980720 ],
+    "following" : [ 2990880 ],
+    "inputs" : [ 2980721, 113592 ],
+    "outputs" : [ 29370, 2984255 ],
+    "catalysts" : [ 2980721 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3101 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2984220,
+    "stId" : "R-HSA-2984220",
+    "displayName" : "CDK1:CCNB phosphorylates NEK9",
+    "schemaClass" : "Reaction",
+    "following" : [ 2984226 ],
+    "inputs" : [ 113592, 2984219 ],
+    "outputs" : [ 29370, 2984215 ],
+    "catalysts" : [ 2311324 ],
+    "efs" : [ ],
+    "diagramIds" : [ 3027 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2429719,
+    "stId" : "R-HSA-2429719",
+    "displayName" : "MCPH1 sequesters condensin II",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 1638144, 451201, 2429638 ],
+    "outputs" : [ 2429713 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2412 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 380278,
+    "stId" : "R-HSA-380278",
+    "displayName" : "CCNB1:p-T160-CDK1 phosphorylates NUMA1",
+    "schemaClass" : "Reaction",
+    "following" : [ 380508 ],
+    "inputs" : [ 29358, 8982283 ],
+    "outputs" : [ 113582, 8982281 ],
+    "catalysts" : [ 170160 ],
+    "efs" : [ ],
+    "diagramIds" : [ 4483 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2172183,
+    "stId" : "R-HSA-2172183",
+    "displayName" : "Phosphorylation of GORASP1, GOLGA2 and RAB1A by CDK1:CCNB",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 113592, 2172177 ],
+    "outputs" : [ 2311342, 29370, 2172185 ],
+    "catalysts" : [ 2311324 ],
+    "efs" : [ ],
+    "diagramIds" : [ 476 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2301205,
+    "stId" : "R-HSA-2301205",
+    "displayName" : "SETD8 monomethylates histone H4",
+    "schemaClass" : "Reaction",
+    "following" : [ 2172678 ],
+    "inputs" : [ 77087, 2172681 ],
+    "outputs" : [ 77502, 2172686 ],
+    "catalysts" : [ 417142 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1839 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 2430552,
+    "stId" : "R-HSA-2430552",
+    "displayName" : "p-S62-ARPP19/p-S67-ENSA binds PP2A-PPP2R2D",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2168079, 2430535 ],
+    "inputs" : [ 2430554, 2430548 ],
+    "outputs" : [ 2430556 ],
+    "efs" : [ ],
+    "diagramIds" : [ 2786 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 2980766,
+    "stId" : "R-HSA-2980766",
+    "displayName" : "Nuclear Envelope Breakdown",
+    "events" : [ 2984220, 2980720, 2984226, 2984258, 5195402, 5221130, 5229194, 5223304, 5244669, 4419948, 2993898, 2990880, 2990882 ]
+  }, {
+    "dbId" : 4419969,
+    "stId" : "R-HSA-4419969",
+    "displayName" : "Depolymerisation of the Nuclear Lamina",
+    "events" : [ 5195402, 5221130, 5229194, 5223304, 5244669, 4419948 ]
+  }, {
+    "dbId" : 3301854,
+    "stId" : "R-HSA-3301854",
+    "displayName" : "Nuclear Pore Complex (NPC) Disassembly",
+    "events" : [ 2990880, 2990882 ]
+  }, {
+    "dbId" : 162658,
+    "stId" : "R-HSA-162658",
+    "displayName" : "Golgi Cisternae Pericentriolar Stack Reorganization",
+    "events" : [ 2214351, 2422927, 2314569, 2172183, 2314566, 2172194 ]
+  }, {
+    "dbId" : 2299718,
+    "stId" : "R-HSA-2299718",
+    "displayName" : "Condensation of Prophase Chromosomes",
+    "events" : [ 2245218, 2429719, 2288097, 2301205, 2172678, 2294580, 2172666, 2294600, 2294590, 2294574 ]
+  }, {
+    "dbId" : 2980767,
+    "stId" : "R-HSA-2980767",
+    "displayName" : "Activation of NIMA Kinases NEK9, NEK6, NEK7",
+    "events" : [ 2984220, 2980720, 2984226, 2984258 ]
+  }, {
+    "dbId" : 2465910,
+    "stId" : "R-HSA-2465910",
+    "displayName" : "MASTL Facilitates Mitotic Progression",
+    "events" : [ 2430533, 2430535, 2430552, 2168079 ]
+  }, {
+    "dbId" : 2993913,
+    "stId" : "R-HSA-2993913",
+    "displayName" : "Clearance of Nuclear Envelope Membranes from Chromatin",
+    "events" : [ 2993898 ]
+  } ]
+}

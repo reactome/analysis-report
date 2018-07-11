@@ -1,0 +1,20 @@
+{
+  "dbId" : 162906,
+  "stId" : "R-HSA-162906",
+  "nodes" : [ {
+    "dbId" : 162587,
+    "stId" : "R-HSA-162587",
+    "displayName" : "HIV Life Cycle",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 296 ]
+  }, {
+    "dbId" : 162909,
+    "stId" : "R-HSA-162909",
+    "displayName" : "Host Interactions of HIV factors",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 295 ]
+  } ],
+  "edges" : [ ]
+}

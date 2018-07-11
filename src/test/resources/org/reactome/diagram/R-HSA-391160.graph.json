@@ -1,0 +1,442 @@
+{
+  "dbId" : 391160,
+  "stId" : "R-HSA-391160",
+  "nodes" : [ {
+    "dbId" : 197571,
+    "stId" : "R-HSA-197571",
+    "displayName" : "SIRPG [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 40 ],
+    "identifier" : "Q9P1W8",
+    "geneNames" : [ "SIRPG", "SIRPB2" ],
+    "parents" : [ 202788, 391166 ]
+  }, {
+    "dbId" : 548936,
+    "stId" : "R-HSA-548936",
+    "displayName" : "SRC-1, PTK2 [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "children" : [ 354153, 201621 ]
+  }, {
+    "dbId" : 391109,
+    "stId" : "R-HSA-391109",
+    "displayName" : "SIRPA:SFTPA oligomer, SFTPD oligomer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 33 ],
+    "children" : [ 3209922, 391108 ]
+  }, {
+    "dbId" : 162563,
+    "stId" : "R-HSA-162563",
+    "displayName" : "PTPN11 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q06124",
+    "geneNames" : [ "PTPN11", "PTP2C", "SHPTP2" ],
+    "parents" : [ 997298, 389744, 2671758, 8987108, 418825, 8855762, 1369118, 210219, 204767, 5654268, 5654290, 186839, 180326, 5654337, 5654310, 205267, 1112758, 8865998, 914028, 388793, 180269, 180503 ]
+  }, {
+    "dbId" : 391108,
+    "stId" : "R-HSA-391108",
+    "displayName" : "SFTPA oligomer, SFTPD oligomer [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 32 ],
+    "parents" : [ 391109, 5432872, 5432881 ],
+    "children" : [ 391097, 391092 ]
+  }, {
+    "dbId" : 391111,
+    "stId" : "R-HSA-391111",
+    "displayName" : "SIRPA:CD47 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ],
+    "children" : [ 197736, 3209922 ]
+  }, {
+    "dbId" : 391110,
+    "stId" : "R-HSA-391110",
+    "displayName" : "p-Y428,Y452,Y469,Y495-SIRPA:PTPN6,PTPN11 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 12 ],
+    "children" : [ 391115, 389744 ]
+  }, {
+    "dbId" : 197568,
+    "stId" : "R-HSA-197568",
+    "displayName" : "SIRPB1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 48 ],
+    "identifier" : "O00241",
+    "geneNames" : [ "SIRPB1" ],
+    "parents" : [ 6806534, 210222 ]
+  }, {
+    "dbId" : 198087,
+    "stId" : "R-HSA-198087",
+    "displayName" : "TYROBP [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 49 ],
+    "identifier" : "O43914",
+    "geneNames" : [ "TYROBP", "DAP12", "KARAP" ],
+    "parents" : [ 199586, 199584, 6806534, 210222, 548940 ]
+  }, {
+    "dbId" : 390925,
+    "stId" : "R-HSA-390925",
+    "displayName" : "FYB [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 18 ],
+    "identifier" : "O15117",
+    "geneNames" : [ "FYB", "SLAP130", "FYB1" ],
+    "parents" : [ 391116, 430124 ]
+  }, {
+    "dbId" : 391116,
+    "stId" : "R-HSA-391116",
+    "displayName" : "p-Y428,Y452,Y469,Y495-SIRPA:CD47:SKAP2:FYB [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 19 ],
+    "children" : [ 391118, 390925 ]
+  }, {
+    "dbId" : 390927,
+    "stId" : "R-HSA-390927",
+    "displayName" : "SKAP2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 14 ],
+    "identifier" : "O75563",
+    "geneNames" : [ "SKAP2", "PRAP", "RA70", "SAPS", "SCAP2", "SKAP55R" ],
+    "parents" : [ 391118 ]
+  }, {
+    "dbId" : 391118,
+    "stId" : "R-HSA-391118",
+    "displayName" : "p-Y428,Y452,Y469,Y495-SIRPA:CD47:SKAP2 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "parents" : [ 391116 ],
+    "children" : [ 391115, 390927 ]
+  }, {
+    "dbId" : 391113,
+    "stId" : "R-HSA-391113",
+    "displayName" : "p-Y428,Y452,Y469,Y495-SIRPA:CD47:PTK2B [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 23 ],
+    "children" : [ 391115, 390932 ]
+  }, {
+    "dbId" : 391112,
+    "stId" : "R-HSA-391112",
+    "displayName" : "p-Y428,Y452,Y469,Y495-SIRPA:CD47:GRB2-1 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 29 ],
+    "children" : [ 74686, 391115 ]
+  }, {
+    "dbId" : 391115,
+    "stId" : "R-HSA-391115",
+    "displayName" : "p-Y428,Y452,Y469,Y495-SIRPA:CD47 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "parents" : [ 391110, 391113, 391112, 391118 ],
+    "children" : [ 197736, 391102 ]
+  }, {
+    "dbId" : 390932,
+    "stId" : "R-HSA-390932",
+    "displayName" : "PTK2B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 22 ],
+    "identifier" : "Q14289",
+    "geneNames" : [ "PTK2B", "FAK2", "PYK2", "RAFTK" ],
+    "parents" : [ 391113, 508512, 5218787 ]
+  }, {
+    "dbId" : 201621,
+    "stId" : "R-HSA-201621",
+    "displayName" : "PTK2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05397",
+    "geneNames" : [ "PTK2", "FAK", "FAK1" ],
+    "parents" : [ 2197681, 354103, 373662, 3928544, 4420141, 8874088, 548936 ]
+  }, {
+    "dbId" : 197736,
+    "stId" : "R-HSA-197736",
+    "displayName" : "CD47 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2 ],
+    "identifier" : "Q08722",
+    "geneNames" : [ "CD47", "MER6" ],
+    "parents" : [ 391166, 391111, 391115, 6806323, 6806434, 202787, 2426294 ]
+  }, {
+    "dbId" : 354153,
+    "stId" : "R-HSA-354153",
+    "displayName" : "SRC-1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P12931-1",
+    "geneNames" : [ "SRC", "SRC1" ],
+    "parents" : [ 1215929, 372650, 418103, 418179, 8855753, 548936, 418805, 3928486, 5218636, 5218775, 5218757, 4420169, 5218641, 1861597, 5666105, 211064 ]
+  }, {
+    "dbId" : 210222,
+    "stId" : "R-HSA-210222",
+    "displayName" : "SIRPB1:TYROBP [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 38 ],
+    "children" : [ 198087, 197568 ]
+  }, {
+    "dbId" : 391093,
+    "stId" : "R-HSA-391093",
+    "displayName" : "SFTPA1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IWL2",
+    "geneNames" : [ "SFTPA1", "COLEC4", "PSAP", "SFTP1", "SFTPA", "SFTPA1B" ],
+    "parents" : [ 391094 ]
+  }, {
+    "dbId" : 197938,
+    "stId" : "R-HSA-197938",
+    "displayName" : "PTPN6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29350",
+    "geneNames" : [ "PTPN6", "HCP", "PTP1C" ],
+    "parents" : [ 1169239, 1169243, 997298, 210221, 913378, 205181, 389744, 5690677 ]
+  }, {
+    "dbId" : 391092,
+    "stId" : "R-HSA-391092",
+    "displayName" : "SFTPA oligomer [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 391108 ],
+    "children" : [ 391091 ]
+  }, {
+    "dbId" : 391095,
+    "stId" : "R-HSA-391095",
+    "displayName" : "SFTPA2 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IWL1",
+    "geneNames" : [ "SFTPA2", "COLEC5", "PSAP", "SFTP1", "SFTPA", "SFTPA2B" ],
+    "parents" : [ 391094 ]
+  }, {
+    "dbId" : 3209922,
+    "stId" : "R-HSA-3209922",
+    "displayName" : "SIRPA [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 50 ],
+    "identifier" : "P78324",
+    "geneNames" : [ "SIRPA", "BIT", "MFR", "MYD1", "PTPNS1", "SHPS1", "SIRP" ],
+    "parents" : [ 6806514, 6806434, 202788, 391109, 391111 ]
+  }, {
+    "dbId" : 391094,
+    "stId" : "R-HSA-391094",
+    "displayName" : "SFTPA [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 391091 ],
+    "children" : [ 391095, 391093 ]
+  }, {
+    "dbId" : 389744,
+    "stId" : "R-HSA-389744",
+    "displayName" : "PTPN6,PTPN11 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 11 ],
+    "parents" : [ 391110, 389935, 389749, 914049, 914086, 5684187 ],
+    "children" : [ 162563, 197938 ]
+  }, {
+    "dbId" : 391091,
+    "stId" : "R-HSA-391091",
+    "displayName" : "SFTPA trimer [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 391092 ],
+    "children" : [ 391094 ]
+  }, {
+    "dbId" : 113592,
+    "stId" : "R-ALL-113592",
+    "displayName" : "ATP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 6 ],
+    "identifier" : "15422",
+    "parents" : [ 170037, 2263468, 9206355, 9630847, 9576623, 9432018, 9511146, 9353588, 9697690, 9795133, 6814649, 9276451, 9600652, 9736131, 9237675, 9388153, 9466546, 9658146, 9539600, 9308766, 390580, 9160108, 9542621, 9391763, 9163921, 9831775, 9603243, 9741155, 9312345, 9240824, 9661271, 9470131, 445789, 390446, 391390, 994134, 9794890, 9510958, 9046292, 9128311, 9431829, 9056083, 9997775, 9070329, 9353374, 9697532, 9206146, 9576446, 9871996, 9630682, 9276265, 9926229, 390474, 9087795, 443623, 9779593, 9419766, 9193599, 9686115, 9859450, 9265606, 9341444, 9981023, 9622036, 9498806, 9083944, 9912343, 9566577, 8948980, 9054223, 9859337, 9621997, 9341426, 9912333, 9265588, 9498788, 9083934, 9054206, 9981013, 9779576, 9566525, 9419748, 9193545, 9686096, 8948970, 9978087, 9065526, 9681832, 9188087, 9910208, 9493702, 9082788, 9414658, 9772921, 9853938, 9117897, 9040616, 5618079, 9053631, 9977478, 9562442, 9414581, 9909743, 9117821, 9681761, 9082712, 9772764, 9065453, 9188008, 9053614, 9493619, 9853846, 3371563, 9040519, 9566510, 9041623, 9083927, 9054199, 9859330, 9779553, 9193528, 9912326, 9120378, 9981000, 9066266, 9341411, 9621982, 9686105, 9265573, 9419721, 9498773, 5618088, 5251947, 9777034, 9119601, 9083581, 9684291, 9053991, 9979698, 9911581, 9191365, 9066018, 9417800, 9041326, 9857395, 9496755, 6792614, 9417808, 9777049, 9041333, 9496763, 9684299, 9191373, 5252045, 5252011, 9684317, 9083606, 9054006, 9066033, 9911618, 9857426, 9119631, 9041355, 9979768, 9777077, 5252104, 9496767, 9191377, 9119606, 9083591, 9684303, 9417812, 9777053, 5252040, 9119637, 9066039, 9911629, 9041361, 9979790, 9083612, 9054012, 5251940, 9083600, 9496777, 9911599, 9777069, 9979727, 9417822, 9857414, 9191393, 9119623, 9684313, 9041345, 9053998, 9066025, 5252036, 9777059, 9191386, 9496773, 9417818, 9041340, 9066020, 9979700, 9857402, 9119618, 9911583, 9684309, 9053993, 9083595, 5252100, 9041331, 9496759, 9191369, 9684295, 9417804, 9777045, 5251938, 9083607, 9054007, 9562506, 9119632, 9356215, 9066034, 9700130, 9632615, 9911619, 9417829, 9191403, 9857427, 9041356, 9279049, 9777078, 9979769, 9496784, 5251937, 9857400, 9119616, 9417816, 9777057, 9191384, 9496771, 9083593, 9041338, 9684307, 5251968, 9496783, 9083604, 9979747, 9857422, 9054002, 9911610, 9041349, 9417828, 9684315, 9066029, 9777075, 9191402, 9119629, 5252063, 9777058, 9417817, 9191385, 9496772, 9041339, 9857401, 9979699, 9119617, 9911582, 9066019, 9684308, 9053992, 9083594, 5252093, 9496781, 9417826, 9857420, 9054000, 9041347, 9083602, 9979740, 9777073, 9191400, 9911605, 9119625, 9066027, 5252028, 9394048, 9663305, 9605109, 9544724, 9166591, 9314781, 9243007, 9472545, 879207, 168906, 918190, 9370000, 9291920, 9644136, 9815167, 9140562, 9526393, 9715010, 9589796, 9448549, 114255, 9221701, 9973634, 9081650, 9064690, 9612356, 9177018, 9252472, 9672800, 9843545, 9757658, 9325507, 9039298, 9907039, 9483640, 9554385, 9405327, 9112971, 201854, 9081655, 9064695, 9973636, 9405331, 9112976, 9612360, 9672804, 9907044, 9177022, 9252476, 9039303, 9483644, 9325511, 9843550, 9757660, 9554389, 201855, 433729, 9948680, 9596076, 9727337, 9230161, 9061970, 9034769, 9150780, 9051869, 9379707, 9077784, 9893446, 9534367, 9458077, 9112940, 9652725, 9301198, 9843510, 201857 ]
+  }, {
+    "dbId" : 29370,
+    "stId" : "R-ALL-29370",
+    "displayName" : "ADP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 7 ],
+    "identifier" : "16761",
+    "parents" : [ 6788782, 170037, 500087, 9697693, 9511149, 9432021, 9206358, 9353591, 9795136, 9630850, 9576626, 6814647, 9276454, 9308768, 9600654, 9658148, 9160110, 9466548, 9388155, 9539602, 9736133, 9237677, 390582, 9741227, 9240850, 9831931, 9542652, 9470172, 9661300, 9312377, 9603268, 9391818, 445800, 9163954, 391405, 6790050, 9736232, 9160241, 9056082, 9952449, 9658213, 9895747, 9103166, 9827450, 9078597, 9388323, 9466651, 9035776, 9539705, 9600757, 9308939, 9070319, 390455, 9237786, 445015, 445018, 9977479, 9562443, 9414582, 9117822, 9082713, 9681762, 9772765, 9909744, 9188009, 9493620, 9065454, 9853847, 9040520, 3371441, 9053615, 9681804, 9772846, 9977954, 9910080, 9040575, 9414618, 9117855, 9053626, 9265602, 9341440, 9493660, 9065507, 9853904, 9188045, 9082763, 5618090, 6792616, 9684367, 9041363, 9417878, 9911631, 9496840, 9083614, 9054014, 9857497, 9777150, 9066083, 9979792, 9191465, 9119694, 5252087, 9041366, 9857498, 9496844, 9119696, 9083616, 9777154, 9417882, 9191469, 9684371, 5252111, 9496843, 9417881, 9083615, 9777153, 9119695, 9684370, 9191468, 5252110, 9191474, 9119701, 9777159, 9041371, 9417887, 9083621, 9979797, 9857503, 9054019, 9684375, 9911636, 9066088, 9496849, 5252012, 9496846, 9119698, 9417884, 9777156, 9041368, 9066085, 9979794, 9857500, 9054016, 9083618, 9911633, 9684373, 9191471, 5251980, 9496847, 9191472, 9119699, 9417885, 9777157, 9041369, 9066086, 9979795, 9857501, 9054017, 9083619, 9911634, 9684374, 5252038, 9054022, 9041374, 9119704, 9083624, 9066091, 9979800, 9911639, 5252097, 5252129, 9119700, 9083620, 9191473, 9066087, 9979796, 9857502, 9054018, 9911635, 9777158, 9041370, 9417886, 9496848, 5252096, 9041367, 9496845, 9119697, 9777155, 9054015, 9417883, 9066084, 9857499, 9083617, 9979793, 9911632, 9684372, 9191470, 5255423, 9041364, 9777151, 9496841, 9417879, 9191466, 9684368, 5251966, 9562478, 9191475, 9777161, 9119703, 9857505, 9041373, 9979799, 9417888, 9054021, 9083623, 9496850, 9911638, 9066090, 5251932, 9041365, 9496842, 9417880, 9191467, 9777152, 9684369, 5252090, 9979798, 9054020, 9777160, 9119702, 9083622, 9684376, 9857504, 9041372, 9066089, 9911637, 5251953, 9831368, 9660936, 9391412, 9036464, 9312027, 9105375, 9240526, 9740533, 9469808, 1063687, 9163554, 9764250, 9614553, 9676171, 9408585, 9487301, 9181673, 9255598, 2029139, 9181649, 9081751, 9907168, 9764195, 9974123, 9614529, 9408572, 9847332, 9329756, 9255581, 9676153, 9064771, 9557586, 9114122, 9487280, 202994, 9039435, 9325521, 9554399, 9757673, 9843562, 9081664, 9252484, 9039312, 9672820, 9177035, 9483654, 9612368, 9405341, 1861625 ]
+  }, {
+    "dbId" : 391102,
+    "stId" : "R-HSA-391102",
+    "displayName" : "p-Y428,Y452,Y469,Y495-SIRPA [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P78324",
+    "geneNames" : [ "SIRPA", "BIT", "MFR", "MYD1", "PTPNS1", "SHPS1", "SIRP" ],
+    "parents" : [ 391115 ]
+  }, {
+    "dbId" : 391166,
+    "stId" : "R-HSA-391166",
+    "displayName" : "SIRP gamma:CD47 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 41 ],
+    "children" : [ 197736, 197571 ]
+  }, {
+    "dbId" : 391097,
+    "stId" : "R-HSA-391097",
+    "displayName" : "SFTPD oligomer [extracellular region]",
+    "schemaClass" : "Polymer",
+    "speciesId" : 48887,
+    "parents" : [ 5696350, 391108 ],
+    "children" : [ 391098 ]
+  }, {
+    "dbId" : 391099,
+    "stId" : "R-HSA-391099",
+    "displayName" : "SFTPD [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35247",
+    "geneNames" : [ "SFTPD", "COLEC7", "PSPD", "SFTP4" ],
+    "parents" : [ 391098 ]
+  }, {
+    "dbId" : 391098,
+    "stId" : "R-HSA-391098",
+    "displayName" : "SFTPD trimer [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 391097 ],
+    "children" : [ 391099 ]
+  }, {
+    "dbId" : 74686,
+    "stId" : "R-HSA-74686",
+    "displayName" : "GRB2-1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 28 ],
+    "identifier" : "P62993-1",
+    "geneNames" : [ "GRB2", "ASH" ],
+    "parents" : [ 2197679, 8935905, 8867037, 354113, 8854978, 8854983, 391112, 1295625, 8876351, 182964, 182948, 182946, 180511, 180304, 109801, 389921, 914028, 913411, 182910, 179849, 8851942, 983692, 1433549, 109797, 204865, 392044, 392043, 8851921, 1250499, 388786, 190399, 912623, 912647, 912799, 912528, 912522 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 391157,
+    "stId" : "R-HSA-391157",
+    "displayName" : "p-4Y-SIRPA:CD47 binds SKAP2",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 391156 ],
+    "inputs" : [ 391115, 390927 ],
+    "outputs" : [ 391118 ],
+    "efs" : [ ],
+    "diagramIds" : [ 13 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 391156,
+    "stId" : "R-HSA-391156",
+    "displayName" : "Phosphorylation of ITIM motif in SIRP alpha",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 391158 ],
+    "following" : [ 391150, 391151, 391152, 391153, 391157 ],
+    "inputs" : [ 113592, 391111 ],
+    "outputs" : [ 391115, 29370 ],
+    "catalysts" : [ 548936 ],
+    "efs" : [ ],
+    "diagramIds" : [ 5 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 210274,
+    "stId" : "R-HSA-210274",
+    "displayName" : "SIRP beta binds TYROBP",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 2130151 ],
+    "inputs" : [ 198087, 197568 ],
+    "outputs" : [ 210222 ],
+    "efs" : [ ],
+    "diagramIds" : [ 35 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 391158,
+    "stId" : "R-HSA-391158",
+    "displayName" : "SIRP alpha binds CD47",
+    "schemaClass" : "Reaction",
+    "following" : [ 391156 ],
+    "inputs" : [ 197736, 3209922 ],
+    "outputs" : [ 391111 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 391153,
+    "stId" : "R-HSA-391153",
+    "displayName" : "p-4Y-SIRPA:CD47 binds GRB2-1",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 391156 ],
+    "inputs" : [ 74686, 391115 ],
+    "outputs" : [ 391112 ],
+    "efs" : [ ],
+    "diagramIds" : [ 27 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 391168,
+    "stId" : "R-HSA-391168",
+    "displayName" : "SIRP gamma binds CD47",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 197736, 197571 ],
+    "outputs" : [ 391166 ],
+    "efs" : [ ],
+    "diagramIds" : [ 39 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 391152,
+    "stId" : "R-HSA-391152",
+    "displayName" : "p-4Y-SIRPA:CD47 binds PTK2B",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 391156 ],
+    "inputs" : [ 391115, 390932 ],
+    "outputs" : [ 391113 ],
+    "efs" : [ ],
+    "diagramIds" : [ 21 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 391155,
+    "stId" : "R-HSA-391155",
+    "displayName" : "SIRPA binds SFTPA oligomer, SFTPD oligomer",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 3209922, 391108 ],
+    "outputs" : [ 391109 ],
+    "efs" : [ ],
+    "diagramIds" : [ 31 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 391151,
+    "stId" : "R-HSA-391151",
+    "displayName" : "p-4Y-SIRPA:CD47:SKAP2 binds FYB",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 391156 ],
+    "inputs" : [ 391118, 390925 ],
+    "outputs" : [ 391116 ],
+    "efs" : [ ],
+    "diagramIds" : [ 17 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 391150,
+    "stId" : "R-HSA-391150",
+    "displayName" : "p-4Y-SIRPA:CD47 binds PTPN6,PTPN11",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 391156 ],
+    "inputs" : [ 391115, 389744 ],
+    "outputs" : [ 391110 ],
+    "efs" : [ ],
+    "diagramIds" : [ 10 ],
+    "entityFunctionalStatus" : [ ]
+  } ]
+}

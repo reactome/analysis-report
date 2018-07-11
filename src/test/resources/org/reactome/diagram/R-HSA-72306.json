@@ -1,0 +1,224 @@
+{
+  "dbId" : 72306,
+  "stableId" : "R-HSA-72306",
+  "displayName" : "tRNA processing",
+  "nodes" : [ {
+    "id" : 4,
+    "reactomeId" : 6784531,
+    "displayName" : "tRNA processing in the nucleus",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 263,
+      "y" : 106
+    },
+    "minX" : 93,
+    "maxX" : 434,
+    "minY" : 76,
+    "maxY" : 136,
+    "prop" : {
+      "x" : 93,
+      "y" : 76,
+      "width" : 341,
+      "height" : 60
+    },
+    "textPosition" : {
+      "x" : 166,
+      "y" : 91
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 5,
+    "reactomeId" : 6782315,
+    "displayName" : "tRNA modification in the nucleus and cytosol",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 262,
+      "y" : 193
+    },
+    "minX" : 93,
+    "maxX" : 432,
+    "minY" : 164,
+    "maxY" : 222,
+    "prop" : {
+      "x" : 93,
+      "y" : 164,
+      "width" : 339,
+      "height" : 58
+    },
+    "textPosition" : {
+      "x" : 127,
+      "y" : 178
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 6785470,
+    "displayName" : "tRNA processing in the mitochondrion",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 275,
+      "y" : 288
+    },
+    "minX" : 134,
+    "maxX" : 417,
+    "minY" : 260,
+    "maxY" : 316,
+    "prop" : {
+      "x" : 134,
+      "y" : 260,
+      "width" : 283,
+      "height" : 56
+    },
+    "textPosition" : {
+      "x" : 159,
+      "y" : 273
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 6787450,
+    "displayName" : "tRNA modification in the mitochondrion",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 274,
+      "y" : 349
+    },
+    "minX" : 132,
+    "maxX" : 417,
+    "minY" : 321,
+    "maxY" : 378,
+    "prop" : {
+      "x" : 132,
+      "y" : 321,
+      "width" : 285,
+      "height" : 57
+    },
+    "textPosition" : {
+      "x" : 154,
+      "y" : 335
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ {
+    "id" : 1,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 255,
+      "y" : 234
+    },
+    "minX" : 4,
+    "maxX" : 506,
+    "minY" : 4,
+    "maxY" : 464,
+    "prop" : {
+      "x" : 4,
+      "y" : 4,
+      "width" : 502,
+      "height" : 460
+    },
+    "textPosition" : {
+      "x" : 17,
+      "y" : 417
+    },
+    "insets" : {
+      "x" : 14,
+      "y" : 14,
+      "width" : 483,
+      "height" : 439
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2, 3 ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 7660,
+    "displayName" : "nucleoplasm",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 256,
+      "y" : 116
+    },
+    "minX" : 45,
+    "maxX" : 468,
+    "minY" : 32,
+    "maxY" : 201,
+    "prop" : {
+      "x" : 45,
+      "y" : 32,
+      "width" : 423,
+      "height" : 169
+    },
+    "textPosition" : {
+      "x" : 58,
+      "y" : 44
+    },
+    "insets" : {
+      "x" : 55,
+      "y" : 41,
+      "width" : 405,
+      "height" : 150
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 4, 5 ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 5462,
+    "displayName" : "mitochondrion",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 257,
+      "y" : 334
+    },
+    "minX" : 65,
+    "maxX" : 449,
+    "minY" : 246,
+    "maxY" : 423,
+    "prop" : {
+      "x" : 65,
+      "y" : 246,
+      "width" : 384,
+      "height" : 177
+    },
+    "textPosition" : {
+      "x" : 79,
+      "y" : 378
+    },
+    "insets" : {
+      "x" : 76,
+      "y" : 254,
+      "width" : 365,
+      "height" : 160
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 6, 7 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 4,
+  "maxX" : 506,
+  "minY" : 4,
+  "maxY" : 464,
+  "disease" : false
+}

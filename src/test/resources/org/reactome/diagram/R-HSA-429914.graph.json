@@ -1,0 +1,923 @@
+{
+  "dbId" : 429914,
+  "stId" : "R-HSA-429914",
+  "nodes" : [ {
+    "dbId" : 429830,
+    "stId" : "R-HSA-429830",
+    "displayName" : "CNOT4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95628",
+    "geneNames" : [ "CNOT4", "NOT4" ],
+    "parents" : [ 429896 ]
+  }, {
+    "dbId" : 156803,
+    "stId" : "R-HSA-156803",
+    "displayName" : "PABPC1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 14 ],
+    "identifier" : "P11940",
+    "geneNames" : [ "PABPC1", "PAB1", "PABP1", "PABPC2" ],
+    "parents" : [ 450623, 156804, 927845, 927743, 927823, 9014606, 8960059, 429977, 429989 ]
+  }, {
+    "dbId" : 429956,
+    "stId" : "R-HSA-429956",
+    "displayName" : "LSM4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y4Z0",
+    "geneNames" : [ "LSM4" ],
+    "parents" : [ 430001 ]
+  }, {
+    "dbId" : 72578,
+    "stId" : "R-HSA-72578",
+    "displayName" : "EIF4E [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 10 ],
+    "identifier" : "P06730",
+    "geneNames" : [ "EIF4E", "EIF4EL1", "EIF4F" ],
+    "parents" : [ 1678829, 113818, 141614, 158501, 72587, 8960059, 429977, 429989, 72581, 165697 ]
+  }, {
+    "dbId" : 72584,
+    "stId" : "R-HSA-72584",
+    "displayName" : "EIF4G1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ],
+    "identifier" : "Q04637",
+    "geneNames" : [ "EIF4G1", "EIF4F", "EIF4G", "EIF4GI" ],
+    "parents" : [ 1678828, 450623, 72587, 927845, 927743, 927823, 9014606, 8960059, 429977, 429989 ]
+  }, {
+    "dbId" : 8941313,
+    "stId" : "R-HSA-8941313",
+    "displayName" : "ZCCHC6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5VYS8",
+    "geneNames" : [ "ZCCHC6", "HS2", "KIAA1711", "TUT7" ],
+    "parents" : [ 8941311 ]
+  }, {
+    "dbId" : 429839,
+    "stId" : "R-HSA-429839",
+    "displayName" : "LSM5 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y4Y9",
+    "geneNames" : [ "LSM5" ],
+    "parents" : [ 430001 ]
+  }, {
+    "dbId" : 429962,
+    "stId" : "R-HSA-429962",
+    "displayName" : "CNOT6 or CNOT6L [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 429896 ],
+    "children" : [ 430027, 429930 ]
+  }, {
+    "dbId" : 429834,
+    "stId" : "R-HSA-429834",
+    "displayName" : "DCP1B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZD4",
+    "geneNames" : [ "DCP1B" ],
+    "parents" : [ 429991 ]
+  }, {
+    "dbId" : 72589,
+    "stId" : "R-HSA-72589",
+    "displayName" : "EIF4B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "identifier" : "P23588",
+    "geneNames" : [ "EIF4B" ],
+    "parents" : [ 156804, 429989, 429977, 8960059, 72594, 72592, 72593, 156809 ]
+  }, {
+    "dbId" : 429963,
+    "stId" : "R-HSA-429963",
+    "displayName" : "EDC4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6P2E9",
+    "geneNames" : [ "EDC4", "HEDLS" ],
+    "parents" : [ 429991 ]
+  }, {
+    "dbId" : 429835,
+    "stId" : "R-HSA-429835",
+    "displayName" : "XRN1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 47 ],
+    "identifier" : "Q8IZH2",
+    "geneNames" : [ "XRN1", "SEP1" ],
+    "parents" : [ 450436, 450430 ]
+  }, {
+    "dbId" : 429974,
+    "stId" : "R-ALL-429974",
+    "displayName" : "mature mRNA (eukaryotic, capped and deadenylated) [cytosol]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 13 ],
+    "parents" : [ 9052242, 429908, 9104943, 9390696, 9957245, 9036263, 9469087, 9897895, 9162783, 9062803, 9602475, 9311316, 9739663, 9660239, 9239889, 9830571, 9079028, 9541743 ]
+  }, {
+    "dbId" : 429842,
+    "stId" : "R-HSA-429842",
+    "displayName" : "eIF4A [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 12 ],
+    "parents" : [ 1678832, 8960059, 429977, 429989 ],
+    "children" : [ 72575, 72573, 927868 ]
+  }, {
+    "dbId" : 429971,
+    "stId" : "R-HSA-429971",
+    "displayName" : "Exosome Complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 450436, 450430, 450479, 8931494 ],
+    "children" : [ 429999, 429935, 430046, 429841, 430017 ]
+  }, {
+    "dbId" : 429841,
+    "stId" : "R-HSA-429841",
+    "displayName" : "EXOSC1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y3B2",
+    "geneNames" : [ "EXOSC1", "CSL4", "CGI-108" ],
+    "parents" : [ 429971 ]
+  }, {
+    "dbId" : 429981,
+    "stId" : "R-HSA-429981",
+    "displayName" : "CNOT11 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UKZ1",
+    "geneNames" : [ "CNOT11", "C2orf29", "C40" ],
+    "parents" : [ 429896 ]
+  }, {
+    "dbId" : 429979,
+    "stId" : "R-HSA-429979",
+    "displayName" : "CNOT8 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UFF9",
+    "geneNames" : [ "CNOT8", "CALIF", "POP2" ],
+    "parents" : [ 429868 ]
+  }, {
+    "dbId" : 429976,
+    "stId" : "R-HSA-429976",
+    "displayName" : "LSM1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15116",
+    "geneNames" : [ "LSM1", "CASM" ],
+    "parents" : [ 430001 ]
+  }, {
+    "dbId" : 429849,
+    "stId" : "R-HSA-429849",
+    "displayName" : "LSM2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y333",
+    "geneNames" : [ "LSM2", "C6orf28", "G7B" ],
+    "parents" : [ 430001 ]
+  }, {
+    "dbId" : 429977,
+    "stId" : "R-HSA-429977",
+    "displayName" : "Translatable mRNA Complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2 ],
+    "children" : [ 72589, 72584, 430014, 429842, 429861, 72578, 156803 ]
+  }, {
+    "dbId" : 76577,
+    "stId" : "R-ALL-76577",
+    "displayName" : "AMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 4, 54, 57, 59 ],
+    "identifier" : "16027",
+    "parents" : [ 6788778, 500125, 500088, 2316451, 2316439, 9306707, 9156470, 9734799, 9235127, 9826607, 9062387, 9385112, 9463430, 9599936, 9538817, 9078330, 9895288, 9951711, 9657371, 9102669, 380931, 9035428, 453332, 453344, 9079727, 9241832, 9742769, 9471350, 9036832, 9313509, 9165191, 9833179, 9392857, 9901710, 9662152, 9963683, 9106388 ]
+  }, {
+    "dbId" : 429991,
+    "stId" : "R-HSA-429991",
+    "displayName" : "DCP1-DCP2 Decapping Complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 44 ],
+    "children" : [ 429963, 430043, 429834, 429997, 429937, 430032 ]
+  }, {
+    "dbId" : 429988,
+    "stId" : "R-HSA-429988",
+    "displayName" : "DCPS [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 34 ],
+    "identifier" : "Q96C86",
+    "geneNames" : [ "DCPS", "DCS1", "HINT5", "HSPC015" ]
+  }, {
+    "dbId" : 429861,
+    "stId" : "R-HSA-429861",
+    "displayName" : "PAIP1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 11 ],
+    "identifier" : "Q9H074",
+    "geneNames" : [ "PAIP1" ],
+    "parents" : [ 8960059, 429977, 429989 ]
+  }, {
+    "dbId" : 429989,
+    "stId" : "R-HSA-429989",
+    "displayName" : "Partially Deadenylated mRNA Complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ],
+    "children" : [ 72589, 72584, 429842, 429909, 429861, 72578, 156803 ]
+  }, {
+    "dbId" : 429984,
+    "stId" : "R-HSA-429984",
+    "displayName" : "EXOSC9 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q06265",
+    "geneNames" : [ "EXOSC9", "PMSCL1" ],
+    "parents" : [ 430046 ]
+  }, {
+    "dbId" : 5694064,
+    "stId" : "R-HSA-5694064",
+    "displayName" : "NT5C3B [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 64 ],
+    "identifier" : "Q969T7",
+    "geneNames" : [ "NT5C3B", "NT5C3L" ]
+  }, {
+    "dbId" : 429999,
+    "stId" : "R-HSA-429999",
+    "displayName" : "EXOSC2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13868",
+    "geneNames" : [ "EXOSC2", "RRP4" ],
+    "parents" : [ 429971 ]
+  }, {
+    "dbId" : 429996,
+    "stId" : "R-HSA-429996",
+    "displayName" : "Decapped mRNA:LSM1-7 Complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 43 ],
+    "children" : [ 430001, 429875 ]
+  }, {
+    "dbId" : 429868,
+    "stId" : "R-HSA-429868",
+    "displayName" : "CNOT7 or CNOT8 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 429896 ],
+    "children" : [ 429979, 429877 ]
+  }, {
+    "dbId" : 113578,
+    "stId" : "R-ALL-113578",
+    "displayName" : "GMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 52, 28 ],
+    "identifier" : "17345",
+    "parents" : [ 500071, 500125, 500260, 500120 ]
+  }, {
+    "dbId" : 429997,
+    "stId" : "R-HSA-429997",
+    "displayName" : "EDC3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96F86",
+    "geneNames" : [ "EDC3", "LSM16", "YJDC", "YJEFN2", "PP844" ],
+    "parents" : [ 429991 ]
+  }, {
+    "dbId" : 29356,
+    "stId" : "R-ALL-29356",
+    "displayName" : "H2O [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 18, 3, 8, 24, 91, 61, 46, 31 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 8931494,
+    "stId" : "R-HSA-8931494",
+    "displayName" : "Exosome:SKI complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 65 ],
+    "children" : [ 8931527, 8931539, 429971 ]
+  }, {
+    "dbId" : 429864,
+    "stId" : "R-HSA-429864",
+    "displayName" : "PAN2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q504Q3",
+    "geneNames" : [ "PAN2", "KIAA0710", "USP52" ],
+    "parents" : [ 429882 ]
+  }, {
+    "dbId" : 429878,
+    "stId" : "R-HSA-429878",
+    "displayName" : "CNOT10 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H9A5",
+    "geneNames" : [ "CNOT10" ],
+    "parents" : [ 429896 ]
+  }, {
+    "dbId" : 8960056,
+    "stId" : "R-ALL-8960056",
+    "displayName" : "Uridylated mRNA [cytosol]",
+    "schemaClass" : "Complex",
+    "parents" : [ 9358880, 9211825, 9437468, 9634570, 9281381, 9801971, 9516631, 9581110, 9702375, 8960059 ],
+    "children" : [ 6782337, 429909 ]
+  }, {
+    "dbId" : 430004,
+    "stId" : "R-ALL-430004",
+    "displayName" : "7-MeGDP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 42 ],
+    "identifier" : "20794"
+  }, {
+    "dbId" : 429877,
+    "stId" : "R-HSA-429877",
+    "displayName" : "CNOT7 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UIV1",
+    "geneNames" : [ "CNOT7", "CAF1" ],
+    "parents" : [ 429868 ]
+  }, {
+    "dbId" : 8960059,
+    "stId" : "R-HSA-8960059",
+    "displayName" : "Uridylated partially Deadenylated mRNA Complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 68 ],
+    "children" : [ 72589, 72584, 429842, 429861, 72578, 156803, 8960056 ]
+  }, {
+    "dbId" : 429875,
+    "stId" : "R-ALL-429875",
+    "displayName" : "decapped mRNA with 5' monophosphate [cytosol]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 9897896, 9079029, 9602476, 9239890, 9062804, 9311317, 9830572, 9104944, 9052243, 9469088, 9162784, 9957246, 9390697, 9739664, 9660240, 9541744, 9036264, 429996 ]
+  }, {
+    "dbId" : 429872,
+    "stId" : "R-HSA-429872",
+    "displayName" : "CNOT3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75175",
+    "geneNames" : [ "CNOT3", "KIAA0691", "LENG2", "NOT3" ],
+    "parents" : [ 429896 ]
+  }, {
+    "dbId" : 430001,
+    "stId" : "R-HSA-430001",
+    "displayName" : "Lsm1-7 Complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 38 ],
+    "parents" : [ 429996, 429908 ],
+    "children" : [ 429849, 429976, 2028610, 429839, 2028617, 429936, 429956, 429894 ]
+  }, {
+    "dbId" : 430014,
+    "stId" : "R-ALL-430014",
+    "displayName" : "mature mRNA (eukaryotic, capped and polyadenylated) [cytosol]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 9162885, 9390786, 9602574, 9469196, 9311413, 9541844, 9739808, 9660336, 429977, 9239983 ]
+  }, {
+    "dbId" : 429886,
+    "stId" : "R-HSA-429886",
+    "displayName" : "PARN homodimer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 16 ],
+    "children" : [ 430009 ]
+  }, {
+    "dbId" : 430013,
+    "stId" : "R-HSA-430013",
+    "displayName" : "EXOSC4 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NPD3",
+    "geneNames" : [ "EXOSC4", "RRP41", "SKI6" ],
+    "parents" : [ 430046 ]
+  }, {
+    "dbId" : 429882,
+    "stId" : "R-HSA-429882",
+    "displayName" : "PAN2-PAN3 Complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6 ],
+    "children" : [ 429864, 429938 ]
+  }, {
+    "dbId" : 29372,
+    "stId" : "R-ALL-29372",
+    "displayName" : "Pi [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 63 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 430011,
+    "stId" : "R-HSA-430011",
+    "displayName" : "TNKS1BP1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9C0C2",
+    "geneNames" : [ "TNKS1BP1", "KIAA1741", "TAB182" ],
+    "parents" : [ 429896 ]
+  }, {
+    "dbId" : 430009,
+    "stId" : "R-HSA-430009",
+    "displayName" : "PARN [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95453",
+    "geneNames" : [ "PARN", "DAN" ],
+    "parents" : [ 450479, 429886 ]
+  }, {
+    "dbId" : 429894,
+    "stId" : "R-HSA-429894",
+    "displayName" : "LSM3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62310",
+    "geneNames" : [ "LSM3", "MDS017" ],
+    "parents" : [ 430001 ]
+  }, {
+    "dbId" : 429892,
+    "stId" : "R-HSA-429892",
+    "displayName" : "CNOT1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "A5YKK6",
+    "geneNames" : [ "CNOT1", "CDC39", "KIAA1007", "NOT1", "AD-005" ],
+    "parents" : [ 429896 ]
+  }, {
+    "dbId" : 8931534,
+    "stId" : "R-HSA-8931534",
+    "displayName" : "WDR61 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9GZS3",
+    "geneNames" : [ "WDR61" ],
+    "parents" : [ 8931527 ]
+  }, {
+    "dbId" : 429889,
+    "stId" : "R-HSA-429889",
+    "displayName" : "EXOSC5 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NQT4",
+    "geneNames" : [ "EXOSC5", "CML28", "RRP46" ],
+    "parents" : [ 430046 ]
+  }, {
+    "dbId" : 430017,
+    "stId" : "R-HSA-430017",
+    "displayName" : "EXOSC3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NQT5",
+    "geneNames" : [ "EXOSC3", "RRP40", "CGI-102" ],
+    "parents" : [ 429971 ]
+  }, {
+    "dbId" : 430030,
+    "stId" : "R-HSA-430030",
+    "displayName" : "EXOSC7 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15024",
+    "geneNames" : [ "EXOSC7", "KIAA0116", "RRP42" ],
+    "parents" : [ 430046 ]
+  }, {
+    "dbId" : 429902,
+    "stId" : "R-HSA-429902",
+    "displayName" : "CNOT2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NZN8",
+    "geneNames" : [ "CNOT2", "CDC36", "NOT2", "HSPC131", "MSTP046" ],
+    "parents" : [ 429896 ]
+  }, {
+    "dbId" : 430029,
+    "stId" : "R-HSA-430029",
+    "displayName" : "RQCD1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92600",
+    "geneNames" : [ "RQCD1", "CNOT9", "RCD1" ],
+    "parents" : [ 429896 ]
+  }, {
+    "dbId" : 430027,
+    "stId" : "R-HSA-430027",
+    "displayName" : "CNOT6L [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96LI5",
+    "geneNames" : [ "CNOT6L", "CCR4B" ],
+    "parents" : [ 429962 ]
+  }, {
+    "dbId" : 429896,
+    "stId" : "R-HSA-429896",
+    "displayName" : "CCR4-NOT Complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 19 ],
+    "parents" : [ 6798046 ],
+    "children" : [ 430011, 429962, 429981, 430029, 429868, 429902, 429872, 429892, 429878, 429830 ]
+  }, {
+    "dbId" : 8931527,
+    "stId" : "R-HSA-8931527",
+    "displayName" : "SKI complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8931494 ],
+    "children" : [ 8931541, 391294, 8931534 ]
+  }, {
+    "dbId" : 429908,
+    "stId" : "R-HSA-429908",
+    "displayName" : "Deadenylated mRNA:Lsm1-7 Complex [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 39 ],
+    "children" : [ 430001, 429974 ]
+  }, {
+    "dbId" : 109395,
+    "stId" : "R-ALL-109395",
+    "displayName" : "CMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 51, 27 ],
+    "identifier" : "17361",
+    "parents" : [ 6788778, 500009, 500828, 500761, 500347 ]
+  }, {
+    "dbId" : 429909,
+    "stId" : "R-ALL-429909",
+    "displayName" : "mature mRNA (eukaryotic, capped and partially deadenylated) [cytosol]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 8960056, 9660269, 9541773, 9311348, 9239926, 9469126, 9602502, 9390732, 9739701, 429989, 9162813 ]
+  }, {
+    "dbId" : 430032,
+    "stId" : "R-HSA-430032",
+    "displayName" : "DDX6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P26196",
+    "geneNames" : [ "DDX6", "HLR2", "RCK" ],
+    "parents" : [ 429991 ]
+  }, {
+    "dbId" : 2028617,
+    "stId" : "R-HSA-2028617",
+    "displayName" : "PATL1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86TB9",
+    "geneNames" : [ "PATL1", "OK/KNS-cl.5" ],
+    "parents" : [ 430001 ]
+  }, {
+    "dbId" : 430046,
+    "stId" : "R-HSA-430046",
+    "displayName" : "Exosome Ring Hexamer [cytosol]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 429971 ],
+    "children" : [ 429912, 430013, 430030, 429889, 429921, 429984 ]
+  }, {
+    "dbId" : 8931539,
+    "stId" : "R-HSA-8931539",
+    "displayName" : "HBS1L [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y450",
+    "geneNames" : [ "HBS1L", "HBS1", "KIAA1038" ],
+    "parents" : [ 8931494 ]
+  }, {
+    "dbId" : 109402,
+    "stId" : "R-ALL-109402",
+    "displayName" : "UMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 50, 26 ],
+    "identifier" : "16695",
+    "parents" : [ 500347, 500414, 500761, 500009 ]
+  }, {
+    "dbId" : 430042,
+    "stId" : "R-ALL-430042",
+    "displayName" : "7MGMP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 33 ],
+    "identifier" : "17825"
+  }, {
+    "dbId" : 2028610,
+    "stId" : "R-HSA-2028610",
+    "displayName" : "LSM7 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UK45",
+    "geneNames" : [ "LSM7" ],
+    "parents" : [ 430001 ]
+  }, {
+    "dbId" : 5694090,
+    "stId" : "R-ALL-5694090",
+    "displayName" : "7MG [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 62 ],
+    "identifier" : "20794"
+  }, {
+    "dbId" : 8931541,
+    "stId" : "R-HSA-8931541",
+    "displayName" : "TTC37 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6PGP7",
+    "geneNames" : [ "TTC37", "KIAA0372" ],
+    "parents" : [ 8931527 ]
+  }, {
+    "dbId" : 430043,
+    "stId" : "R-HSA-430043",
+    "displayName" : "DCP1A [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NPI6",
+    "geneNames" : [ "DCP1A", "SMIF" ],
+    "parents" : [ 450436, 450430, 429991 ]
+  }, {
+    "dbId" : 429912,
+    "stId" : "R-HSA-429912",
+    "displayName" : "EXOSC8 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96B26",
+    "geneNames" : [ "EXOSC8", "OIP2", "RRP43" ],
+    "parents" : [ 430046 ]
+  }, {
+    "dbId" : 429926,
+    "stId" : "R-ALL-429926",
+    "displayName" : "capped oligoribonucleotide [cytosol]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 25 ]
+  }, {
+    "dbId" : 429925,
+    "stId" : "R-ALL-429925",
+    "displayName" : "oligoribonucleotide with a 5'-diphosphate [cytosol]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 32 ]
+  }, {
+    "dbId" : 6782337,
+    "stId" : "R-ALL-6782337",
+    "displayName" : "uridine residue [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 67 ],
+    "identifier" : "73747",
+    "parents" : [ 8960056 ]
+  }, {
+    "dbId" : 429921,
+    "stId" : "R-HSA-429921",
+    "displayName" : "EXOSC6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5RKV6",
+    "geneNames" : [ "EXOSC6", "MTR3" ],
+    "parents" : [ 430046 ]
+  }, {
+    "dbId" : 429935,
+    "stId" : "R-HSA-429935",
+    "displayName" : "DIS3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y2L1",
+    "geneNames" : [ "DIS3", "KIAA1008", "RRP44" ],
+    "parents" : [ 429971 ]
+  }, {
+    "dbId" : 429930,
+    "stId" : "R-HSA-429930",
+    "displayName" : "CNOT6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9ULM6",
+    "geneNames" : [ "CNOT6", "CCR4", "CCR4a", "KIAA1194" ],
+    "parents" : [ 429962 ]
+  }, {
+    "dbId" : 927868,
+    "stId" : "R-HSA-927868",
+    "displayName" : "EIF4A3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P38919",
+    "geneNames" : [ "EIF4A3", "DDX48", "KIAA0111" ],
+    "parents" : [ 927869, 429842 ]
+  }, {
+    "dbId" : 8941307,
+    "stId" : "R-HSA-8941307",
+    "displayName" : "ZCCHC11 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5TAX3",
+    "geneNames" : [ "ZCCHC11", "KIAA0191", "TUT4" ],
+    "parents" : [ 8941311 ]
+  }, {
+    "dbId" : 429938,
+    "stId" : "R-HSA-429938",
+    "displayName" : "PAN3 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q58A45",
+    "geneNames" : [ "PAN3" ],
+    "parents" : [ 429882 ]
+  }, {
+    "dbId" : 429936,
+    "stId" : "R-HSA-429936",
+    "displayName" : "LSM6 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62312",
+    "geneNames" : [ "LSM6" ],
+    "parents" : [ 430001 ]
+  }, {
+    "dbId" : 429937,
+    "stId" : "R-HSA-429937",
+    "displayName" : "DCP2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IU60",
+    "geneNames" : [ "DCP2", "NUDT20" ],
+    "parents" : [ 429991, 450479, 450430, 450436 ]
+  }, {
+    "dbId" : 8941311,
+    "stId" : "R-HSA-8941311",
+    "displayName" : "ZCCHC6, ZCCHC11 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 69 ],
+    "children" : [ 8941313, 8941307 ]
+  }, {
+    "dbId" : 391294,
+    "stId" : "R-HSA-391294",
+    "displayName" : "SKIV2L [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15477",
+    "geneNames" : [ "SKIV2L", "DDX13", "SKI2W", "SKIV2", "W" ],
+    "parents" : [ 391287, 8931527 ]
+  }, {
+    "dbId" : 72573,
+    "stId" : "R-HSA-72573",
+    "displayName" : "EIF4A1 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P60842",
+    "geneNames" : [ "EIF4A1", "DDX2A", "EIF4A" ],
+    "parents" : [ 72576, 429842 ]
+  }, {
+    "dbId" : 72575,
+    "stId" : "R-HSA-72575",
+    "displayName" : "EIF4A2 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14240",
+    "geneNames" : [ "EIF4A2", "DDX2B", "EIF4F" ],
+    "parents" : [ 72576, 429842 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 429860,
+    "stId" : "R-HSA-429860",
+    "displayName" : "DCP1-DCP2 complex decaps mRNA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 429978 ],
+    "following" : [ 429845 ],
+    "inputs" : [ 29356, 429908 ],
+    "outputs" : [ 429996, 430004 ],
+    "catalysts" : [ 429991 ],
+    "efs" : [ ],
+    "diagramIds" : [ 40 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 430021,
+    "stId" : "R-HSA-430021",
+    "displayName" : "PAN2-PAN3 complex partially deadenylates mRNA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75098 ],
+    "following" : [ 429992, 429955 ],
+    "inputs" : [ 429977, 29356 ],
+    "outputs" : [ 429989, 76577 ],
+    "catalysts" : [ 429882 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 429845,
+    "stId" : "R-HSA-429845",
+    "displayName" : "5' to 3' exoribonuclease hydrolyzes decapped mRNA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 429860 ],
+    "inputs" : [ 29356, 429996 ],
+    "outputs" : [ 109402, 113578, 430001, 109395, 76577 ],
+    "catalysts" : [ 429835 ],
+    "efs" : [ ],
+    "diagramIds" : [ 45 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 429955,
+    "stId" : "R-HSA-429955",
+    "displayName" : "CCR4-NOT complex deadenylates mRNA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 430021 ],
+    "following" : [ 430028, 429978 ],
+    "inputs" : [ 29356, 429989 ],
+    "outputs" : [ 72589, 72584, 429842, 72578, 429861, 156803, 429974, 76577 ],
+    "catalysts" : [ 429896 ],
+    "efs" : [ ],
+    "diagramIds" : [ 17 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 8941312,
+    "stId" : "R-HSA-8941312",
+    "displayName" : "ZCCHC6, ZCCHC11 are mRNA uridyltransferases",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 6782337, 429989 ],
+    "outputs" : [ 8960059 ],
+    "catalysts" : [ 8941311 ],
+    "efs" : [ ],
+    "diagramIds" : [ 66 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5694126,
+    "stId" : "R-HSA-5694126",
+    "displayName" : "NT5C3B hydrolyses 7MGP to 7MG",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 429961 ],
+    "inputs" : [ 29356, 430042 ],
+    "outputs" : [ 29372, 5694090 ],
+    "catalysts" : [ 5694064 ],
+    "efs" : [ ],
+    "diagramIds" : [ 60 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 430028,
+    "stId" : "R-HSA-430028",
+    "displayName" : "Exosome Complex hydrolyzes mRNA by 3' to 5' exoribonuclease digestion",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 429992, 429955 ],
+    "following" : [ 429961 ],
+    "inputs" : [ 29356, 429974 ],
+    "outputs" : [ 109402, 113578, 109395, 429926, 76577 ],
+    "catalysts" : [ 8931494 ],
+    "efs" : [ ],
+    "diagramIds" : [ 23 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 429978,
+    "stId" : "R-HSA-429978",
+    "displayName" : "Lsm1-7 Complex binds deadenylated mRNA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 429992, 429955 ],
+    "following" : [ 429860 ],
+    "inputs" : [ 430001, 429974 ],
+    "outputs" : [ 429908 ],
+    "efs" : [ ],
+    "diagramIds" : [ 37 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 429992,
+    "stId" : "R-HSA-429992",
+    "displayName" : "PARN deadenylates mRNA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 430021 ],
+    "following" : [ 430028, 429978 ],
+    "inputs" : [ 29356, 429989 ],
+    "outputs" : [ 72589, 72584, 429842, 72578, 429861, 156803, 429974, 76577 ],
+    "catalysts" : [ 429886 ],
+    "efs" : [ ],
+    "diagramIds" : [ 7 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 429961,
+    "stId" : "R-HSA-429961",
+    "displayName" : "DCPS scavenges the 7-methylguanosine cap of mRNA",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 430028 ],
+    "following" : [ 5694126 ],
+    "inputs" : [ 29356, 429926 ],
+    "outputs" : [ 430042, 429925 ],
+    "catalysts" : [ 429988 ],
+    "efs" : [ ],
+    "diagramIds" : [ 30 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 429947,
+    "stId" : "R-HSA-429947",
+    "displayName" : "Deadenylation of mRNA",
+    "events" : [ 430021, 429955, 8941312, 429992 ]
+  }, {
+    "dbId" : 430039,
+    "stId" : "R-HSA-430039",
+    "displayName" : "mRNA decay by 5' to 3' exoribonuclease",
+    "events" : [ 429860, 429845, 429978 ]
+  }, {
+    "dbId" : 429958,
+    "stId" : "R-HSA-429958",
+    "displayName" : "mRNA decay by 3' to 5' exoribonuclease",
+    "events" : [ 5694126, 430028, 429961 ]
+  } ]
+}

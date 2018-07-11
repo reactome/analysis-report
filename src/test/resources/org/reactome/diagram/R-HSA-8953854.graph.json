@@ -1,0 +1,90 @@
+{
+  "dbId" : 8953854,
+  "stId" : "R-HSA-8953854",
+  "nodes" : [ {
+    "dbId" : 75072,
+    "stId" : "R-HSA-75072",
+    "displayName" : "mRNA Editing",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ]
+  }, {
+    "dbId" : 74160,
+    "stId" : "R-HSA-74160",
+    "displayName" : "Gene expression (Transcription)",
+    "schemaClass" : "TopLevelPathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1 ]
+  }, {
+    "dbId" : 428359,
+    "stId" : "R-HSA-428359",
+    "displayName" : "Insulin-like Growth Factor-2 mRNA Binding Proteins (IGF2BPs/IMPs/VICKZs) bind RNA",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 11 ]
+  }, {
+    "dbId" : 72306,
+    "stId" : "R-HSA-72306",
+    "displayName" : "tRNA processing",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 16 ]
+  }, {
+    "dbId" : 927802,
+    "stId" : "R-HSA-927802",
+    "displayName" : "Nonsense-Mediated Decay (NMD)",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 13 ]
+  }, {
+    "dbId" : 450531,
+    "stId" : "R-HSA-450531",
+    "displayName" : "Regulation of mRNA stability by proteins that bind AU-rich elements",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 10 ]
+  }, {
+    "dbId" : 72086,
+    "stId" : "R-HSA-72086",
+    "displayName" : "mRNA Capping",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2 ]
+  }, {
+    "dbId" : 72312,
+    "stId" : "R-HSA-72312",
+    "displayName" : "rRNA processing",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 15 ]
+  }, {
+    "dbId" : 72203,
+    "stId" : "R-HSA-72203",
+    "displayName" : "Processing of Capped Intron-Containing Pre-mRNA",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ]
+  }, {
+    "dbId" : 75067,
+    "stId" : "R-HSA-75067",
+    "displayName" : "Processing of Capped Intronless Pre-mRNA",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ]
+  }, {
+    "dbId" : 194441,
+    "stId" : "R-HSA-194441",
+    "displayName" : "Metabolism of non-coding RNA",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 19 ]
+  }, {
+    "dbId" : 429914,
+    "stId" : "R-HSA-429914",
+    "displayName" : "Deadenylation-dependent mRNA decay",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 12 ]
+  } ],
+  "edges" : [ ]
+}

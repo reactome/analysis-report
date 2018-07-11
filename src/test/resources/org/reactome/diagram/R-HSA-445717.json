@@ -1,0 +1,91 @@
+{
+  "dbId" : 445717,
+  "stableId" : "R-HSA-445717",
+  "displayName" : "Aquaporin-mediated transport",
+  "nodes" : [ {
+    "id" : 215,
+    "reactomeId" : 432047,
+    "displayName" : "Passive transport by Aquaporins",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 147,
+      "y" : 53
+    },
+    "minX" : 33,
+    "maxX" : 262,
+    "minY" : 31,
+    "maxY" : 76,
+    "prop" : {
+      "x" : 33,
+      "y" : 31,
+      "width" : 229,
+      "height" : 45
+    },
+    "textPosition" : {
+      "x" : 46,
+      "y" : 39
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 216,
+    "reactomeId" : 432040,
+    "displayName" : "Vasopressin regulates renal water homeostasis via Aquaporins",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 445,
+      "y" : 54
+    },
+    "minX" : 276,
+    "maxX" : 614,
+    "minY" : 27,
+    "maxY" : 82,
+    "prop" : {
+      "x" : 276,
+      "y" : 27,
+      "width" : 338,
+      "height" : 55
+    },
+    "textPosition" : {
+      "x" : 289,
+      "y" : 33
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 217,
+    "reactomeId" : 432030,
+    "displayName" : "Transport of glycerol from adipocytes to the liver by Aquaporins",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 839,
+      "y" : 56
+    },
+    "minX" : 633,
+    "maxX" : 1045,
+    "minY" : 28,
+    "maxY" : 84,
+    "prop" : {
+      "x" : 633,
+      "y" : 28,
+      "width" : 412,
+      "height" : 56
+    },
+    "textPosition" : {
+      "x" : 646,
+      "y" : 41
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 33,
+  "maxX" : 1045,
+  "minY" : 27,
+  "maxY" : 84,
+  "disease" : false
+}

@@ -1,0 +1,96 @@
+{
+  "dbId" : 5579030,
+  "stId" : "R-HSA-5579030",
+  "nodes" : [ {
+    "dbId" : 8937144,
+    "stId" : "R-HSA-8937144",
+    "displayName" : "Aryl hydrocarbon receptor signalling",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2547 ]
+  }, {
+    "dbId" : 5601941,
+    "stId" : "R-HSA-5601941",
+    "displayName" : "CYP19A1 mutants [endoplasmic reticulum membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 143957 ],
+    "children" : [ 5601978, 5601981, 5601971, 5601972 ]
+  }, {
+    "dbId" : 5601972,
+    "stId" : "R-HSA-5601972",
+    "displayName" : "CYP19A1 C437Y [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11511",
+    "geneNames" : [ "CYP19A1", "ARO1", "CYAR", "CYP19" ],
+    "parents" : [ 5601941 ]
+  }, {
+    "dbId" : 29364,
+    "stId" : "R-ALL-29364",
+    "displayName" : "NADPH [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 97, 98, 99, 100, 132, 2532, 101, 133, 102, 2406, 103, 104, 1130, 655, 116, 342, 374, 24, 2396, 1277, 1309 ],
+    "identifier" : "16474",
+    "parents" : [ 428206, 9638895, 9521581, 9286369, 9442520, 9216836, 9363853, 9585203, 6810877, 9134274 ]
+  }, {
+    "dbId" : 193079,
+    "stId" : "R-ALL-193079",
+    "displayName" : "ANDST [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 63 ],
+    "identifier" : "16422"
+  }, {
+    "dbId" : 5601971,
+    "stId" : "R-HSA-5601971",
+    "displayName" : "CYP19A1 R375C [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11511",
+    "geneNames" : [ "CYP19A1", "ARO1", "CYAR", "CYP19" ],
+    "parents" : [ 5601941 ]
+  }, {
+    "dbId" : 29368,
+    "stId" : "R-ALL-29368",
+    "displayName" : "O2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 128, 129, 449, 105, 106, 107, 459, 108, 1132, 109, 653, 110, 111, 112, 343, 375, 123, 1275, 2398, 31 ],
+    "identifier" : "15379",
+    "parents" : [ 9704072, 9360660, 9283079, 9635771, 9439302, 9804417, 9582529, 9518433, 8981605, 9518444, 9439308, 9704078, 9582535, 9360669, 9804423, 9635777, 9213661, 9283085, 8981609, 9750250, 9608732, 9550236, 9478972, 9319794, 9400440, 9248056, 9668499, 1237037, 9319793, 9750249, 9478971, 9550235, 9248055, 9608731, 9400439, 9668498, 1237036, 9172142, 9172143, 9264258, 9191761, 9418149, 9620634, 9777520, 9565140, 9497140, 9339834, 9684673, 5340212 ]
+  }, {
+    "dbId" : 5601981,
+    "stId" : "R-HSA-5601981",
+    "displayName" : "CYP19A1 E210K [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11511",
+    "geneNames" : [ "CYP19A1", "ARO1", "CYAR", "CYP19" ],
+    "parents" : [ 5601941 ]
+  }, {
+    "dbId" : 70106,
+    "stId" : "R-ALL-70106",
+    "displayName" : "H+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 96, 130, 131, 1287, 1128, 657, 562, 595, 341, 373, 2454, 89, 121, 90, 2394, 91, 1307, 92, 93, 30, 94, 95, 1279 ],
+    "identifier" : "15378"
+  }, {
+    "dbId" : 5601978,
+    "stId" : "R-HSA-5601978",
+    "displayName" : "CYP19A1 R365Q [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P11511",
+    "geneNames" : [ "CYP19A1", "ARO1", "CYAR", "CYP19" ],
+    "parents" : [ 5601941 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 5601849,
+    "stId" : "R-HSA-5601849",
+    "displayName" : "Defective CYP19A1 does not convert ANDST to E1",
+    "schemaClass" : "FailedReaction",
+    "inputs" : [ 70106, 29368, 193079, 29364 ],
+    "efs" : [ 5601941 ],
+    "diagramIds" : [ 143956 ],
+    "entityFunctionalStatus" : [ 5601941 ]
+  } ]
+}

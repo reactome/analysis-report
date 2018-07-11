@@ -1,0 +1,5565 @@
+{
+  "dbId" : 74158,
+  "stableId" : "R-HSA-74158",
+  "displayName" : "RNA Polymerase III Transcription",
+  "nodes" : [ {
+    "id" : 512,
+    "reactomeId" : 30595,
+    "displayName" : "NTP",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1388,
+      "y" : 659
+    },
+    "minX" : 1342,
+    "maxX" : 1408,
+    "minY" : 643,
+    "maxY" : 674,
+    "prop" : {
+      "x" : 1368,
+      "y" : 644,
+      "width" : 40,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 1372,
+      "y" : 648
+    },
+    "connectors" : [ {
+      "edgeId" : 510,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1362,
+          "y" : 652
+        },
+        "to" : {
+          "x" : 1342,
+          "y" : 643
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 519,
+    "reactomeId" : 30595,
+    "displayName" : "NTP",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1736,
+      "y" : 242
+    },
+    "minX" : 1674,
+    "maxX" : 1756,
+    "minY" : 227,
+    "maxY" : 263,
+    "prop" : {
+      "x" : 1716,
+      "y" : 227,
+      "width" : 40,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 1720,
+      "y" : 231
+    },
+    "connectors" : [ {
+      "edgeId" : 513,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1710,
+          "y" : 248
+        },
+        "to" : {
+          "x" : 1674,
+          "y" : 263
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 522,
+    "reactomeId" : 30595,
+    "displayName" : "NTP",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 870,
+      "y" : 508
+    },
+    "minX" : 850,
+    "maxX" : 890,
+    "minY" : 493,
+    "maxY" : 536,
+    "prop" : {
+      "x" : 850,
+      "y" : 493,
+      "width" : 40,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 854,
+      "y" : 497
+    },
+    "connectors" : [ {
+      "edgeId" : 520,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 859,
+          "y" : 529
+        },
+        "to" : {
+          "x" : 851,
+          "y" : 536
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 56,
+    "reactomeId" : 76050,
+    "displayName" : "DNA with RNA Polymerase III Type 1 Closed Promoter",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 429,
+      "y" : 421
+    },
+    "minX" : 367,
+    "maxX" : 491,
+    "minY" : 369,
+    "maxY" : 446,
+    "prop" : {
+      "x" : 367,
+      "y" : 396,
+      "width" : 124,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 367,
+      "y" : 396
+    },
+    "connectors" : [ {
+      "edgeId" : 55,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 434,
+          "y" : 393
+        },
+        "to" : {
+          "x" : 441,
+          "y" : 369
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 57,
+    "reactomeId" : 65892,
+    "displayName" : "GTF3A",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 422,
+      "y" : 332
+    },
+    "minX" : 360,
+    "maxX" : 491,
+    "minY" : 308,
+    "maxY" : 369,
+    "prop" : {
+      "x" : 360,
+      "y" : 314,
+      "width" : 125,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 399,
+      "y" : 321
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 485,
+          "y" : 314
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 55,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 431,
+          "y" : 353
+        },
+        "to" : {
+          "x" : 441,
+          "y" : 369
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 58,
+    "reactomeId" : 76051,
+    "displayName" : "TFIIIA:Type 1 Promoter complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 581,
+      "y" : 371
+    },
+    "minX" : 524,
+    "maxX" : 665,
+    "minY" : 353,
+    "maxY" : 389,
+    "prop" : {
+      "x" : 524,
+      "y" : 353,
+      "width" : 114,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 524,
+      "y" : 354
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 55,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 59,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 641,
+          "y" : 367
+        },
+        "to" : {
+          "x" : 665,
+          "y" : 366
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 60,
+    "reactomeId" : 83698,
+    "displayName" : "TFIIIC",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 620,
+      "y" : 425
+    },
+    "minX" : 601,
+    "maxX" : 665,
+    "minY" : 366,
+    "maxY" : 479,
+    "prop" : {
+      "x" : 601,
+      "y" : 414,
+      "width" : 39,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 601,
+      "y" : 415
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 70,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 622,
+          "y" : 439
+        },
+        "to" : {
+          "x" : 633,
+          "y" : 479
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 59,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 628,
+          "y" : 411
+        },
+        "to" : {
+          "x" : 665,
+          "y" : 366
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 61,
+    "reactomeId" : 76053,
+    "displayName" : "TFIIIC:TFIIIA:Type I Promoter Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 794,
+      "y" : 368
+    },
+    "minX" : 735,
+    "maxX" : 890,
+    "minY" : 350,
+    "maxY" : 386,
+    "prop" : {
+      "x" : 735,
+      "y" : 350,
+      "width" : 118,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 735,
+      "y" : 351
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 59,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 62,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 856,
+          "y" : 366
+        },
+        "to" : {
+          "x" : 890,
+          "y" : 366
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 63,
+    "reactomeId" : 83719,
+    "displayName" : "TFIIIB-Type 1 and 2 Promoter Selective Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 856,
+      "y" : 425
+    },
+    "minX" : 792,
+    "maxX" : 920,
+    "minY" : 366,
+    "maxY" : 479,
+    "prop" : {
+      "x" : 792,
+      "y" : 400,
+      "width" : 128,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 792,
+      "y" : 401
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 868,
+          "y" : 453
+        },
+        "to" : {
+          "x" : 884,
+          "y" : 479
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 62,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 870,
+          "y" : 397
+        },
+        "to" : {
+          "x" : 890,
+          "y" : 366
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 64,
+    "reactomeId" : 76055,
+    "displayName" : "TFIIIB:TFIIIC:TFIIIA:Type 1 Promoter Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1013,
+      "y" : 362
+    },
+    "minX" : 957,
+    "maxX" : 1116,
+    "minY" : 337,
+    "maxY" : 387,
+    "prop" : {
+      "x" : 957,
+      "y" : 337,
+      "width" : 112,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 957,
+      "y" : 338
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 65,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1072,
+          "y" : 362
+        },
+        "to" : {
+          "x" : 1116,
+          "y" : 362
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 62,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 66,
+    "reactomeId" : 83716,
+    "displayName" : "RNA Polymerase III Holoenzyme",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1173,
+      "y" : 406
+    },
+    "minX" : 1113,
+    "maxX" : 1576,
+    "minY" : 362,
+    "maxY" : 480,
+    "prop" : {
+      "x" : 1113,
+      "y" : 388,
+      "width" : 120,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1113,
+      "y" : 389
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 65,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1149,
+          "y" : 385
+        },
+        "to" : {
+          "x" : 1116,
+          "y" : 362
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 75,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1171,
+          "y" : 427
+        },
+        "to" : {
+          "x" : 1167,
+          "y" : 480
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 88,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1236,
+          "y" : 403
+        },
+        "to" : {
+          "x" : 1285,
+          "y" : 401
+        }
+      }, {
+        "from" : {
+          "x" : 1285,
+          "y" : 401
+        },
+        "to" : {
+          "x" : 1576,
+          "y" : 398
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 67,
+    "reactomeId" : 83717,
+    "displayName" : "RNA polymerase III:TFIIIB:TFIIIC:TFIIIA:Type 1 Promoter Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1020,
+      "y" : 253
+    },
+    "minX" : 960,
+    "maxX" : 1081,
+    "minY" : 221,
+    "maxY" : 285,
+    "prop" : {
+      "x" : 960,
+      "y" : 221,
+      "width" : 121,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 960,
+      "y" : 222
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 65,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 68,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 69,
+    "reactomeId" : 112147,
+    "displayName" : "RNA polymerase III:TFIIIB:TFIIIC:TFIIIA:Type 1 Open Promoter Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 771,
+      "y" : 254
+    },
+    "minX" : 654,
+    "maxX" : 832,
+    "minY" : 120,
+    "maxY" : 296,
+    "prop" : {
+      "x" : 711,
+      "y" : 222,
+      "width" : 121,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 711,
+      "y" : 223
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 68,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 488,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 708,
+          "y" : 277
+        },
+        "to" : {
+          "x" : 664,
+          "y" : 296
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 488,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 708,
+          "y" : 226
+        },
+        "to" : {
+          "x" : 654,
+          "y" : 200
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 700,
+          "y" : 227
+        },
+        "b" : {
+          "x" : 708,
+          "y" : 226
+        },
+        "c" : {
+          "x" : 703,
+          "y" : 219
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 507,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 780,
+          "y" : 219
+        },
+        "to" : {
+          "x" : 809,
+          "y" : 120
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 507,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 756,
+          "y" : 219
+        },
+        "to" : {
+          "x" : 709,
+          "y" : 120
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 749,
+          "y" : 214
+        },
+        "b" : {
+          "x" : 756,
+          "y" : 219
+        },
+        "c" : {
+          "x" : 757,
+          "y" : 211
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 71,
+    "reactomeId" : 83747,
+    "displayName" : "DNA with RNA Polymerase III Type 2 Closed Promoter",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 530,
+      "y" : 481
+    },
+    "minX" : 468,
+    "maxX" : 633,
+    "minY" : 456,
+    "maxY" : 506,
+    "prop" : {
+      "x" : 468,
+      "y" : 456,
+      "width" : 124,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 468,
+      "y" : 456
+    },
+    "connectors" : [ {
+      "edgeId" : 70,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 595,
+          "y" : 479
+        },
+        "to" : {
+          "x" : 633,
+          "y" : 479
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 72,
+    "reactomeId" : 83748,
+    "displayName" : "TFIIIC:Type 2 Promoter Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 777,
+      "y" : 479
+    },
+    "minX" : 719,
+    "maxX" : 884,
+    "minY" : 461,
+    "maxY" : 497,
+    "prop" : {
+      "x" : 719,
+      "y" : 461,
+      "width" : 116,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 719,
+      "y" : 462
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 70,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 73,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 838,
+          "y" : 479
+        },
+        "to" : {
+          "x" : 884,
+          "y" : 479
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 74,
+    "reactomeId" : 83749,
+    "displayName" : "TFIIIB:TFIIIC:Type 2 Promoter Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1054,
+      "y" : 480
+    },
+    "minX" : 993,
+    "maxX" : 1167,
+    "minY" : 462,
+    "maxY" : 498,
+    "prop" : {
+      "x" : 993,
+      "y" : 462,
+      "width" : 122,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 993,
+      "y" : 463
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 75,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1118,
+          "y" : 480
+        },
+        "to" : {
+          "x" : 1167,
+          "y" : 480
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 76,
+    "reactomeId" : 83750,
+    "displayName" : "RNA Polymerase III:TFIIIB:TFIIIC:Type 2 Promoter Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1297,
+      "y" : 480
+    },
+    "minX" : 1236,
+    "maxX" : 1358,
+    "minY" : 455,
+    "maxY" : 505,
+    "prop" : {
+      "x" : 1236,
+      "y" : 455,
+      "width" : 122,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1236,
+      "y" : 456
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 75,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 77,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 78,
+    "reactomeId" : 112148,
+    "displayName" : "RNA Polymerase III:TFIIIB:TFIIIC:Type 2 Open Promoter Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1312,
+      "y" : 583
+    },
+    "minX" : 1218,
+    "maxX" : 1373,
+    "minY" : 551,
+    "maxY" : 643,
+    "prop" : {
+      "x" : 1251,
+      "y" : 551,
+      "width" : 122,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 1251,
+      "y" : 552
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 77,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 490,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1248,
+          "y" : 603
+        },
+        "to" : {
+          "x" : 1219,
+          "y" : 615
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 490,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1248,
+          "y" : 563
+        },
+        "to" : {
+          "x" : 1218,
+          "y" : 553
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1240,
+          "y" : 565
+        },
+        "b" : {
+          "x" : 1248,
+          "y" : 563
+        },
+        "c" : {
+          "x" : 1243,
+          "y" : 557
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 510,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1328,
+          "y" : 618
+        },
+        "to" : {
+          "x" : 1342,
+          "y" : 643
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 510,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1294,
+          "y" : 618
+        },
+        "to" : {
+          "x" : 1279,
+          "y" : 643
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1294,
+          "y" : 626
+        },
+        "b" : {
+          "x" : 1294,
+          "y" : 618
+        },
+        "c" : {
+          "x" : 1287,
+          "y" : 622
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 80,
+    "reactomeId" : 83836,
+    "displayName" : "POU2F1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1436,
+      "y" : 759
+    },
+    "minX" : 1409,
+    "maxX" : 1477,
+    "minY" : 692,
+    "maxY" : 770,
+    "prop" : {
+      "x" : 1409,
+      "y" : 748,
+      "width" : 55,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1409,
+      "y" : 748
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1464,
+          "y" : 748
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 79,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1442,
+          "y" : 745
+        },
+        "to" : {
+          "x" : 1477,
+          "y" : 692
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 81,
+    "reactomeId" : 83730,
+    "displayName" : "SNAPc",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1496,
+      "y" : 830
+    },
+    "minX" : 1474,
+    "maxX" : 1518,
+    "minY" : 692,
+    "maxY" : 841,
+    "prop" : {
+      "x" : 1474,
+      "y" : 819,
+      "width" : 44,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1474,
+      "y" : 820
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 79,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1494,
+          "y" : 816
+        },
+        "to" : {
+          "x" : 1477,
+          "y" : 692
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 82,
+    "reactomeId" : 83837,
+    "displayName" : "ZNF143",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1570,
+      "y" : 789
+    },
+    "minX" : 1477,
+    "maxX" : 1633,
+    "minY" : 692,
+    "maxY" : 807,
+    "prop" : {
+      "x" : 1514,
+      "y" : 771,
+      "width" : 113,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1543,
+      "y" : 778
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1627,
+          "y" : 771
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 79,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1552,
+          "y" : 768
+        },
+        "to" : {
+          "x" : 1477,
+          "y" : 692
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 83,
+    "reactomeId" : 83752,
+    "displayName" : "DNA with RNA Polymerase III Type 3 Closed Promoter",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1621,
+      "y" : 724
+    },
+    "minX" : 1477,
+    "maxX" : 1683,
+    "minY" : 692,
+    "maxY" : 749,
+    "prop" : {
+      "x" : 1559,
+      "y" : 699,
+      "width" : 124,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1559,
+      "y" : 699
+    },
+    "connectors" : [ {
+      "edgeId" : 79,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1556,
+          "y" : 710
+        },
+        "to" : {
+          "x" : 1477,
+          "y" : 692
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 84,
+    "reactomeId" : 83753,
+    "displayName" : "SNAPc:Oct-1:Staf:Type 3 Promoter Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1478,
+      "y" : 600
+    },
+    "minX" : 1423,
+    "maxX" : 1534,
+    "minY" : 553,
+    "maxY" : 625,
+    "prop" : {
+      "x" : 1423,
+      "y" : 575,
+      "width" : 111,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1423,
+      "y" : 576
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 79,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 85,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1502,
+          "y" : 572
+        },
+        "to" : {
+          "x" : 1524,
+          "y" : 553
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 86,
+    "reactomeId" : 83722,
+    "displayName" : "TFIIIB-Type 3 Promoter Selective Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1636,
+      "y" : 560
+    },
+    "minX" : 1524,
+    "maxX" : 1695,
+    "minY" : 535,
+    "maxY" : 585,
+    "prop" : {
+      "x" : 1577,
+      "y" : 535,
+      "width" : 118,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1577,
+      "y" : 536
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 85,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1574,
+          "y" : 556
+        },
+        "to" : {
+          "x" : 1524,
+          "y" : 553
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 87,
+    "reactomeId" : 83754,
+    "displayName" : "TFIIIB:SNAPc:Oct-1:Staf:Type 3 Promoter Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1526,
+      "y" : 454
+    },
+    "minX" : 1466,
+    "maxX" : 1586,
+    "minY" : 398,
+    "maxY" : 479,
+    "prop" : {
+      "x" : 1466,
+      "y" : 429,
+      "width" : 120,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1466,
+      "y" : 430
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 85,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 88,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1548,
+          "y" : 426
+        },
+        "to" : {
+          "x" : 1576,
+          "y" : 398
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 89,
+    "reactomeId" : 83755,
+    "displayName" : "RNA Polymerase III:TFIIIB:SNAPc:Type 3 Promoter Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1722,
+      "y" : 399
+    },
+    "minX" : 1659,
+    "maxX" : 1786,
+    "minY" : 374,
+    "maxY" : 424,
+    "prop" : {
+      "x" : 1659,
+      "y" : 374,
+      "width" : 127,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1659,
+      "y" : 375
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 88,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 90,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 91,
+    "reactomeId" : 112151,
+    "displayName" : "RNA Polymerase III:TFIIIB:SNAPc:Type 3 Open Promoter Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1616,
+      "y" : 333
+    },
+    "minX" : 1526,
+    "maxX" : 1680,
+    "minY" : 263,
+    "maxY" : 365,
+    "prop" : {
+      "x" : 1553,
+      "y" : 301,
+      "width" : 127,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 1553,
+      "y" : 302
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 513,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1642,
+          "y" : 298
+        },
+        "to" : {
+          "x" : 1674,
+          "y" : 263
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 513,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1597,
+          "y" : 298
+        },
+        "to" : {
+          "x" : 1576,
+          "y" : 263
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1590,
+          "y" : 294
+        },
+        "b" : {
+          "x" : 1597,
+          "y" : 298
+        },
+        "c" : {
+          "x" : 1597,
+          "y" : 290
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 90,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 491,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1550,
+          "y" : 351
+        },
+        "to" : {
+          "x" : 1528,
+          "y" : 359
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 491,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1550,
+          "y" : 314
+        },
+        "to" : {
+          "x" : 1526,
+          "y" : 307
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1542,
+          "y" : 316
+        },
+        "b" : {
+          "x" : 1550,
+          "y" : 314
+        },
+        "c" : {
+          "x" : 1544,
+          "y" : 308
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 95,
+    "reactomeId" : 111980,
+    "displayName" : "elongating pre-RNA Pol III oligonucleotide",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 152,
+      "y" : 627
+    },
+    "minX" : 103,
+    "maxX" : 201,
+    "minY" : 602,
+    "maxY" : 674,
+    "prop" : {
+      "x" : 103,
+      "y" : 602,
+      "width" : 98,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 103,
+      "y" : 602
+    },
+    "connectors" : [ {
+      "edgeId" : 94,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 177,
+          "y" : 655
+        },
+        "to" : {
+          "x" : 199,
+          "y" : 674
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 96,
+    "reactomeId" : 112479,
+    "displayName" : "Elongating RNA Polymerase III Transcription Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 486,
+      "y" : 676
+    },
+    "minX" : 199,
+    "maxX" : 851,
+    "minY" : 536,
+    "maxY" : 762,
+    "prop" : {
+      "x" : 436,
+      "y" : 644,
+      "width" : 100,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 436,
+      "y" : 645
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 520,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 539,
+          "y" : 656
+        },
+        "to" : {
+          "x" : 851,
+          "y" : 536
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 520,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 459,
+          "y" : 641
+        },
+        "to" : {
+          "x" : 372,
+          "y" : 536
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 451,
+          "y" : 638
+        },
+        "b" : {
+          "x" : 459,
+          "y" : 641
+        },
+        "c" : {
+          "x" : 458,
+          "y" : 633
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 94,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 433,
+          "y" : 661
+        },
+        "to" : {
+          "x" : 394,
+          "y" : 650
+        }
+      }, {
+        "from" : {
+          "x" : 394,
+          "y" : 650
+        },
+        "to" : {
+          "x" : 251,
+          "y" : 651
+        }
+      }, {
+        "from" : {
+          "x" : 251,
+          "y" : 651
+        },
+        "to" : {
+          "x" : 199,
+          "y" : 674
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 94,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 433,
+          "y" : 681
+        },
+        "to" : {
+          "x" : 397,
+          "y" : 685
+        }
+      }, {
+        "from" : {
+          "x" : 397,
+          "y" : 685
+        },
+        "to" : {
+          "x" : 255,
+          "y" : 685
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 427,
+          "y" : 686
+        },
+        "b" : {
+          "x" : 433,
+          "y" : 681
+        },
+        "c" : {
+          "x" : 426,
+          "y" : 678
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 100,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 474,
+          "y" : 711
+        },
+        "to" : {
+          "x" : 454,
+          "y" : 762
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 100,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 499,
+          "y" : 711
+        },
+        "to" : {
+          "x" : 522,
+          "y" : 761
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 506,
+          "y" : 716
+        },
+        "b" : {
+          "x" : 499,
+          "y" : 711
+        },
+        "c" : {
+          "x" : 498,
+          "y" : 719
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 102,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 539,
+          "y" : 676
+        },
+        "to" : {
+          "x" : 710,
+          "y" : 676
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 505,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 539,
+          "y" : 668
+        },
+        "to" : {
+          "x" : 648,
+          "y" : 652
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 505,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 485,
+          "y" : 641
+        },
+        "to" : {
+          "x" : 484,
+          "y" : 608
+        }
+      }, {
+        "from" : {
+          "x" : 484,
+          "y" : 608
+        },
+        "to" : {
+          "x" : 782,
+          "y" : 608
+        }
+      }, {
+        "from" : {
+          "x" : 782,
+          "y" : 608
+        },
+        "to" : {
+          "x" : 784,
+          "y" : 652
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 481,
+          "y" : 634
+        },
+        "b" : {
+          "x" : 485,
+          "y" : 641
+        },
+        "c" : {
+          "x" : 489,
+          "y" : 634
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 97,
+    "reactomeId" : 111987,
+    "displayName" : "elongating pre-RNA Pol III transcript",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 331,
+      "y" : 723
+    },
+    "minX" : 255,
+    "maxX" : 710,
+    "minY" : 536,
+    "maxY" : 829,
+    "prop" : {
+      "x" : 282,
+      "y" : 698,
+      "width" : 98,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 282,
+      "y" : 698
+    },
+    "connectors" : [ {
+      "edgeId" : 520,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 336,
+          "y" : 695
+        },
+        "to" : {
+          "x" : 372,
+          "y" : 536
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 334,
+          "y" : 687
+        },
+        "b" : {
+          "x" : 336,
+          "y" : 695
+        },
+        "c" : {
+          "x" : 341,
+          "y" : 689
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 94,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 279,
+          "y" : 698
+        },
+        "to" : {
+          "x" : 255,
+          "y" : 685
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 271,
+          "y" : 698
+        },
+        "b" : {
+          "x" : 279,
+          "y" : 698
+        },
+        "c" : {
+          "x" : 275,
+          "y" : 691
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 100,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 383,
+          "y" : 738
+        },
+        "to" : {
+          "x" : 454,
+          "y" : 762
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 102,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 331,
+          "y" : 751
+        },
+        "to" : {
+          "x" : 331,
+          "y" : 829
+        }
+      }, {
+        "from" : {
+          "x" : 331,
+          "y" : 829
+        },
+        "to" : {
+          "x" : 710,
+          "y" : 829
+        }
+      }, {
+        "from" : {
+          "x" : 710,
+          "y" : 829
+        },
+        "to" : {
+          "x" : 710,
+          "y" : 676
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 99,
+    "reactomeId" : 30595,
+    "displayName" : "NTP",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 168,
+      "y" : 714
+    },
+    "minX" : 148,
+    "maxX" : 199,
+    "minY" : 674,
+    "maxY" : 729,
+    "prop" : {
+      "x" : 148,
+      "y" : 699,
+      "width" : 40,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 152,
+      "y" : 703
+    },
+    "connectors" : [ {
+      "edgeId" : 94,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 179,
+          "y" : 693
+        },
+        "to" : {
+          "x" : 199,
+          "y" : 674
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 101,
+    "reactomeId" : 113704,
+    "displayName" : "elongating pre-RNA Pol III transcript plus 1 nucleotide",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 619,
+      "y" : 763
+    },
+    "minX" : 522,
+    "maxX" : 673,
+    "minY" : 652,
+    "maxY" : 795,
+    "prop" : {
+      "x" : 566,
+      "y" : 731,
+      "width" : 107,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 566,
+      "y" : 731
+    },
+    "connectors" : [ {
+      "edgeId" : 100,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 563,
+          "y" : 761
+        },
+        "to" : {
+          "x" : 522,
+          "y" : 761
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 556,
+          "y" : 765
+        },
+        "b" : {
+          "x" : 563,
+          "y" : 761
+        },
+        "c" : {
+          "x" : 556,
+          "y" : 757
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 505,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 627,
+          "y" : 728
+        },
+        "to" : {
+          "x" : 648,
+          "y" : 652
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 103,
+    "reactomeId" : 113453,
+    "displayName" : "Paused RNA Polymerase III Transcription Complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 831,
+      "y" : 765
+    },
+    "minX" : 785,
+    "maxX" : 936,
+    "minY" : 674,
+    "maxY" : 797,
+    "prop" : {
+      "x" : 786,
+      "y" : 733,
+      "width" : 91,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 786,
+      "y" : 734
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 102,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 814,
+          "y" : 730
+        },
+        "to" : {
+          "x" : 785,
+          "y" : 674
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 807,
+          "y" : 726
+        },
+        "b" : {
+          "x" : 814,
+          "y" : 730
+        },
+        "c" : {
+          "x" : 814,
+          "y" : 722
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 107,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 880,
+          "y" : 749
+        },
+        "to" : {
+          "x" : 936,
+          "y" : 730
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 104,
+    "reactomeId" : 112475,
+    "displayName" : "paused pre-RNA Pol III transcript",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 906,
+      "y" : 678
+    },
+    "minX" : 784,
+    "maxX" : 967,
+    "minY" : 536,
+    "maxY" : 730,
+    "prop" : {
+      "x" : 845,
+      "y" : 660,
+      "width" : 122,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 850,
+      "y" : 660
+    },
+    "connectors" : [ {
+      "edgeId" : 520,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 905,
+          "y" : 657
+        },
+        "to" : {
+          "x" : 903,
+          "y" : 573
+        }
+      }, {
+        "from" : {
+          "x" : 903,
+          "y" : 573
+        },
+        "to" : {
+          "x" : 851,
+          "y" : 536
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 102,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 842,
+          "y" : 675
+        },
+        "to" : {
+          "x" : 785,
+          "y" : 674
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 835,
+          "y" : 679
+        },
+        "b" : {
+          "x" : 842,
+          "y" : 675
+        },
+        "c" : {
+          "x" : 835,
+          "y" : 671
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 107,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 916,
+          "y" : 699
+        },
+        "to" : {
+          "x" : 936,
+          "y" : 730
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 505,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 842,
+          "y" : 665
+        },
+        "to" : {
+          "x" : 784,
+          "y" : 652
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 834,
+          "y" : 667
+        },
+        "b" : {
+          "x" : 842,
+          "y" : 665
+        },
+        "c" : {
+          "x" : 836,
+          "y" : 660
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 489,
+    "reactomeId" : 111984,
+    "displayName" : "released pre-RNA Pol III oligonucleotide",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 620,
+      "y" : 152
+    },
+    "minX" : 548,
+    "maxX" : 692,
+    "minY" : 134,
+    "maxY" : 200,
+    "prop" : {
+      "x" : 548,
+      "y" : 134,
+      "width" : 144,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 550,
+      "y" : 135
+    },
+    "connectors" : [ {
+      "edgeId" : 488,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 633,
+          "y" : 174
+        },
+        "to" : {
+          "x" : 654,
+          "y" : 200
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 640,
+          "y" : 177
+        },
+        "b" : {
+          "x" : 633,
+          "y" : 174
+        },
+        "c" : {
+          "x" : 634,
+          "y" : 182
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 106,
+    "reactomeId" : 30595,
+    "displayName" : "NTP",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 386,
+      "y" : 786
+    },
+    "minX" : 366,
+    "maxX" : 454,
+    "minY" : 762,
+    "maxY" : 801,
+    "prop" : {
+      "x" : 366,
+      "y" : 771,
+      "width" : 40,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 370,
+      "y" : 775
+    },
+    "connectors" : [ {
+      "edgeId" : 100,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 412,
+          "y" : 778
+        },
+        "to" : {
+          "x" : 454,
+          "y" : 762
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 108,
+    "reactomeId" : 113448,
+    "displayName" : "Polymerase III gene DNA with a termination site",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1326,
+      "y" : 713
+    },
+    "minX" : 1058,
+    "maxX" : 1388,
+    "minY" : 688,
+    "maxY" : 738,
+    "prop" : {
+      "x" : 1265,
+      "y" : 688,
+      "width" : 123,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1265,
+      "y" : 688
+    },
+    "connectors" : [ {
+      "edgeId" : 107,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1262,
+          "y" : 716
+        },
+        "to" : {
+          "x" : 1058,
+          "y" : 729
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1255,
+          "y" : 720
+        },
+        "b" : {
+          "x" : 1262,
+          "y" : 716
+        },
+        "c" : {
+          "x" : 1255,
+          "y" : 712
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 109,
+    "reactomeId" : 112478,
+    "displayName" : "released pre-RNA Pol III transcript",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1298,
+      "y" : 772
+    },
+    "minX" : 1058,
+    "maxX" : 1363,
+    "minY" : 729,
+    "maxY" : 790,
+    "prop" : {
+      "x" : 1234,
+      "y" : 754,
+      "width" : 129,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1239,
+      "y" : 754
+    },
+    "connectors" : [ {
+      "edgeId" : 107,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1231,
+          "y" : 760
+        },
+        "to" : {
+          "x" : 1058,
+          "y" : 729
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1223,
+          "y" : 763
+        },
+        "b" : {
+          "x" : 1231,
+          "y" : 760
+        },
+        "c" : {
+          "x" : 1225,
+          "y" : 755
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 493,
+    "reactomeId" : 111980,
+    "displayName" : "elongating pre-RNA Pol III oligonucleotide",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1448,
+      "y" : 359
+    },
+    "minX" : 1336,
+    "maxX" : 1576,
+    "minY" : 262,
+    "maxY" : 384,
+    "prop" : {
+      "x" : 1399,
+      "y" : 334,
+      "width" : 98,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1399,
+      "y" : 334
+    },
+    "connectors" : [ {
+      "edgeId" : 513,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1396,
+          "y" : 357
+        },
+        "to" : {
+          "x" : 1362,
+          "y" : 356
+        }
+      }, {
+        "from" : {
+          "x" : 1362,
+          "y" : 356
+        },
+        "to" : {
+          "x" : 1336,
+          "y" : 262
+        }
+      }, {
+        "from" : {
+          "x" : 1336,
+          "y" : 262
+        },
+        "to" : {
+          "x" : 1576,
+          "y" : 263
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1389,
+          "y" : 361
+        },
+        "b" : {
+          "x" : 1396,
+          "y" : 357
+        },
+        "c" : {
+          "x" : 1389,
+          "y" : 353
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 491,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1500,
+          "y" : 359
+        },
+        "to" : {
+          "x" : 1528,
+          "y" : 359
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 110,
+    "reactomeId" : 60134,
+    "displayName" : "NFIA",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 863,
+      "y" : 839
+    },
+    "minX" : 803,
+    "maxX" : 975,
+    "minY" : 736,
+    "maxY" : 857,
+    "prop" : {
+      "x" : 803,
+      "y" : 821,
+      "width" : 120,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 846,
+      "y" : 828
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 923,
+          "y" : 821
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 107,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 882,
+          "y" : 818
+        },
+        "to" : {
+          "x" : 975,
+          "y" : 736
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 972,
+          "y" : 744
+        },
+        "b" : {
+          "x" : 975,
+          "y" : 736
+        },
+        "c" : {
+          "x" : 967,
+          "y" : 738
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 494,
+    "reactomeId" : 111984,
+    "displayName" : "released pre-RNA Pol III oligonucleotide",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1441,
+      "y" : 298
+    },
+    "minX" : 1377,
+    "maxX" : 1526,
+    "minY" : 280,
+    "maxY" : 316,
+    "prop" : {
+      "x" : 1377,
+      "y" : 280,
+      "width" : 129,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1377,
+      "y" : 280
+    },
+    "connectors" : [ {
+      "edgeId" : 491,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1509,
+          "y" : 304
+        },
+        "to" : {
+          "x" : 1526,
+          "y" : 307
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1517,
+          "y" : 301
+        },
+        "b" : {
+          "x" : 1509,
+          "y" : 304
+        },
+        "c" : {
+          "x" : 1515,
+          "y" : 309
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 111,
+    "reactomeId" : 58418,
+    "displayName" : "SSB",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 923,
+      "y" : 882
+    },
+    "minX" : 871,
+    "maxX" : 981,
+    "minY" : 738,
+    "maxY" : 893,
+    "prop" : {
+      "x" : 871,
+      "y" : 871,
+      "width" : 104,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 909,
+      "y" : 871
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 975,
+          "y" : 871
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 107,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 927,
+          "y" : 868
+        },
+        "to" : {
+          "x" : 979,
+          "y" : 738
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 980,
+          "y" : 746
+        },
+        "b" : {
+          "x" : 979,
+          "y" : 738
+        },
+        "c" : {
+          "x" : 973,
+          "y" : 743
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 112,
+    "reactomeId" : 60140,
+    "displayName" : "NFIX",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1001,
+      "y" : 917
+    },
+    "minX" : 941,
+    "maxX" : 1067,
+    "minY" : 739,
+    "maxY" : 935,
+    "prop" : {
+      "x" : 941,
+      "y" : 899,
+      "width" : 120,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 984,
+      "y" : 906
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1061,
+          "y" : 899
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 107,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 999,
+          "y" : 896
+        },
+        "to" : {
+          "x" : 983,
+          "y" : 739
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 988,
+          "y" : 745
+        },
+        "b" : {
+          "x" : 983,
+          "y" : 739
+        },
+        "c" : {
+          "x" : 980,
+          "y" : 746
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 113,
+    "reactomeId" : 60138,
+    "displayName" : "NFIC",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1079,
+      "y" : 871
+    },
+    "minX" : 987,
+    "maxX" : 1145,
+    "minY" : 737,
+    "maxY" : 889,
+    "prop" : {
+      "x" : 1019,
+      "y" : 853,
+      "width" : 120,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1062,
+      "y" : 860
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1139,
+          "y" : 853
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 107,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1066,
+          "y" : 850
+        },
+        "to" : {
+          "x" : 987,
+          "y" : 737
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 994,
+          "y" : 740
+        },
+        "b" : {
+          "x" : 987,
+          "y" : 737
+        },
+        "c" : {
+          "x" : 988,
+          "y" : 745
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 114,
+    "reactomeId" : 60136,
+    "displayName" : "NFIB",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1139,
+      "y" : 825
+    },
+    "minX" : 990,
+    "maxX" : 1205,
+    "minY" : 735,
+    "maxY" : 843,
+    "prop" : {
+      "x" : 1080,
+      "y" : 807,
+      "width" : 119,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1123,
+      "y" : 814
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1199,
+          "y" : 807
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 107,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 1109,
+          "y" : 804
+        },
+        "to" : {
+          "x" : 990,
+          "y" : 735
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 998,
+          "y" : 735
+        },
+        "b" : {
+          "x" : 990,
+          "y" : 735
+        },
+        "c" : {
+          "x" : 994,
+          "y" : 742
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 115,
+    "reactomeId" : 83716,
+    "displayName" : "RNA Polymerase III Holoenzyme",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1125,
+      "y" : 687
+    },
+    "minX" : 1058,
+    "maxX" : 1185,
+    "minY" : 669,
+    "maxY" : 729,
+    "prop" : {
+      "x" : 1065,
+      "y" : 669,
+      "width" : 120,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1065,
+      "y" : 670
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 107,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1096,
+          "y" : 708
+        },
+        "to" : {
+          "x" : 1058,
+          "y" : 729
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1092,
+          "y" : 715
+        },
+        "b" : {
+          "x" : 1096,
+          "y" : 708
+        },
+        "c" : {
+          "x" : 1088,
+          "y" : 708
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 500,
+    "reactomeId" : 111980,
+    "displayName" : "elongating pre-RNA Pol III oligonucleotide",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1150,
+      "y" : 620
+    },
+    "minX" : 1101,
+    "maxX" : 1279,
+    "minY" : 595,
+    "maxY" : 645,
+    "prop" : {
+      "x" : 1101,
+      "y" : 595,
+      "width" : 98,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1101,
+      "y" : 595
+    },
+    "connectors" : [ {
+      "edgeId" : 490,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1202,
+          "y" : 616
+        },
+        "to" : {
+          "x" : 1219,
+          "y" : 615
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 510,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1202,
+          "y" : 628
+        },
+        "to" : {
+          "x" : 1279,
+          "y" : 643
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1210,
+          "y" : 625
+        },
+        "b" : {
+          "x" : 1202,
+          "y" : 628
+        },
+        "c" : {
+          "x" : 1208,
+          "y" : 633
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 502,
+    "reactomeId" : 111984,
+    "displayName" : "released pre-RNA Pol III oligonucleotide",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1133,
+      "y" : 524
+    },
+    "minX" : 1069,
+    "maxX" : 1218,
+    "minY" : 506,
+    "maxY" : 553,
+    "prop" : {
+      "x" : 1069,
+      "y" : 506,
+      "width" : 129,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1069,
+      "y" : 506
+    },
+    "connectors" : [ {
+      "edgeId" : 490,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1185,
+          "y" : 545
+        },
+        "to" : {
+          "x" : 1218,
+          "y" : 553
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1193,
+          "y" : 543
+        },
+        "b" : {
+          "x" : 1185,
+          "y" : 545
+        },
+        "c" : {
+          "x" : 1191,
+          "y" : 551
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 504,
+    "reactomeId" : 111980,
+    "displayName" : "elongating pre-RNA Pol III oligonucleotide",
+    "schemaClass" : "OtherEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 581,
+      "y" : 309
+    },
+    "minX" : 516,
+    "maxX" : 709,
+    "minY" : 120,
+    "maxY" : 334,
+    "prop" : {
+      "x" : 532,
+      "y" : 284,
+      "width" : 98,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 532,
+      "y" : 284
+    },
+    "connectors" : [ {
+      "edgeId" : 488,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 633,
+          "y" : 301
+        },
+        "to" : {
+          "x" : 664,
+          "y" : 296
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 507,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 572,
+          "y" : 281
+        },
+        "to" : {
+          "x" : 516,
+          "y" : 120
+        }
+      }, {
+        "from" : {
+          "x" : 516,
+          "y" : 120
+        },
+        "to" : {
+          "x" : 709,
+          "y" : 120
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 566,
+          "y" : 276
+        },
+        "b" : {
+          "x" : 572,
+          "y" : 281
+        },
+        "c" : {
+          "x" : 574,
+          "y" : 273
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 506,
+    "reactomeId" : 30181,
+    "displayName" : "NDP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 841,
+      "y" : 582
+    },
+    "minX" : 784,
+    "maxX" : 859,
+    "minY" : 570,
+    "maxY" : 652,
+    "prop" : {
+      "x" : 825,
+      "y" : 571,
+      "width" : 33,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 825,
+      "y" : 571
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 853,
+          "y" : 576
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 505,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 832,
+          "y" : 596
+        },
+        "to" : {
+          "x" : 784,
+          "y" : 652
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 831,
+          "y" : 604
+        },
+        "b" : {
+          "x" : 832,
+          "y" : 596
+        },
+        "c" : {
+          "x" : 824,
+          "y" : 599
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 509,
+    "reactomeId" : 30595,
+    "displayName" : "NTP",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 852,
+      "y" : 101
+    },
+    "minX" : 809,
+    "maxX" : 872,
+    "minY" : 86,
+    "maxY" : 120,
+    "prop" : {
+      "x" : 832,
+      "y" : 86,
+      "width" : 40,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 836,
+      "y" : 90
+    },
+    "connectors" : [ {
+      "edgeId" : 507,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 826,
+          "y" : 109
+        },
+        "to" : {
+          "x" : 809,
+          "y" : 120
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 65,
+    "reactomeId" : 76056,
+    "displayName" : "Recruitment of  RNA polymerase III to TFIIIB:TFIIIC:TFIIIA:Type 1 Promoter Complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1115,
+      "y" : 320
+    },
+    "minX" : 1065,
+    "maxX" : 1121,
+    "minY" : 288,
+    "maxY" : 362,
+    "segments" : [ {
+      "from" : {
+        "x" : 1116,
+        "y" : 362
+      },
+      "to" : {
+        "x" : 1115,
+        "y" : 320
+      }
+    }, {
+      "from" : {
+        "x" : 1115,
+        "y" : 320
+      },
+      "to" : {
+        "x" : 1065,
+        "y" : 288
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1073,
+        "y" : 288
+      },
+      "b" : {
+        "x" : 1065,
+        "y" : 288
+      },
+      "c" : {
+        "x" : 1069,
+        "y" : 295
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1109,
+        "y" : 314
+      },
+      "b" : {
+        "x" : 1121,
+        "y" : 326
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 64,
+      "points" : [ {
+        "x" : 1072,
+        "y" : 362
+      } ]
+    }, {
+      "id" : 66,
+      "points" : [ {
+        "x" : 1149,
+        "y" : 385
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 67
+    } ]
+  }, {
+    "id" : 513,
+    "reactomeId" : 112156,
+    "displayName" : "RNA Polymerase III Simple Start Sequence Initiation At Type 3 Promoters",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1636,
+      "y" : 263
+    },
+    "minX" : 1576,
+    "maxX" : 1674,
+    "minY" : 257,
+    "maxY" : 269,
+    "segments" : [ {
+      "from" : {
+        "x" : 1674,
+        "y" : 263
+      },
+      "to" : {
+        "x" : 1636,
+        "y" : 263
+      }
+    }, {
+      "from" : {
+        "x" : 1636,
+        "y" : 263
+      },
+      "to" : {
+        "x" : 1576,
+        "y" : 263
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1630,
+        "y" : 257
+      },
+      "b" : {
+        "x" : 1642,
+        "y" : 269
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 91,
+      "points" : [ {
+        "x" : 1642,
+        "y" : 298
+      } ]
+    }, {
+      "id" : 519,
+      "points" : [ {
+        "x" : 1710,
+        "y" : 248
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 91,
+      "points" : [ {
+        "x" : 1597,
+        "y" : 298
+      } ]
+    }, {
+      "id" : 493,
+      "points" : [ {
+        "x" : 1396,
+        "y" : 357
+      }, {
+        "x" : 1362,
+        "y" : 356
+      }, {
+        "x" : 1336,
+        "y" : 262
+      } ]
+    } ]
+  }, {
+    "id" : 68,
+    "reactomeId" : 76060,
+    "displayName" : "RNA Polymerase III Promoter Opening at Type 1 Promoters",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 884,
+      "y" : 250
+    },
+    "minX" : 835,
+    "maxX" : 957,
+    "minY" : 244,
+    "maxY" : 256,
+    "segments" : [ {
+      "from" : {
+        "x" : 957,
+        "y" : 251
+      },
+      "to" : {
+        "x" : 884,
+        "y" : 250
+      }
+    }, {
+      "from" : {
+        "x" : 884,
+        "y" : 250
+      },
+      "to" : {
+        "x" : 835,
+        "y" : 251
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 842,
+        "y" : 247
+      },
+      "b" : {
+        "x" : 835,
+        "y" : 251
+      },
+      "c" : {
+        "x" : 842,
+        "y" : 255
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 878,
+        "y" : 244
+      },
+      "b" : {
+        "x" : 890,
+        "y" : 256
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 67
+    } ],
+    "outputs" : [ {
+      "id" : 69
+    } ]
+  }, {
+    "id" : 70,
+    "reactomeId" : 83788,
+    "displayName" : "Binding of TFIIIC to Type 2 promoter",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 667,
+      "y" : 480
+    },
+    "minX" : 633,
+    "maxX" : 716,
+    "minY" : 474,
+    "maxY" : 486,
+    "segments" : [ {
+      "from" : {
+        "x" : 633,
+        "y" : 479
+      },
+      "to" : {
+        "x" : 667,
+        "y" : 480
+      }
+    }, {
+      "from" : {
+        "x" : 667,
+        "y" : 480
+      },
+      "to" : {
+        "x" : 716,
+        "y" : 479
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 709,
+        "y" : 483
+      },
+      "b" : {
+        "x" : 716,
+        "y" : 479
+      },
+      "c" : {
+        "x" : 709,
+        "y" : 475
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 661,
+        "y" : 474
+      },
+      "b" : {
+        "x" : 673,
+        "y" : 486
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 71,
+      "points" : [ {
+        "x" : 595,
+        "y" : 479
+      } ]
+    }, {
+      "id" : 60,
+      "points" : [ {
+        "x" : 622,
+        "y" : 439
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 72
+    } ]
+  }, {
+    "id" : 520,
+    "reactomeId" : 113451,
+    "displayName" : "Resumption of RNA Polymerase III Productive Transcription",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 576,
+      "y" : 535
+    },
+    "minX" : 372,
+    "maxX" : 851,
+    "minY" : 529,
+    "maxY" : 541,
+    "segments" : [ {
+      "from" : {
+        "x" : 851,
+        "y" : 536
+      },
+      "to" : {
+        "x" : 576,
+        "y" : 535
+      }
+    }, {
+      "from" : {
+        "x" : 576,
+        "y" : 535
+      },
+      "to" : {
+        "x" : 372,
+        "y" : 536
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 570,
+        "y" : 529
+      },
+      "b" : {
+        "x" : 582,
+        "y" : 541
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 96,
+      "points" : [ {
+        "x" : 539,
+        "y" : 656
+      } ]
+    }, {
+      "id" : 104,
+      "points" : [ {
+        "x" : 905,
+        "y" : 657
+      }, {
+        "x" : 903,
+        "y" : 573
+      } ]
+    }, {
+      "id" : 522,
+      "points" : [ {
+        "x" : 859,
+        "y" : 529
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 97,
+      "points" : [ {
+        "x" : 336,
+        "y" : 695
+      } ]
+    }, {
+      "id" : 96,
+      "points" : [ {
+        "x" : 459,
+        "y" : 641
+      } ]
+    } ]
+  }, {
+    "id" : 73,
+    "reactomeId" : 83790,
+    "displayName" : "Binding of TFIIIB to TFIIC: Type 2 Promoter Complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 949,
+      "y" : 480
+    },
+    "minX" : 884,
+    "maxX" : 990,
+    "minY" : 474,
+    "maxY" : 486,
+    "segments" : [ {
+      "from" : {
+        "x" : 884,
+        "y" : 479
+      },
+      "to" : {
+        "x" : 949,
+        "y" : 480
+      }
+    }, {
+      "from" : {
+        "x" : 949,
+        "y" : 480
+      },
+      "to" : {
+        "x" : 990,
+        "y" : 480
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 983,
+        "y" : 484
+      },
+      "b" : {
+        "x" : 990,
+        "y" : 480
+      },
+      "c" : {
+        "x" : 983,
+        "y" : 476
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 943,
+        "y" : 474
+      },
+      "b" : {
+        "x" : 955,
+        "y" : 486
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 63,
+      "points" : [ {
+        "x" : 868,
+        "y" : 453
+      } ]
+    }, {
+      "id" : 72,
+      "points" : [ {
+        "x" : 838,
+        "y" : 479
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 74
+    } ]
+  }, {
+    "id" : 75,
+    "reactomeId" : 83805,
+    "displayName" : "Recruitment of RNA Polymerase III to the TFIIIB:TFIIIC: Type 2 Promoter Complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1195,
+      "y" : 478
+    },
+    "minX" : 1167,
+    "maxX" : 1233,
+    "minY" : 472,
+    "maxY" : 484,
+    "segments" : [ {
+      "from" : {
+        "x" : 1167,
+        "y" : 480
+      },
+      "to" : {
+        "x" : 1195,
+        "y" : 478
+      }
+    }, {
+      "from" : {
+        "x" : 1195,
+        "y" : 478
+      },
+      "to" : {
+        "x" : 1233,
+        "y" : 478
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1226,
+        "y" : 482
+      },
+      "b" : {
+        "x" : 1233,
+        "y" : 478
+      },
+      "c" : {
+        "x" : 1226,
+        "y" : 474
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1189,
+        "y" : 472
+      },
+      "b" : {
+        "x" : 1201,
+        "y" : 484
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 66,
+      "points" : [ {
+        "x" : 1171,
+        "y" : 427
+      } ]
+    }, {
+      "id" : 74,
+      "points" : [ {
+        "x" : 1118,
+        "y" : 480
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 76
+    } ]
+  }, {
+    "id" : 77,
+    "reactomeId" : 112150,
+    "displayName" : "RNA Polymerase III Promoter Opening at Type 2 Promoters",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1392,
+      "y" : 478
+    },
+    "minX" : 1336,
+    "maxX" : 1398,
+    "minY" : 472,
+    "maxY" : 548,
+    "segments" : [ {
+      "from" : {
+        "x" : 1361,
+        "y" : 478
+      },
+      "to" : {
+        "x" : 1392,
+        "y" : 478
+      }
+    }, {
+      "from" : {
+        "x" : 1392,
+        "y" : 478
+      },
+      "to" : {
+        "x" : 1336,
+        "y" : 548
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1337,
+        "y" : 540
+      },
+      "b" : {
+        "x" : 1336,
+        "y" : 548
+      },
+      "c" : {
+        "x" : 1343,
+        "y" : 545
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1386,
+        "y" : 472
+      },
+      "b" : {
+        "x" : 1398,
+        "y" : 484
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 76
+    } ],
+    "outputs" : [ {
+      "id" : 78
+    } ]
+  }, {
+    "id" : 79,
+    "reactomeId" : 83791,
+    "displayName" : "Binding of SNAPc, Oct-1, and Staf to Type 3 Promoter",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1477,
+      "y" : 660
+    },
+    "minX" : 1471,
+    "maxX" : 1483,
+    "minY" : 628,
+    "maxY" : 692,
+    "segments" : [ {
+      "from" : {
+        "x" : 1477,
+        "y" : 692
+      },
+      "to" : {
+        "x" : 1477,
+        "y" : 660
+      }
+    }, {
+      "from" : {
+        "x" : 1477,
+        "y" : 660
+      },
+      "to" : {
+        "x" : 1477,
+        "y" : 628
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1481,
+        "y" : 635
+      },
+      "b" : {
+        "x" : 1477,
+        "y" : 628
+      },
+      "c" : {
+        "x" : 1473,
+        "y" : 635
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1471,
+        "y" : 654
+      },
+      "b" : {
+        "x" : 1483,
+        "y" : 666
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 80,
+      "points" : [ {
+        "x" : 1442,
+        "y" : 745
+      } ]
+    }, {
+      "id" : 81,
+      "points" : [ {
+        "x" : 1494,
+        "y" : 816
+      } ]
+    }, {
+      "id" : 82,
+      "points" : [ {
+        "x" : 1552,
+        "y" : 768
+      } ]
+    }, {
+      "id" : 83,
+      "points" : [ {
+        "x" : 1556,
+        "y" : 710
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 84
+    } ]
+  }, {
+    "id" : 85,
+    "reactomeId" : 83793,
+    "displayName" : "Binding of TFIIIB to SNAPc:Oct-1:Staf:Type 3 Promoter Complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1525,
+      "y" : 521
+    },
+    "minX" : 1519,
+    "maxX" : 1531,
+    "minY" : 482,
+    "maxY" : 553,
+    "segments" : [ {
+      "from" : {
+        "x" : 1524,
+        "y" : 553
+      },
+      "to" : {
+        "x" : 1525,
+        "y" : 521
+      }
+    }, {
+      "from" : {
+        "x" : 1525,
+        "y" : 521
+      },
+      "to" : {
+        "x" : 1525,
+        "y" : 482
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1529,
+        "y" : 489
+      },
+      "b" : {
+        "x" : 1525,
+        "y" : 482
+      },
+      "c" : {
+        "x" : 1521,
+        "y" : 489
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1519,
+        "y" : 515
+      },
+      "b" : {
+        "x" : 1531,
+        "y" : 527
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 86,
+      "points" : [ {
+        "x" : 1574,
+        "y" : 556
+      } ]
+    }, {
+      "id" : 84,
+      "points" : [ {
+        "x" : 1502,
+        "y" : 572
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 87
+    } ]
+  }, {
+    "id" : 88,
+    "reactomeId" : 83803,
+    "displayName" : "Recruitment of RNA Polymerase III to TFIIIB:SNAPc:Type 3 Promoter Complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1622,
+      "y" : 399
+    },
+    "minX" : 1576,
+    "maxX" : 1656,
+    "minY" : 393,
+    "maxY" : 405,
+    "segments" : [ {
+      "from" : {
+        "x" : 1576,
+        "y" : 398
+      },
+      "to" : {
+        "x" : 1622,
+        "y" : 399
+      }
+    }, {
+      "from" : {
+        "x" : 1622,
+        "y" : 399
+      },
+      "to" : {
+        "x" : 1656,
+        "y" : 399
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1649,
+        "y" : 403
+      },
+      "b" : {
+        "x" : 1656,
+        "y" : 399
+      },
+      "c" : {
+        "x" : 1649,
+        "y" : 395
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1616,
+        "y" : 393
+      },
+      "b" : {
+        "x" : 1628,
+        "y" : 405
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 87,
+      "points" : [ {
+        "x" : 1548,
+        "y" : 426
+      } ]
+    }, {
+      "id" : 66,
+      "points" : [ {
+        "x" : 1236,
+        "y" : 403
+      }, {
+        "x" : 1285,
+        "y" : 401
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 89
+    } ]
+  }, {
+    "id" : 90,
+    "reactomeId" : 112152,
+    "displayName" : "RNA Polymerase III Promoter Opening at Type 3 Promoters",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1716,
+      "y" : 333
+    },
+    "minX" : 1683,
+    "maxX" : 1722,
+    "minY" : 327,
+    "maxY" : 371,
+    "segments" : [ {
+      "from" : {
+        "x" : 1719,
+        "y" : 371
+      },
+      "to" : {
+        "x" : 1716,
+        "y" : 333
+      }
+    }, {
+      "from" : {
+        "x" : 1716,
+        "y" : 333
+      },
+      "to" : {
+        "x" : 1683,
+        "y" : 333
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1690,
+        "y" : 329
+      },
+      "b" : {
+        "x" : 1683,
+        "y" : 333
+      },
+      "c" : {
+        "x" : 1690,
+        "y" : 337
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1710,
+        "y" : 327
+      },
+      "b" : {
+        "x" : 1722,
+        "y" : 339
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 89
+    } ],
+    "outputs" : [ {
+      "id" : 91
+    } ]
+  }, {
+    "id" : 94,
+    "reactomeId" : 113446,
+    "displayName" : "Initiation of RNA Polymerase III Productive Transcription",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 226,
+      "y" : 685
+    },
+    "minX" : 199,
+    "maxX" : 255,
+    "minY" : 674,
+    "maxY" : 691,
+    "segments" : [ {
+      "from" : {
+        "x" : 199,
+        "y" : 674
+      },
+      "to" : {
+        "x" : 226,
+        "y" : 685
+      }
+    }, {
+      "from" : {
+        "x" : 226,
+        "y" : 685
+      },
+      "to" : {
+        "x" : 255,
+        "y" : 685
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 220,
+        "y" : 679
+      },
+      "b" : {
+        "x" : 232,
+        "y" : 691
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 95,
+      "points" : [ {
+        "x" : 177,
+        "y" : 655
+      } ]
+    }, {
+      "id" : 96,
+      "points" : [ {
+        "x" : 433,
+        "y" : 661
+      }, {
+        "x" : 394,
+        "y" : 650
+      }, {
+        "x" : 251,
+        "y" : 651
+      } ]
+    }, {
+      "id" : 99,
+      "points" : [ {
+        "x" : 179,
+        "y" : 693
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 97,
+      "points" : [ {
+        "x" : 279,
+        "y" : 698
+      } ]
+    }, {
+      "id" : 96,
+      "points" : [ {
+        "x" : 433,
+        "y" : 681
+      }, {
+        "x" : 397,
+        "y" : 685
+      } ]
+    } ]
+  }, {
+    "id" : 100,
+    "reactomeId" : 113705,
+    "displayName" : "RNA Polymerase III Productive Transcription",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 488,
+      "y" : 762
+    },
+    "minX" : 454,
+    "maxX" : 522,
+    "minY" : 756,
+    "maxY" : 768,
+    "segments" : [ {
+      "from" : {
+        "x" : 454,
+        "y" : 762
+      },
+      "to" : {
+        "x" : 488,
+        "y" : 762
+      }
+    }, {
+      "from" : {
+        "x" : 488,
+        "y" : 762
+      },
+      "to" : {
+        "x" : 522,
+        "y" : 761
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 482,
+        "y" : 756
+      },
+      "b" : {
+        "x" : 494,
+        "y" : 768
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 97,
+      "points" : [ {
+        "x" : 383,
+        "y" : 738
+      } ]
+    }, {
+      "id" : 96,
+      "points" : [ {
+        "x" : 474,
+        "y" : 711
+      } ]
+    }, {
+      "id" : 106,
+      "points" : [ {
+        "x" : 412,
+        "y" : 778
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 101,
+      "points" : [ {
+        "x" : 563,
+        "y" : 761
+      } ]
+    }, {
+      "id" : 96,
+      "points" : [ {
+        "x" : 499,
+        "y" : 711
+      } ]
+    } ]
+  }, {
+    "id" : 102,
+    "reactomeId" : 113449,
+    "displayName" : "RNA Polymerase III Transcriptional Pause at Terminator Sequence",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 743,
+      "y" : 674
+    },
+    "minX" : 710,
+    "maxX" : 785,
+    "minY" : 668,
+    "maxY" : 680,
+    "segments" : [ {
+      "from" : {
+        "x" : 710,
+        "y" : 676
+      },
+      "to" : {
+        "x" : 743,
+        "y" : 674
+      }
+    }, {
+      "from" : {
+        "x" : 743,
+        "y" : 674
+      },
+      "to" : {
+        "x" : 785,
+        "y" : 674
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 737,
+        "y" : 668
+      },
+      "b" : {
+        "x" : 749,
+        "y" : 680
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 97,
+      "points" : [ {
+        "x" : 331,
+        "y" : 751
+      }, {
+        "x" : 331,
+        "y" : 829
+      }, {
+        "x" : 710,
+        "y" : 829
+      } ]
+    }, {
+      "id" : 96,
+      "points" : [ {
+        "x" : 539,
+        "y" : 676
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 103,
+      "points" : [ {
+        "x" : 814,
+        "y" : 730
+      } ]
+    }, {
+      "id" : 104,
+      "points" : [ {
+        "x" : 842,
+        "y" : 675
+      } ]
+    } ]
+  }, {
+    "id" : 488,
+    "reactomeId" : 112055,
+    "displayName" : "RNA Polymerase III Abortive Initiation At Type 1 Open Promoters",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 662,
+      "y" : 248
+    },
+    "minX" : 654,
+    "maxX" : 668,
+    "minY" : 200,
+    "maxY" : 296,
+    "segments" : [ {
+      "from" : {
+        "x" : 664,
+        "y" : 296
+      },
+      "to" : {
+        "x" : 662,
+        "y" : 248
+      }
+    }, {
+      "from" : {
+        "x" : 662,
+        "y" : 248
+      },
+      "to" : {
+        "x" : 654,
+        "y" : 200
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 656,
+        "y" : 242
+      },
+      "b" : {
+        "x" : 668,
+        "y" : 254
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 69,
+      "points" : [ {
+        "x" : 708,
+        "y" : 277
+      } ]
+    }, {
+      "id" : 504,
+      "points" : [ {
+        "x" : 633,
+        "y" : 301
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 489,
+      "points" : [ {
+        "x" : 633,
+        "y" : 174
+      } ]
+    }, {
+      "id" : 69,
+      "points" : [ {
+        "x" : 708,
+        "y" : 226
+      } ]
+    } ]
+  }, {
+    "id" : 490,
+    "reactomeId" : 112149,
+    "displayName" : "RNA Polymerase III Abortive Initiation At Type 2 Open Promoters",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1222,
+      "y" : 579
+    },
+    "minX" : 1216,
+    "maxX" : 1228,
+    "minY" : 553,
+    "maxY" : 615,
+    "segments" : [ {
+      "from" : {
+        "x" : 1219,
+        "y" : 615
+      },
+      "to" : {
+        "x" : 1222,
+        "y" : 579
+      }
+    }, {
+      "from" : {
+        "x" : 1222,
+        "y" : 579
+      },
+      "to" : {
+        "x" : 1218,
+        "y" : 553
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1216,
+        "y" : 573
+      },
+      "b" : {
+        "x" : 1228,
+        "y" : 585
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 78,
+      "points" : [ {
+        "x" : 1248,
+        "y" : 603
+      } ]
+    }, {
+      "id" : 500,
+      "points" : [ {
+        "x" : 1202,
+        "y" : 616
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 78,
+      "points" : [ {
+        "x" : 1248,
+        "y" : 563
+      } ]
+    }, {
+      "id" : 502,
+      "points" : [ {
+        "x" : 1185,
+        "y" : 545
+      } ]
+    } ]
+  }, {
+    "id" : 107,
+    "reactomeId" : 113454,
+    "displayName" : "RNA Polymerase III Termination and release of transcribed RNA",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 982,
+      "y" : 730
+    },
+    "minX" : 936,
+    "maxX" : 1058,
+    "minY" : 724,
+    "maxY" : 736,
+    "segments" : [ {
+      "from" : {
+        "x" : 936,
+        "y" : 730
+      },
+      "to" : {
+        "x" : 982,
+        "y" : 730
+      }
+    }, {
+      "from" : {
+        "x" : 982,
+        "y" : 730
+      },
+      "to" : {
+        "x" : 1058,
+        "y" : 729
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 976,
+        "y" : 724
+      },
+      "b" : {
+        "x" : 988,
+        "y" : 736
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 103,
+      "points" : [ {
+        "x" : 880,
+        "y" : 749
+      } ]
+    }, {
+      "id" : 104,
+      "points" : [ {
+        "x" : 916,
+        "y" : 699
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 108,
+      "points" : [ {
+        "x" : 1262,
+        "y" : 716
+      } ]
+    }, {
+      "id" : 109,
+      "points" : [ {
+        "x" : 1231,
+        "y" : 760
+      } ]
+    }, {
+      "id" : 115,
+      "points" : [ {
+        "x" : 1096,
+        "y" : 708
+      } ]
+    } ],
+    "activators" : [ {
+      "id" : 110,
+      "points" : [ {
+        "x" : 882,
+        "y" : 818
+      } ]
+    }, {
+      "id" : 111,
+      "points" : [ {
+        "x" : 927,
+        "y" : 868
+      } ]
+    }, {
+      "id" : 112,
+      "points" : [ {
+        "x" : 999,
+        "y" : 896
+      } ]
+    }, {
+      "id" : 113,
+      "points" : [ {
+        "x" : 1066,
+        "y" : 850
+      } ]
+    }, {
+      "id" : 114,
+      "points" : [ {
+        "x" : 1109,
+        "y" : 804
+      } ]
+    } ]
+  }, {
+    "id" : 491,
+    "reactomeId" : 112054,
+    "displayName" : "RNA Polymerase III Abortive Initiation At Type 3 Open Promoters",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1528,
+      "y" : 335
+    },
+    "minX" : 1522,
+    "maxX" : 1534,
+    "minY" : 307,
+    "maxY" : 359,
+    "segments" : [ {
+      "from" : {
+        "x" : 1528,
+        "y" : 359
+      },
+      "to" : {
+        "x" : 1528,
+        "y" : 335
+      }
+    }, {
+      "from" : {
+        "x" : 1528,
+        "y" : 335
+      },
+      "to" : {
+        "x" : 1526,
+        "y" : 307
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1522,
+        "y" : 329
+      },
+      "b" : {
+        "x" : 1534,
+        "y" : 341
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 91,
+      "points" : [ {
+        "x" : 1550,
+        "y" : 351
+      } ]
+    }, {
+      "id" : 493,
+      "points" : [ {
+        "x" : 1500,
+        "y" : 359
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 91,
+      "points" : [ {
+        "x" : 1550,
+        "y" : 314
+      } ]
+    }, {
+      "id" : 494,
+      "points" : [ {
+        "x" : 1509,
+        "y" : 304
+      } ]
+    } ]
+  }, {
+    "id" : 55,
+    "reactomeId" : 76052,
+    "displayName" : "Binding of TFIIIA To type 1 Promoter",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 483,
+      "y" : 369
+    },
+    "minX" : 441,
+    "maxX" : 521,
+    "minY" : 363,
+    "maxY" : 375,
+    "segments" : [ {
+      "from" : {
+        "x" : 441,
+        "y" : 369
+      },
+      "to" : {
+        "x" : 483,
+        "y" : 369
+      }
+    }, {
+      "from" : {
+        "x" : 483,
+        "y" : 369
+      },
+      "to" : {
+        "x" : 521,
+        "y" : 369
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 514,
+        "y" : 373
+      },
+      "b" : {
+        "x" : 521,
+        "y" : 369
+      },
+      "c" : {
+        "x" : 514,
+        "y" : 365
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 477,
+        "y" : 363
+      },
+      "b" : {
+        "x" : 489,
+        "y" : 375
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 56,
+      "points" : [ {
+        "x" : 434,
+        "y" : 393
+      } ]
+    }, {
+      "id" : 57,
+      "points" : [ {
+        "x" : 431,
+        "y" : 353
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 58
+    } ]
+  }, {
+    "id" : 505,
+    "reactomeId" : 113442,
+    "displayName" : "RNA Polymerase III Retractive RNase Activity at U-tract Pause Sites",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 724,
+      "y" : 652
+    },
+    "minX" : 648,
+    "maxX" : 784,
+    "minY" : 646,
+    "maxY" : 658,
+    "segments" : [ {
+      "from" : {
+        "x" : 648,
+        "y" : 652
+      },
+      "to" : {
+        "x" : 724,
+        "y" : 652
+      }
+    }, {
+      "from" : {
+        "x" : 724,
+        "y" : 652
+      },
+      "to" : {
+        "x" : 784,
+        "y" : 652
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 718,
+        "y" : 646
+      },
+      "b" : {
+        "x" : 730,
+        "y" : 658
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 101,
+      "points" : [ {
+        "x" : 627,
+        "y" : 728
+      } ]
+    }, {
+      "id" : 96,
+      "points" : [ {
+        "x" : 539,
+        "y" : 668
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 104,
+      "points" : [ {
+        "x" : 842,
+        "y" : 665
+      } ]
+    }, {
+      "id" : 96,
+      "points" : [ {
+        "x" : 485,
+        "y" : 641
+      }, {
+        "x" : 484,
+        "y" : 608
+      }, {
+        "x" : 782,
+        "y" : 608
+      } ]
+    }, {
+      "id" : 506,
+      "points" : [ {
+        "x" : 832,
+        "y" : 596
+      } ]
+    } ]
+  }, {
+    "id" : 59,
+    "reactomeId" : 76054,
+    "displayName" : "Binding of TFIIIC to TFIIIA:Type I Promoter complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 701,
+      "y" : 367
+    },
+    "minX" : 665,
+    "maxX" : 732,
+    "minY" : 361,
+    "maxY" : 373,
+    "segments" : [ {
+      "from" : {
+        "x" : 665,
+        "y" : 366
+      },
+      "to" : {
+        "x" : 701,
+        "y" : 367
+      }
+    }, {
+      "from" : {
+        "x" : 701,
+        "y" : 367
+      },
+      "to" : {
+        "x" : 732,
+        "y" : 367
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 725,
+        "y" : 371
+      },
+      "b" : {
+        "x" : 732,
+        "y" : 367
+      },
+      "c" : {
+        "x" : 725,
+        "y" : 363
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 695,
+        "y" : 361
+      },
+      "b" : {
+        "x" : 707,
+        "y" : 373
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 58,
+      "points" : [ {
+        "x" : 641,
+        "y" : 367
+      } ]
+    }, {
+      "id" : 60,
+      "points" : [ {
+        "x" : 628,
+        "y" : 411
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 61
+    } ]
+  }, {
+    "id" : 507,
+    "reactomeId" : 112153,
+    "displayName" : "RNA Polymerase III Simple Start Sequence Initiation At Type 1 Promoters",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 759,
+      "y" : 120
+    },
+    "minX" : 709,
+    "maxX" : 809,
+    "minY" : 114,
+    "maxY" : 126,
+    "segments" : [ {
+      "from" : {
+        "x" : 809,
+        "y" : 120
+      },
+      "to" : {
+        "x" : 759,
+        "y" : 120
+      }
+    }, {
+      "from" : {
+        "x" : 759,
+        "y" : 120
+      },
+      "to" : {
+        "x" : 709,
+        "y" : 120
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 753,
+        "y" : 114
+      },
+      "b" : {
+        "x" : 765,
+        "y" : 126
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 69,
+      "points" : [ {
+        "x" : 780,
+        "y" : 219
+      } ]
+    }, {
+      "id" : 509,
+      "points" : [ {
+        "x" : 826,
+        "y" : 109
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 69,
+      "points" : [ {
+        "x" : 756,
+        "y" : 219
+      } ]
+    }, {
+      "id" : 504,
+      "points" : [ {
+        "x" : 572,
+        "y" : 281
+      }, {
+        "x" : 516,
+        "y" : 120
+      } ]
+    } ]
+  }, {
+    "id" : 62,
+    "reactomeId" : 83723,
+    "displayName" : "Binding of TFIIIB to TFIIIC:TFIIIA:Type I Promoter complex",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 924,
+      "y" : 366
+    },
+    "minX" : 890,
+    "maxX" : 954,
+    "minY" : 360,
+    "maxY" : 372,
+    "segments" : [ {
+      "from" : {
+        "x" : 890,
+        "y" : 366
+      },
+      "to" : {
+        "x" : 924,
+        "y" : 366
+      }
+    }, {
+      "from" : {
+        "x" : 924,
+        "y" : 366
+      },
+      "to" : {
+        "x" : 954,
+        "y" : 364
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 947,
+        "y" : 368
+      },
+      "b" : {
+        "x" : 954,
+        "y" : 364
+      },
+      "c" : {
+        "x" : 947,
+        "y" : 360
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 918,
+        "y" : 360
+      },
+      "b" : {
+        "x" : 930,
+        "y" : 372
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 63,
+      "points" : [ {
+        "x" : 870,
+        "y" : 397
+      } ]
+    }, {
+      "id" : 61,
+      "points" : [ {
+        "x" : 856,
+        "y" : 366
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 64
+    } ]
+  }, {
+    "id" : 510,
+    "reactomeId" : 112155,
+    "displayName" : "RNA Polymerase III Simple Start Sequence Initiation At Type 2 Promoters",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1308,
+      "y" : 643
+    },
+    "minX" : 1279,
+    "maxX" : 1342,
+    "minY" : 637,
+    "maxY" : 649,
+    "segments" : [ {
+      "from" : {
+        "x" : 1342,
+        "y" : 643
+      },
+      "to" : {
+        "x" : 1308,
+        "y" : 643
+      }
+    }, {
+      "from" : {
+        "x" : 1308,
+        "y" : 643
+      },
+      "to" : {
+        "x" : 1279,
+        "y" : 643
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1302,
+        "y" : 637
+      },
+      "b" : {
+        "x" : 1314,
+        "y" : 649
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 78,
+      "points" : [ {
+        "x" : 1328,
+        "y" : 618
+      } ]
+    }, {
+      "id" : 512,
+      "points" : [ {
+        "x" : 1362,
+        "y" : 652
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 78,
+      "points" : [ {
+        "x" : 1294,
+        "y" : 618
+      } ]
+    }, {
+      "id" : 500,
+      "points" : [ {
+        "x" : 1202,
+        "y" : 628
+      } ]
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 523,
+    "reactomeId" : 7660,
+    "displayName" : "nucleoplasm",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 938,
+      "y" : 513
+    },
+    "minX" : 22,
+    "maxX" : 1855,
+    "minY" : 22,
+    "maxY" : 1004,
+    "prop" : {
+      "x" : 22,
+      "y" : 22,
+      "width" : 1833,
+      "height" : 982
+    },
+    "textPosition" : {
+      "x" : 876,
+      "y" : 476
+    },
+    "insets" : {
+      "x" : 32,
+      "y" : 32,
+      "width" : 1811,
+      "height" : 957
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 56, 57, 58, 60, 61, 63, 64, 66, 67, 69, 71, 72, 74, 76, 78, 80, 81, 82, 83, 84, 86, 87, 89, 91, 95, 96, 97, 99, 101, 103, 104, 106, 108, 109, 110, 111, 112, 113, 114, 115, 489, 493, 494, 500, 502, 504, 506, 509, 512, 519, 522, 55, 59, 62, 65, 68, 70, 73, 75, 77, 79, 85, 88, 90, 94, 100, 102, 107, 488, 490, 491, 505, 507, 510, 513, 520 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ {
+    "id" : 524,
+    "reactomeId" : 73780,
+    "displayName" : "RNA Polymerase III Chain Elongation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 535,
+      "y" : 647
+    },
+    "minX" : 93,
+    "maxX" : 977,
+    "minY" : 483,
+    "maxY" : 811,
+    "prop" : {
+      "x" : 93,
+      "y" : 483,
+      "width" : 179,
+      "height" : 328
+    },
+    "points" : [ {
+      "x" : 93,
+      "y" : 483
+    }, {
+      "x" : 977,
+      "y" : 483
+    }, {
+      "x" : 977,
+      "y" : 811
+    }, {
+      "x" : 93,
+      "y" : 811
+    } ],
+    "colour" : "#4684ee"
+  }, {
+    "id" : 525,
+    "reactomeId" : 73980,
+    "displayName" : "RNA Polymerase III Transcription Termination",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 835,
+      "y" : 789
+    },
+    "minX" : 272,
+    "maxX" : 1398,
+    "minY" : 634,
+    "maxY" : 945,
+    "prop" : {
+      "x" : 272,
+      "y" : 851,
+      "width" : 1126,
+      "height" : 94
+    },
+    "points" : [ {
+      "x" : 272,
+      "y" : 634
+    }, {
+      "x" : 1398,
+      "y" : 634
+    }, {
+      "x" : 1398,
+      "y" : 945
+    }, {
+      "x" : 272,
+      "y" : 945
+    } ],
+    "colour" : "#dc3912"
+  }, {
+    "id" : 526,
+    "reactomeId" : 76046,
+    "displayName" : "RNA Polymerase III Transcription Initiation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 1073,
+      "y" : 531
+    },
+    "minX" : 350,
+    "maxX" : 1796,
+    "minY" : 211,
+    "maxY" : 851,
+    "prop" : {
+      "x" : 350,
+      "y" : 211,
+      "width" : 1446,
+      "height" : 272
+    },
+    "points" : [ {
+      "x" : 350,
+      "y" : 211
+    }, {
+      "x" : 1796,
+      "y" : 211
+    }, {
+      "x" : 1796,
+      "y" : 851
+    }, {
+      "x" : 350,
+      "y" : 851
+    } ],
+    "colour" : "#008000"
+  }, {
+    "id" : 527,
+    "reactomeId" : 749476,
+    "displayName" : "RNA Polymerase III Abortive And Retractive Initiation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 1034,
+      "y" : 510
+    },
+    "minX" : 272,
+    "maxX" : 1796,
+    "minY" : 76,
+    "maxY" : 945,
+    "prop" : {
+      "x" : 272,
+      "y" : 76,
+      "width" : 1524,
+      "height" : 135
+    },
+    "points" : [ {
+      "x" : 272,
+      "y" : 76
+    }, {
+      "x" : 1796,
+      "y" : 76
+    }, {
+      "x" : 1796,
+      "y" : 945
+    }, {
+      "x" : 272,
+      "y" : 945
+    } ],
+    "colour" : "#666666"
+  } ],
+  "minX" : 22,
+  "maxX" : 1855,
+  "minY" : 22,
+  "maxY" : 1004,
+  "disease" : false
+}

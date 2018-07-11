@@ -1,0 +1,116 @@
+{
+  "dbId" : 1640170,
+  "stableId" : "R-HSA-1640170",
+  "displayName" : "Cell Cycle",
+  "nodes" : [ {
+    "id" : 1,
+    "reactomeId" : 69620,
+    "displayName" : "Cell Cycle Checkpoints",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 324,
+      "y" : 97
+    },
+    "minX" : 270,
+    "maxX" : 379,
+    "minY" : 66,
+    "maxY" : 128,
+    "prop" : {
+      "x" : 270,
+      "y" : 66,
+      "width" : 109,
+      "height" : 62
+    },
+    "textPosition" : {
+      "x" : 281,
+      "y" : 75
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 69278,
+    "displayName" : "Cell Cycle, Mitotic",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 175,
+      "y" : 96
+    },
+    "minX" : 101,
+    "maxX" : 250,
+    "minY" : 65,
+    "maxY" : 127,
+    "prop" : {
+      "x" : 101,
+      "y" : 65,
+      "width" : 149,
+      "height" : 62
+    },
+    "textPosition" : {
+      "x" : 117,
+      "y" : 81
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 73886,
+    "displayName" : "Chromosome Maintenance",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 454,
+      "y" : 97
+    },
+    "minX" : 400,
+    "maxX" : 509,
+    "minY" : 66,
+    "maxY" : 128,
+    "prop" : {
+      "x" : 400,
+      "y" : 66,
+      "width" : 109,
+      "height" : 62
+    },
+    "textPosition" : {
+      "x" : 406,
+      "y" : 75
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 1500620,
+    "displayName" : "Meiosis",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 587,
+      "y" : 96
+    },
+    "minX" : 531,
+    "maxX" : 643,
+    "minY" : 70,
+    "maxY" : 122,
+    "prop" : {
+      "x" : 531,
+      "y" : 70,
+      "width" : 112,
+      "height" : 52
+    },
+    "textPosition" : {
+      "x" : 558,
+      "y" : 81
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 101,
+  "maxX" : 643,
+  "minY" : 65,
+  "maxY" : 128,
+  "disease" : false
+}

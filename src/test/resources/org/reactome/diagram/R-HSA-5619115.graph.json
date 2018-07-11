@@ -1,0 +1,20 @@
+{
+  "dbId" : 5619115,
+  "stId" : "R-HSA-5619115",
+  "nodes" : [ {
+    "dbId" : 5619084,
+    "stId" : "R-HSA-5619084",
+    "displayName" : "ABC transporter disorders",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2 ]
+  }, {
+    "dbId" : 5619102,
+    "stId" : "R-HSA-5619102",
+    "displayName" : "SLC transporter disorders",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 1 ]
+  } ],
+  "edges" : [ ]
+}

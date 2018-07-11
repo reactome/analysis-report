@@ -1,0 +1,338 @@
+{
+  "dbId" : 382551,
+  "stableId" : "R-HSA-382551",
+  "displayName" : "Transport of small molecules",
+  "nodes" : [ {
+    "id" : 1,
+    "reactomeId" : 382556,
+    "displayName" : "ABC-family proteins mediated transport",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 157,
+      "y" : 196
+    },
+    "minX" : 84,
+    "maxX" : 231,
+    "minY" : 161,
+    "maxY" : 231,
+    "prop" : {
+      "x" : 84,
+      "y" : 161,
+      "width" : 147,
+      "height" : 70
+    },
+    "textPosition" : {
+      "x" : 90,
+      "y" : 174
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 425407,
+    "displayName" : "SLC-mediated transmembrane transport",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 309,
+      "y" : 196
+    },
+    "minX" : 246,
+    "maxX" : 373,
+    "minY" : 162,
+    "maxY" : 230,
+    "prop" : {
+      "x" : 246,
+      "y" : 162,
+      "width" : 127,
+      "height" : 68
+    },
+    "textPosition" : {
+      "x" : 253,
+      "y" : 167
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 445717,
+    "displayName" : "Aquaporin-mediated transport",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 458,
+      "y" : 196
+    },
+    "minX" : 396,
+    "maxX" : 521,
+    "minY" : 164,
+    "maxY" : 229,
+    "prop" : {
+      "x" : 396,
+      "y" : 164,
+      "width" : 125,
+      "height" : 65
+    },
+    "textPosition" : {
+      "x" : 417,
+      "y" : 168
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 917937,
+    "displayName" : "Iron uptake and transport",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 601,
+      "y" : 196
+    },
+    "minX" : 537,
+    "maxX" : 665,
+    "minY" : 166,
+    "maxY" : 226,
+    "prop" : {
+      "x" : 537,
+      "y" : 166,
+      "width" : 128,
+      "height" : 60
+    },
+    "textPosition" : {
+      "x" : 545,
+      "y" : 174
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 983712,
+    "displayName" : "Ion channel transport",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 726,
+      "y" : 196
+    },
+    "minX" : 677,
+    "maxX" : 775,
+    "minY" : 169,
+    "maxY" : 223,
+    "prop" : {
+      "x" : 677,
+      "y" : 169,
+      "width" : 98,
+      "height" : 54
+    },
+    "textPosition" : {
+      "x" : 683,
+      "y" : 174
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 5223345,
+    "displayName" : "Miscellaneous transport and binding events",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 859,
+      "y" : 357
+    },
+    "minX" : 799,
+    "maxX" : 920,
+    "minY" : 326,
+    "maxY" : 388,
+    "prop" : {
+      "x" : 799,
+      "y" : 326,
+      "width" : 121,
+      "height" : 62
+    },
+    "textPosition" : {
+      "x" : 809,
+      "y" : 328
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 1480926,
+    "displayName" : "O2/CO2 exchange in erythrocytes",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 855,
+      "y" : 196
+    },
+    "minX" : 788,
+    "maxX" : 922,
+    "minY" : 167,
+    "maxY" : 225,
+    "prop" : {
+      "x" : 788,
+      "y" : 167,
+      "width" : 134,
+      "height" : 58
+    },
+    "textPosition" : {
+      "x" : 791,
+      "y" : 174
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 9,
+    "reactomeId" : 8949215,
+    "displayName" : "Mitochondrial calcium ion transport",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 646,
+      "y" : 274
+    },
+    "minX" : 514,
+    "maxX" : 779,
+    "minY" : 250,
+    "maxY" : 299,
+    "prop" : {
+      "x" : 514,
+      "y" : 250,
+      "width" : 265,
+      "height" : 49
+    },
+    "textPosition" : {
+      "x" : 537,
+      "y" : 260
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 11,
+    "reactomeId" : 174824,
+    "displayName" : "Plasma lipoprotein assembly, remodeling, and clearance",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 281,
+      "y" : 385
+    },
+    "minX" : 196,
+    "maxX" : 366,
+    "minY" : 350,
+    "maxY" : 421,
+    "prop" : {
+      "x" : 196,
+      "y" : 350,
+      "width" : 170,
+      "height" : 71
+    },
+    "textPosition" : {
+      "x" : 205,
+      "y" : 357
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 12,
+    "reactomeId" : 8981607,
+    "displayName" : "Intracellular oxygen transport",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 283,
+      "y" : 274
+    },
+    "minX" : 164,
+    "maxX" : 402,
+    "minY" : 251,
+    "maxY" : 298,
+    "prop" : {
+      "x" : 164,
+      "y" : 251,
+      "width" : 238,
+      "height" : 47
+    },
+    "textPosition" : {
+      "x" : 190,
+      "y" : 260
+    },
+    "connectors" : [ ]
+  } ],
+  "edges" : [ ],
+  "compartments" : [ {
+    "id" : 5,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 518,
+      "y" : 275
+    },
+    "minX" : 60,
+    "maxX" : 976,
+    "minY" : 191,
+    "maxY" : 359,
+    "prop" : {
+      "x" : 60,
+      "y" : 191,
+      "width" : 916,
+      "height" : 168
+    },
+    "textPosition" : {
+      "x" : 387,
+      "y" : 310
+    },
+    "insets" : {
+      "x" : 70,
+      "y" : 201,
+      "width" : 898,
+      "height" : 149
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2, 3, 4, 1, 6, 7, 8, 11, 12, 13 ]
+  }, {
+    "id" : 13,
+    "reactomeId" : 5462,
+    "displayName" : "mitochondrion",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 622,
+      "y" : 309
+    },
+    "minX" : 498,
+    "maxX" : 747,
+    "minY" : 276,
+    "maxY" : 343,
+    "prop" : {
+      "x" : 498,
+      "y" : 276,
+      "width" : 249,
+      "height" : 67
+    },
+    "textPosition" : {
+      "x" : 522,
+      "y" : 299
+    },
+    "insets" : {
+      "x" : 508,
+      "y" : 288,
+      "width" : 230,
+      "height" : 47
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 9 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 60,
+  "maxX" : 976,
+  "minY" : 161,
+  "maxY" : 421,
+  "disease" : false
+}

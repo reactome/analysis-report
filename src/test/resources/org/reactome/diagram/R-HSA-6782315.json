@@ -1,0 +1,9779 @@
+{
+  "dbId" : 6782315,
+  "stableId" : "R-HSA-6782315",
+  "displayName" : "tRNA modification in the nucleus and cytosol",
+  "nodes" : [ {
+    "id" : 4,
+    "reactomeId" : 6782349,
+    "displayName" : "tRNA(Ala) containing A-37",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 201,
+      "y" : 81
+    },
+    "minX" : 109,
+    "maxX" : 342,
+    "minY" : 68,
+    "maxY" : 124,
+    "prop" : {
+      "x" : 109,
+      "y" : 68,
+      "width" : 185,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 121,
+      "y" : 71
+    },
+    "connectors" : [ {
+      "edgeId" : 3,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 245,
+          "y" : 98
+        },
+        "to" : {
+          "x" : 342,
+          "y" : 124
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 5,
+    "reactomeId" : 113518,
+    "displayName" : "H2O",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 257,
+      "y" : 138
+    },
+    "minX" : 233,
+    "maxX" : 342,
+    "minY" : 123,
+    "maxY" : 152,
+    "prop" : {
+      "x" : 233,
+      "y" : 124,
+      "width" : 49,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 240,
+      "y" : 127
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 277,
+          "y" : 129
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 3,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 285,
+          "y" : 133
+        },
+        "to" : {
+          "x" : 342,
+          "y" : 124
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 6782283,
+    "displayName" : "tRNA(Ala) containing I-37",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 536,
+      "y" : 84
+    },
+    "minX" : 411,
+    "maxX" : 624,
+    "minY" : 71,
+    "maxY" : 124,
+    "prop" : {
+      "x" : 449,
+      "y" : 71,
+      "width" : 175,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 459,
+      "y" : 74
+    },
+    "connectors" : [ {
+      "edgeId" : 3,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 493,
+          "y" : 101
+        },
+        "to" : {
+          "x" : 411,
+          "y" : 124
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 487,
+          "y" : 107
+        },
+        "b" : {
+          "x" : 493,
+          "y" : 101
+        },
+        "c" : {
+          "x" : 485,
+          "y" : 99
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 76230,
+    "displayName" : "NH3",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 497,
+      "y" : 141
+    },
+    "minX" : 411,
+    "maxX" : 530,
+    "minY" : 124,
+    "maxY" : 155,
+    "prop" : {
+      "x" : 466,
+      "y" : 128,
+      "width" : 63,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 480,
+      "y" : 131
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 524,
+          "y" : 133
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 3,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 463,
+          "y" : 134
+        },
+        "to" : {
+          "x" : 411,
+          "y" : 124
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 455,
+          "y" : 137
+        },
+        "b" : {
+          "x" : 463,
+          "y" : 134
+        },
+        "c" : {
+          "x" : 457,
+          "y" : 129
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 6782329,
+    "displayName" : "ADAT1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 373,
+      "y" : 78
+    },
+    "minX" : 340,
+    "maxX" : 413,
+    "minY" : 59,
+    "maxY" : 117,
+    "prop" : {
+      "x" : 340,
+      "y" : 65,
+      "width" : 67,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 349,
+      "y" : 67
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 407,
+          "y" : 65
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 3,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 373,
+          "y" : 94
+        },
+        "to" : {
+          "x" : 373,
+          "y" : 109
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 374,
+          "y" : 113
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 13,
+    "reactomeId" : 113518,
+    "displayName" : "H2O",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 270,
+      "y" : 286
+    },
+    "minX" : 248,
+    "maxX" : 341,
+    "minY" : 270,
+    "maxY" : 301,
+    "prop" : {
+      "x" : 248,
+      "y" : 271,
+      "width" : 44,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 253,
+      "y" : 275
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 287,
+          "y" : 276
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 12,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 295,
+          "y" : 281
+        },
+        "to" : {
+          "x" : 341,
+          "y" : 272
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 14,
+    "reactomeId" : 6782314,
+    "displayName" : "pre-tRNAs containing A-34",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 193,
+      "y" : 238
+    },
+    "minX" : 97,
+    "maxX" : 341,
+    "minY" : 225,
+    "maxY" : 272,
+    "prop" : {
+      "x" : 97,
+      "y" : 225,
+      "width" : 193,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 110,
+      "y" : 227
+    },
+    "connectors" : [ {
+      "edgeId" : 12,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 249,
+          "y" : 257
+        },
+        "to" : {
+          "x" : 341,
+          "y" : 272
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 15,
+    "reactomeId" : 6782325,
+    "displayName" : "pre-tRNAs containing I-34",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 555,
+      "y" : 237
+    },
+    "minX" : 426,
+    "maxX" : 646,
+    "minY" : 223,
+    "maxY" : 274,
+    "prop" : {
+      "x" : 464,
+      "y" : 223,
+      "width" : 182,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 474,
+      "y" : 226
+    },
+    "connectors" : [ {
+      "edgeId" : 12,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 506,
+          "y" : 257
+        },
+        "to" : {
+          "x" : 426,
+          "y" : 274
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 500,
+          "y" : 262
+        },
+        "b" : {
+          "x" : 506,
+          "y" : 257
+        },
+        "c" : {
+          "x" : 498,
+          "y" : 255
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 16,
+    "reactomeId" : 6782302,
+    "displayName" : "ADAT2:ADAT3",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 381,
+      "y" : 229
+    },
+    "minX" : 323,
+    "maxX" : 440,
+    "minY" : 216,
+    "maxY" : 264,
+    "prop" : {
+      "x" : 323,
+      "y" : 216,
+      "width" : 117,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 334,
+      "y" : 221
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 12,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 380,
+          "y" : 245
+        },
+        "to" : {
+          "x" : 380,
+          "y" : 256
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 379,
+          "y" : 260
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 17,
+    "reactomeId" : 76230,
+    "displayName" : "NH3",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 503,
+      "y" : 289
+    },
+    "minX" : 426,
+    "maxX" : 536,
+    "minY" : 274,
+    "maxY" : 303,
+    "prop" : {
+      "x" : 472,
+      "y" : 276,
+      "width" : 63,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 486,
+      "y" : 279
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 530,
+          "y" : 281
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 12,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 469,
+          "y" : 282
+        },
+        "to" : {
+          "x" : 426,
+          "y" : 274
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 461,
+          "y" : 285
+        },
+        "b" : {
+          "x" : 469,
+          "y" : 282
+        },
+        "c" : {
+          "x" : 463,
+          "y" : 277
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 19,
+    "reactomeId" : 6782334,
+    "displayName" : "CTU1:CTU2:thio-URM1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 210,
+      "y" : 404
+    },
+    "minX" : 128,
+    "maxX" : 364,
+    "minY" : 374,
+    "maxY" : 416,
+    "prop" : {
+      "x" : 128,
+      "y" : 393,
+      "width" : 164,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 139,
+      "y" : 395
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 18,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 241,
+          "y" : 390
+        },
+        "to" : {
+          "x" : 290,
+          "y" : 375
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 18,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 276,
+          "y" : 390
+        },
+        "to" : {
+          "x" : 356,
+          "y" : 378
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 360,
+          "y" : 378
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 20,
+    "reactomeId" : 6782242,
+    "displayName" : "tRNAs containing U-34",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 202,
+      "y" : 355
+    },
+    "minX" : 121,
+    "maxX" : 290,
+    "minY" : 343,
+    "maxY" : 375,
+    "prop" : {
+      "x" : 121,
+      "y" : 343,
+      "width" : 163,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 132,
+      "y" : 345
+    },
+    "connectors" : [ {
+      "edgeId" : 18,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 257,
+          "y" : 374
+        },
+        "to" : {
+          "x" : 290,
+          "y" : 375
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 21,
+    "reactomeId" : 6782330,
+    "displayName" : "CTU1:CTU2:URM1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 488,
+      "y" : 401
+    },
+    "minX" : 400,
+    "maxX" : 552,
+    "minY" : 377,
+    "maxY" : 413,
+    "prop" : {
+      "x" : 424,
+      "y" : 390,
+      "width" : 128,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 431,
+      "y" : 392
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 18,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 445,
+          "y" : 387
+        },
+        "to" : {
+          "x" : 400,
+          "y" : 377
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 437,
+          "y" : 389
+        },
+        "b" : {
+          "x" : 445,
+          "y" : 387
+        },
+        "c" : {
+          "x" : 439,
+          "y" : 382
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 22,
+    "reactomeId" : 6782249,
+    "displayName" : "tRNA(Gln,Glu,Lys) containing 2-thioU-34",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 565,
+      "y" : 361
+    },
+    "minX" : 400,
+    "maxX" : 695,
+    "minY" : 347,
+    "maxY" : 378,
+    "prop" : {
+      "x" : 435,
+      "y" : 347,
+      "width" : 260,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 444,
+      "y" : 351
+    },
+    "connectors" : [ {
+      "edgeId" : 18,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 429,
+          "y" : 373
+        },
+        "to" : {
+          "x" : 400,
+          "y" : 377
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 423,
+          "y" : 378
+        },
+        "b" : {
+          "x" : 429,
+          "y" : 373
+        },
+        "c" : {
+          "x" : 422,
+          "y" : 370
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 25,
+    "reactomeId" : 6782279,
+    "displayName" : "tRNA containing U",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 170,
+      "y" : 1100
+    },
+    "minX" : 98,
+    "maxX" : 271,
+    "minY" : 1086,
+    "maxY" : 1144,
+    "prop" : {
+      "x" : 98,
+      "y" : 1086,
+      "width" : 145,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 115,
+      "y" : 1090
+    },
+    "connectors" : [ {
+      "edgeId" : 23,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 203,
+          "y" : 1118
+        },
+        "to" : {
+          "x" : 271,
+          "y" : 1144
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 27,
+    "reactomeId" : 6782353,
+    "displayName" : "tRNA containing dihydroU",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 481,
+      "y" : 1103
+    },
+    "minX" : 359,
+    "maxX" : 573,
+    "minY" : 1087,
+    "maxY" : 1146,
+    "prop" : {
+      "x" : 390,
+      "y" : 1087,
+      "width" : 183,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 404,
+      "y" : 1092
+    },
+    "connectors" : [ {
+      "edgeId" : 23,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 435,
+          "y" : 1122
+        },
+        "to" : {
+          "x" : 359,
+          "y" : 1146
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 430,
+          "y" : 1128
+        },
+        "b" : {
+          "x" : 435,
+          "y" : 1122
+        },
+        "c" : {
+          "x" : 427,
+          "y" : 1120
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 28,
+    "reactomeId" : 6782346,
+    "displayName" : "DUS2:EPRS",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 315,
+      "y" : 1088
+    },
+    "minX" : 266,
+    "maxX" : 364,
+    "minY" : 1076,
+    "maxY" : 1135,
+    "prop" : {
+      "x" : 266,
+      "y" : 1076,
+      "width" : 98,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 279,
+      "y" : 1079
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 23,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 315,
+          "y" : 1103
+        },
+        "to" : {
+          "x" : 315,
+          "y" : 1127
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 315,
+          "y" : 1131
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 30,
+    "reactomeId" : 6784474,
+    "displayName" : "tRNA containing A-37",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 191,
+      "y" : 503
+    },
+    "minX" : 112,
+    "maxX" : 314,
+    "minY" : 489,
+    "maxY" : 527,
+    "prop" : {
+      "x" : 112,
+      "y" : 489,
+      "width" : 159,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 124,
+      "y" : 492
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 262,
+          "y" : 520
+        },
+        "to" : {
+          "x" : 314,
+          "y" : 527
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 31,
+    "reactomeId" : 6784485,
+    "displayName" : "L-threonylcarbamoyladenylate",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 179,
+      "y" : 552
+    },
+    "minX" : 65,
+    "maxX" : 314,
+    "minY" : 527,
+    "maxY" : 571,
+    "prop" : {
+      "x" : 65,
+      "y" : 533,
+      "width" : 228,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 87,
+      "y" : 541
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 288,
+          "y" : 538
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 281,
+          "y" : 530
+        },
+        "to" : {
+          "x" : 314,
+          "y" : 527
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 32,
+    "reactomeId" : 6784468,
+    "displayName" : "tRNA containing threonylcarbamoylA-37",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 540,
+      "y" : 501
+    },
+    "minX" : 371,
+    "maxX" : 675,
+    "minY" : 487,
+    "maxY" : 526,
+    "prop" : {
+      "x" : 405,
+      "y" : 487,
+      "width" : 270,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 420,
+      "y" : 491
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 441,
+          "y" : 519
+        },
+        "to" : {
+          "x" : 371,
+          "y" : 526
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 435,
+          "y" : 524
+        },
+        "b" : {
+          "x" : 441,
+          "y" : 519
+        },
+        "c" : {
+          "x" : 434,
+          "y" : 516
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 33,
+    "reactomeId" : 164121,
+    "displayName" : "AMP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 464,
+      "y" : 547
+    },
+    "minX" : 371,
+    "maxX" : 499,
+    "minY" : 526,
+    "maxY" : 563,
+    "prop" : {
+      "x" : 431,
+      "y" : 532,
+      "width" : 67,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 448,
+      "y" : 537
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 493,
+          "y" : 537
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 428,
+          "y" : 539
+        },
+        "to" : {
+          "x" : 371,
+          "y" : 526
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 420,
+          "y" : 541
+        },
+        "b" : {
+          "x" : 428,
+          "y" : 539
+        },
+        "c" : {
+          "x" : 422,
+          "y" : 534
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 34,
+    "reactomeId" : 6784495,
+    "displayName" : "EKC complex",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 342,
+      "y" : 463
+    },
+    "minX" : 280,
+    "maxX" : 405,
+    "minY" : 450,
+    "maxY" : 517,
+    "prop" : {
+      "x" : 280,
+      "y" : 450,
+      "width" : 125,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 300,
+      "y" : 456
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 29,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 342,
+          "y" : 480
+        },
+        "to" : {
+          "x" : 343,
+          "y" : 509
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 343,
+          "y" : 513
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 39,
+    "reactomeId" : 6782309,
+    "displayName" : "tRNA(Phe) containing G-46",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 801,
+      "y" : 86
+    },
+    "minX" : 704,
+    "maxX" : 935,
+    "minY" : 71,
+    "maxY" : 118,
+    "prop" : {
+      "x" : 704,
+      "y" : 71,
+      "width" : 194,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 719,
+      "y" : 75
+    },
+    "connectors" : [ {
+      "edgeId" : 38,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 863,
+          "y" : 104
+        },
+        "to" : {
+          "x" : 935,
+          "y" : 118
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 40,
+    "reactomeId" : 77087,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 845,
+      "y" : 134
+    },
+    "minX" : 806,
+    "maxX" : 935,
+    "minY" : 117,
+    "maxY" : 150,
+    "prop" : {
+      "x" : 806,
+      "y" : 118,
+      "width" : 78,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 819,
+      "y" : 123
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 879,
+          "y" : 123
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 38,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 887,
+          "y" : 127
+        },
+        "to" : {
+          "x" : 935,
+          "y" : 118
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 41,
+    "reactomeId" : 77502,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1110,
+      "y" : 138
+    },
+    "minX" : 997,
+    "maxX" : 1150,
+    "minY" : 118,
+    "maxY" : 153,
+    "prop" : {
+      "x" : 1072,
+      "y" : 123,
+      "width" : 77,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 1084,
+      "y" : 127
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1144,
+          "y" : 128
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 38,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1069,
+          "y" : 131
+        },
+        "to" : {
+          "x" : 997,
+          "y" : 118
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1061,
+          "y" : 134
+        },
+        "b" : {
+          "x" : 1069,
+          "y" : 131
+        },
+        "c" : {
+          "x" : 1063,
+          "y" : 126
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 42,
+    "reactomeId" : 6782293,
+    "displayName" : "tRNA(Phe) containing 7-methylG-46",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1151,
+      "y" : 86
+    },
+    "minX" : 997,
+    "maxX" : 1273,
+    "minY" : 72,
+    "maxY" : 118,
+    "prop" : {
+      "x" : 1029,
+      "y" : 72,
+      "width" : 244,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 1042,
+      "y" : 76
+    },
+    "connectors" : [ {
+      "edgeId" : 38,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1081,
+          "y" : 104
+        },
+        "to" : {
+          "x" : 997,
+          "y" : 118
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1075,
+          "y" : 109
+        },
+        "b" : {
+          "x" : 1081,
+          "y" : 104
+        },
+        "c" : {
+          "x" : 1074,
+          "y" : 101
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 43,
+    "reactomeId" : 6782313,
+    "displayName" : "METTL1:WDR4",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 963,
+      "y" : 58
+    },
+    "minX" : 908,
+    "maxX" : 1019,
+    "minY" : 45,
+    "maxY" : 109,
+    "prop" : {
+      "x" : 908,
+      "y" : 45,
+      "width" : 111,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 916,
+      "y" : 51
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 38,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 963,
+          "y" : 75
+        },
+        "to" : {
+          "x" : 964,
+          "y" : 101
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 964,
+          "y" : 105
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 45,
+    "reactomeId" : 6782371,
+    "displayName" : "unspliced tRNA(Leu)(CAA) containing C-34,48",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 152,
+      "y" : 689
+    },
+    "minX" : 57,
+    "maxX" : 306,
+    "minY" : 669,
+    "maxY" : 710,
+    "prop" : {
+      "x" : 57,
+      "y" : 669,
+      "width" : 191,
+      "height" : 41
+    },
+    "textPosition" : {
+      "x" : 72,
+      "y" : 672
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 251,
+          "y" : 689
+        },
+        "to" : {
+          "x" : 306,
+          "y" : 690
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 46,
+    "reactomeId" : 6782369,
+    "displayName" : "unspliced tRNA(Leu)(CAA) containing 5mC-34,48",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 576,
+      "y" : 688
+    },
+    "minX" : 399,
+    "maxX" : 676,
+    "minY" : 667,
+    "maxY" : 709,
+    "prop" : {
+      "x" : 476,
+      "y" : 667,
+      "width" : 200,
+      "height" : 42
+    },
+    "textPosition" : {
+      "x" : 496,
+      "y" : 670
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 473,
+          "y" : 689
+        },
+        "to" : {
+          "x" : 399,
+          "y" : 691
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 466,
+          "y" : 693
+        },
+        "b" : {
+          "x" : 473,
+          "y" : 689
+        },
+        "c" : {
+          "x" : 466,
+          "y" : 685
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 47,
+    "reactomeId" : 6782382,
+    "displayName" : "NSUN2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 356,
+      "y" : 642
+    },
+    "minX" : 316,
+    "maxX" : 402,
+    "minY" : 621,
+    "maxY" : 792,
+    "prop" : {
+      "x" : 316,
+      "y" : 627,
+      "width" : 80,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 332,
+      "y" : 631
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 396,
+          "y" : 627
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 350,
+          "y" : 660
+        },
+        "to" : {
+          "x" : 344,
+          "y" : 677
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 342,
+          "y" : 681
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 53,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 356,
+          "y" : 660
+        },
+        "to" : {
+          "x" : 358,
+          "y" : 731
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 358,
+          "y" : 735
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 56,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 358,
+          "y" : 660
+        },
+        "to" : {
+          "x" : 379,
+          "y" : 784
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 380,
+          "y" : 788
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 48,
+    "reactomeId" : 77087,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 258,
+      "y" : 644
+    },
+    "minX" : 219,
+    "maxX" : 306,
+    "minY" : 626,
+    "maxY" : 801,
+    "prop" : {
+      "x" : 219,
+      "y" : 627,
+      "width" : 78,
+      "height" : 35
+    },
+    "textPosition" : {
+      "x" : 232,
+      "y" : 634
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 292,
+          "y" : 632
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 276,
+          "y" : 665
+        },
+        "to" : {
+          "x" : 306,
+          "y" : 690
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 285,
+            "y" : 671
+          },
+          "b" : {
+            "x" : 297,
+            "y" : 683
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    }, {
+      "edgeId" : 53,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 265,
+          "y" : 665
+        },
+        "to" : {
+          "x" : 305,
+          "y" : 747
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 279,
+            "y" : 700
+          },
+          "b" : {
+            "x" : 291,
+            "y" : 712
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    }, {
+      "edgeId" : 56,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 259,
+          "y" : 665
+        },
+        "to" : {
+          "x" : 274,
+          "y" : 801
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 260,
+            "y" : 727
+          },
+          "b" : {
+            "x" : 272,
+            "y" : 739
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 49,
+    "reactomeId" : 77502,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 475,
+      "y" : 643
+    },
+    "minX" : 398,
+    "maxX" : 515,
+    "minY" : 627,
+    "maxY" : 801,
+    "prop" : {
+      "x" : 437,
+      "y" : 628,
+      "width" : 77,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 449,
+      "y" : 632
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 509,
+          "y" : 633
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 44,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 451,
+          "y" : 661
+        },
+        "to" : {
+          "x" : 399,
+          "y" : 691
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 419,
+            "y" : 670
+          },
+          "b" : {
+            "x" : 431,
+            "y" : 682
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 447,
+          "y" : 668
+        },
+        "b" : {
+          "x" : 451,
+          "y" : 661
+        },
+        "c" : {
+          "x" : 443,
+          "y" : 661
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 53,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 463,
+          "y" : 661
+        },
+        "to" : {
+          "x" : 398,
+          "y" : 747
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 424,
+            "y" : 698
+          },
+          "b" : {
+            "x" : 436,
+            "y" : 710
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 462,
+          "y" : 669
+        },
+        "b" : {
+          "x" : 463,
+          "y" : 661
+        },
+        "c" : {
+          "x" : 456,
+          "y" : 664
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 56,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 470,
+          "y" : 661
+        },
+        "to" : {
+          "x" : 428,
+          "y" : 801
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 443,
+            "y" : 725
+          },
+          "b" : {
+            "x" : 455,
+            "y" : 737
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 472,
+          "y" : 669
+        },
+        "b" : {
+          "x" : 470,
+          "y" : 661
+        },
+        "c" : {
+          "x" : 464,
+          "y" : 666
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 54,
+    "reactomeId" : 6785425,
+    "displayName" : "tRNA(Gly)(GCC) containing C-40,C-48,C-49,C-50",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 152,
+      "y" : 749
+    },
+    "minX" : 55,
+    "maxX" : 305,
+    "minY" : 730,
+    "maxY" : 768,
+    "prop" : {
+      "x" : 55,
+      "y" : 730,
+      "width" : 194,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 63,
+      "y" : 731
+    },
+    "connectors" : [ {
+      "edgeId" : 53,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 252,
+          "y" : 747
+        },
+        "to" : {
+          "x" : 305,
+          "y" : 747
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 55,
+    "reactomeId" : 6785415,
+    "displayName" : "tRNA(Gly)(GCC) containing 5mC-40,48,49,50",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 576,
+      "y" : 749
+    },
+    "minX" : 398,
+    "maxX" : 677,
+    "minY" : 729,
+    "maxY" : 769,
+    "prop" : {
+      "x" : 476,
+      "y" : 729,
+      "width" : 201,
+      "height" : 40
+    },
+    "textPosition" : {
+      "x" : 478,
+      "y" : 731
+    },
+    "connectors" : [ {
+      "edgeId" : 53,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 473,
+          "y" : 747
+        },
+        "to" : {
+          "x" : 398,
+          "y" : 747
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 466,
+          "y" : 751
+        },
+        "b" : {
+          "x" : 473,
+          "y" : 747
+        },
+        "c" : {
+          "x" : 466,
+          "y" : 743
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 57,
+    "reactomeId" : 6785426,
+    "displayName" : "tRNA(Asp)(GUC) containing C-48,C-49",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 168,
+      "y" : 803
+    },
+    "minX" : 95,
+    "maxX" : 274,
+    "minY" : 785,
+    "maxY" : 821,
+    "prop" : {
+      "x" : 95,
+      "y" : 785,
+      "width" : 147,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 100,
+      "y" : 785
+    },
+    "connectors" : [ {
+      "edgeId" : 56,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 245,
+          "y" : 801
+        },
+        "to" : {
+          "x" : 274,
+          "y" : 801
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 58,
+    "reactomeId" : 6785430,
+    "displayName" : "tRNA(Asp)(GUC) containing 5-mC-48,49",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 578,
+      "y" : 805
+    },
+    "minX" : 428,
+    "maxX" : 674,
+    "minY" : 785,
+    "maxY" : 825,
+    "prop" : {
+      "x" : 483,
+      "y" : 785,
+      "width" : 191,
+      "height" : 40
+    },
+    "textPosition" : {
+      "x" : 488,
+      "y" : 787
+    },
+    "connectors" : [ {
+      "edgeId" : 56,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 480,
+          "y" : 802
+        },
+        "to" : {
+          "x" : 428,
+          "y" : 801
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 473,
+          "y" : 806
+        },
+        "b" : {
+          "x" : 480,
+          "y" : 802
+        },
+        "c" : {
+          "x" : 473,
+          "y" : 798
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 62,
+    "reactomeId" : 6782373,
+    "displayName" : "PUS1-2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 965,
+      "y" : 182
+    },
+    "minX" : 929,
+    "maxX" : 1008,
+    "minY" : 164,
+    "maxY" : 223,
+    "prop" : {
+      "x" : 929,
+      "y" : 170,
+      "width" : 73,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 939,
+      "y" : 172
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1002,
+          "y" : 170
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 59,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 965,
+          "y" : 198
+        },
+        "to" : {
+          "x" : 966,
+          "y" : 215
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 966,
+          "y" : 219
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 64,
+    "reactomeId" : 6782425,
+    "displayName" : "tRNA(Tyr) containing G-34",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 816,
+      "y" : 955
+    },
+    "minX" : 727,
+    "maxX" : 972,
+    "minY" : 941,
+    "maxY" : 988,
+    "prop" : {
+      "x" : 727,
+      "y" : 941,
+      "width" : 179,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 735,
+      "y" : 945
+    },
+    "connectors" : [ {
+      "edgeId" : 63,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 884,
+          "y" : 973
+        },
+        "to" : {
+          "x" : 972,
+          "y" : 988
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 65,
+    "reactomeId" : 6782431,
+    "displayName" : "queuine",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 881,
+      "y" : 1006
+    },
+    "minX" : 833,
+    "maxX" : 972,
+    "minY" : 988,
+    "maxY" : 1024,
+    "prop" : {
+      "x" : 833,
+      "y" : 989,
+      "width" : 96,
+      "height" : 35
+    },
+    "textPosition" : {
+      "x" : 854,
+      "y" : 996
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 924,
+          "y" : 994
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 63,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 932,
+          "y" : 996
+        },
+        "to" : {
+          "x" : 972,
+          "y" : 988
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 66,
+    "reactomeId" : 83956,
+    "displayName" : "Gua",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1146,
+      "y" : 1006
+    },
+    "minX" : 1040,
+    "maxX" : 1184,
+    "minY" : 989,
+    "maxY" : 1022,
+    "prop" : {
+      "x" : 1109,
+      "y" : 990,
+      "width" : 74,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 1130,
+      "y" : 995
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1178,
+          "y" : 995
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 63,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1106,
+          "y" : 1000
+        },
+        "to" : {
+          "x" : 1040,
+          "y" : 990
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1099,
+          "y" : 1003
+        },
+        "b" : {
+          "x" : 1106,
+          "y" : 1000
+        },
+        "c" : {
+          "x" : 1100,
+          "y" : 995
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 67,
+    "reactomeId" : 6782458,
+    "displayName" : "tRNA(Tyr) containing Q-34",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1190,
+      "y" : 956
+    },
+    "minX" : 1040,
+    "maxX" : 1279,
+    "minY" : 942,
+    "maxY" : 990,
+    "prop" : {
+      "x" : 1102,
+      "y" : 942,
+      "width" : 177,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 1109,
+      "y" : 946
+    },
+    "connectors" : [ {
+      "edgeId" : 63,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1126,
+          "y" : 974
+        },
+        "to" : {
+          "x" : 1040,
+          "y" : 990
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1120,
+          "y" : 979
+        },
+        "b" : {
+          "x" : 1126,
+          "y" : 974
+        },
+        "c" : {
+          "x" : 1118,
+          "y" : 971
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 68,
+    "reactomeId" : 6782406,
+    "displayName" : "QTRT1:QTRTD1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 999,
+      "y" : 943
+    },
+    "minX" : 944,
+    "maxX" : 1054,
+    "minY" : 930,
+    "maxY" : 980,
+    "prop" : {
+      "x" : 944,
+      "y" : 930,
+      "width" : 110,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 947,
+      "y" : 935
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 63,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1000,
+          "y" : 959
+        },
+        "to" : {
+          "x" : 1001,
+          "y" : 972
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1002,
+          "y" : 976
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 72,
+    "reactomeId" : 6782861,
+    "displayName" : "Synthesis of wybutosine at G37 of tRNA(Phe)",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 1018,
+      "y" : 853
+    },
+    "minX" : 820,
+    "maxX" : 1216,
+    "minY" : 819,
+    "maxY" : 887,
+    "prop" : {
+      "x" : 820,
+      "y" : 819,
+      "width" : 396,
+      "height" : 68
+    },
+    "textPosition" : {
+      "x" : 882,
+      "y" : 838
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 74,
+    "reactomeId" : 6782393,
+    "displayName" : "tRNA(Asp) containing C-38",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 823,
+      "y" : 402
+    },
+    "minX" : 727,
+    "maxX" : 947,
+    "minY" : 387,
+    "maxY" : 432,
+    "prop" : {
+      "x" : 727,
+      "y" : 387,
+      "width" : 192,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 741,
+      "y" : 392
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 887,
+          "y" : 421
+        },
+        "to" : {
+          "x" : 947,
+          "y" : 432
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 75,
+    "reactomeId" : 6782430,
+    "displayName" : "tRNA(Asp) containing 5-mC-38",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1145,
+      "y" : 406
+    },
+    "minX" : 1006,
+    "maxX" : 1258,
+    "minY" : 390,
+    "maxY" : 433,
+    "prop" : {
+      "x" : 1032,
+      "y" : 390,
+      "width" : 226,
+      "height" : 33
+    },
+    "textPosition" : {
+      "x" : 1050,
+      "y" : 396
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1060,
+          "y" : 426
+        },
+        "to" : {
+          "x" : 1006,
+          "y" : 433
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1054,
+          "y" : 431
+        },
+        "b" : {
+          "x" : 1060,
+          "y" : 426
+        },
+        "c" : {
+          "x" : 1053,
+          "y" : 423
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 76,
+    "reactomeId" : 6782441,
+    "displayName" : "TRDMT1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 978,
+      "y" : 386
+    },
+    "minX" : 942,
+    "maxX" : 1020,
+    "minY" : 365,
+    "maxY" : 425,
+    "prop" : {
+      "x" : 942,
+      "y" : 371,
+      "width" : 72,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 948,
+      "y" : 375
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1014,
+          "y" : 371
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 978,
+          "y" : 404
+        },
+        "to" : {
+          "x" : 978,
+          "y" : 417
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 978,
+          "y" : 421
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 78,
+    "reactomeId" : 77087,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 870,
+      "y" : 454
+    },
+    "minX" : 831,
+    "maxX" : 947,
+    "minY" : 432,
+    "maxY" : 472,
+    "prop" : {
+      "x" : 831,
+      "y" : 437,
+      "width" : 78,
+      "height" : 35
+    },
+    "textPosition" : {
+      "x" : 844,
+      "y" : 444
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 904,
+          "y" : 442
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 912,
+          "y" : 442
+        },
+        "to" : {
+          "x" : 947,
+          "y" : 432
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 80,
+    "reactomeId" : 77502,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1103,
+      "y" : 454
+    },
+    "minX" : 1006,
+    "maxX" : 1143,
+    "minY" : 433,
+    "maxY" : 469,
+    "prop" : {
+      "x" : 1065,
+      "y" : 439,
+      "width" : 77,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 1077,
+      "y" : 443
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1137,
+          "y" : 444
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 73,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1062,
+          "y" : 445
+        },
+        "to" : {
+          "x" : 1006,
+          "y" : 433
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1054,
+          "y" : 447
+        },
+        "b" : {
+          "x" : 1062,
+          "y" : 445
+        },
+        "c" : {
+          "x" : 1056,
+          "y" : 440
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 82,
+    "reactomeId" : 29438,
+    "displayName" : "GTP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 899,
+      "y" : 1248
+    },
+    "minX" : 864,
+    "maxX" : 959,
+    "minY" : 1224,
+    "maxY" : 1264,
+    "prop" : {
+      "x" : 864,
+      "y" : 1232,
+      "width" : 71,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 883,
+      "y" : 1237
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 930,
+          "y" : 1237
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 81,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 938,
+          "y" : 1233
+        },
+        "to" : {
+          "x" : 959,
+          "y" : 1224
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 83,
+    "reactomeId" : 379758,
+    "displayName" : "tRNA(His)",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 866,
+      "y" : 1185
+    },
+    "minX" : 820,
+    "maxX" : 959,
+    "minY" : 1171,
+    "maxY" : 1224,
+    "prop" : {
+      "x" : 820,
+      "y" : 1171,
+      "width" : 92,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 834,
+      "y" : 1174
+    },
+    "connectors" : [ {
+      "edgeId" : 81,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 899,
+          "y" : 1202
+        },
+        "to" : {
+          "x" : 959,
+          "y" : 1224
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 84,
+    "reactomeId" : 6782455,
+    "displayName" : "5'-pppG-p-tRNA(His)",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1177,
+      "y" : 1186
+    },
+    "minX" : 1062,
+    "maxX" : 1255,
+    "minY" : 1170,
+    "maxY" : 1222,
+    "prop" : {
+      "x" : 1100,
+      "y" : 1170,
+      "width" : 155,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 1109,
+      "y" : 1175
+    },
+    "connectors" : [ {
+      "edgeId" : 81,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1125,
+          "y" : 1205
+        },
+        "to" : {
+          "x" : 1062,
+          "y" : 1222
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1119,
+          "y" : 1211
+        },
+        "b" : {
+          "x" : 1125,
+          "y" : 1205
+        },
+        "c" : {
+          "x" : 1117,
+          "y" : 1203
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 85,
+    "reactomeId" : 6782438,
+    "displayName" : "THG1L",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 1013,
+      "y" : 1173
+    },
+    "minX" : 977,
+    "maxX" : 1055,
+    "minY" : 1154,
+    "maxY" : 1216,
+    "prop" : {
+      "x" : 977,
+      "y" : 1160,
+      "width" : 72,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 989,
+      "y" : 1162
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1049,
+          "y" : 1160
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 81,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 1012,
+          "y" : 1189
+        },
+        "to" : {
+          "x" : 1011,
+          "y" : 1208
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 1011,
+          "y" : 1212
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 92,
+    "reactomeId" : 113592,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 837,
+      "y" : 1225
+    },
+    "minX" : 807,
+    "maxX" : 959,
+    "minY" : 1207,
+    "maxY" : 1242,
+    "prop" : {
+      "x" : 807,
+      "y" : 1208,
+      "width" : 61,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 822,
+      "y" : 1214
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 863,
+          "y" : 1213
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 81,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 871,
+          "y" : 1224
+        },
+        "to" : {
+          "x" : 959,
+          "y" : 1224
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 93,
+    "reactomeId" : 111294,
+    "displayName" : "PPi",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1146,
+      "y" : 1237
+    },
+    "minX" : 1062,
+    "maxX" : 1171,
+    "minY" : 1219,
+    "maxY" : 1254,
+    "prop" : {
+      "x" : 1123,
+      "y" : 1220,
+      "width" : 47,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 1134,
+      "y" : 1226
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1165,
+          "y" : 1225
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 81,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1120,
+          "y" : 1232
+        },
+        "to" : {
+          "x" : 1062,
+          "y" : 1222
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1112,
+          "y" : 1235
+        },
+        "b" : {
+          "x" : 1120,
+          "y" : 1232
+        },
+        "c" : {
+          "x" : 1114,
+          "y" : 1227
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 95,
+    "reactomeId" : 6784467,
+    "displayName" : "tRNA(Ser) containing A-37",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 770,
+      "y" : 1076
+    },
+    "minX" : 673,
+    "maxX" : 899,
+    "minY" : 1063,
+    "maxY" : 1111,
+    "prop" : {
+      "x" : 673,
+      "y" : 1063,
+      "width" : 195,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 690,
+      "y" : 1065
+    },
+    "connectors" : [ {
+      "edgeId" : 94,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 817,
+          "y" : 1092
+        },
+        "to" : {
+          "x" : 899,
+          "y" : 1111
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 97,
+    "reactomeId" : 6784451,
+    "displayName" : "tRNA(Ser) containing isopentenylA-37",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1171,
+      "y" : 1075
+    },
+    "minX" : 1006,
+    "maxX" : 1298,
+    "minY" : 1061,
+    "maxY" : 1110,
+    "prop" : {
+      "x" : 1045,
+      "y" : 1061,
+      "width" : 253,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 1059,
+      "y" : 1064
+    },
+    "connectors" : [ {
+      "edgeId" : 94,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1105,
+          "y" : 1092
+        },
+        "to" : {
+          "x" : 1006,
+          "y" : 1110
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1099,
+          "y" : 1097
+        },
+        "b" : {
+          "x" : 1105,
+          "y" : 1092
+        },
+        "c" : {
+          "x" : 1097,
+          "y" : 1089
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 98,
+    "reactomeId" : 6784483,
+    "displayName" : "TRIT1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 953,
+      "y" : 1068
+    },
+    "minX" : 923,
+    "maxX" : 989,
+    "minY" : 1051,
+    "maxY" : 1102,
+    "prop" : {
+      "x" : 923,
+      "y" : 1057,
+      "width" : 60,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 931,
+      "y" : 1058
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 983,
+          "y" : 1057
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 94,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 954,
+          "y" : 1083
+        },
+        "to" : {
+          "x" : 956,
+          "y" : 1094
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 957,
+          "y" : 1098
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 99,
+    "reactomeId" : 111294,
+    "displayName" : "PPi",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1104,
+      "y" : 1123
+    },
+    "minX" : 1006,
+    "maxX" : 1129,
+    "minY" : 1105,
+    "maxY" : 1140,
+    "prop" : {
+      "x" : 1081,
+      "y" : 1106,
+      "width" : 47,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 1092,
+      "y" : 1112
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1123,
+          "y" : 1111
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 94,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1078,
+          "y" : 1119
+        },
+        "to" : {
+          "x" : 1006,
+          "y" : 1110
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1071,
+          "y" : 1122
+        },
+        "b" : {
+          "x" : 1078,
+          "y" : 1119
+        },
+        "c" : {
+          "x" : 1072,
+          "y" : 1114
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 101,
+    "reactomeId" : 6782418,
+    "displayName" : "tRNA(Tyr) containing G-26",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 813,
+      "y" : 552
+    },
+    "minX" : 720,
+    "maxX" : 926,
+    "minY" : 537,
+    "maxY" : 589,
+    "prop" : {
+      "x" : 720,
+      "y" : 537,
+      "width" : 187,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 732,
+      "y" : 542
+    },
+    "connectors" : [ {
+      "edgeId" : 100,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 860,
+          "y" : 571
+        },
+        "to" : {
+          "x" : 926,
+          "y" : 589
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 102,
+    "reactomeId" : 6782408,
+    "displayName" : "tRNA(Tyr) containing 2,2-dimethylG-26",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1137,
+      "y" : 551
+    },
+    "minX" : 981,
+    "maxX" : 1266,
+    "minY" : 536,
+    "maxY" : 589,
+    "prop" : {
+      "x" : 1009,
+      "y" : 536,
+      "width" : 257,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 1018,
+      "y" : 540
+    },
+    "connectors" : [ {
+      "edgeId" : 100,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1075,
+          "y" : 569
+        },
+        "to" : {
+          "x" : 981,
+          "y" : 589
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1069,
+          "y" : 574
+        },
+        "b" : {
+          "x" : 1075,
+          "y" : 569
+        },
+        "c" : {
+          "x" : 1067,
+          "y" : 567
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 103,
+    "reactomeId" : 6782450,
+    "displayName" : "TRMT1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 954,
+      "y" : 538
+    },
+    "minX" : 923,
+    "maxX" : 992,
+    "minY" : 519,
+    "maxY" : 580,
+    "prop" : {
+      "x" : 923,
+      "y" : 525,
+      "width" : 63,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 929,
+      "y" : 528
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 986,
+          "y" : 525
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 100,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 954,
+          "y" : 555
+        },
+        "to" : {
+          "x" : 954,
+          "y" : 572
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 954,
+          "y" : 576
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 105,
+    "reactomeId" : 77502,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1093,
+      "y" : 602
+    },
+    "minX" : 981,
+    "maxX" : 1133,
+    "minY" : 586,
+    "maxY" : 617,
+    "prop" : {
+      "x" : 1055,
+      "y" : 587,
+      "width" : 77,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 1067,
+      "y" : 591
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1127,
+          "y" : 592
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 100,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1052,
+          "y" : 597
+        },
+        "to" : {
+          "x" : 981,
+          "y" : 589
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 1010,
+            "y" : 587
+          },
+          "b" : {
+            "x" : 1022,
+            "y" : 599
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1045,
+          "y" : 600
+        },
+        "b" : {
+          "x" : 1052,
+          "y" : 597
+        },
+        "c" : {
+          "x" : 1046,
+          "y" : 592
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 107,
+    "reactomeId" : 77087,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 830,
+      "y" : 604
+    },
+    "minX" : 791,
+    "maxX" : 926,
+    "minY" : 586,
+    "maxY" : 622,
+    "prop" : {
+      "x" : 791,
+      "y" : 587,
+      "width" : 78,
+      "height" : 35
+    },
+    "textPosition" : {
+      "x" : 804,
+      "y" : 594
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 864,
+          "y" : 592
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 100,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 872,
+          "y" : 597
+        },
+        "to" : {
+          "x" : 926,
+          "y" : 589
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 893,
+            "y" : 587
+          },
+          "b" : {
+            "x" : 905,
+            "y" : 599
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 109,
+    "reactomeId" : 6783486,
+    "displayName" : "tRNA(Met) containing A-58",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 809,
+      "y" : 720
+    },
+    "minX" : 713,
+    "maxX" : 946,
+    "minY" : 706,
+    "maxY" : 741,
+    "prop" : {
+      "x" : 713,
+      "y" : 706,
+      "width" : 193,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 728,
+      "y" : 710
+    },
+    "connectors" : [ {
+      "edgeId" : 108,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 909,
+          "y" : 734
+        },
+        "to" : {
+          "x" : 946,
+          "y" : 741
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 110,
+    "reactomeId" : 6783466,
+    "displayName" : "tRNA(Met) containing 1-methylA-58",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1156,
+      "y" : 723
+    },
+    "minX" : 995,
+    "maxX" : 1273,
+    "minY" : 709,
+    "maxY" : 742,
+    "prop" : {
+      "x" : 1039,
+      "y" : 709,
+      "width" : 234,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 1048,
+      "y" : 713
+    },
+    "connectors" : [ {
+      "edgeId" : 108,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1036,
+          "y" : 736
+        },
+        "to" : {
+          "x" : 995,
+          "y" : 742
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1030,
+          "y" : 741
+        },
+        "b" : {
+          "x" : 1036,
+          "y" : 736
+        },
+        "c" : {
+          "x" : 1029,
+          "y" : 733
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 111,
+    "reactomeId" : 6783454,
+    "displayName" : "TRMT6:TRMT61A",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 969,
+      "y" : 681
+    },
+    "minX" : 910,
+    "maxX" : 1028,
+    "minY" : 667,
+    "maxY" : 733,
+    "prop" : {
+      "x" : 910,
+      "y" : 667,
+      "width" : 118,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 913,
+      "y" : 674
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 108,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 969,
+          "y" : 698
+        },
+        "to" : {
+          "x" : 969,
+          "y" : 725
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 969,
+          "y" : 729
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 116,
+    "reactomeId" : 77502,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1091,
+      "y" : 767
+    },
+    "minX" : 995,
+    "maxX" : 1131,
+    "minY" : 742,
+    "maxY" : 782,
+    "prop" : {
+      "x" : 1053,
+      "y" : 752,
+      "width" : 77,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 1065,
+      "y" : 756
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1125,
+          "y" : 757
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 108,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1050,
+          "y" : 756
+        },
+        "to" : {
+          "x" : 995,
+          "y" : 742
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1042,
+          "y" : 758
+        },
+        "b" : {
+          "x" : 1050,
+          "y" : 756
+        },
+        "c" : {
+          "x" : 1044,
+          "y" : 750
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 118,
+    "reactomeId" : 77087,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 869,
+      "y" : 767
+    },
+    "minX" : 830,
+    "maxX" : 946,
+    "minY" : 741,
+    "maxY" : 783,
+    "prop" : {
+      "x" : 830,
+      "y" : 751,
+      "width" : 78,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 843,
+      "y" : 756
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 903,
+          "y" : 756
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 108,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 911,
+          "y" : 753
+        },
+        "to" : {
+          "x" : 946,
+          "y" : 741
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 122,
+    "reactomeId" : 6786515,
+    "displayName" : "PUS7",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 965,
+      "y" : 275
+    },
+    "minX" : 940,
+    "maxX" : 996,
+    "minY" : 257,
+    "maxY" : 310,
+    "prop" : {
+      "x" : 940,
+      "y" : 263,
+      "width" : 50,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 946,
+      "y" : 265
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 990,
+          "y" : 263
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 119,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 965,
+          "y" : 291
+        },
+        "to" : {
+          "x" : 965,
+          "y" : 302
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 966,
+          "y" : 306
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 124,
+    "reactomeId" : 6786556,
+    "displayName" : "tRNA(Arg,Glu) containing 5-carboxymethylU-34",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 147,
+      "y" : 979
+    },
+    "minX" : 60,
+    "maxX" : 276,
+    "minY" : 960,
+    "maxY" : 1007,
+    "prop" : {
+      "x" : 60,
+      "y" : 960,
+      "width" : 174,
+      "height" : 39
+    },
+    "textPosition" : {
+      "x" : 62,
+      "y" : 962
+    },
+    "connectors" : [ {
+      "edgeId" : 123,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 240,
+          "y" : 997
+        },
+        "to" : {
+          "x" : 276,
+          "y" : 1007
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 125,
+    "reactomeId" : 71284,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 173,
+      "y" : 1028
+    },
+    "minX" : 133,
+    "maxX" : 276,
+    "minY" : 1007,
+    "maxY" : 1041,
+    "prop" : {
+      "x" : 133,
+      "y" : 1015,
+      "width" : 81,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 147,
+      "y" : 1017
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 209,
+          "y" : 1020
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 123,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 217,
+          "y" : 1019
+        },
+        "to" : {
+          "x" : 276,
+          "y" : 1007
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 126,
+    "reactomeId" : 71285,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 463,
+      "y" : 1030
+    },
+    "minX" : 362,
+    "maxX" : 507,
+    "minY" : 1008,
+    "maxY" : 1044,
+    "prop" : {
+      "x" : 420,
+      "y" : 1016,
+      "width" : 86,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 437,
+      "y" : 1019
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 501,
+          "y" : 1021
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 123,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 417,
+          "y" : 1020
+        },
+        "to" : {
+          "x" : 362,
+          "y" : 1008
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 409,
+          "y" : 1022
+        },
+        "b" : {
+          "x" : 417,
+          "y" : 1020
+        },
+        "c" : {
+          "x" : 411,
+          "y" : 1015
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 127,
+    "reactomeId" : 6786617,
+    "displayName" : "tRNA(Arg,Glu) containing 5-methoxycarbonylmethylU-34",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 515,
+      "y" : 985
+    },
+    "minX" : 362,
+    "maxX" : 617,
+    "minY" : 964,
+    "maxY" : 1008,
+    "prop" : {
+      "x" : 413,
+      "y" : 964,
+      "width" : 204,
+      "height" : 42
+    },
+    "textPosition" : {
+      "x" : 427,
+      "y" : 967
+    },
+    "connectors" : [ {
+      "edgeId" : 123,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 407,
+          "y" : 1000
+        },
+        "to" : {
+          "x" : 362,
+          "y" : 1008
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 401,
+          "y" : 1005
+        },
+        "b" : {
+          "x" : 407,
+          "y" : 1000
+        },
+        "c" : {
+          "x" : 399,
+          "y" : 997
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 128,
+    "reactomeId" : 6786518,
+    "displayName" : "ALKBH8:Fe2+",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 317,
+      "y" : 958
+    },
+    "minX" : 256,
+    "maxX" : 378,
+    "minY" : 946,
+    "maxY" : 1000,
+    "prop" : {
+      "x" : 256,
+      "y" : 946,
+      "width" : 122,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 272,
+      "y" : 949
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 123,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 317,
+          "y" : 973
+        },
+        "to" : {
+          "x" : 318,
+          "y" : 992
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 318,
+          "y" : 996
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 135,
+    "reactomeId" : 6786554,
+    "displayName" : "tRNA containing threonylcarbamoylA-37",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 113,
+      "y" : 1362
+    },
+    "minX" : 33,
+    "maxX" : 270,
+    "minY" : 1345,
+    "maxY" : 1379,
+    "prop" : {
+      "x" : 33,
+      "y" : 1345,
+      "width" : 161,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 41,
+      "y" : 1345
+    },
+    "connectors" : [ {
+      "edgeId" : 134,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 197,
+          "y" : 1362
+        },
+        "to" : {
+          "x" : 270,
+          "y" : 1362
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 136,
+    "reactomeId" : 6786533,
+    "displayName" : "tRNA containing 2-methylthio-N6-threonylcarbamoylA-37",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 569,
+      "y" : 1368
+    },
+    "minX" : 377,
+    "maxX" : 675,
+    "minY" : 1347,
+    "maxY" : 1389,
+    "prop" : {
+      "x" : 463,
+      "y" : 1347,
+      "width" : 212,
+      "height" : 42
+    },
+    "textPosition" : {
+      "x" : 465,
+      "y" : 1350
+    },
+    "connectors" : [ {
+      "edgeId" : 134,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 460,
+          "y" : 1364
+        },
+        "to" : {
+          "x" : 377,
+          "y" : 1362
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 453,
+          "y" : 1368
+        },
+        "b" : {
+          "x" : 460,
+          "y" : 1364
+        },
+        "c" : {
+          "x" : 453,
+          "y" : 1360
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 137,
+    "reactomeId" : 6786606,
+    "displayName" : "CDKAL1:4Fe-4S",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 322,
+      "y" : 1413
+    },
+    "minX" : 253,
+    "maxX" : 391,
+    "minY" : 1370,
+    "maxY" : 1427,
+    "prop" : {
+      "x" : 253,
+      "y" : 1400,
+      "width" : 138,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 271,
+      "y" : 1406
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 134,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 322,
+          "y" : 1397
+        },
+        "to" : {
+          "x" : 322,
+          "y" : 1378
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 322,
+          "y" : 1374
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 139,
+    "reactomeId" : 71284,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 146,
+      "y" : 1413
+    },
+    "minX" : 106,
+    "maxX" : 270,
+    "minY" : 1362,
+    "maxY" : 1426,
+    "prop" : {
+      "x" : 106,
+      "y" : 1400,
+      "width" : 81,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 120,
+      "y" : 1402
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 182,
+          "y" : 1405
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 134,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 177,
+          "y" : 1397
+        },
+        "to" : {
+          "x" : 270,
+          "y" : 1362
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 141,
+    "reactomeId" : 71285,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 503,
+      "y" : 1428
+    },
+    "minX" : 377,
+    "maxX" : 547,
+    "minY" : 1362,
+    "maxY" : 1442,
+    "prop" : {
+      "x" : 460,
+      "y" : 1414,
+      "width" : 86,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 477,
+      "y" : 1417
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 541,
+          "y" : 1419
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 134,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 476,
+          "y" : 1411
+        },
+        "to" : {
+          "x" : 377,
+          "y" : 1362
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 468,
+          "y" : 1412
+        },
+        "b" : {
+          "x" : 476,
+          "y" : 1411
+        },
+        "c" : {
+          "x" : 472,
+          "y" : 1404
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 143,
+    "reactomeId" : 5279190,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 154,
+      "y" : 1283
+    },
+    "minX" : 113,
+    "maxX" : 271,
+    "minY" : 1257,
+    "maxY" : 1298,
+    "prop" : {
+      "x" : 113,
+      "y" : 1268,
+      "width" : 82,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 128,
+      "y" : 1272
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 190,
+          "y" : 1273
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 142,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 198,
+          "y" : 1273
+        },
+        "to" : {
+          "x" : 271,
+          "y" : 1257
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 144,
+    "reactomeId" : 6786496,
+    "displayName" : "tRNA containing 5-carboxymethylU-34",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 137,
+      "y" : 1232
+    },
+    "minX" : 60,
+    "maxX" : 271,
+    "minY" : 1214,
+    "maxY" : 1257,
+    "prop" : {
+      "x" : 60,
+      "y" : 1214,
+      "width" : 154,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 75,
+      "y" : 1215
+    },
+    "connectors" : [ {
+      "edgeId" : 142,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 217,
+          "y" : 1246
+        },
+        "to" : {
+          "x" : 271,
+          "y" : 1257
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 145,
+    "reactomeId" : 6786605,
+    "displayName" : "tRNA containing 5-methoxycarbonylmethylU-34",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 552,
+      "y" : 1231
+    },
+    "minX" : 376,
+    "maxX" : 651,
+    "minY" : 1213,
+    "maxY" : 1257,
+    "prop" : {
+      "x" : 454,
+      "y" : 1213,
+      "width" : 197,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 465,
+      "y" : 1213
+    },
+    "connectors" : [ {
+      "edgeId" : 142,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 451,
+          "y" : 1245
+        },
+        "to" : {
+          "x" : 376,
+          "y" : 1257
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 445,
+          "y" : 1250
+        },
+        "b" : {
+          "x" : 451,
+          "y" : 1245
+        },
+        "c" : {
+          "x" : 444,
+          "y" : 1242
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 146,
+    "reactomeId" : 5278409,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 505,
+      "y" : 1283
+    },
+    "minX" : 376,
+    "maxX" : 548,
+    "minY" : 1257,
+    "maxY" : 1299,
+    "prop" : {
+      "x" : 463,
+      "y" : 1267,
+      "width" : 84,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 479,
+      "y" : 1272
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 542,
+          "y" : 1272
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 142,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 460,
+          "y" : 1274
+        },
+        "to" : {
+          "x" : 376,
+          "y" : 1257
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 452,
+          "y" : 1277
+        },
+        "b" : {
+          "x" : 460,
+          "y" : 1274
+        },
+        "c" : {
+          "x" : 454,
+          "y" : 1269
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 147,
+    "reactomeId" : 6786575,
+    "displayName" : "KIAA1456",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 325,
+      "y" : 1211
+    },
+    "minX" : 279,
+    "maxX" : 378,
+    "minY" : 1191,
+    "maxY" : 1250,
+    "prop" : {
+      "x" : 279,
+      "y" : 1197,
+      "width" : 93,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 292,
+      "y" : 1201
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 372,
+          "y" : 1197
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 142,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 324,
+          "y" : 1229
+        },
+        "to" : {
+          "x" : 324,
+          "y" : 1242
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 323,
+          "y" : 1246
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 153,
+    "reactomeId" : 6786513,
+    "displayName" : "tRNA containing G-9",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 815,
+      "y" : 1308
+    },
+    "minX" : 741,
+    "maxX" : 920,
+    "minY" : 1294,
+    "maxY" : 1338,
+    "prop" : {
+      "x" : 741,
+      "y" : 1294,
+      "width" : 148,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 751,
+      "y" : 1297
+    },
+    "connectors" : [ {
+      "edgeId" : 152,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 864,
+          "y" : 1325
+        },
+        "to" : {
+          "x" : 920,
+          "y" : 1338
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 154,
+    "reactomeId" : 6786591,
+    "displayName" : "tRNA containing 1-methylG-9",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1189,
+      "y" : 1309
+    },
+    "minX" : 1044,
+    "maxX" : 1292,
+    "minY" : 1295,
+    "maxY" : 1337,
+    "prop" : {
+      "x" : 1087,
+      "y" : 1295,
+      "width" : 205,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 1099,
+      "y" : 1298
+    },
+    "connectors" : [ {
+      "edgeId" : 152,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1116,
+          "y" : 1326
+        },
+        "to" : {
+          "x" : 1044,
+          "y" : 1337
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1110,
+          "y" : 1331
+        },
+        "b" : {
+          "x" : 1116,
+          "y" : 1326
+        },
+        "c" : {
+          "x" : 1109,
+          "y" : 1323
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 155,
+    "reactomeId" : 6786514,
+    "displayName" : "TRMT10A",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 979,
+      "y" : 1294
+    },
+    "minX" : 930,
+    "maxX" : 1035,
+    "minY" : 1275,
+    "maxY" : 1330,
+    "prop" : {
+      "x" : 930,
+      "y" : 1281,
+      "width" : 99,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 946,
+      "y" : 1283
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1029,
+          "y" : 1281
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 152,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 979,
+          "y" : 1310
+        },
+        "to" : {
+          "x" : 980,
+          "y" : 1322
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 981,
+          "y" : 1326
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 157,
+    "reactomeId" : 77087,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 808,
+      "y" : 1349
+    },
+    "minX" : 769,
+    "maxX" : 920,
+    "minY" : 1332,
+    "maxY" : 1365,
+    "prop" : {
+      "x" : 769,
+      "y" : 1333,
+      "width" : 78,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 782,
+      "y" : 1338
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 842,
+          "y" : 1338
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 152,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 850,
+          "y" : 1345
+        },
+        "to" : {
+          "x" : 920,
+          "y" : 1338
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 159,
+    "reactomeId" : 77502,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1147,
+      "y" : 1360
+    },
+    "minX" : 1044,
+    "maxX" : 1187,
+    "minY" : 1337,
+    "maxY" : 1375,
+    "prop" : {
+      "x" : 1109,
+      "y" : 1345,
+      "width" : 77,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 1121,
+      "y" : 1349
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1181,
+          "y" : 1350
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 152,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1106,
+          "y" : 1351
+        },
+        "to" : {
+          "x" : 1044,
+          "y" : 1337
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1098,
+          "y" : 1353
+        },
+        "b" : {
+          "x" : 1106,
+          "y" : 1351
+        },
+        "c" : {
+          "x" : 1100,
+          "y" : 1346
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 161,
+    "reactomeId" : 6786524,
+    "displayName" : "tRNA containing G-10",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 795,
+      "y" : 1440
+    },
+    "minX" : 721,
+    "maxX" : 922,
+    "minY" : 1427,
+    "maxY" : 1453,
+    "prop" : {
+      "x" : 721,
+      "y" : 1427,
+      "width" : 149,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 728,
+      "y" : 1429
+    },
+    "connectors" : [ {
+      "edgeId" : 160,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 873,
+          "y" : 1444
+        },
+        "to" : {
+          "x" : 922,
+          "y" : 1447
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 162,
+    "reactomeId" : 6786548,
+    "displayName" : "tRNA containing 2-methylG-10",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1172,
+      "y" : 1434
+    },
+    "minX" : 1024,
+    "maxX" : 1279,
+    "minY" : 1421,
+    "maxY" : 1448,
+    "prop" : {
+      "x" : 1066,
+      "y" : 1421,
+      "width" : 213,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 1078,
+      "y" : 1424
+    },
+    "connectors" : [ {
+      "edgeId" : 160,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1063,
+          "y" : 1443
+        },
+        "to" : {
+          "x" : 1024,
+          "y" : 1447
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1057,
+          "y" : 1448
+        },
+        "b" : {
+          "x" : 1063,
+          "y" : 1443
+        },
+        "c" : {
+          "x" : 1056,
+          "y" : 1440
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 163,
+    "reactomeId" : 6786618,
+    "displayName" : "TRMT11:TRMT112",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 972,
+      "y" : 1405
+    },
+    "minX" : 906,
+    "maxX" : 1039,
+    "minY" : 1394,
+    "maxY" : 1438,
+    "prop" : {
+      "x" : 906,
+      "y" : 1394,
+      "width" : 133,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 912,
+      "y" : 1396
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 160,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 972,
+          "y" : 1420
+        },
+        "to" : {
+          "x" : 972,
+          "y" : 1430
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 973,
+          "y" : 1434
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 165,
+    "reactomeId" : 71284,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 855,
+      "y" : 1482
+    },
+    "minX" : 815,
+    "maxX" : 922,
+    "minY" : 1447,
+    "maxY" : 1495,
+    "prop" : {
+      "x" : 815,
+      "y" : 1469,
+      "width" : 81,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 829,
+      "y" : 1471
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 891,
+          "y" : 1474
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 160,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 879,
+          "y" : 1466
+        },
+        "to" : {
+          "x" : 922,
+          "y" : 1447
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 167,
+    "reactomeId" : 71285,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1127,
+      "y" : 1477
+    },
+    "minX" : 1024,
+    "maxX" : 1171,
+    "minY" : 1447,
+    "maxY" : 1491,
+    "prop" : {
+      "x" : 1084,
+      "y" : 1463,
+      "width" : 86,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 1101,
+      "y" : 1466
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1165,
+          "y" : 1468
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 160,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1081,
+          "y" : 1464
+        },
+        "to" : {
+          "x" : 1024,
+          "y" : 1447
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1073,
+          "y" : 1466
+        },
+        "b" : {
+          "x" : 1081,
+          "y" : 1464
+        },
+        "c" : {
+          "x" : 1076,
+          "y" : 1458
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 168,
+    "reactomeId" : 6787570,
+    "displayName" : "tRNA(Ile,Met,Ser) containing U",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 825,
+      "y" : 235
+    },
+    "minX" : 760,
+    "maxX" : 890,
+    "minY" : 217,
+    "maxY" : 253,
+    "prop" : {
+      "x" : 760,
+      "y" : 217,
+      "width" : 130,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 770,
+      "y" : 217
+    },
+    "connectors" : [ {
+      "edgeId" : 59,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 170,
+    "reactomeId" : 6787569,
+    "displayName" : "tRNA(Ile,Met,Ser) containing pseudoU",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1144,
+      "y" : 232
+    },
+    "minX" : 1056,
+    "maxX" : 1232,
+    "minY" : 212,
+    "maxY" : 252,
+    "prop" : {
+      "x" : 1056,
+      "y" : 212,
+      "width" : 176,
+      "height" : 40
+    },
+    "textPosition" : {
+      "x" : 1058,
+      "y" : 214
+    },
+    "connectors" : [ {
+      "edgeId" : 59,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 172,
+    "reactomeId" : 6788700,
+    "displayName" : "tRNA(Gly,Pro) containing C-4",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 129,
+      "y" : 1552
+    },
+    "minX" : 27,
+    "maxX" : 293,
+    "minY" : 1536,
+    "maxY" : 1568,
+    "prop" : {
+      "x" : 27,
+      "y" : 1536,
+      "width" : 204,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 41,
+      "y" : 1541
+    },
+    "connectors" : [ {
+      "edgeId" : 171,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 237,
+          "y" : 1550
+        },
+        "to" : {
+          "x" : 293,
+          "y" : 1550
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 173,
+    "reactomeId" : 6788678,
+    "displayName" : "tRNA(Gly,Pro) containing 2'-O-methylC-4",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 554,
+      "y" : 1551
+    },
+    "minX" : 365,
+    "maxX" : 697,
+    "minY" : 1536,
+    "maxY" : 1566,
+    "prop" : {
+      "x" : 411,
+      "y" : 1536,
+      "width" : 286,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 430,
+      "y" : 1540
+    },
+    "connectors" : [ {
+      "edgeId" : 171,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 405,
+          "y" : 1551
+        },
+        "to" : {
+          "x" : 365,
+          "y" : 1552
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 398,
+          "y" : 1555
+        },
+        "b" : {
+          "x" : 405,
+          "y" : 1551
+        },
+        "c" : {
+          "x" : 398,
+          "y" : 1547
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 174,
+    "reactomeId" : 6788716,
+    "displayName" : "TRMT13",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 328,
+      "y" : 1622
+    },
+    "minX" : 285,
+    "maxX" : 377,
+    "minY" : 1558,
+    "maxY" : 1675,
+    "prop" : {
+      "x" : 285,
+      "y" : 1609,
+      "width" : 86,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 299,
+      "y" : 1611
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 371,
+          "y" : 1609
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 171,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 328,
+          "y" : 1606
+        },
+        "to" : {
+          "x" : 329,
+          "y" : 1566
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 329,
+          "y" : 1562
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 179,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 328,
+          "y" : 1638
+        },
+        "to" : {
+          "x" : 329,
+          "y" : 1667
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 329,
+          "y" : 1671
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 176,
+    "reactomeId" : 5279190,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 203,
+      "y" : 1617
+    },
+    "minX" : 162,
+    "maxX" : 293,
+    "minY" : 1550,
+    "maxY" : 1683,
+    "prop" : {
+      "x" : 162,
+      "y" : 1602,
+      "width" : 82,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 177,
+      "y" : 1606
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 239,
+          "y" : 1607
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 171,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 223,
+          "y" : 1599
+        },
+        "to" : {
+          "x" : 293,
+          "y" : 1550
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 179,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 219,
+          "y" : 1635
+        },
+        "to" : {
+          "x" : 277,
+          "y" : 1683
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 178,
+    "reactomeId" : 5278409,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 462,
+      "y" : 1614
+    },
+    "minX" : 364,
+    "maxX" : 505,
+    "minY" : 1552,
+    "maxY" : 1683,
+    "prop" : {
+      "x" : 420,
+      "y" : 1598,
+      "width" : 84,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 436,
+      "y" : 1603
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 499,
+          "y" : 1603
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 171,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 436,
+          "y" : 1595
+        },
+        "to" : {
+          "x" : 365,
+          "y" : 1552
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 428,
+          "y" : 1595
+        },
+        "b" : {
+          "x" : 436,
+          "y" : 1595
+        },
+        "c" : {
+          "x" : 432,
+          "y" : 1588
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 179,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 439,
+          "y" : 1633
+        },
+        "to" : {
+          "x" : 364,
+          "y" : 1683
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 435,
+          "y" : 1640
+        },
+        "b" : {
+          "x" : 439,
+          "y" : 1633
+        },
+        "c" : {
+          "x" : 431,
+          "y" : 1634
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 180,
+    "reactomeId" : 6788711,
+    "displayName" : "tRNA(His) containing A-4",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 124,
+      "y" : 1681
+    },
+    "minX" : 36,
+    "maxX" : 277,
+    "minY" : 1667,
+    "maxY" : 1695,
+    "prop" : {
+      "x" : 36,
+      "y" : 1667,
+      "width" : 176,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 48,
+      "y" : 1670
+    },
+    "connectors" : [ {
+      "edgeId" : 179,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 215,
+          "y" : 1682
+        },
+        "to" : {
+          "x" : 277,
+          "y" : 1683
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 181,
+    "reactomeId" : 6788686,
+    "displayName" : "tRNA(His) containing 2'-O-methylA-4",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 551,
+      "y" : 1683
+    },
+    "minX" : 364,
+    "maxX" : 681,
+    "minY" : 1665,
+    "maxY" : 1701,
+    "prop" : {
+      "x" : 421,
+      "y" : 1665,
+      "width" : 260,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 439,
+      "y" : 1672
+    },
+    "connectors" : [ {
+      "edgeId" : 179,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 418,
+          "y" : 1683
+        },
+        "to" : {
+          "x" : 364,
+          "y" : 1683
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 411,
+          "y" : 1687
+        },
+        "b" : {
+          "x" : 418,
+          "y" : 1683
+        },
+        "c" : {
+          "x" : 411,
+          "y" : 1679
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 183,
+    "reactomeId" : 6788714,
+    "displayName" : "tRNA(Ser) containing U-44",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 829,
+      "y" : 1532
+    },
+    "minX" : 731,
+    "maxX" : 927,
+    "minY" : 1517,
+    "maxY" : 1573,
+    "prop" : {
+      "x" : 731,
+      "y" : 1517,
+      "width" : 196,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 749,
+      "y" : 1521
+    },
+    "connectors" : [ {
+      "edgeId" : 182,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 850,
+          "y" : 1550
+        },
+        "to" : {
+          "x" : 889,
+          "y" : 1573
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 184,
+    "reactomeId" : 6788717,
+    "displayName" : "tRNA(Ser) containing 2'-O-methylU-44",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1172,
+      "y" : 1529
+    },
+    "minX" : 1041,
+    "maxX" : 1303,
+    "minY" : 1513,
+    "maxY" : 1573,
+    "prop" : {
+      "x" : 1041,
+      "y" : 1513,
+      "width" : 262,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 1056,
+      "y" : 1518
+    },
+    "connectors" : [ {
+      "edgeId" : 182,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1139,
+          "y" : 1548
+        },
+        "to" : {
+          "x" : 1082,
+          "y" : 1573
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1134,
+          "y" : 1554
+        },
+        "b" : {
+          "x" : 1139,
+          "y" : 1548
+        },
+        "c" : {
+          "x" : 1131,
+          "y" : 1547
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 185,
+    "reactomeId" : 6788685,
+    "displayName" : "TRMT44",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 986,
+      "y" : 1510
+    },
+    "minX" : 946,
+    "maxX" : 1032,
+    "minY" : 1492,
+    "maxY" : 1565,
+    "prop" : {
+      "x" : 946,
+      "y" : 1498,
+      "width" : 80,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 957,
+      "y" : 1499
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1026,
+          "y" : 1498
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 182,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 986,
+          "y" : 1525
+        },
+        "to" : {
+          "x" : 986,
+          "y" : 1557
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 986,
+          "y" : 1561
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 187,
+    "reactomeId" : 71284,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 797,
+      "y" : 1600
+    },
+    "minX" : 757,
+    "maxX" : 889,
+    "minY" : 1573,
+    "maxY" : 1613,
+    "prop" : {
+      "x" : 757,
+      "y" : 1587,
+      "width" : 81,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 771,
+      "y" : 1589
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 833,
+          "y" : 1592
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 182,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 841,
+          "y" : 1588
+        },
+        "to" : {
+          "x" : 889,
+          "y" : 1573
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 189,
+    "reactomeId" : 71285,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1199,
+      "y" : 1601
+    },
+    "minX" : 1082,
+    "maxX" : 1243,
+    "minY" : 1573,
+    "maxY" : 1615,
+    "prop" : {
+      "x" : 1156,
+      "y" : 1587,
+      "width" : 86,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 1173,
+      "y" : 1590
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1237,
+          "y" : 1592
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 182,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1153,
+          "y" : 1590
+        },
+        "to" : {
+          "x" : 1082,
+          "y" : 1573
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1145,
+          "y" : 1592
+        },
+        "b" : {
+          "x" : 1153,
+          "y" : 1590
+        },
+        "c" : {
+          "x" : 1147,
+          "y" : 1584
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 190,
+    "reactomeId" : 428206,
+    "displayName" : "NAD(P)H",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 181,
+      "y" : 1153
+    },
+    "minX" : 143,
+    "maxX" : 271,
+    "minY" : 1140,
+    "maxY" : 1167,
+    "prop" : {
+      "x" : 143,
+      "y" : 1140,
+      "width" : 77,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 152,
+      "y" : 1143
+    },
+    "connectors" : [ {
+      "edgeId" : 23,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 226,
+          "y" : 1149
+        },
+        "to" : {
+          "x" : 271,
+          "y" : 1144
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 192,
+    "reactomeId" : 428218,
+    "displayName" : "NAD(P)+",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 502,
+      "y" : 1148
+    },
+    "minX" : 359,
+    "maxX" : 544,
+    "minY" : 1135,
+    "maxY" : 1162,
+    "prop" : {
+      "x" : 461,
+      "y" : 1135,
+      "width" : 83,
+      "height" : 27
+    },
+    "textPosition" : {
+      "x" : 473,
+      "y" : 1138
+    },
+    "connectors" : [ {
+      "edgeId" : 23,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 455,
+          "y" : 1147
+        },
+        "to" : {
+          "x" : 359,
+          "y" : 1146
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 448,
+          "y" : 1151
+        },
+        "b" : {
+          "x" : 455,
+          "y" : 1147
+        },
+        "c" : {
+          "x" : 448,
+          "y" : 1143
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 194,
+    "reactomeId" : 6790218,
+    "displayName" : "tRNA containing U-13, pre-tRNA(Tyr) containing U-35",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 837,
+      "y" : 314
+    },
+    "minX" : 773,
+    "maxX" : 902,
+    "minY" : 289,
+    "maxY" : 339,
+    "prop" : {
+      "x" : 773,
+      "y" : 289,
+      "width" : 129,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 778,
+      "y" : 289
+    },
+    "connectors" : [ {
+      "edgeId" : 119,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 196,
+    "reactomeId" : 6790181,
+    "displayName" : "tRNA containing pseudoU-13, pre-tRNA(Tyr) containing pseudoU-35",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1149,
+      "y" : 316
+    },
+    "minX" : 1045,
+    "maxX" : 1253,
+    "minY" : 290,
+    "maxY" : 343,
+    "prop" : {
+      "x" : 1045,
+      "y" : 290,
+      "width" : 208,
+      "height" : 53
+    },
+    "textPosition" : {
+      "x" : 1056,
+      "y" : 292
+    },
+    "connectors" : [ {
+      "edgeId" : 119,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 200,
+    "reactomeId" : 8870280,
+    "displayName" : "FTSJ1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 302,
+      "y" : 1805
+    },
+    "minX" : 267,
+    "maxX" : 344,
+    "minY" : 1747,
+    "maxY" : 1862,
+    "prop" : {
+      "x" : 267,
+      "y" : 1790,
+      "width" : 71,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 282,
+      "y" : 1794
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 338,
+          "y" : 1790
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 223,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 302,
+          "y" : 1787
+        },
+        "to" : {
+          "x" : 304,
+          "y" : 1755
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 304,
+          "y" : 1751
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 225,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 301,
+          "y" : 1823
+        },
+        "to" : {
+          "x" : 301,
+          "y" : 1854
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 301,
+          "y" : 1858
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 202,
+    "reactomeId" : 71284,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 193,
+      "y" : 1800
+    },
+    "minX" : 153,
+    "maxX" : 235,
+    "minY" : 1739,
+    "maxY" : 1870,
+    "prop" : {
+      "x" : 153,
+      "y" : 1787,
+      "width" : 81,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 167,
+      "y" : 1789
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 229,
+          "y" : 1792
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 223,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 197,
+          "y" : 1784
+        },
+        "to" : {
+          "x" : 215,
+          "y" : 1739
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 200,
+            "y" : 1755
+          },
+          "b" : {
+            "x" : 212,
+            "y" : 1767
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    }, {
+      "edgeId" : 225,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 195,
+          "y" : 1816
+        },
+        "to" : {
+          "x" : 208,
+          "y" : 1870
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 195,
+            "y" : 1837
+          },
+          "b" : {
+            "x" : 207,
+            "y" : 1849
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 204,
+    "reactomeId" : 71285,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 464,
+      "y" : 1807
+    },
+    "minX" : 408,
+    "maxX" : 508,
+    "minY" : 1739,
+    "maxY" : 1870,
+    "prop" : {
+      "x" : 421,
+      "y" : 1793,
+      "width" : 86,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 438,
+      "y" : 1796
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 502,
+          "y" : 1798
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 223,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 452,
+          "y" : 1790
+        },
+        "to" : {
+          "x" : 408,
+          "y" : 1739
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 424,
+            "y" : 1758
+          },
+          "b" : {
+            "x" : 436,
+            "y" : 1770
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 444,
+          "y" : 1787
+        },
+        "b" : {
+          "x" : 452,
+          "y" : 1790
+        },
+        "c" : {
+          "x" : 451,
+          "y" : 1782
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 225,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 455,
+          "y" : 1824
+        },
+        "to" : {
+          "x" : 427,
+          "y" : 1870
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 435,
+            "y" : 1841
+          },
+          "b" : {
+            "x" : 447,
+            "y" : 1853
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 455,
+          "y" : 1832
+        },
+        "b" : {
+          "x" : 455,
+          "y" : 1824
+        },
+        "c" : {
+          "x" : 448,
+          "y" : 1828
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 206,
+    "reactomeId" : 8870284,
+    "displayName" : "tRNA containing U-39",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 852,
+      "y" : 1689
+    },
+    "minX" : 774,
+    "maxX" : 931,
+    "minY" : 1673,
+    "maxY" : 1705,
+    "prop" : {
+      "x" : 774,
+      "y" : 1673,
+      "width" : 157,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 785,
+      "y" : 1678
+    },
+    "connectors" : [ {
+      "edgeId" : 205,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 207,
+    "reactomeId" : 8870285,
+    "displayName" : "tRNA containing pseudoU-39",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 1147,
+      "y" : 1686
+    },
+    "minX" : 1040,
+    "maxX" : 1255,
+    "minY" : 1669,
+    "maxY" : 1703,
+    "prop" : {
+      "x" : 1040,
+      "y" : 1669,
+      "width" : 215,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 1059,
+      "y" : 1675
+    },
+    "connectors" : [ {
+      "edgeId" : 205,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 208,
+    "reactomeId" : 8870279,
+    "displayName" : "PUS3",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 989,
+      "y" : 1629
+    },
+    "minX" : 959,
+    "maxX" : 1026,
+    "minY" : 1608,
+    "maxY" : 1681,
+    "prop" : {
+      "x" : 959,
+      "y" : 1614,
+      "width" : 61,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 971,
+      "y" : 1618
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1020,
+          "y" : 1614
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 205,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 989,
+          "y" : 1647
+        },
+        "to" : {
+          "x" : 989,
+          "y" : 1673
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 989,
+          "y" : 1677
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 209,
+    "reactomeId" : 379767,
+    "displayName" : "tRNA(Phe)",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 84,
+      "y" : 1799
+    },
+    "minX" : 36,
+    "maxX" : 215,
+    "minY" : 1739,
+    "maxY" : 1870,
+    "prop" : {
+      "x" : 36,
+      "y" : 1783,
+      "width" : 97,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 51,
+      "y" : 1788
+    },
+    "connectors" : [ {
+      "edgeId" : 223,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 118,
+          "y" : 1780
+        },
+        "to" : {
+          "x" : 215,
+          "y" : 1739
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 225,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 111,
+          "y" : 1818
+        },
+        "to" : {
+          "x" : 208,
+          "y" : 1870
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 215,
+    "reactomeId" : 8932763,
+    "displayName" : "tRNA(Cys,Thr)",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 851,
+      "y" : 1760
+    },
+    "minX" : 792,
+    "maxX" : 935,
+    "minY" : 1743,
+    "maxY" : 1795,
+    "prop" : {
+      "x" : 792,
+      "y" : 1743,
+      "width" : 119,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 807,
+      "y" : 1749
+    },
+    "connectors" : [ {
+      "edgeId" : 214,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 891,
+          "y" : 1783
+        },
+        "to" : {
+          "x" : 935,
+          "y" : 1795
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 216,
+    "reactomeId" : 8932759,
+    "displayName" : "tRNA(Cys,Thr) containing 5mC72",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1182,
+      "y" : 1753
+    },
+    "minX" : 1062,
+    "maxX" : 1303,
+    "minY" : 1738,
+    "maxY" : 1793,
+    "prop" : {
+      "x" : 1062,
+      "y" : 1738,
+      "width" : 241,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 1083,
+      "y" : 1742
+    },
+    "connectors" : [ {
+      "edgeId" : 214,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1144,
+          "y" : 1774
+        },
+        "to" : {
+          "x" : 1082,
+          "y" : 1793
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1139,
+          "y" : 1780
+        },
+        "b" : {
+          "x" : 1144,
+          "y" : 1774
+        },
+        "c" : {
+          "x" : 1136,
+          "y" : 1772
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 217,
+    "reactomeId" : 8932767,
+    "displayName" : "NSUN6",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 995,
+      "y" : 1752
+    },
+    "minX" : 963,
+    "maxX" : 1034,
+    "minY" : 1733,
+    "maxY" : 1787,
+    "prop" : {
+      "x" : 963,
+      "y" : 1739,
+      "width" : 65,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 971,
+      "y" : 1741
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1028,
+          "y" : 1739
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 214,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 996,
+          "y" : 1768
+        },
+        "to" : {
+          "x" : 997,
+          "y" : 1779
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 998,
+          "y" : 1783
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 219,
+    "reactomeId" : 71284,
+    "displayName" : "AdoMet",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 852,
+      "y" : 1830
+    },
+    "minX" : 812,
+    "maxX" : 935,
+    "minY" : 1795,
+    "maxY" : 1843,
+    "prop" : {
+      "x" : 812,
+      "y" : 1817,
+      "width" : 81,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 826,
+      "y" : 1819
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 888,
+          "y" : 1822
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 214,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 882,
+          "y" : 1814
+        },
+        "to" : {
+          "x" : 935,
+          "y" : 1795
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 221,
+    "reactomeId" : 71285,
+    "displayName" : "AdoHcy",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 1169,
+      "y" : 1832
+    },
+    "minX" : 1082,
+    "maxX" : 1213,
+    "minY" : 1793,
+    "maxY" : 1846,
+    "prop" : {
+      "x" : 1126,
+      "y" : 1818,
+      "width" : 86,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 1143,
+      "y" : 1821
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 1207,
+          "y" : 1823
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 214,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1137,
+          "y" : 1815
+        },
+        "to" : {
+          "x" : 1082,
+          "y" : 1793
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 1129,
+          "y" : 1816
+        },
+        "b" : {
+          "x" : 1137,
+          "y" : 1815
+        },
+        "c" : {
+          "x" : 1132,
+          "y" : 1809
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 222,
+    "reactomeId" : 8870282,
+    "displayName" : "THADA",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 377,
+      "y" : 1803
+    },
+    "minX" : 308,
+    "maxX" : 414,
+    "minY" : 1745,
+    "maxY" : 1864,
+    "prop" : {
+      "x" : 347,
+      "y" : 1792,
+      "width" : 61,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 352,
+      "y" : 1793
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 408,
+          "y" : 1792
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 223,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 364,
+          "y" : 1789
+        },
+        "to" : {
+          "x" : 312,
+          "y" : 1745
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 320,
+          "y" : 1746
+        },
+        "b" : {
+          "x" : 312,
+          "y" : 1745
+        },
+        "c" : {
+          "x" : 315,
+          "y" : 1753
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 225,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 363,
+          "y" : 1818
+        },
+        "to" : {
+          "x" : 308,
+          "y" : 1864
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 311,
+          "y" : 1856
+        },
+        "b" : {
+          "x" : 308,
+          "y" : 1864
+        },
+        "c" : {
+          "x" : 316,
+          "y" : 1863
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 224,
+    "reactomeId" : 9024158,
+    "displayName" : "tRNA(Phe) containing 2'-O-methylC-32",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 614,
+      "y" : 1734
+    },
+    "minX" : 408,
+    "maxX" : 749,
+    "minY" : 1718,
+    "maxY" : 1751,
+    "prop" : {
+      "x" : 479,
+      "y" : 1718,
+      "width" : 270,
+      "height" : 33
+    },
+    "textPosition" : {
+      "x" : 496,
+      "y" : 1724
+    },
+    "connectors" : [ {
+      "edgeId" : 223,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 476,
+          "y" : 1737
+        },
+        "to" : {
+          "x" : 408,
+          "y" : 1739
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 469,
+          "y" : 1741
+        },
+        "b" : {
+          "x" : 476,
+          "y" : 1737
+        },
+        "c" : {
+          "x" : 469,
+          "y" : 1733
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 226,
+    "reactomeId" : 9024162,
+    "displayName" : "tRNA(Phe) containing 2'-O-methylG-34",
+    "schemaClass" : "GenomeEncodedEntity",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 614,
+      "y" : 1864
+    },
+    "minX" : 427,
+    "maxX" : 747,
+    "minY" : 1846,
+    "maxY" : 1882,
+    "prop" : {
+      "x" : 482,
+      "y" : 1846,
+      "width" : 265,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 496,
+      "y" : 1853
+    },
+    "connectors" : [ {
+      "edgeId" : 225,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 479,
+          "y" : 1868
+        },
+        "to" : {
+          "x" : 427,
+          "y" : 1870
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 472,
+          "y" : 1872
+        },
+        "b" : {
+          "x" : 479,
+          "y" : 1868
+        },
+        "c" : {
+          "x" : 472,
+          "y" : 1864
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 227,
+    "reactomeId" : 191324,
+    "displayName" : "DMAPP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 810,
+      "y" : 1134
+    },
+    "minX" : 781,
+    "maxX" : 899,
+    "minY" : 1111,
+    "maxY" : 1149,
+    "prop" : {
+      "x" : 781,
+      "y" : 1119,
+      "width" : 58,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 785,
+      "y" : 1123
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 834,
+          "y" : 1124
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 94,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 842,
+          "y" : 1126
+        },
+        "to" : {
+          "x" : 899,
+          "y" : 1111
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 3,
+    "reactomeId" : 6782336,
+    "displayName" : "ADAT1 deaminates adenosine-37 in tRNA(Ala)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 374,
+      "y" : 125
+    },
+    "minX" : 342,
+    "maxX" : 411,
+    "minY" : 119,
+    "maxY" : 131,
+    "segments" : [ {
+      "from" : {
+        "x" : 342,
+        "y" : 124
+      },
+      "to" : {
+        "x" : 374,
+        "y" : 125
+      }
+    }, {
+      "from" : {
+        "x" : 374,
+        "y" : 125
+      },
+      "to" : {
+        "x" : 411,
+        "y" : 124
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 368,
+        "y" : 119
+      },
+      "b" : {
+        "x" : 380,
+        "y" : 131
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 4,
+      "points" : [ {
+        "x" : 245,
+        "y" : 98
+      } ]
+    }, {
+      "id" : 5,
+      "points" : [ {
+        "x" : 285,
+        "y" : 133
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 6,
+      "points" : [ {
+        "x" : 493,
+        "y" : 101
+      } ]
+    }, {
+      "id" : 7,
+      "points" : [ {
+        "x" : 463,
+        "y" : 134
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 8,
+      "points" : [ {
+        "x" : 373,
+        "y" : 94
+      } ]
+    } ]
+  }, {
+    "id" : 134,
+    "reactomeId" : 6786571,
+    "displayName" : "CDKAL1:4Fe-4S methylthiolates N6-threonylcarbamoyladenosine-37 in tRNA yielding 2-methylthio-N6-threonylcarbamoyladenosine-37",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 322,
+      "y" : 1362
+    },
+    "minX" : 270,
+    "maxX" : 377,
+    "minY" : 1356,
+    "maxY" : 1368,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 270,
+        "y" : 1362
+      },
+      "to" : {
+        "x" : 322,
+        "y" : 1362
+      }
+    }, {
+      "from" : {
+        "x" : 322,
+        "y" : 1362
+      },
+      "to" : {
+        "x" : 377,
+        "y" : 1362
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 316,
+        "y" : 1356
+      },
+      "b" : {
+        "x" : 328,
+        "y" : 1368
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 135,
+      "points" : [ {
+        "x" : 197,
+        "y" : 1362
+      } ]
+    }, {
+      "id" : 139,
+      "points" : [ {
+        "x" : 177,
+        "y" : 1397
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 136,
+      "points" : [ {
+        "x" : 460,
+        "y" : 1364
+      } ]
+    }, {
+      "id" : 141,
+      "points" : [ {
+        "x" : 476,
+        "y" : 1411
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 137,
+      "points" : [ {
+        "x" : 322,
+        "y" : 1397
+      } ]
+    } ]
+  }, {
+    "id" : 73,
+    "reactomeId" : 6782419,
+    "displayName" : "TRDMT1 (DNMT2) methylates cytidine-38 of tRNA(Asp)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 978,
+      "y" : 433
+    },
+    "minX" : 947,
+    "maxX" : 1006,
+    "minY" : 427,
+    "maxY" : 439,
+    "segments" : [ {
+      "from" : {
+        "x" : 947,
+        "y" : 432
+      },
+      "to" : {
+        "x" : 978,
+        "y" : 433
+      }
+    }, {
+      "from" : {
+        "x" : 978,
+        "y" : 433
+      },
+      "to" : {
+        "x" : 1006,
+        "y" : 433
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 972,
+        "y" : 427
+      },
+      "b" : {
+        "x" : 984,
+        "y" : 439
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 74,
+      "points" : [ {
+        "x" : 887,
+        "y" : 421
+      } ]
+    }, {
+      "id" : 78,
+      "points" : [ {
+        "x" : 912,
+        "y" : 442
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 75,
+      "points" : [ {
+        "x" : 1060,
+        "y" : 426
+      } ]
+    }, {
+      "id" : 80,
+      "points" : [ {
+        "x" : 1062,
+        "y" : 445
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 76,
+      "points" : [ {
+        "x" : 978,
+        "y" : 404
+      } ]
+    } ]
+  }, {
+    "id" : 12,
+    "reactomeId" : 6782311,
+    "displayName" : "ADAT2:ADAT3 (hetADAT) deaminates adenosine-34 in tRNAs",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 379,
+      "y" : 272
+    },
+    "minX" : 341,
+    "maxX" : 426,
+    "minY" : 266,
+    "maxY" : 278,
+    "segments" : [ {
+      "from" : {
+        "x" : 341,
+        "y" : 272
+      },
+      "to" : {
+        "x" : 379,
+        "y" : 272
+      }
+    }, {
+      "from" : {
+        "x" : 379,
+        "y" : 272
+      },
+      "to" : {
+        "x" : 426,
+        "y" : 274
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 373,
+        "y" : 266
+      },
+      "b" : {
+        "x" : 385,
+        "y" : 278
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 13,
+      "points" : [ {
+        "x" : 295,
+        "y" : 281
+      } ]
+    }, {
+      "id" : 14,
+      "points" : [ {
+        "x" : 249,
+        "y" : 257
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 15,
+      "points" : [ {
+        "x" : 506,
+        "y" : 257
+      } ]
+    }, {
+      "id" : 17,
+      "points" : [ {
+        "x" : 469,
+        "y" : 282
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 16,
+      "points" : [ {
+        "x" : 380,
+        "y" : 245
+      } ]
+    } ]
+  }, {
+    "id" : 205,
+    "reactomeId" : 8870289,
+    "displayName" : "PUS3 transforms uridine-39 to pseudouridine-39 in tRNA",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 989,
+      "y" : 1689
+    },
+    "minX" : 934,
+    "maxX" : 1037,
+    "minY" : 1683,
+    "maxY" : 1695,
+    "segments" : [ {
+      "from" : {
+        "x" : 934,
+        "y" : 1689
+      },
+      "to" : {
+        "x" : 989,
+        "y" : 1689
+      }
+    }, {
+      "from" : {
+        "x" : 989,
+        "y" : 1689
+      },
+      "to" : {
+        "x" : 1037,
+        "y" : 1688
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1030,
+        "y" : 1692
+      },
+      "b" : {
+        "x" : 1037,
+        "y" : 1688
+      },
+      "c" : {
+        "x" : 1030,
+        "y" : 1684
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 983,
+        "y" : 1683
+      },
+      "b" : {
+        "x" : 995,
+        "y" : 1695
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 206
+    } ],
+    "outputs" : [ {
+      "id" : 207
+    } ],
+    "catalysts" : [ {
+      "id" : 208,
+      "points" : [ {
+        "x" : 989,
+        "y" : 1647
+      } ]
+    } ]
+  }, {
+    "id" : 142,
+    "reactomeId" : 6786567,
+    "displayName" : "KIAA1456 (TRM9L) methylates 5-carboxymethyluridine in tRNA yielding 5-methoxycarbonylmethyluridine",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 323,
+      "y" : 1258
+    },
+    "minX" : 271,
+    "maxX" : 376,
+    "minY" : 1252,
+    "maxY" : 1264,
+    "segments" : [ {
+      "from" : {
+        "x" : 271,
+        "y" : 1257
+      },
+      "to" : {
+        "x" : 323,
+        "y" : 1258
+      }
+    }, {
+      "from" : {
+        "x" : 323,
+        "y" : 1258
+      },
+      "to" : {
+        "x" : 376,
+        "y" : 1257
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 317,
+        "y" : 1252
+      },
+      "b" : {
+        "x" : 329,
+        "y" : 1264
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 143,
+      "points" : [ {
+        "x" : 198,
+        "y" : 1273
+      } ]
+    }, {
+      "id" : 144,
+      "points" : [ {
+        "x" : 217,
+        "y" : 1246
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 145,
+      "points" : [ {
+        "x" : 451,
+        "y" : 1245
+      } ]
+    }, {
+      "id" : 146,
+      "points" : [ {
+        "x" : 460,
+        "y" : 1274
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 147,
+      "points" : [ {
+        "x" : 324,
+        "y" : 1229
+      } ]
+    } ]
+  }, {
+    "id" : 81,
+    "reactomeId" : 6782434,
+    "displayName" : "TRG1L transfers GMP to 5' end of tRNA(His)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1011,
+      "y" : 1224
+    },
+    "minX" : 959,
+    "maxX" : 1062,
+    "minY" : 1218,
+    "maxY" : 1230,
+    "segments" : [ {
+      "from" : {
+        "x" : 959,
+        "y" : 1224
+      },
+      "to" : {
+        "x" : 1011,
+        "y" : 1224
+      }
+    }, {
+      "from" : {
+        "x" : 1011,
+        "y" : 1224
+      },
+      "to" : {
+        "x" : 1062,
+        "y" : 1222
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 1005,
+        "y" : 1218
+      },
+      "b" : {
+        "x" : 1017,
+        "y" : 1230
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 82,
+      "points" : [ {
+        "x" : 938,
+        "y" : 1233
+      } ]
+    }, {
+      "id" : 83,
+      "points" : [ {
+        "x" : 899,
+        "y" : 1202
+      } ]
+    }, {
+      "id" : 92,
+      "points" : [ {
+        "x" : 871,
+        "y" : 1224
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 84,
+      "points" : [ {
+        "x" : 1125,
+        "y" : 1205
+      } ]
+    }, {
+      "id" : 93,
+      "points" : [ {
+        "x" : 1120,
+        "y" : 1232
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 85,
+      "points" : [ {
+        "x" : 1012,
+        "y" : 1189
+      } ]
+    } ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 6782264,
+    "displayName" : "CTU1:CTU2:URM1 thiolates uridine-34 in tRNAs",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 372,
+      "y" : 376
+    },
+    "minX" : 290,
+    "maxX" : 400,
+    "minY" : 370,
+    "maxY" : 382,
+    "segments" : [ {
+      "from" : {
+        "x" : 290,
+        "y" : 375
+      },
+      "to" : {
+        "x" : 372,
+        "y" : 376
+      }
+    }, {
+      "from" : {
+        "x" : 372,
+        "y" : 376
+      },
+      "to" : {
+        "x" : 400,
+        "y" : 377
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 366,
+        "y" : 370
+      },
+      "b" : {
+        "x" : 378,
+        "y" : 382
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 19,
+      "points" : [ {
+        "x" : 241,
+        "y" : 390
+      } ]
+    }, {
+      "id" : 20,
+      "points" : [ {
+        "x" : 257,
+        "y" : 374
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 21,
+      "points" : [ {
+        "x" : 445,
+        "y" : 387
+      } ]
+    }, {
+      "id" : 22,
+      "points" : [ {
+        "x" : 429,
+        "y" : 373
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 19,
+      "points" : [ {
+        "x" : 276,
+        "y" : 390
+      } ]
+    } ]
+  }, {
+    "id" : 214,
+    "reactomeId" : 8932765,
+    "displayName" : "NSUN6 methylates cytidine-72 in tRNA(Cys) and tRNA(Thr)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 999,
+      "y" : 1795
+    },
+    "minX" : 935,
+    "maxX" : 1082,
+    "minY" : 1789,
+    "maxY" : 1801,
+    "segments" : [ {
+      "from" : {
+        "x" : 935,
+        "y" : 1795
+      },
+      "to" : {
+        "x" : 999,
+        "y" : 1795
+      }
+    }, {
+      "from" : {
+        "x" : 999,
+        "y" : 1795
+      },
+      "to" : {
+        "x" : 1082,
+        "y" : 1793
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 993,
+        "y" : 1789
+      },
+      "b" : {
+        "x" : 1005,
+        "y" : 1801
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 215,
+      "points" : [ {
+        "x" : 891,
+        "y" : 1783
+      } ]
+    }, {
+      "id" : 219,
+      "points" : [ {
+        "x" : 882,
+        "y" : 1814
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 216,
+      "points" : [ {
+        "x" : 1144,
+        "y" : 1774
+      } ]
+    }, {
+      "id" : 221,
+      "points" : [ {
+        "x" : 1137,
+        "y" : 1815
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 217,
+      "points" : [ {
+        "x" : 996,
+        "y" : 1768
+      } ]
+    } ]
+  }, {
+    "id" : 23,
+    "reactomeId" : 6782296,
+    "displayName" : "DUS2:EPRS reduces uridine to dihydrouridine in tRNAs",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 315,
+      "y" : 1143
+    },
+    "minX" : 271,
+    "maxX" : 359,
+    "minY" : 1137,
+    "maxY" : 1149,
+    "segments" : [ {
+      "from" : {
+        "x" : 271,
+        "y" : 1144
+      },
+      "to" : {
+        "x" : 315,
+        "y" : 1143
+      }
+    }, {
+      "from" : {
+        "x" : 315,
+        "y" : 1143
+      },
+      "to" : {
+        "x" : 359,
+        "y" : 1146
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 309,
+        "y" : 1137
+      },
+      "b" : {
+        "x" : 321,
+        "y" : 1149
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 190,
+      "points" : [ {
+        "x" : 226,
+        "y" : 1149
+      } ]
+    }, {
+      "id" : 25,
+      "points" : [ {
+        "x" : 203,
+        "y" : 1118
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 192,
+      "points" : [ {
+        "x" : 455,
+        "y" : 1147
+      } ]
+    }, {
+      "id" : 27,
+      "points" : [ {
+        "x" : 435,
+        "y" : 1122
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 28,
+      "points" : [ {
+        "x" : 315,
+        "y" : 1103
+      } ]
+    } ]
+  }, {
+    "id" : 152,
+    "reactomeId" : 6786621,
+    "displayName" : "TRMT10A methylates guanosine-9 in tRNA",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 982,
+      "y" : 1338
+    },
+    "minX" : 920,
+    "maxX" : 1044,
+    "minY" : 1332,
+    "maxY" : 1344,
+    "segments" : [ {
+      "from" : {
+        "x" : 920,
+        "y" : 1338
+      },
+      "to" : {
+        "x" : 982,
+        "y" : 1338
+      }
+    }, {
+      "from" : {
+        "x" : 982,
+        "y" : 1338
+      },
+      "to" : {
+        "x" : 1044,
+        "y" : 1337
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 976,
+        "y" : 1332
+      },
+      "b" : {
+        "x" : 988,
+        "y" : 1344
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 153,
+      "points" : [ {
+        "x" : 864,
+        "y" : 1325
+      } ]
+    }, {
+      "id" : 157,
+      "points" : [ {
+        "x" : 850,
+        "y" : 1345
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 154,
+      "points" : [ {
+        "x" : 1116,
+        "y" : 1326
+      } ]
+    }, {
+      "id" : 159,
+      "points" : [ {
+        "x" : 1106,
+        "y" : 1351
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 155,
+      "points" : [ {
+        "x" : 979,
+        "y" : 1310
+      } ]
+    } ]
+  }, {
+    "id" : 29,
+    "reactomeId" : 6784494,
+    "displayName" : "EKC complex threonylcarbamoylates A37 of tRNAs",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 343,
+      "y" : 525
+    },
+    "minX" : 314,
+    "maxX" : 371,
+    "minY" : 519,
+    "maxY" : 531,
+    "segments" : [ {
+      "from" : {
+        "x" : 314,
+        "y" : 527
+      },
+      "to" : {
+        "x" : 343,
+        "y" : 525
+      }
+    }, {
+      "from" : {
+        "x" : 343,
+        "y" : 525
+      },
+      "to" : {
+        "x" : 371,
+        "y" : 526
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 337,
+        "y" : 519
+      },
+      "b" : {
+        "x" : 349,
+        "y" : 531
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 30,
+      "points" : [ {
+        "x" : 262,
+        "y" : 520
+      } ]
+    }, {
+      "id" : 31,
+      "points" : [ {
+        "x" : 281,
+        "y" : 530
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 32,
+      "points" : [ {
+        "x" : 441,
+        "y" : 519
+      } ]
+    }, {
+      "id" : 33,
+      "points" : [ {
+        "x" : 428,
+        "y" : 539
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 34,
+      "points" : [ {
+        "x" : 342,
+        "y" : 480
+      } ]
+    } ]
+  }, {
+    "id" : 94,
+    "reactomeId" : 6784462,
+    "displayName" : "TRIT1 transfers dimethylallyl group to adenosine-37 of tRNAs",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 959,
+      "y" : 1110
+    },
+    "minX" : 899,
+    "maxX" : 1006,
+    "minY" : 1104,
+    "maxY" : 1116,
+    "segments" : [ {
+      "from" : {
+        "x" : 899,
+        "y" : 1111
+      },
+      "to" : {
+        "x" : 959,
+        "y" : 1110
+      }
+    }, {
+      "from" : {
+        "x" : 959,
+        "y" : 1110
+      },
+      "to" : {
+        "x" : 1006,
+        "y" : 1110
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 953,
+        "y" : 1104
+      },
+      "b" : {
+        "x" : 965,
+        "y" : 1116
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 95,
+      "points" : [ {
+        "x" : 817,
+        "y" : 1092
+      } ]
+    }, {
+      "id" : 227,
+      "points" : [ {
+        "x" : 842,
+        "y" : 1126
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 97,
+      "points" : [ {
+        "x" : 1105,
+        "y" : 1092
+      } ]
+    }, {
+      "id" : 99,
+      "points" : [ {
+        "x" : 1078,
+        "y" : 1119
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 98,
+      "points" : [ {
+        "x" : 954,
+        "y" : 1083
+      } ]
+    } ]
+  }, {
+    "id" : 223,
+    "reactomeId" : 9024159,
+    "displayName" : "FTSJ1 2'-O-methylates cytidine-32 in tRNA(Phe)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 305,
+      "y" : 1739
+    },
+    "minX" : 215,
+    "maxX" : 408,
+    "minY" : 1733,
+    "maxY" : 1745,
+    "segments" : [ {
+      "from" : {
+        "x" : 215,
+        "y" : 1739
+      },
+      "to" : {
+        "x" : 305,
+        "y" : 1739
+      }
+    }, {
+      "from" : {
+        "x" : 305,
+        "y" : 1739
+      },
+      "to" : {
+        "x" : 408,
+        "y" : 1739
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 299,
+        "y" : 1733
+      },
+      "b" : {
+        "x" : 311,
+        "y" : 1745
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 209,
+      "points" : [ {
+        "x" : 118,
+        "y" : 1780
+      } ]
+    }, {
+      "id" : 202,
+      "points" : [ {
+        "x" : 197,
+        "y" : 1784
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 224,
+      "points" : [ {
+        "x" : 476,
+        "y" : 1737
+      } ]
+    }, {
+      "id" : 204,
+      "points" : [ {
+        "x" : 452,
+        "y" : 1790
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "catalysts" : [ {
+      "id" : 200,
+      "points" : [ {
+        "x" : 302,
+        "y" : 1787
+      } ]
+    } ],
+    "activators" : [ {
+      "id" : 222,
+      "points" : [ {
+        "x" : 364,
+        "y" : 1789
+      } ]
+    } ]
+  }, {
+    "id" : 160,
+    "reactomeId" : 6786501,
+    "displayName" : "TRMT11:TRMT112 methylates guanosine-10 in tRNA",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 973,
+      "y" : 1446
+    },
+    "minX" : 922,
+    "maxX" : 1024,
+    "minY" : 1440,
+    "maxY" : 1452,
+    "segments" : [ {
+      "from" : {
+        "x" : 922,
+        "y" : 1447
+      },
+      "to" : {
+        "x" : 973,
+        "y" : 1446
+      }
+    }, {
+      "from" : {
+        "x" : 973,
+        "y" : 1446
+      },
+      "to" : {
+        "x" : 1024,
+        "y" : 1447
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 967,
+        "y" : 1440
+      },
+      "b" : {
+        "x" : 979,
+        "y" : 1452
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 161,
+      "points" : [ {
+        "x" : 873,
+        "y" : 1444
+      } ]
+    }, {
+      "id" : 165,
+      "points" : [ {
+        "x" : 879,
+        "y" : 1466
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 162,
+      "points" : [ {
+        "x" : 1063,
+        "y" : 1443
+      } ]
+    }, {
+      "id" : 167,
+      "points" : [ {
+        "x" : 1081,
+        "y" : 1464
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 163,
+      "points" : [ {
+        "x" : 972,
+        "y" : 1420
+      } ]
+    } ]
+  }, {
+    "id" : 225,
+    "reactomeId" : 9024161,
+    "displayName" : "FTSJ1 2'-O-methylates guanosine-34 in tRNA(Phe)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 301,
+      "y" : 1870
+    },
+    "minX" : 208,
+    "maxX" : 427,
+    "minY" : 1864,
+    "maxY" : 1876,
+    "segments" : [ {
+      "from" : {
+        "x" : 208,
+        "y" : 1870
+      },
+      "to" : {
+        "x" : 301,
+        "y" : 1870
+      }
+    }, {
+      "from" : {
+        "x" : 301,
+        "y" : 1870
+      },
+      "to" : {
+        "x" : 427,
+        "y" : 1870
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 295,
+        "y" : 1864
+      },
+      "b" : {
+        "x" : 307,
+        "y" : 1876
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 209,
+      "points" : [ {
+        "x" : 111,
+        "y" : 1818
+      } ]
+    }, {
+      "id" : 202,
+      "points" : [ {
+        "x" : 195,
+        "y" : 1816
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 226,
+      "points" : [ {
+        "x" : 479,
+        "y" : 1868
+      } ]
+    }, {
+      "id" : 204,
+      "points" : [ {
+        "x" : 455,
+        "y" : 1824
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "catalysts" : [ {
+      "id" : 200,
+      "points" : [ {
+        "x" : 301,
+        "y" : 1823
+      } ]
+    } ],
+    "activators" : [ {
+      "id" : 222,
+      "points" : [ {
+        "x" : 363,
+        "y" : 1818
+      } ]
+    } ]
+  }, {
+    "id" : 100,
+    "reactomeId" : 6782416,
+    "displayName" : "TRMT1 (hTRM1) dimethylates guanosine-26 of tRNA(Tyr)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 954,
+      "y" : 588
+    },
+    "minX" : 926,
+    "maxX" : 981,
+    "minY" : 582,
+    "maxY" : 594,
+    "segments" : [ {
+      "from" : {
+        "x" : 926,
+        "y" : 589
+      },
+      "to" : {
+        "x" : 954,
+        "y" : 588
+      }
+    }, {
+      "from" : {
+        "x" : 954,
+        "y" : 588
+      },
+      "to" : {
+        "x" : 981,
+        "y" : 589
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 948,
+        "y" : 582
+      },
+      "b" : {
+        "x" : 960,
+        "y" : 594
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 101,
+      "points" : [ {
+        "x" : 860,
+        "y" : 571
+      } ]
+    }, {
+      "id" : 107,
+      "points" : [ {
+        "x" : 872,
+        "y" : 597
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 102,
+      "points" : [ {
+        "x" : 1075,
+        "y" : 569
+      } ]
+    }, {
+      "id" : 105,
+      "points" : [ {
+        "x" : 1052,
+        "y" : 597
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "catalysts" : [ {
+      "id" : 103,
+      "points" : [ {
+        "x" : 954,
+        "y" : 555
+      } ]
+    } ]
+  }, {
+    "id" : 38,
+    "reactomeId" : 6782286,
+    "displayName" : "METTL1:WDR4 methylates guanosine-46 of tRNA(Phe) yielding 7-methylguanosine-46",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 964,
+      "y" : 117
+    },
+    "minX" : 935,
+    "maxX" : 997,
+    "minY" : 111,
+    "maxY" : 123,
+    "segments" : [ {
+      "from" : {
+        "x" : 935,
+        "y" : 118
+      },
+      "to" : {
+        "x" : 964,
+        "y" : 117
+      }
+    }, {
+      "from" : {
+        "x" : 964,
+        "y" : 117
+      },
+      "to" : {
+        "x" : 997,
+        "y" : 118
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 958,
+        "y" : 111
+      },
+      "b" : {
+        "x" : 970,
+        "y" : 123
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 39,
+      "points" : [ {
+        "x" : 863,
+        "y" : 104
+      } ]
+    }, {
+      "id" : 40,
+      "points" : [ {
+        "x" : 887,
+        "y" : 127
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 41,
+      "points" : [ {
+        "x" : 1069,
+        "y" : 131
+      } ]
+    }, {
+      "id" : 42,
+      "points" : [ {
+        "x" : 1081,
+        "y" : 104
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 43,
+      "points" : [ {
+        "x" : 963,
+        "y" : 75
+      } ]
+    } ]
+  }, {
+    "id" : 171,
+    "reactomeId" : 6788684,
+    "displayName" : "TRMT13 2'-O-methylates cytidine-4 in tRNA",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 329,
+      "y" : 1550
+    },
+    "minX" : 293,
+    "maxX" : 365,
+    "minY" : 1544,
+    "maxY" : 1556,
+    "segments" : [ {
+      "from" : {
+        "x" : 293,
+        "y" : 1550
+      },
+      "to" : {
+        "x" : 329,
+        "y" : 1550
+      }
+    }, {
+      "from" : {
+        "x" : 329,
+        "y" : 1550
+      },
+      "to" : {
+        "x" : 365,
+        "y" : 1552
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 323,
+        "y" : 1544
+      },
+      "b" : {
+        "x" : 335,
+        "y" : 1556
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 172,
+      "points" : [ {
+        "x" : 237,
+        "y" : 1550
+      } ]
+    }, {
+      "id" : 176,
+      "points" : [ {
+        "x" : 223,
+        "y" : 1599
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 173,
+      "points" : [ {
+        "x" : 405,
+        "y" : 1551
+      } ]
+    }, {
+      "id" : 178,
+      "points" : [ {
+        "x" : 436,
+        "y" : 1595
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 174,
+      "points" : [ {
+        "x" : 328,
+        "y" : 1606
+      } ]
+    } ]
+  }, {
+    "id" : 44,
+    "reactomeId" : 6782388,
+    "displayName" : "NSUN2 methylates cytidine-34, cytidine-48 of unspliced tRNA(Leu)(CAA)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 338,
+      "y" : 692
+    },
+    "minX" : 306,
+    "maxX" : 399,
+    "minY" : 686,
+    "maxY" : 698,
+    "segments" : [ {
+      "from" : {
+        "x" : 306,
+        "y" : 690
+      },
+      "to" : {
+        "x" : 338,
+        "y" : 692
+      }
+    }, {
+      "from" : {
+        "x" : 338,
+        "y" : 692
+      },
+      "to" : {
+        "x" : 399,
+        "y" : 691
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 332,
+        "y" : 686
+      },
+      "b" : {
+        "x" : 344,
+        "y" : 698
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 45,
+      "points" : [ {
+        "x" : 251,
+        "y" : 689
+      } ]
+    }, {
+      "id" : 48,
+      "points" : [ {
+        "x" : 276,
+        "y" : 665
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 46,
+      "points" : [ {
+        "x" : 473,
+        "y" : 689
+      } ]
+    }, {
+      "id" : 49,
+      "points" : [ {
+        "x" : 451,
+        "y" : 661
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "catalysts" : [ {
+      "id" : 47,
+      "points" : [ {
+        "x" : 350,
+        "y" : 660
+      } ]
+    } ]
+  }, {
+    "id" : 108,
+    "reactomeId" : 6783492,
+    "displayName" : "TRMT6:TRMT61A methylate adenosine yielding 1-methyladenosine at nucleotide 58 of tRNA(Met)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 969,
+      "y" : 741
+    },
+    "minX" : 946,
+    "maxX" : 995,
+    "minY" : 735,
+    "maxY" : 747,
+    "segments" : [ {
+      "from" : {
+        "x" : 946,
+        "y" : 741
+      },
+      "to" : {
+        "x" : 969,
+        "y" : 741
+      }
+    }, {
+      "from" : {
+        "x" : 969,
+        "y" : 741
+      },
+      "to" : {
+        "x" : 995,
+        "y" : 742
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 963,
+        "y" : 735
+      },
+      "b" : {
+        "x" : 975,
+        "y" : 747
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 109,
+      "points" : [ {
+        "x" : 909,
+        "y" : 734
+      } ]
+    }, {
+      "id" : 118,
+      "points" : [ {
+        "x" : 911,
+        "y" : 753
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 110,
+      "points" : [ {
+        "x" : 1036,
+        "y" : 736
+      } ]
+    }, {
+      "id" : 116,
+      "points" : [ {
+        "x" : 1050,
+        "y" : 756
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 111,
+      "points" : [ {
+        "x" : 969,
+        "y" : 698
+      } ]
+    } ]
+  }, {
+    "id" : 179,
+    "reactomeId" : 6788668,
+    "displayName" : "TRMT13 2'-O-methylates adenosine-4 in tRNA",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 329,
+      "y" : 1683
+    },
+    "minX" : 277,
+    "maxX" : 364,
+    "minY" : 1677,
+    "maxY" : 1689,
+    "segments" : [ {
+      "from" : {
+        "x" : 277,
+        "y" : 1683
+      },
+      "to" : {
+        "x" : 329,
+        "y" : 1683
+      }
+    }, {
+      "from" : {
+        "x" : 329,
+        "y" : 1683
+      },
+      "to" : {
+        "x" : 364,
+        "y" : 1683
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 323,
+        "y" : 1677
+      },
+      "b" : {
+        "x" : 335,
+        "y" : 1689
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 180,
+      "points" : [ {
+        "x" : 215,
+        "y" : 1682
+      } ]
+    }, {
+      "id" : 176,
+      "points" : [ {
+        "x" : 219,
+        "y" : 1635
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 181,
+      "points" : [ {
+        "x" : 418,
+        "y" : 1683
+      } ]
+    }, {
+      "id" : 178,
+      "points" : [ {
+        "x" : 439,
+        "y" : 1633
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 174,
+      "points" : [ {
+        "x" : 328,
+        "y" : 1638
+      } ]
+    } ]
+  }, {
+    "id" : 53,
+    "reactomeId" : 6785438,
+    "displayName" : "NSUN2 methylates cytidine-40, cytidine-48, cytidine-49, cytidine-50 of tRNA(GLY)(GCC)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 358,
+      "y" : 747
+    },
+    "minX" : 305,
+    "maxX" : 398,
+    "minY" : 741,
+    "maxY" : 753,
+    "segments" : [ {
+      "from" : {
+        "x" : 305,
+        "y" : 747
+      },
+      "to" : {
+        "x" : 358,
+        "y" : 747
+      }
+    }, {
+      "from" : {
+        "x" : 358,
+        "y" : 747
+      },
+      "to" : {
+        "x" : 398,
+        "y" : 747
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 352,
+        "y" : 741
+      },
+      "b" : {
+        "x" : 364,
+        "y" : 753
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 54,
+      "points" : [ {
+        "x" : 252,
+        "y" : 747
+      } ]
+    }, {
+      "id" : 48,
+      "points" : [ {
+        "x" : 265,
+        "y" : 665
+      } ],
+      "stoichiometry" : 4
+    } ],
+    "outputs" : [ {
+      "id" : 55,
+      "points" : [ {
+        "x" : 473,
+        "y" : 747
+      } ]
+    }, {
+      "id" : 49,
+      "points" : [ {
+        "x" : 463,
+        "y" : 661
+      } ],
+      "stoichiometry" : 4
+    } ],
+    "catalysts" : [ {
+      "id" : 47,
+      "points" : [ {
+        "x" : 356,
+        "y" : 660
+      } ]
+    } ]
+  }, {
+    "id" : 182,
+    "reactomeId" : 6788707,
+    "displayName" : "TRMT44 2'-O-methylates uridine-44 in tRNA(Ser)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 986,
+      "y" : 1573
+    },
+    "minX" : 889,
+    "maxX" : 1082,
+    "minY" : 1567,
+    "maxY" : 1579,
+    "segments" : [ {
+      "from" : {
+        "x" : 889,
+        "y" : 1573
+      },
+      "to" : {
+        "x" : 986,
+        "y" : 1573
+      }
+    }, {
+      "from" : {
+        "x" : 986,
+        "y" : 1573
+      },
+      "to" : {
+        "x" : 1082,
+        "y" : 1573
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 980,
+        "y" : 1567
+      },
+      "b" : {
+        "x" : 992,
+        "y" : 1579
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 183,
+      "points" : [ {
+        "x" : 850,
+        "y" : 1550
+      } ]
+    }, {
+      "id" : 187,
+      "points" : [ {
+        "x" : 841,
+        "y" : 1588
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 184,
+      "points" : [ {
+        "x" : 1139,
+        "y" : 1548
+      } ]
+    }, {
+      "id" : 189,
+      "points" : [ {
+        "x" : 1153,
+        "y" : 1590
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 185,
+      "points" : [ {
+        "x" : 986,
+        "y" : 1525
+      } ]
+    } ]
+  }, {
+    "id" : 119,
+    "reactomeId" : 6786583,
+    "displayName" : "PUS7 transforms uridine to pseudouridine in tRNAs",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 966,
+      "y" : 318
+    },
+    "minX" : 908,
+    "maxX" : 1039,
+    "minY" : 312,
+    "maxY" : 324,
+    "segments" : [ {
+      "from" : {
+        "x" : 908,
+        "y" : 316
+      },
+      "to" : {
+        "x" : 966,
+        "y" : 318
+      }
+    }, {
+      "from" : {
+        "x" : 966,
+        "y" : 318
+      },
+      "to" : {
+        "x" : 1039,
+        "y" : 317
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1032,
+        "y" : 321
+      },
+      "b" : {
+        "x" : 1039,
+        "y" : 317
+      },
+      "c" : {
+        "x" : 1032,
+        "y" : 313
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 960,
+        "y" : 312
+      },
+      "b" : {
+        "x" : 972,
+        "y" : 324
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 194
+    } ],
+    "outputs" : [ {
+      "id" : 196
+    } ],
+    "catalysts" : [ {
+      "id" : 122,
+      "points" : [ {
+        "x" : 965,
+        "y" : 291
+      } ]
+    } ]
+  }, {
+    "id" : 56,
+    "reactomeId" : 6785409,
+    "displayName" : "NSUN2 methylates cytidine-48 and cytidine-49 of tRNA(Asp)(GUC)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 382,
+      "y" : 800
+    },
+    "minX" : 274,
+    "maxX" : 428,
+    "minY" : 794,
+    "maxY" : 806,
+    "segments" : [ {
+      "from" : {
+        "x" : 274,
+        "y" : 801
+      },
+      "to" : {
+        "x" : 382,
+        "y" : 800
+      }
+    }, {
+      "from" : {
+        "x" : 382,
+        "y" : 800
+      },
+      "to" : {
+        "x" : 428,
+        "y" : 801
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 376,
+        "y" : 794
+      },
+      "b" : {
+        "x" : 388,
+        "y" : 806
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 57,
+      "points" : [ {
+        "x" : 245,
+        "y" : 801
+      } ]
+    }, {
+      "id" : 48,
+      "points" : [ {
+        "x" : 259,
+        "y" : 665
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 58,
+      "points" : [ {
+        "x" : 480,
+        "y" : 802
+      } ]
+    }, {
+      "id" : 49,
+      "points" : [ {
+        "x" : 470,
+        "y" : 661
+      } ],
+      "stoichiometry" : 2
+    } ],
+    "catalysts" : [ {
+      "id" : 47,
+      "points" : [ {
+        "x" : 358,
+        "y" : 660
+      } ]
+    } ]
+  }, {
+    "id" : 59,
+    "reactomeId" : 6782381,
+    "displayName" : "PUS1 isoform 2 transforms uridine residues to pseudouridine in the anticodon stems of tRNAs",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 966,
+      "y" : 231
+    },
+    "minX" : 896,
+    "maxX" : 1050,
+    "minY" : 225,
+    "maxY" : 237,
+    "segments" : [ {
+      "from" : {
+        "x" : 896,
+        "y" : 233
+      },
+      "to" : {
+        "x" : 966,
+        "y" : 231
+      }
+    }, {
+      "from" : {
+        "x" : 966,
+        "y" : 231
+      },
+      "to" : {
+        "x" : 1050,
+        "y" : 231
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1043,
+        "y" : 235
+      },
+      "b" : {
+        "x" : 1050,
+        "y" : 231
+      },
+      "c" : {
+        "x" : 1043,
+        "y" : 227
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 960,
+        "y" : 225
+      },
+      "b" : {
+        "x" : 972,
+        "y" : 237
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 168
+    } ],
+    "outputs" : [ {
+      "id" : 170
+    } ],
+    "catalysts" : [ {
+      "id" : 62,
+      "points" : [ {
+        "x" : 965,
+        "y" : 198
+      } ]
+    } ]
+  }, {
+    "id" : 123,
+    "reactomeId" : 6786500,
+    "displayName" : "ALKBH8 methylates 5-carboxymethyluridine-34 in tRNA(Arg) and tRNA(Glu) yielding 5-methoxycarbonylmethyluridine-34",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 319,
+      "y" : 1008
+    },
+    "minX" : 276,
+    "maxX" : 362,
+    "minY" : 1002,
+    "maxY" : 1014,
+    "segments" : [ {
+      "from" : {
+        "x" : 276,
+        "y" : 1007
+      },
+      "to" : {
+        "x" : 319,
+        "y" : 1008
+      }
+    }, {
+      "from" : {
+        "x" : 319,
+        "y" : 1008
+      },
+      "to" : {
+        "x" : 362,
+        "y" : 1008
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 313,
+        "y" : 1002
+      },
+      "b" : {
+        "x" : 325,
+        "y" : 1014
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 124,
+      "points" : [ {
+        "x" : 240,
+        "y" : 997
+      } ]
+    }, {
+      "id" : 125,
+      "points" : [ {
+        "x" : 217,
+        "y" : 1019
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 126,
+      "points" : [ {
+        "x" : 417,
+        "y" : 1020
+      } ]
+    }, {
+      "id" : 127,
+      "points" : [ {
+        "x" : 407,
+        "y" : 1000
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 128,
+      "points" : [ {
+        "x" : 317,
+        "y" : 973
+      } ]
+    } ]
+  }, {
+    "id" : 63,
+    "reactomeId" : 6782443,
+    "displayName" : "QTRT1:QTRTD1 exchange guanine for queuosine at guanosine-34 of tRNA(Tyr)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1003,
+      "y" : 988
+    },
+    "minX" : 972,
+    "maxX" : 1040,
+    "minY" : 982,
+    "maxY" : 994,
+    "segments" : [ {
+      "from" : {
+        "x" : 972,
+        "y" : 988
+      },
+      "to" : {
+        "x" : 1003,
+        "y" : 988
+      }
+    }, {
+      "from" : {
+        "x" : 1003,
+        "y" : 988
+      },
+      "to" : {
+        "x" : 1040,
+        "y" : 990
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 997,
+        "y" : 982
+      },
+      "b" : {
+        "x" : 1009,
+        "y" : 994
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 64,
+      "points" : [ {
+        "x" : 884,
+        "y" : 973
+      } ]
+    }, {
+      "id" : 65,
+      "points" : [ {
+        "x" : 932,
+        "y" : 996
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 66,
+      "points" : [ {
+        "x" : 1106,
+        "y" : 1000
+      } ]
+    }, {
+      "id" : 67,
+      "points" : [ {
+        "x" : 1126,
+        "y" : 974
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 68,
+      "points" : [ {
+        "x" : 1000,
+        "y" : 959
+      } ]
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 1,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 670,
+      "y" : 952
+    },
+    "minX" : 4,
+    "maxX" : 1336,
+    "minY" : 4,
+    "maxY" : 1900,
+    "prop" : {
+      "x" : 4,
+      "y" : 4,
+      "width" : 1332,
+      "height" : 1896
+    },
+    "textPosition" : {
+      "x" : 17,
+      "y" : 1854
+    },
+    "insets" : {
+      "x" : 14,
+      "y" : 10,
+      "width" : 1312,
+      "height" : 1880
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2, 25, 27, 28, 23, 63, 64, 65, 66, 67, 68, 83, 84, 85, 81, 82, 93, 92, 97, 95, 94, 99, 98, 123, 126, 127, 125, 133, 128, 124, 135, 136, 134, 139, 141, 142, 143, 144, 145, 146, 147, 152, 154, 157, 159, 153, 155, 162, 163, 161, 165, 167, 160, 172, 173, 174, 176, 178, 171, 180, 181, 179, 184, 185, 187, 189, 183, 182, 192, 190, 200, 202, 204, 205, 206, 207, 208, 209, 221, 215, 219, 214, 217, 216, 222, 224, 223, 225, 226, 227 ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 7660,
+    "displayName" : "nucleoplasm",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 659,
+      "y" : 470
+    },
+    "minX" : 29,
+    "maxX" : 1289,
+    "minY" : 27,
+    "maxY" : 914,
+    "prop" : {
+      "x" : 29,
+      "y" : 27,
+      "width" : 1260,
+      "height" : 887
+    },
+    "textPosition" : {
+      "x" : 43,
+      "y" : 869
+    },
+    "insets" : {
+      "x" : 40,
+      "y" : 35,
+      "width" : 1243,
+      "height" : 871
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 3, 4, 5, 8, 7, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 34, 33, 30, 31, 29, 32, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 53, 54, 55, 56, 57, 58, 59, 62, 72, 73, 74, 75, 76, 78, 80, 100, 101, 102, 103, 105, 107, 108, 109, 110, 111, 116, 118, 119, 122, 6, 168, 170, 194, 196 ]
+  }, {
+    "id" : 133,
+    "reactomeId" : 5462,
+    "displayName" : "mitochondrion",
+    "schemaClass" : "EntityCompartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 323,
+      "y" : 1453
+    },
+    "minX" : 202,
+    "maxX" : 445,
+    "minY" : 1416,
+    "maxY" : 1491,
+    "prop" : {
+      "x" : 202,
+      "y" : 1416,
+      "width" : 243,
+      "height" : 75
+    },
+    "textPosition" : {
+      "x" : 259,
+      "y" : 1437
+    },
+    "insets" : {
+      "x" : 211,
+      "y" : 1424,
+      "width" : 230,
+      "height" : 58
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 137 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 4,
+  "maxX" : 1336,
+  "minY" : 4,
+  "maxY" : 1900,
+  "disease" : false
+}

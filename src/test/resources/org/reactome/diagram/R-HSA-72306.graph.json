@@ -1,0 +1,34 @@
+{
+  "dbId" : 72306,
+  "stId" : "R-HSA-72306",
+  "nodes" : [ {
+    "dbId" : 6784531,
+    "stId" : "R-HSA-6784531",
+    "displayName" : "tRNA processing in the nucleus",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ]
+  }, {
+    "dbId" : 6785470,
+    "stId" : "R-HSA-6785470",
+    "displayName" : "tRNA processing in the mitochondrion",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 6 ]
+  }, {
+    "dbId" : 6782315,
+    "stId" : "R-HSA-6782315",
+    "displayName" : "tRNA modification in the nucleus and cytosol",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 5 ]
+  }, {
+    "dbId" : 6787450,
+    "stId" : "R-HSA-6787450",
+    "displayName" : "tRNA modification in the mitochondrion",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7 ]
+  } ],
+  "edges" : [ ]
+}

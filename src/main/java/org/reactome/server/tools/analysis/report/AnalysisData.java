@@ -10,7 +10,6 @@ import org.reactome.server.graph.service.GeneralService;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
 
 import java.util.Collection;
-import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -68,7 +67,6 @@ public class AnalysisData {
 					final Pathway pathway = databaseObjectService.findByIdNoRelations(pathwayBase.getStId());
 					return (new PathwayData(pathwaySummary, pathwayBase, pathway));
 				})
-				.sorted(Comparator.comparing(pathwayData -> pathwayData.getBase().getEntities().getFdr()))
 				.collect(Collectors.toList());
 	}
 
