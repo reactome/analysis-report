@@ -116,6 +116,11 @@ public class AnalysisReport {
 		final AnalysisData analysisData = new AnalysisData(result, resource, species, maxPathways);
 
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
+			document.getPdfDocument().getDocumentInfo().setAuthor("https://reactome.org");
+			document.getPdfDocument().getDocumentInfo().setCreator("https://reactome.org");
+			document.getPdfDocument().getDocumentInfo().setTitle("Pathway Analysis Report - " + analysisData.getName());
+			document.getPdfDocument().getDocumentInfo().setSubject("Pathway Analysis Report");
+			document.getPdfDocument().getDocumentInfo().setKeywords("pathway analysis,report");
 			document.setFont(pdfProfile.getRegularFont());
 			document.setMargins(pdfProfile.getMargin().getTop(),
 					pdfProfile.getMargin().getRight(),
