@@ -14,8 +14,8 @@ Analysis exporter is developed as a Java library. To add it to your project, you
 <dependencies>
 	<dependency>
 		<groupId>org.reactome.server.tools</groupId>
-		<artifactId>analysis-exporter</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<artifactId>analysis-report</artifactId>
+		<version>1.1.1</version>
 	</dependency>
 	<!-- ... -->
 </dependencies>
