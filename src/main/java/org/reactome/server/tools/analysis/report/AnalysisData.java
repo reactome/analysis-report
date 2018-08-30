@@ -32,6 +32,8 @@ public class AnalysisData {
 	private final AnalysisStoredResult analysisStoredResult;
 	private final Long speciesDbId;
 	private final int maxPathways;
+	private final boolean projection;
+	private final boolean interactors;
 
 	AnalysisData(AnalysisStoredResult analysisStoredResult, String resource, Long speciesDbId, int maxPathways) {
 		this.analysisStoredResult = analysisStoredResult;
@@ -43,6 +45,8 @@ public class AnalysisData {
 		this.speciesComparisonSpecies = getSpeciesName(analysisStoredResult.getSummary().getSpecies());
 		this.maxPathways = maxPathways;
 		this.name = computeName();
+		this.projection = analysisStoredResult.getSummary().isProjection() != null && analysisStoredResult.getSummary().isProjection();
+		this.interactors = analysisStoredResult.getSummary().isInteractors() != null && analysisStoredResult.getSummary().isInteractors();
 		pathways = collectPathways();
 	}
 
@@ -62,10 +66,10 @@ public class AnalysisData {
 	private List<PathwayData> collectPathways() {
 		return analysisStoredResult.filterBySpecies(speciesDbId, resource).getPathways().stream()
 				.limit(maxPathways)
-				.map(pathwayBase -> {
-					final PathwayNodeSummary pathwaySummary = analysisStoredResult.getPathway(pathwayBase.getStId());
-					final Pathway pathway = databaseObjectService.findByIdNoRelations(pathwayBase.getStId());
-					return (new PathwayData(pathwaySummary, pathwayBase, pathway));
+				.map(base -> {
+					final PathwayNodeSummary summary = analysisStoredResult.getPathway(base.getStId());
+					final Pathway pathway = databaseObjectService.findByIdNoRelations(base.getStId());
+					return (new PathwayData(summary, base, pathway));
 				})
 				.collect(Collectors.toList());
 	}
@@ -96,7 +100,7 @@ public class AnalysisData {
 			case "pubmed":
 				return "PubMed";
 			case "total":
-				return "any resource";
+				return "all resources";
 			default:
 				return resource;
 		}
@@ -132,5 +136,13 @@ public class AnalysisData {
 
 	public String getBeautifiedResource() {
 		return beautifiedResource;
+	}
+
+	public boolean isInteractors() {
+		return interactors;
+	}
+
+	public boolean isProjection() {
+		return projection;
 	}
 }
