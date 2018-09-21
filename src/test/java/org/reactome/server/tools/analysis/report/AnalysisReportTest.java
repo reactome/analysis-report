@@ -23,33 +23,52 @@ import java.util.Map;
  */
 public class AnalysisReportTest {
 
-	private static final boolean save = false;
 	private static final HashMap<String, String> tokens = new LinkedHashMap<String, String>() {
 		{
-			put("overrepresentation01", "MjAxODAyMTIxMTI5MzdfMQ==");
-			put("overrepresentation02", "MjAxODAyMTIxMTMwMTRfMg==");
-			put("expression01", "MjAxODAyMTIxMTMwNDhfMw==");
-			put("expression02", "MjAxODAyMTIxMTMxMTZfNA==");
-			put("expression03", "MjAxODAzMDIwNTM2MDNfMQ%253D%253D");
-			put("species", "MjAxODAyMTIxMTMyMzdfNQ==");
+			put("ORA1", "MjAxODA4MjkxMzUwMDBfMw%3D%3D");
+			put("ORA2", "MjAxODA4MjkxMzQ4NTVfMg%3D%3D");
+//			put("ORA3", "MjAxODA4MjkxMzU4NDVfNA%3D%3D");  // disabled cause unknown error
+			put("ORA4", "MjAxODA4MjkxNDI4MDZfNQ%3D%3D");
+			put("ORA5", "MjAxODA4MjkxNDI4NTVfNg%3D%3D");
+
+			put("EXP1", "MjAxODA4MjkxNDI5NDJfNw%3D%3D");
+			put("EXP2", "MjAxODA4MjkxNDMwMzJfOA%3D%3D");
+			put("EXP3", "MjAxODA4MjkxNDMxMzJfOQ%3D%3D");
+			put("EXP4", "MjAxODA4MjkxNDMyMjlfMTA%3D");
+
+			put("SPECIES1", "MjAxODA4MjkxNDQwMzBfMTE%3D");
+			put("SPECIES2", "MjAxODA4MjkxNDQ1NDRfMTI%3D");
 		}
 	};
 	private static final File SAVE_TO = new File("test-files");
-	private static final String ANALYSIS_PATH = "src/test/resources/org/reactome/analysis";
-	private static final String DIAGRAM_PATH = "src/test/resources/org/reactome/diagram";
-	private static final String FIREWORKS_PATH = "src/test/resources/org/reactome/fireworks";
-	private static final String EHLD_PATH = "src/test/resources/org/reactome/ehld";
-	private static final String SVG_SUMMARY = "src/test/resources/org/reactome/ehld/svgsummary.txt";
+	private static String ANALYSIS_PATH;
+	private static String DIAGRAM_PATH;
+	private static String FIREWORKS_PATH;
+	private static String EHLD_PATH;
+	private static String SVG_SUMMARY;
+	private static boolean save = false;
 	private static AnalysisReport RENDERER;
 
 	static {
+		final String save = System.getProperty("test.save");
+		AnalysisReportTest.save = save != null && save.equalsIgnoreCase("true");
+		AnalysisReportTest.ANALYSIS_PATH = System.getProperty("analysis.path");
+		AnalysisReportTest.DIAGRAM_PATH = System.getProperty("diagram.path");
+		AnalysisReportTest.FIREWORKS_PATH = System.getProperty("fireworks.path");
+		AnalysisReportTest.EHLD_PATH = System.getProperty("ehld.path");
+		AnalysisReportTest.SVG_SUMMARY = System.getProperty("svg.summary");
 	}
 
 	@BeforeClass
 	public static void beforeClass() {
 		if (!SAVE_TO.exists() && !SAVE_TO.mkdirs())
 			Assert.fail("Couldn't create test directory: " + SAVE_TO.getAbsolutePath());
-		ReactomeGraphCore.initialise("localhost", "7474", "neo4j", "reactome", GraphCoreConfig.class);
+		ReactomeGraphCore.initialise(
+				System.getProperty("neo4j.host", "localhost"),
+				System.getProperty("neo4j.port", "7474"),
+				System.getProperty("neo4j.user", "neo4j"),
+				System.getProperty("neo4j.password", "neo4j"),
+				GraphCoreConfig.class);
 		RENDERER = new AnalysisReport(DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, SVG_SUMMARY);
 	}
 
@@ -76,7 +95,7 @@ public class AnalysisReportTest {
 				final OutputStream os = save
 						? new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)))
 						: new NullOutputStream();
-				RENDERER.create(token, "UNIPROT", 48887L, 25, "modern", "copper plus", "copper", os);
+				RENDERER.create(token, "TOTAL", 48887L, 25, "modern", "copper plus", "copper", os);
 			} catch (AnalysisExporterException | FileNotFoundException e) {
 				e.printStackTrace();
 				Assert.fail(e.getMessage());

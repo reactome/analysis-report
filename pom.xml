@@ -205,10 +205,16 @@
 
                     <!-- Configure the Neo4j database for testcase -->
                     <systemPropertyVariables>
-                        <neo4j.host>localhost</neo4j.host>
-                        <neo4j.port>7474</neo4j.port>
-                        <neo4j.user>neo4j</neo4j.user>
-                        <neo4j.password>password</neo4j.password>
+                        <neo4j.host>${neo4j.host}</neo4j.host>
+                        <neo4j.port>${neo4j.port}</neo4j.port>
+                        <neo4j.user>${neo4j.user}</neo4j.user>
+                        <neo4j.password>${neo4j.password}</neo4j.password>
+                        <analysis.path>${analysis.path}</analysis.path>
+                        <diagram.path>${diagram.path}</diagram.path>
+                        <fireworks.path>${fireworks.path}</fireworks.path>
+                        <ehld.path>${ehld.path}</ehld.path>
+                        <svg.summary>${svg.summary}</svg.summary>
+                        <test.save>${test.save}</test.save>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
