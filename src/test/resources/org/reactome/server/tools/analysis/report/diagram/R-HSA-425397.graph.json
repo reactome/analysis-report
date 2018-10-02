@@ -1,0 +1,1989 @@
+{
+  "dbId" : 425397,
+  "stId" : "R-HSA-425397",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 879629,
+    "stId" : "R-ALL-879629",
+    "displayName" : "PGD2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15555",
+    "parents" : [ 879614 ]
+  }, {
+    "dbId" : 879628,
+    "stId" : "R-ALL-879628",
+    "displayName" : "T3,T4 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 164 ],
+    "children" : [ 176667, 209937 ]
+  }, {
+    "dbId" : 879625,
+    "stId" : "R-HSA-879625",
+    "displayName" : "SLCOs, SLC16A2 dimer [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 165 ],
+    "children" : [ 879618, 879523, 8875468, 194133 ]
+  }, {
+    "dbId" : 879624,
+    "stId" : "R-HSA-879624",
+    "displayName" : "SLCO2A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 169 ],
+    "identifier" : "Q92959",
+    "geneNames" : [ "SLCO2A1", "OATP2A1", "SLC21A2" ]
+  }, {
+    "dbId" : 879620,
+    "stId" : "R-ALL-879620",
+    "displayName" : "DECA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "30813",
+    "parents" : [ 879544 ]
+  }, {
+    "dbId" : 194062,
+    "stId" : "R-HSA-194062",
+    "displayName" : "SLCO1A2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 187 ],
+    "identifier" : "P46721",
+    "geneNames" : [ "SLCO1A2", "OATP", "OATP1", "OATP1A2", "SLC21A3" ]
+  }, {
+    "dbId" : 879618,
+    "stId" : "R-HSA-879618",
+    "displayName" : "SLCO1C1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NYB5",
+    "geneNames" : [ "SLCO1C1", "OATP14", "OATP1C1", "OATPF", "SLC21A14" ],
+    "parents" : [ 879625 ]
+  }, {
+    "dbId" : 429590,
+    "stId" : "R-ALL-429590",
+    "displayName" : "LIPA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16494",
+    "parents" : [ 429605 ]
+  }, {
+    "dbId" : 879644,
+    "stId" : "R-ALL-879644",
+    "displayName" : "STEA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "9254",
+    "parents" : [ 879559 ]
+  }, {
+    "dbId" : 209937,
+    "stId" : "R-ALL-209937",
+    "displayName" : "T4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18332",
+    "parents" : [ 879563, 879628 ]
+  }, {
+    "dbId" : 64023,
+    "stId" : "R-HSA-64023",
+    "displayName" : "SLC28A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 9 ],
+    "identifier" : "O00337",
+    "geneNames" : [ "SLC28A1", "CNT1" ]
+  }, {
+    "dbId" : 179738,
+    "stId" : "R-ALL-179738",
+    "displayName" : "ligands of SLC28A1 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 7 ],
+    "children" : [ 83919, 83948, 83908, 83922, 83923 ]
+  }, {
+    "dbId" : 179739,
+    "stId" : "R-ALL-179739",
+    "displayName" : "ligands of SLC28A1 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 8 ],
+    "children" : [ 83949, 83928, 83929, 83909, 83925 ]
+  }, {
+    "dbId" : 64025,
+    "stId" : "R-HSA-64025",
+    "displayName" : "SLC28A2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 17 ],
+    "identifier" : "O43868",
+    "geneNames" : [ "SLC28A2", "CNT2" ]
+  }, {
+    "dbId" : 194075,
+    "stId" : "R-HSA-194075",
+    "displayName" : "SLCO1B3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 191 ],
+    "identifier" : "Q9NPD5",
+    "geneNames" : [ "SLCO1B3", "LST2", "OATP1B3", "OATP8", "SLC21A8" ]
+  }, {
+    "dbId" : 176667,
+    "stId" : "R-ALL-176667",
+    "displayName" : "T3 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28774",
+    "parents" : [ 879628 ]
+  }, {
+    "dbId" : 879638,
+    "stId" : "R-HSA-879638",
+    "displayName" : "SLC27A4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6P1M0",
+    "geneNames" : [ "SLC27A4", "ACSVL4", "FATP4" ],
+    "parents" : [ 879582 ]
+  }, {
+    "dbId" : 179737,
+    "stId" : "R-ALL-179737",
+    "displayName" : "ligands of SLC28A3 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 12 ],
+    "children" : [ 83948, 83908, 83922, 83923, 83920, 83921 ]
+  }, {
+    "dbId" : 199192,
+    "stId" : "R-ALL-199192",
+    "displayName" : "PanK [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "7916",
+    "parents" : [ 429605 ]
+  }, {
+    "dbId" : 179742,
+    "stId" : "R-ALL-179742",
+    "displayName" : "ligands of SLC29A2 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 23 ],
+    "children" : [ 113599, 83951, 83949, 83962, 83960, 83928, 83929, 83926, 83927, 83956, 83924, 83909 ]
+  }, {
+    "dbId" : 179743,
+    "stId" : "R-ALL-179743",
+    "displayName" : "ligands of SLC28A3 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 13 ],
+    "children" : [ 83949, 83928, 83929, 83926, 83927, 83909 ]
+  }, {
+    "dbId" : 179740,
+    "stId" : "R-ALL-179740",
+    "displayName" : "ligands of SLC28A2 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 15 ],
+    "children" : [ 83908, 83923, 83920, 83921 ]
+  }, {
+    "dbId" : 179741,
+    "stId" : "R-ALL-179741",
+    "displayName" : "ligands of SLC28A2 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 16 ],
+    "children" : [ 83929, 83926, 83927, 83909 ]
+  }, {
+    "dbId" : 179746,
+    "stId" : "R-ALL-179746",
+    "displayName" : "ligands of SLC29A1 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 20 ],
+    "children" : [ 83949, 83928, 83929, 83926, 83927, 83909 ]
+  }, {
+    "dbId" : 179747,
+    "stId" : "R-ALL-179747",
+    "displayName" : "ligands of SLC29A2 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 24 ],
+    "children" : [ 83918, 83948, 83947, 83961, 83959, 83908, 83957, 83922, 83923, 83955, 83920, 83921 ]
+  }, {
+    "dbId" : 179745,
+    "stId" : "R-ALL-179745",
+    "displayName" : "ligands of SLC29A1 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 21 ],
+    "children" : [ 83948, 83908, 83922, 83923, 83920, 83921 ]
+  }, {
+    "dbId" : 429605,
+    "stId" : "R-ALL-429605",
+    "displayName" : "vitamins transported by SMVT [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 2 ],
+    "children" : [ 199192, 199238, 429590 ]
+  }, {
+    "dbId" : 199207,
+    "stId" : "R-ALL-199207",
+    "displayName" : "Btn [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15956",
+    "parents" : [ 429627 ]
+  }, {
+    "dbId" : 879657,
+    "stId" : "R-ALL-879657",
+    "displayName" : "PGF2a [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15553",
+    "parents" : [ 879566 ]
+  }, {
+    "dbId" : 879656,
+    "stId" : "R-HSA-879656",
+    "displayName" : "SLC27A6 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y2P4",
+    "geneNames" : [ "SLC27A6", "ACSVL2", "FACVL2", "FATP1" ],
+    "parents" : [ 879582 ]
+  }, {
+    "dbId" : 400431,
+    "stId" : "R-ALL-400431",
+    "displayName" : "OLEA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16196",
+    "parents" : [ 879559 ]
+  }, {
+    "dbId" : 879654,
+    "stId" : "R-ALL-879654",
+    "displayName" : "SLCO2B1 substrates [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 172 ],
+    "children" : [ 191976, 176501, 879576 ]
+  }, {
+    "dbId" : 162860,
+    "stId" : "R-ALL-162860",
+    "displayName" : "GDP-Man [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 64 ],
+    "identifier" : "15820"
+  }, {
+    "dbId" : 429608,
+    "stId" : "R-ALL-429608",
+    "displayName" : "LIPA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16494",
+    "parents" : [ 429627 ]
+  }, {
+    "dbId" : 194092,
+    "stId" : "R-ALL-194092",
+    "displayName" : "bile salts and acids (OATP-A) [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "parents" : [ 194110 ],
+    "children" : [ 192415, 192431, 192442, 192421, 192464 ]
+  }, {
+    "dbId" : 194097,
+    "stId" : "R-ALL-194097",
+    "displayName" : "GCCA, TCCA [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 190 ],
+    "children" : [ 192332, 159435 ]
+  }, {
+    "dbId" : 199221,
+    "stId" : "R-HSA-199221",
+    "displayName" : "SLC5A6 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y289",
+    "geneNames" : [ "SLC5A6", "SMVT" ],
+    "parents" : [ 5359005 ]
+  }, {
+    "dbId" : 194104,
+    "stId" : "R-HSA-194104",
+    "displayName" : "ALB:(GCCA, TCCA) [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 189 ],
+    "children" : [ 194117, 194115 ]
+  }, {
+    "dbId" : 194110,
+    "stId" : "R-HSA-194110",
+    "displayName" : "albumin:bile salt and acid (OATP-A) complex [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 184 ],
+    "children" : [ 194092, 194115 ]
+  }, {
+    "dbId" : 429627,
+    "stId" : "R-ALL-429627",
+    "displayName" : "vitamins transported by SMVT [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 5 ],
+    "children" : [ 429608, 196820, 199207 ]
+  }, {
+    "dbId" : 54335,
+    "stId" : "R-HSA-54335",
+    "displayName" : "SLC29A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q99808",
+    "geneNames" : [ "SLC29A1", "ENT1" ],
+    "parents" : [ 3907272, 4127407 ]
+  }, {
+    "dbId" : 194115,
+    "stId" : "R-HSA-194115",
+    "displayName" : "ALB [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 194, 186 ],
+    "identifier" : "P02768",
+    "geneNames" : [ "ALB", "GIG20", "GIG42", "PRO0903", "PRO1708", "PRO2044", "PRO2619", "PRO2675", "UNQ696/PRO1341" ],
+    "parents" : [ 194104, 194110 ]
+  }, {
+    "dbId" : 54337,
+    "stId" : "R-HSA-54337",
+    "displayName" : "SLC29A2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14542",
+    "geneNames" : [ "SLC29A2", "DER12", "ENT2", "HNP36" ],
+    "parents" : [ 3907272, 4127407 ]
+  }, {
+    "dbId" : 400452,
+    "stId" : "R-ALL-400452",
+    "displayName" : "PALM [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15756",
+    "parents" : [ 879559 ]
+  }, {
+    "dbId" : 265287,
+    "stId" : "R-ALL-265287",
+    "displayName" : "PGE2 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15551",
+    "parents" : [ 879614, 879563 ]
+  }, {
+    "dbId" : 352326,
+    "stId" : "R-ALL-352326",
+    "displayName" : "T4 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18332",
+    "parents" : [ 879529, 879603 ]
+  }, {
+    "dbId" : 741454,
+    "stId" : "R-HSA-741454",
+    "displayName" : "SLC35B2 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8TB61",
+    "geneNames" : [ "SLC35B2", "PAPST1", "PSEC0149" ],
+    "parents" : [ 3465611 ]
+  }, {
+    "dbId" : 199238,
+    "stId" : "R-ALL-199238",
+    "displayName" : "Btn [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15956",
+    "parents" : [ 429605 ]
+  }, {
+    "dbId" : 741452,
+    "stId" : "R-HSA-741452",
+    "displayName" : "SLC35A3 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 54 ],
+    "identifier" : "Q9Y2D2",
+    "geneNames" : [ "SLC35A3" ]
+  }, {
+    "dbId" : 194117,
+    "stId" : "R-ALL-194117",
+    "displayName" : "GCCA, TCCA [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "parents" : [ 194104 ],
+    "children" : [ 192421, 192464 ]
+  }, {
+    "dbId" : 741440,
+    "stId" : "R-ALL-741440",
+    "displayName" : "PAPS [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 65 ],
+    "identifier" : "17980"
+  }, {
+    "dbId" : 194127,
+    "stId" : "R-ALL-194127",
+    "displayName" : "CDCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16755",
+    "parents" : [ 194131 ]
+  }, {
+    "dbId" : 352331,
+    "stId" : "R-ALL-352331",
+    "displayName" : "T3 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28774",
+    "parents" : [ 879603 ]
+  }, {
+    "dbId" : 194131,
+    "stId" : "R-ALL-194131",
+    "displayName" : "bile salts and acids (OATP-A) [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 185 ],
+    "children" : [ 192332, 194127, 159422, 159435, 193473 ]
+  }, {
+    "dbId" : 194133,
+    "stId" : "R-HSA-194133",
+    "displayName" : "SLCO1B1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 193 ],
+    "identifier" : "Q9Y6L6",
+    "geneNames" : [ "SLCO1B1", "LST1", "OATP1B1", "OATP2", "OATPC", "SLC21A6" ],
+    "parents" : [ 879625 ]
+  }, {
+    "dbId" : 914003,
+    "stId" : "R-ALL-914003",
+    "displayName" : "UDP-GlcNAc [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 182 ],
+    "identifier" : "16264",
+    "parents" : [ 744234 ]
+  }, {
+    "dbId" : 5229263,
+    "stId" : "R-HSA-5229263",
+    "displayName" : "APOD dimer [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 5229240 ],
+    "children" : [ 5216199 ]
+  }, {
+    "dbId" : 159362,
+    "stId" : "R-ALL-159362",
+    "displayName" : "DA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18243",
+    "parents" : [ 727737 ]
+  }, {
+    "dbId" : 400514,
+    "stId" : "R-ALL-400514",
+    "displayName" : "MYSA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28875",
+    "parents" : [ 879559 ]
+  }, {
+    "dbId" : 4085435,
+    "stId" : "R-ALL-4085435",
+    "displayName" : "CMP-Neu5Ac [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 214 ],
+    "identifier" : "16556"
+  }, {
+    "dbId" : 449678,
+    "stId" : "R-ALL-449678",
+    "displayName" : "DDCX [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "30805",
+    "parents" : [ 879559 ]
+  }, {
+    "dbId" : 416911,
+    "stId" : "R-ALL-416911",
+    "displayName" : "PGD2 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15555",
+    "parents" : [ 879566 ]
+  }, {
+    "dbId" : 5229279,
+    "stId" : "R-ALL-5229279",
+    "displayName" : "lipids [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 217 ],
+    "identifier" : "18059",
+    "parents" : [ 5229291 ]
+  }, {
+    "dbId" : 4127407,
+    "stId" : "R-HSA-4127407",
+    "displayName" : "SLC29A1-like proteins [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 213 ],
+    "children" : [ 54335, 54337 ]
+  }, {
+    "dbId" : 374935,
+    "stId" : "R-ALL-374935",
+    "displayName" : "NAd [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18357",
+    "parents" : [ 727774 ]
+  }, {
+    "dbId" : 5215953,
+    "stId" : "R-HSA-5215953",
+    "displayName" : "LCN9 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WX39",
+    "geneNames" : [ "LCN9" ],
+    "parents" : [ 5229240 ]
+  }, {
+    "dbId" : 5229291,
+    "stId" : "R-HSA-5229291",
+    "displayName" : "LCNs:lipids [extracellular region]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 218 ],
+    "children" : [ 5229240, 5229279 ]
+  }, {
+    "dbId" : 5229284,
+    "stId" : "R-HSA-5229284",
+    "displayName" : "LCN1 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P31025",
+    "geneNames" : [ "LCN1", "VEGP" ],
+    "parents" : [ 5229240 ]
+  }, {
+    "dbId" : 727739,
+    "stId" : "R-ALL-727739",
+    "displayName" : "Ino [lysosomal lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17596",
+    "parents" : [ 727782 ]
+  }, {
+    "dbId" : 727737,
+    "stId" : "R-ALL-727737",
+    "displayName" : "ligands of SLC29A4 [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 40 ],
+    "children" : [ 209789, 209914, 83909, 209794, 159362 ]
+  }, {
+    "dbId" : 727736,
+    "stId" : "R-HSA-727736",
+    "displayName" : "SLC29A4 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 42 ],
+    "identifier" : "Q7RTT9",
+    "geneNames" : [ "SLC29A4", "ENT4", "PMAT", "PSEC0113" ]
+  }, {
+    "dbId" : 727743,
+    "stId" : "R-ALL-727743",
+    "displayName" : "Gua-Rib [lysosomal lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16750",
+    "parents" : [ 727782 ]
+  }, {
+    "dbId" : 727735,
+    "stId" : "R-ALL-727735",
+    "displayName" : "Thy-dRib [lysosomal lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17748",
+    "parents" : [ 727782 ]
+  }, {
+    "dbId" : 159422,
+    "stId" : "R-ALL-159422",
+    "displayName" : "TCDCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16525",
+    "parents" : [ 194131 ]
+  }, {
+    "dbId" : 727733,
+    "stId" : "R-HSA-727733",
+    "displayName" : "SLC29A3 [lysosomal membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 37 ],
+    "identifier" : "Q9BZD2",
+    "geneNames" : [ "SLC29A3", "ENT3", "UNQ717/PRO1380" ]
+  }, {
+    "dbId" : 727755,
+    "stId" : "R-ALL-727755",
+    "displayName" : "Ade-Rib [lysosomal lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16335",
+    "parents" : [ 727782 ]
+  }, {
+    "dbId" : 727753,
+    "stId" : "R-ALL-727753",
+    "displayName" : "Ac-CoA [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 47 ],
+    "identifier" : "15351"
+  }, {
+    "dbId" : 727758,
+    "stId" : "R-ALL-727758",
+    "displayName" : "Cyt-Rib [lysosomal lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17562",
+    "parents" : [ 727782 ]
+  }, {
+    "dbId" : 3632881,
+    "stId" : "R-ALL-3632881",
+    "displayName" : "PALM [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15756",
+    "parents" : [ 879544 ]
+  }, {
+    "dbId" : 159435,
+    "stId" : "R-ALL-159435",
+    "displayName" : "GCCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17687",
+    "parents" : [ 194097, 194131 ]
+  }, {
+    "dbId" : 727746,
+    "stId" : "R-ALL-727746",
+    "displayName" : "nucleosides [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 36 ],
+    "children" : [ 83951, 83949, 83928, 83929, 83926, 83927, 83909 ]
+  }, {
+    "dbId" : 727745,
+    "stId" : "R-HSA-727745",
+    "displayName" : "SLC33A1 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 48 ],
+    "identifier" : "O00400",
+    "geneNames" : [ "SLC33A1", "ACATN", "AT1" ]
+  }, {
+    "dbId" : 727751,
+    "stId" : "R-ALL-727751",
+    "displayName" : "Ade [lysosomal lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16708",
+    "parents" : [ 727782 ]
+  }, {
+    "dbId" : 727774,
+    "stId" : "R-ALL-727774",
+    "displayName" : "ligands of SLC29A4 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 41 ],
+    "children" : [ 549254, 380873, 114523, 83908, 374935 ]
+  }, {
+    "dbId" : 196820,
+    "stId" : "R-ALL-196820",
+    "displayName" : "PanK [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "7916",
+    "parents" : [ 429627 ]
+  }, {
+    "dbId" : 3632879,
+    "stId" : "R-ALL-3632879",
+    "displayName" : "OLEA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16196",
+    "parents" : [ 879544 ]
+  }, {
+    "dbId" : 3632878,
+    "stId" : "R-ALL-3632878",
+    "displayName" : "STEA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "9254",
+    "parents" : [ 879544 ]
+  }, {
+    "dbId" : 727787,
+    "stId" : "R-ALL-727787",
+    "displayName" : "Ura-Rib [lysosomal lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16704",
+    "parents" : [ 727782 ]
+  }, {
+    "dbId" : 29410,
+    "stId" : "R-ALL-29410",
+    "displayName" : "UDP-Glc [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18066",
+    "parents" : [ 744229 ]
+  }, {
+    "dbId" : 727782,
+    "stId" : "R-ALL-727782",
+    "displayName" : "nucleosides [lysosomal lumen]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 35 ],
+    "children" : [ 727751, 727735, 727758, 727743, 727787, 727739, 727755 ]
+  }, {
+    "dbId" : 3907272,
+    "stId" : "R-HSA-3907272",
+    "displayName" : "SLC29A2-like proteins [plasma membrane]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 210 ],
+    "children" : [ 54337, 54335 ]
+  }, {
+    "dbId" : 5229240,
+    "stId" : "R-HSA-5229240",
+    "displayName" : "LCNs [extracellular region]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 216 ],
+    "parents" : [ 5229291 ],
+    "children" : [ 5229284, 5216213, 5215953, 5216200, 5229263 ]
+  }, {
+    "dbId" : 391930,
+    "stId" : "R-ALL-391930",
+    "displayName" : "PGE2 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15551",
+    "parents" : [ 879529, 879566 ]
+  }, {
+    "dbId" : 158471,
+    "stId" : "R-ALL-158471",
+    "displayName" : "PAPS [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 55 ],
+    "identifier" : "17980"
+  }, {
+    "dbId" : 727810,
+    "stId" : "R-ALL-727810",
+    "displayName" : "CMP [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 58 ],
+    "identifier" : "17361"
+  }, {
+    "dbId" : 3499326,
+    "stId" : "R-ALL-3499326",
+    "displayName" : "UDP-GlcNAc [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 201 ],
+    "identifier" : "16264"
+  }, {
+    "dbId" : 727815,
+    "stId" : "R-ALL-727815",
+    "displayName" : "CMP-Neu5Ac [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 70 ],
+    "identifier" : "16556"
+  }, {
+    "dbId" : 29452,
+    "stId" : "R-ALL-29452",
+    "displayName" : "UDP-Gal [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18307",
+    "parents" : [ 735692 ]
+  }, {
+    "dbId" : 727812,
+    "stId" : "R-HSA-727812",
+    "displayName" : "SLC35A1 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 75 ],
+    "identifier" : "P78382",
+    "geneNames" : [ "SLC35A1" ]
+  }, {
+    "dbId" : 174361,
+    "stId" : "R-HSA-174361",
+    "displayName" : "SLC35D1 [endoplasmic reticulum membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9NTN3",
+    "geneNames" : [ "SLC35D1", "KIAA0260", "UGTREL7" ],
+    "parents" : [ 174388 ]
+  }, {
+    "dbId" : 744235,
+    "stId" : "R-HSA-744235",
+    "displayName" : "SLC35D2 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 51 ],
+    "identifier" : "Q76EJ3",
+    "geneNames" : [ "SLC35D2", "HFRC", "UGTREL8" ]
+  }, {
+    "dbId" : 744234,
+    "stId" : "R-ALL-744234",
+    "displayName" : "UDP-GlcNAc, UDP-Glc [Golgi lumen]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 83 ],
+    "children" : [ 914003, 744227 ]
+  }, {
+    "dbId" : 744233,
+    "stId" : "R-ALL-744233",
+    "displayName" : "GDP-Man [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 71 ],
+    "identifier" : "15820"
+  }, {
+    "dbId" : 744239,
+    "stId" : "R-ALL-744239",
+    "displayName" : "guanosine 5'-monophosphate [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 62 ],
+    "identifier" : "17345"
+  }, {
+    "dbId" : 744227,
+    "stId" : "R-ALL-744227",
+    "displayName" : "UDP-Glc [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18066",
+    "parents" : [ 744234 ]
+  }, {
+    "dbId" : 744229,
+    "stId" : "R-ALL-744229",
+    "displayName" : "UDP-GlcNAc, UDP-Glc [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 81 ],
+    "children" : [ 162756, 29410 ]
+  }, {
+    "dbId" : 174384,
+    "stId" : "R-ALL-174384",
+    "displayName" : "UDP-GlcA [endoplasmic reticulum lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 72 ],
+    "identifier" : "17200"
+  }, {
+    "dbId" : 174388,
+    "stId" : "R-HSA-174388",
+    "displayName" : "SLC35D1 hexamer [endoplasmic reticulum membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 57 ],
+    "children" : [ 174361 ]
+  }, {
+    "dbId" : 400190,
+    "stId" : "R-HSA-400190",
+    "displayName" : "SLC27A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6PCB7",
+    "geneNames" : [ "SLC27A1", "ACSVL5", "FATP1" ],
+    "parents" : [ 879582 ]
+  }, {
+    "dbId" : 8875468,
+    "stId" : "R-HSA-8875468",
+    "displayName" : "SLC16A2 dimer [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 879625 ],
+    "children" : [ 5216020 ]
+  }, {
+    "dbId" : 192332,
+    "stId" : "R-ALL-192332",
+    "displayName" : "TCCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28865",
+    "parents" : [ 194097, 194131 ]
+  }, {
+    "dbId" : 109395,
+    "stId" : "R-ALL-109395",
+    "displayName" : "cytidine 5'-monophosphate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 60 ],
+    "identifier" : "17361"
+  }, {
+    "dbId" : 114523,
+    "stId" : "R-ALL-114523",
+    "displayName" : "5HT [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28790",
+    "parents" : [ 727774 ]
+  }, {
+    "dbId" : 109402,
+    "stId" : "R-ALL-109402",
+    "displayName" : "uridine 5'-monophosphate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 103, 73, 105 ],
+    "identifier" : "16695"
+  }, {
+    "dbId" : 5216020,
+    "stId" : "R-HSA-5216020",
+    "displayName" : "SLC16A2 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36021",
+    "geneNames" : [ "SLC16A2", "MCT8", "XPCT" ],
+    "parents" : [ 8875468 ]
+  }, {
+    "dbId" : 205683,
+    "stId" : "R-ALL-205683",
+    "displayName" : "GDP-Fuc [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 66 ],
+    "identifier" : "17009"
+  }, {
+    "dbId" : 176501,
+    "stId" : "R-ALL-176501",
+    "displayName" : "E1S [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17474",
+    "parents" : [ 879654 ]
+  }, {
+    "dbId" : 209789,
+    "stId" : "R-ALL-209789",
+    "displayName" : "NAd [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18357",
+    "parents" : [ 727737 ]
+  }, {
+    "dbId" : 388474,
+    "stId" : "R-HSA-388474",
+    "displayName" : "AVP(20-28) [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01185",
+    "geneNames" : [ "AVP", "ARVP", "VP" ],
+    "parents" : [ 879529 ]
+  }, {
+    "dbId" : 74113,
+    "stId" : "R-ALL-74113",
+    "displayName" : "Na+ [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 3, 19, 10 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 209794,
+    "stId" : "R-ALL-209794",
+    "displayName" : "ADR [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28918",
+    "parents" : [ 727737 ]
+  }, {
+    "dbId" : 5216200,
+    "stId" : "R-HSA-5216200",
+    "displayName" : "LCN15 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6UWW0",
+    "geneNames" : [ "LCN15", "UNQ2541/PRO6093" ],
+    "parents" : [ 5229240 ]
+  }, {
+    "dbId" : 5216199,
+    "stId" : "R-HSA-5216199",
+    "displayName" : "APOD [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P05090",
+    "geneNames" : [ "APOD" ],
+    "parents" : [ 5229263 ]
+  }, {
+    "dbId" : 158601,
+    "stId" : "R-ALL-158601",
+    "displayName" : "UDP-GlcA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 50 ],
+    "identifier" : "17200"
+  }, {
+    "dbId" : 549254,
+    "stId" : "R-ALL-549254",
+    "displayName" : "ADR [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28918",
+    "parents" : [ 727774 ]
+  }, {
+    "dbId" : 879517,
+    "stId" : "R-ALL-879517",
+    "displayName" : "DIGX [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 180 ],
+    "identifier" : "4551"
+  }, {
+    "dbId" : 879519,
+    "stId" : "R-ALL-879519",
+    "displayName" : "PGE1 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15544",
+    "parents" : [ 879563, 879614 ]
+  }, {
+    "dbId" : 76183,
+    "stId" : "R-ALL-76183",
+    "displayName" : "Ac-CoA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 46 ],
+    "identifier" : "15351"
+  }, {
+    "dbId" : 879509,
+    "stId" : "R-HSA-879509",
+    "displayName" : "AVP(20-28) [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P01185",
+    "geneNames" : [ "AVP", "ARVP", "VP" ],
+    "parents" : [ 879563 ]
+  }, {
+    "dbId" : 5216213,
+    "stId" : "R-HSA-5216213",
+    "displayName" : "LCN12 [extracellular region]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6JVE5",
+    "geneNames" : [ "LCN12" ],
+    "parents" : [ 5229240 ]
+  }, {
+    "dbId" : 879505,
+    "stId" : "R-ALL-879505",
+    "displayName" : "LGCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28866",
+    "parents" : [ 879544 ]
+  }, {
+    "dbId" : 192415,
+    "stId" : "R-ALL-192415",
+    "displayName" : "TCDCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "9407",
+    "parents" : [ 194092 ]
+  }, {
+    "dbId" : 879535,
+    "stId" : "R-ALL-879535",
+    "displayName" : "PGF2a [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15553",
+    "parents" : [ 879614 ]
+  }, {
+    "dbId" : 879529,
+    "stId" : "R-HSA-879529",
+    "displayName" : "SLCO3A1 substrates [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 175 ],
+    "children" : [ 388474, 391930, 879611, 352326 ]
+  }, {
+    "dbId" : 561069,
+    "stId" : "R-ALL-561069",
+    "displayName" : "DHEA-SO4 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16814",
+    "parents" : [ 879553 ]
+  }, {
+    "dbId" : 192421,
+    "stId" : "R-ALL-192421",
+    "displayName" : "TCCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28865",
+    "parents" : [ 194117, 194092 ]
+  }, {
+    "dbId" : 113578,
+    "stId" : "R-ALL-113578",
+    "displayName" : "guanosine 5'-monophosphate [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 59 ],
+    "identifier" : "17345"
+  }, {
+    "dbId" : 879521,
+    "stId" : "R-ALL-879521",
+    "displayName" : "DIGX [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 179 ],
+    "identifier" : "4551"
+  }, {
+    "dbId" : 192431,
+    "stId" : "R-ALL-192431",
+    "displayName" : "CCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16359",
+    "parents" : [ 194092 ]
+  }, {
+    "dbId" : 879520,
+    "stId" : "R-ALL-879520",
+    "displayName" : "LINA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17351",
+    "parents" : [ 879559 ]
+  }, {
+    "dbId" : 879523,
+    "stId" : "R-HSA-879523",
+    "displayName" : "SLCO4A1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96BD0",
+    "geneNames" : [ "SLCO4A1", "OATP1", "OATP4A1", "OATPE", "SLC21A12" ],
+    "parents" : [ 879625 ]
+  }, {
+    "dbId" : 879544,
+    "stId" : "R-ALL-879544",
+    "displayName" : "LCFAs [cytosol]",
+    "schemaClass" : "CandidateSet",
+    "diagramIds" : [ 160 ],
+    "children" : [ 3632879, 879505, 879558, 3632878, 879620, 879604, 879557, 3632881, 1132021 ]
+  }, {
+    "dbId" : 879541,
+    "stId" : "R-ALL-879541",
+    "displayName" : "BSP [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "63836",
+    "parents" : [ 879553 ]
+  }, {
+    "dbId" : 192442,
+    "stId" : "R-ALL-192442",
+    "displayName" : "CDCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16755",
+    "parents" : [ 194092 ]
+  }, {
+    "dbId" : 561076,
+    "stId" : "R-ALL-561076",
+    "displayName" : "E1S [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17474",
+    "parents" : [ 879553 ]
+  }, {
+    "dbId" : 879536,
+    "stId" : "R-HSA-879536",
+    "displayName" : "SLCO3A1-1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 177 ],
+    "identifier" : "Q9UIG8-1",
+    "geneNames" : [ "SLCO3A1", "OATP3A1", "OATPD", "SLC21A11" ]
+  }, {
+    "dbId" : 3465610,
+    "stId" : "R-HSA-3465610",
+    "displayName" : "SLC35B3 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H1N7",
+    "geneNames" : [ "SLC35B3", "C6orf196", "PAPST2", "CGI-19" ],
+    "parents" : [ 3465611 ]
+  }, {
+    "dbId" : 113599,
+    "stId" : "R-ALL-113599",
+    "displayName" : "Hyp [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17368",
+    "parents" : [ 179742 ]
+  }, {
+    "dbId" : 3465611,
+    "stId" : "R-HSA-3465611",
+    "displayName" : "SLC35B2,3 [Golgi membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 198 ],
+    "children" : [ 3465610, 741454 ]
+  }, {
+    "dbId" : 735691,
+    "stId" : "R-ALL-735691",
+    "displayName" : "UDP-Gal, UDP-GalNAc [Golgi lumen]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 63 ],
+    "children" : [ 735700, 735682 ]
+  }, {
+    "dbId" : 879566,
+    "stId" : "R-ALL-879566",
+    "displayName" : "PGT substrates [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 167 ],
+    "children" : [ 391930, 416911, 879611, 879657 ]
+  }, {
+    "dbId" : 193473,
+    "stId" : "R-ALL-193473",
+    "displayName" : "CCA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16359",
+    "parents" : [ 194131 ]
+  }, {
+    "dbId" : 83909,
+    "stId" : "R-ALL-83909",
+    "displayName" : "Ade-Rib [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16335",
+    "parents" : [ 179746, 179741, 179743, 727737, 179742, 179739, 727746 ]
+  }, {
+    "dbId" : 83908,
+    "stId" : "R-ALL-83908",
+    "displayName" : "Ade-Rib [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16335",
+    "parents" : [ 179738, 179747, 727774, 179737, 179740, 179745 ]
+  }, {
+    "dbId" : 162756,
+    "stId" : "R-ALL-162756",
+    "displayName" : "UDP-GlcNAc [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 209, 205, 207 ],
+    "identifier" : "16264",
+    "parents" : [ 744229 ]
+  }, {
+    "dbId" : 879563,
+    "stId" : "R-HSA-879563",
+    "displayName" : "SLCO3A1 substrates [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 176 ],
+    "children" : [ 879509, 265287, 209937, 879519 ]
+  }, {
+    "dbId" : 735692,
+    "stId" : "R-ALL-735692",
+    "displayName" : "UDP-Gal, UDP-GalNAc [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 76 ],
+    "children" : [ 29452, 735683 ]
+  }, {
+    "dbId" : 83910,
+    "stId" : "R-ALL-83910",
+    "displayName" : "Na+ [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 18, 4, 11 ],
+    "identifier" : "29101"
+  }, {
+    "dbId" : 735683,
+    "stId" : "R-ALL-735683",
+    "displayName" : "UDP-GalNAc [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16650",
+    "parents" : [ 735692 ]
+  }, {
+    "dbId" : 879557,
+    "stId" : "R-ALL-879557",
+    "displayName" : "DDCX [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "30805",
+    "parents" : [ 879544 ]
+  }, {
+    "dbId" : 735682,
+    "stId" : "R-ALL-735682",
+    "displayName" : "UDP-Gal [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18307",
+    "parents" : [ 735691 ]
+  }, {
+    "dbId" : 83915,
+    "stId" : "R-HSA-83915",
+    "displayName" : "SLC28A3 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 14 ],
+    "identifier" : "Q9HAS3",
+    "geneNames" : [ "SLC28A3", "CNT3" ]
+  }, {
+    "dbId" : 879559,
+    "stId" : "R-ALL-879559",
+    "displayName" : "LCFAs [extracellular region]",
+    "schemaClass" : "CandidateSet",
+    "diagramIds" : [ 159 ],
+    "children" : [ 400431, 879520, 879605, 449678, 400514, 879615, 400452, 879644, 879581 ]
+  }, {
+    "dbId" : 879558,
+    "stId" : "R-ALL-879558",
+    "displayName" : "AA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28822",
+    "parents" : [ 879544 ]
+  }, {
+    "dbId" : 5359005,
+    "stId" : "R-HSA-5359005",
+    "displayName" : "SLC5A6:PDZD11 [plasma membrane]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 219 ],
+    "children" : [ 5358989, 199221 ]
+  }, {
+    "dbId" : 879553,
+    "stId" : "R-ALL-879553",
+    "displayName" : "SLCO2B1 substrates [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 171 ],
+    "children" : [ 561076, 879541, 561069 ]
+  }, {
+    "dbId" : 380873,
+    "stId" : "R-ALL-380873",
+    "displayName" : "DA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "18243",
+    "parents" : [ 727774 ]
+  }, {
+    "dbId" : 735686,
+    "stId" : "R-HSA-735686",
+    "displayName" : "SLC35A2 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 52 ],
+    "identifier" : "P78381",
+    "geneNames" : [ "SLC35A2", "UGALT", "UGT", "UGTL" ]
+  }, {
+    "dbId" : 83919,
+    "stId" : "R-ALL-83919",
+    "displayName" : "dA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17256",
+    "parents" : [ 179738 ]
+  }, {
+    "dbId" : 83918,
+    "stId" : "R-ALL-83918",
+    "displayName" : "Cyt [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16040",
+    "parents" : [ 179747 ]
+  }, {
+    "dbId" : 879581,
+    "stId" : "R-ALL-879581",
+    "displayName" : "DECA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "30813",
+    "parents" : [ 879559 ]
+  }, {
+    "dbId" : 83921,
+    "stId" : "R-ALL-83921",
+    "displayName" : "Ino [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17596",
+    "parents" : [ 179747, 179737, 179740, 179745 ]
+  }, {
+    "dbId" : 83920,
+    "stId" : "R-ALL-83920",
+    "displayName" : "Gua-Rib [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16750",
+    "parents" : [ 179747, 179737, 179740, 179745 ]
+  }, {
+    "dbId" : 742361,
+    "stId" : "R-ALL-742361",
+    "displayName" : "UDP-Xyl [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 79 ],
+    "identifier" : "16082"
+  }, {
+    "dbId" : 83923,
+    "stId" : "R-ALL-83923",
+    "displayName" : "Ura-Rib [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16704",
+    "parents" : [ 179738, 179747, 179737, 179740, 179745 ]
+  }, {
+    "dbId" : 192464,
+    "stId" : "R-ALL-192464",
+    "displayName" : "GCCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17687",
+    "parents" : [ 194117, 194092 ]
+  }, {
+    "dbId" : 879582,
+    "stId" : "R-HSA-879582",
+    "displayName" : "SLC27A1,4,6 [plasma membrane]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 161 ],
+    "children" : [ 879638, 400190, 879656 ]
+  }, {
+    "dbId" : 83922,
+    "stId" : "R-ALL-83922",
+    "displayName" : "Thy-dRib [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17748",
+    "parents" : [ 179738, 179747, 179737, 179745 ]
+  }, {
+    "dbId" : 83925,
+    "stId" : "R-ALL-83925",
+    "displayName" : "dA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17256",
+    "parents" : [ 179739 ]
+  }, {
+    "dbId" : 879576,
+    "stId" : "R-ALL-879576",
+    "displayName" : "BSP [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "63836",
+    "parents" : [ 879654 ]
+  }, {
+    "dbId" : 83924,
+    "stId" : "R-ALL-83924",
+    "displayName" : "Cyt [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16040",
+    "parents" : [ 179742 ]
+  }, {
+    "dbId" : 742365,
+    "stId" : "R-HSA-742365",
+    "displayName" : "SLC35B4 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 157, 78 ],
+    "identifier" : "Q969S0",
+    "geneNames" : [ "SLC35B4", "YEA4", "PSEC0055" ]
+  }, {
+    "dbId" : 83927,
+    "stId" : "R-ALL-83927",
+    "displayName" : "Ino [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17596",
+    "parents" : [ 727746, 179742, 179743, 179741, 179746 ]
+  }, {
+    "dbId" : 879578,
+    "stId" : "R-HSA-879578",
+    "displayName" : "SLCO2B1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 173 ],
+    "identifier" : "O94956",
+    "geneNames" : [ "SLCO2B1", "KIAA0880", "OATP2B1", "OATPB", "SLC21A9" ]
+  }, {
+    "dbId" : 83926,
+    "stId" : "R-ALL-83926",
+    "displayName" : "Gua-Rib [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16750",
+    "parents" : [ 727746, 179742, 179743, 179741, 179746 ]
+  }, {
+    "dbId" : 83929,
+    "stId" : "R-ALL-83929",
+    "displayName" : "Ura-Rib [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16704",
+    "parents" : [ 727746, 179739, 179742, 179743, 179741, 179746 ]
+  }, {
+    "dbId" : 735698,
+    "stId" : "R-ALL-735698",
+    "displayName" : "uridine 5'-monophosphate [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 80, 100, 102 ],
+    "identifier" : "16695"
+  }, {
+    "dbId" : 83928,
+    "stId" : "R-ALL-83928",
+    "displayName" : "Thy-dRib [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17748",
+    "parents" : [ 727746, 179739, 179742, 179743, 179746 ]
+  }, {
+    "dbId" : 742353,
+    "stId" : "R-ALL-742353",
+    "displayName" : "UDP-Xyl [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 69 ],
+    "identifier" : "16082"
+  }, {
+    "dbId" : 742352,
+    "stId" : "R-HSA-742352",
+    "displayName" : "SLC35C1 [Golgi membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 53 ],
+    "identifier" : "Q96A29",
+    "geneNames" : [ "SLC35C1", "FUCT1" ]
+  }, {
+    "dbId" : 5358989,
+    "stId" : "R-HSA-5358989",
+    "displayName" : "PDZD11 [cytosol]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5EBL8",
+    "geneNames" : [ "PDZD11", "AIPP1", "PDZK11", "PISP", "HSPC227", "UNQ6486/PRO21335" ],
+    "parents" : [ 5359005 ]
+  }, {
+    "dbId" : 735700,
+    "stId" : "R-ALL-735700",
+    "displayName" : "UDP-GalNAc [Golgi lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16650",
+    "parents" : [ 735691 ]
+  }, {
+    "dbId" : 879598,
+    "stId" : "R-HSA-879598",
+    "displayName" : "SLCO4C1 [plasma membrane]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 181 ],
+    "identifier" : "Q6ZQN7",
+    "geneNames" : [ "SLCO4C1", "OATP4C1", "OATPX", "SLC21A20" ]
+  }, {
+    "dbId" : 1132021,
+    "stId" : "R-ALL-1132021",
+    "displayName" : "LINA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17351",
+    "parents" : [ 879544 ]
+  }, {
+    "dbId" : 83947,
+    "stId" : "R-ALL-83947",
+    "displayName" : "Ade [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16708",
+    "parents" : [ 179747 ]
+  }, {
+    "dbId" : 191976,
+    "stId" : "R-ALL-191976",
+    "displayName" : "DHEA-SO4 [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16814",
+    "parents" : [ 879654 ]
+  }, {
+    "dbId" : 742368,
+    "stId" : "R-ALL-742368",
+    "displayName" : "GDP-Fuc [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 68 ],
+    "identifier" : "17009"
+  }, {
+    "dbId" : 83949,
+    "stId" : "R-ALL-83949",
+    "displayName" : "Cyt-Rib [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17562",
+    "parents" : [ 727746, 179739, 179742, 179743, 179746 ]
+  }, {
+    "dbId" : 83948,
+    "stId" : "R-ALL-83948",
+    "displayName" : "Cyt-Rib [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17562",
+    "parents" : [ 179738, 179747, 179737, 179745 ]
+  }, {
+    "dbId" : 83951,
+    "stId" : "R-ALL-83951",
+    "displayName" : "Ade [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16708",
+    "parents" : [ 727746, 179742 ]
+  }, {
+    "dbId" : 83955,
+    "stId" : "R-ALL-83955",
+    "displayName" : "Gua [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16235",
+    "parents" : [ 179747 ]
+  }, {
+    "dbId" : 879615,
+    "stId" : "R-ALL-879615",
+    "displayName" : "AA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28822",
+    "parents" : [ 879559 ]
+  }, {
+    "dbId" : 879614,
+    "stId" : "R-ALL-879614",
+    "displayName" : "PGT substrates [cytosol]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 168 ],
+    "children" : [ 265287, 879535, 879519, 879629 ]
+  }, {
+    "dbId" : 83957,
+    "stId" : "R-ALL-83957",
+    "displayName" : "Hyp [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17368",
+    "parents" : [ 179747 ]
+  }, {
+    "dbId" : 83956,
+    "stId" : "R-ALL-83956",
+    "displayName" : "Gua [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "16235",
+    "parents" : [ 179742 ]
+  }, {
+    "dbId" : 83959,
+    "stId" : "R-ALL-83959",
+    "displayName" : "Thy [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17821",
+    "parents" : [ 179747 ]
+  }, {
+    "dbId" : 879611,
+    "stId" : "R-ALL-879611",
+    "displayName" : "PGE1 [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15544",
+    "parents" : [ 879529, 879566 ]
+  }, {
+    "dbId" : 83961,
+    "stId" : "R-ALL-83961",
+    "displayName" : "Ura [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17568",
+    "parents" : [ 179747 ]
+  }, {
+    "dbId" : 879605,
+    "stId" : "R-ALL-879605",
+    "displayName" : "LGCA [extracellular region]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28866",
+    "parents" : [ 879559 ]
+  }, {
+    "dbId" : 209914,
+    "stId" : "R-ALL-209914",
+    "displayName" : "5HT [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28790",
+    "parents" : [ 727737 ]
+  }, {
+    "dbId" : 83960,
+    "stId" : "R-ALL-83960",
+    "displayName" : "Thy [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17821",
+    "parents" : [ 179742 ]
+  }, {
+    "dbId" : 879604,
+    "stId" : "R-ALL-879604",
+    "displayName" : "MYSA [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "28875",
+    "parents" : [ 879544 ]
+  }, {
+    "dbId" : 83962,
+    "stId" : "R-ALL-83962",
+    "displayName" : "Ura [cytosol]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17568",
+    "parents" : [ 179742 ]
+  }, {
+    "dbId" : 879603,
+    "stId" : "R-ALL-879603",
+    "displayName" : "T3,T4 [extracellular region]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 163 ],
+    "children" : [ 352331, 352326 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 741450,
+    "stId" : "R-HSA-741450",
+    "displayName" : "SLC35A3 exchanges UDP-GlcNAc for UMP",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 735698, 162756 ],
+    "outputs" : [ 914003, 109402 ],
+    "catalysts" : [ 741452 ],
+    "efs" : [ ],
+    "diagramIds" : [ 89 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 741449,
+    "stId" : "R-HSA-741449",
+    "displayName" : "SLC35B2,3 transport cytosolic PAPS to Golgi lumen",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 158471 ],
+    "outputs" : [ 741440 ],
+    "catalysts" : [ 3465611 ],
+    "efs" : [ ],
+    "diagramIds" : [ 84 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 742345,
+    "stId" : "R-HSA-742345",
+    "displayName" : "SLC35C1 transport UDP-Fuc from cytosol to Golgi lumen",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 742368 ],
+    "outputs" : [ 205683 ],
+    "catalysts" : [ 742352 ],
+    "efs" : [ ],
+    "diagramIds" : [ 93 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 727759,
+    "stId" : "R-HSA-727759",
+    "displayName" : "SLC33A1 transports Ac-CoA from cytosol to Golgi lumen",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 76183 ],
+    "outputs" : [ 727753 ],
+    "catalysts" : [ 727745 ],
+    "efs" : [ ],
+    "diagramIds" : [ 45 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 879562,
+    "stId" : "R-HSA-879562",
+    "displayName" : "SLCO2B1 has a narrow substrate specificity",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 879553 ],
+    "outputs" : [ 879654 ],
+    "catalysts" : [ 879578 ],
+    "efs" : [ ],
+    "diagramIds" : [ 170 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 429581,
+    "stId" : "R-HSA-429581",
+    "displayName" : "SLC5A6 transports vitamins from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 429605, 74113 ],
+    "outputs" : [ 429627, 83910 ],
+    "catalysts" : [ 5359005 ],
+    "efs" : [ ],
+    "diagramIds" : [ 26 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 727749,
+    "stId" : "R-HSA-727749",
+    "displayName" : "SLC29A3 transports nucleosides from lysosomal lumen to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 727782 ],
+    "outputs" : [ 727746 ],
+    "catalysts" : [ 727733 ],
+    "efs" : [ ],
+    "diagramIds" : [ 34 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194130,
+    "stId" : "R-HSA-194130",
+    "displayName" : "Transport (influx) of bile salts and acids by OATP-A",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 194110 ],
+    "outputs" : [ 194131, 194115 ],
+    "catalysts" : [ 194062 ],
+    "efs" : [ ],
+    "diagramIds" : [ 183 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 727768,
+    "stId" : "R-HSA-727768",
+    "displayName" : "Equilibrative transport (export) of adenosine and biogenic amines by solute carrier family 29 (nucleoside transporters), member 4",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 727737 ],
+    "outputs" : [ 727774 ],
+    "catalysts" : [ 727736 ],
+    "efs" : [ ],
+    "diagramIds" : [ 39 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109527,
+    "stId" : "R-HSA-109527",
+    "displayName" : "Equilibrative transport (import) of nucleosides and free bases by solute carrier family 29 (nucleoside transporters), member 2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 179747 ],
+    "outputs" : [ 179742 ],
+    "catalysts" : [ 3907272 ],
+    "efs" : [ ],
+    "diagramIds" : [ 33 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109529,
+    "stId" : "R-HSA-109529",
+    "displayName" : "Equilibrative transport (export) of nucleosides and free bases by solute carrier family 29 (nucleoside transporters), member 2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 179742 ],
+    "outputs" : [ 179747 ],
+    "catalysts" : [ 3907272 ],
+    "efs" : [ ],
+    "diagramIds" : [ 31 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 742354,
+    "stId" : "R-HSA-742354",
+    "displayName" : "SLC35B4 mediates the transport of UDP-N-acetylglucosamine into the Golgi lumen",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 162756 ],
+    "outputs" : [ 914003 ],
+    "catalysts" : [ 742365 ],
+    "efs" : [ ],
+    "diagramIds" : [ 85 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 879575,
+    "stId" : "R-HSA-879575",
+    "displayName" : "SLCOs, SLC16A2 transport T3,T4 from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 879603 ],
+    "outputs" : [ 879628 ],
+    "catalysts" : [ 879625 ],
+    "efs" : [ ],
+    "diagramIds" : [ 162 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109530,
+    "stId" : "R-HSA-109530",
+    "displayName" : "Concentrative transport (import) of a nucleoside and a sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 179738, 74113 ],
+    "outputs" : [ 179739, 83910 ],
+    "catalysts" : [ 64023 ],
+    "efs" : [ ],
+    "diagramIds" : [ 27 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 727767,
+    "stId" : "R-HSA-727767",
+    "displayName" : "SLC29A3 transports nucleosides from cytosol to lysosomal lumen",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 727746 ],
+    "outputs" : [ 727782 ],
+    "catalysts" : [ 727733 ],
+    "efs" : [ ],
+    "diagramIds" : [ 38 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194079,
+    "stId" : "R-HSA-194079",
+    "displayName" : "SLCO1B3 transports ALB:(GCCA, TCCA) from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 194104 ],
+    "outputs" : [ 194097, 194115 ],
+    "catalysts" : [ 194075 ],
+    "efs" : [ ],
+    "diagramIds" : [ 188 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 735702,
+    "stId" : "R-HSA-735702",
+    "displayName" : "SLC35A2 exchanges UDP-Gal, UDP-GalNAc for UMP",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 735698, 735692 ],
+    "outputs" : [ 109402, 735691 ],
+    "catalysts" : [ 735686 ],
+    "efs" : [ ],
+    "diagramIds" : [ 92 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109534,
+    "stId" : "R-HSA-109534",
+    "displayName" : "Equilibrative transport (export) of nucleosides and free bases by solute carrier family 29 (nucleoside transporters), member 1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 179746 ],
+    "outputs" : [ 179745 ],
+    "catalysts" : [ 4127407 ],
+    "efs" : [ ],
+    "diagramIds" : [ 30 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 194083,
+    "stId" : "R-HSA-194083",
+    "displayName" : "SLCO1B1 transports ALB:(GCCA,TCCA) from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 194104 ],
+    "outputs" : [ 194097, 194115 ],
+    "catalysts" : [ 194133 ],
+    "efs" : [ ],
+    "diagramIds" : [ 192 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109536,
+    "stId" : "R-HSA-109536",
+    "displayName" : "Equilibrative transport (import) of nucleosides and free bases by solute carrier family 29 (nucleoside transporters), member 1",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 179745 ],
+    "outputs" : [ 179746 ],
+    "catalysts" : [ 4127407 ],
+    "efs" : [ ],
+    "diagramIds" : [ 32 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109539,
+    "stId" : "R-HSA-109539",
+    "displayName" : "Concentrative transport (import) of nucleosides plus sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 2",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 179740, 74113 ],
+    "outputs" : [ 179741, 83910 ],
+    "catalysts" : [ 64025 ],
+    "efs" : [ ],
+    "diagramIds" : [ 29 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 174368,
+    "stId" : "R-HSA-174368",
+    "displayName" : "SLC35D1 hexamer transports UDP-GlcA, UDP-GlcNAc from cytosol to endoplasmic reticulum lumen",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 158601, 162756 ],
+    "outputs" : [ 3499326, 174384 ],
+    "catalysts" : [ 174388 ],
+    "efs" : [ ],
+    "diagramIds" : [ 88 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109538,
+    "stId" : "R-HSA-109538",
+    "displayName" : "Concentrative transport (import) of a nucleoside and two sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 3",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 179737, 74113 ],
+    "outputs" : [ 179743, 83910 ],
+    "catalysts" : [ 83915 ],
+    "efs" : [ ],
+    "diagramIds" : [ 28 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 879528,
+    "stId" : "R-HSA-879528",
+    "displayName" : "SLCO2A1 transports PGT substrates from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 879566 ],
+    "outputs" : [ 879614 ],
+    "catalysts" : [ 879624 ],
+    "efs" : [ ],
+    "diagramIds" : [ 166 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 879594,
+    "stId" : "R-HSA-879594",
+    "displayName" : "SLCO4C1 mediates the transport of digoxin",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 879521 ],
+    "outputs" : [ 879517 ],
+    "catalysts" : [ 879598 ],
+    "efs" : [ ],
+    "diagramIds" : [ 178 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 5229283,
+    "stId" : "R-HSA-5229283",
+    "displayName" : "LCNs bind lipids",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 5229240, 5229279 ],
+    "outputs" : [ 5229291 ],
+    "efs" : [ ],
+    "diagramIds" : [ 215 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 744231,
+    "stId" : "R-HSA-744231",
+    "displayName" : "SLC35D2 exchanges UDP-sugars for UMP",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 744229, 735698 ],
+    "outputs" : [ 109402, 744234 ],
+    "catalysts" : [ 744235 ],
+    "efs" : [ ],
+    "diagramIds" : [ 90 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 879585,
+    "stId" : "R-HSA-879585",
+    "displayName" : "SLC27A1,4,6 transport LCFAs from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 879559 ],
+    "outputs" : [ 879544 ],
+    "catalysts" : [ 879582 ],
+    "efs" : [ ],
+    "diagramIds" : [ 158 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 879584,
+    "stId" : "R-HSA-879584",
+    "displayName" : "SLCO3A1 isoform 1 has abroad substrate specificity",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 879529 ],
+    "outputs" : [ 879563 ],
+    "catalysts" : [ 879536 ],
+    "efs" : [ ],
+    "diagramIds" : [ 174 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 744230,
+    "stId" : "R-HSA-744230",
+    "displayName" : "SLC35D2 mediates the antiport of GDP-mannose in exchange for GMP",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 162860, 744239 ],
+    "outputs" : [ 113578, 744233 ],
+    "catalysts" : [ 744235 ],
+    "efs" : [ ],
+    "diagramIds" : [ 86 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 742373,
+    "stId" : "R-HSA-742373",
+    "displayName" : "SLC35B4 mediates the transport of UDP-xylose into the Golgi lumen",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 742353 ],
+    "outputs" : [ 742361 ],
+    "catalysts" : [ 742365 ],
+    "efs" : [ ],
+    "diagramIds" : [ 91 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 727807,
+    "stId" : "R-HSA-727807",
+    "displayName" : "SLC35A1 exchanges CMP-Neu5Ac for CMP",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 727810, 4085435 ],
+    "outputs" : [ 727815, 109395 ],
+    "catalysts" : [ 727812 ],
+    "efs" : [ ],
+    "diagramIds" : [ 87 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 727740,
+    "stId" : "R-HSA-727740",
+    "displayName" : "Equilibrative transport (import) of adenosine and biogenic amines by solute carrier family 29 (nucleoside transporters), member 4",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 727774 ],
+    "outputs" : [ 727737 ],
+    "catalysts" : [ 727736 ],
+    "efs" : [ ],
+    "diagramIds" : [ 43 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 83936,
+    "stId" : "R-HSA-83936",
+    "displayName" : "Transport of nucleosides and free purine and pyrimidine bases across the plasma membrane",
+    "events" : [ 109536, 109539, 109538, 727768, 109527, 727740, 109529, 109530, 727767, 727749, 109534 ]
+  }, {
+    "dbId" : 879518,
+    "stId" : "R-HSA-879518",
+    "displayName" : "Transport of organic anions",
+    "events" : [ 194130, 194083, 879528, 879562, 879594, 879575, 194079, 879584 ]
+  }, {
+    "dbId" : 804914,
+    "stId" : "R-HSA-804914",
+    "displayName" : "Transport of fatty acids",
+    "events" : [ 879585, 5229283 ]
+  }, {
+    "dbId" : 727802,
+    "stId" : "R-HSA-727802",
+    "displayName" : "Transport of nucleotide sugars",
+    "events" : [ 741450, 741449, 742345, 174368, 727807, 742354, 744231, 735702, 744230, 742373 ]
+  } ]
+}

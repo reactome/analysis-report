@@ -1,0 +1,3989 @@
+{
+  "dbId" : 5656364,
+  "stableId" : "R-HSA-5656364",
+  "displayName" : "Defective SLC5A1 causes congenital glucose/galactose malabsorption (GGM)",
+  "forNormalDraw" : false,
+  "nodes" : [ {
+    "id" : 707,
+    "reactomeId" : 429078,
+    "displayName" : "Fru,Glc,urate",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 267,
+      "y" : 792
+    },
+    "isFadeOut" : true,
+    "minX" : 228,
+    "maxX" : 307,
+    "minY" : 777,
+    "maxY" : 808,
+    "prop" : {
+      "x" : 228,
+      "y" : 777,
+      "width" : 79,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 241,
+      "y" : 775
+    },
+    "connectors" : [ {
+      "edgeId" : 706,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 773,
+    "reactomeId" : 429628,
+    "displayName" : "hexoses transported by SGLT4",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 658,
+      "y" : 470
+    },
+    "isFadeOut" : true,
+    "minX" : 608,
+    "maxX" : 749,
+    "minY" : 445,
+    "maxY" : 495,
+    "prop" : {
+      "x" : 608,
+      "y" : 445,
+      "width" : 101,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 609,
+      "y" : 445
+    },
+    "connectors" : [ {
+      "edgeId" : 761,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 715,
+          "y" : 470
+        },
+        "to" : {
+          "x" : 749,
+          "y" : 470
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 722,
+          "y" : 466
+        },
+        "b" : {
+          "x" : 715,
+          "y" : 470
+        },
+        "c" : {
+          "x" : 722,
+          "y" : 474
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 581,
+    "reactomeId" : 8876282,
+    "displayName" : "Fru, Man",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 912,
+      "y" : 353
+    },
+    "isFadeOut" : true,
+    "minX" : 842,
+    "maxX" : 943,
+    "minY" : 342,
+    "maxY" : 364,
+    "prop" : {
+      "x" : 882,
+      "y" : 342,
+      "width" : 61,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 883,
+      "y" : 342
+    },
+    "connectors" : [ {
+      "edgeId" : 580,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 876,
+          "y" : 351
+        },
+        "to" : {
+          "x" : 842,
+          "y" : 350
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 582,
+    "reactomeId" : 8876289,
+    "displayName" : "Fru, Man",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 668,
+      "y" : 349
+    },
+    "isFadeOut" : true,
+    "minX" : 638,
+    "maxX" : 760,
+    "minY" : 338,
+    "maxY" : 360,
+    "prop" : {
+      "x" : 638,
+      "y" : 338,
+      "width" : 61,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 639,
+      "y" : 338
+    },
+    "connectors" : [ {
+      "edgeId" : 580,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 705,
+          "y" : 349
+        },
+        "to" : {
+          "x" : 760,
+          "y" : 350
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 712,
+          "y" : 345
+        },
+        "b" : {
+          "x" : 705,
+          "y" : 349
+        },
+        "c" : {
+          "x" : 712,
+          "y" : 353
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 583,
+    "reactomeId" : 5216084,
+    "displayName" : "SLC5A10",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 802,
+      "y" : 408
+    },
+    "isFadeOut" : true,
+    "minX" : 771,
+    "maxX" : 834,
+    "minY" : 358,
+    "maxY" : 419,
+    "prop" : {
+      "x" : 771,
+      "y" : 397,
+      "width" : 63,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 772,
+      "y" : 397
+    },
+    "connectors" : [ {
+      "edgeId" : 580,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 802,
+          "y" : 394
+        },
+        "to" : {
+          "x" : 802,
+          "y" : 366
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 802,
+          "y" : 362
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 586,
+    "reactomeId" : 74113,
+    "displayName" : "Na+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 893,
+      "y" : 409
+    },
+    "isFadeOut" : true,
+    "minX" : 842,
+    "maxX" : 915,
+    "minY" : 350,
+    "maxY" : 469,
+    "prop" : {
+      "x" : 872,
+      "y" : 394,
+      "width" : 43,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 876,
+      "y" : 398
+    },
+    "connectors" : [ {
+      "edgeId" : 580,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 880,
+          "y" : 391
+        },
+        "to" : {
+          "x" : 842,
+          "y" : 350
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 761,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 881,
+          "y" : 427
+        },
+        "to" : {
+          "x" : 847,
+          "y" : 469
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 650,
+    "reactomeId" : 70113,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 187,
+      "y" : 262
+    },
+    "isFadeOut" : true,
+    "minX" : 170,
+    "maxX" : 205,
+    "minY" : 247,
+    "maxY" : 277,
+    "prop" : {
+      "x" : 170,
+      "y" : 247,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 174,
+      "y" : 251
+    },
+    "connectors" : [ {
+      "edgeId" : 641,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 648,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 716,
+    "reactomeId" : 429148,
+    "displayName" : "Fru,Glc,urate",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 266,
+      "y" : 645
+    },
+    "isFadeOut" : true,
+    "minX" : 225,
+    "maxX" : 308,
+    "minY" : 634,
+    "maxY" : 656,
+    "prop" : {
+      "x" : 225,
+      "y" : 634,
+      "width" : 83,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 225,
+      "y" : 634
+    },
+    "connectors" : [ {
+      "edgeId" : 706,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 524,
+    "reactomeId" : 70115,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 477,
+      "y" : 15
+    },
+    "isFadeOut" : true,
+    "minX" : 460,
+    "maxX" : 495,
+    "minY" : 0,
+    "maxY" : 30,
+    "prop" : {
+      "x" : 460,
+      "y" : 0,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 464,
+      "y" : 4
+    },
+    "connectors" : [ {
+      "edgeId" : 687,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 688,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 652,
+    "reactomeId" : 70115,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 17,
+      "y" : 257
+    },
+    "isFadeOut" : true,
+    "minX" : 0,
+    "maxX" : 35,
+    "minY" : 242,
+    "maxY" : 272,
+    "prop" : {
+      "x" : 0,
+      "y" : 242,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 4,
+      "y" : 246
+    },
+    "connectors" : [ {
+      "edgeId" : 641,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 648,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 654,
+    "reactomeId" : 70408,
+    "displayName" : "GLUT3 / SLC2A3 tetramer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 107,
+      "y" : 370
+    },
+    "isFadeOut" : true,
+    "minX" : 68,
+    "maxX" : 147,
+    "minY" : 346,
+    "maxY" : 423,
+    "prop" : {
+      "x" : 68,
+      "y" : 346,
+      "width" : 79,
+      "height" : 49
+    },
+    "textPosition" : {
+      "x" : 77,
+      "y" : 346
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 653,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 107,
+          "y" : 398
+        },
+        "to" : {
+          "x" : 107,
+          "y" : 415
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 107,
+          "y" : 419
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 526,
+    "reactomeId" : 70113,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 486,
+      "y" : 136
+    },
+    "isFadeOut" : true,
+    "minX" : 469,
+    "maxX" : 504,
+    "minY" : 121,
+    "maxY" : 151,
+    "prop" : {
+      "x" : 469,
+      "y" : 121,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 473,
+      "y" : 125
+    },
+    "connectors" : [ {
+      "edgeId" : 687,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 688,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 784,
+    "reactomeId" : 429650,
+    "displayName" : "SLC5A9",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 802,
+      "y" : 530
+    },
+    "isFadeOut" : true,
+    "minX" : 775,
+    "maxX" : 829,
+    "minY" : 478,
+    "maxY" : 541,
+    "prop" : {
+      "x" : 775,
+      "y" : 519,
+      "width" : 54,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 776,
+      "y" : 519
+    },
+    "connectors" : [ {
+      "edgeId" : 761,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 802,
+          "y" : 516
+        },
+        "to" : {
+          "x" : 802,
+          "y" : 486
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 802,
+          "y" : 482
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 656,
+    "reactomeId" : 70113,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 187,
+      "y" : 447
+    },
+    "isFadeOut" : true,
+    "minX" : 170,
+    "maxX" : 205,
+    "minY" : 432,
+    "maxY" : 462,
+    "prop" : {
+      "x" : 170,
+      "y" : 432,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 174,
+      "y" : 436
+    },
+    "connectors" : [ {
+      "edgeId" : 653,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 661,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 785,
+    "reactomeId" : 8875910,
+    "displayName" : "miR-32",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "RNA",
+    "position" : {
+      "x" : 397,
+      "y" : 128
+    },
+    "isFadeOut" : true,
+    "minX" : 354,
+    "maxX" : 467,
+    "minY" : 81,
+    "maxY" : 147,
+    "prop" : {
+      "x" : 354,
+      "y" : 109,
+      "width" : 86,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 370,
+      "y" : 117
+    },
+    "connectors" : [ {
+      "edgeId" : 687,
+      "type" : "ACTIVATOR",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 424,
+          "y" : 114
+        },
+        "to" : {
+          "x" : 467,
+          "y" : 81
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 464,
+          "y" : 88
+        },
+        "b" : {
+          "x" : 467,
+          "y" : 81
+        },
+        "c" : {
+          "x" : 459,
+          "y" : 82
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 530,
+    "reactomeId" : 5216211,
+    "displayName" : "SLC50A1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 567,
+      "y" : 76
+    },
+    "isFadeOut" : true,
+    "minX" : 504,
+    "maxX" : 600,
+    "minY" : 65,
+    "maxY" : 87,
+    "prop" : {
+      "x" : 534,
+      "y" : 65,
+      "width" : 66,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 537,
+      "y" : 65
+    },
+    "connectors" : [ {
+      "edgeId" : 688,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 531,
+          "y" : 76
+        },
+        "to" : {
+          "x" : 512,
+          "y" : 76
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 508,
+          "y" : 76
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 658,
+    "reactomeId" : 70115,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 17,
+      "y" : 443
+    },
+    "isFadeOut" : true,
+    "minX" : 0,
+    "maxX" : 35,
+    "minY" : 428,
+    "maxY" : 458,
+    "prop" : {
+      "x" : 0,
+      "y" : 428,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 4,
+      "y" : 432
+    },
+    "connectors" : [ {
+      "edgeId" : 653,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 661,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 724,
+    "reactomeId" : 429065,
+    "displayName" : "SLC2A9",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 191,
+      "y" : 718
+    },
+    "isFadeOut" : true,
+    "minX" : 165,
+    "maxX" : 258,
+    "minY" : 707,
+    "maxY" : 729,
+    "prop" : {
+      "x" : 165,
+      "y" : 707,
+      "width" : 53,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 165,
+      "y" : 707
+    },
+    "connectors" : [ {
+      "edgeId" : 706,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 221,
+          "y" : 718
+        },
+        "to" : {
+          "x" : 250,
+          "y" : 718
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 254,
+          "y" : 718
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 726,
+    "reactomeId" : 429047,
+    "displayName" : "SLC2A6,8,10,12",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 337,
+      "y" : 718
+    },
+    "isFadeOut" : true,
+    "minX" : 306,
+    "maxX" : 397,
+    "minY" : 701,
+    "maxY" : 736,
+    "prop" : {
+      "x" : 306,
+      "y" : 701,
+      "width" : 63,
+      "height" : 35
+    },
+    "textPosition" : {
+      "x" : 309,
+      "y" : 701
+    },
+    "connectors" : [ {
+      "edgeId" : 725,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 375,
+          "y" : 718
+        },
+        "to" : {
+          "x" : 389,
+          "y" : 718
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 393,
+          "y" : 718
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 662,
+    "reactomeId" : 70384,
+    "displayName" : "GLUT4 / SLC2A4 tetramer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 107,
+      "y" : 522
+    },
+    "isFadeOut" : true,
+    "minX" : 61,
+    "maxX" : 153,
+    "minY" : 471,
+    "maxY" : 547,
+    "prop" : {
+      "x" : 61,
+      "y" : 497,
+      "width" : 92,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 76,
+      "y" : 498
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 661,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 107,
+          "y" : 494
+        },
+        "to" : {
+          "x" : 107,
+          "y" : 479
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 107,
+          "y" : 475
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 728,
+    "reactomeId" : 70113,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 405,
+      "y" : 645
+    },
+    "isFadeOut" : true,
+    "minX" : 388,
+    "maxX" : 423,
+    "minY" : 630,
+    "maxY" : 660,
+    "prop" : {
+      "x" : 388,
+      "y" : 630,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 392,
+      "y" : 634
+    },
+    "connectors" : [ {
+      "edgeId" : 725,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 664,
+    "reactomeId" : 8981567,
+    "displayName" : "GLUT14 / SLC2A14 tetramer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 107,
+      "y" : 649
+    },
+    "isFadeOut" : true,
+    "minX" : 63,
+    "maxX" : 152,
+    "minY" : 595,
+    "maxY" : 674,
+    "prop" : {
+      "x" : 63,
+      "y" : 624,
+      "width" : 89,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 73,
+      "y" : 625
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 663,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 107,
+          "y" : 621
+        },
+        "to" : {
+          "x" : 107,
+          "y" : 603
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 107,
+          "y" : 599
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 167898,
+    "reactomeId" : 5656360,
+    "displayName" : "SLC5A1 mutants",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 802,
+      "y" : 115
+    },
+    "isDisease" : true,
+    "minX" : 761,
+    "maxX" : 844,
+    "minY" : 95,
+    "maxY" : 164,
+    "prop" : {
+      "x" : 761,
+      "y" : 95,
+      "width" : 83,
+      "height" : 41
+    },
+    "textPosition" : {
+      "x" : 774,
+      "y" : 98
+    },
+    "needDashedBorder" : true,
+    "connectors" : [ {
+      "edgeId" : 167897,
+      "type" : "CATALYST",
+      "segments" : [ {
+        "from" : {
+          "x" : 801,
+          "y" : 142
+        },
+        "to" : {
+          "x" : 801,
+          "y" : 156
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 801,
+          "y" : 160
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      },
+      "isDisease" : true
+    } ]
+  }, {
+    "id" : 25,
+    "reactomeId" : 83910,
+    "displayName" : "Na+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 712,
+      "y" : 409
+    },
+    "isFadeOut" : true,
+    "minX" : 691,
+    "maxX" : 760,
+    "minY" : 350,
+    "maxY" : 470,
+    "prop" : {
+      "x" : 691,
+      "y" : 394,
+      "width" : 43,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 695,
+      "y" : 398
+    },
+    "connectors" : [ {
+      "edgeId" : 580,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 724,
+          "y" : 391
+        },
+        "to" : {
+          "x" : 760,
+          "y" : 350
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 726,
+          "y" : 383
+        },
+        "b" : {
+          "x" : 724,
+          "y" : 391
+        },
+        "c" : {
+          "x" : 732,
+          "y" : 388
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 761,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 721,
+          "y" : 427
+        },
+        "to" : {
+          "x" : 749,
+          "y" : 470
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 728,
+          "y" : 431
+        },
+        "b" : {
+          "x" : 721,
+          "y" : 427
+        },
+        "c" : {
+          "x" : 721,
+          "y" : 435
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 26,
+    "reactomeId" : 74113,
+    "displayName" : "Na+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 900,
+      "y" : 172
+    },
+    "minX" : 839,
+    "maxX" : 923,
+    "minY" : 156,
+    "maxY" : 222,
+    "prop" : {
+      "x" : 879,
+      "y" : 157,
+      "width" : 43,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 883,
+      "y" : 161
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 917,
+          "y" : 162
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 756,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 876,
+          "y" : 172
+        },
+        "to" : {
+          "x" : 839,
+          "y" : 172
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 167897,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 876,
+          "y" : 172
+        },
+        "to" : {
+          "x" : 839,
+          "y" : 172
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "isDisease" : true
+    }, {
+      "edgeId" : 28,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 881,
+          "y" : 190
+        },
+        "to" : {
+          "x" : 839,
+          "y" : 222
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 602,
+    "reactomeId" : 5215960,
+    "displayName" : "SLC45A3",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 398,
+      "y" : 76
+    },
+    "isFadeOut" : true,
+    "minX" : 362,
+    "maxX" : 466,
+    "minY" : 65,
+    "maxY" : 87,
+    "prop" : {
+      "x" : 362,
+      "y" : 65,
+      "width" : 73,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 368,
+      "y" : 65
+    },
+    "connectors" : [ {
+      "edgeId" : 687,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 438,
+          "y" : 75
+        },
+        "to" : {
+          "x" : 458,
+          "y" : 75
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 462,
+          "y" : 75
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 666,
+    "reactomeId" : 70115,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 17,
+      "y" : 584
+    },
+    "isFadeOut" : true,
+    "minX" : 0,
+    "maxX" : 35,
+    "minY" : 569,
+    "maxY" : 599,
+    "prop" : {
+      "x" : 0,
+      "y" : 569,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 4,
+      "y" : 573
+    },
+    "connectors" : [ {
+      "edgeId" : 663,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 730,
+    "reactomeId" : 70115,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 410,
+      "y" : 792
+    },
+    "isFadeOut" : true,
+    "minX" : 393,
+    "maxX" : 428,
+    "minY" : 777,
+    "maxY" : 807,
+    "prop" : {
+      "x" : 393,
+      "y" : 777,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 397,
+      "y" : 781
+    },
+    "connectors" : [ {
+      "edgeId" : 725,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 668,
+    "reactomeId" : 70113,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 187,
+      "y" : 589
+    },
+    "isFadeOut" : true,
+    "minX" : 170,
+    "maxX" : 205,
+    "minY" : 574,
+    "maxY" : 604,
+    "prop" : {
+      "x" : 170,
+      "y" : 574,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 174,
+      "y" : 578
+    },
+    "connectors" : [ {
+      "edgeId" : 663,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 605,
+    "reactomeId" : 429568,
+    "displayName" : "SLC5A2",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 802,
+      "y" : 273
+    },
+    "isFadeOut" : true,
+    "minX" : 775,
+    "maxX" : 829,
+    "minY" : 230,
+    "maxY" : 284,
+    "prop" : {
+      "x" : 775,
+      "y" : 262,
+      "width" : 54,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 776,
+      "y" : 262
+    },
+    "connectors" : [ {
+      "edgeId" : 28,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 802,
+          "y" : 259
+        },
+        "to" : {
+          "x" : 802,
+          "y" : 238
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 802,
+          "y" : 234
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 734,
+    "reactomeId" : 428819,
+    "displayName" : "hexoses transported by GLUT7/11",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 562,
+      "y" : 792
+    },
+    "isFadeOut" : true,
+    "minX" : 512,
+    "maxX" : 613,
+    "minY" : 767,
+    "maxY" : 818,
+    "prop" : {
+      "x" : 512,
+      "y" : 767,
+      "width" : 101,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 513,
+      "y" : 768
+    },
+    "connectors" : [ {
+      "edgeId" : 733,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 158,
+    "reactomeId" : 113592,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 251,
+      "y" : 126
+    },
+    "isFadeOut" : true,
+    "minX" : 100,
+    "maxX" : 271,
+    "minY" : 19,
+    "maxY" : 141,
+    "prop" : {
+      "x" : 231,
+      "y" : 111,
+      "width" : 40,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 235,
+      "y" : 115
+    },
+    "connectors" : [ {
+      "edgeId" : 635,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 228,
+          "y" : 111
+        },
+        "to" : {
+          "x" : 100,
+          "y" : 19
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 158,
+            "y" : 59
+          },
+          "b" : {
+            "x" : 170,
+            "y" : 71
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    }, {
+      "edgeId" : 639,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 233,
+          "y" : 108
+        },
+        "to" : {
+          "x" : 143,
+          "y" : 35
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 4,
+        "shape" : {
+          "a" : {
+            "x" : 182,
+            "y" : 65
+          },
+          "b" : {
+            "x" : 194,
+            "y" : 77
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 225,
+          "y" : 107
+        },
+        "b" : {
+          "x" : 233,
+          "y" : 108
+        },
+        "c" : {
+          "x" : 230,
+          "y" : 101
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 607,
+    "reactomeId" : 70115,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 899,
+      "y" : 224
+    },
+    "minX" : 839,
+    "maxX" : 918,
+    "minY" : 172,
+    "maxY" : 239,
+    "prop" : {
+      "x" : 882,
+      "y" : 209,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 886,
+      "y" : 213
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 912,
+          "y" : 214
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 756,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 879,
+          "y" : 208
+        },
+        "to" : {
+          "x" : 839,
+          "y" : 172
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 167897,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 879,
+          "y" : 208
+        },
+        "to" : {
+          "x" : 839,
+          "y" : 172
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "isDisease" : true
+    }, {
+      "edgeId" : 28,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 879,
+          "y" : 223
+        },
+        "to" : {
+          "x" : 839,
+          "y" : 222
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 32,
+    "reactomeId" : 70422,
+    "displayName" : "GLUT2 / SLC2A2 tetramer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 107,
+      "y" : 261
+    },
+    "isFadeOut" : true,
+    "minX" : 70,
+    "maxX" : 144,
+    "minY" : 208,
+    "maxY" : 320,
+    "prop" : {
+      "x" : 70,
+      "y" : 236,
+      "width" : 74,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 76,
+      "y" : 237
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 641,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 107,
+          "y" : 289
+        },
+        "to" : {
+          "x" : 107,
+          "y" : 312
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 107,
+          "y" : 316
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 648,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 107,
+          "y" : 233
+        },
+        "to" : {
+          "x" : 107,
+          "y" : 216
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 107,
+          "y" : 212
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 609,
+    "reactomeId" : 83910,
+    "displayName" : "Na+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 666,
+      "y" : 176
+    },
+    "isFadeOut" : true,
+    "minX" : 645,
+    "maxX" : 766,
+    "minY" : 161,
+    "maxY" : 223,
+    "prop" : {
+      "x" : 645,
+      "y" : 161,
+      "width" : 43,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 649,
+      "y" : 165
+    },
+    "isCrossed" : true,
+    "connectors" : [ {
+      "edgeId" : 756,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 691,
+          "y" : 175
+        },
+        "to" : {
+          "x" : 766,
+          "y" : 173
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 698,
+          "y" : 171
+        },
+        "b" : {
+          "x" : 691,
+          "y" : 175
+        },
+        "c" : {
+          "x" : 698,
+          "y" : 179
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 167897,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 691,
+          "y" : 175
+        },
+        "to" : {
+          "x" : 766,
+          "y" : 173
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 698,
+          "y" : 171
+        },
+        "b" : {
+          "x" : 691,
+          "y" : 175
+        },
+        "c" : {
+          "x" : 698,
+          "y" : 179
+        },
+        "type" : "ARROW"
+      },
+      "isDisease" : true
+    }, {
+      "edgeId" : 28,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 691,
+          "y" : 186
+        },
+        "to" : {
+          "x" : 762,
+          "y" : 223
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 699,
+          "y" : 186
+        },
+        "b" : {
+          "x" : 691,
+          "y" : 186
+        },
+        "c" : {
+          "x" : 695,
+          "y" : 193
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 611,
+    "reactomeId" : 70113,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 668,
+      "y" : 223
+    },
+    "isFadeOut" : true,
+    "minX" : 651,
+    "maxX" : 766,
+    "minY" : 173,
+    "maxY" : 238,
+    "prop" : {
+      "x" : 651,
+      "y" : 208,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 655,
+      "y" : 212
+    },
+    "isCrossed" : true,
+    "connectors" : [ {
+      "edgeId" : 756,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 689,
+          "y" : 214
+        },
+        "to" : {
+          "x" : 766,
+          "y" : 173
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 693,
+          "y" : 207
+        },
+        "b" : {
+          "x" : 689,
+          "y" : 214
+        },
+        "c" : {
+          "x" : 697,
+          "y" : 214
+        },
+        "type" : "ARROW"
+      }
+    }, {
+      "edgeId" : 167897,
+      "type" : "OUTPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 689,
+          "y" : 214
+        },
+        "to" : {
+          "x" : 766,
+          "y" : 173
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 693,
+          "y" : 207
+        },
+        "b" : {
+          "x" : 689,
+          "y" : 214
+        },
+        "c" : {
+          "x" : 697,
+          "y" : 214
+        },
+        "type" : "ARROW"
+      },
+      "isDisease" : true
+    }, {
+      "edgeId" : 28,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 689,
+          "y" : 223
+        },
+        "to" : {
+          "x" : 762,
+          "y" : 223
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 696,
+          "y" : 219
+        },
+        "b" : {
+          "x" : 689,
+          "y" : 223
+        },
+        "c" : {
+          "x" : 696,
+          "y" : 227
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 38,
+    "reactomeId" : 70115,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 17,
+      "y" : 149
+    },
+    "isFadeOut" : true,
+    "minX" : 0,
+    "maxX" : 35,
+    "minY" : 134,
+    "maxY" : 164,
+    "prop" : {
+      "x" : 0,
+      "y" : 134,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 4,
+      "y" : 138
+    },
+    "connectors" : [ {
+      "edgeId" : 633,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 39,
+    "reactomeId" : 70113,
+    "displayName" : "Glc",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 187,
+      "y" : 154
+    },
+    "isFadeOut" : true,
+    "minX" : 170,
+    "maxX" : 205,
+    "minY" : 139,
+    "maxY" : 169,
+    "prop" : {
+      "x" : 170,
+      "y" : 139,
+      "width" : 35,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 174,
+      "y" : 143
+    },
+    "connectors" : [ {
+      "edgeId" : 633,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 745,
+    "reactomeId" : 428802,
+    "displayName" : "hexoses transported by GLUT7/11",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 557,
+      "y" : 645
+    },
+    "isFadeOut" : true,
+    "minX" : 509,
+    "maxX" : 605,
+    "minY" : 619,
+    "maxY" : 671,
+    "prop" : {
+      "x" : 509,
+      "y" : 619,
+      "width" : 96,
+      "height" : 52
+    },
+    "textPosition" : {
+      "x" : 508,
+      "y" : 620
+    },
+    "connectors" : [ {
+      "edgeId" : 733,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 44,
+    "reactomeId" : 70400,
+    "displayName" : "GLUT1 / SLC2A1 tetramer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 107,
+      "y" : 92
+    },
+    "isFadeOut" : true,
+    "minX" : 68,
+    "maxX" : 146,
+    "minY" : 19,
+    "maxY" : 147,
+    "prop" : {
+      "x" : 68,
+      "y" : 67,
+      "width" : 78,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 76,
+      "y" : 69
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 633,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 107,
+          "y" : 121
+        },
+        "to" : {
+          "x" : 107,
+          "y" : 139
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 107,
+          "y" : 143
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    }, {
+      "edgeId" : 635,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 104,
+          "y" : 64
+        },
+        "to" : {
+          "x" : 100,
+          "y" : 19
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 639,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 123,
+          "y" : 64
+        },
+        "to" : {
+          "x" : 143,
+          "y" : 35
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 124,
+          "y" : 56
+        },
+        "b" : {
+          "x" : 123,
+          "y" : 64
+        },
+        "c" : {
+          "x" : 130,
+          "y" : 61
+        },
+        "type" : "ARROW"
+      }
+    } ]
+  }, {
+    "id" : 45,
+    "reactomeId" : 450089,
+    "displayName" : "GLUT1:ATP tetramer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 280,
+      "y" : 72
+    },
+    "isFadeOut" : true,
+    "minX" : 238,
+    "maxX" : 322,
+    "minY" : 54,
+    "maxY" : 91,
+    "prop" : {
+      "x" : 238,
+      "y" : 54,
+      "width" : 84,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 241,
+      "y" : 56
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 635,
+      "type" : "OUTPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 639,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 496,
+    "reactomeId" : 189909,
+    "displayName" : "FGF21",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 179,
+      "y" : 119
+    },
+    "isFadeOut" : true,
+    "minX" : 115,
+    "maxX" : 203,
+    "minY" : 108,
+    "maxY" : 152,
+    "prop" : {
+      "x" : 156,
+      "y" : 108,
+      "width" : 47,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 157,
+      "y" : 108
+    },
+    "connectors" : [ {
+      "edgeId" : 633,
+      "type" : "ACTIVATOR",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 157,
+          "y" : 133
+        },
+        "to" : {
+          "x" : 115,
+          "y" : 151
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 120,
+          "y" : 145
+        },
+        "b" : {
+          "x" : 115,
+          "y" : 151
+        },
+        "c" : {
+          "x" : 123,
+          "y" : 152
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 497,
+    "reactomeId" : 113592,
+    "displayName" : "ATP",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 175,
+      "y" : 193
+    },
+    "isFadeOut" : true,
+    "minX" : 113,
+    "maxX" : 194,
+    "minY" : 157,
+    "maxY" : 208,
+    "prop" : {
+      "x" : 156,
+      "y" : 178,
+      "width" : 38,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 159,
+      "y" : 182
+    },
+    "connectors" : [ {
+      "edgeId" : 633,
+      "type" : "INHIBITOR",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 153,
+          "y" : 182
+        },
+        "to" : {
+          "x" : 115,
+          "y" : 160
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 113,
+          "y" : 163
+        },
+        "b" : {
+          "x" : 117,
+          "y" : 157
+        },
+        "c" : {
+          "x" : 115,
+          "y" : 160
+        },
+        "type" : "STOP"
+      }
+    } ]
+  }, {
+    "id" : 755,
+    "reactomeId" : 429107,
+    "displayName" : "GLUT7/11",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 475,
+      "y" : 718
+    },
+    "isFadeOut" : true,
+    "minX" : 440,
+    "maxX" : 549,
+    "minY" : 707,
+    "maxY" : 729,
+    "prop" : {
+      "x" : 440,
+      "y" : 707,
+      "width" : 70,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 440,
+      "y" : 707
+    },
+    "connectors" : [ {
+      "edgeId" : 733,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 516,
+          "y" : 718
+        },
+        "to" : {
+          "x" : 541,
+          "y" : 718
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 545,
+          "y" : 718
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 757,
+    "reactomeId" : 3662199,
+    "displayName" : "SLC5As, NAGLT1",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 802,
+      "y" : 115
+    },
+    "isFadeOut" : true,
+    "minX" : 761,
+    "maxX" : 844,
+    "minY" : 95,
+    "maxY" : 164,
+    "prop" : {
+      "x" : 761,
+      "y" : 95,
+      "width" : 83,
+      "height" : 41
+    },
+    "textPosition" : {
+      "x" : 773,
+      "y" : 98
+    },
+    "connectors" : [ {
+      "edgeId" : 756,
+      "type" : "CATALYST",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 801,
+          "y" : 142
+        },
+        "to" : {
+          "x" : 801,
+          "y" : 156
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "c" : {
+          "x" : 801,
+          "y" : 160
+        },
+        "r" : 4,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 762,
+    "reactomeId" : 429620,
+    "displayName" : "hexoses transported by SGLT4",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 937,
+      "y" : 472
+    },
+    "isFadeOut" : true,
+    "minX" : 847,
+    "maxX" : 988,
+    "minY" : 447,
+    "maxY" : 497,
+    "prop" : {
+      "x" : 887,
+      "y" : 447,
+      "width" : 101,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 888,
+      "y" : 447
+    },
+    "connectors" : [ {
+      "edgeId" : 761,
+      "type" : "INPUT",
+      "isFadeOut" : true,
+      "segments" : [ {
+        "from" : {
+          "x" : 881,
+          "y" : 470
+        },
+        "to" : {
+          "x" : 847,
+          "y" : 469
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 641,
+    "reactomeId" : 450095,
+    "displayName" : "GLUT2 (SLC2A2) transports Glc from cytosol to extracellular region",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 107,
+      "y" : 328
+    },
+    "isFadeOut" : true,
+    "minX" : 38,
+    "maxX" : 167,
+    "minY" : 270,
+    "maxY" : 334,
+    "segments" : [ {
+      "from" : {
+        "x" : 167,
+        "y" : 276
+      },
+      "to" : {
+        "x" : 107,
+        "y" : 328
+      }
+    }, {
+      "from" : {
+        "x" : 107,
+        "y" : 328
+      },
+      "to" : {
+        "x" : 38,
+        "y" : 270
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 46,
+        "y" : 271
+      },
+      "b" : {
+        "x" : 38,
+        "y" : 270
+      },
+      "c" : {
+        "x" : 41,
+        "y" : 278
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 101,
+        "y" : 322
+      },
+      "b" : {
+        "x" : 113,
+        "y" : 334
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 650
+    } ],
+    "outputs" : [ {
+      "id" : 652
+    } ],
+    "catalysts" : [ {
+      "id" : 32,
+      "points" : [ {
+        "x" : 107,
+        "y" : 289
+      } ]
+    } ]
+  }, {
+    "id" : 706,
+    "reactomeId" : 429036,
+    "displayName" : "SLC2A9 transports Fru, Glc, urate",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 266,
+      "y" : 718
+    },
+    "isFadeOut" : true,
+    "minX" : 260,
+    "maxX" : 272,
+    "minY" : 662,
+    "maxY" : 771,
+    "segments" : [ {
+      "from" : {
+        "x" : 266,
+        "y" : 771
+      },
+      "to" : {
+        "x" : 266,
+        "y" : 718
+      }
+    }, {
+      "from" : {
+        "x" : 266,
+        "y" : 718
+      },
+      "to" : {
+        "x" : 266,
+        "y" : 662
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 270,
+        "y" : 669
+      },
+      "b" : {
+        "x" : 266,
+        "y" : 662
+      },
+      "c" : {
+        "x" : 262,
+        "y" : 669
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 260,
+        "y" : 712
+      },
+      "b" : {
+        "x" : 272,
+        "y" : 724
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 707
+    } ],
+    "outputs" : [ {
+      "id" : 716
+    } ],
+    "catalysts" : [ {
+      "id" : 724,
+      "points" : [ {
+        "x" : 221,
+        "y" : 718
+      } ]
+    } ]
+  }, {
+    "id" : 580,
+    "reactomeId" : 8876283,
+    "displayName" : "SLC5A10 cotransports Na+ with Man, Fru from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 802,
+      "y" : 350
+    },
+    "isFadeOut" : true,
+    "minX" : 760,
+    "maxX" : 842,
+    "minY" : 344,
+    "maxY" : 356,
+    "segments" : [ {
+      "from" : {
+        "x" : 842,
+        "y" : 350
+      },
+      "to" : {
+        "x" : 802,
+        "y" : 350
+      }
+    }, {
+      "from" : {
+        "x" : 802,
+        "y" : 350
+      },
+      "to" : {
+        "x" : 760,
+        "y" : 350
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 796,
+        "y" : 344
+      },
+      "b" : {
+        "x" : 808,
+        "y" : 356
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 581,
+      "points" : [ {
+        "x" : 876,
+        "y" : 351
+      } ]
+    }, {
+      "id" : 586,
+      "points" : [ {
+        "x" : 880,
+        "y" : 391
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 25,
+      "points" : [ {
+        "x" : 724,
+        "y" : 391
+      } ]
+    }, {
+      "id" : 582,
+      "points" : [ {
+        "x" : 705,
+        "y" : 349
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 583,
+      "points" : [ {
+        "x" : 802,
+        "y" : 394
+      } ]
+    } ]
+  }, {
+    "id" : 648,
+    "reactomeId" : 8981574,
+    "displayName" : "GLUT2 (SLC2A2) tetramer transports Glc from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 107,
+      "y" : 200
+    },
+    "isFadeOut" : true,
+    "minX" : 38,
+    "maxX" : 167,
+    "minY" : 194,
+    "maxY" : 248,
+    "segments" : [ {
+      "from" : {
+        "x" : 38,
+        "y" : 245
+      },
+      "to" : {
+        "x" : 107,
+        "y" : 200
+      }
+    }, {
+      "from" : {
+        "x" : 107,
+        "y" : 200
+      },
+      "to" : {
+        "x" : 167,
+        "y" : 248
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 159,
+        "y" : 247
+      },
+      "b" : {
+        "x" : 167,
+        "y" : 248
+      },
+      "c" : {
+        "x" : 164,
+        "y" : 241
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 101,
+        "y" : 194
+      },
+      "b" : {
+        "x" : 113,
+        "y" : 206
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 652
+    } ],
+    "outputs" : [ {
+      "id" : 650
+    } ],
+    "catalysts" : [ {
+      "id" : 32,
+      "points" : [ {
+        "x" : 107,
+        "y" : 233
+      } ]
+    } ]
+  }, {
+    "id" : 653,
+    "reactomeId" : 8981564,
+    "displayName" : "GLUT3 (SLC2A3) tetramer transports Glc from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 107,
+      "y" : 431
+    },
+    "isFadeOut" : true,
+    "minX" : 38,
+    "maxX" : 167,
+    "minY" : 425,
+    "maxY" : 443,
+    "segments" : [ {
+      "from" : {
+        "x" : 38,
+        "y" : 440
+      },
+      "to" : {
+        "x" : 107,
+        "y" : 431
+      }
+    }, {
+      "from" : {
+        "x" : 107,
+        "y" : 431
+      },
+      "to" : {
+        "x" : 167,
+        "y" : 443
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 159,
+        "y" : 446
+      },
+      "b" : {
+        "x" : 167,
+        "y" : 443
+      },
+      "c" : {
+        "x" : 161,
+        "y" : 438
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 101,
+        "y" : 425
+      },
+      "b" : {
+        "x" : 113,
+        "y" : 437
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 658
+    } ],
+    "outputs" : [ {
+      "id" : 656
+    } ],
+    "catalysts" : [ {
+      "id" : 654,
+      "points" : [ {
+        "x" : 107,
+        "y" : 398
+      } ]
+    } ]
+  }, {
+    "id" : 687,
+    "reactomeId" : 8875902,
+    "displayName" : "SLC45A3 transports Glc from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 474,
+      "y" : 75
+    },
+    "isFadeOut" : true,
+    "minX" : 468,
+    "maxX" : 483,
+    "minY" : 33,
+    "maxY" : 118,
+    "segments" : [ {
+      "from" : {
+        "x" : 476,
+        "y" : 33
+      },
+      "to" : {
+        "x" : 474,
+        "y" : 75
+      }
+    }, {
+      "from" : {
+        "x" : 474,
+        "y" : 75
+      },
+      "to" : {
+        "x" : 483,
+        "y" : 118
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 478,
+        "y" : 112
+      },
+      "b" : {
+        "x" : 483,
+        "y" : 118
+      },
+      "c" : {
+        "x" : 485,
+        "y" : 110
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 468,
+        "y" : 69
+      },
+      "b" : {
+        "x" : 480,
+        "y" : 81
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 524
+    } ],
+    "outputs" : [ {
+      "id" : 526
+    } ],
+    "catalysts" : [ {
+      "id" : 602,
+      "points" : [ {
+        "x" : 438,
+        "y" : 75
+      } ]
+    } ],
+    "activators" : [ {
+      "id" : 785,
+      "points" : [ {
+        "x" : 424,
+        "y" : 114
+      } ]
+    } ]
+  }, {
+    "id" : 688,
+    "reactomeId" : 8876319,
+    "displayName" : "SLC50A1 transports Glc from cytosol to extracellular region",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 496,
+      "y" : 76
+    },
+    "isFadeOut" : true,
+    "minX" : 481,
+    "maxX" : 502,
+    "minY" : 33,
+    "maxY" : 118,
+    "segments" : [ {
+      "from" : {
+        "x" : 488,
+        "y" : 118
+      },
+      "to" : {
+        "x" : 496,
+        "y" : 76
+      }
+    }, {
+      "from" : {
+        "x" : 496,
+        "y" : 76
+      },
+      "to" : {
+        "x" : 481,
+        "y" : 33
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 487,
+        "y" : 38
+      },
+      "b" : {
+        "x" : 481,
+        "y" : 33
+      },
+      "c" : {
+        "x" : 480,
+        "y" : 41
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 490,
+        "y" : 70
+      },
+      "b" : {
+        "x" : 502,
+        "y" : 82
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 526
+    } ],
+    "outputs" : [ {
+      "id" : 524
+    } ],
+    "catalysts" : [ {
+      "id" : 530,
+      "points" : [ {
+        "x" : 531,
+        "y" : 76
+      } ]
+    } ]
+  }, {
+    "id" : 756,
+    "reactomeId" : 429613,
+    "displayName" : "SLC5As, NAGLT1 cotransport Glc and Na+ from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 801,
+      "y" : 172
+    },
+    "isFadeOut" : true,
+    "minX" : 766,
+    "maxX" : 839,
+    "minY" : 166,
+    "maxY" : 178,
+    "segments" : [ {
+      "from" : {
+        "x" : 839,
+        "y" : 172
+      },
+      "to" : {
+        "x" : 801,
+        "y" : 172
+      }
+    }, {
+      "from" : {
+        "x" : 801,
+        "y" : 172
+      },
+      "to" : {
+        "x" : 766,
+        "y" : 173
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 795,
+        "y" : 166
+      },
+      "b" : {
+        "x" : 807,
+        "y" : 178
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 26,
+      "points" : [ {
+        "x" : 876,
+        "y" : 172
+      } ]
+    }, {
+      "id" : 607,
+      "points" : [ {
+        "x" : 879,
+        "y" : 208
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 611,
+      "points" : [ {
+        "x" : 689,
+        "y" : 214
+      } ]
+    }, {
+      "id" : 609,
+      "points" : [ {
+        "x" : 691,
+        "y" : 175
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 757,
+      "points" : [ {
+        "x" : 801,
+        "y" : 142
+      } ]
+    } ]
+  }, {
+    "id" : 725,
+    "reactomeId" : 429094,
+    "displayName" : "SLC2A6,8,10,12 transport Glc from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 405,
+      "y" : 718
+    },
+    "isFadeOut" : true,
+    "minX" : 399,
+    "maxX" : 411,
+    "minY" : 663,
+    "maxY" : 774,
+    "segments" : [ {
+      "from" : {
+        "x" : 408,
+        "y" : 774
+      },
+      "to" : {
+        "x" : 405,
+        "y" : 718
+      }
+    }, {
+      "from" : {
+        "x" : 405,
+        "y" : 718
+      },
+      "to" : {
+        "x" : 405,
+        "y" : 663
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 409,
+        "y" : 670
+      },
+      "b" : {
+        "x" : 405,
+        "y" : 663
+      },
+      "c" : {
+        "x" : 401,
+        "y" : 670
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 399,
+        "y" : 712
+      },
+      "b" : {
+        "x" : 411,
+        "y" : 724
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 730
+    } ],
+    "outputs" : [ {
+      "id" : 728
+    } ],
+    "catalysts" : [ {
+      "id" : 726,
+      "points" : [ {
+        "x" : 375,
+        "y" : 718
+      } ]
+    } ]
+  }, {
+    "id" : 661,
+    "reactomeId" : 8981570,
+    "displayName" : "GLUT4 (SLC2A4) tetramer transports Glc from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 107,
+      "y" : 463
+    },
+    "isFadeOut" : true,
+    "minX" : 38,
+    "maxX" : 167,
+    "minY" : 446,
+    "maxY" : 469,
+    "segments" : [ {
+      "from" : {
+        "x" : 38,
+        "y" : 446
+      },
+      "to" : {
+        "x" : 107,
+        "y" : 463
+      }
+    }, {
+      "from" : {
+        "x" : 107,
+        "y" : 463
+      },
+      "to" : {
+        "x" : 167,
+        "y" : 450
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 161,
+        "y" : 455
+      },
+      "b" : {
+        "x" : 167,
+        "y" : 450
+      },
+      "c" : {
+        "x" : 159,
+        "y" : 448
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 101,
+        "y" : 457
+      },
+      "b" : {
+        "x" : 113,
+        "y" : 469
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 658
+    } ],
+    "outputs" : [ {
+      "id" : 656
+    } ],
+    "catalysts" : [ {
+      "id" : 662,
+      "points" : [ {
+        "x" : 107,
+        "y" : 494
+      } ]
+    } ]
+  }, {
+    "id" : 663,
+    "reactomeId" : 8981553,
+    "displayName" : "GLUT14 (SLC2A14) tetramer transports Glc from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 107,
+      "y" : 587
+    },
+    "isFadeOut" : true,
+    "minX" : 38,
+    "maxX" : 167,
+    "minY" : 581,
+    "maxY" : 593,
+    "segments" : [ {
+      "from" : {
+        "x" : 38,
+        "y" : 584
+      },
+      "to" : {
+        "x" : 107,
+        "y" : 587
+      }
+    }, {
+      "from" : {
+        "x" : 107,
+        "y" : 587
+      },
+      "to" : {
+        "x" : 167,
+        "y" : 588
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 160,
+        "y" : 592
+      },
+      "b" : {
+        "x" : 167,
+        "y" : 588
+      },
+      "c" : {
+        "x" : 160,
+        "y" : 584
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 101,
+        "y" : 581
+      },
+      "b" : {
+        "x" : 113,
+        "y" : 593
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 666
+    } ],
+    "outputs" : [ {
+      "id" : 668
+    } ],
+    "catalysts" : [ {
+      "id" : 664,
+      "points" : [ {
+        "x" : 107,
+        "y" : 621
+      } ]
+    } ]
+  }, {
+    "id" : 633,
+    "reactomeId" : 5339524,
+    "displayName" : "GLUT1 (SLC2A1) tetramer transports Glc from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 107,
+      "y" : 155
+    },
+    "isFadeOut" : true,
+    "minX" : 38,
+    "maxX" : 167,
+    "minY" : 149,
+    "maxY" : 161,
+    "segments" : [ {
+      "from" : {
+        "x" : 38,
+        "y" : 150
+      },
+      "to" : {
+        "x" : 107,
+        "y" : 155
+      }
+    }, {
+      "from" : {
+        "x" : 107,
+        "y" : 155
+      },
+      "to" : {
+        "x" : 167,
+        "y" : 154
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 160,
+        "y" : 158
+      },
+      "b" : {
+        "x" : 167,
+        "y" : 154
+      },
+      "c" : {
+        "x" : 160,
+        "y" : 150
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 101,
+        "y" : 149
+      },
+      "b" : {
+        "x" : 113,
+        "y" : 161
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 38
+    } ],
+    "outputs" : [ {
+      "id" : 39
+    } ],
+    "catalysts" : [ {
+      "id" : 44,
+      "points" : [ {
+        "x" : 107,
+        "y" : 121
+      } ]
+    } ],
+    "inhibitors" : [ {
+      "id" : 497,
+      "points" : [ {
+        "x" : 153,
+        "y" : 182
+      } ]
+    } ],
+    "activators" : [ {
+      "id" : 496,
+      "points" : [ {
+        "x" : 157,
+        "y" : 133
+      } ]
+    } ]
+  }, {
+    "id" : 761,
+    "reactomeId" : 429567,
+    "displayName" : "Co-transport (influx) of glucose/mannose and Na+ ions by SGLT4",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 802,
+      "y" : 470
+    },
+    "isFadeOut" : true,
+    "minX" : 749,
+    "maxX" : 847,
+    "minY" : 464,
+    "maxY" : 476,
+    "segments" : [ {
+      "from" : {
+        "x" : 847,
+        "y" : 469
+      },
+      "to" : {
+        "x" : 802,
+        "y" : 470
+      }
+    }, {
+      "from" : {
+        "x" : 802,
+        "y" : 470
+      },
+      "to" : {
+        "x" : 749,
+        "y" : 470
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 796,
+        "y" : 464
+      },
+      "b" : {
+        "x" : 808,
+        "y" : 476
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 762,
+      "points" : [ {
+        "x" : 881,
+        "y" : 470
+      } ]
+    }, {
+      "id" : 586,
+      "points" : [ {
+        "x" : 881,
+        "y" : 427
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 773,
+      "points" : [ {
+        "x" : 715,
+        "y" : 470
+      } ]
+    }, {
+      "id" : 25,
+      "points" : [ {
+        "x" : 721,
+        "y" : 427
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 784,
+      "points" : [ {
+        "x" : 802,
+        "y" : 516
+      } ]
+    } ]
+  }, {
+    "id" : 635,
+    "reactomeId" : 450088,
+    "displayName" : "GLUT1 tetramer binds 4xATP",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 196,
+      "y" : 20
+    },
+    "isFadeOut" : true,
+    "minX" : 100,
+    "maxX" : 250,
+    "minY" : 15,
+    "maxY" : 51,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 100,
+        "y" : 19
+      },
+      "to" : {
+        "x" : 196,
+        "y" : 20
+      }
+    }, {
+      "from" : {
+        "x" : 196,
+        "y" : 20
+      },
+      "to" : {
+        "x" : 250,
+        "y" : 51
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 242,
+        "y" : 51
+      },
+      "b" : {
+        "x" : 250,
+        "y" : 51
+      },
+      "c" : {
+        "x" : 246,
+        "y" : 44
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 196,
+        "y" : 20
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 44,
+      "points" : [ {
+        "x" : 104,
+        "y" : 64
+      } ]
+    }, {
+      "id" : 158,
+      "points" : [ {
+        "x" : 228,
+        "y" : 111
+      } ],
+      "stoichiometry" : 4
+    } ],
+    "outputs" : [ {
+      "id" : 45
+    } ]
+  }, {
+    "id" : 167897,
+    "reactomeId" : 5656356,
+    "displayName" : "Defective SLC5A1 does not cotransport Glc and Na+",
+    "schemaClass" : "FailedReaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 801,
+      "y" : 172
+    },
+    "isDisease" : true,
+    "minX" : 766,
+    "maxX" : 839,
+    "minY" : 166,
+    "maxY" : 178,
+    "segments" : [ {
+      "from" : {
+        "x" : 839,
+        "y" : 172
+      },
+      "to" : {
+        "x" : 801,
+        "y" : 172
+      }
+    }, {
+      "from" : {
+        "x" : 801,
+        "y" : 172
+      },
+      "to" : {
+        "x" : 766,
+        "y" : 173
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 795,
+        "y" : 166
+      },
+      "b" : {
+        "x" : 807,
+        "y" : 178
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 26,
+      "points" : [ {
+        "x" : 876,
+        "y" : 172
+      } ]
+    }, {
+      "id" : 607,
+      "points" : [ {
+        "x" : 879,
+        "y" : 208
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 611,
+      "points" : [ {
+        "x" : 689,
+        "y" : 214
+      } ]
+    }, {
+      "id" : 609,
+      "points" : [ {
+        "x" : 691,
+        "y" : 175
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 167898,
+      "points" : [ {
+        "x" : 801,
+        "y" : 142
+      } ]
+    } ]
+  }, {
+    "id" : 28,
+    "reactomeId" : 189208,
+    "displayName" : "SLC5A2 cotransports Na+ and glucose from extracellular region to cytosol",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 802,
+      "y" : 222
+    },
+    "isFadeOut" : true,
+    "minX" : 762,
+    "maxX" : 839,
+    "minY" : 216,
+    "maxY" : 228,
+    "segments" : [ {
+      "from" : {
+        "x" : 839,
+        "y" : 222
+      },
+      "to" : {
+        "x" : 802,
+        "y" : 222
+      }
+    }, {
+      "from" : {
+        "x" : 802,
+        "y" : 222
+      },
+      "to" : {
+        "x" : 762,
+        "y" : 223
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 796,
+        "y" : 216
+      },
+      "b" : {
+        "x" : 808,
+        "y" : 228
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 26,
+      "points" : [ {
+        "x" : 881,
+        "y" : 190
+      } ]
+    }, {
+      "id" : 607,
+      "points" : [ {
+        "x" : 879,
+        "y" : 223
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 609,
+      "points" : [ {
+        "x" : 691,
+        "y" : 186
+      } ]
+    }, {
+      "id" : 611,
+      "points" : [ {
+        "x" : 689,
+        "y" : 223
+      } ]
+    } ],
+    "catalysts" : [ {
+      "id" : 605,
+      "points" : [ {
+        "x" : 802,
+        "y" : 259
+      } ]
+    } ]
+  }, {
+    "id" : 733,
+    "reactomeId" : 428779,
+    "displayName" : "GLUT7 and GLUT11 transport glucose and fructose",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 557,
+      "y" : 718
+    },
+    "isFadeOut" : true,
+    "minX" : 551,
+    "maxX" : 563,
+    "minY" : 677,
+    "maxY" : 761,
+    "segments" : [ {
+      "from" : {
+        "x" : 560,
+        "y" : 761
+      },
+      "to" : {
+        "x" : 557,
+        "y" : 718
+      }
+    }, {
+      "from" : {
+        "x" : 557,
+        "y" : 718
+      },
+      "to" : {
+        "x" : 557,
+        "y" : 677
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 561,
+        "y" : 684
+      },
+      "b" : {
+        "x" : 557,
+        "y" : 677
+      },
+      "c" : {
+        "x" : 553,
+        "y" : 684
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 551,
+        "y" : 712
+      },
+      "b" : {
+        "x" : 563,
+        "y" : 724
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 734
+    } ],
+    "outputs" : [ {
+      "id" : 745
+    } ],
+    "catalysts" : [ {
+      "id" : 755,
+      "points" : [ {
+        "x" : 516,
+        "y" : 718
+      } ]
+    } ]
+  }, {
+    "id" : 639,
+    "reactomeId" : 450092,
+    "displayName" : "GLUT1:ATP tetramer dissociates to GLUT1 tetramer and 4xATP",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 188,
+      "y" : 34
+    },
+    "isFadeOut" : true,
+    "minX" : 143,
+    "maxX" : 235,
+    "minY" : 29,
+    "maxY" : 54,
+    "reactionType" : "Dissociation",
+    "segments" : [ {
+      "from" : {
+        "x" : 235,
+        "y" : 54
+      },
+      "to" : {
+        "x" : 188,
+        "y" : 34
+      }
+    }, {
+      "from" : {
+        "x" : 188,
+        "y" : 34
+      },
+      "to" : {
+        "x" : 143,
+        "y" : 35
+      }
+    } ],
+    "reactionShape" : {
+      "c" : {
+        "x" : 188,
+        "y" : 34
+      },
+      "r" : 5,
+      "r1" : 3,
+      "type" : "DOUBLE_CIRCLE",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 45
+    } ],
+    "outputs" : [ {
+      "id" : 44,
+      "points" : [ {
+        "x" : 123,
+        "y" : 64
+      } ]
+    }, {
+      "id" : 158,
+      "points" : [ {
+        "x" : 233,
+        "y" : 108
+      } ],
+      "stoichiometry" : 4
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 33,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 454,
+      "y" : 399
+    },
+    "minX" : 98,
+    "maxX" : 810,
+    "minY" : 71,
+    "maxY" : 728,
+    "prop" : {
+      "x" : 98,
+      "y" : 71,
+      "width" : 712,
+      "height" : 657
+    },
+    "textPosition" : {
+      "x" : 718,
+      "y" : 668
+    },
+    "insets" : {
+      "x" : 113,
+      "y" : 81,
+      "width" : 681,
+      "height" : 631
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 39, 32, 44, 158, 45, 496, 497, 526, 530, 582, 611, 633, 641, 648, 650, 654, 653, 656, 661, 662, 664, 663, 668, 602, 687, 688, 706, 716, 724, 726, 725, 728, 745, 733, 755, 25, 583, 605, 609, 28, 580, 756, 757, 773, 761, 784, 785 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 988,
+  "minY" : 0,
+  "maxY" : 818,
+  "disease" : true
+}

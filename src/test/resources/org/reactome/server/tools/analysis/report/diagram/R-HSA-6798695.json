@@ -1,0 +1,1532 @@
+{
+  "dbId" : 6798695,
+  "stableId" : "R-HSA-6798695",
+  "displayName" : "Neutrophil degranulation",
+  "nodes" : [ {
+    "id" : 32,
+    "reactomeId" : 6806434,
+    "displayName" : "Tertiary granule membrane proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 680,
+      "y" : 81
+    },
+    "minX" : 619,
+    "maxX" : 742,
+    "minY" : 63,
+    "maxY" : 99,
+    "prop" : {
+      "x" : 619,
+      "y" : 63,
+      "width" : 123,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 619,
+      "y" : 63
+    },
+    "connectors" : [ {
+      "edgeId" : 30,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 40,
+    "reactomeId" : 6800431,
+    "displayName" : "Ficolin-rich granule lumen proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 858,
+      "y" : 255
+    },
+    "minX" : 797,
+    "maxX" : 920,
+    "minY" : 237,
+    "maxY" : 273,
+    "prop" : {
+      "x" : 797,
+      "y" : 237,
+      "width" : 123,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 797,
+      "y" : 237
+    },
+    "connectors" : [ {
+      "edgeId" : 39,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 8,
+    "reactomeId" : 6798742,
+    "displayName" : "Azurophil granule lumen proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 98,
+      "y" : 265
+    },
+    "minX" : 41,
+    "maxX" : 156,
+    "minY" : 247,
+    "maxY" : 283,
+    "prop" : {
+      "x" : 41,
+      "y" : 247,
+      "width" : 115,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 41,
+      "y" : 247
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 9,
+    "reactomeId" : 6806184,
+    "displayName" : "Azurophil granule lumen proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 98,
+      "y" : 20
+    },
+    "minX" : 41,
+    "maxX" : 156,
+    "minY" : 2,
+    "maxY" : 38,
+    "prop" : {
+      "x" : 41,
+      "y" : 2,
+      "width" : 115,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 41,
+      "y" : 2
+    },
+    "connectors" : [ {
+      "edgeId" : 7,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 41,
+    "reactomeId" : 6806481,
+    "displayName" : "Ficolin-rich granule lumen proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 858,
+      "y" : 21
+    },
+    "minX" : 797,
+    "maxX" : 920,
+    "minY" : 3,
+    "maxY" : 39,
+    "prop" : {
+      "x" : 797,
+      "y" : 3,
+      "width" : 123,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 797,
+      "y" : 3
+    },
+    "connectors" : [ {
+      "edgeId" : 39,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 11,
+    "reactomeId" : 6798738,
+    "displayName" : "Azurophil granule membrane proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 173,
+      "y" : 205
+    },
+    "minX" : 112,
+    "maxX" : 235,
+    "minY" : 187,
+    "maxY" : 223,
+    "prop" : {
+      "x" : 112,
+      "y" : 187,
+      "width" : 123,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 112,
+      "y" : 187
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 12,
+    "reactomeId" : 6806267,
+    "displayName" : "Azurophil granule membrane proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 172,
+      "y" : 85
+    },
+    "minX" : 111,
+    "maxX" : 234,
+    "minY" : 67,
+    "maxY" : 103,
+    "prop" : {
+      "x" : 111,
+      "y" : 67,
+      "width" : 123,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 111,
+      "y" : 67
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 14,
+    "reactomeId" : 6799354,
+    "displayName" : "Specific granule lumen proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 342,
+      "y" : 259
+    },
+    "minX" : 291,
+    "maxX" : 394,
+    "minY" : 241,
+    "maxY" : 277,
+    "prop" : {
+      "x" : 291,
+      "y" : 241,
+      "width" : 103,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 291,
+      "y" : 241
+    },
+    "connectors" : [ {
+      "edgeId" : 13,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 15,
+    "reactomeId" : 6806312,
+    "displayName" : "Specific granule lumen proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 343,
+      "y" : 19
+    },
+    "minX" : 292,
+    "maxX" : 395,
+    "minY" : 1,
+    "maxY" : 37,
+    "prop" : {
+      "x" : 292,
+      "y" : 1,
+      "width" : 103,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 292,
+      "y" : 1
+    },
+    "connectors" : [ {
+      "edgeId" : 13,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 47,
+    "reactomeId" : 6800437,
+    "displayName" : "Ficolin-rich granule membrane proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 938,
+      "y" : 199
+    },
+    "minX" : 877,
+    "maxX" : 1000,
+    "minY" : 181,
+    "maxY" : 217,
+    "prop" : {
+      "x" : 877,
+      "y" : 181,
+      "width" : 123,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 877,
+      "y" : 181
+    },
+    "connectors" : [ {
+      "edgeId" : 46,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 48,
+    "reactomeId" : 6806514,
+    "displayName" : "Ficolin-rich granule membrane proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 937,
+      "y" : 78
+    },
+    "minX" : 876,
+    "maxX" : 999,
+    "minY" : 60,
+    "maxY" : 96,
+    "prop" : {
+      "x" : 876,
+      "y" : 60,
+      "width" : 123,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 876,
+      "y" : 60
+    },
+    "connectors" : [ {
+      "edgeId" : 46,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 18,
+    "reactomeId" : 6799368,
+    "displayName" : "Specific granule membrane proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 424,
+      "y" : 209
+    },
+    "minX" : 360,
+    "maxX" : 488,
+    "minY" : 189,
+    "maxY" : 229,
+    "prop" : {
+      "x" : 360,
+      "y" : 189,
+      "width" : 128,
+      "height" : 40
+    },
+    "textPosition" : {
+      "x" : 363,
+      "y" : 191
+    },
+    "connectors" : [ {
+      "edgeId" : 17,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 19,
+    "reactomeId" : 6806323,
+    "displayName" : "Specific granule membrane proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 423,
+      "y" : 83
+    },
+    "minX" : 362,
+    "maxX" : 485,
+    "minY" : 65,
+    "maxY" : 101,
+    "prop" : {
+      "x" : 362,
+      "y" : 65,
+      "width" : 123,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 362,
+      "y" : 65
+    },
+    "connectors" : [ {
+      "edgeId" : 17,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 53,
+    "reactomeId" : 6800970,
+    "displayName" : "Secretory granule lumen proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1106,
+      "y" : 260
+    },
+    "minX" : 1050,
+    "maxX" : 1163,
+    "minY" : 242,
+    "maxY" : 278,
+    "prop" : {
+      "x" : 1050,
+      "y" : 242,
+      "width" : 113,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1050,
+      "y" : 242
+    },
+    "connectors" : [ {
+      "edgeId" : 52,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 54,
+    "reactomeId" : 6806526,
+    "displayName" : "Secretory granule lumen proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1107,
+      "y" : 18
+    },
+    "minX" : 1051,
+    "maxX" : 1164,
+    "minY" : 0,
+    "maxY" : 36,
+    "prop" : {
+      "x" : 1051,
+      "y" : 0,
+      "width" : 113,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1051,
+      "y" : 0
+    },
+    "connectors" : [ {
+      "edgeId" : 52,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 26,
+    "reactomeId" : 6800171,
+    "displayName" : "Tertiary granule lumen proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 599,
+      "y" : 261
+    },
+    "minX" : 547,
+    "maxX" : 652,
+    "minY" : 243,
+    "maxY" : 279,
+    "prop" : {
+      "x" : 547,
+      "y" : 243,
+      "width" : 105,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 547,
+      "y" : 243
+    },
+    "connectors" : [ {
+      "edgeId" : 25,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 27,
+    "reactomeId" : 6806432,
+    "displayName" : "Tertiary granule lumen proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 599,
+      "y" : 20
+    },
+    "minX" : 547,
+    "maxX" : 652,
+    "minY" : 2,
+    "maxY" : 38,
+    "prop" : {
+      "x" : 547,
+      "y" : 2,
+      "width" : 105,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 547,
+      "y" : 2
+    },
+    "connectors" : [ {
+      "edgeId" : 25,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 60,
+    "reactomeId" : 6800420,
+    "displayName" : "Secretory granule membrane proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1194,
+      "y" : 202
+    },
+    "minX" : 1133,
+    "maxX" : 1256,
+    "minY" : 184,
+    "maxY" : 220,
+    "prop" : {
+      "x" : 1133,
+      "y" : 184,
+      "width" : 123,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1133,
+      "y" : 184
+    },
+    "connectors" : [ {
+      "edgeId" : 59,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 61,
+    "reactomeId" : 6806534,
+    "displayName" : "Secretory granule membrane proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1194,
+      "y" : 75
+    },
+    "minX" : 1133,
+    "maxX" : 1256,
+    "minY" : 57,
+    "maxY" : 93,
+    "prop" : {
+      "x" : 1133,
+      "y" : 57,
+      "width" : 123,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1133,
+      "y" : 57
+    },
+    "connectors" : [ {
+      "edgeId" : 59,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 31,
+    "reactomeId" : 6799718,
+    "displayName" : "Tertiary granule membrane proteins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 680,
+      "y" : 208
+    },
+    "minX" : 619,
+    "maxX" : 742,
+    "minY" : 191,
+    "maxY" : 225,
+    "prop" : {
+      "x" : 619,
+      "y" : 191,
+      "width" : 123,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 619,
+      "y" : 191
+    },
+    "connectors" : [ {
+      "edgeId" : 30,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 17,
+    "reactomeId" : 6799350,
+    "displayName" : "Exocytosis of specific granule membrane proteins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 423,
+      "y" : 142
+    },
+    "minX" : 417,
+    "maxX" : 429,
+    "minY" : 107,
+    "maxY" : 183,
+    "segments" : [ {
+      "from" : {
+        "x" : 423,
+        "y" : 183
+      },
+      "to" : {
+        "x" : 423,
+        "y" : 142
+      }
+    }, {
+      "from" : {
+        "x" : 423,
+        "y" : 142
+      },
+      "to" : {
+        "x" : 423,
+        "y" : 107
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 427,
+        "y" : 114
+      },
+      "b" : {
+        "x" : 423,
+        "y" : 107
+      },
+      "c" : {
+        "x" : 419,
+        "y" : 114
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 417,
+        "y" : 136
+      },
+      "b" : {
+        "x" : 429,
+        "y" : 148
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 18
+    } ],
+    "outputs" : [ {
+      "id" : 19
+    } ]
+  }, {
+    "id" : 52,
+    "reactomeId" : 6798748,
+    "displayName" : "Exocytosis of secretory granule lumen proteins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1106,
+      "y" : 134
+    },
+    "minX" : 1100,
+    "maxX" : 1112,
+    "minY" : 42,
+    "maxY" : 236,
+    "segments" : [ {
+      "from" : {
+        "x" : 1106,
+        "y" : 236
+      },
+      "to" : {
+        "x" : 1106,
+        "y" : 134
+      }
+    }, {
+      "from" : {
+        "x" : 1106,
+        "y" : 134
+      },
+      "to" : {
+        "x" : 1106,
+        "y" : 42
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1110,
+        "y" : 49
+      },
+      "b" : {
+        "x" : 1106,
+        "y" : 42
+      },
+      "c" : {
+        "x" : 1102,
+        "y" : 49
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1100,
+        "y" : 128
+      },
+      "b" : {
+        "x" : 1112,
+        "y" : 140
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 53
+    } ],
+    "outputs" : [ {
+      "id" : 54
+    } ]
+  }, {
+    "id" : 39,
+    "reactomeId" : 6800434,
+    "displayName" : "Exocytosis of ficolin-rich granule lumen proteins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 857,
+      "y" : 140
+    },
+    "minX" : 851,
+    "maxX" : 863,
+    "minY" : 45,
+    "maxY" : 231,
+    "segments" : [ {
+      "from" : {
+        "x" : 857,
+        "y" : 231
+      },
+      "to" : {
+        "x" : 857,
+        "y" : 140
+      }
+    }, {
+      "from" : {
+        "x" : 857,
+        "y" : 140
+      },
+      "to" : {
+        "x" : 857,
+        "y" : 45
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 861,
+        "y" : 52
+      },
+      "b" : {
+        "x" : 857,
+        "y" : 45
+      },
+      "c" : {
+        "x" : 853,
+        "y" : 52
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 851,
+        "y" : 134
+      },
+      "b" : {
+        "x" : 863,
+        "y" : 146
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 40
+    } ],
+    "outputs" : [ {
+      "id" : 41
+    } ]
+  }, {
+    "id" : 7,
+    "reactomeId" : 6798751,
+    "displayName" : "Exocytosis of azurophil granule lumen proteins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 96,
+      "y" : 120
+    },
+    "minX" : 90,
+    "maxX" : 102,
+    "minY" : 44,
+    "maxY" : 241,
+    "segments" : [ {
+      "from" : {
+        "x" : 97,
+        "y" : 241
+      },
+      "to" : {
+        "x" : 96,
+        "y" : 120
+      }
+    }, {
+      "from" : {
+        "x" : 96,
+        "y" : 120
+      },
+      "to" : {
+        "x" : 97,
+        "y" : 44
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 101,
+        "y" : 51
+      },
+      "b" : {
+        "x" : 97,
+        "y" : 44
+      },
+      "c" : {
+        "x" : 93,
+        "y" : 51
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 90,
+        "y" : 114
+      },
+      "b" : {
+        "x" : 102,
+        "y" : 126
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 8
+    } ],
+    "outputs" : [ {
+      "id" : 9
+    } ]
+  }, {
+    "id" : 25,
+    "reactomeId" : 6798745,
+    "displayName" : "Exocytosis of tertiary granule lumen proteins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 600,
+      "y" : 136
+    },
+    "minX" : 594,
+    "maxX" : 606,
+    "minY" : 44,
+    "maxY" : 237,
+    "segments" : [ {
+      "from" : {
+        "x" : 599,
+        "y" : 237
+      },
+      "to" : {
+        "x" : 600,
+        "y" : 136
+      }
+    }, {
+      "from" : {
+        "x" : 600,
+        "y" : 136
+      },
+      "to" : {
+        "x" : 599,
+        "y" : 44
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 603,
+        "y" : 51
+      },
+      "b" : {
+        "x" : 599,
+        "y" : 44
+      },
+      "c" : {
+        "x" : 595,
+        "y" : 51
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 594,
+        "y" : 130
+      },
+      "b" : {
+        "x" : 606,
+        "y" : 142
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 26
+    } ],
+    "outputs" : [ {
+      "id" : 27
+    } ]
+  }, {
+    "id" : 10,
+    "reactomeId" : 6798739,
+    "displayName" : "Exocytosis of azurophil granule membrane proteins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 172,
+      "y" : 152
+    },
+    "minX" : 166,
+    "maxX" : 178,
+    "minY" : 109,
+    "maxY" : 181,
+    "segments" : [ {
+      "from" : {
+        "x" : 172,
+        "y" : 181
+      },
+      "to" : {
+        "x" : 172,
+        "y" : 152
+      }
+    }, {
+      "from" : {
+        "x" : 172,
+        "y" : 152
+      },
+      "to" : {
+        "x" : 172,
+        "y" : 109
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 176,
+        "y" : 116
+      },
+      "b" : {
+        "x" : 172,
+        "y" : 109
+      },
+      "c" : {
+        "x" : 168,
+        "y" : 116
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 166,
+        "y" : 146
+      },
+      "b" : {
+        "x" : 178,
+        "y" : 158
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 11
+    } ],
+    "outputs" : [ {
+      "id" : 12
+    } ]
+  }, {
+    "id" : 59,
+    "reactomeId" : 6798743,
+    "displayName" : "Exocytosis of secretory granule membrane proteins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1193,
+      "y" : 140
+    },
+    "minX" : 1187,
+    "maxX" : 1199,
+    "minY" : 99,
+    "maxY" : 178,
+    "segments" : [ {
+      "from" : {
+        "x" : 1193,
+        "y" : 178
+      },
+      "to" : {
+        "x" : 1193,
+        "y" : 140
+      }
+    }, {
+      "from" : {
+        "x" : 1193,
+        "y" : 140
+      },
+      "to" : {
+        "x" : 1193,
+        "y" : 99
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1197,
+        "y" : 106
+      },
+      "b" : {
+        "x" : 1193,
+        "y" : 99
+      },
+      "c" : {
+        "x" : 1189,
+        "y" : 106
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 1187,
+        "y" : 134
+      },
+      "b" : {
+        "x" : 1199,
+        "y" : 146
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 60
+    } ],
+    "outputs" : [ {
+      "id" : 61
+    } ]
+  }, {
+    "id" : 13,
+    "reactomeId" : 6798749,
+    "displayName" : "Exocytosis of specific granule lumen proteins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 342,
+      "y" : 120
+    },
+    "minX" : 336,
+    "maxX" : 348,
+    "minY" : 43,
+    "maxY" : 235,
+    "segments" : [ {
+      "from" : {
+        "x" : 342,
+        "y" : 235
+      },
+      "to" : {
+        "x" : 342,
+        "y" : 120
+      }
+    }, {
+      "from" : {
+        "x" : 342,
+        "y" : 120
+      },
+      "to" : {
+        "x" : 342,
+        "y" : 43
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 346,
+        "y" : 50
+      },
+      "b" : {
+        "x" : 342,
+        "y" : 43
+      },
+      "c" : {
+        "x" : 338,
+        "y" : 50
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 336,
+        "y" : 114
+      },
+      "b" : {
+        "x" : 348,
+        "y" : 126
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 14
+    } ],
+    "outputs" : [ {
+      "id" : 15
+    } ]
+  }, {
+    "id" : 30,
+    "reactomeId" : 6798747,
+    "displayName" : "Exocytosis of tertiary granule membrane proteins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 679,
+      "y" : 148
+    },
+    "minX" : 673,
+    "maxX" : 685,
+    "minY" : 105,
+    "maxY" : 185,
+    "segments" : [ {
+      "from" : {
+        "x" : 679,
+        "y" : 185
+      },
+      "to" : {
+        "x" : 679,
+        "y" : 148
+      }
+    }, {
+      "from" : {
+        "x" : 679,
+        "y" : 148
+      },
+      "to" : {
+        "x" : 679,
+        "y" : 105
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 683,
+        "y" : 112
+      },
+      "b" : {
+        "x" : 679,
+        "y" : 105
+      },
+      "c" : {
+        "x" : 675,
+        "y" : 112
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 673,
+        "y" : 142
+      },
+      "b" : {
+        "x" : 685,
+        "y" : 154
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 31
+    } ],
+    "outputs" : [ {
+      "id" : 32
+    } ]
+  }, {
+    "id" : 46,
+    "reactomeId" : 6800426,
+    "displayName" : "Exocytosis of ficolin-rich granule membrane proteins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 937,
+      "y" : 143
+    },
+    "minX" : 931,
+    "maxX" : 943,
+    "minY" : 102,
+    "maxY" : 175,
+    "segments" : [ {
+      "from" : {
+        "x" : 937,
+        "y" : 175
+      },
+      "to" : {
+        "x" : 937,
+        "y" : 143
+      }
+    }, {
+      "from" : {
+        "x" : 937,
+        "y" : 143
+      },
+      "to" : {
+        "x" : 937,
+        "y" : 102
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 941,
+        "y" : 109
+      },
+      "b" : {
+        "x" : 937,
+        "y" : 102
+      },
+      "c" : {
+        "x" : 933,
+        "y" : 109
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 931,
+        "y" : 137
+      },
+      "b" : {
+        "x" : 943,
+        "y" : 149
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 47
+    } ],
+    "outputs" : [ {
+      "id" : 48
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 1,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 651,
+      "y" : 237
+    },
+    "minX" : 0,
+    "maxX" : 1302,
+    "minY" : 74,
+    "maxY" : 400,
+    "prop" : {
+      "x" : 0,
+      "y" : 74,
+      "width" : 1302,
+      "height" : 326
+    },
+    "textPosition" : {
+      "x" : 14,
+      "y" : 351
+    },
+    "insets" : {
+      "x" : 10,
+      "y" : 85,
+      "width" : 1277,
+      "height" : 302
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 2, 3, 4, 5, 6, 7, 10, 12, 13, 19, 17, 25, 30, 32, 39, 46, 48, 52, 59, 61 ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 1470028,
+    "displayName" : "azurophil granule lumen",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 140,
+      "y" : 269
+    },
+    "minX" : 22,
+    "maxX" : 259,
+    "minY" : 202,
+    "maxY" : 336,
+    "prop" : {
+      "x" : 22,
+      "y" : 202,
+      "width" : 237,
+      "height" : 134
+    },
+    "textPosition" : {
+      "x" : 34,
+      "y" : 289
+    },
+    "insets" : {
+      "x" : 31,
+      "y" : 212,
+      "width" : 218,
+      "height" : 113
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 8, 11 ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 6799371,
+    "displayName" : "specific granule lumen",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 392,
+      "y" : 268
+    },
+    "minX" : 268,
+    "maxX" : 516,
+    "minY" : 202,
+    "maxY" : 334,
+    "prop" : {
+      "x" : 268,
+      "y" : 202,
+      "width" : 248,
+      "height" : 132
+    },
+    "textPosition" : {
+      "x" : 280,
+      "y" : 286
+    },
+    "insets" : {
+      "x" : 277,
+      "y" : 211,
+      "width" : 229,
+      "height" : 111
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 14, 18 ]
+  }, {
+    "id" : 4,
+    "reactomeId" : 6800173,
+    "displayName" : "tertiary granule lumen",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 646,
+      "y" : 267
+    },
+    "minX" : 527,
+    "maxX" : 766,
+    "minY" : 203,
+    "maxY" : 332,
+    "prop" : {
+      "x" : 527,
+      "y" : 203,
+      "width" : 239,
+      "height" : 129
+    },
+    "textPosition" : {
+      "x" : 558,
+      "y" : 283
+    },
+    "insets" : {
+      "x" : 535,
+      "y" : 212,
+      "width" : 222,
+      "height" : 110
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 26, 31 ]
+  }, {
+    "id" : 5,
+    "reactomeId" : 6800405,
+    "displayName" : "ficolin-1-rich granule lumen",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 896,
+      "y" : 264
+    },
+    "minX" : 776,
+    "maxX" : 1017,
+    "minY" : 201,
+    "maxY" : 327,
+    "prop" : {
+      "x" : 776,
+      "y" : 201,
+      "width" : 241,
+      "height" : 126
+    },
+    "textPosition" : {
+      "x" : 808,
+      "y" : 279
+    },
+    "insets" : {
+      "x" : 787,
+      "y" : 211,
+      "width" : 220,
+      "height" : 104
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 40, 47 ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 1462052,
+    "displayName" : "secretory granule lumen",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 1153,
+      "y" : 259
+    },
+    "minX" : 1029,
+    "maxX" : 1278,
+    "minY" : 196,
+    "maxY" : 322,
+    "prop" : {
+      "x" : 1029,
+      "y" : 196,
+      "width" : 249,
+      "height" : 126
+    },
+    "textPosition" : {
+      "x" : 1050,
+      "y" : 274
+    },
+    "insets" : {
+      "x" : 1039,
+      "y" : 206,
+      "width" : 230,
+      "height" : 104
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 53, 60 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ ],
+  "shadows" : [ ],
+  "minX" : 0,
+  "maxX" : 1302,
+  "minY" : 0,
+  "maxY" : 400,
+  "disease" : false
+}

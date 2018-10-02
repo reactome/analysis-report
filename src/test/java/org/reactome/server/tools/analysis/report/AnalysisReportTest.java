@@ -43,17 +43,8 @@ public class AnalysisReportTest {
 	private static final HashMap<String, String> tokens = new LinkedHashMap<String, String>() {
 		{
 			put("ORA1", "MjAxODA4MjkxMzUwMDBfMw%3D%3D");
-			put("ORA2", "MjAxODA4MjkxMzQ4NTVfMg%3D%3D");
-			put("ORA4", "MjAxODA4MjkxNDI4MDZfNQ%3D%3D");
-			put("ORA5", "MjAxODA4MjkxNDI4NTVfNg%3D%3D");
-
 			put("EXP1", "MjAxODA4MjkxNDI5NDJfNw%3D%3D");
-			put("EXP2", "MjAxODA4MjkxNDMwMzJfOA%3D%3D");
-			put("EXP3", "MjAxODA4MjkxNDMxMzJfOQ%3D%3D");
-			put("EXP4", "MjAxODA4MjkxNDMyMjlfMTA%3D");
-
 			put("SPECIES1", "MjAxODA4MjkxNDQwMzBfMTE%3D");
-			put("SPECIES2", "MjAxODA4MjkxNDQ1NDRfMTI%3D");
 		}
 	};
 	private static AnalysisReport RENDERER;
@@ -61,10 +52,10 @@ public class AnalysisReportTest {
 	@BeforeClass
 	public static void beforeClass() {
 		final String ANALYSIS_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/analysis";
-		final String DIAGRAM_PATH = System.getProperty("diagram.path");
-		final String FIREWORKS_PATH = System.getProperty("fireworks.path");
-		final String EHLD_PATH = System.getProperty("ehld.path");
-		final String SVG_SUMMARY = System.getProperty("svg.summary");
+		final String DIAGRAM_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/diagram";
+		final String FIREWORKS_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/fireworks";
+		final String EHLD_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/ehld";
+		final String SVG_SUMMARY = "src/test/resources/org/reactome/server/tools/analysis/report/ehld/svgsummary.txt";
 		ReactomeGraphCore.initialise(
 				System.getProperty("neo4j.host", "localhost"),
 				System.getProperty("neo4j.port", "7474"),

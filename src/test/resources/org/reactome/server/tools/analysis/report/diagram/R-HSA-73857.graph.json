@@ -1,0 +1,3081 @@
+{
+  "dbId" : 73857,
+  "stId" : "R-HSA-73857",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 65539,
+    "stId" : "R-HSA-65539",
+    "displayName" : "TAF1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P21675",
+    "geneNames" : [ "TAF1", "BA2R", "CCG1", "CCGS", "TAF2A" ],
+    "parents" : [ 5420880 ]
+  }, {
+    "dbId" : 65541,
+    "stId" : "R-HSA-65541",
+    "displayName" : "TAF4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00268",
+    "geneNames" : [ "TAF4", "TAF2C", "TAF2C1", "TAF4A", "TAFII130", "TAFII135" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 65543,
+    "stId" : "R-HSA-65543",
+    "displayName" : "TAF5 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15542",
+    "geneNames" : [ "TAF5", "TAF2D" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 65545,
+    "stId" : "R-HSA-65545",
+    "displayName" : "TAF6 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P49848",
+    "geneNames" : [ "TAF6", "TAF2E", "TAFII70" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 65551,
+    "stId" : "R-HSA-65551",
+    "displayName" : "TAF10 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12962",
+    "geneNames" : [ "TAF10", "TAF2A", "TAF2H", "TAFII30" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 63502,
+    "stId" : "R-HSA-63502",
+    "displayName" : "POLR2A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P24928",
+    "geneNames" : [ "POLR2A", "POLR2" ],
+    "parents" : [ 113401 ]
+  }, {
+    "dbId" : 65553,
+    "stId" : "R-HSA-65553",
+    "displayName" : "TAF11 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15544",
+    "geneNames" : [ "TAF11", "TAF2I", "PRO2134" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 63504,
+    "stId" : "R-HSA-63504",
+    "displayName" : "POLR2B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P30876",
+    "geneNames" : [ "POLR2B" ],
+    "parents" : [ 113427, 109909, 113716, 113401 ]
+  }, {
+    "dbId" : 65555,
+    "stId" : "R-HSA-65555",
+    "displayName" : "TAF12 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16514",
+    "geneNames" : [ "TAF12", "TAF15", "TAF2J", "TAFII20" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 63506,
+    "stId" : "R-HSA-63506",
+    "displayName" : "POLR2C [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19387",
+    "geneNames" : [ "POLR2C", "A-152E5.7" ],
+    "parents" : [ 113427, 109909, 113716, 113401 ]
+  }, {
+    "dbId" : 63508,
+    "stId" : "R-HSA-63508",
+    "displayName" : "POLR2D [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15514",
+    "geneNames" : [ "POLR2D" ],
+    "parents" : [ 113427, 109909, 113716, 113401 ]
+  }, {
+    "dbId" : 65557,
+    "stId" : "R-HSA-65557",
+    "displayName" : "TAF13 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15543",
+    "geneNames" : [ "TAF13", "TAF2K", "TAFII18" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 65559,
+    "stId" : "R-HSA-65559",
+    "displayName" : "TAF4B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92750",
+    "geneNames" : [ "TAF4B", "TAF2C2", "TAFII105" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 65561,
+    "stId" : "R-HSA-65561",
+    "displayName" : "GTF2E1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29083",
+    "geneNames" : [ "GTF2E1", "TF2E1" ],
+    "parents" : [ 109633 ]
+  }, {
+    "dbId" : 65563,
+    "stId" : "R-HSA-65563",
+    "displayName" : "GTF2E2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P29084",
+    "geneNames" : [ "GTF2E2", "TF2E2" ],
+    "parents" : [ 109633 ]
+  }, {
+    "dbId" : 65565,
+    "stId" : "R-HSA-65565",
+    "displayName" : "GTF2F1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P35269",
+    "geneNames" : [ "GTF2F1", "RAP74" ],
+    "parents" : [ 109631 ]
+  }, {
+    "dbId" : 63517,
+    "stId" : "R-HSA-63517",
+    "displayName" : "POLR2G [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62487",
+    "geneNames" : [ "POLR2G", "RPB7" ],
+    "parents" : [ 113427, 109909, 113716, 113401 ]
+  }, {
+    "dbId" : 8865946,
+    "stId" : "R-HSA-8865946",
+    "displayName" : "U2AF1L4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WU68",
+    "geneNames" : [ "U2AF1L4", "U2AF1-RS3", "U2AF1L3" ],
+    "parents" : [ 8865886 ]
+  }, {
+    "dbId" : 65567,
+    "stId" : "R-HSA-65567",
+    "displayName" : "GTF2F2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P13984",
+    "geneNames" : [ "GTF2F2", "RAP30" ],
+    "parents" : [ 109631 ]
+  }, {
+    "dbId" : 112159,
+    "stId" : "R-HSA-112159",
+    "displayName" : "capped intronless pre-mRNA:CBC complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 112160 ],
+    "children" : [ 112158, 51469, 51463 ]
+  }, {
+    "dbId" : 112158,
+    "stId" : "R-ALL-112158",
+    "displayName" : "Capped intronless pre-mRNA [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 112159 ]
+  }, {
+    "dbId" : 112161,
+    "stId" : "R-HSA-112161",
+    "displayName" : "CstF:CPSF:capped intronless pre-mRNA:CBC complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 112162 ],
+    "children" : [ 72006, 112160 ]
+  }, {
+    "dbId" : 112160,
+    "stId" : "R-HSA-112160",
+    "displayName" : "CPSF:capped intronless pre-mRNA:CBC complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 112161 ],
+    "children" : [ 112159, 71995 ]
+  }, {
+    "dbId" : 112163,
+    "stId" : "R-ALL-112163",
+    "displayName" : "upstream intronless mRNA fragment [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 112164 ]
+  }, {
+    "dbId" : 64547,
+    "stId" : "R-HSA-64547",
+    "displayName" : "SLBP [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14493",
+    "geneNames" : [ "SLBP", "HBP" ],
+    "parents" : [ 111682, 110759 ]
+  }, {
+    "dbId" : 63523,
+    "stId" : "R-HSA-63523",
+    "displayName" : "POLR2H [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52434",
+    "geneNames" : [ "POLR2H" ],
+    "parents" : [ 113427, 109909, 113716, 113401 ]
+  }, {
+    "dbId" : 112162,
+    "stId" : "R-HSA-112162",
+    "displayName" : "intronless pre-mRNA cleavage complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 145 ],
+    "children" : [ 72015, 71997, 72008, 72020, 112161 ]
+  }, {
+    "dbId" : 112165,
+    "stId" : "R-ALL-112165",
+    "displayName" : "downstream intronless mRNA fragment [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 146 ]
+  }, {
+    "dbId" : 63525,
+    "stId" : "R-HSA-63525",
+    "displayName" : "POLR2I [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P36954",
+    "geneNames" : [ "POLR2I" ],
+    "parents" : [ 113427, 109909, 113716, 113401 ]
+  }, {
+    "dbId" : 112164,
+    "stId" : "R-HSA-112164",
+    "displayName" : "upstream mRNA fragment:CPSF:PAP:PABPN1 complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 147 ],
+    "children" : [ 51469, 71997, 71995, 72008, 51463, 112163 ]
+  }, {
+    "dbId" : 2980874,
+    "stId" : "R-HSA-2980874",
+    "displayName" : "TAF7L [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5H9L4",
+    "geneNames" : [ "TAF7L", "TAF2Q" ],
+    "parents" : [ 8866702 ]
+  }, {
+    "dbId" : 5688446,
+    "stId" : "R-HSA-5688446",
+    "displayName" : "GTF2H5 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6ZYL4",
+    "geneNames" : [ "GTF2H5", "C6orf175", "TTDA" ],
+    "parents" : [ 109634 ]
+  }, {
+    "dbId" : 63531,
+    "stId" : "R-HSA-63531",
+    "displayName" : "POLR2J [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52435",
+    "geneNames" : [ "POLR2J", "POLR2J1" ],
+    "parents" : [ 113427, 109909, 113716, 113401 ]
+  }, {
+    "dbId" : 63537,
+    "stId" : "R-HSA-63537",
+    "displayName" : "POLR2K [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P53803",
+    "geneNames" : [ "POLR2K" ],
+    "parents" : [ 113427, 109909, 113716, 113401 ]
+  }, {
+    "dbId" : 113715,
+    "stId" : "R-HSA-113715",
+    "displayName" : "RNA Pol II (hypophosphorylated):capped pre-mRNA complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 98 ],
+    "parents" : [ 113406 ],
+    "children" : [ 113416, 72085, 113427, 77088 ]
+  }, {
+    "dbId" : 113714,
+    "stId" : "R-ALL-113714",
+    "displayName" : "Elongating transcript prior to separation [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 113724 ]
+  }, {
+    "dbId" : 113717,
+    "stId" : "R-ALL-113717",
+    "displayName" : "Elongating transcript in processive Pol II mediated elongation [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 113722, 113721, 113720, 113719 ]
+  }, {
+    "dbId" : 113716,
+    "stId" : "R-HSA-113716",
+    "displayName" : "RNA Polymerase II holoenzyme complex (phosphorylated) [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 113404 ],
+    "children" : [ 63517, 77100, 63531, 63525, 63508, 83714, 63523, 83715, 63506, 63537, 83713, 63504 ]
+  }, {
+    "dbId" : 113719,
+    "stId" : "R-HSA-113719",
+    "displayName" : "Processive elongation complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 122 ],
+    "children" : [ 8932918, 8932790, 8932789, 8932788, 8932787, 65748, 113717, 112432, 54257, 113425, 112431, 113416, 112425, 8932911, 8866690, 112420, 8932908, 30595, 112417 ]
+  }, {
+    "dbId" : 113721,
+    "stId" : "R-HSA-113721",
+    "displayName" : "Arrested processive elongation complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 191 ],
+    "children" : [ 8932918, 8932790, 8932789, 8932788, 8932787, 65748, 113717, 112432, 54257, 113425, 112431, 113416, 112425, 8932911, 8866690, 112420, 8932908, 30595, 112417 ]
+  }, {
+    "dbId" : 113720,
+    "stId" : "R-HSA-113720",
+    "displayName" : "Paused processive elongation complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 188 ],
+    "children" : [ 8932918, 8932790, 8932789, 8932788, 8932787, 65748, 113717, 112432, 54257, 113425, 112431, 113416, 112425, 8932911, 8866690, 112420, 8932908, 112417 ]
+  }, {
+    "dbId" : 109627,
+    "stId" : "R-ALL-109627",
+    "displayName" : "DNA containing RNA Polymerase II promoter [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 2 ],
+    "parents" : [ 109628 ]
+  }, {
+    "dbId" : 113722,
+    "stId" : "R-HSA-113722",
+    "displayName" : "Aborted elongation complex after arrest [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 470 ],
+    "children" : [ 8932918, 8932790, 109631, 8932789, 8932788, 8932787, 65748, 109909, 113717, 112432, 54257, 112431, 113416, 112425, 8932911, 8866690, 112420, 8932908, 112417 ]
+  }, {
+    "dbId" : 109626,
+    "stId" : "R-HSA-109626",
+    "displayName" : "TFIID [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 3, 72 ],
+    "parents" : [ 75859, 109628, 109876, 83551, 83601, 109878, 75881, 75878 ],
+    "children" : [ 9020680, 5420880, 65541, 65543, 83718, 212452, 65545, 8866702, 65551, 65553, 65555, 65557, 65559, 212404, 212408, 212446 ]
+  }, {
+    "dbId" : 109629,
+    "stId" : "R-HSA-109629",
+    "displayName" : "TFIIA [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 7, 73 ],
+    "parents" : [ 75881, 75878, 109878, 83601, 83551, 109876, 109630, 75859 ],
+    "children" : [ 109767, 109768, 65533 ]
+  }, {
+    "dbId" : 113725,
+    "stId" : "R-ALL-113725",
+    "displayName" : "Elongating transcript prior to cleavage [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 113726 ]
+  }, {
+    "dbId" : 113724,
+    "stId" : "R-HSA-113724",
+    "displayName" : "Elongation complex prior to separation [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 125 ],
+    "children" : [ 8932918, 8932790, 8932789, 8932788, 8932787, 65748, 113714, 112432, 54257, 113425, 112431, 113416, 112425, 8932911, 8866690, 112420, 8932908, 30595, 112417 ]
+  }, {
+    "dbId" : 111676,
+    "stId" : "R-ALL-111676",
+    "displayName" : "Mature Intronless transcript derived Histone mRNA [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 156959, 111682 ]
+  }, {
+    "dbId" : 109628,
+    "stId" : "R-HSA-109628",
+    "displayName" : "pol II promoter:TFIID complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 4 ],
+    "parents" : [ 109630 ],
+    "children" : [ 109626, 109627 ]
+  }, {
+    "dbId" : 109631,
+    "stId" : "R-HSA-109631",
+    "displayName" : "TFIIF [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 728 ],
+    "parents" : [ 113722, 113427, 113425, 113404, 71307 ],
+    "children" : [ 65567, 65565 ]
+  }, {
+    "dbId" : 109630,
+    "stId" : "R-HSA-109630",
+    "displayName" : "pol II promoter:TFIID:TFIIA:TFIIB complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 8 ],
+    "parents" : [ 109632 ],
+    "children" : [ 109628, 109629, 65888 ]
+  }, {
+    "dbId" : 113726,
+    "stId" : "R-HSA-113726",
+    "displayName" : "Elongation complex with separated and uncleaved transcript [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 135 ],
+    "children" : [ 8932918, 8932790, 8932789, 8932788, 113725, 8932787, 65748, 112432, 54257, 113425, 112431, 113416, 112425, 8932911, 8866690, 112420, 8932908, 30595, 112417 ]
+  }, {
+    "dbId" : 109633,
+    "stId" : "R-HSA-109633",
+    "displayName" : "TFIIE [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 74, 13 ],
+    "parents" : [ 75881, 75878, 109878, 83601, 83551, 109876, 109635, 75871, 75859, 75890 ],
+    "children" : [ 65561, 65563 ]
+  }, {
+    "dbId" : 109632,
+    "stId" : "R-HSA-109632",
+    "displayName" : "pol II promoter:TFIID:TFIIA:TFIIB:Pol II:TFIIF complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 11 ],
+    "parents" : [ 75871, 109635 ],
+    "children" : [ 109630, 71307 ]
+  }, {
+    "dbId" : 109635,
+    "stId" : "R-HSA-109635",
+    "displayName" : "pol II closed pre-initiation complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 17 ],
+    "children" : [ 109634, 109632, 109633 ]
+  }, {
+    "dbId" : 109634,
+    "stId" : "R-HSA-109634",
+    "displayName" : "TFIIH [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 16, 68, 70, 120, 714, 986 ],
+    "parents" : [ 75890, 75859, 109635, 109876, 83591, 83601, 109878, 75878, 75881, 75882, 75902, 111261, 157171, 157174, 77053, 77056, 77061, 112433 ],
+    "children" : [ 67443, 69221, 5688446, 65912, 65914, 65916, 67439, 65918 ]
+  }, {
+    "dbId" : 111682,
+    "stId" : "R-HSA-111682",
+    "displayName" : "Mature Intronless transcript derived Histone mRNA:SLBP:CBP80:CBP20 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 150 ],
+    "children" : [ 51469, 111676, 51463, 64547 ]
+  }, {
+    "dbId" : 8849111,
+    "stId" : "R-HSA-8849111",
+    "displayName" : "THOC5 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13769",
+    "geneNames" : [ "THOC5", "C22orf19", "KIAA0983" ],
+    "parents" : [ 8849128 ]
+  }, {
+    "dbId" : 65105,
+    "stId" : "R-HSA-65105",
+    "displayName" : "SSRP1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 174 ],
+    "identifier" : "Q08945",
+    "geneNames" : [ "SSRP1", "FACT80" ],
+    "parents" : [ 112417 ]
+  }, {
+    "dbId" : 8850646,
+    "stId" : "R-HSA-8850646",
+    "displayName" : "POLDIP3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BY77",
+    "geneNames" : [ "POLDIP3", "KIAA1649", "PDIP46" ],
+    "parents" : [ 8849116 ]
+  }, {
+    "dbId" : 8852182,
+    "stId" : "R-HSA-8852182",
+    "displayName" : "ALYREF, FYTTD1, LUZP4 [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 8849116 ],
+    "children" : [ 156649, 8852185, 8852176 ]
+  }, {
+    "dbId" : 75859,
+    "stId" : "R-HSA-75859",
+    "displayName" : "Pol II Promoter Escape Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 165 ],
+    "children" : [ 109629, 109626, 71307, 110068, 109634, 65888, 109633 ]
+  }, {
+    "dbId" : 75858,
+    "stId" : "R-ALL-75858",
+    "displayName" : "template DNA:3 nucleotide transcript hybrid [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 75878 ]
+  }, {
+    "dbId" : 8852176,
+    "stId" : "R-HSA-8852176",
+    "displayName" : "FYTTD1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96QD9",
+    "geneNames" : [ "FYTTD1", "UIF" ],
+    "parents" : [ 8852182 ]
+  }, {
+    "dbId" : 51801,
+    "stId" : "R-HSA-51801",
+    "displayName" : "CDK9 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 184 ],
+    "identifier" : "P50750",
+    "geneNames" : [ "CDK9", "CDC2L4", "TAK" ],
+    "parents" : [ 112431 ]
+  }, {
+    "dbId" : 8849116,
+    "stId" : "R-HSA-8849116",
+    "displayName" : "TREX (DDX39B:ATP) [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8850671, 72177 ],
+    "children" : [ 8849128, 8849161, 8849146, 8849147, 8850659, 8852182, 8850646 ]
+  }, {
+    "dbId" : 83551,
+    "stId" : "R-HSA-83551",
+    "displayName" : "Pol II initiation complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 28 ],
+    "children" : [ 109629, 109626, 83591, 71063, 65888, 109633 ]
+  }, {
+    "dbId" : 8849113,
+    "stId" : "R-HSA-8849113",
+    "displayName" : "Core EJC [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 159638 ],
+    "children" : [ 8849148, 8849149, 156657 ]
+  }, {
+    "dbId" : 75871,
+    "stId" : "R-HSA-75871",
+    "displayName" : "pol II promoter:TFIID:TFIIA:TFIIB:Pol II:TFIIF:TFIIE complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 14 ],
+    "children" : [ 109632, 109633 ]
+  }, {
+    "dbId" : 8852185,
+    "stId" : "R-HSA-8852185",
+    "displayName" : "LUZP4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9P127",
+    "geneNames" : [ "LUZP4" ],
+    "parents" : [ 8852182 ]
+  }, {
+    "dbId" : 69218,
+    "stId" : "R-HSA-69218",
+    "displayName" : "CDK7 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P50613",
+    "geneNames" : [ "CDK7", "CAK", "CAK1", "CDKN7", "MO15", "STK1" ],
+    "parents" : [ 69221 ]
+  }, {
+    "dbId" : 8850659,
+    "stId" : "R-HSA-8850659",
+    "displayName" : "ZC3H11A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75152",
+    "geneNames" : [ "ZC3H11A", "KIAA0663", "ZC3HDC11A" ],
+    "parents" : [ 8849116 ]
+  }, {
+    "dbId" : 69221,
+    "stId" : "R-HSA-69221",
+    "displayName" : "CAK [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 109634 ],
+    "children" : [ 69220, 59012, 69218 ]
+  }, {
+    "dbId" : 69220,
+    "stId" : "R-HSA-69220",
+    "displayName" : "CCNH [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51946",
+    "geneNames" : [ "CCNH" ],
+    "parents" : [ 69221 ]
+  }, {
+    "dbId" : 1247861,
+    "stId" : "R-HSA-1247861",
+    "displayName" : "ZNF473 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WTR7",
+    "geneNames" : [ "ZNF473", "KIAA1141", "ZFP100" ],
+    "parents" : [ 110765 ]
+  }, {
+    "dbId" : 8849121,
+    "stId" : "R-HSA-8849121",
+    "displayName" : "THOC3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96J01",
+    "geneNames" : [ "THOC3" ],
+    "parents" : [ 8849128 ]
+  }, {
+    "dbId" : 75878,
+    "stId" : "R-HSA-75878",
+    "displayName" : "pol II transcription complex containing 3 Nucleotide long transcript [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 36 ],
+    "children" : [ 109629, 109626, 71307, 109634, 75858, 65888, 109633 ]
+  }, {
+    "dbId" : 8850671,
+    "stId" : "R-HSA-8850671",
+    "displayName" : "Spliced mRNA:CBC:EJC:TREX [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 633 ],
+    "children" : [ 72062, 72063, 72031, 72060, 72028, 72156, 72029, 8849116, 72026, 72058, 8865886, 72024, 72021, 159638, 71987, 72073, 72037, 72035, 77088, 72033 ]
+  }, {
+    "dbId" : 156778,
+    "stId" : "R-HSA-156778",
+    "displayName" : "RNPS1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15287",
+    "geneNames" : [ "RNPS1", "LDC2" ],
+    "parents" : [ 159638 ]
+  }, {
+    "dbId" : 75881,
+    "stId" : "R-HSA-75881",
+    "displayName" : "pol II transcription complex containing 4 nucleotide long transcript [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 40 ],
+    "children" : [ 75884, 109629, 109626, 71307, 109634, 109633 ]
+  }, {
+    "dbId" : 8849134,
+    "stId" : "R-HSA-8849134",
+    "displayName" : "THOC2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NI27",
+    "geneNames" : [ "THOC2", "CXorf3" ],
+    "parents" : [ 8849128 ]
+  }, {
+    "dbId" : 156776,
+    "stId" : "R-HSA-156776",
+    "displayName" : "UPF3B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9BZI7",
+    "geneNames" : [ "UPF3B", "RENT3B", "UPF3X" ],
+    "parents" : [ 159638 ]
+  }, {
+    "dbId" : 75882,
+    "stId" : "R-HSA-75882",
+    "displayName" : "pol II transcription complex containing 9 nucleotide long transcript [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 50 ],
+    "children" : [ 71307, 109634, 75888 ]
+  }, {
+    "dbId" : 75884,
+    "stId" : "R-ALL-75884",
+    "displayName" : "template DNA:4 nucleotide transcript hybrid [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 75881 ]
+  }, {
+    "dbId" : 8849130,
+    "stId" : "R-HSA-8849130",
+    "displayName" : "THOC1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96FV9",
+    "geneNames" : [ "THOC1", "HPR1" ],
+    "parents" : [ 8849128 ]
+  }, {
+    "dbId" : 8849128,
+    "stId" : "R-HSA-8849128",
+    "displayName" : "THO complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8849116 ],
+    "children" : [ 8849144, 8849145, 8849130, 8849134, 8849121, 8849111 ]
+  }, {
+    "dbId" : 156781,
+    "stId" : "R-HSA-156781",
+    "displayName" : "SRRM1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IYB3",
+    "geneNames" : [ "SRRM1", "SRM160" ],
+    "parents" : [ 159638 ]
+  }, {
+    "dbId" : 75888,
+    "stId" : "R-ALL-75888",
+    "displayName" : "template DNA:9 nucleotide transcript hybrid [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 75882 ]
+  }, {
+    "dbId" : 75890,
+    "stId" : "R-HSA-75890",
+    "displayName" : "pol II transcription complex containing 4-9 nucleotide long transcript [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 162 ],
+    "children" : [ 71307, 75897, 109634, 109633 ]
+  }, {
+    "dbId" : 8849139,
+    "stId" : "R-HSA-8849139",
+    "displayName" : "DDX39B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13838",
+    "geneNames" : [ "DDX39B", "BAT1", "UAP56" ],
+    "parents" : [ 8852231 ]
+  }, {
+    "dbId" : 75897,
+    "stId" : "R-ALL-75897",
+    "displayName" : "template DNA:4-9 nucleotide transcript hybrid [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 163 ],
+    "parents" : [ 75890 ]
+  }, {
+    "dbId" : 8849149,
+    "stId" : "R-HSA-8849149",
+    "displayName" : "EIF4A3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P38919",
+    "geneNames" : [ "EIF4A3", "DDX48", "KIAA0111" ],
+    "parents" : [ 8849113 ]
+  }, {
+    "dbId" : 8849148,
+    "stId" : "R-HSA-8849148",
+    "displayName" : "CASC3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O15234",
+    "geneNames" : [ "CASC3", "MLN51" ],
+    "parents" : [ 8849113 ]
+  }, {
+    "dbId" : 75901,
+    "stId" : "R-ALL-75901",
+    "displayName" : "template DNA:11 nucleotide transcript hybrid [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 75902 ]
+  }, {
+    "dbId" : 8849147,
+    "stId" : "R-HSA-8849147",
+    "displayName" : "CHTOP [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y3Y2",
+    "geneNames" : [ "CHTOP", "C1orf77", "FOP", "HT031", "PP7704" ],
+    "parents" : [ 8849116 ]
+  }, {
+    "dbId" : 8849146,
+    "stId" : "R-HSA-8849146",
+    "displayName" : "SARNP [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P82979",
+    "geneNames" : [ "SARNP", "HCC1", "HSPC316" ],
+    "parents" : [ 8849116 ]
+  }, {
+    "dbId" : 8849145,
+    "stId" : "R-HSA-8849145",
+    "displayName" : "THOC7 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6I9Y2",
+    "geneNames" : [ "THOC7", "NIF3L1BP1" ],
+    "parents" : [ 8849128 ]
+  }, {
+    "dbId" : 8849144,
+    "stId" : "R-HSA-8849144",
+    "displayName" : "THOC6 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86W42",
+    "geneNames" : [ "THOC6", "WDR58", "PSEC0006" ],
+    "parents" : [ 8849128 ]
+  }, {
+    "dbId" : 75902,
+    "stId" : "R-HSA-75902",
+    "displayName" : "pol II transcription complex containing 11 nucleotide long transcript [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 56 ],
+    "children" : [ 75901, 71307, 109634 ]
+  }, {
+    "dbId" : 59012,
+    "stId" : "R-HSA-59012",
+    "displayName" : "MNAT1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51948",
+    "geneNames" : [ "MNAT1", "CAP35", "MAT1", "RNF66" ],
+    "parents" : [ 69221 ]
+  }, {
+    "dbId" : 83591,
+    "stId" : "R-HSA-83591",
+    "displayName" : "RNA Polymearse II:NTP:TFIIF complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 83551 ],
+    "children" : [ 71307, 109634, 30595 ]
+  }, {
+    "dbId" : 71307,
+    "stId" : "R-HSA-71307",
+    "displayName" : "RNA Polymerase II (unphosphorylated):TFIIF complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 10 ],
+    "parents" : [ 75890, 157171, 111261, 75902, 75882, 75881, 75878, 109878, 83601, 83591, 109876, 109632, 75859 ],
+    "children" : [ 113401, 109631 ]
+  }, {
+    "dbId" : 83601,
+    "stId" : "R-HSA-83601",
+    "displayName" : "Pol II Initiation complex with phosphodiester-PPi intermediate [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 31 ],
+    "children" : [ 109629, 109626, 71307, 109634, 83602, 65888, 109633 ]
+  }, {
+    "dbId" : 169104,
+    "stId" : "R-HSA-169104",
+    "displayName" : "CPSF4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95639",
+    "geneNames" : [ "CPSF4", "CPSF30", "NAR", "NEB1" ],
+    "parents" : [ 71995 ]
+  }, {
+    "dbId" : 83602,
+    "stId" : "R-ALL-83602",
+    "displayName" : "Template DNA hybrid with phosphodiester-PPi intermediate [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 83601 ]
+  }, {
+    "dbId" : 111261,
+    "stId" : "R-HSA-111261",
+    "displayName" : "Pol II transcription complex containing transcript to +30 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 62 ],
+    "children" : [ 111260, 71307, 109634 ]
+  }, {
+    "dbId" : 111260,
+    "stId" : "R-ALL-111260",
+    "displayName" : "template DNA:30 nt transcript hybrid [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 111261, 157171, 77061, 77056, 77053, 157174 ]
+  }, {
+    "dbId" : 8932908,
+    "stId" : "R-HSA-8932908",
+    "displayName" : "SUPT6H [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 708 ],
+    "identifier" : "Q7KZ85",
+    "geneNames" : [ "SUPT6H", "KIAA0162", "SPT6H" ],
+    "parents" : [ 113722, 113721, 113720, 113719, 113726, 113724, 112433 ]
+  }, {
+    "dbId" : 110756,
+    "stId" : "R-ALL-110756",
+    "displayName" : "Intronless Histone pre-mRNA [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 110758 ]
+  }, {
+    "dbId" : 110759,
+    "stId" : "R-HSA-110759",
+    "displayName" : "Capped Intronless Histone pre-mRNA:CBP80:CBP20:SLBP [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 110766 ],
+    "children" : [ 110758, 64547 ]
+  }, {
+    "dbId" : 110758,
+    "stId" : "R-HSA-110758",
+    "displayName" : "Capped Intronless Histone pre-mRNA:CBC complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 112045, 110759 ],
+    "children" : [ 110756, 77088 ]
+  }, {
+    "dbId" : 8932911,
+    "stId" : "R-HSA-8932911",
+    "displayName" : "IWS1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 709 ],
+    "identifier" : "Q96ST2",
+    "geneNames" : [ "IWS1", "IWS1L" ],
+    "parents" : [ 113722, 113721, 113720, 113719, 113726, 113724, 112433 ]
+  }, {
+    "dbId" : 110761,
+    "stId" : "R-ALL-110761",
+    "displayName" : "U7 snRNA [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 110762 ]
+  }, {
+    "dbId" : 110760,
+    "stId" : "R-HSA-110760",
+    "displayName" : "LSM11 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P83369",
+    "geneNames" : [ "LSM11" ],
+    "parents" : [ 110762 ]
+  }, {
+    "dbId" : 110762,
+    "stId" : "R-HSA-110762",
+    "displayName" : "U7 snRNP-specific Sm core complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 110765 ],
+    "children" : [ 71903, 110760, 71896, 110761, 71909, 58738, 71907, 71905 ]
+  }, {
+    "dbId" : 110765,
+    "stId" : "R-HSA-110765",
+    "displayName" : "U7 snRNP:ZNF473 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 151 ],
+    "parents" : [ 112045, 110766 ],
+    "children" : [ 110762, 1247861 ]
+  }, {
+    "dbId" : 29358,
+    "stId" : "R-ALL-29358",
+    "displayName" : "ATP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 21, 1064, 1036, 1022 ],
+    "identifier" : "15422",
+    "parents" : [ 30595, 8849161 ]
+  }, {
+    "dbId" : 110766,
+    "stId" : "R-HSA-110766",
+    "displayName" : "Capped Intronless Histone pre-mRNA:CBP80:CBP20:SLBP:ZFP100 Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 149 ],
+    "children" : [ 110765, 110759 ]
+  }, {
+    "dbId" : 8867888,
+    "stId" : "R-HSA-8867888",
+    "displayName" : "MAGOHB [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q96A72",
+    "geneNames" : [ "MAGOHB", "MAGOH2" ],
+    "parents" : [ 8868752 ]
+  }, {
+    "dbId" : 8932918,
+    "stId" : "R-HSA-8932918",
+    "displayName" : "MLLT1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 718 ],
+    "identifier" : "Q03111",
+    "geneNames" : [ "MLLT1", "ENL", "LTG19", "YEATS1" ],
+    "parents" : [ 113722, 113721, 113720, 113719, 113726, 113724, 113426 ]
+  }, {
+    "dbId" : 109767,
+    "stId" : "R-HSA-109767",
+    "displayName" : "GTF2A1(1-274) [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52655",
+    "geneNames" : [ "GTF2A1", "TF2A1" ],
+    "parents" : [ 109629 ]
+  }, {
+    "dbId" : 109768,
+    "stId" : "R-HSA-109768",
+    "displayName" : "GTF2A1(275-376) [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52655",
+    "geneNames" : [ "GTF2A1", "TF2A1" ],
+    "parents" : [ 109629 ]
+  }, {
+    "dbId" : 110291,
+    "stId" : "R-ALL-110291",
+    "displayName" : "damaged DNA substrate:nascent mRNA hybrid [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 727 ]
+  }, {
+    "dbId" : 65748,
+    "stId" : "R-HSA-65748",
+    "displayName" : "TCEA1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 115 ],
+    "identifier" : "P23193",
+    "geneNames" : [ "TCEA1", "GTF2S", "TFIIS" ],
+    "parents" : [ 113722, 113721, 113720, 113719, 113726, 113724, 112433 ]
+  }, {
+    "dbId" : 71896,
+    "stId" : "R-HSA-71896",
+    "displayName" : "SNRPB [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P14678",
+    "geneNames" : [ "SNRPB", "COD", "SNRPB1" ],
+    "parents" : [ 110762 ]
+  }, {
+    "dbId" : 8865886,
+    "stId" : "R-HSA-8865886",
+    "displayName" : "U2AF1,U2AF1L4 [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 8850671, 72177 ],
+    "children" : [ 8865946, 71985 ]
+  }, {
+    "dbId" : 71903,
+    "stId" : "R-HSA-71903",
+    "displayName" : "SNRPD3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62318",
+    "geneNames" : [ "SNRPD3" ],
+    "parents" : [ 110762 ]
+  }, {
+    "dbId" : 71905,
+    "stId" : "R-HSA-71905",
+    "displayName" : "SNRPE [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62304",
+    "geneNames" : [ "SNRPE" ],
+    "parents" : [ 110762 ]
+  }, {
+    "dbId" : 71907,
+    "stId" : "R-HSA-71907",
+    "displayName" : "SNRPF [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62306",
+    "geneNames" : [ "SNRPF", "PBSCF" ],
+    "parents" : [ 110762 ]
+  }, {
+    "dbId" : 71909,
+    "stId" : "R-HSA-71909",
+    "displayName" : "SNRPG [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62308",
+    "geneNames" : [ "SNRPG", "PBSCG" ],
+    "parents" : [ 110762 ]
+  }, {
+    "dbId" : 113401,
+    "stId" : "R-HSA-113401",
+    "displayName" : "RNA Polymerase II holoenzyme complex (unphosphorylated) [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 71307 ],
+    "children" : [ 63502, 63517, 63531, 63525, 63508, 83714, 63523, 83715, 63506, 63537, 83713, 63504 ]
+  }, {
+    "dbId" : 6805150,
+    "stId" : "R-HSA-6805150",
+    "displayName" : "FIP1L1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6UN15",
+    "geneNames" : [ "FIP1L1", "FIP1", "RHE" ],
+    "parents" : [ 71995 ]
+  }, {
+    "dbId" : 77053,
+    "stId" : "R-HSA-77053",
+    "displayName" : "RNA Pol II with phosphorylated CTD: CE complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 88 ],
+    "children" : [ 113404, 111260, 109634, 72081 ]
+  }, {
+    "dbId" : 113405,
+    "stId" : "R-HSA-113405",
+    "displayName" : "RNA Polymerase II (phosphorylated):TFIIF:capped pre-mRNA [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 77089 ],
+    "children" : [ 113404, 72085 ]
+  }, {
+    "dbId" : 113404,
+    "stId" : "R-HSA-113404",
+    "displayName" : "RNA polymerase II (phosphorylated):TFIIF complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 157174, 77053, 77056, 77061, 113405 ],
+    "children" : [ 109631, 113716 ]
+  }, {
+    "dbId" : 113406,
+    "stId" : "R-HSA-113406",
+    "displayName" : "RNA Pol II (hypophosphorylated) complex bound to DSIF protein [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 101 ],
+    "parents" : [ 113410, 113408 ],
+    "children" : [ 112420, 113715 ]
+  }, {
+    "dbId" : 83713,
+    "stId" : "R-HSA-83713",
+    "displayName" : "POLR2E [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19388",
+    "geneNames" : [ "POLR2E" ],
+    "parents" : [ 113401, 113716, 109909, 113427 ]
+  }, {
+    "dbId" : 77056,
+    "stId" : "R-HSA-77056",
+    "displayName" : "RNA Pol II with phosphorylated CTD: CE complex with activated GT [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 90 ],
+    "children" : [ 113404, 111260, 109634, 72081 ]
+  }, {
+    "dbId" : 113408,
+    "stId" : "R-HSA-113408",
+    "displayName" : "DSIF:NELF:early elongation complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 105 ],
+    "children" : [ 113406, 112432 ]
+  }, {
+    "dbId" : 8866694,
+    "stId" : "R-HSA-8866694",
+    "displayName" : "CTR9 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6PD62",
+    "geneNames" : [ "CTR9", "KIAA0155", "SH2BP1" ],
+    "parents" : [ 8866690 ]
+  }, {
+    "dbId" : 8866693,
+    "stId" : "R-HSA-8866693",
+    "displayName" : "RTF1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92541",
+    "geneNames" : [ "RTF1", "KIAA0252" ],
+    "parents" : [ 8866690 ]
+  }, {
+    "dbId" : 5420880,
+    "stId" : "R-HSA-5420880",
+    "displayName" : "TAF1,TAF1L [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 109626 ],
+    "children" : [ 65539, 212435 ]
+  }, {
+    "dbId" : 83715,
+    "stId" : "R-HSA-83715",
+    "displayName" : "POLR2L [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P62875",
+    "geneNames" : [ "POLR2L" ],
+    "parents" : [ 113427, 109909, 113716, 113401 ]
+  }, {
+    "dbId" : 83714,
+    "stId" : "R-HSA-83714",
+    "displayName" : "POLR2F [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61218",
+    "geneNames" : [ "POLR2F", "POLRF" ],
+    "parents" : [ 113427, 109909, 113716, 113401 ]
+  }, {
+    "dbId" : 113410,
+    "stId" : "R-HSA-113410",
+    "displayName" : "Aborted early elongation complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 460 ],
+    "children" : [ 113406, 112432 ]
+  }, {
+    "dbId" : 77061,
+    "stId" : "R-HSA-77061",
+    "displayName" : "CE:Pol II CTD:Spt5 complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 94 ],
+    "children" : [ 111260, 113404, 77060, 109634, 3009372, 72081 ]
+  }, {
+    "dbId" : 8866690,
+    "stId" : "R-HSA-8866690",
+    "displayName" : "PAF1C [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 646 ],
+    "parents" : [ 113722, 113721, 113720, 113719, 113726, 113724, 112433 ],
+    "children" : [ 8866696, 3322361, 3322360, 8866689, 8866693, 8866694 ]
+  }, {
+    "dbId" : 77060,
+    "stId" : "R-HSA-77060",
+    "displayName" : "RNMT [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 93 ],
+    "identifier" : "O43148",
+    "geneNames" : [ "RNMT", "KIAA0398" ],
+    "parents" : [ 77061 ]
+  }, {
+    "dbId" : 8866689,
+    "stId" : "R-HSA-8866689",
+    "displayName" : "PAF1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N7H5",
+    "geneNames" : [ "PAF1", "PD2" ],
+    "parents" : [ 8866690 ]
+  }, {
+    "dbId" : 83718,
+    "stId" : "R-HSA-83718",
+    "displayName" : "TBP [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P20226",
+    "geneNames" : [ "TBP", "GTF2D1", "TF2D", "TFIID" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 51463,
+    "stId" : "R-HSA-51463",
+    "displayName" : "NCBP2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52298",
+    "geneNames" : [ "NCBP2", "CBP20", "PIG55" ],
+    "parents" : [ 112164, 112159, 111682, 77088 ]
+  }, {
+    "dbId" : 113416,
+    "stId" : "R-HSA-113416",
+    "displayName" : "CTDP1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 96, 1021 ],
+    "identifier" : "Q9Y5B0",
+    "geneNames" : [ "CTDP1", "FCP1" ],
+    "parents" : [ 113722, 113721, 113720, 113719, 113726, 113724, 113715, 113426 ]
+  }, {
+    "dbId" : 8866702,
+    "stId" : "R-HSA-8866702",
+    "displayName" : "TAF7,TAF7L [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "parents" : [ 109626 ],
+    "children" : [ 212347, 2980874 ]
+  }, {
+    "dbId" : 51469,
+    "stId" : "R-HSA-51469",
+    "displayName" : "NCBP1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q09161",
+    "geneNames" : [ "NCBP1", "CBP80", "NCBP" ],
+    "parents" : [ 112164, 112159, 111682, 77088 ]
+  }, {
+    "dbId" : 113420,
+    "stId" : "R-HSA-113420",
+    "displayName" : "p-S2,S5-POLR2A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P24928",
+    "geneNames" : [ "POLR2A", "POLR2" ],
+    "parents" : [ 109909 ]
+  }, {
+    "dbId" : 8866696,
+    "stId" : "R-HSA-8866696",
+    "displayName" : "WDR61 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9GZS3",
+    "geneNames" : [ "WDR61" ],
+    "parents" : [ 8866690 ]
+  }, {
+    "dbId" : 113425,
+    "stId" : "R-HSA-113425",
+    "displayName" : "RNA Polymerase II holoenzyme complex (hyperphosphorylated):TFIIF complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 113721, 113720, 113719, 113726, 113724, 113426 ],
+    "children" : [ 109631, 109909 ]
+  }, {
+    "dbId" : 113424,
+    "stId" : "R-ALL-113424",
+    "displayName" : "template:capped transcript hybrid [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 113426 ]
+  }, {
+    "dbId" : 113427,
+    "stId" : "R-HSA-113427",
+    "displayName" : "RNA Polymerase II holoenzyme complex (hypophosphorylated):TFIIF complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 113715 ],
+    "children" : [ 109631, 63517, 63508, 63506, 63537, 63504, 77100, 63531, 63525, 63523, 83714, 83715, 83713 ]
+  }, {
+    "dbId" : 113426,
+    "stId" : "R-HSA-113426",
+    "displayName" : "Early elongation complex with hyperphosphorylated Pol II CTD [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 111 ],
+    "parents" : [ 112433 ],
+    "children" : [ 8932918, 8932790, 112431, 8932789, 8932788, 8932787, 113416, 112420, 54257, 112432, 113424, 113425 ]
+  }, {
+    "dbId" : 8868752,
+    "stId" : "R-HSA-8868752",
+    "displayName" : "MAGOH,MAGOHB [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 156657 ],
+    "children" : [ 8867888, 156658 ]
+  }, {
+    "dbId" : 164121,
+    "stId" : "R-ALL-164121",
+    "displayName" : "adenosine 5'-monophosphate [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 1063 ],
+    "identifier" : "16027"
+  }, {
+    "dbId" : 156959,
+    "stId" : "R-HSA-156959",
+    "displayName" : "Mature intronless transcript derived Histone pre-mRNA:CBC complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 154 ],
+    "children" : [ 111676, 77088 ]
+  }, {
+    "dbId" : 29470,
+    "stId" : "R-ALL-29470",
+    "displayName" : "CTP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "17677",
+    "parents" : [ 30595 ]
+  }, {
+    "dbId" : 112415,
+    "stId" : "R-HSA-112415",
+    "displayName" : "SUPT16H [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 175 ],
+    "identifier" : "Q9Y5B9",
+    "geneNames" : [ "SUPT16H", "FACT140", "FACTP140" ],
+    "parents" : [ 112417 ]
+  }, {
+    "dbId" : 77089,
+    "stId" : "R-HSA-77089",
+    "displayName" : "capped pre-mRNA:CBC:RNA Pol II (phosphorylated) complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 97 ],
+    "children" : [ 113405, 77088 ]
+  }, {
+    "dbId" : 112417,
+    "stId" : "R-HSA-112417",
+    "displayName" : "FACT complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 114 ],
+    "parents" : [ 112433, 113724, 113726, 113719, 113720, 113721, 113722 ],
+    "children" : [ 65105, 112415 ]
+  }, {
+    "dbId" : 77088,
+    "stId" : "R-HSA-77088",
+    "displayName" : "Cap Binding Complex (CBC) [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 110 ],
+    "parents" : [ 72177, 8850671, 113715, 77089, 110758, 156959 ],
+    "children" : [ 51463, 51469 ]
+  }, {
+    "dbId" : 112421,
+    "stId" : "R-HSA-112421",
+    "displayName" : "TCEB3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q14241",
+    "geneNames" : [ "ELOA", "TCEB3", "MSTP059" ],
+    "parents" : [ 8867795 ]
+  }, {
+    "dbId" : 112420,
+    "stId" : "R-HSA-112420",
+    "displayName" : "DSIF complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 100 ],
+    "parents" : [ 113426, 113406, 113724, 113726, 113719, 113720, 113721, 113722 ],
+    "children" : [ 3009372, 64905 ]
+  }, {
+    "dbId" : 112423,
+    "stId" : "R-HSA-112423",
+    "displayName" : "TCEB2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 171 ],
+    "identifier" : "Q15370",
+    "geneNames" : [ "ELOB", "TCEB2" ],
+    "parents" : [ 112424 ]
+  }, {
+    "dbId" : 112422,
+    "stId" : "R-HSA-112422",
+    "displayName" : "TCEB1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 170 ],
+    "identifier" : "Q15369",
+    "geneNames" : [ "ELOC", "TCEB1" ],
+    "parents" : [ 112424 ]
+  }, {
+    "dbId" : 112425,
+    "stId" : "R-HSA-112425",
+    "displayName" : "Elongin Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 116 ],
+    "parents" : [ 113722, 113721, 113720, 113719, 113726, 113724, 112433 ],
+    "children" : [ 112424, 8867795 ]
+  }, {
+    "dbId" : 112424,
+    "stId" : "R-HSA-112424",
+    "displayName" : "Elongin B:C complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 172 ],
+    "parents" : [ 112425 ],
+    "children" : [ 112422, 112423 ]
+  }, {
+    "dbId" : 112427,
+    "stId" : "R-HSA-112427",
+    "displayName" : "NELFB [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 180 ],
+    "identifier" : "Q8WX92",
+    "geneNames" : [ "NELFB", "COBRA1", "KIAA1182" ],
+    "parents" : [ 112432 ]
+  }, {
+    "dbId" : 112426,
+    "stId" : "R-HSA-112426",
+    "displayName" : "NELFA [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 179 ],
+    "identifier" : "Q9H3P2",
+    "geneNames" : [ "NELFA", "WHSC2", "P/OKcl.15" ],
+    "parents" : [ 112432 ]
+  }, {
+    "dbId" : 6796619,
+    "stId" : "R-HSA-6796619",
+    "displayName" : "CCNK [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O75909",
+    "geneNames" : [ "CCNK", "CPR4" ],
+    "parents" : [ 6807466 ]
+  }, {
+    "dbId" : 77100,
+    "stId" : "R-HSA-77100",
+    "displayName" : "p-S5-POLR2A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P24928",
+    "geneNames" : [ "POLR2A", "POLR2" ],
+    "parents" : [ 113427, 113716 ]
+  }, {
+    "dbId" : 112428,
+    "stId" : "R-HSA-112428",
+    "displayName" : "NELFCD [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 177 ],
+    "identifier" : "Q8IXH7",
+    "geneNames" : [ "NELFCD", "NELFD", "TH1", "TH1L", "HSPC130" ],
+    "parents" : [ 112432 ]
+  }, {
+    "dbId" : 112431,
+    "stId" : "R-HSA-112431",
+    "displayName" : "P-TEFb complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 109 ],
+    "parents" : [ 113722, 113721, 113720, 113719, 113726, 113724, 113426 ],
+    "children" : [ 6807466, 51801 ]
+  }, {
+    "dbId" : 112433,
+    "stId" : "R-HSA-112433",
+    "displayName" : "Elongation complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 118 ],
+    "children" : [ 112425, 8932911, 8866690, 65748, 8932908, 109634, 113426, 112417 ]
+  }, {
+    "dbId" : 71985,
+    "stId" : "R-HSA-71985",
+    "displayName" : "U2AF1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01081",
+    "geneNames" : [ "U2AF1", "U2AF35", "U2AFBP", "FP793" ],
+    "parents" : [ 8865886 ]
+  }, {
+    "dbId" : 112432,
+    "stId" : "R-HSA-112432",
+    "displayName" : "NELF complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 104 ],
+    "parents" : [ 113722, 113426, 113408, 113410, 113724, 113726, 113719, 113720, 113721 ],
+    "children" : [ 112427, 112426, 62907, 112428 ]
+  }, {
+    "dbId" : 109875,
+    "stId" : "R-ALL-109875",
+    "displayName" : "Open DNA -10 to +2 containing RNA Polymerase II promoter [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 109876 ]
+  }, {
+    "dbId" : 71987,
+    "stId" : "R-HSA-71987",
+    "displayName" : "U2AF2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P26368",
+    "geneNames" : [ "U2AF2", "U2AF65" ],
+    "parents" : [ 8850671, 72177 ]
+  }, {
+    "dbId" : 109877,
+    "stId" : "R-ALL-109877",
+    "displayName" : "template DNA with first transcript dinucleotide, opened to +8 position [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 156 ],
+    "parents" : [ 109878 ]
+  }, {
+    "dbId" : 71989,
+    "stId" : "R-HSA-71989",
+    "displayName" : "CPSF1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q10570",
+    "geneNames" : [ "CPSF1", "CPSF160" ],
+    "parents" : [ 71995 ]
+  }, {
+    "dbId" : 109876,
+    "stId" : "R-HSA-109876",
+    "displayName" : "pol II open pre-initiation complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 24 ],
+    "children" : [ 109629, 109626, 71307, 109634, 109875, 65888, 109633 ]
+  }, {
+    "dbId" : 71991,
+    "stId" : "R-HSA-71991",
+    "displayName" : "CPSF2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9P2I0",
+    "geneNames" : [ "CPSF2", "CPSF100", "KIAA1367" ],
+    "parents" : [ 71995 ]
+  }, {
+    "dbId" : 109878,
+    "stId" : "R-HSA-109878",
+    "displayName" : "pol II transcription complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 34 ],
+    "children" : [ 109629, 109626, 71307, 109877, 109634, 65888, 109633 ]
+  }, {
+    "dbId" : 71993,
+    "stId" : "R-HSA-71993",
+    "displayName" : "CPSF3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9UKF6",
+    "geneNames" : [ "CPSF3", "CPSF73" ],
+    "parents" : [ 71995 ]
+  }, {
+    "dbId" : 71995,
+    "stId" : "R-HSA-71995",
+    "displayName" : "CPSF [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 112164, 112160, 72021, 72177 ],
+    "children" : [ 6805150, 8938784, 71993, 71991, 71989, 4615988, 169104 ]
+  }, {
+    "dbId" : 8932787,
+    "stId" : "R-HSA-8932787",
+    "displayName" : "EAF1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 669 ],
+    "identifier" : "Q96JC9",
+    "geneNames" : [ "EAF1" ],
+    "parents" : [ 113722, 113721, 113720, 113719, 113726, 113724, 113426 ]
+  }, {
+    "dbId" : 71997,
+    "stId" : "R-HSA-71997",
+    "displayName" : "PAPOLA [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P51003",
+    "geneNames" : [ "PAPOLA", "PAP" ],
+    "parents" : [ 112164, 112162, 72021, 72177 ]
+  }, {
+    "dbId" : 8932788,
+    "stId" : "R-HSA-8932788",
+    "displayName" : "AFF4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 670 ],
+    "identifier" : "Q9UHB7",
+    "geneNames" : [ "AFF4", "AF5Q31", "MCEF", "HSPC092" ],
+    "parents" : [ 113722, 113721, 113720, 113719, 113726, 113724, 113426 ]
+  }, {
+    "dbId" : 8932789,
+    "stId" : "R-HSA-8932789",
+    "displayName" : "MLLT3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 671 ],
+    "identifier" : "P42568",
+    "geneNames" : [ "MLLT3", "AF9", "YEATS3" ],
+    "parents" : [ 113722, 113721, 113720, 113719, 113726, 113724, 113426 ]
+  }, {
+    "dbId" : 8932790,
+    "stId" : "R-HSA-8932790",
+    "displayName" : "EAF2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 672 ],
+    "identifier" : "Q96CJ1",
+    "geneNames" : [ "EAF2", "TRAITS", "BM-040" ],
+    "parents" : [ 113722, 113721, 113720, 113719, 113726, 113724, 113426 ]
+  }, {
+    "dbId" : 71998,
+    "stId" : "R-ALL-71998",
+    "displayName" : "3'-end cleaved mRNA with spliced exons [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 72177 ]
+  }, {
+    "dbId" : 72001,
+    "stId" : "R-HSA-72001",
+    "displayName" : "CSTF1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05048",
+    "geneNames" : [ "CSTF1" ],
+    "parents" : [ 72006 ]
+  }, {
+    "dbId" : 72003,
+    "stId" : "R-HSA-72003",
+    "displayName" : "CSTF2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P33240",
+    "geneNames" : [ "CSTF2" ],
+    "parents" : [ 8938794 ]
+  }, {
+    "dbId" : 72005,
+    "stId" : "R-HSA-72005",
+    "displayName" : "CSTF3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q12996",
+    "geneNames" : [ "CSTF3" ],
+    "parents" : [ 72006 ]
+  }, {
+    "dbId" : 72006,
+    "stId" : "R-HSA-72006",
+    "displayName" : "CstF [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 139 ],
+    "parents" : [ 112161, 72021 ],
+    "children" : [ 72005, 8938794, 72001 ]
+  }, {
+    "dbId" : 72008,
+    "stId" : "R-HSA-72008",
+    "displayName" : "PABPN1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86U42",
+    "geneNames" : [ "PABPN1", "PAB2", "PABP2" ],
+    "parents" : [ 112164, 112162, 72021, 72177 ]
+  }, {
+    "dbId" : 72010,
+    "stId" : "R-HSA-72010",
+    "displayName" : "NUDT21 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O43809",
+    "geneNames" : [ "NUDT21", "CFIM25", "CPSF25", "CPSF5" ],
+    "parents" : [ 72015 ]
+  }, {
+    "dbId" : 72013,
+    "stId" : "R-HSA-72013",
+    "displayName" : "CF I - 68 kDa subunit [nucleoplasm]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "parents" : [ 72015 ]
+  }, {
+    "dbId" : 72012,
+    "stId" : "R-HSA-72012",
+    "displayName" : "CPSF7 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8N684",
+    "geneNames" : [ "CPSF7" ],
+    "parents" : [ 72015 ]
+  }, {
+    "dbId" : 72015,
+    "stId" : "R-HSA-72015",
+    "displayName" : "CF I [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 142 ],
+    "parents" : [ 112162, 72021, 72075 ],
+    "children" : [ 72014, 72012, 72013, 72010 ]
+  }, {
+    "dbId" : 72014,
+    "stId" : "R-HSA-72014",
+    "displayName" : "CF I - 72 kDa subunit [nucleoplasm]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "parents" : [ 72015 ]
+  }, {
+    "dbId" : 72017,
+    "stId" : "R-HSA-72017",
+    "displayName" : "CLP1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92989",
+    "geneNames" : [ "CLP1", "HEAB" ],
+    "parents" : [ 72020 ]
+  }, {
+    "dbId" : 72019,
+    "stId" : "R-HSA-72019",
+    "displayName" : "PCF11 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O94913",
+    "geneNames" : [ "PCF11", "KIAA0824" ],
+    "parents" : [ 72020 ]
+  }, {
+    "dbId" : 8867795,
+    "stId" : "R-HSA-8867795",
+    "displayName" : "Elongin A [nucleoplasm]",
+    "schemaClass" : "CandidateSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 647 ],
+    "parents" : [ 112425 ],
+    "children" : [ 8867802, 8867806, 112421, 8867800, 8867803 ]
+  }, {
+    "dbId" : 109909,
+    "stId" : "R-HSA-109909",
+    "displayName" : "RNA Polymerase II holoenzyme complex (hyperphosphorylated) [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 726 ],
+    "parents" : [ 113722, 113425 ],
+    "children" : [ 113420, 63517, 63531, 63525, 63508, 63523, 83714, 83715, 63506, 63537, 83713, 63504 ]
+  }, {
+    "dbId" : 72021,
+    "stId" : "R-HSA-72021",
+    "displayName" : "Cleavage and Polyadenylation Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8850671 ],
+    "children" : [ 72015, 71997, 71995, 72008, 72006, 72020 ]
+  }, {
+    "dbId" : 72020,
+    "stId" : "R-HSA-72020",
+    "displayName" : "CF II [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 140 ],
+    "parents" : [ 112162, 72021, 72075 ],
+    "children" : [ 72019, 72017 ]
+  }, {
+    "dbId" : 72024,
+    "stId" : "R-HSA-72024",
+    "displayName" : "SRSF4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q08170",
+    "geneNames" : [ "SRSF4", "SFRS4", "SRP75" ],
+    "parents" : [ 8850671, 72177 ]
+  }, {
+    "dbId" : 8867806,
+    "stId" : "R-HSA-8867806",
+    "displayName" : "TCEB3C [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8NG57",
+    "geneNames" : [ "ELOA3", "TCEB3C", "TCEB3L2" ],
+    "parents" : [ 8867795 ]
+  }, {
+    "dbId" : 72026,
+    "stId" : "R-HSA-72026",
+    "displayName" : "SRSF6 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13247",
+    "geneNames" : [ "SRSF6", "SFRS6", "SRP55" ],
+    "parents" : [ 72177, 8850671 ]
+  }, {
+    "dbId" : 8867803,
+    "stId" : "R-HSA-8867803",
+    "displayName" : "TCEB3CL [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q3SY89",
+    "geneNames" : [ "ELOA3B", "TCEB3CL" ],
+    "parents" : [ 8867795 ]
+  }, {
+    "dbId" : 72029,
+    "stId" : "R-HSA-72029",
+    "displayName" : "SRSF7 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16629",
+    "geneNames" : [ "SRSF7", "SFRS7" ],
+    "parents" : [ 72177, 8850671 ]
+  }, {
+    "dbId" : 8867802,
+    "stId" : "R-HSA-8867802",
+    "displayName" : "TCEB3B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IYF1",
+    "geneNames" : [ "ELOA2", "TCEB3B", "TCEB3L" ],
+    "parents" : [ 8867795 ]
+  }, {
+    "dbId" : 72028,
+    "stId" : "R-HSA-72028",
+    "displayName" : "SRSF5 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13243",
+    "geneNames" : [ "SRSF5", "HRS", "SFRS5", "SRP40" ],
+    "parents" : [ 8850671, 72177 ]
+  }, {
+    "dbId" : 72031,
+    "stId" : "R-HSA-72031",
+    "displayName" : "SRSF1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q07955",
+    "geneNames" : [ "SRSF1", "ASF", "SF2", "SF2P33", "SFRS1", "OK/SW-cl.3" ],
+    "parents" : [ 72177, 8850671 ]
+  }, {
+    "dbId" : 8867800,
+    "stId" : "R-HSA-8867800",
+    "displayName" : "TCEB3CL2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "A6NLF2",
+    "geneNames" : [ "ELOA3D", "TCEB3CL2" ],
+    "parents" : [ 8867795 ]
+  }, {
+    "dbId" : 72033,
+    "stId" : "R-HSA-72033",
+    "displayName" : "SRSF2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q01130",
+    "geneNames" : [ "SRSF2", "SFRS2" ],
+    "parents" : [ 72177, 8850671 ]
+  }, {
+    "dbId" : 65888,
+    "stId" : "R-HSA-65888",
+    "displayName" : "GTF2B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 67, 6 ],
+    "identifier" : "Q00403",
+    "geneNames" : [ "GTF2B", "TF2B", "TFIIB" ],
+    "parents" : [ 75859, 75878, 109878, 83601, 83551, 109876, 109630 ]
+  }, {
+    "dbId" : 72035,
+    "stId" : "R-HSA-72035",
+    "displayName" : "SRSF3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P84103",
+    "geneNames" : [ "SRSF3", "SFRS3", "SRP20" ],
+    "parents" : [ 8850671, 72177 ]
+  }, {
+    "dbId" : 72037,
+    "stId" : "R-HSA-72037",
+    "displayName" : "SRSF9 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13242",
+    "geneNames" : [ "SRSF9", "SFRS9", "SRP30C" ],
+    "parents" : [ 8850671, 72177 ]
+  }, {
+    "dbId" : 67439,
+    "stId" : "R-HSA-67439",
+    "displayName" : "ERCC3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P19447",
+    "geneNames" : [ "ERCC3", "XPB", "XPBC" ],
+    "parents" : [ 109634 ]
+  }, {
+    "dbId" : 3009372,
+    "stId" : "R-HSA-3009372",
+    "displayName" : "p-SUPT5H [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 592 ],
+    "identifier" : "O00267",
+    "geneNames" : [ "SUPT5H", "SPT5", "SPT5H" ],
+    "parents" : [ 77061, 112420 ]
+  }, {
+    "dbId" : 58738,
+    "stId" : "R-HSA-58738",
+    "displayName" : "LSM10 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q969L4",
+    "geneNames" : [ "LSM10" ],
+    "parents" : [ 110762 ]
+  }, {
+    "dbId" : 67443,
+    "stId" : "R-HSA-67443",
+    "displayName" : "ERCC2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P18074",
+    "geneNames" : [ "ERCC2", "XPD", "XPDC" ],
+    "parents" : [ 109634 ]
+  }, {
+    "dbId" : 4615988,
+    "stId" : "R-HSA-4615988",
+    "displayName" : "SYMPK [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92797",
+    "geneNames" : [ "SYMPK", "SPK" ],
+    "parents" : [ 71995 ]
+  }, {
+    "dbId" : 212347,
+    "stId" : "R-HSA-212347",
+    "displayName" : "TAF7 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q15545",
+    "geneNames" : [ "TAF7", "TAF2F", "TAFII55" ],
+    "parents" : [ 8866702 ]
+  }, {
+    "dbId" : 65912,
+    "stId" : "R-HSA-65912",
+    "displayName" : "GTF2H1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P32780",
+    "geneNames" : [ "GTF2H1", "BTF2" ],
+    "parents" : [ 109634 ]
+  }, {
+    "dbId" : 65914,
+    "stId" : "R-HSA-65914",
+    "displayName" : "GTF2H2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13888",
+    "geneNames" : [ "GTF2H2", "BTF2P44" ],
+    "parents" : [ 109634 ]
+  }, {
+    "dbId" : 72058,
+    "stId" : "R-HSA-72058",
+    "displayName" : "SRSF11 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q05519",
+    "geneNames" : [ "SRSF11", "SFRS11" ],
+    "parents" : [ 8850671, 72177 ]
+  }, {
+    "dbId" : 72060,
+    "stId" : "R-HSA-72060",
+    "displayName" : "DHX38 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92620",
+    "geneNames" : [ "DHX38", "DDX38", "KIAA0224", "PRP16" ],
+    "parents" : [ 8850671, 72177 ]
+  }, {
+    "dbId" : 65916,
+    "stId" : "R-HSA-65916",
+    "displayName" : "GTF2H3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q13889",
+    "geneNames" : [ "GTF2H3" ],
+    "parents" : [ 109634 ]
+  }, {
+    "dbId" : 72063,
+    "stId" : "R-HSA-72063",
+    "displayName" : "hTra2 [nucleoplasm]",
+    "schemaClass" : "GenomeEncodedEntity",
+    "speciesId" : 48887,
+    "parents" : [ 8850671 ]
+  }, {
+    "dbId" : 65918,
+    "stId" : "R-HSA-65918",
+    "displayName" : "GTF2H4 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92759",
+    "geneNames" : [ "GTF2H4" ],
+    "parents" : [ 109634 ]
+  }, {
+    "dbId" : 72062,
+    "stId" : "R-HSA-72062",
+    "displayName" : "CDC40 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60508",
+    "geneNames" : [ "CDC40", "EHB3", "PRP17", "PRPF17" ],
+    "parents" : [ 8850671, 72177 ]
+  }, {
+    "dbId" : 8852231,
+    "stId" : "R-HSA-8852231",
+    "displayName" : "DDX39A,B [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 8849161 ],
+    "children" : [ 8852237, 8849139 ]
+  }, {
+    "dbId" : 9020680,
+    "stId" : "R-HSA-9020680",
+    "displayName" : "TAF15 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q92804",
+    "geneNames" : [ "TAF15", "RBP56", "TAF2N" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 30595,
+    "stId" : "R-ALL-30595",
+    "displayName" : "NTP [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "diagramIds" : [ 129, 66, 131, 37, 133, 54, 58, 730, 27, 107, 47, 127 ],
+    "parents" : [ 83591, 113721, 113719, 113726, 113724 ],
+    "children" : [ 113571, 113562, 29358, 29470 ]
+  }, {
+    "dbId" : 113541,
+    "stId" : "R-ALL-113541",
+    "displayName" : "PPi [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 64, 33, 52, 38, 42, 60 ],
+    "identifier" : "29888"
+  }, {
+    "dbId" : 72073,
+    "stId" : "R-HSA-72073",
+    "displayName" : "hSLU7 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O95391",
+    "geneNames" : [ "SLU7" ],
+    "parents" : [ 8850671, 72177 ]
+  }, {
+    "dbId" : 64905,
+    "stId" : "R-HSA-64905",
+    "displayName" : "SUPT4H1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 168 ],
+    "identifier" : "P63272",
+    "geneNames" : [ "SUPT4H1", "SPT4H", "SUPT4H" ],
+    "parents" : [ 112420 ]
+  }, {
+    "dbId" : 8852237,
+    "stId" : "R-HSA-8852237",
+    "displayName" : "DDX39A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O00148",
+    "geneNames" : [ "DDX39A", "DDX39" ],
+    "parents" : [ 8852231 ]
+  }, {
+    "dbId" : 72075,
+    "stId" : "R-HSA-72075",
+    "displayName" : "mRNA 3'-end cleavage factor [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 143 ],
+    "children" : [ 72015, 72020 ]
+  }, {
+    "dbId" : 8849161,
+    "stId" : "R-HSA-8849161",
+    "displayName" : "DDX39B:ATP [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8849116 ],
+    "children" : [ 29358, 8852231 ]
+  }, {
+    "dbId" : 113550,
+    "stId" : "R-ALL-113550",
+    "displayName" : "Pi [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 22 ],
+    "identifier" : "18367"
+  }, {
+    "dbId" : 72081,
+    "stId" : "R-HSA-72081",
+    "displayName" : "RNGTT [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 87 ],
+    "identifier" : "O60942",
+    "geneNames" : [ "RNGTT", "CAP1A" ],
+    "parents" : [ 77053, 77056, 77061 ]
+  }, {
+    "dbId" : 72085,
+    "stId" : "R-ALL-72085",
+    "displayName" : "capped pre-mRNA [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 113405, 113715 ]
+  }, {
+    "dbId" : 159638,
+    "stId" : "R-HSA-159638",
+    "displayName" : "EJC [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8850671, 72177 ],
+    "children" : [ 156781, 8849113, 156649, 156776, 156778 ]
+  }, {
+    "dbId" : 71063,
+    "stId" : "R-ALL-71063",
+    "displayName" : "template DNA opened from -10 to +2, with first nucleotide base-paired at 5'-end [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 83551 ]
+  }, {
+    "dbId" : 113562,
+    "stId" : "R-ALL-113562",
+    "displayName" : "UTP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15713",
+    "parents" : [ 30595 ]
+  }, {
+    "dbId" : 51611,
+    "stId" : "R-HSA-51611",
+    "displayName" : "CCNT1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60563",
+    "geneNames" : [ "CCNT1" ],
+    "parents" : [ 6807466 ]
+  }, {
+    "dbId" : 51613,
+    "stId" : "R-HSA-51613",
+    "displayName" : "CCNT2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "O60583",
+    "geneNames" : [ "CCNT2" ],
+    "parents" : [ 6807466 ]
+  }, {
+    "dbId" : 113571,
+    "stId" : "R-ALL-113571",
+    "displayName" : "GTP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "15996",
+    "parents" : [ 30595 ]
+  }, {
+    "dbId" : 8938794,
+    "stId" : "R-HSA-8938794",
+    "displayName" : "CSTF2,CSTF2T [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "parents" : [ 72006 ],
+    "children" : [ 8938786, 72003 ]
+  }, {
+    "dbId" : 8938784,
+    "stId" : "R-HSA-8938784",
+    "displayName" : "WDR33 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9C0J8",
+    "geneNames" : [ "WDR33", "WDC146" ],
+    "parents" : [ 71995 ]
+  }, {
+    "dbId" : 8938786,
+    "stId" : "R-HSA-8938786",
+    "displayName" : "CSTF2T [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9H0L4",
+    "geneNames" : [ "CSTF2T", "KIAA0689" ],
+    "parents" : [ 8938794 ]
+  }, {
+    "dbId" : 112045,
+    "stId" : "R-HSA-112045",
+    "displayName" : "Capped Intronless Histone pre-mRNA:CBC:ZFP100 Complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 153 ],
+    "children" : [ 110765, 110758 ]
+  }, {
+    "dbId" : 113582,
+    "stId" : "R-ALL-113582",
+    "displayName" : "ADP [nucleoplasm]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 23, 1049, 1035 ],
+    "identifier" : "16761"
+  }, {
+    "dbId" : 6807505,
+    "stId" : "R-HSA-6807505",
+    "displayName" : "RNA polymerase II transcribes snRNA genes",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 949 ]
+  }, {
+    "dbId" : 212404,
+    "stId" : "R-HSA-212404",
+    "displayName" : "TAF9B [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9HBM6",
+    "geneNames" : [ "TAF9B", "TAF9L" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 62907,
+    "stId" : "R-HSA-62907",
+    "displayName" : "NELFE [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 178 ],
+    "identifier" : "P18615",
+    "geneNames" : [ "NELFE", "RD", "RDBP" ],
+    "parents" : [ 112432 ]
+  }, {
+    "dbId" : 212408,
+    "stId" : "R-HSA-212408",
+    "displayName" : "TAF2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6P1X5",
+    "geneNames" : [ "TAF2", "CIF150", "TAF2B" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 3322360,
+    "stId" : "R-HSA-3322360",
+    "displayName" : "CDC73 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q6P1J9",
+    "geneNames" : [ "CDC73", "C1orf28", "HRPT2" ],
+    "parents" : [ 8866690 ]
+  }, {
+    "dbId" : 3322361,
+    "stId" : "R-HSA-3322361",
+    "displayName" : "LEO1 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8WVC0",
+    "geneNames" : [ "LEO1", "RDL" ],
+    "parents" : [ 8866690 ]
+  }, {
+    "dbId" : 6807466,
+    "stId" : "R-HSA-6807466",
+    "displayName" : "CCNT1,CCNT2,CCNK [nucleoplasm]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 632 ],
+    "parents" : [ 112431 ],
+    "children" : [ 51613, 6796619, 51611 ]
+  }, {
+    "dbId" : 212435,
+    "stId" : "R-HSA-212435",
+    "displayName" : "TAF1L [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q8IZX4",
+    "geneNames" : [ "TAF1L" ],
+    "parents" : [ 5420880 ]
+  }, {
+    "dbId" : 212436,
+    "stId" : "R-HSA-212436",
+    "displayName" : "Generic Transcription Pathway",
+    "schemaClass" : "Pathway",
+    "speciesId" : 48887,
+    "diagramIds" : [ 731 ]
+  }, {
+    "dbId" : 72156,
+    "stId" : "R-ALL-72156",
+    "displayName" : "mRNA with spliced exons [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "parents" : [ 8850671 ]
+  }, {
+    "dbId" : 212446,
+    "stId" : "R-HSA-212446",
+    "displayName" : "TAF3 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q5VWG9",
+    "geneNames" : [ "TAF3" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 212452,
+    "stId" : "R-HSA-212452",
+    "displayName" : "TAF9 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q16594",
+    "geneNames" : [ "TAF9", "TAF2G", "TAFII31" ],
+    "parents" : [ 109626 ]
+  }, {
+    "dbId" : 156649,
+    "stId" : "R-HSA-156649",
+    "displayName" : "ALYREF [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q86V81",
+    "geneNames" : [ "ALYREF", "ALY", "BEF", "THOC4" ],
+    "parents" : [ 8852182, 159638 ]
+  }, {
+    "dbId" : 156658,
+    "stId" : "R-HSA-156658",
+    "displayName" : "MAGOH [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P61326",
+    "geneNames" : [ "MAGOH", "MAGOHA" ],
+    "parents" : [ 8868752 ]
+  }, {
+    "dbId" : 72177,
+    "stId" : "R-HSA-72177",
+    "displayName" : "3' end cleaved, ligated exon containing complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 141 ],
+    "children" : [ 72062, 71998, 72031, 72060, 72028, 71997, 72029, 8849116, 72026, 72058, 71995, 8865886, 72024, 159638, 71987, 72008, 72073, 72037, 72035, 77088, 72033 ]
+  }, {
+    "dbId" : 54257,
+    "stId" : "R-HSA-54257",
+    "displayName" : "ELL [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "diagramIds" : [ 117 ],
+    "identifier" : "P55199",
+    "geneNames" : [ "ELL", "C19orf17" ],
+    "parents" : [ 113722, 113426, 113724, 113726, 113719, 113720, 113721 ]
+  }, {
+    "dbId" : 156659,
+    "stId" : "R-HSA-156659",
+    "displayName" : "RBM8A [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "Q9Y5S9",
+    "geneNames" : [ "RBM8A", "RBM8", "HSPC114", "MDS014" ],
+    "parents" : [ 156657 ]
+  }, {
+    "dbId" : 157171,
+    "stId" : "R-HSA-157171",
+    "displayName" : "Pol II transcription complex containing extruded transcript to +30 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 80 ],
+    "children" : [ 111260, 71307, 109634 ]
+  }, {
+    "dbId" : 156657,
+    "stId" : "R-HSA-156657",
+    "displayName" : "Magoh-Y14 complex [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "parents" : [ 8849113 ],
+    "children" : [ 8868752, 156659 ]
+  }, {
+    "dbId" : 157174,
+    "stId" : "R-HSA-157174",
+    "displayName" : "Pol II transcription complex with (ser5) phosphorylated CTD containing extruded transcript to +30 [nucleoplasm]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 83 ],
+    "children" : [ 113404, 111260, 109634 ]
+  }, {
+    "dbId" : 110068,
+    "stId" : "R-ALL-110068",
+    "displayName" : "DNA containing Pol II promoter with transcript with 2 or 3 nucleotides [nucleoplasm]",
+    "schemaClass" : "OtherEntity",
+    "diagramIds" : [ 166 ],
+    "parents" : [ 75859 ]
+  }, {
+    "dbId" : 65533,
+    "stId" : "R-HSA-65533",
+    "displayName" : "GTF2A2 [nucleoplasm]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P52657",
+    "geneNames" : [ "GTF2A2", "TF2A2" ],
+    "parents" : [ 109629 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 112385,
+    "stId" : "R-HSA-112385",
+    "displayName" : "Addition of nucleotides leads to transcript elongation",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112379 ],
+    "following" : [ 113429, 113412, 113414, 113411 ],
+    "inputs" : [ 30595, 112433 ],
+    "outputs" : [ 113719, 109634 ],
+    "efs" : [ ],
+    "diagramIds" : [ 121 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113409,
+    "stId" : "R-HSA-113409",
+    "displayName" : "Abortive termination of early transcription elongation by DSIF:NELF",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 113402 ],
+    "inputs" : [ 113408 ],
+    "outputs" : [ 113410 ],
+    "efs" : [ ],
+    "diagramIds" : [ 459 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113411,
+    "stId" : "R-HSA-113411",
+    "displayName" : "2-4 nt.backtracking of Pol II complex on the template leading to elongation pausing",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112385 ],
+    "following" : [ 112392 ],
+    "inputs" : [ 113719 ],
+    "outputs" : [ 113720 ],
+    "efs" : [ ],
+    "diagramIds" : [ 189 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113413,
+    "stId" : "R-HSA-113413",
+    "displayName" : "TFIIS-mediated recovery of elongation from arrest",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 113414 ],
+    "following" : [ 113412 ],
+    "inputs" : [ 113721 ],
+    "outputs" : [ 113719 ],
+    "efs" : [ ],
+    "diagramIds" : [ 196 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113412,
+    "stId" : "R-HSA-113412",
+    "displayName" : "Pol II elongation complex moves on the template as transcript elongates",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112392, 113413, 112385 ],
+    "following" : [ 112396 ],
+    "inputs" : [ 113719, 30595 ],
+    "outputs" : [ 113724, 30595 ],
+    "efs" : [ ],
+    "diagramIds" : [ 124 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113414,
+    "stId" : "R-HSA-113414",
+    "displayName" : "7-14 nt. Backtracking of Pol II complex on the template leading to elongation arrest",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112385 ],
+    "following" : [ 112395, 113413 ],
+    "inputs" : [ 113719 ],
+    "outputs" : [ 113721 ],
+    "efs" : [ ],
+    "diagramIds" : [ 190 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112392,
+    "stId" : "R-HSA-112392",
+    "displayName" : "Resumption of elongation after recovery from pausing",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 113411 ],
+    "following" : [ 113412 ],
+    "inputs" : [ 113720 ],
+    "outputs" : [ 113719 ],
+    "efs" : [ ],
+    "diagramIds" : [ 187 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112395,
+    "stId" : "R-HSA-112395",
+    "displayName" : "Abortive termination of elongation after arrest",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 113414 ],
+    "inputs" : [ 113721 ],
+    "outputs" : [ 113722 ],
+    "efs" : [ ],
+    "diagramIds" : [ 469 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 77069,
+    "stId" : "R-HSA-77069",
+    "displayName" : "RNA Polymerase II CTD (phosphorylated) binds to CE",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 77071 ],
+    "following" : [ 77068 ],
+    "inputs" : [ 157174, 72081 ],
+    "outputs" : [ 77053 ],
+    "efs" : [ ],
+    "diagramIds" : [ 86 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112396,
+    "stId" : "R-HSA-112396",
+    "displayName" : "Separation of elongating transcript from template",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 113412 ],
+    "inputs" : [ 113724 ],
+    "outputs" : [ 113726 ],
+    "efs" : [ ],
+    "diagramIds" : [ 134 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 77068,
+    "stId" : "R-HSA-77068",
+    "displayName" : "Activation of GT",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 77069 ],
+    "following" : [ 77073 ],
+    "inputs" : [ 77053 ],
+    "outputs" : [ 77056 ],
+    "efs" : [ ],
+    "diagramIds" : [ 89 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 77071,
+    "stId" : "R-HSA-77071",
+    "displayName" : "Phosphorylation (Ser5) of RNA pol II CTD",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 113430 ],
+    "following" : [ 77069 ],
+    "inputs" : [ 29358, 157171 ],
+    "outputs" : [ 113582, 157174 ],
+    "catalysts" : [ 157171 ],
+    "efs" : [ ],
+    "diagramIds" : [ 82 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 77073,
+    "stId" : "R-HSA-77073",
+    "displayName" : "SPT5 subunit of Pol II binds the RNA triphosphatase (RTP)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 77068 ],
+    "inputs" : [ 77060, 3009372, 77056 ],
+    "outputs" : [ 77061 ],
+    "efs" : [ ],
+    "diagramIds" : [ 91 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 77586,
+    "stId" : "R-HSA-77586",
+    "displayName" : "Cleavage of the 3'-end of Replication Dependent Histone Pre-mRNA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 110766 ],
+    "outputs" : [ 110765, 111682 ],
+    "efs" : [ ],
+    "diagramIds" : [ 148 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113429,
+    "stId" : "R-HSA-113429",
+    "displayName" : "Elongating transcript encounters a lesion in the template",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112385 ],
+    "inputs" : [ 113719 ],
+    "outputs" : [ 8932918, 8932790, 109631, 8932789, 8932788, 8932787, 65748, 109909, 110291, 112432, 54257, 112431, 113416, 112425, 8932911, 8866690, 112420, 8932908, 30595, 112417 ],
+    "efs" : [ ],
+    "diagramIds" : [ 725 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113430,
+    "stId" : "R-HSA-113430",
+    "displayName" : "Extrusion of 5'-end of 30 nt long transcript through the pore in Pol II complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 111264 ],
+    "following" : [ 77071 ],
+    "inputs" : [ 111261 ],
+    "outputs" : [ 157171 ],
+    "efs" : [ ],
+    "diagramIds" : [ 79 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 77592,
+    "stId" : "R-HSA-77592",
+    "displayName" : "Cleavage of Intronless Pre-mRNA at 3'-end",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 112162 ],
+    "outputs" : [ 72015, 72006, 72020, 112164, 112165 ],
+    "efs" : [ ],
+    "diagramIds" : [ 144 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 76576,
+    "stId" : "R-HSA-76576",
+    "displayName" : "Addition of nucleotides 10 and 11 on the growing transcript: Third Transition",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75873 ],
+    "following" : [ 111264 ],
+    "inputs" : [ 75882, 30595 ],
+    "outputs" : [ 75902, 113541 ],
+    "catalysts" : [ 71307 ],
+    "efs" : [ ],
+    "diagramIds" : [ 55 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 111264,
+    "stId" : "R-HSA-111264",
+    "displayName" : "Addition of nucleotides between position +11 and +30",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 76576 ],
+    "following" : [ 113430 ],
+    "inputs" : [ 75902, 30595 ],
+    "outputs" : [ 111261, 113541 ],
+    "catalysts" : [ 71307 ],
+    "efs" : [ ],
+    "diagramIds" : [ 61 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9613494,
+    "stId" : "R-HSA-9613494",
+    "displayName" : "Unwinding of DNA for the Nascent Transcript: Second Transition",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 9613494 ],
+    "following" : [ 75869, 9613494 ],
+    "inputs" : [ 29358, 75878 ],
+    "outputs" : [ 164121, 75878, 113541 ],
+    "catalysts" : [ 109634 ],
+    "efs" : [ ],
+    "diagramIds" : [ 951 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 9613497,
+    "stId" : "R-HSA-9613497",
+    "displayName" : "Unwinding DNA for the nascent transcript",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 75864 ],
+    "inputs" : [ 109878, 30595 ],
+    "outputs" : [ 109878, 113541 ],
+    "catalysts" : [ 109634 ],
+    "efs" : [ ],
+    "diagramIds" : [ 950 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75949,
+    "stId" : "R-HSA-75949",
+    "displayName" : "RNA Polymerase II Promoter Opening: First Transition",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 109639 ],
+    "following" : [ 75862, 75861 ],
+    "inputs" : [ 29358, 109635 ],
+    "outputs" : [ 113550, 113582, 109876 ],
+    "catalysts" : [ 109634 ],
+    "efs" : [ ],
+    "diagramIds" : [ 20 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112429,
+    "stId" : "R-HSA-112429",
+    "displayName" : "Formation of FACT complex",
+    "schemaClass" : "Reaction",
+    "following" : [ 112379 ],
+    "inputs" : [ 112415, 65105 ],
+    "outputs" : [ 112417 ],
+    "efs" : [ ],
+    "diagramIds" : [ 173 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112430,
+    "stId" : "R-HSA-112430",
+    "displayName" : "Formation of P-TEFb complex",
+    "schemaClass" : "Reaction",
+    "following" : [ 112381 ],
+    "inputs" : [ 6807466, 51801 ],
+    "outputs" : [ 112431 ],
+    "efs" : [ ],
+    "diagramIds" : [ 181 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112435,
+    "stId" : "R-HSA-112435",
+    "displayName" : "Formation of Elongin BC complex",
+    "schemaClass" : "Reaction",
+    "following" : [ 112436 ],
+    "inputs" : [ 112422, 112423 ],
+    "outputs" : [ 112424 ],
+    "efs" : [ ],
+    "diagramIds" : [ 169 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112434,
+    "stId" : "R-HSA-112434",
+    "displayName" : "Formation of DSIF complex ",
+    "schemaClass" : "Reaction",
+    "following" : [ 113407 ],
+    "inputs" : [ 64905, 3009372 ],
+    "outputs" : [ 112420 ],
+    "efs" : [ ],
+    "diagramIds" : [ 167 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112437,
+    "stId" : "R-HSA-112437",
+    "displayName" : "Formation of NELF complex ",
+    "schemaClass" : "Reaction",
+    "following" : [ 113402 ],
+    "inputs" : [ 112428, 62907, 112426, 112427 ],
+    "outputs" : [ 112432 ],
+    "efs" : [ ],
+    "diagramIds" : [ 176 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112436,
+    "stId" : "R-HSA-112436",
+    "displayName" : "Formation of Elongin complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112435 ],
+    "following" : [ 112379 ],
+    "inputs" : [ 112424, 8867795 ],
+    "outputs" : [ 112425 ],
+    "efs" : [ ],
+    "diagramIds" : [ 185 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109637,
+    "stId" : "R-HSA-109637",
+    "displayName" : "Binding of TFIIA and TFIIB to the pol II promoter:TFIID complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 109636 ],
+    "following" : [ 109638 ],
+    "inputs" : [ 109628, 109629, 65888 ],
+    "outputs" : [ 109630 ],
+    "efs" : [ ],
+    "diagramIds" : [ 5 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109636,
+    "stId" : "R-HSA-109636",
+    "displayName" : "Recognition and Binding of Core Promoter Elements by TFIID",
+    "schemaClass" : "Reaction",
+    "following" : [ 109637 ],
+    "inputs" : [ 109626, 109627 ],
+    "outputs" : [ 109628 ],
+    "efs" : [ ],
+    "diagramIds" : [ 1 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109639,
+    "stId" : "R-HSA-109639",
+    "displayName" : "Formation of the closed pre-initiation complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75095 ],
+    "following" : [ 75949 ],
+    "inputs" : [ 75871, 109634 ],
+    "outputs" : [ 109635 ],
+    "efs" : [ ],
+    "diagramIds" : [ 15 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 109638,
+    "stId" : "R-HSA-109638",
+    "displayName" : "Recruitment of RNA Polymerase II Holoenzyme by TFIIF to the pol II promoter:TFIID:TFIIA:TFIIB complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 109637 ],
+    "following" : [ 75095 ],
+    "inputs" : [ 109630, 71307 ],
+    "outputs" : [ 109632 ],
+    "efs" : [ ],
+    "diagramIds" : [ 9 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75850,
+    "stId" : "R-HSA-75850",
+    "displayName" : "Addition of the third nucleotide on the nascent transcript",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 75864 ],
+    "following" : [ 75856 ],
+    "inputs" : [ 109878, 30595 ],
+    "outputs" : [ 75878, 113541 ],
+    "catalysts" : [ 71307 ],
+    "efs" : [ ],
+    "diagramIds" : [ 35 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 111437,
+    "stId" : "R-HSA-111437",
+    "displayName" : "Cleavage of the 3'-end of the Histone Pre-mRNA",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 112045 ],
+    "outputs" : [ 156959, 110765 ],
+    "efs" : [ ],
+    "diagramIds" : [ 152 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75856,
+    "stId" : "R-HSA-75856",
+    "displayName" : "Abortive Initiation Before Second Transition",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75869, 75850 ],
+    "inputs" : [ 75859 ],
+    "outputs" : [ 109629, 109626, 71307, 110068, 109634, 65888, 109633 ],
+    "efs" : [ ],
+    "diagramIds" : [ 164 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75861,
+    "stId" : "R-HSA-75861",
+    "displayName" : "NTP Binds Active Site of RNA Polymerase II",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75949 ],
+    "following" : [ 75866 ],
+    "inputs" : [ 109876, 30595 ],
+    "outputs" : [ 83551 ],
+    "efs" : [ ],
+    "diagramIds" : [ 26 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75095,
+    "stId" : "R-HSA-75095",
+    "displayName" : "Binding of TFIIE to the growing preinitiation complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 109638 ],
+    "following" : [ 109639 ],
+    "inputs" : [ 109632, 109633 ],
+    "outputs" : [ 75871 ],
+    "efs" : [ ],
+    "diagramIds" : [ 12 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75862,
+    "stId" : "R-HSA-75862",
+    "displayName" : "Fall Back to Closed Pre-initiation Complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75949 ],
+    "inputs" : [ 109876 ],
+    "outputs" : [ 109635 ],
+    "efs" : [ ],
+    "diagramIds" : [ 591 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75864,
+    "stId" : "R-HSA-75864",
+    "displayName" : "Newly Formed Phosphodiester Bond Stabilized and PPi Released",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75866 ],
+    "following" : [ 9613497, 75850 ],
+    "inputs" : [ 83601 ],
+    "outputs" : [ 109878, 113541 ],
+    "efs" : [ ],
+    "diagramIds" : [ 32 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75866,
+    "stId" : "R-HSA-75866",
+    "displayName" : "Nucleophillic Attack by 3'-hydroxyl Oxygen of nascent transcript on the Alpha Phosphate of NTP",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75861 ],
+    "following" : [ 75864 ],
+    "inputs" : [ 83551 ],
+    "outputs" : [ 83601 ],
+    "efs" : [ ],
+    "diagramIds" : [ 30 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 73946,
+    "stId" : "R-HSA-73946",
+    "displayName" : "Abortive initiation after formation of the first phosphodiester bond",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 109878 ],
+    "outputs" : [ 109629, 109626, 71307, 109877, 109634, 65888, 109633 ],
+    "efs" : [ ],
+    "diagramIds" : [ 155 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75869,
+    "stId" : "R-HSA-75869",
+    "displayName" : "Addition of the fourth nucleotide on the Nascent Transcript: Second Transition",
+    "schemaClass" : "BlackBoxEvent",
+    "preceding" : [ 9613494 ],
+    "following" : [ 75856, 75873 ],
+    "inputs" : [ 75878, 30595 ],
+    "outputs" : [ 75881, 113541, 65888 ],
+    "catalysts" : [ 71307 ],
+    "efs" : [ ],
+    "diagramIds" : [ 39 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75873,
+    "stId" : "R-HSA-75873",
+    "displayName" : "Addition of Nucleotides 5 through 9 on the growing Transcript",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75869 ],
+    "following" : [ 75891, 76576 ],
+    "inputs" : [ 75881, 30595 ],
+    "outputs" : [ 109629, 109626, 75882, 113541, 109633 ],
+    "catalysts" : [ 71307 ],
+    "efs" : [ ],
+    "diagramIds" : [ 49 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 75891,
+    "stId" : "R-HSA-75891",
+    "displayName" : "Abortive Initiation After Second Transition",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 75873 ],
+    "inputs" : [ 75890 ],
+    "outputs" : [ 71307, 75897, 109634, 109633 ],
+    "efs" : [ ],
+    "diagramIds" : [ 161 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 72180,
+    "stId" : "R-HSA-72180",
+    "displayName" : "Cleavage of mRNA at the 3'-end",
+    "schemaClass" : "Reaction",
+    "inputs" : [ 8850671 ],
+    "outputs" : [ 72015, 72006, 72020, 72177 ],
+    "catalysts" : [ 72075 ],
+    "efs" : [ ],
+    "diagramIds" : [ 137 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112379,
+    "stId" : "R-HSA-112379",
+    "displayName" : "Recruitment of elongation factors to form elongation complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112429, 112381, 112436 ],
+    "following" : [ 112385 ],
+    "inputs" : [ 112425, 8932911, 8866690, 65748, 8932908, 109634, 113426, 112417 ],
+    "outputs" : [ 112433 ],
+    "efs" : [ ],
+    "diagramIds" : [ 113 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113402,
+    "stId" : "R-HSA-113402",
+    "displayName" : "Formation of DSIF:NELF:early elongation complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 113407, 112437 ],
+    "following" : [ 113409, 112381 ],
+    "inputs" : [ 113406, 30595, 112432 ],
+    "outputs" : [ 30595, 113408 ],
+    "efs" : [ ],
+    "diagramIds" : [ 103 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112381,
+    "stId" : "R-HSA-112381",
+    "displayName" : "Hyperphosphorylation (Ser2) of RNA Pol II CTD by P-TEFb complex",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112430, 113402 ],
+    "following" : [ 112379 ],
+    "inputs" : [ 29358, 8932918, 8932790, 112431, 8932789, 8932788, 8932787, 54257, 113408 ],
+    "outputs" : [ 113582, 113426, 77088 ],
+    "catalysts" : [ 112431 ],
+    "efs" : [ ],
+    "diagramIds" : [ 108 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 113407,
+    "stId" : "R-HSA-113407",
+    "displayName" : "DSIF complex binds to RNA Pol II (hypophosphorylated)",
+    "schemaClass" : "Reaction",
+    "preceding" : [ 112383, 112434 ],
+    "following" : [ 113402 ],
+    "inputs" : [ 112420, 113715 ],
+    "outputs" : [ 113406 ],
+    "efs" : [ ],
+    "diagramIds" : [ 99 ],
+    "entityFunctionalStatus" : [ ]
+  }, {
+    "dbId" : 112383,
+    "stId" : "R-HSA-112383",
+    "displayName" : "Hypophosphorylation of RNA Pol II CTD by FCP1P protein",
+    "schemaClass" : "Reaction",
+    "following" : [ 113407 ],
+    "inputs" : [ 113416, 109634, 77089 ],
+    "outputs" : [ 109634, 113715 ],
+    "catalysts" : [ 113416 ],
+    "efs" : [ ],
+    "diagramIds" : [ 95 ],
+    "entityFunctionalStatus" : [ ]
+  } ],
+  "subpathways" : [ {
+    "dbId" : 77075,
+    "stId" : "R-HSA-77075",
+    "displayName" : "RNA Pol II CTD phosphorylation and interaction with CE",
+    "events" : [ 77073, 113430, 77069, 77068, 77071 ]
+  }, {
+    "dbId" : 674695,
+    "stId" : "R-HSA-674695",
+    "displayName" : "RNA Polymerase II Pre-transcription Events",
+    "events" : [ 113409, 113411, 113413, 113414, 112392, 112395, 112429, 112430, 75856, 75891, 112435, 112434, 112437, 113429, 112436, 75862, 73946 ]
+  }, {
+    "dbId" : 112382,
+    "stId" : "R-HSA-112382",
+    "displayName" : "Formation of RNA Pol II elongation complex ",
+    "events" : [ 112379, 112381 ]
+  }, {
+    "dbId" : 75955,
+    "stId" : "R-HSA-75955",
+    "displayName" : "RNA Polymerase II Transcription Elongation",
+    "events" : [ 112385, 113412, 113402, 112383, 113407, 112396, 112379, 112381 ]
+  }, {
+    "dbId" : 113418,
+    "stId" : "R-HSA-113418",
+    "displayName" : "Formation of the Early Elongation Complex",
+    "events" : [ 113402, 112383, 113407 ]
+  }, {
+    "dbId" : 73776,
+    "stId" : "R-HSA-73776",
+    "displayName" : "RNA Polymerase II Promoter Escape",
+    "events" : [ 75873, 76576, 111264, 9613494, 9613497, 75850, 75869 ]
+  }, {
+    "dbId" : 73779,
+    "stId" : "R-HSA-73779",
+    "displayName" : "RNA Polymerase II Transcription Pre-Initiation And Promoter Opening",
+    "events" : [ 109637, 109636, 75095, 109639, 109638 ]
+  }, {
+    "dbId" : 73856,
+    "stId" : "R-HSA-73856",
+    "displayName" : "RNA Polymerase II Transcription Termination",
+    "events" : [ 77586, 72180, 77592, 111437 ]
+  }, {
+    "dbId" : 76042,
+    "stId" : "R-HSA-76042",
+    "displayName" : "RNA Polymerase II Transcription Initiation And Promoter Clearance",
+    "events" : [ 75861, 75864, 75866, 75873, 76576, 111264, 9613494, 9613497, 75850, 75869, 75949 ]
+  }, {
+    "dbId" : 109688,
+    "stId" : "R-HSA-109688",
+    "displayName" : "Cleavage of Growing Transcript in the Termination Region ",
+    "events" : [ 77586, 72180, 77592, 111437 ]
+  }, {
+    "dbId" : 75953,
+    "stId" : "R-HSA-75953",
+    "displayName" : "RNA Polymerase II Transcription Initiation",
+    "events" : [ 75861, 75864, 75866 ]
+  } ]
+}

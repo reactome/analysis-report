@@ -1,0 +1,10151 @@
+{
+  "dbId" : 1474244,
+  "stableId" : "R-HSA-1474244",
+  "displayName" : "Extracellular matrix organization",
+  "nodes" : [ {
+    "id" : 2304,
+    "reactomeId" : 4127482,
+    "displayName" : "IBSP:Collagen type I fibril",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 647,
+      "y" : 1074
+    },
+    "minX" : 564,
+    "maxX" : 730,
+    "minY" : 1064,
+    "maxY" : 1085,
+    "prop" : {
+      "x" : 564,
+      "y" : 1064,
+      "width" : 166,
+      "height" : 21
+    },
+    "textPosition" : {
+      "x" : 572,
+      "y" : 1064
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2302,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1,
+    "reactomeId" : 1474228,
+    "displayName" : "Degradation of the extracellular matrix",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 526,
+      "y" : 43
+    },
+    "minX" : 455,
+    "maxX" : 597,
+    "minY" : 14,
+    "maxY" : 72,
+    "prop" : {
+      "x" : 455,
+      "y" : 14,
+      "width" : 142,
+      "height" : 58
+    },
+    "textPosition" : {
+      "x" : 462,
+      "y" : 21
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 2,
+    "reactomeId" : 1474290,
+    "displayName" : "Collagen formation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 233,
+      "y" : 44
+    },
+    "minX" : 165,
+    "maxX" : 301,
+    "minY" : 17,
+    "maxY" : 71,
+    "prop" : {
+      "x" : 165,
+      "y" : 17,
+      "width" : 136,
+      "height" : 54
+    },
+    "textPosition" : {
+      "x" : 171,
+      "y" : 29
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 3,
+    "reactomeId" : 1566948,
+    "displayName" : "Elastic fibre formation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 373,
+      "y" : 42
+    },
+    "minX" : 318,
+    "maxX" : 428,
+    "minY" : 17,
+    "maxY" : 68,
+    "prop" : {
+      "x" : 318,
+      "y" : 17,
+      "width" : 110,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 329,
+      "y" : 21
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 6,
+    "reactomeId" : 266103,
+    "displayName" : "FN1 dimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 838,
+      "y" : 146
+    },
+    "minX" : 801,
+    "maxX" : 949,
+    "minY" : 135,
+    "maxY" : 183,
+    "prop" : {
+      "x" : 801,
+      "y" : 135,
+      "width" : 74,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 803,
+      "y" : 136
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 136,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1143,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 871,
+          "y" : 160
+        },
+        "to" : {
+          "x" : 949,
+          "y" : 183
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 11,
+    "reactomeId" : 2327790,
+    "displayName" : "Integrin alpha5beta1:Fibronectin matrix",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1059,
+      "y" : 287
+    },
+    "minX" : 992,
+    "maxX" : 1126,
+    "minY" : 267,
+    "maxY" : 308,
+    "prop" : {
+      "x" : 992,
+      "y" : 267,
+      "width" : 134,
+      "height" : 41
+    },
+    "textPosition" : {
+      "x" : 992,
+      "y" : 273
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 12,
+    "reactomeId" : 54851,
+    "displayName" : "FN1(32-2386)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 756,
+      "y" : 248
+    },
+    "minX" : 707,
+    "maxX" : 930,
+    "minY" : 197,
+    "maxY" : 318,
+    "prop" : {
+      "x" : 707,
+      "y" : 236,
+      "width" : 98,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 709,
+      "y" : 237
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 805,
+          "y" : 236
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 136,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 2,
+        "shape" : {
+          "a" : {
+            "x" : 772,
+            "y" : 197
+          },
+          "b" : {
+            "x" : 784,
+            "y" : 209
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    }, {
+      "edgeId" : 137,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 763,
+          "y" : 263
+        },
+        "to" : {
+          "x" : 799,
+          "y" : 318
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 808,
+          "y" : 250
+        },
+        "to" : {
+          "x" : 930,
+          "y" : 256
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 10,
+        "shape" : {
+          "a" : {
+            "x" : 863,
+            "y" : 247
+          },
+          "b" : {
+            "x" : 875,
+            "y" : 259
+          },
+          "type" : "BOX",
+          "empty" : true
+        }
+      }
+    } ]
+  }, {
+    "id" : 2317,
+    "reactomeId" : 210216,
+    "displayName" : "Integrin alphaVbeta3",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1062,
+      "y" : 1253
+    },
+    "minX" : 961,
+    "maxX" : 1137,
+    "minY" : 1243,
+    "maxY" : 1264,
+    "prop" : {
+      "x" : 988,
+      "y" : 1243,
+      "width" : 149,
+      "height" : 21
+    },
+    "textPosition" : {
+      "x" : 998,
+      "y" : 1243
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2316,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 985,
+          "y" : 1253
+        },
+        "to" : {
+          "x" : 961,
+          "y" : 1254
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 528,
+    "reactomeId" : 388771,
+    "displayName" : "Nidogens 1, 2",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2956,
+      "y" : 488
+    },
+    "minX" : 2858,
+    "maxX" : 3010,
+    "minY" : 477,
+    "maxY" : 499,
+    "prop" : {
+      "x" : 2903,
+      "y" : 477,
+      "width" : 107,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2911,
+      "y" : 477
+    },
+    "connectors" : [ {
+      "edgeId" : 527,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2897,
+          "y" : 492
+        },
+        "to" : {
+          "x" : 2858,
+          "y" : 496
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 529,
+    "reactomeId" : 2426529,
+    "displayName" : "Laminins with gamma-1, gamma-3",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2924,
+      "y" : 553
+    },
+    "minX" : 2846,
+    "maxX" : 3002,
+    "minY" : 496,
+    "maxY" : 594,
+    "prop" : {
+      "x" : 2846,
+      "y" : 536,
+      "width" : 156,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 2846,
+      "y" : 536
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 527,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2904,
+          "y" : 530
+        },
+        "to" : {
+          "x" : 2858,
+          "y" : 496
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 596,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2944,
+          "y" : 576
+        },
+        "to" : {
+          "x" : 2974,
+          "y" : 594
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2322,
+    "reactomeId" : 2980935,
+    "displayName" : "DMP1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 920,
+      "y" : 1234
+    },
+    "minX" : 898,
+    "maxX" : 961,
+    "minY" : 1217,
+    "maxY" : 1254,
+    "prop" : {
+      "x" : 898,
+      "y" : 1223,
+      "width" : 45,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 899,
+      "y" : 1223
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 943,
+          "y" : 1223
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2316,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 942,
+          "y" : 1248
+        },
+        "to" : {
+          "x" : 961,
+          "y" : 1254
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2323,
+    "reactomeId" : 4086146,
+    "displayName" : "DMP1:Integrin alphVbeta3",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1055,
+      "y" : 1292
+    },
+    "minX" : 997,
+    "maxX" : 1113,
+    "minY" : 1277,
+    "maxY" : 1308,
+    "prop" : {
+      "x" : 997,
+      "y" : 1277,
+      "width" : 116,
+      "height" : 31
+    },
+    "textPosition" : {
+      "x" : 1008,
+      "y" : 1273
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2316,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 533,
+    "reactomeId" : 2426517,
+    "displayName" : "Laminins with gamma-1, gamma-3:Nidogens 1,2",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2711,
+      "y" : 397
+    },
+    "minX" : 2660,
+    "maxX" : 2802,
+    "minY" : 248,
+    "maxY" : 429,
+    "prop" : {
+      "x" : 2660,
+      "y" : 366,
+      "width" : 102,
+      "height" : 63
+    },
+    "textPosition" : {
+      "x" : 2666,
+      "y" : 366
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 527,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 534,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2721,
+          "y" : 363
+        },
+        "to" : {
+          "x" : 2761,
+          "y" : 248
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 544,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2765,
+          "y" : 414
+        },
+        "to" : {
+          "x" : 2802,
+          "y" : 429
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 535,
+    "reactomeId" : 2426291,
+    "displayName" : "Laminins with gamma-1, gamma-3:Nidogens:HSPG2",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2908,
+      "y" : 248
+    },
+    "minX" : 2845,
+    "maxX" : 2972,
+    "minY" : 223,
+    "maxY" : 273,
+    "prop" : {
+      "x" : 2845,
+      "y" : 223,
+      "width" : 127,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 2846,
+      "y" : 224
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 534,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1052,
+    "reactomeId" : 390567,
+    "displayName" : "DMD",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2364,
+      "y" : 636
+    },
+    "minX" : 2346,
+    "maxX" : 2417,
+    "minY" : 619,
+    "maxY" : 664,
+    "prop" : {
+      "x" : 2346,
+      "y" : 625,
+      "width" : 36,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2346,
+      "y" : 625
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2382,
+          "y" : 625
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 1051,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2385,
+          "y" : 645
+        },
+        "to" : {
+          "x" : 2417,
+          "y" : 664
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1053,
+    "reactomeId" : 2396153,
+    "displayName" : "Dystroglycan:Dystrophin:Laminins",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2395,
+      "y" : 768
+    },
+    "minX" : 2327,
+    "maxX" : 2464,
+    "minY" : 751,
+    "maxY" : 785,
+    "prop" : {
+      "x" : 2327,
+      "y" : 751,
+      "width" : 137,
+      "height" : 34
+    },
+    "textPosition" : {
+      "x" : 2333,
+      "y" : 750
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1051,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1054,
+    "reactomeId" : 216010,
+    "displayName" : "Tenascin-C hexamer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1188,
+      "y" : 1676
+    },
+    "minX" : 1117,
+    "maxX" : 1259,
+    "minY" : 1634,
+    "maxY" : 1687,
+    "prop" : {
+      "x" : 1117,
+      "y" : 1665,
+      "width" : 142,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1123,
+      "y" : 1666
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 964,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1200,
+          "y" : 1662
+        },
+        "to" : {
+          "x" : 1237,
+          "y" : 1634
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2336,
+    "reactomeId" : 216015,
+    "displayName" : "Integrin alphaVbeta1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1056,
+      "y" : 1152
+    },
+    "minX" : 954,
+    "maxX" : 1129,
+    "minY" : 1141,
+    "maxY" : 1180,
+    "prop" : {
+      "x" : 983,
+      "y" : 1141,
+      "width" : 146,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 991,
+      "y" : 1142
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2335,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1015,
+          "y" : 1166
+        },
+        "to" : {
+          "x" : 954,
+          "y" : 1180
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 547,
+    "reactomeId" : 2426607,
+    "displayName" : "Laminins with gamma-1, gamma-3:Nidogens:Collagen type IV network",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2950,
+      "y" : 423
+    },
+    "minX" : 2887,
+    "maxX" : 3014,
+    "minY" : 391,
+    "maxY" : 455,
+    "prop" : {
+      "x" : 2887,
+      "y" : 391,
+      "width" : 127,
+      "height" : 64
+    },
+    "textPosition" : {
+      "x" : 2885,
+      "y" : 392
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 544,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 549,
+    "reactomeId" : 2328121,
+    "displayName" : "Laminins",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2462,
+      "y" : 640
+    },
+    "minX" : 2417,
+    "maxX" : 2495,
+    "minY" : 630,
+    "maxY" : 840,
+    "prop" : {
+      "x" : 2430,
+      "y" : 630,
+      "width" : 65,
+      "height" : 21
+    },
+    "textPosition" : {
+      "x" : 2433,
+      "y" : 630
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1051,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2442,
+          "y" : 657
+        },
+        "to" : {
+          "x" : 2417,
+          "y" : 664
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 600,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2463,
+          "y" : 657
+        },
+        "to" : {
+          "x" : 2492,
+          "y" : 840
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2341,
+    "reactomeId" : 4086140,
+    "displayName" : "DSPP(463-1301)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 873,
+      "y" : 1158
+    },
+    "minX" : 807,
+    "maxX" : 954,
+    "minY" : 1141,
+    "maxY" : 1180,
+    "prop" : {
+      "x" : 807,
+      "y" : 1147,
+      "width" : 133,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 819,
+      "y" : 1147
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 940,
+          "y" : 1147
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2335,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 913,
+          "y" : 1172
+        },
+        "to" : {
+          "x" : 954,
+          "y" : 1180
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2342,
+    "reactomeId" : 4086137,
+    "displayName" : "DSPP(463-1301):Integrin alphaVbeta1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1064,
+      "y" : 1208
+    },
+    "minX" : 1000,
+    "maxX" : 1129,
+    "minY" : 1190,
+    "maxY" : 1226,
+    "prop" : {
+      "x" : 1000,
+      "y" : 1190,
+      "width" : 129,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1000,
+      "y" : 1191
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2335,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2344,
+    "reactomeId" : 3907291,
+    "displayName" : "Integrin alpha6beta1, alpha7beta1, alpha1beta1, alpha2beta1, alphaVbeta1",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1937,
+      "y" : 166
+    },
+    "minX" : 1878,
+    "maxX" : 1996,
+    "minY" : 95,
+    "maxY" : 213,
+    "prop" : {
+      "x" : 1878,
+      "y" : 120,
+      "width" : 118,
+      "height" : 93
+    },
+    "textPosition" : {
+      "x" : 1892,
+      "y" : 121
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2343,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1953,
+          "y" : 114
+        },
+        "to" : {
+          "x" : 1962,
+          "y" : 95
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 555,
+    "reactomeId" : 2328140,
+    "displayName" : "Dystroglycan",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2412,
+      "y" : 533
+    },
+    "minX" : 2217,
+    "maxX" : 2542,
+    "minY" : 268,
+    "maxY" : 750,
+    "prop" : {
+      "x" : 2368,
+      "y" : 523,
+      "width" : 89,
+      "height" : 21
+    },
+    "textPosition" : {
+      "x" : 2372,
+      "y" : 523
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1051,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2412,
+          "y" : 547
+        },
+        "to" : {
+          "x" : 2417,
+          "y" : 664
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 566,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2423,
+          "y" : 547
+        },
+        "to" : {
+          "x" : 2527,
+          "y" : 639
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 570,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2402,
+          "y" : 547
+        },
+        "to" : {
+          "x" : 2217,
+          "y" : 750
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 479,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2417,
+          "y" : 520
+        },
+        "to" : {
+          "x" : 2542,
+          "y" : 268
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2351,
+    "reactomeId" : 3907290,
+    "displayName" : "Integrin alpha6beta1, alpha7beta1, alpha1beta1, alpha2beta1, alphaVbeta1:Laminin-111",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2077,
+      "y" : 171
+    },
+    "minX" : 2018,
+    "maxX" : 2137,
+    "minY" : 119,
+    "maxY" : 224,
+    "prop" : {
+      "x" : 2018,
+      "y" : 119,
+      "width" : 119,
+      "height" : 105
+    },
+    "textPosition" : {
+      "x" : 2032,
+      "y" : 119
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2343,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 567,
+    "reactomeId" : 2426293,
+    "displayName" : "AGRN, HSPG2",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2558,
+      "y" : 573
+    },
+    "minX" : 2512,
+    "maxX" : 2605,
+    "minY" : 560,
+    "maxY" : 639,
+    "prop" : {
+      "x" : 2512,
+      "y" : 560,
+      "width" : 93,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 2514,
+      "y" : 562
+    },
+    "connectors" : [ {
+      "edgeId" : 566,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2551,
+          "y" : 592
+        },
+        "to" : {
+          "x" : 2527,
+          "y" : 639
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 569,
+    "reactomeId" : 2426244,
+    "displayName" : "Dystroglycan:AGRN:HSPG2",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2404,
+      "y" : 823
+    },
+    "minX" : 2361,
+    "maxX" : 2448,
+    "minY" : 803,
+    "maxY" : 843,
+    "prop" : {
+      "x" : 2361,
+      "y" : 803,
+      "width" : 87,
+      "height" : 40
+    },
+    "textPosition" : {
+      "x" : 2362,
+      "y" : 808
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 566,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 572,
+    "reactomeId" : 2426312,
+    "displayName" : "Dystroglycan:NRXN1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2412,
+      "y" : 930
+    },
+    "minX" : 2347,
+    "maxX" : 2477,
+    "minY" : 919,
+    "maxY" : 941,
+    "prop" : {
+      "x" : 2347,
+      "y" : 919,
+      "width" : 130,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2348,
+      "y" : 920
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 570,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 836,
+    "reactomeId" : 2467086,
+    "displayName" : "Laminins with gamma-1",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2853,
+      "y" : 886
+    },
+    "minX" : 2810,
+    "maxX" : 2897,
+    "minY" : 868,
+    "maxY" : 948,
+    "prop" : {
+      "x" : 2810,
+      "y" : 868,
+      "width" : 87,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2809,
+      "y" : 868
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 835,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2858,
+          "y" : 910
+        },
+        "to" : {
+          "x" : 2871,
+          "y" : 948
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 582,
+    "reactomeId" : 215989,
+    "displayName" : "Laminin-111",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2760,
+      "y" : 703
+    },
+    "minX" : 2715,
+    "maxX" : 2861,
+    "minY" : 674,
+    "maxY" : 714,
+    "prop" : {
+      "x" : 2715,
+      "y" : 692,
+      "width" : 91,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2719,
+      "y" : 693
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 581,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2798,
+          "y" : 689
+        },
+        "to" : {
+          "x" : 2861,
+          "y" : 674
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 843,
+    "reactomeId" : 375056,
+    "displayName" : "AGRN(30-2045)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2600,
+      "y" : 1278
+    },
+    "minX" : 2412,
+    "maxX" : 2871,
+    "minY" : 948,
+    "maxY" : 1348,
+    "prop" : {
+      "x" : 2545,
+      "y" : 1267,
+      "width" : 110,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2547,
+      "y" : 1267
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2655,
+          "y" : 1267
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 835,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2609,
+          "y" : 1264
+        },
+        "to" : {
+          "x" : 2871,
+          "y" : 948
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 857,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2595,
+          "y" : 1264
+        },
+        "to" : {
+          "x" : 2507,
+          "y" : 1030
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 860,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2658,
+          "y" : 1278
+        },
+        "to" : {
+          "x" : 2727,
+          "y" : 1279
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 863,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2608,
+          "y" : 1292
+        },
+        "to" : {
+          "x" : 2651,
+          "y" : 1348
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 866,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2587,
+          "y" : 1264
+        },
+        "to" : {
+          "x" : 2412,
+          "y" : 1112
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 587,
+    "reactomeId" : 2426371,
+    "displayName" : "Collagen type IV network:Laminin-1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 3002,
+      "y" : 671
+    },
+    "minX" : 2939,
+    "maxX" : 3065,
+    "minY" : 653,
+    "maxY" : 689,
+    "prop" : {
+      "x" : 2939,
+      "y" : 653,
+      "width" : 126,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2943,
+      "y" : 654
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 581,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 845,
+    "reactomeId" : 2467087,
+    "displayName" : "AGRN:Laminins with gamma-1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 3038,
+      "y" : 951
+    },
+    "minX" : 2976,
+    "maxX" : 3100,
+    "minY" : 933,
+    "maxY" : 969,
+    "prop" : {
+      "x" : 2976,
+      "y" : 933,
+      "width" : 124,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2975,
+      "y" : 934
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 835,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 597,
+    "reactomeId" : 561258,
+    "displayName" : "NTN4",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2940,
+      "y" : 626
+    },
+    "minX" : 2915,
+    "maxX" : 2974,
+    "minY" : 594,
+    "maxY" : 637,
+    "prop" : {
+      "x" : 2915,
+      "y" : 615,
+      "width" : 51,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2919,
+      "y" : 615
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2966,
+          "y" : 615
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 596,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2951,
+          "y" : 612
+        },
+        "to" : {
+          "x" : 2974,
+          "y" : 594
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1109,
+    "reactomeId" : 216001,
+    "displayName" : "Laminin-332",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2202,
+      "y" : 94
+    },
+    "minX" : 2158,
+    "maxX" : 2247,
+    "minY" : 83,
+    "maxY" : 121,
+    "prop" : {
+      "x" : 2158,
+      "y" : 83,
+      "width" : 89,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2161,
+      "y" : 84
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 3437,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2215,
+          "y" : 108
+        },
+        "to" : {
+          "x" : 2236,
+          "y" : 121
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 598,
+    "reactomeId" : 2426487,
+    "displayName" : "NTN4:Laminins with gamma-1, gamma-3",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 3116,
+      "y" : 594
+    },
+    "minX" : 3048,
+    "maxX" : 3185,
+    "minY" : 576,
+    "maxY" : 613,
+    "prop" : {
+      "x" : 3048,
+      "y" : 576,
+      "width" : 137,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 3050,
+      "y" : 578
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 596,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1112,
+    "reactomeId" : 2214333,
+    "displayName" : "Collagen type VII fibril",
+    "schemaClass" : "Polymer",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 2779,
+      "y" : 816
+    },
+    "minX" : 2714,
+    "maxX" : 2869,
+    "minY" : 727,
+    "maxY" : 832,
+    "prop" : {
+      "x" : 2714,
+      "y" : 800,
+      "width" : 130,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 2725,
+      "y" : 799
+    },
+    "connectors" : [ {
+      "edgeId" : 1108,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2809,
+          "y" : 797
+        },
+        "to" : {
+          "x" : 2854,
+          "y" : 777
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1256,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2795,
+          "y" : 797
+        },
+        "to" : {
+          "x" : 2869,
+          "y" : 727
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 601,
+    "reactomeId" : 2465899,
+    "displayName" : "Sulfatide",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 2546,
+      "y" : 825
+    },
+    "minX" : 2492,
+    "maxX" : 2578,
+    "minY" : 809,
+    "maxY" : 840,
+    "prop" : {
+      "x" : 2515,
+      "y" : 810,
+      "width" : 62,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 2517,
+      "y" : 814
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2572,
+          "y" : 815
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 600,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2512,
+          "y" : 833
+        },
+        "to" : {
+          "x" : 2492,
+          "y" : 840
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 602,
+    "reactomeId" : 2465849,
+    "displayName" : "Laminins:Sulfatide",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2698,
+      "y" : 898
+    },
+    "minX" : 2639,
+    "maxX" : 2757,
+    "minY" : 888,
+    "maxY" : 908,
+    "prop" : {
+      "x" : 2639,
+      "y" : 888,
+      "width" : 118,
+      "height" : 20
+    },
+    "textPosition" : {
+      "x" : 2642,
+      "y" : 887
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 600,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 858,
+    "reactomeId" : 2328152,
+    "displayName" : "DAG1(30-653)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2599,
+      "y" : 987
+    },
+    "minX" : 2507,
+    "maxX" : 2655,
+    "minY" : 970,
+    "maxY" : 1030,
+    "prop" : {
+      "x" : 2549,
+      "y" : 976,
+      "width" : 100,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2550,
+      "y" : 976
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2649,
+          "y" : 976
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 857,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2575,
+          "y" : 1001
+        },
+        "to" : {
+          "x" : 2507,
+          "y" : 1030
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 859,
+    "reactomeId" : 2467717,
+    "displayName" : "AGRN:Alpha-dystroglycan",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2419,
+      "y" : 983
+    },
+    "minX" : 2372,
+    "maxX" : 2466,
+    "minY" : 965,
+    "maxY" : 1001,
+    "prop" : {
+      "x" : 2372,
+      "y" : 965,
+      "width" : 94,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2376,
+      "y" : 966
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 857,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1115,
+    "reactomeId" : 2426349,
+    "displayName" : "Integrin alpha3beta1, alpha6beta4",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1208,
+      "y" : 163
+    },
+    "minX" : 1160,
+    "maxX" : 1257,
+    "minY" : 97,
+    "maxY" : 188,
+    "prop" : {
+      "x" : 1160,
+      "y" : 138,
+      "width" : 97,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 1163,
+      "y" : 138
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 3434,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1222,
+          "y" : 132
+        },
+        "to" : {
+          "x" : 1245,
+          "y" : 97
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 861,
+    "reactomeId" : 2467599,
+    "displayName" : "LRP4:MUSK",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2701,
+      "y" : 1310
+    },
+    "minX" : 2663,
+    "maxX" : 2740,
+    "minY" : 1279,
+    "maxY" : 1321,
+    "prop" : {
+      "x" : 2663,
+      "y" : 1299,
+      "width" : 77,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2665,
+      "y" : 1300
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 860,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2710,
+          "y" : 1296
+        },
+        "to" : {
+          "x" : 2727,
+          "y" : 1279
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1117,
+    "reactomeId" : 3907294,
+    "displayName" : "Integrin alpha3beta1, alpha6beta4:Laminins-332, 511, 521, (211, 221)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1331,
+      "y" : 158
+    },
+    "minX" : 1268,
+    "maxX" : 1394,
+    "minY" : 119,
+    "maxY" : 197,
+    "prop" : {
+      "x" : 1268,
+      "y" : 119,
+      "width" : 126,
+      "height" : 78
+    },
+    "textPosition" : {
+      "x" : 1267,
+      "y" : 120
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 3434,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 862,
+    "reactomeId" : 2467620,
+    "displayName" : "AGRN:LRP4:MUSK",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2872,
+      "y" : 1277
+    },
+    "minX" : 2813,
+    "maxX" : 2931,
+    "minY" : 1264,
+    "maxY" : 1290,
+    "prop" : {
+      "x" : 2813,
+      "y" : 1264,
+      "width" : 118,
+      "height" : 26
+    },
+    "textPosition" : {
+      "x" : 2816,
+      "y" : 1269
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 860,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 864,
+    "reactomeId" : 976748,
+    "displayName" : "Beta amyloid fibril",
+    "schemaClass" : "Polymer",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 2633,
+      "y" : 1384
+    },
+    "minX" : 2575,
+    "maxX" : 2691,
+    "minY" : 1348,
+    "maxY" : 1396,
+    "prop" : {
+      "x" : 2575,
+      "y" : 1373,
+      "width" : 116,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 2577,
+      "y" : 1374
+    },
+    "connectors" : [ {
+      "edgeId" : 863,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2638,
+          "y" : 1370
+        },
+        "to" : {
+          "x" : 2651,
+          "y" : 1348
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 865,
+    "reactomeId" : 2467662,
+    "displayName" : "AGRN:Beta amyloid fibril",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2804,
+      "y" : 1350
+    },
+    "minX" : 2745,
+    "maxX" : 2864,
+    "minY" : 1332,
+    "maxY" : 1368,
+    "prop" : {
+      "x" : 2745,
+      "y" : 1332,
+      "width" : 119,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2763,
+      "y" : 1333
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 863,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 867,
+    "reactomeId" : 2467656,
+    "displayName" : "NCAM1, PTPRS",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2410,
+      "y" : 1156
+    },
+    "minX" : 2361,
+    "maxX" : 2459,
+    "minY" : 1112,
+    "maxY" : 1167,
+    "prop" : {
+      "x" : 2361,
+      "y" : 1145,
+      "width" : 98,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2362,
+      "y" : 1145
+    },
+    "connectors" : [ {
+      "edgeId" : 866,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2410,
+          "y" : 1139
+        },
+        "to" : {
+          "x" : 2412,
+          "y" : 1112
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 612,
+    "reactomeId" : 2327930,
+    "displayName" : "DDR1 dimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1037,
+      "y" : 538
+    },
+    "minX" : 921,
+    "maxX" : 1081,
+    "minY" : 527,
+    "maxY" : 554,
+    "prop" : {
+      "x" : 994,
+      "y" : 527,
+      "width" : 87,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 997,
+      "y" : 528
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 611,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 991,
+          "y" : 544
+        },
+        "to" : {
+          "x" : 921,
+          "y" : 554
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 868,
+    "reactomeId" : 2467657,
+    "displayName" : "AGRN:NCAM1, PTPRS",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2412,
+      "y" : 1066
+    },
+    "minX" : 2357,
+    "maxX" : 2468,
+    "minY" : 1048,
+    "maxY" : 1084,
+    "prop" : {
+      "x" : 2357,
+      "y" : 1048,
+      "width" : 111,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2364,
+      "y" : 1049
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 866,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 869,
+    "reactomeId" : 2564686,
+    "displayName" : "Collagen types I-V, VII",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 779,
+      "y" : 377
+    },
+    "minX" : 711,
+    "maxX" : 847,
+    "minY" : 318,
+    "maxY" : 395,
+    "prop" : {
+      "x" : 711,
+      "y" : 359,
+      "width" : 136,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 711,
+      "y" : 366
+    },
+    "connectors" : [ {
+      "edgeId" : 137,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 785,
+          "y" : 353
+        },
+        "to" : {
+          "x" : 799,
+          "y" : 318
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 613,
+    "reactomeId" : 2465885,
+    "displayName" : "Collagen type I, II, III, IV, V, XI fibrils",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 830,
+      "y" : 546
+    },
+    "minX" : 772,
+    "maxX" : 921,
+    "minY" : 529,
+    "maxY" : 564,
+    "prop" : {
+      "x" : 772,
+      "y" : 529,
+      "width" : 116,
+      "height" : 35
+    },
+    "textPosition" : {
+      "x" : 772,
+      "y" : 529
+    },
+    "connectors" : [ {
+      "edgeId" : 611,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 894,
+          "y" : 551
+        },
+        "to" : {
+          "x" : 921,
+          "y" : 554
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 617,
+    "reactomeId" : 2465848,
+    "displayName" : "DDR1 dimer:Collagen type I, II, III, IV, V, XI fibrils",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1072,
+      "y" : 600
+    },
+    "minX" : 990,
+    "maxX" : 1155,
+    "minY" : 581,
+    "maxY" : 619,
+    "prop" : {
+      "x" : 990,
+      "y" : 581,
+      "width" : 165,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 990,
+      "y" : 584
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 611,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3436,
+    "reactomeId" : 215995,
+    "displayName" : "Integrin alpha7beta1:Laminin-211, 221, 411, 512, 521",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1805,
+      "y" : 171
+    },
+    "minX" : 1748,
+    "maxX" : 1862,
+    "minY" : 133,
+    "maxY" : 210,
+    "prop" : {
+      "x" : 1748,
+      "y" : 133,
+      "width" : 114,
+      "height" : 77
+    },
+    "textPosition" : {
+      "x" : 1753,
+      "y" : 133
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 3435,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 878,
+    "reactomeId" : 2564668,
+    "displayName" : "Collagen type IV networks",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2731,
+      "y" : 522
+    },
+    "minX" : 2681,
+    "maxX" : 2869,
+    "minY" : 429,
+    "maxY" : 727,
+    "prop" : {
+      "x" : 2681,
+      "y" : 504,
+      "width" : 101,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2679,
+      "y" : 504
+    },
+    "connectors" : [ {
+      "edgeId" : 544,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2744,
+          "y" : 498
+        },
+        "to" : {
+          "x" : 2802,
+          "y" : 429
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 581,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2746,
+          "y" : 546
+        },
+        "to" : {
+          "x" : 2861,
+          "y" : 674
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1256,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2743,
+          "y" : 546
+        },
+        "to" : {
+          "x" : 2869,
+          "y" : 727
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3438,
+    "reactomeId" : 114561,
+    "displayName" : "Integrin alpha2beta1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2209,
+      "y" : 170
+    },
+    "minX" : 2159,
+    "maxX" : 2259,
+    "minY" : 121,
+    "maxY" : 188,
+    "prop" : {
+      "x" : 2159,
+      "y" : 152,
+      "width" : 100,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2168,
+      "y" : 153
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 3437,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2218,
+          "y" : 149
+        },
+        "to" : {
+          "x" : 2236,
+          "y" : 121
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3442,
+    "reactomeId" : 349628,
+    "displayName" : "Integrin alpha2beta1:Laminin-332",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2337,
+      "y" : 163
+    },
+    "minX" : 2269,
+    "maxX" : 2405,
+    "minY" : 145,
+    "maxY" : 181,
+    "prop" : {
+      "x" : 2269,
+      "y" : 145,
+      "width" : 136,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2270,
+      "y" : 146
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 3437,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 883,
+    "reactomeId" : 2796107,
+    "displayName" : "BGN:Collagen types I, VI, (IX)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 88,
+      "y" : 355
+    },
+    "minX" : 0,
+    "maxX" : 177,
+    "minY" : 343,
+    "maxY" : 367,
+    "prop" : {
+      "x" : 0,
+      "y" : 343,
+      "width" : 177,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 1,
+      "y" : 346
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 695,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 627,
+    "reactomeId" : 2327882,
+    "displayName" : "DDR2 dimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1057,
+      "y" : 691
+    },
+    "minX" : 921,
+    "maxX" : 1114,
+    "minY" : 680,
+    "maxY" : 719,
+    "prop" : {
+      "x" : 1000,
+      "y" : 680,
+      "width" : 114,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1017,
+      "y" : 681
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 626,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1003,
+          "y" : 705
+        },
+        "to" : {
+          "x" : 921,
+          "y" : 719
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 628,
+    "reactomeId" : 2465861,
+    "displayName" : "Collagen type I, II, III, V, X fibrils",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 832,
+      "y" : 694
+    },
+    "minX" : 772,
+    "maxX" : 921,
+    "minY" : 676,
+    "maxY" : 719,
+    "prop" : {
+      "x" : 772,
+      "y" : 676,
+      "width" : 120,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 774,
+      "y" : 677
+    },
+    "connectors" : [ {
+      "edgeId" : 626,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 898,
+          "y" : 710
+        },
+        "to" : {
+          "x" : 921,
+          "y" : 719
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3444,
+    "reactomeId" : 216001,
+    "displayName" : "Laminin-332",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2734,
+      "y" : 761
+    },
+    "minX" : 2690,
+    "maxX" : 2854,
+    "minY" : 750,
+    "maxY" : 777,
+    "prop" : {
+      "x" : 2690,
+      "y" : 750,
+      "width" : 89,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2693,
+      "y" : 751
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1108,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2782,
+          "y" : 766
+        },
+        "to" : {
+          "x" : 2854,
+          "y" : 777
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3445,
+    "reactomeId" : 202716,
+    "displayName" : "CEACAM heterodimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 875,
+      "y" : 216
+    },
+    "minX" : 835,
+    "maxX" : 942,
+    "minY" : 198,
+    "maxY" : 234,
+    "prop" : {
+      "x" : 835,
+      "y" : 198,
+      "width" : 80,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 835,
+      "y" : 199
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1143,
+      "type" : "ACTIVATOR",
+      "segments" : [ {
+        "from" : {
+          "x" : 918,
+          "y" : 216
+        },
+        "to" : {
+          "x" : 942,
+          "y" : 217
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      },
+      "endShape" : {
+        "a" : {
+          "x" : 935,
+          "y" : 221
+        },
+        "b" : {
+          "x" : 942,
+          "y" : 217
+        },
+        "c" : {
+          "x" : 935,
+          "y" : 213
+        },
+        "type" : "ARROW",
+        "empty" : true
+      }
+    } ]
+  }, {
+    "id" : 885,
+    "reactomeId" : 2672070,
+    "displayName" : "Hydroxylapatite",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 192,
+      "y" : 1184
+    },
+    "minX" : 142,
+    "maxX" : 328,
+    "minY" : 1168,
+    "maxY" : 1199,
+    "prop" : {
+      "x" : 142,
+      "y" : 1169,
+      "width" : 101,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 143,
+      "y" : 1173
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 238,
+          "y" : 1174
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 884,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 246,
+          "y" : 1186
+        },
+        "to" : {
+          "x" : 328,
+          "y" : 1192
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1142,
+    "reactomeId" : 216083,
+    "displayName" : "Integrin cell surface interactions",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 698,
+      "y" : 40
+    },
+    "minX" : 620,
+    "maxX" : 776,
+    "minY" : 13,
+    "maxY" : 67,
+    "prop" : {
+      "x" : 620,
+      "y" : 13,
+      "width" : 156,
+      "height" : 54
+    },
+    "textPosition" : {
+      "x" : 632,
+      "y" : 18
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 3446,
+    "reactomeId" : 6788636,
+    "displayName" : "NRXN1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2413,
+      "y" : 880
+    },
+    "minX" : 2217,
+    "maxX" : 2449,
+    "minY" : 750,
+    "maxY" : 891,
+    "prop" : {
+      "x" : 2384,
+      "y" : 869,
+      "width" : 59,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2388,
+      "y" : 869
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2443,
+          "y" : 869
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 570,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2396,
+          "y" : 866
+        },
+        "to" : {
+          "x" : 2217,
+          "y" : 750
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 886,
+    "reactomeId" : 74112,
+    "displayName" : "Ca2+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 209,
+      "y" : 1234
+    },
+    "minX" : 186,
+    "maxX" : 328,
+    "minY" : 1192,
+    "maxY" : 1249,
+    "prop" : {
+      "x" : 186,
+      "y" : 1219,
+      "width" : 47,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 189,
+      "y" : 1223
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 228,
+          "y" : 1224
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 884,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 236,
+          "y" : 1225
+        },
+        "to" : {
+          "x" : 328,
+          "y" : 1192
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 887,
+    "reactomeId" : 114643,
+    "displayName" : "SPARC",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 209,
+      "y" : 1143
+    },
+    "minX" : 184,
+    "maxX" : 328,
+    "minY" : 1126,
+    "maxY" : 1192,
+    "prop" : {
+      "x" : 184,
+      "y" : 1132,
+      "width" : 51,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 187,
+      "y" : 1132
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 235,
+          "y" : 1132
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 884,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 238,
+          "y" : 1153
+        },
+        "to" : {
+          "x" : 328,
+          "y" : 1192
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3447,
+    "reactomeId" : 2220790,
+    "displayName" : "Collagen type VII fibril:Laminin-332",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 3027,
+      "y" : 779
+    },
+    "minX" : 2973,
+    "maxX" : 3082,
+    "minY" : 754,
+    "maxY" : 804,
+    "prop" : {
+      "x" : 2973,
+      "y" : 754,
+      "width" : 109,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 2973,
+      "y" : 755
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1108,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1144,
+    "reactomeId" : 266099,
+    "displayName" : "Mn2+",
+    "schemaClass" : "SimpleEntity",
+    "renderableClass" : "Chemical",
+    "position" : {
+      "x" : 945,
+      "y" : 142
+    },
+    "minX" : 919,
+    "maxX" : 973,
+    "minY" : 126,
+    "maxY" : 183,
+    "prop" : {
+      "x" : 919,
+      "y" : 127,
+      "width" : 53,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 924,
+      "y" : 131
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 967,
+          "y" : 132
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 1143,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 946,
+          "y" : 160
+        },
+        "to" : {
+          "x" : 949,
+          "y" : 183
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 888,
+    "reactomeId" : 1474201,
+    "displayName" : "Collagen type I fibril",
+    "schemaClass" : "Polymer",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 356,
+      "y" : 1138
+    },
+    "minX" : 290,
+    "maxX" : 484,
+    "minY" : 1072,
+    "maxY" : 1192,
+    "prop" : {
+      "x" : 290,
+      "y" : 1127,
+      "width" : 132,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 294,
+      "y" : 1127
+    },
+    "connectors" : [ {
+      "edgeId" : 884,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 350,
+          "y" : 1152
+        },
+        "to" : {
+          "x" : 328,
+          "y" : 1192
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 2302,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 377,
+          "y" : 1124
+        },
+        "to" : {
+          "x" : 484,
+          "y" : 1072
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3449,
+    "reactomeId" : 8941273,
+    "displayName" : "ADAM12,ADAM15,ADAM19",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2411,
+      "y" : 1427
+    },
+    "minX" : 2316,
+    "maxX" : 2471,
+    "minY" : 1408,
+    "maxY" : 1445,
+    "prop" : {
+      "x" : 2352,
+      "y" : 1409,
+      "width" : 119,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2352,
+      "y" : 1409
+    },
+    "connectors" : [ {
+      "edgeId" : 3448,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2346,
+          "y" : 1415
+        },
+        "to" : {
+          "x" : 2316,
+          "y" : 1408
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 633,
+    "reactomeId" : 2465856,
+    "displayName" : "DDR2 dimer:Collagen type I, II, III, V, X fibrils",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1065,
+      "y" : 734
+    },
+    "minX" : 989,
+    "maxX" : 1141,
+    "minY" : 715,
+    "maxY" : 753,
+    "prop" : {
+      "x" : 989,
+      "y" : 715,
+      "width" : 152,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 995,
+      "y" : 718
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 626,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1145,
+    "reactomeId" : 202730,
+    "displayName" : "Integrin alpha5beta1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1073,
+      "y" : 165
+    },
+    "minX" : 949,
+    "maxX" : 1147,
+    "minY" : 154,
+    "maxY" : 183,
+    "prop" : {
+      "x" : 1000,
+      "y" : 154,
+      "width" : 147,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1009,
+      "y" : 155
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1143,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 997,
+          "y" : 175
+        },
+        "to" : {
+          "x" : 949,
+          "y" : 183
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3450,
+    "reactomeId" : 8941238,
+    "displayName" : "SH3PXD2A:PI(3,4)P2",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2409,
+      "y" : 1382
+    },
+    "minX" : 2316,
+    "maxX" : 2474,
+    "minY" : 1371,
+    "maxY" : 1408,
+    "prop" : {
+      "x" : 2345,
+      "y" : 1371,
+      "width" : 129,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 2345,
+      "y" : 1372
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 3448,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2369,
+          "y" : 1396
+        },
+        "to" : {
+          "x" : 2316,
+          "y" : 1408
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 3451,
+    "reactomeId" : 8941274,
+    "displayName" : "SH3PXD2A:PI(3,4)P2:ADAM12,ADAM15,ADAM19",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2413,
+      "y" : 1487
+    },
+    "minX" : 2356,
+    "maxX" : 2471,
+    "minY" : 1462,
+    "maxY" : 1512,
+    "prop" : {
+      "x" : 2356,
+      "y" : 1462,
+      "width" : 115,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 2356,
+      "y" : 1463
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 3448,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 635,
+    "reactomeId" : 215971,
+    "displayName" : "VTN",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 436,
+      "y" : 525
+    },
+    "minX" : 276,
+    "maxX" : 906,
+    "minY" : 401,
+    "maxY" : 681,
+    "prop" : {
+      "x" : 417,
+      "y" : 514,
+      "width" : 39,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 420,
+      "y" : 514
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 456,
+          "y" : 514
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 642,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 414,
+          "y" : 527
+        },
+        "to" : {
+          "x" : 295,
+          "y" : 546
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 650,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 459,
+          "y" : 519
+        },
+        "to" : {
+          "x" : 906,
+          "y" : 401
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 663,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 428,
+          "y" : 539
+        },
+        "to" : {
+          "x" : 329,
+          "y" : 681
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 634,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 414,
+          "y" : 523
+        },
+        "to" : {
+          "x" : 276,
+          "y" : 515
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 636,
+    "reactomeId" : 2465902,
+    "displayName" : "Collagen types II, III, V",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 225,
+      "y" : 416
+    },
+    "minX" : 157,
+    "maxX" : 294,
+    "minY" : 398,
+    "maxY" : 515,
+    "prop" : {
+      "x" : 157,
+      "y" : 398,
+      "width" : 137,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 158,
+      "y" : 405
+    },
+    "connectors" : [ {
+      "edgeId" : 634,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 234,
+          "y" : 440
+        },
+        "to" : {
+          "x" : 276,
+          "y" : 515
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1149,
+    "reactomeId" : 3907306,
+    "displayName" : "Laminin-211, 221, 332, 411, 512, 521",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1430,
+      "y" : 54
+    },
+    "minX" : 1362,
+    "maxX" : 1498,
+    "minY" : 36,
+    "maxY" : 119,
+    "prop" : {
+      "x" : 1362,
+      "y" : 36,
+      "width" : 136,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1366,
+      "y" : 36
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1148,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1442,
+          "y" : 78
+        },
+        "to" : {
+          "x" : 1475,
+          "y" : 119
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 896,
+    "reactomeId" : 2672066,
+    "displayName" : "Collagen type I fibril:SPARC:Hydroxylapatitie:Ca2+",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 479,
+      "y" : 1194
+    },
+    "minX" : 409,
+    "maxX" : 550,
+    "minY" : 1170,
+    "maxY" : 1218,
+    "prop" : {
+      "x" : 409,
+      "y" : 1170,
+      "width" : 141,
+      "height" : 48
+    },
+    "textPosition" : {
+      "x" : 410,
+      "y" : 1169
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 884,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 641,
+    "reactomeId" : 2465830,
+    "displayName" : "VTN:Collagen types II,III,V",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 177,
+      "y" : 547
+    },
+    "minX" : 112,
+    "maxX" : 242,
+    "minY" : 529,
+    "maxY" : 565,
+    "prop" : {
+      "x" : 112,
+      "y" : 529,
+      "width" : 130,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 114,
+      "y" : 530
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 634,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 643,
+    "reactomeId" : 2465873,
+    "displayName" : "Collagen type I,IV,VI",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 357,
+      "y" : 468
+    },
+    "minX" : 290,
+    "maxX" : 424,
+    "minY" : 454,
+    "maxY" : 546,
+    "prop" : {
+      "x" : 290,
+      "y" : 454,
+      "width" : 134,
+      "height" : 28
+    },
+    "textPosition" : {
+      "x" : 295,
+      "y" : 457
+    },
+    "connectors" : [ {
+      "edgeId" : 642,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 345,
+          "y" : 488
+        },
+        "to" : {
+          "x" : 295,
+          "y" : 546
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1156,
+    "reactomeId" : 204443,
+    "displayName" : "Integrin alpha6beta1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1462,
+      "y" : 162
+    },
+    "minX" : 1421,
+    "maxX" : 1504,
+    "minY" : 119,
+    "maxY" : 181,
+    "prop" : {
+      "x" : 1421,
+      "y" : 144,
+      "width" : 83,
+      "height" : 37
+    },
+    "textPosition" : {
+      "x" : 1421,
+      "y" : 146
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1148,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1467,
+          "y" : 141
+        },
+        "to" : {
+          "x" : 1475,
+          "y" : 119
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1158,
+    "reactomeId" : 3907287,
+    "displayName" : "Integrin alpha6beta1:Laminin-211, 221, 332, 411, 512, 521",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1581,
+      "y" : 155
+    },
+    "minX" : 1526,
+    "maxX" : 1636,
+    "minY" : 117,
+    "maxY" : 193,
+    "prop" : {
+      "x" : 1526,
+      "y" : 117,
+      "width" : 110,
+      "height" : 76
+    },
+    "textPosition" : {
+      "x" : 1529,
+      "y" : 116
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1148,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 649,
+    "reactomeId" : 2465898,
+    "displayName" : "VTN:Collagen type I,IV,VI",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 176,
+      "y" : 600
+    },
+    "minX" : 116,
+    "maxX" : 237,
+    "minY" : 582,
+    "maxY" : 618,
+    "prop" : {
+      "x" : 116,
+      "y" : 582,
+      "width" : 121,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 117,
+      "y" : 583
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 642,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 139,
+    "reactomeId" : 2396095,
+    "displayName" : "FN1(32-2386):Collagen types I-V, VII",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 904,
+      "y" : 320
+    },
+    "minX" : 833,
+    "maxX" : 976,
+    "minY" : 302,
+    "maxY" : 338,
+    "prop" : {
+      "x" : 833,
+      "y" : 302,
+      "width" : 143,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 836,
+      "y" : 303
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 137,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 651,
+    "reactomeId" : 2466235,
+    "displayName" : "Integrins alphaVbeta1, alphaVbeta3, alphaVbeta5, alpha2bbeta3",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1085,
+      "y" : 419
+    },
+    "minX" : 906,
+    "maxX" : 1187,
+    "minY" : 396,
+    "maxY" : 443,
+    "prop" : {
+      "x" : 984,
+      "y" : 396,
+      "width" : 203,
+      "height" : 47
+    },
+    "textPosition" : {
+      "x" : 999,
+      "y" : 395
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 650,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 978,
+          "y" : 408
+        },
+        "to" : {
+          "x" : 906,
+          "y" : 401
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 654,
+    "reactomeId" : 2466116,
+    "displayName" : "VTN:Integrins alphaVbeta1, alphaVbeta3, alphaVbeta5, alpha2bbeta3",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1081,
+      "y" : 353
+    },
+    "minX" : 990,
+    "maxX" : 1173,
+    "minY" : 327,
+    "maxY" : 379,
+    "prop" : {
+      "x" : 990,
+      "y" : 327,
+      "width" : 183,
+      "height" : 52
+    },
+    "textPosition" : {
+      "x" : 995,
+      "y" : 330
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 650,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 664,
+    "reactomeId" : 158797,
+    "displayName" : "SERPINE1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 224,
+      "y" : 666
+    },
+    "minX" : 188,
+    "maxX" : 329,
+    "minY" : 648,
+    "maxY" : 681,
+    "prop" : {
+      "x" : 188,
+      "y" : 654,
+      "width" : 72,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 192,
+      "y" : 655
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 260,
+          "y" : 654
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 663,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 263,
+          "y" : 671
+        },
+        "to" : {
+          "x" : 329,
+          "y" : 681
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 665,
+    "reactomeId" : 2466242,
+    "displayName" : "Vitronectin:Plasminogen activator inhibitor 1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 231,
+      "y" : 734
+    },
+    "minX" : 166,
+    "maxX" : 296,
+    "minY" : 709,
+    "maxY" : 759,
+    "prop" : {
+      "x" : 166,
+      "y" : 709,
+      "width" : 130,
+      "height" : 50
+    },
+    "textPosition" : {
+      "x" : 171,
+      "y" : 710
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 663,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 667,
+    "reactomeId" : 2466225,
+    "displayName" : "Collagen type I, II, III, VI fibrils",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 240,
+      "y" : 820
+    },
+    "minX" : 195,
+    "maxX" : 335,
+    "minY" : 795,
+    "maxY" : 846,
+    "prop" : {
+      "x" : 195,
+      "y" : 795,
+      "width" : 90,
+      "height" : 51
+    },
+    "textPosition" : {
+      "x" : 195,
+      "y" : 796
+    },
+    "connectors" : [ {
+      "edgeId" : 666,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 291,
+          "y" : 831
+        },
+        "to" : {
+          "x" : 335,
+          "y" : 844
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1182,
+    "reactomeId" : 215998,
+    "displayName" : "Integrin alpha7beta1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1695,
+      "y" : 162
+    },
+    "minX" : 1653,
+    "maxX" : 1738,
+    "minY" : 103,
+    "maxY" : 180,
+    "prop" : {
+      "x" : 1653,
+      "y" : 144,
+      "width" : 85,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1654,
+      "y" : 145
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 3435,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1703,
+          "y" : 141
+        },
+        "to" : {
+          "x" : 1724,
+          "y" : 103
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1185,
+    "reactomeId" : 3907299,
+    "displayName" : "Laminin-211, 221, 411, 512, 521",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1689,
+      "y" : 46
+    },
+    "minX" : 1630,
+    "maxX" : 1749,
+    "minY" : 28,
+    "maxY" : 103,
+    "prop" : {
+      "x" : 1630,
+      "y" : 28,
+      "width" : 119,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 1628,
+      "y" : 28
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 3435,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1700,
+          "y" : 70
+        },
+        "to" : {
+          "x" : 1724,
+          "y" : 103
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 675,
+    "reactomeId" : 1430775,
+    "displayName" : "DCN",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 366,
+      "y" : 816
+    },
+    "minX" : 335,
+    "maxX" : 389,
+    "minY" : 799,
+    "maxY" : 844,
+    "prop" : {
+      "x" : 349,
+      "y" : 805,
+      "width" : 34,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 349,
+      "y" : 805
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 383,
+          "y" : 805
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 666,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 353,
+          "y" : 830
+        },
+        "to" : {
+          "x" : 335,
+          "y" : 844
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 676,
+    "reactomeId" : 2466196,
+    "displayName" : "DCN:Collagen type I, II, III, VI fibrils",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 238,
+      "y" : 893
+    },
+    "minX" : 180,
+    "maxX" : 297,
+    "minY" : 875,
+    "maxY" : 911,
+    "prop" : {
+      "x" : 180,
+      "y" : 875,
+      "width" : 117,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 179,
+      "y" : 876
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 666,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 933,
+    "reactomeId" : 202708,
+    "displayName" : "Integrin alpha5beta1:FN1 dimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1051,
+      "y" : 219
+    },
+    "minX" : 930,
+    "maxX" : 1125,
+    "minY" : 202,
+    "maxY" : 256,
+    "prop" : {
+      "x" : 978,
+      "y" : 202,
+      "width" : 147,
+      "height" : 35
+    },
+    "textPosition" : {
+      "x" : 985,
+      "y" : 202
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 10,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 993,
+          "y" : 240
+        },
+        "to" : {
+          "x" : 930,
+          "y" : 256
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1143,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 686,
+    "reactomeId" : 2466171,
+    "displayName" : "Collagen types II, III",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 101,
+      "y" : 244
+    },
+    "minX" : 41,
+    "maxX" : 203,
+    "minY" : 233,
+    "maxY" : 265,
+    "prop" : {
+      "x" : 41,
+      "y" : 233,
+      "width" : 121,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 42,
+      "y" : 233
+    },
+    "connectors" : [ {
+      "edgeId" : 685,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 154,
+          "y" : 261
+        },
+        "to" : {
+          "x" : 203,
+          "y" : 265
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 431,
+    "reactomeId" : 2426264,
+    "displayName" : "COMP pentamer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 892,
+      "y" : 1383
+    },
+    "minX" : 844,
+    "maxX" : 940,
+    "minY" : 1366,
+    "maxY" : 1454,
+    "prop" : {
+      "x" : 844,
+      "y" : 1366,
+      "width" : 96,
+      "height" : 35
+    },
+    "textPosition" : {
+      "x" : 860,
+      "y" : 1366
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 430,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 882,
+          "y" : 1404
+        },
+        "to" : {
+          "x" : 853,
+          "y" : 1454
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 432,
+    "reactomeId" : 2426282,
+    "displayName" : "COMP interactors",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 888,
+      "y" : 1506
+    },
+    "minX" : 836,
+    "maxX" : 941,
+    "minY" : 1454,
+    "maxY" : 1525,
+    "prop" : {
+      "x" : 836,
+      "y" : 1487,
+      "width" : 105,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 854,
+      "y" : 1488
+    },
+    "connectors" : [ {
+      "edgeId" : 430,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 875,
+          "y" : 1481
+        },
+        "to" : {
+          "x" : 853,
+          "y" : 1454
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 435,
+    "reactomeId" : 2426278,
+    "displayName" : "COMP pentamer:COMP interactors",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 744,
+      "y" : 1458
+    },
+    "minX" : 688,
+    "maxX" : 801,
+    "minY" : 1440,
+    "maxY" : 1476,
+    "prop" : {
+      "x" : 688,
+      "y" : 1440,
+      "width" : 113,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 691,
+      "y" : 1441
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 430,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1205,
+    "reactomeId" : 215989,
+    "displayName" : "Laminin-111",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1930,
+      "y" : 64
+    },
+    "minX" : 1885,
+    "maxX" : 2012,
+    "minY" : 34,
+    "maxY" : 95,
+    "prop" : {
+      "x" : 1885,
+      "y" : 53,
+      "width" : 91,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 1889,
+      "y" : 54
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 2343,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1941,
+          "y" : 78
+        },
+        "to" : {
+          "x" : 1962,
+          "y" : 95
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1269,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1960,
+          "y" : 50
+        },
+        "to" : {
+          "x" : 2012,
+          "y" : 34
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 693,
+    "reactomeId" : 2466248,
+    "displayName" : "BGN",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 278,
+      "y" : 217
+    },
+    "minX" : 203,
+    "maxX" : 295,
+    "minY" : 206,
+    "maxY" : 265,
+    "prop" : {
+      "x" : 262,
+      "y" : 206,
+      "width" : 33,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 262,
+      "y" : 206
+    },
+    "connectors" : [ {
+      "edgeId" : 685,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 256,
+          "y" : 227
+        },
+        "to" : {
+          "x" : 203,
+          "y" : 265
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 695,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 265,
+          "y" : 234
+        },
+        "to" : {
+          "x" : 229,
+          "y" : 259
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 694,
+    "reactomeId" : 2466258,
+    "displayName" : "BGN:Collagen types II, III",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 94,
+      "y" : 295
+    },
+    "minX" : 17,
+    "maxX" : 171,
+    "minY" : 283,
+    "maxY" : 307,
+    "prop" : {
+      "x" : 17,
+      "y" : 283,
+      "width" : 154,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 20,
+      "y" : 286
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 685,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1207,
+    "reactomeId" : 4084530,
+    "displayName" : "Laminins with alpha-1, -2 or -5",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2649,
+      "y" : 29
+    },
+    "minX" : 2586,
+    "maxX" : 2713,
+    "minY" : 11,
+    "maxY" : 63,
+    "prop" : {
+      "x" : 2586,
+      "y" : 11,
+      "width" : 127,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2593,
+      "y" : 11
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1206,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2676,
+          "y" : 53
+        },
+        "to" : {
+          "x" : 2700,
+          "y" : 63
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 696,
+    "reactomeId" : 2466158,
+    "displayName" : "Collagen types I, VI, (IX)",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 142,
+      "y" : 198
+    },
+    "minX" : 62,
+    "maxX" : 229,
+    "minY" : 183,
+    "maxY" : 259,
+    "prop" : {
+      "x" : 62,
+      "y" : 183,
+      "width" : 161,
+      "height" : 30
+    },
+    "textPosition" : {
+      "x" : 70,
+      "y" : 187
+    },
+    "connectors" : [ {
+      "edgeId" : 695,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 163,
+          "y" : 219
+        },
+        "to" : {
+          "x" : 229,
+          "y" : 259
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 953,
+    "reactomeId" : 3000170,
+    "displayName" : "Syndecan interactions",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "ProcessNode",
+    "position" : {
+      "x" : 854,
+      "y" : 40
+    },
+    "minX" : 803,
+    "maxX" : 905,
+    "minY" : 12,
+    "maxY" : 69,
+    "prop" : {
+      "x" : 803,
+      "y" : 12,
+      "width" : 102,
+      "height" : 57
+    },
+    "textPosition" : {
+      "x" : 813,
+      "y" : 19
+    },
+    "connectors" : [ ]
+  }, {
+    "id" : 698,
+    "reactomeId" : 114657,
+    "displayName" : "TGF beta",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 507,
+      "y" : 868
+    },
+    "minX" : 466,
+    "maxX" : 541,
+    "minY" : 856,
+    "maxY" : 904,
+    "prop" : {
+      "x" : 474,
+      "y" : 856,
+      "width" : 67,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 477,
+      "y" : 858
+    },
+    "connectors" : [ {
+      "edgeId" : 697,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 492,
+          "y" : 887
+        },
+        "to" : {
+          "x" : 466,
+          "y" : 904
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 699,
+    "reactomeId" : 2466213,
+    "displayName" : "SLRPs",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 421,
+      "y" : 868
+    },
+    "minX" : 397,
+    "maxX" : 466,
+    "minY" : 856,
+    "maxY" : 904,
+    "prop" : {
+      "x" : 397,
+      "y" : 856,
+      "width" : 48,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 400,
+      "y" : 858
+    },
+    "connectors" : [ {
+      "edgeId" : 697,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 436,
+          "y" : 887
+        },
+        "to" : {
+          "x" : 466,
+          "y" : 904
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 955,
+    "reactomeId" : 2672035,
+    "displayName" : "Tenascins C, R, (X, N)",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 246,
+      "y" : 1439
+    },
+    "minX" : 187,
+    "maxX" : 418,
+    "minY" : 1414,
+    "maxY" : 1485,
+    "prop" : {
+      "x" : 187,
+      "y" : 1421,
+      "width" : 119,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 186,
+      "y" : 1421
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 954,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 312,
+          "y" : 1430
+        },
+        "to" : {
+          "x" : 418,
+          "y" : 1414
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 960,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 287,
+          "y" : 1463
+        },
+        "to" : {
+          "x" : 353,
+          "y" : 1485
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 956,
+    "reactomeId" : 2681687,
+    "displayName" : "Lecticans",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 328,
+      "y" : 1281
+    },
+    "minX" : 291,
+    "maxX" : 418,
+    "minY" : 1270,
+    "maxY" : 1414,
+    "prop" : {
+      "x" : 291,
+      "y" : 1270,
+      "width" : 74,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 298,
+      "y" : 1271
+    },
+    "connectors" : [ {
+      "edgeId" : 954,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 335,
+          "y" : 1299
+        },
+        "to" : {
+          "x" : 418,
+          "y" : 1414
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 701,
+    "reactomeId" : 2467308,
+    "displayName" : "SLRPs:TGF beta",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 371,
+      "y" : 951
+    },
+    "minX" : 329,
+    "maxX" : 413,
+    "minY" : 935,
+    "maxY" : 967,
+    "prop" : {
+      "x" : 329,
+      "y" : 935,
+      "width" : 84,
+      "height" : 32
+    },
+    "textPosition" : {
+      "x" : 335,
+      "y" : 932
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 697,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 959,
+    "reactomeId" : 2681670,
+    "displayName" : "Tenascins C, R, (X, N):Lecticans",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 584,
+      "y" : 1414
+    },
+    "minX" : 525,
+    "maxX" : 644,
+    "minY" : 1396,
+    "maxY" : 1432,
+    "prop" : {
+      "x" : 525,
+      "y" : 1396,
+      "width" : 119,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 524,
+      "y" : 1397
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 954,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1217,
+    "reactomeId" : 4084512,
+    "displayName" : "Laminins with alpha-1, -2 or -5:HSPG2(22-4391)",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2882,
+      "y" : 60
+    },
+    "minX" : 2797,
+    "maxX" : 2968,
+    "minY" : 39,
+    "maxY" : 81,
+    "prop" : {
+      "x" : 2797,
+      "y" : 39,
+      "width" : 171,
+      "height" : 42
+    },
+    "textPosition" : {
+      "x" : 2801,
+      "y" : 46
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1206,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 961,
+    "reactomeId" : 2327729,
+    "displayName" : "Fibronectin matrix",
+    "schemaClass" : "Polymer",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 244,
+      "y" : 1527
+    },
+    "minX" : 182,
+    "maxX" : 353,
+    "minY" : 1485,
+    "maxY" : 1542,
+    "prop" : {
+      "x" : 182,
+      "y" : 1513,
+      "width" : 125,
+      "height" : 29
+    },
+    "textPosition" : {
+      "x" : 188,
+      "y" : 1517
+    },
+    "connectors" : [ {
+      "edgeId" : 960,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 281,
+          "y" : 1510
+        },
+        "to" : {
+          "x" : 353,
+          "y" : 1485
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 963,
+    "reactomeId" : 2681744,
+    "displayName" : "Tenascins C, R, (X, N):Fibronectin matrix",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 587,
+      "y" : 1482
+    },
+    "minX" : 518,
+    "maxX" : 656,
+    "minY" : 1464,
+    "maxY" : 1500,
+    "prop" : {
+      "x" : 518,
+      "y" : 1464,
+      "width" : 138,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 518,
+      "y" : 1465
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 960,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 965,
+    "reactomeId" : 2681746,
+    "displayName" : "Integrin alphaVbeta3, alphaVbeta6, alpha2beta1, alpha7beta1, alpha8beta1, alpha9beta1, alphaXbeta1",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1170,
+      "y" : 1558
+    },
+    "minX" : 1123,
+    "maxX" : 1237,
+    "minY" : 1497,
+    "maxY" : 1634,
+    "prop" : {
+      "x" : 1123,
+      "y" : 1497,
+      "width" : 94,
+      "height" : 122
+    },
+    "textPosition" : {
+      "x" : 1125,
+      "y" : 1498
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 964,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1223,
+          "y" : 1611
+        },
+        "to" : {
+          "x" : 1237,
+          "y" : 1634
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 976,
+    "reactomeId" : 2681748,
+    "displayName" : "TNC:Integrin alphaVbeta3, alphaVbeta6, alpha2beta1, alpha7beta1, alpha8beta1, alpha9beta1, alphaXbeta1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1310,
+      "y" : 1552
+    },
+    "minX" : 1255,
+    "maxX" : 1366,
+    "minY" : 1492,
+    "maxY" : 1612,
+    "prop" : {
+      "x" : 1255,
+      "y" : 1492,
+      "width" : 111,
+      "height" : 120
+    },
+    "textPosition" : {
+      "x" : 1265,
+      "y" : 1493
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 964,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 483,
+    "reactomeId" : 1011570,
+    "displayName" : "HSPG2(22-4391)",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 2665,
+      "y" : 104
+    },
+    "minX" : 2542,
+    "maxX" : 2761,
+    "minY" : 63,
+    "maxY" : 268,
+    "prop" : {
+      "x" : 2609,
+      "y" : 92,
+      "width" : 113,
+      "height" : 25
+    },
+    "textPosition" : {
+      "x" : 2610,
+      "y" : 94
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 2722,
+          "y" : 92
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 534,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2673,
+          "y" : 120
+        },
+        "to" : {
+          "x" : 2761,
+          "y" : 248
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 1206,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2675,
+          "y" : 89
+        },
+        "to" : {
+          "x" : 2700,
+          "y" : 63
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 479,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2655,
+          "y" : 120
+        },
+        "to" : {
+          "x" : 2542,
+          "y" : 268
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    }, {
+      "edgeId" : 493,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2669,
+          "y" : 120
+        },
+        "to" : {
+          "x" : 2691,
+          "y" : 176
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 484,
+    "reactomeId" : 2426324,
+    "displayName" : "HSPG2:Dystroglycan",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2440,
+      "y" : 217
+    },
+    "minX" : 2396,
+    "maxX" : 2485,
+    "minY" : 198,
+    "maxY" : 236,
+    "prop" : {
+      "x" : 2396,
+      "y" : 198,
+      "width" : 89,
+      "height" : 38
+    },
+    "textPosition" : {
+      "x" : 2400,
+      "y" : 201
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 479,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1257,
+    "reactomeId" : 4084523,
+    "displayName" : "Collagen type IV networks:Collagen type VII fibril",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 3054,
+      "y" : 719
+    },
+    "minX" : 2958,
+    "maxX" : 3150,
+    "minY" : 700,
+    "maxY" : 739,
+    "prop" : {
+      "x" : 2958,
+      "y" : 700,
+      "width" : 192,
+      "height" : 39
+    },
+    "textPosition" : {
+      "x" : 2973,
+      "y" : 704
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1256,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 494,
+    "reactomeId" : 2426289,
+    "displayName" : "FGF2(10-155), Fibronectn matrix, Transthyretin tetramer, PDGFA homodimer, PDGFB homodimer",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2636,
+      "y" : 293
+    },
+    "minX" : 2568,
+    "maxX" : 2705,
+    "minY" : 176,
+    "maxY" : 338,
+    "prop" : {
+      "x" : 2568,
+      "y" : 248,
+      "width" : 137,
+      "height" : 90
+    },
+    "textPosition" : {
+      "x" : 2574,
+      "y" : 248
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 493,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 2657,
+          "y" : 242
+        },
+        "to" : {
+          "x" : 2691,
+          "y" : 176
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 495,
+    "reactomeId" : 2426668,
+    "displayName" : "HSPG2:FGF2(10-155), Fibronectn matrix, Transthyretin tetramer, PDGFA homodimer, PDGFB homodimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 3041,
+      "y" : 174
+    },
+    "minX" : 2958,
+    "maxX" : 3124,
+    "minY" : 134,
+    "maxY" : 215,
+    "prop" : {
+      "x" : 2958,
+      "y" : 134,
+      "width" : 166,
+      "height" : 81
+    },
+    "textPosition" : {
+      "x" : 2958,
+      "y" : 138
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 493,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 497,
+    "reactomeId" : 2299700,
+    "displayName" : "HAPLN1",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 436,
+      "y" : 1330
+    },
+    "minX" : 405,
+    "maxX" : 497,
+    "minY" : 1314,
+    "maxY" : 1340,
+    "prop" : {
+      "x" : 405,
+      "y" : 1320,
+      "width" : 62,
+      "height" : 20
+    },
+    "textPosition" : {
+      "x" : 408,
+      "y" : 1320
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 467,
+          "y" : 1320
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 496,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 470,
+          "y" : 1331
+        },
+        "to" : {
+          "x" : 497,
+          "y" : 1332
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 498,
+    "reactomeId" : 2318622,
+    "displayName" : "Aggrecan",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 447,
+      "y" : 1271
+    },
+    "minX" : 410,
+    "maxX" : 497,
+    "minY" : 1260,
+    "maxY" : 1332,
+    "prop" : {
+      "x" : 410,
+      "y" : 1260,
+      "width" : 74,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 416,
+      "y" : 1260
+    },
+    "connectors" : [ {
+      "edgeId" : 496,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 456,
+          "y" : 1288
+        },
+        "to" : {
+          "x" : 497,
+          "y" : 1332
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 500,
+    "reactomeId" : 2160848,
+    "displayName" : "HA",
+    "schemaClass" : "Polymer",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 464,
+      "y" : 1370
+    },
+    "minX" : 426,
+    "maxX" : 503,
+    "minY" : 1332,
+    "maxY" : 1381,
+    "prop" : {
+      "x" : 426,
+      "y" : 1359,
+      "width" : 77,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 452,
+      "y" : 1359
+    },
+    "connectors" : [ {
+      "edgeId" : 496,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 473,
+          "y" : 1356
+        },
+        "to" : {
+          "x" : 497,
+          "y" : 1332
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 501,
+    "reactomeId" : 2318621,
+    "displayName" : "Aggrecan:HA:HAPLN1",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 619,
+      "y" : 1333
+    },
+    "minX" : 548,
+    "maxX" : 690,
+    "minY" : 1322,
+    "maxY" : 1344,
+    "prop" : {
+      "x" : 548,
+      "y" : 1322,
+      "width" : 142,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 552,
+      "y" : 1323
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 496,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1270,
+    "reactomeId" : 4084521,
+    "displayName" : "Endostatin dimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 1934,
+      "y" : 10
+    },
+    "minX" : 1868,
+    "maxX" : 2012,
+    "minY" : 0,
+    "maxY" : 34,
+    "prop" : {
+      "x" : 1868,
+      "y" : 0,
+      "width" : 133,
+      "height" : 20
+    },
+    "textPosition" : {
+      "x" : 1881,
+      "y" : -1
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1269,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1966,
+          "y" : 23
+        },
+        "to" : {
+          "x" : 2012,
+          "y" : 34
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 503,
+    "reactomeId" : 2426651,
+    "displayName" : "Laminins",
+    "schemaClass" : "DefinedSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 2966,
+      "y" : 848
+    },
+    "minX" : 2935,
+    "maxX" : 2998,
+    "minY" : 836,
+    "maxY" : 860,
+    "prop" : {
+      "x" : 2935,
+      "y" : 836,
+      "width" : 63,
+      "height" : 24
+    },
+    "textPosition" : {
+      "x" : 2937,
+      "y" : 837
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 502,
+      "type" : "INPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 1271,
+    "reactomeId" : 4084617,
+    "displayName" : "Laminin-111:Endostatin dimer",
+    "schemaClass" : "Complex",
+    "renderableClass" : "Complex",
+    "position" : {
+      "x" : 2154,
+      "y" : 31
+    },
+    "minX" : 2099,
+    "maxX" : 2209,
+    "minY" : 13,
+    "maxY" : 49,
+    "prop" : {
+      "x" : 2099,
+      "y" : 13,
+      "width" : 110,
+      "height" : 36
+    },
+    "textPosition" : {
+      "x" : 2101,
+      "y" : 14
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 1269,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 504,
+    "reactomeId" : 2426622,
+    "displayName" : "Laminin network",
+    "schemaClass" : "Polymer",
+    "renderableClass" : "Entity",
+    "position" : {
+      "x" : 3124,
+      "y" : 847
+    },
+    "minX" : 3068,
+    "maxX" : 3180,
+    "minY" : 836,
+    "maxY" : 859,
+    "prop" : {
+      "x" : 3068,
+      "y" : 836,
+      "width" : 112,
+      "height" : 23
+    },
+    "textPosition" : {
+      "x" : 3073,
+      "y" : 837
+    },
+    "connectors" : [ {
+      "edgeId" : 502,
+      "type" : "OUTPUT",
+      "segments" : [ ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 506,
+    "reactomeId" : 2426352,
+    "displayName" : "Laminins-332, 511, 521, (211, 221)",
+    "schemaClass" : "CandidateSet",
+    "renderableClass" : "EntitySet",
+    "position" : {
+      "x" : 1193,
+      "y" : 53
+    },
+    "minX" : 1143,
+    "maxX" : 1245,
+    "minY" : 30,
+    "maxY" : 97,
+    "prop" : {
+      "x" : 1143,
+      "y" : 30,
+      "width" : 101,
+      "height" : 47
+    },
+    "textPosition" : {
+      "x" : 1145,
+      "y" : 29
+    },
+    "bgColor" : {
+      "r" : 204,
+      "g" : 255,
+      "b" : 255
+    },
+    "connectors" : [ {
+      "edgeId" : 3434,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 1220,
+          "y" : 83
+        },
+        "to" : {
+          "x" : 1245,
+          "y" : 97
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  }, {
+    "id" : 2303,
+    "reactomeId" : 265399,
+    "displayName" : "IBSP",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "renderableClass" : "Protein",
+    "position" : {
+      "x" : 478,
+      "y" : 1039
+    },
+    "minX" : 460,
+    "maxX" : 502,
+    "minY" : 1022,
+    "maxY" : 1072,
+    "prop" : {
+      "x" : 460,
+      "y" : 1028,
+      "width" : 36,
+      "height" : 22
+    },
+    "textPosition" : {
+      "x" : 462,
+      "y" : 1028
+    },
+    "interactorsSummary" : {
+      "type" : "TR",
+      "shape" : {
+        "c" : {
+          "x" : 496,
+          "y" : 1028
+        },
+        "r" : 6,
+        "type" : "CIRCLE",
+        "empty" : true
+      }
+    },
+    "connectors" : [ {
+      "edgeId" : 2302,
+      "type" : "INPUT",
+      "segments" : [ {
+        "from" : {
+          "x" : 480,
+          "y" : 1053
+        },
+        "to" : {
+          "x" : 484,
+          "y" : 1072
+        }
+      } ],
+      "stoichiometry" : {
+        "value" : 1
+      }
+    } ]
+  } ],
+  "edges" : [ {
+    "id" : 642,
+    "reactomeId" : 2465883,
+    "displayName" : "VTN binds collagens I, IV and VI",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 295,
+      "y" : 595
+    },
+    "minX" : 240,
+    "maxX" : 300,
+    "minY" : 546,
+    "maxY" : 600,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 295,
+        "y" : 546
+      },
+      "to" : {
+        "x" : 295,
+        "y" : 595
+      }
+    }, {
+      "from" : {
+        "x" : 295,
+        "y" : 595
+      },
+      "to" : {
+        "x" : 240,
+        "y" : 597
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 247,
+        "y" : 593
+      },
+      "b" : {
+        "x" : 240,
+        "y" : 597
+      },
+      "c" : {
+        "x" : 247,
+        "y" : 601
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 295,
+        "y" : 595
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 643,
+      "points" : [ {
+        "x" : 345,
+        "y" : 488
+      } ]
+    }, {
+      "id" : 635,
+      "points" : [ {
+        "x" : 414,
+        "y" : 527
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 649
+    } ]
+  }, {
+    "id" : 136,
+    "reactomeId" : 2545196,
+    "displayName" : "FN1 dimerizes",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 795,
+      "y" : 174
+    },
+    "minX" : 762,
+    "maxX" : 821,
+    "minY" : 160,
+    "maxY" : 233,
+    "segments" : [ {
+      "from" : {
+        "x" : 762,
+        "y" : 233
+      },
+      "to" : {
+        "x" : 795,
+        "y" : 174
+      }
+    }, {
+      "from" : {
+        "x" : 795,
+        "y" : 174
+      },
+      "to" : {
+        "x" : 821,
+        "y" : 160
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 817,
+        "y" : 167
+      },
+      "b" : {
+        "x" : 821,
+        "y" : 160
+      },
+      "c" : {
+        "x" : 813,
+        "y" : 160
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 789,
+        "y" : 168
+      },
+      "b" : {
+        "x" : 801,
+        "y" : 180
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 12,
+      "stoichiometry" : 2
+    } ],
+    "outputs" : [ {
+      "id" : 6
+    } ]
+  }, {
+    "id" : 137,
+    "reactomeId" : 2327733,
+    "displayName" : "FN1 binds Collagen types I-V, VII",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 799,
+      "y" : 317
+    },
+    "minX" : 794,
+    "maxX" : 830,
+    "minY" : 312,
+    "maxY" : 322,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 799,
+        "y" : 318
+      },
+      "to" : {
+        "x" : 799,
+        "y" : 317
+      }
+    }, {
+      "from" : {
+        "x" : 799,
+        "y" : 317
+      },
+      "to" : {
+        "x" : 830,
+        "y" : 317
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 823,
+        "y" : 321
+      },
+      "b" : {
+        "x" : 830,
+        "y" : 317
+      },
+      "c" : {
+        "x" : 823,
+        "y" : 313
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 799,
+        "y" : 317
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 12,
+      "points" : [ {
+        "x" : 763,
+        "y" : 263
+      } ]
+    }, {
+      "id" : 869,
+      "points" : [ {
+        "x" : 785,
+        "y" : 353
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 139
+    } ]
+  }, {
+    "id" : 650,
+    "reactomeId" : 2426471,
+    "displayName" : "VTN binds integrins alphaVbeta1, alphaVbeta3, alpha3beta5, alphaIIBbeta3",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 905,
+      "y" : 372
+    },
+    "minX" : 900,
+    "maxX" : 987,
+    "minY" : 362,
+    "maxY" : 401,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 906,
+        "y" : 401
+      },
+      "to" : {
+        "x" : 905,
+        "y" : 372
+      }
+    }, {
+      "from" : {
+        "x" : 905,
+        "y" : 372
+      },
+      "to" : {
+        "x" : 987,
+        "y" : 362
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 981,
+        "y" : 367
+      },
+      "b" : {
+        "x" : 987,
+        "y" : 362
+      },
+      "c" : {
+        "x" : 980,
+        "y" : 359
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 905,
+        "y" : 372
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 635,
+      "points" : [ {
+        "x" : 459,
+        "y" : 519
+      } ]
+    }, {
+      "id" : 651,
+      "points" : [ {
+        "x" : 978,
+        "y" : 408
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 654
+    } ]
+  }, {
+    "id" : 10,
+    "reactomeId" : 2327746,
+    "displayName" : "FN1 aggregation",
+    "schemaClass" : "BlackBoxEvent",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 929,
+      "y" : 286
+    },
+    "minX" : 923,
+    "maxX" : 989,
+    "minY" : 256,
+    "maxY" : 292,
+    "reactionType" : "Omitted Process",
+    "segments" : [ {
+      "from" : {
+        "x" : 930,
+        "y" : 256
+      },
+      "to" : {
+        "x" : 929,
+        "y" : 286
+      }
+    }, {
+      "from" : {
+        "x" : 929,
+        "y" : 286
+      },
+      "to" : {
+        "x" : 989,
+        "y" : 286
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 982,
+        "y" : 290
+      },
+      "b" : {
+        "x" : 989,
+        "y" : 286
+      },
+      "c" : {
+        "x" : 982,
+        "y" : 282
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "a" : {
+        "x" : 923,
+        "y" : 280
+      },
+      "b" : {
+        "x" : 935,
+        "y" : 292
+      },
+      "s" : "\\\\",
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 933,
+      "points" : [ {
+        "x" : 993,
+        "y" : 240
+      } ]
+    }, {
+      "id" : 12,
+      "points" : [ {
+        "x" : 808,
+        "y" : 250
+      } ],
+      "stoichiometry" : 10
+    } ],
+    "outputs" : [ {
+      "id" : 11
+    } ]
+  }, {
+    "id" : 2316,
+    "reactomeId" : 4086200,
+    "displayName" : "Dentin matrix protein 1 binds integrin alphaVbeta3",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 962,
+      "y" : 1290
+    },
+    "minX" : 957,
+    "maxX" : 994,
+    "minY" : 1254,
+    "maxY" : 1295,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 961,
+        "y" : 1254
+      },
+      "to" : {
+        "x" : 962,
+        "y" : 1290
+      }
+    }, {
+      "from" : {
+        "x" : 962,
+        "y" : 1290
+      },
+      "to" : {
+        "x" : 994,
+        "y" : 1290
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 987,
+        "y" : 1294
+      },
+      "b" : {
+        "x" : 994,
+        "y" : 1290
+      },
+      "c" : {
+        "x" : 987,
+        "y" : 1286
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 962,
+        "y" : 1290
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 2317,
+      "points" : [ {
+        "x" : 985,
+        "y" : 1253
+      } ]
+    }, {
+      "id" : 2322,
+      "points" : [ {
+        "x" : 942,
+        "y" : 1248
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 2323
+    } ]
+  }, {
+    "id" : 527,
+    "reactomeId" : 2327803,
+    "displayName" : "Laminins bind Nidogens 1, 2",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2816,
+      "y" : 495
+    },
+    "minX" : 2744,
+    "maxX" : 2858,
+    "minY" : 432,
+    "maxY" : 500,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2858,
+        "y" : 496
+      },
+      "to" : {
+        "x" : 2816,
+        "y" : 495
+      }
+    }, {
+      "from" : {
+        "x" : 2816,
+        "y" : 495
+      },
+      "to" : {
+        "x" : 2744,
+        "y" : 432
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2752,
+        "y" : 434
+      },
+      "b" : {
+        "x" : 2744,
+        "y" : 432
+      },
+      "c" : {
+        "x" : 2747,
+        "y" : 440
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2816,
+        "y" : 495
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 528,
+      "points" : [ {
+        "x" : 2897,
+        "y" : 492
+      } ]
+    }, {
+      "id" : 529,
+      "points" : [ {
+        "x" : 2904,
+        "y" : 530
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 533
+    } ]
+  }, {
+    "id" : 534,
+    "reactomeId" : 2426530,
+    "displayName" : "Laminins:Nidogens binds HSPG2",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2809,
+      "y" : 247
+    },
+    "minX" : 2761,
+    "maxX" : 2842,
+    "minY" : 242,
+    "maxY" : 252,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2761,
+        "y" : 248
+      },
+      "to" : {
+        "x" : 2809,
+        "y" : 247
+      }
+    }, {
+      "from" : {
+        "x" : 2809,
+        "y" : 247
+      },
+      "to" : {
+        "x" : 2842,
+        "y" : 247
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2835,
+        "y" : 251
+      },
+      "b" : {
+        "x" : 2842,
+        "y" : 247
+      },
+      "c" : {
+        "x" : 2835,
+        "y" : 243
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2809,
+        "y" : 247
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 533,
+      "points" : [ {
+        "x" : 2721,
+        "y" : 363
+      } ]
+    }, {
+      "id" : 483,
+      "points" : [ {
+        "x" : 2673,
+        "y" : 120
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 535
+    } ]
+  }, {
+    "id" : 663,
+    "reactomeId" : 2396079,
+    "displayName" : "VTN binds Plasminogen activator inhibitor- 1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 328,
+      "y" : 727
+    },
+    "minX" : 299,
+    "maxX" : 333,
+    "minY" : 681,
+    "maxY" : 732,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 329,
+        "y" : 681
+      },
+      "to" : {
+        "x" : 328,
+        "y" : 727
+      }
+    }, {
+      "from" : {
+        "x" : 328,
+        "y" : 727
+      },
+      "to" : {
+        "x" : 299,
+        "y" : 729
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 306,
+        "y" : 725
+      },
+      "b" : {
+        "x" : 299,
+        "y" : 729
+      },
+      "c" : {
+        "x" : 306,
+        "y" : 733
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 328,
+        "y" : 727
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 635,
+      "points" : [ {
+        "x" : 428,
+        "y" : 539
+      } ]
+    }, {
+      "id" : 664,
+      "points" : [ {
+        "x" : 263,
+        "y" : 671
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 665
+    } ]
+  }, {
+    "id" : 666,
+    "reactomeId" : 2327909,
+    "displayName" : "DCN binds collagen I, II, III, VI fibrils",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 337,
+      "y" : 891
+    },
+    "minX" : 300,
+    "maxX" : 342,
+    "minY" : 844,
+    "maxY" : 896,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 335,
+        "y" : 844
+      },
+      "to" : {
+        "x" : 337,
+        "y" : 891
+      }
+    }, {
+      "from" : {
+        "x" : 337,
+        "y" : 891
+      },
+      "to" : {
+        "x" : 300,
+        "y" : 891
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 307,
+        "y" : 887
+      },
+      "b" : {
+        "x" : 300,
+        "y" : 891
+      },
+      "c" : {
+        "x" : 307,
+        "y" : 895
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 337,
+        "y" : 891
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 667,
+      "points" : [ {
+        "x" : 291,
+        "y" : 831
+      } ]
+    }, {
+      "id" : 675,
+      "points" : [ {
+        "x" : 353,
+        "y" : 830
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 676
+    } ]
+  }, {
+    "id" : 1051,
+    "reactomeId" : 2328129,
+    "displayName" : "Dystroglycan binds Laminins and Dystrophin",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2416,
+      "y" : 714
+    },
+    "minX" : 2401,
+    "maxX" : 2421,
+    "minY" : 664,
+    "maxY" : 748,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2417,
+        "y" : 664
+      },
+      "to" : {
+        "x" : 2416,
+        "y" : 714
+      }
+    }, {
+      "from" : {
+        "x" : 2416,
+        "y" : 714
+      },
+      "to" : {
+        "x" : 2401,
+        "y" : 748
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2400,
+        "y" : 740
+      },
+      "b" : {
+        "x" : 2401,
+        "y" : 748
+      },
+      "c" : {
+        "x" : 2407,
+        "y" : 743
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2416,
+        "y" : 714
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 555,
+      "points" : [ {
+        "x" : 2412,
+        "y" : 547
+      } ]
+    }, {
+      "id" : 1052,
+      "points" : [ {
+        "x" : 2385,
+        "y" : 645
+      } ]
+    }, {
+      "id" : 549,
+      "points" : [ {
+        "x" : 2442,
+        "y" : 657
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 1053
+    } ]
+  }, {
+    "id" : 2335,
+    "reactomeId" : 4086132,
+    "displayName" : "Dentin phosphoprotein binds integrin alphaVbeta1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 954,
+      "y" : 1210
+    },
+    "minX" : 949,
+    "maxX" : 997,
+    "minY" : 1180,
+    "maxY" : 1215,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 954,
+        "y" : 1180
+      },
+      "to" : {
+        "x" : 954,
+        "y" : 1210
+      }
+    }, {
+      "from" : {
+        "x" : 954,
+        "y" : 1210
+      },
+      "to" : {
+        "x" : 997,
+        "y" : 1209
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 990,
+        "y" : 1213
+      },
+      "b" : {
+        "x" : 997,
+        "y" : 1209
+      },
+      "c" : {
+        "x" : 990,
+        "y" : 1205
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 954,
+        "y" : 1210
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 2336,
+      "points" : [ {
+        "x" : 1015,
+        "y" : 1166
+      } ]
+    }, {
+      "id" : 2341,
+      "points" : [ {
+        "x" : 913,
+        "y" : 1172
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 2342
+    } ]
+  }, {
+    "id" : 544,
+    "reactomeId" : 2426450,
+    "displayName" : "Laminins:Nidogens binds collagen type IV networks",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2832,
+      "y" : 428
+    },
+    "minX" : 2802,
+    "maxX" : 2884,
+    "minY" : 423,
+    "maxY" : 433,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2802,
+        "y" : 429
+      },
+      "to" : {
+        "x" : 2832,
+        "y" : 428
+      }
+    }, {
+      "from" : {
+        "x" : 2832,
+        "y" : 428
+      },
+      "to" : {
+        "x" : 2884,
+        "y" : 425
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2877,
+        "y" : 429
+      },
+      "b" : {
+        "x" : 2884,
+        "y" : 425
+      },
+      "c" : {
+        "x" : 2877,
+        "y" : 421
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2832,
+        "y" : 428
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 533,
+      "points" : [ {
+        "x" : 2765,
+        "y" : 414
+      } ]
+    }, {
+      "id" : 878,
+      "points" : [ {
+        "x" : 2744,
+        "y" : 498
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 547
+    } ]
+  }, {
+    "id" : 2343,
+    "reactomeId" : 216051,
+    "displayName" : "Integrin alpha6beta1, alpha7beta1, alpha1beta1, alpha2beta1 bind laminin-111",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2007,
+      "y" : 96
+    },
+    "minX" : 1962,
+    "maxX" : 2028,
+    "minY" : 91,
+    "maxY" : 116,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1962,
+        "y" : 95
+      },
+      "to" : {
+        "x" : 2007,
+        "y" : 96
+      }
+    }, {
+      "from" : {
+        "x" : 2007,
+        "y" : 96
+      },
+      "to" : {
+        "x" : 2028,
+        "y" : 116
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2020,
+        "y" : 114
+      },
+      "b" : {
+        "x" : 2028,
+        "y" : 116
+      },
+      "c" : {
+        "x" : 2026,
+        "y" : 108
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2007,
+        "y" : 96
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 2344,
+      "points" : [ {
+        "x" : 1953,
+        "y" : 114
+      } ]
+    }, {
+      "id" : 1205,
+      "points" : [ {
+        "x" : 1941,
+        "y" : 78
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 2351
+    } ]
+  }, {
+    "id" : 685,
+    "reactomeId" : 2466238,
+    "displayName" : "BGN binds Collagen types II, III",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 203,
+      "y" : 298
+    },
+    "minX" : 174,
+    "maxX" : 208,
+    "minY" : 265,
+    "maxY" : 303,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 203,
+        "y" : 265
+      },
+      "to" : {
+        "x" : 203,
+        "y" : 298
+      }
+    }, {
+      "from" : {
+        "x" : 203,
+        "y" : 298
+      },
+      "to" : {
+        "x" : 174,
+        "y" : 297
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 181,
+        "y" : 293
+      },
+      "b" : {
+        "x" : 174,
+        "y" : 297
+      },
+      "c" : {
+        "x" : 181,
+        "y" : 301
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 203,
+        "y" : 298
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 686,
+      "points" : [ {
+        "x" : 154,
+        "y" : 261
+      } ]
+    }, {
+      "id" : 693,
+      "points" : [ {
+        "x" : 256,
+        "y" : 227
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 694
+    } ]
+  }, {
+    "id" : 430,
+    "reactomeId" : 2424252,
+    "displayName" : "COMP binds collagen, fibronectin, aggrecan and matrilins",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 804,
+      "y" : 1455
+    },
+    "minX" : 799,
+    "maxX" : 853,
+    "minY" : 1450,
+    "maxY" : 1460,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 853,
+        "y" : 1454
+      },
+      "to" : {
+        "x" : 804,
+        "y" : 1455
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 811,
+        "y" : 1451
+      },
+      "b" : {
+        "x" : 804,
+        "y" : 1455
+      },
+      "c" : {
+        "x" : 811,
+        "y" : 1459
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 804,
+        "y" : 1455
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 431,
+      "points" : [ {
+        "x" : 882,
+        "y" : 1404
+      } ]
+    }, {
+      "id" : 432,
+      "points" : [ {
+        "x" : 875,
+        "y" : 1481
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 435
+    } ]
+  }, {
+    "id" : 1206,
+    "reactomeId" : 4084505,
+    "displayName" : "Laminins bind HSPG2",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2740,
+      "y" : 62
+    },
+    "minX" : 2700,
+    "maxX" : 2794,
+    "minY" : 57,
+    "maxY" : 67,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2700,
+        "y" : 63
+      },
+      "to" : {
+        "x" : 2740,
+        "y" : 62
+      }
+    }, {
+      "from" : {
+        "x" : 2740,
+        "y" : 62
+      },
+      "to" : {
+        "x" : 2794,
+        "y" : 61
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2787,
+        "y" : 65
+      },
+      "b" : {
+        "x" : 2794,
+        "y" : 61
+      },
+      "c" : {
+        "x" : 2787,
+        "y" : 57
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2740,
+        "y" : 62
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 1207,
+      "points" : [ {
+        "x" : 2676,
+        "y" : 53
+      } ]
+    }, {
+      "id" : 483,
+      "points" : [ {
+        "x" : 2675,
+        "y" : 89
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 1217
+    } ]
+  }, {
+    "id" : 566,
+    "reactomeId" : 2396113,
+    "displayName" : "Dystroglycan binds AGRN and HSPG2",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2526,
+      "y" : 784
+    },
+    "minX" : 2451,
+    "maxX" : 2531,
+    "minY" : 639,
+    "maxY" : 809,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2527,
+        "y" : 639
+      },
+      "to" : {
+        "x" : 2526,
+        "y" : 784
+      }
+    }, {
+      "from" : {
+        "x" : 2526,
+        "y" : 784
+      },
+      "to" : {
+        "x" : 2451,
+        "y" : 809
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2456,
+        "y" : 803
+      },
+      "b" : {
+        "x" : 2451,
+        "y" : 809
+      },
+      "c" : {
+        "x" : 2459,
+        "y" : 811
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2526,
+        "y" : 784
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 567,
+      "points" : [ {
+        "x" : 2551,
+        "y" : 592
+      } ]
+    }, {
+      "id" : 555,
+      "points" : [ {
+        "x" : 2423,
+        "y" : 547
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 569
+    } ]
+  }, {
+    "id" : 695,
+    "reactomeId" : 2466106,
+    "displayName" : "BGN binds Collagen types I, VI, (IX)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 205,
+      "y" : 357
+    },
+    "minX" : 180,
+    "maxX" : 229,
+    "minY" : 259,
+    "maxY" : 362,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 229,
+        "y" : 259
+      },
+      "to" : {
+        "x" : 205,
+        "y" : 357
+      }
+    }, {
+      "from" : {
+        "x" : 205,
+        "y" : 357
+      },
+      "to" : {
+        "x" : 180,
+        "y" : 356
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 187,
+        "y" : 352
+      },
+      "b" : {
+        "x" : 180,
+        "y" : 356
+      },
+      "c" : {
+        "x" : 187,
+        "y" : 360
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 205,
+        "y" : 357
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 693,
+      "points" : [ {
+        "x" : 265,
+        "y" : 234
+      } ]
+    }, {
+      "id" : 696,
+      "points" : [ {
+        "x" : 163,
+        "y" : 219
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 883
+    } ]
+  }, {
+    "id" : 697,
+    "reactomeId" : 2327886,
+    "displayName" : "SLRPs bind TGF Beta",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 465,
+      "y" : 941
+    },
+    "minX" : 416,
+    "maxX" : 470,
+    "minY" : 904,
+    "maxY" : 946,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 466,
+        "y" : 904
+      },
+      "to" : {
+        "x" : 465,
+        "y" : 941
+      }
+    }, {
+      "from" : {
+        "x" : 465,
+        "y" : 941
+      },
+      "to" : {
+        "x" : 416,
+        "y" : 946
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 422,
+        "y" : 941
+      },
+      "b" : {
+        "x" : 416,
+        "y" : 946
+      },
+      "c" : {
+        "x" : 423,
+        "y" : 949
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 465,
+        "y" : 941
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 698,
+      "points" : [ {
+        "x" : 492,
+        "y" : 887
+      } ]
+    }, {
+      "id" : 699,
+      "points" : [ {
+        "x" : 436,
+        "y" : 887
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 701
+    } ]
+  }, {
+    "id" : 954,
+    "reactomeId" : 2424246,
+    "displayName" : "Tenascins C, R, (X, N) bind lecticans",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 472,
+      "y" : 1414
+    },
+    "minX" : 418,
+    "maxX" : 522,
+    "minY" : 1409,
+    "maxY" : 1419,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 418,
+        "y" : 1414
+      },
+      "to" : {
+        "x" : 472,
+        "y" : 1414
+      }
+    }, {
+      "from" : {
+        "x" : 472,
+        "y" : 1414
+      },
+      "to" : {
+        "x" : 522,
+        "y" : 1414
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 515,
+        "y" : 1418
+      },
+      "b" : {
+        "x" : 522,
+        "y" : 1414
+      },
+      "c" : {
+        "x" : 515,
+        "y" : 1410
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 472,
+        "y" : 1414
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 955,
+      "points" : [ {
+        "x" : 312,
+        "y" : 1430
+      } ]
+    }, {
+      "id" : 956,
+      "points" : [ {
+        "x" : 335,
+        "y" : 1299
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 959
+    } ]
+  }, {
+    "id" : 570,
+    "reactomeId" : 2426263,
+    "displayName" : "Dystroglycan binds NRXN1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2217,
+      "y" : 859
+    },
+    "minX" : 2212,
+    "maxX" : 2381,
+    "minY" : 750,
+    "maxY" : 916,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2217,
+        "y" : 750
+      },
+      "to" : {
+        "x" : 2217,
+        "y" : 859
+      }
+    }, {
+      "from" : {
+        "x" : 2217,
+        "y" : 859
+      },
+      "to" : {
+        "x" : 2381,
+        "y" : 916
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2373,
+        "y" : 918
+      },
+      "b" : {
+        "x" : 2381,
+        "y" : 916
+      },
+      "c" : {
+        "x" : 2376,
+        "y" : 910
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2217,
+        "y" : 859
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 555,
+      "points" : [ {
+        "x" : 2402,
+        "y" : 547
+      } ]
+    }, {
+      "id" : 3446,
+      "points" : [ {
+        "x" : 2396,
+        "y" : 866
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 572
+    } ]
+  }, {
+    "id" : 960,
+    "reactomeId" : 2681681,
+    "displayName" : "Tenascins C, R, (X, N) bind fibronectin matrix",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 454,
+      "y" : 1484
+    },
+    "minX" : 353,
+    "maxX" : 515,
+    "minY" : 1479,
+    "maxY" : 1489,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 353,
+        "y" : 1485
+      },
+      "to" : {
+        "x" : 454,
+        "y" : 1484
+      }
+    }, {
+      "from" : {
+        "x" : 454,
+        "y" : 1484
+      },
+      "to" : {
+        "x" : 515,
+        "y" : 1483
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 508,
+        "y" : 1487
+      },
+      "b" : {
+        "x" : 515,
+        "y" : 1483
+      },
+      "c" : {
+        "x" : 508,
+        "y" : 1479
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 454,
+        "y" : 1484
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 961,
+      "points" : [ {
+        "x" : 281,
+        "y" : 1510
+      } ]
+    }, {
+      "id" : 955,
+      "points" : [ {
+        "x" : 287,
+        "y" : 1463
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 963
+    } ]
+  }, {
+    "id" : 835,
+    "reactomeId" : 2396124,
+    "displayName" : "AGRN binds Laminins with gamma-1 subunit",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2927,
+      "y" : 949
+    },
+    "minX" : 2871,
+    "maxX" : 2973,
+    "minY" : 944,
+    "maxY" : 954,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2871,
+        "y" : 948
+      },
+      "to" : {
+        "x" : 2927,
+        "y" : 949
+      }
+    }, {
+      "from" : {
+        "x" : 2927,
+        "y" : 949
+      },
+      "to" : {
+        "x" : 2973,
+        "y" : 949
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2966,
+        "y" : 953
+      },
+      "b" : {
+        "x" : 2973,
+        "y" : 949
+      },
+      "c" : {
+        "x" : 2966,
+        "y" : 945
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2927,
+        "y" : 949
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 836,
+      "points" : [ {
+        "x" : 2858,
+        "y" : 910
+      } ]
+    }, {
+      "id" : 843,
+      "points" : [ {
+        "x" : 2609,
+        "y" : 1264
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 845
+    } ]
+  }, {
+    "id" : 964,
+    "reactomeId" : 2681667,
+    "displayName" : "TNC binds Integrin alphaVbeta3, alphaVbeta6, alpha2beta1, alpha7beta1, alpha8beta1, alpha9beta1, alphaXbeta1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1264,
+      "y" : 1633
+    },
+    "minX" : 1237,
+    "maxX" : 1275,
+    "minY" : 1615,
+    "maxY" : 1638,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1237,
+        "y" : 1634
+      },
+      "to" : {
+        "x" : 1264,
+        "y" : 1633
+      }
+    }, {
+      "from" : {
+        "x" : 1264,
+        "y" : 1633
+      },
+      "to" : {
+        "x" : 1275,
+        "y" : 1615
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1275,
+        "y" : 1623
+      },
+      "b" : {
+        "x" : 1275,
+        "y" : 1615
+      },
+      "c" : {
+        "x" : 1268,
+        "y" : 1619
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1264,
+        "y" : 1633
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 965,
+      "points" : [ {
+        "x" : 1223,
+        "y" : 1611
+      } ]
+    }, {
+      "id" : 1054,
+      "points" : [ {
+        "x" : 1200,
+        "y" : 1662
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 976
+    } ]
+  }, {
+    "id" : 581,
+    "reactomeId" : 2328145,
+    "displayName" : "Laminin-111 binds collagen type IV",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2904,
+      "y" : 673
+    },
+    "minX" : 2861,
+    "maxX" : 2936,
+    "minY" : 668,
+    "maxY" : 678,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2861,
+        "y" : 674
+      },
+      "to" : {
+        "x" : 2904,
+        "y" : 673
+      }
+    }, {
+      "from" : {
+        "x" : 2904,
+        "y" : 673
+      },
+      "to" : {
+        "x" : 2936,
+        "y" : 672
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2929,
+        "y" : 676
+      },
+      "b" : {
+        "x" : 2936,
+        "y" : 672
+      },
+      "c" : {
+        "x" : 2929,
+        "y" : 668
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2904,
+        "y" : 673
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 582,
+      "points" : [ {
+        "x" : 2798,
+        "y" : 689
+      } ]
+    }, {
+      "id" : 878,
+      "points" : [ {
+        "x" : 2746,
+        "y" : 546
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 587
+    } ]
+  }, {
+    "id" : 596,
+    "reactomeId" : 2426355,
+    "displayName" : "NTN4 binds laminins with gamma-1, gamma-3",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 3011,
+      "y" : 594
+    },
+    "minX" : 2974,
+    "maxX" : 3045,
+    "minY" : 589,
+    "maxY" : 599,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2974,
+        "y" : 594
+      },
+      "to" : {
+        "x" : 3011,
+        "y" : 594
+      }
+    }, {
+      "from" : {
+        "x" : 3011,
+        "y" : 594
+      },
+      "to" : {
+        "x" : 3045,
+        "y" : 594
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 3038,
+        "y" : 598
+      },
+      "b" : {
+        "x" : 3045,
+        "y" : 594
+      },
+      "c" : {
+        "x" : 3038,
+        "y" : 590
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 3011,
+        "y" : 594
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 529,
+      "points" : [ {
+        "x" : 2944,
+        "y" : 576
+      } ]
+    }, {
+      "id" : 597,
+      "points" : [ {
+        "x" : 2951,
+        "y" : 612
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 598
+    } ]
+  }, {
+    "id" : 1108,
+    "reactomeId" : 3787997,
+    "displayName" : "Laminin-332 binds collagen type VII",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2900,
+      "y" : 778
+    },
+    "minX" : 2854,
+    "maxX" : 2970,
+    "minY" : 773,
+    "maxY" : 783,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2854,
+        "y" : 777
+      },
+      "to" : {
+        "x" : 2900,
+        "y" : 778
+      }
+    }, {
+      "from" : {
+        "x" : 2900,
+        "y" : 778
+      },
+      "to" : {
+        "x" : 2970,
+        "y" : 778
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2963,
+        "y" : 782
+      },
+      "b" : {
+        "x" : 2970,
+        "y" : 778
+      },
+      "c" : {
+        "x" : 2963,
+        "y" : 774
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2900,
+        "y" : 778
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 1112,
+      "points" : [ {
+        "x" : 2809,
+        "y" : 797
+      } ]
+    }, {
+      "id" : 3444,
+      "points" : [ {
+        "x" : 2782,
+        "y" : 766
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 3447
+    } ]
+  }, {
+    "id" : 600,
+    "reactomeId" : 2396083,
+    "displayName" : "Laminins bind galactosyl sulfatide and related sulfated glycolipids",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2493,
+      "y" : 871
+    },
+    "minX" : 2488,
+    "maxX" : 2636,
+    "minY" : 840,
+    "maxY" : 890,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2492,
+        "y" : 840
+      },
+      "to" : {
+        "x" : 2493,
+        "y" : 871
+      }
+    }, {
+      "from" : {
+        "x" : 2493,
+        "y" : 871
+      },
+      "to" : {
+        "x" : 2636,
+        "y" : 890
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2629,
+        "y" : 893
+      },
+      "b" : {
+        "x" : 2636,
+        "y" : 890
+      },
+      "c" : {
+        "x" : 2630,
+        "y" : 885
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2493,
+        "y" : 871
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 549,
+      "points" : [ {
+        "x" : 2463,
+        "y" : 657
+      } ]
+    }, {
+      "id" : 601,
+      "points" : [ {
+        "x" : 2512,
+        "y" : 833
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 602
+    } ]
+  }, {
+    "id" : 857,
+    "reactomeId" : 2467716,
+    "displayName" : "AGRN binds Alpha-dystroglycan",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2477,
+      "y" : 1020
+    },
+    "minX" : 2447,
+    "maxX" : 2507,
+    "minY" : 1004,
+    "maxY" : 1030,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2507,
+        "y" : 1030
+      },
+      "to" : {
+        "x" : 2477,
+        "y" : 1020
+      }
+    }, {
+      "from" : {
+        "x" : 2477,
+        "y" : 1020
+      },
+      "to" : {
+        "x" : 2447,
+        "y" : 1004
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2455,
+        "y" : 1004
+      },
+      "b" : {
+        "x" : 2447,
+        "y" : 1004
+      },
+      "c" : {
+        "x" : 2451,
+        "y" : 1011
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2477,
+        "y" : 1020
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 858,
+      "points" : [ {
+        "x" : 2575,
+        "y" : 1001
+      } ]
+    }, {
+      "id" : 843,
+      "points" : [ {
+        "x" : 2595,
+        "y" : 1264
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 859
+    } ]
+  }, {
+    "id" : 860,
+    "reactomeId" : 2467633,
+    "displayName" : "AGRN binds LRP4:MUSK",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2766,
+      "y" : 1279
+    },
+    "minX" : 2727,
+    "maxX" : 2810,
+    "minY" : 1274,
+    "maxY" : 1284,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2727,
+        "y" : 1279
+      },
+      "to" : {
+        "x" : 2766,
+        "y" : 1279
+      }
+    }, {
+      "from" : {
+        "x" : 2766,
+        "y" : 1279
+      },
+      "to" : {
+        "x" : 2810,
+        "y" : 1278
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2803,
+        "y" : 1282
+      },
+      "b" : {
+        "x" : 2810,
+        "y" : 1278
+      },
+      "c" : {
+        "x" : 2803,
+        "y" : 1274
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2766,
+        "y" : 1279
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 861,
+      "points" : [ {
+        "x" : 2710,
+        "y" : 1296
+      } ]
+    }, {
+      "id" : 843,
+      "points" : [ {
+        "x" : 2658,
+        "y" : 1278
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 862
+    } ]
+  }, {
+    "id" : 479,
+    "reactomeId" : 2396395,
+    "displayName" : "HSPG2 (perlecan) binds alpha-dystroglycan",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2510,
+      "y" : 264
+    },
+    "minX" : 2468,
+    "maxX" : 2542,
+    "minY" : 239,
+    "maxY" : 269,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2542,
+        "y" : 268
+      },
+      "to" : {
+        "x" : 2510,
+        "y" : 264
+      }
+    }, {
+      "from" : {
+        "x" : 2510,
+        "y" : 264
+      },
+      "to" : {
+        "x" : 2468,
+        "y" : 239
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2476,
+        "y" : 239
+      },
+      "b" : {
+        "x" : 2468,
+        "y" : 239
+      },
+      "c" : {
+        "x" : 2472,
+        "y" : 246
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2510,
+        "y" : 264
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 555,
+      "points" : [ {
+        "x" : 2417,
+        "y" : 520
+      } ]
+    }, {
+      "id" : 483,
+      "points" : [ {
+        "x" : 2655,
+        "y" : 120
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 484
+    } ]
+  }, {
+    "id" : 863,
+    "reactomeId" : 2467665,
+    "displayName" : "AGRN binds Beta amyloid fibril via GAG chains",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2686,
+      "y" : 1349
+    },
+    "minX" : 2651,
+    "maxX" : 2742,
+    "minY" : 1344,
+    "maxY" : 1354,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2651,
+        "y" : 1348
+      },
+      "to" : {
+        "x" : 2686,
+        "y" : 1349
+      }
+    }, {
+      "from" : {
+        "x" : 2686,
+        "y" : 1349
+      },
+      "to" : {
+        "x" : 2742,
+        "y" : 1349
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2735,
+        "y" : 1353
+      },
+      "b" : {
+        "x" : 2742,
+        "y" : 1349
+      },
+      "c" : {
+        "x" : 2735,
+        "y" : 1345
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2686,
+        "y" : 1349
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 864,
+      "points" : [ {
+        "x" : 2638,
+        "y" : 1370
+      } ]
+    }, {
+      "id" : 843,
+      "points" : [ {
+        "x" : 2608,
+        "y" : 1292
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 865
+    } ]
+  }, {
+    "id" : 866,
+    "reactomeId" : 2467659,
+    "displayName" : "AGRN binds NCAM1, PTPRS",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2412,
+      "y" : 1113
+    },
+    "minX" : 2407,
+    "maxX" : 2417,
+    "minY" : 1087,
+    "maxY" : 1118,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2412,
+        "y" : 1112
+      },
+      "to" : {
+        "x" : 2412,
+        "y" : 1113
+      }
+    }, {
+      "from" : {
+        "x" : 2412,
+        "y" : 1113
+      },
+      "to" : {
+        "x" : 2412,
+        "y" : 1087
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2416,
+        "y" : 1094
+      },
+      "b" : {
+        "x" : 2412,
+        "y" : 1087
+      },
+      "c" : {
+        "x" : 2408,
+        "y" : 1094
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2412,
+        "y" : 1113
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 867,
+      "points" : [ {
+        "x" : 2410,
+        "y" : 1139
+      } ]
+    }, {
+      "id" : 843,
+      "points" : [ {
+        "x" : 2587,
+        "y" : 1264
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 868
+    } ]
+  }, {
+    "id" : 611,
+    "reactomeId" : 2327738,
+    "displayName" : "DDR1 binds collagen type I, II, III, IV, V, XI fibrils",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 923,
+      "y" : 603
+    },
+    "minX" : 918,
+    "maxX" : 987,
+    "minY" : 554,
+    "maxY" : 608,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 921,
+        "y" : 554
+      },
+      "to" : {
+        "x" : 923,
+        "y" : 603
+      }
+    }, {
+      "from" : {
+        "x" : 923,
+        "y" : 603
+      },
+      "to" : {
+        "x" : 987,
+        "y" : 601
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 980,
+        "y" : 605
+      },
+      "b" : {
+        "x" : 987,
+        "y" : 601
+      },
+      "c" : {
+        "x" : 980,
+        "y" : 597
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 923,
+        "y" : 603
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 612,
+      "points" : [ {
+        "x" : 991,
+        "y" : 544
+      } ]
+    }, {
+      "id" : 613,
+      "points" : [ {
+        "x" : 894,
+        "y" : 551
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 617
+    } ]
+  }, {
+    "id" : 1256,
+    "reactomeId" : 4084501,
+    "displayName" : "Collagen type VII binds collagen type IV",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2897,
+      "y" : 726
+    },
+    "minX" : 2869,
+    "maxX" : 2955,
+    "minY" : 721,
+    "maxY" : 731,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2869,
+        "y" : 727
+      },
+      "to" : {
+        "x" : 2897,
+        "y" : 726
+      }
+    }, {
+      "from" : {
+        "x" : 2897,
+        "y" : 726
+      },
+      "to" : {
+        "x" : 2955,
+        "y" : 723
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2948,
+        "y" : 727
+      },
+      "b" : {
+        "x" : 2955,
+        "y" : 723
+      },
+      "c" : {
+        "x" : 2948,
+        "y" : 719
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2897,
+        "y" : 726
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 1112,
+      "points" : [ {
+        "x" : 2795,
+        "y" : 797
+      } ]
+    }, {
+      "id" : 878,
+      "points" : [ {
+        "x" : 2743,
+        "y" : 546
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 1257
+    } ]
+  }, {
+    "id" : 3434,
+    "reactomeId" : 216048,
+    "displayName" : "Integrins alpha3beta1, alpha6beta4 bind laminin-332, 511, 521, (211, 221)",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1286,
+      "y" : 97
+    },
+    "minX" : 1245,
+    "maxX" : 1302,
+    "minY" : 92,
+    "maxY" : 116,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1245,
+        "y" : 97
+      },
+      "to" : {
+        "x" : 1286,
+        "y" : 97
+      }
+    }, {
+      "from" : {
+        "x" : 1286,
+        "y" : 97
+      },
+      "to" : {
+        "x" : 1302,
+        "y" : 116
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1294,
+        "y" : 113
+      },
+      "b" : {
+        "x" : 1302,
+        "y" : 116
+      },
+      "c" : {
+        "x" : 1301,
+        "y" : 108
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1286,
+        "y" : 97
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 506,
+      "points" : [ {
+        "x" : 1220,
+        "y" : 83
+      } ]
+    }, {
+      "id" : 1115,
+      "points" : [ {
+        "x" : 1222,
+        "y" : 132
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 1117
+    } ]
+  }, {
+    "id" : 3435,
+    "reactomeId" : 216058,
+    "displayName" : "Integrin alpha7beta1 binds Laminin-211, 221, 411, 512, 521",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1762,
+      "y" : 103
+    },
+    "minX" : 1724,
+    "maxX" : 1780,
+    "minY" : 98,
+    "maxY" : 130,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1724,
+        "y" : 103
+      },
+      "to" : {
+        "x" : 1762,
+        "y" : 103
+      }
+    }, {
+      "from" : {
+        "x" : 1762,
+        "y" : 103
+      },
+      "to" : {
+        "x" : 1780,
+        "y" : 130
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1773,
+        "y" : 126
+      },
+      "b" : {
+        "x" : 1780,
+        "y" : 130
+      },
+      "c" : {
+        "x" : 1779,
+        "y" : 122
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1762,
+        "y" : 103
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 1182,
+      "points" : [ {
+        "x" : 1703,
+        "y" : 141
+      } ]
+    }, {
+      "id" : 1185,
+      "points" : [ {
+        "x" : 1700,
+        "y" : 70
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 3436
+    } ]
+  }, {
+    "id" : 493,
+    "reactomeId" : 2396337,
+    "displayName" : "HSPG2 binds FGF2(10-155), Fibronectn matrix, Transthyretin tetramer, PDGFA homodimer, PDGFB homodimer",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2866,
+      "y" : 175
+    },
+    "minX" : 2691,
+    "maxX" : 2955,
+    "minY" : 170,
+    "maxY" : 180,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2691,
+        "y" : 176
+      },
+      "to" : {
+        "x" : 2866,
+        "y" : 175
+      }
+    }, {
+      "from" : {
+        "x" : 2866,
+        "y" : 175
+      },
+      "to" : {
+        "x" : 2955,
+        "y" : 174
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2948,
+        "y" : 178
+      },
+      "b" : {
+        "x" : 2955,
+        "y" : 174
+      },
+      "c" : {
+        "x" : 2948,
+        "y" : 170
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2866,
+        "y" : 175
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 494,
+      "points" : [ {
+        "x" : 2657,
+        "y" : 242
+      } ]
+    }, {
+      "id" : 483,
+      "points" : [ {
+        "x" : 2669,
+        "y" : 120
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 495
+    } ]
+  }, {
+    "id" : 3437,
+    "reactomeId" : 349626,
+    "displayName" : "Integrin alpha2beta1 binds laminin-332",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2294,
+      "y" : 120
+    },
+    "minX" : 2236,
+    "maxX" : 2319,
+    "minY" : 115,
+    "maxY" : 142,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2236,
+        "y" : 121
+      },
+      "to" : {
+        "x" : 2294,
+        "y" : 120
+      }
+    }, {
+      "from" : {
+        "x" : 2294,
+        "y" : 120
+      },
+      "to" : {
+        "x" : 2319,
+        "y" : 142
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2311,
+        "y" : 140
+      },
+      "b" : {
+        "x" : 2319,
+        "y" : 142
+      },
+      "c" : {
+        "x" : 2316,
+        "y" : 134
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2294,
+        "y" : 120
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 1109,
+      "points" : [ {
+        "x" : 2215,
+        "y" : 108
+      } ]
+    }, {
+      "id" : 3438,
+      "points" : [ {
+        "x" : 2218,
+        "y" : 149
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 3442
+    } ]
+  }, {
+    "id" : 496,
+    "reactomeId" : 2318623,
+    "displayName" : "Aggrecan binds Hyaluronan and HAPLN1",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 525,
+      "y" : 1332
+    },
+    "minX" : 497,
+    "maxX" : 545,
+    "minY" : 1327,
+    "maxY" : 1337,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 497,
+        "y" : 1332
+      },
+      "to" : {
+        "x" : 525,
+        "y" : 1332
+      }
+    }, {
+      "from" : {
+        "x" : 525,
+        "y" : 1332
+      },
+      "to" : {
+        "x" : 545,
+        "y" : 1332
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 538,
+        "y" : 1336
+      },
+      "b" : {
+        "x" : 545,
+        "y" : 1332
+      },
+      "c" : {
+        "x" : 538,
+        "y" : 1328
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 525,
+        "y" : 1332
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 497,
+      "points" : [ {
+        "x" : 470,
+        "y" : 1331
+      } ]
+    }, {
+      "id" : 498,
+      "points" : [ {
+        "x" : 456,
+        "y" : 1288
+      } ]
+    }, {
+      "id" : 500,
+      "points" : [ {
+        "x" : 473,
+        "y" : 1356
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 501
+    } ]
+  }, {
+    "id" : 626,
+    "reactomeId" : 2465890,
+    "displayName" : "DDR2 binds collagen type I, II, III, V, X fibrils",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 922,
+      "y" : 736
+    },
+    "minX" : 917,
+    "maxX" : 986,
+    "minY" : 719,
+    "maxY" : 741,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 921,
+        "y" : 719
+      },
+      "to" : {
+        "x" : 922,
+        "y" : 736
+      }
+    }, {
+      "from" : {
+        "x" : 922,
+        "y" : 736
+      },
+      "to" : {
+        "x" : 986,
+        "y" : 735
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 979,
+        "y" : 739
+      },
+      "b" : {
+        "x" : 986,
+        "y" : 735
+      },
+      "c" : {
+        "x" : 979,
+        "y" : 731
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 922,
+        "y" : 736
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 627,
+      "points" : [ {
+        "x" : 1003,
+        "y" : 705
+      } ]
+    }, {
+      "id" : 628,
+      "points" : [ {
+        "x" : 898,
+        "y" : 710
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 633
+    } ]
+  }, {
+    "id" : 884,
+    "reactomeId" : 2424243,
+    "displayName" : "SPARC binds Collagen type I fibril, hydroxylapatite and Ca2+",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 374,
+      "y" : 1192
+    },
+    "minX" : 328,
+    "maxX" : 406,
+    "minY" : 1187,
+    "maxY" : 1197,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 328,
+        "y" : 1192
+      },
+      "to" : {
+        "x" : 374,
+        "y" : 1192
+      }
+    }, {
+      "from" : {
+        "x" : 374,
+        "y" : 1192
+      },
+      "to" : {
+        "x" : 406,
+        "y" : 1192
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 399,
+        "y" : 1196
+      },
+      "b" : {
+        "x" : 406,
+        "y" : 1192
+      },
+      "c" : {
+        "x" : 399,
+        "y" : 1188
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 374,
+        "y" : 1192
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 885,
+      "points" : [ {
+        "x" : 246,
+        "y" : 1186
+      } ]
+    }, {
+      "id" : 886,
+      "points" : [ {
+        "x" : 236,
+        "y" : 1225
+      } ]
+    }, {
+      "id" : 887,
+      "points" : [ {
+        "x" : 238,
+        "y" : 1153
+      } ]
+    }, {
+      "id" : 888,
+      "points" : [ {
+        "x" : 350,
+        "y" : 1152
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 896
+    } ]
+  }, {
+    "id" : 1269,
+    "reactomeId" : 4084507,
+    "displayName" : "Laminin-111 binds endostatin dimer",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2057,
+      "y" : 33
+    },
+    "minX" : 2012,
+    "maxX" : 2096,
+    "minY" : 28,
+    "maxY" : 38,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2012,
+        "y" : 34
+      },
+      "to" : {
+        "x" : 2057,
+        "y" : 33
+      }
+    }, {
+      "from" : {
+        "x" : 2057,
+        "y" : 33
+      },
+      "to" : {
+        "x" : 2096,
+        "y" : 32
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2089,
+        "y" : 36
+      },
+      "b" : {
+        "x" : 2096,
+        "y" : 32
+      },
+      "c" : {
+        "x" : 2089,
+        "y" : 28
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2057,
+        "y" : 33
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 1270,
+      "points" : [ {
+        "x" : 1966,
+        "y" : 23
+      } ]
+    }, {
+      "id" : 1205,
+      "points" : [ {
+        "x" : 1960,
+        "y" : 50
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 1271
+    } ]
+  }, {
+    "id" : 502,
+    "reactomeId" : 2426676,
+    "displayName" : "Formation of laminin networks",
+    "schemaClass" : "Polymerisation",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 3028,
+      "y" : 848
+    },
+    "minX" : 3004,
+    "maxX" : 3065,
+    "minY" : 843,
+    "maxY" : 853,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 3004,
+        "y" : 848
+      },
+      "to" : {
+        "x" : 3028,
+        "y" : 848
+      }
+    }, {
+      "from" : {
+        "x" : 3028,
+        "y" : 848
+      },
+      "to" : {
+        "x" : 3065,
+        "y" : 847
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 3058,
+        "y" : 851
+      },
+      "b" : {
+        "x" : 3065,
+        "y" : 847
+      },
+      "c" : {
+        "x" : 3058,
+        "y" : 843
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 3028,
+        "y" : 848
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 503
+    } ],
+    "outputs" : [ {
+      "id" : 504
+    } ]
+  }, {
+    "id" : 1143,
+    "reactomeId" : 202723,
+    "displayName" : "Integrin alpha5beta1 binds FN1 dimer",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 951,
+      "y" : 217
+    },
+    "minX" : 946,
+    "maxX" : 975,
+    "minY" : 183,
+    "maxY" : 222,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 949,
+        "y" : 183
+      },
+      "to" : {
+        "x" : 951,
+        "y" : 217
+      }
+    }, {
+      "from" : {
+        "x" : 951,
+        "y" : 217
+      },
+      "to" : {
+        "x" : 975,
+        "y" : 217
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 968,
+        "y" : 221
+      },
+      "b" : {
+        "x" : 975,
+        "y" : 217
+      },
+      "c" : {
+        "x" : 968,
+        "y" : 213
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 951,
+        "y" : 217
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 1144,
+      "points" : [ {
+        "x" : 946,
+        "y" : 160
+      } ]
+    }, {
+      "id" : 1145,
+      "points" : [ {
+        "x" : 997,
+        "y" : 175
+      } ]
+    }, {
+      "id" : 6,
+      "points" : [ {
+        "x" : 871,
+        "y" : 160
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 933
+    } ],
+    "activators" : [ {
+      "id" : 3445,
+      "points" : [ {
+        "x" : 918,
+        "y" : 216
+      } ]
+    } ]
+  }, {
+    "id" : 3448,
+    "reactomeId" : 8941234,
+    "displayName" : "SH3PXD2A binds ADAM12,ADAM15,ADAM19",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 2317,
+      "y" : 1443
+    },
+    "minX" : 2312,
+    "maxX" : 2358,
+    "minY" : 1408,
+    "maxY" : 1459,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 2316,
+        "y" : 1408
+      },
+      "to" : {
+        "x" : 2317,
+        "y" : 1443
+      }
+    }, {
+      "from" : {
+        "x" : 2317,
+        "y" : 1443
+      },
+      "to" : {
+        "x" : 2358,
+        "y" : 1459
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 2350,
+        "y" : 1460
+      },
+      "b" : {
+        "x" : 2358,
+        "y" : 1459
+      },
+      "c" : {
+        "x" : 2353,
+        "y" : 1453
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 2317,
+        "y" : 1443
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 3449,
+      "points" : [ {
+        "x" : 2346,
+        "y" : 1415
+      } ]
+    }, {
+      "id" : 3450,
+      "points" : [ {
+        "x" : 2369,
+        "y" : 1396
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 3451
+    } ]
+  }, {
+    "id" : 634,
+    "reactomeId" : 2396370,
+    "displayName" : "VTN binds collagens II, III and V",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 276,
+      "y" : 547
+    },
+    "minX" : 245,
+    "maxX" : 281,
+    "minY" : 515,
+    "maxY" : 552,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 276,
+        "y" : 515
+      },
+      "to" : {
+        "x" : 276,
+        "y" : 547
+      }
+    }, {
+      "from" : {
+        "x" : 276,
+        "y" : 547
+      },
+      "to" : {
+        "x" : 245,
+        "y" : 547
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 252,
+        "y" : 543
+      },
+      "b" : {
+        "x" : 245,
+        "y" : 547
+      },
+      "c" : {
+        "x" : 252,
+        "y" : 551
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 276,
+        "y" : 547
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 635,
+      "points" : [ {
+        "x" : 414,
+        "y" : 523
+      } ]
+    }, {
+      "id" : 636,
+      "points" : [ {
+        "x" : 234,
+        "y" : 440
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 641
+    } ]
+  }, {
+    "id" : 1148,
+    "reactomeId" : 3907292,
+    "displayName" : "Integrin alpha6beta1 binds laminin-322, 512, 521, 211, 221, 411",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 1507,
+      "y" : 118
+    },
+    "minX" : 1475,
+    "maxX" : 1523,
+    "minY" : 113,
+    "maxY" : 127,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 1475,
+        "y" : 119
+      },
+      "to" : {
+        "x" : 1507,
+        "y" : 118
+      }
+    }, {
+      "from" : {
+        "x" : 1507,
+        "y" : 118
+      },
+      "to" : {
+        "x" : 1523,
+        "y" : 127
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 1515,
+        "y" : 127
+      },
+      "b" : {
+        "x" : 1523,
+        "y" : 127
+      },
+      "c" : {
+        "x" : 1519,
+        "y" : 120
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 1507,
+        "y" : 118
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 1149,
+      "points" : [ {
+        "x" : 1442,
+        "y" : 78
+      } ]
+    }, {
+      "id" : 1156,
+      "points" : [ {
+        "x" : 1467,
+        "y" : 141
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 1158
+    } ]
+  }, {
+    "id" : 2302,
+    "reactomeId" : 4086204,
+    "displayName" : "IBSP binds collagen type I",
+    "schemaClass" : "Reaction",
+    "renderableClass" : "Reaction",
+    "position" : {
+      "x" : 523,
+      "y" : 1072
+    },
+    "minX" : 484,
+    "maxX" : 561,
+    "minY" : 1067,
+    "maxY" : 1077,
+    "reactionType" : "Association",
+    "segments" : [ {
+      "from" : {
+        "x" : 484,
+        "y" : 1072
+      },
+      "to" : {
+        "x" : 523,
+        "y" : 1072
+      }
+    }, {
+      "from" : {
+        "x" : 523,
+        "y" : 1072
+      },
+      "to" : {
+        "x" : 561,
+        "y" : 1072
+      }
+    } ],
+    "endShape" : {
+      "a" : {
+        "x" : 554,
+        "y" : 1076
+      },
+      "b" : {
+        "x" : 561,
+        "y" : 1072
+      },
+      "c" : {
+        "x" : 554,
+        "y" : 1068
+      },
+      "type" : "ARROW"
+    },
+    "reactionShape" : {
+      "c" : {
+        "x" : 523,
+        "y" : 1072
+      },
+      "r" : 5,
+      "type" : "CIRCLE"
+    },
+    "inputs" : [ {
+      "id" : 888,
+      "points" : [ {
+        "x" : 377,
+        "y" : 1124
+      } ]
+    }, {
+      "id" : 2303,
+      "points" : [ {
+        "x" : 480,
+        "y" : 1053
+      } ]
+    } ],
+    "outputs" : [ {
+      "id" : 2304
+    } ]
+  } ],
+  "compartments" : [ {
+    "id" : 9,
+    "reactomeId" : 70101,
+    "displayName" : "cytosol",
+    "schemaClass" : "Compartment",
+    "renderableClass" : "Compartment",
+    "position" : {
+      "x" : 1725,
+      "y" : 870
+    },
+    "minX" : 1032,
+    "maxX" : 2418,
+    "minY" : 163,
+    "maxY" : 1577,
+    "prop" : {
+      "x" : 1032,
+      "y" : 163,
+      "width" : 1386,
+      "height" : 1414
+    },
+    "textPosition" : {
+      "x" : 1656,
+      "y" : 1027
+    },
+    "insets" : {
+      "x" : 1049,
+      "y" : 172,
+      "width" : 1359,
+      "height" : 1397
+    },
+    "bgColor" : {
+      "r" : 250,
+      "g" : 240,
+      "b" : 240
+    },
+    "componentIds" : [ 11, 612, 617, 627, 633, 651, 654, 570, 1052, 1053, 976, 965, 555, 569, 572, 859, 868, 484, 1115, 1117, 933, 1145, 1158, 1156, 1182, 2317, 2323, 2342, 2336, 867, 2344, 2351, 3436, 3438, 3442, 3446, 3449, 3450, 3451, 866, 3448, 1051 ]
+  } ],
+  "notes" : [ ],
+  "links" : [ {
+    "id" : 3650,
+    "renderableClass" : "EntitySetAndEntitySetLink",
+    "position" : {
+      "x" : 858,
+      "y" : 1025
+    },
+    "minX" : 831,
+    "maxX" : 886,
+    "minY" : 570,
+    "maxY" : 1481,
+    "segments" : [ {
+      "from" : {
+        "x" : 831,
+        "y" : 570
+      },
+      "to" : {
+        "x" : 886,
+        "y" : 1481
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 852,
+        "y" : 1019
+      },
+      "b" : {
+        "x" : 864,
+        "y" : 1031
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 613
+    } ],
+    "outputs" : [ {
+      "id" : 432
+    } ]
+  }, {
+    "id" : 3651,
+    "renderableClass" : "EntitySetAndEntitySetLink",
+    "position" : {
+      "x" : 457,
+      "y" : 392
+    },
+    "minX" : 128,
+    "maxX" : 786,
+    "minY" : 261,
+    "maxY" : 523,
+    "segments" : [ {
+      "from" : {
+        "x" : 786,
+        "y" : 523
+      },
+      "to" : {
+        "x" : 128,
+        "y" : 261
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 451,
+        "y" : 386
+      },
+      "b" : {
+        "x" : 463,
+        "y" : 398
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 613
+    } ],
+    "outputs" : [ {
+      "id" : 686
+    } ]
+  }, {
+    "id" : 3652,
+    "renderableClass" : "EntitySetAndEntitySetLink",
+    "position" : {
+      "x" : 830,
+      "y" : 620
+    },
+    "minX" : 824,
+    "maxX" : 836,
+    "minY" : 570,
+    "maxY" : 670,
+    "segments" : [ {
+      "from" : {
+        "x" : 830,
+        "y" : 570
+      },
+      "to" : {
+        "x" : 831,
+        "y" : 670
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 824,
+        "y" : 614
+      },
+      "b" : {
+        "x" : 836,
+        "y" : 626
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 613
+    } ],
+    "outputs" : [ {
+      "id" : 628
+    } ]
+  }, {
+    "id" : 3653,
+    "renderableClass" : "EntitySetAndEntitySetLink",
+    "position" : {
+      "x" : 533,
+      "y" : 481
+    },
+    "minX" : 300,
+    "maxX" : 766,
+    "minY" : 430,
+    "maxY" : 533,
+    "segments" : [ {
+      "from" : {
+        "x" : 766,
+        "y" : 533
+      },
+      "to" : {
+        "x" : 300,
+        "y" : 430
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 527,
+        "y" : 475
+      },
+      "b" : {
+        "x" : 539,
+        "y" : 487
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 613
+    } ],
+    "outputs" : [ {
+      "id" : 636
+    } ]
+  }, {
+    "id" : 3654,
+    "renderableClass" : "EntitySetAndEntitySetLink",
+    "position" : {
+      "x" : 598,
+      "y" : 507
+    },
+    "minX" : 430,
+    "maxX" : 766,
+    "minY" : 479,
+    "maxY" : 536,
+    "segments" : [ {
+      "from" : {
+        "x" : 766,
+        "y" : 536
+      },
+      "to" : {
+        "x" : 430,
+        "y" : 479
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 592,
+        "y" : 501
+      },
+      "b" : {
+        "x" : 604,
+        "y" : 513
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 613
+    } ],
+    "outputs" : [ {
+      "id" : 643
+    } ]
+  }, {
+    "id" : 3655,
+    "renderableClass" : "EntitySetAndEntitySetLink",
+    "position" : {
+      "x" : 541,
+      "y" : 684
+    },
+    "minX" : 291,
+    "maxX" : 792,
+    "minY" : 570,
+    "maxY" : 799,
+    "segments" : [ {
+      "from" : {
+        "x" : 792,
+        "y" : 570
+      },
+      "to" : {
+        "x" : 291,
+        "y" : 799
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 535,
+        "y" : 678
+      },
+      "b" : {
+        "x" : 547,
+        "y" : 690
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 613
+    } ],
+    "outputs" : [ {
+      "id" : 667
+    } ]
+  }, {
+    "id" : 3658,
+    "renderableClass" : "EntitySetAndEntitySetLink",
+    "position" : {
+      "x" : 804,
+      "y" : 462
+    },
+    "minX" : 784,
+    "maxX" : 824,
+    "minY" : 401,
+    "maxY" : 523,
+    "segments" : [ {
+      "from" : {
+        "x" : 824,
+        "y" : 523
+      },
+      "to" : {
+        "x" : 784,
+        "y" : 401
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 798,
+        "y" : 456
+      },
+      "b" : {
+        "x" : 810,
+        "y" : 468
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 613
+    } ],
+    "outputs" : [ {
+      "id" : 869
+    } ]
+  }, {
+    "id" : 3659,
+    "renderableClass" : "EntitySetAndMemberLink",
+    "position" : {
+      "x" : 589,
+      "y" : 847
+    },
+    "minX" : 364,
+    "maxX" : 815,
+    "minY" : 570,
+    "maxY" : 1124,
+    "segments" : [ {
+      "from" : {
+        "x" : 364,
+        "y" : 1124
+      },
+      "to" : {
+        "x" : 815,
+        "y" : 570
+      }
+    } ],
+    "reactionShape" : {
+      "a" : {
+        "x" : 583,
+        "y" : 841
+      },
+      "b" : {
+        "x" : 595,
+        "y" : 853
+      },
+      "type" : "BOX",
+      "empty" : true
+    },
+    "inputs" : [ {
+      "id" : 888
+    } ],
+    "outputs" : [ {
+      "id" : 613
+    } ]
+  } ],
+  "shadows" : [ {
+    "id" : 3664,
+    "reactomeId" : 8941237,
+    "displayName" : "Invadopodia formation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 2393,
+      "y" : 1441
+    },
+    "minX" : 2302,
+    "maxX" : 2484,
+    "minY" : 1361,
+    "maxY" : 1522,
+    "prop" : {
+      "x" : 2302,
+      "y" : 1361,
+      "width" : 182,
+      "height" : 161
+    },
+    "points" : [ {
+      "x" : 2302,
+      "y" : 1361
+    }, {
+      "x" : 2484,
+      "y" : 1361
+    }, {
+      "x" : 2484,
+      "y" : 1522
+    }, {
+      "x" : 2302,
+      "y" : 1522
+    } ],
+    "colour" : "#4942cc"
+  }, {
+    "id" : 3660,
+    "reactomeId" : 1566977,
+    "displayName" : "Fibronectin matrix formation",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 927,
+      "y" : 217
+    },
+    "minX" : 697,
+    "maxX" : 1157,
+    "minY" : 117,
+    "maxY" : 318,
+    "prop" : {
+      "x" : 697,
+      "y" : 117,
+      "width" : 460,
+      "height" : 201
+    },
+    "points" : [ {
+      "x" : 697,
+      "y" : 117
+    }, {
+      "x" : 1157,
+      "y" : 117
+    }, {
+      "x" : 1157,
+      "y" : 318
+    }, {
+      "x" : 697,
+      "y" : 318
+    } ],
+    "colour" : "#4684ee"
+  }, {
+    "id" : 3661,
+    "reactomeId" : 3000157,
+    "displayName" : "Laminin interactions",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 2161,
+      "y" : 454
+    },
+    "minX" : 1133,
+    "maxX" : 3190,
+    "minY" : -10,
+    "maxY" : 918,
+    "prop" : {
+      "x" : 1133,
+      "y" : -10,
+      "width" : 2057,
+      "height" : 92
+    },
+    "points" : [ {
+      "x" : 1133,
+      "y" : -10
+    }, {
+      "x" : 3190,
+      "y" : -10
+    }, {
+      "x" : 3190,
+      "y" : 918
+    }, {
+      "x" : 1133,
+      "y" : 918
+    } ],
+    "colour" : "#dc3912"
+  }, {
+    "id" : 3662,
+    "reactomeId" : 3000171,
+    "displayName" : "Non-integrin membrane-ECM interactions",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 1978,
+      "y" : 516
+    },
+    "minX" : 762,
+    "maxX" : 3195,
+    "minY" : 82,
+    "maxY" : 951,
+    "prop" : {
+      "x" : 762,
+      "y" : 82,
+      "width" : 2433,
+      "height" : 869
+    },
+    "points" : [ {
+      "x" : 762,
+      "y" : 82
+    }, {
+      "x" : 3195,
+      "y" : 82
+    }, {
+      "x" : 3195,
+      "y" : 951
+    }, {
+      "x" : 762,
+      "y" : 951
+    } ],
+    "colour" : "#008000"
+  }, {
+    "id" : 3663,
+    "reactomeId" : 3000178,
+    "displayName" : "ECM proteoglycans",
+    "schemaClass" : "Pathway",
+    "renderableClass" : "Shadow",
+    "position" : {
+      "x" : 1550,
+      "y" : 889
+    },
+    "minX" : -10,
+    "maxX" : 3110,
+    "minY" : 82,
+    "maxY" : 1697,
+    "prop" : {
+      "x" : -10,
+      "y" : 951,
+      "width" : 2312,
+      "height" : 571
+    },
+    "points" : [ {
+      "x" : -10,
+      "y" : 82
+    }, {
+      "x" : 3110,
+      "y" : 82
+    }, {
+      "x" : 3110,
+      "y" : 1697
+    }, {
+      "x" : -10,
+      "y" : 1697
+    } ],
+    "colour" : "#666666"
+  } ],
+  "minX" : 0,
+  "maxX" : 3185,
+  "minY" : 0,
+  "maxY" : 1687,
+  "disease" : false
+}
