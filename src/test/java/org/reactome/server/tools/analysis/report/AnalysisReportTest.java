@@ -1,7 +1,6 @@
 package org.reactome.server.tools.analysis.report;
 
 import org.apache.commons.io.output.NullOutputStream;
-import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -10,9 +9,6 @@ import org.reactome.server.tools.analysis.report.exception.AnalysisExporterExcep
 import org.reactome.server.tools.analysis.report.util.GraphCoreConfig;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -20,14 +16,34 @@ import java.util.Map;
 
 /**
  * @author Chuan-Deng dengchuanbio@gmail.com
+ * @author Lorente Pascual plorente@ebi.ac.uk
  */
 public class AnalysisReportTest {
+
+	/*
+	 * NOTE: for testing
+	 * Testing the creation of a PDF requires the use of external resources. Although we've tried to reduce the amount
+	 * of these resources, some configuration is needed.
+	 *   1) Graph database: a live connection to Reactome graph database v65 is required. We use already performed
+	 *      analysis to test this project. These analyses have been run against Reactome grpah database version 65. A
+	 *      live connection is needed by specifying through System properties
+	 *              - neo4j.host
+	 *              - neo4j.port
+	 *              - neo4j.user
+	 *              - neo4j.password
+	 *   2) Diagrams: paths to diagrams and fireworks are required. We tried to get them under test/resources, but every
+	 *      time tests are changed, these resources have to be changed as well. To avoid this problem, and for a more
+	 *      dynamic testing, we decided to externalize them. Use the following System properties:
+	 *              - diagram.path
+	 *              - fireworks.path
+	 *              - ehld.path
+	 *              - svg.summary
+	 */
 
 	private static final HashMap<String, String> tokens = new LinkedHashMap<String, String>() {
 		{
 			put("ORA1", "MjAxODA4MjkxMzUwMDBfMw%3D%3D");
 			put("ORA2", "MjAxODA4MjkxMzQ4NTVfMg%3D%3D");
-//			put("ORA3", "MjAxODA4MjkxMzU4NDVfNA%3D%3D");  // disabled cause unknown error
 			put("ORA4", "MjAxODA4MjkxNDI4MDZfNQ%3D%3D");
 			put("ORA5", "MjAxODA4MjkxNDI4NTVfNg%3D%3D");
 
@@ -40,29 +56,15 @@ public class AnalysisReportTest {
 			put("SPECIES2", "MjAxODA4MjkxNDQ1NDRfMTI%3D");
 		}
 	};
-	private static final File SAVE_TO = new File("test-files");
-	private static String ANALYSIS_PATH;
-	private static String DIAGRAM_PATH;
-	private static String FIREWORKS_PATH;
-	private static String EHLD_PATH;
-	private static String SVG_SUMMARY;
-	private static boolean save = false;
 	private static AnalysisReport RENDERER;
-
-	static {
-		final String save = System.getProperty("test.save");
-		AnalysisReportTest.save = save != null && save.equalsIgnoreCase("true");
-		AnalysisReportTest.ANALYSIS_PATH = System.getProperty("analysis.path");
-		AnalysisReportTest.DIAGRAM_PATH = System.getProperty("diagram.path");
-		AnalysisReportTest.FIREWORKS_PATH = System.getProperty("fireworks.path");
-		AnalysisReportTest.EHLD_PATH = System.getProperty("ehld.path");
-		AnalysisReportTest.SVG_SUMMARY = System.getProperty("svg.summary");
-	}
 
 	@BeforeClass
 	public static void beforeClass() {
-		if (!SAVE_TO.exists() && !SAVE_TO.mkdirs())
-			Assert.fail("Couldn't create test directory: " + SAVE_TO.getAbsolutePath());
+		final String ANALYSIS_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/analysis";
+		final String DIAGRAM_PATH = System.getProperty("diagram.path");
+		final String FIREWORKS_PATH = System.getProperty("fireworks.path");
+		final String EHLD_PATH = System.getProperty("ehld.path");
+		final String SVG_SUMMARY = System.getProperty("svg.summary");
 		ReactomeGraphCore.initialise(
 				System.getProperty("neo4j.host", "localhost"),
 				System.getProperty("neo4j.port", "7474"),
@@ -70,19 +72,7 @@ public class AnalysisReportTest {
 				System.getProperty("neo4j.password", "neo4j"),
 				GraphCoreConfig.class);
 		RENDERER = new AnalysisReport(DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, SVG_SUMMARY);
-	}
 
-	@AfterClass
-	public static void afterClass() {
-		if (!save) {
-			final File[] files = SAVE_TO.listFiles();
-			if (files != null)
-				for (File file : files)
-					if (!file.delete())
-						Assert.fail("Couldn't delete test file: " + file.getAbsolutePath());
-			if (!SAVE_TO.delete())
-				Assert.fail("Couldn't delete test directory: " + SAVE_TO.getAbsolutePath());
-		}
 	}
 
 	@Test
@@ -92,11 +82,9 @@ public class AnalysisReportTest {
 			final String token = entry.getValue();
 			LoggerFactory.getLogger(AnalysisReportTest.class).info(type);
 			try {
-				final OutputStream os = save
-						? new FileOutputStream(new File(SAVE_TO, String.format("%s.pdf", type)))
-						: new NullOutputStream();
-				RENDERER.create(token, "TOTAL", 48887L, 25, "modern", "copper plus", "copper", os);
-			} catch (AnalysisExporterException | FileNotFoundException e) {
+				final OutputStream os = new NullOutputStream();
+				RENDERER.create(token, "TOTAL", 48887L, 10, "modern", "copper plus", "copper", os);
+			} catch (AnalysisExporterException e) {
 				e.printStackTrace();
 				Assert.fail(e.getMessage());
 			}
