@@ -40,12 +40,12 @@ public class PropertiesSection implements Section {
 		list.add(profile.getParagraph(String.format(PdfUtils.getProperty("identifiers.found"),
 				found, found + notFound, analysisData.getAnalysisStoredResult().getPathways().size())));
 
-		if (summary.isProjection() != null && summary.isProjection())
+		if (analysisData.isProjection())
 			list.add(profile.getParagraph(PdfUtils.getProperty("projected"))
 					.add(" ")
 					.add(Images.getLink(PdfUtils.getProperty("projected.url"), profile.getFontSize())));
 
-		if (summary.isInteractors() != null && summary.isInteractors())
+		if (analysisData.isInteractors())
 			list.add(profile.getParagraph(PdfUtils.getProperty("interactors")));
 
 		list.add(profile.getParagraph(String.format(PdfUtils.getProperty("target.species"), analysisData.getSpecies())));

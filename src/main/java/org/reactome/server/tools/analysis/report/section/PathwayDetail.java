@@ -7,8 +7,8 @@ import com.itextpdf.layout.element.*;
 import com.itextpdf.layout.element.List;
 import com.itextpdf.layout.property.ListNumberingType;
 import com.itextpdf.layout.property.TextAlignment;
-import org.reactome.server.analysis.core.result.model.FoundElements;
-import org.reactome.server.analysis.core.result.model.ResourceSummary;
+import org.reactome.server.analysis.core.result.model.FoundEntities;
+import org.reactome.server.analysis.core.result.model.FoundInteractors;
 import org.reactome.server.graph.domain.model.*;
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.analysis.report.PathwayData;
@@ -52,6 +52,11 @@ public class PathwayDetail implements Section {
 
 			addFoundElements(document, analysisData, pathway, profile);
 
+			if (analysisData.isInteractors()) {
+				document.add(profile.getParagraph(""));
+				addFoundInteractors(document, analysisData, pathway, profile);
+			}
+
 			document.add(new AreaBreak());
 			document.flush();
 			i += 1;
@@ -78,18 +83,38 @@ public class PathwayDetail implements Section {
 	}
 
 	private void addFoundElements(Document document, AnalysisData analysisData, Pathway pathway, PdfProfile profile) {
-		document.add(profile.getH3("Elements found in this pathway"));
-		if (analysisData.getResource().equalsIgnoreCase("total")) {
-			for (ResourceSummary summary : analysisData.getAnalysisStoredResult().getResourceSummary()) {
-				if (summary.getResource().equalsIgnoreCase("total")) continue;
-				final FoundElements foundElements = analysisData.getAnalysisStoredResult().getFoundElmentsForPathway(pathway.getStId(), summary.getResource());
-				if (foundElements.getFoundEntities() > 0)
-					addIdentifiers(document, foundElements, analysisData.beautify(summary.getResource()), profile);
-			}
-		} else {
-			final FoundElements foundElements = analysisData.getAnalysisStoredResult().getFoundElmentsForPathway(pathway.getStId(), analysisData.getResource());
-			addIdentifiers(document, foundElements, analysisData.getBeautifiedResource(), profile);
+		final FoundEntities foundEntities = analysisData.getAnalysisStoredResult().getFoundEntities(pathway.getStId());
+		if (foundEntities.getIdentifiers().isEmpty()) return;
+		document.add(profile.getH3(String.format("Elements found in this pathway (%d)", foundEntities.getIdentifiers().size())));
+		for (String resource : analysisData.getResources()) {
+			document.add(profile.getParagraph(""));
+			addIdentifiers(document, foundEntities.filter(resource), resource, profile);
 		}
+	}
+
+	private void addIdentifiers(Document document, FoundEntities elements, String resource, PdfProfile profile) {
+		if (elements.getIdentifiers().isEmpty()) return;
+		final Table identifiersTable = elements.getExpNames() == null || elements.getExpNames().isEmpty()
+				? Tables.createEntitiesTable(elements.getIdentifiers(), resource, profile)
+				: Tables.getExpressionTable(elements.getIdentifiers(), resource, profile, elements.getExpNames());
+		document.add(identifiersTable);
+	}
+
+	private void addFoundInteractors(Document document, AnalysisData analysisData, Pathway pathway, PdfProfile profile) {
+		final FoundInteractors interactors = analysisData.getAnalysisStoredResult().getFoundInteractors(pathway.getStId());
+		if (interactors.getIdentifiers().isEmpty()) return;
+		document.add(profile.getH3(String.format("Interactors found in this pathway (%d)", interactors.getIdentifiers().size())));
+		for (String resource : analysisData.getResources()) {
+			addInteractorsTable(document, interactors.filter(resource), resource, profile);
+		}
+	}
+
+	private void addInteractorsTable(Document document, FoundInteractors interactors, String resource, PdfProfile profile) {
+		if (interactors.getIdentifiers().isEmpty()) return;
+		final Table table = (interactors.getExpNames() == null || interactors.getExpNames().isEmpty())
+				? Tables.getInteractorsTable(interactors.getIdentifiers(), resource, profile)
+				: Tables.getInteractorsExpressionTable(interactors.getIdentifiers(), resource, profile, interactors.getExpNames());
+		document.add(table);
 	}
 
 	private void addSummations(Document document, Pathway pathway, PdfProfile profile) {
@@ -121,22 +146,6 @@ public class PathwayDetail implements Section {
 		}
 	}
 
-	private void addIdentifiers(Document document, FoundElements elements, String resource, PdfProfile profile) {
-		if (elements.getExpNames() == null || elements.getExpNames().isEmpty())
-			addSimpleTable(document, elements, resource, profile);
-		else addExpressionTable(document, elements, resource, profile);
-	}
-
-	private void addExpressionTable(Document document, FoundElements elements, String resource, PdfProfile profile) {
-		final Table expressionTable = Tables.getExpressionTable(elements.getEntities(), resource, profile, elements.getExpNames());
-		document.add(expressionTable);
-	}
-
-	private void addSimpleTable(Document document, FoundElements elements, String resource, PdfProfile profile) {
-		final Table identifiersTable = Tables.getIdentifiersTable(elements.getEntities(), resource, profile);
-		document.add(identifiersTable);
-	}
-
 	private void addReferences(Document document, Pathway pathwayDetail, PdfProfile profile) {
 		if (pathwayDetail.getLiteratureReference() != null) {
 			document.add(profile.getH3("References"));
@@ -163,35 +172,6 @@ public class PathwayDetail implements Section {
 			paragraph.add(Images.getLink(url.getUniformResourceLocator(), profile.getFontSize() - 1f));
 		}
 		return paragraph;
-	}
-
-	private String asString(Collection<Person> persons) {
-		return asString(persons, 5);
-	}
-
-	private String asString(Collection<Person> persons, int maxAuthors) {
-		if (persons == null) return "";
-		String text = String.join(", ", persons.stream()
-				.limit(maxAuthors)
-				.map(this::compileName)
-				.collect(Collectors.toList()));
-		if (persons.size() > maxAuthors) text += " et al.";
-		return text;
-	}
-
-	private String compileName(Person person) {
-		if (person.getSurname() != null && person.getInitial() != null)
-			return person.getSurname() + " " + person.getInitial();
-		if (person.getSurname() != null && person.getFirstname() != null)
-			return person.getSurname() + " " + initials(person.getFirstname());
-		if (person.getSurname() != null) return person.getSurname();
-		return person.getFirstname();
-	}
-
-	private String initials(String name) {
-		return Arrays.stream(name.split(" "))
-				.map(n -> n.substring(0, 1).toUpperCase())
-				.collect(Collectors.joining(" "));
 	}
 
 	private void addEditTable(Document document, Pathway pathway, PdfProfile profile) {
@@ -238,6 +218,35 @@ public class PathwayDetail implements Section {
 		}
 		document.add(table);
 
+	}
+
+	private String asString(Collection<Person> persons) {
+		return asString(persons, 5);
+	}
+
+	private String asString(Collection<Person> persons, int maxAuthors) {
+		if (persons == null) return "";
+		String text = String.join(", ", persons.stream()
+				.limit(maxAuthors)
+				.map(this::compileName)
+				.collect(Collectors.toList()));
+		if (persons.size() > maxAuthors) text += " et al.";
+		return text;
+	}
+
+	private String compileName(Person person) {
+		if (person.getSurname() != null && person.getInitial() != null)
+			return person.getSurname() + " " + person.getInitial();
+		if (person.getSurname() != null && person.getFirstname() != null)
+			return person.getSurname() + " " + initials(person.getFirstname());
+		if (person.getSurname() != null) return person.getSurname();
+		return person.getFirstname();
+	}
+
+	private String initials(String name) {
+		return Arrays.stream(name.split(" "))
+				.map(n -> n.substring(0, 1).toUpperCase())
+				.collect(Collectors.joining(" "));
 	}
 
 	private class Edition {

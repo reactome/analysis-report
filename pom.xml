@@ -214,7 +214,6 @@
                         <fireworks.path>${fireworks.path}</fireworks.path>
                         <ehld.path>${ehld.path}</ehld.path>
                         <svg.summary>${svg.summary}</svg.summary>
-                        <test.save>${test.save}</test.save>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

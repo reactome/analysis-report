@@ -3,6 +3,7 @@ package org.reactome.server.tools.analysis.report;
 import org.reactome.server.analysis.core.model.AnalysisType;
 import org.reactome.server.analysis.core.result.AnalysisStoredResult;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
+import org.reactome.server.analysis.core.result.model.ResourceSummary;
 import org.reactome.server.graph.domain.model.Pathway;
 import org.reactome.server.graph.domain.model.Species;
 import org.reactome.server.graph.service.DatabaseObjectService;
@@ -10,6 +11,7 @@ import org.reactome.server.graph.service.GeneralService;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -34,6 +36,7 @@ public class AnalysisData {
 	private final int maxPathways;
 	private final boolean projection;
 	private final boolean interactors;
+	private final Collection<String> resources;
 
 	AnalysisData(AnalysisStoredResult analysisStoredResult, String resource, Long speciesDbId, int maxPathways) {
 		this.analysisStoredResult = analysisStoredResult;
@@ -47,20 +50,21 @@ public class AnalysisData {
 		this.name = computeName();
 		this.projection = analysisStoredResult.getSummary().isProjection() != null && analysisStoredResult.getSummary().isProjection();
 		this.interactors = analysisStoredResult.getSummary().isInteractors() != null && analysisStoredResult.getSummary().isInteractors();
-		pathways = collectPathways();
-	}
+		this.resources = (resource.equals("TOTAL"))
+				? analysisStoredResult.getResourceSummary().stream()
+				.map(ResourceSummary::getResource)
+				.filter(s -> !s.equals("TOTAL"))
+				.map(this::beautify)
+				.collect(Collectors.toList())
+				: Collections.singletonList(beautify(resource));
 
-	/**
-	 * @return Reactome's current database version.
-	 */
-	public static int getDBVersion() {
-		return genericService.getDBVersion();
+		pathways = collectPathways();
 	}
 
 	private static String getSpeciesName(Long id) {
 		if (id == null) return null;
 		Species species = databaseObjectService.findByIdNoRelations(id);
-		return species.getName().get(0);
+		return species.getDisplayName();
 	}
 
 	private List<PathwayData> collectPathways() {
@@ -86,7 +90,7 @@ public class AnalysisData {
 		return "";
 	}
 
-	public String beautify(String resource) {
+	private String beautify(String resource) {
 		switch (resource.toLowerCase()) {
 			case "uniprot":
 				return "UniProt";
@@ -94,8 +98,7 @@ public class AnalysisData {
 				return "ChEBI";
 			case "ensembl":
 				return "Ensembl";
-			case "gene":
-			case "compound":
+			case "kegg":
 				return "KEGG";
 			case "pubmed":
 				return "PubMed";
@@ -104,6 +107,13 @@ public class AnalysisData {
 			default:
 				return resource;
 		}
+	}
+
+	/**
+	 * @return Reactome's current database version.
+	 */
+	public static int getDBVersion() {
+		return genericService.getDBVersion();
 	}
 
 	public AnalysisStoredResult getAnalysisStoredResult() {
@@ -144,5 +154,18 @@ public class AnalysisData {
 
 	public boolean isProjection() {
 		return projection;
+	}
+
+	/**
+	 * Get the list of all resources present in this analysis. If one resource
+	 * is specified in the analysis, then this is a singleton list. If resource
+	 * is TOTAL, the gets a list with all the resources but TOTAL.
+	 * <p>
+	 * This is a convenient method to list tables of identifiers.
+	 *
+	 * @return a list with all of the resources present in the analysis.
+	 */
+	public Collection<String> getResources() {
+		return resources;
 	}
 }
