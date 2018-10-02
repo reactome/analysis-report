@@ -60,7 +60,7 @@ public class AnalysisReport {
 			new PropertiesSection(),
 			new OverviewSection(),
 			new TopPathwayTable(),
-			new PathwayDetail(),
+			new PathwaysDetails(),
 			new IdentifiersFound(),
 			new IdentifierNotFound()
 	);

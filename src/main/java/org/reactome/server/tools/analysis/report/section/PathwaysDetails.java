@@ -17,30 +17,32 @@ import org.reactome.server.tools.analysis.report.style.PdfProfile;
 import org.reactome.server.tools.analysis.report.util.ApaStyle;
 import org.reactome.server.tools.analysis.report.util.DiagramHelper;
 import org.reactome.server.tools.analysis.report.util.HtmlParser;
+import org.reactome.server.tools.analysis.report.util.PdfUtils;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * Section PathwayDetail contains the detail info for top hit pathways(sorted by
+ * Section PathwaysDetails contains the detail info for top hit pathways(sorted by
  * p-value), include the overlay diagram image, entities mapped and description
  * for each pathway.
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
-public class PathwayDetail implements Section {
+public class PathwaysDetails implements Section {
 
-	private static final String PATHWAY_DETAIL = "https://reactome.org/content/detail/";
+	private static final String PATHWAY_DETAIL = "/content/detail/";
 
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		document.add(new AreaBreak());
-		document.add(profile.getH1("Pathway details").setDestination("pathway-details"));
+		document.add(profile.getH1("Pathways details").setDestination("pathway-details"));
+		document.add(profile.getParagraph(PdfUtils.getProperty("pathways.detail")));
 		int i = 1;
 		for (PathwayData pathwayData : analysisData.getPathways()) {
 			final Pathway pathway = pathwayData.getPathway();
-			document.add(getTitle(profile, i, pathway));
-			DiagramHelper.insertDiagram(pathway.getStId(), analysisData.getAnalysisStoredResult(), analysisData.getResource(), document);
+			document.add(getTitle(profile, i, pathway, analysisData));
+			DiagramHelper.insertDiagram(pathway.getStId(), analysisData.getResult(), analysisData.getResource(), document);
 			addDatabaseObjectList(document, "Cellular compartments", pathway.getCompartment(), profile);
 			addRelatedDiseases(document, pathway, profile);
 			addDatabaseObjectList(document, "Inferred from", pathway.getInferredFrom(), profile);
@@ -63,7 +65,7 @@ public class PathwayDetail implements Section {
 		}
 	}
 
-	private List getTitle(PdfProfile profile, int i, Pathway pathway) {
+	private List getTitle(PdfProfile profile, int i, Pathway pathway, AnalysisData analysisData) {
 		final List list = new List(ListNumberingType.DECIMAL)
 				.setItemStartIndex(i)
 				.setFontSize(profile.getFontSize() + 2)
@@ -73,7 +75,8 @@ public class PathwayDetail implements Section {
 		final Paragraph paragraph = new Paragraph(pathway.getDisplayName())
 				.add(" (")
 				.add(new Text(pathway.getStId())
-						.setAction(PdfAction.createURI(PATHWAY_DETAIL + pathway.getStId()))
+//						.setAction(PdfAction.createURI(analysisData.getResult().getHost() + PATHWAY_DETAIL + pathway.getStId()))
+						.setAction(PdfAction.createURI("https://reactome.org" + PATHWAY_DETAIL + pathway.getStId()))
 						.setFontColor(profile.getLinkColor()))
 				.add(")")
 				.setDestination(pathway.getStId());
@@ -83,7 +86,7 @@ public class PathwayDetail implements Section {
 	}
 
 	private void addFoundElements(Document document, AnalysisData analysisData, Pathway pathway, PdfProfile profile) {
-		final FoundEntities foundEntities = analysisData.getAnalysisStoredResult().getFoundEntities(pathway.getStId());
+		final FoundEntities foundEntities = analysisData.getResult().getFoundEntities(pathway.getStId());
 		if (foundEntities.getIdentifiers().isEmpty()) return;
 		document.add(profile.getH3(String.format("Elements found in this pathway (%d)", foundEntities.getIdentifiers().size())));
 		for (String resource : analysisData.getResources()) {
@@ -101,7 +104,7 @@ public class PathwayDetail implements Section {
 	}
 
 	private void addFoundInteractors(Document document, AnalysisData analysisData, Pathway pathway, PdfProfile profile) {
-		final FoundInteractors interactors = analysisData.getAnalysisStoredResult().getFoundInteractors(pathway.getStId());
+		final FoundInteractors interactors = analysisData.getResult().getFoundInteractors(pathway.getStId());
 		if (interactors.getIdentifiers().isEmpty()) return;
 		document.add(profile.getH3(String.format("Interactors found in this pathway (%d)", interactors.getIdentifiers().size())));
 		for (String resource : analysisData.getResources()) {

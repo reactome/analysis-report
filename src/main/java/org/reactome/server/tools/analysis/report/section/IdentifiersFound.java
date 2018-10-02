@@ -12,6 +12,7 @@ import org.reactome.server.analysis.core.result.model.FoundInteractors;
 import org.reactome.server.analysis.core.result.model.IdentifierSummary;
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.analysis.report.style.PdfProfile;
+import org.reactome.server.tools.analysis.report.util.PdfUtils;
 
 import java.util.Collection;
 import java.util.Comparator;
@@ -23,8 +24,8 @@ public class IdentifiersFound implements Section {
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		document.add(profile.getH1(("Identifiers found")).setDestination("identifiers-found"));
-		document.add(profile.getParagraph("Below is a list of your input identifiers that have been found or mapped to an equivalent element in Reactome"));
-		final long entities = analysisData.getAnalysisStoredResult().getFoundEntitiesMap().keySet().stream()
+		document.add(profile.getParagraph(PdfUtils.getProperty("identifiers.found.section")));
+		final long entities = analysisData.getResult().getFoundEntitiesMap().keySet().stream()
 				.map(Identifier::getValue)
 				.map(AnalysisIdentifier::getId)
 				.distinct()
@@ -36,9 +37,9 @@ public class IdentifiersFound implements Section {
 		}
 
 		if (analysisData.isInteractors()) {
-			final long interactors = analysisData.getAnalysisStoredResult().getPathways().stream()
+			final long interactors = analysisData.getResult().getPathways().stream()
 					.map(PathwayNodeSummary::getStId)
-					.map(analysisData.getAnalysisStoredResult()::getFoundInteractors)
+					.map(analysisData.getResult()::getFoundInteractors)
 					.map(FoundInteractors::getIdentifiers)
 					.flatMap(Collection::stream)
 					.distinct()
@@ -54,24 +55,24 @@ public class IdentifiersFound implements Section {
 
 	private void addAllTable(Document document, PdfProfile profile, AnalysisData analysisData, String resource) {
 		final Set<FoundEntity> entities = new TreeSet<>(Comparator.comparing(IdentifierSummary::getId));
-		for (PathwayNodeSummary pathway : analysisData.getAnalysisStoredResult().getPathways()) {
-			entities.addAll(analysisData.getAnalysisStoredResult().getFoundEntities(pathway.getStId()).filter(resource).getIdentifiers());
+		for (PathwayNodeSummary pathway : analysisData.getResult().getPathways()) {
+			entities.addAll(analysisData.getResult().getFoundEntities(pathway.getStId()).filter(resource).getIdentifiers());
 		}
 		if (entities.isEmpty()) return;
 		final Table expressionTable = analysisData.getType() == AnalysisType.EXPRESSION
-				? Tables.getExpressionTable(entities, resource, profile, analysisData.getAnalysisStoredResult().getExpressionSummary().getColumnNames())
+				? Tables.getExpressionTable(entities, resource, profile, analysisData.getResult().getExpressionSummary().getColumnNames())
 				: Tables.createEntitiesTable(entities, resource, profile);
 		document.add(expressionTable);
 	}
 
 	private void addInteractorsTable(Document document, PdfProfile profile, AnalysisData analysisData, String resource) {
 		final Set<FoundInteractor> interactors = new TreeSet<>(Comparator.comparing(IdentifierSummary::getId));
-		for (PathwayNodeSummary pathway : analysisData.getAnalysisStoredResult().getPathways()) {
-			interactors.addAll(analysisData.getAnalysisStoredResult().getFoundInteractors(pathway.getStId()).filter(resource).getIdentifiers());
+		for (PathwayNodeSummary pathway : analysisData.getResult().getPathways()) {
+			interactors.addAll(analysisData.getResult().getFoundInteractors(pathway.getStId()).filter(resource).getIdentifiers());
 		}
 		if (interactors.isEmpty()) return;
 		final Table table = analysisData.getType() == AnalysisType.EXPRESSION
-				? Tables.getInteractorsExpressionTable(interactors, resource, profile, analysisData.getAnalysisStoredResult().getExpressionSummary().getColumnNames())
+				? Tables.getInteractorsExpressionTable(interactors, resource, profile, analysisData.getResult().getExpressionSummary().getColumnNames())
 				: Tables.getInteractorsTable(interactors, resource, profile);
 		document.add(table);
 	}

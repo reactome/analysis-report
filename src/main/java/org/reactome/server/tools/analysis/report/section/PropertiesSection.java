@@ -27,10 +27,10 @@ public class PropertiesSection implements Section {
 		document.add(profile.getH1("Properties").setDestination("properties"));
 		final List<Paragraph> list = new LinkedList<>();
 
-		final String text = PdfUtils.getProperty(analysisData.getAnalysisStoredResult().getSummary().getType().toLowerCase());
-		final int found = analysisData.getAnalysisStoredResult().getAnalysisIdentifiers().size();
-		final int notFound = analysisData.getAnalysisStoredResult().getNotFound().size();
-		final AnalysisSummary summary = analysisData.getAnalysisStoredResult().getSummary();
+		final String text = PdfUtils.getProperty(analysisData.getResult().getSummary().getType().toLowerCase());
+		final int found = analysisData.getResult().getAnalysisIdentifiers().size();
+		final int notFound = analysisData.getResult().getNotFound().size();
+		final AnalysisSummary summary = analysisData.getResult().getSummary();
 
 
 		list.add(HtmlParser.parseParagraph(text, profile)
@@ -38,7 +38,7 @@ public class PropertiesSection implements Section {
 				.add(Images.getLink(PdfUtils.getProperty("analysis.url"), profile.getFontSize())));
 
 		list.add(profile.getParagraph(String.format(PdfUtils.getProperty("identifiers.found"),
-				found, found + notFound, analysisData.getAnalysisStoredResult().getPathways().size())));
+				found, found + notFound, analysisData.getResult().getPathways().size())));
 
 		if (analysisData.isProjection())
 			list.add(profile.getParagraph(PdfUtils.getProperty("projected"))

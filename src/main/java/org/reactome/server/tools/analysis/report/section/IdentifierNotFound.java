@@ -7,6 +7,7 @@ import com.itextpdf.layout.property.UnitValue;
 import org.reactome.server.analysis.core.result.model.IdentifierSummary;
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.analysis.report.style.PdfProfile;
+import org.reactome.server.tools.analysis.report.util.PdfUtils;
 
 import java.util.Comparator;
 import java.util.List;
@@ -19,16 +20,18 @@ public class IdentifierNotFound implements Section {
 
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
+		final List<IdentifierSummary> sorted = analysisData.getResult().getNotFoundIdentifiers().stream()
+				.sorted(Comparator.comparing(IdentifierSummary::getId))
+				.distinct()
+				.collect(Collectors.toList());
+		if (sorted.isEmpty()) return;
 		document.add(new AreaBreak());
 		document.add(profile.getH1("Identifiers not found").setDestination("not-found"));
+		document.add(profile.getParagraph(PdfUtils.getProperty("identifiers.not.found.section", sorted.size())));
 		final Table table = new Table(UnitValue.createPercentArray(8));
 		table.useAllAvailableWidth();
 		int i = 0;
 		int row = 0;
-		final List<IdentifierSummary> sorted = analysisData.getAnalysisStoredResult().getNotFoundIdentifiers().stream()
-				.sorted(Comparator.comparing(IdentifierSummary::getId))
-				.distinct()
-				.collect(Collectors.toList());
 		for (IdentifierSummary summary : sorted) {
 			row = i / 8;
 			table.addCell(profile.getBodyCell(summary.getId(), row).setMargin(1.5f));

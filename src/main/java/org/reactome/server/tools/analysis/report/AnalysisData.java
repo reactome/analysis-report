@@ -31,27 +31,27 @@ public class AnalysisData {
 	private final String species;
 	private final String speciesComparisonSpecies;
 	private final String resource;
-	private final AnalysisStoredResult analysisStoredResult;
+	private final AnalysisStoredResult result;
 	private final Long speciesDbId;
 	private final int maxPathways;
 	private final boolean projection;
 	private final boolean interactors;
 	private final Collection<String> resources;
 
-	AnalysisData(AnalysisStoredResult analysisStoredResult, String resource, Long speciesDbId, int maxPathways) {
-		this.analysisStoredResult = analysisStoredResult;
+	AnalysisData(AnalysisStoredResult result, String resource, Long speciesDbId, int maxPathways) {
+		this.result = result;
 		this.resource = resource;
 		this.speciesDbId = speciesDbId;
 		this.beautifiedResource = beautify(resource);
 		this.species = getSpeciesName(speciesDbId);
-		this.type = AnalysisType.valueOf(analysisStoredResult.getSummary().getType());
-		this.speciesComparisonSpecies = getSpeciesName(analysisStoredResult.getSummary().getSpecies());
+		this.type = AnalysisType.valueOf(result.getSummary().getType());
+		this.speciesComparisonSpecies = getSpeciesName(result.getSummary().getSpecies());
 		this.maxPathways = maxPathways;
 		this.name = computeName();
-		this.projection = analysisStoredResult.getSummary().isProjection() != null && analysisStoredResult.getSummary().isProjection();
-		this.interactors = analysisStoredResult.getSummary().isInteractors() != null && analysisStoredResult.getSummary().isInteractors();
+		this.projection = result.getSummary().isProjection() != null && result.getSummary().isProjection();
+		this.interactors = result.getSummary().isInteractors() != null && result.getSummary().isInteractors();
 		this.resources = (resource.equals("TOTAL"))
-				? analysisStoredResult.getResourceSummary().stream()
+				? result.getResourceSummary().stream()
 				.map(ResourceSummary::getResource)
 				.filter(s -> !s.equals("TOTAL"))
 				.map(this::beautify)
@@ -68,10 +68,10 @@ public class AnalysisData {
 	}
 
 	private List<PathwayData> collectPathways() {
-		return analysisStoredResult.filterBySpecies(speciesDbId, resource).getPathways().stream()
+		return result.filterBySpecies(speciesDbId, resource).getPathways().stream()
 				.limit(maxPathways)
 				.map(base -> {
-					final PathwayNodeSummary summary = analysisStoredResult.getPathway(base.getStId());
+					final PathwayNodeSummary summary = result.getPathway(base.getStId());
 					final Pathway pathway = databaseObjectService.findByIdNoRelations(base.getStId());
 					return (new PathwayData(summary, base, pathway));
 				})
@@ -80,11 +80,11 @@ public class AnalysisData {
 
 	private String computeName() {
 		for (String alternative : new String[]{
-				analysisStoredResult.getSummary().getSampleName(),
-				analysisStoredResult.getSummary().getFileName(),
+				result.getSummary().getSampleName(),
+				result.getSummary().getFileName(),
 				speciesComparisonSpecies,
-				analysisStoredResult.getSummary().getType(),
-				analysisStoredResult.getSummary().getToken()}) {
+				result.getSummary().getType(),
+				result.getSummary().getToken()}) {
 			if (alternative != null) return alternative;
 		}
 		return "";
@@ -116,8 +116,8 @@ public class AnalysisData {
 		return genericService.getDBVersion();
 	}
 
-	public AnalysisStoredResult getAnalysisStoredResult() {
-		return analysisStoredResult;
+	public AnalysisStoredResult getResult() {
+		return result;
 	}
 
 	public Collection<PathwayData> getPathways() {

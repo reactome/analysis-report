@@ -30,7 +30,7 @@ public class FireworksHelper {
 		args.setWriteTitle(false);
 		args.setProfile(profile);
 		try {
-			final Document fireworks = exporter.renderPdf(args, data.getAnalysisStoredResult());
+			final Document fireworks = exporter.renderPdf(args, data.getResult());
 			final PdfFormXObject object = fireworks.getPdfDocument().getFirstPage().copyAsFormXObject(document.getPdfDocument());
 			final float wi = document.getPdfDocument().getLastPage().getPageSize().getWidth() - document.getLeftMargin() - document.getRightMargin() - 0.1f;  // avoid image too large
 			final float he = 0.5f * document.getPdfDocument().getLastPage().getPageSize().getHeight() - document.getTopMargin() - document.getBottomMargin();

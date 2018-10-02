@@ -31,8 +31,8 @@ public class TopPathwayTable implements Section {
 
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
-		final int min = analysisData.getPathways().size();
-		document.add(profile.getH1(String.format("Top %d pathways", min)).setDestination("pathway-list"));
+		document.add(profile.getH1("Most significant pathways").setDestination("pathway-list"));
+		document.add(profile.getParagraph(PdfUtils.getProperty("most.significant.pathways", analysisData.getPathways().size())));
 		// Let iText decide the width of the columns
 		final Table table = new Table(new float[]{3, 1, 1, 1, 1, 1, 1});
 		table.setBorder(Border.NO_BORDER);
@@ -46,7 +46,7 @@ public class TopPathwayTable implements Section {
 		int i = 0;
 		for (PathwayData pathwayData : analysisData.getPathways()) {
 			final PathwayBase pathwayBase = pathwayData.getBase();
-			final PathwayNodeSummary pathway = analysisData.getAnalysisStoredResult().getPathway(pathwayBase.getStId());
+			final PathwayNodeSummary pathway = analysisData.getResult().getPathway(pathwayBase.getStId());
 			table.addCell(profile.getPathwayCell(i, pathway));
 			final String entities = String.format("%,d / %,d", pathwayBase.getEntities().getFound(), pathwayBase.getEntities().getTotal());
 			table.addCell(profile.getBodyCell(entities, i));
