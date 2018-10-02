@@ -57,7 +57,6 @@ public class AnalysisData {
 				.map(this::beautify)
 				.collect(Collectors.toList())
 				: Collections.singletonList(beautify(resource));
-
 		pathways = collectPathways();
 	}
 
@@ -91,18 +90,22 @@ public class AnalysisData {
 	}
 
 	private String beautify(String resource) {
-		switch (resource.toLowerCase()) {
-			case "uniprot":
+		switch (resource.toUpperCase()) {
+			case "UNIPROT":
 				return "UniProt";
-			case "chebi":
+			case "CHEBI":
 				return "ChEBI";
-			case "ensembl":
+			case "ENSEMBL":
 				return "Ensembl";
-			case "kegg":
-				return "KEGG";
-			case "pubmed":
-				return "PubMed";
-			case "total":
+			case "COMPOUND":
+				return "KEGG COMPOUND";
+			case "EMBL":
+				return "EMBL";
+			case "MIRBASE":
+				return "miRBase";
+			case "NCBI_PROTEIN":
+				return "NCBI Protein";
+			case "TOTAL":
 				return "all resources";
 			default:
 				return resource;

@@ -88,7 +88,7 @@ public class PathwaysDetails implements Section {
 	private void addFoundElements(Document document, AnalysisData analysisData, Pathway pathway, PdfProfile profile) {
 		final FoundEntities foundEntities = analysisData.getResult().getFoundEntities(pathway.getStId());
 		if (foundEntities.getIdentifiers().isEmpty()) return;
-		document.add(profile.getH3(String.format("Elements found in this pathway (%d)", foundEntities.getIdentifiers().size())));
+		document.add(profile.getH3(String.format("Entities found in this pathway (%d)", foundEntities.getIdentifiers().size())));
 		for (String resource : analysisData.getResources()) {
 			document.add(profile.getParagraph(""));
 			addIdentifiers(document, foundEntities.filter(resource), resource, profile);

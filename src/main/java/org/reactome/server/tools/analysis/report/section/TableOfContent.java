@@ -27,7 +27,7 @@ public class TableOfContent implements Section {
 				new Paragraph("Properties").setAction(PdfAction.createGoTo("properties")),
 				new Paragraph("Genome-wide overview").setAction(PdfAction.createGoTo("overview")),
 				new Paragraph("Most significant pathways").setAction(PdfAction.createGoTo("pathway-list")),
-				new Paragraph("Pathway details").setAction(PdfAction.createGoTo("pathway-details")),
+				new Paragraph("Pathways details").setAction(PdfAction.createGoTo("pathway-details")),
 				new Paragraph("Identifiers found").setAction(PdfAction.createGoTo("identifiers-found")),
 				new Paragraph("Identifiers not found").setAction(PdfAction.createGoTo("not-found"))
 		).forEach(paragraph -> {

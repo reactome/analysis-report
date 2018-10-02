@@ -48,7 +48,7 @@ public class PropertiesSection implements Section {
 		if (analysisData.isInteractors())
 			list.add(profile.getParagraph(PdfUtils.getProperty("interactors")));
 
-		list.add(profile.getParagraph(String.format(PdfUtils.getProperty("target.species"), analysisData.getSpecies())));
+		list.add(profile.getParagraph((PdfUtils.getProperty("target.species.resource", analysisData.getSpecies(), analysisData.getBeautifiedResource()))));
 
 		list.add(profile.getParagraph(String.format(PdfUtils.getProperty("token"), summary.getToken())));
 

@@ -36,7 +36,6 @@ public class CoverPage implements Section {
 				analysisData.getName(),
 				AnalysisData.getDBVersion(),
 				DATE_FORMAT.format(new Date()),
-				analysisData.getBeautifiedResource(),
 				link, link);
 
 		final Collection<Paragraph> paragraphs = HtmlParser.parseText(profile, text);
