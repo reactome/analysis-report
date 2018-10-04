@@ -42,9 +42,9 @@ public class AnalysisReportTest {
 
 	private static final HashMap<String, String> tokens = new LinkedHashMap<String, String>() {
 		{
-			put("ORA1", "MjAxODA4MjkxMzUwMDBfMw%3D%3D");
-			put("EXP1", "MjAxODA4MjkxNDI5NDJfNw%3D%3D");
-			put("SPECIES1", "MjAxODA4MjkxNDQwMzBfMTE%3D");
+			put("ORA2", "MjAxODEwMDQxMDA3MDhfMw%253D%253D");
+//			put("EXP1", "MjAxODEwMDQxMDA4MDNfNA%253D%253D");
+//			put("SPECIES1", "MjAxODEwMDQxMDA4MzVfNQ%253D%253D");
 		}
 	};
 	private static AnalysisReport RENDERER;
@@ -80,6 +80,6 @@ public class AnalysisReportTest {
 				Assert.fail(e.getMessage());
 			}
 		}
-	}
 
+	}
 }

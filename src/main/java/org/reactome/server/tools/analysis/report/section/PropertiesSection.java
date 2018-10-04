@@ -21,6 +21,8 @@ import java.util.List;
  */
 public class PropertiesSection implements Section {
 
+	private final static String PROJECTED = "/documentation/inferred-events";
+	private final static String ANALYSIS_PATH = "/user/guide/analysis";
 	@Override
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		document.add(new AreaBreak());
@@ -33,9 +35,10 @@ public class PropertiesSection implements Section {
 		final AnalysisSummary summary = analysisData.getResult().getSummary();
 
 
+		final String serverName = analysisData.getServerName();
 		list.add(HtmlParser.parseParagraph(text, profile)
 				.add(" ")
-				.add(Images.getLink(PdfUtils.getProperty("analysis.url"), profile.getFontSize())));
+				.add(Images.getLink(serverName + ANALYSIS_PATH, profile.getFontSize())));
 
 		list.add(profile.getParagraph(String.format(PdfUtils.getProperty("identifiers.found"),
 				found, found + notFound, analysisData.getResult().getPathways().size())));
@@ -43,7 +46,7 @@ public class PropertiesSection implements Section {
 		if (analysisData.isProjection())
 			list.add(profile.getParagraph(PdfUtils.getProperty("projected"))
 					.add(" ")
-					.add(Images.getLink(PdfUtils.getProperty("projected.url"), profile.getFontSize())));
+					.add(Images.getLink(serverName + PROJECTED, profile.getFontSize())));
 
 		if (analysisData.isInteractors())
 			list.add(profile.getParagraph(PdfUtils.getProperty("interactors")));

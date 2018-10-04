@@ -18,10 +18,12 @@ public class FooterEventHandler implements IEventHandler {
 
 	private final Document document;
 	private PdfProfile profile;
+	private String serverName;
 
-	public FooterEventHandler(Document document, PdfProfile profile) {
+	public FooterEventHandler(Document document, PdfProfile profile, String serverName) {
 		this.document = document;
 		this.profile = profile;
+		this.serverName = serverName;
 	}
 
 	@Override
@@ -35,10 +37,10 @@ public class FooterEventHandler implements IEventHandler {
 		final float yCenter = document.getBottomMargin() * 0.5f;
 		final float width = page.getMediaBox().getWidth();
 		final float pagingWidth = profile.getRegularFont().getWidth(paging, profile.getFontSize()) + 1;
-		final float linkWidth = profile.getRegularFont().getWidth("https://reactome.org", profile.getFontSize()) + 1;
-		final Paragraph p = profile.getParagraph("https://reactome.org")
+		final float linkWidth = profile.getRegularFont().getWidth(serverName, profile.getFontSize()) + 1;
+		final Paragraph p = profile.getParagraph(serverName)
 				.setFontColor(profile.getLinkColor())
-				.setAction(PdfAction.createURI("https://reactome.org"))
+				.setAction(PdfAction.createURI(serverName))
 				.setFixedPosition(document.getLeftMargin(), yCenter, linkWidth);
 		document.add(p);
 

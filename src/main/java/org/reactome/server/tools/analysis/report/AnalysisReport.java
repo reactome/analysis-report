@@ -116,8 +116,8 @@ public class AnalysisReport {
 		final AnalysisData analysisData = new AnalysisData(result, resource, species, maxPathways);
 
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
-			document.getPdfDocument().getDocumentInfo().setAuthor("https://reactome.org");
-			document.getPdfDocument().getDocumentInfo().setCreator("https://reactome.org");
+			document.getPdfDocument().getDocumentInfo().setAuthor(String.format("Reactome(%s)", analysisData.getServerName()));
+			document.getPdfDocument().getDocumentInfo().setCreator(String.format("Reactome (%s)", analysisData.getServerName()));
 			document.getPdfDocument().getDocumentInfo().setTitle("Pathway Analysis Report - " + analysisData.getName());
 			document.getPdfDocument().getDocumentInfo().setSubject("Pathway Analysis Report");
 			document.getPdfDocument().getDocumentInfo().setKeywords("pathway analysis,report");
@@ -126,7 +126,7 @@ public class AnalysisReport {
 					pdfProfile.getMargin().getRight(),
 					pdfProfile.getMargin().getBottom(),
 					pdfProfile.getMargin().getLeft());
-			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(document, pdfProfile));
+			document.getPdfDocument().addEventHandler(PdfDocumentEvent.START_PAGE, new FooterEventHandler(document, pdfProfile, analysisData.getServerName()));
 			for (Section section : SECTIONS)
 				section.render(document, pdfProfile, analysisData);
 		}

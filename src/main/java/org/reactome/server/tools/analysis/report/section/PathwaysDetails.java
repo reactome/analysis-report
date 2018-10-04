@@ -75,8 +75,7 @@ public class PathwaysDetails implements Section {
 		final Paragraph paragraph = new Paragraph(pathway.getDisplayName())
 				.add(" (")
 				.add(new Text(pathway.getStId())
-//						.setAction(PdfAction.createURI(analysisData.getResult().getHost() + PATHWAY_DETAIL + pathway.getStId()))
-						.setAction(PdfAction.createURI("https://reactome.org" + PATHWAY_DETAIL + pathway.getStId()))
+						.setAction(PdfAction.createURI(analysisData.getServerName() + PATHWAY_DETAIL + pathway.getStId()))
 						.setFontColor(profile.getLinkColor()))
 				.add(")")
 				.setDestination(pathway.getStId());

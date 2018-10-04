@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
  */
 public class AnalysisData {
 
+	public static final String DEFAULT_SERVER_NAME = "https://reactome.org";
 	private static GeneralService genericService = ReactomeGraphCore.getService(GeneralService.class);
 	private static DatabaseObjectService databaseObjectService = ReactomeGraphCore.getService(DatabaseObjectService.class);
 	private final AnalysisType type;
@@ -37,8 +38,12 @@ public class AnalysisData {
 	private final boolean projection;
 	private final boolean interactors;
 	private final Collection<String> resources;
+	private final String serverName;
 
 	AnalysisData(AnalysisStoredResult result, String resource, Long speciesDbId, int maxPathways) {
+		serverName = result.getSummary().getServer() == null
+				? DEFAULT_SERVER_NAME
+				: result.getSummary().getServer();
 		this.result = result;
 		this.resource = resource;
 		this.speciesDbId = speciesDbId;
@@ -170,5 +175,9 @@ public class AnalysisData {
 	 */
 	public Collection<String> getResources() {
 		return resources;
+	}
+
+	public String getServerName() {
+		return serverName;
 	}
 }

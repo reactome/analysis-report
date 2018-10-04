@@ -30,7 +30,7 @@ public class CoverPage implements Section {
 
 		document.add(profile.getH3(analysisData.getName()).setTextAlignment(TextAlignment.CENTER));
 		document.add(profile.getTitle(""));
-		final String link = "https://reactome.org/PathwayBrowser/#/ANALYSIS=" + analysisData.getResult().getSummary().getToken();
+		final String link = analysisData.getServerName() + "/PathwayBrowser/#/ANALYSIS=" + analysisData.getResult().getSummary().getToken();
 
 		final String text = PdfUtils.getProperty("cover.page",
 				analysisData.getName(),
