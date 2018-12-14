@@ -43,9 +43,9 @@ public class AnalysisReportTest {
 
 	private static final HashMap<String, String> tokens = new LinkedHashMap<String, String>() {
 		{
-//			put("ORA2", "MjAxODEwMDQxMDA3MDhfMw%253D%253D");
+			put("ORA2", "MjAxODEwMDQxMDA3MDhfMw%253D%253D");
 //			put("EXP1", "MjAxODEwMDQxMDA4MDNfNA%253D%253D");
-			put("SPECIES1", "MjAxODEwMDQxMDA4MzVfNQ%253D%253D");
+//			put("SPECIES1", "MjAxODEwMDQxMDA4MzVfNQ%253D%253D");
 		}
 	};
 	private static AnalysisReport RENDERER;
