@@ -121,7 +121,7 @@ public class AnalysisData {
 	 * @return Reactome's current database version.
 	 */
 	public static int getDBVersion() {
-		return genericService.getDBVersion();
+		return genericService.getDBInfo().getVersion();
 	}
 
 	public AnalysisStoredResult getResult() {
