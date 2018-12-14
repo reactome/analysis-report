@@ -1,6 +1,5 @@
 package org.reactome.server.tools.analysis.report;
 
-import org.apache.commons.io.output.NullOutputStream;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -9,6 +8,8 @@ import org.reactome.server.tools.analysis.report.exception.AnalysisExporterExcep
 import org.reactome.server.tools.analysis.report.util.GraphCoreConfig;
 import org.slf4j.LoggerFactory;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -25,7 +26,7 @@ public class AnalysisReportTest {
 	 * Testing the creation of a PDF requires the use of external resources. Although we've tried to reduce the amount
 	 * of these resources, some configuration is needed.
 	 *   1) Graph database: a live connection to Reactome graph database v65 is required. We use already performed
-	 *      analysis to test this project. These analyses have been run against Reactome grpah database version 65. A
+	 *      analysis to test this project. These analyses have been run against Reactome graph database version 65. A
 	 *      live connection is needed by specifying through System properties
 	 *              - neo4j.host
 	 *              - neo4j.port
@@ -42,9 +43,9 @@ public class AnalysisReportTest {
 
 	private static final HashMap<String, String> tokens = new LinkedHashMap<String, String>() {
 		{
-			put("ORA2", "MjAxODEwMDQxMDA3MDhfMw%253D%253D");
+//			put("ORA2", "MjAxODEwMDQxMDA3MDhfMw%253D%253D");
 //			put("EXP1", "MjAxODEwMDQxMDA4MDNfNA%253D%253D");
-//			put("SPECIES1", "MjAxODEwMDQxMDA4MzVfNQ%253D%253D");
+			put("SPECIES1", "MjAxODEwMDQxMDA4MzVfNQ%253D%253D");
 		}
 	};
 	private static AnalysisReport RENDERER;
@@ -73,11 +74,13 @@ public class AnalysisReportTest {
 			final String token = entry.getValue();
 			LoggerFactory.getLogger(AnalysisReportTest.class).info(type);
 			try {
-				final OutputStream os = new NullOutputStream();
+				final OutputStream os = new FileOutputStream("output.pdf");
 				RENDERER.create(token, "TOTAL", 48887L, 10, "modern", "copper plus", "copper", os);
 			} catch (AnalysisExporterException e) {
 				e.printStackTrace();
 				Assert.fail(e.getMessage());
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
 			}
 		}
 

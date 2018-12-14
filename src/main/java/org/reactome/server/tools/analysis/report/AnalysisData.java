@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
  */
 public class AnalysisData {
 
-	public static final String DEFAULT_SERVER_NAME = "https://reactome.org";
+	private static final String DEFAULT_SERVER_NAME = "https://reactome.org";
 	private static GeneralService genericService = ReactomeGraphCore.getService(GeneralService.class);
 	private static DatabaseObjectService databaseObjectService = ReactomeGraphCore.getService(DatabaseObjectService.class);
 	private final AnalysisType type;

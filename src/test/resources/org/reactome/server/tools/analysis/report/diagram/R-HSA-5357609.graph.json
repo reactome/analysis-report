@@ -1,0 +1,73 @@
+{
+  "dbId" : 5357609,
+  "stId" : "R-HSA-5357609",
+  "speciesName" : "Homo sapiens",
+  "nodes" : [ {
+    "dbId" : 9036728,
+    "stId" : "R-HSA-9036728",
+    "displayName" : "glycogen-GYG1 [lysosomal lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P46976",
+    "geneNames" : [ "GYG1", "GYG" ],
+    "parents" : [ 9036726 ]
+  }, {
+    "dbId" : 5357557,
+    "stId" : "R-ALL-5357557",
+    "displayName" : "Mn2+ [lysosomal lumen]",
+    "schemaClass" : "SimpleEntity",
+    "identifier" : "29035",
+    "parents" : [ 9036726 ]
+  }, {
+    "dbId" : 5357607,
+    "stId" : "R-HSA-5357607",
+    "displayName" : "GAA M318T [lysosomal lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10253",
+    "geneNames" : [ "GAA" ],
+    "parents" : [ 5357599 ]
+  }, {
+    "dbId" : 1605715,
+    "stId" : "R-ALL-1605715",
+    "displayName" : "H2O [lysosomal lumen]",
+    "schemaClass" : "SimpleEntity",
+    "diagramIds" : [ 2040 ],
+    "identifier" : "15377"
+  }, {
+    "dbId" : 5357599,
+    "stId" : "R-HSA-5357599",
+    "displayName" : "GAA mutants [lysosomal lumen]",
+    "schemaClass" : "DefinedSet",
+    "speciesId" : 48887,
+    "diagramIds" : [ 126330 ],
+    "children" : [ 5357598, 5357607 ]
+  }, {
+    "dbId" : 9036726,
+    "stId" : "R-HSA-9036726",
+    "displayName" : "glycogen-GYG1 dimer [lysosomal lumen]",
+    "schemaClass" : "Complex",
+    "speciesId" : 48887,
+    "diagramIds" : [ 2041 ],
+    "children" : [ 5357557, 9036728 ]
+  }, {
+    "dbId" : 5357598,
+    "stId" : "R-HSA-5357598",
+    "displayName" : "GAA E521K [lysosomal lumen]",
+    "schemaClass" : "EntityWithAccessionedSequence",
+    "speciesId" : 48887,
+    "identifier" : "P10253",
+    "geneNames" : [ "GAA" ],
+    "parents" : [ 5357599 ]
+  } ],
+  "edges" : [ {
+    "dbId" : 9036729,
+    "stId" : "R-HSA-9036729",
+    "displayName" : "Defective GAA does not hydrolyze lysosomal glycogen",
+    "schemaClass" : "FailedReaction",
+    "inputs" : [ 9036726, 1605715 ],
+    "efs" : [ 5357599 ],
+    "diagramIds" : [ 126329 ],
+    "entityFunctionalStatus" : [ 5357599 ]
+  } ]
+}
