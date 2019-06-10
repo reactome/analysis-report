@@ -56,7 +56,7 @@ public class IdentifiersFound implements Section {
 	private void addAllTable(Document document, PdfProfile profile, AnalysisData analysisData, String resource) {
 		final Set<FoundEntity> entities = new TreeSet<>(Comparator.comparing(IdentifierSummary::getId));
 		for (PathwayNodeSummary pathway : analysisData.getResult().getPathways()) {
-			entities.addAll(analysisData.getResult().getFoundEntities(pathway.getStId()).filter(resource).getIdentifiers());
+			entities.addAll(analysisData.getResult().getFoundEntities(pathway.getStId(), resource).filter(resource).getIdentifiers());
 		}
 		if (entities.isEmpty()) return;
 		final Table expressionTable = analysisData.getType() == AnalysisType.EXPRESSION

@@ -20,13 +20,13 @@ import java.io.IOException;
  */
 public class FireworksHelper {
 
-	private static final double QUALITY = 3.;
+	private static final Integer QUALITY = 3;
 	private static FireworksExporter exporter;
 	private static String profile;
 
 	public static void insertFireworks(Document document, AnalysisData data) throws AnalysisServerError {
 		final FireworkArgs args = new FireworkArgs(data.getSpecies().replace(" ", "_"), "png");
-		args.setFactor(QUALITY);
+		args.setQuality(QUALITY);
 		args.setWriteTitle(false);
 		args.setProfile(profile);
 		try {
