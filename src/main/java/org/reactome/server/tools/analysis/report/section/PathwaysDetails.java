@@ -3,8 +3,8 @@ package org.reactome.server.tools.analysis.report.section;
 import com.itextpdf.kernel.pdf.action.PdfAction;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.borders.Border;
-import com.itextpdf.layout.element.*;
 import com.itextpdf.layout.element.List;
+import com.itextpdf.layout.element.*;
 import com.itextpdf.layout.property.ListNumberingType;
 import com.itextpdf.layout.property.TextAlignment;
 import org.reactome.server.analysis.core.result.model.FoundEntities;
@@ -85,7 +85,7 @@ public class PathwaysDetails implements Section {
 	}
 
 	private void addFoundElements(Document document, AnalysisData analysisData, Pathway pathway, PdfProfile profile) {
-		final FoundEntities foundEntities = analysisData.getResult().getFoundEntities(pathway.getStId());
+		final FoundEntities foundEntities = analysisData.getResult().getFoundEntities(pathway.getStId(), "TOTAL");
 		if (foundEntities.getIdentifiers().isEmpty()) return;
 		document.add(profile.getH3(String.format("Entities found in this pathway (%d)", foundEntities.getIdentifiers().size())));
 		for (String resource : analysisData.getResources()) {
