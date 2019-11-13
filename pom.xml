@@ -25,7 +25,7 @@
         <jsoup.version>1.11.2</jsoup.version>
         <logback.version>1.2.3</logback.version>
         <maven.jar.version>2.6</maven.jar.version>
-        <jackson.version>2.9.2</jackson.version>
+        <jackson.version>2.9.10.1</jackson.version>
         <httpclient.version>4.5.4</httpclient.version>
     </properties>
 
