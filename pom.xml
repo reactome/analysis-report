@@ -20,7 +20,7 @@
         <fireworks.exporter>1.1.4</fireworks.exporter>
 
         <jsap.version>2.1</jsap.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <itext.version>7.1.5</itext.version>
         <jsoup.version>1.11.2</jsoup.version>
         <logback.version>1.2.3</logback.version>
