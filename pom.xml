@@ -6,7 +6,7 @@
 
     <groupId>org.reactome.server.tools</groupId>
     <artifactId>analysis-report</artifactId>
-    <version>1.1.6</version>
+    <version>1.1.6-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -16,8 +16,8 @@
 
         <graph.core.version>1.1.23</graph.core.version>
         <analysis.core.version>3.3.7-SNAPSHOT</analysis.core.version>
-        <diagram.exporter>1.3.12</diagram.exporter>
-        <fireworks.exporter>1.1.4</fireworks.exporter>
+        <diagram.exporter>1.3.17-SNAPSHOT</diagram.exporter>
+        <fireworks.exporter>1.1.7-SNAPSHOT</fireworks.exporter>
 
         <jsap.version>2.1</jsap.version>
         <junit.version>4.13.1</junit.version>
