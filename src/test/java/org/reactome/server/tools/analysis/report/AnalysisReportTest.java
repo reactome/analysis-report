@@ -1,8 +1,8 @@
 package org.reactome.server.tools.analysis.report;
 
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
 import org.reactome.server.tools.analysis.report.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.report.util.GraphCoreConfig;
@@ -50,7 +50,7 @@ public class AnalysisReportTest {
 	};
 	private static AnalysisReport RENDERER;
 
-	@BeforeClass
+	@BeforeAll
 	public static void beforeClass() {
 		final String ANALYSIS_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/analysis";
 		final String DIAGRAM_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/diagram";
@@ -78,7 +78,7 @@ public class AnalysisReportTest {
 				RENDERER.create(token, "TOTAL", 48887L, 10, "modern", "copper plus", "copper", os);
 			} catch (AnalysisExporterException e) {
 				e.printStackTrace();
-				Assert.fail(e.getMessage());
+				Assertions.fail(e.getMessage());
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
