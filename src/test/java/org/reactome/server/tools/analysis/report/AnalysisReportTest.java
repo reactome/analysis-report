@@ -57,12 +57,7 @@ public class AnalysisReportTest {
 		final String FIREWORKS_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/fireworks";
 		final String EHLD_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/ehld";
 		final String SVG_SUMMARY = "src/test/resources/org/reactome/server/tools/analysis/report/ehld/svgsummary.txt";
-		ReactomeGraphCore.initialise(
-				System.getProperty("neo4j.host", "localhost"),
-				System.getProperty("neo4j.port", "7474"),
-				System.getProperty("neo4j.user", "neo4j"),
-				System.getProperty("neo4j.password", "neo4j"),
-				GraphCoreConfig.class);
+		ReactomeGraphCore.initialise("bolt://localhost:7687", "neo4j", "neo4j", GraphCoreConfig.class);
 		RENDERER = new AnalysisReport(DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, SVG_SUMMARY);
 
 	}
