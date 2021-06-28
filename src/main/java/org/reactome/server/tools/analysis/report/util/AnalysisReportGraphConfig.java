@@ -23,7 +23,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableNeo4jRepositories(basePackages = {"org.reactome.server.graph.repository"})
 @EnableSpringConfigured
 @EnableAutoConfiguration
-public class GraphCoreConfig extends GraphCoreNeo4jConfig {
+public class AnalysisReportGraphConfig extends GraphCoreNeo4jConfig {
 
     /**
      * This is needed to get hold of the instance of the aspect which is created outside of the spring container,

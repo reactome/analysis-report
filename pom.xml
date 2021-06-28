@@ -210,8 +210,7 @@
 
                     <!-- Configure the Neo4j database for testcase -->
                     <systemPropertyVariables>
-                        <neo4j.host>${neo4j.host}</neo4j.host>
-                        <neo4j.port>${neo4j.port}</neo4j.port>
+                        <neo4j.uri>${neo4j.uri}</neo4j.uri>
                         <neo4j.user>${neo4j.user}</neo4j.user>
                         <neo4j.password>${neo4j.password}</neo4j.password>
                     </systemPropertyVariables>
