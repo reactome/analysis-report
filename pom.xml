@@ -207,7 +207,8 @@
                 <version>${maven.surefire.version}</version>
                 <configuration>
                     <useSystemClassLoader>true</useSystemClassLoader>
-                    <forkMode>always</forkMode>
+                    <forkCount>1</forkCount>
+                    <reuseForks>true</reuseForks>
                     <test>*Test.java</test>
 
                     <!-- Configure the Neo4j database for testcase -->
@@ -215,6 +216,10 @@
                         <neo4j.uri>${neo4j.uri}</neo4j.uri>
                         <neo4j.user>${neo4j.user}</neo4j.user>
                         <neo4j.password>${neo4j.password}</neo4j.password>
+                        <diagram.folder>${diagram.json.folder}</diagram.folder>
+                        <ehld.folder>${ehld.folder}</ehld.folder>
+                        <fireworks.folder>${fireworks.json.folder}</fireworks.folder>
+                        <svg.summary.path>${svg.summary.file}</svg.summary.path>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

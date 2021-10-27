@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.aspectj.EnableSpringConfigured;
 import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -16,7 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  *
  * @author Chuan-Deng dengchuanbio@gmail.com
  */
-@org.springframework.context.annotation.Configuration
+@Configuration
 @ComponentScan(basePackages = {"org.reactome.server.graph"})
 @EntityScan(basePackages = {"org.reactome.server.graph.domain.model"})
 @EnableTransactionManagement
