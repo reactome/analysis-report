@@ -1,11 +1,11 @@
 package org.reactome.server.tools.analysis.report;
 
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
 import org.reactome.server.tools.analysis.report.exception.AnalysisExporterException;
-import org.reactome.server.tools.analysis.report.util.GraphCoreConfig;
+import org.reactome.server.tools.analysis.report.util.AnalysisReportGraphConfig;
 import org.slf4j.LoggerFactory;
 
 import java.io.FileNotFoundException;
@@ -50,19 +50,14 @@ public class AnalysisReportTest {
 	};
 	private static AnalysisReport RENDERER;
 
-	@BeforeClass
+	@BeforeAll
 	public static void beforeClass() {
 		final String ANALYSIS_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/analysis";
 		final String DIAGRAM_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/diagram";
 		final String FIREWORKS_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/fireworks";
 		final String EHLD_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/ehld";
 		final String SVG_SUMMARY = "src/test/resources/org/reactome/server/tools/analysis/report/ehld/svgsummary.txt";
-		ReactomeGraphCore.initialise(
-				System.getProperty("neo4j.host", "localhost"),
-				System.getProperty("neo4j.port", "7474"),
-				System.getProperty("neo4j.user", "neo4j"),
-				System.getProperty("neo4j.password", "neo4j"),
-				GraphCoreConfig.class);
+		ReactomeGraphCore.initialise("bolt://localhost:7687", "neo4j", "neo4j", AnalysisReportGraphConfig.class);
 		RENDERER = new AnalysisReport(DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, SVG_SUMMARY);
 
 	}
@@ -78,7 +73,7 @@ public class AnalysisReportTest {
 				RENDERER.create(token, "TOTAL", 48887L, 10, "modern", "copper plus", "copper", os);
 			} catch (AnalysisExporterException e) {
 				e.printStackTrace();
-				Assert.fail(e.getMessage());
+				Assertions.fail(e.getMessage());
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}

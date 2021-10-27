@@ -6,27 +6,39 @@
 
     <groupId>org.reactome.server.tools</groupId>
     <artifactId>analysis-report</artifactId>
-    <version>1.1.6</version>
+    <version>1.2.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-parent</artifactId>
+        <version>2.5.3</version>
+    </parent>
+
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <graph.core.version>1.1.24</graph.core.version>
-        <analysis.core.version>3.3.7</analysis.core.version>
-        <diagram.exporter>1.3.17</diagram.exporter>
-        <fireworks.exporter>1.1.7</fireworks.exporter>
+        <graph.core.version>2.0.0-SNAPSHOT</graph.core.version>
+        <analysis.core.version>3.4.0-SNAPSHOT</analysis.core.version>
+        <diagram.exporter>2.0.0-SNAPSHOT</diagram.exporter>
+        <fireworks.exporter>1.2.0-SNAPSHOT</fireworks.exporter>
 
         <jsap.version>2.1</jsap.version>
-        <junit.version>4.13.1</junit.version>
-        <itext.version>7.1.5</itext.version>
-        <jsoup.version>1.11.2</jsoup.version>
-        <logback.version>1.2.3</logback.version>
-        <maven.jar.version>2.6</maven.jar.version>
-        <jackson.version>2.9.10.5</jackson.version>
-        <httpclient.version>4.5.4</httpclient.version>
+        <junit.version>5.8.0-M1</junit.version>
+        <itext.version>7.1.15</itext.version>
+        <jsoup.version>1.13.1</jsoup.version>
+        <logback.version>1.3.0-alpha5</logback.version>
+        <jackson.version>2.12.2</jackson.version>
+        <httpclient.version>4.5.13</httpclient.version>
+        <cssparser.version>0.9.29</cssparser.version>
+        <xml.security.version>1.0.4</xml.security.version>
+
+        <maven.compiler.version>3.8.1</maven.compiler.version>
+        <maven.surefire.version>3.0.0-M5</maven.surefire.version>
+        <maven.jar.version>3.2.0</maven.jar.version>
+
     </properties>
 
     <dependencies>
@@ -37,28 +49,24 @@
         </dependency>
 
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>${logback.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>${httpclient.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>${jackson.version}</version>
         </dependency>
 
         <dependency>
@@ -97,7 +105,7 @@
         <dependency>
             <groupId>net.sourceforge.cssparser</groupId>
             <artifactId>cssparser</artifactId>
-            <version>0.9.25</version>
+            <version>${cssparser.version}</version>
         </dependency>
 
         <!-- fireworks -->
@@ -121,7 +129,7 @@
         <dependency>
             <groupId>xml-security</groupId>
             <artifactId>xml-security</artifactId>
-            <version>1.0.4</version>
+            <version>${xml.security.version}</version>
         </dependency>
     </dependencies>
 
@@ -130,7 +138,7 @@
             <id>nexus-ebi-repo</id>
             <name>The EBI internal repository</name>
             <url>
-                http://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-repo/
+                https://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-repo/
             </url>
             <releases>
                 <enabled>true</enabled>
@@ -144,7 +152,7 @@
             <id>nexus-ebi-snapshot-repo</id>
             <name>The EBI internal snapshot repository</name>
             <url>
-                http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-snapshots/
+                https://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-snapshots/
             </url>
             <releases>
                 <enabled>false</enabled>
@@ -178,10 +186,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>${maven.compiler.version}</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -196,7 +204,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.20.1</version>
+                <version>${maven.surefire.version}</version>
                 <configuration>
                     <useSystemClassLoader>true</useSystemClassLoader>
                     <forkMode>always</forkMode>
@@ -204,8 +212,7 @@
 
                     <!-- Configure the Neo4j database for testcase -->
                     <systemPropertyVariables>
-                        <neo4j.host>${neo4j.host}</neo4j.host>
-                        <neo4j.port>${neo4j.port}</neo4j.port>
+                        <neo4j.uri>${neo4j.uri}</neo4j.uri>
                         <neo4j.user>${neo4j.user}</neo4j.user>
                         <neo4j.password>${neo4j.password}</neo4j.password>
                     </systemPropertyVariables>

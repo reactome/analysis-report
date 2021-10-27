@@ -5,11 +5,13 @@ import com.itextpdf.layout.element.Table;
 import org.reactome.server.analysis.core.model.AnalysisIdentifier;
 import org.reactome.server.analysis.core.model.AnalysisType;
 import org.reactome.server.analysis.core.model.identifier.Identifier;
+import org.reactome.server.analysis.core.model.identifier.MainIdentifier;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.analysis.core.result.model.FoundEntity;
 import org.reactome.server.analysis.core.result.model.FoundInteractor;
 import org.reactome.server.analysis.core.result.model.FoundInteractors;
 import org.reactome.server.analysis.core.result.model.IdentifierSummary;
+import org.reactome.server.analysis.core.util.MapSet;
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.analysis.report.style.PdfProfile;
 import org.reactome.server.tools.analysis.report.util.PdfUtils;
@@ -25,12 +27,14 @@ public class IdentifiersFound implements Section {
 	public void render(Document document, PdfProfile profile, AnalysisData analysisData) {
 		document.add(profile.getH1(("Identifiers found")).setDestination("identifiers-found"));
 		document.add(profile.getParagraph(PdfUtils.getProperty("identifiers.found.section")));
-		final long entities = analysisData.getResult().getFoundEntitiesMap().keySet().stream()
+		MapSet<Identifier, MainIdentifier> foundEntitiesMap = analysisData.getResult().getFoundEntitiesMap();
+		final long entities = foundEntitiesMap.keySet().stream()
 				.map(Identifier::getValue)
 				.map(AnalysisIdentifier::getId)
 				.distinct()
 				.count();
-		document.add(profile.getH3(String.format("Entities (%d)", entities)));
+		int mappedEntitiesCount = foundEntitiesMap.values().size();
+		document.add(profile.getH3(String.format("%d of the submitted entities were found, mapping to %d Reactome entities", entities, mappedEntitiesCount)));
 		for (String resource : analysisData.getResources()) {
 			document.add(profile.getParagraph(""));
 			addAllTable(document, profile, analysisData, resource);
