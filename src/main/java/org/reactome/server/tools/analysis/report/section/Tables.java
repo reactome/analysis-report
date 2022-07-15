@@ -1,7 +1,7 @@
 package org.reactome.server.tools.analysis.report.section;
 
 import com.itextpdf.layout.element.Table;
-import com.itextpdf.layout.property.UnitValue;
+import com.itextpdf.layout.properties.UnitValue;
 import org.reactome.server.analysis.core.result.model.FoundEntity;
 import org.reactome.server.analysis.core.result.model.FoundInteractor;
 import org.reactome.server.analysis.core.result.model.IdentifierMap;

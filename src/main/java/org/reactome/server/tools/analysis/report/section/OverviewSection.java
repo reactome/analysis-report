@@ -2,7 +2,7 @@ package org.reactome.server.tools.analysis.report.section;
 
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.AreaBreak;
-import com.itextpdf.layout.property.TextAlignment;
+import com.itextpdf.layout.properties.TextAlignment;
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.analysis.report.style.PdfProfile;
 import org.reactome.server.tools.analysis.report.util.FireworksHelper;

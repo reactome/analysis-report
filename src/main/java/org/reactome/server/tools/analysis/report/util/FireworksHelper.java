@@ -3,7 +3,7 @@ package org.reactome.server.tools.analysis.report.util;
 import com.itextpdf.kernel.pdf.xobject.PdfFormXObject;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Image;
-import com.itextpdf.layout.property.HorizontalAlignment;
+import com.itextpdf.layout.properties.HorizontalAlignment;
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.fireworks.exporter.FireworksExporter;
 import org.reactome.server.tools.fireworks.exporter.common.analysis.exception.AnalysisServerError;

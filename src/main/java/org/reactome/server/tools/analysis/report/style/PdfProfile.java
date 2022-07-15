@@ -13,8 +13,8 @@ import com.itextpdf.layout.element.List;
 import com.itextpdf.layout.element.ListItem;
 import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.hyphenation.HyphenationConfig;
-import com.itextpdf.layout.property.TextAlignment;
-import com.itextpdf.layout.property.VerticalAlignment;
+import com.itextpdf.layout.properties.TextAlignment;
+import com.itextpdf.layout.properties.VerticalAlignment;
 import org.apache.commons.io.IOUtils;
 import org.reactome.server.analysis.core.result.PathwayNodeSummary;
 import org.reactome.server.tools.analysis.report.exception.AnalysisExporterRuntimeException;
@@ -53,13 +53,13 @@ public class PdfProfile {
 		try {
 			byte[] bytes;
 			bytes = IOUtils.toByteArray(PdfProfile.class.getResourceAsStream("SourceSerifPro-Regular.ttf"));
-			REGULAR = PdfFontFactory.createFont(bytes, true);
+			REGULAR = PdfFontFactory.createFont(bytes, PdfFontFactory.EmbeddingStrategy.PREFER_EMBEDDED);
 			bytes = IOUtils.toByteArray(PdfProfile.class.getResourceAsStream("SourceSerifPro-Bold.ttf"));
-			BOLD = PdfFontFactory.createFont(bytes, true);
+			BOLD = PdfFontFactory.createFont(bytes, PdfFontFactory.EmbeddingStrategy.PREFER_EMBEDDED);
 			bytes = IOUtils.toByteArray(PdfProfile.class.getResourceAsStream("SourceSerifPro-Semibold.ttf"));
-			LIGHT = PdfFontFactory.createFont(bytes, true);
+			LIGHT = PdfFontFactory.createFont(bytes, PdfFontFactory.EmbeddingStrategy.PREFER_EMBEDDED);
 			bytes = IOUtils.toByteArray(PdfProfile.class.getResourceAsStream("OpenSans-Italic.ttf"));
-			ITALIC = PdfFontFactory.createFont(bytes, true);
+			ITALIC = PdfFontFactory.createFont(bytes, PdfFontFactory.EmbeddingStrategy.PREFER_EMBEDDED);
 		} catch (IOException e) {
 			throw new AnalysisExporterRuntimeException("Internal error. Couldn't read fonts", e);
 		}

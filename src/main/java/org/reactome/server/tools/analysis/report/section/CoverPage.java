@@ -2,8 +2,8 @@ package org.reactome.server.tools.analysis.report.section;
 
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
-import com.itextpdf.layout.property.HorizontalAlignment;
-import com.itextpdf.layout.property.TextAlignment;
+import com.itextpdf.layout.properties.HorizontalAlignment;
+import com.itextpdf.layout.properties.TextAlignment;
 import org.reactome.server.tools.analysis.report.AnalysisData;
 import org.reactome.server.tools.analysis.report.style.Images;
 import org.reactome.server.tools.analysis.report.style.PdfProfile;
@@ -42,6 +42,4 @@ public class CoverPage implements Section {
 		for (Paragraph paragraph : paragraphs)
 			document.add(paragraph.setTextAlignment(TextAlignment.CENTER));
 	}
-
-
 }
