@@ -28,7 +28,7 @@
         <jsap.version>2.1</jsap.version>
         <junit.version>5.8.0-M1</junit.version>
         <itext.version>7.2.1</itext.version>
-        <jsoup.version>1.14.3</jsoup.version>
+        <jsoup.version>1.15.3</jsoup.version>
         <logback.version>1.3.0-alpha5</logback.version>
         <jackson.version>2.12.2</jackson.version>
         <httpclient.version>4.5.13</httpclient.version>
