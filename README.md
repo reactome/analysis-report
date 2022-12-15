@@ -15,7 +15,7 @@ Analysis exporter is developed as a Java library. To add it to your project, you
 	<dependency>
 		<groupId>org.reactome.server.tools</groupId>
 		<artifactId>analysis-report</artifactId>
-		<version>1.1.1</version>
+		<version>1.2.3</version>
 	</dependency>
 	<!-- ... -->
 </dependencies>
@@ -23,7 +23,7 @@ Analysis exporter is developed as a Java library. To add it to your project, you
 	<repository>
 		<id>pst-release</id>
 		<name>EBI Nexus Repository</name>
-		<url>http://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-release</url>
+		<url>https://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-release</url>
 	</repository>
 	<!-- ... -->
 <repositories>
