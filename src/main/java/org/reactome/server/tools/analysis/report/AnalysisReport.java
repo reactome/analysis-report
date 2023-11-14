@@ -95,15 +95,15 @@ public class AnalysisReport {
 	 * @param destination destination you want to save the produced PDF report
 	 */
 
-	public void create(String token, String resource, Long species, int maxPathways, String diagramProfile, String analysisProfile, String fireworksProfile, OutputStream destination) throws AnalysisExporterException {
+	public void create(String token, String resource, Long species, int maxPathways, boolean importableOnly, String diagramProfile, String analysisProfile, String fireworksProfile, OutputStream destination) throws AnalysisExporterException {
 		final AnalysisStoredResult result = tokenUtils.getFromToken(token);
-		create(result, resource, species, maxPathways, diagramProfile, analysisProfile, fireworksProfile, destination);
+		create(result, resource, species, maxPathways, importableOnly, diagramProfile, analysisProfile, fireworksProfile, destination);
 	}
 
 	/**
 	 * create the report with data set.
 	 */
-	public void create(AnalysisStoredResult result, String resource, Long species, int maxPathways, String diagramProfile, String analysisProfile, String fireworksProfile, OutputStream destination) throws AnalysisExporterException {
+	public void create(AnalysisStoredResult result, String resource, Long species, int maxPathways, boolean importableOnly, String diagramProfile, String analysisProfile, String fireworksProfile, OutputStream destination) throws AnalysisExporterException {
 		final PdfProfile pdfProfile = loadProfile("breathe");
 		DiagramHelper.setProfiles(diagramProfile, analysisProfile);
 		FireworksHelper.setProfile(fireworksProfile);
@@ -113,7 +113,7 @@ public class AnalysisReport {
 		if (!result.getResourceSummary().contains(new ResourceSummary(resource, null)))
 			resource = getDefaultResource(result);
 
-		final AnalysisData analysisData = new AnalysisData(result, resource, species, maxPathways);
+		final AnalysisData analysisData = new AnalysisData(result, resource, species, maxPathways, importableOnly);
 
 		try (Document document = new Document(new PdfDocument(new PdfWriter(destination)))) {
 			document.getPdfDocument().getDocumentInfo().setAuthor(String.format("Reactome(%s)", analysisData.getServerName()));

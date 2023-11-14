@@ -69,7 +69,7 @@ public class AnalysisReportTest {
             LoggerFactory.getLogger(AnalysisReportTest.class).info(type);
             try {
                 final OutputStream os = new FileOutputStream("output.pdf");
-                RENDERER.create(token, "TOTAL", 48887L, 10, "modern", "copper plus", "copper", os);
+                RENDERER.create(token, "TOTAL", 48887L, 10, false, "modern", "copper plus", "copper", os);
             } catch (AnalysisExporterException e) {
                 e.printStackTrace();
                 Assertions.fail(e.getMessage());

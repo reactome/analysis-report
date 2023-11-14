@@ -39,8 +39,9 @@ public class AnalysisData {
 	private final boolean interactors;
 	private final Collection<String> resources;
 	private final String serverName;
+	private final boolean importableOnly;
 
-	AnalysisData(AnalysisStoredResult result, String resource, Long speciesDbId, int maxPathways) {
+	AnalysisData(AnalysisStoredResult result, String resource, Long speciesDbId, int maxPathways, boolean importableOnly) {
 		serverName = result.getSummary().getServer() == null
 				? DEFAULT_SERVER_NAME
 				: result.getSummary().getServer();
@@ -52,6 +53,7 @@ public class AnalysisData {
 		this.type = AnalysisType.valueOf(result.getSummary().getType());
 		this.speciesComparisonSpecies = getSpeciesName(result.getSummary().getSpecies());
 		this.maxPathways = maxPathways;
+		this.importableOnly = importableOnly;
 		this.name = computeName();
 		this.projection = result.getSummary().isProjection() != null && result.getSummary().isProjection();
 		this.interactors = result.getSummary().isInteractors() != null && result.getSummary().isInteractors();
@@ -72,7 +74,7 @@ public class AnalysisData {
 	}
 
 	private List<PathwayData> collectPathways() {
-		return result.filterBySpecies(speciesDbId, resource).getPathways().stream()
+		return result.filterBySpecies(speciesDbId, resource, importableOnly).getPathways().stream()
 				.limit(maxPathways)
 				.map(base -> {
 					final PathwayNodeSummary summary = result.getPathway(base.getStId());
