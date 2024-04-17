@@ -82,18 +82,33 @@ public class AnalysisExporterMain {
 		maxPathways.setHelp("Max number of pathways to show");
 		jsap.registerParameter(maxPathways);
 
+		FlaggedOption resource = new FlaggedOption("resource")
+				.setRequired(false)
+				.setDefault("TOTAL")
+				.setShortFlag('r');
+		resource.setHelp("Analysis resource filter, TOTAL to not filter");
+		jsap.registerParameter(resource);
+
+		FlaggedOption importableOnly = new FlaggedOption("importableOnly")
+				.setRequired(false)
+				.setDefault("false")
+				.setShortFlag('i');
+		importableOnly.setHelp("Filter analysis results to only accept importable resources. (Filters out auxiliary resources)");
+		jsap.registerParameter(importableOnly);
+
 		JSAPResult config = jsap.parse(args);
 
 		long start = Instant.now().toEpochMilli();
 		final AnalysisReport analysisReport = new AnalysisReport(config.getString("diagramPath"), config.getString("ehldPath"),
 				config.getString("fireworksPath"), config.getString("analysisPath"),
 				config.getString("svgSummary"));
-		final FileOutputStream os = new FileOutputStream(new File(config.getString("output")));
+		final FileOutputStream os = new FileOutputStream(config.getString("output"));
 		try {
 			analysisReport.create(config.getString("token"),
 					config.getString("resource"),
 					config.getLong("species"),
 					config.getInt("maxPathways"),
+					config.getBoolean("importableOnly"),
 					null, null, null, os);
 		} catch (AnalysisExporterException e) {
 			logger.info("Failed creating PDF");
