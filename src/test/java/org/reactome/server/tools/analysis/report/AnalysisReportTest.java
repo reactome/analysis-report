@@ -40,7 +40,7 @@ public class AnalysisReportTest {
      */
 
     private static final Map<String, String> tokens = Map.of(
-            "PTEN", "MjAyMTEwMjcxMDM3NDdfMg%3D%3D"
+            "PTEN", "MjAyNTAyMjExNDE4MjBfNA%253D%253D"
 //			"EXP1", "MjAxODEwMDQxMDA4MDNfNA%253D%253D"
 //			"SPECIES1", "MjAxODEwMDQxMDA4MzVfNQ%253D%253D"
     );
