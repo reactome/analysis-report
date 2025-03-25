@@ -6,7 +6,7 @@
 
     <groupId>org.reactome.server.tools</groupId>
     <artifactId>analysis-report</artifactId>
-    <version>1.2.8</version>
+    <version>1.5.0</version>
     <packaging>jar</packaging>
 
     <parent>
@@ -16,9 +16,7 @@
     </parent>
 
     <properties>
-
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
     </properties>
 
     <dependencies>
@@ -100,6 +98,12 @@
             <groupId>xml-security</groupId>
             <artifactId>xml-security</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <repositories>
@@ -132,9 +136,59 @@
         </repository>
     </repositories>
 
+    <distributionManagement>
+        <repository>
+            <id>local-nexus-repo</id>
+            <name>Local Nexus Release Repository</name>
+            <url>http://localhost:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>local-nexus-snapshot-repo</id>
+            <name>Local Nexus Snapshot Repository</name>
+            <url>http://localhost:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 
     <!--This configuration is needed so that javadoc is included in maven site-->
     <build>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>**/*.bin</exclude>
+                    <exclude>**/*.ttf</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+                <includes>
+                    <include>**/*.bin</include>
+                    <include>**/*.ttf</include>
+                </includes>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+                <excludes>
+                    <exclude>**/*.bin</exclude>
+                    <exclude>**/*.ttf</exclude>
+                </excludes>
+            </testResource>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>false</filtering>
+                <includes>
+                    <include>**/*.bin</include>
+                    <include>**/*.ttf</include>
+                </includes>
+            </testResource>
+        </testResources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -163,17 +217,6 @@
                     <forkCount>1</forkCount>
                     <reuseForks>true</reuseForks>
                     <test>*Test.java</test>
-
-                    <!-- Configure the Neo4j database for testcase -->
-                    <systemPropertyVariables>
-                        <neo4j.uri>${neo4j.uri}</neo4j.uri>
-                        <neo4j.user>${neo4j.user}</neo4j.user>
-                        <neo4j.password>${neo4j.password}</neo4j.password>
-                        <diagram.folder>${diagram.json.folder}</diagram.folder>
-                        <ehld.folder>${ehld.folder}</ehld.folder>
-                        <fireworks.folder>${fireworks.json.folder}</fireworks.folder>
-                        <svg.summary.path>${svg.summary.file}</svg.summary.path>
-                    </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>
