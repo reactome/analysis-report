@@ -1,224 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
-    <groupId>org.reactome.server.tools</groupId>
-    <artifactId>analysis-report</artifactId>
-    <version>1.5.0</version>
-    <packaging>jar</packaging>
-
-    <parent>
-        <groupId>org.reactome.maven</groupId>
-        <artifactId>reactome-parent</artifactId>
-        <version>1.0.5</version>
-    </parent>
-
-    <properties>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    </properties>
-
-    <dependencies>
-
-        <dependency>
-            <groupId>org.reactome.server.tools</groupId>
-            <artifactId>analysis-core</artifactId>
-        </dependency>
-        <!-- fireworks -->
-        <dependency>
-            <groupId>org.reactome.server.tools</groupId>
-            <artifactId>fireworks-exporter</artifactId>
-        </dependency>
-        <!-- diagrams -->
-        <dependency>
-            <groupId>org.reactome.server.tools</groupId>
-            <artifactId>diagram-exporter</artifactId>
-        </dependency>
-        <!-- graph-core -->
-        <dependency>
-            <groupId>org.reactome.server.graph</groupId>
-            <artifactId>graph-core</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.martiansoftware</groupId>
-            <artifactId>jsap</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jsoup</groupId>
-            <artifactId>jsoup</artifactId>
-        </dependency>
-
-        <!-- iText -->
-        <dependency>
-            <groupId>com.itextpdf</groupId>
-            <artifactId>kernel</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.itextpdf</groupId>
-            <artifactId>io</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.itextpdf</groupId>
-            <artifactId>layout</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.itextpdf</groupId>
-            <artifactId>hyph</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>net.sourceforge.cssparser</groupId>
-            <artifactId>cssparser</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>xml-security</groupId>
-            <artifactId>xml-security</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <repositories>
-        <repository>
-            <id>nexus-ebi-repo</id>
-            <name>The EBI internal repository</name>
-            <url>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.reactome.server.tools</groupId>
+  <artifactId>analysis-report</artifactId>
+  <version>1.3.0</version>
+  <packaging>jar</packaging>
+  <parent>
+    <groupId>org.reactome.maven</groupId>
+    <artifactId>reactome-parent</artifactId>
+    <version>1.1.0</version>
+  </parent>
+  <properties>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.reactome.server.tools</groupId>
+      <artifactId>analysis-core</artifactId>
+    </dependency>
+    <!-- fireworks -->
+    <dependency>
+      <groupId>org.reactome.server.tools</groupId>
+      <artifactId>fireworks-exporter</artifactId>
+    </dependency>
+    <!-- diagrams -->
+    <dependency>
+      <groupId>org.reactome.server.tools</groupId>
+      <artifactId>diagram-exporter</artifactId>
+    </dependency>
+    <!-- graph-core -->
+    <dependency>
+      <groupId>org.reactome.server.graph</groupId>
+      <artifactId>graph-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.martiansoftware</groupId>
+      <artifactId>jsap</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup</artifactId>
+    </dependency>
+    <!-- iText -->
+    <dependency>
+      <groupId>com.itextpdf</groupId>
+      <artifactId>kernel</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.itextpdf</groupId>
+      <artifactId>io</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.itextpdf</groupId>
+      <artifactId>layout</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.itextpdf</groupId>
+      <artifactId>hyph</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>net.sourceforge.cssparser</groupId>
+      <artifactId>cssparser</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>xml-security</groupId>
+      <artifactId>xml-security</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <repositories>
+    <repository>
+      <id>nexus-ebi-repo</id>
+      <name>The EBI internal repository</name>
+      <url>
                 https://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-repo/
             </url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <!-- EBI SNAPSHOT repo -->
-        <repository>
-            <id>nexus-ebi-snapshot-repo</id>
-            <name>The EBI internal snapshot repository</name>
-            <url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <!-- EBI SNAPSHOT repo -->
+    <repository>
+      <id>nexus-ebi-snapshot-repo</id>
+      <name>The EBI internal snapshot repository</name>
+      <url>
                 https://www.ebi.ac.uk/Tools/maven/repos/content/repositories/pst-snapshots/
             </url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
-    <distributionManagement>
-        <repository>
-            <id>local-nexus-repo</id>
-            <name>Local Nexus Release Repository</name>
-            <url>http://localhost:8081/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>local-nexus-snapshot-repo</id>
-            <name>Local Nexus Snapshot Repository</name>
-            <url>http://localhost:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-
-    <!--This configuration is needed so that javadoc is included in maven site-->
-    <build>
-
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-                <excludes>
-                    <exclude>**/*.bin</exclude>
-                    <exclude>**/*.ttf</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>false</filtering>
-                <includes>
-                    <include>**/*.bin</include>
-                    <include>**/*.ttf</include>
-                </includes>
-            </resource>
-        </resources>
-        <testResources>
-            <testResource>
-                <directory>src/test/resources</directory>
-                <filtering>true</filtering>
-                <excludes>
-                    <exclude>**/*.bin</exclude>
-                    <exclude>**/*.ttf</exclude>
-                </excludes>
-            </testResource>
-            <testResource>
-                <directory>src/test/resources</directory>
-                <filtering>false</filtering>
-                <includes>
-                    <include>**/*.bin</include>
-                    <include>**/*.ttf</include>
-                </includes>
-            </testResource>
-        </testResources>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven.compiler.version}</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>${maven.jar.version}</version>
-                <configuration>
-                    <excludes>
-                        <exclude>**/logback.xml</exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven.surefire.version}</version>
-                <configuration>
-                    <useSystemClassLoader>true</useSystemClassLoader>
-                    <forkCount>1</forkCount>
-                    <reuseForks>true</reuseForks>
-                    <test>*Test.java</test>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  <distributionManagement>
+    <repository>
+      <id>local-nexus-repo</id>
+      <name>Local Nexus Release Repository</name>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>local-nexus-snapshot-repo</id>
+      <name>Local Nexus Snapshot Repository</name>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <!--This configuration is needed so that javadoc is included in maven site-->
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+        <excludes>
+          <exclude>**/*.bin</exclude>
+          <exclude>**/*.ttf</exclude>
+        </excludes>
+      </resource>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>false</filtering>
+        <includes>
+          <include>**/*.bin</include>
+          <include>**/*.ttf</include>
+        </includes>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <directory>src/test/resources</directory>
+        <filtering>true</filtering>
+        <excludes>
+          <exclude>**/*.bin</exclude>
+          <exclude>**/*.ttf</exclude>
+        </excludes>
+      </testResource>
+      <testResource>
+        <directory>src/test/resources</directory>
+        <filtering>false</filtering>
+        <includes>
+          <include>**/*.bin</include>
+          <include>**/*.ttf</include>
+        </includes>
+      </testResource>
+    </testResources>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven.compiler.version}</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>${maven.jar.version}</version>
+        <configuration>
+          <excludes>
+            <exclude>**/logback.xml</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${maven.surefire.version}</version>
+        <configuration>
+          <useSystemClassLoader>true</useSystemClassLoader>
+          <forkCount>1</forkCount>
+          <reuseForks>true</reuseForks>
+          <test>*Test.java</test>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
