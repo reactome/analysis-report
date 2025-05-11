@@ -3,10 +3,14 @@ package org.reactome.server.tools.analysis.report;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.reactome.server.graph.config.GraphCoreNeo4jConfig;
 import org.reactome.server.graph.utils.ReactomeGraphCore;
 import org.reactome.server.tools.analysis.report.exception.AnalysisExporterException;
 import org.reactome.server.tools.analysis.report.util.AnalysisReportGraphConfig;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ContextConfiguration;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -17,6 +21,8 @@ import java.util.Map;
  * @author Chuan-Deng dengchuanbio@gmail.com
  * @author Lorente Pascual plorente@ebi.ac.uk
  */
+@SpringBootTest
+@ContextConfiguration(classes = {GraphCoreNeo4jConfig.class})
 public class AnalysisReportTest {
 
     /*
@@ -40,7 +46,7 @@ public class AnalysisReportTest {
      */
 
     private static final Map<String, String> tokens = Map.of(
-            "PTEN", "MjAyMTEwMjcxMDM3NDdfMg%3D%3D"
+            "PTEN", "MjAyNTAyMjExMDQwMTVfMjUxMQ%253D%253D"
 //			"EXP1", "MjAxODEwMDQxMDA4MDNfNA%253D%253D"
 //			"SPECIES1", "MjAxODEwMDQxMDA4MzVfNQ%253D%253D"
     );
@@ -50,15 +56,19 @@ public class AnalysisReportTest {
 
 
     @BeforeAll
-    public static void beforeClass() {
-        final String ANALYSIS_PATH = "src/test/resources/org/reactome/server/tools/analysis/report/analysis";
-        final String DIAGRAM_PATH = System.getProperty("diagram.folder");
-        final String FIREWORKS_PATH = System.getProperty("fireworks.folder");
-        final String EHLD_PATH = System.getProperty("ehld.folder");
-        final String SVG_SUMMARY = System.getProperty("svg.summary.path");
-        ReactomeGraphCore.initialise(System.getProperty("neo4j.uri"), System.getProperty("neo4j.user"), System.getProperty("neo4j.password"), AnalysisReportGraphConfig.class);
-        RENDERER = new AnalysisReport(DIAGRAM_PATH, EHLD_PATH, FIREWORKS_PATH, ANALYSIS_PATH, SVG_SUMMARY);
-
+    public static void beforeClass(
+            @Value("${diagram.folder}") String diagramPath,
+            @Value("${fireworks.folder}") String fireworksPath,
+            @Value("${ehld.folder}") String ehldPath,
+            @Value("${svg.summary.path}") String svgSummaryPath,
+            @Value("${spring.neo4j.uri}") String neo4jUri,
+            @Value("${spring.neo4j.authentication.username}") String neo4jUsername,
+            @Value("${spring.neo4j.authentication.password}") String neo4jPassword,
+            @Value("${spring.data.neo4j.database}") String neo4jDatabase
+    ) {
+        String analysisPath = "src/test/resources/org/reactome/server/tools/analysis/report/analysis";
+        ReactomeGraphCore.initialise(neo4jUri, neo4jUsername, neo4jPassword, neo4jDatabase, AnalysisReportGraphConfig.class);
+        RENDERER = new AnalysisReport(diagramPath, ehldPath, fireworksPath, analysisPath, svgSummaryPath);
     }
 
     @Test
