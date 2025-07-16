@@ -119,18 +119,6 @@
       </snapshots>
     </repository>
   </repositories>
-  <distributionManagement>
-    <repository>
-      <id>local-nexus-repo</id>
-      <name>Local Nexus Release Repository</name>
-      <url>http://localhost:8081/repository/maven-releases/</url>
-    </repository>
-    <snapshotRepository>
-      <id>local-nexus-snapshot-repo</id>
-      <name>Local Nexus Snapshot Repository</name>
-      <url>http://localhost:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement>
   <!--This configuration is needed so that javadoc is included in maven site-->
   <build>
     <resources>
