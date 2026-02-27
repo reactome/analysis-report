@@ -50,6 +50,8 @@ public class DiagramHelper {
 			document.flush();
 		} catch (AnalysisException | EhldException | DiagramJsonNotFoundException | DiagramJsonDeserializationException | IOException e) {
 			logger.error("Couldn't insert diagram " + stId, e);
+		} catch (Exception e) {
+			logger.error("Unexpected error inserting diagram " + stId, e);
 		}
 	}
 

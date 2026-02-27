@@ -120,6 +120,7 @@ public class PathwaysDetails implements Section {
 	}
 
 	private void addSummations(Document document, Pathway pathway, PdfProfile profile) {
+		if (pathway.getSummation() == null) return;
 		pathway.getSummation().stream()
 				.map(summation -> HtmlParser.parseText(profile, summation.getText()))
 				.flatMap(Collection::stream)
@@ -259,7 +260,9 @@ public class PathwaysDetails implements Section {
 		Edition(String type, InstanceEdit instanceEdit) {
 			this.type = type;
 			this.authors = instanceEdit.getAuthor();
-			this.date = instanceEdit.getDateTime().substring(0, 10);
+			this.date = instanceEdit.getDateTime() != null
+					? instanceEdit.getDateTime().substring(0, 10)
+					: "Unknown";
 		}
 
 		public String getType() {
